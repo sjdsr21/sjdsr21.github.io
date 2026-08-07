@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prototipo Ago — Carpintería en Caracas</title>
+
+<!-- meta:inicio -->
+  <meta name="description" content="Taller de carpintería en Caracas. Encargos a medida y creaciones de diseño propio, hechas de a una.">
+  <link rel="icon" type="image/png" href="img/marca/favicon.png">
+  <link rel="apple-touch-icon" href="img/marca/favicon.png">
+  <meta name="theme-color" content="#2A2318">
+
+  <!-- Tarjeta que sale al pegar el enlace en WhatsApp y redes.
+       La imagen TIENE que ir con direccion absoluta. -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Prototipo Ago">
+  <meta property="og:locale" content="es_VE">
+  <meta property="og:title" content="Prototipo Ago — Carpintería en Caracas">
+  <meta property="og:description" content="Taller de carpintería en Caracas. Encargos a medida y creaciones de diseño propio, hechas de a una.">
+  <meta property="og:image" content="https://sjdsr21.github.io/img/marca/vista-previa.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://sjdsr21.github.io/index.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Prototipo Ago — Carpintería en Caracas">
+  <meta name="twitter:description" content="Taller de carpintería en Caracas. Encargos a medida y creaciones de diseño propio, hechas de a una.">
+  <meta name="twitter:image" content="https://sjdsr21.github.io/img/marca/vista-previa.jpg">
+<!-- meta:fin -->
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body data-pagina="inicio">
+
+  <header id="cabecera"></header>
+
+  <main>
+    <section class="portada">
+      <div class="contenedor">
+        <h1 id="hero-titulo"></h1>
+        <p class="bajada" id="hero-bajada"></p>
+        <div class="acciones">
+          <a class="boton" href="trabajos.html" id="hero-cta1"></a>
+          <a class="boton boton--linea" href="piezas.html" id="hero-cta2"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Novedades. Se llena solo con lo que tenga novedad:true
+         en datos/trabajos.js. Ahora mismo: el Rolitronco. -->
+    <section class="carrusel" id="carrusel"></section>
+
+    <!-- El video largo, con su texto al lado -->
+    <section id="video-novedad"></section>
+
+    <section class="seccion" id="dest-trabajos"></section>
+    <section class="seccion" id="dest-piezas"></section>
+    <section class="seccion" id="dest-herr"></section>
+  </main>
+
+  <footer id="pie"></footer>
+
+  <script src="datos/marca.js"></script>
+  <script src="datos/textos.js"></script>
+  <script src="datos/trabajos.js"></script>
+  <script src="datos/tienda.js"></script>
+  <script src="js/sitio.js"></script>
+</body>
+</html>

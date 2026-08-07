@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portafolio — Prototipo Ago</title>
+
+<!-- meta:inicio -->
+  <meta name="description" content="Lo que ha salido del taller: muebles a medida, con sus materiales, medidas y cómo están hechos.">
+  <link rel="icon" type="image/png" href="img/marca/favicon.png">
+  <link rel="apple-touch-icon" href="img/marca/favicon.png">
+  <meta name="theme-color" content="#2A2318">
+
+  <!-- Tarjeta que sale al pegar el enlace en WhatsApp y redes.
+       La imagen TIENE que ir con direccion absoluta. -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Prototipo Ago">
+  <meta property="og:locale" content="es_VE">
+  <meta property="og:title" content="Portafolio — Prototipo Ago">
+  <meta property="og:description" content="Lo que ha salido del taller: muebles a medida, con sus materiales, medidas y cómo están hechos.">
+  <meta property="og:image" content="https://sjdsr21.github.io/img/marca/vista-previa.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://sjdsr21.github.io/trabajos.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Portafolio — Prototipo Ago">
+  <meta name="twitter:description" content="Lo que ha salido del taller: muebles a medida, con sus materiales, medidas y cómo están hechos.">
+  <meta name="twitter:image" content="https://sjdsr21.github.io/img/marca/vista-previa.jpg">
+<!-- meta:fin -->
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body data-pagina="trabajos">
+
+  <header id="cabecera"></header>
+
+  <main class="contenedor">
+    <section class="portada">
+      <h1 id="titulo"></h1>
+      <p class="bajada" id="bajada"></p>
+    </section>
+
+    <div class="filtros">
+      <div class="filtro"><label id="l-tipo"     for="f-tipo"></label><select id="f-tipo"></select></div>
+      <div class="filtro"><label id="l-material" for="f-material"></label><select id="f-material"></select></div>
+      <div class="filtro"><label id="l-anio"     for="f-anio"></label><select id="f-anio"></select></div>
+      <button type="button" id="f-limpiar"></button>
+      <span class="filtros__conteo" id="conteo"></span>
+    </div>
+
+    <div id="rejilla"></div>
+  </main>
+
+  <footer id="pie"></footer>
+
+  <script src="datos/marca.js"></script>
+  <script src="datos/textos.js"></script>
+  <script src="datos/trabajos.js"></script>
+  <script src="datos/tienda.js"></script>
+  <script src="js/sitio.js"></script>
+</body>
+</html>

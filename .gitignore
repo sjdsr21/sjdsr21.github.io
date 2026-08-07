@@ -1,0 +1,31 @@
+# Lo que se queda en esta máquina y NO se publica.
+#
+# GitHub Pages sirve tal cual lo que esté en el repositorio, así
+# que lo que se ignore aquí simplemente no existe para el sitio
+# publicado.
+
+# El servidor local y el lanzador: no sirven fuera de aquí
+servidor.py
+Abrir sitio.cmd
+
+# Herramientas internas de captura. Necesitan el servidor local
+# para guardar los archivos, así que en el sitio publicado no
+# harían nada.
+capturar.html
+capturar-rolitronco.html
+capturar-portada-video.html
+Sembrar-imagenes.ps1
+
+# Los .dae son el paso intermedio entre SketchUp y los .glb.
+# Pesan mucho y no los usa nadie.
+modelos/_dae/
+
+# Notas internas. Quedarían accesibles en el sitio publicado con
+# solo saber el nombre del archivo, y ahí dentro está lo que aún
+# está flojo. No es para el público.
+notas/
+
+# basura del sistema
+Thumbs.db
+desktop.ini
+.DS_Store
