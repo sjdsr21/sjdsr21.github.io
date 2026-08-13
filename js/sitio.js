@@ -8,6 +8,36 @@
 (function () {
   "use strict";
 
+  /* ---------- tema (claro / oscuro) ------------------------ */
+
+  /* Se aplica ANTES que nada, en la primera linea util del script:
+     si se esperara a pintar, quien tenga guardado el modo claro
+     veria un fogonazo negro en cada carga. */
+  var TEMAS = ["oscuro", "claro"];
+  var tema = localStorage.getItem("tema");
+  /* Por defecto OSCURO, y a proposito no se mira la preferencia
+     del sistema: la marca es negra, y quien no toque nada tiene
+     que ver la marca. */
+  if (TEMAS.indexOf(tema) === -1) { tema = "oscuro"; }
+  aplicarTema();
+
+  function aplicarTema() {
+    if (tema === "claro") { document.documentElement.setAttribute("data-tema", "claro"); }
+    else { document.documentElement.removeAttribute("data-tema"); }
+  }
+
+  function ponerTema(nuevo) {
+    tema = nuevo;
+    localStorage.setItem("tema", nuevo);
+    aplicarTema();
+    /* No hace falta repintar: el tema entero vive en los tokens
+       CSS. Solo se refresca que boton se ve pulsado. */
+    var bs = document.querySelectorAll(".tema button");
+    for (var i = 0; i < bs.length; i++) {
+      bs[i].setAttribute("aria-pressed", bs[i].dataset.tema === nuevo);
+    }
+  }
+
   /* ---------- idioma -------------------------------------- */
 
   var IDIOMAS = ["es", "en"];
@@ -39,6 +69,10 @@
     localStorage.setItem("idioma", nuevo);
     document.documentElement.lang = nuevo;
     pintar();
+    /* La página de Prototipos se pinta desde otro archivo
+       (js/prototipos.js) y no se entera del cambio de idioma por
+       su cuenta. Este aviso es el único enganche entre los dos. */
+    window.dispatchEvent(new CustomEvent("idioma-cambiado", { detail: nuevo }));
   }
 
   /* ---------- utilidades ---------------------------------- */
@@ -282,18 +316,23 @@
       });
     });
 
-    (window.TIENDA || []).forEach(function (p) {
+    /* 2026-08-11 · El buscador indexaba TIENDA y apuntaba a
+       producto.html, que ya no existe. Ahora indexa PROTOTIPOS y
+       lleva a la portada, que es donde vive el catálogo. */
+    (window.PROTOTIPOS || []).forEach(function (p) {
       if (!p.publicado && !verBorradores) return;
+      var precios = p.matriz
+        ? Object.keys(p.matriz).map(function (k) { return p.matriz[k]; })
+        : null;
       filas.push({
         grupo: "tienda",
         titulo: tx(p.nombre),
-        detalle: p.precio_usd == null ? t("consultar") : dinero(p.precio_usd),
+        detalle: precios ? t("desde") + " " + dinero(Math.min.apply(null, precios))
+                         : dinero(p.precio_usd || 0),
         imagen: p.imagen,
-        url: "producto.html?id=" + p.slug,
+        url: "index.html#" + p.slug,
         texto: normalizar([
           tx(p.nombre), tx(p.resumen), p.medidas ? tx(p.medidas) : "",
-          p.categoria ? etiqueta("categoria", p.categoria) : "",
-          (tx(p.detalles) || []).join(" "),
           (p.opciones || []).map(function (o) {
             return tx(o.etiqueta) + " " + o.valores.map(function (v) { return tx(v.etiqueta); }).join(" ");
           }).join(" ")
@@ -441,13 +480,21 @@
 
   /* ---------- cabecera y pie ------------------------------ */
 
+  /* 2026-08-11 · Orden nuevo, y Prototipos pasó a ser la portada.
+     Salió "Creaciones" (piezas.html): esa línea la absorbe
+     Prototipos, y lo histórico que no está en venta vive en
+     Portafolio. Salió también "Herramientas e insumos", que
+     nunca llegó a tener nada publicado.
+     "Novedades" es lo que antes era la portada: el carrusel y el
+     video, sin las rejillas de destacados. */
+  /* [clave del nombre, archivo, clave de la palabra de encima].
+     La tercera solo se pinta cuando esa sección es la abierta. */
   var MENU = [
-    ["nav_inicio",       "index.html"],
-    ["nav_trabajos",     "trabajos.html"],
-    ["nav_piezas",       "piezas.html"],
-    ["nav_herramientas", "herramientas.html"],
-    ["nav_sobre",        "taller.html"],
-    ["nav_contacto",     "contacto.html"]
+    ["nav_prototipos",   "index.html",      "nav_pre_prototipos"],
+    ["nav_trabajos",     "trabajos.html",   "nav_pre_trabajos"],
+    ["nav_novedades",    "novedades.html",  "nav_pre_novedades"],
+    ["nav_sobre",        "taller.html",     "nav_pre_sobre"],
+    ["nav_contacto",     "contacto.html",   "nav_pre_contacto"]
   ];
 
   function pintarCabecera() {
@@ -458,26 +505,53 @@
     /* Una sección sin nada publicado no aparece en el menú. Vale
        más no tener la pestaña que tenerla y que lleve a una
        vitrina vacía. Vuelve sola en cuanto haya algo dentro. */
+    /* index.html NO se comprueba a propósito: es la portada y
+       tiene que estar siempre, aunque un día se quede sin
+       productos publicados. */
     var vacias = {
-      "piezas.html":       tiendaVisible("pieza").length === 0,
-      "herramientas.html": tiendaVisible("herramienta").length === 0,
-      "trabajos.html":     trabajosVisibles().length === 0
+      "trabajos.html": trabajosVisibles().length === 0
     };
 
     var menu = el("nav", { class: "menu", id: "menu" },
       MENU.filter(function (m) { return !vacias[m[1]]; })
           .map(function (m) {
-            return el("a", {
+            var activa = m[1] === aqui;
+            var a = el("a", {
               href: m[1],
-              texto: t(m[0]),
-              "aria-current": m[1] === aqui ? "page" : null
+              "aria-current": activa ? "page" : null
             });
+            /* La palabra de encima solo existe en la sección
+               abierta, y va aparte del nombre para poder darle
+               su propio tamaño y opacidad. */
+            if (activa && m[2]) {
+              a.appendChild(el("span", { class: "menu__pre", texto: t(m[2]) }));
+            }
+            a.appendChild(el("span", { class: "menu__nombre", texto: t(m[0]) }));
+            return a;
           })
     );
 
     var botones = IDIOMAS.map(function (i) {
       var b = el("button", { type: "button", texto: i.toUpperCase(), "aria-pressed": i === idioma });
       b.addEventListener("click", function () { ponerIdioma(i); });
+      return b;
+    });
+
+    /* Conmutador de tema, hermano del de idioma. Sol y luna: no
+       hay que traducirlos. La etiqueta hablada si va traducida. */
+    var ETIQUETA_TEMA = {
+      oscuro: { es: "Modo oscuro", en: "Dark mode" },
+      claro:  { es: "Modo claro",  en: "Light mode" }
+    };
+    var GLIFO_TEMA = { oscuro: "◑", claro: "○" };
+    var botonesTema = TEMAS.map(function (m) {
+      var b = el("button", {
+        type: "button", texto: GLIFO_TEMA[m],
+        title: ETIQUETA_TEMA[m][idioma], "aria-label": ETIQUETA_TEMA[m][idioma],
+        "aria-pressed": m === tema
+      });
+      b.dataset.tema = m;
+      b.addEventListener("click", function () { ponerTema(m); });
       return b;
     });
 
@@ -491,18 +565,34 @@
     host.innerHTML = "";
     host.classList.add("cabecera");   /* add, no className=, para no borrar "encogida" */
     host.appendChild(el("div", { class: "cabecera__fila" }, [
-      el("a", { class: "marca", href: "index.html" }, [
-        /* dos versiones del mismo logo; el CSS enseña la que toca */
-        el("img", { class: "marca__logo marca__logo--oscuro",
-                    src: "img/marca/logo.png", alt: window.MARCA.nombre }),
-        el("img", { class: "marca__logo marca__logo--claro",
-                    src: "img/marca/logo-claro.png", alt: "" }),
+      el("a", { class: "marca", href: "index.html", "aria-label": window.MARCA.nombre }, [
+        /* 2026-08-11 · El logotipo dejó de ser imagen y pasó a ser
+           TEXTO: Poppins 700, todo en caja baja, dos renglones al
+           ras del mismo borde derecho. Es la misma geometría del
+           PNG, dibujada por el navegador.
+
+           Ventaja de que sea texto: se reescala sin pesar, hereda
+           el color del tema (nada de dos archivos conmutados) y
+           el modo claro sale solo.
+
+           OJO: esto cambia SOLO la web. Los PNG de
+           img/marca/ siguen ahí y los siguen usando los PDF de
+           presupuesto y el Optimizador de Corte. No los borres. */
+        el("span", { class: "marca__texto", "aria-hidden": "true",
+                     html: "prototipo<br>ago" }),
         el("img", { class: "marca__perfil", src: "img/marca/perfil.png", alt: "" })
       ]),
       hamb,
       menu,
       lupa,
-      el("div", { class: "idioma" }, botones)
+      /* Idioma y tema van dentro de UNA caja. Sueltos eran dos items
+         del flex y en móvil la fila los partía en renglones
+         distintos: el idioma acababa abajo con el menú y el tema
+         arriba con la lupa. Agrupados no se separan nunca. */
+      el("div", { class: "controles" }, [
+        el("div", { class: "idioma" }, botones),
+        el("div", { class: "tema" }, botonesTema)
+      ])
     ]));
   }
 
@@ -557,8 +647,16 @@
           suma += 0.2126 * d[i] + 0.7152 * d[i + 1] + 0.0722 * d[i + 2];
         }
         var brillo = suma / (d.length / 4);
-        sello.classList.toggle("marca3d--claro", brillo < 120);
-      } catch (e) { /* si el navegador no deja leer la imagen, se deja como está */ }
+        /* Se marcan los DOS casos, no solo uno. Antes solo se ponía
+           la clase cuando la imagen era oscura y el otro caso se
+           dejaba en el valor por defecto. Con el sitio en negro ese
+           defecto es negro sobre tarjeta negra, así que mientras la
+           imagen no cargaba el sello no se veía. Ahora el defecto es
+           blanco (seguro sobre la tarjeta) y esta clase es la que
+           pinta de negro cuando la imagen resulta ser clara. */
+        sello.classList.toggle("marca3d--claro",  brillo < 120);
+        sello.classList.toggle("marca3d--oscuro", brillo >= 120);
+      } catch (e) { /* si el navegador no deja leer la imagen, se queda blanco */ }
     }
     if (img.complete && img.naturalWidth) medir();
     else img.addEventListener("load", medir, { once: true });
@@ -584,13 +682,22 @@
   }
 
   function tarjetaTrabajo(w) {
+    /* 2026-08-11 · El AÑO ya no sale en la cuadrícula: lo quitó él
+       porque en una vitrina fecha la pieza sin aportar nada. Sigue
+       apareciendo en la ficha de la pieza, al abrirla. Sí se deja
+       en el texto alternativo, que es para buscadores y lectores
+       de pantalla, no para la vista. */
     var meta = [];
-    if (w.anio) meta.push(w.anio + (w.anio_estimado ? "?" : ""));
     if (w.tipo) meta.push(etiqueta("tipo", w.tipo));
 
+    var alt = [tx(w.titulo), w.anio, meta.join(", ")].filter(Boolean).join(" — ");
+
+    /* El sello «3D» de la esquina se quitó de la cuadrícula
+       (2026-08-12): ensuciaba la vitrina. Se sigue pasando
+       `es_render` en la ficha de la pieza, donde sí tiene sentido
+       avisar de que la imagen es un render y no una foto. */
     return el("a", { class: "tarjeta", href: "trabajo.html?id=" + w.slug }, [
-      marcoImagen(w.imagen, w.es_render, !w.publicado,
-                  [tx(w.titulo), meta.join(", ")].filter(Boolean).join(" — ")),
+      marcoImagen(w.imagen, false, !w.publicado, alt),
       el("h3", { texto: tx(w.titulo) }),
       el("div", { class: "tarjeta__meta", texto: meta.join(" · ") })
     ]);
@@ -722,7 +829,12 @@
 
   var paginas = {};
 
-  paginas.inicio = function () {
+  /* 2026-08-11 · Se llamaba `inicio`. Al pasar el catálogo a la
+     portada, esta página se volvió `novedades.html` con
+     data-pagina="novedades", y como aquí seguía diciendo `inicio`
+     no se ejecutaba NADA: ni carrusel, ni video, ni los textos de
+     la portada. La página salía en blanco. */
+  paginas.novedades = function () {
     $("#hero-titulo").textContent  = t("hero_titulo");
     $("#hero-bajada").textContent  = t("hero_bajada");
     $("#hero-cta1").textContent    = t("hero_cta1");
@@ -767,10 +879,13 @@
       hostVideo.hidden = true;
     }
 
+    /* 2026-08-11 · Quedan solo los trabajos. Las rejillas de
+       Creaciones y Herramientas salieron de Novedades por
+       petición suya, y sus páginas ya no existen. El bucle de
+       abajo ignora los que no encuentra, así que esto es
+       suficiente. */
     var bloques = [
-      ["#dest-trabajos", trabajosVisibles().filter(function (w) { return w.destacado; }).slice(0, 4), tarjetaTrabajo, "trabajos_titulo", "trabajos.html"],
-      ["#dest-piezas",   tiendaVisible("pieza").filter(function (p) { return p.destacado; }).slice(0, 4), tarjetaProducto, "piezas_titulo", "piezas.html"],
-      ["#dest-herr",     tiendaVisible("herramienta").filter(function (p) { return p.destacado; }).slice(0, 4), tarjetaProducto, "herr_titulo", "herramientas.html"]
+      ["#dest-trabajos", trabajosVisibles().filter(function (w) { return w.destacado; }).slice(0, 4), tarjetaTrabajo, "trabajos_titulo", "trabajos.html"]
     ];
 
     bloques.forEach(function (b) {
@@ -788,71 +903,19 @@
     });
   };
 
+  /* 2026-08-11 · Aquí vivían los tres filtros (tipo, madera, año),
+     el botón de limpiar y el contador. Los quitó él: quiere solo
+     la cuadrícula. Con ellos se fueron unas 60 líneas de estado y
+     manejadores que ya no hacen falta. Las claves filtro_* siguen
+     en textos.js por si algún día vuelven. */
   paginas.trabajos = function () {
     $("#titulo").textContent = t("trabajos_titulo");
     $("#bajada").textContent = t("trabajos_bajada");
 
-    var todos = trabajosVisibles();
-    var host  = $("#rejilla");
-    var estado = { tipo: "", material: "", anio: "" };
-
-    function opciones(sel, valores, grupo, etiquetaTodos) {
-      sel.innerHTML = "";
-      sel.appendChild(el("option", { value: "", texto: etiquetaTodos }));
-      valores.forEach(function (v) {
-        sel.appendChild(el("option", {
-          value: v,
-          texto: grupo ? etiqueta(grupo, v) : v
-        }));
-      });
-    }
-
-    function unicos(fn) {
-      var s = [];
-      todos.forEach(function (w) {
-        var v = fn(w);
-        (Array.isArray(v) ? v : [v]).forEach(function (x) {
-          if (x && s.indexOf(x) === -1) s.push(x);
-        });
-      });
-      return s;
-    }
-
-    var selTipo = $("#f-tipo"), selMat = $("#f-material"), selAnio = $("#f-anio");
-    $("#l-tipo").textContent     = t("filtro_tipo");
-    $("#l-material").textContent = t("filtro_madera");
-    $("#l-anio").textContent     = t("filtro_anio");
-    $("#f-limpiar").textContent  = t("limpiar_filtros");
-
-    opciones(selTipo, unicos(function (w) { return w.tipo; }), "tipo", t("filtro_todos"));
-    opciones(selMat,  unicos(function (w) { return w.materiales; }), "material", t("filtro_todos"));
-    opciones(selAnio, unicos(function (w) { return w.anio ? String(w.anio) : null; }).sort().reverse(), null, t("filtro_todos"));
-
-    selTipo.value = estado.tipo; selMat.value = estado.material; selAnio.value = estado.anio;
-
-    function aplicar() {
-      var lista = todos.filter(function (w) {
-        if (estado.tipo && w.tipo !== estado.tipo) return false;
-        if (estado.material && (w.materiales || []).indexOf(estado.material) === -1) return false;
-        if (estado.anio && String(w.anio) !== estado.anio) return false;
-        return true;
-      });
-      host.innerHTML = "";
-      host.appendChild(rejilla(lista, tarjetaTrabajo));
-      revelar(host, ".tarjeta", 45);
-      $("#conteo").textContent = lista.length === 1 ? t("conteo_uno") : n("conteo", lista.length);
-    }
-
-    selTipo.onchange = function () { estado.tipo = this.value; aplicar(); };
-    selMat.onchange  = function () { estado.material = this.value; aplicar(); };
-    selAnio.onchange = function () { estado.anio = this.value; aplicar(); };
-    $("#f-limpiar").onclick = function () {
-      estado = { tipo: "", material: "", anio: "" };
-      selTipo.value = selMat.value = selAnio.value = "";
-      aplicar();
-    };
-
-    aplicar();
+    var host = $("#rejilla");
+    host.innerHTML = "";
+    host.appendChild(rejilla(trabajosVisibles(), tarjetaTrabajo));
+    revelar(host, ".tarjeta", 45);
   };
 
   paginas.trabajo = function () {

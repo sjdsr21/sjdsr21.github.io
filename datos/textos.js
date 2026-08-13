@@ -8,19 +8,99 @@ window.TEXTOS = {
 
   /* --- Navegación ------------------------------------------ */
   nav_inicio:       { es: "Inicio",        en: "Home" },
-  nav_trabajos:     { es: "Portafolio",    en: "Portfolio" },
+  nav_trabajos:     { es: "Exhibición",    en: "Exhibition" },
   nav_piezas:       { es: "Creaciones",    en: "Creations" },
   nav_herramientas: { es: "Herramientas e insumos", en: "Tools & supplies" },
+  nav_prototipos:   { es: "Prototipos",    en: "Prototypes" },
+  nav_novedades:    { es: "Novedades",     en: "What's new" },
+
+  /* La palabrita que sale ENCIMA del nombre de la sección, y solo
+     cuando esa sección es la que estás viendo. Se lee de corrido
+     con el nombre: "Tienda de Prototipos", "Establece Contacto". */
+  nav_pre_prototipos:   { es: "Tienda de",   en: "Shop for" },
+  nav_pre_trabajos:     { es: "Catálogo de", en: "Catalogue of" },
+  nav_pre_novedades:    { es: "Área de",     en: "Area of" },
+  nav_pre_sobre:        { es: "Descubre",    en: "Discover" },
+  nav_pre_contacto:     { es: "Establece",   en: "Make" },
   nav_sobre:        { es: "El taller",     en: "The shop" },
   nav_contacto:     { es: "Contacto",      en: "Contact" },
+
+  /* --- Prototipos: la colección propia, con pedido --------- */
+  pt_titulo:    { es: "Prototipos", en: "Prototypes" },
+  pt_bajada:    { es: "Piezas que puedes comprar. De diseño propio. Hechas en el taller.",
+                  en: "Pieces you can buy. Of my own design. Made in the shop." },
+  pt_con_stock: { es: "Listas ahora", en: "Ready now" },
+  /* Va justo debajo del título "Listas ahora": es lo que antes
+     decía la bajada de la página, pero pegado a lo que explica. */
+  pt_sin_espera:{ es: "(Sin tiempo de espera)", en: "(No waiting time)" },
+  pt_por_encargo:{ es: "Por encargo", en: "Made to order" },
+  pt_encargo_bajada: { es: "No las tengo hechas ahora mismo. Se producen cuando las pides, con un plazo acordado y sin compromiso hasta que cerremos por chat.",
+                  en: "I don't have these on hand. They're made when you order, on an agreed lead time, with no commitment until we close it over chat." },
+  pt_n_productos: { es: "{n} productos", en: "{n} products" },
+  pt_agotado:   { es: "agotado", en: "sold out" },
+  /* Poco stock y stock normal dicen LO MISMO; lo que cambia es el
+     color (ver .pt-estado--poco). Antes el caso de pocas unidades
+     decía "quedan 1", que además de sonar mal metía prisa. */
+  pt_hay:       { es: "{n} disponibles", en: "{n} available" },
+  pt_hay_uno:   { es: "1 disponible",    en: "1 available" },
+  pt_semanas:   { es: "{n} semanas", en: "{n} weeks" },
+  pt_sin_imagen:{ es: "sin imagen", en: "no image" },
+
+  pt_cantidad:  { es: "Cantidad", en: "Quantity" },
+  pt_cant_packs:{ es: "Cantidad de packs", en: "Number of packs" },
+  pt_en_total:  { es: "({n} {cosa} en total)", en: "({n} {cosa} in total)" },
+  pt_sin_combo: { es: "Sin stock en esta combinación — se puede hacer por encargo.",
+                  en: "Out of stock in this combination — can be made to order." },
+  pt_en_taller: { es: "{n} en el taller, sale de una vez.", en: "{n} in the shop, ships right away." },
+  pt_se_produce:{ es: "Se produce al pedirlo · {p}", en: "Made to order · {p}" },
+  pt_agregar:   { es: "Agregar al pedido", en: "Add to order" },
+
+  pt_tu_pedido: { es: "Tu pedido", en: "Your order" },
+  pt_pedido_bajada: { es: "Arma aquí lo que quieres. Nada se cobra en esta página: al final se abre WhatsApp con el pedido ya escrito.",
+                  en: "Build what you want here. Nothing is charged on this page: at the end WhatsApp opens with the order already written." },
+  pt_vacio:     { es: "Todavía no has agregado nada.", en: "Nothing added yet." },
+  pt_quitar:    { es: "quitar", en: "remove" },
+  pt_como_recibes: { es: "¿Cómo lo recibes?", en: "How do you get it?" },
+  pt_como_pagas:{ es: "¿Cómo pagas?", en: "How do you pay?" },
+  pt_que_estado:{ es: "¿A qué estado?", en: "Which state?" },
+  pt_los_de_siempre: { es: "Los de siempre", en: "The usual" },
+  pt_resto_pais:{ es: "Resto del país", en: "Rest of the country" },
+  pt_sin_costo: { es: "sin costo", en: "no charge" },
+  pt_escoge_estado: { es: "escoge estado", en: "pick a state" },
+  pt_no_efectivo: { es: "No aplica pagando en efectivo", en: "Not available when paying cash" },
+  /* pt_muy_pesado salió el 12/08/2026: el delivery ya no está
+     limitado a piezas pequeñas, así que no hay nada que avisar. */
+  pt_datos_wa:  { es: "Los datos de la cuenta te los paso por WhatsApp cuando confirmemos. No van en la página.",
+                  en: "I send you the account details over WhatsApp once we confirm. They don't live on this page." },
+  pt_en_bs:     { es: "en bolívares", en: "in bolívares" },
+  pt_en_usd:    { es: "en dólares", en: "in US dollars" },
+  pt_en_usdt:   { es: "en USDT", en: "in USDT" },
+
+  pt_piezas:    { es: "Piezas", en: "Pieces" },
+  pt_total:     { es: "Total a pagar", en: "Total to pay" },
+  pt_si_bs:     { es: "({m} si pagas en bolívares)", en: "({m} if you pay in bolívares)" },
+  pt_equivale:  { es: "equivale a {m}", en: "equals {m}" },
+  pt_envio_est: { es: "Envío estimado", en: "Estimated shipping" },
+  pt_envio_escoge: { es: "Escoge el estado de destino para estimarlo.", en: "Pick the destination state to estimate it." },
+  pt_envio_nota:{ es: "Aproximado. Lo cobra {a} al retirarlo, no yo — no entra en el total de arriba. {kg} kg.",
+                  en: "Approximate. {a} charges it on collection, not me — it's not part of the total above. {kg} kg." },
+  pt_envio_local: { es: "Aproximado, se confirma al coordinar.", en: "Approximate, confirmed when we arrange it." },
+  pt_me_llega:  { es: "Lo que me va a llegar", en: "What reaches me" },
+  pt_previa_vacia: { es: "El mensaje se arma solo cuando agregues algo.", en: "The message builds itself once you add something." },
+  pt_pedir:     { es: "Hacer pedido por WhatsApp", en: "Order on WhatsApp" },
+  pt_pedir_nota:{ es: "Se abre el chat con todo escrito. Todavía no compras nada — confirmamos disponibilidad y cerramos ahí.",
+                  en: "The chat opens with everything written out. You're not buying yet — we confirm availability and close it there." },
+  pt_sin_wa:    { es: "Falta configurar el número de WhatsApp en datos/marca.js. Mientras tanto, escríbeme por Instagram.",
+                  en: "The WhatsApp number isn't set in datos/marca.js yet. In the meantime, message me on Instagram." },
+  pt_tasa_bcv:  { es: "BCV {v} Bs/USD", en: "BCV {v} Bs/USD" },
 
   /* --- Inicio ---------------------------------------------- */
   hero_titulo:  { es: "Muebles hechos de a uno.",
                   en: "Furniture made one at a time." },
   hero_bajada:  { es: "Taller de carpintería en Caracas. Encargos a medida y piezas de diseño propio.",
                   en: "A woodworking shop in Caracas. Commissions and pieces of my own design." },
-  hero_cta1:    { es: "Ver trabajos",      en: "See the work" },
-  hero_cta2:    { es: "Ver creaciones",    en: "See the creations" },
+  hero_cta1:    { es: "Ver prototipos",    en: "See the prototypes" },
+  hero_cta2:    { es: "Ver exhibición",    en: "See the exhibition" },
 
   destacados:   { es: "Selección",         en: "Selected" },
   ver_todo:     { es: "Ver todo",          en: "See all" },
@@ -43,8 +123,8 @@ window.TEXTOS = {
   cerrar:       { es: "Cerrar",            en: "Close" },
 
   /* --- Catálogo de trabajos -------------------------------- */
-  trabajos_titulo: { es: "Portafolio",
-                     en: "Portfolio" },
+  trabajos_titulo: { es: "Exhibición",
+                     en: "Exhibition" },
   trabajos_bajada: { es: "Lo que ha salido del taller. Cada encargo es distinto: estas son las piezas, cómo están hechas y con qué.",
                      en: "What has come out of the shop. Every commission is different: here are the pieces, how they were made and what from." },
 
@@ -126,8 +206,8 @@ window.TEXTOS = {
 
   /* --- Contacto -------------------------------------------- */
   contacto_titulo: { es: "Contacto",       en: "Contact" },
-  contacto_bajada: { es: "Escríbeme por Instagram con la idea, aunque esté a medio cocinar. Si tienes una foto de referencia o el espacio donde va, mejor.",
-                     en: "Message me on Instagram with the idea, even half-baked. A reference photo or the space it goes in helps." },
+  contacto_bajada: { es: "Escríbeme por WhatsApp o Instagram para desarrollar tu idea juntos. Si tienes imágenes de referencia y medidas a la mano, mejor.",
+                     en: "Message me on WhatsApp or Instagram and let's develop your idea together. If you have reference images and measurements handy, even better." },
 
   /* --- Pie ------------------------------------------------- */
   pie_derechos:    { es: "Caracas, Venezuela",

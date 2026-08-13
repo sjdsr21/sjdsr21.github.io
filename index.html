@@ -6,63 +6,184 @@
   <title>Prototipo Ago — Carpintería en Caracas</title>
 
 <!-- meta:inicio -->
-  <meta name="description" content="Taller de carpintería en Caracas. Encargos a medida y creaciones de diseño propio, hechas de a una.">
+  <meta name="description" content="Piezas de diseño propio hechas en el taller: tablas de picar, bases de laptop, butcher blocks y más. Con stock o por encargo.">
   <link rel="icon" type="image/png" href="img/marca/favicon.png">
   <link rel="apple-touch-icon" href="img/marca/favicon.png">
-  <meta name="theme-color" content="#2A2318">
+  <meta name="theme-color" content="#000000">
 
   <!-- Tarjeta que sale al pegar el enlace en WhatsApp y redes.
        La imagen TIENE que ir con direccion absoluta. -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Prototipo Ago">
   <meta property="og:locale" content="es_VE">
-  <meta property="og:title" content="Prototipo Ago — Carpintería en Caracas">
-  <meta property="og:description" content="Taller de carpintería en Caracas. Encargos a medida y creaciones de diseño propio, hechas de a una.">
+  <meta property="og:title" content="Prototipos — Prototipo Ago">
+  <meta property="og:description" content="Piezas de diseño propio hechas en el taller: tablas de picar, bases de laptop, butcher blocks y más. Con stock o por encargo.">
   <meta property="og:image" content="https://sjdsr21.github.io/img/marca/vista-previa.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:url" content="https://sjdsr21.github.io/index.html">
+  <meta property="og:url" content="https://sjdsr21.github.io/">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Prototipo Ago — Carpintería en Caracas">
-  <meta name="twitter:description" content="Taller de carpintería en Caracas. Encargos a medida y creaciones de diseño propio, hechas de a una.">
+  <meta name="twitter:title" content="Prototipos — Prototipo Ago">
+  <meta name="twitter:description" content="Piezas de diseño propio hechas en el taller: tablas de picar, bases de laptop, butcher blocks y más. Con stock o por encargo.">
   <meta name="twitter:image" content="https://sjdsr21.github.io/img/marca/vista-previa.jpg">
 <!-- meta:fin -->
   <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/prototipos.css">
 </head>
-<body data-pagina="inicio">
+<body data-pagina="prototipos">
 
   <header id="cabecera"></header>
 
-  <main>
+  <main class="contenedor">
+
     <section class="portada">
-      <div class="contenedor">
-        <h1 id="hero-titulo"></h1>
-        <p class="bajada" id="hero-bajada"></p>
-        <div class="acciones">
-          <a class="boton" href="trabajos.html" id="hero-cta1"></a>
-          <a class="boton boton--linea" href="piezas.html" id="hero-cta2"></a>
+      <h1 id="pt-titulo"></h1>
+      <p class="bajada" id="pt-bajada"></p>
+    </section>
+
+    <!-- ---------- listas ahora ---------- -->
+    <section class="pt-seccion">
+      <div class="pt-cabeza">
+        <h2 id="pt-tit-stock"></h2>
+        <span class="pt-cuenta" id="pt-n-stock"></span>
+      </div>
+      <p class="pt-bajada" id="pt-baj-stock"></p>
+      <div class="rejilla" id="pt-stock"></div>
+    </section>
+
+    <!-- ---------- por encargo ---------- -->
+    <section class="pt-seccion">
+      <div class="pt-cabeza">
+        <h2 id="pt-tit-pedido"></h2>
+        <span class="pt-cuenta" id="pt-n-pedido"></span>
+      </div>
+      <p class="pt-bajada" id="pt-baj-pedido"></p>
+      <div class="rejilla" id="pt-pedido"></div>
+    </section>
+
+    <!-- ---------- el pedido ---------- -->
+    <section class="pt-seccion" id="pt-pedido-seccion">
+      <div class="pt-cabeza"><h2 id="pt-tit-pedidoc"></h2></div>
+      <p class="pt-bajada" id="pt-baj-pedidoc"></p>
+
+      <div class="pt-cols">
+        <div class="pt-col">
+          <div id="pt-lineas"></div>
+
+          <div class="pt-campo" style="margin-top:1.9rem">
+            <span class="pt-etiqueta" id="pt-l-recibes"></span>
+            <div class="pt-radios" id="pt-entrega"></div>
+            <div id="pt-zona-estado" style="margin-top:.75rem;display:none">
+              <select class="pt-select" id="pt-estado"></select>
+            </div>
+          </div>
+
+          <div class="pt-campo" style="margin-bottom:0">
+            <span class="pt-etiqueta" id="pt-l-pagas"></span>
+            <div class="pt-radios" id="pt-pago"></div>
+            <small class="pt-nota" id="pt-nota-datos"></small>
+          </div>
+        </div>
+
+        <div class="pt-col">
+          <!-- La tasa del día vive aquí, arriba a la derecha del
+               recuadro del pedido: es donde hace falta, junto a las
+               cifras en bolívares. Antes estaba en la cabecera del
+               catálogo, lejos de todo lo que explica. -->
+          <span class="pt-tasa" id="pt-tasa"></span>
+
+          <div class="pt-fila">
+            <span class="et" id="pt-l-piezas"></span>
+            <span id="pt-suma"></span>
+          </div>
+
+          <div class="pt-fila pt-fila--grande">
+            <span class="et" id="pt-l-total"></span>
+            <span style="text-align:right">
+              <span class="n" id="pt-total-principal"></span>
+              <span class="pt-gris" id="pt-total-secundario"></span>
+            </span>
+          </div>
+
+          <!-- El envío va aparte porque es cobro destino: lo cobra
+               la agencia al entregarlo, no él. No suma al total. -->
+          <div class="pt-aparte" id="pt-caja-envio" style="display:none">
+            <div class="pt-aparte__top">
+              <span id="pt-l-envio"></span>
+              <b id="pt-envio-monto"></b>
+            </div>
+            <span class="pt-gris" id="pt-envio-bs" style="text-align:left"></span>
+            <small id="pt-envio-nota"></small>
+          </div>
+
+          <span class="pt-etiqueta" id="pt-l-previa" style="margin-top:1.4rem"></span>
+          <div class="pt-previa" id="pt-previa"></div>
+
+          <button class="pt-btn pt-btn--wa" id="pt-pedir" style="margin-top:1rem" disabled></button>
+          <small class="pt-nota" id="pt-nota-pedir"></small>
         </div>
       </div>
     </section>
 
-    <!-- Novedades. Se llena solo con lo que tenga novedad:true
-         en datos/trabajos.js. Ahora mismo: el Rolitronco. -->
-    <section class="carrusel" id="carrusel"></section>
-
-    <!-- El video largo, con su texto al lado -->
-    <section id="video-novedad"></section>
-
-    <section class="seccion" id="dest-trabajos"></section>
-    <section class="seccion" id="dest-piezas"></section>
-    <section class="seccion" id="dest-herr"></section>
   </main>
 
   <footer id="pie"></footer>
+
+  <!-- panel lateral de configuración -->
+  <div class="pt-velo" id="pt-velo"></div>
+  <aside class="pt-panel" id="pt-panel" aria-hidden="true">
+    <div class="pt-panel__cab">
+      <h3 id="pt-pn-titulo"></h3>
+      <button class="pt-cerrar" id="pt-pn-cerrar" type="button" aria-label="Cerrar">&times;</button>
+    </div>
+    <div class="pt-panel__cuerpo">
+
+      <!-- Columna izquierda: la visual de lo que estás escogiendo.
+           Si la variante tiene modelo 3D se monta el visor; si no,
+           queda el recuadro rayado de "sin imagen". -->
+      <div class="pt-panel__visual">
+        <div class="pt-visual" id="pt-pn-visual">
+          <div class="pt-visual__lienzo" id="pt-pn-lienzo"></div>
+          <!-- Miniaturas de los medios, arriba a la izquierda y por
+               encima del lienzo. Se ocultan si solo hay uno. -->
+          <div class="pt-medios" id="pt-pn-medios" hidden></div>
+        </div>
+      </div>
+
+      <!-- Columna derecha: lo que se configura -->
+      <div class="pt-panel__opciones">
+        <p class="pt-panel__resumen" id="pt-pn-resumen"></p>
+        <div id="pt-pn-opciones"></div>
+        <div class="pt-grupo" style="margin-bottom:0">
+          <span class="pt-etiqueta" id="pt-pn-etiqueta-cant"></span>
+          <div class="pt-contador">
+            <button type="button" id="pt-pn-menos">&minus;</button>
+            <span id="pt-pn-cant">1</span>
+            <button type="button" id="pt-pn-mas">+</button>
+          </div>
+          <div class="pt-nota-pack" id="pt-pn-nota-pack"></div>
+          <div class="pt-nota-stock" id="pt-pn-nota-stock"></div>
+        </div>
+      </div>
+    </div>
+    <div class="pt-panel__pie">
+      <div class="pt-precio-panel">
+        <span class="n" id="pt-pn-precio"></span>
+        <span class="bs" id="pt-pn-precio-bs"></span>
+      </div>
+      <button class="pt-btn" id="pt-pn-agregar" type="button"></button>
+    </div>
+  </aside>
 
   <script src="datos/marca.js"></script>
   <script src="datos/textos.js"></script>
   <script src="datos/trabajos.js"></script>
   <script src="datos/tienda.js"></script>
+  <script src="datos/prototipos.js"></script>
+  <script src="datos/envios.js"></script>
+  <script src="datos/modelos.js"></script>
+  <script src="js/visor3d.js"></script>
   <script src="js/sitio.js"></script>
+  <script src="js/prototipos.js"></script>
 </body>
 </html>

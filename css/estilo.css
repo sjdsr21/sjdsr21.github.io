@@ -4,60 +4,282 @@
    de aquí abajo. Cambia una y cambia en todas las páginas.
    ============================================================ */
 
+/* ------------------------------------------------------------
+   TIPOGRAFÍAS · descargadas 2026-08-08 de Google Fonts y alojadas
+   en `fuentes/` dentro de este mismo repositorio. NO están
+   instaladas en Windows y no hace falta que lo estén: el visitante
+   las recibe junto con la página.
+   Licencias en `fuentes/LICENCIAS.txt`.
+   Solo los subconjuntos latinos y solo dos pesos (400 y 700), que
+   es la restricción de KOMA. 317 KB en total.
+   ------------------------------------------------------------ */
+@font-face { font-family:'Roboto Condensed'; font-style:normal; font-weight:400; font-display:swap;
+  src:url('../fuentes/RobotoCondensed-400-latin.woff2') format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family:'Roboto Condensed'; font-style:normal; font-weight:400; font-display:swap;
+  src:url('../fuentes/RobotoCondensed-400-latin-ext.woff2') format('woff2');
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family:'Roboto Condensed'; font-style:normal; font-weight:700; font-display:swap;
+  src:url('../fuentes/RobotoCondensed-700-latin.woff2') format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family:'Roboto Condensed'; font-style:normal; font-weight:700; font-display:swap;
+  src:url('../fuentes/RobotoCondensed-700-latin-ext.woff2') format('woff2');
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+
+/* Roboto de ancho normal — la misma familia que la Condensed, sin
+   estrechar. Descargada 2026-08-08 para probarla en el logotipo. */
+@font-face { font-family:'Roboto'; font-style:normal; font-weight:400; font-display:swap;
+  src:url('../fuentes/Roboto-400-latin.woff2') format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family:'Roboto'; font-style:normal; font-weight:400; font-display:swap;
+  src:url('../fuentes/Roboto-400-latin-ext.woff2') format('woff2');
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family:'Roboto'; font-style:normal; font-weight:700; font-display:swap;
+  src:url('../fuentes/Roboto-700-latin.woff2') format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family:'Roboto'; font-style:normal; font-weight:700; font-display:swap;
+  src:url('../fuentes/Roboto-700-latin-ext.woff2') format('woff2');
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+
+/* Poppins — geométrica de ojo circular, la que más se parece al
+   dibujo del logotipo. Muy liviana: 26 KB los cuatro archivos. */
+@font-face { font-family:'Poppins'; font-style:normal; font-weight:400; font-display:swap;
+  src:url('../fuentes/Poppins-400-latin.woff2') format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family:'Poppins'; font-style:normal; font-weight:400; font-display:swap;
+  src:url('../fuentes/Poppins-400-latin-ext.woff2') format('woff2');
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+@font-face { font-family:'Poppins'; font-style:normal; font-weight:700; font-display:swap;
+  src:url('../fuentes/Poppins-700-latin.woff2') format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family:'Poppins'; font-style:normal; font-weight:700; font-display:swap;
+  src:url('../fuentes/Poppins-700-latin-ext.woff2') format('woff2');
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+
+@font-face { font-family:'Oswald'; font-style:normal; font-weight:400; font-display:swap;
+  src:url('../fuentes/Oswald-400-latin.woff2') format('woff2'); }
+@font-face { font-family:'Oswald'; font-style:normal; font-weight:700; font-display:swap;
+  src:url('../fuentes/Oswald-700-latin.woff2') format('woff2'); }
+
+@font-face { font-family:'Barlow Condensed'; font-style:normal; font-weight:400; font-display:swap;
+  src:url('../fuentes/BarlowCondensed-400-latin.woff2') format('woff2'); }
+@font-face { font-family:'Barlow Condensed'; font-style:normal; font-weight:700; font-display:swap;
+  src:url('../fuentes/BarlowCondensed-700-latin.woff2') format('woff2'); }
+
 :root {
-  /* Escala de beiges y khakis. Nada de negro ni de marrón quemado:
-     el texto más oscuro es un marrón medio y cálido. */
-  --tinta:    #4A3B2A;   /* texto — marrón medio */
-  --papel:    #F7F2E8;   /* fondo del cuerpo — hueso */
-  --apagado:  #75634E;   /* texto secundario — no aclarar más:
-                            por encima de esto deja de ser legible
-                            sobre el hueso (mínimo 4,5:1) */
-  --linea:    #DED2BC;   /* rayas y bordes */
-  /* Rojo de la marca, el de la foto de perfil (#FF0009). El puro
-     no llega a 4,5:1 sobre el hueso, así que para texto y líneas
-     va una versión un punto más profunda, y el puro se reserva
-     para rellenos sólidos con texto blanco encima. */
-  --realce:      #D10010;
-  --realce-vivo: #FF0009;
-  --sombra:   rgba(74,59,42,.14);
-  --caja:     #ECE3D1;   /* fondo de tarjetas e imágenes — khaki */
+  /* ---- 2026-08-08 · INVERSIÓN ----------------------------------
+     Antes: cuerpo hueso con tinta marrón. Ahora: negro puro con
+     blanco encima, al modo de KOMA pero invertido. El marrón pasa
+     de ser el suelo a ser un acento escaso; el color lo pone el
+     material dibujado, no la interfaz.
+     Todas las razones de contraste de abajo están MEDIDAS, no
+     estimadas. Mínimo 4,5:1 para texto. -------------------------- */
+  --tinta:    #FFFFFF;   /* texto — 21:1 sobre negro */
+  --papel:    #000000;   /* fondo del cuerpo — negro puro */
+  --apagado:  #A0A0A0;   /* texto secundario — 8,03:1. No bajar de
+                            #767676, que es el límite (4,62:1) */
+  --linea:    #2E2E2E;   /* rayas y bordes. NO es color de texto:
+                            1,66:1. Es el filete de 1px, y ese es
+                            todo su trabajo */
 
-  /* El encabezado va oscuro SIEMPRE, no sigue el tema: es la
-     barra de contraste contra el cuerpo color hueso. */
-  --barra:       #2A2318;
-  --barra-tinta: #F2E9D8;
-  --barra-suave: #B5A387;
-  --barra-linea: #453A29;
+  /* OJO — al invertir, los dos rojos INTERCAMBIAN PAPELES.
+     Sobre el hueso el puro no llegaba a 4,5:1 y por eso existía el
+     profundo. Sobre negro es al revés:
+       #FF0009 sobre negro  = 5,26:1  → sirve para texto y líneas
+       #D10010 sobre negro  = 3,72:1  → ya NO sirve para texto
+       blanco sobre #D10010 = 5,65:1  → sí sirve de relleno
+       blanco sobre #FF0009 = 4,00:1  → NO poner blanco encima del vivo
+     Conclusión: el vivo escribe, el profundo rellena. */
+  /* 2026-08-11 · El acento pasó de rojo puro a SIENA TOSTADA.
+     Se mantiene el reparto de papeles: el claro escribe, el hondo
+     rellena. Contrastes medidos, no estimados:
+       #E97451 sobre negro   = 7,08:1  → sirve para texto y líneas
+       blanco sobre #E97451  = 2,97:1  → NO poner blanco encima
+       blanco sobre #B4441F  = 5,55:1  → éste es el de relleno   */
+  --realce:      #E97451;  /* texto, líneas, subrayados */
+  --realce-hondo:#B4441F;  /* relleno sólido con blanco encima */
+  --realce-vivo: #E97451;  /* alias antiguo, se conserva por compatibilidad */
 
-  /* colores del sello 3D: el azul es el mismo de tu mesa cubo */
-  --tres:     #2A5180;
-  --de:       #B4453C;
+  /* Burnt Sugar, de la paleta que él pasó. NO es color de texto:
+     es para rellenar cosas pequeñas — el cuadradito que marca la
+     opción escogida. Vale igual en los dos temas, que es raro y
+     por eso está fuera del bloque del tema claro:
+       sobre negro  6,46:1
+       sobre blanco 3,25:1  (mínimo 3:1 para elementos no textuales) */
+  --acento-claro: #D07847;
+
+  /* La barra vertical que marca la sección abierta en el menú.
+     En oscuro basta el acento de siempre. */
+  --nav-activa: #E97451;
+
+  /* Sin sombras. KOMA no tiene ni una sola box-shadow, y sobre
+     negro una sombra no se ve: lo que separa es el filete. */
+  --sombra:   transparent;
+  --caja:     #0D0D0D;   /* fondo de tarjetas — negro levantado un punto */
+  --caja-alta:#171717;   /* la misma caja con el ratón encima */
+
+  /* ---- RAYADO DIAGONAL -----------------------------------------
+     Nació como relleno de los recuadros sin imagen del catálogo y
+     le gustó lo bastante como para subirlo a detalle de marca.
+     Hay dos versiones y no son intercambiables:
+
+     --rayado        opaco, hecho de --papel y --caja. Se voltea
+                     solo con el tema. Para huecos vacíos, donde
+                     no hay nada debajo que tapar.
+     --rayado-sutil  translúcido. Al ser gris medio a poca opacidad
+                     se ve tanto sobre blanco como sobre negro, así
+                     que sirve encima de CUALQUIER fondo — botón
+                     claro, botón oscuro, los dos temas. Va como
+                     background-image, dejando el color de fondo
+                     al background-color de debajo.
+     45° y 9px de paso en las dos, para que sea el mismo rayado. */
+  --rayado: repeating-linear-gradient(135deg,
+              var(--papel) 0 9px, var(--caja) 9px 18px);
+  /* El translúcido ya NO es gris medio para los dos temas: eso lo
+     dejaba muy marcado en claro y algo apagado en oscuro. Ahora
+     cada tema lleva el suyo en --raya, y van en direcciones
+     contrarias — en oscuro la raya ACLARA, en claro OSCURECE muy
+     poco. Ver el bloque del tema claro más abajo. */
+  --raya: rgba(255,255,255,.055);
+  --rayado-sutil: repeating-linear-gradient(135deg,
+              transparent 0 9px, var(--raya) 9px 18px);
+
+  /* Madera. Acento cálido y ESCASO: sale de sus propios specs
+     (los mismos del generador de isométricos), no de una paleta
+     inventada. 8,69:1 sobre negro. */
+  --madera:      #C9A063;  /* pino */
+  --madera-clara:#D8B98A;  /* contraenchapado 18 mm */
+
+  /* El encabezado ya no necesita contrastar con el cuerpo: los dos
+     son negros. Lo que lo separa es un filete de 1px. */
+  --barra:       #000000;
+  --barra-tinta: #FFFFFF;
+  --barra-suave: #A0A0A0;
+  --barra-linea: #2E2E2E;
+
+  /* colores del sello 3D. Los originales (#2A5180 azul, #B4453C
+     rojo) daban 2,59:1 y 3,86:1 sobre negro — el azul se perdía,
+     el mismo problema que el acero #5A6169. Aclarados para pasar
+     de 3:1 como elemento gráfico. */
+  --tres:     #7BA7DE;
+  --de:       #E0736A;
 
   --ancho:    1240px;
   --canal:    clamp(20px, 5vw, 56px);
 
-  /* Esquinas. Antes eran 2px (casi rectas). */
-  --radio:    12px;
-  --radio-chico: 8px;
-  --radio-grande: 20px;
+  /* Altura común de los controles del encabezado (lupa, idioma,
+     tema). Es la del conmutador de idioma, que era el del medio. */
+  --alto-control: 31px;
 
-  /* radio de las esquinas colgantes del encabezado */
-  --curva-barra: 46px;
+  /* Esquinas: TODO cuadrado. Decisión suya del 2026-08-08.
+     Se conservan las variables para no reescribir 40 reglas, pero
+     valen 0. Si alguna vez se quiere volver a redondear, se cambia
+     aquí y vuelve todo. */
+  --radio:    0;
+  --radio-chico: 0;
+  --radio-grande: 0;
+
+  /* La curva colgante del encabezado: eliminada. */
+  --curva-barra: 0;
 
   /* Curva de aceleración. Es la que le da el aire de Apple:
      arranca rápido y frena suave. */
   --curva:    cubic-bezier(.22, .68, 0, 1);
   --curva-suave: cubic-bezier(.4, 0, .2, 1);
 
-  --sans: "Helvetica Neue", "Segoe UI", system-ui, Arial, sans-serif;
+  /* DECISIÓN 2026-08-09 · sistema de dos letras:
+       · El LOGOTIPO va en Poppins, y es una imagen (img/marca/),
+         no texto. Por eso Poppins no hace falta aquí.
+       · TODO lo demás del sitio va en Roboto.
+     Son dos familias distintas a propósito: la geométrica firma,
+     la neutra se lee. Roboto no compite con el logotipo.
+
+     Para probar otra, cambia SOLO esta línea. Descargadas y listas
+     en `fuentes/`: 'Roboto Condensed', 'Poppins', 'Barlow Condensed',
+     'Oswald'. Ojo: solo hay pesos 400 y 700 de cada una. */
+  --sans: 'Roboto', 'Segoe UI', system-ui, sans-serif;
+  /* La del logotipo. Desde el 2026-08-11 el logo es texto, así que
+     Poppins sí hace falta en la hoja. Solo la usa .marca__texto. */
+  --display: 'Poppins', 'Roboto', system-ui, sans-serif;
 }
 
-/* NO hay tema oscuro. El sitio es siempre cuerpo hueso con la
-   barra oscura: es una decisión de diseño, no una preferencia.
-   Antes seguía el modo del sistema, y a quien tuviera el
-   computador en oscuro le salía todo khaki oscuro en vez del
-   hueso. Si algún día se quiere tema oscuro, va aquí. */
-:root { color-scheme: light; }
+/* ============================================================
+   MODO CLARO  ·  2026-08-09
+   El sitio arranca en OSCURO. El visitante puede pasarlo a claro
+   con el conmutador del encabezado, y la elección se guarda.
+   NO sigue la preferencia del sistema a propósito: la marca es
+   negra, y quien no toque nada debe ver la marca.
+
+   Todo el modo claro son estos tokens. No hay una sola regla
+   duplicada más abajo, porque el sitio entero lee de aquí.
+
+   Razones de contraste MEDIDAS, no estimadas (mínimo 4,5:1):
+     #000000 sobre blanco = 21:1
+     #5A5A5A sobre blanco = 6,9:1   (límite util: #767676 = 4,54)
+     #D10010 sobre blanco = 5,65:1
+     blanco  sobre #B00010 = 7,36:1
+
+   OJO, y es la trampa que ya mordió al invertir a negro: LOS DOS
+   ROJOS VUELVEN A INTERCAMBIAR PAPELES.
+     sobre NEGRO  -> escribe #FF0009 (5,26) · rellena #D10010
+     sobre BLANCO -> escribe #D10010 (5,65) · rellena #B00010
+   El #FF0009 sobre blanco solo da 4:1 y NO sirve para texto.
+   ============================================================ */
+:root[data-tema="claro"] {
+  --tinta:    #000000;
+  --papel:    #FFFFFF;
+  --apagado:  #5A5A5A;
+  --linea:    #DDDDDD;
+  --caja:     #F4F4F4;
+  --caja-alta:#EAEAEA;
+
+  /* La raya del modo claro, mucho más floja: sobre blanco un gris
+     al 14% se veía casi como una persiana. */
+  --raya: rgba(0,0,0,.03);
+
+  /* Siena tostada sobre blanco. Sobre papel claro el vivo #E97451
+     solo da 2,81:1, así que aquí escribe el oscuro:
+       #B4441F sobre blanco  = 5,55:1  → texto y líneas
+       blanco sobre #93361A  = 7,55:1  → relleno                */
+  --realce:      #B4441F;   /* texto y líneas */
+  --realce-hondo:#93361A;   /* relleno con blanco encima */
+  --realce-vivo: #B4441F;
+
+  /* En claro la barra del menú va MÁS VIVA que el resto del
+     acento: Burnt Orange 1923 (#C04E00) de su paleta. Al no
+     llevar azul es el naranja más saturado que hay ahí, y aun así
+     da 4,85:1 sobre blanco — de sobra para una barra de 3px. */
+  --nav-activa: #C04E00;
+
+  /* El encabezado deja de ser una franja oscura: es el mismo
+     blanco que el cuerpo, separado por el filete de 1px. */
+  --barra:       #FFFFFF;
+  --barra-tinta: #000000;
+  --barra-suave: #5A5A5A;
+  --barra-linea: #DDDDDD;
+
+  /* Sello 3D: sobre blanco vuelven a servir los colores originales,
+     que sobre negro se perdían (2,59:1 el azul). */
+  --tres:     #2A5180;      /* 8,12:1 */
+  --de:       #B4453C;      /* 5,44:1 */
+}
+
+/* El sello "3D" por defecto es blanco, que es lo seguro sobre la
+   tarjeta negra. En claro la tarjeta es #F4F4F4 y el blanco
+   desaparece, así que el valor por defecto pasa a negro. Las dos
+   variantes que pone el JS según el brillo de la foto siguen
+   mandando igual en los dos temas. */
+:root[data-tema="claro"] .marca3d {
+  border-color: var(--barra-tinta);
+  color: var(--barra-tinta);
+}
+
+/* La franja del encabezado ya no contrasta por color, solo por el
+   filete. Sin esto, en claro no se distingue del cuerpo al bajar. */
+:root[data-tema="claro"] .cabecera { border-bottom-color: var(--linea); }
+
+:root { color-scheme: dark; }
+:root[data-tema="claro"] { color-scheme: light; }
 
 *, *::before, *::after { box-sizing: border-box; }
 
@@ -80,16 +302,25 @@ a   { color: inherit; }
 
 /* --- Tipografía ------------------------------------------- */
 
-h1, h2, h3 { font-weight: 800; letter-spacing: -.03em; line-height: 1.05; margin: 0; }
-h1 { font-size: clamp(2.4rem, 6vw, 4.6rem); }
-h2 { font-size: clamp(1.7rem, 3.4vw, 2.6rem); }
+/* Sin tracking negativo: eso se le hace a una grotesca ancha para
+   apretarla. Una condensada ya viene apretada de fábrica, y
+   restarle más junta las astas y ensucia el titular. */
+h1, h2, h3 { font-weight: 700; letter-spacing: 0; line-height: 1.05; margin: 0; }
+/* 2026-08-09 · bajado un 25%: era clamp(2.4rem, 6vw, 4.6rem) */
+/* 2026-08-11 · Los titulares bajaron un 20% a petición suya.
+   h1: 1,8 / 4,5vw / 3,45rem  ->  1,44 / 3,6vw / 2,76rem
+   h2: 1,7 / 3,4vw / 2,6rem   ->  1,36 / 2,72vw / 2,08rem
+   El clamp entero se escala, no solo el tope: si se toca solo el
+   máximo, en pantallas medianas el tamaño no cambia. */
+h1 { font-size: clamp(1.44rem, 3.6vw, 2.76rem); }
+h2 { font-size: clamp(1.36rem, 2.72vw, 2.08rem); }
 h3 { font-size: 1.15rem; letter-spacing: -.02em; line-height: 1.25; }
 
 .rotulo {
   font-size: .72rem; font-weight: 700; text-transform: uppercase;
   letter-spacing: .16em; color: var(--apagado);
 }
-.bajada { color: var(--apagado); font-size: 1.05rem; max-width: 54ch; margin: 1rem 0 0; }
+.bajada { color: var(--apagado); font-size: .95rem; max-width: 54ch; margin: .5rem 0 0; }
 
 /* --- Cabecera --------------------------------------------- */
 
@@ -98,87 +329,175 @@ h3 { font-size: 1.15rem; letter-spacing: -.02em; line-height: 1.25; }
   background: color-mix(in srgb, var(--barra) 92%, transparent);
   backdrop-filter: saturate(1.4) blur(14px);
   color: var(--barra-tinta);
-
+  border-bottom: 1px solid var(--barra-linea);
 }
 
-/* Las esquinas de abajo de la franja: la curva va hacia ABAJO,
-   no hacia arriba. Con border-radius se recorta la esquina y la
-   curva sale al revés; aquí se dibujan dos cuartos de círculo
-   invertidos que cuelgan del borde inferior, y el marrón baja
-   por los lados abrazando el cuerpo. */
-.cabecera::after {
-  content: ""; position: absolute; left: 0; right: 0; top: 100%;
-  height: var(--curva-barra);
-  pointer-events: none;
-  background:
-    radial-gradient(circle at 100% 100%,
-      transparent var(--curva-barra), var(--barra) calc(var(--curva-barra) + .5px))
-      left top / var(--curva-barra) var(--curva-barra) no-repeat,
-    radial-gradient(circle at 0 100%,
-      transparent var(--curva-barra), var(--barra) calc(var(--curva-barra) + .5px))
-      right top / var(--curva-barra) var(--curva-barra) no-repeat;
-}
+/* 2026-08-12 · Aquí vivía una franja rayada pegada al borde de
+   abajo del encabezado. Fuera: el encabezado vuelve a separarse
+   solo con el filete de 1px. El rayado se queda únicamente en el
+   pie (.pie::after), que es donde le gustó. */
+
+/* 2026-08-08 · Aquí colgaban dos cuartos de círculo invertidos del
+   borde inferior de la franja. Eliminados: el encabezado ya no es
+   una barra de otro color sobre el cuerpo, es el mismo negro, y lo
+   único que lo separa es el filete de 1px de arriba. Nada de
+   curvas en el sitio. */
 .cabecera__fila {
   display: flex; align-items: center; gap: 2rem;
   height: 120px; max-width: var(--ancho); margin: 0 auto; padding: 0 var(--canal);
   transition: height .35s var(--curva);
 }
 .cabecera.encogida .cabecera__fila { height: 84px; }
-.marca { flex: none; display: flex; align-items: center; gap: .85rem; }
+/* text-decoration: none hace falta desde que el logotipo es texto.
+   Con las dos imágenes no se notaba; ahora .marca es un enlace con
+   palabras dentro y salía subrayado. */
+.marca { flex: none; display: flex; align-items: center; gap: .85rem; text-decoration: none; }
 
+/* 2026-08-09 · el perfil crece un 15% en los tres estados:
+   62→71, 44→51 y 38→44 en móvil. */
 .marca__perfil {
-  height: 62px; width: 62px; border-radius: 50%; object-fit: cover;
+  height: 71px; width: 71px; border-radius: 0; object-fit: cover;
   flex: none; background: var(--caja);
   transition: height .35s var(--curva), width .35s var(--curva);
 }
-.marca__logo {
-  height: 88px; width: auto;
-  transition: height .35s var(--curva);
+/* ------------------------------------------------------------
+   2026-08-11 · El logotipo es TEXTO, no imagen.
+   Poppins 700, todo en caja baja, dos renglones alineados al ras
+   del mismo borde derecho — la geometría del PNG original.
+   Al ser texto hereda el color del tema: el modo claro sale solo
+   y ya no hacen falta dos archivos conmutados.
+   Los PNG de img/marca/ NO se borran: los usan los PDF.
+   ------------------------------------------------------------ */
+.marca__texto {
+  font-family: var(--display, Poppins), var(--sans);
+  font-weight: 700;
+  font-size: 38px;
+  line-height: .92;
+  letter-spacing: -.025em;
+  text-transform: lowercase;
+  text-align: right;
+  color: var(--barra-tinta);
+  white-space: nowrap;
+  transition: font-size .35s var(--curva);
 }
-
-/* al bajar, la cabecera se encoge un poco (efecto Apple) */
-.cabecera.encogida .marca__logo  { height: 60px; }
-.cabecera.encogida .marca__perfil { height: 44px; width: 44px; }
+.cabecera.encogida .marca__texto { font-size: 27px; }
+.cabecera.encogida .marca__perfil { height: 51px; width: 51px; }
 
 /* La barra va oscura en los dos temas, así que el logo del
    encabezado es siempre el claro. El oscuro queda para cuando
    haga falta sobre fondo hueso. */
-.marca__logo--oscuro { display: none; }
-.marca__logo--claro  { display: block; }
+/* Dos archivos del mismo logotipo; se enseña el que contrasta.
+   --claro  = letras BLANCAS, para el fondo negro (por defecto)
+   --oscuro = letras NEGRAS, para el modo claro
+   Los dos están encajados en el mismo marco (1747×886, tinta a
+   la derecha en x1732, arriba en y8), así que al conmutar el
+   logotipo no se mueve ni cambia de tamaño. */
+/* 2026-08-11 · Aquí vivían las cuatro reglas que conmutaban
+   logo.png y logo-claro.png según el tema. El logotipo es texto y
+   hereda --barra-tinta, así que ya no hay nada que conmutar. */
 
 .menu { display: flex; gap: 1.6rem; margin-left: auto; align-items: center; }
+/* 2026-08-12 · La sección activa se marcaba con un filete bajo el
+   texto. Ahora la marca es una BARRA VERTICAL a la izquierda del
+   nombre, de la altura del texto — como una viñeta.
+
+   Se hace con ::before y no con border-left para que la barra
+   pueda medir exactamente el alto de la línea sin estirar el
+   enlace, y para poder animarla desde cero al cambiar de página.
+   El padding-left está SIEMPRE puesto, también en los inactivos:
+   si solo lo llevara el activo, el menú entero se desplazaría al
+   cambiar de sección. */
 .menu a {
-  text-decoration: none; font-size: .93rem; font-weight: 600;
-  color: var(--barra-suave); padding: .3rem 0; border-bottom: 2px solid transparent;
-  transition: color .15s, border-color .15s; white-space: nowrap;
+  position: relative;
+  /* 2026-08-12 · Sin negrita. Solo existen los pesos 400 y 700 de
+     Roboto en fuentes/, así que 400 es el que hay — nada de 500
+     o 600, que el navegador se inventaría deformando el trazo. */
+  text-decoration: none; font-size: .93rem; font-weight: 400;
+  color: var(--barra-suave); padding: .3rem 0 .3rem .62rem;
+  transition: color .15s; white-space: nowrap;
+}
+.menu a::before {
+  content: ""; position: absolute; left: 0; top: 50%;
+  width: 3px; height: 1em; transform: translateY(-50%) scaleY(0);
+  background: var(--nav-activa);
+  transition: transform .2s var(--curva);
 }
 .menu a:hover { color: var(--barra-tinta); }
-.menu a[aria-current="page"] { color: var(--barra-tinta); border-bottom-color: var(--realce-vivo); }
+.menu a[aria-current="page"] { color: var(--barra-tinta); }
+.menu a[aria-current="page"]::before { transform: translateY(-50%) scaleY(1); }
 
-.idioma {
-  display: flex; border: 1px solid var(--barra-linea); border-radius: var(--radio);
+/* 2026-08-12 · La palabrita que sale ENCIMA del nombre de la
+   sección abierta: "Tienda de" Prototipos, "Establece" Contacto.
+
+   Va en position:absolute a propósito. Si fuera un bloque más
+   dentro del enlace, la pestaña activa mediría dos renglones y
+   quedaría desalineada de las demás cada vez que cambias de
+   página. Así ocupa cero altura y nada se mueve. */
+.menu__pre {
+  position: absolute; left: .62rem; bottom: 100%;
+  margin-bottom: .1rem;
+  font-size: .62rem; line-height: 1;
+  letter-spacing: .04em; white-space: nowrap;
+  color: var(--barra-suave); opacity: .62;
+  pointer-events: none;
+}
+.menu__nombre { display: block; }
+
+/* Los tres controles de la esquina —lupa, idioma y tema— comparten
+   ALTURA. Antes medían 38, 31 y 23 px y se veían desalineados. La
+   altura la manda una sola variable: cámbiala y cambian los tres. */
+.idioma, .tema {
+  display: flex; align-items: stretch;
+  height: var(--alto-control);
+  border: 1px solid var(--barra-linea); border-radius: var(--radio);
   overflow: hidden; flex: none;
 }
+/* El rayado estuvo aquí unas horas y salió: en los controles del
+   encabezado ensuciaba. Solo se queda en la franja de abajo. */
 .idioma button {
   font: inherit; font-size: .76rem; font-weight: 700; letter-spacing: .05em;
-  padding: .28rem .55rem; border: 0; background: transparent;
+  padding: 0 .55rem; border: 0; background: transparent;
   color: var(--barra-suave); cursor: pointer;
 }
-.idioma button[aria-pressed="true"] { background: var(--realce-vivo); color: #fff; }
+.idioma button[aria-pressed="true"] { background: var(--realce-hondo); color: #fff; }
+
+/* Conmutador de tema, al lado del de idioma y con la misma caja.
+   Los glifos de sol y luna son neutros de idioma; el texto que lee
+   un lector de pantalla va en el aria-label, que sí se traduce. */
+/* Idioma + tema son un solo bloque: así la fila del encabezado no
+   los reparte en renglones distintos al envolver en móvil. */
+.controles { display: flex; align-items: center; flex: none; }
+.tema { margin-left: .5rem; }
+.tema button {
+  font: inherit; font-size: .9rem; line-height: 1;
+  padding: 0 .5rem; border: 0; background: transparent;
+  color: var(--barra-suave); cursor: pointer;
+  display: grid; place-items: center;
+}
+.tema button[aria-pressed="true"] { background: var(--realce-hondo); color: #fff; }
 
 .hamburguesa { display: none; }
 
-@media (max-width: 900px) {
+/* 2026-08-11 · Este corte estaba en 900px. Subió a 1060 porque el
+   menú pasó de cinco pestañas a seis (entró "Prototipos") y entre
+   900 y 1060 la fila desbordaba: los botones de idioma y tema se
+   salían por la derecha y aparecía barra horizontal.
+   Si algún día se quita una pestaña, se puede volver a bajar. */
+@media (max-width: 1060px) {
   .cabecera__fila, .cabecera.encogida .cabecera__fila { height: auto; gap: 1rem; }
   .marca { gap: .55rem; }
-  .marca__logo,   .cabecera.encogida .marca__logo   { height: 52px; }
-  .marca__perfil, .cabecera.encogida .marca__perfil { height: 38px; width: 38px; }
+  .marca__texto,  .cabecera.encogida .marca__texto  { font-size: 23px; }
+  .marca__perfil, .cabecera.encogida .marca__perfil { height: 44px; width: 44px; }
   .hamburguesa {
     display: block; margin-left: auto; order: 2;
     background: none; border: 0; color: inherit; cursor: pointer;
     font-size: 1.5rem; line-height: 1; padding: .2rem .4rem;
   }
-  .idioma { order: 3; }
+  /* El orden lo lleva el GRUPO, no el idioma suelto. Estaba en
+     `.idioma { order: 3 }`, y al meterlo dentro de .controles ese
+     orden pasó a actuar entre hermanos del grupo: dejaba el tema
+     delante del idioma. */
+  .controles { order: 3; }
   .menu {
     order: 4; width: 100%; display: none; flex-direction: column;
     align-items: flex-start; gap: 0; margin: 0;
@@ -186,7 +505,17 @@ h3 { font-size: 1.15rem; letter-spacing: -.02em; line-height: 1.25; }
   }
   .menu.abierto { display: flex; }
   .cabecera__fila { flex-wrap: wrap; height: auto; padding-top: .8rem; padding-bottom: .8rem; }
-  .menu a { padding: .55rem 0; font-size: 1.05rem; border-bottom: 0; }
+  /* Conserva el hueco de la izquierda: ahí va la barra vertical
+     que marca la sección activa. Sin el padding-left, en móvil la
+     barra se montaría encima de la primera letra. */
+  .menu a { padding: .55rem 0 .55rem .62rem; font-size: 1.05rem; }
+  /* En el menú desplegado de móvil los enlaces van en columna: si
+     la palabrita siguiera absoluta se montaría sobre el enlace de
+     arriba. Aquí sí puede ocupar su propio renglón. */
+  .menu__pre {
+    position: static; display: block; margin: 0 0 .12rem;
+    font-size: .66rem;
+  }
 }
 
 /* --- Botones ---------------------------------------------- */
@@ -195,7 +524,11 @@ h3 { font-size: 1.15rem; letter-spacing: -.02em; line-height: 1.25; }
   display: inline-block; text-decoration: none; cursor: pointer;
   font: inherit; font-size: .92rem; font-weight: 700; letter-spacing: -.01em;
   padding: .8rem 1.5rem; border-radius: var(--radio);
-  border: 1px solid var(--tinta); background: var(--tinta); color: var(--papel);
+  border: 1px solid var(--tinta); color: var(--papel);
+  /* 2026-08-11 · SIN rayado. Lo tuvo unas horas y lo quitó: sobre
+     un botón el patrón se lee como "deshabilitado". El rayado se
+     quedó para fondos y contenedores, no para cosas pulsables. */
+  background: var(--tinta);
   transition: opacity .15s;
 }
 .boton:hover { opacity: .82; }
@@ -204,28 +537,73 @@ h3 { font-size: 1.15rem; letter-spacing: -.02em; line-height: 1.25; }
 
 /* --- Portada ---------------------------------------------- */
 
-.portada { padding: clamp(3.5rem, 9vw, 7rem) 0 clamp(2.5rem, 6vw, 4.5rem); }
+/* 2026-08-11 · Todo el aire vertical bajó a la mitad. Se quejó del
+   hueco entre la cabecera y el título, y entre el título y la
+   lista: eran clamp(3.5rem, 9vw, 7rem) arriba. */
+.portada { padding: clamp(1.75rem, 4.5vw, 3.5rem) 0 clamp(1.25rem, 3vw, 2.25rem); }
 .portada h1 { max-width: 16ch; }
-.portada .acciones { display: flex; gap: .8rem; margin-top: 2.2rem; flex-wrap: wrap; }
+.portada .acciones { display: flex; gap: .8rem; margin-top: 1.1rem; flex-wrap: wrap; }
 
-.seccion { padding: clamp(3rem, 7vw, 5.5rem) 0; border-top: 1px solid var(--linea); }
+/* 2026-08-12 · El título de sección y su bajada van PEGADOS A LA
+   DERECHA y sin negrita. Los `margin-left: auto` son necesarios:
+   sin ellos el `max-width` deja la caja a la izquierda y el texto
+   se alinea a la derecha dentro de una caja que no llega al borde,
+   que no es lo que se ve venir al leer "pegado a la derecha".
+   La portada de Novedades queda fuera: ahí el titular es el
+   reclamo de la marca y va a la izquierda con sus botones. */
+body:not([data-pagina="novedades"]) .portada {
+  text-align: right;
+}
+body:not([data-pagina="novedades"]) .portada h1 {
+  font-weight: 400; margin-left: auto;
+}
+body:not([data-pagina="novedades"]) .portada .bajada {
+  margin-left: auto;
+}
+
+.seccion { padding: clamp(1.5rem, 3.5vw, 2.75rem) 0; border-top: 1px solid var(--linea); }
 .seccion__cabeza {
   display: flex; align-items: baseline; justify-content: space-between;
-  gap: 1rem; margin-bottom: 2.2rem; flex-wrap: wrap;
+  gap: 1rem; margin-bottom: 1.1rem; flex-wrap: wrap;
 }
-.seccion__cabeza a { color: var(--apagado); font-size: .9rem; font-weight: 600; }
+.seccion__cabeza a { color: var(--apagado); font-size: .9rem; font-weight: 700; }
 
 /* --- Rejilla de tarjetas ---------------------------------- */
 
+/* 2026-08-11 · Las tarjetas dejaron de flotar separadas y pasaron
+   a ser un BLOQUE PEGADO: sin huecos, divididas por un filete de
+   1px y todas cuadradas. Es lo que él pidió al ver la maqueta del
+   catálogo.
+
+   El truco: la rejilla lleva gap:1px y se pinta del color del
+   filete; las tarjetas van encima con el fondo de caja. Los
+   "huecos" de 1px que quedan son el fondo asomándose, así que no
+   hay bordes dobles ni esquinas que no cuadren. */
 .rejilla {
-  display: grid; gap: clamp(1.4rem, 3vw, 2.6rem);
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr));
+  display: grid;
+  gap: 1px;
+  background: var(--linea);
+  border: 1px solid var(--linea);
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 265px), 1fr));
 }
 
-.tarjeta { text-decoration: none; color: inherit; display: block; }
+.tarjeta {
+  text-decoration: none; color: inherit;
+  display: flex; flex-direction: column;
+  background: var(--caja);
+  padding-bottom: .85rem;
+  transition: background .18s var(--curva-suave);
+}
+.tarjeta:hover { background: var(--caja-alta); }
+/* El texto lleva su propio margen; la imagen va al ras del borde. */
+.tarjeta > h3,
+.tarjeta > .tarjeta__meta,
+.tarjeta > .tarjeta__precio { padding-left: .8rem; padding-right: .8rem; }
+
 .tarjeta__marco {
-  position: relative; background: var(--caja); border-radius: var(--radio-grande);
-  aspect-ratio: 4 / 3; overflow: hidden; margin-bottom: .9rem;
+  position: relative; background: var(--caja); border-radius: 0;
+  aspect-ratio: 4 / 3; overflow: hidden;
+  margin-bottom: .7rem; border-bottom: 1px solid var(--linea);
 }
 .tarjeta__marco img {
   width: 100%; height: 100%; object-fit: cover;
@@ -244,9 +622,9 @@ h3 { font-size: 1.15rem; letter-spacing: -.02em; line-height: 1.25; }
   position: absolute; top: .7rem; left: .7rem; z-index: 2;
   background: var(--papel); color: var(--apagado);
   font-size: .64rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
-  padding: .28rem .6rem; border-radius: 999px; border: 1px solid var(--linea);
+  padding: .28rem .6rem; border-radius: 0; border: 1px solid var(--linea);
 }
-.insignia--borrador { background: var(--realce); color: #fff; border-color: transparent; }
+.insignia--borrador { background: var(--realce-hondo); color: #fff; border-color: transparent; }
 
 /* ------------------------------------------------------------
    Sello 3D — solo las letras, sin recuadro.
@@ -262,23 +640,35 @@ h3 { font-size: 1.15rem; letter-spacing: -.02em; line-height: 1.25; }
 
 .marca3d {
   position: absolute; top: .7rem; left: .7rem; z-index: 2;
-  font-weight: 800; font-size: .78rem; letter-spacing: .04em;
+  font-weight: 700; font-size: .78rem; letter-spacing: .04em;
   line-height: 1; pointer-events: none; user-select: none;
 
   padding: .34rem .55rem;
   background: transparent;                 /* sin relleno */
-  border: 2.5px solid var(--barra);        /* khaki oscuro */
   border-radius: var(--radio-chico);
-  color: var(--barra);
+  /* Por defecto BLANCO: es el valor seguro. El sello vive sobre una
+     tarjeta negra, y mientras la imagen no ha cargado no hay nada
+     que medir. Si arranca en negro, no se ve. */
+  border: 2.5px solid var(--tinta);
+  color: var(--tinta);
   transition: color .2s var(--curva-suave), border-color .2s var(--curva-suave);
 }
 
-/* Sobre imagen oscura el khaki no se ve. El JS mira el brillo de
-   la esquina donde cae el sello y, si está oscura, lo pasa a
-   color hueso. */
+/* La imagen resultó CLARA: el sello pasa a negro para verse encima. */
+.marca3d--oscuro {
+  border-color: var(--barra);
+  color: var(--barra);
+}
+
+/* Sobre imagen oscura el sello negro no se ve. El JS mira el brillo
+   de la esquina donde cae y, si está oscura, lo pasa a blanco.
+   2026-08-08 — antes esto apuntaba a --papel, que era el hueso.
+   Con la inversión --papel pasó a ser NEGRO, así que la variante
+   "clara" quedó negra sobre negro: 1,08:1, invisible. Ahora apunta
+   a --tinta (blanco, 21:1), que es lo que siempre quiso decir. */
 .marca3d--claro {
-  border-color: var(--papel);
-  color: var(--papel);
+  border-color: var(--tinta);
+  color: var(--tinta);
 }
 
 
@@ -344,8 +734,8 @@ h3 { font-size: 1.15rem; letter-spacing: -.02em; line-height: 1.25; }
   pointer-events: none;
 }
 .tira__play span {
-  width: 26px; height: 26px; border-radius: 50%;
-  background: rgba(30,24,16,.62); color: #fff;
+  width: 26px; height: 26px; border-radius: 0;
+  background: rgba(0,0,0,.62); color: #fff;
   display: grid; place-items: center; font-size: .6rem; padding-left: 2px;
 }
 
@@ -364,8 +754,13 @@ h3 { font-size: 1.15rem; letter-spacing: -.02em; line-height: 1.25; }
 
 .visor-medios__flecha {
   position: absolute; top: 50%; transform: translateY(-50%);
-  width: 42px; height: 42px; border-radius: 50%; border: 0; cursor: pointer; z-index: 3;
-  background: rgba(247,242,232,.92); color: var(--barra);
+  width: 42px; height: 42px; border-radius: 0; border: 0; cursor: pointer; z-index: 3;
+  /* Va encima de una foto, así que no sigue el tema: velo oscuro y
+     glifo blanco, igual que la flecha del carrusel. Antes era crema
+     con `color: var(--barra)`, y en modo claro eso quedaba blanco
+     sobre casi blanco. */
+  background: rgba(0,0,0,.55); color: #fff;
+  border: 1px solid rgba(255,255,255,.45);
   font-size: 1.2rem; line-height: 1; display: grid; place-items: center;
   opacity: 0; transition: opacity .25s var(--curva-suave), transform .2s var(--curva-suave);
 }
@@ -406,7 +801,7 @@ h3 { font-size: 1.15rem; letter-spacing: -.02em; line-height: 1.25; }
 /* --- Configurador (piezas) -------------------------------- */
 
 .precio-vivo {
-  font-size: clamp(1.9rem, 4vw, 2.6rem); font-weight: 800; letter-spacing: -.03em;
+  font-size: clamp(1.9rem, 4vw, 2.6rem); font-weight: 700; letter-spacing: 0;
   margin: .3rem 0 .2rem;
 }
 .precio-nota { color: var(--apagado); font-size: .82rem; margin: 0 0 1.6rem; }
@@ -428,7 +823,7 @@ h3 { font-size: 1.15rem; letter-spacing: -.02em; line-height: 1.25; }
 .opcion__valores small { color: var(--apagado); margin-left: .3rem; }
 
 .disponible { display: inline-flex; align-items: center; gap: .5rem; font-size: .87rem; color: var(--apagado); margin-bottom: 1.2rem; }
-.punto { width: 7px; height: 7px; border-radius: 50%; background: var(--apagado); flex: none; }
+.punto { width: 7px; height: 7px; border-radius: 0; background: var(--apagado); flex: none; }
 .punto--si { background: #3E8E4E; }
 .punto--no { background: #B4453C; }
 
@@ -449,7 +844,7 @@ h3 { font-size: 1.15rem; letter-spacing: -.02em; line-height: 1.25; }
 .pasos li::before {
   content: counter(n, decimal-leading-zero);
   position: absolute; left: 0; top: .1em;
-  font-weight: 800; font-size: .85rem; color: var(--realce); letter-spacing: .05em;
+  font-weight: 700; font-size: .85rem; color: var(--realce); letter-spacing: .05em;
 }
 .pasos strong { display: block; letter-spacing: -.02em; }
 
@@ -484,7 +879,29 @@ h3 { font-size: 1.15rem; letter-spacing: -.02em; line-height: 1.25; }
 
 /* --- Pie -------------------------------------------------- */
 
-.pie { border-top: 1px solid var(--linea); margin-top: clamp(3rem,7vw,6rem); padding: 2.6rem 0 3.4rem; }
+/* 2026-08-12 · La única franja rayada que queda en el sitio.
+   Arranca sólida pegada a la línea de separación y se desvanece
+   hacia abajo. Nació como gemela de una que había en el
+   encabezado; aquella se quitó y esta se quedó.
+
+   `position: relative` es lo que ancla el ::after; sin eso se
+   colocaría respecto de la página entera.
+   -webkit-mask hace falta para Safari, que aún no toma `mask` a
+   secas para gradientes. */
+.pie {
+  position: relative;
+  border-top: 1px solid var(--linea);
+  margin-top: clamp(3rem,7vw,6rem); padding: 2.6rem 0 3.4rem;
+}
+.pie::after {
+  content: ""; position: absolute; left: 0; right: 0; top: 0;
+  height: 38px; background-image: var(--rayado-sutil);
+  pointer-events: none;
+  /* Al revés que arriba: allí el degradado va `to top`, aquí
+     `to bottom`. Sólido en la línea, transparente al 55%. */
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, transparent 55%);
+          mask-image: linear-gradient(to bottom, #000 0%, transparent 55%);
+}
 .pie__fila { display: flex; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; align-items: center; color: var(--apagado); font-size: .87rem; }
 .pie__enlaces { display: flex; gap: 1.2rem; flex-wrap: wrap; }
 .pie a { text-decoration: none; }
@@ -532,8 +949,14 @@ h3 { font-size: 1.15rem; letter-spacing: -.02em; line-height: 1.25; }
 .carrusel {
   position: relative; overflow: hidden; background: var(--caja);
   border-radius: var(--radio-grande);
-  max-width: var(--ancho); margin: 0 auto;
+  /* Se alinea con el CONTENIDO de .contenedor, no con su caja.
+     .contenedor mide --ancho y lleva --canal de relleno a cada
+     lado, así que su texto vive en (--ancho - 2×--canal). Antes el
+     carrusel usaba --ancho a secas y se salía --canal por cada lado
+     respecto de todo lo demás de la página. */
+  max-width: calc(var(--ancho) - var(--canal) * 2);
   width: calc(100% - var(--canal) * 2);
+  margin: 0 auto;
 }
 .carrusel__pista {
   display: flex;
@@ -548,20 +971,23 @@ h3 { font-size: 1.15rem; letter-spacing: -.02em; line-height: 1.25; }
 .carrusel__pie {
   position: absolute; left: 0; right: 0; bottom: 0;
   padding: clamp(1.5rem, 5vw, 3rem);
-  background: linear-gradient(to top, rgba(42,35,24,.88), rgba(42,35,24,.42) 55%, transparent);
-  color: #F5EEE1;
+  /* Mismo caso: velo oscuro sobre foto, texto blanco fijo en los dos
+     temas. El degradado era el marrón viejo rgba(42,35,24,...). */
+  background: linear-gradient(to top, rgba(0,0,0,.88), rgba(0,0,0,.42) 55%, transparent);
+  color: #fff;
 }
-.carrusel__pie .rotulo { color: rgba(245,238,225,.75); }
+.carrusel__pie .rotulo { color: rgba(255,255,255,.75); }
 .carrusel__pie h3 {
-  font-size: clamp(1.3rem, 3vw, 2.1rem); margin-top: .3rem; color: #F5EEE1;
+  font-size: clamp(1.3rem, 3vw, 2.1rem); margin-top: .3rem; color: #fff;
 }
-.carrusel__pie p { margin: .5rem 0 0; max-width: 46ch; font-size: .95rem; color: rgba(245,238,225,.85); }
+.carrusel__pie p { margin: .5rem 0 0; max-width: 46ch; font-size: .95rem; color: rgba(255,255,255,.85); }
 
 .carrusel__flecha {
   position: absolute; top: 50%; transform: translateY(-50%);
-  width: 46px; height: 46px; border-radius: 50%;
+  width: 46px; height: 46px; border-radius: 0;
   border: 0; cursor: pointer; z-index: 3;
-  background: rgba(250,246,240,.9); color: #2E2118;
+  background: rgba(0,0,0,.55); color: #fff;
+  border: 1px solid rgba(255,255,255,.45);
   font-size: 1.2rem; line-height: 1; display: grid; place-items: center;
   opacity: 0; transition: opacity .3s var(--curva-suave), transform .2s var(--curva-suave);
 }
@@ -576,11 +1002,11 @@ h3 { font-size: 1.15rem; letter-spacing: -.02em; line-height: 1.25; }
   display: flex; justify-content: center; gap: .45rem;
 }
 .carrusel__puntos button {
-  width: 7px; height: 7px; padding: 0; border: 0; border-radius: 50%;
-  background: rgba(250,246,240,.45); cursor: pointer;
+  width: 7px; height: 7px; padding: 0; border: 0; border-radius: 0;
+  background: rgba(255,255,255,.45); cursor: pointer;
   transition: width .35s var(--curva), background .35s var(--curva-suave);
 }
-.carrusel__puntos button[aria-current="true"] { width: 22px; border-radius: 4px; background: #FAF6F0; }
+.carrusel__puntos button[aria-current="true"] { width: 22px; border-radius: 0; background: #fff; }
 
 /* ============================================================
    NOVEDAD — la tarjeta grande del inicio con el video
@@ -602,20 +1028,32 @@ h3 { font-size: 1.15rem; letter-spacing: -.02em; line-height: 1.25; }
 .novedad__capa {
   position: absolute; inset: 0; display: flex; flex-direction: column;
   justify-content: flex-end; padding: clamp(1.4rem, 4vw, 2.8rem);
-  background: linear-gradient(to top, rgba(30,24,16,.90), rgba(30,24,16,.35) 55%, rgba(30,24,16,.05));
-  color: #F7F2E8;
+  /* Velo para que el texto blanco se lea sobre la foto. Es negro en
+     los dos temas: lo que hay debajo es una imagen, no el fondo del
+     sitio. Antes era el marrón viejo rgba(30,24,16,...). */
+  background: linear-gradient(to top, rgba(0,0,0,.90), rgba(0,0,0,.35) 55%, rgba(0,0,0,.05));
+  /* REGLA: lo que va encima de una foto es BLANCO FIJO, nunca
+     var(--tinta). El velo de abajo es oscuro en los dos temas, así
+     que en modo claro un --tinta negro quedaba negro sobre negro.
+     Es el fallo que se veía en el título del carrusel. */
+  color: #fff;
 }
 .novedad__etiqueta {
   align-self: flex-start; margin-bottom: .8rem;
-  background: var(--realce-vivo); color: #fff;
-  font-size: .66rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase;
-  padding: .32rem .7rem; border-radius: 999px;
+  /* relleno con el rojo PROFUNDO: blanco sobre #FF0009 solo da 4:1,
+     sobre #D10010 da 5,65:1. Medido 2026-08-08. */
+  background: var(--realce-hondo); color: #fff;
+  font-size: .66rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+  padding: .32rem .7rem; border-radius: 0;
 }
-.novedad__capa h2 { color: #F7F2E8; max-width: 18ch; }
-.novedad__capa p  { color: rgba(247,242,232,.86); max-width: 52ch; margin: .8rem 0 0; font-size: 1rem; }
+.novedad__capa h2 { color: #fff; max-width: 18ch; }
+/* Los textos de la portada y del carrusel van SIEMPRE sobre foto,
+   con su propio velo oscuro: son blancos en los dos temas y no
+   siguen los tokens. Antes eran crema, de la paleta vieja. */
+.novedad__capa p  { color: rgba(255,255,255,.86); max-width: 52ch; margin: .8rem 0 0; font-size: 1rem; }
 .novedad__ir {
   display: inline-flex; align-items: center; gap: .5rem; margin-top: 1.4rem;
-  font-weight: 700; font-size: .95rem; color: #F7F2E8;
+  font-weight: 700; font-size: .95rem; color: var(--tinta);
 }
 .novedad__ir span { transition: transform .25s var(--curva); }
 .novedad:hover .novedad__ir span { transform: translateX(5px); }
@@ -653,12 +1091,12 @@ h3 { font-size: 1.15rem; letter-spacing: -.02em; line-height: 1.25; }
 
 .lupa {
   flex: none; display: grid; place-items: center;
-  width: 38px; height: 38px; border-radius: 50%;
+  width: var(--alto-control); height: var(--alto-control); border-radius: 0;
   background: transparent; border: 1px solid var(--barra-linea);
   color: var(--barra-suave); cursor: pointer;
   transition: background .2s var(--curva-suave), color .2s var(--curva-suave);
 }
-.lupa:hover { background: var(--realce); border-color: var(--realce); color: #fff; }
+.lupa:hover { background: var(--realce-hondo); border-color: var(--realce-hondo); color: #fff; }
 .lupa svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2.1; }
 
 .buscador {
@@ -695,7 +1133,7 @@ h3 { font-size: 1.15rem; letter-spacing: -.02em; line-height: 1.25; }
 
 .buscador__lista { overflow-y: auto; padding: .5rem 0 .8rem; }
 .buscador__grupo {
-  font-size: .68rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase;
+  font-size: .68rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
   color: var(--apagado); padding: .9rem 1.2rem .4rem;
 }
 .buscador__item {
@@ -721,7 +1159,7 @@ h3 { font-size: 1.15rem; letter-spacing: -.02em; line-height: 1.25; }
 }
 .contactos a:hover { border-color: var(--tinta); transform: translateY(-2px); }
 .contactos__icono {
-  flex: none; width: 42px; height: 42px; border-radius: 50%;
+  flex: none; width: 42px; height: 42px; border-radius: 0;
   display: grid; place-items: center; background: var(--caja); color: var(--realce);
   transition: background .22s var(--curva-suave), color .22s var(--curva-suave);
 }
@@ -748,7 +1186,7 @@ h3 { font-size: 1.15rem; letter-spacing: -.02em; line-height: 1.25; }
   position: absolute; right: .8rem; bottom: .8rem; z-index: 4;
   display: inline-flex; align-items: center; gap: .5rem;
   font: inherit; font-size: .83rem; font-weight: 700;
-  padding: .6rem 1rem; border-radius: 100px; cursor: pointer;
+  padding: .6rem 1rem; border-radius: 0; cursor: pointer;
   border: 1px solid var(--linea);
   background: color-mix(in srgb, var(--papel) 92%, transparent);
   backdrop-filter: blur(10px);

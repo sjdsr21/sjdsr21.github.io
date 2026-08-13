@@ -46,6 +46,9 @@ window.Visor3D = (function () {
      -------------------------------------------------------- */
   function abrir(contenedor, rutaGlb, textos) {
     textos = textos || {};
+    /* Si ya había uno montado aquí, se apaga antes de montar el
+       nuevo. */
+    cerrar(contenedor);
     contenedor.innerHTML = '<div class="visor3d__aviso">' + (textos.cargando || "Cargando…") + "</div>";
 
     cargarLibreria().then(function () {
@@ -233,8 +236,19 @@ window.Visor3D = (function () {
       console.error(e);
     });
 
+    /* 2026-08-11 · El bucle no tenía freno y el ResizeObserver no
+       se soltaba nunca. Con un visor por página daba igual: se
+       abría una vez y ahí se quedaba. Pero en el panel de
+       Prototipos el visor se vuelve a montar CADA VEZ que cambias
+       de madera, y sin esto cada cambio dejaba otro bucle vivo y
+       otro contexto WebGL. El navegador solo aguanta unos 16:
+       a la novena vuelta el visor se quedaba en negro. */
+    var vivo = true;
+    var cuadro = null;
+
     function bucle() {
-      requestAnimationFrame(bucle);
+      if (!vivo) return;
+      cuadro = requestAnimationFrame(bucle);
       if (control) control.update();
       render.render(escena, camara);
     }
@@ -254,7 +268,38 @@ window.Visor3D = (function () {
       render.setSize(a, b);
     });
     ro.observe(contenedor);
+
+    /* El apagado queda colgado del propio contenedor, así que
+       cerrar() no necesita llevar registro de nada. */
+    contenedor.__cerrarVisor = function () {
+      vivo = false;
+      if (cuadro) cancelAnimationFrame(cuadro);
+      ro.disconnect();
+      if (control && control.dispose) control.dispose();
+      escena.traverse(function (o) {
+        if (o.geometry) o.geometry.dispose();
+        if (!o.material) return;
+        [].concat(o.material).forEach(function (m) {
+          Object.keys(m).forEach(function (k) {
+            if (m[k] && m[k].isTexture) m[k].dispose();
+          });
+          m.dispose();
+        });
+      });
+      /* forceContextLoss libera el contexto WebGL de una vez, sin
+         esperar al recolector de basura. Sin esto el navegador se
+         queda con los contextos ocupados un buen rato. */
+      if (render.forceContextLoss) render.forceContextLoss();
+      render.dispose();
+      delete contenedor.__cerrarVisor;
+    };
   }
 
-  return { abrir: abrir };
+  /* Apaga el visor de un contenedor, si tiene uno. Es seguro
+     llamarla siempre, aunque no haya nada montado. */
+  function cerrar(contenedor) {
+    if (contenedor && contenedor.__cerrarVisor) contenedor.__cerrarVisor();
+  }
+
+  return { abrir: abrir, cerrar: cerrar };
 })();

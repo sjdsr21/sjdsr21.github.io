@@ -1,0 +1,340 @@
+/* ============================================================
+   PROTOTIPOS — el catálogo con pedido
+   ------------------------------------------------------------
+   Solo lo usa prototipos.html, pintado por js/prototipos.js.
+   Va aparte de estilo.css para no engordar la hoja que cargan
+   todas las páginas.
+
+   Sigue las mismas reglas del resto del sitio: cero curvas,
+   filete de 1px, y todos los colores por token para que el modo
+   claro salga solo sin escribir una regla más.
+   ============================================================ */
+
+/* Aire a la mitad, igual que en estilo.css: se quejó del hueco
+   entre la cabecera, el título y la lista. */
+.pt-seccion { margin-top: clamp(1.3rem, 3vw, 2.2rem); }
+.pt-cabeza { display: flex; align-items: baseline; gap: .9rem; flex-wrap: wrap; margin-bottom: .35rem; }
+.pt-cabeza h2 { font-size: clamp(1.12rem, 2.4vw, 1.4rem); }
+.pt-cuenta { color: var(--apagado); font-size: .78rem; }
+.pt-bajada { color: var(--apagado); font-size: .85rem; max-width: 62ch; margin-bottom: .75rem; }
+
+/* --- ficha del catálogo (va dentro de .rejilla, la pegada) --- */
+.pt-ficha {
+  background: var(--caja); display: flex; flex-direction: column;
+  text-align: left; border: 0; padding: 0; color: inherit;
+  cursor: pointer; font: inherit;
+  transition: background .18s var(--curva-suave);
+}
+.pt-ficha:hover { background: var(--caja-alta); }
+.pt-ficha__hueco {
+  aspect-ratio: 4 / 3; border-bottom: 1px solid var(--linea);
+  display: grid; place-items: center;
+  color: var(--apagado);
+  font-size: .68rem; letter-spacing: .16em; text-transform: uppercase;
+  background: var(--rayado);   /* el token compartido de estilo.css */
+  overflow: hidden;
+}
+/* OJO: el atenuado va SOLO en el recuadro vacío. Estuvo un rato en
+   .pt-ficha__hueco a secas y, como opacity afecta a los hijos, la
+   foto real salía al 50% de brillo. */
+.pt-ficha__hueco:not(.pt-ficha__hueco--foto) { opacity: .5; }
+.pt-ficha__hueco--foto { padding: 0; }
+.pt-ficha__hueco img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  transition: transform .5s var(--curva);
+}
+/* Las piezas recortadas sin fondo se ven ENTERAS y sobre fondo
+   LISO del color del tema — negro en oscuro, blanco en claro.
+   Nada de rayado detrás: para eso se recortaron. Con `cover` se
+   les cortarían las esquinas, que en un catálogo se lee como un
+   descuido, así que van con `contain` y su aire alrededor. */
+.pt-ficha__hueco--suelto { background: var(--papel); }
+/* Mismo cuidado que en el panel: con width/height al 100% la
+   imagen desborda una caja cuyo alto sale de `aspect-ratio`. */
+/* Mismo criterio que en el panel: el aire lo pone el contenedor y
+   la imagen se estira a él. Ver el comentario largo de
+   .pt-visual__foto--suelto: ni `max-height:100%` ni `inset`
+   funcionan aquí. */
+.pt-ficha__hueco--suelto { padding: .55rem; }
+.pt-ficha__hueco--suelto img {
+  width: 100%; height: 100%;
+  object-fit: contain; padding: 0;
+}
+.pt-ficha:hover .pt-ficha__hueco img { transform: scale(1.04); }
+/* Más compacto: relleno de 1rem a .8rem y el resumen más chico. */
+.pt-ficha__cuerpo { padding: .8rem .8rem .9rem; display: flex; flex-direction: column; gap: .35rem; flex: 1; }
+.pt-ficha h3 { font-size: .88rem; }
+.pt-ficha__res { font-size: .74rem; color: var(--apagado); line-height: 1.4; flex: 1; }
+.pt-ficha__pie { display: flex; align-items: baseline; justify-content: space-between; gap: .6rem; margin-top: .25rem; }
+.pt-precio { font-size: 1.13rem; font-weight: 700; white-space: nowrap; }
+.pt-desde { font-size: .68rem; font-weight: 400; color: var(--apagado); margin-right: .3rem; }
+
+.pt-estado {
+  font-size: .62rem; letter-spacing: .13em; text-transform: uppercase;
+  padding: .2rem .45rem; border: 1px solid var(--linea); color: var(--apagado);
+  white-space: nowrap;
+}
+.pt-estado--hay    { color: var(--tinta);  border-color: var(--apagado); }
+.pt-estado--poco   { color: var(--realce); border-color: var(--realce); }
+.pt-estado--pedido { color: var(--madera); border-color: var(--madera); }
+
+/* --- panel lateral de configuración ------------------------- */
+.pt-velo { position: fixed; inset: 0; background: rgba(0,0,0,.75); display: none; z-index: 100; }
+.pt-velo.abierto { display: block; }
+:root[data-tema="claro"] .pt-velo { background: rgba(0,0,0,.42); }
+
+/* 2026-08-11 · El panel se ensanchó de 460 a 880 para que quepa la
+   visual a la izquierda de las opciones. Sigue siendo un panel
+   lateral, no una página: él dijo expresamente que le gusta no
+   tener que salir de la lista. */
+.pt-panel {
+  position: fixed; top: 0; right: 0; bottom: 0; width: min(880px, 100%);
+  background: var(--papel); border-left: 1px solid var(--linea);
+  z-index: 101; display: none; flex-direction: column;
+  transform: translateX(100%); transition: transform .28s var(--curva);
+}
+.pt-panel.abierto { display: flex; transform: translateX(0); }
+.pt-panel__cab { padding: 1.25rem 1.5rem; border-bottom: 1px solid var(--linea); display: flex; align-items: flex-start; gap: 1rem; }
+.pt-panel__cab h3 { font-size: 1.2rem; flex: 1; }
+.pt-cerrar { font: inherit; font-size: 1.5rem; line-height: 1; color: var(--apagado); background: none; border: 0; cursor: pointer; padding: 0 .1rem; }
+.pt-cerrar:hover { color: var(--realce); }
+/* Dos columnas: la visual manda a la izquierda, lo que se
+   configura a la derecha. Por debajo de 760 se apilan y la visual
+   queda arriba, que es el orden natural al leer. */
+.pt-panel__cuerpo {
+  padding: 1.5rem; overflow-y: auto; flex: 1;
+  display: grid; grid-template-columns: 1fr 300px; gap: 1.5rem;
+  align-items: start;
+}
+@media (max-width: 760px) {
+  .pt-panel__cuerpo { grid-template-columns: 1fr; gap: 1.1rem; }
+}
+.pt-panel__visual { position: sticky; top: 0; }
+
+/* El recuadro de la visual. Cuando no hay modelo, se queda con el
+   mismo rayado de las fichas para que el hueco no parezca un
+   error de carga. */
+/* La proporción del recuadro CAMBIA según lo que se esté viendo.
+   Antes era 1:1 fijo y una foto 4:3 se recortaba por los lados y
+   por abajo: se comía la base de la pieza. Ahora la foto va en su
+   propia proporción y no se pierde nada. Lo pone js/prototipos.js
+   en data-medio. */
+.pt-visual {
+  aspect-ratio: 1 / 1; border: 1px solid var(--linea);
+  background: var(--rayado);
+  display: grid; place-items: center; position: relative;
+  overflow: hidden;
+  transition: aspect-ratio .25s var(--curva);
+}
+.pt-visual[data-medio="foto"]  { aspect-ratio: 4 / 3; }
+.pt-visual[data-medio="video"] { aspect-ratio: 16 / 9; }
+.pt-visual[data-medio="3d"]    { aspect-ratio: 1 / 1; }
+.pt-visual__lienzo { position: absolute; inset: 0; display: grid; place-items: center; }
+.pt-visual .visor3d { width: 100%; height: 100%; border: 0; background: transparent; }
+.pt-visual__foto { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* La pieza recortada se ve ENTERA, sin que le falte nada.
+   OJO CON EL TAMAÑO: aquí había `width:100%; height:100%` y la
+   imagen salía de 518 px de alto dentro de una caja de 369, o sea
+   recortada 150 px por abajo. El motivo es que el alto de
+   .pt-visual viene de `aspect-ratio`, y contra eso un `height:100%`
+   no resuelve: la imagen se dimensionaba solo por el ancho.
+   Con max-width/max-height sí encaja siempre. */
+/* El aire va en el CONTENEDOR, no en la imagen, y la imagen se
+   estira a ese contenedor con object-fit haciendo el encaje.
+
+   Se probaron dos caminos que NO funcionan y conviene no repetir:
+   · `max-height: 100%` — no resuelve, porque el alto de
+     .pt-visual sale de `aspect-ratio` y para los porcentajes eso
+     cuenta como indefinido. La imagen salía 518 px en una caja de
+     369 y se recortaban 150 px por abajo.
+   · `position:absolute; inset:1.1rem` sobre la propia imagen —
+     una imagen es un elemento REEMPLAZADO: con `width:auto` usa
+     su tamaño intrínseco y se salta los insets. */
+.pt-visual[data-suelto="1"] .pt-visual__lienzo { padding: 1.1rem; }
+.pt-visual__foto--suelto {
+  width: 100%; height: 100%;
+  object-fit: contain; padding: 0;
+}
+/* Y la caja se hace cuadrada: las piezas recortadas vienen unas
+   apaisadas y otras verticales, y el cuadrado le da sitio a las
+   dos sin dejar un hueco enorme. */
+.pt-visual[data-suelto="1"] { aspect-ratio: 1 / 1; }
+/* Mismo criterio que en la cuadrícula: si la pieza viene
+   recortada, detrás va el color del tema y no el rayado. Lo pone
+   js/prototipos.js en data-suelto al montar el medio. */
+.pt-visual[data-suelto="1"] { background: var(--papel); }
+.pt-visual__vacio {
+  color: var(--apagado); opacity: .5;
+  font-size: .68rem; letter-spacing: .16em; text-transform: uppercase;
+}
+
+/* --- riel de miniaturas ------------------------------------
+   Arriba a la izquierda, encima del lienzo. Cada una es un medio:
+   la foto de portada primero, luego el 3D, y después lo que se
+   vaya añadiendo (más fotos, vídeo). */
+.pt-medios {
+  position: absolute; top: .5rem; left: .5rem; z-index: 2;
+  display: flex; flex-direction: column; gap: .35rem;
+}
+.pt-medio {
+  width: 42px; height: 42px; padding: 0; cursor: pointer;
+  border: 1px solid var(--linea);
+  background-color: color-mix(in srgb, var(--papel) 78%, transparent);
+  backdrop-filter: blur(6px);
+  display: grid; place-items: center; overflow: hidden;
+  transition: border-color .15s, opacity .15s;
+  opacity: .72;
+}
+.pt-medio:hover { opacity: 1; border-color: var(--apagado); }
+.pt-medio.sel  { opacity: 1; border-color: var(--tinta); }
+.pt-medio img { width: 100%; height: 100%; object-fit: cover; display: block; }
+/* Los medios que no son foto se rotulan con letras, no con un
+   símbolo: un glifo suelto no se entendía. */
+.pt-medio__glifo {
+  font-size: .6rem; font-weight: 700; letter-spacing: .06em;
+  color: var(--tinta); line-height: 1;
+}
+.pt-panel__pie { padding: 1.15rem 1.5rem; border-top: 1px solid var(--linea); }
+.pt-panel__resumen { font-size: .85rem; color: var(--apagado); line-height: 1.55; margin-bottom: 1.6rem; }
+
+.pt-grupo { margin-bottom: 1.6rem; }
+.pt-etiqueta {
+  display: block; font-size: .66rem; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--apagado); margin-bottom: .6rem;
+}
+.pt-ops { display: flex; flex-wrap: wrap; gap: .5rem; }
+.pt-op {
+  border: 1px solid var(--linea); background: none; padding: .55rem .85rem;
+  font: inherit; font-size: .84rem; color: var(--apagado); cursor: pointer;
+  transition: border-color .15s, color .15s, background .15s;
+}
+.pt-op:hover { border-color: var(--apagado); color: var(--tinta); }
+.pt-op.sel { border-color: var(--tinta); color: var(--tinta); background: var(--caja-alta); }
+.pt-d { font-size: .72rem; color: var(--apagado); margin-left: .35rem; }
+.pt-op.sel .pt-d { color: var(--madera); }
+.pt-op:disabled { opacity: .32; cursor: not-allowed; text-decoration: line-through; }
+
+.pt-contador { display: flex; align-items: center; border: 1px solid var(--linea); width: max-content; }
+.pt-contador button {
+  width: 38px; height: 38px; font: inherit; font-size: 1.05rem;
+  background: none; border: 0; color: var(--apagado); cursor: pointer;
+}
+.pt-contador button:hover { color: var(--tinta); background: var(--caja-alta); }
+.pt-contador span { width: 52px; text-align: center; font-size: .95rem; font-weight: 700; }
+.pt-nota-pack { font-size: .78rem; color: var(--madera); margin-top: .5rem; }
+.pt-nota-stock { font-size: .78rem; color: var(--apagado); margin-top: .5rem; }
+
+.pt-precio-panel { display: flex; align-items: baseline; justify-content: space-between; gap: .8rem; margin-bottom: .9rem; }
+.pt-precio-panel .n { font-size: 1.7rem; font-weight: 700; }
+.pt-precio-panel .bs { font-size: .76rem; color: var(--apagado); }
+
+/* --- botones ------------------------------------------------ */
+/* Sin rayado: sobre un botón el patrón se lee como "no funciona". */
+.pt-btn {
+  display: block; width: 100%; padding: .95rem; text-align: center;
+  background-color: var(--tinta);
+  color: var(--papel); font: inherit;
+  font-weight: 700; font-size: .87rem; letter-spacing: .02em;
+  border: 0; border-radius: 0; cursor: pointer;
+  transition: background-color .15s, color .15s;
+}
+.pt-btn:hover { background-color: var(--madera); color: #000; }
+.pt-btn:disabled { background-color: var(--linea); color: var(--apagado); cursor: not-allowed; }
+.pt-btn--wa { background-color: var(--realce-hondo); color: #fff; }
+.pt-btn--wa:hover { background-color: var(--realce); color: #fff; }
+
+/* --- el pedido ---------------------------------------------- */
+.pt-cols {
+  display: grid; grid-template-columns: 1fr 375px; gap: 1px;
+  background: var(--linea); border: 1px solid var(--linea);
+}
+@media (max-width: 900px) { .pt-cols { grid-template-columns: 1fr; } }
+/* Sin rayado: lo tuvo un rato en las dos columnas del pedido y lo
+   quitó. La textura vive ahora SOLO en las casillas de opción que
+   no están escogidas — ver .pt-radio más abajo. */
+.pt-col { background: var(--caja); padding: 1.6rem; }
+
+.pt-linea { display: flex; gap: .9rem; align-items: flex-start; padding: .95rem 0; border-bottom: 1px solid var(--linea); }
+.pt-linea:last-of-type { border-bottom: 0; }
+.pt-linea__desc { flex: 1; min-width: 0; }
+.pt-linea__desc b { font-size: .9rem; display: block; }
+.pt-linea__desc small { font-size: .76rem; color: var(--apagado); display: block; margin-top: .15rem; }
+.pt-linea__packs { font-size: .76rem; color: var(--madera); display: block; margin-top: .15rem; }
+.pt-linea__mon { font-size: .95rem; font-weight: 700; white-space: nowrap; }
+.pt-quitar {
+  font: inherit; font-size: .7rem; color: var(--apagado); background: none; border: 0;
+  text-decoration: underline; cursor: pointer; margin-top: .35rem; padding: 0;
+}
+.pt-quitar:hover { color: var(--realce); }
+.pt-vacio { color: var(--apagado); font-size: .85rem; padding: 1.6rem 0; text-align: center; }
+
+.pt-campo { margin-bottom: 1.4rem; }
+.pt-radios { display: flex; flex-direction: column; gap: 1px; background: var(--linea); border: 1px solid var(--linea); }
+.pt-radio {
+  display: flex; align-items: center; gap: .7rem; padding: .75rem .85rem;
+  background-color: var(--caja); font: inherit; font-size: .84rem; text-align: left;
+  width: 100%; border: 0; color: inherit; cursor: pointer;
+}
+/* Sin rayado aquí tampoco: lo tuvo un rato en las casillas no
+   escogidas y salió. Lo que marca la elección es el cuadradito,
+   que se llena con el acento. */
+.pt-radio:hover { background-color: var(--caja-alta); }
+.pt-radio.sel { background-color: var(--caja-alta); }
+/* El cuadradito es lo único que dice qué está escogido, así que se
+   llena con el acento claro de la paleta (Burnt Sugar). Es el
+   único punto de color de todo el pedido. */
+.pt-radio__punto {
+  width: 11px; height: 11px; border: 1px solid var(--apagado); flex: none;
+  transition: background-color .15s, border-color .15s;
+}
+.pt-radio.sel .pt-radio__punto {
+  border-color: var(--acento-claro);
+  background-color: var(--acento-claro);
+}
+.pt-radio__et { flex: 1; }
+.pt-radio__et small { display: block; font-size: .72rem; color: var(--apagado); margin-top: .1rem; }
+.pt-radio__val { font-size: .76rem; color: var(--apagado); white-space: nowrap; }
+.pt-radio:disabled { opacity: .35; cursor: not-allowed; }
+
+.pt-select {
+  width: 100%; background: var(--caja); border: 1px solid var(--linea);
+  padding: .7rem .8rem; font: inherit; font-size: .84rem; color: inherit;
+  border-radius: 0; appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--apagado) 50%),
+    linear-gradient(135deg, var(--apagado) 50%, transparent 50%);
+  background-position: calc(100% - 18px) 50%, calc(100% - 13px) 50%;
+  background-size: 5px 5px, 5px 5px; background-repeat: no-repeat;
+}
+.pt-select:focus { outline: 1px solid var(--tinta); outline-offset: -1px; }
+
+.pt-fila { display: flex; justify-content: space-between; align-items: baseline; gap: .8rem; margin-bottom: .55rem; font-size: .85rem; }
+.pt-fila .et { color: var(--apagado); }
+.pt-fila--grande { font-size: .95rem; margin-top: .9rem; padding-top: .9rem; border-top: 1px solid var(--linea); }
+.pt-fila--grande .et { color: var(--tinta); font-weight: 700; }
+.pt-fila--grande .n { font-size: 1.62rem; font-weight: 700; }
+.pt-gris { color: var(--apagado); font-size: .72rem; display: block; margin-top: .1rem; text-align: right; }
+
+/* El envío va en su propia caja y NO suma al total: es cobro
+   destino, lo cobra la agencia al entregarlo. */
+.pt-aparte { border: 1px solid var(--linea); padding: .8rem .85rem; margin-top: 1rem; font-size: .82rem; }
+.pt-aparte__top { display: flex; justify-content: space-between; gap: .6rem; margin-bottom: .2rem; }
+.pt-aparte small { color: var(--apagado); font-size: .72rem; line-height: 1.4; display: block; }
+
+.pt-previa {
+  margin-top: .9rem; border: 1px solid var(--linea); background: var(--papel);
+  padding: .95rem; font-size: .78rem; line-height: 1.6; white-space: pre-wrap;
+  color: var(--apagado); max-height: 290px; overflow-y: auto;
+}
+.pt-nota { display: block; color: var(--apagado); font-size: .72rem; margin-top: .6rem; line-height: 1.45; }
+
+/* La tasa del día, arriba a la derecha del recuadro del pedido.
+   Va absoluta para que no empuje las filas de totales hacia abajo. */
+.pt-tasa {
+  position: absolute; top: .7rem; right: 1.6rem;
+  font-size: .66rem; color: var(--apagado); letter-spacing: .02em;
+  text-align: right; line-height: 1.3; max-width: 60%;
+}
+/* La columna necesita ser el ancla de esa posición absoluta. */
+.pt-col { position: relative; }

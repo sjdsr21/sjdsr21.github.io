@@ -1,0 +1,53 @@
+TIPOGRAFIAS DEL SITIO — procedencia y licencias
+Descargadas el 2026-08-08 desde Google Fonts (fonts.gstatic.com).
+Solo subconjuntos latinos, pesos 400 y 700.
+
+Todas son de uso libre, incluido el comercial, y se pueden alojar en
+un servidor propio como se hace aqui. La unica condicion en los tres
+casos es no venderlas por separado y conservar este aviso.
+
+--------------------------------------------------------------------
+Roboto Condensed
+  Autor:    Christian Robertson (Google)
+  Licencia: Apache License 2.0
+  Texto:    https://www.apache.org/licenses/LICENSE-2.0
+  Archivos: RobotoCondensed-400-latin.woff2
+            RobotoCondensed-400-latin-ext.woff2
+            RobotoCondensed-700-latin.woff2
+            RobotoCondensed-700-latin-ext.woff2
+
+  Es la tipografia que usa koma.tokyo. Verificado el 2026-08-08
+  leyendo los estilos computados de su portada: 184 de 212 elementos
+  visibles, en dos pesos (400 y 700).
+
+--------------------------------------------------------------------
+Oswald
+  Autor:    Vernon Adams, Kalapi Gajjar, Cyreal
+  Licencia: SIL Open Font License 1.1
+  Texto:    https://openfontlicense.org
+  Archivos: Oswald-400-latin.woff2, Oswald-400-latin-ext.woff2
+            Oswald-700-latin.woff2, Oswald-700-latin-ext.woff2
+
+--------------------------------------------------------------------
+Barlow Condensed
+  Autor:    Jeremy Tribby
+  Licencia: SIL Open Font License 1.1
+  Texto:    https://openfontlicense.org
+  Archivos: BarlowCondensed-400-latin.woff2
+            BarlowCondensed-400-latin-ext.woff2
+            BarlowCondensed-700-latin.woff2
+            BarlowCondensed-700-latin-ext.woff2
+
+--------------------------------------------------------------------
+COMO SE CAMBIA LA LETRA DEL SITIO
+
+En `css/estilo.css`, dentro de :root, hay una sola linea:
+
+    --sans: 'Roboto Condensed', 'Arial Narrow', 'Segoe UI', system-ui, sans-serif;
+
+Cambia el primer nombre por 'Barlow Condensed' o por 'Oswald' y
+cambia el sitio entero. Las tres ya estan descargadas y declaradas.
+
+OJO: solo hay pesos 400 y 700. No pongas font-weight 300, 500, 600
+ni 800 en ningun sitio: el navegador se lo inventa deformando el
+trazo, y se nota.
