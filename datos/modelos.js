@@ -8,17 +8,20 @@
    pintarles el boton "Ver en 3D". La clave es el nombre de la
    carpeta del proyecto, en minusculas y con guiones.
 
-   Generado: 2026-08-13 09:49
+   Generado: 2026-08-14 16:52
    ============================================================ */
 
 window.MODELOS = {
   "base-alta-de-laptop-pino": "modelos/base-alta-de-laptop-pino.glb",
   "base-alta-de-laptop-saman": "modelos/base-alta-de-laptop-saman.glb",
   "base-baja-de-laptop": "modelos/base-baja-de-laptop.glb",
+  "base-baja-de-laptop-apamate": "modelos/base-baja-de-laptop-apamate.glb",
   "base-baja-de-laptop-saman": "modelos/base-baja-de-laptop-saman.glb",
-  "bases-boda": "modelos/bases-boda.glb",
+  "bases-de-foto": "modelos/bases-de-foto.glb",
+  "bases-de-foto-saman": "modelos/bases-de-foto-saman.glb",
   "butcher-block-l": "modelos/butcher-block-l.glb",
   "cajas-diana-33x12x24": "modelos/cajas-diana-33x12x24.glb",
+  "comedero-mascota": "modelos/comedero-mascota.glb",
   "consola-matias": "modelos/consola-matias.glb",
   "gancho-ery": "modelos/gancho-ery.glb",
   "mesa-cubo-ceramica": "modelos/mesa-cubo-ceramica.glb",

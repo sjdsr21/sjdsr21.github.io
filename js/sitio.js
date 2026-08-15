@@ -13,16 +13,29 @@
   /* Se aplica ANTES que nada, en la primera linea util del script:
      si se esperara a pintar, quien tenga guardado el modo claro
      veria un fogonazo negro en cada carga. */
-  var TEMAS = ["oscuro", "claro"];
+  /* Tres estados: oscuro fijo, claro fijo, y AUTO (2026-08-13),
+     que sigue lo que tenga configurado el sistema. */
+  var TEMAS = ["oscuro", "claro", "auto"];
   var tema = localStorage.getItem("tema");
-  /* Por defecto OSCURO, y a proposito no se mira la preferencia
-     del sistema: la marca es negra, y quien no toque nada tiene
-     que ver la marca. */
+  /* Por defecto OSCURO, y a proposito no se arranca en auto: la
+     marca es negra, y quien no toque nada tiene que ver la marca. */
   if (TEMAS.indexOf(tema) === -1) { tema = "oscuro"; }
+
+  var consultaOscuro = window.matchMedia("(prefers-color-scheme: dark)");
+  /* En auto, si el sistema cambia de modo mientras la pagina esta
+     abierta, la pagina cambia con el. */
+  if (consultaOscuro.addEventListener) {
+    consultaOscuro.addEventListener("change", function () {
+      if (tema === "auto") aplicarTema();
+    });
+  }
+
   aplicarTema();
 
   function aplicarTema() {
-    if (tema === "claro") { document.documentElement.setAttribute("data-tema", "claro"); }
+    var claro = (tema === "claro") ||
+                (tema === "auto" && !consultaOscuro.matches);
+    if (claro) { document.documentElement.setAttribute("data-tema", "claro"); }
     else { document.documentElement.removeAttribute("data-tema"); }
   }
 
@@ -169,6 +182,11 @@
     var lista = [];
     if (w.imagen) lista.push({ tipo: "imagen", src: w.imagen });
     (w.galeria || []).forEach(function (g) { lista.push({ tipo: "imagen", src: g }); });
+    /* El 3D es UN MEDIO MÁS, igual que en los prototipos (él,
+       14/08/2026). Antes era un botón flotando encima de la foto,
+       que no se leía como "otra vista" sino como un adorno. */
+    var modelo = modeloDe(w);
+    if (modelo) lista.push({ tipo: "3d", src: modelo });
     if (w.video) lista.push({ tipo: "video", src: w.video });
     return lista;
   }
@@ -183,13 +201,30 @@
         return el("video", { src: m.src, controls: "", preload: "none",
                              playsinline: "", poster: portadaDe(m.src) });
       }
+      if (m.tipo === "3d") {
+        var visor = el("div", { class: "visor3d" });
+        /* se abre en el siguiente tick: Visor3D mide el contenedor
+           para encuadrar, y aún no está dentro del documento */
+        setTimeout(function () {
+          window.Visor3D.abrir(visor, m.src, {
+            cargando: t("v3d_cargando"), error: t("v3d_error"), ayuda: t("v3d_ayuda")
+          });
+        }, 0);
+        return visor;
+      }
       return el("img", { id: "img-grande", src: m.src, alt: alt || "" });
     }
 
     function mostrar(i) {
+      /* Apagar el visor ANTES de sacarlo del DOM. Si se quita el
+         nodo sin más, el bucle de dibujo sigue vivo contra un
+         canvas huérfano y se queda comiendo GPU toda la visita. */
+      var v3d = $$(".visor3d", principal)[0];
+      if (v3d && window.Visor3D) window.Visor3D.cerrar(v3d);
+
       actual = (i + lista.length) % lista.length;
       /* fuera lo anterior, pero se dejan las flechas */
-      $$("img, video", principal).forEach(function (n) { n.remove(); });
+      $$("img, video, .visor3d", principal).forEach(function (n) { n.remove(); });
       principal.insertBefore(nodoGrande(lista[actual]), principal.firstChild);
       $$("button", tiras).forEach(function (b, j) {
         b.setAttribute("aria-current", j === actual);
@@ -203,11 +238,16 @@
            la izquierda no arrastra megas */
         dentro = [el("img", { src: portadaDe(m.src), alt: "", loading: "lazy" }),
                   el("span", { class: "tira__play" }, [el("span", { html: "&#9654;" })])];
+      } else if (m.tipo === "3d") {
+        /* un .glb no tiene miniatura: va un rótulo, como el que
+           usan los prototipos */
+        dentro = [el("span", { class: "tira__glifo", texto: "3D" })];
       } else {
         dentro = [el("img", { src: m.src, alt: "", loading: "lazy" })];
       }
-      var b = el("button", { class: "tira", type: "button",
-                             "aria-label": (i + 1) + "" }, dentro);
+      var b = el("button", { class: "tira" + (m.tipo === "3d" ? " tira--glifo" : ""),
+                             type: "button",
+                             "aria-label": m.tipo === "3d" ? t("ver_3d") : (i + 1) + "" }, dentro);
       b.addEventListener("click", function () { mostrar(i); });
       tiras.appendChild(b);
     });
@@ -225,14 +265,38 @@
 
     mostrar(0);
 
+    /* Flechas del teclado (él, 14/08/2026). Se cuelgan del
+       documento porque el foco casi nunca está en el visor, y se
+       sueltan si el visor desaparece de la página — sin eso, al
+       navegar a otra pieza quedarían dos oyentes peleándose. */
+    if (lista.length > 1) {
+      var raizVisor = el("div", { class: "visor-medios" }, [tiras, principal]);
+      var alTeclado = function (e) {
+        if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
+        if (!document.body.contains(raizVisor)) {
+          document.removeEventListener("keydown", alTeclado);
+          return;
+        }
+        var act = document.activeElement;
+        if (act && /^(INPUT|TEXTAREA|SELECT)$/.test(act.tagName)) return;
+        e.preventDefault();
+        mostrar(actual + (e.key === "ArrowRight" ? 1 : -1));
+      };
+      document.addEventListener("keydown", alTeclado);
+      return { raiz: raizVisor, principal: principal };
+    }
+
     return {
       raiz: el("div", { class: "visor-medios" }, [tiras, principal]),
       principal: principal
     };
   }
 
-  /* Botón «Ver en 3D» sobre una imagen. Devuelve la caja lista
-     para insertar, con el botón dentro si hay modelo. */
+  /* Caja del visor. Desde el 14/08/2026 el 3D ya NO es un botón
+     flotando encima de la foto: entró en la lista de medios (ver
+     mediosDe), así que aquí solo queda el envoltorio.
+     El botón sigue existiendo para el caso de una pieza que tenga
+     modelo y NINGUNA foto, donde no hay tira de miniaturas. */
   function cajaConVisor(principal, modelo, nombre) {
     var caja = el("div", { class: "medios__caja" }, [principal]);
     if (!modelo) return caja;
@@ -443,8 +507,23 @@
 
   /* Marca un elemento (y opcionalmente sus hijos, escalonados)
      para que aparezca cuando entre en pantalla. */
+  /* Páginas donde el revelado al hacer scroll está APAGADO. Desde
+     el 14/08/2026 estas cuatro entran solo con la cascada de
+     js/escaner.js, que es la misma que la portada. Pedido suyo:
+     una entrada igual en todo el sitio, sin animaciones sueltas
+     encima. El resto —portada, fichas, herramientas— conserva el
+     revelado al bajar. */
+  var SIN_REVELADO = ["trabajos", "novedades", "taller", "contacto"];
+
   function revelar(raiz, selectorHijos, pasoMs) {
     if (menosMovimiento) return;
+    if (SIN_REVELADO.indexOf(document.body.getAttribute("data-pagina")) !== -1) return;
+    /* Saltando de una pieza a otra con las flechas de la ficha no
+       se revela nada. Esta es la animación LARGA —0,85 s con 120
+       de escalonado— y era la que seguía viéndose después de
+       acortar la entrada de js/escaner.js: son dos sistemas
+       distintos y hay que apagar los dos. */
+    if (document.documentElement.classList.contains("esc-corta")) return;
     var objetivos = selectorHijos ? $$(selectorHijos, raiz) : [raiz];
     objetivos.forEach(function (e, i) {
       e.classList.add("revelar");
@@ -541,12 +620,17 @@
        hay que traducirlos. La etiqueta hablada si va traducida. */
     var ETIQUETA_TEMA = {
       oscuro: { es: "Modo oscuro", en: "Dark mode" },
-      claro:  { es: "Modo claro",  en: "Light mode" }
+      claro:  { es: "Modo claro",  en: "Light mode" },
+      auto:   { es: "Automático, según tu sistema",
+                en: "Automatic, follows your system" }
     };
-    var GLIFO_TEMA = { oscuro: "◑", claro: "○" };
+    /* El tercero dice "auto" con letras: un glifo no explicaría
+       que sigue la configuración del ordenador. */
+    var GLIFO_TEMA = { oscuro: "◑", claro: "○", auto: "auto" };
     var botonesTema = TEMAS.map(function (m) {
       var b = el("button", {
         type: "button", texto: GLIFO_TEMA[m],
+        class: m === "auto" ? "tema__auto" : null,
         title: ETIQUETA_TEMA[m][idioma], "aria-label": ETIQUETA_TEMA[m][idioma],
         "aria-pressed": m === tema
       });
@@ -595,6 +679,11 @@
       ])
     ]));
   }
+
+  /* 2026-08-14 · Aquí se montaba la FRANJA DE NOVEDADES: una tira
+     delgada bajo el encabezado con un aviso cruzando de derecha a
+     izquierda. Se probó y no le gustó, así que fuera entera —el
+     JS, su CSS y la lista `avisos` de datos/marca.js—. */
 
   function pintarPie() {
     var host = $("#pie");
@@ -687,6 +776,10 @@
        apareciendo en la ficha de la pieza, al abrirla. Sí se deja
        en el texto alternativo, que es para buscadores y lectores
        de pantalla, no para la vista. */
+    /* 2026-08-14 · La CATEGORÍA tampoco sale ya en la cuadrícula
+       —«exterior», «exhibición», «mesa», «accesorio»—: la quitó
+       él. Sigue en la ficha y en el texto alternativo, que es
+       para buscadores y lectores de pantalla. */
     var meta = [];
     if (w.tipo) meta.push(etiqueta("tipo", w.tipo));
 
@@ -698,8 +791,7 @@
        avisar de que la imagen es un render y no una foto. */
     return el("a", { class: "tarjeta", href: "trabajo.html?id=" + w.slug }, [
       marcoImagen(w.imagen, false, !w.publicado, alt),
-      el("h3", { texto: tx(w.titulo) }),
-      el("div", { class: "tarjeta__meta", texto: meta.join(" · ") })
+      el("h3", { texto: tx(w.titulo) })
     ]);
   }
 
@@ -835,19 +927,11 @@
      no se ejecutaba NADA: ni carrusel, ni video, ni los textos de
      la portada. La página salía en blanco. */
   paginas.novedades = function () {
-    $("#hero-titulo").textContent  = t("hero_titulo");
-    $("#hero-bajada").textContent  = t("hero_bajada");
-    $("#hero-cta1").textContent    = t("hero_cta1");
-    $("#hero-cta2").textContent    = t("hero_cta2");
-
-    /* la portada entra sola al cargar, escalonada */
-    if (!menosMovimiento) {
-      [$("#hero-titulo"), $("#hero-bajada"), $(".portada .acciones")].forEach(function (e, i) {
-        if (!e) return;
-        e.classList.add("entrada");
-        e.style.setProperty("--retraso", (i * 110) + "ms");
-      });
-    }
+    /* 2026-08-14 · Aquí se rellenaba la portada («Muebles hechos
+       de a uno», su bajada y los dos botones) y se le montaba una
+       entrada escalonada propia. Se quitó todo con el bloque del
+       HTML: la página arranca en el carrusel y la entrada la lleva
+       js/escaner.js, igual que el resto del sitio. */
 
     /* El área de novedades: solo lo marcado con novedad:true en
        datos/trabajos.js. Si mañana hay dos, se desliza sola. */
@@ -914,9 +998,77 @@
 
     var host = $("#rejilla");
     host.innerHTML = "";
-    host.appendChild(rejilla(trabajosVisibles(), tarjetaTrabajo));
+    /* `rejilla--tres` la separa de la de Prototipos: aquí van tres
+       por fila y con un hueco entre piezas, no pegadas. */
+    var r = rejilla(trabajosVisibles(), tarjetaTrabajo);
+    r.classList.add("rejilla--tres");
+    host.appendChild(r);
     revelar(host, ".tarjeta", 45);
   };
+
+  /* Los tres botones de la cabecera de una ficha: anterior, volver
+     al catálogo, siguiente.
+
+     Recorre la MISMA lista que la cuadrícula, así que el orden de
+     aquí y el de allá no se pueden desincronizar. Da la vuelta en
+     los extremos: de la última se pasa a la primera.
+
+     Si la pieza que se está viendo no está en la lista —se llegó
+     por un enlace directo a algo sin publicar, con ?borradores=1—
+     no hay anterior ni siguiente, y queda solo el del medio. */
+  function navegarPiezas(w) {
+    var lista = trabajosVisibles();
+    var i = -1;
+    for (var k = 0; k < lista.length; k++) {
+      if (lista[k].slug === w.slug) { i = k; break; }
+    }
+
+    var volver = el("a", {
+      class: "volver navpieza__volver", href: "trabajos.html",
+      texto: t("ficha_volver")
+    });
+
+    if (i < 0 || lista.length < 2) {
+      return el("nav", { class: "navpieza navpieza--sola" }, [volver]);
+    }
+
+    var antes = lista[(i - 1 + lista.length) % lista.length];
+    var luego = lista[(i + 1) % lista.length];
+
+    /* El nombre de la pieza destino va en el `title` y en el texto
+       para lectores de pantalla, no a la vista: con tres botones
+       en una fila, tres nombres largos no caben. */
+    function salto(pieza, clase, flecha, etiqueta) {
+      var a = el("a", {
+        class: "volver navpieza__salto " + clase,
+        href: "trabajo.html?id=" + pieza.slug,
+        title: etiqueta + ": " + tx(pieza.titulo),
+        "aria-label": etiqueta + ": " + tx(pieza.titulo)
+      }, [
+        el("span", { "aria-hidden": "true", texto: flecha })
+      ]);
+
+      /* Se deja una marca para que la página que viene entre con
+         la animación CORTA (él, 14/08/2026): saltando de una pieza
+         a otra, ver la cascada entera cada vez cansa. Cuando se
+         llega desde la cuadrícula sí va completa.
+
+         Va en sessionStorage y no en la dirección: así el enlace
+         que él copie y mande sigue siendo limpio, y la marca no
+         sobrevive a cerrar la pestaña. La lee y la borra
+         js/escaner.js. */
+      a.addEventListener("click", function () {
+        try { sessionStorage.setItem("pt-salto-pieza", "1"); } catch (e) { /* modo privado */ }
+      });
+      return a;
+    }
+
+    return el("nav", { class: "navpieza", "aria-label": t("ficha_volver") }, [
+      salto(antes, "navpieza__antes", "←", t("pieza_anterior")),
+      volver,
+      salto(luego, "navpieza__luego", "→", t("pieza_siguiente"))
+    ]);
+  }
 
   paginas.trabajo = function () {
     var w = window.TRABAJOS.filter(function (x) { return x.slug === parametro("id"); })[0];
@@ -934,8 +1086,9 @@
     var lista = mediosDe(w);
     if (lista.length > 1) {
       /* varias piezas de multimedia: tira de miniaturas + grande */
+      /* sin modelo suelto: el 3D ya viene dentro de `lista` */
       var visor = visorMedios(lista, tx(w.titulo));
-      medios.appendChild(cajaConVisor(visor.raiz, modeloDe(w), tx(w.titulo)));
+      medios.appendChild(el("div", { class: "medios__caja" }, [visor.raiz]));
     } else {
       var principal = el("div", { class: "ficha__principal" });
       if (w.imagen) principal.appendChild(el("img", { id: "img-grande", src: w.imagen, alt: tx(w.titulo) }));
@@ -953,8 +1106,17 @@
     }
 
     /* --- datos --- */
+    /* Tres botones en vez de uno (él, 14/08/2026): anterior, volver
+       al catálogo, y siguiente. La idea es poder recorrer las
+       piezas sin tener que subir a la cuadrícula cada vez.
+
+       El orden es EL MISMO de la cuadrícula —sale de la misma
+       función—, así que "siguiente" lleva a la que está al lado
+       allá. Y da la vuelta al llegar al final: con seis piezas,
+       un botón muerto en los extremos estorba más de lo que
+       avisa. */
     var datos = el("div", { class: "ficha__datos" }, [
-      el("a", { class: "volver", href: "trabajos.html", texto: "← " + t("ficha_volver") }),
+      navegarPiezas(w),
       el("h1", { texto: tx(w.titulo) })
     ]);
 

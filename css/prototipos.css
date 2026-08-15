@@ -25,19 +25,25 @@
   cursor: pointer; font: inherit;
   transition: background .18s var(--curva-suave);
 }
+.pt-ficha:focus-visible { outline: 2px solid var(--realce); outline-offset: -2px; }
 .pt-ficha:hover { background: var(--caja-alta); }
 .pt-ficha__hueco {
   aspect-ratio: 4 / 3; border-bottom: 1px solid var(--linea);
   display: grid; place-items: center;
   color: var(--apagado);
   font-size: .68rem; letter-spacing: .16em; text-transform: uppercase;
-  background: var(--rayado);   /* el token compartido de estilo.css */
+  /* --rayado-hueco y no --rayado: el normal se hace de --papel y
+     --caja, que en el tema claro son blanco y casi blanco, y el
+     hueco quedaba lavado. Este lleva los grises de contraste. */
+  background: var(--rayado-hueco);
   overflow: hidden;
 }
 /* OJO: el atenuado va SOLO en el recuadro vacío. Estuvo un rato en
    .pt-ficha__hueco a secas y, como opacity afecta a los hijos, la
-   foto real salía al 50% de brillo. */
-.pt-ficha__hueco:not(.pt-ficha__hueco--foto) { opacity: .5; }
+   foto real salía al 50% de brillo.
+   Subió de .5 a .85: con el rayado más oscuro, medio atenuado se
+   volvía a perder justo lo que se quería ganar. */
+.pt-ficha__hueco:not(.pt-ficha__hueco--foto) { opacity: .85; }
 .pt-ficha__hueco--foto { padding: 0; }
 .pt-ficha__hueco img {
   width: 100%; height: 100%; object-fit: cover; display: block;
@@ -61,6 +67,42 @@
   object-fit: contain; padding: 0;
 }
 .pt-ficha:hover .pt-ficha__hueco img { transform: scale(1.04); }
+/* La pieza recortada NO se agranda al pasar el ratón: como se ve
+   entera y con aire justo, crecer la sacaría del recuadro. */
+.pt-ficha:hover .pt-ficha__hueco--suelto img { transform: none; }
+
+/* --- flechas del carrusel de la ficha -----------------------
+   Van dentro del recuadro de la imagen, pegadas a los lados.
+   Aparecen al acercarse; en pantalla táctil (donde no hay hover)
+   se quedan siempre visibles, si no serían inalcanzables. */
+.pt-ficha__hueco { position: relative; }
+.pt-flecha {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  width: 30px; height: 44px; z-index: 2;
+  display: grid; place-items: center;
+  border: 0; padding: 0; cursor: pointer;
+  font: inherit; font-size: 1.35rem; line-height: 1;
+  background: color-mix(in srgb, var(--papel) 72%, transparent);
+  color: var(--tinta);
+  backdrop-filter: blur(4px);
+  opacity: 0; transition: opacity .15s var(--curva-suave), background .15s;
+}
+.pt-flecha--izq { left: 0; }
+.pt-flecha--der { right: 0; }
+.pt-ficha:hover .pt-flecha,
+.pt-flecha:focus-visible { opacity: 1; }
+.pt-flecha:hover { background: var(--papel); }
+@media (hover: none) { .pt-flecha { opacity: .85; } }
+
+/* El contador de fotos, abajo a la derecha del recuadro. */
+.pt-cuenta-fotos {
+  position: absolute; right: .4rem; bottom: .4rem; z-index: 2;
+  font-size: .58rem; letter-spacing: .08em;
+  padding: .12rem .34rem;
+  background: color-mix(in srgb, var(--papel) 72%, transparent);
+  color: var(--apagado);
+  pointer-events: none;
+}
 /* Más compacto: relleno de 1rem a .8rem y el resumen más chico. */
 .pt-ficha__cuerpo { padding: .8rem .8rem .9rem; display: flex; flex-direction: column; gap: .35rem; flex: 1; }
 .pt-ficha h3 { font-size: .88rem; }
@@ -127,11 +169,76 @@
   transition: aspect-ratio .25s var(--curva);
 }
 .pt-visual[data-medio="foto"]  { aspect-ratio: 4 / 3; }
-.pt-visual[data-medio="video"] { aspect-ratio: 16 / 9; }
+/* 1/1 y no 16/9: los vídeos del taller se graban con el teléfono
+   y salen VERTICALES. En un recuadro apaisado, un vídeo de
+   608×1081 no cabía —se pintaba a 505×898 y se salía por abajo— y
+   con recorte se habría visto un trozo del centro. Cuadrado entra
+   entero con aire a los lados. */
+.pt-visual[data-medio="video"] { aspect-ratio: 1 / 1; }
 .pt-visual[data-medio="3d"]    { aspect-ratio: 1 / 1; }
+/* El plano se queda CUADRADO a propósito: es una imagen muy alta y
+   darle su proporción estiraría el panel entero. Cabe encogida,
+   con aire a los lados. */
+.pt-visual[data-medio="plano-img"] { aspect-ratio: 1 / 1; }
 .pt-visual__lienzo { position: absolute; inset: 0; display: grid; place-items: center; }
 .pt-visual .visor3d { width: 100%; height: 100%; border: 0; background: transparent; }
 .pt-visual__foto { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* El vídeo, ENTERO y encajado en el recuadro. `position:absolute`
+   porque con `height: 100%` a secas dentro del lienzo en grid no
+   resolvía y tomaba su alto natural; y `contain` en vez de
+   `cover` porque recortar un vídeo vertical deja solo una franja
+   del centro. */
+video.pt-visual__foto {
+  position: absolute; inset: 0;
+  object-fit: contain;
+  background: #000;
+}
+/* El plano va sobre fondo liso, como las piezas recortadas: un
+   dibujo de cotas sobre rayado no se lee. */
+.pt-plano { width: 100%; padding: 1rem; box-sizing: border-box; }
+
+/* --- plano hecho aparte, como imagen -------------------------
+   Viene en NEGRO sobre fondo transparente, que es lo que sirve
+   para el modo claro. En oscuro se invierte y queda blanco.
+
+   Se invierte por CSS en vez de tener dos archivos a proposito:
+   asi solo hay UN plano que mantener. Con dos imagenes, el dia
+   que se regenera una y se olvida la otra, los dos modos dejan
+   de coincidir y nadie se entera hasta que un cliente lo ve.
+
+   `invert(1)` no toca el canal alfa, asi que el fondo sigue
+   transparente en los dos modos. Y como el plano es negro puro
+   sobre transparente, el invertido es EXACTAMENTE la version en
+   blanco. */
+/* El plano es MUY alto (976x1300) y el recuadro es cuadrado. Se
+   encoge hasta caber ENTERO, dejando aire a los lados — que es lo
+   que él pidió: no estirar el recuadro hacia abajo, sino meter el
+   dibujo dentro del que ya hay.
+
+   `position:absolute; inset:0` y no `width/height:100%` a secas:
+   dentro del grid centrado, la imagen se quedaba en su tamaño
+   natural y el `overflow:hidden` del recuadro le cortaba la parte
+   de abajo, justo donde van las cotas de 24 cm. */
+/* El plano necesita el lienzo OCUPANDO TODO el recuadro. Va
+   marcado como "suelto" —para ir sobre fondo liso y no sobre el
+   rayado, que se come un dibujo de cotas—, y esa marca vuelve el
+   lienzo `position: relative`, pensada para fotos recortadas que
+   se muestran a su tamaño. Con el lienzo en relative colapsaba a
+   la altura del contenido (35 px) y la imagen, que va absoluta,
+   se encogía con él: el plano no se veía. */
+.pt-visual[data-suelto="1"][data-medio="plano-img"] .pt-visual__lienzo {
+  position: absolute; inset: 0; padding: 0;
+}
+.pt-visual__plano {
+  position: absolute; inset: 0;
+  display: block;
+  width: 100%; height: 100%;
+  object-fit: contain;
+  /* holgura para que las cifras no toquen el borde */
+  padding: .9rem 1rem; box-sizing: border-box;
+}
+:root:not([data-tema="claro"]) .pt-visual__plano { filter: invert(1); }
 
 /* La pieza recortada se ve ENTERA, sin que le falte nada.
    OJO CON EL TAMAÑO: aquí había `width:100%; height:100%` y la
@@ -151,9 +258,24 @@
    · `position:absolute; inset:1.1rem` sobre la propia imagen —
      una imagen es un elemento REEMPLAZADO: con `width:auto` usa
      su tamaño intrínseco y se salta los insets. */
-.pt-visual[data-suelto="1"] .pt-visual__lienzo { padding: 1.1rem; }
+/* Aquí manda la IMAGEN y la caja se adapta a ella, al revés que
+   en el resto del panel. Es la única forma que funciona: mientras
+   .pt-visual tenga altura de `aspect-ratio`, ningún `height:100%`
+   ni `max-height:100%` del hijo resuelve contra ella, y la imagen
+   se dimensiona solo por el ancho y desborda por abajo. Se probó
+   también `inset` sobre la imagen: no vale, un <img> es elemento
+   reemplazado y con `width:auto` usa su tamaño intrínseco.
+   Quitando el aspect-ratio y sacando el lienzo del posicionamiento
+   absoluto, el alto lo pone el contenido y se ve entera. */
+.pt-visual[data-suelto="1"] { aspect-ratio: auto; }
+.pt-visual[data-suelto="1"] .pt-visual__lienzo {
+  position: relative; inset: auto;
+  width: 100%; padding: 1.1rem;
+}
 .pt-visual__foto--suelto {
-  width: 100%; height: 100%;
+  width: 100%; height: auto;
+  /* Tope para que una foto muy vertical no empuje el panel entero. */
+  max-height: 58vh;
   object-fit: contain; padding: 0;
 }
 /* Y la caja se hace cuadrada: las piezas recortadas vienen unas
@@ -189,8 +311,19 @@
 .pt-medio:hover { opacity: 1; border-color: var(--apagado); }
 .pt-medio.sel  { opacity: 1; border-color: var(--tinta); }
 .pt-medio img { width: 100%; height: 100%; object-fit: cover; display: block; }
-/* Los medios que no son foto se rotulan con letras, no con un
-   símbolo: un glifo suelto no se entendía. */
+
+/* La miniatura del PLANO enseña el dibujo, no la palabra (él,
+   14/08/2026). Va con `contain` y no `cover` —recortado no se
+   entendería— y se invierte en oscuro igual que el grande, o
+   sería una mancha negra sobre negro. */
+.pt-medio--plano img { object-fit: contain; padding: 3px; box-sizing: border-box; }
+:root:not([data-tema="claro"]) .pt-medio--plano img { filter: invert(1); }
+
+/* El VÍDEO lleva el triángulo de reproducir, no la palabra. */
+.pt-medio__play { font-size: .7rem; color: var(--tinta); line-height: 1; }
+
+/* Solo queda con letras el 3D: un .glb no tiene nada que enseñar
+   hasta que se carga. */
 .pt-medio__glifo {
   font-size: .6rem; font-weight: 700; letter-spacing: .06em;
   color: var(--tinta); line-height: 1;
@@ -223,7 +356,12 @@
 .pt-contador button:hover { color: var(--tinta); background: var(--caja-alta); }
 .pt-contador span { width: 52px; text-align: center; font-size: .95rem; font-weight: 700; }
 .pt-nota-pack { font-size: .78rem; color: var(--madera); margin-top: .5rem; }
-.pt-nota-stock { font-size: .78rem; color: var(--apagado); margin-top: .5rem; }
+.pt-nota-stock { font-size: .78rem; color: var(--apagado); margin-top: .5rem; line-height: 1.45; }
+/* Cuando se pide más de lo que hay hecho: el número y la nota
+   pasan al acento. No es un error, es un aviso — por eso se usa el
+   acento de marca y no el rojo de fallo. */
+.pt-cant--sobre { color: var(--acento-claro); }
+.pt-nota-sobre  { color: var(--acento-claro) !important; }
 
 .pt-precio-panel { display: flex; align-items: baseline; justify-content: space-between; gap: .8rem; margin-bottom: .9rem; }
 .pt-precio-panel .n { font-size: 1.7rem; font-weight: 700; }
@@ -241,8 +379,45 @@
 }
 .pt-btn:hover { background-color: var(--madera); color: #000; }
 .pt-btn:disabled { background-color: var(--linea); color: var(--apagado); cursor: not-allowed; }
-.pt-btn--wa { background-color: var(--realce-hondo); color: #fff; }
-.pt-btn--wa:hover { background-color: var(--realce); color: #fff; }
+
+/* Los dos botones de agregar, uno al lado del otro. El de seguir
+   viendo va en versión de línea: hace lo mismo pero no es el
+   camino principal, y dos botones macizos iguales no dicen cuál
+   pulsar. En móvil se apilan, que a media pantalla no caben dos
+   textos de este largo. */
+.pt-acciones { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem; }
+@media (max-width: 520px) { .pt-acciones { grid-template-columns: 1fr; } }
+.pt-btn--linea {
+  background-color: transparent;
+  color: var(--tinta);
+  box-shadow: inset 0 0 0 1px var(--tinta);
+}
+.pt-btn--linea:hover { background-color: var(--tinta); color: var(--papel); }
+.pt-btn--linea:disabled {
+  background-color: transparent; color: var(--apagado);
+  box-shadow: inset 0 0 0 1px var(--linea);
+}
+/* El botón de pedido va en el verde de WhatsApp, no en el acento
+   del sitio: aquí el color es una señal de a dónde lleva.
+   Los tres son de la paleta de WhatsApp. En reposo va #075E54,
+   el verde oscuro: con texto blanco da 7,67:1. Se probó antes
+   #128C7E y se queda en 4,14:1, por debajo del mínimo para texto
+   normal — el botón lleva letra de 14px, que no cuenta como
+   texto grande. El vivo #25D366 se reserva para el hover, con
+   texto oscuro encima (8,54:1). */
+.pt-btn--wa {
+  background-color: #075E54; color: #fff;
+  display: flex; align-items: center; justify-content: center; gap: .55rem;
+}
+.pt-btn--wa:hover { background-color: #25D366; color: #06281F; }
+.pt-pedir__wa  { width: 19px; height: 19px; fill: currentColor; flex: none; }
+.pt-pedir__ext {
+  width: 13px; height: 13px; flex: none;
+  fill: none; stroke: currentColor; stroke-width: 2.2;
+  stroke-linecap: round; stroke-linejoin: round;
+  opacity: .75;
+}
+.pt-btn--wa:disabled { background-color: var(--linea); color: var(--apagado); }
 
 /* --- el pedido ---------------------------------------------- */
 .pt-cols {
@@ -255,18 +430,54 @@
    no están escogidas — ver .pt-radio más abajo. */
 .pt-col { background: var(--caja); padding: 1.6rem; }
 
-.pt-linea { display: flex; gap: .9rem; align-items: flex-start; padding: .95rem 0; border-bottom: 1px solid var(--linea); }
-.pt-linea:last-of-type { border-bottom: 0; }
+/* Cada pieza del pedido en su propio recuadro. Antes solo las
+   separaba una línea fina y con dos o tres renglones —nombre,
+   opciones, packs, cantidad— costaba ver dónde acababa uno y
+   empezaba el siguiente. */
+.pt-linea {
+  display: flex; gap: .9rem; align-items: flex-start;
+  padding: .8rem .9rem;
+  border: 1px solid var(--linea);
+  background-color: color-mix(in srgb, var(--tinta) 3%, transparent);
+}
+.pt-linea + .pt-linea { margin-top: .5rem; }
 .pt-linea__desc { flex: 1; min-width: 0; }
 .pt-linea__desc b { font-size: .9rem; display: block; }
 .pt-linea__desc small { font-size: .76rem; color: var(--apagado); display: block; margin-top: .15rem; }
 .pt-linea__packs { font-size: .76rem; color: var(--madera); display: block; margin-top: .15rem; }
 .pt-linea__mon { font-size: .95rem; font-weight: 700; white-space: nowrap; }
-.pt-quitar {
-  font: inherit; font-size: .7rem; color: var(--apagado); background: none; border: 0;
-  text-decoration: underline; cursor: pointer; margin-top: .35rem; padding: 0;
+
+/* La cantidad se edita en la propia línea, con los mismos − y +
+   del panel de producto. `align-items: center` en la línea para
+   que los tres bloques queden a la misma altura. */
+.pt-linea { align-items: center; }
+.pt-linea__cant {
+  display: flex; align-items: center; gap: .1rem;
+  border: 1px solid var(--linea); flex: none;
 }
-.pt-quitar:hover { color: var(--realce); }
+.pt-linea__cant .pt-pasos__b { width: 26px; height: 26px; font-size: .9rem; }
+.pt-linea__n {
+  min-width: 1.6rem; text-align: center;
+  font-size: .85rem; font-weight: 700; font-variant-numeric: tabular-nums;
+}
+
+/* Quitar: cuadradito con un signo menos, a la derecha del
+   subtotal. Va en ROJO desde el principio —lo pidió resaltado—,
+   y al pasar por encima se rellena. El `title` dice qué hace: un
+   − suelto no se explica solo, y al lado de los otros − y + de
+   la cantidad hace falta distinguirlo. */
+.pt-quitar {
+  flex: none; width: 26px; height: 26px; padding: 0;
+  display: grid; place-items: center;
+  font: inherit; font-size: 1rem; line-height: 1;
+  color: var(--de); background: none;
+  border: 1px solid var(--de); border-radius: 0;
+  cursor: pointer;
+  transition: color .15s, border-color .15s, background-color .15s;
+}
+.pt-quitar:hover, .pt-quitar:focus-visible {
+  color: #fff; background-color: var(--de); border-color: var(--de);
+}
 .pt-vacio { color: var(--apagado); font-size: .85rem; padding: 1.6rem 0; text-align: center; }
 
 .pt-campo { margin-bottom: 1.4rem; }
@@ -328,6 +539,190 @@
   color: var(--apagado); max-height: 290px; overflow-y: auto;
 }
 .pt-nota { display: block; color: var(--apagado); font-size: .72rem; margin-top: .6rem; line-height: 1.45; }
+
+/* ============================================================
+   TRANSICIÓN GLITCH ENTRE IMÁGENES
+   ------------------------------------------------------------
+   Al pasar de una foto a otra, la que sale se rompe en bandas
+   horizontales que saltan de sitio mientras se separan sus
+   canales de color, y por encima cruza una barra de barrido.
+
+   Cómo funciona: la imagen NUEVA ya está puesta debajo; lo que
+   se anima es una COPIA de la vieja superpuesta, que se
+   desintegra y desaparece. Así no hay que precargar nada ni
+   esperar a que la nueva decodifique.
+
+   Los tiempos van con `steps(1)` a propósito: un glitch tiene
+   que dar saltos, no deslizarse. Con interpolación suave parece
+   una animación de diapositivas.
+   ============================================================ */
+
+/* La capa se coloca con medidas en píxeles calculadas por el JS,
+   no con `inset: 0`. Tiene que caer exactamente sobre el hueco
+   que ocupa la imagen, y ese hueco depende del relleno del
+   recuadro y de si la imagen va en `contain` o en `cover`. */
+.pt-glitch {
+  position: absolute; z-index: 3;
+  pointer-events: none; overflow: hidden;
+}
+.pt-glitch img {
+  position: absolute; left: 0; top: 0;
+  width: 100%; height: 100%;
+  animation: pt-bandas .085s steps(1, end) forwards;
+}
+/* Las dos copias teñidas que hacen la separación de canales. Van
+   en modo screen para que sumen luz y no tapen.
+
+   NO son rojo y cian, que es lo típico de un glitch: son NARANJA
+   QUEMADO y AMARILLO INTENSO, de la familia de la marca. El
+   sepia lleva la imagen a un warm neutro y desde ahí se gira el
+   tono; sin el sepia previo, el hue-rotate sobre una foto de
+   madera no da un color limpio. */
+.pt-glitch img:nth-child(2) {
+  mix-blend-mode: screen;
+  filter: sepia(1) saturate(8) hue-rotate(-18deg) brightness(1.05);
+  animation-name: pt-bandas-naranja;
+}
+/* Estos números están MEDIDOS, no puestos a ojo: sobre una madera
+   media producen #ffd200, que es el amarillo intenso que se
+   buscaba. Con más giro de tono (24deg) la madera clara se iba a
+   lima #deff00 y la oscura a oliva. */
+.pt-glitch img:nth-child(3) {
+  mix-blend-mode: screen;
+  filter: sepia(1) saturate(6) hue-rotate(8deg) brightness(1.75);
+  animation-name: pt-bandas-amarillo;
+}
+
+/* La mitad de las veces el amarillo se cambia por ROJO. Lo
+   sortea el JS al montar la capa.
+
+   El rojo no se saca girando el tono hacia atrás como parecería:
+   desde el sepia, girar en negativo lleva a rosa y luego a
+   magenta (se probó -35, -45 y -55 y salían #ff6470, #ff64a3 y
+   #ff66dd). Lo que cierra el color hacia el rojo es el CONTRASTE
+   alto con un giro corto. Medido: #f23526 sobre madera media y
+   #f20516 sobre madera oscura. */
+.pt-glitch--rojo img:nth-child(3) {
+  filter: sepia(1) saturate(14) hue-rotate(-28deg) contrast(1.6) brightness(.95);
+}
+/* 2026-08-13 · Aquí iba una franja blanca que barría de arriba
+   abajo durante el corte. Fuera: a 85 ms no daba tiempo a leerla
+   y solo aportaba un destello. El corte lo hacen las bandas y la
+   separación de color. */
+
+/* MENOS PASOS que antes, y a propósito. A 85 ms, siete estados
+   salían a 12 ms cada uno — por debajo de un cuadro de pantalla
+   (16,7 ms), así que la mitad no llegaba a dibujarse y el efecto
+   se veía irregular según el momento. Con cuatro estados cada uno
+   dura ~21 ms y le toca cuadro seguro.
+   Los desplazamientos también bajaron a la mitad: el corte se
+   nota, pero sin descuajaringar la pieza. */
+@keyframes pt-bandas {
+  0%   { clip-path: inset(0 0 0 0);      transform: translateX(0); }
+  30%  { clip-path: inset(12% 0 62% 0);  transform: translateX(-3px); }
+  60%  { clip-path: inset(54% 0 18% 0);  transform: translateX(4px); }
+  85%  { clip-path: inset(30% 0 44% 0);  transform: translateX(-2px); opacity: .55; }
+  100% { clip-path: inset(0 0 100% 0);   transform: translateX(0);    opacity: 0; }
+}
+@keyframes pt-bandas-naranja {
+  0%   { clip-path: inset(0 0 100% 0); transform: translateX(0); opacity: 0; }
+  30%  { clip-path: inset(18% 0 58% 0); transform: translateX(-4px); opacity: .8; }
+  65%  { clip-path: inset(56% 0 24% 0); transform: translateX(3px);  opacity: .7; }
+  100% { clip-path: inset(0 0 100% 0);  transform: translateX(0);    opacity: 0; }
+}
+@keyframes pt-bandas-amarillo {
+  0%   { clip-path: inset(0 0 100% 0); transform: translateX(0); opacity: 0; }
+  30%  { clip-path: inset(18% 0 58% 0); transform: translateX(4px);  opacity: .8; }
+  65%  { clip-path: inset(56% 0 24% 0); transform: translateX(-3px); opacity: .7; }
+  100% { clip-path: inset(0 0 100% 0);  transform: translateX(0);    opacity: 0; }
+}
+
+/* La imagen que ENTRA da un tirón corto de canales, para que el
+   corte no se note solo en la que sale. */
+/* Naranja quemado (#C04E00, de su paleta) contra amarillo intenso
+   (#FFD400). El mismo par que las bandas, para que el corte se
+   lea como una sola cosa. */
+.pt-entrando { animation: pt-sacudida .065s steps(1, end); }
+@keyframes pt-sacudida {
+  0%   { filter: none; transform: translateX(0); }
+  33%  { filter: drop-shadow(2px 0 rgba(192,78,0,.9)) drop-shadow(-2px 0 rgba(255,212,0,.9));
+         transform: translateX(1px); }
+  66%  { filter: drop-shadow(-2px 0 rgba(192,78,0,.85)) drop-shadow(2px 0 rgba(255,212,0,.85));
+         transform: translateX(-1px); }
+  100% { filter: none; transform: translateX(0); }
+}
+
+/* La variante roja del tirón, para que la imagen que entra vaya
+   con el mismo par de colores que las bandas. */
+.pt-entrando--rojo { animation-name: pt-sacudida-rojo; }
+@keyframes pt-sacudida-rojo {
+  0%   { filter: none; transform: translateX(0); }
+  33%  { filter: drop-shadow(2px 0 rgba(192,78,0,.9)) drop-shadow(-2px 0 rgba(226,32,26,.9));
+         transform: translateX(1px); }
+  66%  { filter: drop-shadow(-2px 0 rgba(192,78,0,.85)) drop-shadow(2px 0 rgba(226,32,26,.85));
+         transform: translateX(-1px); }
+  100% { filter: none; transform: translateX(0); }
+}
+
+/* ------------------------------------------------------------
+   GLITCH AL CAMBIAR DE MEDIO (foto ↔ plano ↔ 3D ↔ vídeo)
+   El de arriba desintegra una COPIA de la foto vieja. Aquí se
+   corta el nodo original, porque de un canvas WebGL no se puede
+   sacar copia: `clip-path` y `transform` valen igual sobre una
+   imagen, sobre el plano o sobre el visor.
+
+   La separación de canales se hace con `drop-shadow` y no con
+   tres capas teñidas —no hay tres capas que teñir—, así que es
+   más discreta que la de foto a foto. Es lo que se puede hacer
+   sin rasterizar el contenido, y a 105 ms la diferencia no se
+   distingue.
+   ------------------------------------------------------------ */
+.pt-saliendo {
+  position: absolute; inset: 0; z-index: 3;
+  pointer-events: none;
+  animation: pt-corte .085s steps(1, end) forwards;
+}
+/* Lo de dentro conserva su tamaño: la capa es solo el envoltorio
+   que se anima. */
+.pt-saliendo > * { position: absolute; inset: 0; }
+
+/* 2026-08-14 · Aquí vivía `.pt-saliendo--espera`: la foto se
+   quedaba quieta tapando el visor 3D mientras el modelo cargaba,
+   y el corte saltaba al terminar. Fuera con el resto del glitch
+   del 3D — no le convenció. */
+
+@keyframes pt-corte {
+  0%   { clip-path: inset(0 0 0 0);     transform: translateX(0);
+         filter: none; }
+  30%  { clip-path: inset(12% 0 62% 0); transform: translateX(-3px);
+         filter: drop-shadow(3px 0 rgba(192,78,0,.9)) drop-shadow(-3px 0 rgba(255,212,0,.9)); }
+  60%  { clip-path: inset(54% 0 18% 0); transform: translateX(4px);
+         filter: drop-shadow(-3px 0 rgba(192,78,0,.85)) drop-shadow(3px 0 rgba(255,212,0,.85)); }
+  85%  { clip-path: inset(30% 0 44% 0); transform: translateX(-2px); opacity: .55;
+         filter: none; }
+  100% { clip-path: inset(0 0 100% 0);  transform: translateX(0);    opacity: 0; }
+}
+/* La mitad de las veces, el amarillo se cambia por rojo — el
+   mismo sorteo y el mismo par de colores que el glitch de fotos. */
+.pt-saliendo--rojo { animation-name: pt-corte-rojo; }
+@keyframes pt-corte-rojo {
+  0%   { clip-path: inset(0 0 0 0);     transform: translateX(0);
+         filter: none; }
+  30%  { clip-path: inset(12% 0 62% 0); transform: translateX(-3px);
+         filter: drop-shadow(3px 0 rgba(192,78,0,.9)) drop-shadow(-3px 0 rgba(226,32,26,.9)); }
+  60%  { clip-path: inset(54% 0 18% 0); transform: translateX(4px);
+         filter: drop-shadow(-3px 0 rgba(192,78,0,.85)) drop-shadow(3px 0 rgba(226,32,26,.85)); }
+  85%  { clip-path: inset(30% 0 44% 0); transform: translateX(-2px); opacity: .55;
+         filter: none; }
+  100% { clip-path: inset(0 0 100% 0);  transform: translateX(0);    opacity: 0; }
+}
+
+/* Quien pidió menos movimiento no ve ningún glitch. */
+@media (prefers-reduced-motion: reduce) {
+  .pt-glitch { display: none; }
+  .pt-saliendo { display: none; }
+  .pt-entrando { animation: none; }
+}
 
 /* La tasa del día, arriba a la derecha del recuadro del pedido.
    Va absoluta para que no empuje las filas de totales hacia abajo. */

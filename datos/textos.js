@@ -32,7 +32,8 @@ window.TEXTOS = {
   pt_con_stock: { es: "Listas ahora", en: "Ready now" },
   /* Va justo debajo del título "Listas ahora": es lo que antes
      decía la bajada de la página, pero pegado a lo que explica. */
-  pt_sin_espera:{ es: "(Sin tiempo de espera)", en: "(No waiting time)" },
+  pt_sin_espera:{ es: "En inventario. Sin tiempo de espera por fabricación.",
+                  en: "In stock. No waiting time for fabrication." },
   pt_por_encargo:{ es: "Por encargo", en: "Made to order" },
   pt_encargo_bajada: { es: "No las tengo hechas ahora mismo. Se producen cuando las pides, con un plazo acordado y sin compromiso hasta que cerremos por chat.",
                   en: "I don't have these on hand. They're made when you order, on an agreed lead time, with no commitment until we close it over chat." },
@@ -41,10 +42,21 @@ window.TEXTOS = {
   /* Poco stock y stock normal dicen LO MISMO; lo que cambia es el
      color (ver .pt-estado--poco). Antes el caso de pocas unidades
      decía "quedan 1", que además de sonar mal metía prisa. */
-  pt_hay:       { es: "{n} disponibles", en: "{n} available" },
-  pt_hay_uno:   { es: "1 disponible",    en: "1 available" },
-  pt_semanas:   { es: "{n} semanas", en: "{n} weeks" },
+  /* "in stock" y no "available" (él, 14/08/2026): en inglés
+     "available" se lee como "se puede pedir", y aquí lo que se
+     dice es que ya está hecho y en el taller. El español se queda
+     igual. */
+  pt_hay:       { es: "{n} disponibles", en: "{n} in stock" },
+  pt_hay_uno:   { es: "1 disponible",    en: "1 in stock" },
+  /* «~3 semanas» y no «3 semanas» (él, 14/08/2026). Prometer un
+     plazo cerrado no es cierto: depende de la cola del taller y de
+     que llegue el material. Llevó un «+» unas horas —«~3+»— y lo
+     quitó: con la virgulilla basta. */
+  pt_semanas:   { es: "~{n} semanas", en: "~{n} weeks" },
   pt_sin_imagen:{ es: "sin imagen", en: "no image" },
+  pt_plano:     { es: "PLANO", en: "PLAN" },
+  pt_anterior:  { es: "Foto anterior",  en: "Previous photo" },
+  pt_siguiente: { es: "Foto siguiente", en: "Next photo" },
 
   pt_cantidad:  { es: "Cantidad", en: "Quantity" },
   pt_cant_packs:{ es: "Cantidad de packs", en: "Number of packs" },
@@ -52,8 +64,22 @@ window.TEXTOS = {
   pt_sin_combo: { es: "Sin stock en esta combinación — se puede hacer por encargo.",
                   en: "Out of stock in this combination — can be made to order." },
   pt_en_taller: { es: "{n} en el taller, sale de una vez.", en: "{n} in the shop, ships right away." },
+  /* Aviso al pedir más de lo que hay hecho. {cosa} dice "unidades"
+     o "paquetes" según el producto. */
+  pt_sobre_stock: {
+    es: "Solo hay {hay} en el taller. {falta} {cosa} tendrán que fabricarse por encargo, lo que puede tomar unas semanas. Puedes hacer el pedido con las {total} {cosa} y lo acordamos por mensaje al terminar.",
+    en: "Only {hay} are in the shop. {falta} {cosa} would have to be made to order, which can take a few weeks. You can place the order for all {total} {cosa} and we'll sort it out by message afterwards."
+  },
+  pt_unidades: { es: "unidades", en: "units" },
+  pt_paquetes: { es: "paquetes", en: "packs" },
   pt_se_produce:{ es: "Se produce al pedirlo · {p}", en: "Made to order · {p}" },
   pt_agregar:   { es: "Agregar al pedido", en: "Add to order" },
+  /* Dos botones desde el 14/08/2026: uno para seguir mirando y
+     otro para bajar al pedido. Antes solo estaba el segundo y
+     mandaba al final de la página cada vez que agregabas algo. */
+  pt_agregar_seguir:  { es: "Agregar y seguir viendo", en: "Add and keep browsing" },
+  pt_agregar_cerrar:  { es: "Agregar y concretar",     en: "Add and check out" },
+  pt_quitar_titulo:   { es: "Quitar",                  en: "Remove" },
 
   pt_tu_pedido: { es: "Tu pedido", en: "Your order" },
   pt_pedido_bajada: { es: "Arma aquí lo que quieres. Nada se cobra en esta página: al final se abre WhatsApp con el pedido ya escrito.",
@@ -125,8 +151,11 @@ window.TEXTOS = {
   /* --- Catálogo de trabajos -------------------------------- */
   trabajos_titulo: { es: "Exhibición",
                      en: "Exhibition" },
-  trabajos_bajada: { es: "Lo que ha salido del taller. Cada encargo es distinto: estas son las piezas, cómo están hechas y con qué.",
-                     en: "What has come out of the shop. Every commission is different: here are the pieces, how they were made and what from." },
+  /* Lleva la palabra «catálogo» a propósito (él, 14/08/2026): es
+     como llama a esta sección, y el enlace de volver dice lo
+     mismo. */
+  trabajos_bajada: { es: "El catálogo de lo que ha salido del taller. Ningún encargo se repite: aquí está cada pieza, de qué está hecha y cómo se resolvió.",
+                     en: "The catalogue of what has come out of the shop. No commission is ever repeated: here is each piece, what it's made of and how it was solved." },
 
   filtro_tipo:     { es: "Tipo",           en: "Type" },
   filtro_madera:   { es: "Material",       en: "Material" },
@@ -145,7 +174,12 @@ window.TEXTOS = {
   ficha_medidas:   { es: "Medidas",        en: "Dimensions" },
   ficha_acabado:   { es: "Acabado",        en: "Finish" },
   ficha_como:      { es: "Cómo está hecha",en: "How it's made" },
-  ficha_volver:    { es: "Volver al portafolio", en: "Back to portfolio" },
+  ficha_volver:    { es: "Volver al catálogo", en: "Back to the catalogue" },
+  /* Los dos botones que flanquean al de volver, en la ficha de una
+     pieza. El texto no se ve: va en el `title` y para lectores de
+     pantalla, junto al nombre de la pieza a la que llevan. */
+  pieza_anterior:  { es: "Pieza anterior",  en: "Previous piece" },
+  pieza_siguiente: { es: "Pieza siguiente", en: "Next piece" },
   ficha_similar:   { es: "¿Quieres algo así?", en: "Want something like this?" },
   ficha_similar_t: { es: "No repito una pieza igual, pero sí trabajo sobre la misma idea. Escríbeme y lo conversamos.",
                      en: "I don't repeat a piece exactly, but I do work from the same idea. Write me and we'll talk it through." },
@@ -177,8 +211,8 @@ window.TEXTOS = {
   envio:           { es: "Traslado",       en: "Delivery" },
   garantia:        { es: "Garantía",       en: "Warranty" },
   en_bolivares:    { es: "En bolívares",   en: "In bolívares" },
-  plazo_semanas:   { es: "{n} semanas desde el anticipo",
-                     en: "{n} weeks from the deposit" },
+  plazo_semanas:   { es: "~{n} semanas desde el anticipo",
+                     en: "~{n} weeks from the deposit" },
   plazo_inmediato: { es: "Sale del taller en 2 a 3 días",
                     en: "Ships from the shop in 2–3 days" },
   pago_texto:      { es: "50% de anticipo para arrancar y 50% contra entrega.",
@@ -243,7 +277,7 @@ window.TEXTOS = {
     "pino":            { es: "Pino",                       en: "Pine" },
     "contraenchapado": { es: "Contraenchapado de pino",    en: "Pine plywood" },
     "mdf":             { es: "MDF",                        en: "MDF" },
-    "saman":           { es: "Samán",                      en: "Rain tree (samán)" },
+    "saman":           { es: "Samán",                      en: "Monkeypod" },
     "cedro":           { es: "Cedro",                      en: "Cedar" },
     "caoba":           { es: "Caoba",                      en: "Mahogany" },
     "roble":           { es: "Roble",                      en: "Oak" },

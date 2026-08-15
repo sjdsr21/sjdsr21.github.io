@@ -28,7 +28,9 @@
   <meta name="twitter:image" content="https://sjdsr21.github.io/img/marca/vista-previa.jpg">
 <!-- meta:fin -->
   <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/escaner.css">
   <link rel="stylesheet" href="css/prototipos.css">
+  <link rel="stylesheet" href="css/diagramas.css">
 </head>
 <body data-pagina="prototipos">
 
@@ -171,7 +173,12 @@
         <span class="n" id="pt-pn-precio"></span>
         <span class="bs" id="pt-pn-precio-bs"></span>
       </div>
-      <button class="pt-btn" id="pt-pn-agregar" type="button"></button>
+      <!-- Dos botones: el de la izquierda agrega y te deja donde
+           estabas, el de la derecha agrega y baja al pedido. -->
+      <div class="pt-acciones">
+        <button class="pt-btn pt-btn--linea" id="pt-pn-agregar-seguir" type="button"></button>
+        <button class="pt-btn" id="pt-pn-agregar" type="button"></button>
+      </div>
     </div>
   </aside>
 
@@ -183,7 +190,10 @@
   <script src="datos/envios.js"></script>
   <script src="datos/modelos.js"></script>
   <script src="js/visor3d.js"></script>
+  <script src="js/diagramas.js"></script>
   <script src="js/sitio.js"></script>
   <script src="js/prototipos.js"></script>
+  <!-- al final del todo: mide la pagina YA pintada -->
+  <script src="js/escaner.js"></script>
 </body>
 </html>

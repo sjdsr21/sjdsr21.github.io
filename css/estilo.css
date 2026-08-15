@@ -28,6 +28,16 @@
 
 /* Roboto de ancho normal — la misma familia que la Condensed, sin
    estrechar. Descargada 2026-08-08 para probarla en el logotipo. */
+/* Roboto Light. Bajada el 14/08/2026 porque el nombre de las
+   piezas en Exhibición se pidió más fino, y pedir font-weight:300
+   sin este archivo NO adelgazaba nada: el navegador caía al 400 y
+   el texto medía exactamente lo mismo. Se comprobó midiendo. */
+@font-face { font-family:'Roboto'; font-style:normal; font-weight:300; font-display:swap;
+  src:url('../fuentes/Roboto-300-latin.woff2') format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family:'Roboto'; font-style:normal; font-weight:300; font-display:swap;
+  src:url('../fuentes/Roboto-300-latin-ext.woff2') format('woff2');
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
 @font-face { font-family:'Roboto'; font-style:normal; font-weight:400; font-display:swap;
   src:url('../fuentes/Roboto-400-latin.woff2') format('woff2');
   unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
@@ -135,12 +145,22 @@
      45° y 9px de paso en las dos, para que sea el mismo rayado. */
   --rayado: repeating-linear-gradient(135deg,
               var(--papel) 0 9px, var(--caja) 9px 18px);
+  /* Variante MÁS MARCADA para los huecos sin foto de las
+     cuadrículas (él, 14/08/2026). El --rayado normal se hace de
+     --papel y --caja, que en claro son blanco y casi blanco: el
+     hueco quedaba lavado y no se leía como un sitio vacío. Este
+     usa los dos grises de contraste que ya se usan en el resto de
+     la página, así que se voltea solo con el tema. */
+  --rayado-hueco: repeating-linear-gradient(135deg,
+              var(--caja) 0 9px, var(--caja-alta) 9px 18px);
   /* El translúcido ya NO es gris medio para los dos temas: eso lo
      dejaba muy marcado en claro y algo apagado en oscuro. Ahora
      cada tema lleva el suyo en --raya, y van en direcciones
      contrarias — en oscuro la raya ACLARA, en claro OSCURECE muy
      poco. Ver el bloque del tema claro más abajo. */
-  --raya: rgba(255,255,255,.055);
+  /* Subió de .055 a .085: en el pie, sobre negro puro, al 5,5% no
+     se veía nada. */
+  --raya: rgba(255,255,255,.085);
   --rayado-sutil: repeating-linear-gradient(135deg,
               transparent 0 9px, var(--raya) 9px 18px);
 
@@ -475,6 +495,13 @@ h3 { font-size: 1.15rem; letter-spacing: -.02em; line-height: 1.25; }
   display: grid; place-items: center;
 }
 .tema button[aria-pressed="true"] { background: var(--realce-hondo); color: #fff; }
+/* El tercer botón dice "auto" con letras, así que necesita su
+   propio cuerpo: los otros dos son un glifo suelto. */
+.tema__auto {
+  font-size: .62rem !important; font-weight: 700;
+  letter-spacing: .04em; text-transform: lowercase;
+  padding: 0 .45rem !important;
+}
 
 .hamburguesa { display: none; }
 
@@ -579,13 +606,37 @@ body:not([data-pagina="novedades"]) .portada .bajada {
    filete; las tarjetas van encima con el fondo de caja. Los
    "huecos" de 1px que quedan son el fondo asomándose, así que no
    hay bordes dobles ni esquinas que no cuadren. */
+/* 2026-08-14 · El fondo pasó de --linea (#2E2E2E) a --caja-alta
+   (#171717). Ojo, esto NO es solo el color de los filetes: como
+   el fondo asoma por los huecos, la última fila incompleta se
+   veía como un BLOQUE gris claro al lado de las tarjetas, y era
+   lo que más cantaba de la cuadrícula. Los filetes quedan más
+   tenues; es el precio de que el hueco no grite. */
 .rejilla {
   display: grid;
   gap: 1px;
-  background: var(--linea);
-  border: 1px solid var(--linea);
+  background: var(--caja-alta);
+  border: 1px solid var(--caja-alta);
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 265px), 1fr));
 }
+
+/* La cuadrícula de Exhibición: TRES por fila y separadas (él,
+   14/08/2026). Al ser menos columnas cada pieza sale bastante más
+   grande, que es de lo que se trataba.
+
+   Aquí el fondo se quita: en la de Prototipos el fondo es lo que
+   dibuja los filetes de 1px entre tarjetas pegadas, pero con hueco
+   de verdad ese fondo se vería como un marco alrededor de todo.
+   En móvil baja a una sola columna: tres piezas a 360px de ancho
+   no se ven, se adivinan. */
+.rejilla--tres {
+  grid-template-columns: repeat(3, 1fr);
+  gap: .5rem;
+  background: none;
+  border: 0;
+}
+@media (max-width: 900px) { .rejilla--tres { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .rejilla--tres { grid-template-columns: 1fr; } }
 
 .tarjeta {
   text-decoration: none; color: inherit;
@@ -609,12 +660,30 @@ body:not([data-pagina="novedades"]) .portada .bajada {
   width: 100%; height: 100%; object-fit: cover;
   transition: transform .5s cubic-bezier(.2,.7,.3,1);
 }
-.tarjeta:hover .tarjeta__marco img { transform: scale(1.04); }
+/* El zoom de la foto al pasar por encima se quitó el 14/08/2026,
+   por decisión suya: lo único que cambia al apuntar una pieza es
+   que se aclara el fondo de la franja del nombre. */
+.tarjeta:hover .tarjeta__marco img { transform: none; }
 .tarjeta__vacio {
   position: absolute; inset: 0; display: grid; place-items: center;
   color: var(--apagado); font-size: .8rem; letter-spacing: .1em; text-transform: uppercase;
+  background: var(--rayado-hueco);
 }
-.tarjeta h3 { margin-bottom: .2rem; }
+/* Sin negrita en los títulos de la cuadrícula (él, 14/08/2026):
+   con la categoría fuera, el nombre es lo único que hay debajo de
+   la foto y en negrita pesaba demasiado. */
+.tarjeta h3 { margin-bottom: .2rem; font-weight: 400; }
+
+/* En Exhibición el nombre va CENTRADO, más chico y en el peso
+   más fino de Roboto. Es lo único que lleva la tarjeta debajo de
+   la foto, y así pesa lo justo. */
+.rejilla--tres .tarjeta h3 {
+  text-align: center;
+  font-size: .92rem;
+  font-weight: 300;
+  letter-spacing: 0;
+  margin-bottom: 0;
+}
 .tarjeta__meta { color: var(--apagado); font-size: .87rem; }
 .tarjeta__precio { font-weight: 700; margin-top: .25rem; }
 
@@ -727,6 +796,14 @@ body:not([data-pagina="novedades"]) .portada .bajada {
 .tira:hover { opacity: 1; }
 .tira[aria-current="true"] { border-color: var(--realce); opacity: 1; }
 .tira img, .tira video { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* La miniatura del 3D. Un .glb no tiene imagen que enseñar, así
+   que va un rótulo — el mismo recurso que usan los prototipos. */
+.tira--glifo { display: grid; place-items: center; }
+.tira__glifo {
+  font-size: .78rem; font-weight: 700; letter-spacing: .1em;
+  color: var(--tinta);
+}
 
 /* el triangulito que marca cuáles son video */
 .tira__play {
@@ -937,8 +1014,9 @@ body:not([data-pagina="novedades"]) .portada .bajada {
 
 .tarjeta__marco { transition: box-shadow .45s var(--curva); }
 .tarjeta:hover .tarjeta__marco { box-shadow: 0 18px 40px -20px var(--sombra); }
-.tarjeta h3 { transition: color .2s var(--curva-suave); }
-.tarjeta:hover h3 { color: var(--realce); }
+/* El nombre NO cambia de color al pasar por encima (él,
+   14/08/2026): con el fondo aclarándose ya se sabe cuál está
+   apuntada, y dos señales a la vez era ruido. */
 
 .menu a, .contactos a, .opcion__valores label { transition: all .22s var(--curva-suave); }
 
@@ -1157,7 +1235,11 @@ body:not([data-pagina="novedades"]) .portada .bajada {
   display: flex; align-items: center; gap: 1rem;
   position: relative; padding: 1.4rem 2.6rem 1.4rem 1.4rem;
 }
-.contactos a:hover { border-color: var(--tinta); transform: translateY(-2px); }
+/* Sin el salto hacia arriba al pasar por encima (él, 14/08/2026).
+   Lo que SÍ se queda es que se marque el borde y se encienda el
+   icono con el color de la aplicación: eso dice que es pulsable,
+   el brinco solo distraía. */
+.contactos a:hover { border-color: var(--tinta); }
 .contactos__icono {
   flex: none; width: 42px; height: 42px; border-radius: 0;
   display: grid; place-items: center; background: var(--caja); color: var(--realce);
@@ -1225,6 +1307,58 @@ body:not([data-pagina="novedades"]) .portada .bajada {
 /* --- Varios ----------------------------------------------- */
 
 .vacio { color: var(--apagado); padding: 4rem 0; text-align: center; }
-.volver { display: inline-block; color: var(--apagado); text-decoration: none; font-size: .88rem; margin-bottom: 2rem; }
-.volver:hover { color: var(--tinta); }
+/* Volver: con marco desde el 14/08/2026. Antes era texto gris a
+   secas y no se leía como algo que se puede pulsar — se quejó de
+   eso. Ahora tiene caja, borde y área de clic de verdad. */
+.volver {
+  display: inline-flex; align-items: center; gap: .5rem;
+  color: var(--tinta); text-decoration: none;
+  /* sin negrita, decisión suya del 14/08/2026: con el marco ya se
+     ve que es pulsable y la negrita lo dejaba pesado */
+  font-size: .85rem; font-weight: 400;
+  letter-spacing: .04em; text-transform: uppercase;
+  padding: .6rem 1.1rem;
+  border: 1px solid var(--tinta);
+  border-radius: var(--radio);
+  margin-bottom: 2rem;
+  transition: background .15s var(--curva-suave), color .15s var(--curva-suave);
+}
+.volver:hover, .volver:focus-visible {
+  background: var(--tinta); color: var(--papel);
+}
+
+/* ------------------------------------------------------------
+   LOS TRES BOTONES DE LA FICHA (14/08/2026)
+   anterior · volver al catálogo · siguiente
+
+   Van pegados, como un solo control partido en tres: `gap: -1px`
+   no existe, así que los de los lados se solapan un píxel con el
+   del medio y no queda un borde doble entre ellos.
+
+   El del medio se estira y los de los lados miden lo justo, de
+   modo que "Volver al catálogo" queda centrado en la fila pase
+   lo que pase con el ancho.
+   ------------------------------------------------------------ */
+.navpieza {
+  display: flex; align-items: stretch;
+  margin-bottom: 2rem;
+}
+/* el margen ya lo lleva el contenedor */
+.navpieza .volver { margin-bottom: 0; }
+.navpieza__volver { flex: 1 1 auto; justify-content: center; }
+/* Las flechas se llevan un 22% cada una y el del medio se queda
+   con el resto (él, 14/08/2026). Antes medían lo justo para la
+   flecha y eran un blanco pequeño al lado de un botón enorme. */
+.navpieza__salto {
+  flex: 0 0 22%;
+  justify-content: center;
+  padding-left: .6rem; padding-right: .6rem;
+  font-size: 1rem;   /* la flecha, algo mayor que el texto */
+}
+.navpieza__antes { margin-right: -1px; }
+.navpieza__luego { margin-left: -1px; }
+/* Al pasar por encima, el botón se pone delante para que su borde
+   iluminado no quede tapado por el solape del vecino. */
+.navpieza .volver:hover, .navpieza .volver:focus-visible { position: relative; z-index: 1; }
+
 [hidden] { display: none !important; }

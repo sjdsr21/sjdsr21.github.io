@@ -1,0 +1,56 @@
+/* ============================================================
+   ENTRADA DE PÁGINA
+   ------------------------------------------------------------
+   Los bloques entran en cascada de arriba abajo. Lo orquesta
+   js/escaner.js, que es quien reparte los retrasos.
+
+   Antes esto era un fade de toda la página a la vez y él no lo
+   notaba — con razón: si todo aclara junto no hay referencia
+   quieta contra la que ver el cambio.
+
+   El archivo mantiene el nombre `escaner.css` porque lo enlazan
+   ocho páginas.
+   ============================================================ */
+
+/* Tapa la página el instante que va entre que el CSS pinta y el
+   JS reparte las clases. Sin esto se ve un destello con todo ya
+   colocado y luego el arranque de la animación.
+   `visibility` y no `opacity`: no dispara transiciones ni deja a
+   medias la del `body`. */
+html.esc-activo body { visibility: hidden; }
+
+.entra {
+  opacity: 0;
+  transform: translateY(18px);
+}
+
+.entra--ya {
+  opacity: 1;
+  transform: none;
+  /* Bajó de .55s a .38s: la quería más rápida. La curva sale
+     deprisa y frena al final, que es lo que hace que parezca que
+     la pieza "se posa" en vez de aparecer y ya. */
+  transition:
+    opacity   .38s ease-out,
+    transform .38s cubic-bezier(.22, .68, 0, 1);
+  transition-delay: var(--entra-retraso, 0ms);
+}
+
+/* ENTRADA CORTA: al saltar de una pieza del catálogo a otra con
+   las flechas de la ficha, NO HAY ANIMACIÓN NINGUNA. El JS se
+   sale antes de repartir clases, así que esto es solo una red por
+   si alguna quedara puesta.
+
+   Se probó antes con la cascada sin escalonar y un fade de
+   0,18 s, y él seguía viendo demasiado movimiento. Recorriendo el
+   catálogo pieza por pieza, lo que se quiere es que cambie el
+   contenido y nada más. */
+html.esc-corta .entra,
+html.esc-corta .entra--ya {
+  opacity: 1; transform: none; transition: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.esc-activo body { visibility: visible; }
+  .entra, .entra--ya { opacity: 1; transform: none; transition: none; }
+}

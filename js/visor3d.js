@@ -40,6 +40,7 @@ window.Visor3D = (function () {
     return v || respaldo;
   }
 
+
   /* --------------------------------------------------------
      abrir(contenedor, rutaGlb, textos)
      textos = { cargando, error, ayuda }
@@ -76,9 +77,14 @@ window.Visor3D = (function () {
     /* Tono de cine: comprime las luces altas en vez de quemarlas.
        Es lo que quita el aspecto de plástico. */
     render.toneMapping = THREE.ACESFilmicToneMapping;
-    render.toneMappingExposure = 1.15;
-    render.shadowMap.enabled = true;
-    render.shadowMap.type = THREE.PCFSoftShadowMap;
+    render.toneMappingExposure = 1.05;
+    /* SIN SOMBRAS desde el 14/08/2026, por decisión suya. Las
+       sombras proyectadas caían sobre las propias piezas y se
+       leían como manchas de otro tono —"sombras que no parecen
+       sombras"— sobre todo con el modelo despiezado, donde una
+       tabla le tira la sombra encima a la de al lado. Sin ellas
+       el mueble se lee por la veta y los cantos. */
+    render.shadowMap.enabled = false;
 
     /* Cielo de estudio dibujado en un lienzo: da luz ambiente con
        direccion, que es lo que le falta a un modelo plano de
@@ -88,10 +94,15 @@ window.Visor3D = (function () {
       cv.width = 8; cv.height = 128;
       var ctx = cv.getContext("2d");
       var grad = ctx.createLinearGradient(0, 0, 0, 128);
-      grad.addColorStop(0.00, "#ffffff");
-      grad.addColorStop(0.45, "#efe6da");
-      grad.addColorStop(0.55, "#c9bcab");
-      grad.addColorStop(1.00, "#6d5c4a");
+      /* 2026-08-14 · Degradado MUCHO más plano. El de antes iba de
+         blanco puro a marrón oscuro, y desde que las piezas se
+         pintan de un color liso eso se veía como dos tonos
+         distintos en el mismo mueble: sin veta que lo disimule,
+         cada cara plana queda de un tono uniforme y el salto entre
+         caras canta. */
+      grad.addColorStop(0.00, "#f0ece6");
+      grad.addColorStop(0.50, "#e8e2da");
+      grad.addColorStop(1.00, "#ded6cb");
       ctx.fillStyle = grad; ctx.fillRect(0, 0, 8, 128);
       var tex = new THREE.CanvasTexture(cv);
       tex.mapping  = THREE.EquirectangularReflectionMapping;
@@ -113,21 +124,30 @@ window.Visor3D = (function () {
     /* Luz: cielo cálido arriba, rebote de madera abajo, y dos
        direccionales suaves. Sin sombras duras, que en un mueble
        claro se ven sucias. */
-    escena.add(new THREE.HemisphereLight(0xfff4e6, 0x8d7b66, 0.55));
+    /* 2026-08-13 · Se bajó la luz general y se subió la sombra.
+       Antes sumaba 2,70 de luz directa más el entorno, y la madera
+       salía lavada respecto de SketchUp: los tonos existían pero
+       el exceso de luz se los comía. Ahora suma 1,80 y la forma se
+       lee por el contraste, no por el brillo. */
+    /* 2026-08-14 · Se rebalanceó entero: manda la luz ambiente y
+       la direccional pasa a ser un apunte. Con relleno plano el
+       contraste entre caras baja de 1,22 a 1,10 —"todo del mismo
+       tono", que es lo que él pidió— y la forma se sigue leyendo
+       por los cantos. No bajes más la ambiente sin mirarlo: a
+       partir de ahí la pieza se aplana y parece una silueta. */
+    escena.add(new THREE.HemisphereLight(0xfff4e6, 0x6b5b49, 0.75));
 
-    var principal = new THREE.DirectionalLight(0xfff6ea, 1.35);
+    var principal = new THREE.DirectionalLight(0xfff6ea, 0.45);
     principal.position.set(4, 8, 6);
-    principal.castShadow = true;
-    principal.shadow.mapSize.set(1024, 1024);
-    principal.shadow.bias = -0.0012;
+    principal.castShadow = false;
     escena.add(principal);
 
-    var relleno = new THREE.DirectionalLight(0xe8eef5, 0.35);
+    var relleno = new THREE.DirectionalLight(0xe8eef5, 0.45);
     relleno.position.set(-6, 3, -5);
     escena.add(relleno);
 
     /* contraluz: separa la pieza del fondo por el borde */
-    var contra = new THREE.DirectionalLight(0xffffff, 0.45);
+    var contra = new THREE.DirectionalLight(0xffffff, 0.22);
     contra.position.set(-3, 4, -8);
     escena.add(contra);
 
@@ -151,62 +171,76 @@ window.Visor3D = (function () {
       modelo.traverse(function (o) {
         if (!o.isMesh) return;
 
-        o.castShadow = true;
-        o.receiveShadow = true;
+        o.castShadow = false;
+        o.receiveShadow = false;
+
+        /* NORMALES: se recalculan SIEMPRE, y esto no es un lujo.
+           Las que trae el .glb están mal: el 72–79% de los
+           triángulos, en TODOS los modelos, tienen la normal
+           contraria a la cara que definen sus propios vértices.
+           Como la luz se calcula con la normal, piezas de la
+           MISMA madera salían con tonos distintos —la bandeja
+           parecía pino al lado de las aletas de samán— y no había
+           forma de arreglarlo tocando las luces.
+
+           Medido el 14/08/2026: entre piezas de igual textura, la
+           más clara era 2,95 veces más luminosa que la más
+           oscura. Recalculando baja a 1,10, o sea uniforme.
+           Se recalculan a partir del orden de los vértices, que
+           SÍ es correcto; negarlas sin más no arregla (1,81).
+
+           El fallo de raíz está en Herramientas\dae-a-glb.py, que
+           es quien escribe esas normales. Mientras siga ahí, esta
+           línea es lo que sostiene el color de todo el visor. */
+        if (o.geometry) o.geometry.computeVertexNormals();
 
         var m = o.material;
-        if (m) {
-          /* la veta de la madera se ve borrosa en angulo si no se
-             filtra; esto la mantiene nitida */
+        if (m && m.isMeshStandardMaterial) {
+          /* TEXTURAS, tal como salen de SketchUp (él, 14/08/2026,
+             después de haber probado el color plano y no gustarle).
+
+             La ORIENTACIÓN de la veta —si va a lo largo o a lo
+             ancho de la pieza— viene en las coordenadas UV y se
+             respeta sin tocar nada: `dae-a-glb.py` las copia del
+             .dae haciendo sólo el volteo de V que exige glTF
+             (COLLADA cuenta la V desde abajo y glTF desde arriba)
+             y NO intercambia los ejes, así que la dirección de la
+             veta se conserva. Comprobado midiendo a qué dirección
+             del mueble apunta el eje V en cada cara.
+
+             Aquí NO se reorienta ni se reescala nada: si una veta
+             sale torcida, está torcida en el .skp y se arregla
+             allá, no aquí. */
           if (m.map) {
-            m.map.anisotropy = maxAniso;
+            m.map.anisotropy = maxAniso;   /* nítida en ángulo */
             m.map.needsUpdate = true;
           }
-          /* SketchUp no exporta rugosidad: sin esto todo sale con
-             el mismo brillo plano de plastico */
-          if (m.isMeshStandardMaterial) {
-            m.roughness = m.map ? 0.72 : 0.62;
-            m.metalness = 0.0;
-            m.envMapIntensity = 0.85;
-          }
+          /* Sin aoMap: reutilizaba el mapa de color como oclusión
+             y lo que hacía era ensuciar la veta. */
+          m.aoMap = null;
+          m.roughness = 0.72;
+          m.metalness = 0.0;
+          m.envMapIntensity = 0.85;
+          m.needsUpdate = true;
         }
 
-        /* Aristas: SketchUp se lee por sus lineas, y al exportar
-           solo geometria el mueble pierde todos los cantos. Se
-           redibujan a partir de la propia malla, marcando solo
-           los quiebres de mas de 30 grados. */
-        try {
-          var aristas = new THREE.LineSegments(
-            new THREE.EdgesGeometry(o.geometry, 30),
-            new THREE.LineBasicMaterial({
-              color: 0x2e2118, transparent: true, opacity: 0.34
-            })
-          );
-          aristas.renderOrder = 1;
-          o.add(aristas);
-        } catch (e) { /* si una malla no admite aristas, se deja sin */ }
+        /* Las aristas se quitaron el 14/08/2026: se le veían como
+           "líneas raras" cruzando las piezas, y no era percepción
+           suya. La geometría que sale del conversor tiene los
+           vértices sin soldar, así que EdgesGeometry no reconoce
+           caras vecinas y dibujaba 4.441 segmentos donde tocaban
+           un par de cientos — rayaba las caras enteras en vez de
+           marcar los cantos. Subir el umbral a 55° no arreglaba
+           nada (4.441 contra 4.445).
+           Si algún día se quieren recuperar los cantos, primero
+           hay que soldar la malla en el conversor. */
       });
 
-      /* --- suelo que solo recoge la sombra ------------------ */
-      var suelo = new THREE.Mesh(
-        new THREE.PlaneGeometry(mayor * 12, mayor * 12),
-        new THREE.ShadowMaterial({ opacity: 0.22 })
-      );
-      suelo.rotation.x = -Math.PI / 2;
-      suelo.position.y = -tam.y / 2 - mayor * 0.002;
-      suelo.receiveShadow = true;
-      escena.add(suelo);
-
-      /* la camara de sombras tiene que abrazar la pieza */
-      var s = mayor * 0.85;
-      principal.shadow.camera.left = -s;
-      principal.shadow.camera.right = s;
-      principal.shadow.camera.top = s;
-      principal.shadow.camera.bottom = -s;
-      principal.shadow.camera.near = mayor * 0.05;
-      principal.shadow.camera.far = mayor * 30;
+      /* Aquí iban el suelo que recogía la sombra y la cámara de
+         sombras. Se fueron los dos con las sombras (14/08/2026):
+         sin `shadowMap` el suelo no pintaba nada y la cámara no
+         se usa. */
       principal.position.set(mayor * 1.2, mayor * 2.2, mayor * 1.6);
-      principal.shadow.camera.updateProjectionMatrix();
 
       var dist = (mayor / 2) / Math.tan((camara.fov * Math.PI / 180) / 2);
       dist *= 1.9;

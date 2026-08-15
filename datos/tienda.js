@@ -58,7 +58,7 @@ window.TIENDA = [
         id: "madera",
         etiqueta: { es: "Madera", en: "Wood" },
         valores: [
-          { id: "saman", etiqueta: { es: "Samán", en: "Samán" }, delta: 0 },
+          { id: "saman", etiqueta: { es: "Samán", en: "Monkeypod" }, delta: 0 },
           { id: "pino",  etiqueta: { es: "Pino",  en: "Pine" },  delta: -15 },
           { id: "cedro", etiqueta: { es: "Cedro", en: "Cedar" }, delta: 20 }
         ]
