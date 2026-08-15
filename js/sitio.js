@@ -134,14 +134,21 @@
     return null;
   }
 
-  /* Portada de un video: video/algo.mp4 -> img/trabajos/algo-portada.jpg
+  /* Portada de un video: video/algo.mp4 -> img/trabajos/algo-portada.webp
      Se generan con capturar-portada-video.html. Teniéndola, el
      navegador enseña esa imagen y NO descarga el video hasta que
-     le dan al play: la portada pasó de bajar 15 MB a bajar 45 KB. */
+     le dan al play: la portada pasó de bajar 15 MB a bajar 45 KB.
+
+     15/08/2026 · Pasó de .jpg a .webp con el resto de las
+     imágenes. Los .jpg siguen en img/trabajos/ sin tocar; si
+     alguna vez hay que volver atrás, se cambia esta línea y ya.
+     OJO: capturar-portada-video.html sigue GUARDANDO en .jpg (el
+     servidor local solo acepta .jpg y .png), así que al generar
+     una portada nueva hay que convertirla a .webp además. */
   function portadaDe(rutaVideo) {
     if (!rutaVideo) return null;
     var nombre = rutaVideo.split("/").pop().replace(/\.mp4$/i, "");
-    return "img/trabajos/" + nombre + "-portada.jpg";
+    return "img/trabajos/" + nombre + "-portada.webp";
   }
 
   /* Deja un <video> parado en el segundo que se le diga, para
@@ -407,8 +414,16 @@
     return filas;
   }
 
+  /* Quién tenía el foco antes de abrir el buscador, para
+     devolvérselo al cerrar (15/08/2026). Sin esto, al pulsar Esc
+     el foco se quedaba dentro del buscador ya cerrado: quien
+     navega con teclado quedaba en un elemento invisible y tenía
+     que tabular desde el principio de la página. */
+  var focoAntesDelBuscador = null;
+
   function abrirBuscador() {
     if (!cajaBuscador) cajaBuscador = construirBuscador();
+    focoAntesDelBuscador = document.activeElement;
     cajaBuscador.classList.add("abierto");
     var campo = $("input", cajaBuscador);
     campo.value = "";
@@ -418,7 +433,15 @@
   }
 
   function cerrarBuscador() {
-    if (cajaBuscador) cajaBuscador.classList.remove("abierto");
+    /* Si ya estaba cerrado no se toca el foco: Esc se escucha en
+       todo el documento y saltaría también con el buscador
+       cerrado, robándole el foco a lo que estuviera activo. */
+    if (!cajaBuscador || !cajaBuscador.classList.contains("abierto")) return;
+    cajaBuscador.classList.remove("abierto");
+    if (focoAntesDelBuscador && document.contains(focoAntesDelBuscador)) {
+      focoAntesDelBuscador.focus();
+    }
+    focoAntesDelBuscador = null;
   }
 
   function construirBuscador() {
@@ -639,8 +662,18 @@
       return b;
     });
 
-    var hamb = el("button", { class: "hamburguesa", type: "button", "aria-label": "Menú", html: "&#9776;" });
-    hamb.addEventListener("click", function () { menu.classList.toggle("abierto"); });
+    /* aria-expanded dice si el menú está desplegado o no. Sin él,
+       un lector de pantalla anuncia «Menú, botón» y se queda ahí:
+       no hay forma de saber si pulsar lo abre o lo cierra, ni si
+       lo que se acaba de pulsar hizo algo. Se marca también
+       aria-controls para atar el botón con la lista que abre. */
+    var hamb = el("button", { class: "hamburguesa", type: "button",
+                              "aria-label": "Menú", "aria-expanded": "false",
+                              "aria-controls": "menu", html: "&#9776;" });
+    hamb.addEventListener("click", function () {
+      var abierto = menu.classList.toggle("abierto");
+      hamb.setAttribute("aria-expanded", abierto ? "true" : "false");
+    });
 
     var lupa = el("button", { class: "lupa", type: "button",
       "aria-label": t("buscar"), html: ICONOS.lupa });
@@ -664,7 +697,11 @@
            presupuesto y el Optimizador de Corte. No los borres. */
         el("span", { class: "marca__texto", "aria-hidden": "true",
                      html: "prototipo<br>ago" }),
-        el("img", { class: "marca__perfil", src: "img/marca/perfil.png", alt: "" })
+        /* .webp desde el 15/08/2026: el PNG pesaba 168 KB para
+           pintarse a 71 px y viajaba en TODAS las páginas — era lo
+           más pesado que bajaba el sitio de entrada. En WebP son
+           10 KB. El .png sigue en img/marca/ por si acaso. */
+        el("img", { class: "marca__perfil", src: "img/marca/perfil.webp", alt: "" })
       ]),
       hamb,
       menu,
@@ -791,7 +828,13 @@
        avisar de que la imagen es un render y no una foto. */
     return el("a", { class: "tarjeta", href: "trabajo.html?id=" + w.slug }, [
       marcoImagen(w.imagen, false, !w.publicado, alt),
-      el("h3", { texto: tx(w.titulo) })
+      /* h2 y no h3 (15/08/2026): en Exhibición la cuadrícula cuelga
+         directamente del <h1> de la página, sin ninguna sección
+         intermedia, así que con h3 la jerarquía saltaba de 1 a 3.
+         Es como una tabla de contenidos a la que le falta un
+         escalón. El aspecto no cambia: el CSS de abajo apunta a los
+         dos niveles. */
+      el("h2", { texto: tx(w.titulo) })
     ]);
   }
 
@@ -932,6 +975,11 @@
        entrada escalonada propia. Se quitó todo con el bloque del
        HTML: la página arranca en el carrusel y la entrada la lleva
        js/escaner.js, igual que el resto del sitio. */
+
+    /* El titular invisible de la página. Se rellena aquí y no en
+       el HTML para que cambie con el idioma como todo lo demás. */
+    var h1nv = $("#nv-titulo");
+    if (h1nv) h1nv.textContent = t("nav_novedades");
 
     /* El área de novedades: solo lo marcado con novedad:true en
        datos/trabajos.js. Si mañana hay dos, se desliza sola. */

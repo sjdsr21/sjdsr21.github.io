@@ -48,8 +48,11 @@
    primero: cuánto elevan. */
 .dg-destacada .dg-cota,
 .dg-destacada .dg-ref  { stroke: var(--acento-claro); opacity: 1; }
-.dg-destacada .dg-txt  { fill: var(--acento-claro); }
-.dg-destacada          { color: var(--acento-claro); }
+/* El texto de la cota va con el token de TEXTO: en claro el de
+   relleno se queda en 2,96:1 y la cifra no se lee. La línea de
+   arriba sí puede seguir con el de relleno, que es un trazo. */
+.dg-destacada .dg-txt  { fill: var(--acento-texto); }
+.dg-destacada          { color: var(--acento-texto); }
 
 /* --- el suelo y el portátil ---------------------------------- */
 .dg-suelo {

@@ -35,6 +35,14 @@
   <header id="cabecera"></header>
 
   <main>
+    <!-- El titular de la página. Va oculto a la vista a propósito:
+         él quitó la portada el 14/08/2026 y quiere que arranque en
+         el carrusel, pero sin ningún <h1> esta página no le dice a
+         Google ni a un lector de pantalla de qué trata. Lo rellena
+         js/sitio.js con el texto de nav_novedades, que ya está
+         traducido. -->
+    <h1 class="solo-lectores" id="nv-titulo"></h1>
+
     <!-- 2026-08-14 · Aquí iba la portada con «Muebles hechos de a
          uno», su bajada y los botones a Prototipos y Exhibición.
          Fuera por decisión suya: la página arranca directamente

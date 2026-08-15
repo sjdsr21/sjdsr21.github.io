@@ -25,8 +25,40 @@
   cursor: pointer; font: inherit;
   transition: background .18s var(--curva-suave);
 }
-.pt-ficha:focus-visible { outline: 2px solid var(--realce); outline-offset: -2px; }
 .pt-ficha:hover { background: var(--caja-alta); }
+/* La tarjeta necesita ser el marco de referencia para que el
+   ::after del botón se estire sobre ella. */
+.pt-ficha { position: relative; }
+
+/* EL BOTÓN QUE ABRE LA PIEZA (15/08/2026).
+   Va dentro del <h3> y no se ve como botón: hereda la letra del
+   título y no lleva ni fondo ni borde. Su ::after se estira sobre
+   la tarjeta entera, así que sigue abriéndose pulsando donde sea
+   —igual que cuando la tarjeta era un role="button"— pero ahora
+   el nombre que anuncia un lector de pantalla es solo el de la
+   pieza, y las flechas vuelven a ser botones de verdad.
+   El foco se dibuja sobre TODA la tarjeta, no sobre las palabras
+   del título, que es donde se espera verlo. */
+.pt-ficha__abrir {
+  font: inherit; color: inherit; text-align: left;
+  background: none; border: 0; padding: 0; margin: 0;
+  cursor: pointer;
+}
+.pt-ficha__abrir::after {
+  content: ""; position: absolute; inset: 0;
+  /* Por debajo de las flechas y del contador, que llevan z-index:2 */
+  z-index: 1;
+}
+.pt-ficha__abrir:focus-visible { outline: none; }
+.pt-ficha:has(.pt-ficha__abrir:focus-visible) {
+  outline: 2px solid var(--realce); outline-offset: -2px;
+}
+/* Respaldo para navegadores sin :has() — ahí el foco se dibuja
+   alrededor del título en vez de la tarjeta, que se ve peor pero
+   NO deja a nadie sin saber dónde está. */
+@supports not selector(:has(*)) {
+  .pt-ficha__abrir:focus-visible { outline: 2px solid var(--realce); outline-offset: 2px; }
+}
 .pt-ficha__hueco {
   aspect-ratio: 4 / 3; border-bottom: 1px solid var(--linea);
   display: grid; place-items: center;
@@ -118,7 +150,7 @@
 }
 .pt-estado--hay    { color: var(--tinta);  border-color: var(--apagado); }
 .pt-estado--poco   { color: var(--realce); border-color: var(--realce); }
-.pt-estado--pedido { color: var(--madera); border-color: var(--madera); }
+.pt-estado--pedido { color: var(--madera-texto); border-color: var(--madera-texto); }
 
 /* --- panel lateral de configuración ------------------------- */
 .pt-velo { position: fixed; inset: 0; background: rgba(0,0,0,.75); display: none; z-index: 100; }
@@ -345,7 +377,7 @@ video.pt-visual__foto {
 .pt-op:hover { border-color: var(--apagado); color: var(--tinta); }
 .pt-op.sel { border-color: var(--tinta); color: var(--tinta); background: var(--caja-alta); }
 .pt-d { font-size: .72rem; color: var(--apagado); margin-left: .35rem; }
-.pt-op.sel .pt-d { color: var(--madera); }
+.pt-op.sel .pt-d { color: var(--madera-texto); }
 .pt-op:disabled { opacity: .32; cursor: not-allowed; text-decoration: line-through; }
 
 .pt-contador { display: flex; align-items: center; border: 1px solid var(--linea); width: max-content; }
@@ -355,13 +387,13 @@ video.pt-visual__foto {
 }
 .pt-contador button:hover { color: var(--tinta); background: var(--caja-alta); }
 .pt-contador span { width: 52px; text-align: center; font-size: .95rem; font-weight: 700; }
-.pt-nota-pack { font-size: .78rem; color: var(--madera); margin-top: .5rem; }
+.pt-nota-pack { font-size: .78rem; color: var(--madera-texto); margin-top: .5rem; }
 .pt-nota-stock { font-size: .78rem; color: var(--apagado); margin-top: .5rem; line-height: 1.45; }
 /* Cuando se pide más de lo que hay hecho: el número y la nota
    pasan al acento. No es un error, es un aviso — por eso se usa el
    acento de marca y no el rojo de fallo. */
-.pt-cant--sobre { color: var(--acento-claro); }
-.pt-nota-sobre  { color: var(--acento-claro) !important; }
+.pt-cant--sobre { color: var(--acento-texto); }
+.pt-nota-sobre  { color: var(--acento-texto) !important; }
 
 .pt-precio-panel { display: flex; align-items: baseline; justify-content: space-between; gap: .8rem; margin-bottom: .9rem; }
 .pt-precio-panel .n { font-size: 1.7rem; font-weight: 700; }
@@ -444,7 +476,7 @@ video.pt-visual__foto {
 .pt-linea__desc { flex: 1; min-width: 0; }
 .pt-linea__desc b { font-size: .9rem; display: block; }
 .pt-linea__desc small { font-size: .76rem; color: var(--apagado); display: block; margin-top: .15rem; }
-.pt-linea__packs { font-size: .76rem; color: var(--madera); display: block; margin-top: .15rem; }
+.pt-linea__packs { font-size: .76rem; color: var(--madera-texto); display: block; margin-top: .15rem; }
 .pt-linea__mon { font-size: .95rem; font-weight: 700; white-space: nowrap; }
 
 /* La cantidad se edita en la propia línea, con los mismos − y +

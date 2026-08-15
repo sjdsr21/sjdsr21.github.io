@@ -118,6 +118,20 @@
        sobre blanco 3,25:1  (mínimo 3:1 para elementos no textuales) */
   --acento-claro: #D07847;
 
+  /* El MISMO acento, pero para cuando hace de TEXTO y no de
+     relleno. Auditado el 15/08/2026: --acento-claro se coló como
+     color de letra en cuatro sitios (el aviso de "pides más de lo
+     que hay" y la cota protagonista de los diagramas), y ahí sus
+     3,25:1 sobre blanco se quedan cortos — para texto hacen falta
+     4,5:1, no 3:1.
+     En OSCURO es exactamente el mismo color, así que no cambia
+     nada de lo que ya estaba decidido. En claro se hunde, igual
+     que ya hace --realce. Medido:
+       #D07847 sobre negro   6,46:1  → vale
+       #D07847 sobre blanco  3,25:1  → NO vale de texto
+       #A05429 sobre blanco  5,53:1  → éste sí (ver tema claro) */
+  --acento-texto: #D07847;
+
   /* La barra vertical que marca la sección abierta en el menú.
      En oscuro basta el acento de siempre. */
   --nav-activa: #E97451;
@@ -167,8 +181,13 @@
   /* Madera. Acento cálido y ESCASO: sale de sus propios specs
      (los mismos del generador de isométricos), no de una paleta
      inventada. 8,69:1 sobre negro. */
-  --madera:      #C9A063;  /* pino */
+  --madera:      #C9A063;  /* pino. RELLENO (hover del botón) */
   --madera-clara:#D8B98A;  /* contraenchapado 18 mm */
+  /* El mismo pino, pero para cuando hace de TEXTO. En oscuro es
+     idéntico; en claro se hunde (ver el bloque del tema claro).
+     Antes esto era --madera a secas y el plazo "~3 semanas" de
+     las tarjetas daba 2,20:1 en tema claro. */
+  --madera-texto:#C9A063;
 
   /* El encabezado ya no necesita contrastar con el cuerpo: los dos
      son negros. Lo que lo separa es un filete de 1px. */
@@ -282,6 +301,33 @@
      que sobre negro se perdían (2,59:1 el azul). */
   --tres:     #2A5180;      /* 8,12:1 */
   --de:       #B4453C;      /* 5,44:1 */
+
+  /* ---- LOS DOS QUE FALTABAN (auditado el 15/08/2026) ----------
+     El comentario de arriba decía "todo el modo claro son estos
+     tokens", y era verdad salvo por éstos dos, que se quedaron
+     con su valor oscuro. Los dos son tostados que sobre fondo
+     claro no se leen. Se conserva el MISMO tono (36° y 22°); solo
+     baja la luminosidad, que es lo que hace falta. Medido, no
+     estimado:
+       --madera  #C9A063 sobre #F4F4F4 = 2,20:1  ← fallaba
+                 #7D5C2B sobre #F4F4F4 = 5,55:1
+                 #7D5C2B sobre blanco  = 6,11:1
+       acento    #D07847 sobre #F4F4F4 = 2,96:1  ← fallaba de texto
+                 #A05429 sobre #F4F4F4 = 5,03:1
+                 #A05429 sobre blanco  = 5,53:1
+     OJO — y esto es la trampa de todo este arreglo: NO se tocan
+     ni --madera ni --acento-claro, solo sus gemelos de texto.
+     Los dos originales también hacen de RELLENO, y ahí el que
+     manda es el color que va encima:
+       · --acento-claro rellena el cuadradito de la opción
+         escogida — a 3,25:1 cumple el mínimo de 3:1 que le toca.
+       · --madera rellena el hover del botón de pedir, que lleva
+         letra NEGRA encima. Negro sobre #C9A063 da 8,69:1;
+         cambiándolo a #7D5C2B se caería a 3,44:1 y el botón
+         quedaría ilegible justo al pasarle el ratón.
+     Se probó y se midió: por eso van tokens separados. */
+  --madera-texto:  #7D5C2B;
+  --acento-texto:  #A05429;
 }
 
 /* El sello "3D" por defecto es blanco, que es lo seguro sobre la
@@ -302,6 +348,26 @@
 :root[data-tema="claro"] { color-scheme: light; }
 
 *, *::before, *::after { box-sizing: border-box; }
+
+/* ------------------------------------------------------------
+   SOLO PARA LECTORES DE PANTALLA (15/08/2026)
+   Texto que no se ve pero sí se lee en voz alta. Sirve para poner
+   el título de una página que a propósito no enseña titular —el
+   caso de Novedades, que él dejó arrancando directo en el
+   carrusel—: sin un <h1> esa página no dice de qué trata, ni a
+   Google ni a quien no ve la pantalla.
+   NO se usa `display:none` ni `visibility:hidden`: eso también lo
+   esconde del lector, que es justo lo contrario de lo que se
+   busca. La receta es sacarlo de la vista recortándolo a un píxel.
+   ------------------------------------------------------------ */
+.solo-lectores {
+  position: absolute;
+  width: 1px; height: 1px;
+  margin: -1px; padding: 0; border: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
 
 html { scroll-behavior: smooth; }
 
@@ -672,12 +738,16 @@ body:not([data-pagina="novedades"]) .portada .bajada {
 /* Sin negrita en los títulos de la cuadrícula (él, 14/08/2026):
    con la categoría fuera, el nombre es lo único que hay debajo de
    la foto y en negrita pesaba demasiado. */
-.tarjeta h3 { margin-bottom: .2rem; font-weight: 400; }
+/* h2 y h3 juntos: Exhibición usa h2 (cuelga del h1 de la página) y
+   el resto de cuadrículas h3. Se ven igual; lo que cambia es el
+   nivel en el índice, no el dibujo. */
+.tarjeta h3, .tarjeta h2 { margin-bottom: .2rem; font-weight: 400; }
 
 /* En Exhibición el nombre va CENTRADO, más chico y en el peso
    más fino de Roboto. Es lo único que lleva la tarjeta debajo de
    la foto, y así pesa lo justo. */
-.rejilla--tres .tarjeta h3 {
+.rejilla--tres .tarjeta h3,
+.rejilla--tres .tarjeta h2 {
   text-align: center;
   font-size: .92rem;
   font-weight: 300;
@@ -1200,7 +1270,17 @@ body:not([data-pagina="novedades"]) .portada .bajada {
 .buscador__arriba svg { width: 19px; height: 19px; fill: none; stroke: var(--apagado); stroke-width: 2.1; flex: none; }
 .buscador__arriba input {
   flex: 1; font: inherit; font-size: 1.05rem; border: 0; background: transparent;
-  color: var(--tinta); outline: none; min-width: 0;
+  color: var(--tinta); min-width: 0;
+}
+/* Aquí había un `outline: none` a secas — el único de todo el
+   sitio. Quitaba la marca de foco del campo de búsqueda y no ponía
+   nada en su lugar, así que con el teclado no había forma de saber
+   que el cursor estaba ahí. Ahora la marca es un filete bajo el
+   campo, que encaja mejor que el anillo del navegador en una caja
+   que ya ocupa toda la fila. */
+.buscador__arriba input:focus-visible {
+  outline: none;
+  box-shadow: 0 2px 0 0 var(--realce);
 }
 .buscador__cerrar {
   font: inherit; font-size: .74rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;

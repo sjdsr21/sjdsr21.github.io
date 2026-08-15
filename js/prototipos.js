@@ -175,15 +175,31 @@
       visual = '<span class="pt-ficha__hueco">' + t("pt_sin_imagen") + '</span>';
     }
 
-    /* La ficha dejó de ser un <button>: ahora lleva las flechas
-       DENTRO, y un botón no puede contener otros botones — el
-       navegador desanida el marcado y las flechas acaban fuera de
-       la tarjeta. Va como div con rol de botón, y más abajo se le
-       añade el manejo de teclado que un <button> daba gratis. */
-    return '<div class="pt-ficha" role="button" tabindex="0" data-slug="' + p.slug + '">' +
+    /* CÓMO SE HACE CLIC EN LA TARJETA · revisado el 15/08/2026
+       Historia: primero era un <button> entero, pero un botón no
+       puede contener otros botones y las flechas van DENTRO — el
+       navegador desanidaba el marcado. Se pasó a div con
+       role="button", y eso arreglaba el navegador pero rompía el
+       lector de pantalla: con rol de botón, TODO lo de dentro
+       pasa a ser el nombre del botón, así que se anunciaba
+       «‹ › 1/2 Base de laptop — alta Eleva la pantalla...» y las
+       flechas dejaban de existir para quien no ve.
+
+       Ahora: la tarjeta es un div normal, sin rol y sin tabindex.
+       El control de verdad es un <button> en el título, que se
+       llama solo con el nombre de la pieza. Ese botón se estira
+       por encima de toda la tarjeta con un ::after (ver
+       .pt-ficha__abrir en el CSS), así que se sigue pudiendo
+       pulsar donde sea. Las flechas quedan por encima gracias a
+       su z-index, que ya lo tenían.
+
+       De regalo: se cae el manejo de Enter y espacio a mano, que
+       un <button> trae de fábrica. */
+    return '<div class="pt-ficha" data-slug="' + p.slug + '">' +
       visual +
       '<span class="pt-ficha__cuerpo">' +
-        '<h3>' + tx(p.nombre) + '</h3>' +
+        '<h3><button type="button" class="pt-ficha__abrir" data-slug="' + p.slug + '">' +
+          tx(p.nombre) + '</button></h3>' +
         '<span class="pt-ficha__res">' + tx(p.resumen) + '</span>' +
         '<span class="pt-ficha__pie">' +
           '<span class="pt-precio">' +
@@ -219,16 +235,12 @@
       v: window.TASAS.bcv.toLocaleString("es-VE", {minimumFractionDigits: 2, maximumFractionDigits: 2})
     }) + " · " + window.TASAS.fecha;
 
-    Array.prototype.forEach.call(document.querySelectorAll(".pt-ficha"), function (f) {
-      f.addEventListener("click", function () { abrirPanel(f.dataset.slug); });
-      /* Lo que un <button> daba gratis y un div no: abrir con
-         Enter o con espacio. */
-      f.addEventListener("keydown", function (e) {
-        if (e.key === "Enter" || e.key === " ") {
-          e.preventDefault();
-          abrirPanel(f.dataset.slug);
-        }
-      });
+    /* Un solo escuchador, en el botón del título. Su ::after cubre
+       la tarjeta entera, así que un clic en cualquier parte de la
+       tarjeta llega aquí igual. Ya no hace falta el keydown a
+       mano: Enter y espacio los trae el <button>. */
+    Array.prototype.forEach.call(document.querySelectorAll(".pt-ficha__abrir"), function (b) {
+      b.addEventListener("click", function () { abrirPanel(b.dataset.slug); });
     });
 
     /* Las flechas pasan la foto SIN abrir la ficha: por eso el
@@ -263,18 +275,71 @@
      ============================================================ */
   var sel = null;
 
+  /* ------------------------------------------------------------
+     EL PANEL ES UN DIÁLOGO, Y ESO OBLIGA A CUATRO COSAS
+     Antes solo se le ponía la clase "abierto" y ya. Auditado el
+     15/08/2026: le faltaban las cuatro, y la primera dejaba el
+     flujo de compra ENTERO fuera del alcance de un lector de
+     pantalla, porque el aria-hidden="true" del HTML no se quitaba
+     nunca.
+       1. aria-hidden fuera al abrir, puesto al cerrar.
+       2. el foco entra al panel, y vuelve de donde salió al cerrar.
+       3. el tabulador no se escapa a lo de detrás (trampa de foco).
+       4. la página de fondo no se mueve con la rueda.
+     ------------------------------------------------------------ */
+
+  /* Quién tenía el foco antes de abrir, para devolvérselo. Sin
+     esto, al cerrar con Esc el foco se queda en un elemento ya
+     invisible y quien navega con teclado no sabe dónde está. */
+  var focoPrevio = null;
+
+  /* Lo focusable de dentro del panel, en orden. Se calcula al
+     vuelo porque el contenido del panel se repinta entero cada
+     vez que se cambia una opción. */
+  function focablesDelPanel() {
+    var p = $("#pt-panel");
+    var todos = p.querySelectorAll(
+      'a[href], button:not([disabled]), select, input, textarea, [tabindex]:not([tabindex="-1"])');
+    return Array.prototype.filter.call(todos, function (e) {
+      var r = e.getBoundingClientRect();
+      return r.width > 0 && r.height > 0;
+    });
+  }
+
+  /* Bloqueo del scroll de fondo. Se guarda el valor que tenía el
+     body para restituirlo tal cual: si se pone "" a ciegas se
+     pisa cualquier otra cosa que lo estuviera usando. */
+  var overflowPrevio = null;
+
   function abrirPanel(slug) {
     var p = visibles().filter(function (x) { return x.slug === slug; })[0];
     if (!p) return;
+    focoPrevio = document.activeElement;
     sel = { p: p, o: opcionesPorDefecto(p), cant: 1 };
     medioActivo = 0;   /* siempre abre por la foto de portada */
     $("#pt-panel").classList.add("abierto");
+    $("#pt-panel").setAttribute("aria-hidden", "false");
     $("#pt-velo").classList.add("abierto");
+    overflowPrevio = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
     pintarPanel();
+    /* El foco al botón de cerrar y no al primer control: es el
+       punto de partida que no cambia de sitio entre una pieza y
+       otra, y desde ahí se tabula al resto. */
+    var cerrar = $("#pt-pn-cerrar");
+    if (cerrar) setTimeout(function () { cerrar.focus(); }, 0);
   }
   function cerrarPanel() {
+    /* Si ya estaba cerrado no hay nada que deshacer. Esto importa
+       porque Esc está escuchado en todo el documento y se dispara
+       también con el panel cerrado; sin esta salida, cada Esc
+       robaría el foco de vuelta a la tarjeta. */
+    if (!$("#pt-panel").classList.contains("abierto")) return;
     $("#pt-panel").classList.remove("abierto");
+    $("#pt-panel").setAttribute("aria-hidden", "true");
     $("#pt-velo").classList.remove("abierto");
+    document.body.style.overflow = overflowPrevio || "";
+    overflowPrevio = null;
     /* Apagar el visor al cerrar. Si se deja vivo, sigue pintando
        cuadros contra un panel que nadie ve y se queda con el
        contexto WebGL ocupado. */
@@ -285,6 +350,12 @@
     $("#pt-pn-lienzo").innerHTML = "";
     montado = null;
     sel = null;
+    /* El foco vuelve a la tarjeta desde la que se abrió. Se
+       comprueba que siga en la página: si el catálogo se repintó
+       mientras tanto, ese nodo ya no existe y enfocarlo no haría
+       nada, así que mejor no intentarlo. */
+    if (focoPrevio && document.contains(focoPrevio)) focoPrevio.focus();
+    focoPrevio = null;
   }
 
   /* ---------- la visual del panel ---------------------------- */
@@ -1139,6 +1210,26 @@
   $("#pt-velo").addEventListener("click", cerrarPanel);
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape") { cerrarPanel(); return; }
+
+    /* TRAMPA DE FOCO. Con el panel abierto, el tabulador da la
+       vuelta dentro del panel en vez de irse a los 47 elementos
+       que quedan detrás. Sin esto el panel es modal solo de
+       aspecto: se ve encima, pero el teclado se escapa por debajo
+       y ya no hay forma de saber dónde está uno. */
+    if (e.key === "Tab" && $("#pt-panel").classList.contains("abierto")) {
+      var f = focablesDelPanel();
+      if (!f.length) { e.preventDefault(); return; }
+      var primero = f[0], ultimo = f[f.length - 1];
+      var act = document.activeElement;
+      /* Si el foco se hubiera escapado ya (o nunca entró), se le
+         trae de vuelta al primero en vez de dejarlo fuera. */
+      if (!$("#pt-panel").contains(act)) {
+        e.preventDefault(); primero.focus(); return;
+      }
+      if (e.shiftKey && act === primero) { e.preventDefault(); ultimo.focus(); }
+      else if (!e.shiftKey && act === ultimo) { e.preventDefault(); primero.focus(); }
+      return;
+    }
 
     /* Flechas para pasar de foto a 3D, a plano, a vídeo (él,
        14/08/2026). Solo con el panel abierto, y NO cuando el foco
