@@ -41,7 +41,7 @@ window.PROTOTIPOS = [
        margen vacío y las encoge.
        `imagen` es la de la cuadrícula; `imagen_por` cambia con la
        madera dentro del panel. */
-    imagen: "img/prototipos/base-alta-saman.png",
+    imagen: "img/prototipos/base-alta-saman.webp",
     sin_fondo: true,
     /* Plano de cotas. Las medidas salen del MODELO 3D: era el
        único sitio donde existían. Ver js/diagramas.js. */
@@ -52,8 +52,8 @@ window.PROTOTIPOS = [
        El .png anterior (Nano Banana) sigue en la carpeta por si acaso. */
     plano_img: "img/prototipos/base-alta-plano.svg",
     imagen_por: {
-      pino:  "img/prototipos/base-alta-pino.png",
-      saman: "img/prototipos/base-alta-saman.png"
+      pino:  "img/prototipos/base-alta-pino.webp",
+      saman: "img/prototipos/base-alta-saman.webp"
     },
 
     /* Modelo 3D POR VARIANTE: al cambiar de madera cambia el
@@ -103,14 +103,14 @@ window.PROTOTIPOS = [
     precio_usd: 55,
     peso: 1.1,               /* RELLENO */
 
-    imagen: "img/prototipos/base-baja-saman.png",
+    imagen: "img/prototipos/base-baja-saman.webp",
     sin_fondo: true,
     diagrama: "base-baja",
     imagen_por: {
       /* Solo hay foto del samán. El apamate se queda con la misma
          hasta que la haya: es el mismo diseño, distinta madera. */
-      apamate: "img/prototipos/base-baja-saman.png",
-      saman:   "img/prototipos/base-baja-saman.png"
+      apamate: "img/prototipos/base-baja-saman.webp",
+      saman:   "img/prototipos/base-baja-saman.webp"
     },
 
     /* Modelos 3D exportados el 12/08/2026. El .dae SIN sufijo es
@@ -159,7 +159,7 @@ window.PROTOTIPOS = [
     },
     peso_por: { s: 1.2, m: 2.6, l: 4.8 },   /* RELLENO */
 
-    imagen: "img/prototipos/tabla-de-picar.png",
+    imagen: "img/prototipos/tabla-de-picar.webp",
     sin_fondo: true,
     /* Un plano por talla: el diagrama cambia con el tamaño. */
     opcion_diagrama: "tamano",
@@ -211,7 +211,7 @@ window.PROTOTIPOS = [
     peso: 7.5,               /* RELLENO */
     medidas: { es: "60 × 40 × 4 cm", en: "60 × 40 × 4 cm" },
 
-    imagen: "img/prototipos/butcher-block.png",
+    imagen: "img/prototipos/butcher-block.webp",
     sin_fondo: true,
     diagrama: "butcher-l",
     /* Una sola madera, así que el modelo va directo y no por
@@ -264,11 +264,11 @@ window.PROTOTIPOS = [
     /* Dos fotos: la de portada de tres cuartos y una de perfil,
        que es donde se ve el cruce de las patas. La segunda entra
        por `galeria`, así que sale como segunda miniatura. */
-    imagen: "img/prototipos/comedero-pequeno-1.png",
+    imagen: "img/prototipos/comedero-pequeno-1.webp",
     sin_fondo: true,
     galeria: [
-      "img/prototipos/comedero-pequeno-2.png",
-      "img/prototipos/comedero-pequeno-3.jpg"   /* foto, con fondo */
+      "img/prototipos/comedero-pequeno-2.webp",
+      "img/prototipos/comedero-pequeno-3.webp"   /* foto, con fondo */
     ],
 
     /* Modelo exportado el 13/08/2026 y convertido el 14. Es el
@@ -312,16 +312,16 @@ window.PROTOTIPOS = [
     /* Dos vistas de la misma pieza (confirmado por él): la de
        tres cuartos y la de las placas, que enseña la ranura y el
        tamaño en la mano. */
-    imagen: "img/prototipos/gancho-pared-1.png",
+    imagen: "img/prototipos/gancho-pared-1.webp",
     sin_fondo: true,
     /* La 1 y la 2 son recortes sin fondo; la 3 y la 4 son fotos
        normales que agregó el 14/08/2026, y van en su orden detrás.
        OJO: `sin_fondo` es del producto entero, así que estas dos
        se pintan encajadas igual, con su fondo. */
     galeria: [
-      "img/prototipos/gancho-pared-2.png",
-      "img/prototipos/gancho-pared-3.jpg",
-      "img/prototipos/gancho-pared-4.jpg"
+      "img/prototipos/gancho-pared-2.webp",
+      "img/prototipos/gancho-pared-3.webp",
+      "img/prototipos/gancho-pared-4.webp"
     ],
     video: "video/gancho-pared.mp4",
     modelo3d: "modelos/gancho-ery.glb"
@@ -447,7 +447,7 @@ window.PROTOTIPOS = [
        OJO: las fotos delatan DOS maderas (una clara y una
        oscura) que el producto todavía no ofrece como opción.
        Pendiente de que él diga si se escoge o si va surtido. */
-    imagen: "img/prototipos/bases-foto-1.png",
+    imagen: "img/prototipos/bases-foto-1.webp",
     sin_fondo: true,
     /* La portada enseña las dos maderas juntas y se queda fija;
        dentro del panel la foto cambia con la madera escogida.
@@ -455,14 +455,14 @@ window.PROTOTIPOS = [
        se cuela delante de las de `imagen_por`. */
     opcion_visual: "madera",
     imagen_por: {
-      pino:  "img/prototipos/bases-foto-2.png",
-      saman: "img/prototipos/bases-foto-3.png"
+      pino:  "img/prototipos/bases-foto-2.webp",
+      saman: "img/prototipos/bases-foto-3.webp"
     },
     /* La de ambiente va al final y sale con las dos maderas.
        OJO: esta SÍ trae fondo, al revés que las otras tres, pero
        `sin_fondo` es del producto entero y no de cada foto. Se
        pinta igual, encajada sin recuadro. */
-    galeria: ["img/prototipos/bases-foto-4.png"],
+    galeria: ["img/prototipos/bases-foto-4.webp"],
 
     /* El proyecto se renombró de "Bases Boda" a "Bases de Foto"
        el 14/08/2026, y con él el .skp, el .dae y este .glb. */

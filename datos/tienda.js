@@ -49,7 +49,7 @@ window.TIENDA = [
     /* El modelo 3D se engancha solo por la carpeta del proyecto:
        en cuanto exista modelos/quillas-mariana.glb sale el botón. */
     carpeta: "Quillas Mariana",
-    imagen: "img/trabajos/quillas-propuesta.jpg",
+    imagen: "img/trabajos/quillas-propuesta.webp",
     es_render: true,
     galeria: [],
     video: null,
@@ -112,7 +112,7 @@ window.TIENDA = [
     stock: null,
     medidas: "43 × 43 × 42 cm",
     carpeta: "Mesa Cubo Ceramica",
-    imagen: "img/trabajos/mesa-cubo-propuesta.jpg",
+    imagen: "img/trabajos/mesa-cubo-propuesta.webp",
     es_render: true,
     galeria: [],
     video: null,
@@ -158,7 +158,7 @@ window.TIENDA = [
     stock: null,
     medidas: "200 × 180 × 43 cm",
     carpeta: "Repicero Estefania",
-    imagen: "img/trabajos/repicero-propuesta.jpg",
+    imagen: "img/trabajos/repicero-propuesta.webp",
     es_render: true,
     galeria: [],
     video: null,
@@ -205,7 +205,7 @@ window.TIENDA = [
     stock: null,
     medidas: "222 × 97 × 81 cm",   /* medido sobre el modelo 3D */
     carpeta: "MT Estefania",
-    imagen: "img/trabajos/meson-patronaje.jpg",
+    imagen: "img/trabajos/meson-patronaje.webp",
     es_render: true,
     galeria: [],
     video: null,
@@ -227,7 +227,7 @@ window.TIENDA = [
     stock: null,
     medidas: "152 × 60 × 43 cm",   /* medido sobre el modelo 3D */
     carpeta: "Consola Matias",
-    imagen: "img/trabajos/consola-midcentury.jpg",
+    imagen: "img/trabajos/consola-midcentury.webp",
     es_render: true,
     galeria: [],
     video: null,
