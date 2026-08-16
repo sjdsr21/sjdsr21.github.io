@@ -15,8 +15,8 @@
 .pt-seccion { margin-top: clamp(1.3rem, 3vw, 2.2rem); }
 .pt-cabeza { display: flex; align-items: baseline; gap: .9rem; flex-wrap: wrap; margin-bottom: .35rem; }
 .pt-cabeza h2 { font-size: clamp(1.12rem, 2.4vw, 1.4rem); }
-.pt-cuenta { color: var(--apagado); font-size: .78rem; }
-.pt-bajada { color: var(--apagado); font-size: .85rem; max-width: 62ch; margin-bottom: .75rem; }
+.pt-cuenta { color: var(--apagado); font-size: 0.875rem; }
+.pt-bajada { color: var(--apagado); font-size: 1rem; max-width: 62ch; margin-bottom: .75rem; }
 
 /* --- ficha del catálogo (va dentro de .rejilla, la pegada) --- */
 .pt-ficha {
@@ -63,7 +63,7 @@
   aspect-ratio: 4 / 3; border-bottom: 1px solid var(--linea);
   display: grid; place-items: center;
   color: var(--apagado);
-  font-size: .68rem; letter-spacing: .16em; text-transform: uppercase;
+  font-size: 0.75rem; letter-spacing: .16em; text-transform: uppercase;
   /* --rayado-hueco y no --rayado: el normal se hace de --papel y
      --caja, que en el tema claro son blanco y casi blanco, y el
      hueco quedaba lavado. Este lleva los grises de contraste. */
@@ -129,7 +129,7 @@
 /* El contador de fotos, abajo a la derecha del recuadro. */
 .pt-cuenta-fotos {
   position: absolute; right: .4rem; bottom: .4rem; z-index: 2;
-  font-size: .58rem; letter-spacing: .08em;
+  font-size: 0.75rem; letter-spacing: .08em;
   padding: .12rem .34rem;
   background: color-mix(in srgb, var(--papel) 72%, transparent);
   color: var(--apagado);
@@ -137,14 +137,14 @@
 }
 /* Más compacto: relleno de 1rem a .8rem y el resumen más chico. */
 .pt-ficha__cuerpo { padding: .8rem .8rem .9rem; display: flex; flex-direction: column; gap: .35rem; flex: 1; }
-.pt-ficha h3 { font-size: .88rem; }
-.pt-ficha__res { font-size: .74rem; color: var(--apagado); line-height: 1.4; flex: 1; }
+.pt-ficha h3 { font-size: 1.0625rem; }
+.pt-ficha__res { font-size: 0.875rem; color: var(--apagado); line-height: 1.4; flex: 1; }
 .pt-ficha__pie { display: flex; align-items: baseline; justify-content: space-between; gap: .6rem; margin-top: .25rem; }
-.pt-precio { font-size: 1.13rem; font-weight: 700; white-space: nowrap; }
-.pt-desde { font-size: .68rem; font-weight: 400; color: var(--apagado); margin-right: .3rem; }
+.pt-precio { font-size: 1.25rem; font-weight: 700; white-space: nowrap; }
+.pt-desde { font-size: 0.75rem; font-weight: 400; color: var(--apagado); margin-right: .3rem; }
 
 .pt-estado {
-  font-size: .62rem; letter-spacing: .13em; text-transform: uppercase;
+  font-size: 0.75rem; letter-spacing: .13em; text-transform: uppercase;
   padding: .2rem .45rem; border: 1px solid var(--linea); color: var(--apagado);
   white-space: nowrap;
 }
@@ -169,7 +169,7 @@
 }
 .pt-panel.abierto { display: flex; transform: translateX(0); }
 .pt-panel__cab { padding: 1.25rem 1.5rem; border-bottom: 1px solid var(--linea); display: flex; align-items: flex-start; gap: 1rem; }
-.pt-panel__cab h3 { font-size: 1.2rem; flex: 1; }
+.pt-panel__cab h3 { font-size: 1.25rem; flex: 1; }
 .pt-cerrar { font: inherit; font-size: 1.5rem; line-height: 1; color: var(--apagado); background: none; border: 0; cursor: pointer; padding: 0 .1rem; }
 .pt-cerrar:hover { color: var(--realce); }
 /* Dos columnas: la visual manda a la izquierda, lo que se
@@ -320,7 +320,7 @@ video.pt-visual__foto {
 .pt-visual[data-suelto="1"] { background: var(--papel); }
 .pt-visual__vacio {
   color: var(--apagado); opacity: .5;
-  font-size: .68rem; letter-spacing: .16em; text-transform: uppercase;
+  font-size: 0.75rem; letter-spacing: .16em; text-transform: uppercase;
 }
 
 /* --- riel de miniaturas ------------------------------------
@@ -352,43 +352,43 @@ video.pt-visual__foto {
 :root:not([data-tema="claro"]) .pt-medio--plano img { filter: invert(1); }
 
 /* El VÍDEO lleva el triángulo de reproducir, no la palabra. */
-.pt-medio__play { font-size: .7rem; color: var(--tinta); line-height: 1; }
+.pt-medio__play { font-size: 0.75rem; color: var(--tinta); line-height: 1; }
 
 /* Solo queda con letras el 3D: un .glb no tiene nada que enseñar
    hasta que se carga. */
 .pt-medio__glifo {
-  font-size: .6rem; font-weight: 700; letter-spacing: .06em;
+  font-size: 0.75rem; font-weight: 700; letter-spacing: .06em;
   color: var(--tinta); line-height: 1;
 }
 .pt-panel__pie { padding: 1.15rem 1.5rem; border-top: 1px solid var(--linea); }
-.pt-panel__resumen { font-size: .85rem; color: var(--apagado); line-height: 1.55; margin-bottom: 1.6rem; }
+.pt-panel__resumen { font-size: 0.875rem; color: var(--apagado); line-height: 1.55; margin-bottom: 1.6rem; }
 
 .pt-grupo { margin-bottom: 1.6rem; }
 .pt-etiqueta {
-  display: block; font-size: .66rem; letter-spacing: .13em; text-transform: uppercase;
+  display: block; font-size: 0.75rem; letter-spacing: .13em; text-transform: uppercase;
   color: var(--apagado); margin-bottom: .6rem;
 }
 .pt-ops { display: flex; flex-wrap: wrap; gap: .5rem; }
 .pt-op {
   border: 1px solid var(--linea); background: none; padding: .55rem .85rem;
-  font: inherit; font-size: .84rem; color: var(--apagado); cursor: pointer;
+  font: inherit; font-size: 0.875rem; color: var(--apagado); cursor: pointer;
   transition: border-color .15s, color .15s, background .15s;
 }
 .pt-op:hover { border-color: var(--apagado); color: var(--tinta); }
 .pt-op.sel { border-color: var(--tinta); color: var(--tinta); background: var(--caja-alta); }
-.pt-d { font-size: .72rem; color: var(--apagado); margin-left: .35rem; }
+.pt-d { font-size: 0.75rem; color: var(--apagado); margin-left: .35rem; }
 .pt-op.sel .pt-d { color: var(--madera-texto); }
 .pt-op:disabled { opacity: .32; cursor: not-allowed; text-decoration: line-through; }
 
 .pt-contador { display: flex; align-items: center; border: 1px solid var(--linea); width: max-content; }
 .pt-contador button {
-  width: 38px; height: 38px; font: inherit; font-size: 1.05rem;
+  width: 38px; height: 38px; font: inherit; font-size: 1rem;
   background: none; border: 0; color: var(--apagado); cursor: pointer;
 }
 .pt-contador button:hover { color: var(--tinta); background: var(--caja-alta); }
-.pt-contador span { width: 52px; text-align: center; font-size: .95rem; font-weight: 700; }
-.pt-nota-pack { font-size: .78rem; color: var(--madera-texto); margin-top: .5rem; }
-.pt-nota-stock { font-size: .78rem; color: var(--apagado); margin-top: .5rem; line-height: 1.45; }
+.pt-contador span { width: 52px; text-align: center; font-size: 1rem; font-weight: 700; }
+.pt-nota-pack { font-size: 0.875rem; color: var(--madera-texto); margin-top: .5rem; }
+.pt-nota-stock { font-size: 0.875rem; color: var(--apagado); margin-top: .5rem; line-height: 1.45; }
 /* Cuando se pide más de lo que hay hecho: el número y la nota
    pasan al acento. No es un error, es un aviso — por eso se usa el
    acento de marca y no el rojo de fallo. */
@@ -396,8 +396,8 @@ video.pt-visual__foto {
 .pt-nota-sobre  { color: var(--acento-texto) !important; }
 
 .pt-precio-panel { display: flex; align-items: baseline; justify-content: space-between; gap: .8rem; margin-bottom: .9rem; }
-.pt-precio-panel .n { font-size: 1.7rem; font-weight: 700; }
-.pt-precio-panel .bs { font-size: .76rem; color: var(--apagado); }
+.pt-precio-panel .n { font-size: 1.25rem; font-weight: 700; }
+.pt-precio-panel .bs { font-size: 1.25rem; color: var(--apagado); }
 
 /* --- botones ------------------------------------------------ */
 /* Sin rayado: sobre un botón el patrón se lee como "no funciona". */
@@ -405,7 +405,7 @@ video.pt-visual__foto {
   display: block; width: 100%; padding: .95rem; text-align: center;
   background-color: var(--tinta);
   color: var(--papel); font: inherit;
-  font-weight: 700; font-size: .87rem; letter-spacing: .02em;
+  font-weight: 700; font-size: 0.875rem; letter-spacing: .02em;
   border: 0; border-radius: 0; cursor: pointer;
   transition: background-color .15s, color .15s;
 }
@@ -474,10 +474,10 @@ video.pt-visual__foto {
 }
 .pt-linea + .pt-linea { margin-top: .5rem; }
 .pt-linea__desc { flex: 1; min-width: 0; }
-.pt-linea__desc b { font-size: .9rem; display: block; }
-.pt-linea__desc small { font-size: .76rem; color: var(--apagado); display: block; margin-top: .15rem; }
-.pt-linea__packs { font-size: .76rem; color: var(--madera-texto); display: block; margin-top: .15rem; }
-.pt-linea__mon { font-size: .95rem; font-weight: 700; white-space: nowrap; }
+.pt-linea__desc b { font-size: 1rem; display: block; }
+.pt-linea__desc small { font-size: 0.875rem; color: var(--apagado); display: block; margin-top: .15rem; }
+.pt-linea__packs { font-size: 0.875rem; color: var(--madera-texto); display: block; margin-top: .15rem; }
+.pt-linea__mon { font-size: 1rem; font-weight: 700; white-space: nowrap; }
 
 /* La cantidad se edita en la propia línea, con los mismos − y +
    del panel de producto. `align-items: center` en la línea para
@@ -487,10 +487,10 @@ video.pt-visual__foto {
   display: flex; align-items: center; gap: .1rem;
   border: 1px solid var(--linea); flex: none;
 }
-.pt-linea__cant .pt-pasos__b { width: 26px; height: 26px; font-size: .9rem; }
+.pt-linea__cant .pt-pasos__b { width: 26px; height: 26px; font-size: 1rem; }
 .pt-linea__n {
   min-width: 1.6rem; text-align: center;
-  font-size: .85rem; font-weight: 700; font-variant-numeric: tabular-nums;
+  font-size: 0.875rem; font-weight: 700; font-variant-numeric: tabular-nums;
 }
 
 /* Quitar: cuadradito con un signo menos, a la derecha del
@@ -510,13 +510,13 @@ video.pt-visual__foto {
 .pt-quitar:hover, .pt-quitar:focus-visible {
   color: #fff; background-color: var(--de); border-color: var(--de);
 }
-.pt-vacio { color: var(--apagado); font-size: .85rem; padding: 1.6rem 0; text-align: center; }
+.pt-vacio { color: var(--apagado); font-size: 0.875rem; padding: 1.6rem 0; text-align: center; }
 
 .pt-campo { margin-bottom: 1.4rem; }
 .pt-radios { display: flex; flex-direction: column; gap: 1px; background: var(--linea); border: 1px solid var(--linea); }
 .pt-radio {
   display: flex; align-items: center; gap: .7rem; padding: .75rem .85rem;
-  background-color: var(--caja); font: inherit; font-size: .84rem; text-align: left;
+  background-color: var(--caja); font: inherit; font-size: 0.875rem; text-align: left;
   width: 100%; border: 0; color: inherit; cursor: pointer;
 }
 /* Sin rayado aquí tampoco: lo tuvo un rato en las casillas no
@@ -536,13 +536,13 @@ video.pt-visual__foto {
   background-color: var(--acento-claro);
 }
 .pt-radio__et { flex: 1; }
-.pt-radio__et small { display: block; font-size: .72rem; color: var(--apagado); margin-top: .1rem; }
-.pt-radio__val { font-size: .76rem; color: var(--apagado); white-space: nowrap; }
+.pt-radio__et small { display: block; font-size: 0.875rem; color: var(--apagado); margin-top: .1rem; }
+.pt-radio__val { font-size: 0.875rem; color: var(--apagado); white-space: nowrap; }
 .pt-radio:disabled { opacity: .35; cursor: not-allowed; }
 
 .pt-select {
   width: 100%; background: var(--caja); border: 1px solid var(--linea);
-  padding: .7rem .8rem; font: inherit; font-size: .84rem; color: inherit;
+  padding: .7rem .8rem; font: inherit; font-size: 0.875rem; color: inherit;
   border-radius: 0; appearance: none;
   background-image:
     linear-gradient(45deg, transparent 50%, var(--apagado) 50%),
@@ -552,25 +552,25 @@ video.pt-visual__foto {
 }
 .pt-select:focus { outline: 1px solid var(--tinta); outline-offset: -1px; }
 
-.pt-fila { display: flex; justify-content: space-between; align-items: baseline; gap: .8rem; margin-bottom: .55rem; font-size: .85rem; }
+.pt-fila { display: flex; justify-content: space-between; align-items: baseline; gap: .8rem; margin-bottom: .55rem; font-size: 0.875rem; }
 .pt-fila .et { color: var(--apagado); }
-.pt-fila--grande { font-size: .95rem; margin-top: .9rem; padding-top: .9rem; border-top: 1px solid var(--linea); }
+.pt-fila--grande { font-size: 1rem; margin-top: .9rem; padding-top: .9rem; border-top: 1px solid var(--linea); }
 .pt-fila--grande .et { color: var(--tinta); font-weight: 700; }
 .pt-fila--grande .n { font-size: 1.62rem; font-weight: 700; }
-.pt-gris { color: var(--apagado); font-size: .72rem; display: block; margin-top: .1rem; text-align: right; }
+.pt-gris { color: var(--apagado); font-size: 0.75rem; display: block; margin-top: .1rem; text-align: right; }
 
 /* El envío va en su propia caja y NO suma al total: es cobro
    destino, lo cobra la agencia al entregarlo. */
-.pt-aparte { border: 1px solid var(--linea); padding: .8rem .85rem; margin-top: 1rem; font-size: .82rem; }
+.pt-aparte { border: 1px solid var(--linea); padding: .8rem .85rem; margin-top: 1rem; font-size: 0.875rem; }
 .pt-aparte__top { display: flex; justify-content: space-between; gap: .6rem; margin-bottom: .2rem; }
-.pt-aparte small { color: var(--apagado); font-size: .72rem; line-height: 1.4; display: block; }
+.pt-aparte small { color: var(--apagado); font-size: 0.75rem; line-height: 1.4; display: block; }
 
 .pt-previa {
   margin-top: .9rem; border: 1px solid var(--linea); background: var(--papel);
-  padding: .95rem; font-size: .78rem; line-height: 1.6; white-space: pre-wrap;
+  padding: .95rem; font-size: 0.875rem; line-height: 1.6; white-space: pre-wrap;
   color: var(--apagado); max-height: 290px; overflow-y: auto;
 }
-.pt-nota { display: block; color: var(--apagado); font-size: .72rem; margin-top: .6rem; line-height: 1.45; }
+.pt-nota { display: block; color: var(--apagado); font-size: 0.75rem; margin-top: .6rem; line-height: 1.45; }
 
 /* ============================================================
    TRANSICIÓN GLITCH ENTRE IMÁGENES
@@ -760,7 +760,7 @@ video.pt-visual__foto {
    Va absoluta para que no empuje las filas de totales hacia abajo. */
 .pt-tasa {
   position: absolute; top: .7rem; right: 1.6rem;
-  font-size: .66rem; color: var(--apagado); letter-spacing: .02em;
+  font-size: 0.75rem; color: var(--apagado); letter-spacing: .02em;
   text-align: right; line-height: 1.3; max-width: 60%;
 }
 /* La columna necesita ser el ancla de esa posición absoluta. */

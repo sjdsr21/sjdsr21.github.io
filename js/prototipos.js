@@ -553,7 +553,6 @@
     else if (p.imagen) l.push({ tipo: "foto", src: p.imagen });
     (p.galeria || []).forEach(function (g) { l.push({ tipo: "foto", src: g }); });
     var m = modeloDe(p, o);
-    if (m) l.push({ tipo: "3d", src: m });
 
     /* El plano de cotas. Puede depender de la opción escogida
        (cada talla de tabla tiene el suyo) o ser único. */
@@ -572,6 +571,10 @@
     }
 
     if (p.video) l.push({ tipo: "video", src: p.video });
+
+    /* El visor 3D va SIEMPRE EL ULTIMO de la tira (el, 14/08/2026).
+       Antes iba detras de las fotos, delante del plano y del video. */
+    if (m) l.push({ tipo: "3d", src: m });
     return l;
   }
 

@@ -400,13 +400,13 @@ h1, h2, h3 { font-weight: 700; letter-spacing: 0; line-height: 1.05; margin: 0; 
    máximo, en pantallas medianas el tamaño no cambia. */
 h1 { font-size: clamp(1.44rem, 3.6vw, 2.76rem); }
 h2 { font-size: clamp(1.36rem, 2.72vw, 2.08rem); }
-h3 { font-size: 1.15rem; letter-spacing: -.02em; line-height: 1.25; }
+h3 { font-size: 1.25rem; letter-spacing: -.02em; line-height: 1.25; }
 
 .rotulo {
-  font-size: .72rem; font-weight: 700; text-transform: uppercase;
+  font-size: 0.75rem; font-weight: 700; text-transform: uppercase;
   letter-spacing: .16em; color: var(--apagado);
 }
-.bajada { color: var(--apagado); font-size: .95rem; max-width: 54ch; margin: .5rem 0 0; }
+.bajada { color: var(--apagado); font-size: 1rem; max-width: 54ch; margin: .5rem 0 0; }
 
 /* --- Cabecera --------------------------------------------- */
 
@@ -498,7 +498,7 @@ h3 { font-size: 1.15rem; letter-spacing: -.02em; line-height: 1.25; }
   /* 2026-08-12 · Sin negrita. Solo existen los pesos 400 y 700 de
      Roboto en fuentes/, así que 400 es el que hay — nada de 500
      o 600, que el navegador se inventaría deformando el trazo. */
-  text-decoration: none; font-size: .93rem; font-weight: 400;
+  text-decoration: none; font-size: 1rem; font-weight: 400;
   color: var(--barra-suave); padding: .3rem 0 .3rem .62rem;
   transition: color .15s; white-space: nowrap;
 }
@@ -522,7 +522,7 @@ h3 { font-size: 1.15rem; letter-spacing: -.02em; line-height: 1.25; }
 .menu__pre {
   position: absolute; left: .62rem; bottom: 100%;
   margin-bottom: .1rem;
-  font-size: .62rem; line-height: 1;
+  font-size: 0.75rem; line-height: 1;
   letter-spacing: .04em; white-space: nowrap;
   color: var(--barra-suave); opacity: .62;
   pointer-events: none;
@@ -541,7 +541,7 @@ h3 { font-size: 1.15rem; letter-spacing: -.02em; line-height: 1.25; }
 /* El rayado estuvo aquí unas horas y salió: en los controles del
    encabezado ensuciaba. Solo se queda en la franja de abajo. */
 .idioma button {
-  font: inherit; font-size: .76rem; font-weight: 700; letter-spacing: .05em;
+  font: inherit; font-size: 0.875rem; font-weight: 700; letter-spacing: .05em;
   padding: 0 .55rem; border: 0; background: transparent;
   color: var(--barra-suave); cursor: pointer;
 }
@@ -555,7 +555,7 @@ h3 { font-size: 1.15rem; letter-spacing: -.02em; line-height: 1.25; }
 .controles { display: flex; align-items: center; flex: none; }
 .tema { margin-left: .5rem; }
 .tema button {
-  font: inherit; font-size: .9rem; line-height: 1;
+  font: inherit; font-size: 1rem; line-height: 1;
   padding: 0 .5rem; border: 0; background: transparent;
   color: var(--barra-suave); cursor: pointer;
   display: grid; place-items: center;
@@ -564,7 +564,7 @@ h3 { font-size: 1.15rem; letter-spacing: -.02em; line-height: 1.25; }
 /* El tercer botón dice "auto" con letras, así que necesita su
    propio cuerpo: los otros dos son un glifo suelto. */
 .tema__auto {
-  font-size: .62rem !important; font-weight: 700;
+  font-size: 0.75rem !important; font-weight: 700;
   letter-spacing: .04em; text-transform: lowercase;
   padding: 0 .45rem !important;
 }
@@ -601,13 +601,13 @@ h3 { font-size: 1.15rem; letter-spacing: -.02em; line-height: 1.25; }
   /* Conserva el hueco de la izquierda: ahí va la barra vertical
      que marca la sección activa. Sin el padding-left, en móvil la
      barra se montaría encima de la primera letra. */
-  .menu a { padding: .55rem 0 .55rem .62rem; font-size: 1.05rem; }
+  .menu a { padding: .55rem 0 .55rem .62rem; font-size: 1rem; }
   /* En el menú desplegado de móvil los enlaces van en columna: si
      la palabrita siguiera absoluta se montaría sobre el enlace de
      arriba. Aquí sí puede ocupar su propio renglón. */
   .menu__pre {
     position: static; display: block; margin: 0 0 .12rem;
-    font-size: .66rem;
+    font-size: 0.75rem;
   }
 }
 
@@ -615,7 +615,7 @@ h3 { font-size: 1.15rem; letter-spacing: -.02em; line-height: 1.25; }
 
 .boton {
   display: inline-block; text-decoration: none; cursor: pointer;
-  font: inherit; font-size: .92rem; font-weight: 700; letter-spacing: -.01em;
+  font: inherit; font-size: 1rem; font-weight: 700; letter-spacing: -.01em;
   padding: .8rem 1.5rem; border-radius: var(--radio);
   border: 1px solid var(--tinta); color: var(--papel);
   /* 2026-08-11 · SIN rayado. Lo tuvo unas horas y lo quitó: sobre
@@ -659,7 +659,7 @@ body:not([data-pagina="novedades"]) .portada .bajada {
   display: flex; align-items: baseline; justify-content: space-between;
   gap: 1rem; margin-bottom: 1.1rem; flex-wrap: wrap;
 }
-.seccion__cabeza a { color: var(--apagado); font-size: .9rem; font-weight: 700; }
+.seccion__cabeza a { color: var(--apagado); font-size: 1rem; font-weight: 700; }
 
 /* --- Rejilla de tarjetas ---------------------------------- */
 
@@ -732,7 +732,7 @@ body:not([data-pagina="novedades"]) .portada .bajada {
 .tarjeta:hover .tarjeta__marco img { transform: none; }
 .tarjeta__vacio {
   position: absolute; inset: 0; display: grid; place-items: center;
-  color: var(--apagado); font-size: .8rem; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--apagado); font-size: 0.875rem; letter-spacing: .1em; text-transform: uppercase;
   background: var(--rayado-hueco);
 }
 /* Sin negrita en los títulos de la cuadrícula (él, 14/08/2026):
@@ -749,18 +749,18 @@ body:not([data-pagina="novedades"]) .portada .bajada {
 .rejilla--tres .tarjeta h3,
 .rejilla--tres .tarjeta h2 {
   text-align: center;
-  font-size: .92rem;
+  font-size: 1rem;
   font-weight: 300;
   letter-spacing: 0;
   margin-bottom: 0;
 }
-.tarjeta__meta { color: var(--apagado); font-size: .87rem; }
+.tarjeta__meta { color: var(--apagado); font-size: 0.875rem; }
 .tarjeta__precio { font-weight: 700; margin-top: .25rem; }
 
 .insignia {
   position: absolute; top: .7rem; left: .7rem; z-index: 2;
   background: var(--papel); color: var(--apagado);
-  font-size: .64rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+  font-size: 0.75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
   padding: .28rem .6rem; border-radius: 0; border: 1px solid var(--linea);
 }
 .insignia--borrador { background: var(--realce-hondo); color: #fff; border-color: transparent; }
@@ -779,7 +779,7 @@ body:not([data-pagina="novedades"]) .portada .bajada {
 
 .marca3d {
   position: absolute; top: .7rem; left: .7rem; z-index: 2;
-  font-weight: 700; font-size: .78rem; letter-spacing: .04em;
+  font-weight: 700; font-size: 0.875rem; letter-spacing: .04em;
   line-height: 1; pointer-events: none; user-select: none;
 
   padding: .34rem .55rem;
@@ -818,15 +818,15 @@ body:not([data-pagina="novedades"]) .portada .bajada {
   padding: 1.4rem 0 1.8rem; border-bottom: 1px solid var(--linea); margin-bottom: 2.2rem;
 }
 .filtro { display: flex; flex-direction: column; gap: .35rem; }
-.filtro label { font-size: .7rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--apagado); }
+.filtro label { font-size: 0.75rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--apagado); }
 .filtro select {
-  font: inherit; font-size: .92rem; padding: .5rem .7rem; min-width: 11rem;
+  font: inherit; font-size: 1rem; padding: .5rem .7rem; min-width: 11rem;
   background: var(--papel); color: var(--tinta);
   border: 1px solid var(--linea); border-radius: var(--radio);
 }
-.filtros__conteo { margin-left: auto; color: var(--apagado); font-size: .87rem; }
+.filtros__conteo { margin-left: auto; color: var(--apagado); font-size: 0.875rem; }
 .filtros button {
-  font: inherit; font-size: .87rem; background: none; border: 0; cursor: pointer;
+  font: inherit; font-size: 0.875rem; background: none; border: 0; cursor: pointer;
   color: var(--apagado); text-decoration: underline; padding: .5rem 0;
 }
 
@@ -871,7 +871,7 @@ body:not([data-pagina="novedades"]) .portada .bajada {
    que va un rótulo — el mismo recurso que usan los prototipos. */
 .tira--glifo { display: grid; place-items: center; }
 .tira__glifo {
-  font-size: .78rem; font-weight: 700; letter-spacing: .1em;
+  font-size: 0.875rem; font-weight: 700; letter-spacing: .1em;
   color: var(--tinta);
 }
 
@@ -883,7 +883,7 @@ body:not([data-pagina="novedades"]) .portada .bajada {
 .tira__play span {
   width: 26px; height: 26px; border-radius: 0;
   background: rgba(0,0,0,.62); color: #fff;
-  display: grid; place-items: center; font-size: .6rem; padding-left: 2px;
+  display: grid; place-items: center; font-size: 0.75rem; padding-left: 2px;
 }
 
 /* SIN aspect-ratio fijo: la pieza grande toma la forma del
@@ -908,7 +908,7 @@ body:not([data-pagina="novedades"]) .portada .bajada {
      sobre casi blanco. */
   background: rgba(0,0,0,.55); color: #fff;
   border: 1px solid rgba(255,255,255,.45);
-  font-size: 1.2rem; line-height: 1; display: grid; place-items: center;
+  font-size: 1.25rem; line-height: 1; display: grid; place-items: center;
   opacity: 0; transition: opacity .25s var(--curva-suave), transform .2s var(--curva-suave);
 }
 .visor-medios__principal:hover .visor-medios__flecha,
@@ -923,7 +923,7 @@ body:not([data-pagina="novedades"]) .portada .bajada {
 
 .hueco-video {
   margin-top: .6rem; border: 1px dashed var(--linea); border-radius: var(--radio);
-  padding: 1.6rem; text-align: center; color: var(--apagado); font-size: .85rem;
+  padding: 1.6rem; text-align: center; color: var(--apagado); font-size: 0.875rem;
 }
 
 .ficha__datos { position: sticky; top: 110px; }
@@ -931,14 +931,14 @@ body:not([data-pagina="novedades"]) .portada .bajada {
 .ficha__datos h1 { font-size: clamp(1.9rem, 4vw, 3rem); margin-bottom: .8rem; }
 
 .especs { border-top: 1px solid var(--linea); margin-top: 2rem; }
-.especs div { display: flex; gap: 1rem; padding: .72rem 0; border-bottom: 1px solid var(--linea); font-size: .93rem; }
+.especs div { display: flex; gap: 1rem; padding: .72rem 0; border-bottom: 1px solid var(--linea); font-size: 1rem; }
 .especs dt { flex: 0 0 8.5rem; color: var(--apagado); margin: 0; }
 .especs dd { margin: 0; }
 
 .lista-como { list-style: none; padding: 0; margin: 2rem 0 0; }
 .lista-como li {
   position: relative; padding-left: 1.5rem; margin-bottom: .85rem;
-  font-size: .96rem; color: var(--tinta);
+  font-size: 1rem; color: var(--tinta);
 }
 .lista-como li::before {
   content: ""; position: absolute; left: 0; top: .65em;
@@ -951,17 +951,17 @@ body:not([data-pagina="novedades"]) .portada .bajada {
   font-size: clamp(1.9rem, 4vw, 2.6rem); font-weight: 700; letter-spacing: 0;
   margin: .3rem 0 .2rem;
 }
-.precio-nota { color: var(--apagado); font-size: .82rem; margin: 0 0 1.6rem; }
+.precio-nota { color: var(--apagado); font-size: 0.875rem; margin: 0 0 1.6rem; }
 
 .opcion { margin-bottom: 1.5rem; }
 .opcion > span {
-  display: block; font-size: .7rem; font-weight: 700; letter-spacing: .12em;
+  display: block; font-size: 0.75rem; font-weight: 700; letter-spacing: .12em;
   text-transform: uppercase; color: var(--apagado); margin-bottom: .55rem;
 }
 .opcion__valores { display: flex; flex-wrap: wrap; gap: .5rem; }
 .opcion__valores label {
   border: 1px solid var(--linea); border-radius: var(--radio);
-  padding: .5rem .85rem; font-size: .9rem; cursor: pointer; user-select: none;
+  padding: .5rem .85rem; font-size: 1rem; cursor: pointer; user-select: none;
   transition: border-color .15s, background .15s;
 }
 .opcion__valores input { position: absolute; opacity: 0; pointer-events: none; }
@@ -969,7 +969,7 @@ body:not([data-pagina="novedades"]) .portada .bajada {
 .opcion__valores label:has(input:checked) { border-color: var(--tinta); background: var(--caja); }
 .opcion__valores small { color: var(--apagado); margin-left: .3rem; }
 
-.disponible { display: inline-flex; align-items: center; gap: .5rem; font-size: .87rem; color: var(--apagado); margin-bottom: 1.2rem; }
+.disponible { display: inline-flex; align-items: center; gap: .5rem; font-size: 0.875rem; color: var(--apagado); margin-bottom: 1.2rem; }
 .punto { width: 7px; height: 7px; border-radius: 0; background: var(--apagado); flex: none; }
 .punto--si { background: #3E8E4E; }
 .punto--no { background: #B4453C; }
@@ -982,7 +982,7 @@ body:not([data-pagina="novedades"]) .portada .bajada {
   border: 1px solid var(--linea); border-radius: var(--radio); transition: border-color .15s;
 }
 .contactos a:hover { border-color: var(--tinta); }
-.contactos strong { display: block; margin-top: .3rem; font-size: 1.05rem; letter-spacing: -.02em; }
+.contactos strong { display: block; margin-top: .3rem; font-size: 1rem; letter-spacing: -.02em; }
 
 .prosa { max-width: 62ch; }
 .prosa p { margin: 0 0 1.15rem; }
@@ -991,7 +991,7 @@ body:not([data-pagina="novedades"]) .portada .bajada {
 .pasos li::before {
   content: counter(n, decimal-leading-zero);
   position: absolute; left: 0; top: .1em;
-  font-weight: 700; font-size: .85rem; color: var(--realce); letter-spacing: .05em;
+  font-weight: 700; font-size: 0.875rem; color: var(--realce); letter-spacing: .05em;
 }
 .pasos strong { display: block; letter-spacing: -.02em; }
 
@@ -1006,19 +1006,19 @@ body:not([data-pagina="novedades"]) .portada .bajada {
   width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: 50% 30%;
   background: var(--caja); border-radius: var(--radio);
 }
-.pie-foto { color: var(--apagado); font-size: .8rem; margin-top: .7rem; }
+.pie-foto { color: var(--apagado); font-size: 0.875rem; margin-top: .7rem; }
 
 .dos-columnas {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
   gap: clamp(1.6rem, 4vw, 3rem); margin-top: 2.4rem;
 }
 .dos-columnas h3 { margin-bottom: .5rem; }
-.dos-columnas p  { margin: 0; color: var(--apagado); font-size: .95rem; }
+.dos-columnas p  { margin: 0; color: var(--apagado); font-size: 1rem; }
 
 .lista-marcas { list-style: none; padding: 0; margin: 1.6rem 0 0; }
 .lista-marcas li {
   padding: .8rem 0; border-bottom: 1px solid var(--linea);
-  display: flex; gap: 1rem; align-items: baseline; font-size: .95rem;
+  display: flex; gap: 1rem; align-items: baseline; font-size: 1rem;
 }
 .lista-marcas b { flex: 0 0 11rem; font-weight: 700; letter-spacing: -.01em; }
 .lista-marcas span { color: var(--apagado); }
@@ -1049,7 +1049,7 @@ body:not([data-pagina="novedades"]) .portada .bajada {
   -webkit-mask-image: linear-gradient(to bottom, #000 0%, transparent 55%);
           mask-image: linear-gradient(to bottom, #000 0%, transparent 55%);
 }
-.pie__fila { display: flex; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; align-items: center; color: var(--apagado); font-size: .87rem; }
+.pie__fila { display: flex; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; align-items: center; color: var(--apagado); font-size: 0.875rem; }
 .pie__enlaces { display: flex; gap: 1.2rem; flex-wrap: wrap; }
 .pie a { text-decoration: none; }
 .pie a:hover { color: var(--tinta); }
@@ -1128,7 +1128,7 @@ body:not([data-pagina="novedades"]) .portada .bajada {
 .carrusel__pie h3 {
   font-size: clamp(1.3rem, 3vw, 2.1rem); margin-top: .3rem; color: #fff;
 }
-.carrusel__pie p { margin: .5rem 0 0; max-width: 46ch; font-size: .95rem; color: rgba(255,255,255,.85); }
+.carrusel__pie p { margin: .5rem 0 0; max-width: 46ch; font-size: 1rem; color: rgba(255,255,255,.85); }
 
 .carrusel__flecha {
   position: absolute; top: 50%; transform: translateY(-50%);
@@ -1136,7 +1136,7 @@ body:not([data-pagina="novedades"]) .portada .bajada {
   border: 0; cursor: pointer; z-index: 3;
   background: rgba(0,0,0,.55); color: #fff;
   border: 1px solid rgba(255,255,255,.45);
-  font-size: 1.2rem; line-height: 1; display: grid; place-items: center;
+  font-size: 1.25rem; line-height: 1; display: grid; place-items: center;
   opacity: 0; transition: opacity .3s var(--curva-suave), transform .2s var(--curva-suave);
 }
 .carrusel:hover .carrusel__flecha, .carrusel__flecha:focus-visible { opacity: 1; }
@@ -1191,7 +1191,7 @@ body:not([data-pagina="novedades"]) .portada .bajada {
   /* relleno con el rojo PROFUNDO: blanco sobre #FF0009 solo da 4:1,
      sobre #D10010 da 5,65:1. Medido 2026-08-08. */
   background: var(--realce-hondo); color: #fff;
-  font-size: .66rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+  font-size: 0.75rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
   padding: .32rem .7rem; border-radius: 0;
 }
 .novedad__capa h2 { color: #fff; max-width: 18ch; }
@@ -1201,7 +1201,7 @@ body:not([data-pagina="novedades"]) .portada .bajada {
 .novedad__capa p  { color: rgba(255,255,255,.86); max-width: 52ch; margin: .8rem 0 0; font-size: 1rem; }
 .novedad__ir {
   display: inline-flex; align-items: center; gap: .5rem; margin-top: 1.4rem;
-  font-weight: 700; font-size: .95rem; color: var(--tinta);
+  font-weight: 700; font-size: 1rem; color: var(--tinta);
 }
 .novedad__ir span { transition: transform .25s var(--curva); }
 .novedad:hover .novedad__ir span { transform: translateX(5px); }
@@ -1230,7 +1230,7 @@ body:not([data-pagina="novedades"]) .portada .bajada {
   background: var(--caja);
 }
 .mapa figcaption {
-  color: var(--apagado); font-size: .88rem; margin-top: .8rem; max-width: 56ch;
+  color: var(--apagado); font-size: 0.875rem; margin-top: .8rem; max-width: 56ch;
 }
 
 /* ============================================================
@@ -1269,7 +1269,7 @@ body:not([data-pagina="novedades"]) .portada .bajada {
 .buscador__arriba { display: flex; align-items: center; gap: .8rem; padding: 1rem 1.2rem; border-bottom: 1px solid var(--linea); }
 .buscador__arriba svg { width: 19px; height: 19px; fill: none; stroke: var(--apagado); stroke-width: 2.1; flex: none; }
 .buscador__arriba input {
-  flex: 1; font: inherit; font-size: 1.05rem; border: 0; background: transparent;
+  flex: 1; font: inherit; font-size: 1rem; border: 0; background: transparent;
   color: var(--tinta); min-width: 0;
 }
 /* Aquí había un `outline: none` a secas — el único de todo el
@@ -1283,7 +1283,7 @@ body:not([data-pagina="novedades"]) .portada .bajada {
   box-shadow: 0 2px 0 0 var(--realce);
 }
 .buscador__cerrar {
-  font: inherit; font-size: .74rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+  font: inherit; font-size: 0.875rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
   background: transparent; border: 1px solid var(--linea); border-radius: var(--radio-chico);
   color: var(--apagado); padding: .35rem .6rem; cursor: pointer; flex: none;
 }
@@ -1291,7 +1291,7 @@ body:not([data-pagina="novedades"]) .portada .bajada {
 
 .buscador__lista { overflow-y: auto; padding: .5rem 0 .8rem; }
 .buscador__grupo {
-  font-size: .68rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+  font-size: 0.75rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
   color: var(--apagado); padding: .9rem 1.2rem .4rem;
 }
 .buscador__item {
@@ -1303,9 +1303,9 @@ body:not([data-pagina="novedades"]) .portada .bajada {
   width: 52px; height: 40px; object-fit: cover; border-radius: var(--radio-chico);
   background: var(--caja); flex: none;
 }
-.buscador__item strong { display: block; font-size: .96rem; letter-spacing: -.01em; }
-.buscador__item small  { color: var(--apagado); font-size: .82rem; }
-.buscador__vacio { color: var(--apagado); padding: 2rem 1.2rem; text-align: center; font-size: .93rem; }
+.buscador__item strong { display: block; font-size: 1rem; letter-spacing: -.01em; }
+.buscador__item small  { color: var(--apagado); font-size: 0.875rem; }
+.buscador__vacio { color: var(--apagado); padding: 2rem 1.2rem; text-align: center; font-size: 1rem; }
 
 /* ============================================================
    CONTACTO — tarjetas con icono y pista de que son enlaces
@@ -1329,7 +1329,7 @@ body:not([data-pagina="novedades"]) .portada .bajada {
 .contactos__icono svg { width: 22px; height: 22px; fill: currentColor; }
 .contactos__texto { min-width: 0; }
 .contactos__accion {
-  display: block; font-size: .78rem; color: var(--apagado); margin-top: .15rem;
+  display: block; font-size: 0.875rem; color: var(--apagado); margin-top: .15rem;
 }
 .contactos__flecha {
   position: absolute; right: 1.1rem; top: 50%; transform: translateY(-50%);
@@ -1347,7 +1347,7 @@ body:not([data-pagina="novedades"]) .portada .bajada {
 .boton3d {
   position: absolute; right: .8rem; bottom: .8rem; z-index: 4;
   display: inline-flex; align-items: center; gap: .5rem;
-  font: inherit; font-size: .83rem; font-weight: 700;
+  font: inherit; font-size: 0.875rem; font-weight: 700;
   padding: .6rem 1rem; border-radius: 0; cursor: pointer;
   border: 1px solid var(--linea);
   background: color-mix(in srgb, var(--papel) 92%, transparent);
@@ -1364,11 +1364,11 @@ body:not([data-pagina="novedades"]) .portada .bajada {
   display: grid; place-items: center;
 }
 .visor3d canvas { display: block; width: 100% !important; height: 100% !important; }
-.visor3d__aviso { color: var(--apagado); font-size: .88rem; padding: 1rem; text-align: center; }
+.visor3d__aviso { color: var(--apagado); font-size: 0.875rem; padding: 1rem; text-align: center; }
 .visor3d__ayuda {
   position: absolute; left: 0; right: 0; bottom: 0; pointer-events: none;
   padding: 1.4rem .9rem .8rem; text-align: center;
-  font-size: .76rem; color: var(--apagado);
+  font-size: 0.875rem; color: var(--apagado);
   background: linear-gradient(to top, color-mix(in srgb, var(--caja) 92%, transparent), transparent);
   opacity: 0; transition: opacity .5s var(--curva) .6s;
 }
@@ -1395,7 +1395,7 @@ body:not([data-pagina="novedades"]) .portada .bajada {
   color: var(--tinta); text-decoration: none;
   /* sin negrita, decisión suya del 14/08/2026: con el marco ya se
      ve que es pulsable y la negrita lo dejaba pesado */
-  font-size: .85rem; font-weight: 400;
+  font-size: 0.875rem; font-weight: 400;
   letter-spacing: .04em; text-transform: uppercase;
   padding: .6rem 1.1rem;
   border: 1px solid var(--tinta);

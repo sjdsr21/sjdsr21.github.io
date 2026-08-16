@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="929" height="1228" viewBox="0 0 929 1228">
+<svg xmlns="http://www.w3.org/2000/svg" width="929" height="1358" viewBox="0 0 929 1358">
 <g transform="translate(0,0)">
 <g fill="#000" fill-rule="evenodd" stroke="none">
 <path d="M 873.41,111.47 L 873.77,739.67 L 871.97,740.03 L 871.61,741.83 L 873.77,748.31 L 819.05,764.15 L 819.05,1029.83 L 276.53,1030.19 L 266.81,926.87 L 266.81,916.07 L 258.53,885.47 L 841.37,724.55 L 841.37,111.83 Z M 344.57,895.19 L 339.89,895.55 L 281.21,912.47 L 285.89,912.11 Z M 576.41,831.83 L 634.01,815.99 L 632.93,814.91 L 606.29,822.11 L 580.37,829.31 Z"/>
@@ -26,5 +26,6 @@
 </g>
 <text class="pt-plano__titulo" data-es="Vista lateral" data-en="Side view" x="465" y="69" text-anchor="middle" font-family="Roboto, Arial, sans-serif" font-size="62.3" fill="#000">Vista lateral</text>
 </g>
-<text class="pt-plano__nota" data-es="(Laptop de referencia: 15,6 pulgadas, pantalla de 24–26 cm de alto)" data-en="(Reference laptop: 15.6 inch, screen 24–26 cm tall)" x="464" y="1205" text-anchor="middle" font-family="Roboto, Arial, sans-serif" font-size="17.9" fill="#000">(Laptop de referencia: 15,6 pulgadas, pantalla de 24–26 cm de alto)</text>
+<text class="pt-plano__nota" data-es="(Laptop de referencia: 15,6″" data-en="(Reference laptop: 15.6″ ·" x="464" y="1235" text-anchor="middle" font-family="Roboto, Arial, sans-serif" font-size="46.2" fill="#000">(Laptop de referencia: 15,6″</text>
+<text class="pt-plano__nota" data-es="· pantalla 24–26 cm)" data-en="screen 24–26 cm)" x="464" y="1298" text-anchor="middle" font-family="Roboto, Arial, sans-serif" font-size="46.2" fill="#000">· pantalla 24–26 cm)</text>
 </svg>
