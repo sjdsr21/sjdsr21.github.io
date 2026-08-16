@@ -105,6 +105,13 @@ window.PROTOTIPOS = [
 
     imagen: "img/prototipos/base-baja-saman.webp",
     sin_fondo: true,
+    /* Plano generado (14/08/2026) por Herramientas/plano-tecnico.py desde la
+       GEOMETRIA del .obj de SketchUp. El portatil NO estaba en ese .skp: se
+       trajo del modelo de la base alta con Herramientas/montar-accesorio.py,
+       movido como bloque rigido y con la tapa puesta a plomo (pedido suyo).
+       `plano_img` gana a `diagrama`, que se deja como estaba por si hay que
+       volver al esquema dibujado por codigo. */
+    plano_img: "img/prototipos/base-baja-plano.svg",
     diagrama: "base-baja",
     imagen_por: {
       /* Solo hay foto del samán. El apamate se queda con la misma

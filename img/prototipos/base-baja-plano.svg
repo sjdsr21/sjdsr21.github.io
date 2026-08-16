@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="929" height="1228" viewBox="0 0 929 1228">
+<g transform="translate(0,0)">
+<g fill="#000" fill-rule="evenodd" stroke="none">
+<path d="M 873.41,111.47 L 873.77,739.67 L 871.97,740.03 L 871.61,741.83 L 873.77,748.31 L 819.05,764.15 L 819.05,1029.83 L 276.53,1030.19 L 266.81,926.87 L 266.81,916.07 L 258.53,885.47 L 841.37,724.55 L 841.37,111.83 Z M 344.57,895.19 L 339.89,895.55 L 281.21,912.47 L 285.89,912.11 Z M 576.41,831.83 L 634.01,815.99 L 632.93,814.91 L 606.29,822.11 L 580.37,829.31 Z"/>
+</g>
+<path d="M 576.41,830.39 L 576.41,831.83 L 573.17,833.63 L 281.57,915.71 L 281.21,1027.67 L 276.17,1027.67 L 266.81,926.15 L 267.17,896.99 L 274.37,896.99 L 281.21,912.47 L 283.01,912.83 L 553.73,835.79 Z M 576.41,830.39 L 576.41,831.83 L 573.17,833.63 L 281.57,915.71 L 281.21,1027.67 L 276.17,1027.67 L 266.81,926.15 L 267.17,896.99 L 274.37,896.99 L 281.21,912.47 L 283.01,912.83 L 553.73,835.79 Z M 276.17,1027.67 L 266.81,926.87 L 267.17,919.31 L 575.33,832.19 L 577.13,832.55 L 592.97,889.43 L 614.93,884.03 L 649.85,873.59 L 635.45,823.19 L 634.37,815.63 L 819.05,764.15 L 818.69,1028.03 Z M 276.17,1027.67 L 266.81,926.87 L 267.17,919.31 L 575.33,832.19 L 577.13,832.55 L 592.97,889.43 L 614.93,884.03 L 649.85,873.59 L 635.45,823.19 L 634.37,815.63 L 819.05,764.15 L 818.69,1028.03 Z M 650.57,873.59 L 592.61,889.79 L 576.41,832.55 L 634.37,816.35 Z M 819.05,761.99 L 817.97,764.51 L 634.37,816.35 L 633.29,815.27 L 633.65,813.47 L 637.97,812.03 L 813.65,762.35 Z M 819.05,761.99 L 817.97,764.51 L 634.37,816.35 L 633.29,815.27 L 633.65,813.47 L 637.97,812.03 L 813.65,762.35 Z M 276.17,1029.83 L 276.53,1028.03 L 819.05,1028.39 L 818.69,1030.19 Z M 276.17,1029.83 L 276.53,1028.03 L 819.05,1028.39 L 818.69,1030.19 Z M 266.09,915.35 L 258.17,886.55 L 259.97,884.75 L 850.37,722.03 L 865.85,718.79 L 873.77,747.59 L 872.69,749.39 L 274.37,914.27 Z M 841.73,111.47 L 873.77,111.83 L 873.41,740.03 L 841.37,739.67 Z" fill="none" stroke="#fff" stroke-width="1.32" stroke-linejoin="round"/>
+<g stroke="#000" stroke-width="1.44" fill="#000" font-family="Roboto, Arial, sans-serif" font-size="46.2">
+<line x1="73.9" y1="1029.8" x2="73.9" y2="669.6"/>
+<line x1="73.9" y1="471.1" x2="73.9" y2="110.8"/>
+<line x1="73.9" y1="1029.8" x2="258.5" y2="1029.8" stroke-width="0.8"/>
+<line x1="73.9" y1="110.8" x2="258.5" y2="110.8" stroke-width="0.8"/>
+<path d="M 73.9,1029.8 L 73.9,1004.4 L 82.0,1004.4 Z" stroke="none"/><path d="M 73.9,110.8 L 73.9,136.2 L 65.7,136.2 Z" stroke="none"/>
+<text x="73.9" y="570.3" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round" transform="rotate(-90 73.9 570.3)">38 cm</text>
+<line x1="184.7" y1="1027.4" x2="184.7" y2="994.7"/>
+<line x1="184.7" y1="796.2" x2="184.7" y2="763.4"/>
+<line x1="184.7" y1="1027.4" x2="266.9" y2="1027.4" stroke-width="0.8"/>
+<line x1="184.7" y1="763.4" x2="266.9" y2="763.4" stroke-width="0.8"/>
+<path d="M 184.7,1027.4 L 184.7,1002.0 L 192.8,1002.0 Z" stroke="none"/><path d="M 184.7,763.4 L 184.7,788.8 L 176.5,788.8 Z" stroke="none"/>
+<text x="184.7" y="895.4" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round" transform="rotate(-90 184.7 895.4)">11 cm</text>
+<line x1="266.9" y1="1103.7" x2="443.7" y2="1103.7"/>
+<line x1="642.2" y1="1103.7" x2="819.0" y2="1103.7"/>
+<line x1="266.9" y1="1103.7" x2="266.9" y2="1029.8" stroke-width="0.8"/>
+<line x1="819.0" y1="1103.7" x2="819.0" y2="1029.8" stroke-width="0.8"/>
+<path d="M 266.9,1103.7 L 241.5,1103.7 L 241.5,1095.6 Z" stroke="none"/><path d="M 819.0,1103.7 L 844.3,1103.7 L 844.3,1111.8 Z" stroke="none"/>
+<text x="542.9" y="1103.7" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">23 cm</text>
+</g>
+<text class="pt-plano__titulo" data-es="Vista lateral" data-en="Side view" x="465" y="69" text-anchor="middle" font-family="Roboto, Arial, sans-serif" font-size="62.3" fill="#000">Vista lateral</text>
+</g>
+<text class="pt-plano__nota" data-es="(Laptop de referencia: 15,6 pulgadas, pantalla de 24–26 cm de alto)" data-en="(Reference laptop: 15.6 inch, screen 24–26 cm tall)" x="464" y="1205" text-anchor="middle" font-family="Roboto, Arial, sans-serif" font-size="17.9" fill="#000">(Laptop de referencia: 15,6 pulgadas, pantalla de 24–26 cm de alto)</text>
+</svg>
