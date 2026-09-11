@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="496" height="562" viewBox="0 0 496 562">
+<g transform="translate(0,0)">
+<g class="pt-plano__silueta" fill="#000" fill-rule="evenodd" stroke="none">
+<path d="M 112.00,418.22 L 111.78,334.84 L 115.96,330.22 L 139.06,330.88 L 163.48,394.46 L 170.74,391.16 L 146.98,330.44 L 195.60,330.22 L 200.22,334.84 L 200.00,418.22 Z"/>
+</g>
+<path d="M 112.00,418.22 L 111.78,334.84 L 115.96,330.22 L 139.06,330.88 L 163.48,394.46 L 170.74,391.16 L 146.98,330.44 L 195.60,330.22 L 200.22,334.84 L 200.00,418.22 Z" fill="none" stroke="#fff" stroke-width="1.80" stroke-linejoin="round"/>
+<g stroke="#000" stroke-width="1.80" fill="#000" font-family="Roboto, Arial, sans-serif" font-size="20.0">
+<line x1="32.0" y1="418.0" x2="32.0" y2="410.6"/>
+<line x1="32.0" y1="337.4" x2="32.0" y2="330.0"/>
+<line x1="32.0" y1="418.0" x2="112.0" y2="418.0" stroke-width="1.00"/>
+<line x1="32.0" y1="330.0" x2="112.0" y2="330.0" stroke-width="1.00"/>
+<path d="M 32.0,418.0 L 32.0,407.0 L 35.5,407.0 Z" stroke="none"/><path d="M 32.0,330.0 L 32.0,341.0 L 28.5,341.0 Z" stroke="none"/>
+<text x="32.0" y="374.0" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round" transform="rotate(-90 32.0 374.0)">2 cm</text>
+<line x1="112.0" y1="450.0" x2="119.4" y2="450.0"/>
+<line x1="192.6" y1="450.0" x2="200.0" y2="450.0"/>
+<line x1="112.0" y1="450.0" x2="112.0" y2="418.0" stroke-width="1.00"/>
+<line x1="200.0" y1="450.0" x2="200.0" y2="418.0" stroke-width="1.00"/>
+<path d="M 112.0,450.0 L 101.0,450.0 L 101.0,446.5 Z" stroke="none"/><path d="M 200.0,450.0 L 211.0,450.0 L 211.0,453.5 Z" stroke="none"/>
+<text x="156.0" y="450.0" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">2 cm</text>
+</g>
+</g>
+<g transform="translate(272,0)">
+<g class="pt-plano__silueta" fill="#000" fill-rule="evenodd" stroke="none">
+<path d="M 112.00,418.22 L 111.78,66.44 L 200.00,66.22 L 200.22,418.00 Z"/>
+</g>
+<path d="M 112.00,418.22 L 111.78,66.44 L 200.00,66.22 L 200.22,418.00 Z" fill="none" stroke="#fff" stroke-width="1.80" stroke-linejoin="round"/>
+<g stroke="#000" stroke-width="1.80" fill="#000" font-family="Roboto, Arial, sans-serif" font-size="20.0">
+<line x1="32.0" y1="418.0" x2="32.0" y2="278.6"/>
+<line x1="32.0" y1="205.4" x2="32.0" y2="66.0"/>
+<line x1="32.0" y1="418.0" x2="112.0" y2="418.0" stroke-width="1.00"/>
+<line x1="32.0" y1="66.0" x2="112.0" y2="66.0" stroke-width="1.00"/>
+<path d="M 32.0,418.0 L 32.0,407.0 L 35.5,407.0 Z" stroke="none"/><path d="M 32.0,66.0 L 32.0,77.0 L 28.5,77.0 Z" stroke="none"/>
+<text x="32.0" y="242.0" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round" transform="rotate(-90 32.0 242.0)">8 cm</text>
+<line x1="112.0" y1="450.0" x2="119.4" y2="450.0"/>
+<line x1="192.6" y1="450.0" x2="200.0" y2="450.0"/>
+<line x1="112.0" y1="450.0" x2="112.0" y2="418.0" stroke-width="1.00"/>
+<line x1="200.0" y1="450.0" x2="200.0" y2="418.0" stroke-width="1.00"/>
+<path d="M 112.0,450.0 L 101.0,450.0 L 101.0,446.5 Z" stroke="none"/><path d="M 200.0,450.0 L 211.0,450.0 L 211.0,453.5 Z" stroke="none"/>
+<text x="156.0" y="450.0" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">2 cm</text>
+</g>
+</g>
+<line x1="12" y1="491" x2="484" y2="491" stroke="#000" stroke-width="1.80"/>
+<text class="pt-plano__pieza" data-es="Bases para foto" data-en="Photo stands" x="12" y="529" text-anchor="start" font-family="Roboto, Arial, sans-serif" font-size="23.2" font-weight="300" fill="#000" stroke="none">Bases para foto</text>
+<text x="484" y="525" text-anchor="end" font-family="Poppins, Roboto, system-ui, sans-serif" font-size="29.0" font-weight="700" letter-spacing="-0.025em" fill="#000" stroke="none">prototipo</text>
+<text x="484" y="551" text-anchor="end" font-family="Poppins, Roboto, system-ui, sans-serif" font-size="29.0" font-weight="700" letter-spacing="-0.025em" fill="#000" stroke="none">ago</text>
+
+<text x="120" y="40" font-weight="300" class="pt-plano__titulo" data-es="Vista lateral" data-en="Side view" text-anchor="middle" font-family="Roboto, Arial, sans-serif" font-size="22.0" fill="#000">Vista lateral</text>
+<text x="392" y="40" font-weight="300" class="pt-plano__titulo" data-es="Vista superior" data-en="Top view" text-anchor="middle" font-family="Roboto, Arial, sans-serif" font-size="22.0" fill="#000">Vista superior</text>
+</svg>

@@ -98,10 +98,13 @@
   width: 100%; height: 100%;
   object-fit: contain; padding: 0;
 }
-.pt-ficha:hover .pt-ficha__hueco img { transform: scale(1.04); }
-/* La pieza recortada NO se agranda al pasar el ratón: como se ve
-   entera y con aire justo, crecer la sacaría del recuadro. */
-.pt-ficha:hover .pt-ficha__hueco--suelto img { transform: none; }
+/* SIN ZOOM AL PASAR EL RATÓN (él, 06/09/2026). Iba a `scale(1.04)`
+   y se notaba sobre todo en los isométricos, donde agrandar recorta
+   las cotas de los bordes. Es la misma decisión que ya se tomó en
+   Exhibición el 14/08/2026 — ver el comentario de .tarjeta__marco en
+   estilo.css. La transición se deja puesta por si vuelve. */
+.pt-ficha:hover .pt-ficha__hueco img { transform: none; }
+
 
 /* --- flechas del carrusel de la ficha -----------------------
    Van dentro del recuadro de la imagen, pegadas a los lados.
@@ -125,6 +128,49 @@
 .pt-flecha:focus-visible { opacity: 1; }
 .pt-flecha:hover { background: var(--papel); }
 @media (hover: none) { .pt-flecha { opacity: .85; } }
+/* 2026-08-17 · En teléfono medían 30px de ancho y encima están
+   pegadas al borde de la tarjeta, que es justo donde el pulgar
+   llega peor. A 44 caben de sobra: la tarjeta mide 335. */
+@media (max-width: 780px) { .pt-flecha { width: 44px; } }
+
+/* ============================================================
+   EL PISO DE LETRA CHICA EN TELÉFONO · 2026-08-17
+
+   Medido a 375px: en esta página había 25 textos a 12px en 11
+   papeles distintos. El nivel «letra chica» se había convertido
+   en el cajón de sastre, y dentro estaba información con la que
+   alguien decide una compra: la tasa del BCV, los datos de la
+   cuenta, cuántas unidades quedan.
+
+   Prototipos es la única página donde el visitante mueve dinero.
+   Ahí el texto que informa la decisión sube a 14px; los 12px se
+   quedan solo para lo accesorio (el contador de fotos, el
+   «Desde» que antecede al precio, las versalitas de opción).
+   ============================================================ */
+@media (max-width: 780px) {
+  /* El encabezado de sección («Listas ahora», «Por encargo») tenía
+     su propia escala y caía en 17,9px, mientras los nombres de
+     pieza que van DEBAJO son h3 de 17px en negrita: la sección se
+     veía menos importante que sus propios artículos. Igualado al
+     resto de encabezados de sección del sitio, 21,8px, que deja un
+     salto limpio de 1,28 hasta los nombres. */
+  .pt-cabeza h2 { font-size: 1.36rem; }
+
+  /* Cuántas quedan y en cuánto tiempo llega: eso decide la compra. */
+  .pt-estado { font-size: 0.8125rem; letter-spacing: .08em; }
+  /* Los datos de la cuenta para pagar. */
+  .pt-nota   { font-size: 0.875rem; }
+  /* La tasa del día. Sube de tamaño y se le suelta la interlínea:
+     iba en 1,3, que para dos renglones de cifras queda apretado. */
+  .pt-tasa   { font-size: 0.8125rem; line-height: 1.45; }
+  /* El equivalente en bolívares de cada línea del pedido. */
+  .pt-gris   { font-size: 0.8125rem; }
+
+  /* El total en bolívares se pintaba a 25,9px: era el texto más
+     grande de la página, por encima del propio título de 28. Un
+     subtotal no puede gritar más que el nombre de la página. */
+  .pt-fila--grande .n { font-size: 1.35rem; }
+}
 
 /* El contador de fotos, abajo a la derecha del recuadro. */
 .pt-cuenta-fotos {
@@ -184,15 +230,42 @@
   .pt-panel__cuerpo { grid-template-columns: 1fr; gap: 1.1rem; }
 }
 .pt-panel__visual { position: sticky; top: 0; }
+/* 2026-08-17 · EN TELÉFONO NO SE PEGA, y esto es un fallo que se vio
+   en uso: al deslizar, la imagen y las miniaturas se quedaban
+   clavadas arriba y la descripción de la pieza les pasaba POR
+   DEBAJO. Medido: 332 px de solape con el panel desplazado 350.
+
+   En escritorio pegarla está bien —es la columna izquierda y la de
+   opciones es mucho más larga, así que la pieza te acompaña mientras
+   eliges—. Apiladas, en cambio, la imagen va ARRIBA de las opciones y
+   pegarla solo sirve para tapar lo que vienes a leer.
+
+   Va detrás de la regla de arriba y no dentro del @media de 760 que
+   hay unas líneas antes: ese bloque está ANTES en el archivo y con la
+   misma especificidad perdería. */
+@media (max-width: 760px) {
+  .pt-panel__visual { position: static; }
+}
 
 /* El recuadro de la visual. Cuando no hay modelo, se queda con el
    mismo rayado de las fichas para que el hueco no parezca un
    error de carga. */
-/* La proporción del recuadro CAMBIA según lo que se esté viendo.
-   Antes era 1:1 fijo y una foto 4:3 se recortaba por los lados y
-   por abajo: se comía la base de la pieza. Ahora la foto va en su
-   propia proporción y no se pierde nada. Lo pone js/prototipos.js
-   en data-medio. */
+/* El recuadro es CUADRADO siempre, mire lo que mire (él,
+   08/09/2026): el panel dejaba de saltar de alto al pasar de una
+   foto al plano o al 3D.
+
+   HISTORIA, para no dar la vuelta otra vez. En agosto era 1:1 fijo
+   y la foto iba con `cover`: al recortar para llenar el cuadrado se
+   comía la base de la pieza, así que la foto pasó a 4:3. Volver a
+   1:1 con `cover` repetiría ese fallo —y peor que antes, porque hoy
+   hay fotos de 705×426 y de 562×870 en la misma tira—, así que el
+   cuadrado viene acompañado de `contain` en .pt-visual__foto: la
+   caja no se mueve Y la foto se ve entera. El aire que sobra es
+   fondo liso, no recorte.
+
+   Ya no hace falta ninguna excepción por tipo de medio: foto,
+   vídeo, plano y 3D comparten el mismo cuadrado. `data-medio`
+   sigue puesto por js/prototipos.js y sirve para el fondo. */
 .pt-visual {
   aspect-ratio: 1 / 1; border: 1px solid var(--linea);
   background: var(--rayado);
@@ -200,21 +273,43 @@
   overflow: hidden;
   transition: aspect-ratio .25s var(--curva);
 }
-.pt-visual[data-medio="foto"]  { aspect-ratio: 4 / 3; }
-/* 1/1 y no 16/9: los vídeos del taller se graban con el teléfono
-   y salen VERTICALES. En un recuadro apaisado, un vídeo de
-   608×1081 no cabía —se pintaba a 505×898 y se salía por abajo— y
-   con recorte se habría visto un trozo del centro. Cuadrado entra
-   entero con aire a los lados. */
-.pt-visual[data-medio="video"] { aspect-ratio: 1 / 1; }
-.pt-visual[data-medio="3d"]    { aspect-ratio: 1 / 1; }
-/* El plano se queda CUADRADO a propósito: es una imagen muy alta y
-   darle su proporción estiraría el panel entero. Cabe encogida,
-   con aire a los lados. */
-.pt-visual[data-medio="plano-img"] { aspect-ratio: 1 / 1; }
+/* Detrás de una foto encajada, fondo LISO. Con el rayado asomando
+   por las franjas de arriba y abajo parecía una imagen a medio
+   cargar. Es el mismo criterio que ya seguían las piezas
+   recortadas (data-suelto). El rayado se queda para el hueco
+   vacío, que es lo que de verdad quiere decir "aquí no hay nada". */
+.pt-visual[data-medio="foto"] { background: var(--papel); }
+/* Aquí había tres reglas más —video, 3d y plano-img— que repetían
+   `aspect-ratio: 1 / 1`. Desde que el cuadrado es la base y no la
+   excepción, sobran. Lo que decían y sigue valiendo:
+   · los vídeos del taller se graban con el teléfono y salen
+     VERTICALES; en un recuadro apaisado un vídeo de 608×1081 se
+     salía por abajo, y recortarlo dejaba una franja del centro.
+   · el plano es una imagen muy alta: darle su proporción estiraría
+     el panel entero. */
 .pt-visual__lienzo { position: absolute; inset: 0; display: grid; place-items: center; }
 .pt-visual .visor3d { width: 100%; height: 100%; border: 0; background: transparent; }
-.pt-visual__foto { width: 100%; height: 100%; object-fit: cover; display: block; }
+/* `contain` y no `cover`: en un recuadro cuadrado, `cover` recorta
+   —los lados de una foto apaisada, y la cabeza y la BASE de una
+   vertical—. Ver el comentario de .pt-visual arriba. La foto entra
+   entera y lo que sobra es fondo.
+
+   `position:absolute; inset:0` NO es adorno, y quitarlo rompe esto
+   en silencio. Con `width/height:100%` a secas el alto no resuelve
+   —el del padre sale de `aspect-ratio` y para un porcentaje eso
+   cuenta como indefinido, la misma trampa de .pt-visual__foto--suelto
+   unas líneas más abajo—, así que la imagen se dimensionaba solo por
+   el ancho: tumbona-6 (1400×1860) salía de 490×651 dentro de una caja
+   de 492×492 y se comía 159 px POR ABAJO, escondidos por el
+   `overflow:hidden` del recuadro. Y `object-fit` no lo salvaba: si la
+   caja del <img> ya tiene la proporción de la foto, no hay nada que
+   encajar. Con los insets el elemento mide 492×492 de verdad y ahí
+   sí `contain` hace su trabajo.
+   Es la misma receta que ya usaba video.pt-visual__foto aquí debajo. */
+.pt-visual__foto {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%; object-fit: contain; display: block;
+}
 
 /* El vídeo, ENTERO y encajado en el recuadro. `position:absolute`
    porque con `height: 100%` a secas dentro del lienzo en grid no
@@ -270,7 +365,23 @@ video.pt-visual__foto {
   /* holgura para que las cifras no toquen el borde */
   padding: .9rem 1rem; box-sizing: border-box;
 }
-:root:not([data-tema="claro"]) .pt-visual__plano { filter: invert(1); }
+/* 06/09/2026 · La inversión vale SOLO PARA EL SVG. Desde hoy este
+   mismo hueco sirve también para la imagen isométrica con cotas, que
+   es un render en color sobre fondo negro: invertirla la dejaba con
+   la madera azul y el fondo blanco. El plano de líneas sí la
+   necesita, porque va dibujado en negro sobre transparente.
+   El selector mira la extensión del `src`; cuando el SVG ya está
+   incrustado en línea es un <svg>, no un <img>, y entra por la
+   segunda mitad. */
+:root:not([data-tema="claro"]) img.pt-visual__plano[src$=".svg"],
+:root:not([data-tema="claro"]) svg.pt-visual__plano { filter: invert(1); }
+/* El plano entero se invierte en oscuro, y eso volvería AZUL el naranja
+   quemado que señala el agujero en uso. Invertirlo otra vez a él lo deja
+   igual en los dos temas: dos inversiones se anulan.
+   Solo funciona con el SVG metido en la página; por <img> el CSS no entra
+   ahí y en oscuro sí saldría azul — pero ese camino es solo para abrir el
+   HTML con doble clic. Ver incrustarPlano() en js/prototipos.js. */
+:root:not([data-tema="claro"]) .pt-visual__plano .pt-plano__acento { filter: invert(1); }
 
 /* La pieza recortada se ve ENTERA, sin que le falte nada.
    OJO CON EL TAMAÑO: aquí había `width:100%; height:100%` y la
@@ -324,18 +435,28 @@ video.pt-visual__foto {
 }
 
 /* --- riel de miniaturas ------------------------------------
-   Arriba a la izquierda, encima del lienzo. Cada una es un medio:
-   la foto de portada primero, luego el 3D, y después lo que se
-   vaya añadiendo (más fotos, vídeo). */
+   2026-08-17 · CAMBIO SUYO. Antes flotaban ARRIBA A LA IZQUIERDA
+   ENCIMA del lienzo, en columna y de 42px: tapaban justo la esquina
+   de la pieza y eran demasiado chicas para ver qué había dentro.
+
+   Ahora van DEBAJO del recuadro, en cuadrícula horizontal y más
+   grandes. El cambio de sitio no es solo CSS: en index.html el
+   bloque tuvo que salir de dentro de .pt-visual, que lleva
+   aspect-ratio y position:relative y no deja colocar nada debajo.
+
+   `auto-fill` con mínimo de 76px y no un número fijo de columnas:
+   una pieza puede tener dos medios o siete, y así la fila se llena
+   sola y las que sobran bajan al renglón siguiente. */
 .pt-medios {
-  position: absolute; top: .5rem; left: .5rem; z-index: 2;
-  display: flex; flex-direction: column; gap: .35rem;
+  display: grid; gap: .4rem; margin-top: .5rem;
+  grid-template-columns: repeat(auto-fill, minmax(76px, 1fr));
 }
 .pt-medio {
-  width: 42px; height: 42px; padding: 0; cursor: pointer;
+  width: auto; aspect-ratio: 1; padding: 0; cursor: pointer;
   border: 1px solid var(--linea);
-  background-color: color-mix(in srgb, var(--papel) 78%, transparent);
-  backdrop-filter: blur(6px);
+  /* Ya no van encima de la foto, así que no hace falta el cristal
+     esmerilado que las despegaba del fondo: color liso y basta. */
+  background-color: var(--caja);
   display: grid; place-items: center; overflow: hidden;
   transition: border-color .15s, opacity .15s;
   opacity: .72;
@@ -347,9 +468,16 @@ video.pt-visual__foto {
 /* La miniatura del PLANO enseña el dibujo, no la palabra (él,
    14/08/2026). Va con `contain` y no `cover` —recortado no se
    entendería— y se invierte en oscuro igual que el grande, o
-   sería una mancha negra sobre negro. */
+   sería una mancha negra sobre negro.
+
+   07/09/2026 · La inversión vale SOLO PARA EL SVG, igual que arriba
+   en .pt-visual__plano. Cuando el hueco del plano lo ocupa el
+   isométrico —un render en color sobre fondo negro, `algo-iso.webp`—
+   invertirlo lo dejaba con fondo blanco y la madera azul dentro del
+   modo oscuro (comedero pequeño, gancho de pared). El SVG sí la
+   necesita: va dibujado en negro sobre transparente. */
 .pt-medio--plano img { object-fit: contain; padding: 3px; box-sizing: border-box; }
-:root:not([data-tema="claro"]) .pt-medio--plano img { filter: invert(1); }
+:root:not([data-tema="claro"]) .pt-medio--plano img[src$=".svg"] { filter: invert(1); }
 
 /* El VÍDEO lleva el triángulo de reproducir, no la palabra. */
 .pt-medio__play { font-size: 0.75rem; color: var(--tinta); line-height: 1; }
@@ -362,6 +490,15 @@ video.pt-visual__foto {
 }
 .pt-panel__pie { padding: 1.15rem 1.5rem; border-top: 1px solid var(--linea); }
 .pt-panel__resumen { font-size: 0.875rem; color: var(--apagado); line-height: 1.55; margin-bottom: 1.6rem; }
+
+/* Aviso de personalización, en todas las fichas. Va más apagado que el
+   resumen —es una nota, no argumento de venta— pero el enlace sí destaca. */
+.pt-personalizar {
+  font-size: 0.8125rem; color: var(--apagado); line-height: 1.5;
+  margin: -1rem 0 1.6rem; padding-top: .8rem;
+  border-top: 1px solid var(--linea);
+}
+.pt-personalizar a { color: var(--realce); text-decoration: underline; }
 
 .pt-grupo { margin-bottom: 1.6rem; }
 .pt-etiqueta {
@@ -379,6 +516,20 @@ video.pt-visual__foto {
 .pt-d { font-size: 0.75rem; color: var(--apagado); margin-left: .35rem; }
 .pt-op.sel .pt-d { color: var(--madera-texto); }
 .pt-op:disabled { opacity: .32; cursor: not-allowed; text-decoration: line-through; }
+
+/* SIN EXISTENCIAS PERO SE PUEDE PEDIR (06/09/2026).
+   Ni tachado ni bloqueado: eso dice «no se puede», y sí se puede
+   — se encarga. Solo se apaga un punto y lleva un círculo hueco en
+   la esquina de arriba, que es la señal de «hay que fabricarla».
+   El punto va en el borde, no dentro, para no empujar el texto. */
+.pt-op--agotado { opacity: .62; position: relative; }
+.pt-op--agotado::after {
+  content: ""; position: absolute; top: -4px; right: -4px;
+  width: 7px; height: 7px; border-radius: 50%;
+  border: 1px solid var(--acento-texto); background: var(--papel);
+}
+.pt-op--agotado.sel { opacity: 1; }
+.pt-op--agotado.sel::after { background: var(--acento-texto); }
 
 .pt-contador { display: flex; align-items: center; border: 1px solid var(--linea); width: max-content; }
 .pt-contador button {
@@ -573,188 +724,14 @@ video.pt-visual__foto {
 .pt-nota { display: block; color: var(--apagado); font-size: 0.75rem; margin-top: .6rem; line-height: 1.45; }
 
 /* ============================================================
-   TRANSICIÓN GLITCH ENTRE IMÁGENES
+   TRANSICION GLITCH ENTRE MEDIOS
    ------------------------------------------------------------
-   Al pasar de una foto a otra, la que sale se rompe en bandas
-   horizontales que saltan de sitio mientras se separan sus
-   canales de color, y por encima cruza una barra de barrido.
-
-   Cómo funciona: la imagen NUEVA ya está puesta debajo; lo que
-   se anima es una COPIA de la vieja superpuesta, que se
-   desintegra y desaparece. Así no hay que precargar nada ni
-   esperar a que la nueva decodifique.
-
-   Los tiempos van con `steps(1)` a propósito: un glitch tiene
-   que dar saltos, no deslizarse. Con interpolación suave parece
-   una animación de diapositivas.
+   2026-08-15 - El bloque se mudo a css/estilo.css, tal cual,
+   sin tocar una linea. Motivo: la ficha de Exhibicion usa el
+   mismo corte y esa pagina (trabajo.html) NO carga esta hoja.
+   Las clases siguen llamandose .pt-glitch, .pt-saliendo y
+   .pt-entrando; se buscan alli.
    ============================================================ */
-
-/* La capa se coloca con medidas en píxeles calculadas por el JS,
-   no con `inset: 0`. Tiene que caer exactamente sobre el hueco
-   que ocupa la imagen, y ese hueco depende del relleno del
-   recuadro y de si la imagen va en `contain` o en `cover`. */
-.pt-glitch {
-  position: absolute; z-index: 3;
-  pointer-events: none; overflow: hidden;
-}
-.pt-glitch img {
-  position: absolute; left: 0; top: 0;
-  width: 100%; height: 100%;
-  animation: pt-bandas .085s steps(1, end) forwards;
-}
-/* Las dos copias teñidas que hacen la separación de canales. Van
-   en modo screen para que sumen luz y no tapen.
-
-   NO son rojo y cian, que es lo típico de un glitch: son NARANJA
-   QUEMADO y AMARILLO INTENSO, de la familia de la marca. El
-   sepia lleva la imagen a un warm neutro y desde ahí se gira el
-   tono; sin el sepia previo, el hue-rotate sobre una foto de
-   madera no da un color limpio. */
-.pt-glitch img:nth-child(2) {
-  mix-blend-mode: screen;
-  filter: sepia(1) saturate(8) hue-rotate(-18deg) brightness(1.05);
-  animation-name: pt-bandas-naranja;
-}
-/* Estos números están MEDIDOS, no puestos a ojo: sobre una madera
-   media producen #ffd200, que es el amarillo intenso que se
-   buscaba. Con más giro de tono (24deg) la madera clara se iba a
-   lima #deff00 y la oscura a oliva. */
-.pt-glitch img:nth-child(3) {
-  mix-blend-mode: screen;
-  filter: sepia(1) saturate(6) hue-rotate(8deg) brightness(1.75);
-  animation-name: pt-bandas-amarillo;
-}
-
-/* La mitad de las veces el amarillo se cambia por ROJO. Lo
-   sortea el JS al montar la capa.
-
-   El rojo no se saca girando el tono hacia atrás como parecería:
-   desde el sepia, girar en negativo lleva a rosa y luego a
-   magenta (se probó -35, -45 y -55 y salían #ff6470, #ff64a3 y
-   #ff66dd). Lo que cierra el color hacia el rojo es el CONTRASTE
-   alto con un giro corto. Medido: #f23526 sobre madera media y
-   #f20516 sobre madera oscura. */
-.pt-glitch--rojo img:nth-child(3) {
-  filter: sepia(1) saturate(14) hue-rotate(-28deg) contrast(1.6) brightness(.95);
-}
-/* 2026-08-13 · Aquí iba una franja blanca que barría de arriba
-   abajo durante el corte. Fuera: a 85 ms no daba tiempo a leerla
-   y solo aportaba un destello. El corte lo hacen las bandas y la
-   separación de color. */
-
-/* MENOS PASOS que antes, y a propósito. A 85 ms, siete estados
-   salían a 12 ms cada uno — por debajo de un cuadro de pantalla
-   (16,7 ms), así que la mitad no llegaba a dibujarse y el efecto
-   se veía irregular según el momento. Con cuatro estados cada uno
-   dura ~21 ms y le toca cuadro seguro.
-   Los desplazamientos también bajaron a la mitad: el corte se
-   nota, pero sin descuajaringar la pieza. */
-@keyframes pt-bandas {
-  0%   { clip-path: inset(0 0 0 0);      transform: translateX(0); }
-  30%  { clip-path: inset(12% 0 62% 0);  transform: translateX(-3px); }
-  60%  { clip-path: inset(54% 0 18% 0);  transform: translateX(4px); }
-  85%  { clip-path: inset(30% 0 44% 0);  transform: translateX(-2px); opacity: .55; }
-  100% { clip-path: inset(0 0 100% 0);   transform: translateX(0);    opacity: 0; }
-}
-@keyframes pt-bandas-naranja {
-  0%   { clip-path: inset(0 0 100% 0); transform: translateX(0); opacity: 0; }
-  30%  { clip-path: inset(18% 0 58% 0); transform: translateX(-4px); opacity: .8; }
-  65%  { clip-path: inset(56% 0 24% 0); transform: translateX(3px);  opacity: .7; }
-  100% { clip-path: inset(0 0 100% 0);  transform: translateX(0);    opacity: 0; }
-}
-@keyframes pt-bandas-amarillo {
-  0%   { clip-path: inset(0 0 100% 0); transform: translateX(0); opacity: 0; }
-  30%  { clip-path: inset(18% 0 58% 0); transform: translateX(4px);  opacity: .8; }
-  65%  { clip-path: inset(56% 0 24% 0); transform: translateX(-3px); opacity: .7; }
-  100% { clip-path: inset(0 0 100% 0);  transform: translateX(0);    opacity: 0; }
-}
-
-/* La imagen que ENTRA da un tirón corto de canales, para que el
-   corte no se note solo en la que sale. */
-/* Naranja quemado (#C04E00, de su paleta) contra amarillo intenso
-   (#FFD400). El mismo par que las bandas, para que el corte se
-   lea como una sola cosa. */
-.pt-entrando { animation: pt-sacudida .065s steps(1, end); }
-@keyframes pt-sacudida {
-  0%   { filter: none; transform: translateX(0); }
-  33%  { filter: drop-shadow(2px 0 rgba(192,78,0,.9)) drop-shadow(-2px 0 rgba(255,212,0,.9));
-         transform: translateX(1px); }
-  66%  { filter: drop-shadow(-2px 0 rgba(192,78,0,.85)) drop-shadow(2px 0 rgba(255,212,0,.85));
-         transform: translateX(-1px); }
-  100% { filter: none; transform: translateX(0); }
-}
-
-/* La variante roja del tirón, para que la imagen que entra vaya
-   con el mismo par de colores que las bandas. */
-.pt-entrando--rojo { animation-name: pt-sacudida-rojo; }
-@keyframes pt-sacudida-rojo {
-  0%   { filter: none; transform: translateX(0); }
-  33%  { filter: drop-shadow(2px 0 rgba(192,78,0,.9)) drop-shadow(-2px 0 rgba(226,32,26,.9));
-         transform: translateX(1px); }
-  66%  { filter: drop-shadow(-2px 0 rgba(192,78,0,.85)) drop-shadow(2px 0 rgba(226,32,26,.85));
-         transform: translateX(-1px); }
-  100% { filter: none; transform: translateX(0); }
-}
-
-/* ------------------------------------------------------------
-   GLITCH AL CAMBIAR DE MEDIO (foto ↔ plano ↔ 3D ↔ vídeo)
-   El de arriba desintegra una COPIA de la foto vieja. Aquí se
-   corta el nodo original, porque de un canvas WebGL no se puede
-   sacar copia: `clip-path` y `transform` valen igual sobre una
-   imagen, sobre el plano o sobre el visor.
-
-   La separación de canales se hace con `drop-shadow` y no con
-   tres capas teñidas —no hay tres capas que teñir—, así que es
-   más discreta que la de foto a foto. Es lo que se puede hacer
-   sin rasterizar el contenido, y a 105 ms la diferencia no se
-   distingue.
-   ------------------------------------------------------------ */
-.pt-saliendo {
-  position: absolute; inset: 0; z-index: 3;
-  pointer-events: none;
-  animation: pt-corte .085s steps(1, end) forwards;
-}
-/* Lo de dentro conserva su tamaño: la capa es solo el envoltorio
-   que se anima. */
-.pt-saliendo > * { position: absolute; inset: 0; }
-
-/* 2026-08-14 · Aquí vivía `.pt-saliendo--espera`: la foto se
-   quedaba quieta tapando el visor 3D mientras el modelo cargaba,
-   y el corte saltaba al terminar. Fuera con el resto del glitch
-   del 3D — no le convenció. */
-
-@keyframes pt-corte {
-  0%   { clip-path: inset(0 0 0 0);     transform: translateX(0);
-         filter: none; }
-  30%  { clip-path: inset(12% 0 62% 0); transform: translateX(-3px);
-         filter: drop-shadow(3px 0 rgba(192,78,0,.9)) drop-shadow(-3px 0 rgba(255,212,0,.9)); }
-  60%  { clip-path: inset(54% 0 18% 0); transform: translateX(4px);
-         filter: drop-shadow(-3px 0 rgba(192,78,0,.85)) drop-shadow(3px 0 rgba(255,212,0,.85)); }
-  85%  { clip-path: inset(30% 0 44% 0); transform: translateX(-2px); opacity: .55;
-         filter: none; }
-  100% { clip-path: inset(0 0 100% 0);  transform: translateX(0);    opacity: 0; }
-}
-/* La mitad de las veces, el amarillo se cambia por rojo — el
-   mismo sorteo y el mismo par de colores que el glitch de fotos. */
-.pt-saliendo--rojo { animation-name: pt-corte-rojo; }
-@keyframes pt-corte-rojo {
-  0%   { clip-path: inset(0 0 0 0);     transform: translateX(0);
-         filter: none; }
-  30%  { clip-path: inset(12% 0 62% 0); transform: translateX(-3px);
-         filter: drop-shadow(3px 0 rgba(192,78,0,.9)) drop-shadow(-3px 0 rgba(226,32,26,.9)); }
-  60%  { clip-path: inset(54% 0 18% 0); transform: translateX(4px);
-         filter: drop-shadow(-3px 0 rgba(192,78,0,.85)) drop-shadow(3px 0 rgba(226,32,26,.85)); }
-  85%  { clip-path: inset(30% 0 44% 0); transform: translateX(-2px); opacity: .55;
-         filter: none; }
-  100% { clip-path: inset(0 0 100% 0);  transform: translateX(0);    opacity: 0; }
-}
-
-/* Quien pidió menos movimiento no ve ningún glitch. */
-@media (prefers-reduced-motion: reduce) {
-  .pt-glitch { display: none; }
-  .pt-saliendo { display: none; }
-  .pt-entrando { animation: none; }
-}
 
 /* La tasa del día, arriba a la derecha del recuadro del pedido.
    Va absoluta para que no empuje las filas de totales hacia abajo. */

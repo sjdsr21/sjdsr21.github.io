@@ -58,11 +58,27 @@ window.TEXTOS = {
   pt_anterior:  { es: "Foto anterior",  en: "Previous photo" },
   pt_siguiente: { es: "Foto siguiente", en: "Next photo" },
 
+  /* Sale en TODAS las fichas de Prototipos. {a}…{/a} se convierte en un
+     enlace a taller.html#maderas — ver pintarPanel() en js/prototipos.js. */
+  pt_personalizar: {
+    es: "Cualquier pieza se puede personalizar: medidas, acabado, herrajes y la especie de madera. {a}Mira con qué maderas trabajo{/a}.",
+    en: "Any piece can be customised: dimensions, finish, hardware and the wood species. {a}See the woods I work with{/a}."
+  },
+
   pt_cantidad:  { es: "Cantidad", en: "Quantity" },
   pt_cant_packs:{ es: "Cantidad de packs", en: "Number of packs" },
   pt_en_total:  { es: "({n} {cosa} en total)", en: "({n} {cosa} in total)" },
-  pt_sin_combo: { es: "Sin stock en esta combinación — se puede hacer por encargo.",
-                  en: "Out of stock in this combination — can be made to order." },
+  /* 06/09/2026 · Se alargó a propósito, para que diga lo mismo que
+     `pt_sobre_stock`: que SÍ se puede pedir, que lleva unas semanas y
+     que se cierra por mensaje. La versión corta de antes —«sin stock
+     en esta combinación»— se leía como «no disponible» y frenaba el
+     pedido. No lleva número de semanas porque los productos con
+     stock no tienen `plazo_semanas`. */
+  pt_sin_combo: { es: "De esta combinación no hay hecho nada en el taller. Se fabrica por encargo, lo que puede tomar unas semanas. Puedes hacer el pedido igual y lo acordamos por mensaje al terminar.",
+                  en: "Nothing in this combination is made up in the shop. It's made to order, which can take a few weeks. You can place the order anyway and we'll sort it out by message afterwards." },
+  /* El que sale al pasar el ratón por una opción sin existencias. */
+  pt_agotado_aviso: { es: "No hay hecho — se fabrica por encargo",
+                      en: "None made up — made to order" },
   pt_en_taller: { es: "{n} en el taller, sale de una vez.", en: "{n} in the shop, ships right away." },
   /* Aviso al pedir más de lo que hay hecho. {cosa} dice "unidades"
      o "paquetes" según el producto. */
@@ -133,9 +149,17 @@ window.TEXTOS = {
 
   /* --- Novedades y video ----------------------------------- */
   novedad:      { es: "Novedad",           en: "New" },
-  novedad_cta:  { es: "Descubre el Rolitronco", en: "Meet the Rolitronco" },
+  /* La pieza pasó de «Rolitronco» a «Rolo» (ver trabajos.js). El
+     slug sigue siendo rolitronco: es la dirección publicada. */
+  novedad_cta:  { es: "Descubre el Rolo", en: "Meet the Rolo" },
   saber_mas:    { es: "Saber más sobre el proyecto", en: "More about the project" },
   ver_ficha:    { es: "Ver en el portafolio", en: "See it in the portfolio" },
+
+  /* Nombre hablado de la fila de tres accesos que sale en el
+     encabezado del teléfono. No se ve; lo lee un lector de
+     pantalla para distinguirla del menú de la hamburguesa, que es
+     otro <nav> en la misma cabecera. */
+  nav_secciones: { es: "Secciones principales", en: "Main sections" },
 
   /* --- Buscador -------------------------------------------- */
   buscar:       { es: "Buscar",            en: "Search" },
@@ -153,9 +177,12 @@ window.TEXTOS = {
                      en: "Exhibition" },
   /* Lleva la palabra «catálogo» a propósito (él, 14/08/2026): es
      como llama a esta sección, y el enlace de volver dice lo
-     mismo. */
-  trabajos_bajada: { es: "El catálogo de lo que ha salido del taller. Ningún encargo se repite: aquí está cada pieza, de qué está hecha y cómo se resolvió.",
-                     en: "The catalogue of what has come out of the shop. No commission is ever repeated: here is each piece, what it's made of and how it was solved." },
+     mismo.
+     06/09/2026 · Se queda la primera frase y cambia todo lo demás,
+     dictado por él. Antes decía: «Ningún encargo se repite: aquí
+     está cada pieza, de qué está hecha y cómo se resolvió.» */
+  trabajos_bajada: { es: "El catálogo de lo que ha salido del taller. Cada encargo parte de una propuesta única: la idea del cliente, que se materializa a partir de la resolución de un problema.",
+                     en: "The catalogue of what has come out of the shop. Every commission begins with a proposal of its own: the client's idea, which takes shape by solving a problem." },
 
   filtro_tipo:     { es: "Tipo",           en: "Type" },
   filtro_madera:   { es: "Material",       en: "Material" },
@@ -278,9 +305,20 @@ window.TEXTOS = {
     "contraenchapado": { es: "Contraenchapado de pino",    en: "Pine plywood" },
     "mdf":             { es: "MDF",                        en: "MDF" },
     "saman":           { es: "Samán",                      en: "Monkeypod" },
+    "eucalipto":       { es: "Eucalipto",                  en: "Eucalyptus" },
+    /* «Compuesto» es como se llama aquí al tablero de alma maciza
+       chapado; en inglés no hay traducción directa y lo más
+       cercano es blockboard. */
+    "okume":           { es: "Compuesto de okume",         en: "Okoumé blockboard" },
     "cedro":           { es: "Cedro",                      en: "Cedar" },
     "caoba":           { es: "Caoba",                      en: "Mahogany" },
     "roble":           { es: "Roble",                      en: "Oak" },
+    /* Apamate (Tabebuia rosea). No tiene nombre comercial asentado
+       en inglés —se vende como «roble» o como «white mahogany», y
+       ninguno de los dos es cierto—, así que en inglés va el mismo
+       nombre con el científico al lado. */
+    "apamate":         { es: "Apamate",                    en: "Apamate (Tabebuia rosea)" },
+    "teca":            { es: "Teca",                       en: "Teak" },
     "fibrocemento":    { es: "Fibrocemento",               en: "Fiber cement" },
     "ceramica":        { es: "Cerámica",                   en: "Ceramic tile" },
     "acero":           { es: "Acero",                      en: "Steel" },

@@ -26,6 +26,7 @@ window.MODELOS = {
   "gancho-ery": "modelos/gancho-ery.glb",
   "mesa-cubo-ceramica": "modelos/mesa-cubo-ceramica.glb",
   "mt-estefania": "modelos/mt-estefania.glb",
+  "paraban-veronica": "modelos/paraban-veronica.glb",
   "quillas-mariana": "modelos/quillas-mariana.glb",
   "repicero-estefania": "modelos/repicero-estefania.glb",
   "tabla-de-picar-teca-talla-l": "modelos/tabla-de-picar-teca-talla-l.glb",

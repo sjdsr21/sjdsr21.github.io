@@ -14,7 +14,35 @@ Abrir sitio.cmd
 capturar.html
 capturar-rolitronco.html
 capturar-portada-video.html
+capturar-isometrico.html
+capturar-logotipo.html
+capturar-logotipo-png.html
 Sembrar-imagenes.ps1
+
+# Borradores y pruebas que ninguna página usa (revisado el
+# 2026-09-11 buscando el nombre en todo el código del sitio).
+index-orbitron.html
+img/marca/_logo-orbitron-g-alpha.png
+img/trabajos/iso-*.jpg
+img/trabajos/vistas-*.jpg
+img/trabajos/prueba-*.jpg
+img/trabajos/sofacama-*.jpg
+img/trabajos/logotipo-prototipo-ago.jpg
+# Sofacama Camila: sin ficha en el sitio y sin decidir si se publica.
+modelos/sofacama-camila-*.glb
+# Solo lo usa capturar-isometrico.html, que tampoco se publica.
+modelos/plato-de-comedero-grande.glb
+
+# Los originales a tamaño de cámara, que guarda Achicar-imagenes.ps1
+# antes de reescribir cada foto. Son la red de seguridad, no van al
+# sitio: pesan 33 MB.
+img/_originales/
+Achicar-imagenes.ps1
+
+# El visor de teléfono: mete el sitio en un recuadro del tamaño de
+# la pantalla de un Pixel para revisar la maquetación desde Firefox
+# sin abrir las herramientas de desarrollador. Interno.
+movil.html
 
 # Los .dae son el paso intermedio entre SketchUp y los .glb.
 # Pesan mucho y no los usa nadie.
@@ -29,3 +57,7 @@ notas/
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# Config de Claude Code para arrancar el servidor local desde aqui.
+# Es de esta maquina, no del sitio.
+.claude/

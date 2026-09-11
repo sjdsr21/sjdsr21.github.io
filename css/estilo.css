@@ -553,6 +553,40 @@ h3 { font-size: 1.25rem; letter-spacing: -.02em; line-height: 1.25; }
 /* Idioma + tema son un solo bloque: así la fila del encabezado no
    los reparte en renglones distintos al envolver en móvil. */
 .controles { display: flex; align-items: center; flex: none; }
+/* 2026-08-17 · El envoltorio de lupa+idioma+tema. En escritorio no
+   hace nada visible: reproduce el hueco de 2rem que antes ponía el
+   gap de la fila entre la lupa y los controles. Existe para que en
+   teléfono se pueda plegar el grupo entero de un golpe. */
+.cabecera__utiles { display: flex; align-items: center; gap: 2rem; flex: none; }
+
+/* 2026-08-17 · Lo que sigue es el estado de ESCRITORIO de las tres
+   piezas nuevas. El de teléfono está en el bloque de 780px.
+
+   La fila de tres accesos no existe aquí: en escritorio caben las
+   cinco secciones en el menú y una fila aparte sería repetirlas. */
+.barra-rapida { display: none; }
+
+/* Cada control lleva dos rótulos, el corto y el largo. Arriba solo
+   se ve el corto —«ES», el icono—, porque los siete controles
+   comparten una esquina y las palabras no caben. */
+.ctrl__largo { display: none; }
+.ctrl__corto { display: inline; }
+
+/* Los iconos de tema pasaron de ser caracteres (◑ ○) a SVG, así que
+   necesitan medida y trazo explícitos: un SVG sin ancho se planta
+   en los 300×150 que manda la especificación. */
+.tema__icono { display: grid; place-items: center; }
+/* El icono del AUTOMÁTICO solo sale en teléfono. Arriba ese botón
+   dice «auto» con letras y nada más (él, 2026-08-17): un círculo
+   medio relleno no explica que sigue la configuración del sistema,
+   y con la palabra al lado sobraba. Clase propia y no `.ctrl__largo`
+   porque `.tema__icono` le ganaba por orden y salían los dos. */
+.tema__icono--movil { display: none; }
+.tema__icono svg, .tema__icono--movil svg {
+  width: 15px; height: 15px;
+  fill: none; stroke: currentColor; stroke-width: 1.9;
+}
+.lupa__icono { display: grid; place-items: center; }
 .tema { margin-left: .5rem; }
 .tema button {
   font: inherit; font-size: 1rem; line-height: 1;
@@ -590,7 +624,10 @@ h3 { font-size: 1.25rem; letter-spacing: -.02em; line-height: 1.25; }
      `.idioma { order: 3 }`, y al meterlo dentro de .controles ese
      orden pasó a actuar entre hermanos del grupo: dejaba el tema
      delante del idioma. */
-  .controles { order: 3; }
+  /* 2026-08-17 · El orden lo lleva ahora el envoltorio .cabecera__utiles,
+     que es el hijo directo de la fila. Puesto en .controles ya no
+     hacía nada: .controles dejó de ser hermano de .marca. */
+  .cabecera__utiles { order: 3; }
   .menu {
     order: 4; width: 100%; display: none; flex-direction: column;
     align-items: flex-start; gap: 0; margin: 0;
@@ -609,6 +646,255 @@ h3 { font-size: 1.25rem; letter-spacing: -.02em; line-height: 1.25; }
     position: static; display: block; margin: 0 0 .12rem;
     font-size: 0.75rem;
   }
+}
+
+/* ------------------------------------------------------------
+   2026-08-17 · TELÉFONO: se pulsa con el dedo, no con el ratón
+
+   Medido a 375×812: los siete controles del encabezado iban entre
+   29 y 34 px de lado. El mínimo que un dedo acierta sin apuntar son
+   44 px (WCAG 2.5.5 / las guías de Apple y Google coinciden en esa
+   cifra). Aquí se suben los siete, los renglones del menú y los dos
+   enlaces del pie.
+
+   El corte va en 780px y no en 1060: entre 780 y 1060 hay tabletas
+   y ventanas de escritorio estrechas, donde el ratón sigue mandando
+   y unos botones de 44px se ven bastos.
+   ------------------------------------------------------------ */
+@media (max-width: 780px) {
+  /* Los tres controles comparten altura por variable (ver .idioma,
+     .tema y .lupa): cambiándola aquí suben los tres a la vez. */
+  :root { --alto-control: 44px; }
+
+  .hamburguesa {
+    width: 44px; height: 44px; padding: 0;
+    display: grid; place-items: center;
+  }
+  /* Sin min-width, ES/EN salían de 36px y los del tema de 29: el
+     alto ya estaba bien pero seguían siendo dianas estrechas. */
+  .idioma button, .tema button { min-width: 44px; }
+  .tema__auto { padding: 0 !important; }
+
+
+  /* WhatsApp e Instagram son la vía de contacto y median 64×23. */
+  .pie__enlaces { gap: .35rem; }
+  .pie__enlaces a {
+    display: inline-flex; align-items: center;
+    min-height: 44px; padding: 0 .6rem;
+  }
+  /* El primero se despega del texto de la izquierda por su relleno;
+     se le quita para que siga alineado con el borde del canal. */
+  .pie__enlaces a:first-child { padding-left: 0; }
+
+  /* ============================================================
+     EL ENCABEZADO DE TELÉFONO · 2026-08-17
+
+     Antes: logotipo + hamburguesa arriba, y debajo una fila con
+     SIETE controles (lupa, ES, EN, y tres de tema). Siete cosas
+     que casi nadie toca ocupando la mejor franja de la pantalla,
+     mientras para ir a cualquier sección había que abrir el menú.
+
+     Ahora, decisión suya: esa segunda fila la ocupan los TRES
+     destinos que importan —la tienda, el catálogo y el contacto—
+     repartidos a tercios. Lupa, idioma y tema se mudan DENTRO de
+     la hamburguesa, con su nombre escrito al lado, junto a
+     Novedades y El taller.
+
+         fila 1   [logotipo]              [☰]
+         fila 2   [Prototipos][Exhibición][Contacto]
+
+     Y al desplegar la hamburguesa, debajo:
+         Novedades · El taller · Buscar · Español/English ·
+         Claro/Oscuro/Automático
+     ============================================================ */
+  .cabecera__fila { gap: .7rem; }
+
+  /* 2026-08-17 · SEGUNDA VUELTA. La hamburguesa baja a la fila de
+     los tres accesos, y el logotipo se queda solo en la de arriba
+     —una franja que DESAPARECE ENTERA al bajar (él)—.
+
+         arriba del todo        al bajar
+         ┌─────────────────┐      ┌─────────────────┐
+         │prototipo ago     │      │Prot│Exhi│Cont│☰│
+         ├────┬────┬────┬─┐      └─────────────────┘
+         │Prot│Exhi│Cont│☰│           ~52px
+         └────┴────┴────┴─┘
+                128px
+
+     El logotipo se lleva `width: 100%` para forzar el salto de
+     renglón: la fila es un flex con wrap, y ese 100% es lo que
+     empuja a los demás abajo. */
+  .marca { width: 100%; order: 1; }
+
+  /* La fila de tres, ahora compartiendo renglón con la hamburguesa:
+     `flex: 1` en vez de ancho completo, para que se reparta lo que
+     sobre después del botón. */
+  .barra-rapida {
+    order: 2; display: flex; flex: 1; min-width: 0;
+    border-top: 1px solid var(--barra-linea);
+    margin-top: .1rem;
+  }
+  .hamburguesa {
+    order: 3; margin-left: 0;
+    border-top: 1px solid var(--barra-linea);
+    border-left: 1px solid var(--barra-linea);
+    margin-top: .1rem; height: 44px;
+  }
+  /* A tercios exactos con flex:1. Cada uno mide unos 111px de 335,
+     muy por encima de los 44 del mínimo táctil, y como van pegados
+     no queda ni un hueco muerto entre ellos donde fallar el dedo. */
+  .barra-rapida__a {
+    flex: 1; min-height: 44px;
+    display: flex; align-items: center; justify-content: center;
+    text-decoration: none; text-align: center;
+    /* 1rem, el mismo cuerpo que Novedades y El taller dentro de la
+       hamburguesa (él, 2026-08-17). Con 0,875 los de arriba se veían
+       más chicos que los de dentro, que es al revés de lo que dice
+       la jerarquía: estos tres son los principales. */
+    font-size: 1rem; line-height: 1.15;
+    color: var(--barra-suave);
+    /* El filete separador es un borde de la izquierda de cada uno
+       menos el primero: así no hay bordes dobles ni sobra uno al
+       final. Es 1px, que es el único grosor que usa el sitio. */
+    border-left: 1px solid var(--barra-linea);
+  }
+  .barra-rapida__a:first-child { border-left: 0; }
+  /* La sección abierta se marca con la tinta llena y una barra
+     abajo, no con la vertical del menú de escritorio: aquí los
+     enlaces están en fila, y una barra vertical a la izquierda del
+     texto se leería como el separador de al lado. */
+  .barra-rapida__a[aria-current="page"] {
+    color: var(--barra-tinta);
+    box-shadow: inset 0 -2px 0 var(--nav-activa);
+  }
+
+  /* --- dentro de la hamburguesa ------------------------------
+     Los tres principales ya están arriba: aquí se ocultan para que
+     no salgan dos veces. `display: none` los saca también del
+     árbol de accesibilidad, así que un lector de pantalla tampoco
+     los oye repetidos. */
+  .menu a[data-principal="1"] { display: none; }
+  /* 2026-08-17 · Novedades y El taller van UNO AL LADO DEL OTRO, no
+     en lista (él). Se ven igual que los tres de arriba —mismo alto,
+     mismo centrado, mismo filete— pero solo aparecen al desplegar.
+
+     `auto-fit` y no `repeat(2, 1fr)`: si algún día una sección se
+     queda sin nada publicado, el menú la quita y el que sobrevive
+     ocupa el ancho entero en vez de dejar media fila vacía. */
+  .menu {
+    order: 4; width: 100%;
+    display: none; flex-direction: row;
+    border-top: 1px solid var(--linea);
+    padding: .5rem 0 .5rem;
+  }
+  .menu.abierto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0;
+  }
+  .menu a {
+    min-height: 44px; padding: 0 .5rem;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    text-align: center;
+    border-left: 1px solid var(--barra-linea);
+  }
+  .menu a:first-of-type { border-left: 0; }
+  /* La barra vertical del menú de escritorio marca la sección activa
+     a la IZQUIERDA del texto. Aquí los enlaces van en fila y esa
+     barra se confundiría con el filete separador de al lado, así que
+     se apaga y se marca abajo, igual que en la fila de tres. */
+  .menu a::before { display: none; }
+  .menu a[aria-current="page"] { box-shadow: inset 0 -2px 0 var(--nav-activa); }
+  /* La palabrita de encima («Descubre», «Conoce»…) cabe centrada
+     sobre el nombre, que es para lo que se hizo estática en móvil. */
+  .menu__pre { text-align: center; }
+
+  /* Lupa + idioma + tema pasan a ser un bloque más del desplegable.
+     Se enseñan y se esconden con él; la clase la lleva la CABECERA
+     y no el menú, porque son hermanos suyos y no hijos. */
+  .cabecera__utiles {
+    order: 5; width: 100%; display: none;
+    flex-direction: column; align-items: stretch; gap: .5rem;
+    padding-bottom: .4rem;
+  }
+  .cabecera--abierta .cabecera__utiles { display: flex; }
+
+  /* Cada control ocupa el renglón entero, como los enlaces de
+     arriba, y enseña su palabra en vez del glifo. */
+  .ctrl__corto { display: none; }
+  .ctrl__largo { display: inline; }
+
+  /* La lupa se ajusta MÁS ABAJO, detrás de su regla base de la
+     sección BUSCADOR: puesta aquí perdía por orden —misma
+     especificidad y el `width: var(--alto-control)` viene después
+     en el archivo—. Es la tercera vez que muerde lo mismo. */
+
+  /* Idioma y tema dejan de ser dos cajitas en fila y pasan a ser
+     dos grupos de botones a lo ancho, repartidos por igual. */
+  .controles { flex-direction: column; align-items: stretch; gap: .5rem; }
+  .idioma, .tema { height: auto; margin-left: 0; }
+  .idioma { display: grid; grid-template-columns: 1fr 1fr; }
+  .tema   { display: grid; grid-template-columns: 1fr 1fr 1fr; }
+  .idioma button, .tema button {
+    min-height: 44px; padding: .4rem .3rem;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: .18rem; font-size: 0.8125rem; letter-spacing: .01em;
+  }
+  .tema__auto { font-size: 0.8125rem !important; padding: .4rem .2rem !important; }
+  .tema__icono, .tema__icono--movil { display: grid; place-items: center; }
+  .tema__icono svg, .tema__icono--movil svg {
+    width: 18px; height: 18px;
+    fill: none; stroke: currentColor; stroke-width: 1.8;
+  }
+
+  /* --- y el encabezado se encoge DE VERDAD ------------------
+     En escritorio la fila pasa de 120 a 84px al bajar. En teléfono
+     la regla de arriba le pone `height: auto` a los dos estados, o
+     sea que no se encogía nada: 126px fijos de una pantalla de 812,
+     pegados todo el rato.
+
+     Al bajar, el logotipo mengua. La fila de tres NO se pliega, y
+     es a propósito: es la navegación principal, y esconderla al
+     hacer scroll obliga a abrir el menú para todo justo cuando el
+     visitante ya se metió dentro de una página. Lo que se plegaba
+     antes eran los controles, que ahora ni están. */
+  .cabecera.encogida .cabecera__fila { padding-top: .3rem; padding-bottom: .3rem; row-gap: 0; }
+  /* La franja del logotipo se pliega entera. Se hace con `height`
+     y no con `display: none` para que se vaya animada; y la altura
+     de partida tiene que ser un NÚMERO (44px, el alto de la foto de
+     perfil), porque desde `auto` no hay a dónde transicionar. */
+  .marca {
+    /* 56 y no 44. El recorte que hace falta para la animación
+       (`overflow: hidden`) se estaba comiendo el descendente de la
+       «g» de «ago»: sobresalía 6,2 px por debajo. Pasa porque el
+       logotipo lleva interlinea 0,92 —más apretada que la letra—,
+       así que la tinta se sale de su propio renglón, y con el
+       contenido centrado subir la altura solo devuelve la mitad
+       —por eso 52 no bastaba y 56 se quedaba a 0,2 px—.
+       Medido con la tinta real de la fuente: a 60 sobran 4 px. */
+    height: 60px; overflow: hidden;
+    transition: height .28s var(--curva), opacity .2s var(--curva);
+  }
+  .cabecera.encogida .marca {
+    height: 0; opacity: 0; margin: 0; pointer-events: none;
+  }
+  /* La navegación se queda entera: es lo único que hay arriba
+     cuando el logotipo se va, y esconderla también dejaría una
+     barra vacía ocupando sitio sin servir para nada. */
+
+  /* El desplegable de filtros se quedaba en 39px por un pelo. */
+  .filtro select { min-height: 44px; }
+
+  /* Las flechas de la tarjeta y su contador se ajustan MÁS ABAJO,
+     detrás de sus reglas base: puestos aquí perdían por orden, que
+     es lo que pasó la primera vez —misma especificidad, y el
+     `width: 2rem` de .tarjeta__flecha viene después en el archivo—.
+
+     Los títulos de las tarjetas y de las fichas de prototipo salen
+     de 21px al medirlos y NO hay que tocarlos: llevan un ::after
+     con `inset: 0` que hace pulsable la tarjeta entera. Lo que mide
+     el navegador es el texto; lo que recibe el dedo es el recuadro. */
 }
 
 /* --- Botones ---------------------------------------------- */
@@ -712,6 +998,42 @@ body:not([data-pagina="novedades"]) .portada .bajada {
   transition: background .18s var(--curva-suave);
 }
 .tarjeta:hover { background: var(--caja-alta); }
+
+/* La tarjeta de Exhibición ya no es un <a>: lleva flechas dentro y un
+   enlace no puede contener botones. El enlace de verdad es el del
+   título, y este ::after lo estira sobre toda la tarjeta para que se
+   siga pudiendo pulsar donde sea. Mismo arreglo que .pt-ficha__abrir. */
+.tarjeta { position: relative; }
+.tarjeta__abrir { text-decoration: none; color: inherit; }
+.tarjeta__abrir::after { content: ""; position: absolute; inset: 0; z-index: 1; }
+
+/* Las flechas y el contador, por ENCIMA de ese ::after. */
+.tarjeta__flecha, .tarjeta__cuenta { z-index: 2; }
+.tarjeta__flecha {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  width: 2rem; height: 2.6rem; border: 0; cursor: pointer;
+  background: rgba(0,0,0,.45); color: #fff;
+  font-size: 1.35rem; line-height: 1; padding: 0;
+  opacity: 0; transition: opacity .15s var(--curva-suave);
+}
+.tarjeta__flecha--izq { left: 0; }
+.tarjeta__flecha--der { right: 0; }
+.tarjeta:hover .tarjeta__flecha,
+.tarjeta__flecha:focus-visible { opacity: 1; }
+.tarjeta__cuenta {
+  position: absolute; right: .4rem; bottom: .4rem;
+  font-size: .7rem; color: #fff; background: rgba(0,0,0,.5);
+  padding: .1rem .35rem; pointer-events: none;
+}
+/* En táctil no hay hover: si se ocultan, no hay forma de pasarlas. */
+@media (hover: none) { .tarjeta__flecha { opacity: .85; } }
+/* 2026-08-17 · En teléfono la flecha medía 32px de ancho y va pegada
+   al borde de la tarjeta, que es justo donde peor llega el pulgar.
+   El contador «1/4» iba a 11,2px: no se pulsa, pero se lee. */
+@media (max-width: 780px) {
+  .tarjeta__flecha { width: 44px; }
+  .tarjeta__cuenta { font-size: .75rem; }
+}
 /* El texto lleva su propio margen; la imagen va al ras del borde. */
 .tarjeta > h3,
 .tarjeta > .tarjeta__meta,
@@ -722,6 +1044,13 @@ body:not([data-pagina="novedades"]) .portada .bajada {
   aspect-ratio: 4 / 3; overflow: hidden;
   margin-bottom: .7rem; border-bottom: 1px solid var(--linea);
 }
+/* SOLO EN EXHIBICIÓN, la foto va CUADRADA (él, 06/09/2026).
+   `.rejilla--tres` es la clase que js/sitio.js le pone únicamente a
+   la cuadrícula de Exhibición, así que la tienda y los destacados de
+   la portada se quedan en 4/3. Si algún día se quiere cuadrado en
+   todas, se cambia el `aspect-ratio` de arriba y se borra esto. */
+.rejilla--tres .tarjeta__marco { aspect-ratio: 1 / 1; }
+
 .tarjeta__marco img {
   width: 100%; height: 100%; object-fit: cover;
   transition: transform .5s cubic-bezier(.2,.7,.3,1);
@@ -832,8 +1161,54 @@ body:not([data-pagina="novedades"]) .portada .bajada {
 
 /* --- Ficha (detalle) -------------------------------------- */
 
-.ficha { display: grid; grid-template-columns: 1.25fr 1fr; gap: clamp(2rem, 5vw, 4.5rem); align-items: start; }
-@media (max-width: 880px) { .ficha { grid-template-columns: 1fr; } }
+/* 2026-08-17 · Tres hijos, no dos: los botones de navegación
+   (anterior · volver · siguiente) salieron de .ficha__datos para
+   poder colocarse solos. Se reparten con áreas nombradas, que es
+   lo único que deja poner una pieza en el hueco de arriba de una
+   columna mientras otra ocupa las dos filas de al lado.
+
+       escritorio            teléfono
+       ┌──────┐┌────┐      ┌──────┐
+       │      ││ nav│      │ nav  │
+       │medios│└────┘      ├──────┤
+       │      │┌────┐      │medios│
+       └──────┘│datos      ├──────┤
+                └────┘      │datos │
+                              └──────┘
+
+   El `row-gap` va aparte y pequeño: el hueco grande de `gap` es
+   para separar las dos COLUMNAS, y entre los botones y el título
+   que va justo debajo dejaría un vacío de 4,5rem. */
+.ficha {
+  display: grid; align-items: start;
+  grid-template-columns: 1.25fr 1fr;
+  grid-template-areas: "medios nav" "medios datos";
+  /* `auto 1fr` hace falta y no es decorativo. La columna de medios
+     ocupa las DOS filas y es mucho más alta que nav+datos juntos,
+     así que sin esto la rejilla repartía el sobrante entre las dos
+     filas por igual y abría un hueco de 143px entre los botones y
+     el título. Con `auto` la primera fila mide lo que miden los
+     botones y el resto se lo queda la segunda. */
+  grid-template-rows: auto 1fr;
+  column-gap: clamp(2rem, 5vw, 4.5rem); row-gap: 0;
+}
+.ficha > .navpieza    { grid-area: nav; }
+.ficha > .ficha__medios { grid-area: medios; }
+.ficha > .ficha__datos  { grid-area: datos; }
+
+@media (max-width: 880px) {
+  /* Una sola columna, y el orden que él pidió: los botones justo
+     debajo del encabezado, luego la foto grande, y las miniaturas
+     al final —esas van dentro de .ficha__medios—. */
+  .ficha {
+    grid-template-columns: 1fr;
+    grid-template-areas: "nav" "medios" "datos";
+    row-gap: 1.5rem;
+  }
+  /* El margen inferior de los botones lo pone ahora el row-gap;
+     dejarlo puesto sumaba 2rem de más justo debajo. */
+  .ficha > .navpieza { margin-bottom: 0; }
+}
 
 .ficha__medios { position: relative; }
 .ficha__principal {
@@ -848,10 +1223,6 @@ body:not([data-pagina="novedades"]) .portada .bajada {
    ------------------------------------------------------------ */
 
 .visor-medios { display: grid; grid-template-columns: 84px 1fr; gap: .7rem; align-items: start; }
-@media (max-width: 620px) {
-  .visor-medios { grid-template-columns: 1fr; }
-  .visor-medios__tiras { flex-direction: row; overflow-x: auto; }
-}
 
 .visor-medios__tiras { display: flex; flex-direction: column; gap: .55rem; }
 
@@ -884,6 +1255,32 @@ body:not([data-pagina="novedades"]) .portada .bajada {
   width: 26px; height: 26px; border-radius: 0;
   background: rgba(0,0,0,.62); color: #fff;
   display: grid; place-items: center; font-size: 0.75rem; padding-left: 2px;
+}
+
+/* 2026-08-17 · CAMBIO SUYO. En teléfono la columna de miniaturas
+   caía ENCIMA de la foto grande y en vertical, una debajo de otra:
+   lo primero que se veía al abrir una pieza era la tira de
+   miniaturas y había que bajar para ver la pieza.
+
+   Ahora la foto va primero y las miniaturas debajo, en cuadrícula.
+   Se hace con `order` y no cambiando el HTML porque en escritorio
+   el orden del DOM (tiras, luego principal) es el bueno: ahí la
+   columna va a la izquierda.
+
+   El corte sube de 620 a 780 para ir con el resto del sitio. */
+@media (max-width: 780px) {
+  .visor-medios { grid-template-columns: 1fr; gap: .5rem; }
+  .visor-medios__principal { order: 1; }
+  .visor-medios__tiras     { order: 2; }
+  /* Cuadrícula que se llena sola, no una fila con scroll lateral:
+     una tira que se desplaza esconde la mitad de los medios detrás
+     de un gesto que nadie sabe que está ahí. Así se ven todos. */
+  .visor-medios__tiras {
+    display: grid; flex-direction: row;
+    grid-template-columns: repeat(auto-fill, minmax(88px, 1fr));
+    gap: .4rem;
+  }
+  .tira { width: auto; }
 }
 
 /* SIN aspect-ratio fijo: la pieza grande toma la forma del
@@ -934,6 +1331,15 @@ body:not([data-pagina="novedades"]) .portada .bajada {
 .especs div { display: flex; gap: 1rem; padding: .72rem 0; border-bottom: 1px solid var(--linea); font-size: 1rem; }
 .especs dt { flex: 0 0 8.5rem; color: var(--apagado); margin: 0; }
 .especs dd { margin: 0; }
+
+/* El «cómo está hecha» de una pieza de Exhibición: texto corrido
+   en párrafos. Mismo cuerpo y mismo color que la lista de al lado,
+   pero sin la raya ni la sangría, que partían el texto. */
+.texto-como { margin: 2rem 0 0; }
+.texto-como p {
+  margin: 0 0 1.1rem; font-size: 1rem; line-height: 1.7; color: var(--tinta);
+}
+.texto-como p:last-child { margin-bottom: 0; }
 
 .lista-como { list-style: none; padding: 0; margin: 2rem 0 0; }
 .lista-como li {
@@ -1023,6 +1429,38 @@ body:not([data-pagina="novedades"]) .portada .bajada {
 .lista-marcas b { flex: 0 0 11rem; font-weight: 700; letter-spacing: -.01em; }
 .lista-marcas span { color: var(--apagado); }
 @media (max-width: 560px) { .lista-marcas li { flex-direction: column; gap: .15rem; } }
+
+/* --- Las maderas (taller.html#maderas) --------------------
+   La muestra de color va DIBUJADA, no es una foto: publicar
+   imágenes de otro sitio en una página comercial es material con
+   derechos. El color de cada especie viaja en --m, puesto en el
+   propio <li>. Cuando haya fotos de sus retales, este cuadro se
+   sustituye por un <img> y el resto de la fila no cambia. */
+.maderas { list-style: none; padding: 0; margin: 1.6rem 0 0; }
+.maderas li {
+  padding: .9rem 0; border-bottom: 1px solid var(--linea);
+  display: grid; column-gap: 1rem; font-size: 1rem;
+  grid-template-columns: 2.6rem 11rem 1fr;
+  grid-template-areas: "muestra nombre texto" "muestra especie texto";
+  align-items: baseline;
+}
+.maderas i {
+  grid-area: muestra; align-self: center;
+  width: 2.6rem; height: 2.6rem; background: var(--m, var(--linea));
+  border: 1px solid var(--linea);
+}
+.maderas b  { grid-area: nombre; font-weight: 700; letter-spacing: -.01em; }
+.maderas em { grid-area: especie; font-style: italic; font-size: .82rem;
+              color: var(--apagado); }
+.maderas span { grid-area: texto; color: var(--apagado); }
+@media (max-width: 560px) {
+  .maderas li {
+    grid-template-columns: 2.6rem 1fr;
+    grid-template-areas: "muestra nombre" "muestra especie" "texto texto";
+    row-gap: .15rem;
+  }
+  .maderas span { margin-top: .5rem; }
+}
 
 /* --- Pie -------------------------------------------------- */
 
@@ -1247,6 +1685,21 @@ body:not([data-pagina="novedades"]) .portada .bajada {
 .lupa:hover { background: var(--realce-hondo); border-color: var(--realce-hondo); color: #fff; }
 .lupa svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2.1; }
 
+/* 2026-08-17 · Dentro del menú desplegado del teléfono la lupa deja
+   de ser un cuadradito y pasa a ser un renglón con su palabra, como
+   Novedades y El taller. Un icono suelto entre renglones con nombre
+   no se lee como «Buscar»; se lee como un adorno.
+   Va aquí y no en el bloque grande de 780px porque el `width` de
+   arriba tiene la misma especificidad y viene después: allí perdía. */
+@media (max-width: 780px) {
+  .lupa {
+    width: 100%; height: 44px;
+    display: flex; align-items: center; justify-content: flex-start;
+    gap: .6rem; padding: 0 .62rem;
+  }
+  .lupa .ctrl__largo { font-size: 1rem; }
+}
+
 .buscador {
   position: fixed; inset: 0; z-index: 200;
   background: color-mix(in srgb, var(--barra) 70%, transparent);
@@ -1442,3 +1895,285 @@ body:not([data-pagina="novedades"]) .portada .bajada {
 .navpieza .volver:hover, .navpieza .volver:focus-visible { position: relative; z-index: 1; }
 
 [hidden] { display: none !important; }
+
+/* ============================================================
+   GLITCH AL CAMBIAR DE MEDIO - HOJA COMPARTIDA
+   ------------------------------------------------------------
+   Vivia en css/prototipos.css, que solo carga index.html. Desde
+   el 2026-08-15 lo usan LAS DOS: el panel de prototipos y el
+   visor de la ficha de Exhibicion (trabajo.html), que solo carga
+   esta hoja. Por eso esta aqui. El prefijo pt- se conserva para
+   no tener que renombrar nada en js/prototipos.js.
+   ============================================================ */
+/* ============================================================
+   TRANSICIÓN GLITCH ENTRE IMÁGENES
+   ------------------------------------------------------------
+   Al pasar de una foto a otra, la que sale se rompe en bandas
+   horizontales que saltan de sitio mientras se separan sus
+   canales de color, y por encima cruza una barra de barrido.
+
+   Cómo funciona: la imagen NUEVA ya está puesta debajo; lo que
+   se anima es una COPIA de la vieja superpuesta, que se
+   desintegra y desaparece. Así no hay que precargar nada ni
+   esperar a que la nueva decodifique.
+
+   Los tiempos van con `steps(1)` a propósito: un glitch tiene
+   que dar saltos, no deslizarse. Con interpolación suave parece
+   una animación de diapositivas.
+   ============================================================ */
+
+/* La capa se coloca con medidas en píxeles calculadas por el JS,
+   no con `inset: 0`. Tiene que caer exactamente sobre el hueco
+   que ocupa la imagen, y ese hueco depende del relleno del
+   recuadro y de si la imagen va en `contain` o en `cover`. */
+.pt-glitch {
+  position: absolute; z-index: 3;
+  pointer-events: none; overflow: hidden;
+}
+.pt-glitch img {
+  position: absolute; left: 0; top: 0;
+  width: 100%; height: 100%;
+  animation: pt-bandas .085s steps(1, end) forwards;
+}
+/* Las dos copias teñidas que hacen la separación de canales. Van
+   en modo screen para que sumen luz y no tapen.
+
+   NO son rojo y cian, que es lo típico de un glitch: son NARANJA
+   QUEMADO y AMARILLO INTENSO, de la familia de la marca. El
+   sepia lleva la imagen a un warm neutro y desde ahí se gira el
+   tono; sin el sepia previo, el hue-rotate sobre una foto de
+   madera no da un color limpio. */
+.pt-glitch img:nth-child(2) {
+  mix-blend-mode: screen;
+  filter: sepia(1) saturate(8) hue-rotate(-18deg) brightness(1.05);
+  animation-name: pt-bandas-naranja;
+}
+/* Estos números están MEDIDOS, no puestos a ojo: sobre una madera
+   media producen #ffd200, que es el amarillo intenso que se
+   buscaba. Con más giro de tono (24deg) la madera clara se iba a
+   lima #deff00 y la oscura a oliva. */
+.pt-glitch img:nth-child(3) {
+  mix-blend-mode: screen;
+  filter: sepia(1) saturate(6) hue-rotate(8deg) brightness(1.75);
+  animation-name: pt-bandas-amarillo;
+}
+
+/* La mitad de las veces el amarillo se cambia por ROJO. Lo
+   sortea el JS al montar la capa.
+
+   El rojo no se saca girando el tono hacia atrás como parecería:
+   desde el sepia, girar en negativo lleva a rosa y luego a
+   magenta (se probó -35, -45 y -55 y salían #ff6470, #ff64a3 y
+   #ff66dd). Lo que cierra el color hacia el rojo es el CONTRASTE
+   alto con un giro corto. Medido: #f23526 sobre madera media y
+   #f20516 sobre madera oscura. */
+.pt-glitch--rojo img:nth-child(3) {
+  filter: sepia(1) saturate(14) hue-rotate(-28deg) contrast(1.6) brightness(.95);
+}
+/* 2026-08-13 · Aquí iba una franja blanca que barría de arriba
+   abajo durante el corte. Fuera: a 85 ms no daba tiempo a leerla
+   y solo aportaba un destello. El corte lo hacen las bandas y la
+   separación de color. */
+
+/* MENOS PASOS que antes, y a propósito. A 85 ms, siete estados
+   salían a 12 ms cada uno — por debajo de un cuadro de pantalla
+   (16,7 ms), así que la mitad no llegaba a dibujarse y el efecto
+   se veía irregular según el momento. Con cuatro estados cada uno
+   dura ~21 ms y le toca cuadro seguro.
+   Los desplazamientos también bajaron a la mitad: el corte se
+   nota, pero sin descuajaringar la pieza. */
+@keyframes pt-bandas {
+  0%   { clip-path: inset(0 0 0 0);      transform: translateX(0); }
+  30%  { clip-path: inset(12% 0 62% 0);  transform: translateX(-3px); }
+  60%  { clip-path: inset(54% 0 18% 0);  transform: translateX(4px); }
+  85%  { clip-path: inset(30% 0 44% 0);  transform: translateX(-2px); opacity: .55; }
+  100% { clip-path: inset(0 0 100% 0);   transform: translateX(0);    opacity: 0; }
+}
+@keyframes pt-bandas-naranja {
+  0%   { clip-path: inset(0 0 100% 0); transform: translateX(0); opacity: 0; }
+  30%  { clip-path: inset(18% 0 58% 0); transform: translateX(-4px); opacity: .8; }
+  65%  { clip-path: inset(56% 0 24% 0); transform: translateX(3px);  opacity: .7; }
+  100% { clip-path: inset(0 0 100% 0);  transform: translateX(0);    opacity: 0; }
+}
+@keyframes pt-bandas-amarillo {
+  0%   { clip-path: inset(0 0 100% 0); transform: translateX(0); opacity: 0; }
+  30%  { clip-path: inset(18% 0 58% 0); transform: translateX(4px);  opacity: .8; }
+  65%  { clip-path: inset(56% 0 24% 0); transform: translateX(-3px); opacity: .7; }
+  100% { clip-path: inset(0 0 100% 0);  transform: translateX(0);    opacity: 0; }
+}
+
+/* La imagen que ENTRA da un tirón corto de canales, para que el
+   corte no se note solo en la que sale. */
+/* Naranja quemado (#C04E00, de su paleta) contra amarillo intenso
+   (#FFD400). El mismo par que las bandas, para que el corte se
+   lea como una sola cosa. */
+.pt-entrando { animation: pt-sacudida .065s steps(1, end); }
+@keyframes pt-sacudida {
+  0%   { filter: none; transform: translateX(0); }
+  33%  { filter: drop-shadow(2px 0 rgba(192,78,0,.9)) drop-shadow(-2px 0 rgba(255,212,0,.9));
+         transform: translateX(1px); }
+  66%  { filter: drop-shadow(-2px 0 rgba(192,78,0,.85)) drop-shadow(2px 0 rgba(255,212,0,.85));
+         transform: translateX(-1px); }
+  100% { filter: none; transform: translateX(0); }
+}
+
+/* La variante roja del tirón, para que la imagen que entra vaya
+   con el mismo par de colores que las bandas. */
+.pt-entrando--rojo { animation-name: pt-sacudida-rojo; }
+@keyframes pt-sacudida-rojo {
+  0%   { filter: none; transform: translateX(0); }
+  33%  { filter: drop-shadow(2px 0 rgba(192,78,0,.9)) drop-shadow(-2px 0 rgba(226,32,26,.9));
+         transform: translateX(1px); }
+  66%  { filter: drop-shadow(-2px 0 rgba(192,78,0,.85)) drop-shadow(2px 0 rgba(226,32,26,.85));
+         transform: translateX(-1px); }
+  100% { filter: none; transform: translateX(0); }
+}
+
+/* ------------------------------------------------------------
+   GLITCH AL CAMBIAR DE MEDIO (foto ↔ plano ↔ 3D ↔ vídeo)
+   El de arriba desintegra una COPIA de la foto vieja. Aquí se
+   corta el nodo original, porque de un canvas WebGL no se puede
+   sacar copia: `clip-path` y `transform` valen igual sobre una
+   imagen, sobre el plano o sobre el visor.
+
+   La separación de canales se hace con `drop-shadow` y no con
+   tres capas teñidas —no hay tres capas que teñir—, así que es
+   más discreta que la de foto a foto. Es lo que se puede hacer
+   sin rasterizar el contenido, y a 105 ms la diferencia no se
+   distingue.
+   ------------------------------------------------------------ */
+.pt-saliendo {
+  position: absolute; inset: 0; z-index: 3;
+  pointer-events: none;
+  animation: pt-corte .085s steps(1, end) forwards;
+}
+/* Lo de dentro conserva su tamaño: la capa es solo el envoltorio
+   que se anima. */
+.pt-saliendo > * { position: absolute; inset: 0; }
+
+/* 2026-08-14 · Aquí vivía `.pt-saliendo--espera`: la foto se
+   quedaba quieta tapando el visor 3D mientras el modelo cargaba,
+   y el corte saltaba al terminar. Fuera con el resto del glitch
+   del 3D — no le convenció. */
+
+@keyframes pt-corte {
+  0%   { clip-path: inset(0 0 0 0);     transform: translateX(0);
+         filter: none; }
+  30%  { clip-path: inset(12% 0 62% 0); transform: translateX(-3px);
+         filter: drop-shadow(3px 0 rgba(192,78,0,.9)) drop-shadow(-3px 0 rgba(255,212,0,.9)); }
+  60%  { clip-path: inset(54% 0 18% 0); transform: translateX(4px);
+         filter: drop-shadow(-3px 0 rgba(192,78,0,.85)) drop-shadow(3px 0 rgba(255,212,0,.85)); }
+  85%  { clip-path: inset(30% 0 44% 0); transform: translateX(-2px); opacity: .55;
+         filter: none; }
+  100% { clip-path: inset(0 0 100% 0);  transform: translateX(0);    opacity: 0; }
+}
+/* La mitad de las veces, el amarillo se cambia por rojo — el
+   mismo sorteo y el mismo par de colores que el glitch de fotos. */
+.pt-saliendo--rojo { animation-name: pt-corte-rojo; }
+@keyframes pt-corte-rojo {
+  0%   { clip-path: inset(0 0 0 0);     transform: translateX(0);
+         filter: none; }
+  30%  { clip-path: inset(12% 0 62% 0); transform: translateX(-3px);
+         filter: drop-shadow(3px 0 rgba(192,78,0,.9)) drop-shadow(-3px 0 rgba(226,32,26,.9)); }
+  60%  { clip-path: inset(54% 0 18% 0); transform: translateX(4px);
+         filter: drop-shadow(-3px 0 rgba(192,78,0,.85)) drop-shadow(3px 0 rgba(226,32,26,.85)); }
+  85%  { clip-path: inset(30% 0 44% 0); transform: translateX(-2px); opacity: .55;
+         filter: none; }
+  100% { clip-path: inset(0 0 100% 0);  transform: translateX(0);    opacity: 0; }
+}
+
+/* Quien pidió menos movimiento no ve ningún glitch. */
+@media (prefers-reduced-motion: reduce) {
+  .pt-glitch { display: none; }
+  .pt-saliendo { display: none; }
+  .pt-entrando { animation: none; }
+}
+
+/* ============================================================
+   TIPOGRAFÍA EN TELÉFONO · 2026-08-17
+
+   El problema, medido a 375px: la escala de titulares está
+   pensada para pantalla grande y en el teléfono TODOS los
+   escalones aterrizan juntos.
+
+       escritorio          teléfono (antes)
+       h1  44,2 px         h1  23,0 px   peso 400
+       h2  33,3 px         h2  21,8 px   peso 700
+       h3  20,0 px         h3  20,0 px   peso 700
+       texto 16 px         texto 16 px
+
+   Arriba los saltos son 1,33 y 1,66. Abajo eran 1,06 y 1,09:
+   tres niveles dentro de tres píxeles. Y como el h1 va en peso
+   400 y el h2 en 700, en El taller «Cómo funciona un encargo»
+   pesaba MÁS que «El taller» — el encabezado de sección le
+   ganaba al título de la página.
+
+   La causa está escrita arriba, en el comentario del 2026-08-11:
+   los titulares se bajaron un 20% escalando el clamp ENTERO, no
+   solo el tope. Eso arregló las pantallas medianas y aplastó el
+   mínimo, que es el que manda en el teléfono.
+
+   Este bloque va AL FINAL del archivo a propósito: tiene que
+   ganarle por orden a .rotulo, a .ficha__datos h1 y a las reglas
+   de .portada, que viven más arriba y tienen la misma o más
+   especificidad.
+   ============================================================ */
+
+/* El mínimo del h1 sube de 1,44rem (23px) a 1,75rem (28px). Se
+   toca SOLO el mínimo: el tope de 2,76rem y la pendiente de
+   3,6vw se quedan igual, así que de 780px para arriba no cambia
+   absolutamente nada. Con el h2 en 21,8 el salto queda en 1,28. */
+h1 { font-size: clamp(1.75rem, 3.6vw, 2.76rem); }
+
+/* El nombre de la pieza usaba su propia escala y salía de 30,4px
+   en teléfono mientras el resto de títulos de página iban a 23:
+   tres tamaños distintos de «título de página» en un mismo sitio.
+   Ahora hereda el de arriba. */
+.ficha__datos h1 { font-size: clamp(1.75rem, 3.6vw, 2.76rem); }
+
+@media (max-width: 780px) {
+  /* Los encabezados de sección pierden la negrita. Ya no la
+     necesitan —los separan 6px de tamaño— y en negrita seguían
+     compitiendo con el título de la página.
+
+     Se escribe como `h2` a secas, sin clases, y eso es
+     deliberado: los títulos de tarjeta (.rejilla--tres .tarjeta h2,
+     peso 300) y los rótulos en versalita (.rotulo, peso 700)
+     tienen más especificidad y NO se ven afectados. Solo cambian
+     los h2 sueltos, que son los de sección. */
+  h2 { font-weight: 400; }
+
+  /* Interlínea 1,05 es de titular grande de escritorio. Aquí
+     ningún título llega a partirse todavía en ninguno de los dos
+     idiomas —lo medí—, pero el día que uno se parta las dos
+     líneas se tocarían. 1,15 da el aire justo. */
+  h1, h2, h3 { line-height: 1.15; }
+
+  /* Reparte las líneas de un titular partido en trozos parejos en
+     vez de dejar una palabra suelta abajo. Sin coste: si el
+     titular cabe en una línea no hace nada. */
+  h1, h2, h3 { text-wrap: balance; }
+  p { text-wrap: pretty; }
+
+  /* --- la bajada vuelve a la izquierda ---------------------
+     El título de sección va pegado a la derecha desde el
+     2026-08-12 y ahí se queda: es la firma. Pero la bajada
+     wrappeaba a TRES renglones a 375px, y alineada a la derecha
+     el borde izquierdo queda desflecado — que es justo el borde
+     al que vuelve el ojo en cada salto de línea. En escritorio
+     son dos líneas cortas y funciona como remate; en teléfono es
+     texto corrido con el margen malo irregular. */
+  body:not([data-pagina="novedades"]) .portada .bajada {
+    text-align: left;
+  }
+
+  /* --- el piso de letra chica ------------------------------
+     El rótulo en versalita es un ENCABEZADO de sección (va en un
+     <h2>), y a 12px salía más chico que los h3 de 20px que tiene
+     debajo: el nivel 2 se veía menos importante que el nivel 3, y
+     un lector de pantalla anunciaba una jerarquía que la vista
+     contradecía. A 14px ya lee como lo que es. */
+  .rotulo { font-size: 0.875rem; }
+}
+
+

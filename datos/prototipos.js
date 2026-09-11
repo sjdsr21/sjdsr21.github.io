@@ -94,8 +94,8 @@ window.PROTOTIPOS = [
     disponibilidad: "stock",
     nombre:  { es: "Base de laptop — baja", en: "Laptop stand — low" },
     resumen: {
-      es: "Inclina el equipo y le da aire por debajo. Se sigue escribiendo en el teclado del portátil.",
-      en: "Tilts the machine and lets it breathe underneath. You keep typing on the laptop's own keyboard."
+      es: "Inclina el equipo y le da aire por debajo. Puedes seguir escribiendo en el teclado de la laptop.",
+      en: "Tilts the machine and lets it breathe underneath. You can keep typing on the laptop's own keyboard."
     },
     /* Las dos maderas al mismo precio (él, 12/08/2026): apamate y
        samán cuestan lo mismo, 55. Por eso ningún valor lleva
@@ -151,12 +151,20 @@ window.PROTOTIPOS = [
        14/08/2026): los tamaños ya se escogen en las opciones. */
     nombre:  { es: "Tabla de picar clásica", en: "Classic cutting board" },
     resumen: {
-      es: "Veta a lo largo, cantos suavizados y buen espesor. Ese grosor de más es lo que evita que se tuerza con los años.",
-      en: "Long grain, eased edges and generous thickness. That extra thickness is what keeps it from warping over the years."
+      es: "Veta a lo largo, cantos suavizados y buen espesor. Acabado en aceite de tung, apto para uso alimentario: máxima durabilidad sin meterle a la tabla nada nocivo para la salud. La talla L viene sobre cuatro patas de goma.",
+      en: "Long grain, eased edges and generous thickness. Finished in food-safe tung oil: maximum durability without putting anything harmful into the board. The L size comes on four rubber feet."
+    },
+    /* Lo que se ve en la CUADRÍCULA. Corta donde él dijo: hasta «apto
+       para uso alimentario». El resto —lo del aceite y las patas de
+       goma— sale al abrir el producto. */
+    resumen_corto: {
+      es: "Veta a lo largo, cantos suavizados y buen espesor. Acabado en aceite de tung, apto para uso alimentario.",
+      en: "Long grain, eased edges and generous thickness. Finished in food-safe tung oil."
     },
     matriz: {
       "s|teca": 30, "m|teca": 45, "l|teca": 60,
-      "s|puy":  30, "m|puy":  45, "l|puy":  60,
+      /* Puy sube por encima de teca (él, 07/09/2026). */
+      "s|puy":  35, "m|puy":  55, "l|puy":  70,
       "s|algarrobo": 40, "m|algarrobo": 60, "l|algarrobo": 80
     },
     stock_matriz: {          /* RELLENO */
@@ -170,6 +178,26 @@ window.PROTOTIPOS = [
     sin_fondo: true,
     /* Un plano por talla: el diagrama cambia con el tamaño. */
     opcion_diagrama: "tamano",
+    /* UNA lámina por talla, con SOLO esa talla: vista superior arriba y
+       vista de canto abajo, que es donde se lee el espesor.
+       Se probó dibujar las tres juntas para compararlas y se descartó
+       (él, 15/08/2026): con tres tablas metidas en la caja de 505 px de
+       la ficha, la letra de las cotas bajaba a 2,6 px y no se leía nada.
+       La comparación de tamaños ya la da una foto suya. */
+    /* 06/09/2026 · El plano técnico se sustituye por el ISOMÉTRICO
+       con cotas. Decisión suya: para estas piezas el isométrico se
+       entiende mejor que las vistas ortogonales. El plano de líneas
+       se queda SOLO en las dos bases de laptop, donde hacen falta
+       la vista lateral y las dos configuraciones.
+       Sigue entrando por `plano_img`, que es el hueco de la tira que
+       le corresponde; lo que cambió es el CSS, que ya no invierte en
+       modo oscuro lo que no sea .svg — un render en color invertido
+       salía con la madera azul. Ver css/prototipos.css. */
+       plano_img_por: {
+      s: "img/prototipos/tabla-iso-s.webp",
+      m: "img/prototipos/tabla-iso-m.webp",
+      l: "img/prototipos/tabla-iso-l.webp"
+    },
     diagrama_por: { s: "tabla-s", m: "tabla-m", l: "tabla-l" },
 
     /* Aquí el modelo cambia con el TAMAÑO, no con la madera: solo
@@ -189,7 +217,11 @@ window.PROTOTIPOS = [
         valores: [
           { id: "s", etiqueta: { es: "S", en: "S" }, nota: { es: "30 × 20 × 2,5 cm", en: "30 × 20 × 2.5 cm" } },
           { id: "m", etiqueta: { es: "M", en: "M" }, nota: { es: "45 × 30 × 3,5 cm", en: "45 × 30 × 3.5 cm" } },
-          { id: "l", etiqueta: { es: "L", en: "L" }, nota: { es: "60 × 40 × 3,5 cm", en: "60 × 40 × 3.5 cm" } }
+          /* 4 cm de espesor, no 3,5 (el, 15/08/2026). El .skp de la L trae
+             58,74 × 40 × 4,5 y NO cuadra con esto: manda la medida oficial,
+             y el plano la lleva forzada. Queda pendiente corregir el modelo
+             y reexportarlo. */
+          { id: "l", etiqueta: { es: "L", en: "L" }, nota: { es: "60 × 40 × 4 cm", en: "60 × 40 × 4 cm" } }
         ]
       },
       {
@@ -211,6 +243,12 @@ window.PROTOTIPOS = [
     disponibilidad: "stock",
     nombre:  { es: "Butcher Block L", en: "Butcher Block L" },
     resumen: {
+      es: "Veta vertical: el cuchillo entra entre las fibras en vez de cortarlas. No marca, no desafila y aguanta años de uso diario. Va sobre cuatro patas de goma, que la despegan del mesón y la dejan agarrada mientras picas.",
+      en: "End grain: the knife slips between the fibres instead of cutting them. It doesn't scar, doesn't dull the blade, and takes years of daily use. It sits on four rubber feet that lift it off the counter and keep it from sliding while you chop."
+    },
+    /* En la cuadrícula, hasta «aguanta años de uso diario» (él). Lo
+       de las patas de goma queda para la ficha abierta. */
+    resumen_corto: {
       es: "Veta vertical: el cuchillo entra entre las fibras en vez de cortarlas. No marca, no desafila y aguanta años de uso diario.",
       en: "End grain: the knife slips between the fibres instead of cutting them. It doesn't scar, doesn't dull the blade, and takes years of daily use."
     },
@@ -220,6 +258,16 @@ window.PROTOTIPOS = [
 
     imagen: "img/prototipos/butcher-block.webp",
     sin_fondo: true,
+    /* 06/09/2026 · El plano técnico se sustituye por el ISOMÉTRICO
+       con cotas. Decisión suya: para estas piezas el isométrico se
+       entiende mejor que las vistas ortogonales. El plano de líneas
+       se queda SOLO en las dos bases de laptop, donde hacen falta
+       la vista lateral y las dos configuraciones.
+       Sigue entrando por `plano_img`, que es el hueco de la tira que
+       le corresponde; lo que cambió es el CSS, que ya no invierte en
+       modo oscuro lo que no sea .svg — un render en color invertido
+       salía con la madera azul. Ver css/prototipos.css. */
+       plano_img: "img/prototipos/butcher-block-l-iso.webp",
     diagrama: "butcher-l",
     /* Una sola madera, así que el modelo va directo y no por
        variante como en las bases de laptop. */
@@ -236,13 +284,18 @@ window.PROTOTIPOS = [
 
   {
     slug: "butcher-block-xl",
-    publicado: true,
+   /* Fuera del catalogo el 16/08/2026 (el): quiere tener piezas
+      hechas en el taller antes de ofrecerlo con seguridad. */
+    publicado: false,
     disponibilidad: "pedido",
     plazo_semanas: 3,
     nombre:  { es: "Butcher Block XL", en: "Butcher Block XL" },
     resumen: {
-      es: "La misma construcción de veta vertical, en tamaño de cocina que se usa de verdad. Superficie de trabajo, no de adorno.",
-      en: "The same end-grain build, in a kitchen size meant to actually be used. A work surface, not an ornament."
+      /* La misma descripción que el Butcher Block L (él,
+         15/08/2026): es la misma construcción, solo cambia el
+         tamaño, y el tamaño ya sale en sus medidas. */
+      es: "Veta vertical: el cuchillo entra entre las fibras en vez de cortarlas. No marca, no desafila y aguanta años de uso diario.",
+      en: "End grain: the knife slips between the fibres instead of cutting them. It doesn't scar, doesn't dull the blade, and takes years of daily use."
     },
     precio_usd: 250,
     peso: 12,                /* RELLENO */
@@ -260,10 +313,13 @@ window.PROTOTIPOS = [
     publicado: true,
     disponibilidad: "pedido",
     plazo_semanas: 3,
-    nombre:  { es: "Comedero pequeño", en: "Pet feeder — small" },
+    /* El paréntesis dice cuántos platos lleva (él, 07/09/2026): el
+       pequeño es de dos y el grande de uno, y sin eso no se distinguen
+       más que por el tamaño. */
+    nombre:  { es: "Comedero pequeño (doble)", en: "Pet feeder — small (double)" },
     resumen: {
-      es: "Para gatos o perros de talla chica. Levanta los envases del piso y los mantiene en su sitio.",
-      en: "For cats or small dogs. Lifts the bowls off the floor and keeps them from sliding around."
+      es: "Para gatos o perros pequeños. Levanta los envases del piso, los mantiene en su sitio y mejora la postura de la mascota al comer.",
+      en: "For cats or small dogs. Lifts the bowls off the floor, keeps them in place and improves your pet's posture while it eats."
     },
     precio_usd: 50,
     peso: 1.8,               /* RELLENO */
@@ -272,6 +328,16 @@ window.PROTOTIPOS = [
        que es donde se ve el cruce de las patas. La segunda entra
        por `galeria`, así que sale como segunda miniatura. */
     imagen: "img/prototipos/comedero-pequeno-1.webp",
+    /* 06/09/2026 · El plano técnico se sustituye por el ISOMÉTRICO
+       con cotas. Decisión suya: para estas piezas el isométrico se
+       entiende mejor que las vistas ortogonales. El plano de líneas
+       se queda SOLO en las dos bases de laptop, donde hacen falta
+       la vista lateral y las dos configuraciones.
+       Sigue entrando por `plano_img`, que es el hueco de la tira que
+       le corresponde; lo que cambió es el CSS, que ya no invierte en
+       modo oscuro lo que no sea .svg — un render en color invertido
+       salía con la madera azul. Ver css/prototipos.css. */
+       plano_img: "img/prototipos/comedero-pequeno-iso.webp",
     sin_fondo: true,
     galeria: [
       "img/prototipos/comedero-pequeno-2.webp",
@@ -281,7 +347,16 @@ window.PROTOTIPOS = [
     /* Modelo exportado el 13/08/2026 y convertido el 14. Es el
        comedero PEQUEÑO: el grande no tiene .skp, así que esa
        ficha sigue sin 3D. */
-    modelo3d: "modelos/comedero-mascota.glb"
+    modelo3d: "modelos/comedero-mascota.glb",
+
+    /* Lleva las DOS maderas combinadas en la misma pieza (él,
+       07/09/2026), no una a elegir: por eso es un solo valor y no dos.
+       Se muestra igual, para que se vea de qué está hecho. */
+    opciones: [{
+      id: "madera",
+      etiqueta: { es: "Madera", en: "Wood" },
+      valores: [ { id: "apamate-puy", etiqueta: { es: "Apamate y Puy", en: "Apamate and Puy" } } ]
+    }]
   },
 
   {
@@ -289,13 +364,57 @@ window.PROTOTIPOS = [
     publicado: true,
     disponibilidad: "pedido",
     plazo_semanas: 3,
-    nombre:  { es: "Comedero grande", en: "Pet feeder — large" },
+    nombre:  { es: "Comedero grande (individual)", en: "Pet feeder — large (single)" },
     resumen: {
-      es: "Para perros grandes. A la altura que les evita agacharse a comer.",
-      en: "For large dogs. At the height that saves them from stooping to eat."
+      es: "Para perros grandes. Levanta los envases del piso, los mantiene en su sitio y mejora la postura de la mascota al comer.",
+      en: "For large dogs. Lifts the bowls off the floor, keeps them in place and improves your pet's posture while it eats."
     },
-    precio_usd: 75,
-    peso: 3.2                /* RELLENO */
+    /* 45 y no 75 (él, 07/09/2026). Lo bajó al decidir que la ficha
+       dijera "individual": lleva un solo plato, no dos como el pequeño.
+       Mismo precio en las dos maderas. */
+    precio_usd: 45,
+    peso: 3.2,               /* RELLENO */
+
+    /* 06/09/2026 · Ya tiene modelo: lo hizo en SketchUp en DOS
+       maderas, samán y apamate, más el plato por separado. Corrige
+       el comentario de la ficha del pequeño, que decía que el
+       grande no tenía .skp.
+
+       La imagen es el isométrico con cotas, y lleva DOS piezas en
+       la misma lámina a petición suya: el mueble a la izquierda y
+       el plato suelto a la derecha. El plato es el que contiene la
+       comida, así que su tamaño es lo que de verdad se pregunta y
+       no se leía en una vista del conjunto.
+
+       PENDIENTE SUYO: el VOLUMEN del plato, que dijo que no tenía
+       a mano. Cuando lo dé, va en el resumen o en las medidas.
+       PENDIENTE MÍO DE PREGUNTARLE: si quiere las dos maderas como
+       opción de compra (`modelo_por` existe para eso) y si valen
+       lo mismo. De momento la ficha enseña la de samán. */
+    /* LAS DOS MADERAS (él, 06/09/2026). Modeló el mueble en samán y
+       en apamate, así que la madera es una opción de compra y cambia
+       tanto la imagen como el modelo que se ve girar. Mismo precio
+       las dos: no lleva `delta`. */
+    opcion_visual: "madera",
+    opcion_diagrama: "madera",
+    imagen: "img/prototipos/comedero-grande-iso.webp",
+    imagen_por: {
+      saman:   "img/prototipos/comedero-grande-iso.webp",
+      apamate: "img/prototipos/comedero-grande-apamate-iso.webp"
+    },
+    galeria: [],
+    modelo_por: {
+      saman:   "modelos/comedero-grande.glb",
+      apamate: "modelos/comedero-grande-apamate.glb"
+    },
+    opciones: [{
+      id: "madera",
+      etiqueta: { es: "Madera", en: "Wood" },
+      valores: [
+        { id: "saman",   etiqueta: { es: "Samán",   en: "Monkeypod" } },
+        { id: "apamate", etiqueta: { es: "Apamate", en: "Apamate" } }
+      ]
+    }]
   },
 
   {
@@ -310,8 +429,8 @@ window.PROTOTIPOS = [
     plazo_semanas: 3,
     nombre:  { es: "Gancho de pared", en: "Wall hook" },
     resumen: {
-      es: "Bandeja y peine de cuatro dientes en una sola pieza. Deja las llaves donde se ven y cuelga lo que haga falta debajo.",
-      en: "A tray and a four-tooth comb in one piece. Keeps your keys in plain sight and hangs whatever else you need underneath."
+      es: "Bloque con gancho retráctil de tres puestos, para ropa o lo que se te ocurra.",
+      en: "A block with a three-position retractable hook, for coats or whatever you come up with."
     },
     precio_usd: 40,          /* Él, 14/08/2026. Sin stock. */
     peso: 0.6,               /* RELLENO */
@@ -320,32 +439,93 @@ window.PROTOTIPOS = [
        tres cuartos y la de las placas, que enseña la ranura y el
        tamaño en la mano. */
     imagen: "img/prototipos/gancho-pared-1.webp",
+    /* 06/09/2026 · El plano técnico se sustituye por el ISOMÉTRICO
+       con cotas. Decisión suya: para estas piezas el isométrico se
+       entiende mejor que las vistas ortogonales. El plano de líneas
+       se queda SOLO en las dos bases de laptop, donde hacen falta
+       la vista lateral y las dos configuraciones.
+       Sigue entrando por `plano_img`, que es el hueco de la tira que
+       le corresponde; lo que cambió es el CSS, que ya no invierte en
+       modo oscuro lo que no sea .svg — un render en color invertido
+       salía con la madera azul. Ver css/prototipos.css. */
+       plano_img: "img/prototipos/gancho-pared-iso.webp",
     sin_fondo: true,
-    /* La 1 y la 2 son recortes sin fondo; la 3 y la 4 son fotos
-       normales que agregó el 14/08/2026, y van en su orden detrás.
-       OJO: `sin_fondo` es del producto entero, así que estas dos
-       se pintan encajadas igual, con su fondo. */
+    /* 2026-08-16 · Las 2, 3 y 4 se REENCUADRARON: en la miniatura, que
+       recorta al centro, la pieza quedaba cortada y lejos.
+       - La 2 y la 3 tenían un margen transparente enorme (la 3, media
+         imagen vacía arriba): se pasaron por
+         Herramientas\Recortar-transparencia.ps1, que lo quita. Eso las
+         acerca sin tocar píxeles de la pieza.
+       - La 4 no tenía transparencia que recortar, así que lleva un
+         recorte a mano: fuera la pared vacía de arriba y la caja azul
+         del borde derecho.
+       Los originales siguen intactos en la carpeta del proyecto. */
     galeria: [
       "img/prototipos/gancho-pared-2.webp",
       "img/prototipos/gancho-pared-3.webp",
       "img/prototipos/gancho-pared-4.webp"
     ],
-    video: "video/gancho-pared.mp4",
-    modelo3d: "modelos/gancho-ery.glb"
+    /* Sin video (el, 16/08/2026): la tira son solo las cuatro fotos.
+       El .mp4 sigue en video/ por si se repone. */
+    modelo3d: "modelos/gancho-ery.glb",
+
+    /* Samán, única especie por ahora (él, 07/09/2026). */
+    opciones: [{
+      id: "madera",
+      etiqueta: { es: "Madera", en: "Wood" },
+      valores: [ { id: "saman", etiqueta: { es: "Samán", en: "Monkeypod" } } ]
+    }]
   },
 
   {
     slug: "tumbona",
+    /* Fuera del catalogo el 16/08/2026 (el): queria tener piezas hechas
+       en el taller antes de ofrecerlo con seguridad.
+       08/09/2026 · YA LAS HAY: entran las seis fotos que el numero
+       «Tumbona 1-6» en E:\Contenido PrototipoAgo\Escenografia, todas de
+       la pieza real en pino. Con eso se cumple la condicion y vuelve al
+       catalogo. */
     publicado: true,
     disponibilidad: "pedido",
     plazo_semanas: 4,
     nombre:  { es: "Tumbona", en: "Lounger" },
     resumen: {
-      es: "Silla larga de exterior. Listones separados para que el agua corra y la madera respire.",
-      en: "Outdoor lounge chair. Spaced slats so water runs off and the wood breathes."
+      /* 15/08/2026 · Descripción nueva: la anterior hablaba de
+         listones y drenaje —construcción— y él quería otra cosa.
+         Esta va por el uso; el detalle técnico queda de cierre. */
+      es: "Asiento tipo playero, con tres configuraciones de inclinación: decides si te quieres acostar o sentar.",
+      en: "A beach-chair style seat with three recline settings: you decide whether to lie back or sit up."
     },
+    /* Precio confirmado el 08/09/2026 al publicarla: sigue el mismo. */
     precio_usd: 200,
     peso: 14,                /* RELLENO */
+
+    /* De portada va la 2 y no la 1, aunque el las numero al reves: es la
+       unica toma limpia de la pieza ENTERA, bien iluminada y sin nada que
+       le compita en el encuadre. En la 1 la silla queda mas escorzada y
+       entra el brazo de un sofa por la derecha. Mismo criterio que en la
+       madriguera de trabajos.js, donde la portada es la foto-4.
+       Los nombres de archivo SI respetan su numeracion. */
+    imagen: "img/prototipos/tumbona-2.webp",
+    /* Con fondo: son fotos de ambiente, no recortes. Sin `sin_fondo`, que
+       es para los PNG con transparencia de las bases de laptop. */
+    galeria: [
+      "img/prototipos/tumbona-1.webp",
+      "img/prototipos/tumbona-6.webp",
+      "img/prototipos/tumbona-5.webp",
+      "img/prototipos/tumbona-3.webp",
+      "img/prototipos/tumbona-4.webp"
+    ],
+
+    /* Las fotos son TODAS de pino, que es lo unico fabricado hasta hoy.
+       La teca se ofrece igual —el quiere hacerlas— y hasta que exista una
+       se queda con las mismas imagenes: es el mismo diseno, distinta
+       especie. Es la decision que ya se tomo en la base de laptop baja
+       con el apamate. Cuando haya fotos de teca, esto se parte en un
+       `imagen_por` como el de la base alta.
+       Sin `opcion_visual`: sin `imagen_por` ni `modelo_por` no hace nada
+       —el codigo ya cae en "madera" solo— y ponerlo haria creer que hay
+       material por variante cuando no lo hay. */
     opciones: [{
       id: "madera",
       etiqueta: { es: "Madera", en: "Wood" },
@@ -358,7 +538,9 @@ window.PROTOTIPOS = [
 
   {
     slug: "banquito",
-    publicado: true,
+   /* Fuera del catalogo el 16/08/2026 (el): quiere tener piezas
+      hechas en el taller antes de ofrecerlo con seguridad. */
+    publicado: false,
     disponibilidad: "pedido",
     plazo_semanas: 3,
     nombre:  { es: "Banquito", en: "Stool" },
@@ -382,7 +564,9 @@ window.PROTOTIPOS = [
 
   {
     slug: "utensilios",
-    publicado: true,
+   /* Fuera del catalogo el 16/08/2026 (el): quiere tener piezas
+      hechas en el taller antes de ofrecerlo con seguridad. */
+    publicado: false,
     disponibilidad: "pedido",
     plazo_semanas: 4,
     nombre:  { es: "Pack de utensilios", en: "Utensil set" },
@@ -401,7 +585,9 @@ window.PROTOTIPOS = [
 
   {
     slug: "lampara",
-    publicado: true,
+   /* Fuera del catalogo el 16/08/2026 (el): quiere tener piezas
+      hechas en el taller antes de ofrecerlo con seguridad. */
+    publicado: false,
     disponibilidad: "pedido",
     plazo_semanas: 3,
     nombre:  { es: "Lámpara", en: "Lamp" },
@@ -455,6 +641,22 @@ window.PROTOTIPOS = [
        oscura) que el producto todavía no ofrece como opción.
        Pendiente de que él diga si se escoge o si va surtido. */
     imagen: "img/prototipos/bases-foto-1.webp",
+    /* 06/09/2026 · El plano técnico se sustituye por el ISOMÉTRICO
+       con cotas. Decisión suya: para estas piezas el isométrico se
+       entiende mejor que las vistas ortogonales. El plano de líneas
+       se queda SOLO en las dos bases de laptop, donde hacen falta
+       la vista lateral y las dos configuraciones.
+       Sigue entrando por `plano_img`, que es el hueco de la tira que
+       le corresponde; lo que cambió es el CSS, que ya no invierte en
+       modo oscuro lo que no sea .svg — un render en color invertido
+       salía con la madera azul. Ver css/prototipos.css. */
+       plano_img_por: {
+      pino:  "img/prototipos/bases-foto-pino-iso.webp",
+      saman: "img/prototipos/bases-foto-saman-iso.webp"
+    },
+    /* el hueco del plano se indexa por `opcion_diagrama`, que por
+       defecto es "tamano"; aquí la variante es la madera. */
+    opcion_diagrama: "madera",
     sin_fondo: true,
     /* La portada enseña las dos maderas juntas y se queda fija;
        dentro del panel la foto cambia con la madera escogida.
@@ -499,6 +701,137 @@ window.PROTOTIPOS = [
         { id: "pino",  etiqueta: { es: "Pino",  en: "Pine" } },
         { id: "saman", etiqueta: { es: "Samán", en: "Monkeypod" } }
       ]
+    }]
+  },
+
+  /* ==========  BAÑO  ·  06/09/2026  ==========================
+     Tres piezas nuevas, modeladas por él en SketchUp y exportadas
+     como .obj. De momento NO hay foto: la `imagen` es el
+     isométrico con cotas que saca capturar-isometrico.html a
+     partir del propio .glb, y se sustituirá cuando las fabrique
+     y las fotografíe.
+
+     PRECIOS SUYOS, dictados el 06/09/2026: portarrollo 30,
+     repisa 50, toallero 90 y espejo 120. El del espejo INCLUYE
+     el espejo, no solo el marco (lo dijo él).
+
+     Estuvieron unas horas en `publicado: false` porque sin precio
+     `precioUnidad()` hace `p.precio_usd || 0` y la ficha habría
+     salido anunciando **$0** con su botón de añadir al pedido. Con
+     los precios puestos, ya van publicadas.
+
+     Son CUATRO: las tres primeras y el portarrollo, que mandó
+     después. Ahora sí está completo el baño.
+     ========================================================== */
+
+  {
+    slug: "repisa-bano",
+    publicado: true,
+    disponibilidad: "pedido",
+    plazo_semanas: 3,
+    nombre:  { es: "Repisa de baño", en: "Bathroom shelf" },
+    resumen: {
+      es: "Repisa de pared con reborde, para el baño.",
+      en: "A wall shelf with a lip, for the bathroom."
+    },
+    medidas: { es: "50 × 15 × 12 cm", en: "50 × 15 × 12 cm" },
+    precio_usd: 50,          /* Él, 06/09/2026 */
+    peso: 1.0,               /* RELLENO */
+    imagen: "img/prototipos/repisa-bano-iso.webp",
+    galeria: [],
+    modelo3d: "modelos/repisa-bano.glb",
+
+    /* Pino, y es la única especie por ahora (él, 07/09/2026). Aun así
+       el selector se muestra: quiere que se vea de qué madera es, no
+       que se adivine. Sin `delta`, así que no mueve el precio. */
+    opciones: [{
+      id: "madera",
+      etiqueta: { es: "Madera", en: "Wood" },
+      valores: [ { id: "pino", etiqueta: { es: "Pino", en: "Pine" } } ]
+    }]
+  },
+
+  {
+    slug: "espejo-bano",
+    publicado: true,
+    disponibilidad: "pedido",
+    plazo_semanas: 3,
+    nombre:  { es: "Espejo de baño", en: "Bathroom mirror" },
+    resumen: {
+      es: "Espejo con marco de madera maciza.",
+      en: "A mirror in a solid wood frame."
+    },
+    medidas: { es: "52 × 2,5 × 63 cm", en: "52 × 2.5 × 63 cm" },
+    precio_usd: 120,          /* Él, 06/09/2026 */
+    peso: 4.0,               /* RELLENO */
+    imagen: "img/prototipos/espejo-bano-iso.webp",
+    galeria: [],
+    modelo3d: "modelos/espejo-bano.glb",
+
+    /* Pino, y es la única especie por ahora (él, 07/09/2026). Aun así
+       el selector se muestra: quiere que se vea de qué madera es, no
+       que se adivine. Sin `delta`, así que no mueve el precio. */
+    opciones: [{
+      id: "madera",
+      etiqueta: { es: "Madera", en: "Wood" },
+      valores: [ { id: "pino", etiqueta: { es: "Pino", en: "Pine" } } ]
+    }]
+  },
+
+  {
+    slug: "toallero-bano",
+    publicado: true,
+    disponibilidad: "pedido",
+    plazo_semanas: 3,
+    nombre:  { es: "Toallero", en: "Towel rail" },
+    resumen: {
+      es: "Toallero de pared de dos barras, en madera maciza.",
+      en: "A two-bar wall towel rail in solid wood."
+    },
+    medidas: { es: "84 × 15,5 × 13 cm", en: "84 × 15.5 × 13 cm" },
+    precio_usd: 90,          /* Él, 06/09/2026 */
+    peso: 1.6,               /* RELLENO */
+    imagen: "img/prototipos/toallero-bano-iso.webp",
+    galeria: [],
+    modelo3d: "modelos/toallero-bano.glb",
+
+    /* Pino, y es la única especie por ahora (él, 07/09/2026). Aun así
+       el selector se muestra: quiere que se vea de qué madera es, no
+       que se adivine. Sin `delta`, así que no mueve el precio. */
+    opciones: [{
+      id: "madera",
+      etiqueta: { es: "Madera", en: "Wood" },
+      valores: [ { id: "pino", etiqueta: { es: "Pino", en: "Pine" } } ]
+    }]
+  },
+
+  {
+    /* Llegó unas horas después que las otras tres. Es una tabla con
+       el brazo en U tallado en la propia pieza, no un herraje
+       aparte: por eso el modelo sale de una sola pieza de 3 cm. */
+    slug: "porta-rollo-bano",
+    publicado: true,
+    disponibilidad: "pedido",
+    plazo_semanas: 3,
+    nombre:  { es: "Portarrollo", en: "Toilet roll holder" },
+    resumen: {
+      es: "Portarrollo de pared en madera maciza, con el brazo tallado en la propia tabla.",
+      en: "A solid wood wall roll holder, its arm carved from the board itself."
+    },
+    medidas: { es: "34 × 13 × 3 cm", en: "34 × 13 × 3 cm" },
+    precio_usd: 30,          /* Él, 06/09/2026 */
+    peso: 0.7,               /* RELLENO */
+    imagen: "img/prototipos/porta-rollo-bano-iso.webp",
+    galeria: [],
+    modelo3d: "modelos/porta-rollo-bano.glb",
+
+    /* Pino, y es la única especie por ahora (él, 07/09/2026). Aun así
+       el selector se muestra: quiere que se vea de qué madera es, no
+       que se adivine. Sin `delta`, así que no mueve el precio. */
+    opciones: [{
+      id: "madera",
+      etiqueta: { es: "Madera", en: "Wood" },
+      valores: [ { id: "pino", etiqueta: { es: "Pino", en: "Pine" } } ]
     }]
   }
 ];

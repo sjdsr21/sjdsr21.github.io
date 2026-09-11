@@ -168,7 +168,7 @@
         : '';
       visual = '<span class="pt-ficha__hueco pt-ficha__hueco--foto' +
           (p.sin_fondo ? ' pt-ficha__hueco--suelto' : '') + '">' +
-          '<img src="' + fotos[i] + '" alt="' + tx(p.nombre) + '" loading="lazy">' +
+          '<img src="' + srcTema(fotos[i]) + '" alt="' + tx(p.nombre) + '" loading="lazy">' +
           flechas +
         '</span>';
     } else {
@@ -200,7 +200,11 @@
       '<span class="pt-ficha__cuerpo">' +
         '<h3><button type="button" class="pt-ficha__abrir" data-slug="' + p.slug + '">' +
           tx(p.nombre) + '</button></h3>' +
-        '<span class="pt-ficha__res">' + tx(p.resumen) + '</span>' +
+        /* En la CUADRÍCULA manda `resumen_corto` si la ficha lo trae
+           (él, 06/09/2026: la tabla y el butcher se leían como un
+           ladrillo entre tarjeta y tarjeta). El resumen completo
+           sigue saliendo entero al abrir el producto. */
+        '<span class="pt-ficha__res">' + tx(p.resumen_corto || p.resumen) + '</span>' +
         '<span class="pt-ficha__pie">' +
           '<span class="pt-precio">' +
             (tieneVariosPrecios(p) ? '<span class="pt-desde">' + t("desde") + '</span>' : '') +
@@ -263,7 +267,7 @@
         /* Se cambia solo la imagen y el contador, sin repintar la
            rejilla entera: repintarla perdería el foco del teclado
            y haría parpadear todas las tarjetas. */
-        cambiarFoto(ficha.querySelector(".pt-ficha__hueco img"), fotos[i]);
+        cambiarFoto(ficha.querySelector(".pt-ficha__hueco img"), srcTema(fotos[i]));
         var cuenta = ficha.querySelector(".pt-cuenta-fotos");
         if (cuenta) cuenta.textContent = (i + 1) + "/" + fotos.length;
       });
@@ -368,6 +372,22 @@
     return p.modelo_por[clave] || null;
   }
 
+  /* LA IMAGEN QUE CAMBIA CON EL TEMA (06/09/2026).
+     Los isométricos se generan por duplicado: `algo-iso.webp` sobre
+     negro y `algo-iso-claro.webp` sobre blanco. Aquí se elige cuál
+     toca. Que esto no se quede viejo al conmutar depende del evento
+     `pa:tema` que lanza sitio.js — ver el final de este archivo.
+
+     Se intentó antes pintar LAS DOS y esconder una por CSS, y no
+     sirve: en la cuadrícula el carrusel no repinta la tarjeta, solo
+     le cambia el `src` al <img> que ya está puesto. */
+  function srcTema(src) {
+    if (!/-iso\.webp$/.test(src)) return src;
+    return document.documentElement.getAttribute("data-tema") === "claro"
+      ? src.replace(/-iso\.webp$/, "-iso-claro.webp")
+      : src;
+  }
+
   /* ---------- todas las fotos de un producto ------------------
      Para el carrusel de la CUADRÍCULA: da igual la madera o la
      talla escogida, aquí van todas las fotos del producto una
@@ -403,6 +423,19 @@
 
     if (p.imagen && fotos.indexOf(p.imagen) === -1) fotos.unshift(p.imagen);
     (p.galeria || []).forEach(function (g) { fotos.push(g); });
+
+    /* EL PLANO TAMBIÉN (06/09/2026). Antes se quedaba fuera y desde la
+       cuadrícula no había forma de llegar a él —él se quejó de que
+       solo podía deslizar entre las tres fotos del comedero pequeño y
+       nunca veía la cuarta—. Desde que el plano es el isométrico con
+       cotas, es una vista más de la pieza y merece estar. El 3D sí
+       sigue fuera: eso solo se ve al abrir. */
+    if (p.plano_img) fotos.push(p.plano_img);
+    if (p.plano_img_por) {
+      Object.keys(p.plano_img_por).forEach(function (k) {
+        fotos.push(p.plano_img_por[k]);
+      });
+    }
 
     /* Sin repetidas: la base baja apunta a la misma foto desde
        las dos maderas mientras no haya una del apamate. */
@@ -560,8 +593,15 @@
        hecho aparte y ya terminado, y donde existe es mejor que el
        SVG. Va en NEGRO sobre transparente, y en modo oscuro se
        invierte por CSS — ver .pt-visual__plano. */
-    if (p.plano_img) {
-      l.push({ tipo: "plano-img", src: p.plano_img });
+    /* `plano_img_por` es la version por variante: cada talla de tabla
+       lleva su propio SVG, todos con las TRES tallas dibujadas y la
+       escogida en color de acento, para que se comparen de un vistazo.
+       Usa la misma clave que `diagrama_por` (opcion_diagrama). */
+    var planoImg = p.plano_img_por
+      ? p.plano_img_por[o[p.opcion_diagrama || "tamano"]]
+      : p.plano_img;
+    if (planoImg) {
+      l.push({ tipo: "plano-img", src: planoImg });
     } else {
       var plano = p.diagrama_por ? p.diagrama_por[o[p.opcion_diagrama || "tamano"]]
                                  : p.diagrama;
@@ -605,7 +645,10 @@
            no tiene nada que enseñar hasta que se carga. */
         var dentro;
         if (x.tipo === "foto" || x.tipo === "plano-img") {
-          dentro = '<img src="' + x.src + '" alt="">';
+          /* Por `srcTema` como la imagen grande (07/09/2026): la
+             miniatura del isométrico también tiene versión clara y
+             oscura, y sin esto en tema claro salía la de fondo negro. */
+          dentro = '<img src="' + srcTema(x.src) + '" alt="">';
         } else if (x.tipo === "video") {
           dentro = '<span class="pt-medio__play" aria-hidden="true">&#9654;</span>';
         } else if (x.tipo === "3d") {
@@ -634,8 +677,11 @@
     }
 
     /* La proporción del recuadro la decide el medio: el CSS la lee
-       de data-medio. Una foto 4:3 en un recuadro cuadrado perdía
-       la base de la pieza. */
+       de data-medio.
+       08/09/2026 · Ya NO decide la proporción: el recuadro es
+       cuadrado para todo (él). `data-medio` sigue haciendo falta
+       para el fondo —liso detrás de una foto, rayado en el hueco
+       vacío— y para el resto de reglas por tipo. Ver .pt-visual. */
     host.setAttribute("data-medio", m ? m.tipo : "vacio");
     /* Fondo liso (no rayado) cuando lo que se ve es una pieza
        recortada. Solo aplica a las fotos: el visor 3D trae su
@@ -655,7 +701,7 @@
     if (m && m.tipo === "foto" && yaHabiaFoto && montado &&
         montado.indexOf("foto:") === 0) {
       montado = firma;
-      cambiarFoto(yaHabiaFoto, m.src);
+      cambiarFoto(yaHabiaFoto, srcTema(m.src));
       return;
     }
 
@@ -716,7 +762,7 @@
          El <img> no es código muerto — es el camino que queda cuando se
          abre el HTML con doble clic (file://), donde fetch no funciona.
          Ver .pt-visual__plano en css/prototipos.css. */
-      caja.innerHTML = '<img class="pt-visual__plano" src="' + m.src +
+      caja.innerHTML = '<img class="pt-visual__plano" src="' + srcTema(m.src) +
         '" alt="' + tx(sel.p.nombre) + ' — plano con medidas">';
       entrarConGlitch(caja);
       incrustarPlano(caja, m.src);
@@ -776,6 +822,21 @@
     $("#pt-pn-resumen").textContent =
       tx(p.resumen) + (p.medidas ? "  ·  " + tx(p.medidas) : "");
 
+    /* Aviso de que TODO se puede personalizar, en todas las fichas por
+       igual (él, 16/08/2026). El enlace lleva a la lista de maderas de
+       El Taller; si se renombra ese ancla, esto se rompe en silencio.
+       Va como innerHTML porque lleva el <a> dentro del texto. */
+    var av = $("#pt-pn-personalizar");
+    if (!av) {
+      av = document.createElement("p");
+      av.id = "pt-pn-personalizar";
+      av.className = "pt-personalizar";
+      $("#pt-pn-resumen").insertAdjacentElement("afterend", av);
+    }
+    av.innerHTML = t("pt_personalizar")
+      .replace("{a}", '<a href="taller.html#maderas">')
+      .replace("{/a}", "</a>");
+
     $("#pt-pn-opciones").innerHTML = (p.opciones || []).map(function (g) {
       return '<div class="pt-grupo">' +
         '<span class="pt-etiqueta">' + tx(g.etiqueta) + '</span>' +
@@ -799,8 +860,17 @@
             extra = '<span class="pt-d">+' + dolar(v.delta) + '</span>';
           }
 
-          return '<button type="button" class="pt-op' + (o[g.id] === v.id ? " sel" : "") + '"' +
-                 ' data-g="' + g.id + '" data-v="' + v.id + '"' + (agotado ? " disabled" : "") + '>' +
+          /* 06/09/2026 · YA NO VA `disabled`. Antes una madera sin
+             existencias no se podía ni seleccionar, y él quiere que se
+             pueda pedir por encargo igual que se piden más unidades de
+             las que hay. Se marca, no se bloquea: clase `agotado` para
+             el color apagado y un punto en la esquina, más el `title`
+             para quien pase el ratón. El aviso completo sale abajo, en
+             la nota de stock, al seleccionarla. */
+          return '<button type="button" class="pt-op' + (o[g.id] === v.id ? " sel" : "") +
+                 (agotado ? " pt-op--agotado" : "") + '"' +
+                 ' data-g="' + g.id + '" data-v="' + v.id + '"' +
+                 (agotado ? ' title="' + t("pt_agotado_aviso") + '"' : '') + '>' +
                  tx(v.etiqueta) +
                  (v.nota ? ' <span class="pt-d">' + tx(v.nota) + '</span>' : '') +
                  extra + '</button>';
@@ -834,7 +904,16 @@
       $("#pt-pn-cant").classList.toggle("pt-cant--sobre", pasado);
       $("#pt-pn-nota-stock").classList.toggle("pt-nota-sobre", pasado);
 
-      if (pasado) {
+      /* EL ORDEN IMPORTA: primero el caso de CERO. Si se mira antes
+         `pasado`, con 0 hechos y 1 pedido también es «pasado» y salía
+         el aviso de cantidad — «Solo hay 0 en el taller. 1 unidades
+         tendrán que fabricarse...», que se lee raro. Con cero no
+         sobra nada: es que esa combinación no está hecha. */
+      if (n === 0) {
+        $("#pt-pn-nota-stock").classList.add("pt-nota-sobre");
+        $("#pt-pn-cant").classList.add("pt-cant--sobre");
+        $("#pt-pn-nota-stock").textContent = t("pt_sin_combo");
+      } else if (pasado) {
         $("#pt-pn-nota-stock").textContent = rellena("pt_sobre_stock", {
           hay: n,
           falta: sel.cant - n,
@@ -842,9 +921,7 @@
           cosa: uxp > 1 ? t("pt_paquetes") : t("pt_unidades")
         });
       } else {
-        $("#pt-pn-nota-stock").textContent = n === 0
-          ? t("pt_sin_combo")
-          : rellena("pt_en_taller", {n: n});
+        $("#pt-pn-nota-stock").textContent = rellena("pt_en_taller", {n: n});
       }
     } else {
       $("#pt-pn-cant").classList.remove("pt-cant--sobre");
@@ -1266,6 +1343,15 @@
     }
     window.open("https://wa.me/" + M.whatsapp + "?text=" +
                 encodeURIComponent(textoPedido()), "_blank");
+  });
+
+  /* AL CONMUTAR DE TEMA hay que repintar, porque los isométricos son
+     archivos distintos en claro y en oscuro (ver `srcTema`). El resto
+     del tema no lo necesita: vive en los tokens CSS. Se repinta el
+     catálogo y, si hay un producto abierto, también su panel. */
+  document.addEventListener("pa:tema", function () {
+    pintarCatalogo();
+    if (sel && sel.p) pintarPanel();
   });
 
   pintarTodo();

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1864" height="1315" viewBox="0 0 1864 1315">
+<g transform="translate(0,0)">
+<g class="pt-plano__silueta" fill="#000" fill-rule="evenodd" stroke="none">
+<path d="M 352.00,150.00 L 354.88,149.04 L 819.52,149.04 L 823.84,150.96 L 826.48,154.08 L 827.44,156.96 L 827.44,861.12 L 825.52,865.44 L 822.40,868.08 L 819.52,869.04 L 354.88,869.04 L 350.56,867.12 L 347.92,864.00 L 346.96,861.12 L 346.96,156.96 L 348.88,152.64 Z"/>
+</g>
+<path d="M 352.00,150.00 L 354.88,149.04 L 819.52,149.04 L 823.84,150.96 L 826.48,154.08 L 827.44,156.96 L 827.44,861.12 L 825.52,865.44 L 822.40,868.08 L 819.52,869.04 L 354.88,869.04 L 350.56,867.12 L 347.92,864.00 L 346.96,861.12 L 346.96,156.96 L 348.88,152.64 Z M 806.80,841.92 L 804.40,845.76 L 802.24,847.44 L 799.84,848.40 L 794.08,848.40 L 790.24,846.00 L 788.56,843.84 L 787.60,841.44 L 787.60,836.16 L 790.00,832.32 L 792.16,830.64 L 794.56,829.68 L 800.32,829.68 L 804.16,832.08 L 805.84,834.24 L 806.80,836.64 Z M 367.60,836.16 L 370.00,832.32 L 372.16,830.64 L 374.56,829.68 L 380.32,829.68 L 384.16,832.08 L 385.84,834.24 L 386.80,836.64 L 386.80,841.92 L 384.40,845.76 L 382.24,847.44 L 379.84,848.40 L 374.08,848.40 L 370.24,846.00 L 368.56,843.84 L 367.60,841.44 Z M 806.80,181.92 L 804.40,185.76 L 802.24,187.44 L 799.84,188.40 L 794.08,188.40 L 790.24,186.00 L 788.56,183.84 L 787.60,181.44 L 787.60,176.16 L 790.00,172.32 L 792.16,170.64 L 794.56,169.68 L 800.32,169.68 L 804.16,172.08 L 805.84,174.24 L 806.80,176.64 Z M 367.60,176.16 L 370.00,172.32 L 372.16,170.64 L 374.56,169.68 L 380.32,169.68 L 384.16,172.08 L 385.84,174.24 L 386.80,176.64 L 386.80,181.92 L 384.40,185.76 L 382.24,187.44 L 379.84,188.40 L 374.08,188.40 L 370.24,186.00 L 368.56,183.84 L 367.60,181.44 Z" fill="none" stroke="#fff" stroke-width="5.58" stroke-linejoin="round"/>
+<g stroke="#000" stroke-width="5.58" fill="#000" font-family="Roboto, Arial, sans-serif" font-size="62.0">
+<line x1="99.2" y1="868.8" x2="99.2" y2="642.1"/>
+<line x1="99.2" y1="375.5" x2="99.2" y2="148.8"/>
+<line x1="99.2" y1="868.8" x2="347.2" y2="868.8" stroke-width="3.10"/>
+<line x1="99.2" y1="148.8" x2="347.2" y2="148.8" stroke-width="3.10"/>
+<path d="M 99.2,868.8 L 99.2,834.7 L 110.1,834.7 Z" stroke="none"/><path d="M 99.2,148.8 L 99.2,182.9 L 88.3,182.9 Z" stroke="none"/>
+<text x="99.2" y="508.8" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round" transform="rotate(-90 99.2 508.8)">60 cm</text>
+<line x1="347.2" y1="968.0" x2="453.9" y2="968.0"/>
+<line x1="720.5" y1="968.0" x2="827.2" y2="968.0"/>
+<line x1="347.2" y1="968.0" x2="347.2" y2="868.8" stroke-width="3.10"/>
+<line x1="827.2" y1="968.0" x2="827.2" y2="868.8" stroke-width="3.10"/>
+<path d="M 347.2,968.0 L 313.1,968.0 L 313.1,957.1 Z" stroke="none"/><path d="M 827.2,968.0 L 861.3,968.0 L 861.3,978.9 Z" stroke="none"/>
+<text x="587.2" y="968.0" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">40 cm</text>
+</g>
+</g>
+<g transform="translate(962,209)">
+<g class="pt-plano__silueta" fill="#000" fill-rule="evenodd" stroke="none">
+<path d="M 827.44,593.64 L 827.44,647.40 L 807.04,647.64 L 806.56,659.64 L 787.84,659.64 L 787.36,647.64 L 387.04,647.64 L 386.56,659.64 L 367.84,659.64 L 367.36,647.64 L 346.96,647.40 L 347.20,593.40 Z"/>
+</g>
+<path d="M 827.44,593.64 L 827.20,647.64 L 346.96,647.40 L 347.20,593.40 Z M 787.60,659.40 L 787.84,647.64 L 806.80,647.88 L 806.56,659.64 Z M 367.60,659.40 L 367.84,647.64 L 386.80,647.88 L 386.56,659.64 Z M 787.60,659.40 L 787.84,647.64 L 806.80,647.88 L 806.56,659.64 Z M 367.60,659.40 L 367.84,647.64 L 386.80,647.88 L 386.56,659.64 Z" fill="none" stroke="#fff" stroke-width="5.58" stroke-linejoin="round"/>
+<g stroke="#000" fill="none" stroke-linecap="round">
+<line x1="291.4" y1="659.4" x2="883.0" y2="659.4" stroke-width="9.30"/>
+<path d="M 304.4,659.4 L 290.1,673.7 M 330.5,659.4 L 316.1,673.7 M 356.5,659.4 L 342.2,673.7 M 382.5,659.4 L 368.2,673.7 M 408.6,659.4 L 394.3,673.7 M 434.6,659.4 L 420.3,673.7 M 460.7,659.4 L 446.3,673.7 M 486.7,659.4 L 472.4,673.7 M 512.7,659.4 L 498.4,673.7 M 538.8,659.4 L 524.5,673.7 M 564.8,659.4 L 550.5,673.7 M 590.9,659.4 L 576.5,673.7 M 616.9,659.4 L 602.6,673.7 M 642.9,659.4 L 628.6,673.7 M 669.0,659.4 L 654.7,673.7 M 695.0,659.4 L 680.7,673.7 M 721.1,659.4 L 706.7,673.7 M 747.1,659.4 L 732.8,673.7 M 773.1,659.4 L 758.8,673.7 M 799.2,659.4 L 784.9,673.7 M 825.2,659.4 L 810.9,673.7 M 851.3,659.4 L 836.9,673.7" stroke-width="3.10"/>
+</g>
+<g stroke="#000" stroke-width="5.58" fill="#000" font-family="Roboto, Arial, sans-serif" font-size="62.0">
+<line x1="99.2" y1="659.4" x2="99.2" y2="593.2"/>
+
+<line x1="99.2" y1="659.4" x2="347.2" y2="659.4" stroke-width="3.10"/>
+<line x1="99.2" y1="593.2" x2="347.2" y2="593.2" stroke-width="3.10"/>
+<path d="M 99.2,659.4 L 99.2,625.3 L 110.1,625.3 Z" stroke="none"/><path d="M 99.2,593.2 L 99.2,627.3 L 88.3,627.3 Z" stroke="none"/>
+<text x="40.3" y="626.3" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round" transform="rotate(-90 40.3 626.3)">6 cm</text>
+<line x1="347.2" y1="758.6" x2="453.9" y2="758.6"/>
+<line x1="720.5" y1="758.6" x2="827.2" y2="758.6"/>
+<line x1="347.2" y1="758.6" x2="347.2" y2="659.4" stroke-width="3.10"/>
+<line x1="827.2" y1="758.6" x2="827.2" y2="659.4" stroke-width="3.10"/>
+<path d="M 347.2,758.6 L 313.1,758.6 L 313.1,747.7 Z" stroke="none"/><path d="M 827.2,758.6 L 861.3,758.6 L 861.3,769.5 Z" stroke="none"/>
+<text x="587.2" y="758.6" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">40 cm</text>
+</g>
+</g>
+<line x1="37" y1="1095" x2="1827" y2="1095" stroke="#000" stroke-width="5.58"/>
+<text class="pt-plano__pieza" data-es="Butcher Block L" data-en="Butcher Block L" x="37" y="1212" text-anchor="start" font-family="Roboto, Arial, sans-serif" font-size="71.9" font-weight="300" fill="#000" stroke="none">Butcher Block L</text>
+<text x="1827" y="1199" text-anchor="end" font-family="Poppins, Roboto, system-ui, sans-serif" font-size="89.9" font-weight="700" letter-spacing="-0.025em" fill="#000" stroke="none">prototipo</text>
+<text x="1827" y="1282" text-anchor="end" font-family="Poppins, Roboto, system-ui, sans-serif" font-size="89.9" font-weight="700" letter-spacing="-0.025em" fill="#000" stroke="none">ago</text>
+
+<text x="475" y="67" font-weight="300" class="pt-plano__titulo" data-es="Vista superior" data-en="Top view" text-anchor="middle" font-family="Roboto, Arial, sans-serif" font-size="68.2" fill="#000">Vista superior</text>
+<text x="1448" y="67" font-weight="300" class="pt-plano__titulo" data-es="Vista lateral" data-en="Side view" text-anchor="middle" font-family="Roboto, Arial, sans-serif" font-size="68.2" fill="#000">Vista lateral</text>
+</svg>

@@ -37,6 +37,13 @@
                 (tema === "auto" && !consultaOscuro.matches);
     if (claro) { document.documentElement.setAttribute("data-tema", "claro"); }
     else { document.documentElement.removeAttribute("data-tema"); }
+    /* 06/09/2026 · Aviso para quien tenga IMÁGENES distintas por tema
+       —los isométricos con cotas, que existen sobre negro y sobre
+       blanco—. El tema en sí sigue viviendo en los tokens CSS y no
+       necesita repintar nada; esto es solo para los archivos. */
+    try {
+      document.dispatchEvent(new CustomEvent("pa:tema", { detail: { claro: claro } }));
+    } catch (e) { /* navegador viejo: se queda la imagen que hubiera */ }
   }
 
   function ponerTema(nuevo) {
@@ -93,6 +100,77 @@
   var $  = function (s, r) { return (r || document).querySelector(s); };
   var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
 
+  /* ------------------------------------------------------------
+     2026-08-17 · DOS MEDIDAS DE CADA FOTO
+
+     Achicar-imagenes.ps1 deja al lado de cada foto grande una copia
+     <nombre>-movil.webp de 1000 px, y apunta cuáles en
+     datos/imagenes.js. Aquí se le ofrecen las dos al navegador con
+     `srcset` y él baja la que le sirva.
+
+     Por qué la copia es de 1000 px y no de 400, que es lo que mide
+     el hueco en el teléfono: la pantalla de un teléfono moderno
+     tiene entre 2,5 y 3 puntos físicos por cada píxel de CSS. Un
+     hueco de 350 px pide en realidad unos 950 de imagen. Con una
+     copia de 400 el navegador la descartaría por borrosa y bajaría
+     la grande igual — el trabajo no habría servido de nada.
+
+     El `sizes` es una PROMESA que le hacemos al navegador sobre el
+     ancho que va a ocupar la foto, y tiene que decidirlo ANTES de
+     maquetar, que es por lo que no puede averiguarlo solo. Los
+     cortes son los de la rejilla en estilo.css: una columna hasta
+     560px, dos hasta 900, tres por encima. Si se cambian allí, hay
+     que cambiarlos aquí.
+     ------------------------------------------------------------ */
+  var MEDIDAS = "(max-width: 560px) 94vw, (max-width: 900px) 48vw, 32vw";
+  var CON_MOVIL = null;
+
+  function ponerSrcset(img, src) {
+    if (CON_MOVIL === null) {
+      /* Un objeto y no el array tal cual: esto se consulta una vez
+         por cada foto de la página y buscar en una lista de 50 cada
+         vez es tonto. Si el archivo no está —porque nunca se corrió
+         el script— queda vacío y no pasa nada. */
+      CON_MOVIL = {};
+      (window.IMG_MOVIL || []).forEach(function (r) { CON_MOVIL[r] = 1; });
+    }
+    /* Las rutas del manifiesto son relativas a la raíz del sitio,
+       igual que las que se escriben en datos/. Se limpia un ./ de
+       delante y cualquier ?v= de detrás por si acaso. */
+    var clave = String(src).replace(/^\.\//, "").split("?")[0];
+    if (!CON_MOVIL[clave]) return;
+    var A = window.IMG_MOVIL_ANCHOS || { grande: 1400, movil: 1000 };
+    var chica = clave.replace(/\.webp$/, "-movil.webp");
+    img.setAttribute("srcset", chica + " " + A.movil + "w, " +
+                               clave + " " + A.grande + "w");
+    img.setAttribute("sizes", MEDIDAS);
+  }
+
+  /* CAMBIAR LA FOTO DE UN <img> QUE YA ESTA EN LA PAGINA
+     ------------------------------------------------------------
+     2026-08-27 · Tocar solo `img.src` NO basta. Si la foto tiene
+     copia de teléfono lleva también un `srcset`, y el `srcset`
+     MANDA sobre el `src`: el navegador sigue enseñando la foto
+     anterior aunque el `src` ya apunte a la nueva.
+
+     Eso es lo que rompió las flechas de la cuadrícula de
+     Exhibición. El fallo engañaba porque todo lo demás SÍ
+     pasaba: el glitch se veía, el contador subía de 1/6 a 2/6...
+     y la imagen se quedaba clavada en la primera. Dentro de la
+     ficha de la pieza no ocurría, porque allí se sustituye el
+     nodo <img> entero en vez de reescribirle el `src`.
+
+     El orden importa: primero se quita el srcset viejo, luego se
+     pone el src nuevo, y solo entonces se calcula el srcset que
+     le toca. Al revés, el navegador arrancaría una descarga de
+     la foto vieja antes de enterarse del cambio. */
+  function ponerFoto(img, src) {
+    img.removeAttribute("srcset");
+    img.removeAttribute("sizes");
+    img.src = src;
+    ponerSrcset(img, src);
+  }
+
   function el(tag, props, hijos) {
     var e = document.createElement(tag);
     for (var k in (props || {})) {
@@ -101,6 +179,11 @@
       else if (k === "texto") e.textContent = props[k];
       else if (props[k] !== null && props[k] !== undefined) e.setAttribute(k, props[k]);
     }
+    /* El srcset se pone DESPUÉS del src pero antes de que el nodo
+       entre en la página. Si se pusiera más tarde —desde un
+       MutationObserver, por ejemplo— el navegador ya habría empezado
+       a bajar el src grande y se descargarían las dos. */
+    if (tag === "img" && props && props.src) ponerSrcset(e, props.src);
     (hijos || []).forEach(function (h) { if (h) e.appendChild(h); });
     return e;
   }
@@ -198,6 +281,65 @@
     return lista;
   }
 
+  /* ---------- glitch al cambiar de medio ------------------- *
+   * El mismo corte que usa el panel de prototipos (él,
+   * 15/08/2026): la pieza que se va se rompe en bandas mientras
+   * se le separan los canales de color, y la que entra da un
+   * tirón corto. El CSS es compartido — vive en css/estilo.css
+   * bajo las clases .pt-saliendo y .pt-entrando; antes estaba en
+   * prototipos.css, que esta página no carga.
+   *
+   * Aquí NO se clona nada: se corta el nodo de verdad que sale.
+   * De un canvas WebGL (el visor 3D) no hay copia que sacar, y
+   * `clip-path` funciona igual sobre una imagen, un vídeo o el
+   * visor.
+   * -------------------------------------------------------- */
+  var sinMovimiento = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* Saca los nodos viejos del flujo y los desintegra. Se los
+     lleva a una capa suelta: si se quedaran dentro, empujarían al
+     medio nuevo durante los 105 ms en que conviven los dos. */
+  function sacarConGlitch(caja, viejos) {
+    if (sinMovimiento || !viejos.length) {
+      viejos.forEach(function (n) { n.remove(); });
+      return;
+    }
+
+    /* Restos de un cambio anterior: pulsando rápido de una
+       miniatura a otra se acumularían capas muertas. */
+    $$(".pt-saliendo", caja).forEach(function (n) { n.remove(); });
+
+    /* La capa cae justo sobre el hueco que ocupaba el medio, medido
+       en píxeles. Con `inset: 0` no vale: la foto no llena el
+       recuadro (va a `height: auto`, así que su alto depende de la
+       proporción del archivo). */
+    var r = viejos[0].getBoundingClientRect();
+    var rc = caja.getBoundingClientRect();
+
+    var capa = document.createElement("div");
+    capa.className = "pt-saliendo" + (Math.random() < 0.5 ? " pt-saliendo--rojo" : "");
+    capa.setAttribute("aria-hidden", "true");
+    /* `inset: auto` PRIMERO: la hoja compartida trae `inset: 0`, y
+       como es una abreviatura, ponerla después borraría el left y
+       el top que se acaban de calcular. */
+    capa.style.inset  = "auto";
+    capa.style.left   = (r.left - rc.left) + "px";
+    capa.style.top    = (r.top  - rc.top)  + "px";
+    capa.style.width  = r.width  + "px";
+    capa.style.height = r.height + "px";
+    viejos.forEach(function (n) { capa.appendChild(n); });
+
+    caja.appendChild(capa);
+    setTimeout(function () { capa.remove(); }, 105);
+  }
+
+  /* El tirón de canales sobre lo que ENTRA, sea lo que sea. */
+  function entrarConGlitch(nodo) {
+    if (sinMovimiento || !nodo) return;
+    nodo.classList.add("pt-entrando");
+    setTimeout(function () { nodo.classList.remove("pt-entrando"); }, 105);
+  }
+
   function visorMedios(lista, alt) {
     var principal = el("div", { class: "visor-medios__principal" });
     var tiras     = el("div", { class: "visor-medios__tiras" });
@@ -230,9 +372,26 @@
       if (v3d && window.Visor3D) window.Visor3D.cerrar(v3d);
 
       actual = (i + lista.length) % lista.length;
-      /* fuera lo anterior, pero se dejan las flechas */
-      $$("img, video, .visor3d", principal).forEach(function (n) { n.remove(); });
-      principal.insertBefore(nodoGrande(lista[actual]), principal.firstChild);
+
+      /* Fuera lo anterior, pero se dejan las flechas. Solo los
+         hijos DIRECTOS: los que ya están dentro de una capa
+         .pt-saliendo se están yendo y no hay que tocarlos otra
+         vez. */
+      var viejos = $$("img, video, .visor3d", principal).filter(function (n) {
+        return n.parentNode === principal;
+      });
+
+      /* AL 3D SE ENTRA SIN NADA, igual que en los prototipos: el
+         .glb tarda en montarse y el corte pasaría sobre el
+         recuadro del «Cargando…», no sobre la pieza. Al salir del
+         3D sí se corta. */
+      var entraA3D = lista[actual].tipo === "3d";
+      if (entraA3D) viejos.forEach(function (n) { n.remove(); });
+      else sacarConGlitch(principal, viejos);
+
+      var nuevo = nodoGrande(lista[actual]);
+      principal.insertBefore(nuevo, principal.firstChild);
+      if (!entraA3D) entrarConGlitch(nuevo);
       $$("button", tiras).forEach(function (b, j) {
         b.setAttribute("aria-current", j === actual);
       });
@@ -351,7 +510,22 @@
     whatsapp: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.08 4.49.7.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.42.25-.69.25-1.29.18-1.41-.08-.13-.28-.2-.57-.35M12.05 21.8h-.01a9.87 9.87 0 01-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 01-1.51-5.26c0-5.45 4.44-9.89 9.89-9.89 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 012.89 6.99c0 5.45-4.43 9.89-9.88 9.89m8.41-18.3A11.82 11.82 0 0012.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 005.69 1.45c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.17-3.49-8.42"/></svg>',
     correo:   '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2m0 4.24-7.47 4.67a1 1 0 01-1.06 0L4 8.24V6.4l8 5 8-5z"/></svg>',
     instagram:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.02 4.85.07 3.25.15 4.77 1.7 4.92 4.92.05 1.27.07 1.65.07 4.85s-.02 3.58-.07 4.85c-.15 3.23-1.67 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92C2.18 15.58 2.16 15.2 2.16 12s.02-3.58.07-4.85c.15-3.23 1.67-4.77 4.92-4.92C8.42 2.18 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 2.7.27.28 2.69.08 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95C23.73 2.7 21.31.28 16.95.08 15.67.01 15.26 0 12 0m0 5.84a6.16 6.16 0 100 12.32 6.16 6.16 0 000-12.32M12 16a4 4 0 110-8 4 4 0 010 8m6.41-11.85a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88"/></svg>',
-    lupa:     '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.4 15.4 21 21" stroke-linecap="round"/></svg>'
+    lupa:     '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.4 15.4 21 21" stroke-linecap="round"/></svg>',
+
+    /* 2026-08-17 · Los tres del tema. Antes eran los caracteres
+       ◑ ○ y la palabra "auto", y nadie adivinaba cuál era cuál.
+       Van en SVG y no en emoji (☀ ☾) a propósito: un emoji lo
+       dibuja cada sistema a su manera —en Windows sale de color y
+       más grande que la línea— mientras que un trazo heredado con
+       currentColor se ve igual en todas partes y sigue al tema. */
+    sol:  '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.4"/>' +
+          '<path d="M12 1.8v2.6M12 19.6v2.6M22.2 12h-2.6M4.4 12H1.8' +
+          'M19.2 4.8l-1.85 1.85M6.65 17.35 4.8 19.2M19.2 19.2l-1.85-1.85M6.65 6.65 4.8 4.8" stroke-linecap="round"/></svg>',
+    luna: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.9A9 9 0 119.1 3.5a7.2 7.2 0 0011.4 11.4z" stroke-linejoin="round"/></svg>',
+    /* Medio sol y media luna: la mitad de cada uno, que es
+       literalmente lo que hace el modo automático. */
+    auto: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.4"/>' +
+          '<path d="M12 3.6a8.4 8.4 0 000 16.8z" fill="currentColor" stroke="none"/></svg>'
   };
 
   /* ---------- buscador ------------------------------------ */
@@ -569,6 +743,14 @@
   /* La cabecera se encoge al bajar. Solo se engancha una vez,
      aunque se repinte la página al cambiar de idioma. */
   var cabeceraVigilada = false;
+  /* Estado del menú desplegable, fuera de `pintarCabecera` para que
+     los oyentes de cerrar (scroll, tocar fuera, Esc) se enganchen una
+     sola vez y sigan hablando con el menú que esté pintado ahora. */
+  var cierresEnganchados = false;
+  var yMenuAbierto = 0;
+  var menuEstaAbierto = function () { return false; };
+  var cerrarMenuActivo = function () {};
+  var enfocarHamb = function () {};
   function vigilarCabecera() {
     var cab = $("#cabecera");
     if (!cab || cabeceraVigilada) return;
@@ -589,14 +771,21 @@
      nunca llegó a tener nada publicado.
      "Novedades" es lo que antes era la portada: el carrusel y el
      video, sin las rejillas de destacados. */
-  /* [clave del nombre, archivo, clave de la palabra de encima].
-     La tercera solo se pinta cuando esa sección es la abierta. */
+  /* [clave del nombre, archivo, clave de la palabra de encima,
+      es de las tres principales].
+     La tercera solo se pinta cuando esa sección es la abierta.
+
+     2026-08-17 · La cuarta marca las TRES que en teléfono salen
+     sueltas en el encabezado, en su propia fila: la tienda, el
+     catálogo y el contacto. Decisión suya. Novedades y El taller
+     se quedan solo dentro de la hamburguesa.
+     En escritorio la marca no hace nada: ahí caben las cinco. */
   var MENU = [
-    ["nav_prototipos",   "index.html",      "nav_pre_prototipos"],
-    ["nav_trabajos",     "trabajos.html",   "nav_pre_trabajos"],
-    ["nav_novedades",    "novedades.html",  "nav_pre_novedades"],
-    ["nav_sobre",        "taller.html",     "nav_pre_sobre"],
-    ["nav_contacto",     "contacto.html",   "nav_pre_contacto"]
+    ["nav_prototipos",   "index.html",      "nav_pre_prototipos", true],
+    ["nav_trabajos",     "trabajos.html",   "nav_pre_trabajos",   true],
+    ["nav_novedades",    "novedades.html",  "nav_pre_novedades",  false],
+    ["nav_sobre",        "taller.html",     "nav_pre_sobre",      false],
+    ["nav_contacto",     "contacto.html",   "nav_pre_contacto",   true]
   ];
 
   function pintarCabecera() {
@@ -614,12 +803,35 @@
       "trabajos.html": trabajosVisibles().length === 0
     };
 
+    var visibles = MENU.filter(function (m) { return !vacias[m[1]]; });
+
+    /* La fila de tres accesos del teléfono. Va en el DOM SIEMPRE,
+       y es el CSS quien la enseña o la esconde según el ancho.
+       Los mismos tres enlaces existen también dentro de .menu; en
+       teléfono el CSS oculta allí los principales, de modo que
+       cada enlace se ve UNA sola vez y un lector de pantalla no
+       lo oye repetido —`display: none` lo saca también del árbol
+       de accesibilidad—. */
+    var rapida = el("nav", { class: "barra-rapida",
+                             "aria-label": t("nav_secciones") },
+      visibles.filter(function (m) { return m[3]; })
+              .map(function (m) {
+                return el("a", {
+                  class: "barra-rapida__a", href: m[1],
+                  "aria-current": m[1] === aqui ? "page" : null,
+                  texto: t(m[0])
+                });
+              })
+    );
+
     var menu = el("nav", { class: "menu", id: "menu" },
-      MENU.filter(function (m) { return !vacias[m[1]]; })
-          .map(function (m) {
+      visibles.map(function (m) {
             var activa = m[1] === aqui;
             var a = el("a", {
               href: m[1],
+              /* Con esto el CSS de teléfono oculta dentro del menú
+                 los tres que ya están en la fila de arriba. */
+              "data-principal": m[3] ? "1" : null,
               "aria-current": activa ? "page" : null
             });
             /* La palabra de encima solo existe en la sección
@@ -633,10 +845,29 @@
           })
     );
 
+    /* 2026-08-17 · Cada control lleva DOS rótulos y el CSS enseña
+       uno. En escritorio, donde el sitio son siete cosas apretadas
+       en una esquina, va el corto («ES», el glifo). En teléfono,
+       donde ahora viven dentro del menú desplegable y hay renglón
+       entero, va el largo con la palabra escrita.
+       No es duplicar contenido: solo uno está en el árbol de
+       accesibilidad en cada momento, porque el otro va con
+       `display: none`. Y el nombre hablado va en el aria-label del
+       botón, que no depende de cuál se enseñe. */
+    var NOMBRE_IDIOMA = { es: "Español", en: "English" };
     var botones = IDIOMAS.map(function (i) {
-      var b = el("button", { type: "button", texto: i.toUpperCase(), "aria-pressed": i === idioma });
-      b.addEventListener("click", function () { ponerIdioma(i); });
+      var b = el("button", { type: "button", "aria-pressed": i === idioma,
+                             "aria-label": NOMBRE_IDIOMA[i] });
+      b.appendChild(el("span", { class: "ctrl__corto", texto: i.toUpperCase() }));
+      /* El nombre de cada idioma va SIEMPRE en su propio idioma
+         —«Español», «English»—, nunca traducido. Es la convención
+         de todo selector de idioma que funciona: quien busca su
+         lengua la reconoce escrita como la escribe él. */
+      b.appendChild(el("span", { class: "ctrl__largo", texto: NOMBRE_IDIOMA[i] }));
       return b;
+    });
+    botones.forEach(function (b, n) {
+      b.addEventListener("click", function () { ponerIdioma(IDIOMAS[n]); });
     });
 
     /* Conmutador de tema, hermano del de idioma. Sol y luna: no
@@ -647,16 +878,38 @@
       auto:   { es: "Automático, según tu sistema",
                 en: "Automatic, follows your system" }
     };
-    /* El tercero dice "auto" con letras: un glifo no explicaría
-       que sigue la configuración del ordenador. */
-    var GLIFO_TEMA = { oscuro: "◑", claro: "○", auto: "auto" };
+    /* La palabra corta que va DENTRO del botón en teléfono. Es
+       distinta del aria-label de arriba, que es la frase completa
+       para quien escucha la página. */
+    var PALABRA_TEMA = {
+      oscuro: { es: "Oscuro", en: "Dark" },
+      claro:  { es: "Claro",  en: "Light" },
+      auto:   { es: "Automático", en: "Automatic" }
+    };
+    var ICONO_TEMA = { oscuro: ICONOS.luna, claro: ICONOS.sol, auto: ICONOS.auto };
     var botonesTema = TEMAS.map(function (m) {
       var b = el("button", {
-        type: "button", texto: GLIFO_TEMA[m],
+        type: "button",
         class: m === "auto" ? "tema__auto" : null,
         title: ETIQUETA_TEMA[m][idioma], "aria-label": ETIQUETA_TEMA[m][idioma],
         "aria-pressed": m === tema
       });
+      /* El sol y la luna se dibujan en los dos tamaños. El
+         AUTOMÁTICO no: en escritorio sigue diciendo «auto» con
+         letras, como siempre (él, 2026-08-17). Y con razón — un
+         círculo medio relleno no explica «sigue lo que tenga
+         configurado tu computadora»; la palabra sí. */
+      if (m === "auto") {
+        b.appendChild(el("span", { class: "ctrl__corto", texto: "auto" }));
+      } else {
+        b.appendChild(el("span", { class: "tema__icono", html: ICONO_TEMA[m] }));
+      }
+      /* En teléfono los tres llevan su palabra, y el automático
+         recupera además su icono, que ahí sí acompaña al texto. */
+      if (m === "auto") {
+        b.appendChild(el("span", { class: "tema__icono--movil", html: ICONO_TEMA[m] }));
+      }
+      b.appendChild(el("span", { class: "ctrl__largo", texto: PALABRA_TEMA[m][idioma] }));
       b.dataset.tema = m;
       b.addEventListener("click", function () { ponerTema(m); });
       return b;
@@ -670,13 +923,77 @@
     var hamb = el("button", { class: "hamburguesa", type: "button",
                               "aria-label": "Menú", "aria-expanded": "false",
                               "aria-controls": "menu", html: "&#9776;" });
-    hamb.addEventListener("click", function () {
-      var abierto = menu.classList.toggle("abierto");
+    /* 2026-08-17 · Abrir y cerrar en un solo sitio, porque ahora se
+       cierra desde cuatro lados distintos: el propio botón, al
+       desplazar la página, al tocar fuera del encabezado y con Esc.
+       La clase va también en la CABECERA y no solo en el menú:
+       desde que la lupa, el idioma y el tema viven dentro del
+       desplegable hay que enseñarlos y esconderlos con él, y son
+       hermanos de .menu, no hijos. Con la clase en el padre común
+       el CSS los alcanza sin depender del orden de los hermanos. */
+    function ponerMenu(abierto) {
+      menu.classList.toggle("abierto", abierto);
+      host.classList.toggle("cabecera--abierta", abierto);
       hamb.setAttribute("aria-expanded", abierto ? "true" : "false");
-    });
+      menuEstaAbierto = function () { return menu.classList.contains("abierto"); };
+      if (abierto) yMenuAbierto = window.scrollY;
+    }
+    menuEstaAbierto = function () { return menu.classList.contains("abierto"); };
 
+    hamb.addEventListener("click", function () { ponerMenu(!menuEstaAbierto()); });
+
+    /* Los tres oyentes de cerrar cuelgan del documento y de la
+       ventana, así que se enganchan UNA SOLA VEZ. `pintarCabecera`
+       se vuelve a llamar cada vez que se cambia de idioma, y sin
+       este candado se irían acumulando copias en cada cambio,
+       todas apuntando a menús viejos que ya no están en la página.
+       Por eso hablan con `cerrarMenuActivo`, una variable de fuera
+       que siempre apunta al menú recién pintado. */
+    cerrarMenuActivo = function () { ponerMenu(false); };
+    enfocarHamb = function () { hamb.focus(); };
+    if (!cierresEnganchados) {
+      cierresEnganchados = true;
+
+      /* Se recoge en cuanto empiezas a desplazar la página, para
+         arriba o para abajo (él). El umbral de 4 px NO es capricho:
+         en el móvil, al aparecer o desaparecer la barra de
+         direcciones del navegador se dispara un evento de scroll sin
+         que el dedo haya movido nada, y sin umbral el menú se
+         cerraría solo nada más abrirlo. */
+      window.addEventListener("scroll", function () {
+        if (menuEstaAbierto() && Math.abs(window.scrollY - yMenuAbierto) > 4) {
+          cerrarMenuActivo();
+        }
+      }, { passive: true });
+
+      /* Y al tocar cualquier cosa que no sea el encabezado. Va en
+         `pointerdown` y no en `click`: así se recoge en cuanto
+         apoyas el dedo, no al levantarlo, que es cuando se espera
+         que ya esté fuera de en medio.
+         Comprueba `contains` sobre la cabecera, de modo que pulsar
+         DENTRO del menú —cambiar de idioma, de tema— no lo cierra. */
+      document.addEventListener("pointerdown", function (ev) {
+        var cab = document.getElementById("cabecera");
+        if (menuEstaAbierto() && cab && !cab.contains(ev.target)) cerrarMenuActivo();
+      });
+
+      /* Esc lo cierra y devuelve el foco al botón, que es de donde
+         salió: si no, quien navega con teclado se queda con el foco
+         en un enlace que acaba de desaparecer. */
+      document.addEventListener("keydown", function (ev) {
+        if (ev.key === "Escape" && menuEstaAbierto()) { cerrarMenuActivo(); enfocarHamb(); }
+      });
+    }
+
+    /* La lupa lleva ahora su palabra al lado, que solo se ve en
+       teléfono: dentro del menú desplegado es un renglón más entre
+       renglones con nombre, y una lupa suelta ahí no se lee como
+       «Buscar» sino como un adorno. */
     var lupa = el("button", { class: "lupa", type: "button",
-      "aria-label": t("buscar"), html: ICONOS.lupa });
+      "aria-label": t("buscar") }, [
+      el("span", { class: "lupa__icono", html: ICONOS.lupa }),
+      el("span", { class: "ctrl__largo", texto: t("buscar") })
+    ]);
     lupa.addEventListener("click", abrirBuscador);
 
     host.innerHTML = "";
@@ -704,15 +1021,26 @@
         el("img", { class: "marca__perfil", src: "img/marca/perfil.webp", alt: "" })
       ]),
       hamb,
+      rapida,
       menu,
-      lupa,
-      /* Idioma y tema van dentro de UNA caja. Sueltos eran dos items
-         del flex y en móvil la fila los partía en renglones
-         distintos: el idioma acababa abajo con el menú y el tema
-         arriba con la lupa. Agrupados no se separan nunca. */
-      el("div", { class: "controles" }, [
-        el("div", { class: "idioma" }, botones),
-        el("div", { class: "tema" }, botonesTema)
+      /* 2026-08-17 · Lupa + idioma + tema cuelgan de UN envoltorio.
+         Antes eran dos items sueltos de la fila.
+         En escritorio siguen en la esquina de siempre. En teléfono
+         el envoltorio se va DENTRO del desplegable, debajo de
+         Novedades y El taller, y aparece y desaparece con él.
+         Agrupados se mueven de una pieza; sueltos habría que
+         colocar dos cosas y la fila se quedaba con el hueco de una
+         de ellas. */
+      el("div", { class: "cabecera__utiles" }, [
+        lupa,
+        /* Idioma y tema van dentro de UNA caja. Sueltos eran dos items
+           del flex y en móvil la fila los partía en renglones
+           distintos: el idioma acababa abajo con el menú y el tema
+           arriba con la lupa. Agrupados no se separan nunca. */
+        el("div", { class: "controles" }, [
+          el("div", { class: "idioma" }, botones),
+          el("div", { class: "tema" }, botonesTema)
+        ])
       ])
     ]));
   }
@@ -826,17 +1154,156 @@
        (2026-08-12): ensuciaba la vitrina. Se sigue pasando
        `es_render` en la ficha de la pieza, donde sí tiene sentido
        avisar de que la imagen es un render y no una foto. */
-    return el("a", { class: "tarjeta", href: "trabajo.html?id=" + w.slug }, [
-      marcoImagen(w.imagen, false, !w.publicado, alt),
-      /* h2 y no h3 (15/08/2026): en Exhibición la cuadrícula cuelga
-         directamente del <h1> de la página, sin ninguna sección
-         intermedia, así que con h3 la jerarquía saltaba de 1 a 3.
-         Es como una tabla de contenidos a la que le falta un
-         escalón. El aspecto no cambia: el CSS de abajo apunta a los
-         dos niveles. */
-      el("h2", { texto: tx(w.titulo) })
+    /* 2026-08-16 · Se puede pasar la galería SIN abrir la pieza, igual
+       que en la cuadrícula de Prototipos.
+
+       La tarjeta dejó de ser un <a> por eso: un enlace no puede
+       contener botones —el navegador los desanida— y las flechas van
+       dentro. Ahora es un <div> y el enlace de verdad es el del
+       título, que se estira sobre toda la tarjeta con un ::after. Las
+       flechas quedan por encima por z-index. Es el mismo arreglo que
+       ya se hizo en js/prototipos.js; ver el comentario largo de allí.
+
+       Enter y espacio siguen funcionando solos: el título es un <a>
+       de verdad, no un div con rol. */
+    var fotos = fotosDe(w);
+    var i = fotoTarjeta[w.slug] || 0;
+    if (i >= fotos.length) { i = 0; fotoTarjeta[w.slug] = 0; }
+
+    var marco = marcoImagen(fotos[i] || w.imagen, false, !w.publicado, alt);
+    if (fotos.length > 1) {
+      marco.appendChild(el("button", {
+        class: "tarjeta__flecha tarjeta__flecha--izq", type: "button",
+        "data-paso": "-1", "aria-label": t("pt_anterior"), texto: "‹"
+      }));
+      marco.appendChild(el("button", {
+        class: "tarjeta__flecha tarjeta__flecha--der", type: "button",
+        "data-paso": "1", "aria-label": t("pt_siguiente"), texto: "›"
+      }));
+      marco.appendChild(el("span", {
+        class: "tarjeta__cuenta", texto: (i + 1) + "/" + fotos.length
+      }));
+    }
+
+    /* h2 y no h3 (15/08/2026): en Exhibición la cuadrícula cuelga
+       directamente del <h1> de la página, sin ninguna sección
+       intermedia, así que con h3 la jerarquía saltaba de 1 a 3.
+       Es como una tabla de contenidos a la que le falta un
+       escalón. El aspecto no cambia: el CSS de abajo apunta a los
+       dos niveles. */
+    return el("div", { class: "tarjeta", "data-slug": w.slug }, [
+      marco,
+      el("h2", {}, [
+        el("a", { class: "tarjeta__abrir", href: "trabajo.html?id=" + w.slug,
+                  texto: tx(w.titulo) })
+      ])
     ]);
   }
+
+  /* GLITCH AL PASAR DE FOTO EN LA CUADRÍCULA (2026-08-17).
+     El de más arriba, `sacarConGlitch`, sirve para cambiar de MEDIO
+     dentro de la ficha de una pieza: corta el nodo viejo mientras se
+     va. Aquí no se puede, porque el <img> se queda y solo le cambia
+     el `src`. Así que se clona: se deja encima una copia congelada de
+     la foto vieja que se desintegra en 105 ms mientras la nueva ya
+     está debajo.
+
+     Es el mismo efecto que la cuadrícula de Prototipos —ver
+     `cambiarFoto` en js/prototipos.js—, y usa sus mismas clases, que
+     viven en estilo.css y por eso están disponibles aquí. */
+  function cambiarFoto(img, nuevaSrc) {
+    if (!img || img.getAttribute("src") === nuevaSrc) return;
+    if (menosMovimiento) { ponerFoto(img, nuevaSrc); return; }
+
+    var caja = img.parentNode;
+    if (!caja) { ponerFoto(img, nuevaSrc); return; }
+
+    /* dos glitches superpuestos se ven sucios y dejan basura en el
+       DOM si se pulsa rápido */
+    var previo = caja.querySelector(".pt-glitch");
+    if (previo) previo.remove();
+
+    /* `currentSrc` y no `src`: es la medida que el navegador tiene
+       de verdad en pantalla (la de teléfono, si eligió esa). Con
+       `src` a secas, la copia congelada se bajaba en grande solo
+       para un fantasma de 105 ms. */
+    var vieja = img.currentSrc || img.getAttribute("src");
+    /* Cara o cruz en CADA cambio, no una vez por sesión: si no, el
+       desfase de color se vuelve predecible. */
+    var rojo = Math.random() < 0.5;
+
+    var capa = document.createElement("span");
+    capa.className = "pt-glitch" + (rojo ? " pt-glitch--rojo" : "");
+    capa.setAttribute("aria-hidden", "true");
+    capa.innerHTML = '<img src="' + vieja + '" alt="">' +
+                     '<img src="' + vieja + '" alt="">' +
+                     '<img src="' + vieja + '" alt="">';
+
+    /* La copia tiene que caer EXACTAMENTE sobre la original, así que
+       se mide y se coloca en píxeles: con `inset: 0` no basta, porque
+       una imagen es un elemento reemplazado y usa su propio tamaño.
+       Se copia también el `object-fit`. */
+    var rImg = img.getBoundingClientRect();
+    var rCaja = caja.getBoundingClientRect();
+    capa.style.left   = (rImg.left - rCaja.left) + "px";
+    capa.style.top    = (rImg.top  - rCaja.top)  + "px";
+    capa.style.width  = rImg.width  + "px";
+    capa.style.height = rImg.height + "px";
+
+    var encaje = getComputedStyle(img).objectFit;
+    Array.prototype.forEach.call(capa.children, function (c) {
+      c.style.objectFit = encaje;
+    });
+
+    caja.appendChild(capa);
+
+    ponerFoto(img, nuevaSrc);
+    img.classList.remove("pt-entrando", "pt-entrando--rojo");
+    void img.offsetWidth;                 /* reinicia la animación */
+    img.classList.add("pt-entrando");
+    if (rojo) img.classList.add("pt-entrando--rojo");
+
+    /* 105 ms: la animación dura 85 y sobran 20 de margen. */
+    setTimeout(function () {
+      capa.remove();
+      img.classList.remove("pt-entrando", "pt-entrando--rojo");
+    }, 105);
+  }
+
+  /* Solo las IMÁGENES de la pieza: en la cuadrícula no se pasa a un
+     video ni al visor 3D, que no se pueden enseñar en una miniatura. */
+  function fotosDe(w) {
+    return mediosDe(w).filter(function (m) { return m.tipo === "imagen"; })
+                      .map(function (m) { return m.src; });
+  }
+
+  var fotoTarjeta = {};
+
+  /* Un solo escuchador para toda la página, puesto una vez. Las
+     flechas paran el evento: sin eso, cada flechazo abriría la pieza
+     porque el enlace del título cubre la tarjeta entera. */
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest && e.target.closest(".tarjeta__flecha");
+    if (!b) return;
+    e.preventDefault();
+    e.stopPropagation();
+    var tarjeta = b.closest(".tarjeta");
+    var slug = tarjeta.getAttribute("data-slug");
+    var w = (window.TRABAJOS || []).filter(function (x) { return x.slug === slug; })[0];
+    if (!w) return;
+    var fotos = fotosDe(w);
+    if (fotos.length < 2) return;
+
+    var i = (fotoTarjeta[slug] || 0) + parseInt(b.getAttribute("data-paso"), 10);
+    if (i < 0) i = fotos.length - 1;
+    if (i >= fotos.length) i = 0;
+    fotoTarjeta[slug] = i;
+
+    var img = tarjeta.querySelector(".tarjeta__marco img");
+    if (img) cambiarFoto(img, fotos[i]);
+    var cuenta = tarjeta.querySelector(".tarjeta__cuenta");
+    if (cuenta) cuenta.textContent = (i + 1) + "/" + fotos.length;
+  });
 
   function tarjetaProducto(p) {
     var meta = [];
@@ -1163,8 +1630,16 @@
        allá. Y da la vuelta al llegar al final: con seis piezas,
        un botón muerto en los extremos estorba más de lo que
        avisa. */
+    /* 2026-08-17 · Los tres botones salen de .ficha__datos y pasan a
+       ser hijos directos de .ficha. Motivo: en teléfono él los quiere
+       ARRIBA DEL TODO, antes de la foto, y desde dentro de la columna
+       de datos —que en teléfono va debajo de la foto— no hay forma de
+       subirlos. Sueltos, el CSS los coloca con `order` en teléfono y
+       con `grid-template-areas` en escritorio, donde siguen saliendo
+       exactamente donde estaban: arriba de la columna derecha. */
+    var navPiezas = navegarPiezas(w);
+
     var datos = el("div", { class: "ficha__datos" }, [
-      navegarPiezas(w),
       el("h1", { texto: tx(w.titulo) })
     ]);
 
@@ -1172,7 +1647,12 @@
 
     var filas = [];
     if (w.anio)   filas.push([t("ficha_ano"), w.anio + (w.anio_estimado ? " (?)" : "")]);
-    if (w.tipo)   filas.push([t("ficha_tipo"), etiqueta("tipo", w.tipo)]);
+    /* 2026-08-15 · Fuera la fila TIPO, en todas las piezas. Era el
+       último sitio donde se veía la categoría —«exterior», «mesa»,
+       «accesorio»—: de la cuadrícula la quitó él el 14/08 y de los
+       filtros el 11/08. El campo `tipo` SIGUE en datos/trabajos.js
+       a propósito: lo usan el buscador y el texto alternativo de
+       las fotos, que no se ven pero sí se buscan. */
     if ((w.materiales || []).length) filas.push([t("ficha_material"), w.materiales.map(function (m) { return etiqueta("material", m); }).join(", ")]);
     if ((w.acabado || []).length)    filas.push([t("ficha_acabado"), w.acabado.map(function (a) { return etiqueta("acabado", a); }).join(" / ")]);
     if (w.medidas) filas.push([t("ficha_medidas"), tx(w.medidas)]);
@@ -1186,8 +1666,13 @@
     var como = tx(w.como);
     if (como && como.length) {
       datos.appendChild(el("h2", { class: "rotulo", style: "margin-top:2.4rem", texto: t("ficha_como") }));
-      datos.appendChild(el("ul", { class: "lista-como" }, como.map(function (c) {
-        return el("li", { texto: c });
+      /* 15/08/2026 · PÁRRAFOS, no viñetas (él). Lo que va aquí no
+         es una lista de piezas sino un texto seguido, y la raya de
+         la viñeta lo troceaba. Cada entrada del array es un
+         párrafo. La lista con guiones se sigue usando en la ficha
+         de Prototipos — ver `.lista-como` más abajo. */
+      datos.appendChild(el("div", { class: "texto-como" }, como.map(function (c) {
+        return el("p", { texto: c });
       })));
     }
 
@@ -1197,7 +1682,7 @@
       el("a", { class: "boton", href: enlaceWhatsApp(tx(w.titulo)), target: "_blank", rel: "noopener", texto: t("ficha_escribir") })
     ]));
 
-    host.appendChild(el("div", { class: "ficha" }, [medios, datos]));
+    host.appendChild(el("div", { class: "ficha" }, [navPiezas, medios, datos]));
     revelar(host, ".ficha__medios, .ficha__datos", 120);
   };
 
@@ -1260,7 +1745,7 @@
     if ((p.galeria || []).length) {
       medios.appendChild(el("div", { class: "ficha__galeria" }, [p.imagen].concat(p.galeria).filter(Boolean).map(function (src) {
         var im = el("img", { src: src, alt: "", loading: "lazy" });
-        im.addEventListener("click", function () { $("#img-grande").src = src; });
+        im.addEventListener("click", function () { ponerFoto($("#img-grande"), src); });
         return im;
       })));
     }
@@ -1362,7 +1847,7 @@
       datos.appendChild(el("ul", { class: "lista-como" }, det.map(function (d) { return el("li", { texto: d }); })));
     }
 
-    host.appendChild(el("div", { class: "ficha" }, [medios, datos]));
+    host.appendChild(el("div", { class: "ficha" }, [navPiezas, medios, datos]));
     revelar(host, ".ficha__medios, .ficha__datos", 120);
   };
 

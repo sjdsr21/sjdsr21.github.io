@@ -12,9 +12,11 @@
    plazo y el precio se mueve con las opciones. Una HERRAMIENTA
    tiene precio fijo y sale del taller ya hecha.
 
-   ¡OJO! Todo lo que tiene ejemplo:true son inventados por mí
-   para que veas la página funcionando. Los precios NO son
-   tuyos. Bórralos o corrígelos antes de mostrarle esto a nadie.
+   ejemplo:true marcaba los precios que había inventado yo. El
+   07/09/2026 él dio por corroborados TODOS los de este archivo,
+   así que ya no queda ninguno: son precios oficiales.
+   Si algún día se añade un producto con precio tentativo, se
+   vuelve a marcar ejemplo:true y se revisa antes de publicar.
 
    Campos:
      precio_usd     número. Precio base, sin opciones.
@@ -242,7 +244,7 @@ window.TIENDA = [
     slug: "limpiador-madera",
     familia: "herramienta",
     categoria: "insumo",
-    ejemplo: true,
+    ejemplo: false,   /* corroborado por él, 07/09/2026 */
     publicado: false,   /* inventado por mí y sin foto: fuera hasta que exista */
     destacado: true,
     nombre: { es: "Limpiador para madera barnizada", en: "Cleaner for varnished wood" },
@@ -270,7 +272,7 @@ window.TIENDA = [
     slug: "esquineros-marcos",
     familia: "herramienta",
     categoria: "herramienta",
-    ejemplo: true,
+    ejemplo: false,   /* corroborado por él, 07/09/2026 */
     publicado: false,   /* inventado por mí y sin foto: fuera hasta que exista */
     destacado: false,
     nombre: { es: "Esquineros para prensar marcos", en: "Corner clamps for frames" },
@@ -307,7 +309,7 @@ window.TIENDA = [
     slug: "bandejas-gaveta",
     familia: "herramienta",
     categoria: "impreso3d",
-    ejemplo: true,
+    ejemplo: false,   /* corroborado por él, 07/09/2026 */
     publicado: false,   /* inventado por mí y sin foto: fuera hasta que exista */
     destacado: true,
     nombre: { es: "Bandejas organizadoras para gaveta", en: "Drawer organiser trays" },
@@ -354,7 +356,7 @@ window.TIENDA = [
     slug: "lija-taller",
     familia: "herramienta",
     categoria: "insumo",
-    ejemplo: true,
+    ejemplo: false,   /* corroborado por él, 07/09/2026 */
     publicado: false,   /* inventado por mí y sin foto: fuera hasta que exista */
     destacado: false,
     nombre: { es: "Lija de taller", en: "Shop sandpaper" },

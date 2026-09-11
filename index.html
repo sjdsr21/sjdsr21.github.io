@@ -152,10 +152,17 @@
       <div class="pt-panel__visual">
         <div class="pt-visual" id="pt-pn-visual">
           <div class="pt-visual__lienzo" id="pt-pn-lienzo"></div>
-          <!-- Miniaturas de los medios, arriba a la izquierda y por
-               encima del lienzo. Se ocultan si solo hay uno. -->
-          <div class="pt-medios" id="pt-pn-medios" hidden></div>
         </div>
+        <!-- 2026-08-17 - Las miniaturas de los medios. Estaban DENTRO
+             de .pt-visual, flotando arriba a la izquierda encima de la
+             foto: tapaban la pieza y eran de 42px. Ahora cuelgan de
+             .pt-panel__visual, o sea DEBAJO del recuadro, en
+             cuadricula y mas grandes. Fuera de .pt-visual a proposito:
+             ese contenedor lleva aspect-ratio y position:relative, y
+             desde dentro no hay forma de quedar debajo.
+             El id no cambia, asi que js/prototipos.js las sigue
+             encontrando igual. Se ocultan si solo hay un medio. -->
+        <div class="pt-medios" id="pt-pn-medios" hidden></div>
       </div>
 
       <!-- Columna derecha: lo que se configura -->
@@ -187,6 +194,7 @@
       </div>
     </div>
   </aside>
+  <script src="datos/imagenes.js"></script>
 
   <script src="datos/marca.js"></script>
   <script src="datos/textos.js"></script>

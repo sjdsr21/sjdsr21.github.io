@@ -10,7 +10,15 @@
   <link rel="stylesheet" href="css/estilo.css">
   <link rel="stylesheet" href="css/escaner.css">
 </head>
-<body data-pagina="taller">
+<!-- 2026-08-17 - Decía data-pagina="taller" y eso hacía que al
+     cargar corriera paginas.taller(), que lo primero que hace es
+     escribir en #titulo. Aquí no hay #titulo, así que reventaba con
+     un TypeError antes de traducir nada: la página se quedaba
+     siempre en español aunque el sitio estuviera en inglés.
+     "noencontrado" no está en el mapa `paginas`, o sea que no corre
+     ninguna función de página - que es lo correcto: el texto de
+     aquí es fijo y está escrito en el HTML. -->
+<body data-pagina="noencontrado">
 
   <header id="cabecera"></header>
 
@@ -26,6 +34,7 @@
   </main>
 
   <footer id="pie"></footer>
+  <script src="datos/imagenes.js"></script>
 
   <script src="datos/marca.js"></script>
   <script src="datos/textos.js"></script>
