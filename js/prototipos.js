@@ -873,9 +873,15 @@
       av.className = "pt-personalizar";
       $("#pt-pn-resumen").insertAdjacentElement("afterend", av);
     }
+    /* 2026-09-14 · Segundo enlace, {b}…{/b}, a la propuesta de ejemplo
+       de El Taller (él lo pidió en las fichas de Prototipos). Mismo
+       aviso: la propuesta es lo que recibe quien personaliza. El ancla
+       `propuesta` es otra dependencia entre archivos, como `maderas`. */
     av.innerHTML = t("pt_personalizar")
       .replace("{a}", '<a href="taller.html#maderas">')
-      .replace("{/a}", "</a>");
+      .replace("{/a}", "</a>")
+      .replace("{b}", '<a href="taller.html#propuesta">')
+      .replace("{/b}", "</a>");
 
     $("#pt-pn-opciones").innerHTML = (p.opciones || []).map(function (g) {
       return '<div class="pt-grupo">' +

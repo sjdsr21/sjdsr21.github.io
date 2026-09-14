@@ -1392,6 +1392,9 @@ body:not([data-pagina="novedades"]) .portada .bajada {
 
 .prosa { max-width: 62ch; }
 .prosa p { margin: 0 0 1.15rem; }
+/* La firma de la intro de El taller (14/09/2026, él): al margen
+   derecho, como al pie de una carta. */
+.prosa .firma { text-align: right; margin-top: 1.8rem; }
 .pasos { list-style: none; counter-reset: n; padding: 0; margin: 2rem 0 0; max-width: 62ch; }
 .pasos li { counter-increment: n; position: relative; padding-left: 3rem; margin-bottom: 1.6rem; }
 .pasos li::before {
@@ -1400,19 +1403,114 @@ body:not([data-pagina="novedades"]) .portada .bajada {
   font-weight: 700; font-size: 0.875rem; color: var(--realce); letter-spacing: .05em;
 }
 .pasos strong { display: block; letter-spacing: -.02em; }
+/* 2026-09-14 · El enlace «Mira cómo es una propuesta» se tiene que ver:
+   lleva a la propuesta desglosada más abajo (#propuesta), y a secas,
+   heredando el color del texto, pasaba por una palabra más. Siena
+   (--realce escribe, 7:1 sobre negro y 5,5:1 sobre blanco), negrita y
+   un subrayado grueso, más una flecha HACIA ABAJO de trazos rectos
+   —cero curvas— que dice dónde está lo que promete. Al pasar el ratón
+   la flecha baja un poco; con movimiento reducido se queda quieta. */
+.pasos__ver {
+  color: var(--realce); font-weight: 700; white-space: nowrap;
+  text-decoration: underline; text-decoration-thickness: 2px;
+  text-underline-offset: .24em;
+}
+.pasos__ver:hover, .pasos__ver:focus-visible { text-decoration-thickness: 3px; }
+.pasos__flecha {
+  display: inline-block; width: .62em; height: .95em;
+  margin-left: .32em; vertical-align: -.14em;
+  fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: square;
+  transition: transform .35s var(--curva);
+}
+.pasos__ver:hover .pasos__flecha,
+.pasos__ver:focus-visible .pasos__flecha { transform: translateY(3px); }
+@media (prefers-reduced-motion: reduce) {
+  .pasos__flecha { transition: none; }
+  .pasos__ver:hover .pasos__flecha,
+  .pasos__ver:focus-visible .pasos__flecha { transform: none; }
+}
 
 /* --- El taller -------------------------------------------- */
 
+/* 2026-09-14 · TRES COLUMNAS (él): índice a la izquierda, el texto en
+   el medio y el carrusel CUADRADO a la derecha; el h1 «El taller»
+   encima de las tres. Van por grid-template-areas, así que el orden
+   del HTML (índice, foto, texto) no manda. Por debajo de 1060 el
+   índice sube a una fila propia y texto y foto quedan lado a lado; en
+   teléfono, una sola columna: índice, texto, foto. */
+/* 2026-09-14, segunda vuelta (él): el índice SUBE a una fila horizontal
+   bajo el h1, y debajo quedan solo texto y carrusel. Así el texto gana
+   ancho y ocupa menos alto; por eso aquí se le quita el tope de 62ch
+   de .prosa. */
 .intro-taller {
-  display: grid; grid-template-columns: 1fr 1.05fr;
-  gap: clamp(2rem, 5vw, 4.5rem); align-items: start;
+  display: grid; align-items: start;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);   /* 2/3 texto, 1/3 carrusel (él) */
+  grid-template-areas: "indice indice" "texto foto";
+  column-gap: clamp(1.6rem, 3.5vw, 3.5rem); row-gap: clamp(1.6rem, 3vw, 2.6rem);
 }
-@media (max-width: 820px) { .intro-taller { grid-template-columns: 1fr; } }
+.intro-taller__texto.prosa { max-width: none; }
+.indice-taller       { grid-area: indice; }
+.intro-taller__texto { grid-area: texto; }
+.intro-taller__foto  { grid-area: foto; }
+@media (max-width: 1060px) {
+  .intro-taller { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); }
+}
+@media (max-width: 820px) {
+  .intro-taller { grid-template-columns: 1fr; grid-template-areas: "indice" "texto" "foto"; }
+}
+
+/* El índice. Al pasar el ratón —o con el foco del teclado— aparece a
+   la izquierda una flecha que apunta al texto. Su hueco está reservado
+   siempre (padding-left), para que el texto no salte al aparecer. */
+.indice-taller { padding-bottom: .5rem; border-bottom: 1px solid var(--linea); }
+.indice-taller ol {
+  list-style: none; margin: 0; padding: 0;
+  display: flex; flex-wrap: wrap; column-gap: 1.8rem;
+}
+.indice-taller a {
+  position: relative; display: block; padding: .35rem 0 .35rem 1.3rem;
+  color: var(--apagado); text-decoration: none; font-size: 0.9375rem; line-height: 1.3;
+  transition: color .15s;
+}
+.indice-taller a::before {
+  content: "→"; position: absolute; left: 0; top: .35rem;
+  color: var(--realce); opacity: 0; transform: translateX(-.4rem);
+  transition: opacity .15s, transform .15s;
+}
+.indice-taller a:hover, .indice-taller a:focus-visible { color: var(--tinta); }
+.indice-taller a:hover::before,
+.indice-taller a:focus-visible::before { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { .indice-taller a::before { transition: none; } }
+/* (La fila del índice ya no depende del ancho: va en fila siempre.) */
+
+@media (max-width: 780px) {           /* 44 px de alto: lo que acierta un dedo */
+  .indice-taller a { padding-top: .8rem; padding-bottom: .8rem; }   /* .7 daba 42 px */
+  .indice-taller a::before { top: .8rem; }
+}
+/* Que la cabecera fija no tape el título de la sección al llegar. */
+#introduccion, #encargo, #propuesta, #materiales, #maderas { scroll-margin-top: 9rem; }
 .retrato {
   width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: 50% 30%;
   background: var(--caja); border-radius: var(--radio);
 }
 .pie-foto { color: var(--apagado); font-size: 0.875rem; margin-top: .7rem; }
+
+/* Carrusel de la intro (14/09/2026): las fotos se apilan en el mismo
+   marco 3:4 del retrato de antes y se funden. La que se ve lleva
+   .activa; el cambio lo hace iniciarCarruselIntro() en js/sitio.js. */
+.carrusel-intro {
+  /* Cuadrado desde el 14/09/2026 (él); antes 3:4 como el retrato. */
+  position: relative; aspect-ratio: 1 / 1; overflow: hidden;
+  background: var(--caja); border-radius: var(--radio);
+}
+.carrusel-intro .retrato {
+  position: absolute; inset: 0; height: 100%; aspect-ratio: auto;
+  opacity: 0; transition: opacity .9s ease;
+}
+.carrusel-intro .retrato.activa { opacity: 1; }
+@media (prefers-reduced-motion: reduce) {
+  .carrusel-intro .retrato { transition: none; }
+}
 
 .dos-columnas {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
@@ -1429,6 +1527,16 @@ body:not([data-pagina="novedades"]) .portada .bajada {
 .lista-marcas b { flex: 0 0 11rem; font-weight: 700; letter-spacing: -.01em; }
 .lista-marcas span { color: var(--apagado); }
 @media (max-width: 560px) { .lista-marcas li { flex-direction: column; gap: .15rem; } }
+/* 2026-09-14 · El ícono isométrico de cada material (sprite en taller.html).
+   Trazo en --tinta y el detalle que distingue al material en --realce, así
+   que el tema claro sale solo. Centrado en la fila porque la fila va por
+   línea base y un SVG no tiene la suya. En teléfono la fila se apila y el
+   ícono queda arriba, un poco más chico. */
+.mat-icono {
+  flex: 0 0 3.5rem; width: 3.5rem; height: 3.5rem;
+  align-self: center; color: var(--tinta); overflow: visible;
+}
+@media (max-width: 560px) { .mat-icono { width: 3rem; height: 3rem; flex-basis: auto; align-self: flex-start; margin-bottom: .35rem; } }
 
 /* --- Las maderas (taller.html#maderas) --------------------
    La muestra de color va DIBUJADA, no es una foto: publicar
@@ -1446,13 +1554,15 @@ body:not([data-pagina="novedades"]) .portada .bajada {
 .maderas li {
   padding: .9rem 0; border-bottom: 1px solid var(--linea);
   display: grid; column-gap: 1rem; font-size: 1rem;
-  grid-template-columns: 3.6rem 11rem 1fr;
+  /* 2:1 y veta horizontal desde el 14/09/2026 (él). Las maestras
+     que él retoca de color están en E:\Contenido PrototipoAgo\Maderas. */
+  grid-template-columns: 7.2rem 11rem 1fr;
   grid-template-areas: "muestra nombre texto" "muestra especie texto";
   align-items: baseline;
 }
 .maderas i, .maderas img {
   grid-area: muestra; align-self: center;
-  width: 3.6rem; height: 3.6rem; background: var(--m, var(--linea));
+  width: 7.2rem; height: 3.6rem; background: var(--m, var(--linea));
   border: 1px solid var(--linea); object-fit: cover; display: block;
 }
 .maderas-credito { margin-top: 1.2rem; font-size: 0.8125rem; color: var(--apagado); max-width: 62ch; }
@@ -1463,7 +1573,7 @@ body:not([data-pagina="novedades"]) .portada .bajada {
 .maderas span { grid-area: texto; color: var(--apagado); }
 @media (max-width: 560px) {
   .maderas li {
-    grid-template-columns: 3.6rem 1fr;
+    grid-template-columns: 7.2rem 1fr;
     grid-template-areas: "muestra nombre" "muestra especie" "texto texto";
     row-gap: .15rem;
   }
@@ -1494,10 +1604,15 @@ body:not([data-pagina="novedades"]) .portada .bajada {
   background: var(--papel);
 }
 .tramo__texto { position: relative; }
-.tramo__recorte img {
-  position: absolute; left: 0; width: 100%; height: auto; max-width: none;
-  top: calc(var(--ini) / var(--alto) * -100%);
-}
+/* 14/09/2026 · Cada tramo es YA su propio archivo (antes era una sola
+   imagen gigante desplazada con --ini): el recorte solo reserva el
+   hueco con --alto y la imagen lo llena. Van dos por tramo, oscura y
+   clara; se ve la del tema. `display:none` + loading=lazy hace que la
+   del otro tema ni se descargue. */
+.tramo__recorte img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.tramo__recorte .tramo__claro { display: none; }
+[data-tema="claro"] .tramo__recorte .tramo__oscuro { display: none; }
+[data-tema="claro"] .tramo__recorte .tramo__claro  { display: block; }
 /* El tramo del encabezado (fecha y título) va sin llave ni nota, y
    no cuenta: la numeración arranca en el precio. Decisión suya. */
 .tramo--sin-nota { counter-increment: none; }

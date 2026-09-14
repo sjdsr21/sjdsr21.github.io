@@ -418,25 +418,7 @@ window.TRABAJOS = [
 
 ];
 
-/* ORDEN DE PRUEBA — aleatorio, 14/09/2026 (él: "de forma aleatoria, solo
-   para probar"). js/sitio.js (trabajosVisibles) pinta la Exhibición en este
-   orden; lo que no esté aquí sale detrás, en el orden del archivo.
-   PARA VOLVER AL ORDEN DE ANTES: borrar esta lista entera. */
-window.ORDEN_TRABAJOS = [
-  "zapatera-teca",
-  "escenografia",
-  "cuadro-tallado",
-  "gavetero",
-  "consola-2",
-  "madriguera",
-  "zapatera",
-  "paraban",
-  "mueble-bano",
-  "elevacho",
-  "rolitronco",
-  "caja",
-  "bandeja",
-  "escritorio-teca",
-  "meson-trabajo",
-  "quillas-pared"
-];
+/* 14/09/2026 · Aquí hubo una lista fija, window.ORDEN_TRABAJOS, con un orden
+   aleatorio de prueba sacado una sola vez. Ya no hace falta: desde el mismo
+   día js/sitio.js BARAJA la Exhibición en cada carga (pedido suyo). El orden
+   de este archivo sigue mandando en la portada y en Novedades. */

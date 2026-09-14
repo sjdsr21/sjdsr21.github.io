@@ -46,29 +46,70 @@
       <h1 id="titulo"></h1>
     </section>
 
-    <section class="intro-taller">
-      <div>
+    <section class="intro-taller" id="introduccion">
+      <!-- 2026-09-14 · ÍNDICE de la página (él), en FILA bajo el h1 (segunda vuelta, 14/09); debajo, el texto
+           en el medio y el carrusel cuadrado a la derecha. Cada entrada
+           lleva a su sección; al pasar el ratón sale una flecha que apunta
+           al texto (css: .indice-taller). Los id de destino son
+           introduccion, encargo, propuesta, materiales y maderas; los dos
+           últimos los enlazan además las fichas: NO los cambies. -->
+      <nav class="indice-taller" aria-label="Índice">
+        <ol>
+          <li><a href="#introduccion" data-es="Introducción" data-en="Introduction"></a></li>
+          <li><a href="#encargo" data-es="Cómo funciona un encargo" data-en="How a commission works"></a></li>
+          <li><a href="#propuesta" data-es="Cómo se arma una propuesta" data-en="How a proposal is put together"></a></li>
+          <li><a href="#materiales" data-es="Con qué trabajo" data-en="What I work with"></a></li>
+          <li><a href="#maderas" data-es="Las maderas" data-en="The woods"></a></li>
+        </ol>
+      </nav>
+      <div class="intro-taller__foto">
         <!-- .webp desde el 15/08/2026 (el .jpg sigue al lado).
              SIN loading="lazy" a propósito: este retrato se ve sin
              hacer scroll, y aplazar una imagen que ya está en
              pantalla solo retrasa lo primero que se mira. -->
-        <img class="retrato" src="img/marca/retrato.webp" alt="Santiago en el taller">
-        <p class="pie-foto" data-es="Caracas, 2025" data-en="Caracas, 2025"></p>
+        <!-- 2026-09-14 · CARRUSEL en vez de la foto única (pedido suyo):
+             una foto cada 4 s, fundido. Las fotos y su ORDEN salen de
+             E:\Contenido PrototipoAgo\Perfil\Carrusel Intro («Carrusel
+             Intro N», sin el 4, que no existe); la N se conserva en el
+             nombre. La última, intro-11, es el retrato que había aquí
+             antes (img/marca/retrato.jpg), que él pidió poner al final.
+             Solo la primera lleva src: las demás van en data-src y
+             js/sitio.js (iniciarCarruselIntro) las carga de una en una
+             justo antes de enseñarlas. Se quitó el pie «Caracas, 2025»:
+             las fotos son de sitios y años distintos. -->
+        <div class="carrusel-intro" aria-label="Fotos de Santiago">
+          <img class="retrato activa" src="img/taller/carrusel/intro-0.webp" alt="Santiago"
+               srcset="img/taller/carrusel/intro-0-movil.webp 1000w, img/taller/carrusel/intro-0.webp 1400w"
+               sizes="(max-width: 820px) 94vw, 34vw">
+          <img class="retrato" data-src="img/taller/carrusel/intro-1.webp" alt="">
+          <img class="retrato" data-src="img/taller/carrusel/intro-2.webp" alt="">
+          <img class="retrato" data-src="img/taller/carrusel/intro-3.webp" alt="">
+          <img class="retrato" data-src="img/taller/carrusel/intro-5.webp" alt="">
+          <img class="retrato" data-src="img/taller/carrusel/intro-6.webp" alt="">
+          <img class="retrato" data-src="img/taller/carrusel/intro-7.webp" alt="">
+          <img class="retrato" data-src="img/taller/carrusel/intro-8.webp" alt="">
+          <img class="retrato" data-src="img/taller/carrusel/intro-9.webp" alt="">
+          <img class="retrato" data-src="img/taller/carrusel/intro-10.webp" alt="">
+          <img class="retrato" data-src="img/taller/carrusel/intro-11.webp" alt="">
+        </div>
       </div>
 
-      <!-- 2026-08-12 · Corregido por él. El taller NO era de su
-           papá: el espacio era un depósito que ha ido habilitando
-           poco a poco. Y el tercer y cuarto párrafo (los del
-           modelo 3D y el presupuesto) salieron; dijo que escribirá
-           algo más elaborado para ese hueco. -->
-      <div class="prosa" data-es="
-        <p>Soy Santiago. Trabajo la madera en Caracas, en un espacio que era un simple depósito y que he ido habilitando poco a poco: primero para que cupieran las herramientas, después para que fuera un sitio cómodo donde crear sin tantas limitaciones.</p>
-        <p>Aprendí solo, con ayuda de YouTube, haciendo, equivocándome y rehaciendo. No vengo de una escuela de ebanistería ni de una familia de ebanistas: vengo de trabajar en un estacionamiento y de muchas horas averiguando por qué una pieza salió torcida, o por qué una idea funcionaba mejor en mi cabeza.</p>
-        <p>De ahí sale el nombre. Prototipar es hacer una primera versión de algo y mejorarla en la siguiente. Es como trabajo y es como aprendí.</p>
+      <!-- 2026-09-14 · TEXTO SUYO, escrito por él (era el hueco que dejó
+           pendiente el 14/08: «te voy a escribir luego algo un poquito más
+           elaborado»). Va tal cual lo mandó; solo las comillas pasaron a
+           tipográficas (“ ” ‘ ’), porque las rectas cortaban el atributo.
+           La firma va a la derecha, como en una carta (.firma). La versión
+           en inglés la tradujo Claude: si él la corrige, manda la suya. -->
+      <div class="prosa intro-taller__texto" data-es="
+        <p>Soy Santiago. Decidí dedicarme a la carpintería después de graduarme como economista porque me resultó imposible contener las ansias de materializar mis inventos y encontrar soluciones a problemas en el mundo físico, donde hay contacto humano y aquél sentimiento de asombro al ver cómo se transforma un material crudo en una pieza bella y funcional.</p>
+        <p>Con el apoyo de mi familia y algunas herramientas de mi papá, comencé a exprimir esos jugos creativos dentro de mí. En YouTube encontré un nicho que me atrapó con su encanto y fascinación: carpinteros (y no carpinteros) con la dichosa habilidad de contar las historias de sus procesos creativos. Son mis mentores, y ni siquiera me conocen. El otro gran mentor ha sido el fracaso, repetido e incesante, sin el cual no es posible llegar a ningún lado al que valga la pena llegar, como he aprendido. Y ahora me regocijo en su dulce amargura.</p>
+        <p>“Prototipo” es una palabra clave. Es una palabra cuyo significado me ha dado algo de paz en el ejercicio de mi práctica porque diseñar algo una primera vez, sea lo que sea, está casi siempre condenado a fallar por algún lado. La clave yace en comprender que es una parte natural e inevitable del proceso; que el resultado de hoy es el prototipo de algo más grande que se gesta ‘más allá’, por encima de esta pieza, por encima de este día, semana, mes o año. Y ¿quién sabe?, quizás al descuidarnos descubramos eventualmente que somos felices por entenderlo así...</p>
+        <p class='firma'>— Santiago De Sousa, 2026</p>
       " data-en="
-        <p>I'm Santiago. I work wood in Caracas, in a space that was just a storage room and that I've been fitting out little by little: first so the tools would fit, then so it would be a comfortable place to make things without so many limits.</p>
-        <p>I taught myself, with YouTube's help — by doing it, getting it wrong, and doing it again. I didn't come out of a cabinetmaking school or a family of cabinetmakers: I came out of working in a parking garage and a lot of hours working out why a piece came out crooked, or why an idea worked better in my head.</p>
-        <p>That's where the name comes from. To prototype is to make a first version of something and improve it on the next one. It's how I work and it's how I learned.</p>
+        <p>I'm Santiago. I decided to devote myself to woodworking after graduating as an economist, because I found it impossible to hold back the urge to give physical form to my inventions and to find solutions to problems in the physical world, where there is human contact and that feeling of wonder at watching a raw material turn into a beautiful, functional piece.</p>
+        <p>With my family's support and a few of my dad's tools, I started squeezing out those creative juices inside me. On YouTube I found a niche that caught me with its charm and fascination: woodworkers (and non-woodworkers) with the blessed gift of telling the stories of their creative processes. They are my mentors, and they don't even know me. My other great mentor has been failure, repeated and relentless, without which there's no getting anywhere worth getting to, as I've learned. And now I revel in its sweet bitterness.</p>
+        <p>“Prototype” is a key word. It's a word whose meaning has given me some peace in my practice, because designing something for the first time, whatever it is, is almost always doomed to fail somewhere. The key lies in understanding that this is a natural, unavoidable part of the process; that today's result is the prototype of something bigger taking shape ‘beyond’, above this piece, above this day, week, month or year. And who knows? Maybe, when we least expect it, we'll eventually discover that we're happy for understanding it that way...</p>
+        <p class='firma'>— Santiago De Sousa, 2026</p>
       "></div>
     </section>
 
@@ -79,25 +120,29 @@
          de git si hace falta recuperar el texto. -->
 
     <!-- ---------- El encargo ---------- -->
-    <section class="seccion">
+    <section class="seccion" id="encargo">
       <h2 data-es="Cómo funciona un encargo" data-en="How a commission works"></h2>
 
       <!-- 2026-08-12 · Reescrito por él. Cambios de fondo, no de
            estilo: el plazo cuenta desde el anticipo (no desde la
            aprobación), entró un paso nuevo de avances, y la
            entrega dejó de prometer montaje siempre — depende de lo
-           que se acuerde al principio. -->
+           que se acuerde al principio.
+           2026-09-14 · «Presupuesto en firme» pasa a «Presupuesto claro»
+           (él). Y el enlace a la propuesta se destaca: siena, subrayado
+           grueso y una flecha hacia abajo, porque la propuesta está más
+           abajo en esta misma página. -->
       <ol class="pasos" data-es="
         <li><strong>Me escribes con la idea</strong>Aunque esté incompleta. Una foto de referencia, el espacio donde va, medidas aproximadas: todo eso ayuda muchísimo.</li>
-        <li><strong>Lo dibujo</strong>Te mando una representación visual en 3D, con las medidas reales aproximadas, para que veas la pieza antes de que exista. Si hay que ajustarle algo, se ajusta aquí.</li>
-        <li><strong>Presupuesto en firme</strong>Una sola cifra, sin elementos escondidos. Lleva fecha de validez porque el material se mueve, no por apurarte. <a href='#propuesta'>Mira cómo es una propuesta</a>.</li>
+        <li><strong>Lo dibujo</strong>Te mando una representación visual en 3D, con las medidas reales aproximadas, para que veas la pieza antes de que exista. Si hay que ajustarle algo, se ajusta aquí. <a class='pasos__ver' href='#materiales'>Mira con cuáles materiales trabajo<svg class='pasos__flecha' viewBox='0 0 12 16' aria-hidden='true' focusable='false'><path d='M6 1v13M1.5 9.5 6 14l4.5-4.5'/></svg></a></li>
+        <li><strong>Presupuesto claro</strong>Una sola cifra, sin elementos escondidos. Lleva fecha de validez porque el material se mueve, no por apurarte. <a class='pasos__ver' href='#propuesta'>Mira cómo es una propuesta<svg class='pasos__flecha' viewBox='0 0 12 16' aria-hidden='true' focusable='false'><path d='M6 1v13M1.5 9.5 6 14l4.5-4.5'/></svg></a></li>
         <li><strong>Anticipo y arranque</strong>50% para arrancar y 50% contra entrega. El tiempo de entrega se cuenta desde el anticipo de arranque, no desde que apruebas: el material se compra con ese anticipo.</li>
         <li><strong>Te voy contando</strong>Mientras la pieza se hace, te mando avances: cómo va quedando, en qué punto está y cualquier decisión que valga la pena consultarte por el camino.</li>
         <li><strong>Entrega</strong>Según lo que hayamos acordado al principio, llevo la pieza y la monto, la dejo anclada donde va, o te la entrego lista para que la recibas como prefieras.</li>
       " data-en="
         <li><strong>You write me with the idea</strong>Even if it's incomplete. A reference photo, the space it goes in, rough measurements: all of it helps enormously.</li>
-        <li><strong>I draw it</strong>I send you a visual 3D representation, at approximate real dimensions, so you see the piece before it exists. If something needs adjusting, it gets adjusted here.</li>
-        <li><strong>A firm quote</strong>One single figure, with nothing hidden in it. It carries an expiry date because material prices move, not to rush you. <a href='#propuesta'>See what a proposal looks like</a>.</li>
+        <li><strong>I draw it</strong>I send you a visual 3D representation, at approximate real dimensions, so you see the piece before it exists. If something needs adjusting, it gets adjusted here. <a class='pasos__ver' href='#materiales'>See the materials I work with<svg class='pasos__flecha' viewBox='0 0 12 16' aria-hidden='true' focusable='false'><path d='M6 1v13M1.5 9.5 6 14l4.5-4.5'/></svg></a></li>
+        <li><strong>A clear quote</strong>One single figure, with nothing hidden in it. It carries an expiry date because material prices move, not to rush you. <a class='pasos__ver' href='#propuesta'>See what a proposal looks like<svg class='pasos__flecha' viewBox='0 0 12 16' aria-hidden='true' focusable='false'><path d='M6 1v13M1.5 9.5 6 14l4.5-4.5'/></svg></a></li>
         <li><strong>Deposit and start</strong>50% to start, 50% on delivery. The lead time counts from the starting deposit, not from your approval: the material is bought with that deposit.</li>
         <li><strong>I keep you posted</strong>While the piece is being made I send you progress: how it's coming along, where it stands, and any decision worth checking with you along the way.</li>
         <li><strong>Delivery</strong>Depending on what we agreed at the start, I bring the piece and mount it, leave it anchored where it goes, or hand it over ready for you to receive however suits you.</li>
@@ -133,48 +178,57 @@
       <p class="prosa" data-es="Así se ve lo que recibes cuando el dibujo está listo: un PDF de una sola página con todo lo que hace falta para decidir."
          data-en="This is what you get once the drawing is ready: a single-page PDF with everything you need to decide."></p>
 
+      <!-- 2026-09-14 · YA NO es una sola imagen recortada por CSS: eran
+           1400 × 6156 px repetidos 8 veces, y en la primera visita se veía
+           cortada a la mitad (se pintaba mientras bajaba) y en teléfono
+           costaba ~270 MB descomprimirla 8 veces. Ahora son 8 archivos, uno
+           por tramo, de 1000 px de ancho, en img/taller/propuesta/. Y cada
+           tramo trae DOS: tramo-N.webp (oscuro) y tramo-N-claro.webp (claro,
+           del PDF generado con -Tema claro desde pitch-web-claro.json); el
+           CSS enseña la que toca según data-tema. --ini/--alto ya solo
+           reservan el hueco. -->
       <ol class="propuesta">
         <li class="tramo tramo--sin-nota" style="--ini:0; --alto:375">
-          <div class="tramo__recorte"><img src="img/taller/propuesta-ejemplo.webp" alt="Propuesta de ejemplo de Prototipo Ago para una mesa de niveles, completa: presupuesto, formas de pago, dibujo con medidas, qué incluye, consideraciones y una imagen de referencia." loading="lazy" decoding="async"></div>
+          <div class="tramo__recorte"><img class="tramo__oscuro" src="img/taller/propuesta/tramo-0.webp" alt="Propuesta de ejemplo de Prototipo Ago para una mesa de niveles, completa: presupuesto, formas de pago, dibujo con medidas, qué incluye, consideraciones y una imagen de referencia." loading="lazy"><img class="tramo__claro" src="img/taller/propuesta/tramo-0-claro.webp" alt="Propuesta de ejemplo de Prototipo Ago para una mesa de niveles, completa: presupuesto, formas de pago, dibujo con medidas, qué incluye, consideraciones y una imagen de referencia." loading="lazy"></div>
         </li>
         <li class="tramo" style="--ini:375; --alto:597">
-          <div class="tramo__recorte"><img src="img/taller/propuesta-ejemplo.webp" alt="" loading="lazy" decoding="async"></div>
+          <div class="tramo__recorte"><img class="tramo__oscuro" src="img/taller/propuesta/tramo-1.webp" alt="" loading="lazy"><img class="tramo__claro" src="img/taller/propuesta/tramo-1-claro.webp" alt="" loading="lazy"></div>
           <div class="tramo__llave" aria-hidden="true"></div>
           <div class="tramo__texto"><div class="tramo__nota" data-es="<b>Una sola cifra</b><span>El total, sin separar materiales de mano de obra. Si todavía hay decisiones abiertas, va como rango. Debajo, su valor en REF: si pagas en bolívares, se cobra a la tasa BCV del día en que pagas. La entrega a domicilio va aparte, con su costo aproximado, porque es opcional.</span>"
                data-en="<b>One single figure</b><span>The total, without splitting materials from labour. If some decisions are still open, it's a range. Below it, its value in REF: if you pay in bolívares, it's charged at the BCV rate on the day you pay. Home delivery is separate, with its approximate cost, because it's optional.</span>"></div></div>
         </li>
         <li class="tramo" style="--ini:972; --alto:688">
-          <div class="tramo__recorte"><img src="img/taller/propuesta-ejemplo.webp" alt="" loading="lazy" decoding="async"></div>
+          <div class="tramo__recorte"><img class="tramo__oscuro" src="img/taller/propuesta/tramo-2.webp" alt="" loading="lazy"><img class="tramo__claro" src="img/taller/propuesta/tramo-2-claro.webp" alt="" loading="lazy"></div>
           <div class="tramo__llave" aria-hidden="true"></div>
           <div class="tramo__texto"><div class="tramo__nota" data-es="<b>Cómo pagar</b><span>En dólares o en bolívares, con los datos completos de cada vía para que puedas pagar sin tener que preguntar nada más. Puedes escoger el método de pago que prefieras.</span>"
                data-en="<b>How to pay</b><span>In dollars or in bolívares, with the full details for each option so you can pay without having to ask anything else. You can choose whichever payment method you prefer.</span>"></div></div>
         </li>
         <li class="tramo" style="--ini:1660; --alto:284">
-          <div class="tramo__recorte"><img src="img/taller/propuesta-ejemplo.webp" alt="" loading="lazy" decoding="async"></div>
+          <div class="tramo__recorte"><img class="tramo__oscuro" src="img/taller/propuesta/tramo-3.webp" alt="" loading="lazy"><img class="tramo__claro" src="img/taller/propuesta/tramo-3-claro.webp" alt="" loading="lazy"></div>
           <div class="tramo__llave" aria-hidden="true"></div>
           <div class="tramo__texto"><div class="tramo__nota" data-es="<b>Plazo y anticipo</b><span>Cuánto tarda y cómo se reparte el pago: 50% para arrancar y 50% contra entrega, normalmente, pero puede variar. El plazo cuenta desde el anticipo, porque con ese dinero se compra el material.</span>"
                data-en="<b>Lead time and deposit</b><span>How long it takes and how the payment is split: 50% to start and 50% on delivery, usually, though it can vary. The lead time counts from the deposit, because that money buys the material.</span>"></div></div>
         </li>
         <li class="tramo" style="--ini:1944; --alto:873">
-          <div class="tramo__recorte"><img src="img/taller/propuesta-ejemplo.webp" alt="" loading="lazy" decoding="async"></div>
+          <div class="tramo__recorte"><img class="tramo__oscuro" src="img/taller/propuesta/tramo-4.webp" alt="" loading="lazy"><img class="tramo__claro" src="img/taller/propuesta/tramo-4-claro.webp" alt="" loading="lazy"></div>
           <div class="tramo__llave" aria-hidden="true"></div>
           <div class="tramo__texto"><div class="tramo__nota" data-es="<b>La pieza antes de que exista</b><span>El dibujo sale del modelo 3D, con las medidas reales acotadas como en un plano: ancho, fondo y alto.</span>"
                data-en="<b>The piece before it exists</b><span>The drawing comes from the 3D model, with the real dimensions marked as on a plan: width, depth and height.</span>"></div></div>
         </li>
         <li class="tramo" style="--ini:2817; --alto:911">
-          <div class="tramo__recorte"><img src="img/taller/propuesta-ejemplo.webp" alt="" loading="lazy" decoding="async"></div>
+          <div class="tramo__recorte"><img class="tramo__oscuro" src="img/taller/propuesta/tramo-5.webp" alt="" loading="lazy"><img class="tramo__claro" src="img/taller/propuesta/tramo-5-claro.webp" alt="" loading="lazy"></div>
           <div class="tramo__llave" aria-hidden="true"></div>
           <div class="tramo__texto"><div class="tramo__nota" data-es="<b>Qué incluye</b><span>Lo que entra en el precio, dicho con detalle: la madera, los espesores, el acabado y los herrajes, parte por parte.</span>"
                data-en="<b>What's included</b><span>What the price covers, spelled out: the wood, the thicknesses, the finish and the hardware, part by part.</span>"></div></div>
         </li>
         <li class="tramo" style="--ini:3728; --alto:866">
-          <div class="tramo__recorte"><img src="img/taller/propuesta-ejemplo.webp" alt="" loading="lazy" decoding="async"></div>
+          <div class="tramo__recorte"><img class="tramo__oscuro" src="img/taller/propuesta/tramo-6.webp" alt="" loading="lazy"><img class="tramo__claro" src="img/taller/propuesta/tramo-6-claro.webp" alt="" loading="lazy"></div>
           <div class="tramo__llave" aria-hidden="true"></div>
           <div class="tramo__texto"><div class="tramo__nota" data-es="<b>Consideraciones</b><span>Hasta cuándo vale el precio, las medidas generales, lo que se puede ajustar después y cómo viaja la pieza. Lo que conviene saber antes de decir que sí.</span>"
                data-en="<b>Things to consider</b><span>How long the price holds, the overall dimensions, what can be adjusted later and how the piece travels. What's worth knowing before you say yes.</span>"></div></div>
         </li>
         <li class="tramo" style="--ini:4594; --alto:1562">
-          <div class="tramo__recorte"><img src="img/taller/propuesta-ejemplo.webp" alt="" loading="lazy" decoding="async"></div>
+          <div class="tramo__recorte"><img class="tramo__oscuro" src="img/taller/propuesta/tramo-7.webp" alt="" loading="lazy"><img class="tramo__claro" src="img/taller/propuesta/tramo-7-claro.webp" alt="" loading="lazy"></div>
           <div class="tramo__llave" aria-hidden="true"></div>
           <div class="tramo__texto"><div class="tramo__nota" data-es="<b>El ambiente</b><span>Cuando ayuda, una imagen de referencia para ver el carácter de la pieza. Es una ilustración generada con inteligencia artificial: las medidas buenas son las del dibujo.</span>"
                data-en="<b>The mood</b><span>When it helps, a reference image to show the piece's character. It's an illustration generated with artificial intelligence: the real dimensions are the ones on the drawing.</span>"></div></div>
@@ -182,23 +236,130 @@
       </ol>
     </section>
 
+    <!-- 2026-09-14 · Íconos de «Con qué trabajo», dibujados en isométrico por
+         él pedidos: tabla con veta y anillos en la testa, dos láminas gruesas,
+         extremos de tubos y pletina, galón con brocha. Van UNA vez aquí, como
+         <symbol>, y cada material los usa con <use href="#mat-…"> desde su
+         data-es / data-en: así no se copian dos veces y toman el color del
+         tema solos (currentColor = --tinta, acento = --realce).
+         Salen de notas/iconos-materiales.py; notas/iconos-materiales.html los
+         enseña en grande, en claro y en oscuro. -->
+<svg class="sprite-materiales" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
+<symbol id="mat-madera" viewBox="0 0 64 64"><g transform="translate(18.52 20.92) scale(1.1975)" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round" stroke-linecap="round"><defs><clipPath id="mat-madera-c1"><path d="M0 -8 L34.64 12 L23.38 18.5 L-11.26 -1.5 Z"/></clipPath><clipPath id="mat-madera-c2"><path d="M-11.26 -1.5 L23.38 18.5 L23.38 26.5 L-11.26 6.5 Z"/></clipPath><clipPath id="mat-madera-c3"><path d="M34.64 12 L23.38 18.5 L23.38 26.5 L34.64 20 Z"/></clipPath></defs>
+<path d="M0 -8 L34.64 12 L23.38 18.5 L-11.26 -1.5 Z" style="fill:var(--papel);stroke:none"/>
+<path d="M-11.26 -1.5 L23.38 18.5 L23.38 26.5 L-11.26 6.5 Z" style="fill:var(--papel);stroke:none"/>
+<path d="M34.64 12 L23.38 18.5 L23.38 26.5 L34.64 20 Z" style="fill:var(--papel);stroke:none"/>
+<path d="M-3.3 -7.09 L-2.73 -6.02 L-1.77 -5.18 L-0.38 -4.58 L1.12 -4.05 L2.43 -3.4 L3.62 -2.69 L5.02 -2.1 L6.74 -1.69 L8.51 -1.31 L9.9 -0.72 L10.79 0.17 L11.48 1.17 L12.38 2.05 L13.54 2.78 L14.68 3.53 L15.58 4.4 L16.41 5.33 L17.56 6.06 L19.2 6.51 L21.07 6.83 L22.72 7.28 L23.98 7.96 L25.08 8.72 L26.33 9.4 L27.71 10 L28.89 10.72 L29.66 11.68 L30.19 12.77 L30.96 13.73 L32.21 14.41" stroke-width="1" clip-path="url(#mat-madera-c1)"/>
+<path d="M-7.39 -4.73 L-5.75 -4.28 L-4.08 -3.84 L-2.65 -3.27 L-1.32 -2.64 L0.18 -2.1 L1.88 -1.69 L3.45 -1.19 L4.53 -0.42 L5.14 0.63 L5.69 1.72 L6.56 2.61 L7.74 3.33 L8.91 4.05 L9.93 4.87 L10.99 5.66 L12.45 6.21 L14.33 6.53 L16.27 6.81 L17.81 7.32 L18.9 8.09 L19.85 8.94 L20.95 9.7 L22.13 10.42 L23.08 11.27 L23.7 12.32 L24.28 13.38 L25.26 14.21 L26.78 14.74 L28.54 15.12 L30.12 15.61" stroke-width="1" clip-path="url(#mat-madera-c1)"/>
+<path d="M-9.26 -3.66 L-7.93 -3.02 L-6.76 -2.3 L-5.44 -1.66 L-3.92 -1.14 L-2.52 -0.54 L-1.57 0.31 L-0.97 1.36 L-0.3 2.37 L0.78 3.15 L2.17 3.75 L3.52 4.37 L4.66 5.11 L5.8 5.85 L7.26 6.41 L9.05 6.78 L10.79 7.17 L12.09 7.82 L12.98 8.71 L13.81 9.63 L14.88 10.41 L16.11 11.1 L17.17 11.89 L17.95 12.84 L18.75 13.78 L19.95 14.48 L21.61 14.92 L23.38 15.3 L24.88 15.84 L26.07 16.55 L27.26 17.26" stroke-width="1" clip-path="url(#mat-madera-c1)"/>
+<path d="M-12.12 3.05 L-10.54 3.79 L-8.96 4.63 L-7.38 5.58 L-5.8 6.65 L-4.22 7.78 L-2.64 8.93 L-1.05 10.05 L0.53 11.09 L2.11 12.01 L3.69 12.81 L5.27 13.53 L6.85 14.21 L8.43 14.89 L10.02 15.64 L11.6 16.5 L13.18 17.47 L14.76 18.54 L16.34 19.68 L17.92 20.83 L19.5 21.94 L21.09 22.96 L22.67 23.87 L24.25 24.66" stroke-width="0.88" clip-path="url(#mat-madera-c2)"/>
+<path d="M-12.12 0.24 L-10.54 1.36 L-8.96 2.51 L-7.38 3.64 L-5.8 4.71 L-4.22 5.66 L-2.64 6.51 L-1.05 7.25 L0.53 7.93 L2.11 8.61 L3.69 9.33 L5.27 10.15 L6.85 11.08 L8.43 12.13 L10.02 13.25 L11.6 14.41 L13.18 15.53 L14.76 16.59 L16.34 17.53 L17.92 18.36 L19.5 19.09 L21.09 19.77 L22.67 20.45 L24.25 21.18" stroke-width="0.88" clip-path="url(#mat-madera-c2)"/>
+<path d="M27.09 26.76 L27.01 26.36 L27.04 25.89 L27.2 25.38 L27.43 24.89 L27.69 24.41 L27.95 23.95 L28.25 23.51 L28.6 23.13 L28.97 22.86 L29.34 22.67 L29.69 22.48 L30.04 22.26 L30.4 22.03 L30.78 21.87 L31.12 21.85 L31.42 21.95 L31.69 22.11 L31.94 22.29 L32.17 22.51 L32.33 22.84 L32.37 23.27 L32.29 23.76 L32.15 24.25 L32.03 24.7 L31.93 25.15 L31.81 25.61 L31.62 26.08 L31.35 26.52 L31.06 26.93 L30.76 27.34 L30.44 27.77 L30.08 28.18 L29.69 28.48 L29.3 28.63 L28.94 28.63 L28.62 28.58 L28.32 28.52 L28.02 28.44 L27.76 28.3 L27.57 28.06 L27.45 27.74 L27.35 27.41 L27.22 27.09 L27.09 26.76 Z" style="stroke:var(--realce)" stroke-width="1.13" clip-path="url(#mat-madera-c3)"/>
+<path d="M24.32 28.36 L24.36 27.45 L24.65 26.46 L25.08 25.49 L25.54 24.58 L25.97 23.69 L26.45 22.82 L27.03 22.02 L27.68 21.35 L28.36 20.79 L29.01 20.24 L29.69 19.62 L30.42 18.99 L31.18 18.54 L31.9 18.4 L32.52 18.54 L33.05 18.83 L33.55 19.16 L34.01 19.55 L34.36 20.1 L34.5 20.85 L34.47 21.71 L34.36 22.56 L34.3 23.36 L34.29 24.16 L34.22 25.03 L33.99 25.97 L33.57 26.9 L33.03 27.79 L32.46 28.64 L31.86 29.49 L31.19 30.29 L30.44 30.89 L29.69 31.22 L28.99 31.3 L28.35 31.31 L27.72 31.36 L27.09 31.43 L26.48 31.39 L25.96 31.14 L25.56 30.7 L25.22 30.2 L24.87 29.68 L24.53 29.1 L24.32 28.36 Z" style="stroke:var(--realce)" stroke-width="1.13" clip-path="url(#mat-madera-c3)"/>
+<path d="M21.88 29.77 L22.25 28.32 L22.79 26.9 L23.3 25.58 L23.75 24.28 L24.25 22.96 L24.91 21.65 L25.75 20.45 L26.67 19.38 L27.62 18.34 L28.61 17.24 L29.69 16.2 L30.83 15.46 L31.92 15.19 L32.87 15.37 L33.7 15.74 L34.47 16.13 L35.21 16.54 L35.85 17.13 L36.28 17.98 L36.48 19.03 L36.6 20.12 L36.77 21.17 L36.99 22.26 L37.08 23.5 L36.85 24.9 L36.29 26.35 L35.51 27.72 L34.66 29.02 L33.8 30.27 L32.86 31.45 L31.82 32.42 L30.73 33.04 L29.69 33.4 L28.71 33.71 L27.72 34.12 L26.69 34.58 L25.64 34.86 L24.71 34.77 L23.95 34.31 L23.32 33.66 L22.73 32.95 L22.19 32.13 L21.86 31.08 L21.88 29.77 Z" style="stroke:var(--realce)" stroke-width="1.13" clip-path="url(#mat-madera-c3)"/>
+<path d="M20.12 30.78 L20.55 29.02 L20.91 27.35 L21.17 25.69 L21.5 23.91 L22.13 22.06 L23.09 20.28 L24.27 18.65 L25.51 17.11 L26.81 15.59 L28.2 14.18 L29.69 13.16 L31.14 12.74 L32.44 12.83 L33.6 13.12 L34.71 13.32 L35.86 13.47 L36.95 13.8 L37.83 14.52 L38.44 15.59 L38.91 16.8 L39.4 18.04 L39.86 19.38 L40.1 20.98 L39.86 22.84 L39.13 24.79 L38.11 26.65 L37.05 28.38 L36.03 30.05 L34.94 31.67 L33.71 33.12 L32.37 34.25 L31.01 35.13 L29.69 35.96 L28.33 36.93 L26.88 37.92 L25.39 38.59 L24.04 38.67 L22.93 38.16 L22.03 37.34 L21.22 36.44 L20.48 35.43 L19.97 34.17 L19.85 32.57 L20.12 30.78 Z" style="stroke:var(--realce)" stroke-width="1.13" clip-path="url(#mat-madera-c3)"/>
+<path d="M18.17 31.91 L18.18 29.99 L18.1 28.02 L18.21 25.83 L18.78 23.46 L19.89 21.11 L21.34 18.96 L22.89 16.97 L24.46 15.07 L26.12 13.3 L27.9 11.93 L29.69 11.16 L31.36 10.9 L32.9 10.77 L34.45 10.47 L36.09 10.06 L37.73 9.91 L39.14 10.35 L40.21 11.38 L41.03 12.73 L41.77 14.19 L42.42 15.79 L42.76 17.71 L42.52 19.98 L41.7 22.4 L40.58 24.72 L39.47 26.87 L38.48 28.98 L37.45 31.12 L36.19 33.19 L34.68 35.01 L33.05 36.55 L31.4 38.02 L29.69 39.56 L27.86 41.03 L25.97 42.02 L24.23 42.2 L22.79 41.63 L21.62 40.67 L20.55 39.68 L19.52 38.68 L18.66 37.45 L18.17 35.81 L18.08 33.89 L18.17 31.91 Z" style="stroke:var(--realce)" stroke-width="1.13" clip-path="url(#mat-madera-c3)"/>
+<path d="M15.16 33.65 L14.78 31.39 L14.71 28.83 L15.3 25.98 L16.59 23.1 L18.32 20.45 L20.12 18.03 L21.86 15.72 L23.65 13.49 L25.6 11.56 L27.66 10.15 L29.69 9.21 L31.65 8.38 L33.66 7.35 L35.8 6.26 L37.97 5.6 L39.87 5.81 L41.34 6.88 L42.43 8.45 L43.36 10.15 L44.19 11.97 L44.69 14.11 L44.6 16.65 L43.92 19.4 L42.96 22.1 L42.08 24.64 L41.36 27.18 L40.57 29.87 L39.4 32.6 L37.78 35.13 L35.89 37.36 L33.9 39.39 L31.85 41.39 L29.69 43.21 L27.46 44.45 L25.36 44.77 L23.57 44.25 L22.05 43.39 L20.59 42.63 L19.08 41.99 L17.66 41.13 L16.58 39.74 L15.93 37.86 L15.54 35.77 L15.16 33.65 Z" style="stroke:var(--realce)" stroke-width="1.13" clip-path="url(#mat-madera-c3)"/>
+<path d="M0 -8 L34.64 12 L23.38 18.5 L-11.26 -1.5 Z"/>
+<path d="M-11.26 -1.5 L23.38 18.5 L23.38 26.5 L-11.26 6.5 Z"/>
+<path d="M34.64 12 L23.38 18.5 L23.38 26.5 L34.64 20 Z"/></g></symbol>
+<symbol id="mat-aglomerados" viewBox="0 0 64 64"><g transform="translate(21.92 37.82) scale(0.9947)" fill="none" stroke="currentColor" stroke-width="1.51" stroke-linejoin="round" stroke-linecap="round">
+<path d="M-3.98 -31.7 L22 -16.7 L22 17.3 L-3.98 2.3 Z" style="fill:var(--papel);stroke:none"/>
+<path d="M25.98 -19 L22 -16.7 L22 17.3 L25.98 15 Z" style="fill:var(--papel);stroke:none"/>
+<path d="M0 -34 L25.98 -19 L22 -16.7 L-3.98 -31.7 Z" style="fill:var(--papel);stroke:none"/>
+<path d="M-1.33 -33.23 L24.65 -18.23" style="stroke:var(--realce)" stroke-width="1.21"/>
+<path d="M24.65 -18.23 L24.65 15.77" style="stroke:var(--realce)" stroke-width="1.21"/>
+<path d="M-2.66 -32.47 L23.32 -17.47" style="stroke:var(--realce)" stroke-width="1.21"/>
+<path d="M23.32 -17.47 L23.32 16.53" style="stroke:var(--realce)" stroke-width="1.21"/>
+<path d="M-3.98 -31.7 L22 -16.7 L22 17.3 L-3.98 2.3 Z"/>
+<path d="M25.98 -19 L22 -16.7 L22 17.3 L25.98 15 Z"/>
+<path d="M0 -34 L25.98 -19 L22 -16.7 L-3.98 -31.7 Z"/>
+<path d="M-5.72 -8.7 L11.6 1.3 L11.6 22.3 L-5.72 12.3 Z" style="fill:var(--papel);stroke:none"/>
+<path d="M15.59 -1 L11.6 1.3 L11.6 22.3 L15.59 20 Z" style="fill:var(--papel);stroke:none"/>
+<path d="M-1.73 -11 L15.59 -1 L11.6 1.3 L-5.72 -8.7 Z" style="fill:var(--papel);stroke:none"/>
+<path d="M-3.06 -10.23 L14.26 -0.23" style="stroke:var(--realce)" stroke-width="1.21"/>
+<path d="M14.26 -0.23 L14.26 20.77" style="stroke:var(--realce)" stroke-width="1.21"/>
+<path d="M-4.39 -9.47 L12.93 0.53" style="stroke:var(--realce)" stroke-width="1.21"/>
+<path d="M12.93 0.53 L12.93 21.53" style="stroke:var(--realce)" stroke-width="1.21"/>
+<path d="M-5.72 -8.7 L11.6 1.3 L11.6 22.3 L-5.72 12.3 Z"/>
+<path d="M15.59 -1 L11.6 1.3 L11.6 22.3 L15.59 20 Z"/>
+<path d="M-1.73 -11 L15.59 -1 L11.6 1.3 L-5.72 -8.7 Z"/></g></symbol>
+<symbol id="mat-metales" viewBox="0 0 64 64"><g transform="translate(34.92 32.82) scale(1.1231)" fill="none" stroke="currentColor" stroke-width="1.34" stroke-linejoin="round" stroke-linecap="round" mask="url(#mat-metales-m)"><defs><clipPath id="mat-metales-c1"><path d="M-12.12 -7.9 L-8.83 -6 L-17.32 -1.1 L-20.61 -3 Z"/></clipPath><clipPath id="mat-metales-c2"><path d="M9.53 -11.8 L14.38 -9 L9.53 -6.2 L4.68 -9 Z"/></clipPath><linearGradient id="mat-metales-g" gradientUnits="userSpaceOnUse" x1="0" y1="-0.73" x2="0" y2="24.2"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><mask id="mat-metales-m" maskUnits="userSpaceOnUse" x="-24.52" y="-27.66" width="43.84" height="53.86"><rect x="-24.52" y="-27.66" width="43.84" height="53.86" fill="url(#mat-metales-g)"/></mask></defs>
+<path d="M6.37 -22 L6.29 -21.42 L6.06 -20.86 L5.67 -20.33 L5.15 -19.84 L4.5 -19.4 L3.74 -19.03 L2.89 -18.72 L1.97 -18.5 L1 -18.37 L0 -18.32 L-1 -18.37 L-1.97 -18.5 L-2.89 -18.72 L-3.74 -19.03 L-4.5 -19.4 L-5.15 -19.84 L-5.67 -20.33 L-6.06 -20.86 L-6.29 -21.42 L-6.37 -22 L-6.37 5 L-6.29 5.58 L-6.06 6.14 L-5.67 6.67 L-5.15 7.16 L-4.5 7.6 L-3.74 7.97 L-2.89 8.28 L-1.97 8.5 L-1 8.63 L0 8.68 L1 8.63 L1.97 8.5 L2.89 8.28 L3.74 7.97 L4.5 7.6 L5.15 7.16 L5.67 6.67 L6.06 6.14 L6.29 5.58 L6.37 5 Z" style="fill:var(--papel);stroke:none"/>
+<path d="M6.37 -22 L6.29 -21.42 L6.06 -20.86 L5.67 -20.33 L5.15 -19.84 L4.5 -19.4 L3.74 -19.03 L2.89 -18.72 L1.97 -18.5 L1 -18.37 L0 -18.32 L-1 -18.37 L-1.97 -18.5 L-2.89 -18.72 L-3.74 -19.03 L-4.5 -19.4 L-5.15 -19.84 L-5.67 -20.33 L-6.06 -20.86 L-6.29 -21.42 L-6.37 -22 L-6.37 5 L-6.29 5.58 L-6.06 6.14 L-5.67 6.67 L-5.15 7.16 L-4.5 7.6 L-3.74 7.97 L-2.89 8.28 L-1.97 8.5 L-1 8.63 L0 8.68 L1 8.63 L1.97 8.5 L2.89 8.28 L3.74 7.97 L4.5 7.6 L5.15 7.16 L5.67 6.67 L6.06 6.14 L6.29 5.58 L6.37 5 Z"/>
+<path d="M4.5 -19.4 L3.65 -18.99 L2.69 -18.67 L1.65 -18.45 L0.56 -18.34 L-0.56 -18.34 L-1.65 -18.45 L-2.69 -18.67 L-3.65 -18.99 L-4.5 -19.4 L-5.22 -19.89 L-5.77 -20.45 L-6.15 -21.05 L-6.34 -21.68 L-6.34 -22.32 L-6.15 -22.95 L-5.77 -23.55 L-5.22 -24.11 L-4.5 -24.6 L-3.65 -25.01 L-2.69 -25.33 L-1.65 -25.55 L-0.56 -25.66 L0.56 -25.66 L1.65 -25.55 L2.69 -25.33 L3.65 -25.01 L4.5 -24.6 L5.22 -24.11 L5.77 -23.55 L6.15 -22.95 L6.34 -22.32 L6.34 -21.68 L6.15 -21.05 L5.77 -20.45 L5.22 -19.89 L4.5 -19.4 Z" style="fill:var(--papel);stroke:none"/>
+<path d="M4.5 -19.4 L3.65 -18.99 L2.69 -18.67 L1.65 -18.45 L0.56 -18.34 L-0.56 -18.34 L-1.65 -18.45 L-2.69 -18.67 L-3.65 -18.99 L-4.5 -19.4 L-5.22 -19.89 L-5.77 -20.45 L-6.15 -21.05 L-6.34 -21.68 L-6.34 -22.32 L-6.15 -22.95 L-5.77 -23.55 L-5.22 -24.11 L-4.5 -24.6 L-3.65 -25.01 L-2.69 -25.33 L-1.65 -25.55 L-0.56 -25.66 L0.56 -25.66 L1.65 -25.55 L2.69 -25.33 L3.65 -25.01 L4.5 -24.6 L5.22 -24.11 L5.77 -23.55 L6.15 -22.95 L6.34 -22.32 L6.34 -21.68 L6.15 -21.05 L5.77 -20.45 L5.22 -19.89 L4.5 -19.4 Z"/>
+<path d="M3.55 -19.95 L2.88 -19.63 L2.12 -19.37 L1.3 -19.2 L0.44 -19.11 L-0.44 -19.11 L-1.3 -19.2 L-2.12 -19.37 L-2.88 -19.63 L-3.55 -19.95 L-4.11 -20.34 L-4.55 -20.77 L-4.85 -21.25 L-5 -21.75 L-5 -22.25 L-4.85 -22.75 L-4.55 -23.23 L-4.11 -23.66 L-3.55 -24.05 L-2.88 -24.37 L-2.12 -24.63 L-1.3 -24.8 L-0.44 -24.89 L0.44 -24.89 L1.3 -24.8 L2.12 -24.63 L2.88 -24.37 L3.55 -24.05 L4.11 -23.66 L4.55 -23.23 L4.85 -22.75 L5 -22.25 L5 -21.75 L4.85 -21.25 L4.55 -20.77 L4.11 -20.34 L3.55 -19.95 Z" style="stroke:var(--realce)"/>
+<path d="M-22.52 -3 L-17.32 0 L-17.32 17 L-22.52 14 Z" style="fill:var(--papel);stroke:none"/>
+<path d="M-6.93 -6 L-17.32 0 L-17.32 17 L-6.93 11 Z" style="fill:var(--papel);stroke:none"/>
+<path d="M-12.12 -9 L-6.93 -6 L-17.32 0 L-22.52 -3 Z" style="fill:var(--papel);stroke:none"/>
+<path d="M-22.52 -3 L-17.32 0 L-17.32 17 L-22.52 14 Z"/>
+<path d="M-6.93 -6 L-17.32 0 L-17.32 17 L-6.93 11 Z"/>
+<path d="M-12.12 -9 L-6.93 -6 L-17.32 0 L-22.52 -3 Z"/>
+<path d="M-12.12 -7.9 L-8.83 -6 L-17.32 -1.1 L-20.61 -3 Z" style="stroke:var(--realce)"/>
+<path d="M-12.12 -7.9 L-12.12 -3.9" style="stroke:var(--realce)" stroke-width="1.07" clip-path="url(#mat-metales-c1)"/>
+<path d="M2.6 -9 L9.53 -5 L9.53 16.5 L2.6 12.5 Z" style="fill:var(--papel);stroke:none"/>
+<path d="M16.45 -9 L9.53 -5 L9.53 16.5 L16.45 12.5 Z" style="fill:var(--papel);stroke:none"/>
+<path d="M9.53 -13 L16.45 -9 L9.53 -5 L2.6 -9 Z" style="fill:var(--papel);stroke:none"/>
+<path d="M2.6 -9 L9.53 -5 L9.53 16.5 L2.6 12.5 Z"/>
+<path d="M16.45 -9 L9.53 -5 L9.53 16.5 L16.45 12.5 Z"/>
+<path d="M9.53 -13 L16.45 -9 L9.53 -5 L2.6 -9 Z"/>
+<path d="M9.53 -11.8 L14.38 -9 L9.53 -6.2 L4.68 -9 Z" style="stroke:var(--realce)"/>
+<path d="M9.53 -11.8 L9.53 -7.8" style="stroke:var(--realce)" stroke-width="1.07" clip-path="url(#mat-metales-c2)"/>
+<path d="M4.85 6.7 L15.24 12.7 L15.24 24.2 L4.85 18.2 Z" style="fill:var(--papel);stroke:none"/>
+<path d="M17.32 11.5 L15.24 12.7 L15.24 24.2 L17.32 23 Z" style="fill:var(--papel);stroke:none"/>
+<path d="M6.93 5.5 L17.32 11.5 L15.24 12.7 L4.85 6.7 Z" style="fill:var(--papel);stroke:none"/>
+<path d="M4.85 6.7 L15.24 12.7 L15.24 24.2 L4.85 18.2 Z"/>
+<path d="M17.32 11.5 L15.24 12.7 L15.24 24.2 L17.32 23 Z"/>
+<path d="M6.93 5.5 L17.32 11.5 L15.24 12.7 L4.85 6.7 Z"/>
+<path d="M6.93 5.5 L17.32 11.5 L15.24 12.7 L4.85 6.7 Z" style="stroke:var(--realce)"/></g></symbol>
+<symbol id="mat-pintura" viewBox="0 0 64 64"><g transform="translate(34.87 35.42) scale(1.1733)" fill="none" stroke="currentColor" stroke-width="1.28" stroke-linejoin="round" stroke-linecap="round">
+<path d="M13.47 -19 L13.31 -17.78 L12.81 -16.6 L12 -15.47 L10.9 -14.43 L9.53 -13.5 L7.92 -12.71 L6.12 -12.07 L4.16 -11.6 L2.11 -11.32 L0 -11.22 L-2.11 -11.32 L-4.16 -11.6 L-6.12 -12.07 L-7.92 -12.71 L-9.53 -13.5 L-10.9 -14.43 L-12 -15.47 L-12.81 -16.6 L-13.31 -17.78 L-13.47 -19 L-13.47 0 L-13.31 1.22 L-12.81 2.4 L-12 3.53 L-10.9 4.57 L-9.53 5.5 L-7.92 6.29 L-6.12 6.93 L-4.16 7.4 L-2.11 7.68 L0 7.78 L2.11 7.68 L4.16 7.4 L6.12 6.93 L7.92 6.29 L9.53 5.5 L10.9 4.57 L12 3.53 L12.81 2.4 L13.31 1.22 L13.47 0 Z" style="fill:var(--papel);stroke:none"/>
+<path d="M13.47 -19 L13.31 -17.78 L12.81 -16.6 L12 -15.47 L10.9 -14.43 L9.53 -13.5 L7.92 -12.71 L6.12 -12.07 L4.16 -11.6 L2.11 -11.32 L0 -11.22 L-2.11 -11.32 L-4.16 -11.6 L-6.12 -12.07 L-7.92 -12.71 L-9.53 -13.5 L-10.9 -14.43 L-12 -15.47 L-12.81 -16.6 L-13.31 -17.78 L-13.47 -19 L-13.47 0 L-13.31 1.22 L-12.81 2.4 L-12 3.53 L-10.9 4.57 L-9.53 5.5 L-7.92 6.29 L-6.12 6.93 L-4.16 7.4 L-2.11 7.68 L0 7.78 L2.11 7.68 L4.16 7.4 L6.12 6.93 L7.92 6.29 L9.53 5.5 L10.9 4.57 L12 3.53 L12.81 2.4 L13.31 1.22 L13.47 0 Z"/>
+<path d="M13.47 -4.2 L13.31 -2.98 L12.81 -1.8 L12 -0.67 L10.9 0.37 L9.53 1.3 L7.92 2.09 L6.12 2.73 L4.16 3.2 L2.11 3.48 L0 3.58 L-2.11 3.48 L-4.16 3.2 L-6.12 2.73 L-7.92 2.09 L-9.53 1.3 L-10.9 0.37 L-12 -0.67 L-12.81 -1.8 L-13.31 -2.98 L-13.47 -4.2" stroke-width="0.89"/>
+<path d="M13.47 -15.8 L13.31 -14.58 L12.81 -13.4 L12 -12.27 L10.9 -11.23 L9.53 -10.3 L7.92 -9.51 L6.12 -8.87 L4.16 -8.4 L2.11 -8.12 L0 -8.02 L-2.11 -8.12 L-4.16 -8.4 L-6.12 -8.87 L-7.92 -9.51 L-9.53 -10.3 L-10.9 -11.23 L-12 -12.27 L-12.81 -13.4 L-13.31 -14.58 L-13.47 -15.8" stroke-width="0.89"/>
+<path d="M9.53 -13.5 L7.92 -12.71 L6.12 -12.07 L4.16 -11.6 L2.11 -11.32 L0 -11.22 L-2.11 -11.32 L-4.16 -11.6 L-6.12 -12.07 L-7.92 -12.71 L-9.53 -13.5 L-10.9 -14.43 L-12 -15.47 L-12.81 -16.6 L-13.31 -17.78 L-13.47 -19 L-13.31 -20.22 L-12.81 -21.4 L-12 -22.53 L-10.9 -23.57 L-9.53 -24.5 L-7.92 -25.29 L-6.12 -25.93 L-4.16 -26.4 L-2.11 -26.68 L0 -26.78 L2.11 -26.68 L4.16 -26.4 L6.12 -25.93 L7.92 -25.29 L9.53 -24.5 L10.9 -23.57 L12 -22.53 L12.81 -21.4 L13.31 -20.22 L13.47 -19 L13.31 -17.78 L12.81 -16.6 L12 -15.47 L10.9 -14.43 L9.53 -13.5 Z" style="fill:var(--papel);stroke:none"/>
+<path d="M9.53 -13.5 L7.92 -12.71 L6.12 -12.07 L4.16 -11.6 L2.11 -11.32 L0 -11.22 L-2.11 -11.32 L-4.16 -11.6 L-6.12 -12.07 L-7.92 -12.71 L-9.53 -13.5 L-10.9 -14.43 L-12 -15.47 L-12.81 -16.6 L-13.31 -17.78 L-13.47 -19 L-13.31 -20.22 L-12.81 -21.4 L-12 -22.53 L-10.9 -23.57 L-9.53 -24.5 L-7.92 -25.29 L-6.12 -25.93 L-4.16 -26.4 L-2.11 -26.68 L0 -26.78 L2.11 -26.68 L4.16 -26.4 L6.12 -25.93 L7.92 -25.29 L9.53 -24.5 L10.9 -23.57 L12 -22.53 L12.81 -21.4 L13.31 -20.22 L13.47 -19 L13.31 -17.78 L12.81 -16.6 L12 -15.47 L10.9 -14.43 L9.53 -13.5 Z"/>
+<path d="M8.14 -14.3 L6.77 -13.62 L5.23 -13.08 L3.56 -12.68 L1.8 -12.44 L0 -12.35 L-1.8 -12.44 L-3.56 -12.68 L-5.23 -13.08 L-6.77 -13.62 L-8.14 -14.3 L-9.31 -15.09 L-10.26 -15.98 L-10.95 -16.95 L-11.37 -17.96 L-11.51 -19 L-11.37 -20.04 L-10.95 -21.05 L-10.26 -22.02 L-9.31 -22.91 L-8.14 -23.7 L-6.77 -24.38 L-5.23 -24.92 L-3.56 -25.32 L-1.8 -25.56 L0 -25.65 L1.8 -25.56 L3.56 -25.32 L5.23 -24.92 L6.77 -24.38 L8.14 -23.7 L9.31 -22.91 L10.26 -22.02 L10.95 -21.05 L11.37 -20.04 L11.51 -19 L11.37 -17.96 L10.95 -16.95 L10.26 -15.98 L9.31 -15.09 L8.14 -14.3 Z" stroke-width="1.02"/>
+<path d="M0.07 -11.02 L-0.2 -11.02 L-0.47 -11.03 L-0.74 -11.03 L-1 -11.04 L-1.27 -11.06 L-1.54 -11.07 L-1.81 -11.09 L-2.07 -11.11 L-2.34 -11.14 L-2.61 -11.17 L-2.87 -11.2 L-2.87 -11.2 L-2.87 -10.72 L-2.87 -10.23 L-2.87 -9.75 L-2.87 -9.26 L-2.87 -8.78 L-2.87 -8.29 L-2.87 -7.81 L-2.87 -7.32 L-2.87 -6.84 L-2.87 -6.35 L-2.87 -5.87 L-2.87 -5.38 L-2.87 -4.9 L-2.87 -4.9 L-2.91 -4.55 L-3.04 -4.23 L-3.24 -3.95 L-3.51 -3.74 L-3.83 -3.6 L-4.18 -3.55 L-4.55 -3.58 L-4.92 -3.7 L-5.26 -3.9 L-5.56 -4.16 L-5.81 -4.49 L-6 -4.84 L-6.12 -5.21 L-6.16 -5.58 L-6.16 -5.58 L-6.16 -6.05 L-6.16 -6.52 L-6.16 -7 L-6.16 -7.47 L-6.16 -7.94 L-6.16 -8.41 L-6.16 -8.88 L-6.16 -8.88 L-6.39 -9.14 L-6.62 -9.41 L-6.84 -9.68 L-7.06 -9.95 L-7.28 -10.22 L-7.5 -10.5 L-7.72 -10.78 L-7.93 -11.06 L-8.14 -11.34 L-8.34 -11.63 L-8.55 -11.91 L-8.75 -12.2 L-8.94 -12.5 L-9.14 -12.79 L-9.33 -13.09 Z" style="stroke:var(--realce);fill:var(--realce)" stroke-width="1.02"/>
+<path d="M-13.47 -16.4 Q0 -33.4 13.47 -16.4"/>
+<path d="M-18.36 4.6 L-12.3 8.1 L-12.3 11.1 L-18.36 7.6 Z" style="fill:var(--realce);stroke:none"/>
+<path d="M-7.97 5.6 L-12.3 8.1 L-12.3 11.1 L-7.97 8.6 Z" style="fill:var(--realce);stroke:none"/>
+<path d="M-14.03 2.1 L-7.97 5.6 L-12.3 8.1 L-18.36 4.6 Z" style="fill:var(--realce);stroke:none"/>
+<path d="M-18.36 4.6 L-12.3 8.1 L-12.3 11.1 L-18.36 7.6 Z" style="stroke:var(--realce)"/>
+<path d="M-7.97 5.6 L-12.3 8.1 L-12.3 11.1 L-7.97 8.6 Z" style="stroke:var(--realce)"/>
+<path d="M-14.03 2.1 L-7.97 5.6 L-12.3 8.1 L-18.36 4.6 Z" style="stroke:var(--realce)"/>
+<path d="M-11.95 7.5 L-8.05 9.75 L-8.05 13.15 L-11.95 10.9 Z" style="fill:var(--papel);stroke:none"/>
+<path d="M-4.42 7.65 L-8.05 9.75 L-8.05 13.15 L-4.42 11.05 Z" style="fill:var(--papel);stroke:none"/>
+<path d="M-8.31 5.4 L-4.42 7.65 L-8.05 9.75 L-11.95 7.5 Z" style="fill:var(--papel);stroke:none"/>
+<path d="M-11.95 7.5 L-8.05 9.75 L-8.05 13.15 L-11.95 10.9 Z"/>
+<path d="M-4.42 7.65 L-8.05 9.75 L-8.05 13.15 L-4.42 11.05 Z"/>
+<path d="M-8.31 5.4 L-4.42 7.65 L-8.05 9.75 L-11.95 7.5 Z"/>
+<path d="M-7.27 10.5 L7.01 18.75 L7.01 20.95 L-7.27 12.7 Z" style="fill:var(--papel);stroke:none"/>
+<path d="M9.09 17.55 L7.01 18.75 L7.01 20.95 L9.09 19.75 Z" style="fill:var(--papel);stroke:none"/>
+<path d="M-5.2 9.3 L9.09 17.55 L7.01 18.75 L-7.27 10.5 Z" style="fill:var(--papel);stroke:none"/>
+<path d="M-7.27 10.5 L7.01 18.75 L7.01 20.95 L-7.27 12.7 Z"/>
+<path d="M9.09 17.55 L7.01 18.75 L7.01 20.95 L9.09 19.75 Z"/>
+<path d="M-5.2 9.3 L9.09 17.55 L7.01 18.75 L-7.27 10.5 Z"/></g></symbol>
+</svg>
+
     <!-- ---------- Materiales ---------- -->
-    <section class="seccion">
+    <section class="seccion" id="materiales">
       <h2 data-es="Con qué trabajo" data-en="What I work with"></h2>
       <!-- 2026-08-14 · Reordenado por él: primero la madera
            sólida, luego los aglomerados, luego metales y por
            último pintura y barnices. Antes iba mezclado y el
            contraenchapado abría la lista. -->
       <ul class="lista-marcas" data-es="
-        <li><b>Madera sólida</b><span>Pino macizo para estructuras, listones y todo lo que tenga que cargar; con el tiempo toma un tono más dorado. Y samán, dura y de veta muy marcada, para piezas pequeñas donde la madera es la protagonista.</span></li>
-        <li><b>Aglomerados</b><span>Contraenchapados, compuestos, MDF, melamina y similares. Son el caballo de batalla: estables, aguantan peso y no trabajan como la tabla maciza. De aquí sale la mayoría de los muebles.</span></li>
-        <li><b>Metales</b><span>Herrería ligera: manejo las máquinas de soldar, y trabajo el hierro y el aluminio. Para bases, estructuras y refuerzos donde la madera sola no da.</span></li>
-        <li><b>Pintura y barnices</b><span>Crudo, sellado, laca, poliuretano o aceite de linaza. Cada uno cambia el precio y cambia cómo envejece la pieza; lo conversamos según dónde va a vivir.</span></li>
+        <li><svg class='mat-icono' aria-hidden='true' focusable='false'><use href='#mat-madera'/></svg><b>Madera sólida</b><span>Pino macizo para estructuras, listones y todo lo que tenga que cargar; con el tiempo toma un tono más dorado. Y samán, dura y de veta muy marcada, para piezas pequeñas donde la madera es la protagonista.</span></li>
+        <li><svg class='mat-icono' aria-hidden='true' focusable='false'><use href='#mat-aglomerados'/></svg><b>Aglomerados</b><span>Contraenchapados, compuestos, MDF, melamina y similares. Son el caballo de batalla: estables, aguantan peso y no trabajan como la tabla maciza. De aquí sale la mayoría de los muebles.</span></li>
+        <li><svg class='mat-icono' aria-hidden='true' focusable='false'><use href='#mat-metales'/></svg><b>Metales</b><span>Herrería ligera: manejo las máquinas de soldar, y trabajo el hierro y el aluminio. Para bases, estructuras y refuerzos donde la madera sola no da.</span></li>
+        <li><svg class='mat-icono' aria-hidden='true' focusable='false'><use href='#mat-pintura'/></svg><b>Pintura y barnices</b><span>Crudo, sellado, laca, poliuretano o aceite de linaza. Cada uno cambia el precio y cambia cómo envejece la pieza; lo conversamos según dónde va a vivir.</span></li>
       " data-en="
-        <li><b>Solid wood</b><span>Solid pine for structure, rails and anything that has to carry load; it takes on a more golden tone over time. And samán, hard and strongly grained, for small pieces where the wood is the point.</span></li>
-        <li><b>Engineered boards</b><span>Plywood, composites, MDF, melamine and the like. They're the workhorse: stable, they carry weight and they don't move the way solid board does. Most of the furniture comes from here.</span></li>
-        <li><b>Metals</b><span>Light metalwork: I run the welders, and I work iron and aluminium. For bases, frames and reinforcement where wood alone won't do.</span></li>
-        <li><b>Paint and varnish</b><span>Unfinished, sealed, lacquered, polyurethane or linseed oil. Each one changes the price and changes how the piece ages; we talk it through based on where it's going to live.</span></li>
+        <li><svg class='mat-icono' aria-hidden='true' focusable='false'><use href='#mat-madera'/></svg><b>Solid wood</b><span>Solid pine for structure, rails and anything that has to carry load; it takes on a more golden tone over time. And samán, hard and strongly grained, for small pieces where the wood is the point.</span></li>
+        <li><svg class='mat-icono' aria-hidden='true' focusable='false'><use href='#mat-aglomerados'/></svg><b>Engineered boards</b><span>Plywood, composites, MDF, melamine and the like. They're the workhorse: stable, they carry weight and they don't move the way solid board does. Most of the furniture comes from here.</span></li>
+        <li><svg class='mat-icono' aria-hidden='true' focusable='false'><use href='#mat-metales'/></svg><b>Metals</b><span>Light metalwork: I run the welders, and I work iron and aluminium. For bases, frames and reinforcement where wood alone won't do.</span></li>
+        <li><svg class='mat-icono' aria-hidden='true' focusable='false'><use href='#mat-pintura'/></svg><b>Paint and varnish</b><span>Unfinished, sealed, lacquered, polyurethane or linseed oil. Each one changes the price and changes how the piece ages; we talk it through based on where it's going to live.</span></li>
       "></ul>
     </section>
 
@@ -212,9 +373,12 @@
          Commons con licencia libre — la Xylothèque du Cirad (dominio
          público) y, el puy, del Muséum de Toulouse (CC BY-SA 3.0, con
          su crédito obligatorio al pie de la lista). Van en
-         img/maderas/<madera>.webp, 240 px, recortadas del 80% central
-         (el borde traía el fondo gris del museo). Las descargas enteras
-         están en notas/maderas-commons/ por si hay que recortar otra vez.
+         img/maderas/<madera>.webp, 480 × 240 (2:1) y con la veta
+         HORIZONTAL (él, 14/09): las del Cirad se giran 90°. Salen de
+         las MAESTRAS de E:\Contenido PrototipoAgo\Maderas\<Madera>.jpg
+         (1440 × 720), que él retoca de color a mano: si cambian, se
+         vuelven a pasar a .webp desde ahí. Las descargas enteras de
+         Commons siguen en notas/maderas-commons/.
          El apamate NO tiene foto en Commons y sigue con su cuadro de
          color. Cuando él fotografíe un retal, se pisa el .webp del mismo
          nombre y se ajusta el crédito.

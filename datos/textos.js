@@ -61,8 +61,8 @@ window.TEXTOS = {
   /* Sale en TODAS las fichas de Prototipos. {a}…{/a} se convierte en un
      enlace a taller.html#maderas — ver pintarPanel() en js/prototipos.js. */
   pt_personalizar: {
-    es: "Cualquier pieza se puede personalizar: medidas, acabado, herrajes y la especie de madera. {a}Mira con qué maderas trabajo{/a}.",
-    en: "Any piece can be customised: dimensions, finish, hardware and the wood species. {a}See the woods I work with{/a}."
+    es: "Cualquier pieza se puede personalizar: medidas, acabado, herrajes y la especie de madera. {a}Mira con qué maderas trabajo{/a}. Si la personalizas, te mando una propuesta con el dibujo, las medidas y el precio: {b}mira cómo se arma{/b}.",
+    en: "Any piece can be customised: dimensions, finish, hardware and the wood species. {a}See the woods I work with{/a}. If you customise it, I send you a proposal with the drawing, the dimensions and the price: {b}see how it's put together{/b}."
   },
 
   pt_cantidad:  { es: "Cantidad", en: "Quantity" },

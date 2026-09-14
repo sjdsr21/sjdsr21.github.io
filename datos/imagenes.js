@@ -1,5 +1,5 @@
 ﻿/* GENERADO POR Achicar-imagenes.ps1 — no editar a mano.
-   2026-09-14 13:25
+   2026-09-14 17:56
 
    Las fotos que tienen al lado una copia <nombre>-movil.webp de
    1000 px. sitio.js consulta esta lista para ofrecerle al
@@ -53,6 +53,15 @@ window.IMG_MOVIL = [
   "img/prototipos/tumbona-4.webp",
   "img/prototipos/tumbona-5.webp",
   "img/prototipos/tumbona-6.webp",
+  "img/taller/carrusel/intro-0.webp",
+  "img/taller/carrusel/intro-1.webp",
+  "img/taller/carrusel/intro-10.webp",
+  "img/taller/carrusel/intro-11.webp",
+  "img/taller/carrusel/intro-2.webp",
+  "img/taller/carrusel/intro-5.webp",
+  "img/taller/carrusel/intro-6.webp",
+  "img/taller/carrusel/intro-7.webp",
+  "img/taller/carrusel/intro-9.webp",
   "img/taller/propuesta-ejemplo.webp",
   "img/trabajos/bandeja-foto-1.webp",
   "img/trabajos/bandeja-foto-2.webp",

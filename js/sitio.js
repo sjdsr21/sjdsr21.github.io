@@ -1351,15 +1351,10 @@
   /* ---------- datos visibles ------------------------------ */
 
   function trabajosVisibles() {
-    var lista = window.TRABAJOS.filter(function (w) { return w.publicado || verBorradores; });
-    /* Orden de prueba (14/09/2026). Si datos/trabajos.js trae
-       window.ORDEN_TRABAJOS —una lista de slugs—, las piezas salen en
-       ese orden; las que no estén en la lista van detrás, en el orden
-       del archivo (sort es estable). Sin la lista, todo queda como antes. */
-    var orden = window.ORDEN_TRABAJOS;
-    if (!orden || !orden.length) return lista;
-    function pos(w) { var i = orden.indexOf(w.slug); return i === -1 ? orden.length : i; }
-    return lista.slice().sort(function (a, b) { return pos(a) - pos(b); });
+    /* En el orden del archivo. El catálogo de Exhibición lo baraja en
+       cada carga (ver barajar / ordenGuardado, junto a paginas.trabajos);
+       la lista fija ORDEN_TRABAJOS de la prueba del 14/09 ya no existe. */
+    return window.TRABAJOS.filter(function (w) { return w.publicado || verBorradores; });
   }
   function tiendaVisible(familia) {
     return window.TIENDA.filter(function (p) {
@@ -1531,15 +1526,46 @@
      la cuadrícula. Con ellos se fueron unas 60 líneas de estado y
      manejadores que ya no hacen falta. Las claves filtro_* siguen
      en textos.js por si algún día vuelven. */
+  /* ORDEN ALEATORIO DE LA EXHIBICIÓN (él, 14/09/2026): «con cada
+     refrescar de la página, que se reorganicen». Se baraja UNA vez por
+     carga de trabajos.html —cambiar de idioma repinta, pero no vuelve a
+     barajar— y el orden se guarda en sessionStorage para que las
+     flechas de la ficha (navegarPiezas) recorran las piezas en el mismo
+     orden en que se vieron. Solo el catálogo: la portada y Novedades
+     siguen en el orden del archivo. */
+  var CLAVE_ORDEN = "orden-exhibicion";
+  var ordenDeEstaCarga = null;
+
+  function barajar(lista) {           /* Fisher-Yates: todos los órdenes igual de probables */
+    var a = lista.slice();
+    for (var i = a.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var x = a[i]; a[i] = a[j]; a[j] = x;
+    }
+    return a;
+  }
+  function ordenGuardado(lista) {
+    var o = null;
+    try { o = JSON.parse(sessionStorage.getItem(CLAVE_ORDEN) || "null"); } catch (e) { /* modo privado */ }
+    if (!o || !o.length) return lista;
+    function pos(w) { var i = o.indexOf(w.slug); return i === -1 ? o.length : i; }
+    return lista.slice().sort(function (a, b) { return pos(a) - pos(b); });
+  }
+
   paginas.trabajos = function () {
     $("#titulo").textContent = t("trabajos_titulo");
     $("#bajada").textContent = t("trabajos_bajada");
+
+    if (!ordenDeEstaCarga) {
+      ordenDeEstaCarga = barajar(trabajosVisibles()).map(function (w) { return w.slug; });
+      try { sessionStorage.setItem(CLAVE_ORDEN, JSON.stringify(ordenDeEstaCarga)); } catch (e) { /* modo privado */ }
+    }
 
     var host = $("#rejilla");
     host.innerHTML = "";
     /* `rejilla--tres` la separa de la de Prototipos: aquí van tres
        por fila y con un hueco entre piezas, no pegadas. */
-    var r = rejilla(trabajosVisibles(), tarjetaTrabajo);
+    var r = rejilla(ordenGuardado(trabajosVisibles()), tarjetaTrabajo);
     r.classList.add("rejilla--tres");
     host.appendChild(r);
     revelar(host, ".tarjeta", 45);
@@ -1556,7 +1582,9 @@
      por un enlace directo a algo sin publicar, con ?borradores=1—
      no hay anterior ni siguiente, y queda solo el del medio. */
   function navegarPiezas(w) {
-    var lista = trabajosVisibles();
+    /* En el orden barajado que se vio en el catálogo (ordenGuardado).
+       Si se llegó sin pasar por él —enlace directo—, en el del archivo. */
+    var lista = ordenGuardado(trabajosVisibles());
     var i = -1;
     for (var k = 0; k < lista.length; k++) {
       if (lista[k].slug === w.slug) { i = k; break; }
@@ -1875,11 +1903,58 @@
     revelar(host, ".ficha__medios, .ficha__datos", 120);
   };
 
+  /* CARRUSEL DE LA INTRO DE EL TALLER (14/09/2026, pedido suyo): una
+     foto cada 4 s, con fundido (el CSS, .carrusel-intro). Solo la
+     primera trae src; las demás esperan en data-src y se cargan de UNA
+     en una, la siguiente mientras se ve la actual, así nadie baja las
+     11 de golpe. Si la siguiente aún no llegó, se espera al próximo
+     turno en vez de fundir a un hueco. Con la pestaña oculta no avanza,
+     y con «reducir movimiento» se queda en la primera.
+     Arranca UNA sola vez: paginas.taller se vuelve a llamar al cambiar
+     de idioma y sin el candado se acumularían relojes. */
+  var carruselIniciado = false;
+  function iniciarCarruselIntro() {
+    if (carruselIniciado) return;
+    var caja = $(".carrusel-intro");
+    if (!caja) return;
+    carruselIniciado = true;
+    var fotos = $$("img", caja);
+    if (fotos.length < 2 || menosMovimiento) return;
+
+    /* «Lista» = el navegador avisó que la bajó (evento load), NO
+       naturalWidth > 0: con srcset, naturalWidth se divide por la
+       densidad que sale de `sizes`, y en una ventana de 0 px de ancho
+       (el panel de pruebas oculto) daba 0 aunque la foto estuviera
+       entera — el carrusel se quedaba parado para siempre. El oyente
+       se pone ANTES de ponerFoto para no perderse el load. */
+    function cargar(img) {
+      var src = img.getAttribute("data-src");
+      if (!src || img.getAttribute("src")) return;
+      img.addEventListener("load", function () { img.setAttribute("data-lista", "1"); });
+      ponerFoto(img, src);
+    }
+    fotos[0].setAttribute("data-lista", "1");   /* la primera ya viene en el HTML */
+    function lista(img) { return img.getAttribute("data-lista") === "1"; }
+
+    var i = 0;
+    cargar(fotos[1]);
+    setInterval(function () {
+      if (document.hidden) return;
+      var sig = (i + 1) % fotos.length;
+      if (!lista(fotos[sig])) { cargar(fotos[sig]); return; }
+      fotos[i].classList.remove("activa");
+      fotos[sig].classList.add("activa");
+      i = sig;
+      cargar(fotos[(i + 1) % fotos.length]);
+    }, 4000);
+  }
+
   paginas.taller = function () {
     $("#titulo").textContent = t("sobre_titulo");
     $$("[data-es]").forEach(function (e) {
       e.innerHTML = idioma === "es" ? e.getAttribute("data-es") : e.getAttribute("data-en");
     });
+    iniciarCarruselIntro();
     revelar(document, ".intro-taller > *", 130);
     $$(".seccion").forEach(function (s) {
       revelar(s, "h2, .pasos li, .dos-columnas > div, .lista-marcas li, .prosa, .tramo__texto", 70);
