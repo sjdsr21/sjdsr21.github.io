@@ -410,16 +410,22 @@ video.pt-visual__foto {
    reemplazado y con `width:auto` usa su tamaño intrínseco.
    Quitando el aspect-ratio y sacando el lienzo del posicionamiento
    absoluto, el alto lo pone el contenido y se ve entera. */
-.pt-visual[data-suelto="1"] { aspect-ratio: auto; }
-.pt-visual[data-suelto="1"] .pt-visual__lienzo {
-  position: relative; inset: auto;
-  width: 100%; padding: 1.1rem;
-}
+/* 13/09/2026 · TODO LO DE ARRIBA QUEDÓ ANTIGUO, y dejarlo costó un
+   recorte. Aquí había dos reglas —`aspect-ratio:auto` en el recuadro y
+   el lienzo en `position:relative` con padding— para que la foto
+   recortada pusiera el alto. El 08/09 el recuadro pasó a ser cuadrado
+   para todo y .pt-visual__foto a ir `absolute; inset:0` contra el
+   lienzo. Con el lienzo de ESTAS piezas en relative, ese "inset:0" se
+   medía contra una caja de 35 px (solo el padding): la foto se
+   dimensionaba por su proporción y el `overflow:hidden` la cortaba por
+   los lados y por abajo (base de laptop alta, él, 13/09).
+   Ahora la recortada usa el MISMO lienzo absoluto que todo lo demás, y
+   el aire que antes ponía el lienzo lo pone el padding de la propia
+   imagen: con `object-fit:contain` el padding encoge la caja de
+   contenido y la foto encaja dentro, entera. Ya no hace falta el tope
+   de 58vh: el cuadrado no crece con la foto. */
 .pt-visual__foto--suelto {
-  width: 100%; height: auto;
-  /* Tope para que una foto muy vertical no empuje el panel entero. */
-  max-height: 58vh;
-  object-fit: contain; padding: 0;
+  padding: 1.1rem; box-sizing: border-box;
 }
 /* Y la caja se hace cuadrada: las piezas recortadas vienen unas
    apaisadas y otras verticales, y el cuadrado le da sitio a las

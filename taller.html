@@ -90,18 +90,98 @@
       <ol class="pasos" data-es="
         <li><strong>Me escribes con la idea</strong>Aunque esté incompleta. Una foto de referencia, el espacio donde va, medidas aproximadas: todo eso ayuda muchísimo.</li>
         <li><strong>Lo dibujo</strong>Te mando una representación visual en 3D, con las medidas reales aproximadas, para que veas la pieza antes de que exista. Si hay que ajustarle algo, se ajusta aquí.</li>
-        <li><strong>Presupuesto en firme</strong>Una sola cifra, sin elementos escondidos. Lleva fecha de validez porque el material se mueve, no por apurarte.</li>
+        <li><strong>Presupuesto en firme</strong>Una sola cifra, sin elementos escondidos. Lleva fecha de validez porque el material se mueve, no por apurarte. <a href='#propuesta'>Mira cómo es una propuesta</a>.</li>
         <li><strong>Anticipo y arranque</strong>50% para arrancar y 50% contra entrega. El tiempo de entrega se cuenta desde el anticipo de arranque, no desde que apruebas: el material se compra con ese anticipo.</li>
         <li><strong>Te voy contando</strong>Mientras la pieza se hace, te mando avances: cómo va quedando, en qué punto está y cualquier decisión que valga la pena consultarte por el camino.</li>
         <li><strong>Entrega</strong>Según lo que hayamos acordado al principio, llevo la pieza y la monto, la dejo anclada donde va, o te la entrego lista para que la recibas como prefieras.</li>
       " data-en="
         <li><strong>You write me with the idea</strong>Even if it's incomplete. A reference photo, the space it goes in, rough measurements: all of it helps enormously.</li>
         <li><strong>I draw it</strong>I send you a visual 3D representation, at approximate real dimensions, so you see the piece before it exists. If something needs adjusting, it gets adjusted here.</li>
-        <li><strong>A firm quote</strong>One single figure, with nothing hidden in it. It carries an expiry date because material prices move, not to rush you.</li>
+        <li><strong>A firm quote</strong>One single figure, with nothing hidden in it. It carries an expiry date because material prices move, not to rush you. <a href='#propuesta'>See what a proposal looks like</a>.</li>
         <li><strong>Deposit and start</strong>50% to start, 50% on delivery. The lead time counts from the starting deposit, not from your approval: the material is bought with that deposit.</li>
         <li><strong>I keep you posted</strong>While the piece is being made I send you progress: how it's coming along, where it stands, and any decision worth checking with you along the way.</li>
         <li><strong>Delivery</strong>Depending on what we agreed at the start, I bring the piece and mount it, leave it anchored where it goes, or hand it over ready for you to receive however suits you.</li>
       "></ol>
+    </section>
+
+    <!-- ---------- La propuesta, desglosada ----------
+         2026-09-14 · Pedido suyo del 11/09: una propuesta real a lo
+         largo a la izquierda y, a la derecha, llaves que abarcan cada
+         tramo y lo explican. Las llaves van RECTAS (corchete con punta)
+         porque la marca no usa ni una curva.
+
+         La imagen es UNA sola (img/taller/propuesta-ejemplo.webp,
+         1400 × 6296) repetida en cada tramo y recortada por CSS: cada
+         <li> lleva --ini (fila de arranque en px de esa imagen) y
+         --alto (cuántas filas abarca). Si se regenera la propuesta y
+         cambian las alturas, se cambian esos dos números y nada más.
+
+         Sale de la Mesa de niveles (D:\Carpinteria\Proyectos\Mesa
+         Niveles María\pitch-web.json): la copia para la web, con datos
+         de cobro de EJEMPLO y el monto en ceros, que además va tapado
+         aquí con .tramo__tapa. Decisión suya, no publicar ni sus
+         cuentas ni el precio. La que recibió la clienta no se tocó.
+
+         El id `propuesta` lo enlaza el paso 3 de «Cómo funciona un
+         encargo»; más adelante, también las fichas. No lo cambies. -->
+    <section class="seccion" id="propuesta">
+      <h2 data-es="Cómo es una propuesta" data-en="What a proposal looks like"></h2>
+      <p class="prosa" data-es="Así se ve lo que recibes cuando el dibujo está listo: un PDF de una sola página, por WhatsApp, con todo lo que hace falta para decidir. Ésta es real —una mesa de centro de tres niveles—; solo cambié los datos de pago por números de ejemplo y tapé el precio."
+         data-en="This is what you get once the drawing is ready: a single-page PDF, over WhatsApp, with everything you need to decide. This one is real — a three-tier coffee table; I only swapped the payment details for placeholder numbers and covered the price."></p>
+
+      <ol class="propuesta">
+        <li class="tramo" style="--ini:0; --alto:392">
+          <div class="tramo__recorte"><img src="img/taller/propuesta-ejemplo.webp" alt="Propuesta de ejemplo de Prototipo Ago para una mesa de niveles, completa: presupuesto, formas de pago, dibujo con medidas, qué incluye, consideraciones y una imagen de referencia." loading="lazy" decoding="async"></div>
+          <div class="tramo__llave" aria-hidden="true"></div>
+          <div class="tramo__texto"><div class="tramo__nota" data-es="<b>La fecha</b><span>El día en que se emite y el nombre de la pieza. La fecha no es decorativa: desde ahí cuenta la validez del precio.</span>"
+               data-en="<b>The date</b><span>The day it's issued and the name of the piece. The date isn't decoration: the price's validity counts from it.</span>"></div></div>
+        </li>
+        <li class="tramo" style="--ini:392; --alto:718">
+          <div class="tramo__recorte"><img src="img/taller/propuesta-ejemplo.webp" alt="" loading="lazy" decoding="async">
+            <span class="tramo__tapa" style="left:11%; top:17.5%; width:54%; height:20%"></span>
+            <span class="tramo__tapa" style="left:53.9%; top:80.2%; width:18.8%; height:5.4%"></span>
+          </div>
+          <div class="tramo__llave" aria-hidden="true"></div>
+          <div class="tramo__texto"><div class="tramo__nota" data-es="<b>Una sola cifra</b><span>El total, sin separar materiales de mano de obra. Si todavía hay decisiones abiertas, va como rango. Debajo, su valor en REF: si pagas en bolívares, se cobra a la tasa BCV del día en que pagas. La entrega a domicilio va aparte, con su costo aproximado, porque es opcional. Aquí la cifra está tapada.</span>"
+               data-en="<b>One single figure</b><span>The total, without splitting materials from labour. If some decisions are still open, it's a range. Below it, its value in REF: if you pay in bolívares, it's charged at the BCV rate on the day you pay. Home delivery is separate, with its approximate cost, because it's optional. Here the figure is covered.</span>"></div></div>
+        </li>
+        <li class="tramo" style="--ini:1110; --alto:680">
+          <div class="tramo__recorte"><img src="img/taller/propuesta-ejemplo.webp" alt="" loading="lazy" decoding="async"></div>
+          <div class="tramo__llave" aria-hidden="true"></div>
+          <div class="tramo__texto"><div class="tramo__nota" data-es="<b>Cómo pagar</b><span>En dólares o en bolívares, con los datos completos de cada vía para que puedas pagar sin tener que preguntar nada más. En este ejemplo los números son de mentira.</span>"
+               data-en="<b>How to pay</b><span>In dollars or in bolívares, with the full details for each option so you can pay without having to ask anything else. In this example the numbers are made up.</span>"></div></div>
+        </li>
+        <li class="tramo" style="--ini:1790; --alto:294">
+          <div class="tramo__recorte"><img src="img/taller/propuesta-ejemplo.webp" alt="" loading="lazy" decoding="async"></div>
+          <div class="tramo__llave" aria-hidden="true"></div>
+          <div class="tramo__texto"><div class="tramo__nota" data-es="<b>Plazo y anticipo</b><span>Cuánto tarda y cómo se reparte el pago: 50% para arrancar y 50% contra entrega. El plazo cuenta desde el anticipo, porque con ese dinero se compra el material.</span>"
+               data-en="<b>Lead time and deposit</b><span>How long it takes and how the payment is split: 50% to start, 50% on delivery. The lead time counts from the deposit, because that money buys the material.</span>"></div></div>
+        </li>
+        <li class="tramo" style="--ini:2084; --alto:827">
+          <div class="tramo__recorte"><img src="img/taller/propuesta-ejemplo.webp" alt="" loading="lazy" decoding="async"></div>
+          <div class="tramo__llave" aria-hidden="true"></div>
+          <div class="tramo__texto"><div class="tramo__nota" data-es="<b>La pieza antes de que exista</b><span>El dibujo sale del modelo 3D, con las medidas reales acotadas como en un plano: ancho, fondo y alto. Los colores son los del acabado que se va a hacer.</span>"
+               data-en="<b>The piece before it exists</b><span>The drawing comes from the 3D model, with the real dimensions marked as on a plan: width, depth and height. The colours are those of the finish that will be made.</span>"></div></div>
+        </li>
+        <li class="tramo" style="--ini:2911; --alto:915">
+          <div class="tramo__recorte"><img src="img/taller/propuesta-ejemplo.webp" alt="" loading="lazy" decoding="async"></div>
+          <div class="tramo__llave" aria-hidden="true"></div>
+          <div class="tramo__texto"><div class="tramo__nota" data-es="<b>Qué incluye</b><span>Lo que entra en el precio, dicho con detalle: la madera, los espesores, el acabado y los herrajes, parte por parte.</span>"
+               data-en="<b>What's included</b><span>What the price covers, spelled out: the wood, the thicknesses, the finish and the hardware, part by part.</span>"></div></div>
+        </li>
+        <li class="tramo" style="--ini:3826; --alto:869">
+          <div class="tramo__recorte"><img src="img/taller/propuesta-ejemplo.webp" alt="" loading="lazy" decoding="async"></div>
+          <div class="tramo__llave" aria-hidden="true"></div>
+          <div class="tramo__texto"><div class="tramo__nota" data-es="<b>Consideraciones</b><span>Hasta cuándo vale el precio, las medidas generales, lo que se puede ajustar después y cómo viaja la pieza. Lo que conviene saber antes de decir que sí.</span>"
+               data-en="<b>Things to consider</b><span>How long the price holds, the overall dimensions, what can be adjusted later and how the piece travels. What's worth knowing before you say yes.</span>"></div></div>
+        </li>
+        <li class="tramo" style="--ini:4695; --alto:1601">
+          <div class="tramo__recorte"><img src="img/taller/propuesta-ejemplo.webp" alt="" loading="lazy" decoding="async"></div>
+          <div class="tramo__llave" aria-hidden="true"></div>
+          <div class="tramo__texto"><div class="tramo__nota" data-es="<b>El ambiente</b><span>Cuando ayuda, una imagen de referencia para ver el carácter de la pieza. Es una ilustración: las medidas buenas son las del dibujo.</span>"
+               data-en="<b>The mood</b><span>When it helps, a reference image to show the piece's character. It's an illustration: the real dimensions are the ones on the drawing.</span>"></div></div>
+        </li>
+      </ol>
     </section>
 
     <!-- ---------- Materiales ---------- -->

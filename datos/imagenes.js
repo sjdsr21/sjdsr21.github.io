@@ -1,5 +1,5 @@
 ﻿/* GENERADO POR Achicar-imagenes.ps1 — no editar a mano.
-   2026-09-08 18:54
+   2026-09-14 11:12
 
    Las fotos que tienen al lado una copia <nombre>-movil.webp de
    1000 px. sitio.js consulta esta lista para ofrecerle al
@@ -7,7 +7,15 @@
 window.IMG_MOVIL = [
   "img/marca/retrato.webp",
   "img/prototipos/base-alta-laptop-saman.webp",
+  "img/prototipos/base-alta-pino-iso.webp",
+  "img/prototipos/base-alta-pino-iso-claro.webp",
   "img/prototipos/base-alta-plano.webp",
+  "img/prototipos/base-alta-saman-iso.webp",
+  "img/prototipos/base-alta-saman-iso-claro.webp",
+  "img/prototipos/base-baja-apamate-iso.webp",
+  "img/prototipos/base-baja-apamate-iso-claro.webp",
+  "img/prototipos/base-baja-saman-iso.webp",
+  "img/prototipos/base-baja-saman-iso-claro.webp",
   "img/prototipos/bases-foto-pino-iso.webp",
   "img/prototipos/bases-foto-pino-iso-claro.webp",
   "img/prototipos/bases-foto-saman-iso.webp",
@@ -45,6 +53,7 @@ window.IMG_MOVIL = [
   "img/prototipos/tumbona-4.webp",
   "img/prototipos/tumbona-5.webp",
   "img/prototipos/tumbona-6.webp",
+  "img/taller/propuesta-ejemplo.webp",
   "img/trabajos/bandeja-foto-1.webp",
   "img/trabajos/bandeja-foto-2.webp",
   "img/trabajos/bandeja-foto-3.webp",
@@ -67,6 +76,12 @@ window.IMG_MOVIL = [
   "img/trabajos/cuartos-mariela.webp",
   "img/trabajos/elevacho-foto-1.webp",
   "img/trabajos/elevacho-foto-2.webp",
+  "img/trabajos/elevacho-foto-3.webp",
+  "img/trabajos/elevacho-foto-4.webp",
+  "img/trabajos/elevacho-foto-5.webp",
+  "img/trabajos/elevacho-foto-6.webp",
+  "img/trabajos/elevacho-foto-7.webp",
+  "img/trabajos/elevacho-foto-8.webp",
   "img/trabajos/escenografia-morochos-foto-1.webp",
   "img/trabajos/escenografia-morochos-foto-2.webp",
   "img/trabajos/escenografia-morochos-foto-3.webp",

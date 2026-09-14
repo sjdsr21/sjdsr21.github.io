@@ -16,7 +16,11 @@
   /* ---------- idioma ---------------------------------------- */
   var idioma = localStorage.getItem("idioma");
   if (idioma !== "es" && idioma !== "en") {
-    idioma = (navigator.language || "es").slice(0, 2) === "en" ? "en" : "es";
+    /* Español SIEMPRE al entrar por primera vez (él, 14/09/2026), igual
+       que en js/sitio.js. Este archivo decide su idioma POR SU CUENTA: al
+       cambiarlo solo allí, la cabecera salía en español y el catálogo
+       seguía en inglés en un navegador inglés. Si se toca uno, tocar el otro. */
+    idioma = "es";
   }
   window.addEventListener("idioma-cambiado", function (e) {
     idioma = e.detail;
@@ -437,6 +441,18 @@
       });
     }
 
+    /* Y los isométricos por madera (14/09/2026), en el orden de las
+       opciones, igual que las fotos por variante de arriba. */
+    if (p.iso_img_por) {
+      var grupoIso = (p.opciones || []).filter(function (g) {
+        return g.id === (p.opcion_visual || "madera");
+      })[0];
+      (grupoIso ? grupoIso.valores.map(function (v) { return v.id; })
+                : Object.keys(p.iso_img_por)).forEach(function (k) {
+        if (p.iso_img_por[k]) fotos.push(p.iso_img_por[k]);
+      });
+    }
+
     /* Sin repetidas: la base baja apunta a la misma foto desde
        las dos maderas mientras no haya una del apamate. */
     return fotos.filter(function (f, i) { return fotos.indexOf(f) === i; });
@@ -610,6 +626,16 @@
       }
     }
 
+    /* El ISOMÉTRICO con cotas, DETRÁS del plano (él, 14/09/2026): en las
+       bases de laptop el plano técnico se queda —él lo quiere— y el
+       isométrico se suma, uno por madera, como en el resto del catálogo.
+       Va por su propio campo porque `plano_img` ya lo ocupa el plano.
+       Entra como "plano-img" a propósito: es el camino que ya siguen los
+       isométricos de las demás piezas (recuadro liso, `contain`, versión
+       clara/oscura por srcTema, y el CSS solo invierte los .svg). */
+    var iso = p.iso_img_por && p.iso_img_por[o[p.opcion_visual || "madera"]];
+    if (iso) l.push({ tipo: "plano-img", src: iso });
+
     if (p.video) l.push({ tipo: "video", src: p.video });
 
     /* El visor 3D va SIEMPRE EL ULTIMO de la tira (el, 14/08/2026).
@@ -631,7 +657,14 @@
     var lista = medios(sel.p, sel.o);
     if (medioActivo >= lista.length) medioActivo = 0;
     var m = lista[medioActivo] || null;
-    var firma = m ? m.tipo + ":" + m.src : "nada";
+    /* La firma lleva el src YA RESUELTO POR TEMA (14/09/2026). Con el src
+       a secas, al conmutar a modo claro la firma no cambiaba, el
+       `if (firma === montado) return` de abajo cortaba, y la imagen
+       grande de los isométricos se quedaba en la versión de fondo negro
+       aunque la miniatura ya enseñaba la clara. Pasaba con TODOS los
+       isométricos (comederos, gancho, baño...), no solo con los nuevos.
+       Para una foto normal srcTema devuelve lo mismo: no remonta nada. */
+    var firma = m ? m.tipo + ":" + srcTema(m.src) : "nada";
 
     /* Las miniaturas: solo si hay más de una. Con una sola no
        aportan nada y estorban encima de la imagen. */

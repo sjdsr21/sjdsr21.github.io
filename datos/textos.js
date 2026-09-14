@@ -304,12 +304,14 @@ window.TEXTOS = {
     "pino":            { es: "Pino",                       en: "Pine" },
     "contraenchapado": { es: "Contraenchapado de pino",    en: "Pine plywood" },
     "mdf":             { es: "MDF",                        en: "MDF" },
+    /* HR = hidrorresistente (14/09/2026, los vanitarios del baño). */
+    "mdf-hr":          { es: "MDF HR",                     en: "Moisture-resistant MDF" },
     "saman":           { es: "Samán",                      en: "Monkeypod" },
     "eucalipto":       { es: "Eucalipto",                  en: "Eucalyptus" },
     /* «Compuesto» es como se llama aquí al tablero de alma maciza
        chapado; en inglés no hay traducción directa y lo más
        cercano es blockboard. */
-    "okume":           { es: "Compuesto de okume",         en: "Okoumé blockboard" },
+    "okume":           { es: "Compuesto de okumé",         en: "Okoumé blockboard" },
     "cedro":           { es: "Cedro",                      en: "Cedar" },
     "caoba":           { es: "Caoba",                      en: "Mahogany" },
     "roble":           { es: "Roble",                      en: "Oak" },

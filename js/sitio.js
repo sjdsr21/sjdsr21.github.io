@@ -63,7 +63,11 @@
   var IDIOMAS = ["es", "en"];
   var idioma = localStorage.getItem("idioma");
   if (IDIOMAS.indexOf(idioma) === -1) {
-    idioma = (navigator.language || "es").slice(0, 2) === "en" ? "en" : "es";
+    /* Español SIEMPRE al entrar por primera vez (él, 14/09/2026). Antes
+       miraba el idioma del navegador y un teléfono en inglés abría la web
+       en inglés. Si el visitante pulsa EN, eso sí se recuerda (arriba,
+       localStorage) y manda sobre esto. */
+    idioma = "es";
   }
 
   function t(clave) {
@@ -755,8 +759,20 @@
     var cab = $("#cabecera");
     if (!cab || cabeceraVigilada) return;
     cabeceraVigilada = true;
+    /* DOS umbrales y no uno (él, 14/09/2026: en el teléfono la cabecera
+       "rebotaba" a medio camino). Con un solo corte en 40 px pasaba esto:
+       al encogerse, la franja del logotipo se pliega, la página sube lo
+       que medía esa franja y el scroll vuelve a quedar POR DEBAJO de 40
+       → se desencoge → la página baja → pasa de 40 → se encoge... en
+       bucle. Ahora se encoge al pasar de BAJA y solo vuelve a abrirse
+       por debajo de SUBE. Entre los dos no cambia nada, y el hueco (132
+       px) es más grande que lo que se mueve la página al plegarse, así
+       que un cambio ya no puede provocar el contrario. */
+    var BAJA = 140, SUBE = 8;
     function alScroll() {
-      cab.classList.toggle("encogida", window.scrollY > 40);
+      var y = window.scrollY, encogida = cab.classList.contains("encogida");
+      if (!encogida && y > BAJA) cab.classList.add("encogida");
+      else if (encogida && y < SUBE) cab.classList.remove("encogida");
     }
     window.addEventListener("scroll", alScroll, { passive: true });
     alScroll();
@@ -1335,7 +1351,15 @@
   /* ---------- datos visibles ------------------------------ */
 
   function trabajosVisibles() {
-    return window.TRABAJOS.filter(function (w) { return w.publicado || verBorradores; });
+    var lista = window.TRABAJOS.filter(function (w) { return w.publicado || verBorradores; });
+    /* Orden de prueba (14/09/2026). Si datos/trabajos.js trae
+       window.ORDEN_TRABAJOS —una lista de slugs—, las piezas salen en
+       ese orden; las que no estén en la lista van detrás, en el orden
+       del archivo (sort es estable). Sin la lista, todo queda como antes. */
+    var orden = window.ORDEN_TRABAJOS;
+    if (!orden || !orden.length) return lista;
+    function pos(w) { var i = orden.indexOf(w.slug); return i === -1 ? orden.length : i; }
+    return lista.slice().sort(function (a, b) { return pos(a) - pos(b); });
   }
   function tiendaVisible(familia) {
     return window.TIENDA.filter(function (p) {
@@ -1858,7 +1882,7 @@
     });
     revelar(document, ".intro-taller > *", 130);
     $$(".seccion").forEach(function (s) {
-      revelar(s, "h2, .pasos li, .dos-columnas > div, .lista-marcas li, .prosa", 70);
+      revelar(s, "h2, .pasos li, .dos-columnas > div, .lista-marcas li, .prosa, .tramo__texto", 70);
     });
   };
 

@@ -1462,6 +1462,69 @@ body:not([data-pagina="novedades"]) .portada .bajada {
   .maderas span { margin-top: .5rem; }
 }
 
+/* --- La propuesta desglosada (taller.html#propuesta) ------
+   Una sola imagen de la propuesta, 1400 × 6296, recortada en
+   tramos. Cada .tramo trae --ini y --alto en px de ESA imagen;
+   el recorte toma su proporción de --alto y sube la imagen
+   --ini/--alto veces su propia altura. Los tramos van pegados
+   (sin hueco) para que a la izquierda se lea el PDF seguido.
+   La llave es un corchete recto con punta: cero curvas. */
+.propuesta { list-style: none; padding: 0; margin: 2.4rem 0 0; counter-reset: tramo; }
+/* El alto de cada fila lo manda SOLO el recorte. Si lo mandara la
+   nota, el recorte se estiraba a ese alto y, por su proporción
+   fija, se ensanchaba con él (salían anchos de 432 a 841 px). Por
+   eso la nota va en absoluto dentro de .tramo__texto y puede
+   sobresalir un poco en los tramos bajos sin abrir hueco en el PDF. */
+.tramo {
+  counter-increment: tramo;
+  display: grid; grid-template-columns: minmax(0, 27rem) 2.2rem minmax(0, 30rem);
+  column-gap: 1.1rem; align-items: stretch;
+}
+.tramo__recorte {
+  position: relative; overflow: hidden; align-self: start;
+  width: 100%; aspect-ratio: 1400 / var(--alto);
+  background: var(--papel);
+}
+.tramo__texto { position: relative; }
+.tramo__recorte img {
+  position: absolute; left: 0; width: 100%; height: auto; max-width: none;
+  top: calc(var(--ini) / var(--alto) * -100%);
+}
+/* Lo que se tapa: el monto y su REF. Debajo ya van ceros. */
+.tramo__tapa {
+  position: absolute; background-color: #1b1c20;
+  background-image: var(--rayado-sutil);
+}
+.tramo__llave {
+  position: relative; margin: .55rem 0;
+  border: 1px solid var(--apagado); border-left: 0;
+}
+.tramo__llave::after {
+  content: ""; position: absolute; top: 50%; left: 100%;
+  width: 1.1rem; border-top: 1px solid var(--apagado);
+}
+.tramo__nota {
+  position: absolute; left: 0; right: 0; top: 50%; transform: translateY(-50%);
+  font-size: 1rem;
+}
+.tramo__nota::before {
+  content: counter(tramo, decimal-leading-zero);
+  display: block; margin-bottom: .35rem;
+  font-weight: 700; font-size: 0.875rem; color: var(--realce); letter-spacing: .05em;
+}
+.tramo__nota b { display: block; letter-spacing: -.02em; margin-bottom: .25rem; }
+.tramo__nota span { color: var(--apagado); }
+/* En teléfono no cabe al lado: cada nota baja bajo su tramo. */
+@media (max-width: 780px) {
+  .tramo { grid-template-columns: 1fr; }
+  .tramo__llave { display: none; }
+  .tramo__nota {
+    position: static; transform: none;
+    padding: 1rem 0 1.8rem 1rem; margin-top: .9rem;
+    border-left: 1px solid var(--apagado);
+  }
+}
+
 /* --- Pie -------------------------------------------------- */
 
 /* 2026-08-12 · La única franja rayada que queda en el sitio.

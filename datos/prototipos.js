@@ -29,10 +29,11 @@ window.PROTOTIPOS = [
     disponibilidad: "stock",
     nombre:  { es: "Base de laptop — alta", en: "Laptop stand — tall" },
     resumen: {
-      es: "Eleva la pantalla a la altura de los ojos. Para trabajar con teclado aparte, sin encorvarte.",
-      en: "Raises the screen to eye level. For working with a separate keyboard, without hunching over."
+      es: "Eleva la pantalla entre 18 y 26 cm, hasta la altura de los ojos. Para trabajar con teclado aparte, sin encorvarte.",
+      en: "Raises the screen by 18 to 26 cm, up to eye level. For working with a separate keyboard, without hunching over."
     },
-    precio_usd: 60,
+    /* $60 -> $50 el 14/09/2026 (él). El samán sigue con +5, o sea $55. */
+    precio_usd: 50,
     peso: 1.4,               /* RELLENO — sale del modelo 3D */
 
     /* Fotos recortadas sin fondo (PNG con transparencia). Salen de
@@ -51,6 +52,14 @@ window.PROTOTIPOS = [
        Negro sobre transparente; el modo oscuro lo invierte por CSS.
        El .png anterior (Nano Banana) sigue en la carpeta por si acaso. */
     plano_img: "img/prototipos/base-alta-plano.svg",
+    /* Isométrico con cotas, uno por madera (él, 14/09/2026): se SUMA al
+       plano, no lo sustituye. Salen de capturar-isometrico.html con los
+       .glb de modelo_por; el modelo está en la configuración BAJA, así
+       que acota 24 × 20 × 18 cm. La versión -claro la elige srcTema(). */
+    iso_img_por: {
+      pino:  "img/prototipos/base-alta-pino-iso.webp",
+      saman: "img/prototipos/base-alta-saman-iso.webp"
+    },
     imagen_por: {
       pino:  "img/prototipos/base-alta-pino.webp",
       saman: "img/prototipos/base-alta-saman.webp"
@@ -81,9 +90,11 @@ window.PROTOTIPOS = [
     opciones: [{
       id: "madera",
       etiqueta: { es: "Madera", en: "Wood" },
+      /* Stock REAL desde el 12/09/2026 (él): una unidad de cada madera,
+         las de la ronda 1 de inventario. Los 3 y 2 de antes eran relleno. */
       valores: [
-        { id: "pino",  etiqueta: { es: "Pino",  en: "Pine" },  delta: 0, stock: 3 },
-        { id: "saman", etiqueta: { es: "Samán", en: "Monkeypod" }, delta: 5, stock: 2 }
+        { id: "pino",  etiqueta: { es: "Pino",  en: "Pine" },  delta: 0, stock: 1 },
+        { id: "saman", etiqueta: { es: "Samán", en: "Monkeypod" }, delta: 5, stock: 1 }
       ]
     }]
   },
@@ -94,13 +105,14 @@ window.PROTOTIPOS = [
     disponibilidad: "stock",
     nombre:  { es: "Base de laptop — baja", en: "Laptop stand — low" },
     resumen: {
-      es: "Inclina el equipo y le da aire por debajo. Puedes seguir escribiendo en el teclado de la laptop.",
-      en: "Tilts the machine and lets it breathe underneath. You can keep typing on the laptop's own keyboard."
+      es: "Eleva la pantalla entre 11 y 13 cm, inclina el equipo y le da aire por debajo. Puedes seguir escribiendo en el teclado de la laptop.",
+      en: "Raises the screen by 11 to 13 cm, tilts the machine and lets it breathe underneath. You can keep typing on the laptop's own keyboard."
     },
     /* Las dos maderas al mismo precio (él, 12/08/2026): apamate y
        samán cuestan lo mismo, 55. Por eso ningún valor lleva
        delta. */
-    precio_usd: 55,
+    /* $55 -> $50 el 14/09/2026 (él), igual en las dos maderas. */
+    precio_usd: 50,
     peso: 1.1,               /* RELLENO */
 
     imagen: "img/prototipos/base-baja-saman.webp",
@@ -112,6 +124,12 @@ window.PROTOTIPOS = [
        `plano_img` gana a `diagrama`, que se deja como estaba por si hay que
        volver al esquema dibujado por codigo. */
     plano_img: "img/prototipos/base-baja-plano.svg",
+    /* Isométrico con cotas por madera (14/09/2026), igual que la alta:
+       24 × 23 × 11 cm medidos del modelo. */
+    iso_img_por: {
+      apamate: "img/prototipos/base-baja-apamate-iso.webp",
+      saman:   "img/prototipos/base-baja-saman-iso.webp"
+    },
     diagrama: "base-baja",
     imagen_por: {
       /* Solo hay foto del samán. El apamate se queda con la misma
@@ -136,9 +154,11 @@ window.PROTOTIPOS = [
     opciones: [{
       id: "madera",
       etiqueta: { es: "Madera", en: "Wood" },
+      /* Stock REAL desde el 12/09/2026 (él): una unidad de cada madera,
+         las de la ronda 1 de inventario. Los 3 y 2 de antes eran relleno. */
       valores: [
-        { id: "apamate", etiqueta: { es: "Apamate", en: "Apamate" }, delta: 0, stock: 3 },
-        { id: "saman",   etiqueta: { es: "Samán",   en: "Monkeypod" },   delta: 0, stock: 2 }
+        { id: "apamate", etiqueta: { es: "Apamate", en: "Apamate" }, delta: 0, stock: 1 },
+        { id: "saman",   etiqueta: { es: "Samán",   en: "Monkeypod" },   delta: 0, stock: 1 }
       ]
     }]
   },
@@ -146,7 +166,11 @@ window.PROTOTIPOS = [
   {
     slug: "tabla-picar",
     publicado: true,
-    disponibilidad: "stock",
+    /* A POR ENCARGO el 14/09/2026 (él): no queda ninguna tabla hecha, stock
+       real 0. Plazo 3 semanas, el de siempre. Para volver a stock: poner
+       "stock" aquí y el stock real en stock_matriz. */
+    disponibilidad: "pedido",
+    plazo_semanas: 3,
     /* En singular y sin el paréntesis de tamaños (él,
        14/08/2026): los tamaños ya se escogen en las opciones. */
     nombre:  { es: "Tabla de picar clásica", en: "Classic cutting board" },
@@ -167,10 +191,11 @@ window.PROTOTIPOS = [
       "s|puy":  35, "m|puy":  55, "l|puy":  70,
       "s|algarrobo": 40, "m|algarrobo": 60, "l|algarrobo": 80
     },
-    stock_matriz: {          /* RELLENO */
-      "s|teca": 3, "m|teca": 2, "l|teca": 2,
-      "s|puy":  0, "m|puy":  1, "l|puy":  0,
-      "s|algarrobo": 0, "m|algarrobo": 0, "l|algarrobo": 1
+    /* Stock REAL 0 el 14/09/2026 (él): no queda ninguna tabla hecha. */
+    stock_matriz: {          /* REAL: 0 de todo */
+      "s|teca": 0, "m|teca": 0, "l|teca": 0,
+      "s|puy":  0, "m|puy":  0, "l|puy":  0,
+      "s|algarrobo": 0, "m|algarrobo": 0, "l|algarrobo": 0
     },
     peso_por: { s: 1.2, m: 2.6, l: 4.8 },   /* RELLENO */
 
@@ -240,7 +265,10 @@ window.PROTOTIPOS = [
     slug: "butcher-block-l",
     publicado: true,
     destacado: true,
-    disponibilidad: "stock",
+    /* A POR ENCARGO el 14/09/2026 (él): solo las bases de laptop y las de
+       foto quedan como disponibles. Plazo 3 semanas, igual que el XL. */
+    disponibilidad: "pedido",
+    plazo_semanas: 3,
     nombre:  { es: "Butcher Block L", en: "Butcher Block L" },
     resumen: {
       es: "Veta vertical: el cuchillo entra entre las fibras en vez de cortarlas. No marca, no desafila y aguanta años de uso diario. Va sobre cuatro patas de goma, que la despegan del mesón y la dejan agarrada mientras picas.",
