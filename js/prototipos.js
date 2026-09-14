@@ -385,10 +385,17 @@
      Se intentó antes pintar LAS DOS y esconder una por CSS, y no
      sirve: en la cuadrícula el carrusel no repinta la tarjeta, solo
      le cambia el `src` al <img> que ya está puesto. */
+  /* 2026-09-14 · El patrón aceptaba solo `-iso.webp`, y la tabla de
+     picar clásica los nombra con la talla DETRÁS: `tabla-iso-s.webp`.
+     No encajaba, así que la tabla salía siempre en fondo negro aunque
+     sus tres `-claro` existían. Ahora vale `-iso.webp` y
+     `-iso-<algo>.webp`, y la versión clara es la misma ruta con
+     `-claro` antes de `.webp`. Nunca recibe una ya clara o de teléfono,
+     pero se excluyen por si acaso para no fabricar `-claro-claro`. */
   function srcTema(src) {
-    if (!/-iso\.webp$/.test(src)) return src;
+    if (!/-iso(-(?!claro\b|movil\b)[a-z0-9]+)?\.webp$/.test(src)) return src;
     return document.documentElement.getAttribute("data-tema") === "claro"
-      ? src.replace(/-iso\.webp$/, "-iso-claro.webp")
+      ? src.replace(/\.webp$/, "-claro.webp")
       : src;
   }
 

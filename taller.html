@@ -118,68 +118,66 @@
 
          Sale de la Mesa de niveles (D:\Carpinteria\Proyectos\Mesa
          Niveles María\pitch-web.json): la copia para la web, con datos
-         de cobro de EJEMPLO y el monto en ceros, que además va tapado
-         aquí con .tramo__tapa. Decisión suya, no publicar ni sus
-         cuentas ni el precio. La que recibió la clienta no se tocó.
+         de cobro de EJEMPLO y el monto y su REF escritos «XXX». Decisión
+         suya del 14/09: nada tapado encima, un texto de relleno dentro
+         del propio PDF. La que recibió la clienta no se tocó.
+
+         El primer tramo (fecha y título) va SIN llave ni nota: se quitó
+         por decisión suya, pero la imagen lo conserva para que el PDF no
+         empiece cortado. Por eso la numeración arranca en el precio.
 
          El id `propuesta` lo enlaza el paso 3 de «Cómo funciona un
          encargo»; más adelante, también las fichas. No lo cambies. -->
     <section class="seccion" id="propuesta">
-      <h2 data-es="Cómo es una propuesta" data-en="What a proposal looks like"></h2>
-      <p class="prosa" data-es="Así se ve lo que recibes cuando el dibujo está listo: un PDF de una sola página, por WhatsApp, con todo lo que hace falta para decidir. Ésta es real —una mesa de centro de tres niveles—; solo cambié los datos de pago por números de ejemplo y tapé el precio."
-         data-en="This is what you get once the drawing is ready: a single-page PDF, over WhatsApp, with everything you need to decide. This one is real — a three-tier coffee table; I only swapped the payment details for placeholder numbers and covered the price."></p>
+      <h2 data-es="Cómo se arma una propuesta" data-en="How a proposal is put together"></h2>
+      <p class="prosa" data-es="Así se ve lo que recibes cuando el dibujo está listo: un PDF de una sola página con todo lo que hace falta para decidir."
+         data-en="This is what you get once the drawing is ready: a single-page PDF with everything you need to decide."></p>
 
       <ol class="propuesta">
-        <li class="tramo" style="--ini:0; --alto:392">
+        <li class="tramo tramo--sin-nota" style="--ini:0; --alto:375">
           <div class="tramo__recorte"><img src="img/taller/propuesta-ejemplo.webp" alt="Propuesta de ejemplo de Prototipo Ago para una mesa de niveles, completa: presupuesto, formas de pago, dibujo con medidas, qué incluye, consideraciones y una imagen de referencia." loading="lazy" decoding="async"></div>
-          <div class="tramo__llave" aria-hidden="true"></div>
-          <div class="tramo__texto"><div class="tramo__nota" data-es="<b>La fecha</b><span>El día en que se emite y el nombre de la pieza. La fecha no es decorativa: desde ahí cuenta la validez del precio.</span>"
-               data-en="<b>The date</b><span>The day it's issued and the name of the piece. The date isn't decoration: the price's validity counts from it.</span>"></div></div>
         </li>
-        <li class="tramo" style="--ini:392; --alto:718">
-          <div class="tramo__recorte"><img src="img/taller/propuesta-ejemplo.webp" alt="" loading="lazy" decoding="async">
-            <span class="tramo__tapa" style="left:11%; top:17.5%; width:54%; height:20%"></span>
-            <span class="tramo__tapa" style="left:53.9%; top:80.2%; width:18.8%; height:5.4%"></span>
-          </div>
-          <div class="tramo__llave" aria-hidden="true"></div>
-          <div class="tramo__texto"><div class="tramo__nota" data-es="<b>Una sola cifra</b><span>El total, sin separar materiales de mano de obra. Si todavía hay decisiones abiertas, va como rango. Debajo, su valor en REF: si pagas en bolívares, se cobra a la tasa BCV del día en que pagas. La entrega a domicilio va aparte, con su costo aproximado, porque es opcional. Aquí la cifra está tapada.</span>"
-               data-en="<b>One single figure</b><span>The total, without splitting materials from labour. If some decisions are still open, it's a range. Below it, its value in REF: if you pay in bolívares, it's charged at the BCV rate on the day you pay. Home delivery is separate, with its approximate cost, because it's optional. Here the figure is covered.</span>"></div></div>
-        </li>
-        <li class="tramo" style="--ini:1110; --alto:680">
+        <li class="tramo" style="--ini:375; --alto:597">
           <div class="tramo__recorte"><img src="img/taller/propuesta-ejemplo.webp" alt="" loading="lazy" decoding="async"></div>
           <div class="tramo__llave" aria-hidden="true"></div>
-          <div class="tramo__texto"><div class="tramo__nota" data-es="<b>Cómo pagar</b><span>En dólares o en bolívares, con los datos completos de cada vía para que puedas pagar sin tener que preguntar nada más. En este ejemplo los números son de mentira.</span>"
-               data-en="<b>How to pay</b><span>In dollars or in bolívares, with the full details for each option so you can pay without having to ask anything else. In this example the numbers are made up.</span>"></div></div>
+          <div class="tramo__texto"><div class="tramo__nota" data-es="<b>Una sola cifra</b><span>El total, sin separar materiales de mano de obra. Si todavía hay decisiones abiertas, va como rango. Debajo, su valor en REF: si pagas en bolívares, se cobra a la tasa BCV del día en que pagas. La entrega a domicilio va aparte, con su costo aproximado, porque es opcional.</span>"
+               data-en="<b>One single figure</b><span>The total, without splitting materials from labour. If some decisions are still open, it's a range. Below it, its value in REF: if you pay in bolívares, it's charged at the BCV rate on the day you pay. Home delivery is separate, with its approximate cost, because it's optional.</span>"></div></div>
         </li>
-        <li class="tramo" style="--ini:1790; --alto:294">
+        <li class="tramo" style="--ini:972; --alto:688">
           <div class="tramo__recorte"><img src="img/taller/propuesta-ejemplo.webp" alt="" loading="lazy" decoding="async"></div>
           <div class="tramo__llave" aria-hidden="true"></div>
-          <div class="tramo__texto"><div class="tramo__nota" data-es="<b>Plazo y anticipo</b><span>Cuánto tarda y cómo se reparte el pago: 50% para arrancar y 50% contra entrega. El plazo cuenta desde el anticipo, porque con ese dinero se compra el material.</span>"
-               data-en="<b>Lead time and deposit</b><span>How long it takes and how the payment is split: 50% to start, 50% on delivery. The lead time counts from the deposit, because that money buys the material.</span>"></div></div>
+          <div class="tramo__texto"><div class="tramo__nota" data-es="<b>Cómo pagar</b><span>En dólares o en bolívares, con los datos completos de cada vía para que puedas pagar sin tener que preguntar nada más. Puedes escoger el método de pago que prefieras.</span>"
+               data-en="<b>How to pay</b><span>In dollars or in bolívares, with the full details for each option so you can pay without having to ask anything else. You can choose whichever payment method you prefer.</span>"></div></div>
         </li>
-        <li class="tramo" style="--ini:2084; --alto:827">
+        <li class="tramo" style="--ini:1660; --alto:284">
           <div class="tramo__recorte"><img src="img/taller/propuesta-ejemplo.webp" alt="" loading="lazy" decoding="async"></div>
           <div class="tramo__llave" aria-hidden="true"></div>
-          <div class="tramo__texto"><div class="tramo__nota" data-es="<b>La pieza antes de que exista</b><span>El dibujo sale del modelo 3D, con las medidas reales acotadas como en un plano: ancho, fondo y alto. Los colores son los del acabado que se va a hacer.</span>"
-               data-en="<b>The piece before it exists</b><span>The drawing comes from the 3D model, with the real dimensions marked as on a plan: width, depth and height. The colours are those of the finish that will be made.</span>"></div></div>
+          <div class="tramo__texto"><div class="tramo__nota" data-es="<b>Plazo y anticipo</b><span>Cuánto tarda y cómo se reparte el pago: 50% para arrancar y 50% contra entrega, normalmente, pero puede variar. El plazo cuenta desde el anticipo, porque con ese dinero se compra el material.</span>"
+               data-en="<b>Lead time and deposit</b><span>How long it takes and how the payment is split: 50% to start and 50% on delivery, usually, though it can vary. The lead time counts from the deposit, because that money buys the material.</span>"></div></div>
         </li>
-        <li class="tramo" style="--ini:2911; --alto:915">
+        <li class="tramo" style="--ini:1944; --alto:873">
+          <div class="tramo__recorte"><img src="img/taller/propuesta-ejemplo.webp" alt="" loading="lazy" decoding="async"></div>
+          <div class="tramo__llave" aria-hidden="true"></div>
+          <div class="tramo__texto"><div class="tramo__nota" data-es="<b>La pieza antes de que exista</b><span>El dibujo sale del modelo 3D, con las medidas reales acotadas como en un plano: ancho, fondo y alto.</span>"
+               data-en="<b>The piece before it exists</b><span>The drawing comes from the 3D model, with the real dimensions marked as on a plan: width, depth and height.</span>"></div></div>
+        </li>
+        <li class="tramo" style="--ini:2817; --alto:911">
           <div class="tramo__recorte"><img src="img/taller/propuesta-ejemplo.webp" alt="" loading="lazy" decoding="async"></div>
           <div class="tramo__llave" aria-hidden="true"></div>
           <div class="tramo__texto"><div class="tramo__nota" data-es="<b>Qué incluye</b><span>Lo que entra en el precio, dicho con detalle: la madera, los espesores, el acabado y los herrajes, parte por parte.</span>"
                data-en="<b>What's included</b><span>What the price covers, spelled out: the wood, the thicknesses, the finish and the hardware, part by part.</span>"></div></div>
         </li>
-        <li class="tramo" style="--ini:3826; --alto:869">
+        <li class="tramo" style="--ini:3728; --alto:866">
           <div class="tramo__recorte"><img src="img/taller/propuesta-ejemplo.webp" alt="" loading="lazy" decoding="async"></div>
           <div class="tramo__llave" aria-hidden="true"></div>
           <div class="tramo__texto"><div class="tramo__nota" data-es="<b>Consideraciones</b><span>Hasta cuándo vale el precio, las medidas generales, lo que se puede ajustar después y cómo viaja la pieza. Lo que conviene saber antes de decir que sí.</span>"
                data-en="<b>Things to consider</b><span>How long the price holds, the overall dimensions, what can be adjusted later and how the piece travels. What's worth knowing before you say yes.</span>"></div></div>
         </li>
-        <li class="tramo" style="--ini:4695; --alto:1601">
+        <li class="tramo" style="--ini:4594; --alto:1562">
           <div class="tramo__recorte"><img src="img/taller/propuesta-ejemplo.webp" alt="" loading="lazy" decoding="async"></div>
           <div class="tramo__llave" aria-hidden="true"></div>
-          <div class="tramo__texto"><div class="tramo__nota" data-es="<b>El ambiente</b><span>Cuando ayuda, una imagen de referencia para ver el carácter de la pieza. Es una ilustración: las medidas buenas son las del dibujo.</span>"
-               data-en="<b>The mood</b><span>When it helps, a reference image to show the piece's character. It's an illustration: the real dimensions are the ones on the drawing.</span>"></div></div>
+          <div class="tramo__texto"><div class="tramo__nota" data-es="<b>El ambiente</b><span>Cuando ayuda, una imagen de referencia para ver el carácter de la pieza. Es una ilustración generada con inteligencia artificial: las medidas buenas son las del dibujo.</span>"
+               data-en="<b>The mood</b><span>When it helps, a reference image to show the piece's character. It's an illustration generated with artificial intelligence: the real dimensions are the ones on the drawing.</span>"></div></div>
         </li>
       </ol>
     </section>
@@ -209,10 +207,17 @@
          todas las fichas de Prototipos («cualquier pieza se puede hacer
          en otra madera»), así que el id `maderas` NO se cambia.
 
-         SIN FOTOS a propósito, decisión suya: publicar imágenes de otro
-         sitio web en una página comercial es material con derechos. La
-         muestra es un cuadro de color dibujado por CSS. Cuando tenga
-         fotos de sus propios retales, entran aquí.
+         2026-09-14 · CON FOTOS, decisión suya, mientras llegan las de
+         sus propios retales. No son de cualquier web: son de Wikimedia
+         Commons con licencia libre — la Xylothèque du Cirad (dominio
+         público) y, el puy, del Muséum de Toulouse (CC BY-SA 3.0, con
+         su crédito obligatorio al pie de la lista). Van en
+         img/maderas/<madera>.webp, 240 px, recortadas del 80% central
+         (el borde traía el fondo gris del museo). Las descargas enteras
+         están en notas/maderas-commons/ por si hay que recortar otra vez.
+         El apamate NO tiene foto en Commons y sigue con su cuadro de
+         color. Cuando él fotografíe un retal, se pisa el .webp del mismo
+         nombre y se ajusta el crédito.
 
          Los datos son de dominio público (especie, color, dureza
          relativa, usos); los textos están escritos aquí, no copiados. -->
@@ -222,26 +227,34 @@
          data-en="These are the species I normally work with. Almost any piece in the catalogue can be made in a different one — it changes the price, the weight and the character, and we talk it through first."></p>
 
       <ul class="maderas" data-es="
-        <li><i style=&quot;--m:#D9B77A&quot;></i><b>Pino</b><em>Pinus caribaea · Pino Caribe</em><span>Blanda y liviana, de veta recta y nudos vivos. Es la de estructura: barata, fácil de trabajar y de repuesto seguro. Con los años dora.</span></li>
-        <li><i style=&quot;--m:#7F5435&quot;></i><b>Samán</b><em>Samanea saman</em><span>Dura, pesada y de veta muy marcada, con el albura clara contrastando contra un corazón chocolate. Cuando la madera es lo que se mira, es ésta.</span></li>
+        <li><img style=&quot;--m:#D9B77A&quot; src=&quot;img/maderas/pino.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot;><b>Pino</b><em>Pinus caribaea · Pino Caribe</em><span>Blanda y liviana, de veta recta y nudos vivos. Es la de estructura: barata, fácil de trabajar y de repuesto seguro. Con los años dora.</span></li>
+        <li><img style=&quot;--m:#7F5435&quot; src=&quot;img/maderas/saman.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot;><b>Samán</b><em>Samanea saman</em><span>Dura, pesada y de veta muy marcada, con el albura clara contrastando contra un corazón chocolate. Cuando la madera es lo que se mira, es ésta.</span></li>
         <li><i style=&quot;--m:#C9A882&quot;></i><b>Apamate</b><em>Tabebuia rosea</em><span>Dureza media y tono rosado tostado, de veta tranquila. Estable y agradecida al cepillo; buena para piezas que se tocan mucho.</span></li>
-        <li><i style=&quot;--m:#A9673C&quot;></i><b>Cedro</b><em>Cedrela odorata</em><span>Liviana para lo rojiza que es, aromática, y de las más nobles para tallar. Clásica de mueblería fina. Se raya con facilidad: no es para una tabla de picar.</span></li>
-        <li><i style=&quot;--m:#8A6B2F&quot;></i><b>Puy</b><em>Tabebuia serratifolia</em><span>Muy dura y densa, pardo oliva. Aguanta a la intemperie y el uso rudo mejor que casi cualquier otra de aquí. Cuesta trabajarla, y se nota en el filo de las herramientas.</span></li>
-        <li><i style=&quot;--m:#A9814B&quot;></i><b>Teca</b><em>Tectona grandis</em><span>Dorada, grasosa al tacto por sus aceites naturales, y la más estable de todas frente a la humedad. Por eso es la de cocina y la de exterior.</span></li>
-        <li><i style=&quot;--m:#8B4A2B&quot;></i><b>Algarrobo</b><em>Hymenaea courbaril</em><span>Muy dura y pesada, de un rojo anaranjado que se oscurece con la luz. Pesa de verdad: una tabla grande se siente en la mano.</span></li>
-        <li><i style=&quot;--m:#6B3F7A&quot;></i><b>Nazareno</b><em>Peltogyne spp.</em><span>La morada. Sale parda del corte y vira a violeta con el aire, luego calma hacia un vino oscuro. Muy dura. Se usa poco y en poca cantidad, como acento.</span></li>
-        <li><i style=&quot;--m:#D8C39A&quot;></i><b>Melina</b><em>Gmelina arborea</em><span>Clara, liviana y de crecimiento rápido, con veta discreta. Alternativa al pino cuando se quiere un tono más pálido y parejo.</span></li>
+        <li><img style=&quot;--m:#A9673C&quot; src=&quot;img/maderas/cedro.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot;><b>Cedro</b><em>Cedrela odorata</em><span>Liviana para lo rojiza que es, aromática, y de las más nobles para tallar. Clásica de mueblería fina. Se raya con facilidad: no es para una tabla de picar.</span></li>
+        <li><img style=&quot;--m:#8A6B2F&quot; src=&quot;img/maderas/puy.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot;><b>Puy</b><em>Tabebuia serratifolia</em><span>Muy dura y densa, pardo oliva. Aguanta a la intemperie y el uso rudo mejor que casi cualquier otra de aquí. Cuesta trabajarla, y se nota en el filo de las herramientas.</span></li>
+        <li><img style=&quot;--m:#A9814B&quot; src=&quot;img/maderas/teca.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot;><b>Teca</b><em>Tectona grandis</em><span>Dorada, grasosa al tacto por sus aceites naturales, y la más estable de todas frente a la humedad. Por eso es la de cocina y la de exterior.</span></li>
+        <li><img style=&quot;--m:#8B4A2B&quot; src=&quot;img/maderas/algarrobo.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot;><b>Algarrobo</b><em>Hymenaea courbaril</em><span>Muy dura y pesada, de un rojo anaranjado que se oscurece con la luz. Pesa de verdad: una tabla grande se siente en la mano.</span></li>
+        <li><img style=&quot;--m:#6B3F7A&quot; src=&quot;img/maderas/nazareno.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot;><b>Nazareno</b><em>Peltogyne spp.</em><span>La morada. Sale parda del corte y vira a violeta con el aire, luego calma hacia un vino oscuro. Muy dura. Se usa poco y en poca cantidad, como acento.</span></li>
+        <li><img style=&quot;--m:#D8C39A&quot; src=&quot;img/maderas/melina.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot;><b>Melina</b><em>Gmelina arborea</em><span>Clara, liviana y de crecimiento rápido, con veta discreta. Alternativa al pino cuando se quiere un tono más pálido y parejo.</span></li>
       " data-en="
-        <li><i style=&quot;--m:#D9B77A&quot;></i><b>Pine</b><em>Pinus caribaea · Caribbean pine</em><span>Soft and light, straight-grained with live knots. This is the structural one: cheap, easy to work and easy to replace. It turns golden over the years.</span></li>
-        <li><i style=&quot;--m:#7F5435&quot;></i><b>Monkeypod</b><em>Samanea saman</em><span>Hard, heavy and strongly figured, pale sapwood set against a chocolate heart. When the wood is the thing you look at, it's this one.</span></li>
+        <li><img style=&quot;--m:#D9B77A&quot; src=&quot;img/maderas/pino.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot;><b>Pine</b><em>Pinus caribaea · Caribbean pine</em><span>Soft and light, straight-grained with live knots. This is the structural one: cheap, easy to work and easy to replace. It turns golden over the years.</span></li>
+        <li><img style=&quot;--m:#7F5435&quot; src=&quot;img/maderas/saman.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot;><b>Monkeypod</b><em>Samanea saman</em><span>Hard, heavy and strongly figured, pale sapwood set against a chocolate heart. When the wood is the thing you look at, it's this one.</span></li>
         <li><i style=&quot;--m:#C9A882&quot;></i><b>Apamate</b><em>Tabebuia rosea</em><span>Medium hardness, a toasted rose tone and quiet grain. Stable and rewarding under the plane; good for pieces that get handled a lot.</span></li>
-        <li><i style=&quot;--m:#A9673C&quot;></i><b>Spanish cedar</b><em>Cedrela odorata</em><span>Light for how red it is, aromatic, and one of the finest to carve. A classic of good cabinetwork. It marks easily, so not for a cutting board.</span></li>
-        <li><i style=&quot;--m:#8A6B2F&quot;></i><b>Ipê</b><em>Tabebuia serratifolia</em><span>Very hard and dense, olive brown. It stands up to weather and rough use better than almost anything else here. Hard on tools, and you feel it on the edge.</span></li>
-        <li><i style=&quot;--m:#A9814B&quot;></i><b>Teak</b><em>Tectona grandis</em><span>Golden, faintly oily to the touch from its natural resins, and the most stable of all against moisture. That's why it's the kitchen and outdoor wood.</span></li>
-        <li><i style=&quot;--m:#8B4A2B&quot;></i><b>Jatoba</b><em>Hymenaea courbaril</em><span>Very hard and heavy, an orange red that darkens with light. It genuinely weighs: you feel a large board in the hand.</span></li>
-        <li><i style=&quot;--m:#6B3F7A&quot;></i><b>Purpleheart</b><em>Peltogyne spp.</em><span>The purple one. It comes off the saw brown, turns violet in the air, then settles toward dark wine. Very hard. Used sparingly, as an accent.</span></li>
-        <li><i style=&quot;--m:#D8C39A&quot;></i><b>Gmelina</b><em>Gmelina arborea</em><span>Pale, light and fast-growing, with discreet grain. An alternative to pine when you want a paler, more even tone.</span></li>
+        <li><img style=&quot;--m:#A9673C&quot; src=&quot;img/maderas/cedro.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot;><b>Spanish cedar</b><em>Cedrela odorata</em><span>Light for how red it is, aromatic, and one of the finest to carve. A classic of good cabinetwork. It marks easily, so not for a cutting board.</span></li>
+        <li><img style=&quot;--m:#8A6B2F&quot; src=&quot;img/maderas/puy.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot;><b>Ipê</b><em>Tabebuia serratifolia</em><span>Very hard and dense, olive brown. It stands up to weather and rough use better than almost anything else here. Hard on tools, and you feel it on the edge.</span></li>
+        <li><img style=&quot;--m:#A9814B&quot; src=&quot;img/maderas/teca.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot;><b>Teak</b><em>Tectona grandis</em><span>Golden, faintly oily to the touch from its natural resins, and the most stable of all against moisture. That's why it's the kitchen and outdoor wood.</span></li>
+        <li><img style=&quot;--m:#8B4A2B&quot; src=&quot;img/maderas/algarrobo.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot;><b>Jatoba</b><em>Hymenaea courbaril</em><span>Very hard and heavy, an orange red that darkens with light. It genuinely weighs: you feel a large board in the hand.</span></li>
+        <li><img style=&quot;--m:#6B3F7A&quot; src=&quot;img/maderas/nazareno.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot;><b>Purpleheart</b><em>Peltogyne spp.</em><span>The purple one. It comes off the saw brown, turns violet in the air, then settles toward dark wine. Very hard. Used sparingly, as an accent.</span></li>
+        <li><img style=&quot;--m:#D8C39A&quot; src=&quot;img/maderas/melina.webp&quot; alt=&quot;&quot; loading=&quot;lazy&quot;><b>Gmelina</b><em>Gmelina arborea</em><span>Pale, light and fast-growing, with discreet grain. An alternative to pine when you want a paler, more even tone.</span></li>
       "></ul>
+
+      <!-- Crédito de las fotos. El del puy es OBLIGATORIO (CC BY-SA 3.0:
+           autor, enlace a la licencia y aviso de que se recortó). Si esa
+           foto sale, esta línea se puede simplificar; si entra otra de
+           Commons con licencia BY, se añade aquí igual. -->
+      <p class="maderas-credito"
+         data-es="Fotos de las muestras: Xylothèque du Cirad (dominio público), vía Wikimedia Commons. La del puy es de Jean-Pierre Chéreau y Roger Culos, Muséum de Toulouse, <a href='https://commons.wikimedia.org/wiki/File:Tabebuia_serratifolia_MHNT.BOT.2010.6.46.jpg' target='_blank' rel='noopener'>vía Wikimedia Commons</a>, con licencia <a href='https://creativecommons.org/licenses/by-sa/3.0/deed.es' target='_blank' rel='noopener'>CC BY-SA 3.0</a>, recortada. El apamate todavía no tiene foto."
+         data-en="Sample photos: Xylothèque du Cirad (public domain), via Wikimedia Commons. The ipê photo is by Jean-Pierre Chéreau and Roger Culos, Muséum de Toulouse, <a href='https://commons.wikimedia.org/wiki/File:Tabebuia_serratifolia_MHNT.BOT.2010.6.46.jpg' target='_blank' rel='noopener'>via Wikimedia Commons</a>, licensed <a href='https://creativecommons.org/licenses/by-sa/3.0/deed.en' target='_blank' rel='noopener'>CC BY-SA 3.0</a>, cropped. Apamate doesn't have a photo yet."></p>
     </section>
 
     <!-- 2026-08-14 · Aquí iba «Lo que no hago»: los cuatro

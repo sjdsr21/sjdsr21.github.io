@@ -1437,25 +1437,33 @@ body:not([data-pagina="novedades"]) .portada .bajada {
    propio <li>. Cuando haya fotos de sus retales, este cuadro se
    sustituye por un <img> y el resto de la fila no cambia. */
 .maderas { list-style: none; padding: 0; margin: 1.6rem 0 0; }
+/* 2026-09-14 · Ya van FOTOS: muestras de la Xylothèque du Cirad
+   (dominio público) y, el puy, del Muséum de Toulouse (CC BY-SA,
+   crédito bajo la lista). El <img> conserva su --m, así que mientras
+   carga se ve el mismo cuadro de color de antes. El apamate no tiene
+   foto en Commons y sigue con su <i>. La muestra creció a 3.6rem
+   porque a 2.6 una foto de veta no se distinguía de un color plano. */
 .maderas li {
   padding: .9rem 0; border-bottom: 1px solid var(--linea);
   display: grid; column-gap: 1rem; font-size: 1rem;
-  grid-template-columns: 2.6rem 11rem 1fr;
+  grid-template-columns: 3.6rem 11rem 1fr;
   grid-template-areas: "muestra nombre texto" "muestra especie texto";
   align-items: baseline;
 }
-.maderas i {
+.maderas i, .maderas img {
   grid-area: muestra; align-self: center;
-  width: 2.6rem; height: 2.6rem; background: var(--m, var(--linea));
-  border: 1px solid var(--linea);
+  width: 3.6rem; height: 3.6rem; background: var(--m, var(--linea));
+  border: 1px solid var(--linea); object-fit: cover; display: block;
 }
+.maderas-credito { margin-top: 1.2rem; font-size: 0.8125rem; color: var(--apagado); max-width: 62ch; }
+.maderas-credito a { color: inherit; }
 .maderas b  { grid-area: nombre; font-weight: 700; letter-spacing: -.01em; }
 .maderas em { grid-area: especie; font-style: italic; font-size: .82rem;
               color: var(--apagado); }
 .maderas span { grid-area: texto; color: var(--apagado); }
 @media (max-width: 560px) {
   .maderas li {
-    grid-template-columns: 2.6rem 1fr;
+    grid-template-columns: 3.6rem 1fr;
     grid-template-areas: "muestra nombre" "muestra especie" "texto texto";
     row-gap: .15rem;
   }
@@ -1490,11 +1498,9 @@ body:not([data-pagina="novedades"]) .portada .bajada {
   position: absolute; left: 0; width: 100%; height: auto; max-width: none;
   top: calc(var(--ini) / var(--alto) * -100%);
 }
-/* Lo que se tapa: el monto y su REF. Debajo ya van ceros. */
-.tramo__tapa {
-  position: absolute; background-color: #1b1c20;
-  background-image: var(--rayado-sutil);
-}
+/* El tramo del encabezado (fecha y título) va sin llave ni nota, y
+   no cuenta: la numeración arranca en el precio. Decisión suya. */
+.tramo--sin-nota { counter-increment: none; }
 .tramo__llave {
   position: relative; margin: .55rem 0;
   border: 1px solid var(--apagado); border-left: 0;

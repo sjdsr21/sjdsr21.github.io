@@ -201,6 +201,11 @@ window.PROTOTIPOS = [
 
     imagen: "img/prototipos/tabla-de-picar.webp",
     sin_fondo: true,
+    /* De SEGUNDA la foto de ambiente, «Tablas normales 1.png» (él,
+       14/09/2026). Esta trae su fondo, al revés que la recortada de
+       arriba; como en las bases de foto, `sin_fondo` es del producto
+       entero y la pinta igual, encajada entera sobre fondo liso. */
+    galeria: ["img/prototipos/tabla-de-picar-2.webp"],
     /* Un plano por talla: el diagrama cambia con el tamaño. */
     opcion_diagrama: "tamano",
     /* UNA lámina por talla, con SOLO esa talla: vista superior arriba y

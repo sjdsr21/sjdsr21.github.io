@@ -1,5 +1,5 @@
 ﻿/* GENERADO POR Achicar-imagenes.ps1 — no editar a mano.
-   2026-09-14 11:12
+   2026-09-14 13:25
 
    Las fotos que tienen al lado una copia <nombre>-movil.webp de
    1000 px. sitio.js consulta esta lista para ofrecerle al
@@ -82,6 +82,8 @@ window.IMG_MOVIL = [
   "img/trabajos/elevacho-foto-6.webp",
   "img/trabajos/elevacho-foto-7.webp",
   "img/trabajos/elevacho-foto-8.webp",
+  "img/trabajos/escenografia-morochos-4-portada.webp",
+  "img/trabajos/escenografia-morochos-5-portada.webp",
   "img/trabajos/escenografia-morochos-foto-1.webp",
   "img/trabajos/escenografia-morochos-foto-2.webp",
   "img/trabajos/escenografia-morochos-foto-3.webp",
@@ -127,6 +129,9 @@ window.IMG_MOVIL = [
   "img/trabajos/quillas-mariana-foto-4.webp",
   "img/trabajos/quillas-propuesta.webp",
   "img/trabajos/repicero-propuesta.webp",
+  "img/trabajos/repisas-julia-foto-3.webp",
+  "img/trabajos/repisas-julia-foto-4.webp",
+  "img/trabajos/repisas-julia-foto-5.webp",
   "img/trabajos/rolitronco-corto-portada.webp",
   "img/trabajos/rolitronco-foto-2.webp",
   "img/trabajos/rolitronco-foto-3.webp",
