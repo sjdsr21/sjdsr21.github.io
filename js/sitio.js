@@ -1712,7 +1712,13 @@
        a propósito: lo usan el buscador y el texto alternativo de
        las fotos, que no se ven pero sí se buscan. */
     if ((w.materiales || []).length) filas.push([t("ficha_material"), w.materiales.map(function (m) { return etiqueta("material", m); }).join(", ")]);
-    if ((w.acabado || []).length)    filas.push([t("ficha_acabado"), w.acabado.map(function (a) { return etiqueta("acabado", a); }).join(" / ")]);
+    /* Acabados separados por coma y, del segundo en adelante, con la
+       primera letra en minúscula: «Pintura, poliuretano» (él, 15/09/2026).
+       Solo la primera letra, para no bajar «Rubio Monocoat». */
+    if ((w.acabado || []).length)    filas.push([t("ficha_acabado"), w.acabado.map(function (a, i) {
+      var e = etiqueta("acabado", a);
+      return i ? e.charAt(0).toLowerCase() + e.slice(1) : e;
+    }).join(", ")]);
     if (w.medidas) filas.push([t("ficha_medidas"), tx(w.medidas)]);
 
     if (filas.length) {

@@ -335,7 +335,7 @@ window.TEXTOS = {
     sellado:    { es: "Sellado",                en: "Sealed" },
     barnizado:  { es: "Barnizado",              en: "Varnished" },
     aceite:     { es: "Aceitado",               en: "Oiled" },
-    pintado:    { es: "Pintado",                en: "Painted" },
+    pintado:    { es: "Pintura",                en: "Paint" },   /* «Pintura», no «Pintado» (él, 15/09/2026) */
     quemado:    { es: "Quemado (shou sugi ban)",en: "Charred (shou sugi ban)" },
     /* 15/09/2026 · Los que él dictó para Exhibición. */
     linaza:     { es: "Aceite de linaza",       en: "Linseed oil" },
