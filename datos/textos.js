@@ -325,7 +325,9 @@ window.TEXTOS = {
     "ceramica":        { es: "Cerámica",                   en: "Ceramic tile" },
     "acero":           { es: "Acero",                      en: "Steel" },
     "vidrio":          { es: "Vidrio",                     en: "Glass" },
-    "pla3d":           { es: "Impresión 3D (PLA)",         en: "3D printed (PLA)" }
+    "pla3d":           { es: "Impresión 3D (PLA)",         en: "3D printed (PLA)" },
+    /* 15/09/2026 · la consola mid-century (él). */
+    "melamina":        { es: "Melamina",                   en: "Melamine board" }
   },
 
   acabado: {
@@ -334,7 +336,12 @@ window.TEXTOS = {
     barnizado:  { es: "Barnizado",              en: "Varnished" },
     aceite:     { es: "Aceitado",               en: "Oiled" },
     pintado:    { es: "Pintado",                en: "Painted" },
-    quemado:    { es: "Quemado (shou sugi ban)",en: "Charred (shou sugi ban)" }
+    quemado:    { es: "Quemado (shou sugi ban)",en: "Charred (shou sugi ban)" },
+    /* 15/09/2026 · Los que él dictó para Exhibición. */
+    linaza:     { es: "Aceite de linaza",       en: "Linseed oil" },
+    cera:       { es: "Cera",                   en: "Wax" },
+    poliuretano:{ es: "Poliuretano",            en: "Polyurethane" },
+    "rubio-monocoat": { es: "Aceite Rubio Monocoat", en: "Rubio Monocoat oil" }
   },
 
   categoria: {

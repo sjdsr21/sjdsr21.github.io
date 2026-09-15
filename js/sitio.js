@@ -1479,6 +1479,10 @@
     var hostVideo = $("#video-novedad");
     if (hostVideo && conVideo) {
       var como = tx(conVideo.como) || [];
+      /* 15/09/2026 · Si la pieza no trae «cómo está hecha» (el Rolo lo
+         perdió a pedido suyo), va el resumen, para que el bloque no
+         quede solo con el título y el botón. */
+      if (!como.length && tx(conVideo.resumen)) como = [tx(conVideo.resumen)];
       hostVideo.innerHTML = "";
       hostVideo.appendChild(el("div", { class: "contenedor" }, [
         el("div", { class: "pieza-video" }, [
