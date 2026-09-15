@@ -25,7 +25,7 @@ window.MARCA = {
 
   correo: null,
 
-  instagram: "Prototipo_Ago",
+  instagram: "prototipo_ago",   /* en minúsculas (él, 15/09/2026): así se ve en el pie y en Contacto */
 
   /* Mensaje con el que se abre WhatsApp desde una ficha.
      {pieza} se reemplaza por el nombre de lo que estaba viendo. */

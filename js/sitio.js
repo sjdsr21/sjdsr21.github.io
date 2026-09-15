@@ -1088,7 +1088,9 @@
     host.innerHTML = "";
     host.appendChild(el("div", { class: "contenedor" }, [
       el("div", { class: "pie__fila" }, [
-        el("span", { texto: M.nombre + " · " + tx(M.ciudad) }),
+        /* En minúsculas, como el logotipo (él, 15/09/2026). Solo aquí:
+           M.nombre sigue con mayúsculas para títulos y mensajes. */
+        el("span", { texto: M.nombre.toLowerCase() + " · " + tx(M.ciudad) }),
         el("div", { class: "pie__enlaces" }, enlaces)
       ])
     ]));
