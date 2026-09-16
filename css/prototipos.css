@@ -1052,3 +1052,24 @@ video.pt-visual__foto {
   .pt-linea__mon { position: absolute; top: calc(.8rem + 16px + 26px + .45rem); right: .9rem; width: 82px; min-width: 0; }
   .pt-linea__desc { min-height: calc(16px + 26px + .45rem + 1.5rem); }
 }
+/* En el 3D las flechas se quedan donde siempre (él, 16/09/2026):
+   antes bajaban al borde inferior. */
+.pt-visual[data-medio="3d"] .pt-visual__flecha { top: 50cqw; bottom: auto; transform: translateY(-50%); }
+/* «Acabado: aceite de tung» — dato fijo, en una línea (16/09/2026). */
+.pt-dato-fijo .pt-etiqueta { display: inline; margin: 0; }
+.pt-dato-fijo__valor { font-size: .9375rem; color: var(--tinta); }
+/* El aviso de personalizar, al pie de la columna: aire arriba. */
+.pt-panel__opciones > .pt-personalizar { margin: 1.6rem 0 0; }
+/* TELÉFONO: sin el destello azul del navegador al tocar las flechas
+   de una carta (él, 16/09/2026). Exhibición no lo tenía. */
+.pt-ficha, .pt-ficha * { -webkit-tap-highlight-color: transparent; }
+/* TELÉFONO, 3ª vuelta (él, 16/09/2026): sin «cantidad»; − n + en la
+   esquina de arriba a la derecha, el precio debajo, y el botón rojo
+   de quitar centrado en vertical en la fila. */
+@media (max-width: 780px) {
+  .pt-linea__rotulo { display: none; }
+  .pt-linea__cant { top: .8rem; }
+  .pt-linea__mon { top: calc(.8rem + 26px + .45rem); }
+  .pt-linea__desc { min-height: calc(26px + .45rem + 1.5rem); }
+  .pt-linea .pt-quitar { align-self: center; margin-top: 0; }
+}

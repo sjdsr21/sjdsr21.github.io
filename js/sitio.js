@@ -808,6 +808,40 @@
     ]);
     cerrar.addEventListener("click", function () { cerrarPedido(true); });
     velo.addEventListener("click", function () { cerrarPedido(true); });
+
+    /* DESLIZAR A LA DERECHA LO CIERRA (él, 16/09/2026). El panel sigue
+       al dedo mientras se arrastra hacia la derecha; si pasa de 70 px,
+       se cierra, y si no, vuelve a su sitio. Solo gestos más
+       horizontales que verticales, para no estorbar el scroll. */
+    var hoja = $(".pedido-lateral__caja", caja);
+    var x0 = null, y0 = 0, dx = 0, arrastrando = false;
+    hoja.addEventListener("pointerdown", function (e) {
+      if (e.pointerType === "mouse") return;
+      x0 = e.clientX; y0 = e.clientY; dx = 0; arrastrando = false;
+    });
+    hoja.addEventListener("pointermove", function (e) {
+      if (x0 === null) return;
+      var mx = e.clientX - x0, my = e.clientY - y0;
+      if (!arrastrando) {
+        if (Math.abs(mx) < 8) return;
+        if (Math.abs(my) > Math.abs(mx) || mx < 0) { x0 = null; return; }
+        arrastrando = true;
+        hoja.style.transition = "none";
+      }
+      dx = Math.max(0, mx);
+      hoja.style.transform = "translateX(" + dx + "px)";
+    });
+    function soltar() {
+      if (x0 === null) return;
+      x0 = null;
+      if (!arrastrando) return;
+      arrastrando = false;
+      hoja.style.transition = "";
+      hoja.style.transform = "";
+      if (dx > 70) cerrarPedido(false);
+    }
+    hoja.addEventListener("pointerup", soltar);
+    hoja.addEventListener("pointercancel", soltar);
     document.body.appendChild(caja);
     return caja;
   }
@@ -1206,6 +1240,7 @@
      sola vez y sigan hablando con el menú que esté pintado ahora. */
   var cierresEnganchados = false;
   var yMenuAbierto = 0;
+  var menuAbiertoEn = 0;
   var menuEstaAbierto = function () { return false; };
   var cerrarMenuActivo = function () {};
   var enfocarHamb = function () {};
@@ -1288,13 +1323,27 @@
                              "aria-label": t("nav_secciones") },
       visibles.filter(function (m) { return m[3]; })
               .map(function (m) {
-                return el("a", {
-                  class: "barra-rapida__a", href: m[1],
+                var vieneDeToque = false;
+                try { vieneDeToque = sessionStorage.getItem("pa-franja") === m[1]; } catch (e) {}
+                var a = el("a", {
+                  class: "barra-rapida__a" + (m[1] === aqui && vieneDeToque ? " barra-rapida__a--crece" : ""),
+                  href: m[1],
                   "aria-current": m[1] === aqui ? "page" : null,
                   texto: t(m[0])
                 });
+                /* LA FRANJA CRECE DESDE EL CENTRO al tocar (él, 16/09/2026).
+                   Empieza en el enlace tocado y, como la página cambia, se
+                   apunta en sessionStorage para repetirla al llegar. */
+                a.addEventListener("click", function () {
+                  a.classList.remove("barra-rapida__a--crece");
+                  void a.offsetWidth;
+                  a.classList.add("barra-rapida__a--crece");
+                  try { sessionStorage.setItem("pa-franja", m[1]); } catch (e) {}
+                });
+                return a;
               })
     );
+    try { sessionStorage.removeItem("pa-franja"); } catch (e) {}
 
     /* 2026-09-16 · En teléfono la bolsa va en la fila de abajo, al
        lado de Exhibición, solo con su dibujo. Y la lupa sube a la
@@ -1309,6 +1358,15 @@
     var lupaMovil = el("button", { class: "lupa lupa--movil", type: "button",
       "aria-label": t("buscar") }, [el("span", { class: "lupa__icono", html: ICONOS.lupa })]);
     lupaMovil.addEventListener("click", abrirBuscador);
+    /* TELÉFONO: WhatsApp e Instagram junto a la lupa, arriba (él,
+       16/09/2026). Contacto sigue también dentro del ☰. */
+    var MR = window.MARCA || {};
+    var redesMovil = el("div", { class: "redes-movil" });
+    if (MR.whatsapp) redesMovil.appendChild(el("a", { class: "redes-movil__a", href: enlaceWhatsApp(null),
+      target: "_blank", rel: "noopener", "aria-label": "WhatsApp", html: ICONOS.whatsapp }));
+    if (MR.instagram) redesMovil.appendChild(el("a", { class: "redes-movil__a",
+      href: "https://instagram.com/" + MR.instagram, target: "_blank", rel: "noopener",
+      "aria-label": "Instagram", html: ICONOS.instagram }));
 
     var menu = el("nav", { class: "menu", id: "menu" },
       visibles.map(function (m) {
@@ -1422,7 +1480,15 @@
       host.classList.toggle("cabecera--abierta", abierto);
       hamb.setAttribute("aria-expanded", abierto ? "true" : "false");
       menuEstaAbierto = function () { return menu.classList.contains("abierto"); };
-      if (abierto) yMenuAbierto = window.scrollY;
+      if (abierto) {
+        yMenuAbierto = window.scrollY;
+        /* Al abrirse, la cabecera crece y el navegador puede mover la
+           página unos píxeles por su cuenta (anclaje del scroll). Con la
+           página un poco desplazada eso bastaba para cerrarlo al instante
+           (él, 16/09/2026). Durante medio segundo se toma como nuevo
+           punto de partida en vez de cerrar. */
+        menuAbiertoEn = Date.now();
+      }
     }
     menuEstaAbierto = function () { return menu.classList.contains("abierto"); };
 
@@ -1447,6 +1513,7 @@
          que el dedo haya movido nada, y sin umbral el menú se
          cerraría solo nada más abrirlo. */
       window.addEventListener("scroll", function () {
+        if (menuEstaAbierto() && Date.now() - menuAbiertoEn < 500) { yMenuAbierto = window.scrollY; return; }
         if (menuEstaAbierto() && Math.abs(window.scrollY - yMenuAbierto) > 4) {
           cerrarMenuActivo();
         }
@@ -1516,6 +1583,7 @@
            10 KB. El .png sigue en img/marca/ por si acaso. */
         el("img", { class: "marca__perfil", src: "img/marca/perfil.webp", alt: "" })
       ]),
+      redesMovil,
       lupaMovil,
       rapida,
       menu,
@@ -1576,8 +1644,24 @@
            M.nombre sigue con mayúsculas para títulos y mensajes. */
         el("span", { texto: M.nombre.toLowerCase() + " · " + tx(M.ciudad) }),
         el("div", { class: "pie__enlaces" }, enlaces)
-      ])
+      ]),
+      el("div", { class: "pie__fila pie__fila--huevo" }, [huevoApilar()])
     ]));
+  }
+
+  /* EASTER EGG (él, 16/09/2026): un huevo bajo Instagram abre el juego
+     de apilar tablas. js/apilar.js se descarga solo al tocarlo. */
+  function huevoApilar() {
+    var b = el("button", { class: "pie__huevo", type: "button", "aria-label": "?",
+      html: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5c3.6 0 6.8 5.4 6.8 10.2 0 4.4-3 7.8-6.8 7.8s-6.8-3.4-6.8-7.8C5.2 7.9 8.4 2.5 12 2.5z"/></svg>' });
+    b.addEventListener("click", function () {
+      if (window.PA_APILAR) { window.PA_APILAR.abrir(); return; }
+      var sc = document.createElement("script");
+      sc.src = "js/apilar.js";
+      sc.onload = function () { if (window.PA_APILAR) window.PA_APILAR.abrir(); };
+      document.head.appendChild(sc);
+    });
+    return b;
   }
 
   /* ---------- tarjetas ------------------------------------ */

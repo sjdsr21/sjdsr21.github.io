@@ -179,7 +179,7 @@ window.PROTOTIPOS = [
     plazo_semanas: 3,
     /* En singular y sin el paréntesis de tamaños (él,
        14/08/2026): los tamaños ya se escogen en las opciones. */
-    nombre:  { es: "Tabla de picar clásica", en: "Classic cutting board" },
+    nombre:  { es: "Tabla de picar (por talla)", en: "Cutting board (by size)" },
     acabado: ["tung"],
     uso: ["cocina"],
     resumen: {
@@ -930,8 +930,8 @@ window.PROTOTIPOS = [
     acabado: ["poliuretano"],
     uso: ["bano"],
     resumen: {
-      es: "Portarrollo de pared en madera maciza, con el brazo tallado en la propia tabla.",
-      en: "A solid wood wall roll holder, its arm carved from the board itself."
+      es: "Portarrollo de pared en madera maciza. Listón removible para cambio de rollo.",
+      en: "Solid wood wall roll holder. Removable rod for changing the roll."
     },
     medidas: { es: "34 × 13 × 3 cm", en: "34 × 13 × 3 cm" },
     precio_usd: 30,          /* Él, 06/09/2026 */

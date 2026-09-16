@@ -3458,3 +3458,114 @@ body[data-pagina="novedades"] .novedad__medio { width: 100%; max-height: 80vh; }
 body[data-pagina="novedades"] .novedad__medio video,
 body[data-pagina="novedades"] .novedad__medio img { width: 100%; height: 100%; object-fit: cover; }
 }
+/* Visor de Exhibición: flechas un poco más arriba y siempre a la misma
+   altura, sea cual sea la proporción de la foto (él, 16/09/2026). */
+.visor-medios__flecha { top: 38cqw; }
+/* Sin anclaje automático del scroll (16/09/2026): al abrir el ☰ con
+   la página algo desplazada, el navegador la movía ~200 px para
+   compensar la cabecera más alta, y ese salto cerraba el menú. */
+html, body { overflow-anchor: none; }
+
+/* TELÉFONO: en Novedades, El taller y Contacto SÍ se ve el título de
+   la página, centrado y encima de la descripción (él, 16/09/2026). En
+   Prototipos y Exhibición sigue escondido. */
+@media (max-width: 780px) {
+  body[data-pagina="taller"] .portada h1,
+  body[data-pagina="contacto"] .portada h1,
+  body[data-pagina="novedades"] #nv-titulo {
+    position: static; width: auto; height: auto; overflow: visible;
+    clip: auto; clip-path: none; white-space: normal;
+    margin: 1.4rem auto .4rem; padding: 0 var(--canal);
+    max-width: none; text-align: center;
+  }
+  body[data-pagina="taller"] .portada,
+  body[data-pagina="contacto"] .portada { text-align: center; }
+}
+
+/* TELÉFONO: el panel del pedido no tapa toda la pantalla (él,
+   16/09/2026): deja a la izquierda una franja de la página, con el
+   velo, que al tocarla lo cierra. También se cierra deslizándolo a la
+   derecha (ver sitio.js). */
+@media (max-width: 560px) {
+  .pedido-lateral__caja { width: calc(100% - 56px); touch-action: pan-y; }
+}
+
+/* TELÉFONO: WhatsApp e Instagram a la izquierda de la lupa, y la lupa
+   alineada con el ☰ de abajo (los dos corridos 8 px) (él, 16/09/2026).
+   Al encogerse la cabecera se esconden con la lupa. */
+.redes-movil { display: none; }
+@media (max-width: 780px) {
+  .redes-movil {
+    display: flex; order: 2; flex: none; position: relative; left: -8px;
+    transition: height .28s var(--curva), opacity .2s var(--curva);
+  }
+  .redes-movil__a {
+    display: grid; place-items: center; width: 40px; height: 44px;
+    color: var(--barra-suave);
+  }
+  .redes-movil__a:hover { color: var(--barra-tinta); }
+  .redes-movil__a svg { width: 17px; height: 17px; fill: currentColor; }
+  .cabecera .lupa--movil { position: relative; left: -8px; }
+  .cabecera.encogida .redes-movil { height: 0; opacity: 0; overflow: hidden; pointer-events: none; }
+}
+/* Iconos de arriba a la misma distancia entre sí (él, 16/09/2026):
+   Instagram sobre la bolsa, lupa sobre el ☰ y WhatsApp a la misma
+   separación hacia la izquierda (~54 px entre centros, a 375 px). La
+   lupa, un poco más grande. */
+@media (max-width: 780px) {
+  .redes-movil { left: -10px; }
+  .redes-movil__a:first-child { position: relative; left: -13.6px; }
+  .lupa--movil .lupa__icono svg { width: 20px; height: 20px; }
+}
+
+/* ---------- EASTER EGG: apilar tablas (16/09/2026) ---------- */
+.pie__fila--huevo { justify-content: flex-end; margin-top: .6rem; }
+.pie__huevo {
+  width: 28px; height: 28px; padding: 0; border: 0; background: none;
+  color: var(--apagado); opacity: .45; cursor: pointer;
+  transition: opacity .2s, transform .25s var(--curva);
+}
+.pie__huevo svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.4; display: block; margin: auto; }
+.pie__huevo:hover, .pie__huevo:focus-visible { opacity: 1; transform: rotate(-12deg); }
+
+.apilar {
+  position: fixed; inset: 0; z-index: 200;
+  display: none; place-items: center;
+  background: rgba(0, 0, 0, .72);
+  touch-action: none;
+}
+.apilar.abierto { display: grid; animation: menu-baja .22s var(--curva) both; }
+.apilar__caja {
+  width: min(360px, calc(100vw - 32px));
+  background: var(--papel); border: 1px solid var(--linea);
+  user-select: none; -webkit-user-select: none; -webkit-tap-highlight-color: transparent;
+}
+.apilar__arriba {
+  display: flex; align-items: center; gap: .8rem;
+  padding: .55rem .5rem .55rem .9rem; border-bottom: 1px solid var(--linea);
+}
+.apilar__titulo { font-weight: 700; text-transform: lowercase; }
+.apilar__marcador { margin-right: auto; color: var(--apagado); font-size: .8125rem; font-variant-numeric: tabular-nums; }
+.apilar__cerrar {
+  width: 36px; height: 36px; border: 0; background: none; color: var(--tinta);
+  font-size: 1.5rem; line-height: 1; cursor: pointer;
+}
+.apilar__lienzo { display: block; width: 100%; height: auto; aspect-ratio: 360 / 560; max-height: calc(100vh - 140px); object-fit: contain; }
+.apilar__aviso { margin: 0; padding: .6rem .9rem; text-align: center; color: var(--apagado); font-size: .8125rem; }
+html.apilar-abierto { overflow: hidden; }
+
+/* TELÉFONO: la franja de acento de Prototipos / Exhibición es un
+   ::after que crece del centro hacia los lados al tocarla (él,
+   16/09/2026). Sin toque previo se ve quieta, ya llena. */
+@media (max-width: 1060px) {
+  .barra-rapida__a { position: relative; }
+  .barra-rapida__a[aria-current="page"] { box-shadow: none; }
+  .barra-rapida__a[aria-current="page"]::after,
+  .barra-rapida__a--crece::after {
+    content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 2px;
+    background: var(--nav-activa);
+  }
+  .barra-rapida__a--crece::after { animation: franja-crece .35s var(--curva) both; }
+}
+@keyframes franja-crece { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@media (prefers-reduced-motion: reduce) { .barra-rapida__a--crece::after { animation: none; } }

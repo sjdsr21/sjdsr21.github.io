@@ -1421,8 +1421,10 @@
       av = document.createElement("p");
       av.id = "pt-pn-personalizar";
       av.className = "pt-personalizar";
-      $("#pt-pn-resumen").insertAdjacentElement("afterend", av);
     }
+    /* Al PIE de la columna, justo encima de la raya del precio
+       (él, 16/09/2026). */
+    $(".pt-panel__opciones").appendChild(av);
     /* 2026-09-14 · Segundo enlace, {b}…{/b}, a la propuesta de ejemplo
        de El Taller (él lo pidió en las fichas de Prototipos). Mismo
        aviso: la propuesta es lo que recibe quien personaliza. El ancla
@@ -1433,7 +1435,14 @@
       .replace("{b}", '<a href="taller.html#propuesta">')
       .replace("{/b}", "</a>");
 
-    $("#pt-pn-opciones").innerHTML = (p.opciones || []).map(function (g) {
+    /* ACABADO, encima de la madera, como dato y no como opción
+       (él, 16/09/2026): «Acabado: aceite de tung». */
+    var acabadoTxt = (p.acabado || []).map(function (a) { return etiquetaGrupo("acabado", a); }).join(", ");
+    var acabadoHTML = acabadoTxt
+      ? '<div class="pt-grupo pt-dato-fijo"><span class="pt-etiqueta">' + t("filtro_acabado") +
+          ':</span> <span class="pt-dato-fijo__valor">' + acabadoTxt + '</span></div>'
+      : '';
+    $("#pt-pn-opciones").innerHTML = acabadoHTML + (p.opciones || []).map(function (g) {
       return '<div class="pt-grupo">' +
         '<span class="pt-etiqueta">' + tx(g.etiqueta) + '</span>' +
         '<div class="pt-ops">' +
