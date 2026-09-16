@@ -1682,7 +1682,12 @@
         class: "tarjeta__flecha tarjeta__flecha--der", type: "button",
         "data-paso": "1", "aria-label": t("pt_siguiente"), html: flechaHTML("der")
       }));
-      marco.appendChild(el("span", {
+    }
+    /* Los cuadraditos, en una franja bajo la foto (él, 16/09/2026);
+       vacía con una sola foto, para que las cartas midan igual. */
+    var franja = el("div", { class: "tarjeta__franja" });
+    if (fotos.length > 1) {
+      franja.appendChild(el("span", {
         class: "tarjeta__cuenta", role: "img", "aria-label": (i + 1) + " / " + fotos.length,
         html: puntosHTML(fotos.length, i)
       }));
@@ -1696,6 +1701,7 @@
        dos niveles. */
     var hijos = [
       marco,
+      franja,
       el("h2", {}, [
         el("a", { class: "tarjeta__abrir", href: "trabajo.html?id=" + w.slug,
                   texto: tx(w.titulo) })

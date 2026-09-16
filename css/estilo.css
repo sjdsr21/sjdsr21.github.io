@@ -3289,8 +3289,13 @@ body:not([data-pagina="novedades"]) .portada .bajada { text-align: justify; hyph
   from { clip-path: inset(0 0 100% 0); opacity: .4; transform: translateY(-6px); }
   to   { clip-path: inset(0 0 -40px 0); opacity: 1; transform: none; }
 }
-.cabecera--abierta .cabecera__utiles,
-.cabecera--abierta .menu.abierto { animation: menu-baja .22s var(--curva) both; }
+.cabecera--abierta .cabecera__utiles { animation: menu-baja .22s var(--curva) both; }
+/* La fila de páginas solo se anima donde vive DENTRO del ☰ (≤1060 px).
+   En computadora está siempre a la vista: animarla la hacía parpadear y
+   el recorte escondía el «Tienda de» de encima (él, 16/09/2026). */
+@media (max-width: 1060px) {
+  .cabecera--abierta .menu.abierto { animation: menu-baja .22s var(--curva) both; }
+}
 @media (prefers-reduced-motion: reduce) {
   .cabecera--abierta .cabecera__utiles, .cabecera--abierta .menu.abierto { animation: none; }
 }
@@ -3331,3 +3336,71 @@ body:not([data-pagina="novedades"]) .portada .bajada { text-align: justify; hyph
   body[data-pagina="trabajos"] .portada__barra,
   body[data-pagina="prototipos"] .portada__barra { grid-row: 3; }
 }
+
+/* Esquineros a la MISMA distancia de la letra en horizontal y vertical
+   (él, 16/09/2026), medido: la «S» del inicio y el «6» de la firma
+   quedan a ~22 px de su esquina. El de abajo sube y ya no pisa la
+   raya que abre «Cómo funciona un encargo». */
+.intro-taller__texto::before { top: 11px; }
+.intro-taller__texto::after  { bottom: 30px; }
+
+/* La interacción de limpiar pulsando el icono de filtro u orden se
+   quita (él, 16/09/2026): el icono es solo señal y el clic lo atraviesa. */
+.filtros-btn svg { pointer-events: none; cursor: auto; }
+
+/* Novedades: el texto de cada diapositiva, justificado. */
+.novedad__capa p { text-align: justify; hyphens: auto; }
+
+/* Menos brecha entre la barra (vistas, filtrar, ordenar) y la cuadrícula
+   (él, 16/09/2026): de ~70 px a ~25 px. */
+body[data-pagina="trabajos"] .portada,
+body[data-pagina="prototipos"] .portada { padding-bottom: .6rem; }
+body[data-pagina="prototipos"] .portada + .pt-seccion { margin-top: 1rem; }
+
+/* Computadora: el carrusel de la intro de El taller, centrado en
+   vertical respecto al texto. */
+@media (min-width: 781px) {
+  .intro-taller__foto { align-self: center; }
+}
+/* Exhibición quedaba a ~10 px: la misma brecha que Prototipos. */
+body[data-pagina="trabajos"] .portada { padding-bottom: 1.6rem; }
+
+/* Exhibición, igual (él, 16/09/2026): flechas sin recuadro, más tenues,
+   y el cuadradito de la foto que se ve en color de acento. */
+.tarjeta__flecha { background: none; backdrop-filter: none; }
+.tarjeta__flecha .flecha__tri { fill-opacity: .55; filter: drop-shadow(0 0 2px rgba(0, 0, 0, .6)); }
+.tarjeta__cuenta i.sel { background: var(--acento-texto); }
+
+/* LA FRANJA DE LOS CUADRADITOS (él, 16/09/2026): bajo la foto, parte
+   de la carta y siempre a la vista. En la vista de lista no va. */
+.tarjeta__franja, .pt-franja-fotos {
+  display: flex; justify-content: center; align-items: center;
+  height: 18px; position: relative; z-index: 2; pointer-events: none;
+}
+.tarjeta__franja .tarjeta__cuenta, .pt-franja-fotos .pt-cuenta-fotos {
+  position: static; transform: none; opacity: 1;
+}
+.tarjeta__franja .tarjeta__cuenta i, .pt-franja-fotos .pt-cuenta-fotos i {
+  background: color-mix(in srgb, var(--tinta) 28%, transparent); box-shadow: none;
+}
+.tarjeta__franja .tarjeta__cuenta i.sel, .pt-franja-fotos .pt-cuenta-fotos i.sel { background: var(--acento-texto); }
+.rejilla--lista .tarjeta__franja, .pt-vista--lista .pt-franja-fotos { display: none; }
+.tarjeta__franja { margin: -.15rem 0 .35rem; }
+
+/* Flechas de las cuadrículas, un poco más notables (él, 16/09/2026):
+   de 8×13 a 10×16 px y relleno de 55 % a 70 %. */
+.tarjeta__flecha .flecha__tri, .pt-flecha .flecha__tri { width: 10px; height: 16px; fill-opacity: .7; }
+
+/* El cuadradito de la foto que se ve, sin acento: a plena tinta
+   (blanco o negro según el tema) (él, 16/09/2026). */
+.tarjeta__franja .tarjeta__cuenta i.sel, .pt-franja-fotos .pt-cuenta-fotos i.sel,
+.tarjeta__cuenta i.sel, .pt-cuenta-fotos i.sel { background: var(--tinta); }
+
+/* Ficha de Exhibición: volver y anterior/siguiente con un fondo gris
+   apenas contrastado, sin marco (él, 16/09/2026). Al pasar, un punto más. */
+.navpieza .volver { background: color-mix(in srgb, var(--tinta) 9%, var(--papel)); border: 0; }
+.navpieza .volver:hover, .navpieza .volver:focus-visible {
+  background: color-mix(in srgb, var(--tinta) 16%, var(--papel));
+}
+/* Triángulos de anterior/siguiente, más chicos (16/09/2026). */
+.navpieza__tri svg { width: 10px; height: 11px; }

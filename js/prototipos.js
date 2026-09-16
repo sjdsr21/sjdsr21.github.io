@@ -159,6 +159,14 @@
     var i = fotoActual[p.slug] || 0;
     if (i >= fotos.length) { i = 0; fotoActual[p.slug] = 0; }
 
+    /* LOS CUADRADITOS VAN EN UNA FRANJA BAJO LA FOTO, como parte de la
+       información de la carta (él, 16/09/2026). La franja sale siempre
+       —vacía si hay una sola foto— para que las cartas de una fila
+       midan lo mismo. */
+    var puntos = '<span class="pt-franja-fotos">' + (fotos.length > 1
+      ? '<span class="pt-cuenta-fotos" role="img" aria-label="' + (i + 1) + ' / ' + fotos.length + '">' +
+          (window.PA_PUNTOS ? window.PA_PUNTOS.html(fotos.length, i) : "") + '</span>'
+      : '') + '</span>';
     var visual;
     if (fotos.length) {
       /* Las flechas solo si hay más de una foto: con una sola
@@ -167,9 +175,7 @@
         ? '<button type="button" class="pt-flecha pt-flecha--izq" data-paso="-1"' +
             ' aria-label="' + t("pt_anterior") + '">' + flecha("izq") + '</button>' +
           '<button type="button" class="pt-flecha pt-flecha--der" data-paso="1"' +
-            ' aria-label="' + t("pt_siguiente") + '">' + flecha("der") + '</button>' +
-          '<span class="pt-cuenta-fotos" role="img" aria-label="' + (i + 1) + ' / ' + fotos.length + '">' +
-            (window.PA_PUNTOS ? window.PA_PUNTOS.html(fotos.length, i) : "") + '</span>'
+            ' aria-label="' + t("pt_siguiente") + '">' + flecha("der") + '</button>'
         : '';
       visual = '<span class="pt-ficha__hueco pt-ficha__hueco--foto' +
           (p.sin_fondo ? ' pt-ficha__hueco--suelto' : '') +
@@ -202,7 +208,7 @@
        De regalo: se cae el manejo de Enter y espacio a mano, que
        un <button> trae de fábrica. */
     return '<div class="pt-ficha" data-slug="' + p.slug + '">' +
-      visual +
+      visual + puntos +
       '<span class="pt-ficha__cuerpo">' +
         '<h3><button type="button" class="pt-ficha__abrir" data-slug="' + p.slug + '">' +
           tx(p.nombre) + '</button></h3>' +

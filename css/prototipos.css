@@ -927,3 +927,25 @@ video.pt-visual__foto {
 @media (max-width: 560px) {
   .pt-vista--tres .pt-ficha__res { display: block; }
 }
+
+/* El nombre de cada pieza, menos grueso (él, 16/09/2026): peso medio y
+   a plena tinta (negro o blanco según el tema). */
+.pt-ficha h3 { font-weight: 500; color: var(--tinta); opacity: 1; }
+
+/* Flechas de la cuadrícula, en todas las pantallas (él, 16/09/2026):
+   sin recuadro, solo el triángulo, con relleno más tenue. */
+.pt-flecha, .pt-flecha:hover { background: none; backdrop-filter: none; }
+.pt-flecha .flecha__tri { fill-opacity: .55; filter: drop-shadow(0 0 2px var(--papel)); }
+/* El cuadradito de la foto que se ve, en color de acento. */
+.pt-cuenta-fotos i.sel { background: var(--acento-texto); }
+/* La fila del precio, a la misma distancia del borde de abajo que el
+   nombre del de arriba (él, 16/09/2026): sin interlineado sobrante y
+   con el mismo relleno arriba y abajo. */
+.pt-ficha__pie { line-height: 1; }
+.pt-ficha__cuerpo { padding-bottom: .8rem; }
+.pt-vista--cinco .pt-ficha__cuerpo { padding-bottom: .55rem; }
+.pt-ficha__cuerpo { padding-bottom: calc(.8rem - 2px); }
+.pt-vista--cinco .pt-ficha__cuerpo { padding-bottom: calc(.55rem - 2px); }
+.pt-vista--lista .pt-ficha__cuerpo { padding-bottom: calc(1rem - 4px); }
+.pt-flecha .flecha__tri { width: 10px; height: 16px; fill-opacity: .7; }
+.pt-cuenta-fotos i.sel, .pt-franja-fotos .pt-cuenta-fotos i.sel { background: var(--tinta); }
