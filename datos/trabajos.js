@@ -209,13 +209,17 @@ window.TRABAJOS = [
     destacado: true,
     titulo: { es: "Quillas de pared", en: "Wall-mounted board rests" },
     anio: 2026, anio_estimado: false,
-    tipo: "accesorio",
+    /* 15/09/2026 · De «accesorio» a «repisa» (él): son soportes de
+       pared, y la etiqueta se lee «Repisas». */
+    tipo: "repisa",
     materiales: ["saman"],
     acabado:["linaza","cera"],
     medidas: "26 × 18,5 × 4 cm",   /* de las cotas de tu propia vista */
     resumen: {
-      es: "Dos soportes tallados en samán macizo. Colgados no se ve ni un tornillo: encajan sobre ranuras keyhole fresadas en la propia madera.",
-      en: "Two rests carved from solid monkeypod. Hung on the wall not a single screw shows — they seat on keyhole slots routed into the wood itself."
+      /* 16/09/2026 · Crédito del diseño a @casagreca_ (él), al final y con
+         la misma forma que el de Centro Estepario en el Elevacho. */
+      es: "Dos soportes tallados en samán macizo. Colgados no se ve ni un tornillo: encajan sobre ranuras keyhole fresadas en la propia madera. El diseño se hizo en colaboración con @casagreca_ en Instagram.",
+      en: "Two rests carved from solid monkeypod. Hung on the wall not a single screw shows — they seat on keyhole slots routed into the wood itself. Designed in collaboration with @casagreca_ on Instagram."
     },
     como: {
       es: [
@@ -280,7 +284,7 @@ window.TRABAJOS = [
      Materiales: zapatera, caja y bandeja = samán; elevacho = pino; vanitarios
      = MDF HR; madriguera = pino + compuesto de okumé; escenografía = pino;
      gavetero = cedro. */
-  { slug:"mueble-bano",           carpeta:"Bano Wichi",             publicado:true,  titulo:{es:"Vanitarios laqueados",en:"Lacquered bathroom vanities"},                    anio:2026, anio_estimado:false, tipo:"almacenaje", materiales:["mdf-hr"], acabado:["pintado","poliuretano"], medidas:null, resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/vanitarios-wichi-foto-1.webp", es_render:false, galeria:["img/trabajos/vanitarios-wichi-foto-2.webp","img/trabajos/vanitarios-wichi-foto-3.webp"], video:null },
+  { slug:"mueble-bano",           carpeta:"Bano Wichi",             publicado:true,  titulo:{es:"Vanitarios laqueados",en:"Lacquered bathroom vanities"},                    anio:2026, anio_estimado:false, tipo:"gabinete",   materiales:["mdf-hr"], acabado:["pintado","poliuretano"], medidas:null, resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/vanitarios-wichi-foto-1.webp", es_render:false, galeria:["img/trabajos/vanitarios-wichi-foto-2.webp","img/trabajos/vanitarios-wichi-foto-3.webp"], video:null },
   /* Fotos reales del 06/09/2026. Las tres primeras se SUSTITUYERON esa
      misma tarde por su versión «final», con corrección de color, y entró
      una cuarta: son 4, las que él numeró con «final» en el nombre.
@@ -289,7 +293,7 @@ window.TRABAJOS = [
      borradores y deja de ser render. La vista del modelo
      (gavetero-wichi.webp) ya no se usa; el archivo se queda en img/.
      El año sigue estimado: no lo ha confirmado. */
-  { slug:"gavetero",              carpeta:"Gavetero Wichi",         publicado:true,  titulo:{es:"Gavetero",en:"Chest of drawers"},                       anio:2025, anio_estimado:false, tipo:"almacenaje", materiales:["cedro"], acabado:["linaza","cera"], medidas:null, resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/gavetero-wichi-foto-1.webp", es_render:false, galeria:["img/trabajos/gavetero-wichi-foto-2.webp","img/trabajos/gavetero-wichi-foto-3.webp","img/trabajos/gavetero-wichi-foto-4.webp"], video:null },
+  { slug:"gavetero",              carpeta:"Gavetero Wichi",         publicado:true,  titulo:{es:"Gavetero",en:"Chest of drawers"},                       anio:2025, anio_estimado:false, tipo:"gabinete",   materiales:["cedro"], acabado:["linaza","cera"], medidas:null, resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/gavetero-wichi-foto-1.webp", es_render:false, galeria:["img/trabajos/gavetero-wichi-foto-2.webp","img/trabajos/gavetero-wichi-foto-3.webp","img/trabajos/gavetero-wichi-foto-4.webp"], video:null },
   /* ZAPATERA — ficha nueva del 06/09/2026. No tiene carpeta en
      D:\Carpinteria\Proyectos ni .skp, así que el año no sale de ningún
      archivo: va estimado hasta que él lo diga. El título no lleva el
@@ -300,10 +304,10 @@ window.TRABAJOS = [
      escrito a mano porque los .skp se llaman distinto que su carpeta
      («Zapatero Rosa» vs «Zapatera Rosa», «Elevador» vs «Elevacho»), y la
      búsqueda automática por carpeta no los encontraría. */
-  { slug:"zapatera",              carpeta:"Zapatera Rosa",          publicado:true,  titulo:{es:"Zapatera en samán",en:"Monkeypod shoe rack"},                              anio:2025, anio_estimado:false,  tipo:"almacenaje", materiales:["saman"], acabado:["poliuretano"], medidas:null, resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/zapatera-rosa-foto-2.webp",  es_render:false, galeria:["img/trabajos/zapatera-rosa-foto-1.webp","img/trabajos/zapatera-rosa-foto-3.webp"], video:null, modelo3d:"modelos/zapatero-rosa.glb" },
+  { slug:"zapatera",              carpeta:"Zapatera Rosa",          publicado:true,  titulo:{es:"Zapatera en samán",en:"Monkeypod shoe rack"},                              anio:2025, anio_estimado:false,  tipo:"zapatera",   materiales:["saman"], acabado:["poliuretano"], medidas:null, resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/zapatera-rosa-foto-2.webp",  es_render:false, galeria:["img/trabajos/zapatera-rosa-foto-1.webp","img/trabajos/zapatera-rosa-foto-3.webp"], video:null, modelo3d:"modelos/zapatero-rosa.glb" },
   { slug:"comoda",                carpeta:"Comoda",                 publicado:false, titulo:{es:"Cómoda",en:"Dresser"},                                  anio:2025, anio_estimado:true, tipo:"almacenaje", materiales:[], acabado:[], medidas:null, resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/comoda.webp",                 es_render:true, galeria:[], video:null },
   { slug:"consola-1",             carpeta:"Consola Leo",            publicado:false, titulo:{es:"Consola",en:"Console table"},                           anio:2026, anio_estimado:true, tipo:"mesa",       materiales:[], acabado:[], medidas:null, resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/consola-leo.webp",            es_render:true, galeria:[], video:null },
-  { slug:"consola-2",             carpeta:"Consola Matias",         publicado:true,  titulo:{es:"Consola mid-century",en:"Mid-century console"},         anio:2026, anio_estimado:false, tipo:"mesa",       materiales:["melamina"], acabado:[], medidas:"152 × 60 × 43 cm", resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/consola-matias-foto-1.webp",  es_render:false, galeria:["img/trabajos/consola-matias-foto-2.webp","img/trabajos/consola-matias-foto-3.webp"], video:null },
+  { slug:"consola-2",             carpeta:"Consola Matias",         publicado:true,  titulo:{es:"Consola mid-century",en:"Mid-century console"},         anio:2026, anio_estimado:false, tipo:"gabinete",   materiales:["melamina","mdf","tela"], acabado:[], medidas:"152 × 60 × 43 cm", resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/consola-matias-foto-1.webp",  es_render:false, galeria:["img/trabajos/consola-matias-foto-2.webp","img/trabajos/consola-matias-foto-3.webp"], video:null },
   { slug:"mesa-comedor",          carpeta:"Mesa Maria",             publicado:false, titulo:{es:"Mesa de comedor",en:"Dining table"},                    anio:2026, anio_estimado:true, tipo:"mesa",       materiales:[], acabado:[], medidas:null, resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/mesa-maria.webp",             es_render:true, galeria:[], video:null },
   { slug:"repisas-flotantes",     carpeta:"Flotantes Estefania",    publicado:false, titulo:{es:"Repisas flotantes",en:"Floating shelves"},              anio:2026, anio_estimado:true, tipo:"repisa",     materiales:[], acabado:[], medidas:null, resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/flotantes-estefania.webp",    es_render:true, galeria:[], video:null },
   /* 14/09/2026 · PUBLICADA con fotos reales: las cinco que él numeró
@@ -326,13 +330,13 @@ window.TRABAJOS = [
      borradores y deja de ser render: `es_render:false` le quita el
      sello «3D». La vista del modelo (paraban-veronica.webp) ya no
      se usa en la ficha; el archivo se queda en img/ por si acaso. */
-  { slug:"paraban",               carpeta:"Paraban Veronica",       publicado:true,  titulo:{es:"Parabán “hippie”",en:"“Hippie” folding screen"},                          anio:2026, anio_estimado:false, tipo:"otro",       materiales:["apamate"], acabado:[], medidas:"90 × 4 × 142 cm", resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/paraban-veronica-foto-1.webp", es_render:false, galeria:["img/trabajos/paraban-veronica-foto-2.webp","img/trabajos/paraban-veronica-foto-3.webp","img/trabajos/paraban-veronica-foto-4.webp","img/trabajos/paraban-veronica-foto-5.webp","img/trabajos/paraban-veronica-foto-6.webp"], video:null },
-  { slug:"caja",                  carpeta:"Caja Martin",            publicado:true,  titulo:{es:"Caja de relojes",en:"Watch box"},                                        anio:2026, anio_estimado:false, tipo:"accesorio",  materiales:["saman"], acabado:["linaza","cera"], medidas:null, resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/caja-martin-foto-1.webp",      es_render:false, galeria:["img/trabajos/caja-martin-foto-2.webp","img/trabajos/caja-martin-foto-3.webp","img/trabajos/caja-martin-foto-4.webp"], video:null },
+  { slug:"paraban",               carpeta:"Paraban Veronica",       publicado:true,  titulo:{es:"Parabán “hippie”",en:"“Hippie” folding screen"},                          anio:2026, anio_estimado:false, tipo:"paraban",    materiales:["apamate","tela"], acabado:["poliuretano"], medidas:"90 × 4 × 142 cm", resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/paraban-veronica-foto-1.webp", es_render:false, galeria:["img/trabajos/paraban-veronica-foto-2.webp","img/trabajos/paraban-veronica-foto-3.webp","img/trabajos/paraban-veronica-foto-4.webp","img/trabajos/paraban-veronica-foto-5.webp","img/trabajos/paraban-veronica-foto-6.webp"], video:null },
+  { slug:"caja",                  carpeta:"Caja Martin",            publicado:true,  titulo:{es:"Caja de relojes",en:"Watch box"},                                        anio:2026, anio_estimado:false, tipo:"accesorio",  materiales:["saman","tela"], acabado:["linaza","cera"], medidas:null, resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/caja-martin-foto-1.webp",      es_render:false, galeria:["img/trabajos/caja-martin-foto-2.webp","img/trabajos/caja-martin-foto-3.webp","img/trabajos/caja-martin-foto-4.webp"], video:null },
   { slug:"gancho-pared",          carpeta:"Gancho Ery",             publicado:false, titulo:{es:"Gancho de pared",en:"Wall hook"},                       anio:2026, anio_estimado:true, tipo:"accesorio",  materiales:[], acabado:[], medidas:null, resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/gancho-ery.webp",             es_render:true, galeria:[], video:null },
   { slug:"posa-utensilios",       carpeta:"Posa Utensilios",        publicado:false, titulo:{es:"Posa utensilios",en:"Utensil holder"},                  anio:2026, anio_estimado:true, tipo:"accesorio",  materiales:[], acabado:[], medidas:null, resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/posa-utensilios.webp",        es_render:true, galeria:[], video:null },
   /* Fotos reales del 14/08/2026 (7, las que él numeró). Deja de ser
      render: `es_render:false` le quita el sello «3D» de la ficha. */
-  { slug:"madriguera",            carpeta:"Madriguera Estefania",   publicado:true,  titulo:{es:"Madriguera de conejo",en:"Rabbit den"},                              anio:2026, anio_estimado:false, tipo:"accesorio",  materiales:["pino","okume"], acabado:["crudo"], medidas:null, resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/madriguera-estefania-foto-4.webp",   es_render:false, galeria:["img/trabajos/madriguera-estefania-foto-1.webp","img/trabajos/madriguera-estefania-foto-2.webp","img/trabajos/madriguera-estefania-foto-5.webp","img/trabajos/madriguera-estefania-foto-6.webp","img/trabajos/madriguera-estefania-foto-7.webp"], video:"video/madriguera-estefania.mp4" },
+  { slug:"madriguera",            carpeta:"Madriguera Estefania",   publicado:true,  titulo:{es:"Madriguera de conejo",en:"Rabbit den"},                              anio:2026, anio_estimado:false, tipo:"mascotas",   materiales:["pino","okume","pvc-expandido"], acabado:["crudo"], medidas:null, resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/madriguera-estefania-foto-4.webp",   es_render:false, galeria:["img/trabajos/madriguera-estefania-foto-1.webp","img/trabajos/madriguera-estefania-foto-2.webp","img/trabajos/madriguera-estefania-foto-5.webp","img/trabajos/madriguera-estefania-foto-6.webp","img/trabajos/madriguera-estefania-foto-7.webp"], video:"video/madriguera-estefania.mp4" },
   { slug:"macetero",              carpeta:"Macetero Lacho",         publicado:false, titulo:{es:"Macetero",en:"Planter"},                                anio:2025, anio_estimado:true, tipo:"exterior",   materiales:[], acabado:[], medidas:null, resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/macetero-lacho.webp",         es_render:true, galeria:[], video:null },
   { slug:"bases-de-foto",         carpeta:"Bases de Foto",             publicado:false, titulo:{es:"Bases para foto",en:"Photo risers"},          anio:2025, anio_estimado:true, tipo:"exhibicion", materiales:[], acabado:[], medidas:null, resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/bases-de-foto.webp",             es_render:true, galeria:[], video:null },
   /* Fotos reales del 06/09/2026 (foto-1 y foto-2). ÚNICO caso en que NO
@@ -376,7 +380,12 @@ window.TRABAJOS = [
      ------------------------------------------------------------------ */
   /* 12/09/2026 · Fotos nuevas, las que él numeró «Elevacho 1-8» en
      E:\Contenido PrototipoAgo\Elevacho, en ese orden. La 1 ya estaba
-     publicada y no se tocó (se comprobó que es la misma foto). La foto-2
+     publicada y no se tocó (se comprobó que es la misma foto).
+     15/09/2026 · La foto-1 SÍ se cambió, por «Elevacho 1.png» (él: la más
+     reciente, 1200 × 896). El respaldo de la anterior quedó apartado como
+     img/_originales/trabajos/elevacho-foto-1-anterior-2026-09-06.webp, la
+     misma maniobra de siempre para que Achicar-imagenes.ps1 no la resucite.
+     La foto-2
      de antes era `sdfgsdfg.jpg`, que no está numerada: sale, y su
      original quedó apartado como
      img/_originales/trabajos/elevacho-foto-2-anterior-sdfgsdfg.webp
@@ -391,16 +400,87 @@ window.TRABAJOS = [
      Título cambiado a «Elevacho X Centro Estepario» (él, 12/09/2026).
      El slug y la carpeta siguen siendo «elevacho»: son la dirección de la
      ficha y la ruta de las fotos, no el nombre que se ve. */
-  { slug:"elevacho",              carpeta:"Elevacho",               publicado:true,  titulo:{es:"Elevacho X Centro Estepario",en:"Elevacho X Centro Estepario"}, anio:2025, anio_estimado:false, tipo:"accesorio",  materiales:["pino"], acabado:["poliuretano"], medidas:null, resumen:{es:"Diseño e impresión 3D elaborados por Centro Estepario, @centro_estepario en Instagram.",en:"Design and 3D printing by Centro Estepario, @centro_estepario on Instagram."}, como:{es:[],en:[]}, imagen:"img/trabajos/elevacho-foto-1.webp",        es_render:false, galeria:["img/trabajos/elevacho-foto-2.webp","img/trabajos/elevacho-foto-3.webp","img/trabajos/elevacho-foto-4.webp","img/trabajos/elevacho-foto-5.webp","img/trabajos/elevacho-foto-6.webp","img/trabajos/elevacho-foto-7.webp","img/trabajos/elevacho-foto-8.webp"], video:null, modelo3d:"modelos/elevador.glb" },
+  { slug:"elevacho",              carpeta:"Elevacho",               publicado:true,  titulo:{es:"Elevacho X Centro Estepario",en:"Elevacho X Centro Estepario"}, anio:2025, anio_estimado:false, tipo:"accesorio",  materiales:["pino","plastico"], acabado:["poliuretano"], medidas:null, resumen:{es:"Diseño e impresión 3D elaborados por Centro Estepario, @centro_estepario en Instagram.",en:"Design and 3D printing by Centro Estepario, @centro_estepario on Instagram."}, como:{es:[],en:[]}, imagen:"img/trabajos/elevacho-foto-1.webp",        es_render:false, galeria:["img/trabajos/elevacho-foto-2.webp","img/trabajos/elevacho-foto-3.webp","img/trabajos/elevacho-foto-4.webp","img/trabajos/elevacho-foto-5.webp","img/trabajos/elevacho-foto-6.webp","img/trabajos/elevacho-foto-7.webp","img/trabajos/elevacho-foto-8.webp"], video:null, modelo3d:"modelos/elevador.glb" },
   { slug:"bandeja",               carpeta:"Bandeja",                publicado:true,  titulo:{es:"Bandeja",en:"Serving tray"},                            anio:2025, anio_estimado:false, tipo:"accesorio",  materiales:["saman"], acabado:["linaza"], medidas:null, resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/bandeja-foto-2.webp",         es_render:false, galeria:["img/trabajos/bandeja-foto-1.webp","img/trabajos/bandeja-foto-3.webp"], video:null },
   /* Fotos originales del 25/06/2024 */
-  { slug:"escritorio-teca",       carpeta:"Escritorio Teca",        publicado:true,  titulo:{es:"Escritorio en teca",en:"Teak desk"},                    anio:2024, anio_estimado:false, tipo:"mesa",       materiales:["teca"], acabado:["rubio-monocoat"], medidas:null, resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/escritorio-teca-foto-2.webp", es_render:false, galeria:["img/trabajos/escritorio-teca-foto-1.webp","img/trabajos/escritorio-teca-foto-3.webp","img/trabajos/escritorio-teca-foto-4.webp"], video:null },
+  /* 15/09/2026 · Entran sus fotos numeradas 5 y 6, al final de la galería.
+     OJO, y esto casi muerde: YA EXISTÍA un `escritorio-teca-foto-5.webp` en
+     img/ (del 11/09) que ninguna ficha usaba, con su respaldo en _originales.
+     Ese respaldo quedó apartado como
+     img/_originales/trabajos/escritorio-teca-foto-5-anterior-2026-09-06.webp
+     —si no, Achicar-imagenes.ps1 rehacía la 5 NUEVA desde el respaldo VIEJO y
+     devolvía la imagen anterior sin avisar—. Comprobado después con PSNR: las
+     dos dan ~42 dB contra sus fuentes, o sea son las de él. */
+  { slug:"escritorio-teca",       carpeta:"Escritorio Teca",        publicado:true,  titulo:{es:"Escritorio en teca",en:"Teak desk"},                    anio:2024, anio_estimado:false, tipo:"mesa",       materiales:["teca"], acabado:["rubio-monocoat"], medidas:null, resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/escritorio-teca-foto-2.webp", es_render:false, galeria:["img/trabajos/escritorio-teca-foto-1.webp","img/trabajos/escritorio-teca-foto-3.webp","img/trabajos/escritorio-teca-foto-4.webp","img/trabajos/escritorio-teca-foto-5.webp","img/trabajos/escritorio-teca-foto-6.webp"], video:null },
   /* Foto original del 24/07/2025 */
-  { slug:"cuadro-tallado",        carpeta:"Cuadro tallado",         publicado:true,  titulo:{es:"Cuadro tallado",en:"Carved wall panel"},                anio:2025, anio_estimado:false, tipo:"accesorio",  materiales:["teca"], acabado:["poliuretano"], medidas:null, resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/cuadro-tallado-foto-1.webp",  es_render:false, galeria:["img/trabajos/cuadro-tallado-foto-2.webp"], video:null },
+  { slug:"cuadro-tallado",        carpeta:"Cuadro tallado",         publicado:true,  titulo:{es:"Cuadro tallado",en:"Carved wall panel"},                anio:2025, anio_estimado:false, tipo:"decoracion", materiales:["teca"], acabado:["poliuretano"], medidas:null, resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/cuadro-tallado-foto-1.webp",  es_render:false, galeria:["img/trabajos/cuadro-tallado-foto-2.webp"], video:null },
   /* Sus cuatro fotos son del 15/12/2023; hay otra suelta del 01/06/2024.
      Título con la madera dentro para no chocar con la «Zapatera» de
      Rosa, que ya está publicada — son dos piezas distintas. */
-  { slug:"zapatera-teca",         carpeta:"Zapatera Teca",          publicado:true,  titulo:{es:"Zapatera en teca",en:"Teak shoe rack"},                 anio:2024, anio_estimado:false, tipo:"almacenaje", materiales:["teca"], acabado:["rubio-monocoat"], medidas:null, resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/zapatera-teca-foto-4.webp",   es_render:false, galeria:["img/trabajos/zapatera-teca-foto-1.webp","img/trabajos/zapatera-teca-foto-2.webp","img/trabajos/zapatera-teca-foto-3.webp"], video:null },
+  { slug:"zapatera-teca",         carpeta:"Zapatera Teca",          publicado:true,  titulo:{es:"Zapatera en teca",en:"Teak shoe rack"},                 anio:2024, anio_estimado:false, tipo:"zapatera",   materiales:["teca"], acabado:["rubio-monocoat"], medidas:null, resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/zapatera-teca-foto-4.webp",   es_render:false, galeria:["img/trabajos/zapatera-teca-foto-1.webp","img/trabajos/zapatera-teca-foto-2.webp","img/trabajos/zapatera-teca-foto-3.webp"], video:null },
+  /* 15/09/2026 · TRES FICHAS NUEVAS, pedidas por él.
+     ANILLOS — carpeta «Showcase Anillos» en E:\Contenido PrototipoAgo, publicada
+     solo como «Anillos» (él). Van las cinco «Anillos N-2.jpg», que son las que
+     él editó ese día (recortes nuevos); las «Anillos N.JPG» sin «-2» y los
+     DSC/C37xx sin número se quedan fuera.
+     Ese mismo día la foto-1 pasó a «Anillos 1.png» (él: la más reciente, con
+     el fondo limpio, 1200 × 896). El respaldo de la anterior (la «1-2.jpg»)
+     quedó apartado como img/_originales/trabajos/anillos-foto-1-anterior-1-2jpg.webp
+     para que Achicar-imagenes.ps1 no la resucite. Año 2025 por la fecha de cámara de
+     los DSC (10/01/2025), confirmado por él. Maderas dictadas por él el
+     mismo día: zapatero, aceite y puy (con Y). Acabado poliuretano, igual
+     que el macetero. El mueble de espejo también es 2025, confirmado.
+     MACETERO X CENTRO ESTEPARIO — carpeta «Plataformacha» en E:\. Entró como
+     «Plataforma para macetas» y ese mismo día él la renombró, confirmó 2025,
+     pidió «hierro, pino» (no acero) y el crédito a Centro Estepario igual que
+     en el Elevacho. El slug se queda en «plataforma-macetas» (ya existe otro
+     «macetero», el de Lacho, sin publicar). Las tres fotos numeradas; los dos
+     .mp4 sin número fuera.
+     MUEBLE DE ESPEJO — de «Baño Ery» (D:\Carpinteria\Proyectos\Old). Una sola
+     foto, «Mueble Espejo Baño 1.jpg»: es un cuadro del video con el color
+     corregido y mide 602 × 781, muy por debajo del tope de 1400 — se verá
+     algo blanda en pantalla grande. Melamina deducida de la foto y de los
+     «cantos» del presupuesto (que no nombra el tablero); espejo 45 × 35 con
+     dos LED según el mismo presupuesto (20/08/2025). */
+  { slug:"anillos",               carpeta:"Showcase Anillos",       publicado:true,  titulo:{es:"Anillos",en:"Rings"},                                   anio:2025, anio_estimado:false, tipo:"accesorio",  materiales:["zapatero","aceite","puy"], acabado:["poliuretano"], medidas:null, resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/anillos-foto-1.webp",         es_render:false, galeria:["img/trabajos/anillos-foto-2.webp","img/trabajos/anillos-foto-3.webp","img/trabajos/anillos-foto-4.webp","img/trabajos/anillos-foto-5.webp"], video:null },
+  { slug:"plataforma-macetas",    carpeta:"Plataformacha",          publicado:true,  titulo:{es:"Macetero X Centro Estepario",en:"Macetero X Centro Estepario"}, anio:2025, anio_estimado:false, tipo:"exterior",   materiales:["hierro","pino"], acabado:["poliuretano"], medidas:null, resumen:{es:"Diseño elaborado por Centro Estepario, @centro_estepario en Instagram.",en:"Design by Centro Estepario, @centro_estepario on Instagram."}, como:{es:[],en:[]}, imagen:"img/trabajos/plataformacha-foto-1.webp",   es_render:false, galeria:["img/trabajos/plataformacha-foto-2.webp","img/trabajos/plataformacha-foto-3.webp"], video:null },
+  /* 15/09/2026 · PUERTAS DE CLÓSET (él). Los numerados de
+     E:\Contenido PrototipoAgo\Puertas Closet: fotos 1 a 4 y videos 5 y 6.
+     De la 1 va el .jpg, que es más nuevo que el .png y es la misma imagen;
+     de la 2, 3 y 4 va su versión «-2», la que él editó ese día. Los
+     20241212/20250213 sin numerar y el 20250218.mp4 se quedan fuera.
+     OJO CON LA 1: viene a 607 × 1080, muy por debajo del tope de 1400 de las
+     demás, y es la portada. Se verá blanda en pantalla grande.
+     Los dos videos venían en 4K (82,9 y 32,6 MB) y se recomprimieron con la
+     receta de siempre —lado largo 1280, CRF 26, +faststart— a 1,4 y 0,6 MB.
+     Son verticales. Con más de un video hace falta `medios`, como en el Rolo
+     y la escenografía: manda sobre imagen+galeria+video, que se quedan por si
+     algo más los lee. Cada uno lleva su portada en
+     img/trabajos/puertas-closet-N-portada.webp, que es el nombre que busca
+     `portadaDe` en js/sitio.js.
+     Año 2025 CONFIRMADO por él, que además cuadra con la fecha de las fotos
+     sin numerar (las puertas puestas son del 13/02/2025; el .skp de
+     D:\Carpinteria\Proyectos\Old\Puertas Clóset Ery es de diciembre de 2024).
+     Madera y acabado dictados por él el 15/09/2026: cedro Y chapa de cedro
+     —los dos, por eso van las dos claves— y barniz alquídico, que es clave
+     nueva y aparte del `barnizado` genérico. */
+  { slug:"puertas-closet",        carpeta:"Puertas Clóset Ery",     publicado:true,  titulo:{es:"Puertas de clóset",en:"Closet doors"},                  anio:2025, anio_estimado:false, tipo:"puerta",     materiales:["cedro","chapa-cedro"], acabado:["barniz-alquidico"], medidas:null, resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/puertas-closet-foto-1.webp",  es_render:false, galeria:["img/trabajos/puertas-closet-foto-2.webp","img/trabajos/puertas-closet-foto-3.webp","img/trabajos/puertas-closet-foto-4.webp"], video:"video/puertas-closet-5.mp4", medios:[{tipo:"imagen",src:"img/trabajos/puertas-closet-foto-1.webp"},{tipo:"imagen",src:"img/trabajos/puertas-closet-foto-2.webp"},{tipo:"imagen",src:"img/trabajos/puertas-closet-foto-3.webp"},{tipo:"imagen",src:"img/trabajos/puertas-closet-foto-4.webp"},{tipo:"video",src:"video/puertas-closet-5.mp4"},{tipo:"video",src:"video/puertas-closet-6.mp4"}] },
+
+  /* 15/09/2026 · SET DE UTENSILIOS (él). Carpeta «Set de utensilios» en
+     E:\Contenido PrototipoAgo. Van las dos numeradas, «Utensilios 1.png» y
+     «Utensilios 2.png»: son sus versiones editadas (fondo liso beige) de las
+     fotos de cámara 20250712_162420 y 20250909_110835, que se quedan fuera.
+     OJO: vienen chicas, 1200 × 896 y 896 × 896. Año 2026 dictado por él,
+     aunque las fotos de cámara son de 2025 — manda lo que él dice. Acabado:
+     aceite de tung (él). Maderas dictadas por él el mismo día, «en orden
+     respectivo»: algarrobo, puy, teca y caoba — una por utensilio, en el orden
+     en que se ven de izquierda a derecha en la foto 1. «Puy» con Y, como en
+     los anillos. Maderas antes SIN marcar: son mixtas y
+     nunca dijo cuál es cada una (el mismo pendiente que tiene el «Pack de
+     utensilios» de prototipos.js, que sigue sin publicar). No es la ficha
+     «posa-utensilios», que es otra pieza. */
+  { slug:"set-de-utensilios",     carpeta:"Set de utensilios",      publicado:true,  titulo:{es:"Set de utensilios",en:"Utensil set"},                   anio:2026, anio_estimado:false, tipo:"cocina",     materiales:["algarrobo","puy","teca","caoba"], acabado:["tung"], medidas:null, resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/set-de-utensilios-foto-1.webp", es_render:false, galeria:["img/trabajos/set-de-utensilios-foto-2.webp"], video:null },
+  { slug:"mueble-espejo",        carpeta:"Baño Ery",               publicado:true,  titulo:{es:"Mueble de espejo",en:"Mirror cabinet"},                 anio:2025, anio_estimado:false, tipo:"gabinete",   materiales:["melamina","vidrio"], acabado:[], medidas:null, resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/bano-ery-espejo-foto-1.webp", es_render:false, galeria:[], video:null },
   { slug:"rampa",                 carpeta:"Rampa alberto",          publicado:false, titulo:{es:"Rampa",en:"Ramp"},                                      anio:2026, anio_estimado:true, tipo:"otro",       materiales:[], acabado:[], medidas:null, resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/rampa-alberto.webp",          es_render:true, galeria:[], video:null },
   { slug:"meson-trabajo",         carpeta:"MT Estefania",           publicado:true,  titulo:{es:"Mesón de patronaje",en:"Pattern-making counter"},                   anio:2026, anio_estimado:false, tipo:"taller",     materiales:["okume"], acabado:["poliuretano"], medidas:"222 × 97 × 81 cm", resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/mt-estefania-foto-1.webp", es_render:false, galeria:["img/trabajos/mt-estefania-foto-2.webp","img/trabajos/mt-estefania-foto-3.webp","img/trabajos/mt-estefania-foto-4.webp","img/trabajos/mt-estefania-foto-5.webp","img/trabajos/mt-estefania-foto-6.webp"], video:"video/mt-estefania.mp4" },
   { slug:"banco-de-trabajo",      carpeta:"Workbench",              publicado:false, titulo:{es:"Banco de trabajo",en:"Workbench"},                      anio:2024, anio_estimado:true, tipo:"taller",     materiales:[], acabado:[], medidas:null, resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/workbench.webp",              es_render:true, galeria:[], video:null },

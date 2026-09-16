@@ -515,6 +515,12 @@
     correo:   '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2m0 4.24-7.47 4.67a1 1 0 01-1.06 0L4 8.24V6.4l8 5 8-5z"/></svg>',
     instagram:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.02 4.85.07 3.25.15 4.77 1.7 4.92 4.92.05 1.27.07 1.65.07 4.85s-.02 3.58-.07 4.85c-.15 3.23-1.67 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92C2.18 15.58 2.16 15.2 2.16 12s.02-3.58.07-4.85c.15-3.23 1.67-4.77 4.92-4.92C8.42 2.18 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 2.7.27.28 2.69.08 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95C23.73 2.7 21.31.28 16.95.08 15.67.01 15.26 0 12 0m0 5.84a6.16 6.16 0 100 12.32 6.16 6.16 0 000-12.32M12 16a4 4 0 110-8 4 4 0 010 8m6.41-11.85a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88"/></svg>',
     lupa:     '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.4 15.4 21 21" stroke-linecap="round"/></svg>',
+    /* La bolsa del pedido (él, 16/09/2026): va en la cabecera, a la
+       izquierda de la lupa, y junto a «Tu pedido» en Prototipos. */
+    /* Easter egg (él, 16/09/2026): con 3 piezas o más la bolsa pasa a
+       ser un CARRITO, y vuelve a bolsa al bajar a 2. Ver `iconoPedido`. */
+    carrito:  '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.4 4.2h2.7l2.4 10.9h10.6l2.3-7.9H6.1" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.3" cy="19.1" r="1.55"/><circle cx="16.8" cy="19.1" r="1.55"/></svg>',
+    bolsa:    '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.6 8h14.8l-1.1 12.1a1 1 0 01-1 .9H6.7a1 1 0 01-1-.9z" stroke-linejoin="round"/><path d="M8.6 10.5V7a3.4 3.4 0 016.8 0v3.5" stroke-linecap="round"/></svg>',
 
     /* 2026-08-17 · Los tres del tema. Antes eran los caracteres
        ◑ ○ y la palabra "auto", y nadie adivinaba cuál era cuál.
@@ -526,11 +532,288 @@
           '<path d="M12 1.8v2.6M12 19.6v2.6M22.2 12h-2.6M4.4 12H1.8' +
           'M19.2 4.8l-1.85 1.85M6.65 17.35 4.8 19.2M19.2 19.2l-1.85-1.85M6.65 6.65 4.8 4.8" stroke-linecap="round"/></svg>',
     luna: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.9A9 9 0 119.1 3.5a7.2 7.2 0 0011.4 11.4z" stroke-linejoin="round"/></svg>',
+    /* 2026-09-16 · El sol y la luna del conmutador pasaron a ser dos
+       animales (él): un LOBO aullando para el oscuro y la cabeza de un
+       GALLO para el claro. Son siluetas rellenas, del cuello hacia
+       arriba, y el cuello sale del borde de abajo del botón: el SVG se
+       ancla abajo (xMidYMax) y ocupa todo el alto, así que no queda
+       aire entre el animal y el marco. El ojo es un hueco (evenodd). */
+    /* Lobo, 6ª versión, empezada de cero (él, 16/09/2026). Silueta
+       limpia de lobo aullando: hocico hacia arriba (30° de la vertical), oreja echada
+       atrás, nuca en una sola línea del cuello a la oreja, y mechones en
+       el cachete y la garganta. Huecos: ojo cerrado y el borde interior
+       de la oreja. Se genera con un script (notas/lobo-icono.py con ángulo 30 (probó 20 y 35; se quedó con 30)) que
+       coloca cada punto sobre el eje inclinado de la cabeza; el <g> la
+       agranda para que llene el botón y el cuello sale por abajo. */
+    lobo: '<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMax meet" aria-hidden="true">' +
+          '<g transform="translate(-1.1 -2.9) scale(1.4)"><path fill-rule="evenodd" d="' +
+          'M-5.07 30.00 C-1.37 25.00 3.83 17.20 7.03 12.75 L3.26 12.07 L6.43 9.98 Q6.44 9.17 7.10 8.6' +
+          '3 Q8.23 7.67 9.59 7.30 Q10.33 7.03 10.81 6.39 L13.33 3.23 Q13.96 2.55 14.72 3.22 L14.97 3.' +
+          '59 L14.57 4.98 L15.46 4.34 Q15.43 5.59 14.51 7.60 Q13.78 9.26 14.04 10.79 L14.93 11.65 L13' +
+          '.93 12.00 L14.89 13.13 L13.71 13.37 L14.57 14.68 C14.37 17.38 13.27 22.00 10.97 30.00 Z M1' +
+          '0.59 7.88 L11.50 6.90 L11.74 7.09 L10.83 8.07Z M6.55 10.97 L4.25 11.95 L4.70 11.98 L6.89 1' +
+          '1.28Z' +
+          '"/></g></svg>',
+    /* La espalda del gallo (él, 16/09/2026) ya no baja recta: se curva
+       hacia la izquierda y sigue en horizontal hasta salir por el borde,
+       para que se lea que detrás hay un cuerpo. */
+    gallo: '<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMax meet" aria-hidden="true">' +
+          '<path fill-rule="evenodd" d="M-1 24L-1 17.6C2.4 17.6 5.2 16.6 6.4 14.8' +
+          'C7 13.9 7.3 13 7.3 12.2C6.9 10.6 7.3 9 8.3 8.1' +
+          'C7.7 6.4 8.6 5 10 5.3C10 3.1 12.1 2.5 13 4.1C13.9 2.3 16.1 2.8 15.9 4.8' +
+          'C17.5 4.9 17.8 6.7 16.6 7.5L17.3 8.2 21 9.7 17.2 10.7' +
+          'C17.9 12 17.8 14.1 16.4 14.3C15.2 14.5 14.8 13.1 15 12.1' +
+          'C14.6 14 15.1 16 16.4 18C17.6 19.8 18.4 21.9 18.7 24Z' +
+          'M12.3 8.9a.95.95 0 101.9 0 .95.95 0 10-1.9 0z"/></svg>',
     /* Medio sol y media luna: la mitad de cada uno, que es
        literalmente lo que hace el modo automático. */
     auto: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.4"/>' +
           '<path d="M12 3.6a8.4 8.4 0 000 16.8z" fill="currentColor" stroke="none"/></svg>'
   };
+
+  /* ---------- el pedido guardado --------------------------
+     2026-09-16 · El pedido ya no se pierde al cambiar de página:
+     se guarda en ESTE navegador durante una semana (decisión suya,
+     sin cuentas de usuario). Vive en localStorage bajo `pa-pedido`
+     como {guardado: fecha en ms, lineas: [...]}. Pasada la semana
+     desde el último cambio, se tira.
+
+     js/prototipos.js lee y escribe por `window.PA_PEDIDO`; la bolsa
+     de la cabecera solo lee. Cada escritura lanza el evento
+     `pa:pedido` para que la bolsa se entere en la misma página, y
+     el `storage` del navegador avisa a las otras pestañas. */
+  var PEDIDO_CLAVE = "pa-pedido";
+  var PEDIDO_VIDA = 7 * 24 * 60 * 60 * 1000;
+
+  function leerPedido() {
+    var dato = null;
+    try { dato = JSON.parse(localStorage.getItem(PEDIDO_CLAVE) || "null"); } catch (e) { dato = null; }
+    if (!dato || !Array.isArray(dato.lineas)) return [];
+    if (!(Date.now() - dato.guardado < PEDIDO_VIDA)) {
+      try { localStorage.removeItem(PEDIDO_CLAVE); } catch (e) {}
+      return [];
+    }
+    /* Una pieza que se despublicó en esta semana no vuelve a aparecer. */
+    var cat = window.PROTOTIPOS;
+    return dato.lineas.filter(function (l) {
+      if (!l || !l.slug || !(l.cant > 0)) return false;
+      if (!cat) return true;
+      return cat.some(function (p) { return p.slug === l.slug && (p.publicado || verBorradores); });
+    });
+  }
+
+  function guardarPedido(lineas, origen) {
+    try {
+      if (lineas && lineas.length) {
+        localStorage.setItem(PEDIDO_CLAVE, JSON.stringify({ guardado: Date.now(), lineas: lineas }));
+      } else {
+        localStorage.removeItem(PEDIDO_CLAVE);
+      }
+    } catch (e) { /* ventana privada o almacenamiento bloqueado: el pedido vive solo en la página */ }
+    /* `origen` = "panel" cuando lo cambia el panel de la bolsa: así
+       js/prototipos.js sabe que tiene que recargar su copia. */
+    document.dispatchEvent(new CustomEvent("pa:pedido", { detail: { origen: origen || "" } }));
+  }
+
+  /* LA BOLSA SE CARGA (él, 16/09/2026). Al agregar algo al pedido, un
+     circulito del color de acento —el mismo del triángulo de la vista—
+     baja y entra en la bolsa de la cabecera; al entrar, la bolsa se
+     infla un instante y vuelve a su tamaño. Si la bolsa no se ve (en
+     teléfono vive dentro del menú plegado), el circulito entra en el
+     botón del menú. Sin animación si el sistema pide menos movimiento. */
+  /* Mientras la bolita cae, la bolsa NO cambia a carrito (ni vuelve):
+     el cambio se ve justo cuando la bolita entra (él, 16/09/2026). Por
+     eso prototipos.js llama a esto ANTES de guardar el pedido. */
+  var bolaEnCamino = false;
+
+  function animarBolsa() {
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    var destino = $(".bolsa .lupa__icono");
+    if (!destino || !destino.getBoundingClientRect().width) destino = $(".hamburguesa");
+    if (!destino || !destino.animate) return;
+    bolaEnCamino = true;
+    /* Red por si la animación nunca termina (pestaña en segundo
+       plano): el icono no se puede quedar congelado. */
+    var soltar = setTimeout(function () { bolaEnCamino = false; pintarBolsa(); }, 1500);
+    var r = destino.getBoundingClientRect();
+    var cx = r.left + r.width / 2, cy = r.top + r.height / 2;
+    var bola = el("span", { class: "bolsa-bola", "aria-hidden": "true" });
+    bola.style.left = cx + "px";
+    bola.style.top = cy + "px";
+    document.body.appendChild(bola);
+    var caida = bola.animate([
+      { transform: "translate(-50%, -50%) translateY(-46px) scale(1)", opacity: 0 },
+      { transform: "translate(-50%, -50%) translateY(-30px) scale(1)", opacity: 1, offset: .25 },
+      { transform: "translate(-50%, -50%) translateY(0) scale(.45)", opacity: 1, offset: .9 },
+      { transform: "translate(-50%, -50%) translateY(2px) scale(.3)", opacity: 0 }
+    ], { duration: 520, easing: "cubic-bezier(.5, 0, .75, 0)" });
+    caida.onfinish = function () {
+      bola.remove();
+      clearTimeout(soltar);
+      bolaEnCamino = false;
+      /* Ahora sí: si tocaba, la bolsa pasa a carrito (o al revés) en
+         el mismo instante en que se infla. */
+      pintarBolsa();
+      destino.animate([
+        { transform: "scale(1)" },
+        { transform: "scale(1.32)", offset: .4 },
+        { transform: "scale(.94)", offset: .75 },
+        { transform: "scale(1)" }
+      ], { duration: 420, easing: "ease-out" });
+    };
+  }
+
+  window.PA_PEDIDO = {
+    animar: animarBolsa,
+    leer: leerPedido,
+    guardar: guardarPedido,
+    icono: iconoPedido
+  };
+
+  /* ---------- la bolsa y su panel lateral ------------------ */
+
+  var cajaPedido = null;
+  var focoAntesDelPedido = null;
+
+  function piezasEnPedido() {
+    return leerPedido().reduce(function (a, l) { return a + l.cant; }, 0);
+  }
+  function iconoPedido() {
+    return piezasEnPedido() >= 3 ? ICONOS.carrito : ICONOS.bolsa;
+  }
+
+  /* Solo el número y la etiqueta, sin tocar el dibujo. */
+  function pintarNumeroBolsa(n) {
+    $$(".bolsa__n").forEach(function (b) {
+      b.textContent = n > 99 ? "99+" : String(n);
+      b.hidden = n === 0;
+    });
+    $$(".bolsa").forEach(function (b) {
+      b.setAttribute("aria-label", t("pedido_abrir") + (n ? " (" + n + ")" : ""));
+    });
+  }
+
+  function pintarBolsa() {
+    var n = piezasEnPedido();
+    /* Bolsa o carrito, en los tres sitios donde sale. Solo se toca si
+       cambia, para no cortar la animación de «bolsa cargada». */
+    var cual = n >= 3 ? "carrito" : "bolsa";
+    if (bolaEnCamino) return pintarNumeroBolsa(n);
+    $$(".bolsa .lupa__icono, #pt-bolsa-pedido, .pedido-lateral__icono").forEach(function (h) {
+      if (h.getAttribute("data-icono") !== cual) {
+        h.innerHTML = ICONOS[cual];
+        h.setAttribute("data-icono", cual);
+      }
+    });
+    pintarNumeroBolsa(n);
+    if (cajaPedido && cajaPedido.classList.contains("abierto")) pintarPanelPedido();
+  }
+
+  function pintarPanelPedido() {
+    var lineas = leerPedido();
+    var lista = $(".pedido-lateral__lista", cajaPedido);
+    var pie = $(".pedido-lateral__pie", cajaPedido);
+    $(".pedido-lateral__titulo", cajaPedido).textContent = t("pt_tu_pedido");
+    $(".pedido-lateral__cerrar", cajaPedido).setAttribute("aria-label", t("pedido_cerrar"));
+    lista.innerHTML = "";
+    pie.innerHTML = "";
+    if (!lineas.length) {
+      lista.appendChild(el("p", { class: "pedido-lateral__vacio", texto: t("pt_vacio") }));
+      if (!document.getElementById("pt-pedido-seccion")) {
+        pie.appendChild(el("a", { class: "pedido-lateral__ir", href: "index.html", texto: t("pedido_ver_catalogo") }));
+      }
+      return;
+    }
+    lineas.forEach(function (l, i) {
+      /* El «−» del panel (él, 16/09/2026): a la IZQUIERDA, cuadrito
+         GRIS (no rojo: no borra la fila de golpe) y resta UNA pieza; la
+         fila solo se va cuando le queda una. */
+      var quitar = el("button", { class: "pedido-lateral__quitar", type: "button",
+        title: t("pedido_restar"), "aria-label": t("pedido_restar") + ": " + tx(l.nombre) },
+        [el("span", { "aria-hidden": "true", texto: "−" })]);
+      quitar.addEventListener("click", function () {
+        var resto = leerPedido();
+        if (resto[i] && resto[i].cant > 1) resto[i].cant--;
+        else resto.splice(i, 1);
+        guardarPedido(resto, "panel");
+        pintarPanelPedido();
+        var botones = cajaPedido.querySelectorAll(".pedido-lateral__quitar");
+        var siguiente = botones[Math.min(i, botones.length - 1)] || $(".pedido-lateral__cerrar", cajaPedido);
+        if (siguiente) siguiente.focus();
+      });
+      lista.appendChild(el("div", { class: "pedido-lateral__linea" }, [
+        quitar,
+        el("div", { class: "pedido-lateral__desc" }, [
+          el("b", { texto: tx(l.nombre) }),
+          l.etiqueta ? el("small", { texto: l.etiqueta }) : null
+        ]),
+        el("span", { class: "pedido-lateral__cant", texto: "×" + l.cant }),
+        el("span", { class: "pedido-lateral__mon", texto: dinero(l.unitario * l.cant) })
+      ]));
+    });
+    var suma = lineas.reduce(function (a, l) { return a + l.unitario * l.cant; }, 0);
+    pie.appendChild(el("div", { class: "pedido-lateral__total" }, [
+      el("span", { texto: t("pt_piezas") }),
+      el("b", { texto: dinero(suma) })
+    ]));
+    pie.appendChild(el("p", { class: "pedido-lateral__nota", texto: t("pedido_guardado") }));
+    var ir = el("a", { class: "pedido-lateral__ir", href: "index.html#pt-pedido-seccion", texto: t("pedido_ir") });
+    /* En Prototipos el pedido está en la misma página: se cierra el
+       panel y se baja hasta él, sin recargar. */
+    ir.addEventListener("click", function (e) {
+      var destino = document.getElementById("pt-pedido-seccion");
+      if (!destino) return;
+      e.preventDefault();
+      cerrarPedido(false);
+      destino.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+    pie.appendChild(ir);
+  }
+
+  function construirPanelPedido() {
+    var cerrar = el("button", { class: "pedido-lateral__cerrar", type: "button", html: "&times;" });
+    var velo = el("div", { class: "pedido-lateral__velo" });
+    var caja = el("div", { class: "pedido-lateral" }, [
+      velo,
+      el("aside", { class: "pedido-lateral__caja", role: "dialog", "aria-modal": "true",
+                    "aria-labelledby": "pedido-lateral-titulo" }, [
+        el("div", { class: "pedido-lateral__arriba" }, [
+          el("span", { class: "pedido-lateral__icono", html: iconoPedido() }),
+          el("h2", { class: "pedido-lateral__titulo", id: "pedido-lateral-titulo" }),
+          cerrar
+        ]),
+        el("div", { class: "pedido-lateral__lista" }),
+        el("div", { class: "pedido-lateral__pie" })
+      ])
+    ]);
+    cerrar.addEventListener("click", function () { cerrarPedido(true); });
+    velo.addEventListener("click", function () { cerrarPedido(true); });
+    document.body.appendChild(caja);
+    return caja;
+  }
+
+  function abrirPedido() {
+    if (!cajaPedido) cajaPedido = construirPanelPedido();
+    focoAntesDelPedido = document.activeElement;
+    pintarPanelPedido();
+    cajaPedido.classList.add("abierto");
+    setTimeout(function () { $(".pedido-lateral__cerrar", cajaPedido).focus(); }, 60);
+  }
+
+  function cerrarPedido(devolverFoco) {
+    if (!cajaPedido || !cajaPedido.classList.contains("abierto")) return;
+    cajaPedido.classList.remove("abierto");
+    if (devolverFoco && focoAntesDelPedido && document.contains(focoAntesDelPedido)) {
+      focoAntesDelPedido.focus();
+    }
+    focoAntesDelPedido = null;
+  }
+
+  document.addEventListener("pa:pedido", pintarBolsa);
+  window.addEventListener("storage", function (e) { if (e.key === PEDIDO_CLAVE) pintarBolsa(); });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") cerrarPedido(true);
+  });
 
   /* ---------- buscador ------------------------------------ */
 
@@ -541,6 +824,20 @@
   function normalizar(s) {
     return (s || "").toLowerCase()
       .normalize("NFD").replace(/[̀-ͯ]/g, "");
+  }
+
+  /* Palabras asociadas de una pieza (datos/busqueda.js). */
+  function palabrasDe(slug) {
+    return (window.BUSQUEDA && window.BUSQUEDA.piezas && window.BUSQUEDA.piezas[slug]) || "";
+  }
+
+  /* ¿Aparece la palabra buscada? Si no, se prueba sin la «s» o el
+     «es» final, para que «oficinas» o «maderas» también encuentren. */
+  function contiene(texto, p) {
+    if (texto.indexOf(p) >= 0) return true;
+    if (p.length > 4 && /es$/.test(p) && texto.indexOf(p.slice(0, -2)) >= 0) return true;
+    if (p.length > 3 && /s$/.test(p) && texto.indexOf(p.slice(0, -1)) >= 0) return true;
+    return false;
   }
 
   /* Junta todo lo buscable del sitio en una sola lista. */
@@ -560,7 +857,7 @@
           w.tipo ? etiqueta("tipo", w.tipo) : "",
           (w.materiales || []).map(function (m) { return etiqueta("material", m); }).join(" "),
           (w.acabado || []).map(function (a) { return etiqueta("acabado", a); }).join(" "),
-          (tx(w.como) || []).join(" "), w.medidas
+          (tx(w.como) || []).join(" "), w.medidas, palabrasDe(w.slug)
         ].join(" "))
       });
     });
@@ -584,8 +881,21 @@
           tx(p.nombre), tx(p.resumen), p.medidas ? tx(p.medidas) : "",
           (p.opciones || []).map(function (o) {
             return tx(o.etiqueta) + " " + o.valores.map(function (v) { return tx(v.etiqueta); }).join(" ");
-          }).join(" ")
+          }).join(" "),
+          palabrasDe(p.slug)
         ].join(" "))
+      });
+    });
+
+    /* Partes de páginas (El taller, Contacto) con sus palabras
+       asociadas, de datos/busqueda.js (16/09/2026). */
+    ((window.BUSQUEDA && window.BUSQUEDA.secciones) || []).forEach(function (s) {
+      filas.push({
+        grupo: "sitio",
+        titulo: tx(s.titulo),
+        detalle: tx(s.donde),
+        url: s.url,
+        texto: normalizar([s.titulo.es, s.titulo.en, s.donde.es, s.donde.en, s.palabras].join(" "))
       });
     });
 
@@ -649,7 +959,7 @@
       /* todas las palabras tienen que aparecer, en cualquier orden */
       var trozos = q.split(/\s+/);
       var hallados = indiceBusqueda().filter(function (f) {
-        return trozos.every(function (p) { return f.texto.indexOf(p) >= 0; });
+        return trozos.every(function (p) { return contiene(f.texto, p); });
       });
 
       if (!hallados.length) {
@@ -658,7 +968,8 @@
         return;
       }
 
-      [["portafolio", "buscar_en_portafolio"], ["tienda", "buscar_en_tienda"]].forEach(function (g) {
+      [["tienda", "buscar_en_tienda"], ["portafolio", "buscar_en_portafolio"],
+       ["sitio", "buscar_en_sitio"]].forEach(function (g) {
         var trozo = hallados.filter(function (f) { return f.grupo === g[0]; });
         if (!trozo.length) return;
         lista.appendChild(el("div", { class: "buscador__grupo", texto: t(g[1]) }));
@@ -902,11 +1213,11 @@
       claro:  { es: "Claro",  en: "Light" },
       auto:   { es: "Automático", en: "Automatic" }
     };
-    var ICONO_TEMA = { oscuro: ICONOS.luna, claro: ICONOS.sol, auto: ICONOS.auto };
+    var ICONO_TEMA = { oscuro: ICONOS.lobo, claro: ICONOS.gallo, auto: ICONOS.auto };
     var botonesTema = TEMAS.map(function (m) {
       var b = el("button", {
         type: "button",
-        class: m === "auto" ? "tema__auto" : null,
+        class: m === "auto" ? "tema__auto" : "tema__bicho",
         title: ETIQUETA_TEMA[m][idioma], "aria-label": ETIQUETA_TEMA[m][idioma],
         "aria-pressed": m === tema
       });
@@ -1012,6 +1323,16 @@
     ]);
     lupa.addEventListener("click", abrirBuscador);
 
+    /* La bolsa del pedido, a la izquierda de la lupa (él, 16/09/2026).
+       Abre el panel lateral; el número es cuántas piezas lleva. */
+    var bolsa = el("button", { class: "lupa bolsa", type: "button",
+      "aria-label": t("pedido_abrir") }, [
+      el("span", { class: "lupa__icono", html: ICONOS.bolsa }),
+      el("span", { class: "bolsa__n" }),
+      el("span", { class: "ctrl__largo", texto: t("pt_tu_pedido") })
+    ]);
+    bolsa.addEventListener("click", abrirPedido);
+
     host.innerHTML = "";
     host.classList.add("cabecera");   /* add, no className=, para no borrar "encogida" */
     host.appendChild(el("div", { class: "cabecera__fila" }, [
@@ -1048,7 +1369,7 @@
          colocar dos cosas y la fila se quedaba con el hueco de una
          de ellas. */
       el("div", { class: "cabecera__utiles" }, [
-        lupa,
+        el("div", { class: "cabecera__botones" }, [bolsa, lupa]),
         /* Idioma y tema van dentro de UNA caja. Sueltos eran dos items
            del flex y en móvil la fila los partía en renglones
            distintos: el idioma acababa abajo con el menú y el tema
@@ -1059,6 +1380,7 @@
         ])
       ])
     ]));
+    pintarBolsa();
   }
 
   /* 2026-08-14 · Aquí se montaba la FRANJA DE NOVEDADES: una tira
@@ -1209,14 +1531,636 @@
        Es como una tabla de contenidos a la que le falta un
        escalón. El aspecto no cambia: el CSS de abajo apunta a los
        dos niveles. */
-    return el("div", { class: "tarjeta", "data-slug": w.slug }, [
+    var hijos = [
       marco,
       el("h2", {}, [
         el("a", { class: "tarjeta__abrir", href: "trabajo.html?id=" + w.slug,
                   texto: tx(w.titulo) })
       ])
-    ]);
+    ];
+
+    /* EL BLOQUE DE DETALLES VA SIEMPRE EN EL MARCADO, y el CSS lo
+       enseña solo en la vista de lista (él, 15/09/2026). Se hace así
+       a propósito: si las tres vistas comparten el mismo marcado, el
+       carrusel de flechas y la rotación automática siguen encontrando
+       `.tarjeta__marco img` y `.tarjeta__cuenta` sin enterarse de qué
+       vista está puesta. Cambiar de vista es cambiar UNA clase. */
+    /* EN COLUMNAS, y en ESTE orden (él, 15/09/2026):
+       material · acabado · tipo · medidas · año.
+
+       Se pintan SIEMPRE las cinco, con un guion donde la pieza no
+       tiene ese dato. Si se saltaran las vacías, las columnas
+       dejarían de cuadrar de una pieza a la siguiente —el material
+       de una quedaría encima del año de otra—, que es justo lo que
+       se ve mal cuando una tabla no está alineada. */
+    var datos = [
+      [t("ficha_material"), (w.materiales || []).map(function (m) {
+        return etiqueta("material", m);
+      }).join(", ")],
+      [t("ficha_acabado"), (w.acabado || []).map(function (a) {
+        return etiqueta("acabado", a);
+      }).join(", ")],
+      [t("ficha_tipo"), w.tipo ? etiqueta("tipo", w.tipo) : ""],
+      [t("ficha_medidas"), w.medidas || ""],
+      [t("ficha_ano"), w.anio ? (w.anio + (w.anio_estimado ? " (?)" : "")) : ""]
+    ];
+
+    var filas = datos.map(function (d) {
+      return el("div", { class: "tarjeta__dato" }, [
+        el("span", { class: "tarjeta__clave", texto: d[0] }),
+        el("span", { class: "tarjeta__valor", texto: String(d[1] || "—") })
+      ]);
+    });
+    /* LA DESCRIPCIÓN VA DEBAJO DEL TÍTULO y antes de las categorías
+       (él, 15/09/2026), como en Prototipos. Antes iba al final, dentro
+       del bloque de datos. Solo si la pieza la tiene: hoy casi
+       ninguna. El CSS la esconde fuera de la vista de lista. */
+    var res = tx(w.resumen);
+    if (res) hijos.push(el("p", { class: "tarjeta__res", texto: res }));
+    if (filas.length) hijos.push(el("div", { class: "tarjeta__detalles" }, filas));
+
+    return el("div", { class: "tarjeta", "data-slug": w.slug }, hijos);
   }
+
+  /* ============================================================
+     LAS TRES VISTAS DE EXHIBICIÓN (15/09/2026, pedido suyo)
+     ------------------------------------------------------------
+     Tres botones arriba a la izquierda de la cuadrícula:
+       1. cuadrícula de tres  (la de siempre, la principal)
+       2. cuadrícula de cinco (más densa, piezas más chicas)
+       3. lista               (foto a la izquierda, y a la derecha
+                               el título primero y los datos debajo)
+
+     `rejilla--tres` se queda SIEMPRE: no significa «tres columnas»
+     sino «esta es la cuadrícula de Exhibición», y hay CSS viejo que
+     cuelga de ella (la foto cuadrada, el título centrado). Las otras
+     dos vistas son una clase MÁS que la pisa donde hace falta.
+
+     La elección se guarda en el navegador de quien mira, así que al
+     volver encuentra la vista que dejó. Va en try/catch porque en
+     ventana privada `localStorage` puede reventar al leerlo.
+     ============================================================ */
+  var VISTAS = ["tres", "cinco", "lista"];
+
+  /* LA VISTA YA NO SE GUARDA (él, 15/09/2026): al salir de la página y
+     volver, arranca otra vez en la de tres. Antes vivía en
+     localStorage, bajo `pa-vista-exhibicion`, y sobrevivía a la visita.
+     Ahora es una variable normal: se pierde al recargar —que es lo que
+     él quiere— pero se conserva DENTRO de la visita, que hace falta
+     porque al cambiar un filtro se repinta la cuadrícula entera y
+     `pintarRejillaTrabajos` necesita saber en qué vista está. */
+  var vistaActual = "tres";
+
+  function vistaGuardada() { return vistaActual; }
+
+  /* LOS TRES ICONOS, CUADRADOS ENTRE SÍ (rehechos el 15/09/2026: él
+     veía «espacios y grosores desiguales», y los tenía).
+
+     Lo que fallaba: cada icono se dibujaba con sus propios números a
+     ojo, así que el hueco del de tres era 2,0 y el del de cinco 1,6,
+     y los bloques medían 20,5 y 21,4 de lado — uno se veía más
+     grande que el otro aunque el marco fuera igual.
+
+     Ahora los tres ocupan EXACTAMENTE la misma caja: de 2 a 22 en
+     los dos ejes, sobre el lienzo de 24. El lado del cuadradito se
+     calcula a partir del hueco, en vez de escribir los dos a mano:
+     así el dibujo siempre llena la caja entera y los huecos salen
+     todos iguales. El de cinco lleva hueco más chico a propósito —es
+     la cuadrícula densa—, pero empieza y acaba donde los otros. */
+  /* TODO EN NÚMEROS ENTEROS, y el icono se dibuja a 24 px justos
+     (2ª vuelta, 15/09/2026: él seguía viendo «grosores desiguales»).
+
+     La causa no era el reparto sino los MEDIOS PÍXELES. La versión
+     anterior ponía los cuadrados en 2, 9,5 y 17 con lado 5, y el
+     icono se dibujaba a 16,8 px: al escalar, esos 5 quedaban en
+     3,5 px y el navegador redondeaba unos cuadrados a 3 y otros a 4.
+     De ahí que uno se viera más gordo que el de al lado.
+
+     Arreglo: el lienzo es de 24, el icono mide 24 px —así una unidad
+     es un píxel— y ninguna coordenada lleva decimales.
+       · tres:  lado 6, hueco 3   → 0, 9, 18
+       · cinco: lado 3, hueco 2   → 0, 5, 10, 15, 20
+       · lista: punto de 4 y raya de 4 de alto, el MISMO grosor, con
+                3 de hueco entre los dos, como el icono de tres.
+     `shape-rendering="crispEdges"` solo en los de cuadraditos: apaga
+     el suavizado y los deja a filo de píxel. En la lista NO, que ahí
+     hay círculos y sin suavizado saldrían dentados. */
+  function iconoVista(v) {
+    var s = "", x, y;
+    if (v === "lista") {
+      /* 15/09/2026 (él, 3ª vuelta): rayas MÁS FINAS —de 4 a 2— y los
+         tres puntos MÁS JUNTOS: el paso baja de 10 a 8. Con paso 8 los
+         tres renglones ocupan de 2 a 22, así que el dibujo queda
+         centrado en el lienzo. Todo sigue en números enteros. */
+      for (y = 0; y < 3; y++) {
+        var cy = 4 + y * 8;
+        s += '<circle cx="2" cy="' + cy + '" r="2"/>' +
+             '<rect x="7" y="' + (cy - 1) + '" width="17" height="2"/>';
+      }
+      return '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">' + s + '</svg>';
+    }
+    var n = v === "cinco" ? 5 : 3;
+    /* El de cinco iba con lado 3 y paso 5: el bloque medía 23 sobre un
+       lienzo de 24, así que sobraba una unidad ABAJO y A LA DERECHA y el
+       dibujo se veía corrido arriba y a la izquierda (él, 15/09/2026).
+       Con lado 4 el bloque mide 24 justos y queda centrado, igual que el
+       de tres (lado 6, paso 9 → también 24). El cuadradito engorda de 3
+       a 4: es el precio de que todo caiga en píxeles enteros, que es lo
+       que evita los grosores desiguales. */
+    var lado = n === 5 ? 4 : 6;
+    var paso = n === 5 ? 5 : 9;
+    for (y = 0; y < n; y++) {
+      for (x = 0; x < n; x++) {
+        s += '<rect x="' + (x * paso) + '" y="' + (y * paso) +
+             '" width="' + lado + '" height="' + lado + '"/>';
+      }
+    }
+    return '<svg viewBox="0 0 24 24" shape-rendering="crispEdges" ' +
+           'aria-hidden="true" focusable="false">' + s + '</svg>';
+  }
+
+  function barraVistas(actual) {
+    var caja = el("div", { class: "vistas", role: "group",
+                           "aria-label": t("vista_grupo") });
+    VISTAS.forEach(function (v) {
+      var b = el("button", {
+        type: "button", class: "vistas__btn", "data-vista": v,
+        "aria-pressed": v === actual ? "true" : "false",
+        title: t("vista_" + v), "aria-label": t("vista_" + v)
+      });
+      b.innerHTML = iconoVista(v);
+      caja.appendChild(b);
+    });
+    /* EL PUNTO ES UNO SOLO Y VIVE EN LA BARRA, no en cada botón (él,
+       15/09/2026): quiere que se DESLICE de un botón a otro al pulsar,
+       y una cosa no puede deslizarse de un elemento a otro. Siendo uno
+       solo, basta moverle el `transform` y la transición hace el resto. */
+    caja.appendChild(el("span", { class: "vistas__punto", "aria-hidden": "true" }));
+    return caja;
+  }
+
+  /* Coloca el punto sobre el botón puesto. `animar` en false para la
+     primera colocación: si no, el punto entraría deslizándose desde el
+     borde izquierdo cada vez que se pinta la barra. */
+  function moverPunto(animar) {
+    var caja = document.querySelector(".vistas");
+    if (!caja) return;
+    var punto = caja.querySelector(".vistas__punto");
+    var b = caja.querySelector('.vistas__btn[aria-pressed="true"]');
+    if (!punto || !b) return;
+    if (!animar) punto.style.transition = "none";
+    punto.style.transform =
+      "translateX(" + (b.offsetLeft + b.offsetWidth / 2) + "px) translateX(-50%)";
+    if (!animar) {
+      void punto.offsetWidth;            /* fuerza el cálculo antes de devolver la transición */
+      punto.style.transition = "";
+    }
+  }
+
+  /* CAMBIAR DE VISTA NO REPINTA NADA. Las tarjetas son idénticas en las
+     tres vistas —lo único que cambia es una clase en la cuadrícula—, así
+     que basta con eso, y además es lo que permite que el punto se
+     deslice: si se rehiciera la barra, el punto nacería ya colocado. */
+  function aplicarVista(v) {
+    var caja = document.querySelector(".vistas");
+    if (caja) {
+      Array.prototype.forEach.call(caja.querySelectorAll(".vistas__btn"), function (b) {
+        b.setAttribute("aria-pressed",
+          b.getAttribute("data-vista") === v ? "true" : "false");
+      });
+    }
+    var r = document.querySelector("#rejilla .rejilla");
+    if (r) {
+      VISTAS.forEach(function (x) { r.classList.remove("rejilla--" + x); });
+      r.classList.add("rejilla--tres");
+      if (v !== "tres") r.classList.add("rejilla--" + v);
+    }
+    moverPunto(true);
+  }
+
+  /* ============================================================
+     FILTROS DEL CATÁLOGO (15/09/2026, pedido suyo)
+     ------------------------------------------------------------
+     Cuatro desplegables a la derecha de los botones de vista, que
+     son las columnas de la vista de lista MENOS medidas: cada
+     pieza mide algo distinto («222 × 97 × 81 cm»), así que ese
+     desplegable tendría una opción por pieza y no filtraría nada.
+
+     Esta barra ya existió y la quitó él el 11/08/2026. De aquella
+     quedaron a propósito las claves `filtro_*` de textos.js, que
+     son las que se reusan aquí. Lo que NO se reusa es la clase
+     `.filtros` del CSS: esa es la barra ancha de Herramientas, con
+     su borde y sus selects de 11rem, y aquí haría un bloque en vez
+     de una línea. Por eso hay clases propias, y Herramientas se
+     queda como estaba.
+
+     Los filtros NO se guardan entre visitas, al revés que la vista:
+     volver al catálogo y encontrarse media Exhibición escondida sin
+     acordarse de por qué es de las cosas que peor sientan.
+
+     La rotación automática de las fotos usa esta MISMA lista —ver
+     `rotTurno`—: si no, sortearía piezas que el filtro dejó fuera y
+     se pondría a cambiar fotos de tarjetas que no están.
+     ============================================================ */
+  var CAMPOS_FILTRO = [
+    { id: "material", clave: "filtro_madera",  grupo: "material" },
+    { id: "acabado",  clave: "filtro_acabado", grupo: "acabado"  },
+    { id: "tipo",     clave: "filtro_tipo",    grupo: "tipo"     },
+    { id: "anio",     clave: "filtro_anio",    grupo: null       }
+  ];
+  var filtros = { material: "", acabado: "", tipo: "", anio: "" };
+
+  function valoresDe(w, campo) {
+    if (campo === "material") return w.materiales || [];
+    if (campo === "acabado")  return w.acabado || [];
+    if (campo === "tipo")     return w.tipo ? [w.tipo] : [];
+    return w.anio ? [String(w.anio)] : [];
+  }
+
+  function etiquetaFiltro(campo, v) {
+    var c = CAMPOS_FILTRO.filter(function (x) { return x.id === campo; })[0];
+    return c && c.grupo ? etiqueta(c.grupo, v) : String(v);
+  }
+
+  function hayFiltro() {
+    return CAMPOS_FILTRO.some(function (c) { return filtros[c.id]; });
+  }
+
+  function trabajosFiltrados() {
+    return trabajosVisibles().filter(function (w) {
+      return CAMPOS_FILTRO.every(function (c) {
+        if (!filtros[c.id]) return true;
+        return valoresDe(w, c.id).indexOf(filtros[c.id]) > -1;
+      });
+    });
+  }
+
+  /* Solo los valores que EXISTEN en el catálogo: un desplegable con
+     maderas que no ha usado nunca promete piezas que no hay. */
+  function opcionesDe(campo) {
+    var vistos = [];
+    trabajosVisibles().forEach(function (w) {
+      valoresDe(w, campo).forEach(function (v) {
+        if (vistos.indexOf(v) === -1) vistos.push(v);
+      });
+    });
+    if (campo === "anio") return vistos.sort(function (a, b) { return b - a; });
+    return vistos.sort(function (a, b) {
+      return etiquetaFiltro(campo, a).localeCompare(etiquetaFiltro(campo, b), idioma);
+    });
+  }
+
+  /* EL EMBUDO. Dos dibujos, como en Excel: uno para «se puede
+     filtrar» y otro para «hay un filtro puesto», que es el que lleva
+     la flechita. (En Excel, de hecho, la flecha sola significa que no
+     hay filtro y el embudo que sí lo hay; aquí el embudo está siempre
+     y lo que aparece al filtrar es la flecha, que es como él lo pidió.)
+     Mismo lienzo de 24 y coordenadas enteras que los demás iconos,
+     pero sin `crispEdges`: el embudo es todo diagonales y sin
+     suavizado saldría dentado. */
+  function iconoEmbudo(activo) {
+    var d = activo
+      ? '<path d="M2 4 H18 L12 12 V19 L8 17 V12 Z"/>' +
+        '<path d="M16 16 H22 L19 21 Z"/>'
+      : '<path d="M2 4 H22 L14 13 V21 L10 19 V13 Z"/>';
+    return '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">' + d + '</svg>';
+  }
+
+  /* Si el panel está abierto o cerrado. Vive fuera de la función que
+     lo pinta porque la barra se rehace entera con cada cambio de
+     filtro: sin esto, el panel se cerraría solo al elegir algo. */
+  var filtrosAbiertos = false;
+
+  function barraFiltros() {
+    var caja = el("div", { class: "filtros-mini" });
+    CAMPOS_FILTRO.forEach(function (c) {
+      /* CADA DESPLEGABLE LLEVA SU NOMBRE ENCIMA (él, 15/09/2026). Antes
+         iba solo en el `aria-label`, que no se ve; con cuatro que dicen
+         «Todos» no había forma de saber cuál era cuál. El `for` y el
+         `id` los une, así que pulsar el nombre abre su desplegable. */
+      var id = "f-" + c.id;
+      var sel = el("select", { id: id, "data-campo": c.id });
+      sel.appendChild(el("option", { value: "", texto: t("filtro_todos") }));
+      opcionesDe(c.id).forEach(function (v) {
+        sel.appendChild(el("option", { value: v, texto: etiquetaFiltro(c.id, v) }));
+      });
+      sel.value = filtros[c.id];
+      caja.appendChild(el("div", { class: "filtro-mini" }, [
+        el("label", { for: id, texto: t(c.clave) }),
+        sel
+      ]));
+    });
+    if (hayFiltro()) {
+      caja.appendChild(el("button", { type: "button",
+        class: "filtros-mini__limpiar", texto: t("limpiar_filtros") }));
+      var cuantas = trabajosFiltrados().length;
+      caja.appendChild(el("span", { class: "filtros-mini__conteo",
+        texto: cuantas === 1 ? t("conteo_uno") : n("conteo", cuantas) }));
+    }
+
+    var boton = el("button", {
+      type: "button", class: "filtros-btn", "data-filtros": "1",
+      "aria-expanded": filtrosAbiertos ? "true" : "false",
+      "aria-controls": "filtros-panel",
+      "data-activo": hayFiltro() ? "1" : "0",
+      title: t("filtros_boton")
+    });
+    boton.innerHTML = iconoEmbudo(hayFiltro()) +
+                      '<span>' + t("filtros_boton") + '</span>';
+
+    var panel = el("div", { class: "filtros-panel", id: "filtros-panel" }, [caja]);
+    if (!filtrosAbiertos) panel.setAttribute("hidden", "hidden");
+
+    return el("div", { class: "filtros-caja", "data-caja": "filtros" }, [boton, panel]);
+  }
+
+  /* ============================================================
+     ORDENAR (15/09/2026, pedido suyo)
+     ------------------------------------------------------------
+     Un botón hermano del de filtros, con las MISMAS categorías, más
+     ascendente/descendente. Sin orden elegido no toca nada: la
+     Exhibición sigue barajada como siempre (ver ordenGuardado).
+
+     Los campos de varios valores —materiales, acabados— se ordenan
+     por el PRIMERO ya traducido, que es lo que se lee en la ficha.
+     Las piezas sin ese dato van al final en los dos sentidos: un
+     hueco no es ni el más pequeño ni el más grande, y ponerlo en
+     medio de la lista solo despista.
+     ============================================================ */
+  var orden = { campo: "", dir: "asc" };
+  var ordenAbierto = false;
+
+  function iconoOrdenar() {
+    return '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">' +
+             '<path d="M7 3 L12 10 H2 Z"/><path d="M17 21 L22 14 H12 Z"/>' +
+           '</svg>';
+  }
+
+  function valorOrden(w, campo) {
+    if (campo === "anio") return w.anio || 0;
+    var v = valoresDe(w, campo);
+    if (!v.length) return "";
+    return etiquetaFiltro(campo, v[0]).toLowerCase();
+  }
+
+  function ordenarLista(lista) {
+    if (!orden.campo) return lista;
+    var signo = orden.dir === "desc" ? -1 : 1;
+    return lista.slice().sort(function (a, b) {
+      var x = valorOrden(a, orden.campo), y = valorOrden(b, orden.campo);
+      var vacioX = (x === "" || x === 0), vacioY = (y === "" || y === 0);
+      if (vacioX && vacioY) return 0;
+      if (vacioX) return 1;               /* los huecos, al final */
+      if (vacioY) return -1;
+      if (typeof x === "number") return (x - y) * signo;
+      return x.localeCompare(y, idioma) * signo;
+    });
+  }
+
+  function barraOrden() {
+    var sel = el("select", { id: "orden-campo", "data-orden-campo": "1" });
+    sel.appendChild(el("option", { value: "", texto: t("orden_ninguno") }));
+    CAMPOS_FILTRO.forEach(function (c) {
+      sel.appendChild(el("option", { value: c.id, texto: t(c.clave) }));
+    });
+    sel.value = orden.campo;
+
+    var dirs = el("div", { class: "orden-dir" });
+    [["asc", "orden_asc", "↑"], ["desc", "orden_desc", "↓"]].forEach(function (d) {
+      var b = el("button", {
+        type: "button", "data-orden-dir": d[0],
+        "aria-pressed": orden.dir === d[0] ? "true" : "false",
+        texto: d[2] + " " + t(d[1])
+      });
+      /* Sin campo elegido, el sentido no ordena nada: se apaga para
+         no prometer un efecto que no va a pasar. */
+      if (!orden.campo) b.setAttribute("disabled", "disabled");
+      dirs.appendChild(b);
+    });
+
+    var dentro = el("div", { class: "filtros-mini" }, [
+      el("div", { class: "filtro-mini" }, [
+        el("label", { for: "orden-campo", texto: t("orden_campo") }), sel
+      ]),
+      dirs
+    ]);
+
+    /* El «limpiar» aparece solo cuando hay un orden puesto, igual que
+       en el panel de filtros (él, 15/09/2026). */
+    if (orden.campo) {
+      dentro.appendChild(el("button", {
+        type: "button", class: "filtros-mini__limpiar",
+        "data-limpiar-orden": "1", texto: t("limpiar_filtros")
+      }));
+    }
+
+    var boton = el("button", {
+      type: "button", class: "filtros-btn", "data-orden": "1",
+      "aria-expanded": ordenAbierto ? "true" : "false",
+      "aria-controls": "orden-panel",
+      "data-activo": orden.campo ? "1" : "0",
+      title: t("orden_boton")
+    });
+    boton.innerHTML = iconoOrdenar() + '<span>' + t("orden_boton") + '</span>';
+
+    var panel = el("div", { class: "filtros-panel", id: "orden-panel" }, [dentro]);
+    if (!ordenAbierto) panel.setAttribute("hidden", "hidden");
+
+    return el("div", { class: "filtros-caja", "data-caja": "orden" }, [boton, panel]);
+  }
+
+  function abrirOrden(abrir) {
+    ordenAbierto = abrir;
+    var panel = document.getElementById("orden-panel");
+    var boton = document.querySelector("[data-orden]");
+    if (panel) {
+      if (abrir) panel.removeAttribute("hidden");
+      else panel.setAttribute("hidden", "hidden");
+    }
+    if (boton) boton.setAttribute("aria-expanded", abrir ? "true" : "false");
+  }
+
+  document.addEventListener("click", function (e) {
+    if (document.body.getAttribute("data-pagina") !== "trabajos") return;
+    var bo = e.target.closest && e.target.closest("[data-orden]");
+    if (bo) {
+      /* Igual que el embudo: el icono de arriba quita el orden. */
+      if (e.target.closest("svg")) {
+        orden.campo = "";
+        orden.dir = "asc";
+        pintarRejillaTrabajos();
+        return;
+      }
+      abrirOrden(!ordenAbierto);
+      return;
+    }
+    var d = e.target.closest && e.target.closest("[data-orden-dir]");
+    if (d) {
+      orden.dir = d.getAttribute("data-orden-dir");
+      pintarRejillaTrabajos();
+      return;
+    }
+    /* Va ANTES del clic de fuera: el limpiar está dentro de la caja. */
+    if (e.target.closest && e.target.closest("[data-limpiar-orden]")) {
+      orden.campo = "";
+      orden.dir = "asc";
+      pintarRejillaTrabajos();
+      return;
+    }
+    if (ordenAbierto && !(e.target.closest && e.target.closest('[data-caja="orden"]'))) {
+      abrirOrden(false);
+    }
+  });
+
+  document.addEventListener("change", function (e) {
+    if (document.body.getAttribute("data-pagina") !== "trabajos") return;
+    var s = e.target.closest && e.target.closest("[data-orden-campo]");
+    if (!s) return;
+    orden.campo = s.value;
+    pintarRejillaTrabajos();
+    var nuevo = document.getElementById("orden-campo");
+    if (nuevo) nuevo.focus();
+  });
+
+  /* Abrir y cerrar el panel. No hace falta repintar nada: se enseña o
+     se esconde el panel que ya está puesto. */
+  function abrirFiltros(abrir) {
+    filtrosAbiertos = abrir;
+    var panel = document.getElementById("filtros-panel");
+    var boton = document.querySelector(".filtros-btn");
+    if (panel) {
+      if (abrir) panel.removeAttribute("hidden");
+      else panel.setAttribute("hidden", "hidden");
+    }
+    if (boton) boton.setAttribute("aria-expanded", abrir ? "true" : "false");
+  }
+
+  document.addEventListener("click", function (e) {
+    if (document.body.getAttribute("data-pagina") !== "trabajos") return;
+    /* `[data-filtros]` y NO `.filtros-btn`: el botón de ordenar lleva esa
+       misma clase para verse igual, así que buscando por clase un clic en
+       «Ordenar» abría además el panel de filtros. Pasó de verdad. */
+    var bf = e.target.closest && e.target.closest("[data-filtros]");
+    if (bf) {
+      /* EL ICONO DE ARRIBA LIMPIA (él, 15/09/2026). Solo se ve cuando
+         hay algo filtrado, así que pulsarlo siempre significa
+         «quítalo»; el resto del botón abre y cierra el panel. El botón
+         «Limpiar» de dentro se queda: es el camino que encuentra quien
+         navega con teclado, porque el icono va como decoración. */
+      if (e.target.closest("svg")) {
+        CAMPOS_FILTRO.forEach(function (c) { filtros[c.id] = ""; });
+        pintarRejillaTrabajos();
+        return;
+      }
+      abrirFiltros(!filtrosAbiertos);
+      return;
+    }
+    /* Un clic fuera de la caja lo cierra, que es lo que espera
+       cualquiera que haya usado un desplegable. */
+    /* `[data-caja="filtros"]` y no `.filtros-caja`: la de ordenar usa
+       la misma clase, y sin acotarlo un clic allá dejaría este panel
+       abierto. */
+    if (filtrosAbiertos && !(e.target.closest && e.target.closest('[data-caja="filtros"]'))) {
+      abrirFiltros(false);
+    }
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key !== "Escape") return;
+    if (document.body.getAttribute("data-pagina") !== "trabajos") return;
+    if (filtrosAbiertos) {
+      abrirFiltros(false);
+      var b = document.querySelector("[data-filtros]");
+      if (b) b.focus();
+    }
+    if (ordenAbierto) {
+      abrirOrden(false);
+      var o = document.querySelector("[data-orden]");
+      if (o) o.focus();
+    }
+  });
+
+  /* Un escuchador para los desplegables y otro para el limpiar, los
+     dos delegados: la barra se rehace entera en cada repintado. */
+  document.addEventListener("change", function (e) {
+    var s = e.target.closest && e.target.closest(".filtros-mini select");
+    if (!s) return;
+    if (document.body.getAttribute("data-pagina") !== "trabajos") return;
+    var campo = s.getAttribute("data-campo");
+    filtros[campo] = s.value;
+    pintarRejillaTrabajos();
+    /* El repintado se lleva por delante el desplegable que se acaba de
+       usar, y con él el foco del teclado. Se le devuelve al mismo. */
+    var nuevo = document.querySelector('.filtros-mini select[data-campo="' + campo + '"]');
+    if (nuevo) nuevo.focus();
+  });
+
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest && e.target.closest(".filtros-mini__limpiar");
+    if (!b) return;
+    if (document.body.getAttribute("data-pagina") !== "trabajos") return;
+    CAMPOS_FILTRO.forEach(function (c) { filtros[c.id] = ""; });
+    pintarRejillaTrabajos();
+  });
+
+  /* La ola de la barra, solo en la primera pintada de la página
+     (él, 16/09/2026). Gemela de `olaBarraPt` en js/prototipos.js. */
+  var olaHecha = false;
+  function olaBarra(barra) {
+    if (olaHecha || !barra) return;
+    olaHecha = true;
+    [].forEach.call(barra.querySelectorAll(".vistas__btn, .filtros-btn"), function (b, i) {
+      b.style.setProperty("--i", i);
+    });
+    barra.classList.add("catalogo-barra--ola");
+  }
+
+  function pintarRejillaTrabajos() {
+    var host = $("#rejilla");
+    if (!host) return;
+    var v = vistaGuardada();
+    host.innerHTML = "";
+
+    /* LA BARRA VIVE EN LA PORTADA, en la misma fila que el título
+       (él, 15/09/2026), no encima de la cuadrícula. Si ese hueco no
+       estuviera —una página que no lo tenga—, cae dentro de #rejilla
+       como antes y todo sigue funcionando. */
+    var barra = el("div", { class: "catalogo-barra" }, [
+      barraVistas(v), barraFiltros(), barraOrden()
+    ]);
+    var hueco = document.getElementById("barra-catalogo");
+    if (hueco) { hueco.innerHTML = ""; hueco.appendChild(barra); }
+    else host.appendChild(barra);
+    olaBarra(barra);
+
+    /* `ordenarLista` no toca nada si no hay orden elegido, así que la
+       Exhibición sigue saliendo barajada como siempre. */
+    var lista = ordenarLista(ordenGuardado(trabajosFiltrados()));
+    if (!lista.length) {
+      host.appendChild(el("p", { class: "vacio", texto: t("sin_resultados") }));
+      return;
+    }
+    var r = rejilla(lista, tarjetaTrabajo);
+    r.classList.add("rejilla--tres");
+    if (v !== "tres") r.classList.add("rejilla--" + v);
+    host.appendChild(r);
+    revelar(host, ".tarjeta", 45);
+    moverPunto(false);
+  }
+
+  /* Un solo escuchador para toda la página, como el de las flechas. */
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest && e.target.closest(".vistas__btn");
+    if (!b) return;
+    /* Prototipos tiene su propia barra con las MISMAS clases, pintada
+       por js/prototipos.js. Sin este candado, un clic allá escribiría
+       además la vista de Exhibición. */
+    if (document.body.getAttribute("data-pagina") !== "trabajos") return;
+    var v = b.getAttribute("data-vista");
+    if (VISTAS.indexOf(v) === -1 || v === vistaActual) return;
+    vistaActual = v;
+    aplicarVista(v);
+  });
 
   /* GLITCH AL PASAR DE FOTO EN LA CUADRÍCULA (2026-08-17).
      El de más arriba, `sacarConGlitch`, sirve para cambiar de MEDIO
@@ -1312,6 +2256,10 @@
     var fotos = fotosDe(w);
     if (fotos.length < 2) return;
 
+    /* Esta pieza queda FUERA del sorteo automático de aquí abajo, y se
+       queda fuera hasta que él toque las flechas de otra. */
+    rotManual = slug;
+
     var i = (fotoTarjeta[slug] || 0) + parseInt(b.getAttribute("data-paso"), 10);
     if (i < 0) i = fotos.length - 1;
     if (i >= fotos.length) i = 0;
@@ -1322,6 +2270,88 @@
     var cuenta = tarjeta.querySelector(".tarjeta__cuenta");
     if (cuenta) cuenta.textContent = (i + 1) + "/" + fotos.length;
   });
+
+  /* ============================================================
+     LA CUADRÍCULA SE MUEVE SOLA (15/09/2026, pedido suyo)
+     ------------------------------------------------------------
+     Cada 6 segundos se sortea UNA pieza de la cuadrícula y se le
+     cambia la foto por otra suya al azar. El primer turno es a los
+     8 segundos de abrir la página.
+
+     Tres reglas suyas, y las tres importan:
+     1. En el MISMO turno en que cambia la nueva, la que cambió el
+        turno pasado vuelve a su primera foto. Nunca hay dos piezas
+        movidas a la vez.
+     2. La pieza que él pasó A MANO con las flechas no entra en el
+        sorteo, y sigue sin entrar hasta que toque las de otra. Se
+        queda en la foto que él dejó: no se le devuelve nada.
+     3. Da igual que la pieza sorteada esté fuera de la pantalla;
+        no se mira si se ve o no.
+
+     Con `prefers-reduced-motion` no arranca: una foto que se cambia
+     sola es movimiento no pedido, y ese ajuste existe justo para eso.
+     En Prototipos hay un gemelo de esto en js/prototipos.js; si se
+     toca una regla, tocar las dos.
+     ============================================================ */
+  var ROT_ESPERA = 8000;   /* del primer turno */
+  var ROT_CADA   = 6000;
+  var rotManual = null;    /* la que él tocó a mano */
+  var rotAuto   = null;    /* la que cambió el turno pasado */
+  var rotTimer  = null;
+
+  /* Se consulta el DOM en CADA turno y no se guardan los nodos: la
+     cuadrícula se repinta entera al cambiar de idioma, y unos nodos
+     guardados apuntarían a tarjetas que ya no están en la página. */
+  function rotPonerFoto(slug, i) {
+    var w = (window.TRABAJOS || []).filter(function (x) { return x.slug === slug; })[0];
+    if (!w) return;
+    var fotos = fotosDe(w);
+    if (i >= fotos.length) return;
+    var tarjeta = document.querySelector('#rejilla .tarjeta[data-slug="' + slug + '"]');
+    if (!tarjeta) return;
+    fotoTarjeta[slug] = i;
+    var img = tarjeta.querySelector(".tarjeta__marco img");
+    if (img) cambiarFoto(img, fotos[i]);
+    var cuenta = tarjeta.querySelector(".tarjeta__cuenta");
+    if (cuenta) cuenta.textContent = (i + 1) + "/" + fotos.length;
+  }
+
+  function rotTurno() {
+    /* `trabajosFiltrados` y no `trabajosVisibles`: con un filtro puesto,
+       las piezas escondidas no tienen tarjeta donde cambiar la foto. */
+    var candidatas = trabajosFiltrados().filter(function (w) {
+      return fotosDe(w).length > 1 && w.slug !== rotManual && w.slug !== rotAuto;
+    });
+    var elegida = candidatas.length
+      ? candidatas[Math.floor(Math.random() * candidatas.length)]
+      : null;
+
+    /* El regreso de la anterior y el cambio de la nueva van en el
+       mismo turno, que es lo que él pidió: «en simultáneo». */
+    if (rotAuto) rotPonerFoto(rotAuto, 0);
+    rotAuto = null;
+    if (!elegida) return;
+
+    /* Al azar, pero nunca la que ya se está viendo. */
+    var fotos = fotosDe(elegida);
+    var actual = fotoTarjeta[elegida.slug] || 0;
+    var otras = [];
+    for (var k = 0; k < fotos.length; k++) { if (k !== actual) otras.push(k); }
+    if (!otras.length) return;
+    rotPonerFoto(elegida.slug, otras[Math.floor(Math.random() * otras.length)]);
+    rotAuto = elegida.slug;
+  }
+
+  /* El guardia del temporizador hace falta de verdad: la cuadrícula
+     se vuelve a pintar con cada cambio de idioma, y sin él quedarían
+     dos o tres relojes corriendo a la vez. */
+  function arrancarRotacion() {
+    if (rotTimer || menosMovimiento) return;
+    rotTimer = setTimeout(function () {
+      rotTurno();
+      rotTimer = setInterval(rotTurno, ROT_CADA);
+    }, ROT_ESPERA);
+  }
 
   function tarjetaProducto(p) {
     var meta = [];
@@ -1567,14 +2597,10 @@
       try { sessionStorage.setItem(CLAVE_ORDEN, JSON.stringify(ordenDeEstaCarga)); } catch (e) { /* modo privado */ }
     }
 
-    var host = $("#rejilla");
-    host.innerHTML = "";
-    /* `rejilla--tres` la separa de la de Prototipos: aquí van tres
-       por fila y con un hueco entre piezas, no pegadas. */
-    var r = rejilla(ordenGuardado(trabajosVisibles()), tarjetaTrabajo);
-    r.classList.add("rejilla--tres");
-    host.appendChild(r);
-    revelar(host, ".tarjeta", 45);
+    /* La cuadrícula y su barra de vistas las pinta `pintarRejillaTrabajos`,
+       que es la misma función que corre al pulsar uno de los tres botones. */
+    pintarRejillaTrabajos();
+    arrancarRotacion();
   };
 
   /* Los tres botones de la cabecera de una ficha: anterior, volver
@@ -1674,9 +2700,9 @@
     if (w.es_render && w.imagen) {
       medios.appendChild(el("p", { class: "hueco-video", texto: t("aviso_render") }));
     }
-    if (!w.video && lista.length < 2) {
-      medios.appendChild(el("p", { class: "hueco-video", texto: t("video_pendiente") }));
-    }
+    /* 15/09/2026 · Aquí iba el aviso «Video pendiente» en toda pieza con una
+       sola foto y sin video. Él pidió dejar de mostrarlo en todo el sitio.
+       El texto sigue en TEXTOS.video_pendiente por si se quiere reponer. */
 
     /* --- datos --- */
     /* Tres botones en vez de uno (él, 14/08/2026): anterior, volver
@@ -1741,9 +2767,16 @@
     }
 
     datos.appendChild(el("div", { style: "margin-top:2.6rem;border-top:1px solid var(--linea);padding-top:1.6rem" }, [
-      el("h3", { texto: t("ficha_similar") }),
-      el("p", { class: "bajada", style: "margin-bottom:1.2rem", texto: t("ficha_similar_t") }),
-      el("a", { class: "boton", href: enlaceWhatsApp(tx(w.titulo)), target: "_blank", rel: "noopener", texto: t("ficha_escribir") })
+      /* Solo la pregunta, sin negrita, y el botón (él, 16/09/2026). La
+         frase de debajo («No repito una pieza igual…») salió; su clave
+         `ficha_similar_t` sigue en textos.js. */
+      el("h3", { style: "font-weight:400;margin-bottom:1rem", texto: t("ficha_similar") }),
+      /* «Contáctame» con la flecha ↗ de los botones de Contacto (él,
+         16/09/2026). */
+      el("a", { class: "boton boton--flecha", href: enlaceWhatsApp(tx(w.titulo)), target: "_blank", rel: "noopener" }, [
+        document.createTextNode(t("ficha_escribir")),
+        el("span", { class: "boton__flecha", "aria-hidden": "true", html: "&#8599;" })
+      ])
     ]));
 
     host.appendChild(el("div", { class: "ficha" }, [navPiezas, medios, datos]));
@@ -2018,6 +3051,10 @@
   };
 
   /* ---------- arranque ------------------------------------ */
+
+  /* 2026-09-16 · Aquí estuvo el «descifrado» estilo Matrix de títulos
+     y bajadas. Lo probó y lo quitó el mismo día: los títulos entran con
+     el mismo fade que el resto (js/escaner.js). */
 
   function pintar() {
     document.documentElement.lang = idioma;

@@ -171,7 +171,8 @@
           '<span class="pt-cuenta-fotos">' + (i + 1) + '/' + fotos.length + '</span>'
         : '';
       visual = '<span class="pt-ficha__hueco pt-ficha__hueco--foto' +
-          (p.sin_fondo ? ' pt-ficha__hueco--suelto' : '') + '">' +
+          (p.sin_fondo ? ' pt-ficha__hueco--suelto' : '') +
+          (p.fondo_liso ? ' pt-ficha__hueco--liso' : '') + '">' +
           '<img src="' + srcTema(fotos[i]) + '" alt="' + tx(p.nombre) + '" loading="lazy">' +
           flechas +
         '</span>';
@@ -209,6 +210,11 @@
            ladrillo entre tarjeta y tarjeta). El resumen completo
            sigue saliendo entero al abrir el producto. */
         '<span class="pt-ficha__res">' + tx(p.resumen_corto || p.resumen) + '</span>' +
+        /* El bloque de datos va SIEMPRE escrito y el CSS lo enseña solo
+           en la vista de lista, igual que en Exhibición: así las tres
+           vistas comparten tarjeta y las flechas del carrusel y la
+           rotación automática no se enteran de qué vista hay puesta. */
+        datosHTML(p) +
         '<span class="pt-ficha__pie">' +
           '<span class="pt-precio">' +
             (tieneVariosPrecios(p) ? '<span class="pt-desde">' + t("desde") + '</span>' : '') +
@@ -220,24 +226,466 @@
     '</div>';
   }
 
+  /* ============================================================
+     VISTAS Y FILTROS DEL CATÁLOGO (15/09/2026, pedido suyo)
+     ------------------------------------------------------------
+     Lo mismo que hay en Exhibición, pero aquí hay DOS cuadrículas
+     —«Listas ahora» y «Por encargo»— y una sola barra que manda
+     sobre las dos. Si un filtro deja una sección vacía, esa
+     sección se esconde entera; si las deja vacías las dos, sale el
+     aviso de que no hay nada.
+
+     El código es gemelo del de js/sitio.js y NO se comparte: allá
+     las tarjetas son `.tarjeta` y aquí `.pt-ficha`, y cada archivo
+     es su propia función anónima. Si se cambia una regla, hay que
+     cambiar las dos. Lo que SÍ se reusa es el CSS de la barra
+     (`.catalogo-barra`, `.vistas`, `.filtros-mini`), que vive en
+     estilo.css y esta página también carga.
+     ============================================================ */
+  var VISTAS_PT = ["tres", "cinco", "lista"];
+  var filtrosPt = { material: "", acabado: "", uso: "" };
+
+  /* La vista NO se guarda, igual que en Exhibición (él, 15/09/2026):
+     al salir y volver, arranca en la de tres. Se conserva dentro de la
+     visita porque `pintarCatalogo` la consulta al repintar. */
+  /* POR DEFECTO, LA DE CINCO (él, 15/09/2026). Es la de Prototipos
+     nada más; Exhibición sigue abriendo en la de tres. En teléfono se
+     ve en dos columnas, que es a lo que baja la de cinco por las
+     reglas de ancho: él pidió «por lo menos en computadora». */
+  var vistaActualPt = "cinco";
+
+  function vistaPt() { return vistaActualPt; }
+
+  /* El texto de una clave dentro de un grupo de TEXTOS. No se usa la
+     función `etiqueta` de sitio.js: vive en otra función anónima y
+     desde aquí no se ve. */
+  function etiquetaGrupo(grupo, clave) {
+    var g = (window.TEXTOS || {})[grupo] || {};
+    return g[clave] ? tx(g[clave]) : String(clave);
+  }
+
+  /* Las maderas salen de las OPCIONES de cada pieza, que es donde
+     viven, y no de un campo aparte: así no hay dos sitios que puedan
+     decir cosas distintas. */
+  function maderasDe(p) {
+    var g = (p.opciones || []).filter(function (o) { return o.id === "madera"; })[0];
+    return g ? g.valores.map(function (v) { return v.id; }) : [];
+  }
+
+  function valoresPt(p, campo) {
+    if (campo === "material") return maderasDe(p);
+    if (campo === "acabado")  return p.acabado || [];
+    return p.uso || [];
+  }
+
+  function etiquetaPt(campo, v) {
+    if (campo === "material") {
+      /* La etiqueta de la madera la trae la propia opción. */
+      var enc = null;
+      visibles().forEach(function (p) {
+        (p.opciones || []).forEach(function (o) {
+          if (o.id !== "madera") return;
+          o.valores.forEach(function (x) { if (x.id === v && !enc) enc = x.etiqueta; });
+        });
+      });
+      return enc ? tx(enc) : v;
+    }
+    return etiquetaGrupo(campo === "acabado" ? "acabado" : "uso", v);
+  }
+
+  var CAMPOS_PT = [
+    { id: "material", clave: "filtro_madera" },
+    { id: "acabado",  clave: "filtro_acabado" },
+    /* Se MUESTRA como «Tipo» (él, 15/09/2026), pero por dentro el campo
+       y el diccionario siguen llamándose `uso`: TEXTOS ya tiene un grupo
+       `tipo` —el de Exhibición: mesa, repisa, clóset…— y renombrar este
+       a `tipo` machacaría aquel y rompería Exhibición. */
+    { id: "uso",      clave: "filtro_tipo" }
+  ];
+
+  function hayFiltroPt() {
+    return CAMPOS_PT.some(function (c) { return filtrosPt[c.id]; });
+  }
+
+  function visiblesFiltrados() {
+    return visibles().filter(function (p) {
+      return CAMPOS_PT.every(function (c) {
+        if (!filtrosPt[c.id]) return true;
+        return valoresPt(p, c.id).indexOf(filtrosPt[c.id]) > -1;
+      });
+    });
+  }
+
+  function opcionesPt(campo) {
+    var vistos = [];
+    visibles().forEach(function (p) {
+      valoresPt(p, campo).forEach(function (v) {
+        if (vistos.indexOf(v) === -1) vistos.push(v);
+      });
+    });
+    return vistos.sort(function (a, b) {
+      return etiquetaPt(campo, a).localeCompare(etiquetaPt(campo, b));
+    });
+  }
+
+  /* Gemelo del de js/sitio.js: los tres iconos ocupan la misma caja,
+     de 2 a 22 sobre el lienzo de 24, y el lado del cuadradito se
+     calcula a partir del hueco. Si se retoca allá, retocar aquí. */
+  function iconoVistaPt(v) {
+    var s = "", x, y;
+    if (v === "lista") {
+      /* IGUAL QUE EL DE EXHIBICIÓN (él, 15/09/2026): rayas de 2 de
+         grosor y puntos con paso 8, centrados de 2 a 22. Se quedó
+         atrás porque al afinarlo solo se tocó js/sitio.js — son
+         gemelos y hay que cambiar los dos. */
+      for (y = 0; y < 3; y++) {
+        var cy = 4 + y * 8;
+        s += '<circle cx="2" cy="' + cy + '" r="2"/>' +
+             '<rect x="7" y="' + (cy - 1) + '" width="17" height="2"/>';
+      }
+      return '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">' + s + '</svg>';
+    }
+    var n = v === "cinco" ? 5 : 3;
+    /* Lado 4 y no 3, para que el bloque mida 24 justos y quede centrado
+       en el botón (él, 15/09/2026). Gemelo del de js/sitio.js: si se
+       cambia uno, cambiar el otro. */
+    var lado = n === 5 ? 4 : 6;
+    var paso = n === 5 ? 5 : 9;
+    for (y = 0; y < n; y++) {
+      for (x = 0; x < n; x++) {
+        s += '<rect x="' + (x * paso) + '" y="' + (y * paso) +
+             '" width="' + lado + '" height="' + lado + '"/>';
+      }
+    }
+    return '<svg viewBox="0 0 24 24" shape-rendering="crispEdges" ' +
+           'aria-hidden="true" focusable="false">' + s + '</svg>';
+  }
+
+  function barraPtHTML() {
+    var v = vistaPt();
+    var botones = VISTAS_PT.map(function (x) {
+      return '<button type="button" class="vistas__btn" data-vista-pt="' + x + '"' +
+             ' aria-pressed="' + (x === v ? "true" : "false") + '"' +
+             ' title="' + t("vista_" + x) + '" aria-label="' + t("vista_" + x) + '">' +
+             iconoVistaPt(x) + '</button>';
+    }).join("");
+
+    /* Cada desplegable con su nombre encima (él, 15/09/2026), igual
+       que en Exhibición: con tres que dicen «Todos» no se sabía cuál
+       era cuál. El `for`/`id` los une. */
+    var selects = CAMPOS_PT.map(function (c) {
+      var id = "fpt-" + c.id;
+      var ops = '<option value="">' + t("filtro_todos") + '</option>' +
+        opcionesPt(c.id).map(function (val) {
+          return '<option value="' + val + '"' +
+                 (filtrosPt[c.id] === val ? ' selected' : '') + '>' +
+                 etiquetaPt(c.id, val) + '</option>';
+        }).join("");
+      return '<div class="filtro-mini">' +
+               '<label for="' + id + '">' + t(c.clave) + '</label>' +
+               '<select id="' + id + '" data-campo-pt="' + c.id + '">' + ops + '</select>' +
+             '</div>';
+    }).join("");
+
+    var extra = hayFiltroPt()
+      ? '<button type="button" class="filtros-mini__limpiar" data-limpiar-pt="1">' +
+          t("limpiar_filtros") + '</button>'
+      : '';
+
+    /* El embudo, gemelo del de js/sitio.js: con filtro puesto le sale
+       la flechita, como la columna filtrada de Excel. */
+    var emb = hayFiltroPt()
+      ? '<path d="M2 4 H18 L12 12 V19 L8 17 V12 Z"/><path d="M16 16 H22 L19 21 Z"/>'
+      : '<path d="M2 4 H22 L14 13 V21 L10 19 V13 Z"/>';
+    var botonFiltros =
+      '<button type="button" class="filtros-btn" data-filtros-pt="1"' +
+        ' aria-expanded="' + (filtrosAbiertosPt ? "true" : "false") + '"' +
+        ' aria-controls="filtros-panel-pt"' +
+        ' data-activo="' + (hayFiltroPt() ? "1" : "0") + '"' +
+        ' title="' + t("filtros_boton") + '">' +
+        '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">' + emb + '</svg>' +
+        '<span>' + t("filtros_boton") + '</span>' +
+      '</button>';
+
+    return '<div class="catalogo-barra">' +
+      /* El punto/triángulo de la vista puesta: UNO SOLO para la barra,
+         para que se deslice de un botón a otro. Lo coloca moverPuntoPt. */
+      '<div class="vistas" role="group" aria-label="' + t("vista_grupo") + '">' + botones +
+        '<span class="vistas__punto" aria-hidden="true"></span>' +
+      '</div>' +
+      '<div class="filtros-caja" data-caja="filtros">' + botonFiltros +
+        '<div class="filtros-panel" id="filtros-panel-pt"' +
+          (filtrosAbiertosPt ? '' : ' hidden') + '>' +
+          '<div class="filtros-mini">' + selects + extra + '</div>' +
+        '</div>' +
+      '</div>' +
+      cajaOrdenPtHTML() +
+    '</div>';
+  }
+
+  /* ============================================================
+     ORDENAR (15/09/2026), gemelo del de js/sitio.js
+     ------------------------------------------------------------
+     Mismas categorías que los filtros —material, acabado y tipo— más
+     ascendente/descendente. Sin categoría elegida no toca el orden.
+     Los campos de varios valores se ordenan por el PRIMERO ya
+     traducido, y las piezas sin ese dato van al final en los dos
+     sentidos.
+
+     OJO: los botones llevan la clase `.filtros-btn` para verse igual,
+     así que TODO se busca por `data-*-pt`, nunca por clase. Buscando
+     por clase, un clic en «Ordenar» abría también el panel de filtros
+     —pasó en Exhibición y hubo que arreglarlo—.
+     ============================================================ */
+  var ordenPt = { campo: "", dir: "asc" };
+  var ordenAbiertoPt = false;
+
+  function valorOrdenPt(p, campo) {
+    var v = valoresPt(p, campo);
+    if (!v.length) return "";
+    return etiquetaPt(campo, v[0]).toLowerCase();
+  }
+
+  function ordenarListaPt(lista) {
+    if (!ordenPt.campo) return lista;
+    var signo = ordenPt.dir === "desc" ? -1 : 1;
+    return lista.slice().sort(function (a, b) {
+      var x = valorOrdenPt(a, ordenPt.campo), y = valorOrdenPt(b, ordenPt.campo);
+      if (!x && !y) return 0;
+      if (!x) return 1;                  /* los huecos, al final */
+      if (!y) return -1;
+      return x.localeCompare(y) * signo;
+    });
+  }
+
+  function cajaOrdenPtHTML() {
+    var ops = '<option value="">' + t("orden_ninguno") + '</option>' +
+      CAMPOS_PT.map(function (c) {
+        return '<option value="' + c.id + '"' +
+               (ordenPt.campo === c.id ? ' selected' : '') + '>' +
+               t(c.clave) + '</option>';
+      }).join("");
+
+    var dirs = [["asc", "orden_asc", "↑"], ["desc", "orden_desc", "↓"]].map(function (d) {
+      return '<button type="button" data-orden-dir-pt="' + d[0] + '"' +
+             ' aria-pressed="' + (ordenPt.dir === d[0] ? "true" : "false") + '"' +
+             (ordenPt.campo ? '' : ' disabled') + '>' +
+             d[2] + ' ' + t(d[1]) + '</button>';
+    }).join("");
+
+    return '<div class="filtros-caja" data-caja="orden">' +
+      '<button type="button" class="filtros-btn" data-orden-pt="1"' +
+        ' aria-expanded="' + (ordenAbiertoPt ? "true" : "false") + '"' +
+        ' aria-controls="orden-panel-pt"' +
+        ' data-activo="' + (ordenPt.campo ? "1" : "0") + '"' +
+        ' title="' + t("orden_boton") + '">' +
+        '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">' +
+          '<path d="M7 3 L12 10 H2 Z"/><path d="M17 21 L22 14 H12 Z"/>' +
+        '</svg><span>' + t("orden_boton") + '</span>' +
+      '</button>' +
+      '<div class="filtros-panel" id="orden-panel-pt"' +
+        (ordenAbiertoPt ? '' : ' hidden') + '>' +
+        '<div class="filtros-mini">' +
+          '<div class="filtro-mini">' +
+            '<label for="orden-campo-pt">' + t("orden_campo") + '</label>' +
+            '<select id="orden-campo-pt" data-orden-campo-pt="1">' + ops + '</select>' +
+          '</div>' +
+          '<div class="orden-dir">' + dirs + '</div>' +
+          /* El «limpiar», solo con un orden puesto (él, 15/09/2026). */
+          (ordenPt.campo
+            ? '<button type="button" class="filtros-mini__limpiar"' +
+              ' data-limpiar-orden-pt="1">' + t("limpiar_filtros") + '</button>'
+            : '') +
+        '</div>' +
+      '</div>' +
+    '</div>';
+  }
+
+  function abrirOrdenPt(abrir) {
+    ordenAbiertoPt = abrir;
+    var panel = document.getElementById("orden-panel-pt");
+    var boton = document.querySelector("[data-orden-pt]");
+    if (panel) {
+      if (abrir) panel.removeAttribute("hidden");
+      else panel.setAttribute("hidden", "hidden");
+    }
+    if (boton) boton.setAttribute("aria-expanded", abrir ? "true" : "false");
+  }
+
+  document.addEventListener("click", function (e) {
+    var boPt = e.target.closest && e.target.closest("[data-orden-pt]");
+    if (boPt) {
+      if (e.target.closest("svg")) {
+        ordenPt.campo = "";
+        ordenPt.dir = "asc";
+        pintarCatalogo();
+        return;
+      }
+      abrirOrdenPt(!ordenAbiertoPt);
+      return;
+    }
+    var d = e.target.closest && e.target.closest("[data-orden-dir-pt]");
+    if (d) {
+      ordenPt.dir = d.getAttribute("data-orden-dir-pt");
+      pintarCatalogo();
+      return;
+    }
+    /* Antes del clic de fuera: el limpiar vive dentro de la caja. */
+    if (e.target.closest && e.target.closest("[data-limpiar-orden-pt]")) {
+      ordenPt.campo = "";
+      ordenPt.dir = "asc";
+      pintarCatalogo();
+      return;
+    }
+    if (ordenAbiertoPt && !(e.target.closest && e.target.closest('[data-caja="orden"]'))) {
+      abrirOrdenPt(false);
+    }
+  });
+
+  document.addEventListener("change", function (e) {
+    var s = e.target.closest && e.target.closest("[data-orden-campo-pt]");
+    if (!s) return;
+    ordenPt.campo = s.value;
+    pintarCatalogo();
+    var nuevo = document.getElementById("orden-campo-pt");
+    if (nuevo) nuevo.focus();
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && ordenAbiertoPt) {
+      abrirOrdenPt(false);
+      var b = document.querySelector("[data-orden-pt]");
+      if (b) b.focus();
+    }
+  });
+
+  /* Abierto o cerrado. Fuera de la función que pinta, porque la barra
+     se rehace entera con cada cambio de filtro: sin esto el panel se
+     cerraría solo al elegir algo. */
+  var filtrosAbiertosPt = false;
+
+  function abrirFiltrosPt(abrir) {
+    filtrosAbiertosPt = abrir;
+    var panel = document.getElementById("filtros-panel-pt");
+    var boton = document.querySelector("[data-filtros-pt]");
+    if (panel) {
+      if (abrir) panel.removeAttribute("hidden");
+      else panel.setAttribute("hidden", "hidden");
+    }
+    if (boton) boton.setAttribute("aria-expanded", abrir ? "true" : "false");
+  }
+
+  document.addEventListener("click", function (e) {
+    var bfPt = e.target.closest && e.target.closest("[data-filtros-pt]");
+    if (bfPt) {
+      /* El icono de arriba limpia, igual que en Exhibición (él). */
+      if (e.target.closest("svg")) {
+        CAMPOS_PT.forEach(function (c) { filtrosPt[c.id] = ""; });
+        pintarCatalogo();
+        return;
+      }
+      abrirFiltrosPt(!filtrosAbiertosPt);
+      return;
+    }
+    /* Acotado a SU caja: la de ordenar usa la misma clase. */
+    if (filtrosAbiertosPt && !(e.target.closest && e.target.closest('[data-caja="filtros"]'))) {
+      abrirFiltrosPt(false);
+    }
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key !== "Escape" || !filtrosAbiertosPt) return;
+    abrirFiltrosPt(false);
+    var b = document.querySelector("[data-filtros-pt]");
+    if (b) b.focus();
+  });
+
+  /* Los datos de la pieza, que solo se ven en la vista de lista. */
+  function datosHTML(p) {
+    /* PUNTO Y COMA entre maderas, no coma (él, 15/09/2026): cuando una
+       pieza ofrece varias, son EXCLUYENTES —o pino o samán, no las dos
+       en la misma pieza—, y una coma se lee como que lleva ambas.
+       El comedero pequeño, que sí lleva dos maderas combinadas, no pasa
+       por aquí: las suyas son UN SOLO valor, «Apamate, Puy», y ese sí
+       va con coma. Ver su ficha en datos/prototipos.js. */
+    var maderas = maderasDe(p).map(function (m) { return etiquetaPt("material", m); }).join("; ");
+    var acabados = (p.acabado || []).map(function (a) { return etiquetaGrupo("acabado", a); }).join(", ");
+    var usos = (p.uso || []).map(function (u) { return etiquetaGrupo("uso", u); }).join(", ");
+    var filas = [
+      [t("filtro_madera"), maderas],
+      [t("filtro_acabado"), acabados],
+      [t("filtro_tipo"), usos],   /* se enseña «Tipo»; el campo es `uso` */
+      [t("ficha_medidas"), p.medidas ? tx(p.medidas) : ""]
+    ];
+    return '<span class="pt-ficha__datos">' + filas.map(function (f) {
+      return '<span class="pt-ficha__dato">' +
+               '<span class="pt-ficha__clave">' + f[0] + '</span>' +
+               '<span class="pt-ficha__valor">' + (f[1] || "—") + '</span>' +
+             '</span>';
+    }).join("") + '</span>';
+  }
+
+
+  /* La ola de la barra, solo en la primera pintada (él, 16/09/2026).
+     Gemela de `olaBarra` en js/sitio.js. */
+  var olaHechaPt = false;
+  function olaBarraPt(barra) {
+    if (olaHechaPt || !barra) return;
+    olaHechaPt = true;
+    [].forEach.call(barra.querySelectorAll(".vistas__btn, .filtros-btn"), function (b, i) {
+      b.style.setProperty("--i", i);
+    });
+    barra.classList.add("catalogo-barra--ola");
+  }
+
   function pintarCatalogo() {
-    var todos = visibles();
+    /* `ordenarListaPt` devuelve la lista tal cual si no hay orden
+       elegido, así que el catálogo sale en el orden del archivo. */
+    var todos = ordenarListaPt(visiblesFiltrados());
     var conStock = todos.filter(function (p) { return p.disponibilidad === "stock"; });
     var porPedido = todos.filter(function (p) { return p.disponibilidad !== "stock"; });
+
+    var barra = $("#pt-barra");
+    if (barra) {
+      barra.innerHTML = barraPtHTML() +
+        (todos.length ? "" : '<p class="vacio">' + t("sin_resultados") + '</p>');
+      olaBarraPt(barra.querySelector(".catalogo-barra"));
+      moverPuntoPt(false);
+    }
 
     $("#pt-stock").innerHTML  = conStock.map(fichaHTML).join("");
     $("#pt-pedido").innerHTML = porPedido.map(fichaHTML).join("");
     $("#pt-n-stock").textContent  = rellena("pt_n_productos", {n: conStock.length});
     $("#pt-n-pedido").textContent = rellena("pt_n_productos", {n: porPedido.length});
 
+    /* La vista es una clase en cada cuadrícula. El `.rejilla` de
+       debajo no se toca: las tarjetas de Prototipos van PEGADAS con
+       su filete de 1px, y eso se queda en las tres vistas. */
+    var v = vistaPt();
+    [$("#pt-stock"), $("#pt-pedido")].forEach(function (r) {
+      VISTAS_PT.forEach(function (x) { r.classList.remove("pt-vista--" + x); });
+      r.classList.add("pt-vista--" + v);
+    });
+
+    /* Una sección sin piezas se esconde entera, con su título y su
+       bajada: un encabezado seguido de nada se lee como un fallo. */
+    var secStock = $("#pt-stock").closest(".pt-seccion");
+    var secPedido = $("#pt-pedido").closest(".pt-seccion");
+    if (secStock)  secStock.hidden  = !conStock.length;
+    if (secPedido) secPedido.hidden = !porPedido.length;
+
     /* títulos y bajadas, que también cambian con el idioma */
     $("#pt-titulo").textContent      = t("pt_titulo");
     $("#pt-bajada").textContent      = t("pt_bajada");
+    /* Las dos bajadas de sección salieron del HTML el 15/09/2026 (él:
+       «Listas ahora» y «Por encargo» ya se explican solos), así que
+       aquí ya no hay nada que rellenar. Las claves `pt_sin_espera` y
+       `pt_encargo_bajada` se quedan en textos.js por si vuelven. */
     $("#pt-tit-stock").textContent   = t("pt_con_stock");
-    $("#pt-baj-stock").textContent   = t("pt_sin_espera");
     $("#pt-tit-pedido").textContent  = t("pt_por_encargo");
-    $("#pt-baj-pedido").textContent  = t("pt_encargo_bajada");
     $("#pt-tit-pedidoc").textContent = t("pt_tu_pedido");
+    var bolsaPt = $("#pt-bolsa-pedido");
+    if (bolsaPt && window.PA_PEDIDO && !bolsaPt.firstChild) bolsaPt.innerHTML = window.PA_PEDIDO.icono();
     $("#pt-baj-pedidoc").textContent = t("pt_pedido_bajada");
     $("#pt-tasa").textContent = rellena("pt_tasa_bcv", {
       v: window.TASAS.bcv.toLocaleString("es-VE", {minimumFractionDigits: 2, maximumFractionDigits: 2})
@@ -263,6 +711,10 @@
         var fotos = todasLasFotos(p);
         if (fotos.length < 2) return;
 
+        /* Esta pieza queda FUERA del sorteo automático, y sigue fuera
+           hasta que él toque las flechas de otra. */
+        rotManual = slug;
+
         var i = (fotoActual[slug] || 0) + parseInt(b.dataset.paso, 10);
         if (i < 0) i = fotos.length - 1;
         if (i >= fotos.length) i = 0;
@@ -276,6 +728,86 @@
         if (cuenta) cuenta.textContent = (i + 1) + "/" + fotos.length;
       });
     });
+
+    arrancarRotacion();
+  }
+
+  /* ============================================================
+     LA CUADRÍCULA SE MUEVE SOLA (15/09/2026, pedido suyo)
+     ------------------------------------------------------------
+     El gemelo del de js/sitio.js, que hace lo mismo en Exhibición:
+     cada 6 segundos se sortea UNA pieza y se le cambia la foto por
+     otra suya al azar; el primer turno, a los 8 segundos de abrir.
+     En el mismo turno, la que cambió el turno pasado vuelve a su
+     primera foto. La pieza que él pasó a mano con las flechas no
+     entra en el sorteo y se queda donde él la dejó. Si se cambia
+     una regla aquí, hay que cambiarla allá también.
+
+     AQUÍ SIGUE CORRIENDO CON EL PANEL ABIERTO, y es a propósito
+     (él lo pidió): el panel es lateral y la cuadrícula se ve
+     detrás. No hay interferencia, porque `fotoActual` es solo de la
+     cuadrícula — el panel lleva su propio medio en `medioActivo`.
+
+     Con `prefers-reduced-motion` no arranca.
+     ============================================================ */
+  var ROT_ESPERA = 8000;   /* del primer turno */
+  var ROT_CADA   = 6000;
+  var rotManual = null;    /* la que él tocó a mano */
+  var rotAuto   = null;    /* la que cambió el turno pasado */
+  var rotTimer  = null;
+
+  /* El DOM se consulta en CADA turno: `pintarCatalogo` rehace las
+     tarjetas enteras al cambiar de idioma y al conmutar el tema, así
+     que unos nodos guardados apuntarían a tarjetas muertas. */
+  function rotPonerFoto(slug, i) {
+    var p = visibles().filter(function (x) { return x.slug === slug; })[0];
+    if (!p) return;
+    var fotos = todasLasFotos(p);
+    if (i >= fotos.length) return;
+    var ficha = document.querySelector('.pt-ficha[data-slug="' + slug + '"]');
+    if (!ficha) return;
+    fotoActual[slug] = i;
+    var img = ficha.querySelector(".pt-ficha__hueco img");
+    if (img) cambiarFoto(img, srcTema(fotos[i]));
+    var cuenta = ficha.querySelector(".pt-cuenta-fotos");
+    if (cuenta) cuenta.textContent = (i + 1) + "/" + fotos.length;
+  }
+
+  function rotTurno() {
+    /* `visiblesFiltrados` y no `visibles`: con un filtro puesto, una
+       pieza escondida no tiene tarjeta donde cambiar la foto. */
+    var candidatas = visiblesFiltrados().filter(function (p) {
+      return todasLasFotos(p).length > 1 && p.slug !== rotManual && p.slug !== rotAuto;
+    });
+    var elegida = candidatas.length
+      ? candidatas[Math.floor(Math.random() * candidatas.length)]
+      : null;
+
+    /* El regreso de la anterior y el cambio de la nueva, en el mismo
+       turno: él lo pidió «en simultáneo». */
+    if (rotAuto) rotPonerFoto(rotAuto, 0);
+    rotAuto = null;
+    if (!elegida) return;
+
+    /* Al azar, pero nunca la que ya se está viendo. */
+    var fotos = todasLasFotos(elegida);
+    var actual = fotoActual[elegida.slug] || 0;
+    var otras = [];
+    for (var k = 0; k < fotos.length; k++) { if (k !== actual) otras.push(k); }
+    if (!otras.length) return;
+    rotPonerFoto(elegida.slug, otras[Math.floor(Math.random() * otras.length)]);
+    rotAuto = elegida.slug;
+  }
+
+  /* El guardia hace falta: `pintarCatalogo` se llama otra vez con
+     cada cambio de idioma y de tema, y sin él quedarían varios
+     relojes corriendo a la vez. */
+  function arrancarRotacion() {
+    if (rotTimer || menosMovimiento) return;
+    rotTimer = setTimeout(function () {
+      rotTurno();
+      rotTimer = setInterval(rotTurno, ROT_CADA);
+    }, ROT_ESPERA);
   }
 
   /* ============================================================
@@ -785,7 +1317,10 @@
     if (m.tipo === "foto") {
       caja.innerHTML = '<img class="pt-visual__foto' +
         (sel.p.sin_fondo ? ' pt-visual__foto--suelto' : '') +
-        '" src="' + m.src + '" alt="' + tx(sel.p.nombre) + '">';
+        /* srcTema: un isométrico usado como FOTO principal (los del
+           baño) también tiene que cambiar a su versión clara. Faltaba
+           aquí y en tema claro salía el de fondo negro (16/09/2026). */
+        '" src="' + srcTema(m.src) + '" alt="' + tx(sel.p.nombre) + '">';
       entrarConGlitch(caja);
       return;
     }
@@ -991,7 +1526,21 @@
   /* ============================================================
      EL PEDIDO
      ============================================================ */
-  var carrito = [];
+  /* El pedido vuelve de la visita anterior si tiene menos de una
+     semana (él, 16/09/2026). Ver `PA_PEDIDO` en js/sitio.js. El precio
+     se recalcula con la tabla de hoy: si cambió en esa semana, manda
+     el nuevo, que es el que se va a cobrar. */
+  var carrito = (window.PA_PEDIDO ? window.PA_PEDIDO.leer() : []).filter(function (l) {
+    var p = visibles().filter(function (x) { return x.slug === l.slug; })[0];
+    if (!p) return false;
+    if (l.opciones) {
+      try {
+        var u = precioUnidad(p, l.opciones);
+        if (u > 0) l.unitario = u;
+      } catch (e) { /* se queda el precio guardado */ }
+    }
+    return true;
+  });
   var entregaSel = "taller";
   var estadoSel = "";
   var pagoSel = "pagomovil";
@@ -1280,6 +1829,7 @@
   }
 
   function pintarPedido() {
+    if (window.PA_PEDIDO) window.PA_PEDIDO.guardar(carrito);
     pintarLineas();
     pintarEntrega();
     pintarPago();
@@ -1322,6 +1872,10 @@
       disponibilidad: p.disponibilidad, plazo_semanas: p.plazo_semanas
     });
     cerrarPanel();
+    /* El circulito que entra en la bolsa de la cabecera (sitio.js). Va
+       ANTES de pintarPedido: así el cambio a carrito espera a que la
+       bolita entre, en vez de verse antes de que caiga. */
+    if (window.PA_PEDIDO && window.PA_PEDIDO.animar) window.PA_PEDIDO.animar();
     pintarPedido();
     if (bajar) {
       document.getElementById("pt-pedido-seccion")
@@ -1395,6 +1949,78 @@
      archivos distintos en claro y en oscuro (ver `srcTema`). El resto
      del tema no lo necesita: vive en los tokens CSS. Se repinta el
      catálogo y, si hay un producto abierto, también su panel. */
+  /* LOS TRES ESCUCHADORES DE LA BARRA, delegados en el documento
+     porque la barra se rehace entera en cada repintado. Van por
+     `data-*-pt` y no por clase: las clases son las mismas que usa la
+     barra de Exhibición en js/sitio.js, y así ninguna de las dos se
+     mete en la página de la otra. */
+  /* Coloca el señalador sobre el botón puesto. `animar` en false para
+     la primera vez: si no, entraría deslizándose desde el borde. */
+  function moverPuntoPt(animar) {
+    var caja = document.querySelector("#pt-barra .vistas");
+    if (!caja) return;
+    var punto = caja.querySelector(".vistas__punto");
+    var b = caja.querySelector('[data-vista-pt][aria-pressed="true"]');
+    if (!punto || !b) return;
+    if (!animar) punto.style.transition = "none";
+    punto.style.transform =
+      "translateX(" + (b.offsetLeft + b.offsetWidth / 2) + "px) translateX(-50%)";
+    if (!animar) { void punto.offsetWidth; punto.style.transition = ""; }
+  }
+
+  /* Cambiar de vista NO repinta las tarjetas: son idénticas en las tres
+     y solo cambia una clase en cada cuadrícula. Además es lo que deja
+     que el señalador se deslice, en vez de nacer ya colocado. */
+  function aplicarVistaPt(v) {
+    Array.prototype.forEach.call(document.querySelectorAll("[data-vista-pt]"), function (b) {
+      b.setAttribute("aria-pressed",
+        b.getAttribute("data-vista-pt") === v ? "true" : "false");
+    });
+    [$("#pt-stock"), $("#pt-pedido")].forEach(function (r) {
+      if (!r) return;
+      VISTAS_PT.forEach(function (x) { r.classList.remove("pt-vista--" + x); });
+      r.classList.add("pt-vista--" + v);
+    });
+    moverPuntoPt(true);
+  }
+
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest && e.target.closest("[data-vista-pt]");
+    if (!b) return;
+    var v = b.getAttribute("data-vista-pt");
+    if (VISTAS_PT.indexOf(v) === -1 || v === vistaActualPt) return;
+    vistaActualPt = v;
+    aplicarVistaPt(v);
+  });
+
+  document.addEventListener("change", function (e) {
+    var s = e.target.closest && e.target.closest("[data-campo-pt]");
+    if (!s) return;
+    var campo = s.getAttribute("data-campo-pt");
+    filtrosPt[campo] = s.value;
+    pintarCatalogo();
+    /* El repintado se lleva el desplegable que se acaba de usar, y con
+       él el foco del teclado. Se le devuelve al mismo. */
+    var nuevo = document.querySelector('[data-campo-pt="' + campo + '"]');
+    if (nuevo) nuevo.focus();
+  });
+
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest && e.target.closest("[data-limpiar-pt]");
+    if (!b) return;
+    CAMPOS_PT.forEach(function (c) { filtrosPt[c.id] = ""; });
+    pintarCatalogo();
+  });
+
+  /* Si se quitó algo desde el panel de la bolsa, la copia de esta
+     página se recarga del guardado; si no, el siguiente repintado
+     volvería a escribir la línea quitada. */
+  document.addEventListener("pa:pedido", function (e) {
+    if (!e.detail || e.detail.origen !== "panel" || !window.PA_PEDIDO) return;
+    carrito = window.PA_PEDIDO.leer();
+    pintarPedido();
+  });
+
   document.addEventListener("pa:tema", function () {
     pintarCatalogo();
     if (sel && sel.p) pintarPanel();

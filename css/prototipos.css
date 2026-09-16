@@ -15,6 +15,11 @@
 .pt-seccion { margin-top: clamp(1.3rem, 3vw, 2.2rem); }
 .pt-cabeza { display: flex; align-items: baseline; gap: .9rem; flex-wrap: wrap; margin-bottom: .35rem; }
 .pt-cabeza h2 { font-size: clamp(1.12rem, 2.4vw, 1.4rem); }
+/* «Tu pedido» lleva una raya encima que lo separa del catálogo, y la
+   bolsa a la derecha del título (él, 16/09/2026). La bolsa es la misma
+   de la cabecera; la pone js/prototipos.js. */
+#pt-pedido-seccion { border-top: 1px solid var(--linea); padding-top: clamp(1.3rem, 3vw, 2.2rem); }
+.pt-cabeza .pt-bolsa { align-self: center; color: var(--tinta); margin-left: -.35rem; }
 .pt-cuenta { color: var(--apagado); font-size: 0.875rem; }
 .pt-bajada { color: var(--apagado); font-size: 1rem; max-width: 62ch; margin-bottom: .75rem; }
 
@@ -87,6 +92,15 @@
    les cortarían las esquinas, que en un catálogo se lee como un
    descuido, así que van con `contain` y su aire alrededor. */
 .pt-ficha__hueco--suelto { background: var(--papel); }
+
+/* FONDO LISO SIN CAMBIAR EL ENCUADRE (él, 15/09/2026). La tumbona
+   lleva de portada una foto recortada, con transparencia alrededor de
+   la silla, y por ahí asomaba el RAYADO del hueco. Con esto el fondo
+   es liso —negro en el tema oscuro, blanco en el claro— pero la foto
+   se sigue recortando para llenar la tarjeta, que es lo que él eligió
+   al dejar `sin_fondo` apagado. Se enciende con `fondo_liso: true` en
+   datos/prototipos.js. */
+.pt-ficha__hueco--liso { background: var(--papel); }
 /* Mismo cuidado que en el panel: con width/height al 100% la
    imagen desborda una caja cuyo alto sale de `aspect-ratio`. */
 /* Mismo criterio que en el panel: el aire lo pone el contenedor y
@@ -197,6 +211,111 @@
 .pt-estado--hay    { color: var(--tinta);  border-color: var(--apagado); }
 .pt-estado--poco   { color: var(--realce); border-color: var(--realce); }
 .pt-estado--pedido { color: var(--madera-texto); border-color: var(--madera-texto); }
+
+/* ============================================================
+   LAS TRES VISTAS DEL CATÁLOGO (15/09/2026, pedido suyo)
+   ------------------------------------------------------------
+   La clase la pone js/prototipos.js en LAS DOS cuadrículas a la
+   vez. Aquí solo cambia el número de columnas: el `gap: 1px` y el
+   fondo de `.rejilla` se quedan, porque las tarjetas de Prototipos
+   van pegadas con su filete y eso no lo pidió cambiar nadie.
+   La barra en sí (.catalogo-barra, .vistas, .filtros-mini) es la
+   misma de Exhibición y vive en estilo.css.
+   ============================================================ */
+/* SIN BLOQUE GRIS EN LA FILA INCOMPLETA (él, 15/09/2026). Ese gris era
+   el fondo de la propia cuadrícula (`--caja-alta`) asomando por donde no
+   hay tarjeta. Ahora va del color del papel —negro o blanco según el
+   tema—, así que lo que sobra en una fila es el fondo de la página.
+   OJO: ese mismo fondo es el que dibuja los filetes de 1px entre
+   tarjetas, así que los filetes pasan también a ser del color del papel.
+   Solo se toca la cuadrícula de Prototipos; la de Herramientas usa
+   `.rejilla` a secas y se queda como estaba. */
+.pt-vista--tres,
+.pt-vista--cinco,
+.pt-vista--lista { background: var(--papel); border-color: var(--papel); }
+
+/* `minmax(0, 1fr)` y no `1fr` a secas (16/09/2026): con `1fr` una
+   columna no baja del ancho de su palabra más larga, y en teléfono la
+   vista de 5 (dos columnas) se salía 54 px por la derecha. */
+.pt-vista--tres  { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.pt-vista--cinco { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.pt-vista--lista { grid-template-columns: minmax(0, 1fr); }
+
+@media (max-width: 900px) {
+  .pt-vista--tres  { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pt-vista--cinco { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+  .pt-vista--tres  { grid-template-columns: minmax(0, 1fr); }
+  .pt-vista--cinco { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* La densa: el nombre y el resumen bajan de tamaño, que si no ocupan
+   más que la propia foto. */
+.pt-vista--cinco .pt-ficha h3  { font-size: .85rem; }
+.pt-vista--cinco .pt-ficha__res { font-size: .75rem; }
+.pt-vista--cinco .pt-ficha__cuerpo { padding: .55rem .55rem .6rem; gap: .25rem; }
+.pt-vista--cinco .pt-precio { font-size: 1rem; }
+/* En la densa la tarjeta es estrecha (en teléfono, ~160 px): si el
+   precio y el sello «Por encargo» no caben juntos, el sello baja de
+   renglón en vez de salirse de la pantalla (16/09/2026). */
+.pt-vista--cinco .pt-ficha__pie { flex-wrap: wrap; row-gap: .3rem; }
+
+/* La lista: foto a la izquierda, y a su derecha el nombre, el
+   resumen, el precio y los datos. */
+.pt-vista--lista .pt-ficha {
+  display: grid;
+  /* 250px, LO MISMO que la lista de Exhibición (él, 15/09/2026): ahí
+     la columna de la foto mide 250 y aquí medía 230, y se notaba que
+     estas salían más chicas. Si se cambia una, cambiar la otra:
+     .rejilla--lista .tarjeta en estilo.css. */
+  grid-template-columns: minmax(0, 250px) 1fr;
+}
+.pt-vista--lista .pt-ficha__hueco {
+  aspect-ratio: 1 / 1;
+  border-bottom: 0; border-right: 1px solid var(--linea);
+}
+/* 1,9rem a la izquierda (él, 15/09/2026): el texto estaba muy pegado a
+   la foto. Y el título con más interlínea, que a las letras con cola
+   —J, y— se les cortaba el rabo. */
+.pt-vista--lista .pt-ficha__cuerpo { padding: .9rem 1rem 1rem 1.9rem; }
+.pt-vista--lista .pt-ficha h3 { font-size: 1.15rem; line-height: 1.35; }
+/* EN LA LISTA, EL PRECIO VA PEGADO AL RECUADRO DE LA DERECHA (él,
+   15/09/2026): al de «2 disponibles» en las que están hechas, y al del
+   plazo («~3 semanas») en las de encargo — es el mismo `.pt-estado`.
+   En las otras dos vistas el pie sigue con el precio a la izquierda y
+   el recuadro a la derecha, que es como estaba. */
+.pt-vista--lista .pt-ficha__pie { justify-content: flex-end; gap: .9rem; }
+
+/* El bloque de datos: escrito siempre, visible solo aquí. Cuatro
+   columnas —madera, acabado, uso, medidas— con un guion donde no
+   hay dato, para que cuadren de una pieza a la siguiente. */
+/* EN UNA SOLA COLUMNA, igual que en Exhibición (él, 15/09/2026): un
+   renglón por dato, el nombre a la izquierda y el valor al lado. */
+.pt-ficha__datos { display: none; }
+/* SIN AIRE ARRIBA, igual que en Exhibición (él, 15/09/2026): la
+   primera línea separadora se veía más lejos que las demás porque
+   sumaba el espacio de este bloque MÁS el del propio renglón. El aire
+   por encima de esa línea lo pone el `margin-top`. */
+.pt-vista--lista .pt-ficha__datos {
+  display: block;
+  border-top: 1px solid var(--linea);
+  padding-top: 0; margin-top: .55rem;
+}
+.pt-ficha__dato  {
+  display: flex; flex-direction: row; gap: .6rem;
+  padding: .22rem 0; border-bottom: 1px solid var(--linea);
+}
+.pt-ficha__clave { flex: 0 0 7rem; color: var(--apagado); font-size: .9rem; }
+.pt-ficha__valor { font-size: .9rem; }
+
+@media (max-width: 560px) {
+  .pt-ficha__clave { flex-basis: 5.5rem; }
+}
+@media (max-width: 560px) {
+  .pt-vista--lista .pt-ficha { grid-template-columns: 1fr; }
+  .pt-vista--lista .pt-ficha__hueco { border-right: 0; border-bottom: 1px solid var(--linea); }
+}
 
 /* --- panel lateral de configuración ------------------------- */
 .pt-velo { position: fixed; inset: 0; background: rgba(0,0,0,.75); display: none; z-index: 100; }

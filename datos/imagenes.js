@@ -1,5 +1,5 @@
 ﻿/* GENERADO POR Achicar-imagenes.ps1 — no editar a mano.
-   2026-09-15 17:40
+   2026-09-15 21:59
 
    Las fotos que tienen al lado una copia <nombre>-movil.webp de
    1000 px. sitio.js consulta esta lista para ofrecerle al
@@ -63,6 +63,11 @@ window.IMG_MOVIL = [
   "img/taller/carrusel/intro-7.webp",
   "img/taller/carrusel/intro-9.webp",
   "img/taller/propuesta-ejemplo.webp",
+  "img/trabajos/anillos-foto-1.webp",
+  "img/trabajos/anillos-foto-2.webp",
+  "img/trabajos/anillos-foto-3.webp",
+  "img/trabajos/anillos-foto-4.webp",
+  "img/trabajos/anillos-foto-5.webp",
   "img/trabajos/bandeja-foto-1.webp",
   "img/trabajos/bandeja-foto-2.webp",
   "img/trabajos/bandeja-foto-3.webp",
@@ -98,6 +103,7 @@ window.IMG_MOVIL = [
   "img/trabajos/escenografia-morochos-foto-5.webp",
   "img/trabajos/escritorio-teca-foto-1.webp",
   "img/trabajos/escritorio-teca-foto-5.webp",
+  "img/trabajos/escritorio-teca-foto-6.webp",
   "img/trabajos/gancho-ery.webp",
   "img/trabajos/gavetero-wichi-foto-1.webp",
   "img/trabajos/gavetero-wichi-foto-2.webp",
@@ -127,6 +133,12 @@ window.IMG_MOVIL = [
   "img/trabajos/paraban-veronica-foto-4.webp",
   "img/trabajos/paraban-veronica-foto-5.webp",
   "img/trabajos/paraban-veronica-foto-6.webp",
+  "img/trabajos/plataformacha-foto-1.webp",
+  "img/trabajos/plataformacha-foto-2.webp",
+  "img/trabajos/plataformacha-foto-3.webp",
+  "img/trabajos/puertas-closet-foto-2.webp",
+  "img/trabajos/puertas-closet-foto-3.webp",
+  "img/trabajos/puertas-closet-foto-4.webp",
   "img/trabajos/quillas-mariana-foto-1.webp",
   "img/trabajos/quillas-mariana-foto-2.webp",
   "img/trabajos/quillas-mariana-foto-3.webp",
@@ -145,6 +157,7 @@ window.IMG_MOVIL = [
   "img/trabajos/rolo-orfebre-foto-2.webp",
   "img/trabajos/rolo-orfebre-foto-3.webp",
   "img/trabajos/rolo-orfebre-portada.webp",
+  "img/trabajos/set-de-utensilios-foto-1.webp",
   "img/trabajos/taller.webp",
   "img/trabajos/vanitarios-wichi-foto-1.webp",
   "img/trabajos/vanitarios-wichi-foto-2.webp",

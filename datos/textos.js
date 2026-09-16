@@ -98,6 +98,14 @@ window.TEXTOS = {
   pt_quitar_titulo:   { es: "Quitar",                  en: "Remove" },
 
   pt_tu_pedido: { es: "Tu pedido", en: "Your order" },
+  /* La bolsa de la cabecera y su panel lateral (16/09/2026). */
+  pedido_abrir:  { es: "Ver tu pedido", en: "View your order" },
+  pedido_cerrar: { es: "Cerrar", en: "Close" },
+  pedido_restar: { es: "Quitar una", en: "Remove one" },
+  pedido_ir:     { es: "Ir al pedido y concretar", en: "Go to order and check out" },
+  pedido_ver_catalogo: { es: "Ver Prototipos", en: "See Prototypes" },
+  pedido_guardado: { es: "Se guarda en este navegador durante una semana.",
+                     en: "Saved in this browser for one week." },
   pt_pedido_bajada: { es: "Arma aquí lo que quieres. Nada se cobra en esta página: al final se abre WhatsApp con el pedido ya escrito.",
                   en: "Build what you want here. Nothing is charged on this page: at the end WhatsApp opens with the order already written." },
   pt_vacio:     { es: "Todavía no has agregado nada.", en: "Nothing added yet." },
@@ -170,11 +178,20 @@ window.TEXTOS = {
                   en: "Type to search the whole site." },
   buscar_en_portafolio: { es: "Portafolio",  en: "Portfolio" },
   buscar_en_tienda:     { es: "En venta",    en: "For sale" },
+  buscar_en_sitio:      { es: "En el sitio", en: "On the site" },
   cerrar:       { es: "Cerrar",            en: "Close" },
 
   /* --- Catálogo de trabajos -------------------------------- */
   trabajos_titulo: { es: "Exhibición",
                      en: "Exhibition" },
+
+  /* Los tres botones de vista de la cuadrícula (él, 15/09/2026). El texto
+     no se ve —el botón es solo el icono—: va en el `title` y en el
+     aria-label, que es lo que oye quien no ve la página. */
+  vista_grupo:  { es: "Cómo ver el catálogo", en: "How to view the catalogue" },
+  vista_tres:   { es: "Cuadrícula de tres",   en: "Three-column grid" },
+  vista_cinco:  { es: "Cuadrícula de cinco",  en: "Five-column grid" },
+  vista_lista:  { es: "Lista con detalles",   en: "List with details" },
   /* Lleva la palabra «catálogo» a propósito (él, 14/08/2026): es
      como llama a esta sección, y el enlace de volver dice lo
      mismo.
@@ -187,6 +204,21 @@ window.TEXTOS = {
   filtro_tipo:     { es: "Tipo",           en: "Type" },
   filtro_madera:   { es: "Material",       en: "Material" },
   filtro_anio:     { es: "Año",            en: "Year" },
+  /* 15/09/2026 · La barra de filtros vuelve, ahora al lado de los
+     botones de vista de Exhibición (él). Las otras cuatro claves ya
+     estaban de la barra vieja; la de acabado es la única nueva. */
+  filtro_acabado:  { es: "Acabado",        en: "Finish" },
+  filtro_uso:      { es: "Uso",            en: "Use" },
+  /* 15/09/2026 · Los filtros pasan a vivir dentro de un botón con
+     icono de embudo, al lado de los botones de vista. */
+  /* «Filtrar», en infinitivo como «Ordenar» (él, 15/09/2026). */
+  filtros_boton:   { es: "Filtrar",        en: "Filter" },
+  /* 15/09/2026 · El botón de ordenar, hermano del de filtros. */
+  orden_boton:     { es: "Ordenar",        en: "Sort" },
+  orden_campo:     { es: "Ordenar por",    en: "Sort by" },
+  orden_ninguno:   { es: "Sin orden",      en: "No sorting" },
+  orden_asc:       { es: "Ascendente",     en: "Ascending" },
+  orden_desc:      { es: "Descendente",    en: "Descending" },
   filtro_todos:    { es: "Todos",          en: "All" },
   limpiar_filtros: { es: "Limpiar",        en: "Clear" },
   sin_resultados:  { es: "No hay nada con esos filtros.",
@@ -210,7 +242,7 @@ window.TEXTOS = {
   ficha_similar:   { es: "¿Quieres algo así?", en: "Want something like this?" },
   ficha_similar_t: { es: "No repito una pieza igual, pero sí trabajo sobre la misma idea. Escríbeme y lo conversamos.",
                      en: "I don't repeat a piece exactly, but I do work from the same idea. Write me and we'll talk it through." },
-  ficha_escribir:  { es: "Escribir",       en: "Get in touch" },
+  ficha_escribir:  { es: "Contáctame",     en: "Contact me" },
 
   /* --- Tienda: piezas -------------------------------------- */
   piezas_titulo:   { es: "Creaciones",     en: "Creations" },
@@ -292,11 +324,27 @@ window.TEXTOS = {
     almacenaje:  { es: "Almacenaje",        en: "Storage" },
     cocina:      { es: "Cocina",            en: "Kitchen" },
     closet:      { es: "Clóset",            en: "Closet" },
-    repisa:      { es: "Repisas y flotantes",en: "Shelving" },
+    /* «Repisas», en plural y a secas (él, 15/09/2026). Antes decía
+       «Repisas y flotantes». */
+    repisa:      { es: "Repisas",           en: "Shelving" },
     accesorio:   { es: "Accesorio",         en: "Accessory" },
     exhibicion:  { es: "Exhibición",        en: "Display" },
     exterior:    { es: "Exterior",          en: "Outdoor" },
     taller:      { es: "Taller",            en: "Shop furniture" },
+    /* 15/09/2026 · Tipos nuevos, dictados por él al repasar el
+       catálogo. `gabinete` se lleva lo que antes era «almacenaje»
+       —gavetero, vanitarios, mueble de espejo, consola—, que era un
+       cajón de sastre. `almacenaje` se queda: lo usan todavía la
+       cómoda y el mueble de casa, sin publicar, y las dos zapateras
+       hasta que él decida cómo llamarlas. */
+    gabinete:    { es: "Gabinete",          en: "Cabinet" },
+    /* 15/09/2026 · Él no quería llamarlas «almacenaje» y eligió su
+       propio nombre. Con dos piezas ya es categoría. */
+    zapatera:    { es: "Zapatera",          en: "Shoe rack" },
+    decoracion:  { es: "Decoración",        en: "Decor" },
+    mascotas:    { es: "Mascotas",          en: "Pets" },
+    puerta:      { es: "Puerta",            en: "Door" },
+    paraban:     { es: "Parabán",           en: "Folding screen" },
     otro:        { es: "Otro",              en: "Other" }
   },
 
@@ -312,7 +360,12 @@ window.TEXTOS = {
        chapado; en inglés no hay traducción directa y lo más
        cercano es blockboard. */
     "okume":           { es: "Compuesto de okumé",         en: "Okoumé blockboard" },
-    "cedro":           { es: "Cedro",                      en: "Cedar" },
+    /* 15/09/2026 · «Spanish cedar» y NO «Cedar» (él, tras corroborarlo): el
+       cedro de aquí es Cedrela odorata, de la familia de la caoba. En inglés
+       «cedar» a secas se lee como Thuja o Cedrus —otra madera, otro precio—,
+       y «red cedar» todavía peor. Ya estaba dicho en
+       Herramientas\Recursos\materiales-es-en.md. */
+    "cedro":           { es: "Cedro",                      en: "Spanish cedar" },
     "caoba":           { es: "Caoba",                      en: "Mahogany" },
     "roble":           { es: "Roble",                      en: "Oak" },
     /* Apamate (Tabebuia rosea). No tiene nombre comercial asentado
@@ -327,7 +380,33 @@ window.TEXTOS = {
     "vidrio":          { es: "Vidrio",                     en: "Glass" },
     "pla3d":           { es: "Impresión 3D (PLA)",         en: "3D printed (PLA)" },
     /* 15/09/2026 · la consola mid-century (él). */
-    "melamina":        { es: "Melamina",                   en: "Melamine board" }
+    "melamina":        { es: "Melamina",                   en: "Melamine board" },
+    /* 15/09/2026 · Las tres maderas de los anillos (él). Van con su nombre
+       venezolano también en inglés, como el apamate: no hay nombre comercial
+       en inglés que sea seguro para las tres. «Puy» con Y (él, 15/09/2026). */
+    "zapatero":        { es: "Zapatero",                   en: "Zapatero" },
+    "aceite":          { es: "Aceite",                     en: "Aceite" },
+    "puy":             { es: "Puy",                        en: "Puy" },
+    /* 15/09/2026 · El macetero con Centro Estepario: «hierro», no acero (él). */
+    "hierro":          { es: "Hierro",                     en: "Iron" },
+    /* 15/09/2026 · «TELA» y no «lona»: él lo unificó el mismo día para que
+       sea una sola categoría en todo el catálogo (el parabán, la caja de
+       relojes y la consola). La clave `lona` se quitó; no la usaba nadie más. */
+    "tela":            { es: "Tela",                       en: "Fabric" },
+    /* La madriguera de conejo (él, 15/09/2026). */
+    "pvc-expandido":   { es: "PVC expandido",              en: "Expanded PVC" },
+    /* El elevacho (él, 15/09/2026). Genérico a propósito: existe además
+       `pla3d` para lo impreso en 3D, pero él dijo «plástico». */
+    "plastico":        { es: "Plástico",                   en: "Plastic" },
+    /* 15/09/2026 · las puertas de clóset (él): macizo y chapa, y los dos
+       se nombran aparte porque la pieza lleva los dos.
+       En inglés va «plywood» y NO «veneer»: lo corrigió él el mismo día. Y
+       «Spanish cedar plywood», por lo mismo que la entrada `cedro`. */
+    "chapa-cedro":     { es: "Chapa de cedro",             en: "Spanish cedar plywood" },
+    /* 15/09/2026 · el set de utensilios (él). «Courbaril» es el nombre
+       comercial en inglés del algarrobo de aquí; si resulta ser otra especie,
+       se cambia solo esta línea. */
+    "algarrobo":       { es: "Algarrobo",                  en: "Algarrobo (courbaril)" }
   },
 
   acabado: {
@@ -341,7 +420,43 @@ window.TEXTOS = {
     linaza:     { es: "Aceite de linaza",       en: "Linseed oil" },
     cera:       { es: "Cera",                   en: "Wax" },
     poliuretano:{ es: "Poliuretano",            en: "Polyurethane" },
-    "rubio-monocoat": { es: "Aceite Rubio Monocoat", en: "Rubio Monocoat oil" }
+    "rubio-monocoat": { es: "Aceite Rubio Monocoat", en: "Rubio Monocoat oil" },
+    /* 15/09/2026 · el set de utensilios (él). */
+    tung:       { es: "Aceite de tung",         en: "Tung oil" },
+    /* 15/09/2026 · las puertas de clóset (él). Va aparte de `barnizado`,
+       que es genérico: él dijo alquídico y eso es un barniz distinto. */
+    "barniz-alquidico": { es: "Barniz alquídico", en: "Alkyd varnish" },
+    /* 15/09/2026 · la tumbona (él). Aparte del `barnizado` genérico y
+       del alquídico: el marino es otro barniz, para intemperie. */
+    "barniz-marino":    { es: "Barniz marino",   en: "Marine varnish" }
+  },
+
+  /* ==========================================================
+     USO · para qué es la pieza o en qué área va (él, 15/09/2026).
+     Es un grupo APARTE de `tipo` y de `categoria`:
+       · `tipo`      es qué es la pieza (mesa, repisa…), y lo usa
+                     Exhibición.
+       · `categoria` es cómo se compra (herramienta, insumo…), y lo
+                     usa Herramientas.
+       · `uso`       es para qué sirve, y una pieza puede tener
+                     VARIOS: la tumbona es silla y es playa.
+     ========================================================== */
+  uso: {
+    escritorio:   { es: "Escritorio",   en: "Desk" },
+    cocina:       { es: "Cocina",       en: "Kitchen" },
+    bano:         { es: "Baño",         en: "Bathroom" },
+    repisas:      { es: "Repisas",      en: "Shelving" },
+    mascotas:     { es: "Mascotas",     en: "Pets" },
+    decoracion:   { es: "Decoración",   en: "Decor" },
+    silla:        { es: "Silla",        en: "Chair" },
+    playa:        { es: "Playa",        en: "Beach" },
+    /* 15/09/2026 · «Gancho» y no «Organización» (él): lo pensó como
+       familia, porque cuenta con tener más tipos de gancho.
+       `organizacion` se queda declarada pero ya no la usa ninguna
+       pieza, así que no sale en el desplegable —ese se arma solo con
+       los valores que existen—. */
+    organizacion: { es: "Organización", en: "Organising" },
+    gancho:       { es: "Gancho",       en: "Hook" }
   },
 
   categoria: {

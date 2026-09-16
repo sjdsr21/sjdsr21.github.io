@@ -28,6 +28,10 @@ window.PROTOTIPOS = [
     publicado: true,
     disponibilidad: "stock",
     nombre:  { es: "Base de laptop — alta", en: "Laptop stand — tall" },
+    /* Acabado y uso dictados por él el 15/09/2026. `uso` es lista:
+       una pieza puede servir para varias cosas. Ver TEXTOS.uso. */
+    acabado: ["linaza", "cera"],
+    uso: ["escritorio"],
     resumen: {
       es: "Eleva la pantalla entre 18 y 26 cm, hasta la altura de los ojos. Para trabajar con teclado aparte, sin encorvarte.",
       en: "Raises the screen by 18 to 26 cm, up to eye level. For working with a separate keyboard, without hunching over."
@@ -104,6 +108,8 @@ window.PROTOTIPOS = [
     publicado: true,
     disponibilidad: "stock",
     nombre:  { es: "Base de laptop — baja", en: "Laptop stand — low" },
+    acabado: ["linaza", "cera"],
+    uso: ["escritorio"],
     resumen: {
       es: "Eleva la pantalla entre 11 y 13 cm, inclina el equipo y le da aire por debajo. Puedes seguir escribiendo en el teclado de la laptop.",
       en: "Raises the screen by 11 to 13 cm, tilts the machine and lets it breathe underneath. You can keep typing on the laptop's own keyboard."
@@ -174,6 +180,8 @@ window.PROTOTIPOS = [
     /* En singular y sin el paréntesis de tamaños (él,
        14/08/2026): los tamaños ya se escogen en las opciones. */
     nombre:  { es: "Tabla de picar clásica", en: "Classic cutting board" },
+    acabado: ["tung"],
+    uso: ["cocina"],
     resumen: {
       es: "Veta a lo largo, cantos suavizados y buen espesor. Acabado en aceite de tung, apto para uso alimentario: máxima durabilidad sin meterle a la tabla nada nocivo para la salud. La talla L viene sobre cuatro patas de goma.",
       en: "Long grain, eased edges and generous thickness. Finished in food-safe tung oil: maximum durability without putting anything harmful into the board. The L size comes on four rubber feet."
@@ -275,6 +283,8 @@ window.PROTOTIPOS = [
     disponibilidad: "pedido",
     plazo_semanas: 3,
     nombre:  { es: "Butcher Block L", en: "Butcher Block L" },
+    acabado: ["tung"],
+    uso: ["cocina"],
     resumen: {
       es: "Veta vertical: el cuchillo entra entre las fibras en vez de cortarlas. No marca, no desafila y aguanta años de uso diario. Va sobre cuatro patas de goma, que la despegan del mesón y la dejan agarrada mientras picas.",
       en: "End grain: the knife slips between the fibres instead of cutting them. It doesn't scar, doesn't dull the blade, and takes years of daily use. It sits on four rubber feet that lift it off the counter and keep it from sliding while you chop."
@@ -323,6 +333,10 @@ window.PROTOTIPOS = [
     disponibilidad: "pedido",
     plazo_semanas: 3,
     nombre:  { es: "Butcher Block XL", en: "Butcher Block XL" },
+    /* Mismo acabado y uso que el L: él dijo «el butcher block» y son
+       la misma pieza en dos tamaños. Este sigue sin publicar. */
+    acabado: ["tung"],
+    uso: ["cocina"],
     resumen: {
       /* La misma descripción que el Butcher Block L (él,
          15/08/2026): es la misma construcción, solo cambia el
@@ -350,6 +364,8 @@ window.PROTOTIPOS = [
        pequeño es de dos y el grande de uno, y sin eso no se distinguen
        más que por el tamaño. */
     nombre:  { es: "Comedero pequeño (doble)", en: "Pet feeder — small (double)" },
+    acabado: ["poliuretano"],
+    uso: ["mascotas"],
     resumen: {
       es: "Para gatos o perros pequeños. Levanta los envases del piso, los mantiene en su sitio y mejora la postura de la mascota al comer.",
       en: "For cats or small dogs. Lifts the bowls off the floor, keeps them in place and improves your pet's posture while it eats."
@@ -388,7 +404,11 @@ window.PROTOTIPOS = [
     opciones: [{
       id: "madera",
       etiqueta: { es: "Madera", en: "Wood" },
-      valores: [ { id: "apamate-puy", etiqueta: { es: "Apamate y Puy", en: "Apamate and Puy" } } ]
+      /* «Apamate, Puy» con COMA y no con «y» (él, 15/09/2026). La coma
+         es la marca de que las dos maderas van juntas en la pieza; el
+         punto y coma, la de que hay que elegir una. Ver datosHTML en
+         js/prototipos.js. */
+      valores: [ { id: "apamate-puy", etiqueta: { es: "Apamate, Puy", en: "Apamate, Puy" } } ]
     }]
   },
 
@@ -398,6 +418,8 @@ window.PROTOTIPOS = [
     disponibilidad: "pedido",
     plazo_semanas: 3,
     nombre:  { es: "Comedero grande (individual)", en: "Pet feeder — large (single)" },
+    acabado: ["poliuretano"],
+    uso: ["mascotas"],
     resumen: {
       es: "Para perros grandes. Levanta los envases del piso, los mantiene en su sitio y mejora la postura de la mascota al comer.",
       en: "For large dogs. Lifts the bowls off the floor, keeps them in place and improves your pet's posture while it eats."
@@ -430,6 +452,10 @@ window.PROTOTIPOS = [
        las dos: no lleva `delta`. */
     opcion_visual: "madera",
     opcion_diagrama: "madera",
+    /* Su imagen es el isométrico, un dibujo sobre fondo TRANSPARENTE, y
+       por ahí asomaba el rayado del hueco (él, 15/09/2026: lo quiere
+       liso). Mismo caso y mismo arreglo que la tumbona. */
+    fondo_liso: true,
     imagen: "img/prototipos/comedero-grande-iso.webp",
     imagen_por: {
       saman:   "img/prototipos/comedero-grande-iso.webp",
@@ -461,6 +487,11 @@ window.PROTOTIPOS = [
     disponibilidad: "pedido",
     plazo_semanas: 3,
     nombre:  { es: "Gancho de pared", en: "Wall hook" },
+    acabado: ["linaza", "cera"],
+    /* «Gancho» (él, 15/09/2026). Al principio me dejó el uso a mí y puse
+       «organización»; él lo cambió porque lo piensa como familia: cuenta
+       con tener más tipos de gancho. */
+    uso: ["gancho"],
     resumen: {
       es: "Bloque con gancho retráctil de tres puestos, para ropa o lo que se te ocurra.",
       en: "A block with a three-position retractable hook, for coats or whatever you come up with."
@@ -522,6 +553,10 @@ window.PROTOTIPOS = [
     disponibilidad: "pedido",
     plazo_semanas: 4,
     nombre:  { es: "Tumbona", en: "Lounger" },
+    /* Barniz MARINO, no el alquídico de las puertas ni el genérico. */
+    acabado: ["barniz-marino"],
+    /* Dos usos, y es el ejemplo de por qué `uso` es lista (él). */
+    uso: ["silla", "playa"],
     resumen: {
       /* 15/08/2026 · Descripción nueva: la anterior hablaba de
          listones y drenaje —construcción— y él quería otra cosa.
@@ -539,11 +574,19 @@ window.PROTOTIPOS = [
        entra el brazo de un sofa por la derecha. Mismo criterio que en la
        madriguera de trabajos.js, donde la portada es la foto-4.
        Los nombres de archivo SI respetan su numeracion. */
-    imagen: "img/prototipos/tumbona-2.webp",
-    /* Con fondo: son fotos de ambiente, no recortes. Sin `sin_fondo`, que
-       es para los PNG con transparencia de las bases de laptop. */
+    /* 15/09/2026 · DE PORTADA VA LA RECORTADA (él): la foto 1, la que no
+       tiene fondo. Antes iba la 2 por lo que dice el comentario de arriba
+       —era la única toma limpia de la pieza entera—, y esa pasa ahora al
+       segundo puesto. `sin_fondo` sigue APAGADO, decisión suya del mismo
+       día, así que la recortada se recorta para llenar la tarjeta. */
+    imagen: "img/prototipos/tumbona-1.webp",
+    /* La portada es recortada y tiene transparencia alrededor de la
+       silla: por ahí se veía el rayado del hueco. Con esto el fondo
+       queda liso —negro o blanco según el tema— sin cambiar el
+       encuadre, que es lo que él quería (15/09/2026). */
+    fondo_liso: true,
     galeria: [
-      "img/prototipos/tumbona-1.webp",
+      "img/prototipos/tumbona-2.webp",
       "img/prototipos/tumbona-6.webp",
       "img/prototipos/tumbona-5.webp",
       "img/prototipos/tumbona-3.webp",
@@ -559,6 +602,19 @@ window.PROTOTIPOS = [
        Sin `opcion_visual`: sin `imagen_por` ni `modelo_por` no hace nada
        —el codigo ya cae en "madera" solo— y ponerlo haria creer que hay
        material por variante cuando no lo hay. */
+    /* 15/09/2026 · YA HAY MODELO 3D, y uno POR MADERA: él modeló las dos
+       tumbonas en SketchUp (`Proyectos\Escenografía Morochos\Tumbona
+       Pino.skp` y `Tumbona Teca.skp`) y exportó los .obj con veta, que
+       es el export que conserva la orientación de las texturas. Con
+       `modelo_por` puesto, `opcion_visual` SÍ hace falta: es lo que le
+       dice al visor que al cambiar de madera cambie el modelo.
+       Las fotos siguen siendo todas de pino, como dice el comentario de
+       arriba; lo que cambia por variante es el 3D. */
+    opcion_visual: "madera",
+    modelo_por: {
+      pino: "modelos/tumbona-pino.glb",
+      teca: "modelos/tumbona-teca.glb"
+    },
     opciones: [{
       id: "madera",
       etiqueta: { es: "Madera", en: "Wood" },
@@ -603,17 +659,22 @@ window.PROTOTIPOS = [
     disponibilidad: "pedido",
     plazo_semanas: 4,
     nombre:  { es: "Pack de utensilios", en: "Utensil set" },
+    /* Aceite de tung, el mismo que él dictó para el set en Exhibición. */
+    acabado: ["tung"],
+    uso: ["cocina"],
+    /* 15/09/2026 · YA DIJO LAS MADERAS, «en orden respectivo»: algarrobo,
+       puy, teca y caoba, una por utensilio. El orden se entiende como el de
+       la foto 1 del set, de izquierda a derecha. «Puy» con Y, como en los
+       anillos de trabajos.js. Con esto se cae el `pendiente` que tenía.
+       El acabado es aceite de tung (él, el mismo día). */
     resumen: {
-      es: "Cuatro piezas de cocina en maderas mixtas. Cada una en la especie que mejor le sienta al uso.",
-      en: "Four kitchen pieces in mixed woods. Each one in the species that suits its job best."
+      es: "Cuatro piezas de cocina, cada una en una madera distinta: algarrobo, puy, teca y caoba. Acabadas en aceite de tung.",
+      en: "Four kitchen pieces, each in a different wood: algarrobo, puy, teak and mahogany. Finished in tung oil."
     },
     precio_usd: 100,
     peso: 0.8,               /* RELLENO */
     pack: 4,
-    palabra_pack: { es: "utensilios", en: "utensils" },
-    /* PENDIENTE: él quiere que la descripción diga de qué madera
-       es cada uno de los cuatro. Todavía no lo especificó. */
-    pendiente: "Falta decir de qué madera es cada utensilio."
+    palabra_pack: { es: "utensilios", en: "utensils" }
   },
 
   {
@@ -648,6 +709,8 @@ window.PROTOTIPOS = [
        página son las bases para foto. */
     disponibilidad: "stock",
     nombre:  { es: "Bases para foto", en: "Photo risers" },
+    acabado: ["crudo"],
+    uso: ["decoracion"],
     resumen: {
       es: "Piecitas para montar producto o fotografía de mesa. Se venden por pack.",
       en: "Small blocks for staging product or tabletop photography. Sold in packs."
@@ -762,14 +825,22 @@ window.PROTOTIPOS = [
     publicado: true,
     disponibilidad: "pedido",
     plazo_semanas: 3,
-    nombre:  { es: "Repisa de baño", en: "Bathroom shelf" },
+    /* 15/09/2026 · Pasó de «Repisa de baño» a «REPISA 1.0» (él): no es
+       solo de baño, así que ni el nombre ni el resumen la encierran ahí.
+       El slug sigue siendo `repisa-bano` —es su dirección— y también los
+       nombres de sus archivos de imagen y modelo. */
+    nombre:  { es: "Repisa 1.0", en: "Shelf 1.0" },
     resumen: {
-      es: "Repisa de pared con reborde, para el baño.",
-      en: "A wall shelf with a lip, for the bathroom."
+      es: "Repisa de pared con reborde.",
+      en: "A wall shelf with a lip."
     },
+    acabado: ["poliuretano"],
+    uso: ["repisas"],
     medidas: { es: "50 × 15 × 12 cm", en: "50 × 15 × 12 cm" },
     precio_usd: 50,          /* Él, 06/09/2026 */
     peso: 1.0,               /* RELLENO */
+    /* Isométrico con transparencia: fondo liso, sin rayado (él). */
+    fondo_liso: true,
     imagen: "img/prototipos/repisa-bano-iso.webp",
     galeria: [],
     modelo3d: "modelos/repisa-bano.glb",
@@ -790,6 +861,8 @@ window.PROTOTIPOS = [
     disponibilidad: "pedido",
     plazo_semanas: 3,
     nombre:  { es: "Espejo de baño", en: "Bathroom mirror" },
+    acabado: ["poliuretano"],
+    uso: ["bano"],
     resumen: {
       es: "Espejo con marco de madera maciza.",
       en: "A mirror in a solid wood frame."
@@ -797,6 +870,8 @@ window.PROTOTIPOS = [
     medidas: { es: "52 × 2,5 × 63 cm", en: "52 × 2.5 × 63 cm" },
     precio_usd: 120,          /* Él, 06/09/2026 */
     peso: 4.0,               /* RELLENO */
+    /* Isométrico con transparencia: fondo liso, sin rayado (él). */
+    fondo_liso: true,
     imagen: "img/prototipos/espejo-bano-iso.webp",
     galeria: [],
     modelo3d: "modelos/espejo-bano.glb",
@@ -817,6 +892,8 @@ window.PROTOTIPOS = [
     disponibilidad: "pedido",
     plazo_semanas: 3,
     nombre:  { es: "Toallero", en: "Towel rail" },
+    acabado: ["poliuretano"],
+    uso: ["bano"],
     resumen: {
       es: "Toallero de pared de dos barras, en madera maciza.",
       en: "A two-bar wall towel rail in solid wood."
@@ -824,6 +901,8 @@ window.PROTOTIPOS = [
     medidas: { es: "84 × 15,5 × 13 cm", en: "84 × 15.5 × 13 cm" },
     precio_usd: 90,          /* Él, 06/09/2026 */
     peso: 1.6,               /* RELLENO */
+    /* Isométrico con transparencia: fondo liso, sin rayado (él). */
+    fondo_liso: true,
     imagen: "img/prototipos/toallero-bano-iso.webp",
     galeria: [],
     modelo3d: "modelos/toallero-bano.glb",
@@ -847,6 +926,8 @@ window.PROTOTIPOS = [
     disponibilidad: "pedido",
     plazo_semanas: 3,
     nombre:  { es: "Portarrollo", en: "Toilet roll holder" },
+    acabado: ["poliuretano"],
+    uso: ["bano"],
     resumen: {
       es: "Portarrollo de pared en madera maciza, con el brazo tallado en la propia tabla.",
       en: "A solid wood wall roll holder, its arm carved from the board itself."
@@ -854,6 +935,8 @@ window.PROTOTIPOS = [
     medidas: { es: "34 × 13 × 3 cm", en: "34 × 13 × 3 cm" },
     precio_usd: 30,          /* Él, 06/09/2026 */
     peso: 0.7,               /* RELLENO */
+    /* Isométrico con transparencia: fondo liso, sin rayado (él). */
+    fondo_liso: true,
     imagen: "img/prototipos/porta-rollo-bano-iso.webp",
     galeria: [],
     modelo3d: "modelos/porta-rollo-bano.glb",

@@ -36,6 +36,11 @@
 
   <main class="contenedor">
     <section class="portada">
+      <!-- 15/09/2026 · La barra de vistas, filtros y orden va AQUÍ, en
+           la misma fila que el título, para no gastar una franja
+           entera de alto (él). La pinta js/sitio.js; si este hueco no
+           existiera, la barra cae dentro de #rejilla como antes. -->
+      <div class="portada__barra" id="barra-catalogo"></div>
       <h1 id="titulo"></h1>
       <p class="bajada" id="bajada"></p>
     </section>
@@ -53,6 +58,7 @@
   <script src="datos/trabajos.js"></script>
   <script src="datos/tienda.js"></script>
   <script src="datos/prototipos.js"></script>
+  <script src="datos/busqueda.js"></script>
   <script src="js/sitio.js"></script>
   <!-- al final del todo: mide la pagina YA pintada -->
   <script src="js/escaner.js"></script>
