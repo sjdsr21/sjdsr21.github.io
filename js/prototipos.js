@@ -165,10 +165,11 @@
          estorban y no llevan a ningún sitio. */
       var flechas = fotos.length > 1
         ? '<button type="button" class="pt-flecha pt-flecha--izq" data-paso="-1"' +
-            ' aria-label="' + t("pt_anterior") + '">&#8249;</button>' +
+            ' aria-label="' + t("pt_anterior") + '">' + flecha("izq") + '</button>' +
           '<button type="button" class="pt-flecha pt-flecha--der" data-paso="1"' +
-            ' aria-label="' + t("pt_siguiente") + '">&#8250;</button>' +
-          '<span class="pt-cuenta-fotos">' + (i + 1) + '/' + fotos.length + '</span>'
+            ' aria-label="' + t("pt_siguiente") + '">' + flecha("der") + '</button>' +
+          '<span class="pt-cuenta-fotos" role="img" aria-label="' + (i + 1) + ' / ' + fotos.length + '">' +
+            (window.PA_PUNTOS ? window.PA_PUNTOS.html(fotos.length, i) : "") + '</span>'
         : '';
       visual = '<span class="pt-ficha__hueco pt-ficha__hueco--foto' +
           (p.sin_fondo ? ' pt-ficha__hueco--suelto' : '') +
@@ -331,6 +332,11 @@
   /* Gemelo del de js/sitio.js: los tres iconos ocupan la misma caja,
      de 2 a 22 sobre el lienzo de 24, y el lado del cuadradito se
      calcula a partir del hueco. Si se retoca allá, retocar aquí. */
+  /* Glifo ‹ › + triángulo de teléfono, de sitio.js (16/09/2026). */
+  function flecha(lado) {
+    return window.PA_FLECHA ? window.PA_FLECHA(lado) : (lado === "izq" ? "&#8249;" : "&#8250;");
+  }
+
   function iconoVistaPt(v) {
     var s = "", x, y;
     if (v === "lista") {
@@ -357,8 +363,11 @@
              '" width="' + lado + '" height="' + lado + '"/>';
       }
     }
-    return '<svg viewBox="0 0 24 24" shape-rendering="crispEdges" ' +
-           'aria-hidden="true" focusable="false">' + s + '</svg>';
+    /* Gemelo de iconoVista (sitio.js): dibujo de computadora + el de
+       teléfono (1×1 o 2×2), que sale de sitio.js para no duplicarlo. */
+    return '<svg class="vistas__ico--pc" viewBox="0 0 24 24" shape-rendering="crispEdges" ' +
+           'aria-hidden="true" focusable="false">' + s + '</svg>' +
+           (window.PA_ICONO_VISTA_MOVIL ? window.PA_ICONO_VISTA_MOVIL(n === 5 ? 2 : 1) : "");
   }
 
   function barraPtHTML() {
@@ -724,8 +733,7 @@
            rejilla entera: repintarla perdería el foco del teclado
            y haría parpadear todas las tarjetas. */
         cambiarFoto(ficha.querySelector(".pt-ficha__hueco img"), srcTema(fotos[i]));
-        var cuenta = ficha.querySelector(".pt-cuenta-fotos");
-        if (cuenta) cuenta.textContent = (i + 1) + "/" + fotos.length;
+        if (window.PA_PUNTOS) window.PA_PUNTOS.marcar(ficha.querySelector(".pt-cuenta-fotos"), i);
       });
     });
 
@@ -769,8 +777,7 @@
     fotoActual[slug] = i;
     var img = ficha.querySelector(".pt-ficha__hueco img");
     if (img) cambiarFoto(img, srcTema(fotos[i]));
-    var cuenta = ficha.querySelector(".pt-cuenta-fotos");
-    if (cuenta) cuenta.textContent = (i + 1) + "/" + fotos.length;
+    if (window.PA_PUNTOS) window.PA_PUNTOS.marcar(ficha.querySelector(".pt-cuenta-fotos"), i);
   }
 
   function rotTurno() {
@@ -1196,6 +1203,7 @@
     var lista = medios(sel.p, sel.o);
     if (medioActivo >= lista.length) medioActivo = 0;
     var m = lista[medioActivo] || null;
+    host.setAttribute("data-varios", lista.length > 1 ? "1" : "0");
     /* La firma lleva el src YA RESUELTO POR TEMA (14/09/2026). Con el src
        a secas, al conmutar a modo claro la firma no cambiaba, el
        `if (firma === montado) return` de abajo cortaba, y la imagen
@@ -1541,9 +1549,9 @@
     }
     return true;
   });
-  var entregaSel = "taller";
+  var entregaSel = "definir";
   var estadoSel = "";
-  var pagoSel = "pagomovil";
+  var pagoSel = "definir";
   var codigoPedido = null;
 
   function codigo() {
@@ -1563,7 +1571,7 @@
      peso no cuestan igual. */
   function costoEnvio() {
     var e = entregaActual();
-    if (!e || e.tipo === "gratis") return { min: 0, max: 0 };
+    if (!e || e.tipo === "gratis" || e.tipo === "definir") return { min: 0, max: 0 };
     if (e.tipo === "local") return { min: e.monto_min, max: e.monto_max };
     if (!estadoSel) return null;
     var z = window.ZONAS[window.ESTADOS[estadoSel]];
@@ -1642,13 +1650,14 @@
        manejador, cambiar de método de pago apaga la opción pero
        deja la selección pegada en ella, y el envío sigue
        apareciendo. Ya pasó. */
-    if (pagoSel === "efectivo" && entregaActual() && entregaActual().tipo !== "gratis") entregaSel = "taller";
+    if (pagoSel === "efectivo" && entregaActual() && !/^(gratis|definir)$/.test(entregaActual().tipo)) entregaSel = "taller";
 
     $("#pt-entrega").innerHTML = window.ENTREGAS.map(function (e) {
-      var noEfectivo = pagoSel === "efectivo" && e.tipo !== "gratis";
+      var noEfectivo = pagoSel === "efectivo" && !/^(gratis|definir)$/.test(e.tipo);
 
       var val;
-      if (e.tipo === "gratis") val = t("pt_sin_costo");
+      if (e.tipo === "definir") val = "";
+      else if (e.tipo === "gratis") val = t("pt_sin_costo");
       else if (e.tipo === "local") val = "~" + rango({ min: e.monto_min, max: e.monto_max });
       else if (estadoSel) {
         var z = window.ZONAS[window.ESTADOS[estadoSel]];
@@ -1677,7 +1686,8 @@
   function pintarPago() {
     $("#pt-pago").innerHTML = window.PAGOS.map(function (p) {
       var moneda = p.moneda === "bs" ? t("pt_en_bs")
-                 : p.moneda === "usdt" ? t("pt_en_usdt") : t("pt_en_usd");
+                 : p.moneda === "usdt" ? t("pt_en_usdt")
+                 : p.moneda === "definir" ? "" : t("pt_en_usd");
       return '<button type="button" class="pt-radio' + (pagoSel === p.id ? " sel" : "") + '"' +
              ' data-id="' + p.id + '">' +
         '<span class="pt-radio__punto"></span>' +
@@ -1737,7 +1747,7 @@
     var caja = $("#pt-caja-envio");
     var env = costoEnvio();
 
-    if (!carrito.length || e.tipo === "gratis") {
+    if (!carrito.length || e.tipo === "gratis" || e.tipo === "definir") {
       caja.style.display = "none";
     } else {
       caja.style.display = "block";
@@ -1764,7 +1774,8 @@
     var env = costoEnvio();
     var es = idioma === "es";
 
-    var s = (es ? "Hola! Quiero hacer un pedido 👋" : "Hi! I'd like to place an order 👋") + "\n\n";
+    /* Sin la manito (él, 16/09/2026) y diciendo que viene de la página. */
+    var s = (es ? "Hola! Quiero hacer un pedido desde la página." : "Hi! I'd like to place an order from the website.") + "\n\n";
 
     carrito.forEach(function (l) {
       s += "• " + l.cant + "× " + tx(l.nombre);
@@ -1783,7 +1794,7 @@
     else if (pago.moneda === "usdt") s += " — " + (Math.round(suma * 100) / 100) + " USDT";
     s += "\n" + (es ? "Pago" : "Payment") + ": " + tx(pago.nombre) + "\n";
 
-    if (e.tipo === "gratis") {
+    if (e.tipo === "gratis" || e.tipo === "definir") {
       s += (es ? "Entrega" : "Delivery") + ": " + tx(e.nombre) + "\n";
     } else if (e.tipo === "local") {
       s += (es ? "Entrega" : "Delivery") + ": " + tx(e.nombre) + " (~" + rango(env) + ")\n";
@@ -1927,6 +1938,28 @@
     medioActivo = (medioActivo + salto + lista.length) % lista.length;
     pintarVisual();
   });
+
+  /* Flechas laterales sobre el medio grande del panel (él, 16/09/2026):
+     el mismo triángulo que las de la cuadrícula. Se crean una vez; el
+     deslizar del dedo (sitio.js) las pulsa. */
+  (function () {
+    var host = $("#pt-pn-visual");
+    ["izq", "der"].forEach(function (lado) {
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "pt-visual__flecha pt-visual__flecha--" + lado;
+      b.setAttribute("aria-label", t(lado === "izq" ? "pt_anterior" : "pt_siguiente"));
+      b.innerHTML = flecha(lado);
+      b.addEventListener("click", function () {
+        if (!sel) return;
+        var lista = medios(sel.p, sel.o);
+        if (lista.length < 2) return;
+        medioActivo = (medioActivo + (lado === "izq" ? -1 : 1) + lista.length) % lista.length;
+        pintarVisual();
+      });
+      host.appendChild(b);
+    });
+  })();
 
   $("#pt-estado").addEventListener("change", function (e) {
     estadoSel = e.target.value;

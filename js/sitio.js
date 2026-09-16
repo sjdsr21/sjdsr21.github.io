@@ -424,9 +424,9 @@
 
     if (lista.length > 1) {
       var izq = el("button", { class: "visor-medios__flecha visor-medios__flecha--izq",
-                               type: "button", "aria-label": "Anterior", html: "&#8249;" });
+                               type: "button", "aria-label": "Anterior", html: flechaHTML("izq") });
       var der = el("button", { class: "visor-medios__flecha visor-medios__flecha--der",
-                               type: "button", "aria-label": "Siguiente", html: "&#8250;" });
+                               type: "button", "aria-label": "Siguiente", html: flechaHTML("der") });
       izq.addEventListener("click", function () { mostrar(actual - 1); });
       der.addEventListener("click", function () { mostrar(actual + 1); });
       principal.appendChild(izq);
@@ -628,8 +628,10 @@
 
   function animarBolsa() {
     if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    var destino = $(".bolsa .lupa__icono");
-    if (!destino || !destino.getBoundingClientRect().width) destino = $(".hamburguesa");
+    var destino = $$(".bolsa .lupa__icono").filter(function (x) {
+      return x.getBoundingClientRect().width > 0;
+    })[0];
+    if (!destino) destino = $(".hamburguesa");
     if (!destino || !destino.animate) return;
     bolaEnCamino = true;
     /* Red por si la animación nunca termina (pestaña en segundo
@@ -718,10 +720,20 @@
     lista.innerHTML = "";
     pie.innerHTML = "";
     if (!lineas.length) {
-      lista.appendChild(el("p", { class: "pedido-lateral__vacio", texto: t("pt_vacio") }));
-      if (!document.getElementById("pt-pedido-seccion")) {
-        pie.appendChild(el("a", { class: "pedido-lateral__ir", href: "index.html", texto: t("pedido_ver_catalogo") }));
-      }
+      /* «Todavía no has agregado nada. Ir a prototipos», con el enlace
+         subrayado (él, 16/09/2026). En Prototipos cierra el panel y
+         sube al catálogo sin recargar. */
+      var irPt = el("a", { href: "index.html", texto: t("pedido_ir_prototipos") });
+      irPt.addEventListener("click", function (e) {
+        var destino = document.getElementById("pt-stock");
+        if (!destino) return;
+        e.preventDefault();
+        cerrarPedido(false);
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+      lista.appendChild(el("p", { class: "pedido-lateral__vacio" }, [
+        document.createTextNode(t("pedido_vacio") + " "), irPt
+      ]));
       return;
     }
     lineas.forEach(function (l, i) {
@@ -813,6 +825,113 @@
   window.addEventListener("storage", function (e) { if (e.key === PEDIDO_CLAVE) pintarBolsa(); });
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape") cerrarPedido(true);
+  });
+
+  /* ---------- flechas de los medios ------------------------
+     2026-09-16 · En teléfono las flechas de las tarjetas y del visor
+     son un TRIÁNGULO chato (la misma silueta que ‹ ›, cerrada con su
+     lado vertical), con relleno translúcido para ver la foto detrás y
+     sin recuadro. En computadora siguen siendo el glifo ‹ ›. Cada botón
+     lleva los dos y el CSS enseña uno. */
+  var FLECHA_TRI = {
+    izq: '<svg class="flecha__tri" viewBox="0 0 12 20" aria-hidden="true" focusable="false"><path d="M10 2 2.5 10 10 18Z"/></svg>',
+    der: '<svg class="flecha__tri" viewBox="0 0 12 20" aria-hidden="true" focusable="false"><path d="M2 2 9.5 10 2 18Z"/></svg>'
+  };
+  function flechaHTML(lado) {
+    return '<span class="flecha__glifo">' + (lado === "izq" ? "&#8249;" : "&#8250;") + '</span>' + FLECHA_TRI[lado];
+  }
+  window.PA_FLECHA = flechaHTML;
+
+  /* ---------- los cuadraditos de «qué foto es» --------------
+     2026-09-16 · El contador «2/4» de las tarjetas pasa a ser una fila
+     de cuadraditos centrada en el borde de abajo: uno por foto, el de
+     la foto que se ve más opaco. No se ven siempre: solo con el ratón
+     encima o en la última tarjeta que se tocó (clase `tarjeta-reciente`,
+     que pone el escuchador de más abajo). La clase del contenedor se
+     conserva (.tarjeta__cuenta / .pt-cuenta-fotos). */
+  function puntosHTML(total, i) {
+    var s = "";
+    for (var k = 0; k < total; k++) s += '<i' + (k === i ? ' class="sel"' : '') + '></i>';
+    return s;
+  }
+  function marcarPuntos(caja, i) {
+    if (!caja) return;
+    [].forEach.call(caja.children, function (c, k) { c.classList.toggle("sel", k === i); });
+    caja.setAttribute("aria-label", (i + 1) + " / " + caja.children.length);
+  }
+  window.PA_PUNTOS = { html: puntosHTML, marcar: marcarPuntos };
+
+  /* La última tarjeta tocada (clic o dedo) enseña sus cuadraditos. */
+  function marcarReciente(e) {
+    var t = e.target.closest && e.target.closest(".tarjeta, .pt-ficha");
+    if (!t) return;
+    $$(".tarjeta-reciente").forEach(function (x) { if (x !== t) x.classList.remove("tarjeta-reciente"); });
+    t.classList.add("tarjeta-reciente");
+  }
+  document.addEventListener("click", marcarReciente, true);
+  document.addEventListener("touchstart", marcarReciente, { capture: true, passive: true });
+
+  /* ---------- deslizar con el dedo -------------------------
+     2026-09-16 · En las tarjetas y en las fichas de Prototipos y
+     Exhibición, deslizar de derecha a izquierda pasa al siguiente
+     medio y al revés al anterior. No se reescribe el paso de foto: se
+     PULSA la flecha que ya existe, así el gesto hace exactamente lo
+     mismo que el botón. En el panel de Prototipos, que no tiene
+     flechas, se avisa con el evento `pa:deslizar` (prototipos.js).
+     Sobre el visor 3D no se hace nada: ahí el dedo gira el modelo. */
+  /* 2ª vuelta (16/09/2026): con EVENTOS DE PUNTERO, que valen para el
+     dedo y para el ratón (movil.html se prueba arrastrando con el
+     ratón), y con la tarjeta ENTERA como zona: en Prototipos el dedo
+     cae casi siempre sobre el enlace invisible que cubre la tarjeta,
+     fuera del hueco de la foto. Tras un deslizamiento se anula el clic
+     que viene detrás, para que no se abra la pieza. */
+  var DESLIZABLES = [
+    { caja: ".pt-ficha", izq: ".pt-flecha--izq", der: ".pt-flecha--der" },
+    { caja: ".tarjeta", izq: ".tarjeta__flecha--izq", der: ".tarjeta__flecha--der" },
+    { caja: ".visor-medios__principal", izq: ".visor-medios__flecha--izq", der: ".visor-medios__flecha--der" },
+    { caja: ".pt-visual", izq: ".pt-visual__flecha--izq", der: ".pt-visual__flecha--der" }
+  ];
+  var toque = null, anularClic = false;
+  document.addEventListener("pointerdown", function (e) {
+    toque = null;
+    if (!e.isPrimary || (e.pointerType === "mouse" && e.button !== 0) || !e.target.closest) return;
+    if (e.target.closest("canvas, .visor3d, [data-medio='3d'], .pt-medios, .visor-medios__tiras")) return;
+    for (var k = 0; k < DESLIZABLES.length; k++) {
+      var caja = e.target.closest(DESLIZABLES[k].caja);
+      if (caja) {
+        /* La flecha que se pulse después tiene que existir. */
+        if (!caja.querySelector(DESLIZABLES[k].der)) return;
+        toque = { x: e.clientX, y: e.clientY, caja: caja, d: DESLIZABLES[k] };
+        return;
+      }
+    }
+  }, true);
+  function soltar(e) {
+    if (!toque) return;
+    var t0 = toque; toque = null;
+    var dx = e.clientX - t0.x;
+    var dy = e.clientY - t0.y;
+    /* Sobre todo horizontal y de más de 40 px: un scroll vertical
+       torcido no cuenta como deslizar. */
+    if (Math.abs(dx) < 40 || Math.abs(dx) < Math.abs(dy) * 1.5) return;
+    var b = t0.caja.querySelector(dx < 0 ? t0.d.der : t0.d.izq);
+    if (!b) return;
+    anularClic = true;
+    setTimeout(function () { anularClic = false; }, 350);
+    b.click();
+  }
+  document.addEventListener("pointerup", soltar, true);
+  document.addEventListener("pointercancel", function () { toque = null; }, true);
+  document.addEventListener("click", function (e) {
+    if (!anularClic || !e.isTrusted) return;
+    anularClic = false;
+    e.preventDefault();
+    e.stopPropagation();
+  }, true);
+  /* Que el navegador no arrastre la foto como archivo al deslizar con
+     el ratón. */
+  document.addEventListener("dragstart", function (e) {
+    if (e.target.closest && e.target.closest(".pt-ficha, .tarjeta, .visor-medios__principal, .pt-visual")) e.preventDefault();
   });
 
   /* ---------- buscador ------------------------------------ */
@@ -1112,7 +1231,9 @@
     ["nav_trabajos",     "trabajos.html",   "nav_pre_trabajos",   true],
     ["nav_novedades",    "novedades.html",  "nav_pre_novedades",  false],
     ["nav_sobre",        "taller.html",     "nav_pre_sobre",      false],
-    ["nav_contacto",     "contacto.html",   "nav_pre_contacto",   true]
+    /* false desde el 16/09/2026: en teléfono Contacto se va a la
+       hamburguesa y su sitio en la fila lo ocupa la bolsa. */
+    ["nav_contacto",     "contacto.html",   "nav_pre_contacto",   false]
   ];
 
   function pintarCabecera() {
@@ -1150,6 +1271,20 @@
                 });
               })
     );
+
+    /* 2026-09-16 · En teléfono la bolsa va en la fila de abajo, al
+       lado de Exhibición, solo con su dibujo. Y la lupa sube a la
+       fila del logotipo, a la derecha (se va con él al encoger). */
+    var bolsaMovil = el("button", { class: "lupa bolsa bolsa--rapida", type: "button",
+      "aria-label": t("pedido_abrir") }, [
+      el("span", { class: "lupa__icono", html: iconoPedido() }),
+      el("span", { class: "bolsa__n", hidden: "" })
+    ]);
+    bolsaMovil.addEventListener("click", abrirPedido);
+    rapida.appendChild(bolsaMovil);
+    var lupaMovil = el("button", { class: "lupa lupa--movil", type: "button",
+      "aria-label": t("buscar") }, [el("span", { class: "lupa__icono", html: ICONOS.lupa })]);
+    lupaMovil.addEventListener("click", abrirBuscador);
 
     var menu = el("nav", { class: "menu", id: "menu" },
       visibles.map(function (m) {
@@ -1357,9 +1492,11 @@
            10 KB. El .png sigue en img/marca/ por si acaso. */
         el("img", { class: "marca__perfil", src: "img/marca/perfil.webp", alt: "" })
       ]),
-      hamb,
+      lupaMovil,
       rapida,
       menu,
+      el("div", { class: "cabecera__botones" }, [bolsa, lupa]),
+      hamb,
       /* 2026-08-17 · Lupa + idioma + tema cuelgan de UN envoltorio.
          Antes eran dos items sueltos de la fila.
          En escritorio siguen en la esquina de siempre. En teléfono
@@ -1369,13 +1506,16 @@
          colocar dos cosas y la fila se quedaba con el hueco de una
          de ellas. */
       el("div", { class: "cabecera__utiles" }, [
-        el("div", { class: "cabecera__botones" }, [bolsa, lupa]),
         /* Idioma y tema van dentro de UNA caja. Sueltos eran dos items
            del flex y en móvil la fila los partía en renglones
            distintos: el idioma acababa abajo con el menú y el tema
            arriba con la lupa. Agrupados no se separan nunca. */
+        /* Con título cada grupo (él, 16/09/2026): ahora viven en la
+           hamburguesa también en computadora y hay sitio. */
         el("div", { class: "controles" }, [
+          el("p", { class: "controles__titulo", texto: t("menu_idioma") }),
           el("div", { class: "idioma" }, botones),
+          el("p", { class: "controles__titulo", texto: t("menu_modo") }),
           el("div", { class: "tema" }, botonesTema)
         ])
       ])
@@ -1514,14 +1654,15 @@
     if (fotos.length > 1) {
       marco.appendChild(el("button", {
         class: "tarjeta__flecha tarjeta__flecha--izq", type: "button",
-        "data-paso": "-1", "aria-label": t("pt_anterior"), texto: "‹"
+        "data-paso": "-1", "aria-label": t("pt_anterior"), html: flechaHTML("izq")
       }));
       marco.appendChild(el("button", {
         class: "tarjeta__flecha tarjeta__flecha--der", type: "button",
-        "data-paso": "1", "aria-label": t("pt_siguiente"), texto: "›"
+        "data-paso": "1", "aria-label": t("pt_siguiente"), html: flechaHTML("der")
       }));
       marco.appendChild(el("span", {
-        class: "tarjeta__cuenta", texto: (i + 1) + "/" + fotos.length
+        class: "tarjeta__cuenta", role: "img", "aria-label": (i + 1) + " / " + fotos.length,
+        html: puntosHTML(fotos.length, i)
       }));
     }
 
@@ -1675,9 +1816,25 @@
              '" width="' + lado + '" height="' + lado + '"/>';
       }
     }
-    return '<svg viewBox="0 0 24 24" shape-rendering="crispEdges" ' +
+    return '<svg class="vistas__ico--pc" viewBox="0 0 24 24" shape-rendering="crispEdges" ' +
+           'aria-hidden="true" focusable="false">' + s + '</svg>' +
+           iconoVistaMovil(n === 5 ? 2 : 1);
+  }
+
+  /* EN TELÉFONO (él, 16/09/2026) la cuadrícula de tres es de UNA
+     columna y la de cinco es de DOS, así que sus botones dibujan eso:
+     un cuadrado solo y una cuadrícula de 2×2. Van en el mismo botón que
+     el dibujo de computadora y el CSS enseña uno u otro. Enteros sobre
+     24, como los otros: 1×1 = lado 20; 2×2 = lado 11 y paso 13. */
+  function iconoVistaMovil(n) {
+    var s = "", x, y;
+    if (n === 1) s = '<rect x="2" y="2" width="20" height="20"/>';
+    else for (y = 0; y < 2; y++) for (x = 0; x < 2; x++)
+      s += '<rect x="' + (x * 13) + '" y="' + (y * 13) + '" width="11" height="11"/>';
+    return '<svg class="vistas__ico--movil" viewBox="0 0 24 24" shape-rendering="crispEdges" ' +
            'aria-hidden="true" focusable="false">' + s + '</svg>';
   }
+  window.PA_ICONO_VISTA_MOVIL = iconoVistaMovil;
 
   function barraVistas(actual) {
     var caja = el("div", { class: "vistas", role: "group",
@@ -2267,8 +2424,7 @@
 
     var img = tarjeta.querySelector(".tarjeta__marco img");
     if (img) cambiarFoto(img, fotos[i]);
-    var cuenta = tarjeta.querySelector(".tarjeta__cuenta");
-    if (cuenta) cuenta.textContent = (i + 1) + "/" + fotos.length;
+    marcarPuntos(tarjeta.querySelector(".tarjeta__cuenta"), i);
   });
 
   /* ============================================================
@@ -2312,8 +2468,7 @@
     fotoTarjeta[slug] = i;
     var img = tarjeta.querySelector(".tarjeta__marco img");
     if (img) cambiarFoto(img, fotos[i]);
-    var cuenta = tarjeta.querySelector(".tarjeta__cuenta");
-    if (cuenta) cuenta.textContent = (i + 1) + "/" + fotos.length;
+    marcarPuntos(tarjeta.querySelector(".tarjeta__cuenta"), i);
   }
 
   function rotTurno() {
@@ -2613,6 +2768,13 @@
      Si la pieza que se está viendo no está en la lista —se llegó
      por un enlace directo a algo sin publicar, con ?borradores=1—
      no hay anterior ni siguiente, y queda solo el del medio. */
+  /* Triángulos EQUILÁTEROS para pasar de pieza (él, 16/09/2026), en
+     lugar de las flechas ← →. Lado 20, altura ≈ 17,3. */
+  var TRIANGULO_NAV = {
+    "←": '<svg viewBox="0 0 18 20" focusable="false"><path d="M0.7 10 18 0v20z"/></svg>',
+    "→": '<svg viewBox="0 0 18 20" focusable="false"><path d="M17.3 10 0 0v20z"/></svg>'
+  };
+
   function navegarPiezas(w) {
     /* En el orden barajado que se vio en el catálogo (ordenGuardado).
        Si se llegó sin pasar por él —enlace directo—, en el del archivo. */
@@ -2644,7 +2806,7 @@
         title: etiqueta + ": " + tx(pieza.titulo),
         "aria-label": etiqueta + ": " + tx(pieza.titulo)
       }, [
-        el("span", { "aria-hidden": "true", texto: flecha })
+        el("span", { class: "navpieza__tri", "aria-hidden": "true", html: TRIANGULO_NAV[flecha] })
       ]);
 
       /* Se deja una marca para que la página que viene entre con
@@ -2723,9 +2885,11 @@
        exactamente donde estaban: arriba de la columna derecha. */
     var navPiezas = navegarPiezas(w);
 
-    var datos = el("div", { class: "ficha__datos" }, [
-      el("h1", { texto: tx(w.titulo) })
-    ]);
+    /* El título va en su propia caja (él, 16/09/2026): en teléfono sale
+       JUSTO ENCIMA de las fotos; en computadora sigue a la derecha,
+       encima de los datos. Lo reparte la rejilla de .ficha. */
+    var titulo = el("div", { class: "ficha__titulo" }, [el("h1", { texto: tx(w.titulo) })]);
+    var datos = el("div", { class: "ficha__datos" });
 
     if (tx(w.resumen)) datos.appendChild(el("p", { class: "bajada", texto: tx(w.resumen) }));
 
@@ -2779,7 +2943,7 @@
       ])
     ]));
 
-    host.appendChild(el("div", { class: "ficha" }, [navPiezas, medios, datos]));
+    host.appendChild(el("div", { class: "ficha ficha--titulo" }, [navPiezas, titulo, medios, datos]));
     revelar(host, ".ficha__medios, .ficha__datos", 120);
   };
 

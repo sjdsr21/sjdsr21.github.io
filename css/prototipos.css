@@ -186,15 +186,8 @@
   .pt-fila--grande .n { font-size: 1.35rem; }
 }
 
-/* El contador de fotos, abajo a la derecha del recuadro. */
-.pt-cuenta-fotos {
-  position: absolute; right: .4rem; bottom: .4rem; z-index: 2;
-  font-size: 0.75rem; letter-spacing: .08em;
-  padding: .12rem .34rem;
-  background: color-mix(in srgb, var(--papel) 72%, transparent);
-  color: var(--apagado);
-  pointer-events: none;
-}
+/* El contador de fotos: desde el 16/09/2026 son cuadraditos centrados
+   abajo; su estilo vive en css/estilo.css, junto al de Exhibición. */
 /* Más compacto: relleno de 1rem a .8rem y el resumen más chico. */
 .pt-ficha__cuerpo { padding: .8rem .8rem .9rem; display: flex; flex-direction: column; gap: .35rem; flex: 1; }
 .pt-ficha h3 { font-size: 1.0625rem; }
@@ -211,6 +204,13 @@
 .pt-estado--hay    { color: var(--tinta);  border-color: var(--apagado); }
 .pt-estado--poco   { color: var(--realce); border-color: var(--realce); }
 .pt-estado--pedido { color: var(--madera-texto); border-color: var(--madera-texto); }
+/* EN LA TARJETA (él, 16/09/2026): «2 disponibles» y «~3 semanas» en
+   minúsculas y SIN marco — con el recuadro parecían botones y no lo
+   son. Se quedan su color (tinta, siena o madera) y su tamaño. */
+.pt-ficha .pt-estado {
+  text-transform: none; letter-spacing: .02em;
+  border: 0; padding: .2rem 0;
+}
 
 /* ============================================================
    LAS TRES VISTAS DEL CATÁLOGO (15/09/2026, pedido suyo)
@@ -867,3 +867,63 @@ video.pt-visual__foto {
 }
 /* La columna necesita ser el ancla de esa posición absoluta. */
 .pt-col { position: relative; }
+
+/* TELÉFONO (él, 16/09/2026): en la cuadrícula no va la descripción
+   (en la lista sí), y las flechas de la foto son el triángulo
+   translúcido sin recuadro, como en Exhibición (ver estilo.css). Aquí
+   el triángulo toma el color del texto, porque las fotos de Prototipos
+   suelen ir sin fondo sobre el papel. */
+@media (max-width: 560px) {
+  .pt-vista--tres .pt-ficha__res,
+  .pt-vista--cinco .pt-ficha__res { display: none; }
+}
+@media (max-width: 780px) {
+  .pt-flecha { background: none; backdrop-filter: none; }
+  .pt-flecha:hover { background: none; }
+  .pt-flecha .flecha__tri { filter: drop-shadow(0 0 2px var(--papel)); }
+}
+/* Cuadraditos en Prototipos: en el tono del texto, porque las fotos
+   suelen ir sin fondo sobre el papel. */
+.pt-cuenta-fotos i {
+  background: color-mix(in srgb, var(--tinta) 28%, transparent);
+  box-shadow: none;
+}
+.pt-cuenta-fotos i.sel { background: var(--tinta); }
+
+/* Flechas del medio grande del panel (16/09/2026). Misma forma que las
+   de la tarjeta; solo si hay más de un medio. A ALTURA FIJA: la mitad
+   del ANCHO del recuadro (lo que sería el centro de una imagen
+   cuadrada), para que no salten cuando cambia la proporción. */
+.pt-visual { container-type: inline-size; }
+.pt-visual__flecha {
+  position: absolute; top: 50cqw; transform: translateY(-50%); z-index: 3;
+  width: 44px; height: 44px; display: none; place-items: center;
+  border: 0; padding: 0; cursor: pointer;
+  background: color-mix(in srgb, var(--papel) 72%, transparent);
+  color: var(--tinta);
+}
+.pt-visual[data-varios="1"] .pt-visual__flecha { display: grid; }
+.pt-visual[data-medio="3d"] .pt-visual__flecha { top: auto; bottom: .5rem; transform: none; }
+.pt-visual__flecha--izq { left: 0; }
+.pt-visual__flecha--der { right: 0; }
+@media (max-width: 780px) {
+  .pt-visual__flecha { background: none; }
+  .pt-visual__flecha .flecha__tri { filter: drop-shadow(0 0 2px var(--papel)); }
+}
+
+/* TELÉFONO, «Tu pedido» (él, 16/09/2026)
+   - La tasa y la fecha dejan de flotar sobre el subtotal: van en su
+     propio renglón, arriba.
+   - Cada pieza: el texto a lo ancho arriba; cantidad, precio y el
+     «−» de quitar en una fila al pie del recuadro. */
+@media (max-width: 780px) {
+  .pt-tasa { position: static; display: block; max-width: none; margin-bottom: .6rem; }
+  .pt-linea { flex-wrap: wrap; row-gap: .6rem; }
+  .pt-linea__desc { flex: 1 0 100%; }
+  .pt-linea__mon { margin-left: auto; }
+}
+/* La descripción vuelve en teléfono, pero SOLO en la vista de una
+   pieza por fila (1×1). */
+@media (max-width: 560px) {
+  .pt-vista--tres .pt-ficha__res { display: block; }
+}

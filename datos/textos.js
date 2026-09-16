@@ -66,7 +66,7 @@ window.TEXTOS = {
   },
 
   pt_cantidad:  { es: "Cantidad", en: "Quantity" },
-  pt_cant_packs:{ es: "Cantidad de packs", en: "Number of packs" },
+  pt_cant_packs:{ es: "Cantidad de paquetes", en: "Number of packs" },
   pt_en_total:  { es: "({n} {cosa} en total)", en: "({n} {cosa} in total)" },
   /* 06/09/2026 · Se alargó a propósito, para que diga lo mismo que
      `pt_sobre_stock`: que SÍ se puede pedir, que lleva unas semanas y
@@ -100,15 +100,21 @@ window.TEXTOS = {
   pt_tu_pedido: { es: "Tu pedido", en: "Your order" },
   /* La bolsa de la cabecera y su panel lateral (16/09/2026). */
   pedido_abrir:  { es: "Ver tu pedido", en: "View your order" },
+  /* Títulos de los grupos dentro de la hamburguesa (16/09/2026). */
+  menu_idioma:   { es: "Idioma", en: "Language" },
+  menu_modo:     { es: "Modo", en: "Mode" },
   pedido_cerrar: { es: "Cerrar", en: "Close" },
   pedido_restar: { es: "Quitar una", en: "Remove one" },
   pedido_ir:     { es: "Ir al pedido y concretar", en: "Go to order and check out" },
   pedido_ver_catalogo: { es: "Ver Prototipos", en: "See Prototypes" },
   pedido_guardado: { es: "Se guarda en este navegador durante una semana.",
                      en: "Saved in this browser for one week." },
-  pt_pedido_bajada: { es: "Arma aquí lo que quieres. Nada se cobra en esta página: al final se abre WhatsApp con el pedido ya escrito.",
-                  en: "Build what you want here. Nothing is charged on this page: at the end WhatsApp opens with the order already written." },
-  pt_vacio:     { es: "Todavía no has agregado nada.", en: "Nothing added yet." },
+  pt_pedido_bajada: { es: "Nada se cobra en esta página: al final se abre WhatsApp con el pedido ya escrito.",
+                  en: "Nothing is charged on this page: at the end WhatsApp opens with the order already written." },
+  pt_vacio:     { es: "(Todavía no hay productos en el pedido)", en: "(There are no products in the order yet)" },
+  /* El del panel de la bolsa, con su enlace a Prototipos (16/09/2026). */
+  pedido_vacio: { es: "Todavía no has agregado nada.", en: "Nothing added yet." },
+  pedido_ir_prototipos: { es: "Ir a prototipos", en: "Go to prototypes" },
   pt_quitar:    { es: "quitar", en: "remove" },
   pt_como_recibes: { es: "¿Cómo lo recibes?", en: "How do you get it?" },
   pt_como_pagas:{ es: "¿Cómo pagas?", en: "How do you pay?" },
@@ -120,8 +126,8 @@ window.TEXTOS = {
   pt_no_efectivo: { es: "No aplica pagando en efectivo", en: "Not available when paying cash" },
   /* pt_muy_pesado salió el 12/08/2026: el delivery ya no está
      limitado a piezas pequeñas, así que no hay nada que avisar. */
-  pt_datos_wa:  { es: "Los datos de la cuenta te los paso por WhatsApp cuando confirmemos. No van en la página.",
-                  en: "I send you the account details over WhatsApp once we confirm. They don't live on this page." },
+  pt_datos_wa:  { es: "Los datos de la cuenta se envían al confirmar. No van en la página.",
+                  en: "Account details are sent once we confirm. They're not on this page." },
   pt_en_bs:     { es: "en bolívares", en: "in bolívares" },
   pt_en_usd:    { es: "en dólares", en: "in US dollars" },
   pt_en_usdt:   { es: "en USDT", en: "in USDT" },
@@ -135,11 +141,11 @@ window.TEXTOS = {
   pt_envio_nota:{ es: "Aproximado. Lo cobra {a} al retirarlo, no yo — no entra en el total de arriba. {kg} kg.",
                   en: "Approximate. {a} charges it on collection, not me — it's not part of the total above. {kg} kg." },
   pt_envio_local: { es: "Aproximado, se confirma al coordinar.", en: "Approximate, confirmed when we arrange it." },
-  pt_me_llega:  { es: "Lo que me va a llegar", en: "What reaches me" },
-  pt_previa_vacia: { es: "El mensaje se arma solo cuando agregues algo.", en: "The message builds itself once you add something." },
+  pt_me_llega:  { es: "Lo que vas a enviar", en: "What you'll send" },
+  pt_previa_vacia: { es: "(El mensaje se arma solo cuando agregues algo.)", en: "(The message builds itself once you add something.)" },
   pt_pedir:     { es: "Hacer pedido por WhatsApp", en: "Order on WhatsApp" },
-  pt_pedir_nota:{ es: "Se abre el chat con todo escrito. Todavía no compras nada — confirmamos disponibilidad y cerramos ahí.",
-                  en: "The chat opens with everything written out. You're not buying yet — we confirm availability and close it there." },
+  pt_pedir_nota:{ es: "Se abre el chat con todo escrito — confirmamos disponibilidad y concretamos ahí.",
+                  en: "The chat opens with everything written out — we confirm availability and close it there." },
   pt_sin_wa:    { es: "Falta configurar el número de WhatsApp en datos/marca.js. Mientras tanto, escríbeme por Instagram.",
                   en: "The WhatsApp number isn't set in datos/marca.js yet. In the meantime, message me on Instagram." },
   pt_tasa_bcv:  { es: "BCV {v} Bs/USD", en: "BCV {v} Bs/USD" },

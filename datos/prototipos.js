@@ -553,8 +553,8 @@ window.PROTOTIPOS = [
     disponibilidad: "pedido",
     plazo_semanas: 4,
     nombre:  { es: "Tumbona", en: "Lounger" },
-    /* Barniz MARINO, no el alquídico de las puertas ni el genérico. */
-    acabado: ["barniz-marino"],
+    /* Aceite de tung desde el 16/09/2026 (él). Antes, barniz marino. */
+    acabado: ["tung"],
     /* Dos usos, y es el ejemplo de por qué `uso` es lista (él). */
     uso: ["silla", "playa"],
     resumen: {
@@ -708,11 +708,11 @@ window.PROTOTIPOS = [
        llama "Bases Boda" (de ahí sale el modelo), pero en la
        página son las bases para foto. */
     disponibilidad: "stock",
-    nombre:  { es: "Bases para foto", en: "Photo risers" },
+    nombre:  { es: "Bases para foto (paquete)", en: "Photo risers (pack)" },
     acabado: ["crudo"],
     uso: ["decoracion"],
     resumen: {
-      es: "Piecitas para montar producto o fotografía de mesa. Se venden por pack.",
+      es: "Piecitas para montar producto o fotografía de mesa. Se venden por paquete.",
       en: "Small blocks for staging product or tabletop photography. Sold in packs."
     },
     peso_por_pack: { p5: 0.35, p20: 1.3 },   /* RELLENO */
@@ -780,12 +780,12 @@ window.PROTOTIPOS = [
 
     opciones: [{
       id: "pack",
-      etiqueta: { es: "Tamaño del pack", en: "Pack size" },
+      etiqueta: { es: "Tamaño del paquete", en: "Pack size" },
       valores: [
         /* STOCK DE RELLENO, como el del resto. */
         /* El stock ya no vive aquí sino en `stock_matriz`. */
-        { id: "p5",  etiqueta: { es: "Pack de 5",  en: "Pack of 5" },  precio: 5,  unidades: 5 },
-        { id: "p20", etiqueta: { es: "Pack de 20", en: "Pack of 20" }, precio: 15, unidades: 20 }
+        { id: "p5",  etiqueta: { es: "Paquete de 5",  en: "Pack of 5" },  precio: 5,  unidades: 5 },
+        { id: "p20", etiqueta: { es: "Paquete de 20", en: "Pack of 20" }, precio: 15, unidades: 20 }
       ]
     }, {
       /* Mismo precio en las dos maderas (él, 14/08/2026), así que

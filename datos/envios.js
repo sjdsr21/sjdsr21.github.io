@@ -19,15 +19,17 @@
    "Finanzas Taller.xlsx", y es una decisión suya, no el spread
    real (que el 11/08/2026 estaba en 0,8776).
 
-   ACTUALIZAR ESTO: Herramientas\Finanzas\Actualizar-Tasas.ps1
-   ya trae bcv y paralelo de la API. Falta que además escriba
-   este bloque. Mientras tanto se edita a mano.
+   LA TASA BCV SE ACTUALIZA SOLA (desde el 16/09/2026): cada
+   mañana la tarea «Prototipo Ago - Tasa sitio» corre
+   Herramientas\Mantenimiento\Actualizar-Tasa-Sitio.ps1, que
+   escribe `bcv` y `fecha` y los publica. `paralelo` no lo usa la
+   página y ya no se actualiza.
    ------------------------------------------------------------ */
 window.TASAS = {
-  bcv: 761.2167,               /* ve.dolarapi.com → oficial.promedio */
+  bcv: 846.5131,               /* ve.dolarapi.com → oficial.promedio */
   paralelo: 863.96439,         /* Binance P2P, mediana de 20 ofertas */
   relacion_efectiva: 0.8,      /* factor manual suyo */
-  fecha: "11/08/2026"
+  fecha: "16/09/2026"
 };
 
 /* ------------------------------------------------------------
@@ -80,6 +82,12 @@ window.ESTADOS = {
 };
 
 window.ENTREGAS = [
+  /* «Por definir» (él, 16/09/2026): PRIMERA y marcada por defecto, para
+     que el cliente escriba sin comprometerse todavía con un envío. */
+  { id: "definir", tipo: "definir",
+    nombre:  { es: "Por definir", en: "To be decided" },
+    detalle: { es: "Lo acordamos en el chat", en: "We'll agree on it in the chat" } },
+
   { id: "taller", tipo: "gratis",
     nombre:  { es: "Retiro en el taller", en: "Pick up at the shop" },
     /* El Placer, en Caracas. La dirección exacta se pasa por
@@ -110,6 +118,10 @@ window.ENTREGAS = [
    confirmar. Una página pública con el pago móvil es un regalo
    para quien quiera suplantarlo. */
 window.PAGOS = [
+  /* «Por definir» (él, 16/09/2026): primera y marcada por defecto. */
+  { id: "definir", moneda: "definir",
+    nombre: { es: "Por definir", en: "To be decided" } },
+
   { id: "pagomovil", moneda: "bs",
     nombre: { es: "Pago Móvil", en: "Pago Móvil" } },
 
@@ -126,6 +138,6 @@ window.PAGOS = [
     nombre: { es: "Efectivo", en: "Cash" },
     /* El efectivo obliga a entrega personal: al escogerlo se
        apagan las encomiendas. */
-    condicion: { es: "Solo con entrega personal, a coordinar conmigo.",
-                 en: "In-person handover only, arranged with me." } }
+    condicion: { es: "Solo con entrega personal, a coordinar.",
+                 en: "In-person handover only, to be arranged." } }
 ];

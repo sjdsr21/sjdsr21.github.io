@@ -3009,3 +3009,248 @@ h1 { font-size: clamp(1.75rem, 3.6vw, 2.76rem); }
 .boton__flecha { display: inline-block; transition: transform .25s var(--curva); }
 .boton--flecha:hover .boton__flecha { transform: translate(2px, -2px); }
 @media (prefers-reduced-motion: reduce) { .boton__flecha { transition: none; } }
+
+/* ============================================================
+   TELÉFONO (él, 16/09/2026)
+   - Botones de vista: 1×1 y 2×2 en vez de 3×3 y 5×5 (hasta 560 px,
+     que es donde la cuadrícula pasa a 1 y 2 columnas).
+   - Flechas de las fotos: sin recuadro, triángulo translúcido algo
+     más grande que el glifo ‹ ›. Blanco con sombra, porque van sobre
+     la foto.
+   - Deslizar con el dedo: el navegador no debe usar el gesto
+     horizontal para otra cosa en esas cajas.
+   ============================================================ */
+.vistas__ico--movil { display: none; }
+@media (max-width: 560px) {
+  .vistas__btn .vistas__ico--pc { display: none; }
+  .vistas__btn .vistas__ico--movil { display: block; }
+}
+
+/* FLECHAS = TRIÁNGULO SÓLIDO en teléfono Y en computadora (él,
+   16/09/2026, 2ª vuelta): relleno completo, del tamaño de la flecha ‹ ›
+   de antes (la ‹ medía ~6×8 px; el triángulo, 8×13). En computadora
+   conservan su velo; en teléfono van sin recuadro y con sombra. */
+.flecha__glifo { display: none; }
+.flecha__tri { display: block; width: 8px; height: 13px; margin: auto; fill: currentColor; }
+@media (max-width: 780px) {
+  .tarjeta__flecha, .visor-medios__flecha {
+    background: none; border: 0; backdrop-filter: none;
+  }
+  .tarjeta__flecha .flecha__tri,
+  .visor-medios__flecha .flecha__tri { filter: drop-shadow(0 0 2px rgba(0, 0, 0, .6)); }
+  .visor-medios__flecha:hover { transform: translateY(-50%); }
+}
+
+/* Los cuadraditos de «qué foto es» (ver puntosHTML en sitio.js).
+   Ocultos salvo con el ratón encima o en la última tarjeta tocada. */
+.tarjeta__cuenta, .pt-cuenta-fotos {
+  position: absolute; left: 50%; right: auto; bottom: .5rem; z-index: 2;
+  transform: translateX(-50%);
+  display: flex; gap: 4px; padding: 0; background: none;
+  pointer-events: none; opacity: 0; transition: opacity .2s var(--curva-suave);
+}
+.tarjeta__cuenta i, .pt-cuenta-fotos i {
+  display: block; width: 6px; height: 6px;
+  background: rgba(255, 255, 255, .4);
+  box-shadow: 0 0 2px rgba(0, 0, 0, .45);
+}
+.tarjeta__cuenta i.sel { background: rgba(255, 255, 255, .95); }
+.tarjeta:hover .tarjeta__cuenta, .tarjeta-reciente .tarjeta__cuenta,
+.pt-ficha:hover .pt-cuenta-fotos, .pt-ficha.tarjeta-reciente .pt-cuenta-fotos { opacity: 1; }
+@media (max-width: 780px) { .tarjeta__cuenta { font-size: inherit; } }
+
+.pt-ficha__hueco, .tarjeta, .visor-medios__principal, .pt-visual__lienzo {
+  touch-action: pan-y pinch-zoom;
+}
+
+/* Introducción de El taller en texto JUSTIFICADO (él, 16/09/2026). La
+   partición de palabras (`hyphens`) evita los huecos grandes entre
+   palabras que deja el justificado en columnas estrechas; usa el
+   idioma de <html>. La firma sigue alineada a la derecha. */
+.intro-taller__texto p:not(.firma) { text-align: justify; hyphens: auto; }
+
+/* El resto de El taller también JUSTIFICADO (él, 16/09/2026): los pasos
+   del encargo, la entrada y las notas de la propuesta, los materiales y
+   las maderas. Los títulos en negrita de cada punto no se estiran:
+   son de una sola línea. */
+#encargo .pasos li,
+#propuesta > .prosa,
+.tramo__nota span,
+#materiales .lista-marcas span,
+#maderas > p,
+#maderas .maderas span { text-align: justify; hyphens: auto; }
+
+/* Flechas de la ficha de Exhibición A ALTURA FIJA (él, 16/09/2026): la
+   mitad del ANCHO del visor, que es donde caen con una foto cuadrada,
+   pase lo que pase con la proporción de la foto que se ve. */
+.visor-medios__principal { container-type: inline-size; }
+.visor-medios__flecha { top: 50cqw; }
+.pt-ficha, .tarjeta img, .pt-ficha img { -webkit-user-drag: none; }
+.pt-ficha, .pt-visual { touch-action: pan-y pinch-zoom; }
+
+/* FICHA DE EXHIBICIÓN (él, 16/09/2026)
+   - El título en su propia caja: a la derecha en computadora, JUSTO
+     ENCIMA de las fotos en teléfono.
+   - Botones de anterior / volver / siguiente: minúsculas, SIN marco,
+     texto centrado y triángulos equiláteros medianos. */
+.ficha--titulo {
+  grid-template-areas: "medios nav" "medios titulo" "medios datos";
+  grid-template-rows: auto auto 1fr;
+}
+.ficha > .ficha__titulo { grid-area: titulo; }
+.ficha__titulo h1 { font-size: clamp(1.75rem, 3.6vw, 2.76rem); margin-bottom: .8rem; }
+@media (max-width: 880px) {
+  .ficha--titulo { grid-template-areas: "nav" "titulo" "medios" "datos"; row-gap: 1rem; }
+  .ficha__titulo h1 { margin-bottom: 0; }
+}
+
+.navpieza .volver {
+  border: 0; text-transform: lowercase; letter-spacing: .02em;
+  text-align: center; background: none;
+}
+.navpieza .volver:hover, .navpieza .volver:focus-visible {
+  background: var(--caja); color: var(--tinta);
+}
+.navpieza__antes, .navpieza__luego { margin: 0; }
+.navpieza__tri { display: grid; place-items: center; }
+.navpieza__tri svg { width: 15px; height: 17px; fill: currentColor; }
+
+/* ============================================================
+   ENCABEZADO, 3ª VUELTA (él, 16/09/2026)
+   Computadora:
+     [logo] [secciones] ····[bolsa][lupa]···· [☰]
+     El ☰ abre un desplegable a la derecha con IDIOMA y MODO, cada
+     uno con su título, en el mismo formato que en teléfono (nombre
+     completo y palabra debajo del dibujo), todo en minúsculas.
+   Teléfono:
+     [logo ··················· lupa]   ← se pliega entera al bajar
+     [Prototipos][Exhibición][bolsa][☰]
+     Sin filetes entre botones: solo la línea de abajo del
+     encabezado. Dentro del ☰: Novedades · El taller · Contacto en
+     una fila, luego idioma y luego modo.
+   ============================================================ */
+.cabecera__fila { position: relative; }
+.hamburguesa {
+  display: grid; place-items: center; order: 9;
+  width: var(--alto-control); height: var(--alto-control); padding: 0;
+  background: none; border: 0; color: var(--barra-suave); cursor: pointer;
+  font-size: 1.35rem; line-height: 1; margin-left: 0;
+  transition: color .22s var(--curva-suave);
+}
+.hamburguesa:hover, .hamburguesa[aria-expanded="true"] { color: var(--barra-tinta); }
+.cabecera__botones { order: 8; margin: 0 auto; }
+.lupa--movil { display: none; }
+.bolsa--rapida { display: none; }
+
+/* El desplegable de idioma y modo. */
+.controles { flex-direction: column; align-items: stretch; gap: .35rem; }
+.controles__titulo {
+  margin: .4rem 0 0; font-size: .75rem; letter-spacing: .06em;
+  text-transform: lowercase; color: var(--barra-suave);
+}
+.controles__titulo:first-child { margin-top: 0; }
+.cabecera__utiles .ctrl__corto { display: none; }
+.cabecera__utiles .ctrl__largo { display: inline; }
+.cabecera__utiles .idioma, .cabecera__utiles .tema { height: auto; margin-left: 0; }
+.cabecera__utiles .idioma { display: grid; grid-template-columns: 1fr 1fr; }
+.cabecera__utiles .tema   { display: grid; grid-template-columns: 1fr 1fr 1fr; }
+.cabecera__utiles .idioma button,
+.cabecera__utiles .tema button,
+.cabecera__utiles .tema button.tema__bicho,
+.cabecera__utiles .tema__auto {
+  width: auto; min-height: 44px; padding: .45rem .3rem !important;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: .2rem; font-size: .8125rem !important; font-weight: 400; letter-spacing: .01em;
+  text-transform: lowercase; position: static;
+}
+.cabecera__utiles .tema__bicho .tema__icono,
+.cabecera__utiles .tema__icono, .cabecera__utiles .tema__icono--movil {
+  position: static; display: grid; place-items: center; inset: auto;
+}
+.cabecera__utiles .tema .tema__bicho .tema__icono svg { display: block; width: 24px; height: 24px; }
+.cabecera__utiles .tema__icono--movil svg {
+  width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.8;
+}
+
+@media (min-width: 1061px) {
+  .cabecera__utiles {
+    display: none; position: absolute; top: 100%; right: var(--canal); z-index: 5;
+    width: 300px; padding: 1rem;
+    background: var(--barra); border: 1px solid var(--barra-linea);
+    box-shadow: 0 18px 40px -18px rgba(0, 0, 0, .5);
+  }
+  .cabecera--abierta .cabecera__utiles { display: block; }
+  .menu { margin-left: 2rem; }
+}
+@media (max-width: 1060px) {
+  .hamburguesa { margin-left: 0; }
+  .cabecera__botones { order: 3; margin-left: auto; margin-right: 0; }
+  .hamburguesa { order: 4; }
+  .menu { order: 5; }
+  .cabecera__utiles { order: 6; width: 100%; display: none; padding-bottom: .6rem; }
+  .cabecera--abierta .cabecera__utiles { display: block; }
+}
+
+@media (max-width: 780px) {
+  /* fila 1: logo + lupa */
+  .marca { width: auto; flex: 1 1 auto; order: 1; }
+  .lupa--movil {
+    display: grid; order: 2; flex: none;
+    width: 44px; height: 44px; border: 0; background: none;
+    transition: height .28s var(--curva), opacity .2s var(--curva);
+  }
+  .lupa--movil:hover { background: none; color: var(--barra-tinta); }
+  .cabecera.encogida .lupa--movil { height: 0; opacity: 0; overflow: hidden; pointer-events: none; }
+  /* fila 2: Prototipos · Exhibición · bolsa · ☰ */
+  .cabecera__botones { display: none; }
+  .barra-rapida { order: 3; flex: 1 0 calc(100% - 44px - .7rem); border-top: 0; }
+  .barra-rapida__a { border-left: 0; }
+  .bolsa--rapida {
+    display: grid; flex: none; width: 44px; min-height: 44px; height: auto;
+    border: 0; background: none; color: var(--barra-suave);
+  }
+  .bolsa--rapida:hover { background: none; color: var(--barra-tinta); }
+  .bolsa--rapida .lupa__icono svg { width: 21px; height: 21px; }
+  .hamburguesa { order: 4; border: 0; height: 44px; margin-top: .1rem; }
+  /* dentro del ☰ */
+  .menu { order: 5; border-top: 0; }
+  .menu.abierto { grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); }
+  .menu a { border-left: 0; }
+  .cabecera__utiles { order: 6; }
+  /* La burbuja del pedido, más grande en teléfono. */
+  .bolsa__n {
+    min-width: 1.15rem; height: 1.15rem; font-size: .7rem;
+    top: 3px; right: 1px;
+  }
+}
+@media (max-width: 780px) {
+  .lupa--movil, .bolsa--rapida { padding: 0; place-content: center; justify-content: center; }
+}
+@media (max-width: 780px) {
+  .cabecera__fila { column-gap: .6rem; }
+  .barra-rapida { flex: 1 1 calc(100% - 44px - .6rem - 1px); }
+}
+@media (max-width: 780px) {
+  /* Encogida también: la regla de 1060 le pone gap 1rem con más peso. */
+  .cabecera.encogida .cabecera__fila { column-gap: .6rem; }
+}
+
+.pedido-lateral__vacio a { color: var(--tinta); text-decoration: underline; text-underline-offset: .18em; }
+
+/* «Con qué trabajo» en teléfono (16/09/2026): al apilar en columna, el
+   `flex: 0 0 11rem` del nombre se volvía 11rem de ALTO y dejaba un
+   hueco grande antes de la descripción. */
+@media (max-width: 560px) { .lista-marcas b { flex-basis: auto; } }
+
+/* Filtrar y ordenar, pegados al margen derecho en teléfono. */
+@media (max-width: 780px) { .catalogo-barra > .vistas + * { margin-left: auto; } }
+
+/* Las descripciones de cada página, JUSTIFICADAS (él, 16/09/2026). En
+   teléfono, además, algo más pequeñas y pegadas al margen derecho. */
+body .portada .bajada,
+body:not([data-pagina="novedades"]) .portada .bajada { text-align: justify; hyphens: auto; }
+@media (max-width: 780px) {
+  body:not([data-pagina="novedades"]) .portada .bajada {
+    font-size: .875rem; line-height: 1.5; max-width: 88%; margin-left: auto;
+  }
+}
