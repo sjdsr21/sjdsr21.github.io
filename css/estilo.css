@@ -3514,7 +3514,7 @@ html, body { overflow-anchor: none; }
    lupa, un poco más grande. */
 @media (max-width: 780px) {
   .redes-movil { left: -10px; }
-  .redes-movil__a:first-child { position: relative; left: -13.6px; }
+  /* Con WhatsApp solo, cae donde estaba Instagram: sobre la bolsa. */
   .lupa--movil .lupa__icono svg { width: 20px; height: 20px; }
 }
 

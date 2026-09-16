@@ -814,23 +814,29 @@
        se cierra, y si no, vuelve a su sitio. Solo gestos más
        horizontales que verticales, para no estorbar el scroll. */
     var hoja = $(".pedido-lateral__caja", caja);
+    /* Con eventos TÁCTILES y no de puntero (él, 16/09/2026: «se mueve,
+       pero se detiene»): el navegador cancelaba el puntero en cuanto
+       el dedo se desviaba un poco en vertical. Los táctiles no se
+       cancelan, y al decidir que el gesto es horizontal se bloquea el
+       scroll con preventDefault. */
     var x0 = null, y0 = 0, dx = 0, arrastrando = false;
-    hoja.addEventListener("pointerdown", function (e) {
-      if (e.pointerType === "mouse") return;
-      x0 = e.clientX; y0 = e.clientY; dx = 0; arrastrando = false;
-    });
-    hoja.addEventListener("pointermove", function (e) {
+    hoja.addEventListener("touchstart", function (e) {
+      if (e.touches.length !== 1) { x0 = null; return; }
+      x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; dx = 0; arrastrando = false;
+    }, { passive: true });
+    hoja.addEventListener("touchmove", function (e) {
       if (x0 === null) return;
-      var mx = e.clientX - x0, my = e.clientY - y0;
+      var mx = e.touches[0].clientX - x0, my = e.touches[0].clientY - y0;
       if (!arrastrando) {
-        if (Math.abs(mx) < 8) return;
+        if (Math.abs(mx) < 8 && Math.abs(my) < 8) return;
         if (Math.abs(my) > Math.abs(mx) || mx < 0) { x0 = null; return; }
         arrastrando = true;
         hoja.style.transition = "none";
       }
+      e.preventDefault();
       dx = Math.max(0, mx);
       hoja.style.transform = "translateX(" + dx + "px)";
-    });
+    }, { passive: false });
     function soltar() {
       if (x0 === null) return;
       x0 = null;
@@ -840,8 +846,8 @@
       hoja.style.transform = "";
       if (dx > 70) cerrarPedido(false);
     }
-    hoja.addEventListener("pointerup", soltar);
-    hoja.addEventListener("pointercancel", soltar);
+    hoja.addEventListener("touchend", soltar);
+    hoja.addEventListener("touchcancel", soltar);
     document.body.appendChild(caja);
     return caja;
   }
@@ -1364,9 +1370,7 @@
     var redesMovil = el("div", { class: "redes-movil" });
     if (MR.whatsapp) redesMovil.appendChild(el("a", { class: "redes-movil__a", href: enlaceWhatsApp(null),
       target: "_blank", rel: "noopener", "aria-label": "WhatsApp", html: ICONOS.whatsapp }));
-    if (MR.instagram) redesMovil.appendChild(el("a", { class: "redes-movil__a",
-      href: "https://instagram.com/" + MR.instagram, target: "_blank", rel: "noopener",
-      "aria-label": "Instagram", html: ICONOS.instagram }));
+    /* Instagram salió de aquí (él, 16/09/2026): queda solo WhatsApp. */
 
     var menu = el("nav", { class: "menu", id: "menu" },
       visibles.map(function (m) {
