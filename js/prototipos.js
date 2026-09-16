@@ -163,7 +163,8 @@
        información de la carta (él, 16/09/2026). La franja sale siempre
        —vacía si hay una sola foto— para que las cartas de una fila
        midan lo mismo. */
-    var puntos = '<span class="pt-franja-fotos">' + (fotos.length > 1
+    /* Con una sola foto también sale su cuadradito (él, 16/09/2026). */
+    var puntos = '<span class="pt-franja-fotos">' + (fotos.length >= 1
       ? '<span class="pt-cuenta-fotos" role="img" aria-label="' + (i + 1) + ' / ' + fotos.length + '">' +
           (window.PA_PUNTOS ? window.PA_PUNTOS.html(fotos.length, i) : "") + '</span>'
       : '') + '</span>';
@@ -1612,6 +1613,7 @@
           (l.uxp > 1 ? '<span class="pt-linea__packs">' +
              rellena("pt_en_total", {n: l.cant * l.uxp, cosa: tx(l.palabra_pack)}) + '</span>' : '') +
         '</div>' +
+        '<span class="pt-linea__rotulo">' + t("pt_cantidad") + '</span>' +
         '<div class="pt-linea__cant">' +
           '<button class="pt-pasos__b" type="button" data-menos="' + i + '" ' +
             'aria-label="−">−</button>' +
@@ -1746,6 +1748,15 @@
       principal.textContent = dolar(suma);
       segundo.textContent = carrito.length ? rellena("pt_si_bs", {m: bolivar(aBs(suma))}) : "";
     }
+
+    /* El total «se infla» un instante cada vez que cambia (él, 16/09/2026).
+       Se quita y se vuelve a poner la clase para reiniciar la animación. */
+    if (principal.dataset.antes !== undefined && principal.dataset.antes !== principal.textContent) {
+      principal.classList.remove("pt-inflar");
+      void principal.offsetWidth;
+      principal.classList.add("pt-inflar");
+    }
+    principal.dataset.antes = principal.textContent;
 
     /* El envío va aparte y NO suma: lo cobra la agencia al
        entregarlo, no él. */

@@ -3404,3 +3404,54 @@ body[data-pagina="trabajos"] .portada { padding-bottom: 1.6rem; }
 }
 /* Triángulos de anterior/siguiente, más chicos (16/09/2026). */
 .navpieza__tri svg { width: 10px; height: 11px; }
+
+/* TELÉFONO: la fila de abajo en TRES TERCIOS IGUALES (él, 16/09/2026):
+   Prototipos | Exhibición | bolsa + ☰. El ☰ vive fuera de la barra,
+   así que cada tercio se calcula sobre el ancho de la fila entera:
+   el 100 % de la barra más el ☰ (44 px) y el hueco entre ambos. */
+@media (max-width: 780px) {
+  .cabecera .barra-rapida {
+    display: grid;
+    grid-template-columns: repeat(2, calc((100% + 44px + .6rem) / 3)) 1fr;
+  }
+  .cabecera .barra-rapida .bolsa--rapida { justify-self: end; }
+  .cabecera .hamburguesa { width: 44px; flex: none; }
+}
+/* Bolsa y ☰ corridos 8 px a la izquierda (él, 16/09/2026): así queda el
+   mismo hueco entre la «n» de Exhibición y la bolsa que entre el ☰ y el
+   borde de la pantalla. Medido a 375 px de ancho: 41 y 41 px. */
+@media (max-width: 780px) {
+  .cabecera .barra-rapida .bolsa--rapida,
+  .cabecera .hamburguesa { position: relative; left: -8px; }
+}
+
+/* Visor de la ficha de Exhibición: flechas como las de la cuadrícula
+   —solo el triángulo, sin marco ni velo— y un poco más grandes
+   (él, 16/09/2026). */
+.visor-medios__flecha, .visor-medios__flecha:hover {
+  background: none; border: 0; backdrop-filter: none; transform: translateY(-50%);
+}
+.visor-medios__flecha .flecha__tri {
+  width: 13px; height: 21px; fill-opacity: .7;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, .6));
+}
+
+/* NOVEDADES (él, 16/09/2026): el título y la descripción van PRIMERO,
+   sobre el papel y alineados con el resto de la página; debajo, la
+   imagen a todo lo ancho de la pantalla, sin franjas. El carrusel
+   deja de ser una caja con bordes: ocupa el ancho entero. */
+body[data-pagina="novedades"] .carrusel {
+  max-width: none; width: 100%; border-radius: 0; background: var(--papel);
+}
+body[data-pagina="novedades"] .novedad {
+  display: flex; flex-direction: column; border-radius: 0; background: var(--papel);
+}
+body[data-pagina="novedades"] .novedad__capa {
+  position: static; order: -1; background: none; color: var(--tinta);
+  padding: clamp(1.4rem, 4vw, 2.4rem) max(var(--canal), calc((100% - var(--ancho)) / 2 + var(--canal)));
+}
+body[data-pagina="novedades"] .novedad__capa h2 { color: var(--tinta); max-width: none; }
+body[data-pagina="novedades"] .novedad__capa p { color: var(--apagado); max-width: 70ch; }
+body[data-pagina="novedades"] .novedad__medio { width: 100%; max-height: 80vh; }
+body[data-pagina="novedades"] .novedad__medio video,
+body[data-pagina="novedades"] .novedad__medio img { width: 100%; height: 100%; object-fit: cover; }

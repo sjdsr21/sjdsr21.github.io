@@ -949,3 +949,106 @@ video.pt-visual__foto {
 .pt-vista--lista .pt-ficha__cuerpo { padding-bottom: calc(1rem - 4px); }
 .pt-flecha .flecha__tri { width: 10px; height: 16px; fill-opacity: .7; }
 .pt-cuenta-fotos i.sel, .pt-franja-fotos .pt-cuenta-fotos i.sel { background: var(--tinta); }
+
+/* «Tu pedido», cada pieza (él, 16/09/2026):
+   - fondo en un tono apagado del acento siena, de poco contraste;
+   - el nombre sin negrita;
+   - − y + con esquinas rectas, como el resto de botones;
+   - «cantidad» escrito a la izquierda de los botones. */
+.pt-linea {
+  background-color: color-mix(in srgb, var(--acento-claro) 9%, var(--papel));
+  border-color: color-mix(in srgb, var(--acento-claro) 18%, var(--papel));
+}
+.pt-linea__desc b { font-weight: 400; }
+.pt-linea__cant .pt-pasos__b { border-radius: 0; }
+.pt-linea__rotulo {
+  flex: none; margin-right: -.4rem;
+  font-size: .75rem; letter-spacing: .04em; text-transform: lowercase; color: var(--apagado);
+}
+@media (max-width: 780px) {
+  .pt-linea__rotulo { margin-right: -.3rem; }
+}
+/* − y + con el mismo formato que el botón de quitar, pero en gris
+   (él, 16/09/2026): sin fondo propio, cada uno con su marco fino. */
+.pt-linea__cant { border: 0; gap: .3rem; background: none; }
+.pt-linea__cant .pt-pasos__b {
+  padding: 0; display: grid; place-items: center; line-height: 1;
+  background: none; color: var(--apagado);
+  border: 1px solid var(--apagado); border-radius: 0; cursor: pointer;
+  transition: color .15s, border-color .15s, background-color .15s;
+}
+.pt-linea__cant .pt-pasos__b:hover, .pt-linea__cant .pt-pasos__b:focus-visible {
+  color: var(--papel); background-color: var(--apagado); border-color: var(--apagado);
+}
+/* Quitar pasa a la IZQUIERDA del nombre, y − y + más juntos
+   (él, 16/09/2026). */
+.pt-linea .pt-quitar { order: -1; }
+.pt-linea__cant { gap: .12rem; }
+@media (max-width: 780px) {
+  .pt-linea__desc { flex: 1 0 calc(100% - 26px - .9rem); }
+}
+/* Tema claro: el fondo de cada pieza del pedido salía amarillento.
+   Más oscuro y menos cálido: el siena de texto sobre un gris
+   (él, 16/09/2026). */
+:root[data-tema="claro"] .pt-linea {
+  background-color: color-mix(in srgb, var(--acento-texto) 7%, #F2F2F2);
+  border-color: color-mix(in srgb, var(--acento-texto) 16%, #F2F2F2);
+}
+/* El total del pedido se infla y vuelve al cambiar (ver pintarTotales). */
+#pt-total-principal { display: inline-block; transform-origin: right center; }
+@keyframes pt-inflar {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.14); }
+  100% { transform: scale(1); }
+}
+.pt-inflar { animation: pt-inflar .32s var(--curva, ease-out); }
+@media (prefers-reduced-motion: reduce) { .pt-inflar { animation: none; } }
+/* El precio de cada pieza reserva siempre el ancho de cuatro cifras
+   («$9,999»), para que cantidad y botones no se muevan al pasar de
+   $50 a $100 (él, 16/09/2026). */
+.pt-linea__mon { min-width: 6.2ch; text-align: right; font-variant-numeric: tabular-nums; }
+/* Panel de un prototipo: las mismas flechas que la cuadrícula, algo
+   más grandes (él, 16/09/2026). */
+.pt-visual__flecha, .pt-visual__flecha:hover { background: none; backdrop-filter: none; border: 0; }
+.pt-visual__flecha .flecha__tri {
+  width: 13px; height: 21px; fill-opacity: .7;
+  filter: drop-shadow(0 0 2px var(--papel));
+}
+/* TELÉFONO: «cantidad» y − n + suben a la esquina de arriba a la
+   derecha de cada pieza (él, 16/09/2026). El texto de la pieza deja
+   ese hueco libre; abajo queda solo el precio. */
+@media (max-width: 780px) {
+  .pt-linea { position: relative; }
+  .pt-linea__rotulo, .pt-linea__cant { position: absolute; top: .8rem; }
+  .pt-linea__cant { right: .9rem; }
+  .pt-linea__rotulo { right: calc(.9rem + 82px + .4rem); margin: 0; line-height: 26px; }
+  .pt-linea__desc { padding-right: 150px; min-height: 26px; }
+}
+/* En una fila tan angosta el nombre no cabía al lado: los controles
+   ocupan su propia franja arriba a la derecha y el texto empieza debajo. */
+@media (max-width: 780px) {
+  .pt-linea__desc { padding-right: 0; padding-top: calc(26px + .6rem); }
+  .pt-linea .pt-quitar { align-self: flex-start; margin-top: calc(26px + .6rem); }
+}
+/* TELÉFONO, vista de lista: el precio a la izquierda y el estado a la
+   derecha, como en la vista 1×1 (él, 16/09/2026). */
+@media (max-width: 780px) {
+  .pt-vista--lista .pt-ficha__pie { justify-content: space-between; }
+}
+/* TELÉFONO, 2ª vuelta (él, 16/09/2026): sin franja extra. «cantidad»
+   y − n + van apilados arriba a la derecha, a la altura del nombre y
+   encima del precio; el texto de la pieza se acomoda a su izquierda. */
+@media (max-width: 780px) {
+  .pt-linea__desc { padding-top: 0; padding-right: calc(82px + .6rem); }
+  .pt-linea .pt-quitar { margin-top: 0; }
+  .pt-linea__rotulo {
+    top: .8rem; right: .9rem; width: 82px;
+    text-align: center; line-height: 1;
+  }
+  .pt-linea__cant { top: calc(.8rem + 16px); }
+}
+@media (max-width: 780px) {
+  /* El precio también sube, debajo de los botones: sin fila propia. */
+  .pt-linea__mon { position: absolute; top: calc(.8rem + 16px + 26px + .45rem); right: .9rem; width: 82px; min-width: 0; }
+  .pt-linea__desc { min-height: calc(16px + 26px + .45rem + 1.5rem); }
+}

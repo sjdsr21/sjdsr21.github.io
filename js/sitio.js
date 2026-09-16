@@ -1686,10 +1686,12 @@
     /* Los cuadraditos, en una franja bajo la foto (él, 16/09/2026);
        vacía con una sola foto, para que las cartas midan igual. */
     var franja = el("div", { class: "tarjeta__franja" });
-    if (fotos.length > 1) {
+    /* Con una sola foto también sale su cuadradito (él, 16/09/2026). */
+    var totalFotos = fotos.length || (w.imagen ? 1 : 0);
+    if (totalFotos >= 1) {
       franja.appendChild(el("span", {
-        class: "tarjeta__cuenta", role: "img", "aria-label": (i + 1) + " / " + fotos.length,
-        html: puntosHTML(fotos.length, i)
+        class: "tarjeta__cuenta", role: "img", "aria-label": (i + 1) + " / " + totalFotos,
+        html: puntosHTML(totalFotos, i)
       }));
     }
 

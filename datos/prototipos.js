@@ -33,8 +33,8 @@ window.PROTOTIPOS = [
     acabado: ["linaza", "cera"],
     uso: ["escritorio"],
     resumen: {
-      es: "Eleva la pantalla entre 18 y 26 cm, hasta la altura de los ojos. Para trabajar con teclado aparte, sin encorvarte.",
-      en: "Raises the screen by 18 to 26 cm, up to eye level. For working with a separate keyboard, without hunching over."
+      es: "Eleva la pantalla entre 18 y 30 cm, hasta la altura de los ojos. Para trabajar con teclado aparte, sin encorvarte.",
+      en: "Raises the screen by 18 to 30 cm, up to eye level. For working with a separate keyboard, without hunching over."
     },
     /* $60 -> $50 el 14/09/2026 (él). El samán sigue con +5, o sea $55. */
     precio_usd: 50,
