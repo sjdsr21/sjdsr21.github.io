@@ -3254,3 +3254,80 @@ body:not([data-pagina="novedades"]) .portada .bajada { text-align: justify; hyph
     font-size: .875rem; line-height: 1.5; max-width: 88%; margin-left: auto;
   }
 }
+
+/* TELÉFONO (él, 16/09/2026)
+   - Sin triángulo sobre la vista puesta ni icono sobre filtrar/ordenar:
+     se gana alto. La vista puesta tiñe su icono de acento, y filtrar u
+     ordenar tiñen su texto cuando hay algo puesto. Limpiar queda solo
+     en el botón del final de cada panel.
+   - Los paneles se abren hacia la IZQUIERDA (los botones van pegados
+     a la derecha) y nunca pasan del ancho de la pantalla.
+   - Sin el título de la página: solo la descripción, centrada y con
+     aire arriba y abajo. El título sigue ahí para lectores de pantalla. */
+@media (max-width: 560px) {
+  .vistas__punto { display: none !important; }
+  .vistas__btn[aria-pressed="true"] { color: var(--acento-texto); }
+  .filtros-btn svg, .filtros-btn[data-activo="1"] svg { display: none !important; }
+  .filtros-btn[data-activo="1"] { color: var(--acento-texto); }
+  .filtros-caja { position: static; }
+  .catalogo-barra { position: relative; }
+  .filtros-panel { left: auto; right: 0; max-width: calc(100vw - 32px); box-sizing: border-box; }
+  body:not([data-pagina="novedades"]) .portada h1 {
+    position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); white-space: nowrap; margin: 0;
+  }
+  body:not([data-pagina="novedades"]) .portada .bajada,
+  body .portada .bajada {
+    text-align: center; hyphens: manual; margin-left: auto; margin-right: auto;
+    padding: 1.1rem 0 1.2rem;
+  }
+}
+
+/* EL ☰ SE DESPLIEGA DE ARRIBA ABAJO (él, 16/09/2026): corto y sutil,
+   en computadora y en teléfono. Sin títulos «idioma»/«modo» dentro. */
+@keyframes menu-baja {
+  from { clip-path: inset(0 0 100% 0); opacity: .4; transform: translateY(-6px); }
+  to   { clip-path: inset(0 0 -40px 0); opacity: 1; transform: none; }
+}
+.cabecera--abierta .cabecera__utiles,
+.cabecera--abierta .menu.abierto { animation: menu-baja .22s var(--curva) both; }
+@media (prefers-reduced-motion: reduce) {
+  .cabecera--abierta .cabecera__utiles, .cabecera--abierta .menu.abierto { animation: none; }
+}
+
+/* COMPUTADORA, Prototipos y Exhibición (él, 16/09/2026): el título y su
+   descripción recuperan aire; la barra de botones baja a su propia
+   fila, debajo, y con ella la cuadrícula. */
+@media (min-width: 781px) {
+  body[data-pagina="trabajos"] .portada h1,
+  body[data-pagina="prototipos"] .portada h1,
+  body[data-pagina="trabajos"] .portada .bajada,
+  body[data-pagina="prototipos"] .portada .bajada { grid-column: 1 / -1; }
+  body[data-pagina="trabajos"] .portada__barra,
+  body[data-pagina="prototipos"] .portada__barra { grid-column: 1 / -1; grid-row: 3; margin-top: 2.5rem; }
+}
+
+/* EL TALLER (él, 16/09/2026): la introducción, enmarcada como carta con
+   dos esquineros finos en L: arriba a la izquierda y abajo a la derecha.
+   Van por dentro del ancho del texto, así que no salen del margen. */
+.intro-taller__texto { position: relative; padding: 1.6rem 1.4rem; box-sizing: border-box; }
+.intro-taller__texto::before,
+.intro-taller__texto::after {
+  content: ""; position: absolute; width: 2.2rem; height: 2.2rem;
+  border: 0 solid var(--apagado); pointer-events: none;
+}
+.intro-taller__texto::before { top: 0; left: 0; border-top-width: 1px; border-left-width: 1px; }
+.intro-taller__texto::after  { bottom: 0; right: 0; border-bottom-width: 1px; border-right-width: 1px; }
+
+/* «1. Una sola cifra»: el número y el nombre del paso en la misma fila. */
+.tramo__nota::before { display: inline; margin: 0 .4rem 0 0; }
+.tramo__nota b { display: inline; }
+.tramo__nota span { display: block; margin-top: .35rem; }
+
+/* TELÉFONO: la descripción va ENCIMA de la barra de vistas y filtros
+   (él, 16/09/2026). Con el título escondido fuera de la cuadrícula, la
+   barra se colaba en la primera fila. */
+@media (max-width: 780px) {
+  body[data-pagina="trabajos"] .portada__barra,
+  body[data-pagina="prototipos"] .portada__barra { grid-row: 3; }
+}

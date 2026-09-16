@@ -520,6 +520,11 @@
     /* Easter egg (él, 16/09/2026): con 3 piezas o más la bolsa pasa a
        ser un CARRITO, y vuelve a bolsa al bajar a 2. Ver `iconoPedido`. */
     carrito:  '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.4 4.2h2.7l2.4 10.9h10.6l2.3-7.9H6.1" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.3" cy="19.1" r="1.55"/><circle cx="16.8" cy="19.1" r="1.55"/></svg>',
+    /* Y sigue (él, 16/09/2026): 5+ minivan de encomiendas, 7+ camión
+       de fletes con cajón grande, 9+ buque carguero. */
+    minivan:  '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 17.2V8.6a2 2 0 012-2h9.3l3.6 4 3.2 1.1a1.6 1.6 0 011.1 1.5v4" stroke-linejoin="round"/><path d="M13.8 6.6v4h3.6M2.5 11.2h8.6M2.5 17.2h3.1M10.6 17.2h3.8M19.4 17.2h2.1" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8.1" cy="17.4" r="1.9"/><circle cx="16.9" cy="17.4" r="1.9"/></svg>',
+    camion:   '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1.5 4.8h13.2v12H1.5z" stroke-linejoin="round"/><path d="M14.7 9h4.1l3.2 3.9v3.9h-1.9M14.7 16.8h2.2M1.5 16.8h1.6M8.2 16.8h1.9" stroke-linecap="round" stroke-linejoin="round"/><circle cx="5.6" cy="17.6" r="1.9"/><circle cx="18.6" cy="17.6" r="1.9"/></svg>',
+    buque:    '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1.8 13.4h20.4l-2.6 5H4.6z" stroke-linejoin="round"/><path d="M4.2 13.4v-3h4.4v3M8.6 13.4V8.2h4.4v5.2M13 13.4v-3h4v3M18.6 13.4V6.3h2.2v7.1M1.5 21.2c1.5 0 1.5-.9 3-.9s1.5.9 3 .9 1.5-.9 3-.9 1.5.9 3 .9 1.5-.9 3-.9 1.5.9 3 .9 1.5-.9 3-.9" stroke-linecap="round" stroke-linejoin="round"/></svg>',
     bolsa:    '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.6 8h14.8l-1.1 12.1a1 1 0 01-1 .9H6.7a1 1 0 01-1-.9z" stroke-linejoin="round"/><path d="M8.6 10.5V7a3.4 3.4 0 016.8 0v3.5" stroke-linecap="round"/></svg>',
 
     /* 2026-08-17 · Los tres del tema. Antes eran los caracteres
@@ -681,7 +686,10 @@
     return leerPedido().reduce(function (a, l) { return a + l.cant; }, 0);
   }
   function iconoPedido() {
-    return piezasEnPedido() >= 3 ? ICONOS.carrito : ICONOS.bolsa;
+    return ICONOS[vehiculoPedido(piezasEnPedido())];
+  }
+  function vehiculoPedido(n) {
+    return n >= 9 ? "buque" : n >= 7 ? "camion" : n >= 5 ? "minivan" : n >= 3 ? "carrito" : "bolsa";
   }
 
   /* Solo el número y la etiqueta, sin tocar el dibujo. */
@@ -699,7 +707,7 @@
     var n = piezasEnPedido();
     /* Bolsa o carrito, en los tres sitios donde sale. Solo se toca si
        cambia, para no cortar la animación de «bolsa cargada». */
-    var cual = n >= 3 ? "carrito" : "bolsa";
+    var cual = vehiculoPedido(n);
     if (bolaEnCamino) return pintarNumeroBolsa(n);
     $$(".bolsa .lupa__icono, #pt-bolsa-pedido, .pedido-lateral__icono").forEach(function (h) {
       if (h.getAttribute("data-icono") !== cual) {
@@ -809,12 +817,28 @@
     focoAntesDelPedido = document.activeElement;
     pintarPanelPedido();
     cajaPedido.classList.add("abierto");
+    /* EN TELÉFONO el botón ATRÁS cierra el pedido y deja al cliente
+       donde estaba (él, 16/09/2026): antes lo sacaba de la página.
+       Se apunta un paso en el historial al abrir; atrás lo consume. */
+    if (esMovilPedido() && !(history.state && history.state.paPedido)) {
+      try { history.pushState({ paPedido: 1 }, ""); } catch (e) {}
+    }
     setTimeout(function () { $(".pedido-lateral__cerrar", cajaPedido).focus(); }, 60);
   }
 
+  function esMovilPedido() { return window.matchMedia("(max-width: 560px)").matches; }
+  var desdeAtras = false;
+  window.addEventListener("popstate", function () {
+    if (!cajaPedido || !cajaPedido.classList.contains("abierto")) return;
+    desdeAtras = true;
+    cerrarPedido(false);
+    desdeAtras = false;
+  });
   function cerrarPedido(devolverFoco) {
     if (!cajaPedido || !cajaPedido.classList.contains("abierto")) return;
     cajaPedido.classList.remove("abierto");
+    /* Cerrado con la X o el velo: se deshace el paso apuntado. */
+    if (!desdeAtras && history.state && history.state.paPedido) history.back();
     if (devolverFoco && focoAntesDelPedido && document.contains(focoAntesDelPedido)) {
       focoAntesDelPedido.focus();
     }
@@ -1513,9 +1537,7 @@
         /* Con título cada grupo (él, 16/09/2026): ahora viven en la
            hamburguesa también en computadora y hay sitio. */
         el("div", { class: "controles" }, [
-          el("p", { class: "controles__titulo", texto: t("menu_idioma") }),
           el("div", { class: "idioma" }, botones),
-          el("p", { class: "controles__titulo", texto: t("menu_modo") }),
           el("div", { class: "tema" }, botonesTema)
         ])
       ])
@@ -1825,12 +1847,14 @@
      columna y la de cinco es de DOS, así que sus botones dibujan eso:
      un cuadrado solo y una cuadrícula de 2×2. Van en el mismo botón que
      el dibujo de computadora y el CSS enseña uno u otro. Enteros sobre
-     24, como los otros: 1×1 = lado 20; 2×2 = lado 11 y paso 13. */
+     24, como los otros: 1×1 = lado 20; 2×2 = lado 9 y paso 11, para
+     que llegue a los MISMOS bordes (2 a 22) que el cuadrado solo
+     (él, 16/09/2026: se veía más grande que los otros). */
   function iconoVistaMovil(n) {
     var s = "", x, y;
     if (n === 1) s = '<rect x="2" y="2" width="20" height="20"/>';
     else for (y = 0; y < 2; y++) for (x = 0; x < 2; x++)
-      s += '<rect x="' + (x * 13) + '" y="' + (y * 13) + '" width="11" height="11"/>';
+      s += '<rect x="' + (2 + x * 11) + '" y="' + (2 + y * 11) + '" width="9" height="9"/>';
     return '<svg class="vistas__ico--movil" viewBox="0 0 24 24" shape-rendering="crispEdges" ' +
            'aria-hidden="true" focusable="false">' + s + '</svg>';
   }
