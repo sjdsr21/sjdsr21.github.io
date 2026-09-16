@@ -27,6 +27,11 @@ window.MARCA = {
 
   instagram: "prototipo_ago",   /* en minúsculas (él, 15/09/2026): así se ve en el pie y en Contacto */
 
+  /* Récord general del juego de apilar tablas: un Worker de Cloudflare
+     en su cuenta (16/09/2026). Código: Herramientas/Sitio/record-apilar-worker.js.
+     Con null, el juego enseña solo el récord personal. */
+  apilar_api: "https://record-apilar.sjdesousar.workers.dev/",
+
   /* Mensaje con el que se abre WhatsApp desde una ficha.
      {pieza} se reemplaza por el nombre de lo que estaba viendo. */
   mensaje: {
