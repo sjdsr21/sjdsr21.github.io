@@ -197,7 +197,8 @@ window.PROTOTIPOS = [
       "s|teca": 30, "m|teca": 45, "l|teca": 60,
       /* Puy sube por encima de teca (él, 07/09/2026). */
       "s|puy":  35, "m|puy":  55, "l|puy":  70,
-      "s|algarrobo": 40, "m|algarrobo": 60, "l|algarrobo": 80
+      /* Algarrobo sube a 45 / 70 / 90 (él, 16/09/2026). */
+      "s|algarrobo": 45, "m|algarrobo": 70, "l|algarrobo": 90
     },
     /* Stock REAL 0 el 14/09/2026 (él): no queda ninguna tabla hecha. */
     stock_matriz: {          /* REAL: 0 de todo */
