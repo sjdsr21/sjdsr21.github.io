@@ -196,6 +196,7 @@ window.TEXTOS = {
      aria-label, que es lo que oye quien no ve la página. */
   vista_grupo:  { es: "Cómo ver el catálogo", en: "How to view the catalogue" },
   vista_tres:   { es: "Cuadrícula de tres",   en: "Three-column grid" },
+  vista_cuatro: { es: "Cuadrícula de cuatro", en: "Four-column grid" },
   vista_cinco:  { es: "Cuadrícula de cinco",  en: "Five-column grid" },
   vista_lista:  { es: "Lista con detalles",   en: "List with details" },
   /* Lleva la palabra «catálogo» a propósito (él, 14/08/2026): es
@@ -305,8 +306,8 @@ window.TEXTOS = {
 
   /* --- Contacto -------------------------------------------- */
   contacto_titulo: { es: "Contacto",       en: "Contact" },
-  contacto_bajada: { es: "Escríbeme por WhatsApp o Instagram para desarrollar tu idea juntos. Si tienes imágenes de referencia y medidas a la mano, mejor.",
-                     en: "Message me on WhatsApp or Instagram and let's develop your idea together. If you have reference images and measurements handy, even better." },
+  contacto_bajada: { es: "Escríbeme por WhatsApp, correo o Instagram para desarrollar tu idea juntos. Si tienes imágenes de referencia y medidas a la mano, mejor.",
+                     en: "Message me on WhatsApp, by email or on Instagram and let's develop your idea together. If you have reference images and measurements handy, even better." },
 
   /* --- Pie ------------------------------------------------- */
   pie_derechos:    { es: "Caracas, Venezuela",
@@ -332,7 +333,8 @@ window.TEXTOS = {
     closet:      { es: "Clóset",            en: "Closet" },
     /* «Repisas», en plural y a secas (él, 15/09/2026). Antes decía
        «Repisas y flotantes». */
-    repisa:      { es: "Repisas",           en: "Shelving" },
+    /* En singular desde el 16/09/2026 (él). */
+    repisa:      { es: "Repisa",            en: "Shelf" },
     accesorio:   { es: "Accesorio",         en: "Accessory" },
     exhibicion:  { es: "Exhibición",        en: "Display" },
     exterior:    { es: "Exterior",          en: "Outdoor" },
@@ -351,6 +353,7 @@ window.TEXTOS = {
     mascotas:    { es: "Mascotas",          en: "Pets" },
     puerta:      { es: "Puerta",            en: "Door" },
     paraban:     { es: "Parabán",           en: "Folding screen" },
+    lampara:     { es: "Lámpara",           en: "Lamp" },   /* 16/09/2026, la Shoji */
     otro:        { es: "Otro",              en: "Other" }
   },
 
@@ -412,7 +415,9 @@ window.TEXTOS = {
     /* 15/09/2026 · el set de utensilios (él). «Courbaril» es el nombre
        comercial en inglés del algarrobo de aquí; si resulta ser otra especie,
        se cambia solo esta línea. */
-    "algarrobo":       { es: "Algarrobo",                  en: "Algarrobo (courbaril)" }
+    "algarrobo":       { es: "Algarrobo",                  en: "Algarrobo (courbaril)" },
+    /* 16/09/2026 · el mueble de espejo: «espejo», no vidrio (él). */
+    "espejo":          { es: "Espejo",                     en: "Mirror" }
   },
 
   acabado: {

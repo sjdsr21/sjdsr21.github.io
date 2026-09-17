@@ -3569,3 +3569,222 @@ html.apilar-abierto { overflow: hidden; }
 }
 @keyframes franja-crece { from { transform: scaleX(0); } to { transform: scaleX(1); } }
 @media (prefers-reduced-motion: reduce) { .barra-rapida__a--crece::after { animation: none; } }
+@media (max-width: 1060px) {
+  .cabecera__utiles.cabecera__utiles--cerrado { display: none !important; animation: none !important; }
+}
+
+/* IDIOMA CON BANDERAS (prueba, 16/09/2026): siluetas sin color, y cada
+   botón con la proporción de su bandera — Venezuela 3:2, Reino Unido
+   2:1 — al mismo alto. */
+.idioma__bandera { display: none; }
+.cabecera__utiles .idioma {
+  display: flex; justify-content: center; gap: .6rem; border: 0;
+}
+.cabecera__utiles .idioma button {
+  flex: none; height: 44px; min-height: 0; padding: 0 !important;
+  border: 1px solid var(--barra-linea);
+}
+.cabecera__utiles .idioma .idioma__btn--es { width: 66px; }
+.cabecera__utiles .idioma .idioma__btn--en { width: 88px; }
+.cabecera__utiles .idioma button .ctrl__corto,
+.cabecera__utiles .idioma button .ctrl__largo { display: none; }
+.cabecera__utiles .idioma__bandera { display: block; width: 100%; height: 100%; }
+.idioma__bandera svg { display: block; width: 100%; height: 100%; }
+.idioma__bandera .bandera__fig { fill: currentColor; }
+.idioma__bandera .bandera__raya { stroke: currentColor; stroke-width: 2; fill: none; opacity: .6; }
+.idioma__bandera .bandera__trazo { stroke: currentColor; fill: none; }
+
+/* COMPUTADORA IGUAL QUE TELÉFONO (él, 16/09/2026): la vista puesta ya
+   no lleva el triángulo encima; su icono se pinta de acento. */
+.vistas__punto { display: none !important; }
+.vistas__btn[aria-pressed="true"] { color: var(--acento-texto); }
+
+/* Las descripciones de las cartas, justificadas, en Exhibición y en
+   Prototipos (él, 16/09/2026). */
+.tarjeta__res, .pt-ficha__res { text-align: justify; hyphens: auto; }
+/* Banderas, 2.ª vuelta (16/09/2026): las dos a 2:1, más chicas, con
+   franjas y filetes en tonos del mismo color; y los botones de modo,
+   menos anchos y centrados. */
+.cabecera__utiles .idioma button { height: 34px; border-color: transparent; }
+.cabecera__utiles .idioma .idioma__btn--es,
+.cabecera__utiles .idioma .idioma__btn--en { width: 68px; }
+.cabecera__utiles .idioma button { border-width: 2px; box-sizing: border-box; }
+.cabecera__utiles .idioma button[aria-pressed="true"] { border-color: var(--realce-hondo); background: none; color: var(--barra-tinta); }
+.cabecera__utiles .idioma button[aria-pressed="false"] { opacity: .6; }
+.cabecera__utiles .tema { display: flex; justify-content: center; gap: .6rem; border: 0; }
+.cabecera__utiles .tema button,
+.cabecera__utiles .tema button.tema__bicho,
+.cabecera__utiles .tema__auto { flex: none; width: 68px; border: 1px solid var(--barra-linea); }
+
+/* Ficha de Exhibición: la descripción (y los puntos de «cómo se hizo»),
+   justificados (él, 16/09/2026). */
+.ficha__datos .bajada, .ficha__datos p, .ficha__datos li { text-align: justify; hyphens: auto; }
+/* Banderas, 3.ª vuelta (él, 16/09/2026): DIBUJO DE LÍNEAS, poco
+   contraste, sin áreas rellenas. Las líneas principales (b-l) y las
+   secundarias (b-s, más tenues). Con la bandera elegida, las líneas
+   pasan a acento, no solo el marco. Y todos los botones pegados. */
+.idioma__bandera .b-l, .idioma__bandera .b-s {
+  fill: none; stroke: currentColor; stroke-width: 1.1;
+  stroke-linejoin: round; stroke-linecap: round;
+}
+.idioma__bandera .b-l { opacity: .8; }
+.idioma__bandera .b-s { opacity: .35; stroke-width: .8; }
+.cabecera__utiles .idioma button[aria-pressed="false"] { opacity: 1; color: var(--barra-suave); }
+.cabecera__utiles .idioma button[aria-pressed="true"] { color: var(--acento-texto); border-color: var(--acento-texto); }
+.cabecera__utiles .idioma button[aria-pressed="true"] .b-l { opacity: 1; }
+.cabecera__utiles .idioma button[aria-pressed="true"] .b-s { opacity: .6; }
+.cabecera__utiles .idioma button { border: 1px solid var(--barra-linea); }
+.cabecera__utiles .idioma, .cabecera__utiles .tema { gap: 0; }
+.cabecera__utiles .idioma button + button,
+.cabecera__utiles .tema button + button { margin-left: -1px; }
+.cabecera__utiles .idioma button[aria-pressed="true"],
+.cabecera__utiles .tema button[aria-pressed="true"] { position: relative; z-index: 1; }
+/* El escudo de Venezuela, con el mismo grosor que las rayas. */
+.idioma__bandera .b-fino { stroke-width: .8; }
+/* LOBO Y GALLO MÁS GRANDES (él, 16/09/2026): apoyados en el borde de
+   abajo del botón. Medido: el lobo ocupa de 1,14 a 24 de su lienzo de
+   24 y el gallo de 2,99 a 24; a 43,2 px (1,8 px por unidad) los dos
+   tocan el fondo del hueco de 42 px y ninguno se corta por arriba. */
+.cabecera__utiles .tema .tema__bicho {
+  justify-content: flex-end; padding: 0 !important; gap: 0; overflow: visible;
+}
+.cabecera__utiles .tema .tema__bicho .tema__icono { display: block; line-height: 0; }
+.cabecera__utiles .tema .tema__bicho .tema__icono svg { width: 43.2px; height: 43.2px; }
+.cabecera__utiles .tema button,
+.cabecera__utiles .tema button.tema__bicho,
+.cabecera__utiles .tema__auto { height: 44px; min-height: 0; box-sizing: border-box; }
+.idioma__bandera .b-estrella { fill: currentColor; stroke: none; opacity: .85; }
+.cabecera__utiles .idioma button[aria-pressed="true"] .b-estrella { opacity: 1; }
+
+/* Modo elegido con el MISMO acento que la bandera elegida, el claro
+   (él, 16/09/2026). */
+.cabecera__utiles .tema button[aria-pressed="true"] {
+  background: var(--acento-texto); border-color: var(--acento-texto);
+}
+/* Botones de modo un 20 % menos anchos (él, 16/09/2026): 68 → 54,4 px,
+   siguen pegados. */
+.cabecera__utiles .tema button,
+.cabecera__utiles .tema button.tema__bicho,
+.cabecera__utiles .tema__auto { width: 54.4px; }
+/* Banderas a 3:2, la proporción de la de Venezuela (él, 16/09/2026):
+   66 × 44, del alto de los botones de modo. */
+.cabecera__utiles .idioma button { height: 44px; }
+.cabecera__utiles .idioma .idioma__btn--es,
+.cabecera__utiles .idioma .idioma__btn--en { width: 66px; }
+/* El gallo asoma fuera de su lienzo (la espalda) y el botón lo recorta
+   en su borde izquierdo. */
+.cabecera__utiles .tema .tema__bicho { overflow: hidden; }
+.cabecera__utiles .tema__icono svg.gallo { overflow: visible; }
+/* El modo elegido cambia SOLO el fondo (él, 16/09/2026): sin borde de
+   acento ni subir por encima del vecino, que tapaba el borde compartido
+   y hacía ver el botón más ancho. */
+.cabecera__utiles .tema button[aria-pressed="true"] {
+  border-color: var(--barra-linea); z-index: auto; position: static;
+  background-clip: padding-box;
+}
+
+/* Ventana del ☰ en computadora: del ancho de lo que lleva dentro
+   (banderas y modo), no 300 px fijos (él, 16/09/2026). */
+@media (min-width: 1061px) {
+  .cabecera__utiles { width: max-content; padding: .75rem; }
+  .cabecera--abierta .cabecera__utiles { display: flex; flex-direction: column; align-items: center; gap: .5rem; }
+  .cabecera__utiles .controles { margin: 0; }
+}
+/* Botones de modo del mismo tamaño que las banderas: 66 × 44 (él,
+   16/09/2026). */
+.cabecera__utiles .tema button,
+.cabecera__utiles .tema button.tema__bicho,
+.cabecera__utiles .tema__auto { width: 66px; height: 44px; }
+
+/* CONTACTO (él, 17/09/2026): los íconos sin el recuadro gris detrás.
+   Al pasar el ratón solo cambian de color. */
+.contactos__icono, .contactos a:hover .contactos__icono { background: none; }
+.contactos a:hover .contactos__icono { color: var(--tinta); }
+.contactos__icono svg.icono-linea,
+svg.icono-linea { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linejoin: round; stroke-linecap: round; }
+
+/* ---------- 17/09/2026 (él) ---------- */
+
+/* VISTA DE CUATRO (Exhibición). Cuatro columnas en todas las pantallas,
+   también en teléfono. */
+.rejilla--cuatro { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .4rem; }
+.rejilla--cuatro .tarjeta { padding-bottom: .55rem; }
+.rejilla--cuatro .tarjeta__marco { margin-bottom: .45rem; }
+.rejilla--cuatro .tarjeta h2 { font-size: .9rem; }
+@media (max-width: 560px) {
+  .rejilla--cuatro { gap: .25rem; }
+  .rejilla--cuatro .tarjeta { padding-bottom: .35rem; }
+  .rejilla--cuatro .tarjeta h2 { font-size: .6rem; line-height: 1.2; padding: 0 .2rem; }
+  .rejilla--cuatro .tarjeta__flecha { display: none; }
+  /* Nombres un poco más chicos en la de dos columnas. */
+  .rejilla--cinco .tarjeta h2 { font-size: .72rem; }
+}
+
+/* En teléfono los botones de vista van 1×1 · 2×2 · 4×4 · lista. */
+@media (max-width: 560px) {
+  .vistas__btn[data-vista="tres"],   .vistas__btn[data-vista-pt="tres"]   { order: 1; }
+  .vistas__btn[data-vista="cinco"],  .vistas__btn[data-vista-pt="cinco"]  { order: 2; }
+  .vistas__btn[data-vista="cuatro"], .vistas__btn[data-vista-pt="cuatro"] { order: 3; }
+  .vistas__btn[data-vista="lista"],  .vistas__btn[data-vista-pt="lista"]  { order: 4; }
+}
+
+/* Cuadraditos de las fotos: rectángulos más chatos. */
+.tarjeta__cuenta i, .pt-cuenta-fotos i { width: 9px; height: 3px; }
+.tarjeta__franja, .pt-franja-fotos { height: 14px; }
+
+/* TELÉFONO: idioma y modo pegados al borde derecho y más chicos
+   (51 × 34, la misma proporción 3:2). */
+@media (max-width: 1060px) {
+  .cabecera__utiles .controles {
+    display: flex; flex-direction: column; align-items: flex-end; gap: 0;
+    margin-right: calc(-1 * var(--canal));
+  }
+  .cabecera__utiles .idioma, .cabecera__utiles .tema { justify-content: flex-end; }
+  .cabecera__utiles .idioma button,
+  .cabecera__utiles .idioma .idioma__btn--es,
+  .cabecera__utiles .idioma .idioma__btn--en,
+  .cabecera__utiles .tema button,
+  .cabecera__utiles .tema button.tema__bicho,
+  .cabecera__utiles .tema__auto { width: 51px; height: 34px; }
+  .cabecera__utiles .tema button { margin-top: -1px; }
+  /* Mismo cálculo que a 44 px: el lobo ocupa 22,86 unidades de alto;
+     en un hueco de 32 px caben 1,4 px por unidad → 33,6 px. */
+  .cabecera__utiles .tema .tema__bicho .tema__icono svg { width: 33.6px; height: 33.6px; }
+}
+
+/* 17/09/2026 (él): los botones de idioma y modo un 10 % más chicos, y
+   en teléfono SIN el margen negativo que los pegaba al borde de la
+   pantalla: en su equipo los sacaba de la vista. Quedan alineados con
+   el borde derecho del contenido, donde termina el ☰.
+   Iconos: el lobo ocupa 22,86 unidades de alto, así que el SVG mide
+   24 × (alto del hueco ÷ 22,86). */
+.cabecera__utiles .idioma button,
+.cabecera__utiles .idioma .idioma__btn--es,
+.cabecera__utiles .idioma .idioma__btn--en,
+.cabecera__utiles .tema button,
+.cabecera__utiles .tema button.tema__bicho,
+.cabecera__utiles .tema__auto { width: 59.4px; height: 39.6px; }
+.cabecera__utiles .tema .tema__bicho .tema__icono svg { width: 39.4px; height: 39.4px; }
+@media (max-width: 1060px) {
+  .cabecera__utiles .controles { margin-right: 0; }
+  .cabecera__utiles .idioma button,
+  .cabecera__utiles .idioma .idioma__btn--es,
+  .cabecera__utiles .idioma .idioma__btn--en,
+  .cabecera__utiles .tema button,
+  .cabecera__utiles .tema button.tema__bicho,
+  .cabecera__utiles .tema__auto { width: 45.9px; height: 30.6px; }
+  .cabecera__utiles .tema .tema__bicho .tema__icono svg { width: 30px; height: 30px; }
+}
+/* TELÉFONO: vuelven al tamaño anterior, 51 × 34 (él, 17/09/2026); la
+   reducción del 10 % queda solo en computadora. Siguen sin margen
+   negativo: terminan donde termina el contenido. */
+@media (max-width: 1060px) {
+  .cabecera__utiles .idioma button,
+  .cabecera__utiles .idioma .idioma__btn--es,
+  .cabecera__utiles .idioma .idioma__btn--en,
+  .cabecera__utiles .tema button,
+  .cabecera__utiles .tema button.tema__bicho,
+  .cabecera__utiles .tema__auto { width: 51px; height: 34px; }
+  .cabecera__utiles .tema .tema__bicho .tema__icono svg { width: 33.6px; height: 33.6px; }
+  .cabecera__utiles .controles { margin-right: 0; max-width: 100%; }
+}

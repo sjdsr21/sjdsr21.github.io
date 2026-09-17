@@ -250,7 +250,7 @@
      (`.catalogo-barra`, `.vistas`, `.filtros-mini`), que vive en
      estilo.css y esta página también carga.
      ============================================================ */
-  var VISTAS_PT = ["tres", "cinco", "lista"];
+  var VISTAS_PT = ["tres", "cuatro", "cinco", "lista"];   /* «cuatro»: 17/09/2026 */
   var filtrosPt = { material: "", acabado: "", uso: "" };
 
   /* La vista NO se guarda, igual que en Exhibición (él, 15/09/2026):
@@ -260,7 +260,9 @@
      nada más; Exhibición sigue abriendo en la de tres. En teléfono se
      ve en dos columnas, que es a lo que baja la de cinco por las
      reglas de ancho: él pidió «por lo menos en computadora». */
-  var vistaActualPt = "cinco";
+  /* 17/09/2026 (él): en computadora, la de CUATRO por defecto; en
+     teléfono sigue la de cinco (dos columnas). */
+  var vistaActualPt = window.matchMedia("(min-width: 561px)").matches ? "cuatro" : "cinco";
 
   function vistaPt() { return vistaActualPt; }
 
@@ -358,12 +360,12 @@
       }
       return '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">' + s + '</svg>';
     }
-    var n = v === "cinco" ? 5 : 3;
+    var n = v === "cinco" ? 5 : v === "cuatro" ? 4 : 3;
     /* Lado 4 y no 3, para que el bloque mida 24 justos y quede centrado
        en el botón (él, 15/09/2026). Gemelo del de js/sitio.js: si se
        cambia uno, cambiar el otro. */
-    var lado = n === 5 ? 4 : 6;
-    var paso = n === 5 ? 5 : 9;
+    var lado = n === 5 ? 4 : n === 4 ? 5 : 6;
+    var paso = n === 5 ? 5 : n === 4 ? 6 : 9;
     for (y = 0; y < n; y++) {
       for (x = 0; x < n; x++) {
         s += '<rect x="' + (x * paso) + '" y="' + (y * paso) +
@@ -374,7 +376,7 @@
        teléfono (1×1 o 2×2), que sale de sitio.js para no duplicarlo. */
     return '<svg class="vistas__ico--pc" viewBox="0 0 24 24" shape-rendering="crispEdges" ' +
            'aria-hidden="true" focusable="false">' + s + '</svg>' +
-           (window.PA_ICONO_VISTA_MOVIL ? window.PA_ICONO_VISTA_MOVIL(n === 5 ? 2 : 1) : "");
+           (window.PA_ICONO_VISTA_MOVIL ? window.PA_ICONO_VISTA_MOVIL(n === 5 ? 2 : n === 4 ? 4 : 1) : "");
   }
 
   function barraPtHTML() {
@@ -741,6 +743,7 @@
            y haría parpadear todas las tarjetas. */
         cambiarFoto(ficha.querySelector(".pt-ficha__hueco img"), srcTema(fotos[i]));
         if (window.PA_PUNTOS) window.PA_PUNTOS.marcar(ficha.querySelector(".pt-cuenta-fotos"), i);
+        volverALaPrimera(slug);
       });
     });
 
@@ -766,6 +769,25 @@
      Con `prefers-reduced-motion` no arranca.
      ============================================================ */
   var ROT_ESPERA = 8000;   /* del primer turno */
+  /* VUELTA A LA PRIMERA FOTO (él, 16/09/2026): 20 s después del último
+     cambio a mano, la carta regresa sola a su foto 1. Cada cambio nuevo
+     reinicia la cuenta de esa pieza. Gemela de la de sitio.js. */
+  var ESPERA_VUELTA = 20000;
+  var relojVuelta = {};
+  function volverALaPrimera(slug) {
+    clearTimeout(relojVuelta[slug]);
+    if (!fotoActual[slug]) return;
+    relojVuelta[slug] = setTimeout(function () {
+      delete relojVuelta[slug];
+      var p = visibles().filter(function (x) { return x.slug === slug; })[0];
+      var f = document.querySelector('.pt-ficha[data-slug="' + slug + '"]');
+      fotoActual[slug] = 0;
+      if (!p || !f) return;
+      var img = f.querySelector(".pt-ficha__hueco img");
+      if (img) cambiarFoto(img, srcTema(todasLasFotos(p)[0]));
+      if (window.PA_PUNTOS) window.PA_PUNTOS.marcar(f.querySelector(".pt-cuenta-fotos"), 0);
+    }, ESPERA_VUELTA);
+  }
   var ROT_CADA   = 6000;
   var rotManual = null;    /* la que él tocó a mano */
   var rotAuto   = null;    /* la que cambió el turno pasado */
@@ -816,8 +838,11 @@
   /* El guardia hace falta: `pintarCatalogo` se llama otra vez con
      cada cambio de idioma y de tema, y sin él quedarían varios
      relojes corriendo a la vez. */
+  /* APAGADO el 16/09/2026 (él): las cuadrículas ya no cambian fotos
+     solas. El código se queda por si vuelve; basta poner esto en true. */
+  var ROT_ENCENDIDA = false;
   function arrancarRotacion() {
-    if (rotTimer || menosMovimiento) return;
+    if (!ROT_ENCENDIDA || rotTimer || menosMovimiento) return;
     rotTimer = setTimeout(function () {
       rotTurno();
       rotTimer = setInterval(rotTurno, ROT_CADA);
@@ -918,8 +943,17 @@
      base de laptop, la madera). */
   function modeloDe(p, o) {
     if (!p.modelo_por) return p.modelo3d || null;
-    var clave = o[p.opcion_visual || "madera"];
-    return p.modelo_por[clave] || null;
+    return p.modelo_por[claveDe(p.opcion_visual || "madera", o)] || null;
+  }
+
+  /* LA CLAVE DE UNA VARIANTE (17/09/2026). `opcion_visual` y
+     `opcion_diagrama` pueden ser un nombre de opción ("madera") o una
+     LISTA (["tamano", "madera"]): entonces la clave junta los valores
+     con «|», como en `matriz` («m|puy»). Así la tabla de picar cambia de
+     modelo 3D y de isométrico con la talla Y con la madera. */
+  function claveDe(campo, o) {
+    if (Array.isArray(campo)) return campo.map(function (c) { return o[c]; }).join("|");
+    return o[campo];
   }
 
   /* LA IMAGEN QUE CAMBIA CON EL TEMA (06/09/2026).
@@ -989,7 +1023,17 @@
        sigue fuera: eso solo se ve al abrir. */
     if (p.plano_img) fotos.push(p.plano_img);
     if (p.plano_img_por) {
+      /* Con claves compuestas («talla|madera») la cuadrícula solo lleva
+         los de la PRIMERA madera: nueve isométricos seguidos serían
+         demasiados para una carta. Las demás se ven al abrir. */
+      var primera = null;
+      if (Array.isArray(p.opcion_diagrama)) {
+        var ult = p.opcion_diagrama[p.opcion_diagrama.length - 1];
+        var gr = (p.opciones || []).filter(function (g) { return g.id === ult; })[0];
+        primera = gr && gr.valores[0] && gr.valores[0].id;
+      }
       Object.keys(p.plano_img_por).forEach(function (k) {
+        if (primera && k.split("|").pop() !== primera) return;
         fotos.push(p.plano_img_por[k]);
       });
     }
@@ -1167,12 +1211,12 @@
        escogida en color de acento, para que se comparen de un vistazo.
        Usa la misma clave que `diagrama_por` (opcion_diagrama). */
     var planoImg = p.plano_img_por
-      ? p.plano_img_por[o[p.opcion_diagrama || "tamano"]]
+      ? p.plano_img_por[claveDe(p.opcion_diagrama || "tamano", o)]
       : p.plano_img;
     if (planoImg) {
       l.push({ tipo: "plano-img", src: planoImg });
     } else {
-      var plano = p.diagrama_por ? p.diagrama_por[o[p.opcion_diagrama || "tamano"]]
+      var plano = p.diagrama_por ? p.diagrama_por[o[[].concat(p.opcion_diagrama || "tamano")[0]]]
                                  : p.diagrama;
       if (plano && window.DIAGRAMAS && window.DIAGRAMAS.tiene(plano)) {
         l.push({ tipo: "plano", src: plano });

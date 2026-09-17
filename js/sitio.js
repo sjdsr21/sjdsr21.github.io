@@ -13,20 +13,31 @@
   /* Se aplica ANTES que nada, en la primera linea util del script:
      si se esperara a pintar, quien tenga guardado el modo claro
      veria un fogonazo negro en cada carga. */
-  /* Tres estados: oscuro fijo, claro fijo, y AUTO (2026-08-13),
-     que sigue lo que tenga configurado el sistema. */
-  var TEMAS = ["oscuro", "claro", "auto"];
-  var tema = localStorage.getItem("tema");
-  /* Por defecto OSCURO, y a proposito no se arranca en auto: la
-     marca es negra, y quien no toque nada tiene que ver la marca. */
-  if (TEMAS.indexOf(tema) === -1) { tema = "oscuro"; }
+  /* 16/09/2026 (él): SIN botón de automático. Por defecto la página
+     sigue el modo del sistema («auto»). Si el visitante elige oscuro o
+     claro, se recuerda UNA SEMANA y luego vuelve a seguir al sistema.
+     Se guarda como {"tema":…,"hasta":ms}. Un valor viejo sin fecha (de
+     antes de este cambio) se descarta y la página arranca en auto. */
+  var TEMAS = ["oscuro", "claro"];
+  var TEMA_VIDA = 7 * 24 * 60 * 60 * 1000;
+  var tema = "auto";
+  try {
+    var guardadoTema = JSON.parse(localStorage.getItem("tema") || "null");
+    if (guardadoTema && TEMAS.indexOf(guardadoTema.tema) > -1 && guardadoTema.hasta > Date.now()) {
+      tema = guardadoTema.tema;
+    } else {
+      localStorage.removeItem("tema");
+    }
+  } catch (e) {
+    try { localStorage.removeItem("tema"); } catch (e2) {}
+  }
 
   var consultaOscuro = window.matchMedia("(prefers-color-scheme: dark)");
   /* En auto, si el sistema cambia de modo mientras la pagina esta
      abierta, la pagina cambia con el. */
   if (consultaOscuro.addEventListener) {
     consultaOscuro.addEventListener("change", function () {
-      if (tema === "auto") aplicarTema();
+      if (tema === "auto") { aplicarTema(); marcarTema(); }
     });
   }
 
@@ -46,16 +57,28 @@
     } catch (e) { /* navegador viejo: se queda la imagen que hubiera */ }
   }
 
+  /* El modo que SE VE: en auto, el del sistema. Es el que sale
+     marcado en los botones. */
+  function temaVisible() {
+    if (tema !== "auto") return tema;
+    return consultaOscuro.matches ? "oscuro" : "claro";
+  }
+  function marcarTema() {
+    var bs = document.querySelectorAll(".tema button");
+    for (var i = 0; i < bs.length; i++) {
+      bs[i].setAttribute("aria-pressed", bs[i].dataset.tema === temaVisible());
+    }
+  }
+
   function ponerTema(nuevo) {
     tema = nuevo;
-    localStorage.setItem("tema", nuevo);
+    try {
+      localStorage.setItem("tema", JSON.stringify({ tema: nuevo, hasta: Date.now() + TEMA_VIDA }));
+    } catch (e) {}
     aplicarTema();
     /* No hace falta repintar: el tema entero vive en los tokens
        CSS. Solo se refresca que boton se ve pulsado. */
-    var bs = document.querySelectorAll(".tema button");
-    for (var i = 0; i < bs.length; i++) {
-      bs[i].setAttribute("aria-pressed", bs[i].dataset.tema === nuevo);
-    }
+    marcarTema();
   }
 
   /* ---------- idioma -------------------------------------- */
@@ -512,7 +535,9 @@
 
   var ICONOS = {
     whatsapp: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.08 4.49.7.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.42.25-.69.25-1.29.18-1.41-.08-.13-.28-.2-.57-.35M12.05 21.8h-.01a9.87 9.87 0 01-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 01-1.51-5.26c0-5.45 4.44-9.89 9.89-9.89 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 012.89 6.99c0 5.45-4.43 9.89-9.88 9.89m8.41-18.3A11.82 11.82 0 0012.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 005.69 1.45c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.17-3.49-8.42"/></svg>',
-    correo:   '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2m0 4.24-7.47 4.67a1 1 0 01-1.06 0L4 8.24V6.4l8 5 8-5z"/></svg>',
+    /* Sobre de LÍNEAS (él, 17/09/2026): como WhatsApp e Instagram, el
+       color va solo en el contorno. Se dibuja con trazo y sin relleno. */
+    correo:   '<svg viewBox="0 0 24 24" aria-hidden="true" class="icono-linea"><rect x="2.8" y="5" width="18.4" height="14" rx="2"/><path d="M3.6 6.4 12 12.6l8.4-6.2"/></svg>',
     instagram:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.02 4.85.07 3.25.15 4.77 1.7 4.92 4.92.05 1.27.07 1.65.07 4.85s-.02 3.58-.07 4.85c-.15 3.23-1.67 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92C2.18 15.58 2.16 15.2 2.16 12s.02-3.58.07-4.85c.15-3.23 1.67-4.77 4.92-4.92C8.42 2.18 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 2.7.27.28 2.69.08 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95C23.73 2.7 21.31.28 16.95.08 15.67.01 15.26 0 12 0m0 5.84a6.16 6.16 0 100 12.32 6.16 6.16 0 000-12.32M12 16a4 4 0 110-8 4 4 0 010 8m6.41-11.85a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88"/></svg>',
     lupa:     '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.4 15.4 21 21" stroke-linecap="round"/></svg>',
     /* La bolsa del pedido (él, 16/09/2026): va en la cabecera, a la
@@ -562,8 +587,11 @@
     /* La espalda del gallo (él, 16/09/2026) ya no baja recta: se curva
        hacia la izquierda y sigue en horizontal hasta salir por el borde,
        para que se lea que detrás hay un cuerpo. */
-    gallo: '<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMax meet" aria-hidden="true">' +
-          '<path fill-rule="evenodd" d="M-1 24L-1 17.6C2.4 17.6 5.2 16.6 6.4 14.8' +
+    /* 16/09/2026 · La espalda sigue en horizontal hasta x = -12 y el
+       SVG deja ver lo que sale de su lienzo: así llega hasta el borde
+       izquierdo del botón, que es quien la recorta. */
+    gallo: '<svg class="gallo" viewBox="0 0 24 24" preserveAspectRatio="xMidYMax meet" aria-hidden="true">' +
+          '<path fill-rule="evenodd" d="M-12 24L-12 17.6L-1 17.6C2.4 17.6 5.2 16.6 6.4 14.8' +
           'C7 13.9 7.3 13 7.3 12.2C6.9 10.6 7.3 9 8.3 8.1' +
           'C7.7 6.4 8.6 5 10 5.3C10 3.1 12.1 2.5 13 4.1C13.9 2.3 16.1 2.8 15.9 4.8' +
           'C17.5 4.9 17.8 6.7 16.6 7.5L17.3 8.2 21 9.7 17.2 10.7' +
@@ -708,7 +736,9 @@
     /* Bolsa o carrito, en los tres sitios donde sale. Solo se toca si
        cambia, para no cortar la animación de «bolsa cargada». */
     var cual = vehiculoPedido(n);
-    if (bolaEnCamino) return pintarNumeroBolsa(n);
+    /* Mientras la bolita cae no cambia NADA, tampoco el número: todo
+       cambia a la vez cuando entra (él, 16/09/2026). */
+    if (bolaEnCamino) return;
     $$(".bolsa .lupa__icono, #pt-bolsa-pedido, .pedido-lateral__icono").forEach(function (h) {
       if (h.getAttribute("data-icono") !== cual) {
         h.innerHTML = ICONOS[cual];
@@ -1403,6 +1433,10 @@
        `display: none`. Y el nombre hablado va en el aria-label del
        botón, que no depende de cuál se enseñe. */
     var NOMBRE_IDIOMA = { es: "Español", en: "English" };
+    var BANDERA_IDIOMA = {
+      es: '<svg viewBox="0 0 60 40" aria-hidden="true" focusable="false"><path class="b-l" d="M0 13.33H60M0 26.67H60"/><path class="b-estrella" d="M21.07 21.70 L21.43 22.56 L22.36 22.63 L21.65 23.24 L21.87 24.14 L21.07 23.66 L20.28 24.14 L20.50 23.24 L19.79 22.63 L20.72 22.56Z M23.09 18.43 L23.45 19.29 L24.37 19.36 L23.67 19.97 L23.88 20.87 L23.09 20.39 L22.30 20.87 L22.51 19.97 L21.81 19.36 L22.73 19.29Z M26.24 16.23 L26.59 17.09 L27.52 17.16 L26.82 17.76 L27.03 18.67 L26.24 18.18 L25.44 18.67 L25.66 17.76 L24.95 17.16 L25.88 17.09Z M30.00 15.45 L30.36 16.31 L31.28 16.38 L30.58 16.99 L30.79 17.89 L30.00 17.41 L29.21 17.89 L29.42 16.99 L28.72 16.38 L29.64 16.31Z M33.76 16.23 L34.12 17.09 L35.05 17.16 L34.34 17.76 L34.56 18.67 L33.76 18.18 L32.97 18.67 L33.18 17.76 L32.48 17.16 L33.41 17.09Z M36.91 18.43 L37.27 19.29 L38.19 19.36 L37.49 19.97 L37.70 20.87 L36.91 20.39 L36.12 20.87 L36.33 19.97 L35.63 19.36 L36.55 19.29Z M38.93 21.70 L39.28 22.56 L40.21 22.63 L39.50 23.24 L39.72 24.14 L38.93 23.66 L38.13 24.14 L38.35 23.24 L37.64 22.63 L38.57 22.56Z"/><path class="b-l b-fino" d="M3.5 3H9V7Q9 10 6.25 11Q3.5 10 3.5 7Z"/><path class="b-s" d="M6.25 4V10M4.7 5.6H7.8"/></svg>',
+      en: '<svg viewBox="0 0 60 40" aria-hidden="true" focusable="false"><mask id="bandera-uk-m"><rect width="60" height="40" fill="#fff"/><path d="M25 0H35V15H60V25H35V40H25V25H0V15H25Z" fill="#000"/></mask><g mask="url(#bandera-uk-m)"><path class="b-l" d="M-16.66 -7.50 L73.34 52.50 M-13.34 -12.50 L76.66 47.50 M76.66 -7.50 L-13.34 52.50 M73.34 -12.50 L-16.66 47.50"/><path class="b-l" d="M0 0L60 40M60 0L0 40"/></g><path class="b-l" d="M25 0V15H0M35 0V15H60M25 40V25H0M35 40V25H60"/><path class="b-l" d="M27 0V17H0M33 0V17H60M27 40V23H0M33 40V23H60"/></svg>'
+    };
     var botones = IDIOMAS.map(function (i) {
       var b = el("button", { type: "button", "aria-pressed": i === idioma,
                              "aria-label": NOMBRE_IDIOMA[i] });
@@ -1412,6 +1446,13 @@
          de todo selector de idioma que funciona: quien busca su
          lengua la reconoce escrita como la escribe él. */
       b.appendChild(el("span", { class: "ctrl__largo", texto: NOMBRE_IDIOMA[i] }));
+      /* PRUEBA (él, 16/09/2026): la bandera de cada idioma —Venezuela
+         para español, Reino Unido para inglés— SIN sus colores, solo la
+         silueta de sus elementos, y el botón con la proporción de la
+         bandera (2:3 y 1:2). La palabra queda para lectores de pantalla
+         en el aria-label. */
+      b.appendChild(el("span", { class: "idioma__bandera", html: BANDERA_IDIOMA[i] }));
+      b.classList.add("idioma__btn--" + i);
       return b;
     });
     botones.forEach(function (b, n) {
@@ -1440,7 +1481,7 @@
         type: "button",
         class: m === "auto" ? "tema__auto" : "tema__bicho",
         title: ETIQUETA_TEMA[m][idioma], "aria-label": ETIQUETA_TEMA[m][idioma],
-        "aria-pressed": m === tema
+        "aria-pressed": m === temaVisible()
       });
       /* El sol y la luna se dibujan en los dos tamaños. El
          AUTOMÁTICO no: en escritorio sigue diciendo «auto» con
@@ -1452,12 +1493,12 @@
       } else {
         b.appendChild(el("span", { class: "tema__icono", html: ICONO_TEMA[m] }));
       }
-      /* En teléfono los tres llevan su palabra, y el automático
-         recupera además su icono, que ahí sí acompaña al texto. */
+      /* 16/09/2026 (él): oscuro y claro, solo su dibujo, sin palabra;
+         el automático, solo la palabra «auto», sin icono. Igual en
+         computadora y en teléfono. */
       if (m === "auto") {
-        b.appendChild(el("span", { class: "tema__icono--movil", html: ICONO_TEMA[m] }));
+        b.appendChild(el("span", { class: "ctrl__largo", texto: "auto" }));
       }
-      b.appendChild(el("span", { class: "ctrl__largo", texto: PALABRA_TEMA[m][idioma] }));
       b.dataset.tema = m;
       b.addEventListener("click", function () { ponerTema(m); });
       return b;
@@ -1482,6 +1523,11 @@
     function ponerMenu(abierto) {
       menu.classList.toggle("abierto", abierto);
       host.classList.toggle("cabecera--abierta", abierto);
+      /* Idioma y modo se esconden TAMBIÉN por su cuenta (él, 16/09/2026:
+         en su teléfono, al desplazar, se cerraban las páginas pero no
+         estos botones). */
+      var utiles = host.querySelector(".cabecera__utiles");
+      if (utiles) utiles.classList.toggle("cabecera__utiles--cerrado", !abierto);
       hamb.setAttribute("aria-expanded", abierto ? "true" : "false");
       menuEstaAbierto = function () { return menu.classList.contains("abierto"); };
       if (abierto) {
@@ -1563,6 +1609,12 @@
     ]);
     bolsa.addEventListener("click", abrirPedido);
 
+    /* Si el menú estaba abierto (se cambió el idioma desde dentro), el
+       nuevo se deja abierto también: antes el encabezado conservaba la
+       marca de «abierto» pero la fila de páginas nacía cerrada, y en el
+       teléfono desaparecían Novedades, El taller y Contacto (él,
+       17/09/2026). */
+    var menuEstabaAbierto = host.classList.contains("cabecera--abierta");
     host.innerHTML = "";
     host.classList.add("cabecera");   /* add, no className=, para no borrar "encogida" */
     host.appendChild(el("div", { class: "cabecera__fila" }, [
@@ -1614,6 +1666,7 @@
         ])
       ])
     ]));
+    ponerMenu(menuEstabaAbierto);
     pintarBolsa();
   }
 
@@ -1859,7 +1912,10 @@
      volver encuentra la vista que dejó. Va en try/catch porque en
      ventana privada `localStorage` puede reventar al leerlo.
      ============================================================ */
-  var VISTAS = ["tres", "cinco", "lista"];
+  /* «cuatro» (él, 17/09/2026): cuadrícula de 4 columnas, en computadora
+     entre la de tres y la de cinco; en teléfono va DESPUÉS de la de dos
+     (el CSS reordena los botones allá). */
+  var VISTAS = ["tres", "cuatro", "cinco", "lista"];
 
   /* LA VISTA YA NO SE GUARDA (él, 15/09/2026): al salir de la página y
      volver, arranca otra vez en la de tres. Antes vivía en
@@ -1868,7 +1924,9 @@
      él quiere— pero se conserva DENTRO de la visita, que hace falta
      porque al cambiar un filtro se repinta la cuadrícula entera y
      `pintarRejillaTrabajos` necesita saber en qué vista está. */
-  var vistaActual = "tres";
+  /* POR DEFECTO (él, 17/09/2026): en computadora la de CUATRO; en
+     teléfono sigue la de tres (una columna). */
+  var vistaActual = window.matchMedia("(min-width: 561px)").matches ? "cuatro" : "tres";
 
   function vistaGuardada() { return vistaActual; }
 
@@ -1918,7 +1976,7 @@
       }
       return '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">' + s + '</svg>';
     }
-    var n = v === "cinco" ? 5 : 3;
+    var n = v === "cinco" ? 5 : v === "cuatro" ? 4 : 3;
     /* El de cinco iba con lado 3 y paso 5: el bloque medía 23 sobre un
        lienzo de 24, así que sobraba una unidad ABAJO y A LA DERECHA y el
        dibujo se veía corrido arriba y a la izquierda (él, 15/09/2026).
@@ -1926,8 +1984,9 @@
        de tres (lado 6, paso 9 → también 24). El cuadradito engorda de 3
        a 4: es el precio de que todo caiga en píxeles enteros, que es lo
        que evita los grosores desiguales. */
-    var lado = n === 5 ? 4 : 6;
-    var paso = n === 5 ? 5 : 9;
+    /* De cuatro (17/09/2026, más grandes): lado 5 y paso 6 → de 0 a 23. */
+    var lado = n === 5 ? 4 : n === 4 ? 5 : 6;
+    var paso = n === 5 ? 5 : n === 4 ? 6 : 9;
     for (y = 0; y < n; y++) {
       for (x = 0; x < n; x++) {
         s += '<rect x="' + (x * paso) + '" y="' + (y * paso) +
@@ -1936,7 +1995,7 @@
     }
     return '<svg class="vistas__ico--pc" viewBox="0 0 24 24" shape-rendering="crispEdges" ' +
            'aria-hidden="true" focusable="false">' + s + '</svg>' +
-           iconoVistaMovil(n === 5 ? 2 : 1);
+           iconoVistaMovil(n === 5 ? 2 : n === 4 ? 4 : 1);
   }
 
   /* EN TELÉFONO (él, 16/09/2026) la cuadrícula de tres es de UNA
@@ -1949,6 +2008,10 @@
   function iconoVistaMovil(n) {
     var s = "", x, y;
     if (n === 1) s = '<rect x="2" y="2" width="20" height="20"/>';
+    /* 4×4 en teléfono (17/09/2026, más grandes): lado 5 y paso 6,
+       de 0 a 23. */
+    else if (n === 4) { for (y = 0; y < 4; y++) for (x = 0; x < 4; x++)
+      s += '<rect x="' + (x * 6) + '" y="' + (y * 6) + '" width="5" height="5"/>'; }
     else for (y = 0; y < 2; y++) for (x = 0; x < 2; x++)
       s += '<rect x="' + (2 + x * 11) + '" y="' + (2 + y * 11) + '" width="9" height="9"/>';
     return '<svg class="vistas__ico--movil" viewBox="0 0 24 24" shape-rendering="crispEdges" ' +
@@ -2545,7 +2608,28 @@
     var img = tarjeta.querySelector(".tarjeta__marco img");
     if (img) cambiarFoto(img, fotos[i]);
     marcarPuntos(tarjeta.querySelector(".tarjeta__cuenta"), i);
+    volverALaPrimera(slug);
   });
+
+  /* VUELTA A LA PRIMERA FOTO (él, 16/09/2026): 20 s después del último
+     cambio a mano, la carta regresa sola a su foto 1. Cada cambio nuevo
+     reinicia la cuenta de esa pieza. */
+  var ESPERA_VUELTA = 20000;
+  var relojVuelta = {};
+  function volverALaPrimera(slug) {
+    clearTimeout(relojVuelta[slug]);
+    if (!fotoTarjeta[slug]) return;
+    relojVuelta[slug] = setTimeout(function () {
+      delete relojVuelta[slug];
+      var w = (window.TRABAJOS || []).filter(function (x) { return x.slug === slug; })[0];
+      var t = document.querySelector('.tarjeta[data-slug="' + slug + '"]');
+      fotoTarjeta[slug] = 0;
+      if (!w || !t) return;
+      var img = t.querySelector(".tarjeta__marco img");
+      if (img) cambiarFoto(img, fotosDe(w)[0]);
+      marcarPuntos(t.querySelector(".tarjeta__cuenta"), 0);
+    }, ESPERA_VUELTA);
+  }
 
   /* ============================================================
      LA CUADRÍCULA SE MUEVE SOLA (15/09/2026, pedido suyo)
@@ -2620,8 +2704,11 @@
   /* El guardia del temporizador hace falta de verdad: la cuadrícula
      se vuelve a pintar con cada cambio de idioma, y sin él quedarían
      dos o tres relojes corriendo a la vez. */
+  /* APAGADO el 16/09/2026 (él): las cuadrículas ya no cambian fotos
+     solas. El código se queda por si vuelve; basta poner esto en true. */
+  var ROT_ENCENDIDA = false;
   function arrancarRotacion() {
-    if (rotTimer || menosMovimiento) return;
+    if (!ROT_ENCENDIDA || rotTimer || menosMovimiento) return;
     rotTimer = setTimeout(function () {
       rotTurno();
       rotTimer = setInterval(rotTurno, ROT_CADA);

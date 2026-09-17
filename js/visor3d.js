@@ -76,8 +76,12 @@ window.Visor3D = (function () {
 
     /* Tono de cine: comprime las luces altas en vez de quemarlas.
        Es lo que quita el aspecto de plástico. */
-    render.toneMapping = THREE.ACESFilmicToneMapping;
-    render.toneMappingExposure = 1.05;
+    /* 17/09/2026 · SIN tono de cine y con luz neutra: la receta de antes
+       aclaraba y desaturaba la madera (el Butcher Block, marrón oscuro en
+       SketchUp, salía beige rosado). Ver capturar-isometrico.html, que
+       usa la misma receta y tiene las medidas. */
+    render.toneMapping = THREE.NoToneMapping;
+    render.toneMappingExposure = 1;
     /* SIN SOMBRAS desde el 14/08/2026, por decisión suya. Las
        sombras proyectadas caían sobre las propias piezas y se
        leían como manchas de otro tono —"sombras que no parecen
@@ -135,19 +139,19 @@ window.Visor3D = (function () {
        tono", que es lo que él pidió— y la forma se sigue leyendo
        por los cantos. No bajes más la ambiente sin mirarlo: a
        partir de ahí la pieza se aplana y parece una silueta. */
-    escena.add(new THREE.HemisphereLight(0xfff4e6, 0x6b5b49, 0.75));
+    escena.add(new THREE.HemisphereLight(0xffffff, 0x707070, 0.9));
 
-    var principal = new THREE.DirectionalLight(0xfff6ea, 0.45);
+    var principal = new THREE.DirectionalLight(0xffffff, 0.135);
     principal.position.set(4, 8, 6);
     principal.castShadow = false;
     escena.add(principal);
 
-    var relleno = new THREE.DirectionalLight(0xe8eef5, 0.45);
+    var relleno = new THREE.DirectionalLight(0xffffff, 0.135);
     relleno.position.set(-6, 3, -5);
     escena.add(relleno);
 
     /* contraluz: separa la pieza del fondo por el borde */
-    var contra = new THREE.DirectionalLight(0xffffff, 0.22);
+    var contra = new THREE.DirectionalLight(0xffffff, 0.066);
     contra.position.set(-3, 4, -8);
     escena.add(contra);
 
@@ -220,7 +224,7 @@ window.Visor3D = (function () {
           m.aoMap = null;
           m.roughness = 0.72;
           m.metalness = 0.0;
-          m.envMapIntensity = 0.85;
+          m.envMapIntensity = 0;   /* 17/09/2026: el entorno blanqueaba */
           m.needsUpdate = true;
         }
 

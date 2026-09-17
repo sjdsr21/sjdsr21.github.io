@@ -47,6 +47,8 @@ window.PROTOTIPOS = [
        `imagen` es la de la cuadrícula; `imagen_por` cambia con la
        madera dentro del panel. */
     imagen: "img/prototipos/base-alta-saman.webp",
+    /* 16/09/2026 · Fotos nuevas de la carpeta de contenido, en PNG
+       recortado: se ven enteras sobre el fondo de la página. */
     sin_fondo: true,
     /* Plano de cotas. Las medidas salen del MODELO 3D: era el
        único sitio donde existían. Ver js/diagramas.js. */
@@ -122,6 +124,8 @@ window.PROTOTIPOS = [
     peso: 1.1,               /* RELLENO */
 
     imagen: "img/prototipos/base-baja-saman.webp",
+    /* 16/09/2026 · Fotos nuevas de la carpeta de contenido, en PNG
+       recortado: se ven enteras sobre el fondo de la página. */
     sin_fondo: true,
     /* Plano generado (14/08/2026) por Herramientas/plano-tecnico.py desde la
        GEOMETRIA del .obj de SketchUp. El portatil NO estaba en ese .skp: se
@@ -163,8 +167,9 @@ window.PROTOTIPOS = [
       /* Stock REAL desde el 12/09/2026 (él): una unidad de cada madera,
          las de la ronda 1 de inventario. Los 3 y 2 de antes eran relleno. */
       valores: [
-        { id: "apamate", etiqueta: { es: "Apamate", en: "Apamate" }, delta: 0, stock: 1 },
-        { id: "saman",   etiqueta: { es: "Samán",   en: "Monkeypod" },   delta: 0, stock: 1 }
+        /* Samán PRIMERO, y por eso elegido al abrir (él, 17/09/2026). */
+        { id: "saman",   etiqueta: { es: "Samán",   en: "Monkeypod" },   delta: 0, stock: 1 },
+        { id: "apamate", etiqueta: { es: "Apamate", en: "Apamate" }, delta: 0, stock: 1 }
       ]
     }]
   },
@@ -183,15 +188,15 @@ window.PROTOTIPOS = [
     acabado: ["tung"],
     uso: ["cocina"],
     resumen: {
-      es: "Veta a lo largo, cantos suavizados y buen espesor. Acabado en aceite de tung, apto para uso alimentario: máxima durabilidad sin meterle a la tabla nada nocivo para la salud. La talla L viene sobre cuatro patas de goma.",
-      en: "Long grain, eased edges and generous thickness. Finished in food-safe tung oil: maximum durability without putting anything harmful into the board. The L size comes on four rubber feet."
+      es: "Veta a lo largo, cantos suavizados y buen espesor. Acabado en aceite de tung, el más resistente para uso alimentario. La talla L viene sobre cuatro patas de goma.",
+      en: "Long grain, eased edges and generous thickness. Finished in tung oil, the most durable food-safe finish. The L size comes on four rubber feet."
     },
     /* Lo que se ve en la CUADRÍCULA. Corta donde él dijo: hasta «apto
        para uso alimentario». El resto —lo del aceite y las patas de
        goma— sale al abrir el producto. */
     resumen_corto: {
-      es: "Veta a lo largo, cantos suavizados y buen espesor. Acabado en aceite de tung, apto para uso alimentario.",
-      en: "Long grain, eased edges and generous thickness. Finished in food-safe tung oil."
+      es: "Veta a lo largo, cantos suavizados y buen espesor. Acabado en aceite de tung, el más resistente para uso alimentario.",
+      en: "Long grain, eased edges and generous thickness. Finished in tung oil, the most durable food-safe finish."
     },
     matriz: {
       "s|teca": 30, "m|teca": 45, "l|teca": 60,
@@ -214,9 +219,11 @@ window.PROTOTIPOS = [
        14/09/2026). Esta trae su fondo, al revés que la recortada de
        arriba; como en las bases de foto, `sin_fondo` es del producto
        entero y la pinta igual, encajada entera sobre fondo liso. */
+    /* 16/09/2026 · La segunda pasó a «Tablas normales sin fondo 1-2.png»
+       (él), en lugar de la foto de ambiente. */
     galeria: ["img/prototipos/tabla-de-picar-2.webp"],
-    /* Un plano por talla: el diagrama cambia con el tamaño. */
-    opcion_diagrama: "tamano",
+    /* Un plano por talla: el diagrama cambia con el tamaño (y desde el
+       17/09/2026 también con la madera, ver plano_img_por). */
     /* UNA lámina por talla, con SOLO esa talla: vista superior arriba y
        vista de canto abajo, que es donde se lee el espesor.
        Se probó dibujar las tres juntas para compararlas y se descartó
@@ -232,21 +239,36 @@ window.PROTOTIPOS = [
        le corresponde; lo que cambió es el CSS, que ya no invierte en
        modo oscuro lo que no sea .svg — un render en color invertido
        salía con la madera azul. Ver css/prototipos.css. */
-       plano_img_por: {
-      s: "img/prototipos/tabla-iso-s.webp",
-      m: "img/prototipos/tabla-iso-m.webp",
-      l: "img/prototipos/tabla-iso-l.webp"
+    /* 17/09/2026 · Un isométrico por TALLA Y MADERA (él): se ve el color
+       de la madera escogida. Clave «talla|madera», como en `matriz`. Los
+       de teca conservan su nombre de siempre. */
+    opcion_diagrama: ["tamano", "madera"],
+    plano_img_por: {
+      "s|teca": "img/prototipos/tabla-iso-s.webp",
+      "m|teca": "img/prototipos/tabla-iso-m.webp",
+      "l|teca": "img/prototipos/tabla-iso-l.webp",
+      "s|puy": "img/prototipos/tabla-puy-iso-s.webp",
+      "m|puy": "img/prototipos/tabla-puy-iso-m.webp",
+      "l|puy": "img/prototipos/tabla-puy-iso-l.webp",
+      "s|algarrobo": "img/prototipos/tabla-algarrobo-iso-s.webp",
+      "m|algarrobo": "img/prototipos/tabla-algarrobo-iso-m.webp",
+      "l|algarrobo": "img/prototipos/tabla-algarrobo-iso-l.webp"
     },
     diagrama_por: { s: "tabla-s", m: "tabla-m", l: "tabla-l" },
 
-    /* Aquí el modelo cambia con el TAMAÑO, no con la madera: solo
-       exportó las tres tallas en teca. Por eso opcion_visual es
-       "tamano" y no "madera" como en las bases de laptop. */
-    opcion_visual: "tamano",
+    /* El modelo cambia con la TALLA y con la MADERA (17/09/2026: él
+       exportó las tres tallas también en puy y en algarrobo). */
+    opcion_visual: ["tamano", "madera"],
     modelo_por: {
-      s: "modelos/tabla-de-picar-teca-talla-s.glb",
-      m: "modelos/tabla-de-picar-teca-talla-m.glb",
-      l: "modelos/tabla-de-picar-teca-talla-l.glb"
+      "s|teca": "modelos/tabla-de-picar-teca-talla-s.glb",
+      "m|teca": "modelos/tabla-de-picar-teca-talla-m.glb",
+      "l|teca": "modelos/tabla-de-picar-teca-talla-l.glb",
+      "s|puy": "modelos/tabla-de-picar-puy-talla-s.glb",
+      "m|puy": "modelos/tabla-de-picar-puy-talla-m.glb",
+      "l|puy": "modelos/tabla-de-picar-puy-talla-l.glb",
+      "s|algarrobo": "modelos/tabla-de-picar-algarrobo-talla-s.glb",
+      "m|algarrobo": "modelos/tabla-de-picar-algarrobo-talla-m.glb",
+      "l|algarrobo": "modelos/tabla-de-picar-algarrobo-talla-l.glb"
     },
 
     opciones: [
@@ -497,13 +519,14 @@ window.PROTOTIPOS = [
       es: "Bloque con gancho retráctil de tres puestos, para ropa o lo que se te ocurra.",
       en: "A block with a three-position retractable hook, for coats or whatever you come up with."
     },
-    precio_usd: 40,          /* Él, 14/08/2026. Sin stock. */
+    precio_usd: 45,          /* Él, 14/08/2026 (40); subió a 45 el 17/09/2026. Sin stock. */
     peso: 0.6,               /* RELLENO */
 
     /* Dos vistas de la misma pieza (confirmado por él): la de
        tres cuartos y la de las placas, que enseña la ranura y el
        tamaño en la mano. */
-    imagen: "img/prototipos/gancho-pared-1.webp",
+    /* La 2 va de portada y la 1 pasa a segunda (él, 17/09/2026). */
+    imagen: "img/prototipos/gancho-pared-2.webp",
     /* 06/09/2026 · El plano técnico se sustituye por el ISOMÉTRICO
        con cotas. Decisión suya: para estas piezas el isométrico se
        entiende mejor que las vistas ortogonales. El plano de líneas
@@ -514,6 +537,9 @@ window.PROTOTIPOS = [
        modo oscuro lo que no sea .svg — un render en color invertido
        salía con la madera azul. Ver css/prototipos.css. */
        plano_img: "img/prototipos/gancho-pared-iso.webp",
+    /* 16/09/2026 · Fotos nuevas de «Gancho Ery» (él): la 1, 2 y 3 en
+       PNG recortado —se ven enteras sobre el fondo de la página— y la 4
+       es la foto en la pared, con su fondo. */
     sin_fondo: true,
     /* 2026-08-16 · Las 2, 3 y 4 se REENCUADRARON: en la miniatura, que
        recorta al centro, la pieza quedaba cortada y lejos.
@@ -526,7 +552,7 @@ window.PROTOTIPOS = [
          del borde derecho.
        Los originales siguen intactos en la carpeta del proyecto. */
     galeria: [
-      "img/prototipos/gancho-pared-2.webp",
+      "img/prototipos/gancho-pared-1.webp",
       "img/prototipos/gancho-pared-3.webp",
       "img/prototipos/gancho-pared-4.webp"
     ],
@@ -754,6 +780,8 @@ window.PROTOTIPOS = [
     /* el hueco del plano se indexa por `opcion_diagrama`, que por
        defecto es "tamano"; aquí la variante es la madera. */
     opcion_diagrama: "madera",
+    /* 16/09/2026 · Fotos nuevas de la carpeta de contenido, en PNG
+       recortado: se ven enteras sobre el fondo de la página. */
     sin_fondo: true,
     /* La portada enseña las dos maderas juntas y se queda fija;
        dentro del panel la foto cambia con la madera escogida.
@@ -842,8 +870,10 @@ window.PROTOTIPOS = [
     peso: 1.0,               /* RELLENO */
     /* Isométrico con transparencia: fondo liso, sin rayado (él). */
     fondo_liso: true,
-    imagen: "img/prototipos/repisa-bano-iso.webp",
-    galeria: [],
+    /* El isométrico va de ÚLTIMO (él, 16/09/2026): primero las fotos. */
+    imagen: "img/prototipos/repisa-bano-foto-1.webp",
+    /* Fotos «Repisa 1-4» (él, 16/09/2026), y el isométrico al final. */
+    galeria: ["img/prototipos/repisa-bano-foto-2.webp", "img/prototipos/repisa-bano-foto-3.webp", "img/prototipos/repisa-bano-foto-4.webp", "img/prototipos/repisa-bano-iso.webp"],
     modelo3d: "modelos/repisa-bano.glb",
 
     /* Pino, y es la única especie por ahora (él, 07/09/2026). Aun así
@@ -873,8 +903,10 @@ window.PROTOTIPOS = [
     peso: 4.0,               /* RELLENO */
     /* Isométrico con transparencia: fondo liso, sin rayado (él). */
     fondo_liso: true,
-    imagen: "img/prototipos/espejo-bano-iso.webp",
-    galeria: [],
+    /* El isométrico va de ÚLTIMO (él, 16/09/2026): primero las fotos. */
+    imagen: "img/prototipos/espejo-bano-foto-1.webp",
+    /* Fotos «Espejo Baño 1, 2, 3, 5 y 6» (no hay 4) (él, 16/09/2026). */
+    galeria: ["img/prototipos/espejo-bano-foto-2.webp", "img/prototipos/espejo-bano-foto-3.webp", "img/prototipos/espejo-bano-foto-4.webp", "img/prototipos/espejo-bano-foto-5.webp", "img/prototipos/espejo-bano-iso.webp"],
     modelo3d: "modelos/espejo-bano.glb",
 
     /* Pino, y es la única especie por ahora (él, 07/09/2026). Aun así
@@ -904,8 +936,10 @@ window.PROTOTIPOS = [
     peso: 1.6,               /* RELLENO */
     /* Isométrico con transparencia: fondo liso, sin rayado (él). */
     fondo_liso: true,
-    imagen: "img/prototipos/toallero-bano-iso.webp",
-    galeria: [],
+    /* El isométrico va de ÚLTIMO (él, 16/09/2026): primero las fotos. */
+    imagen: "img/prototipos/toallero-bano-foto-1.webp",
+    /* Fotos «Toallero 1-5» (él, 16/09/2026), y el isométrico al final. */
+    galeria: ["img/prototipos/toallero-bano-foto-2.webp", "img/prototipos/toallero-bano-foto-3.webp", "img/prototipos/toallero-bano-foto-4.webp", "img/prototipos/toallero-bano-foto-5.webp", "img/prototipos/toallero-bano-iso.webp"],
     modelo3d: "modelos/toallero-bano.glb",
 
     /* Pino, y es la única especie por ahora (él, 07/09/2026). Aun así
@@ -933,7 +967,7 @@ window.PROTOTIPOS = [
       es: "Portarrollo de pared en madera maciza. Listón removible para cambio de rollo.",
       en: "Solid wood wall roll holder. Removable rod for changing the roll."
     },
-    medidas: { es: "34 × 13 × 3 cm", en: "34 × 13 × 3 cm" },
+    medidas: { es: "34 × 13 × 3,5 cm", en: "34 × 13 × 3,5 cm" },
     precio_usd: 30,          /* Él, 06/09/2026 */
     peso: 0.7,               /* RELLENO */
     /* Isométrico con transparencia: fondo liso, sin rayado (él). */

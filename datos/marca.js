@@ -23,7 +23,7 @@ window.MARCA = {
   whatsapp: "584120152753",
   whatsapp_visible: "+58 412 015 27 53",
 
-  correo: null,
+  correo: "sjdesousar@gmail.com",   /* él, 16/09/2026 */
 
   instagram: "prototipo_ago",   /* en minúsculas (él, 15/09/2026): así se ve en el pie y en Contacto */
 

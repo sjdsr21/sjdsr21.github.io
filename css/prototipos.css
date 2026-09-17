@@ -1087,3 +1087,62 @@ video.pt-visual__foto {
   .pt-vista--cinco .pt-desde { margin: 0 0 .1rem; line-height: 1; }
   .pt-vista--cinco .pt-estado { order: 1; line-height: 1.1; }
 }
+/* La foto de cada carta, CUADRADA en todas las vistas (él, 16/09/2026).
+   Antes era 4:3; lo de abajo de la carta no cambia. */
+.pt-ficha__hueco { aspect-ratio: 1 / 1; }
+/* RECORTE CENTRADO (él, 16/09/2026, regla general salvo que diga otra
+   cosa). El `height:100%` no llegaba a resolverse contra el alto que da
+   `aspect-ratio`, así que una foto vertical medía más que el recuadro,
+   se desbordaba por ABAJO y se veía su parte de arriba. Pegada a las
+   cuatro esquinas del hueco, `object-fit: cover` la centra de verdad. */
+.pt-ficha__hueco--foto:not(.pt-ficha__hueco--suelto) img {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; object-position: 50% 50%;
+}
+/* LOS ISOMÉTRICOS Y PLANOS SE VEN ENTEROS en la cuadrícula (él,
+   16/09/2026): encajados en el cuadrado, y las franjas que sobran en el
+   color de fondo de la lámina, que es el de la página. Se reconocen por
+   el nombre del archivo, así que sirve también cuando el carrusel solo
+   cambia el `src`. */
+.pt-ficha__hueco img[src*="-iso"],
+.pt-ficha__hueco img[src*="plano"] { object-fit: contain; }
+.pt-ficha__hueco:has(img[src*="-iso"]),
+.pt-ficha__hueco:has(img[src*="plano"]) { background: var(--papel); }
+
+/* ---------- 17/09/2026 (él) ---------- */
+
+/* VISTA DE CUATRO (Prototipos). */
+.pt-vista--cuatro { background: var(--papel); border-color: var(--papel);
+  grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.pt-vista--cuatro .pt-ficha h3 { font-size: .9rem; }
+.pt-vista--cuatro .pt-ficha__res { font-size: .78rem; }
+.pt-vista--cuatro .pt-ficha__cuerpo { padding: .6rem .6rem calc(.6rem - 2px); gap: .3rem; }
+.pt-vista--cuatro .pt-precio { font-size: 1.05rem; }
+@media (max-width: 560px) {
+  .pt-vista--cuatro .pt-ficha__res,
+  .pt-vista--cuatro .pt-estado,
+  .pt-vista--cuatro .pt-desde,
+  .pt-vista--cuatro .pt-flecha { display: none; }
+  .pt-vista--cuatro .pt-ficha h3 { font-size: .6rem; line-height: 1.2; }
+  .pt-vista--cuatro .pt-precio { font-size: .7rem; }
+  .pt-vista--cuatro .pt-ficha__cuerpo { padding: .3rem .3rem .35rem; gap: .15rem; }
+}
+
+/* PRECIO ABAJO A LA DERECHA en las cuadrículas, y la disponibilidad o
+   el plazo a la izquierda. «Desde» va encima del monto. */
+.pt-vista--tres .pt-ficha__pie,
+.pt-vista--cuatro .pt-ficha__pie,
+.pt-vista--cinco .pt-ficha__pie {
+  flex-wrap: nowrap; align-items: flex-end; justify-content: space-between; margin-top: auto;
+}
+.pt-vista--tres .pt-precio,
+.pt-vista--cuatro .pt-precio,
+.pt-vista--cinco .pt-precio {
+  order: 2; margin-left: auto; display: flex; flex-direction: column; align-items: flex-end; line-height: 1.1;
+}
+.pt-vista--tres .pt-desde,
+.pt-vista--cuatro .pt-desde,
+.pt-vista--cinco .pt-desde { margin: 0 0 .1rem; line-height: 1; }
+.pt-vista--tres .pt-estado,
+.pt-vista--cuatro .pt-estado,
+.pt-vista--cinco .pt-estado { order: 1; line-height: 1.1; }
