@@ -167,7 +167,13 @@
     var puntos = '<span class="pt-franja-fotos">' + (fotos.length >= 1
       ? '<span class="pt-cuenta-fotos" role="img" aria-label="' + (i + 1) + ' / ' + fotos.length + '">' +
           (window.PA_PUNTOS ? window.PA_PUNTOS.html(fotos.length, i) : "") + '</span>'
-      : '') + '</span>';
+      : '') +
+      /* Video y 3D de la pieza, como cuadrados a la derecha (él,
+         17/09/2026): lo que hay dentro de la ficha y no se ve aquí. */
+      (window.PA_EXTRAS ? window.PA_EXTRAS(
+        [].concat(p.video ? ["video"] : [])
+          .concat((p.modelo3d || p.modelo_por) ? ["3d"] : [])) : "") +
+      '</span>';
     var visual;
     if (fotos.length) {
       /* Las flechas solo si hay más de una foto: con una sola
@@ -361,6 +367,7 @@
       return '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">' + s + '</svg>';
     }
     var n = v === "cinco" ? 5 : v === "cuatro" ? 4 : 3;
+    /* En teléfono la de «cuatro» son TRES columnas (él, 17/09/2026). */
     /* Lado 4 y no 3, para que el bloque mida 24 justos y quede centrado
        en el botón (él, 15/09/2026). Gemelo del de js/sitio.js: si se
        cambia uno, cambiar el otro. */
@@ -376,7 +383,7 @@
        teléfono (1×1 o 2×2), que sale de sitio.js para no duplicarlo. */
     return '<svg class="vistas__ico--pc" viewBox="0 0 24 24" shape-rendering="crispEdges" ' +
            'aria-hidden="true" focusable="false">' + s + '</svg>' +
-           (window.PA_ICONO_VISTA_MOVIL ? window.PA_ICONO_VISTA_MOVIL(n === 5 ? 2 : n === 4 ? 4 : 1) : "");
+           (window.PA_ICONO_VISTA_MOVIL ? window.PA_ICONO_VISTA_MOVIL(n === 5 ? 2 : n === 4 ? 3 : 1) : "");
   }
 
   function barraPtHTML() {

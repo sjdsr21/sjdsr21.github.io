@@ -538,6 +538,8 @@
     /* Sobre de LÍNEAS (él, 17/09/2026): como WhatsApp e Instagram, el
        color va solo en el contorno. Se dibuja con trazo y sin relleno. */
     correo:   '<svg viewBox="0 0 24 24" aria-hidden="true" class="icono-linea"><rect x="2.8" y="5" width="18.4" height="14" rx="2"/><path d="M3.6 6.4 12 12.6l8.4-6.2"/></svg>',
+    /* Buzón de correo con su banderita (17/09/2026), de líneas como el sobre. */
+    buzon:    '<svg viewBox="0 0 24 24" aria-hidden="true" class="icono-linea"><path d="M7 8h10a4 4 0 0 1 4 4v6H3v-6a4 4 0 0 1 4-4z"/><path d="M7 8a4 4 0 0 1 4 4v6"/><path d="M15 12V4h3.5v2.6H15"/><path d="M14 18v3"/></svg>',
     instagram:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.02 4.85.07 3.25.15 4.77 1.7 4.92 4.92.05 1.27.07 1.65.07 4.85s-.02 3.58-.07 4.85c-.15 3.23-1.67 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92C2.18 15.58 2.16 15.2 2.16 12s.02-3.58.07-4.85c.15-3.23 1.67-4.77 4.92-4.92C8.42 2.18 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 2.7.27.28 2.69.08 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95C23.73 2.7 21.31.28 16.95.08 15.67.01 15.26 0 12 0m0 5.84a6.16 6.16 0 100 12.32 6.16 6.16 0 000-12.32M12 16a4 4 0 110-8 4 4 0 010 8m6.41-11.85a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88"/></svg>',
     lupa:     '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.4 15.4 21 21" stroke-linecap="round"/></svg>',
     /* La bolsa del pedido (él, 16/09/2026): va en la cabecera, a la
@@ -915,6 +917,230 @@
     focoAntesDelPedido = null;
   }
 
+  /* ---------- buzón anónimo -------------------------------
+     17/09/2026 · La ventana que abre el buzón del ☰. Un <dialog>
+     nativo: Esc lo cierra y el foco se queda dentro solo. Se arma de
+     nuevo en cada apertura, así sale siempre en el idioma de ahora.
+     El mensaje va a MARCA.buzon_api (un Worker de Cloudflare) y solo
+     lleva el texto y el idioma: ni nombre, ni correo, ni nada del
+     navegador. El campo «sitio» está escondido: una persona no lo ve
+     ni lo llena, un robot sí, y el Worker descarta esos. */
+  var BUZON_MAX = 2000;
+  function abrirBuzon() {
+    var viejo = $(".buzon");
+    if (viejo) viejo.remove();
+
+    var campo = el("textarea", { class: "buzon__campo", id: "buzon-campo", rows: "6",
+      maxlength: String(BUZON_MAX), required: "" });
+    var cuenta = el("span", { class: "buzon__cuenta", texto: "0 / " + BUZON_MAX });
+    var trampa = el("input", { class: "buzon__trampa", type: "text", name: "sitio",
+      tabindex: "-1", autocomplete: "off", "aria-hidden": "true" });
+    var aviso = el("p", { class: "buzon__aviso", role: "status" });
+    var enviar = el("button", { class: "boton buzon__enviar", type: "submit", texto: t("buzon_enviar") });
+    var cerrar = el("button", { class: "buzon__cerrar", type: "button",
+      "aria-label": t("pedido_cerrar"), html: "&times;" });
+
+    var form = el("form", { class: "buzon__form", novalidate: "" }, [
+      el("label", { class: "solo-lectores", for: "buzon-campo", texto: t("buzon_campo") }),
+      campo, trampa,
+      el("div", { class: "buzon__fila" }, [cuenta, enviar]),
+      aviso
+    ]);
+    var caja = el("dialog", { class: "buzon", "aria-labelledby": "buzon-titulo" }, [
+      el("div", { class: "buzon__arriba" }, [
+        el("span", { class: "buzon__icono", html: ICONOS.buzon }),
+        cerrar
+      ]),
+      el("h2", { class: "buzon__titulo", id: "buzon-titulo", texto: t("buzon_titulo") }),
+      el("p", { class: "buzon__bajada", texto: t("buzon_bajada") }),
+      form
+    ]);
+
+    campo.setAttribute("placeholder", t("buzon_campo"));
+    campo.addEventListener("input", function () {
+      cuenta.textContent = campo.value.length + " / " + BUZON_MAX;
+      aviso.textContent = "";
+    });
+    cerrar.addEventListener("click", function () { caja.close(); });
+    /* Tocar fuera de la caja (en el velo) también la cierra. */
+    caja.addEventListener("click", function (e) { if (e.target === caja) caja.close(); });
+    caja.addEventListener("close", function () { caja.remove(); });
+
+    function listo() {
+      form.replaceWith(el("div", { class: "buzon__listo" }, [
+        el("p", { texto: t("buzon_listo") }),
+        (function () {
+          var b = el("button", { class: "boton", type: "button", texto: t("buzon_otro") });
+          b.addEventListener("click", abrirBuzon);
+          return b;
+        })()
+      ]));
+    }
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var texto = campo.value.trim();
+      if (!texto) { aviso.textContent = t("buzon_vacio"); campo.focus(); return; }
+      if (trampa.value) { listo(); return; }   /* robot: se le dice que sí y no se manda */
+      enviar.disabled = true;
+      enviar.textContent = t("buzon_enviando");
+      var api = (window.MARCA || {}).buzon_api;
+      var envio = api
+        ? fetch(api, { method: "POST", headers: { "content-type": "application/json" },
+                       body: JSON.stringify({ mensaje: texto, idioma: idioma, sitio: trampa.value }) })
+            .then(function (r) { if (!r.ok) throw new Error(r.status); })
+        : new Promise(function (ok) { console.info("[buzón] modo prueba, no se envió:", texto); setTimeout(ok, 600); });
+      envio.then(listo, function () {
+        enviar.disabled = false;
+        enviar.textContent = t("buzon_enviar");
+        aviso.textContent = t("buzon_error");
+      });
+    });
+
+    document.body.appendChild(caja);
+    caja.showModal();
+    campo.focus();
+  }
+
+  /* ---------- el lector del buzón (solo él) ----------------
+     17/09/2026 · Se abre con los diez toques del pie. Pide la clave y,
+     si el Worker la acepta, enseña los mensajes con sus botones de
+     leído y borrar.
+
+     LA CLAVE NO ESTÁ AQUÍ: vive en una variable del Worker, en
+     Cloudflare. Esta página solo la manda a comprobar en cada
+     petición, dentro de la cabecera `x-clave`, y la guarda mientras
+     dure la ventana (en memoria, no en el disco del navegador). El
+     Worker frena los intentos seguidos desde la misma conexión. */
+  function apiBuzon() {
+    var u = (window.MARCA || {}).buzon_api || "";
+    return u.replace(/\/enviar$/, "");
+  }
+
+  /* EL AVISO DE NUEVOS (él, 17/09/2026): si este navegador ya entró al
+     lector alguna vez, guarda una ficha (no la clave) y con ella pregunta
+     al Worker cuántos mensajes sin leer hay. Si hay alguno, «prototipo
+     ago» del pie se pinta de acento. En cualquier otro navegador no hay
+     ficha, no se pregunta nada y el pie se ve como siempre. */
+  var FICHA_CLAVE = "pa-buzon-ficha";
+  function leerFicha() { try { return localStorage.getItem(FICHA_CLAVE) || ""; } catch (e) { return ""; } }
+  function guardarFicha(f) { try { localStorage.setItem(FICHA_CLAVE, f); } catch (e) {} }
+  function comprobarNuevos() {
+    var f = leerFicha();
+    if (!f || !apiBuzon()) return;
+    fetch(apiBuzon() + "/api/nuevos", { headers: { "x-ficha": f } })
+      .then(function (r) {
+        if (r.status === 403) { try { localStorage.removeItem(FICHA_CLAVE); } catch (e) {} return null; }
+        return r.ok ? r.json() : null;
+      })
+      .then(function (d) {
+        if (!d) return;
+        $$(".pie__marca").forEach(function (b) { b.classList.toggle("pie__marca--nuevos", d.nuevos > 0); });
+      }, function () {});
+  }
+
+  function abrirLector() {
+    if (!apiBuzon()) return;
+    var viejo = $(".lector"); if (viejo) viejo.remove();
+
+    var campo = el("input", { class: "buzon__campo lector__clave", type: "password",
+                              id: "lector-clave", autocomplete: "off" });
+    var aviso = el("p", { class: "buzon__aviso", role: "status" });
+    var entrar = el("button", { class: "boton", type: "submit", texto: t("lector_entrar") });
+    var cerrar = el("button", { class: "buzon__cerrar", type: "button",
+                                "aria-label": t("pedido_cerrar"), html: "&times;" });
+    var cuerpo = el("div", { class: "lector__cuerpo" });
+    var resumen = el("p", { class: "buzon__bajada" });
+
+    var puerta = el("form", { class: "buzon__form" }, [
+      el("label", { class: "solo-lectores", for: "lector-clave", texto: t("lector_clave") }),
+      campo,
+      el("div", { class: "buzon__fila" }, [el("span"), entrar]),
+      aviso
+    ]);
+
+    var caja = el("dialog", { class: "buzon lector", "aria-labelledby": "lector-titulo" }, [
+      el("div", { class: "buzon__arriba" }, [
+        el("span", { class: "buzon__icono", html: ICONOS.buzon }), cerrar
+      ]),
+      el("h2", { class: "buzon__titulo", id: "lector-titulo", texto: t("lector_titulo") }),
+      resumen, puerta, cuerpo
+    ]);
+    campo.setAttribute("placeholder", t("lector_clave"));
+    cerrar.addEventListener("click", function () { caja.close(); });
+    caja.addEventListener("click", function (e) { if (e.target === caja) caja.close(); });
+    caja.addEventListener("close", function () { caja.remove(); comprobarNuevos(); });
+
+    var clave = null;
+
+    function pedir(ruta, datos) {
+      return fetch(apiBuzon() + ruta, {
+        method: datos ? "POST" : "GET",
+        headers: datos ? { "content-type": "application/json", "x-clave": clave }
+                       : { "x-clave": clave },
+        body: datos ? JSON.stringify(datos) : undefined
+      });
+    }
+
+    function pintar(mensajes) {
+      cuerpo.innerHTML = "";
+      var nuevos = mensajes.filter(function (m) { return !m.leido; }).length;
+      resumen.textContent = t("lector_resumen")
+        .replace("{n}", mensajes.length).replace("{nuevos}", nuevos);
+      if (!mensajes.length) {
+        cuerpo.appendChild(el("p", { class: "lector__vacio", texto: t("lector_vacio") }));
+        return;
+      }
+      mensajes.forEach(function (m) {
+        var fecha = new Date(m.fecha).toLocaleString(idioma === "es" ? "es-VE" : "en-GB",
+          { dateStyle: "medium", timeStyle: "short" });
+        var bLeido = el("button", { class: "lector__accion", type: "button",
+          texto: m.leido ? t("lector_noleido") : t("lector_leido") });
+        bLeido.addEventListener("click", function () {
+          pedir("/api/leido", { id: m.id, leido: !m.leido }).then(function () {
+            m.leido = !m.leido; pintar(mensajes);
+          });
+        });
+        var bBorrar = el("button", { class: "lector__accion lector__accion--borrar",
+          type: "button", texto: t("lector_borrar") });
+        bBorrar.addEventListener("click", function () {
+          if (!window.confirm(t("lector_seguro"))) return;
+          pedir("/api/borrar", { id: m.id }).then(function () {
+            pintar(mensajes.filter(function (x) { return x !== m; }));
+          });
+        });
+        cuerpo.appendChild(el("article", { class: "lector__msg" + (m.leido ? "" : " lector__msg--nuevo") }, [
+          el("div", { class: "lector__fecha", texto: fecha + (m.idioma === "en" ? " · en inglés" : "") }),
+          el("p", { class: "lector__texto", texto: m.texto }),
+          el("div", { class: "lector__acciones" }, [bLeido, bBorrar])
+        ]));
+      });
+    }
+
+    puerta.addEventListener("submit", function (e) {
+      e.preventDefault();
+      clave = campo.value;
+      entrar.disabled = true;
+      pedir("/api/mensajes").then(function (r) {
+        entrar.disabled = false;
+        if (r.status === 429) { aviso.textContent = t("lector_espera"); return; }
+        if (!r.ok) { aviso.textContent = t("lector_mala"); campo.select(); return; }
+        return r.json().then(function (d) {
+          if (d.ficha) guardarFicha(d.ficha);
+          puerta.remove();
+          pintar(d.mensajes || []);
+        });
+      }, function () {
+        entrar.disabled = false;
+        aviso.textContent = t("lector_caido");
+      });
+    });
+
+    document.body.appendChild(caja);
+    caja.showModal();
+    campo.focus();
+  }
+
   document.addEventListener("pa:pedido", pintarBolsa);
   window.addEventListener("storage", function (e) { if (e.key === PEDIDO_CLAVE) pintarBolsa(); });
   document.addEventListener("keydown", function (e) {
@@ -948,6 +1174,19 @@
     for (var k = 0; k < total; k++) s += '<i' + (k === i ? ' class="sel"' : '') + '></i>';
     return s;
   }
+  /* LO QUE NO SE VE DESDE LA CUADRÍCULA (él, 17/09/2026): a la derecha
+     de los cuadraditos de las fotos, un CUADRADO por cada medio que la
+     pieza tiene dentro de su ficha —video, visor 3D— para que se note
+     que hay algo más allá. Van en acento apagado y poco opaco (el CSS,
+     .franja__extra). Devuelve "" si no hay ninguno. */
+  function extrasHTML(tipos) {
+    if (!tipos.length) return "";
+    return '<span class="franja__extras">' + tipos.map(function (x) {
+      return '<i class="franja__extra" data-medio="' + x + '"></i>';
+    }).join("") + '</span>';
+  }
+  window.PA_EXTRAS = extrasHTML;
+
   function marcarPuntos(caja, i) {
     if (!caja) return;
     [].forEach.call(caja.children, function (c, k) { c.classList.toggle("sel", k === i); });
@@ -1446,11 +1685,12 @@
          de todo selector de idioma que funciona: quien busca su
          lengua la reconoce escrita como la escribe él. */
       b.appendChild(el("span", { class: "ctrl__largo", texto: NOMBRE_IDIOMA[i] }));
-      /* PRUEBA (él, 16/09/2026): la bandera de cada idioma —Venezuela
-         para español, Reino Unido para inglés— SIN sus colores, solo la
-         silueta de sus elementos, y el botón con la proporción de la
-         bandera (2:3 y 1:2). La palabra queda para lectores de pantalla
-         en el aria-label. */
+      /* 17/09/2026 · ARCHIVADAS las banderas (Venezuela / Reino Unido)
+         que se probaron el 16/09: vuelven las palabras «español» y
+         «english» dentro del botón, en minúsculas y del mismo tamaño de
+         botón. El dibujo se sigue montando pero el CSS lo esconde
+         (.idioma__bandera { display: none }), así que para recuperarlo
+         basta esa línea; no hace falta volver a dibujarlo. */
       b.appendChild(el("span", { class: "idioma__bandera", html: BANDERA_IDIOMA[i] }));
       b.classList.add("idioma__btn--" + i);
       return b;
@@ -1609,6 +1849,10 @@
     ]);
     bolsa.addEventListener("click", abrirPedido);
 
+    /* 17/09/2026 · El BUZÓN ANÓNIMO estuvo aquí, como un renglón del ☰.
+       Lo mudó él a la página de Contacto, de primera tarjeta; la ventana
+       la sigue abriendo abrirBuzon(). */
+
     /* Si el menú estaba abierto (se cambió el idioma desde dentro), el
        nuevo se deja abierto también: antes el encabezado conservaba la
        marca de «abierto» pero la fila de páginas nacía cerrada, y en el
@@ -1699,11 +1943,29 @@
       el("div", { class: "pie__fila" }, [
         /* En minúsculas, como el logotipo (él, 15/09/2026). Solo aquí:
            M.nombre sigue con mayúsculas para títulos y mensajes. */
-        el("span", { texto: M.nombre.toLowerCase() + " · " + tx(M.ciudad) }),
+        /* ENTRADA ESCONDIDA AL BUZÓN (él, 17/09/2026): el nombre de la
+           marca es un botón que no se ve como tal —sin subrayado, sin
+           cambio de color, sin cursor de mano—. A los DIEZ toques
+           seguidos (con menos de 2 s entre uno y otro) abre el lector,
+           que pide la clave. Quien no lo sepa, no lo encuentra. */
+        (function () {
+          var b = el("button", { class: "pie__marca", type: "button", tabindex: "-1",
+                                 "aria-hidden": "true",
+                                 texto: M.nombre.toLowerCase() + " · " + tx(M.ciudad) });
+          var n = 0, ultimo = 0;
+          b.addEventListener("click", function () {
+            var ahora = Date.now();
+            n = (ahora - ultimo < 2000) ? n + 1 : 1;
+            ultimo = ahora;
+            if (n >= 10) { n = 0; abrirLector(); }
+          });
+          return b;
+        })(),
         el("div", { class: "pie__enlaces" }, enlaces)
       ]),
       el("div", { class: "pie__fila pie__fila--huevo" }, [huevoApilar()])
     ]));
+    comprobarNuevos();
   }
 
   /* EASTER EGG (él, 16/09/2026): un huevo bajo Instagram abre el juego
@@ -1835,6 +2097,11 @@
         html: puntosHTML(totalFotos, i)
       }));
     }
+    /* Video y 3D de esta pieza, como cuadrados a la derecha. */
+    var extras = [];
+    if (w.video) extras.push("video");
+    if (modeloDe(w)) extras.push("3d");
+    if (extras.length) franja.appendChild(el("span", { html: extrasHTML(extras) }));
 
     /* h2 y no h3 (15/08/2026): en Exhibición la cuadrícula cuelga
        directamente del <h1> de la página, sin ninguna sección
@@ -1993,9 +2260,11 @@
              '" width="' + lado + '" height="' + lado + '"/>';
       }
     }
+    /* En teléfono la de «cuatro» pinta TRES columnas (él, 17/09/2026),
+       así que su botón dibuja 3×3 y no 4×4. */
     return '<svg class="vistas__ico--pc" viewBox="0 0 24 24" shape-rendering="crispEdges" ' +
            'aria-hidden="true" focusable="false">' + s + '</svg>' +
-           iconoVistaMovil(n === 5 ? 2 : n === 4 ? 4 : 1);
+           iconoVistaMovil(n === 5 ? 2 : n === 4 ? 3 : 1);
   }
 
   /* EN TELÉFONO (él, 16/09/2026) la cuadrícula de tres es de UNA
@@ -2008,10 +2277,10 @@
   function iconoVistaMovil(n) {
     var s = "", x, y;
     if (n === 1) s = '<rect x="2" y="2" width="20" height="20"/>';
-    /* 4×4 en teléfono (17/09/2026, más grandes): lado 5 y paso 6,
-       de 0 a 23. */
-    else if (n === 4) { for (y = 0; y < 4; y++) for (x = 0; x < 4; x++)
-      s += '<rect x="' + (x * 6) + '" y="' + (y * 6) + '" width="5" height="5"/>'; }
+    /* 3×3 en teléfono (él, 17/09/2026: antes 4×4). Lado 6 y paso 9,
+       de 0 a 24, los mismos números del icono de computadora. */
+    else if (n === 3) { for (y = 0; y < 3; y++) for (x = 0; x < 3; x++)
+      s += '<rect x="' + (x * 9) + '" y="' + (y * 9) + '" width="6" height="6"/>'; }
     else for (y = 0; y < 2; y++) for (x = 0; x < 2; x++)
       s += '<rect x="' + (2 + x * 11) + '" y="' + (2 + y * 11) + '" width="9" height="9"/>';
     return '<svg class="vistas__ico--movil" viewBox="0 0 24 24" shape-rendering="crispEdges" ' +
@@ -2864,7 +3133,18 @@
     /* El área de novedades: solo lo marcado con novedad:true en
        datos/trabajos.js. Si mañana hay dos, se desliza sola. */
     var novedades = trabajosVisibles().filter(function (w) { return w.novedad; });
-    montarCarrusel($("#carrusel"), novedades);
+    /* 17/09/2026 · La diapositiva es la BIENVENIDA escrita en
+       novedades.html (él): textos en data-es/data-en y de fondo el
+       carrusel de El taller. El de novedades solo se monta si esa
+       bienvenida no está. */
+    if ($(".bienvenida")) {
+      $$(".bienvenida [data-es]").forEach(function (e) {
+        e.innerHTML = idioma === "es" ? e.getAttribute("data-es") : e.getAttribute("data-en");
+      });
+      iniciarCarruselIntro();
+    } else {
+      montarCarrusel($("#carrusel"), novedades);
+    }
 
     /* Reproductor del video largo, con su texto al lado */
     var conVideo = novedades.filter(function (w) { return w.video; })[0];
@@ -3406,6 +3686,26 @@
     }
 
     host.innerHTML = "";
+
+    /* EL BUZÓN ANÓNIMO, de PRIMERA (él, 17/09/2026): no lleva a ningún
+       lado —abre la ventana del mensaje—, así que es un <button> y no un
+       enlace, y va sin icono ni flecha: solo el nombre y su línea,
+       centrados (.contactos__buzon en el CSS). */
+    var tBuzon = el("button", { class: "contactos__buzon", type: "button" }, [
+      /* El mismo dibujo de líneas que WhatsApp y el correo, con la
+         paletica LEVANTADA —la del buzón que tiene algo dentro— (él,
+         17/09/2026). Va centrado, encima del texto. */
+      el("span", { class: "contactos__icono", html: ICONOS.buzon }),
+      el("span", { class: "contactos__texto" }, [
+        /* Mismo rótulo que WhatsApp, Correo e Instagram (él, 17/09/2026):
+           la misma letra chica en versalitas, no un titular aparte. */
+        el("span", { class: "rotulo", texto: t("buzon_boton") }),
+        el("span", { class: "contactos__accion", texto: t("buzon_tarjeta") })
+      ])
+    ]);
+    tBuzon.addEventListener("click", abrirBuzon);
+    host.appendChild(tBuzon);
+
     tarjetas.forEach(function (c) {
       host.appendChild(el("a", { href: c[3], target: "_blank", rel: "noopener" }, [
         el("span", { class: "contactos__icono", html: ICONOS[c[0]] }),
@@ -3414,7 +3714,8 @@
           el("strong", { texto: c[2] }),
           el("span", { class: "contactos__accion", texto: c[4] })
         ]),
-        el("span", { class: "contactos__flecha", html: "&#8599;" })
+        /* 17/09/2026 · Aquí iba la flechita ↗ de la esquina. Fuera:
+           con la tarjeta más angosta se le montaba encima al texto. */
       ]));
     });
 

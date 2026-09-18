@@ -50,9 +50,52 @@
          (hero_titulo, hero_bajada, hero_cta1, hero_cta2) porque
          los usa la portada del sitio. -->
 
-    <!-- Se llena solo con lo que tenga novedad:true en
-         datos/trabajos.js. Ahora mismo: el Rolo. -->
-    <section class="carrusel" id="carrusel"></section>
+    <!-- 2026-09-17 · BIENVENIDA (él): la diapositiva ya no es el Rolo
+         sino una bienvenida al sitio, con lo que hay en cada sección.
+         De fondo, el MISMO carrusel de fotos de la intro de El taller
+         (una cada 4 s, fundido; lo mueve iniciarCarruselIntro en
+         js/sitio.js). Si agregas o quitas fotos allá, cámbialas aquí
+         también: la lista está repetida en taller.html. Todo el cuadro
+         lleva a El taller. Los textos van en data-es / data-en, igual
+         que en taller.html: escríbelos con tus palabras cuando quieras.
+         El carrusel de novedades (novedad:true en datos/trabajos.js)
+         sigue en sitio.js (montarCarrusel), sin usarse por ahora. -->
+    <section class="carrusel bienvenida" id="carrusel">
+      <a class="carrusel__lamina novedad" href="taller.html">
+        <div class="novedad__medio">
+          <div class="carrusel-intro" aria-hidden="true">
+            <img class="retrato activa" src="img/taller/carrusel/intro-0.webp" alt=""
+                 srcset="img/taller/carrusel/intro-0-movil.webp 1000w, img/taller/carrusel/intro-0.webp 1400w"
+                 sizes="100vw">
+            <img class="retrato" data-src="img/taller/carrusel/intro-1.webp" alt="">
+            <img class="retrato" data-src="img/taller/carrusel/intro-2.webp" alt="">
+            <img class="retrato" data-src="img/taller/carrusel/intro-3.webp" alt="">
+            <img class="retrato" data-src="img/taller/carrusel/intro-5.webp" alt="">
+            <img class="retrato" data-src="img/taller/carrusel/intro-6.webp" alt="">
+            <img class="retrato" data-src="img/taller/carrusel/intro-7.webp" alt="">
+            <img class="retrato" data-src="img/taller/carrusel/intro-8.webp" alt="">
+            <img class="retrato" data-src="img/taller/carrusel/intro-9.webp" alt="">
+            <img class="retrato" data-src="img/taller/carrusel/intro-10.webp" alt="">
+            <img class="retrato" data-src="img/taller/carrusel/intro-11.webp" alt="">
+          </div>
+        </div>
+        <div class="novedad__capa">
+          <span class="novedad__etiqueta" data-es="Bienvenida" data-en="Welcome"></span>
+          <!-- El nombre va como el logotipo (él, 17/09/2026): Poppins 700, todo en minúsculas, en una sola línea. -->
+          <h2 data-es="Bienvenido a <span class='bienvenida__logo'>prototipo ago</span>" data-en="Welcome to <span class='bienvenida__logo'>prototipo ago</span>"></h2>
+          <p data-es="Muebles y piezas de madera diseñados y hechos de a uno. Esto es lo que encuentras en cada sección:" data-en="Furniture and wooden pieces, designed and made one at a time. Here's what you'll find in each section:"></p>
+          <ul class="bienvenida__secciones">
+            <li><b data-es="Prototipos" data-en="Prototypes"></b><span data-es="Mis diseños propios, con precio a la vista. Eliges madera y acabado y los agregas a tu pedido." data-en="My own designs, with prices shown. Pick the wood and finish and add them to your order."></span></li>
+            <li><b data-es="Tu pedido" data-en="Your order"></b><span data-es="La bolsa de arriba guarda lo que agregas desde Prototipos. Al concretar se abre WhatsApp con el pedido ya escrito." data-en="The bag up top keeps what you add from Prototypes. Checking out opens WhatsApp with the order already written."></span></li>
+            <li><b data-es="Exhibición" data-en="Exhibition"></b><span data-es="Trabajos hechos por encargo, para ver lo que ha salido del taller." data-en="Commissioned work, to see what has come out of the shop."></span></li>
+            <li><b data-es="El taller" data-en="The shop"></b><span data-es="Quién soy, cómo funciona un encargo y con qué maderas trabajo." data-en="Who I am, how a commission works and which woods I use."></span></li>
+            <li><b data-es="Novedades" data-en="What's new"></b><span data-es="Lo último del taller. Estás aquí." data-en="The latest from the shop. You are here."></span></li>
+            <li><b data-es="Contacto" data-en="Contact"></b><span data-es="Para encargar algo a medida: WhatsApp, correo o Instagram." data-en="To commission something made to measure: WhatsApp, email or Instagram."></span></li>
+          </ul>
+          <span class="novedad__ir"><span data-es="Conoce el taller" data-en="Meet the shop"></span><span class="novedad__flecha">&rarr;</span></span>
+        </div>
+      </a>
+    </section>
 
     <!-- 2026-09-16 · Aquí iba la segunda sección: el video largo con su
          texto al lado (#video-novedad). La quitó él: Novedades es solo

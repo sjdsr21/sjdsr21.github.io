@@ -1146,3 +1146,14 @@ video.pt-visual__foto {
 .pt-vista--tres .pt-estado,
 .pt-vista--cuatro .pt-estado,
 .pt-vista--cinco .pt-estado { order: 1; line-height: 1.1; }
+
+/* TELÉFONO (él, 17/09/2026): la cuadrícula densa de Prototipos pasa de
+   4 a 3 columnas, y sus cartas SÍ llevan nombre y precio, con su
+   «desde» cuando el precio se mueve con las opciones —antes se
+   escondía—. */
+@media (max-width: 560px) {
+  .pt-vista--cuatro { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .pt-vista--cuatro .pt-desde { display: block; font-size: .5rem; }
+  .pt-vista--cuatro .pt-ficha h3 { font-size: .68rem; }
+  .pt-vista--cuatro .pt-precio { font-size: .78rem; }
+}

@@ -148,3 +148,167 @@
 .monigote__copa1 { fill: #2E5E34; }
 .monigote__copa2 { fill: #3B7A43; }
 .monigote__copa3 { fill: #4E9A55; }
+
+/* ---------- 17/09/2026, tanda de mejoras ------------------------- */
+
+/* La gladius: hoja de acero con degradado, bisel claro en los filos,
+   canal oscuro, marcas de pulido; guarda y pomo de bronce. */
+.monigote__hoja-espada { fill: url(#mon-acero); stroke: #3F4850; stroke-width: .45; }
+.monigote .monigote__bisel { fill: none; stroke: #F4F8FB; stroke-width: .55; opacity: .85; }
+.monigote .monigote__canal { stroke: #4E5862; stroke-width: .7; }
+.monigote .monigote__pulido { stroke: #FFFFFF; stroke-width: .3; opacity: .35; }
+.monigote__bronce { fill: #C0913E; stroke: #6E4F1C; stroke-width: .45; }
+.monigote__empunadura { fill: #6E4B2A; stroke: #3B2714; stroke-width: .4; }
+.monigote .monigote__estria { stroke: #3B2714; stroke-width: .45; }
+.monigote__remache { fill: #F1D48E; stroke: none; }
+
+/* El samán: un verde más para la cara de abajo de la copa. */
+.monigote__copa0 { fill: #244A29; }
+
+/* El libro visto de lado: tapa, lomo con nervios dorados, título y
+   la hoja que se levanta al pasar página. */
+.monigote .monigote__libro-lomo-banda { fill: #8E1B1B; stroke: none; }
+.monigote .monigote__libro-nervio { stroke: #E5C06A; stroke-width: .5; }
+.monigote .monigote__libro-titulo { fill: none; stroke: #E5C06A; stroke-width: .5; }
+.monigote .monigote__libro-hoja { fill: none; stroke: #F3EBD8; stroke-width: .9; }
+
+/* Hechizos: el rayo es una línea blanca con un aura azul; el hielo,
+   una esquirla clara; el agua lleva un brillo. */
+.monigote .monigote__rayo { fill: none; stroke: #FFFFFF; stroke-width: 1.3; stroke-linejoin: round; }
+.monigote .monigote__rayo-aura { fill: none; stroke: #7FB2FF; stroke-width: 4; opacity: .45; stroke-linejoin: round; }
+.monigote__esquirla { fill: #E6F6FF; stroke: #7FC4EE; stroke-width: .5; }
+.monigote__agua-brillo { fill: #FFFFFF; opacity: .8; }
+
+/* La piedrita que patea (17/09). */
+.monigote__piedra { fill: #9C958C; stroke: #5E5850; stroke-width: .5; }
+
+/* Ondas de los impactos (el color lo pone el código). */
+.monigote .monigote__onda { fill: none; }
+
+/* Arco: palas de madera oscura con una veta clara, empuñadura de cuero
+   y cuerda fina. Flechas: asta de madera, punta de acero, plumas rojas. */
+.monigote .monigote__arco-pala  { fill: none; stroke: #6E3F1C; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.monigote .monigote__arco-veta  { fill: none; stroke: #C08A55; stroke-width: .5; }
+.monigote__arco-agarre { fill: #2E1D10; stroke: none; }
+.monigote .monigote__cuerda     { fill: none; stroke: #EDE6D6; stroke-width: .6; }
+.monigote .monigote__flecha-asta { stroke: #C9A063; stroke-width: 1; }
+.monigote .monigote__flecha-astilla { stroke: #C9A063; stroke-width: .6; }
+.monigote__flecha-punta  { fill: #8E98A2; stroke: #4E5760; stroke-width: .3; }
+.monigote__flecha-pluma  { fill: #D8322F; stroke: none; }
+.monigote__flecha-pluma2 { fill: #F1EEE6; stroke: none; }
+
+/* La diana */
+.monigote__diana-paja   { fill: #C9A063; stroke: #7E5A31; stroke-width: .5; }
+.monigote__diana-blanco { fill: #F1EEE6; stroke: #555; stroke-width: .35; }
+.monigote__diana-negro  { fill: #222222; stroke: #777; stroke-width: .35; }
+.monigote__diana-azul   { fill: #2C78D6; stroke: #1B4F91; stroke-width: .35; }
+.monigote__diana-rojo   { fill: #D7322E; stroke: #8E1B1B; stroke-width: .35; }
+.monigote__diana-oro    { fill: #F4C534; stroke: #A98319; stroke-width: .35; }
+.monigote__diana-centro { fill: #222222; }
+
+/* El carcaj (17/09) */
+.monigote__carcaj { fill: #7A4A26; stroke: #3F2816; stroke-width: .5; }
+.monigote .monigote__carcaj-cinta { stroke: #C9A063; stroke-width: .7; }
+
+/* ---------- 17/09/2026: Moria, cepillo, dragón y anillo ---------- */
+.monigote__mango-herr    { fill: #8A5A34; stroke: #3F2816; stroke-width: .35; }
+.monigote__virola        { fill: #C9CED3; stroke: none; }
+.monigote__acero         { fill: #9AA4AD; stroke: #4E5760; stroke-width: .35; }
+.monigote__mazo-cabeza   { fill: #7A4E2C; stroke: #3F2816; stroke-width: .4; }
+.monigote__cepillo-cuerpo { fill: #B07A45; stroke: #5A3A20; stroke-width: .45; }
+.monigote__cepillo-mango  { fill: #6E3F1C; stroke: none; }
+.monigote .monigote__cepillo-hierro { stroke: #9AA4AD; stroke-width: .7; }
+
+/* Puerta de Moria */
+.monigote__piedra-marco { fill: #6F7075; stroke: #45464A; stroke-width: .6; }
+.monigote__moria-hueco  { fill: #050507; stroke: none; }
+.monigote__moria-hoja   { fill: #7A4E2C; stroke: #3F2816; stroke-width: .5; }
+.monigote .monigote__moria-tabla { stroke: #5A3A20; stroke-width: .5; }
+.monigote .monigote__surco { fill: none; stroke: #3A2412; stroke-width: .7; stroke-dasharray: 1; stroke-linecap: round; }
+.monigote .monigote__ithildin      { fill: none; stroke: #F1F6FF; stroke-width: .8; stroke-linecap: round; }
+.monigote .monigote__ithildin-halo { fill: none; stroke: #9CC4FF; stroke-width: 2.6; opacity: .35; stroke-linecap: round; }
+.monigote__ithildin-estrella { fill: #F1F6FF; }
+
+/* Banco de cepillar */
+.monigote__tabla-cruda  { fill: #9C6C3E; stroke: #5A3A20; stroke-width: .4; }
+.monigote__tabla-fresca { fill: #E3BE85; stroke: none; }
+
+/* Dragoncito */
+.monigote__dragon       { fill: #B23A2A; stroke: #6E1E14; stroke-width: .4; }
+.monigote__dragon-panza { fill: #E9B85A; stroke: none; }
+.monigote__dragon-ala   { fill: #C94A35; stroke: #6E1E14; stroke-width: .4; }
+.monigote__dragon-ala-lejos { fill: #7E2418; stroke: none; }
+.monigote .monigote__dragon-cola { fill: none; stroke: #B23A2A; stroke-width: 1.4; stroke-linecap: round; }
+.monigote .monigote__dragon-pata { stroke: #8E2A1E; stroke-width: .8; }
+.monigote__dragon-cuerno { fill: #F1E3C4; stroke: none; }
+.monigote__dragon-ojo    { fill: #FFE36B; }
+.monigote__quemado       { fill: #1E1410; stroke: none; }
+
+/* Anillo y Ojo */
+.monigote__anillo-oro { fill: none; stroke: #F2C744; stroke-width: .8; }
+.monigote__ojo-iris    { fill: #FF8A1E; opacity: .8; }
+.monigote__ojo-pupila  { fill: #140600; }
+
+/* Dardo: la hoja que brilla en azul (17/09) */
+.monigote__dardo-halo  { fill: none; stroke: #7FC0FF; stroke-width: 3.5; stroke-linejoin: round; }
+.monigote__dardo-halo2 { fill: none; stroke: #3F8FFF; stroke-width: 9; stroke-linejoin: round; }
+.monigote__dardo-tinte { fill: #9FD4FF; stroke: none; }
+
+/* Banco Roubo (17/09) */
+.monigote__banco-tapa    { fill: #A9763F; stroke: #5A3A20; stroke-width: .5; }
+.monigote__banco-pata    { fill: #96683A; stroke: #5A3A20; stroke-width: .45; }
+.monigote__banco-hueco   { fill: #3A2412; stroke: none; }
+.monigote__banco-mordaza { fill: #8A5A34; stroke: #4A2E18; stroke-width: .4; }
+.monigote__banco-husillo { fill: #C9CED3; stroke: #6E767D; stroke-width: .4; }
+.monigote .monigote__banco-barra { stroke: #C9CED3; stroke-width: 1.1; }
+.monigote__banco-tope    { fill: #6E3F1C; stroke: #3F2816; stroke-width: .4; }
+.monigote__tabla-fresca  { fill: #E3BE85; stroke: #B98A52; stroke-width: .4; }
+
+/* El cepillo, con más forma (17/09) */
+.monigote .monigote__cepillo-suela { stroke: #C9CED3; stroke-width: .8; }
+.monigote__cepillo-hierro-hoja { fill: #9AA4AD; stroke: #4E5760; stroke-width: .3; }
+.monigote__cepillo-tapa { fill: #4E5760; stroke: none; }
+
+/* Fogata, pájaro y la mata (17/09) */
+.monigote__piedra-fuego { fill: #6E7276; stroke: #45484B; stroke-width: .4; }
+.monigote__pajaro       { fill: #3E7BD8; stroke: #1E3F73; stroke-width: .3; }
+.monigote__pajaro-ala   { fill: #3E7BD8; stroke: #1E3F73; stroke-width: .3; opacity: .85; }
+.monigote__pajaro-pico  { fill: #F2C744; stroke: none; }
+.monigote__pajaro-ojo   { fill: #14202E; }
+.monigote .monigote__pared { stroke: #4A4A4E; stroke-width: 2.4; }
+.monigote__grifo        { fill: #9AA4AD; stroke: #4E5760; stroke-width: .4; }
+.monigote__maceta       { fill: #B5613C; stroke: #6E3620; stroke-width: .5; }
+.monigote__tierra       { fill: #3A2412; stroke: none; }
+.monigote .monigote__tallo { fill: none; stroke: #4E9A55; stroke-width: 1.6; stroke-linecap: round; }
+.monigote__hoja-mata    { fill: #3B7A43; stroke: #24522C; stroke-width: .3; }
+.monigote .monigote__manguera { fill: none; stroke: #2E7D32; stroke-width: 2; stroke-linecap: round; }
+.monigote__boquilla     { fill: #2E7D32; stroke: #1B4D20; stroke-width: .4; }
+.monigote__boquilla-punta { fill: #C9CED3; stroke: #6E767D; stroke-width: .3; }
+.monigote__manguera-cuello { fill: #1B4D20; stroke: none; }
+
+/* El café (17/09): gabinete, hornilla, cafetera moka y taza */
+.monigote__gabinete        { fill: #6E7276; stroke: #45484B; stroke-width: .5; }
+.monigote__gabinete-puerta { fill: #7E8286; stroke: #45484B; stroke-width: .4; }
+.monigote__encimera        { fill: #3A3D40; stroke: #23262A; stroke-width: .4; }
+.monigote__zocalo          { fill: #4A4D50; stroke: none; }
+.monigote__gaveta          { fill: #7E8286; stroke: #45484B; stroke-width: .4; }
+.monigote__tirador         { fill: #C9CED3; stroke: none; }
+.monigote__perilla         { fill: #C9CED3; stroke: #6E767D; stroke-width: .4; }
+.monigote .monigote__perilla-raya { stroke: #2E3134; stroke-width: .6; }
+.monigote__hornilla        { fill: #23262A; stroke: #14171A; stroke-width: .4; }
+.monigote__hornilla-aro    { fill: none; stroke: #4A4D50; stroke-width: .6; }
+.monigote .monigote__hornilla-parrilla { stroke: #14171A; stroke-width: 1; }
+.monigote__moka         { fill: #C9CED3; stroke: #6E767D; stroke-width: .45; }
+.monigote .monigote__moka-arista { stroke: #9AA4AD; stroke-width: .4; }
+.monigote__moka-cintura { fill: #8E979F; stroke: #5A6169; stroke-width: .3; }
+.monigote__moka-tapa    { fill: #AEB6BC; stroke: #6E767D; stroke-width: .3; }
+.monigote__moka-pomo    { fill: #2E3134; stroke: none; }
+.monigote__moka-asa     { fill: #2E3134; stroke: none; }
+.monigote__taza      { fill: #F1EEE6; stroke: #B9B4A8; stroke-width: .4; }
+.monigote__taza-asa  { fill: none; stroke: #F1EEE6; stroke-width: 1; }
+.monigote__taza-boca { fill: #DDD8CC; stroke: #B9B4A8; stroke-width: .3; }
+.monigote__cafe      { fill: #4A2C17; stroke: none; }
+
+/* el disfraz de Odiseo (arco, 17/09/2026) */
+.monigote__capa  { fill: #6B4226; stroke: #3E2412; stroke-width: .5; stroke-linejoin: round; }
+.monigote__gorro { fill: #7A4B2A; stroke: #3E2412; stroke-width: .5; stroke-linejoin: round; }

@@ -103,6 +103,38 @@ window.TEXTOS = {
   /* Títulos de los grupos dentro de la hamburguesa (16/09/2026). */
   menu_idioma:   { es: "Idioma", en: "Language" },
   menu_modo:     { es: "Modo", en: "Mode" },
+  /* El buzón anónimo del ☰ (17/09/2026). */
+  buzon_boton:   { es: "Buzón anónimo", en: "Anonymous mailbox" },
+  /* La tarjeta del buzón en Contacto (17/09/2026): solo el nombre y
+     una línea debajo, centrados. */
+  buzon_tarjeta: { es: "Envía un mensaje directamente a Santiago que nadie más puede ver.",
+                   en: "Send Santiago a message directly, that no one else can see." },
+  /* El LECTOR escondido del pie (él, 17/09/2026): 10 toques en
+     «prototipo ago» y pide la clave. Solo lo ve él, pero va traducido
+     igual que todo lo demás. */
+  lector_titulo: { es: "Buzón de Santiago", en: "Santiago's mailbox" },
+  lector_clave:  { es: "Clave", en: "Password" },
+  lector_entrar: { es: "Entrar", en: "Enter" },
+  lector_mala:   { es: "Clave incorrecta.", en: "Wrong password." },
+  lector_espera: { es: "Demasiados intentos. Espera un minuto.", en: "Too many tries. Wait a minute." },
+  lector_caido:  { es: "No se pudo conectar con el buzón.", en: "Couldn't reach the mailbox." },
+  lector_vacio:  { es: "No hay mensajes.", en: "No messages." },
+  lector_resumen:{ es: "{n} mensajes · {nuevos} sin leer", en: "{n} messages · {nuevos} unread" },
+  lector_leido:  { es: "Marcar leído", en: "Mark read" },
+  lector_noleido:{ es: "Marcar sin leer", en: "Mark unread" },
+  lector_borrar: { es: "Borrar", en: "Delete" },
+  lector_seguro: { es: "¿Borrar este mensaje para siempre? No se puede deshacer.",
+                   en: "Delete this message for good? This can't be undone." },
+  buzon_titulo:  { es: "Envía un mensaje anónimo a Santiago", en: "Send Santiago an anonymous message" },
+  buzon_bajada:  { es: "Nadie más podrá verlo. No se guarda tu nombre ni tu correo: si quieres respuesta, deja tu contacto dentro del mensaje.",
+                   en: "No one else will see it. Your name and email aren't stored: if you'd like a reply, leave your contact inside the message." },
+  buzon_campo:   { es: "Tu mensaje", en: "Your message" },
+  buzon_enviar:  { es: "Enviar", en: "Send" },
+  buzon_enviando:{ es: "Enviando…", en: "Sending…" },
+  buzon_listo:   { es: "Recibido. Gracias por escribir.", en: "Received. Thanks for writing." },
+  buzon_otro:    { es: "Escribir otro", en: "Write another" },
+  buzon_error:   { es: "No se pudo enviar. Revisa tu conexión e inténtalo de nuevo.", en: "It couldn't be sent. Check your connection and try again." },
+  buzon_vacio:   { es: "Escribe algo antes de enviar.", en: "Write something before sending." },
   pedido_cerrar: { es: "Cerrar", en: "Close" },
   pedido_restar: { es: "Quitar una", en: "Remove one" },
   pedido_ir:     { es: "Ir al pedido y concretar", en: "Go to order and check out" },

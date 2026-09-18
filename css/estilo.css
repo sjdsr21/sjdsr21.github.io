@@ -3788,3 +3788,196 @@ svg.icono-linea { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-li
   .cabecera__utiles .tema .tema__bicho .tema__icono svg { width: 33.6px; height: 33.6px; }
   .cabecera__utiles .controles { margin-right: 0; max-width: 100%; }
 }
+
+/* ---------- recuperado tras el truncado del 17/09/2026 ---------- */
+/* ENTRADA ESCONDIDA DEL PIE (él, 17/09/2026): el nombre de la marca es
+   un botón, pero no lo parece: misma letra, mismo color, sin recuadro y
+   con el cursor de texto de siempre. Se abre a los diez toques. */
+.pie__marca {
+  background: none; border: 0; padding: 0; margin: 0; border-radius: 0;
+  font: inherit; color: inherit; text-align: left; cursor: text;
+  -webkit-tap-highlight-color: transparent;
+}
+.pie__marca:hover, .pie__marca:focus { background: none; color: inherit; outline: none; }
+
+/* EL LECTOR DEL BUZÓN. Es la misma ventana del buzón, más ancha y con
+   la lista de mensajes dentro. */
+.lector { width: min(46rem, calc(100% - 2 * var(--canal))); }
+.lector__clave { min-height: 0; padding: .7rem .8rem; }
+.lector__cuerpo { margin-top: .5rem; max-height: 60vh; overflow-y: auto; }
+.lector__vacio { color: var(--apagado); }
+.lector__msg { border-top: 1px solid var(--linea); padding: 1rem 0; }
+.lector__fecha { color: var(--apagado); font-size: .8rem; }
+.lector__msg--nuevo .lector__fecha::before {
+  content: ""; display: inline-block; width: 8px; height: 8px;
+  margin-right: .5rem; background: var(--acento-texto);
+}
+.lector__texto { white-space: pre-wrap; overflow-wrap: anywhere; margin: .4rem 0 .8rem; }
+.lector__acciones { display: flex; gap: .5rem; }
+.lector__accion {
+  font: inherit; font-size: .8rem; min-height: 40px; padding: .35rem .8rem;
+  background: none; color: var(--tinta); border: 1px solid var(--linea);
+  border-radius: 0; cursor: pointer;
+}
+.lector__accion:hover { border-color: var(--tinta); background: none; }
+.lector__accion--borrar:hover { border-color: var(--realce-hondo); color: var(--realce-hondo); }
+
+/* ============================================================
+   17/09/2026 · REPUESTO. Estos bloques se escribieron hoy y
+   desaparecieron del archivo (otra sesión lo devolvió a la versión
+   de la mañana). Se reponen tal cual, juntos aquí.
+   ============================================================ */
+
+/* BIENVENIDA de Novedades (él, 17/09/2026): el carrusel de fotos de
+   El taller llena el fondo de la diapositiva, y encima el saludo con la
+   lista de secciones. */
+.bienvenida .novedad__medio .carrusel-intro {
+  position: absolute; inset: 0; aspect-ratio: auto; border-radius: 0;
+}
+.bienvenida .novedad__medio .retrato { object-position: 50% 35%; }
+.bienvenida .novedad__medio { aspect-ratio: auto; height: clamp(560px, 82vh, 780px); }
+.bienvenida .novedad__capa {
+  background: linear-gradient(to top, rgba(0,0,0,.92), rgba(0,0,0,.62) 60%, rgba(0,0,0,.25));
+}
+.bienvenida .novedad__capa h2 { max-width: none; }
+.bienvenida__secciones {
+  list-style: none; margin: 1.2rem 0 0; padding: 0;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: .9rem 2rem; max-width: 62rem;
+}
+.bienvenida__secciones li {
+  border-top: 1px solid rgba(255,255,255,.35); padding-top: .55rem;
+  font-size: .95rem; line-height: 1.45; color: rgba(255,255,255,.82);
+}
+.bienvenida__secciones b { display: block; color: #fff; font-weight: 700; margin-bottom: .15rem; }
+.bienvenida .novedad__ir { color: #fff; }
+.bienvenida .novedad__flecha { transition: transform .25s var(--curva); }
+.bienvenida .novedad:hover .novedad__flecha { transform: translateX(5px); }
+/* El nombre en la bienvenida, con la letra del logotipo pero sin apilar. */
+.bienvenida__logo {
+  font-family: var(--display, Poppins), var(--sans);
+  font-weight: 700; letter-spacing: -.025em; text-transform: lowercase; white-space: nowrap;
+}
+/* TELÉFONO: como el resto de Novedades, el texto va arriba sobre el
+   papel y las fotos debajo, cuadradas. */
+@media (max-width: 780px) {
+  body[data-pagina="novedades"] .bienvenida .novedad__medio { height: auto; aspect-ratio: 1 / 1; max-height: 80vh; }
+  body[data-pagina="novedades"] .bienvenida__secciones li { border-top-color: var(--linea); color: var(--apagado); }
+  body[data-pagina="novedades"] .bienvenida__secciones b,
+  body[data-pagina="novedades"] .bienvenida .novedad__ir { color: var(--tinta); }
+}
+
+/* LA VENTANA DEL BUZÓN ANÓNIMO (y la del lector, que la reusa). */
+.buzon {
+  width: min(34rem, calc(100% - 2 * var(--canal))); max-height: calc(100% - 2rem);
+  padding: clamp(1.2rem, 4vw, 2rem); border: 1px solid var(--linea); border-radius: 0;
+  background: var(--papel); color: var(--tinta);
+  box-shadow: 0 24px 60px -20px rgba(0, 0, 0, .6);
+}
+.buzon::backdrop { background: rgba(0, 0, 0, .6); }
+.buzon__arriba { display: flex; align-items: center; justify-content: space-between; }
+.buzon__icono { color: var(--acento-texto); }
+.buzon__icono svg { display: block; width: 34px; height: 34px; }
+.buzon__cerrar {
+  width: 44px; height: 44px; margin: -.6rem -.6rem 0 0; border: 0; background: none;
+  color: var(--apagado); font-size: 1.7rem; line-height: 1; cursor: pointer;
+}
+.buzon__cerrar:hover { color: var(--tinta); background: none; }
+.buzon__titulo { margin: .8rem 0 .4rem; font-size: clamp(1.25rem, 3.5vw, 1.6rem); }
+.buzon__bajada { margin: 0 0 1.1rem; color: var(--apagado); font-size: .95rem; }
+.buzon__campo {
+  display: block; width: 100%; box-sizing: border-box; resize: vertical; min-height: 9rem;
+  padding: .8rem; border: 1px solid var(--linea); border-radius: 0;
+  background: var(--caja); color: var(--tinta); font: inherit; font-size: 1rem;
+}
+.buzon__campo:focus { outline: 2px solid var(--realce-hondo); outline-offset: -1px; }
+.buzon__trampa { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.buzon__fila { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: .8rem; }
+.buzon__cuenta { color: var(--apagado); font-size: .8rem; }
+.buzon__enviar:disabled { opacity: .6; cursor: default; }
+.buzon__aviso { margin: .6rem 0 0; color: var(--acento-texto); font-size: .9rem; }
+.buzon__aviso:empty { display: none; }
+.buzon__listo p { margin: 0 0 1rem; font-size: 1.05rem; }
+.lector__clave { min-height: 0; resize: none; }
+
+/* LAS TARJETAS DE CONTACTO (él, 17/09/2026): todas en columna y
+   centradas —el icono arriba del todo, debajo el rótulo, el dato y la
+   línea de qué pasa al pulsar—, SIN la flechita ↗ (se le montaba al
+   texto), y el buzón de primera con el mismo aspecto que las demás. */
+.contactos a {
+  flex-direction: column; align-items: center; text-align: center; gap: .7rem;
+  padding: 1.4rem;
+}
+.contactos__texto { text-align: center; }
+.contactos__flecha { display: none; }
+.contactos__buzon {
+  display: flex; flex-direction: column; align-items: center; gap: .7rem;
+  width: 100%; text-align: center; cursor: pointer;
+  font: inherit; color: inherit; background: none;
+  padding: 1.4rem; border: 1px solid var(--linea); border-radius: var(--radio);
+  transition: border-color .15s;
+}
+.contactos__buzon:hover { border-color: var(--tinta); background: none; }
+.contactos__buzon .contactos__texto { display: block; }
+.contactos__buzon .contactos__accion { display: block; margin-top: .15rem; }
+.contactos__buzon .contactos__icono { width: 42px; height: 42px; color: var(--realce); }
+.contactos__buzon .contactos__icono svg { width: 26px; height: 26px; }
+.buzon-boton { display: none; }   /* el renglón viejo del ☰, retirado */
+
+/* IDIOMA CON PALABRAS otra vez (él, 17/09/2026): «español» y «english»
+   en minúsculas, dentro del mismo botón de siempre. Las banderas del
+   16/09 quedan archivadas: el dibujo se sigue montando, pero no se ve. */
+.cabecera__utiles .idioma__bandera { display: none; }
+.cabecera__utiles .idioma button .ctrl__largo {
+  display: inline; text-transform: lowercase;
+  font-size: .8125rem; line-height: 1; letter-spacing: .01em;
+}
+
+/* TELÉFONO: idioma a la IZQUIERDA del modo, con aire entre los dos
+   pares, y los dos pares centrados dentro del ☰ (él, 17/09/2026). */
+@media (max-width: 780px) {
+  .cabecera__utiles .controles {
+    flex-direction: row; justify-content: center; align-items: center;
+    gap: 1.6rem; margin-right: 0;
+  }
+  .cabecera__utiles .idioma, .cabecera__utiles .tema { justify-content: center; }
+  /* Y sin la palabra de encima del nombre de la página («Área de»,
+     «Descubre», «Establece»): dentro del ☰ sobra. */
+  .menu__pre { display: none; }
+}
+
+/* LOS CUADRADOS DE «HAY MÁS ADENTRO» (video, 3D). A la derecha de los
+   cuadraditos de las fotos, en acento poco saturado y poco opaco. */
+.franja__extras { display: inline-flex; gap: 4px; margin-left: 9px; }
+.franja__extra {
+  display: block; width: 6px; height: 6px;
+  background: var(--acento-texto); opacity: .45; filter: saturate(.55);
+}
+.tarjeta__franja .franja__extras, .pt-franja-fotos .franja__extras { pointer-events: none; }
+
+/* TELÉFONO: la cuadrícula densa de Exhibición pasa de 4 a 3 columnas
+   (él, 17/09/2026), y esas cartas son SOLO la foto. */
+@media (max-width: 560px) {
+  .rejilla--cuatro { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .rejilla--cuatro .tarjeta h2,
+  .rejilla--cuatro .tarjeta__franja { display: none; }
+  .rejilla--cuatro .tarjeta { padding-bottom: 0; }
+  .rejilla--cuatro .tarjeta__marco { margin-bottom: 0; }
+}
+/* Sin barras de desplazamiento de lado en la ventana del buzón/lector:
+   el ancho ya se calcula para que quepa todo. */
+.buzon { box-sizing: border-box; overflow-x: hidden; }
+/* El lector no se desplaza entero: su lista ya tiene su propio
+   desplazamiento (.lector__cuerpo). Así no sale la barra fantasma. */
+.lector { overflow: hidden; }
+/* Hay mensajes sin leer en el buzón (solo en el navegador de él, que
+   guarda la ficha): el nombre del pie se pinta de acento. */
+.pie__marca.pie__marca--nuevos, .pie__marca.pie__marca--nuevos:hover { color: var(--acento-texto); }
+/* CONTACTO, MÁS AIRE A LOS LADOS (él, 17/09/2026): con las cuatro
+   tarjetas en una fila cada una medía ~240 px y el correo llegaba al
+   borde. Relleno lateral más corto (el icono va arriba, no ocupa ancho),
+   tarjetas un poco más anchas antes de pasar a la fila siguiente, y el
+   dato largo puede partirse antes que salirse. */
+.contactos { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.contactos a, .contactos__buzon { padding-left: 1rem; padding-right: 1rem; }
+.contactos strong { overflow-wrap: anywhere; }

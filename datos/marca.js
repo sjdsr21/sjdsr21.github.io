@@ -32,6 +32,11 @@ window.MARCA = {
      Con null, el juego enseña solo el récord personal. */
   apilar_api: "https://record-apilar.sjdesousar.workers.dev/",
 
+  /* BUZÓN ANÓNIMO (él, 17/09/2026): el Worker de Cloudflare que recibe
+     los mensajes. Vacío = modo prueba: la ventana hace como que envía,
+     pero no sale nada de la computadora. */
+  buzon_api: "https://buzon-anonimo.sjdesousar.workers.dev/enviar",
+
   /* Mensaje con el que se abre WhatsApp desde una ficha.
      {pieza} se reemplaza por el nombre de lo que estaba viendo. */
   mensaje: {
