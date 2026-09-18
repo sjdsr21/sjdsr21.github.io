@@ -361,8 +361,8 @@
          gemelos y hay que cambiar los dos. */
       for (y = 0; y < 3; y++) {
         var cy = 4 + y * 8;
-        s += '<circle cx="2" cy="' + cy + '" r="2"/>' +
-             '<rect x="7" y="' + (cy - 1) + '" width="17" height="2"/>';
+        s += '<rect x="0" y="' + (cy - 2) + '" width="4" height="4"/>' +
+             '<rect x="7" y="' + (cy - 2) + '" width="17" height="4"/>';
       }
       return '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">' + s + '</svg>';
     }

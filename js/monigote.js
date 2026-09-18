@@ -909,12 +909,15 @@
   var ESPADA_K = 1.4;        /* 17/09: la gladius, un 40 % más grande (él) */         /* 17/09: era 2, un poco menos largo (él) */
   /* 17/09: más grande (15 unidades) y más grueso, amarillo intenso
      con una arista más oscura, y goma rosa en el extremo. */
-  el("path", { "class": "monigote__lapiz-madera", d: "M 0.75,-0.24 L 2.5,-0.62 L 2.5,0.62 L 0.75,0.24 Z" }, lapiz);
-  el("path", { "class": "monigote__lapiz-mina", d: "M 0,0 L 0.8,-0.26 L 0.8,0.26 Z" }, lapiz);
-  el("rect", { "class": "monigote__lapiz-cuerpo", x: 2.5, y: -0.62, width: 10.4, height: 1.24 }, lapiz);
-  el("rect", { "class": "monigote__lapiz-arista", x: 2.5, y: -0.12, width: 10.4, height: 0.24 }, lapiz);
-  el("rect", { "class": "monigote__lapiz-virola", x: 12.9, y: -0.66, width: 0.9, height: 1.32 }, lapiz);
-  el("rect", { "class": "monigote__lapiz-goma", x: 13.8, y: -0.62, width: 1.3, height: 1.24, rx: 0.5 }, lapiz);
+  /* 18/09 (él): un poco más grueso, sin alargarlo: el dibujo se
+     ensancha solo de lado a lado */
+  var lapizDib = el("g", { transform: "scale(1,1.4)" }, lapiz);
+  el("path", { "class": "monigote__lapiz-madera", d: "M 0.75,-0.24 L 2.5,-0.62 L 2.5,0.62 L 0.75,0.24 Z" }, lapizDib);
+  el("path", { "class": "monigote__lapiz-mina", d: "M 0,0 L 0.8,-0.26 L 0.8,0.26 Z" }, lapizDib);
+  el("rect", { "class": "monigote__lapiz-cuerpo", x: 2.5, y: -0.62, width: 10.4, height: 1.24 }, lapizDib);
+  el("rect", { "class": "monigote__lapiz-arista", x: 2.5, y: -0.12, width: 10.4, height: 0.24 }, lapizDib);
+  el("rect", { "class": "monigote__lapiz-virola", x: 12.9, y: -0.66, width: 0.9, height: 1.32 }, lapizDib);
+  el("rect", { "class": "monigote__lapiz-goma", x: 13.8, y: -0.62, width: 1.3, height: 1.24, rx: 0.5 }, lapizDib);
 
   /* ---------- el hacha -----------------------------------------
      En "espacio hacha": el pomo en el origen, el cabo hacia +x y el

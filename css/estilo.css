@@ -4339,3 +4339,145 @@ svg.icono-linea { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-li
   .cargando { left: auto; right: 0; color: var(--acento-texto); }
 }
 @media (max-width: 780px) { .cargando { right: 9px; } }
+
+/* 18/09/2026 (él) · SIN INTERRUPTORES: solo iconos. ES y EN en Poppins
+   negrita, grandes, para que se lean como icono. En teléfono los dos
+   pares van en UNA fila (idioma a la izquierda, modo a la derecha) y la
+   lupa queda justo debajo de la bolsa. */
+.cabecera__utiles .idioma--interruptor > button.idioma__btn--es,
+.cabecera__utiles .idioma--interruptor > button.idioma__btn--en {
+  font-family: "Poppins", sans-serif; font-weight: 700;
+  font-size: 1.05rem; letter-spacing: 0; width: 40px;
+}
+.cabecera__utiles .idioma.idioma--interruptor,
+.cabecera__utiles .tema.tema--interruptor { gap: .25rem; }
+@media (max-width: 780px) {
+  .cabecera__utiles .controles {
+    flex-direction: row; justify-content: center; align-items: center;
+    gap: 2rem; width: auto; margin: 0 auto;
+  }
+  .cabecera .menu .lupa--menu { justify-self: start; margin-right: 0; }
+}
+@media (max-width: 780px) { .cabecera .menu .lupa--menu { margin-left: -1px; } }
+.cabecera__utiles .idioma--interruptor > button.idioma__btn--es, .cabecera__utiles .idioma--interruptor > button.idioma__btn--en { font-size: 1.3rem; }
+
+/* 18/09/2026 (él) · COMPUTADORA: lobo y gallo en las MISMAS columnas que
+   ES y EN (mismo ancho de botón y misma separación). */
+@media (min-width: 781px) {
+  .cabecera__utiles .idioma.idioma--interruptor,
+  .cabecera__utiles .tema.tema--interruptor { gap: 1rem; }
+  .cabecera__utiles .tema--interruptor > button.tema__bicho,
+  .cabecera__utiles .tema--interruptor > button.tema__bicho[aria-pressed] { width: 40px; }
+}
+
+/* 18/09/2026 (él) · TELÉFONO: la lupa se ancla al borde DERECHO, como la
+   bolsa, para quedar debajo de ella en cualquier ancho de teléfono (antes
+   se medía desde la izquierda y a 375 coincidía, pero en teléfonos más
+   anchos se corría). ES/EN más grandes y lobo y gallo más separados. */
+@media (max-width: 780px) {
+  .cabecera .menu .lupa--menu { justify-self: end; margin-left: 0; margin-right: 68.7px; }
+  .cabecera__utiles .idioma--interruptor > button.idioma__btn--es,
+  .cabecera__utiles .idioma--interruptor > button.idioma__btn--en { font-size: 1.5rem; width: 46px; }
+  .cabecera__utiles .tema.tema--interruptor { gap: 1.1rem; }
+}
+@media (max-width: 780px) { .cabecera .menu .lupa--menu { margin-right: 70px; } }
+
+/* 18/09/2026 (él) · Los rectangulitos de video/3D, a medio camino entre
+   el acento apagado que tenían y el siena pleno del resto. */
+.franja__extra { opacity: .72; filter: saturate(.8); }
+
+/* 18/09/2026 (él) · El ☰ en tres líneas siena, en computadora y teléfono. */
+.hamburguesa .hamburguesa__lineas {
+  display: block; width: 20px; height: 16px; fill: var(--acento-texto);
+  shape-rendering: crispEdges;
+}
+
+/* 18/09/2026 (él) · La ruedita | / — \ un poco más grande. En
+   computadora va ENCIMA del primer botón de vista (en teléfono sigue
+   sobre «ordenar»). */
+.cargando { font-size: 1.25rem; }
+@media (min-width: 781px) {
+  .cargando {
+    position: absolute; left: 0; top: -1.7rem; margin: 0;
+    width: 28px; text-align: center;
+  }
+}
+@media (min-width: 781px) { .cargando { top: calc(-1.7rem + 15px); } }
+/* 18/09/2026 (él) · Se montaba sobre los botones de vista (y el
+   triángulo de la vista puesta): más arriba. Y siena también aquí. */
+.cargando { color: var(--acento-texto); }
+@media (min-width: 781px) { .cargando { top: -2.4rem; } }
+
+/* 18/09/2026 (él) · El globo de Contacto es cuadrado: esquinas vivas. */
+.redes-movil__a .redes-movil__icono svg,
+.menu__contacto .menu__globo svg { stroke-linejoin: miter; }
+
+/* 18/09/2026 (él) · PRUEBA: el globo de Contacto lleva un punto de
+   aviso siena en la esquina de arriba a la derecha, del color del
+   número de la bolsa y sin número. Va DENTRO del dibujo, así que sube
+   y se esconde con él: ninguna animación propia. */
+.redes-movil__icono svg, .menu__globo svg { overflow: visible; }
+.globo__punto { fill: var(--realce-hondo); stroke: none; }
+
+/* 18/09/2026 (él) · PRUEBA 2: SIN el dibujo del globo. Solo el punto
+   siena, del MISMO tamaño que el número de la bolsa, en la esquina de
+   arriba a la derecha de la palabra «Contacto». Sube al abrir la página
+   y se esconde al recogerse la cabecera igual que hacía el globo; en la
+   propia página de Contacto ya está quieto. */
+.redes-movil__icono, .menu__globo { display: none !important; }
+.menu__contacto .menu__nombre, .redes-movil__a > span:last-child { position: relative; }
+.menu__contacto .menu__nombre::after, .redes-movil__a > span:last-child::after {
+  content: ""; position: absolute; top: -.45rem; right: -.75rem;
+  width: .8rem; height: .8rem; border-radius: 999px;
+  background: var(--realce-hondo); pointer-events: none;
+  animation: ola-sube .5s cubic-bezier(.22, .68, 0, 1.25) .75s both;
+  transition: opacity .2s var(--curva);
+}
+@media (max-width: 780px) {
+  .redes-movil__a > span:last-child::after { width: 1.15rem; height: 1.15rem; top: -.6rem; right: -1rem; }
+}
+.menu__contacto[aria-current="page"] .menu__nombre::after,
+.redes-movil__a[aria-current="page"] > span:last-child::after { animation: none; }
+@media (min-width: 781px) {
+  .cabecera.encogida .menu__contacto .menu__nombre::after { opacity: 0; visibility: hidden; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .menu__contacto .menu__nombre::after, .redes-movil__a > span:last-child::after { animation: none; }
+}
+
+/* 18/09/2026 (él) · CONTACTO EN LETRA SIENA: solo el color del texto,
+   sin relleno ni marco. Fuera el punto de aviso y el globo (el globo
+   sigue en el código, escondido). */
+.menu__contacto .menu__nombre::after,
+.redes-movil__a > span:last-child::after { display: none !important; content: none; }
+.menu a.menu__contacto, .menu a.menu__contacto .menu__nombre,
+.redes-movil__a, .redes-movil__a[aria-current="page"] { color: var(--acento-texto); }
+.menu a.menu__contacto:hover, .redes-movil__a:hover { color: var(--realce); }
+
+/* 18/09/2026 (él) · PRUEBA: Contacto vuelve al gris de los demás pero
+   en la letra del logo, Poppins negrita. */
+.menu a.menu__contacto, .menu a.menu__contacto .menu__nombre,
+.redes-movil__a, .redes-movil__a[aria-current="page"] {
+  color: var(--barra-suave); font-family: "Poppins", sans-serif; font-weight: 700;
+}
+.menu a.menu__contacto:hover, .redes-movil__a:hover { color: var(--barra-tinta); }
+.menu a.menu__contacto[aria-current="page"], .menu a.menu__contacto[aria-current="page"] .menu__nombre,
+.redes-movil__a[aria-current="page"] { color: var(--barra-tinta); }
+
+/* 18/09/2026 (él) · Contacto: Poppins negrita Y en siena. */
+.menu a.menu__contacto, .menu a.menu__contacto .menu__nombre,
+.redes-movil__a, .redes-movil__a[aria-current="page"],
+.menu a.menu__contacto[aria-current="page"], .menu a.menu__contacto[aria-current="page"] .menu__nombre {
+  color: var(--acento-texto);
+}
+.menu a.menu__contacto:hover, .menu a.menu__contacto:hover .menu__nombre, .redes-movil__a:hover { color: var(--realce); }
+
+/* 18/09/2026 (él) · Los esquineros de la introducción de El taller, en siena. */
+.intro-taller__texto::before, .intro-taller__texto::after { border-color: var(--acento-texto); }
+
+/* 18/09/2026 (él) · «Establece» (la palabrita de encima de Contacto) no
+   hereda la Poppins negrita ni el siena: su letra y gris de siempre. */
+.menu a.menu__contacto .menu__pre {
+  font-family: var(--sans); font-weight: 400;
+  color: var(--barra-suave);
+}

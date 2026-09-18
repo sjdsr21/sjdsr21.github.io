@@ -1170,3 +1170,10 @@ video.pt-visual__foto {
   #pt-pedido-seccion .pt-cabeza h2 { margin: 0; }
   #pt-pedido-seccion .pt-cabeza .pt-bolsa { margin: 0; position: static; }
 }
+
+/* 18/09/2026 (él) · TELÉFONO: la cuadrícula de 2×2 también enseña la
+   descripción de cada pieza, en letra pequeña. */
+@media (max-width: 780px) {
+  .pt-vista--cinco .pt-ficha__res { display: block; font-size: .75rem; line-height: 1.35; }
+}
+@media (max-width: 780px) { .pt-vista--cinco .pt-ficha__res { text-align: left; hyphens: auto; } }

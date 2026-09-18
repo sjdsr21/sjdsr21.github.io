@@ -545,8 +545,9 @@
     /* Globo de conversación (él, 18/09/2026): el botón del encabezado
        del teléfono que lleva a Contacto, en el sitio del de WhatsApp. */
     globo:    '<svg viewBox="0 0 24 24" aria-hidden="true" class="icono-linea"><path d="M5 4h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-8l-4.5 3.5V17H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>',
-    /* El mismo globo pero REDONDO (18/09/2026): va junto a «Contacto». */
-    globoRedondo: '<svg viewBox="0 0 24 24" aria-hidden="true" class="icono-linea"><path d="M13 3.5a8 8 0 1 1-3.3 15.3L2.5 21.5l2.6-6A8 8 0 0 1 13 3.5z"/></svg>',
+    /* El globo de «Contacto» (18/09/2026): cuadrado de esquinas vivas (él,
+       2.ª vuelta, antes era redondo), con el mismo pico abajo a la izquierda. */
+    globoRedondo: '<svg viewBox="0 0 24 24" aria-hidden="true" class="icono-linea"><path d="M6.5 3.5H19.5A1.5 1.5 0 0 1 21 5V17.3A1.5 1.5 0 0 1 19.5 18.8H9.7L2.5 21.5L5 15.5V5A1.5 1.5 0 0 1 6.5 3.5Z"/><circle class="globo__punto" cx="21" cy="3.5" r="4.6"/></svg>',
     /* Flecha curva hacia atrás: cierra la foto a pantalla completa. */
     volver:   '<svg viewBox="0 0 24 24" aria-hidden="true" class="icono-linea"><path d="M9 14 4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11"/></svg>',
     /* Buzón de correo con su banderita (17/09/2026), de líneas como el sobre. */
@@ -563,7 +564,9 @@
     minivan:  '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 17.2V8.6a2 2 0 012-2h9.3l3.6 4 3.2 1.1a1.6 1.6 0 011.1 1.5v4" stroke-linejoin="round"/><path d="M13.8 6.6v4h3.6M2.5 11.2h8.6M2.5 17.2h3.1M10.6 17.2h3.8M19.4 17.2h2.1" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8.1" cy="17.4" r="1.9"/><circle cx="16.9" cy="17.4" r="1.9"/></svg>',
     camion:   '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1.5 4.8h13.2v12H1.5z" stroke-linejoin="round"/><path d="M14.7 9h4.1l3.2 3.9v3.9h-1.9M14.7 16.8h2.2M1.5 16.8h1.6M8.2 16.8h1.9" stroke-linecap="round" stroke-linejoin="round"/><circle cx="5.6" cy="17.6" r="1.9"/><circle cx="18.6" cy="17.6" r="1.9"/></svg>',
     buque:    '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1.8 13.4h20.4l-2.6 5H4.6z" stroke-linejoin="round"/><path d="M4.2 13.4v-3h4.4v3M8.6 13.4V8.2h4.4v5.2M13 13.4v-3h4v3M18.6 13.4V6.3h2.2v7.1M1.5 21.2c1.5 0 1.5-.9 3-.9s1.5.9 3 .9 1.5-.9 3-.9 1.5.9 3 .9 1.5-.9 3-.9 1.5.9 3 .9 1.5-.9 3-.9" stroke-linecap="round" stroke-linejoin="round"/></svg>',
-    bolsa:    '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.6 8h14.8l-1.1 12.1a1 1 0 01-1 .9H6.7a1 1 0 01-1-.9z" stroke-linejoin="round"/><path d="M8.6 10.5V7a3.4 3.4 0 016.8 0v3.5" stroke-linecap="round"/></svg>',
+    /* 18/09/2026 (él) · Bolsa CUADRADA: cuerpo de lados rectos y asa en
+       «U» de esquinas vivas, como el resto del diseño. */
+    bolsa:    '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.6 8h14.8l-1.2 13H5.8z" stroke-linejoin="miter"/><path d="M8.6 10.5V6.2L10.4 4h3.2l1.8 2.2v4.3" stroke-linejoin="miter" stroke-linecap="butt"/></svg>',
 
     /* 2026-08-17 · Los tres del tema. Antes eran los caracteres
        ◑ ○ y la palabra "auto", y nadie adivinaba cuál era cuál.
@@ -675,7 +678,194 @@
      eso prototipos.js llama a esto ANTES de guardar el pedido. */
   var bolaEnCamino = false;
 
+  /* PRUEBA (él, 18/09/2026): un muñequito de palitos aparece junto a
+     la bolsa y LANZA la bolita. Lo demás igual: al entrar cambia el
+     número y la bolsa se infla; luego el muñequito desaparece.
+     La animación de antes (la bolita que cae) sigue aquí intacta:
+     BOLSA_ANIMACION = "cae" la devuelve, y ?bolsa=cae en la dirección
+     la muestra sin tocar el código, para compararlas. */
+  var BOLSA_ANIMACION = "muneco";
+
   function animarBolsa() {
+    var pide = /[?&]bolsa=(cae|muneco)/.exec(location.search);
+    if ((pide ? pide[1] : BOLSA_ANIMACION) === "muneco") animarBolsaMuneco();
+    else animarBolsaCae();
+  }
+
+  function animarBolsaMuneco() {
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    var destino = $$(".bolsa .lupa__icono").filter(function (x) {
+      return x.getBoundingClientRect().width > 0;
+    })[0];
+    if (!destino) destino = $(".hamburguesa");
+    if (!destino || !destino.animate) return;
+    bolaEnCamino = true;
+    var soltar = setTimeout(function () { bolaEnCamino = false; pintarBolsa(); }, 3200);
+    var r = destino.getBoundingClientRect();
+    var bx = r.left + r.width / 2, by = r.top + r.height / 2;
+
+    /* Dónde se para: sobre el borde de abajo del encabezado, a la
+       izquierda de la bolsa, mirando hacia ella. */
+    var cab = document.getElementById("cabecera") || document.querySelector("header");
+    var suelo = cab ? cab.getBoundingClientRect().bottom : by + 60;
+    if (suelo < by + 30) suelo = by + 30;
+    /* el dibujo: 60 × 72 px, los pies en (22, 68) */
+    var AN = 60, AL = 72, PX = 22, PY = 68;
+    var x0 = bx - 50 - PX, y0 = suelo - PY;
+
+    var NS = "http://www.w3.org/2000/svg";
+    function svgEl(tipo, at, padre) {
+      var e = document.createElementNS(NS, tipo);
+      for (var k in at) e.setAttribute(k, at[k]);
+      if (padre) padre.appendChild(e);
+      return e;
+    }
+    var fig = svgEl("svg", { width: AN, height: AL, viewBox: "0 0 " + AN + " " + AL, "aria-hidden": "true" });
+    /* estilo aquí mismo: estilo.css lo edita a la vez otra sesión */
+    fig.style.cssText = "position:fixed;z-index:299;pointer-events:none;opacity:0;overflow:visible;" +
+      "color:var(--tinta,#fff);left:" + x0 + "px;top:" + y0 + "px";
+    var trazo = { stroke: "currentColor", "stroke-width": 3, "stroke-linecap": "round",
+                  "stroke-linejoin": "round", fill: "none" };
+    function poli(padre) { return svgEl("polyline", trazo, padre || fig); }
+    var piernaB = poli(), brazoB = poli(), torso = poli(), piernaA = poli();
+    var cabeza = svgEl("circle", { r: 4.3, fill: "currentColor" }, fig);
+    var brazoA = poli();
+    /* el balón en la mano (el mismo naranja de la bolita) */
+    var balon = svgEl("circle", { r: 4.3, fill: "var(--acento-texto, #E07A3F)" }, fig);
+    document.body.appendChild(fig);
+
+    /* ---- el esqueleto: ángulos desde ABAJO (0 abajo, 90 al frente,
+       180 arriba), como el muñeco de Contacto ---- */
+    var MUSLO = 7.5, PIERNA = 7.5, TRONCO = 12, CUELLO = 4.6, BRAZO = 6.2, ANTEB = 6, MANO = 2.4;
+    function dir(a, l) { var r = a * Math.PI / 180; return [Math.sin(r) * l, Math.cos(r) * l]; }
+    function mas(p, v) { return [p[0] + v[0], p[1] + v[1]]; }
+    /* POSES del tiro: t (ms desde que aparece) y los ángulos.
+       cad/rod: muslo y pierna (A la de delante); tr: inclinación del
+       tronco (+ hacia delante); hom/cod/mun: brazo, antebrazo, muñeca;
+       sal: altura del salto, en px */
+    var POSES = [
+      { t: 0,    cadA: 6,  rodA: 0,   cadB: -6, rodB: -4,  tr: 4,  cab: 0,
+                 homA: 25, codA: 95,  munA: 110, homB: 20, codB: 88, sal: 0 },
+      /* flexiona rodillas y recoge el balón al pecho */
+      { t: 380,  cadA: 52, rodA: -22, cadB: 40, rodB: -34, tr: 20, cab: -8,
+                 homA: 28, codA: 128, munA: 150, homB: 22, codB: 118, sal: 0 },
+      /* sube el balón sobre la frente, muñeca atrás, aún flexionado */
+      { t: 640,  cadA: 40, rodA: -18, cadB: 30, rodB: -26, tr: 10, cab: -14,
+                 homA: 120, codA: 186, munA: 230, homB: 105, codB: 170, sal: 0 },
+      /* salta y empuja SIN frenar (e: "in", acelera hasta soltar); la
+         muñeca no se dobla hasta que el balón ya salió (él, 18/09) */
+      { t: 830,  cadA: 4,  rodA: -6,  cadB: -4, rodB: -14, tr: 2,  cab: -18,
+                 homA: 158, codA: 160, munA: 230, homB: 140, codB: 150, sal: 7, e: "in" },
+      /* el golpe de muñeca, ya sin balón */
+      { t: 960,  cadA: 2,  rodA: -8,  cadB: -6, rodB: -18, tr: 0,  cab: -16,
+                 homA: 160, codA: 158, munA: 95,  homB: 138, codB: 146, sal: 8, e: "out" },
+      /* cae flexionando las rodillas; el brazo SIGUE arriba, la mano
+         doblada, hasta que desaparece (él, 18/09) */
+      { t: 1180, cadA: 30, rodA: -14, cadB: 22, rodB: -24, tr: 8,  cab: -14,
+                 homA: 158, codA: 156, munA: 92,  homB: 132, codB: 140, sal: 0 },
+      { t: 1500, cadA: 8,  rodA: -2,  cadB: -4, rodB: -8,  tr: 3,  cab: -14,
+                 homA: 158, codA: 156, munA: 92,  homB: 128, codB: 136, sal: 0 },
+      { t: 2200, cadA: 8,  rodA: -2,  cadB: -4, rodB: -8,  tr: 3,  cab: -12,
+                 homA: 158, codA: 156, munA: 92,  homB: 128, codB: 136, sal: 0 }
+    ];
+    var SUELTA = 830;                         /* ms: el balón sale de la mano */
+    function suave(u) { return u * u * (3 - 2 * u); }
+    var CURVA = { "in": function (u) { return u * u; },
+                  out: function (u) { return 1 - (1 - u) * (1 - u); } };
+    function poseEn(t) {
+      var i = 0;
+      while (i < POSES.length - 2 && t > POSES[i + 1].t) i++;
+      var a = POSES[i], b = POSES[i + 1];
+      var u = Math.max(0, Math.min(1, (t - a.t) / (b.t - a.t)));
+      u = (CURVA[b.e] || suave)(u);
+      var p = {};
+      for (var k in a) if (typeof a[k] === "number") p[k] = a[k] + (b[k] - a[k]) * u;
+      return p;
+    }
+    function pts(lista) {
+      return lista.map(function (q) { return q[0].toFixed(2) + "," + q[1].toFixed(2); }).join(" ");
+    }
+    var conBalon = true, manoA = [0, 0];
+    function dibujar(t) {
+      var p = poseEn(t);
+      /* la cadera a la altura justa para que el pie más bajo pise */
+      var caeA = dir(p.cadA, MUSLO)[1] + dir(p.rodA, PIERNA)[1];
+      var caeB = dir(p.cadB, MUSLO)[1] + dir(p.rodB, PIERNA)[1];
+      var cad = [PX, PY - Math.max(caeA, caeB) - p.sal];
+      var rodA = mas(cad, dir(p.cadA, MUSLO)), pieA = mas(rodA, dir(p.rodA, PIERNA));
+      var rodB = mas(cad, dir(p.cadB, MUSLO)), pieB = mas(rodB, dir(p.rodB, PIERNA));
+      var cuello = mas(cad, dir(180 - p.tr, TRONCO));
+      var cab = mas(cuello, dir(180 - p.tr - p.cab, CUELLO + 1));
+      var hom = mas(cuello, [0, 1.2]);
+      var codA = mas(hom, dir(p.homA, BRAZO)), munA = mas(codA, dir(p.codA, ANTEB)), dedA = mas(munA, dir(p.munA, MANO));
+      var codB = mas(hom, dir(p.homB, BRAZO)), munB = mas(codB, dir(p.codB, ANTEB)), dedB = mas(munB, dir(p.codB + 10, MANO));
+      piernaA.setAttribute("points", pts([cad, rodA, pieA]));
+      piernaB.setAttribute("points", pts([cad, rodB, pieB]));
+      torso.setAttribute("points", pts([cad, cuello]));
+      brazoA.setAttribute("points", pts([hom, codA, munA, dedA]));
+      brazoB.setAttribute("points", pts([hom, codB, munB, dedB]));
+      cabeza.setAttribute("cx", cab[0].toFixed(2)); cabeza.setAttribute("cy", cab[1].toFixed(2));
+      /* el balón va ENCIMA de las manos: siguiendo el antebrazo y un
+         poco hacia arriba. Antes giraba alrededor de la muñeca y daba
+         saltitos (él, 18/09) */
+      var bal = mas(mas(munA, dir(p.codA, 2.2)), [0, -3.6]);
+      manoA = bal;
+      balon.style.display = conBalon ? "" : "none";
+      balon.setAttribute("cx", bal[0].toFixed(2)); balon.setAttribute("cy", bal[1].toFixed(2));
+    }
+
+    var t0 = null, lanzado = false, fin = POSES[POSES.length - 1].t;
+    fig.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 200, fill: "forwards" });
+    function paso(ahora) {
+      if (t0 === null) t0 = ahora;
+      var t = ahora - t0;
+      dibujar(Math.min(t, fin));
+      if (!lanzado && t >= SUELTA) { lanzado = true; lanzar(); }
+      if (t < fin) requestAnimationFrame(paso);
+    }
+    dibujar(0);
+    requestAnimationFrame(paso);
+    /* red: con la pestaña en segundo plano rAF se para; que no quede
+       un muñequito congelado en el encabezado */
+    setTimeout(function () { if (fig.parentNode) fig.remove(); }, fin + 1500);
+
+    function lanzar() {
+      conBalon = false;
+      var hx = x0 + manoA[0], hy = y0 + manoA[1];
+      var bola = el("span", { class: "bolsa-bola", "aria-hidden": "true" });
+      bola.style.left = hx + "px";
+      bola.style.top = hy + "px";
+      document.body.appendChild(bola);
+      /* arco alto, como un tiro de tres */
+      var dx = bx - hx, dy = by - hy, alto = Math.max(34, -dy + 30), marcos = [];
+      for (var i = 0; i <= 16; i++) {
+        var u = i / 16;
+        var x = dx * u, y = dy * u - alto * 4 * u * (1 - u);
+        var esc = u < 0.85 ? 1 : 1 - (u - 0.85) / 0.15 * 0.6;
+        marcos.push({ transform: "translate(-50%, -50%) translate(" + x.toFixed(1) + "px," + y.toFixed(1) + "px) scale(" + esc.toFixed(2) + ")",
+                      opacity: u < 0.95 ? 1 : 0, offset: u });
+      }
+      var vuelo = bola.animate(marcos, { duration: 560, easing: "linear" });
+      vuelo.onfinish = function () {
+        bola.remove();
+        clearTimeout(soltar);
+        bolaEnCamino = false;
+        pintarBolsa();
+        destino.animate([
+          { transform: "scale(1)" },
+          { transform: "scale(1.32)", offset: .4 },
+          { transform: "scale(.94)", offset: .75 },
+          { transform: "scale(1)" }
+        ], { duration: 420, easing: "ease-out" });
+      };
+      /* se desvanece cuando ya se ha enderezado */
+      var fuera = fig.animate([{ opacity: 1 }, { opacity: 0 }],
+                              { duration: 350, delay: fin - SUELTA - 200, easing: "ease-in", fill: "forwards" });
+      fuera.onfinish = function () { fig.remove(); };
+    }
+  }
+
+  function animarBolsaCae() {
     if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     var destino = $$(".bolsa .lupa__icono").filter(function (x) {
       return x.getBoundingClientRect().width > 0;
@@ -1928,7 +2118,10 @@
        aria-controls para atar el botón con la lista que abre. */
     var hamb = el("button", { class: "hamburguesa", type: "button",
                               "aria-label": "Menú", "aria-expanded": "false",
-                              "aria-controls": "menu", html: "&#9776;" });
+                              "aria-controls": "menu",
+      /* 18/09/2026 (él) · El ☰ dibujado: tres líneas siena. */
+      html: '<svg class="hamburguesa__lineas" viewBox="0 0 20 16" aria-hidden="true" focusable="false">' +
+            '<rect y="1" width="20" height="2"/><rect y="7" width="20" height="2"/><rect y="13" width="20" height="2"/></svg>' });
     /* 2026-08-17 · Abrir y cerrar en un solo sitio, porque ahora se
        cierra desde cuatro lados distintos: el propio botón, al
        desplazar la página, al tocar fuera del encabezado y con Esc.
@@ -2081,8 +2274,12 @@
         /* Con título cada grupo (él, 16/09/2026): ahora viven en la
            hamburguesa también en computadora y hay sitio. */
         el("div", { class: "controles" }, [
-          el("div", { class: "idioma idioma--interruptor" }, [botones[0], interruptorIdioma, botones[1]]),
-          el("div", { class: "tema tema--interruptor" }, [botonesTema[0], interruptorTema, botonesTema[1]])
+          /* 18/09/2026 (él) · SIN riel: el interruptor se probó y salió.
+             Quedan solo los iconos (ES/EN en negrita y lobo/gallo); el
+             puesto va en siena. Los interruptores siguen definidos arriba
+             por si vuelven. */
+          el("div", { class: "idioma idioma--interruptor" }, botones),
+          el("div", { class: "tema tema--interruptor" }, botonesTema)
         ])
       ])
     ]));
@@ -2414,8 +2611,8 @@
          centrado en el lienzo. Todo sigue en números enteros. */
       for (y = 0; y < 3; y++) {
         var cy = 4 + y * 8;
-        s += '<circle cx="2" cy="' + cy + '" r="2"/>' +
-             '<rect x="7" y="' + (cy - 1) + '" width="17" height="2"/>';
+        s += '<rect x="0" y="' + (cy - 2) + '" width="4" height="4"/>' +
+             '<rect x="7" y="' + (cy - 2) + '" width="17" height="4"/>';
       }
       return '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">' + s + '</svg>';
     }
@@ -2475,11 +2672,85 @@
      todos los huecos salen iguales) y se corre lo que haga falta para
      caer justo en la rejilla de la pantalla. La geometría original se
      guarda en data-* para no redondear sobre lo ya redondeado. */
+  /* EL REPARTO DE LOS CUADRADITOS EN PÍXELES REALES (18/09/2026).
+     Un icono de n×n que mide T píxeles reales cumple n·L + (n−1)·G = T,
+     con L (lado) y G (hueco) ENTEROS: si no, unos cuadraditos salen de
+     un píxel más que otros. Con pocos píxeles no hay T que sirva a la vez
+     para todas las cuadrículas con la proporción de diseño, así que se
+     busca, entre ~20 y ~30 px de pantalla, el T que más se acerque a 24
+     px y a la proporción hueco/lado de cada icono (IDEAL), para el juego
+     entero a la vez. Probado a 100, 125, 150, 200 y 300 %:
+       100 % → 23 px: 3 = 7/1, 4 = 5/1, 5 = 3/2
+       125 % → 33 px reales: 3 = 9/3, 4 = 6/3, 5 = 5/2
+       teléfono ×3 → 71: 1 = 71, 2 = 32/7, 3 = 19/7 */
+  var IDEAL_VISTA = { 2: .22, 3: .33, 4: .3, 5: .3 };
+  function repartoVista(n, T) {
+    if (n === 1) return { L: T, G: 0, e: 0 };
+    var b = null;
+    for (var G = 1; G < T; G++) {
+      var L = (T - (n - 1) * G) / n;
+      if (L < 2 || L % 1 || G > L * .8) continue;
+      var e = Math.abs(G / L - IDEAL_VISTA[n]);
+      if (!b || e < b.e) b = { L: L, G: G, e: e };
+    }
+    return b;
+  }
+  function lienzoPropio(d, n) {
+    var tope = Math.floor(24 * d), b = null;
+    if (n === 1) return Math.round(20 * d);
+    for (var T = tope; T >= Math.floor(21.5 * d); T--) {
+      var m = repartoVista(n, T);
+      if (!m) continue;
+      var e = m.e + (tope - T) / tope;
+      if (!b || e < b.e) b = { T: T, e: e };
+    }
+    return b ? b.T : tope;
+  }
+  function lienzoVista(d, juego) {
+    var b = null;
+    for (var T = Math.ceil(20 * d); T <= Math.floor(30 * d); T++) {
+      var e = Math.abs(T / d - 24) / 24, ok = true;
+      for (var k = 0; k < juego.length; k++) {
+        var m = repartoVista(juego[k], T);
+        if (!m) { ok = false; break; }
+        e += m.e;
+      }
+      if (ok && (!b || e < b.e)) b = { T: T, e: e };
+    }
+    return b ? b.T : Math.round(24 * d);
+  }
+
   function ajustarIconosVista() {
     var d = window.devicePixelRatio || 1;
     $$(".vistas__btn svg").forEach(function (svg) {
       var rs = svg.querySelectorAll("rect");
       if (!rs.length || svg.querySelector("circle")) return;
+      /* La lista (rayas + puntos) no es una cuadrícula: solo se recoloca. */
+      var esLista = rs[0].getAttribute("width") !== rs[0].getAttribute("height") ||
+                    svg.closest("[data-vista='lista'], [data-vista-pt='lista']");
+      if (esLista && svg.dataset.hecho !== String(d)) {
+        /* Cada rectángulo a píxeles reales (guardando los originales). */
+        if (!svg.dataset.orig) svg.dataset.orig = Array.prototype.map.call(rs, function (r) {
+          return ["x", "y", "width", "height"].map(function (k) { return r.getAttribute(k); }).join(" ");
+        }).join(";");
+        /* 18/09/2026 (él) · Punto CUADRADO y raya del MISMO alto que el
+           punto, en píxeles reales enteros: redondear cada borde por
+           separado dejaba el primer punto más ancho que alto. */
+        var TL = Math.round(24 * d), D = Math.round(4 * d),
+            PASO = Math.round(8 * d), HX = Math.round(3 * d),
+            Y0 = Math.floor((TL - (2 * PASO + D)) / 2), fil;
+        svg.innerHTML = "";
+        for (fil = 0; fil < 3; fil++) {
+          var yy = Y0 + fil * PASO;
+          svg.innerHTML += '<rect x="0" y="' + yy + '" width="' + D + '" height="' + D + '"/>' +
+                           '<rect x="' + (D + HX) + '" y="' + yy + '" width="' + (TL - D - HX) + '" height="' + D + '"/>';
+        }
+        svg.setAttribute("viewBox", "0 0 " + TL + " " + TL);
+        svg.setAttribute("shape-rendering", "crispEdges");
+        svg.style.width = svg.style.height = (TL / d) + "px";
+        svg.dataset.hecho = String(d);
+      }
+      if (esLista) svg.dataset.geo = svg.dataset.geo || "lista";
       if (!svg.dataset.geo) {
         var xs = [], lado = +rs[0].getAttribute("width");
         rs.forEach(function (r) { var x = +r.getAttribute("x"); if (xs.indexOf(x) < 0) xs.push(x); });
@@ -2489,9 +2760,17 @@
       /* Ya redibujado para este zoom: solo se recoloca (sin tocar el
          DOM, o el vigilante de abajo entraría en bucle). */
       if (svg.dataset.hecho !== String(d)) {
-      var g = svg.dataset.geo.split(",").map(Number), n = g[0];
-      var T = Math.round(24 * d), I = Math.round(g[1] * d),
-          P = Math.round(g[2] * d), L = Math.round(g[3] * d), h = "", x, y;
+      var n = +svg.dataset.geo.split(",")[0];
+      /* 18/09/2026 (él) · TODOS los iconos de cuadrícula de un mismo juego
+         miden EXACTAMENTE lo mismo de borde a borde (computadora: 3, 4 y
+         5; teléfono: 1, 2 y 3), y dentro de cada uno los cuadraditos y
+         los huecos son iguales en píxeles reales. Ver lienzoVista(). */
+      /* 18/09/2026 (él, 2.ª vuelta): con un tamaño común para todos
+         salían demasiado grandes. Ahora cada icono busca SU tamaño, a
+         lo sumo 24 px de pantalla y como mucho ~2 menos, con cuadraditos
+         y huecos enteros e iguales. Pueden diferir en un píxel o dos. */
+      var T = lienzoPropio(d, n), m = repartoVista(n, T),
+          L = m.L, P = m.L + m.G, I = 0, h = "", x, y;
       for (y = 0; y < n; y++) for (x = 0; x < n; x++)
         h += '<rect x="' + (I + x * P) + '" y="' + (I + y * P) + '" width="' + L + '" height="' + L + '"/>';
       svg.innerHTML = h;
