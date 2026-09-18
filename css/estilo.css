@@ -4481,3 +4481,42 @@ svg.icono-linea { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-li
   font-family: var(--sans); font-weight: 400;
   color: var(--barra-suave);
 }
+
+/* 18/09/2026 (él) · TELÉFONO: «Contacto» centrado sobre la bolsa y el ☰
+   de abajo (medido a 375: palabra 266–341, bolsa+☰ 258–325). */
+@media (max-width: 780px) { .redes-movil { transform: translateX(-12px); } }
+
+/* 18/09/2026 (él) · TELÉFONO, DENTRO DEL ☰:
+   · Novedades y El taller uno debajo del otro, alineados a la izquierda
+     (la «E» de El taller bajo la «N» de Novedades).
+   · A su derecha, idioma ENCIMA de modo (2×2), sin marcos.
+   · La lupa en el extremo derecho.
+   Idioma y modo viven en .cabecera__utiles, que va DEBAJO del menú en el
+   HTML: se sube con margen negativo para caer a la altura de las dos
+   filas de páginas, y deja pasar los toques a lo que tiene detrás. */
+@media (max-width: 780px) {
+  .cabecera .menu.abierto {
+    grid-template-columns: auto 1fr auto; grid-auto-rows: 44px;
+  }
+  .cabecera .menu.abierto a:not([data-principal]) {
+    grid-column: 1; justify-self: start; justify-content: flex-start;
+    text-align: left; padding-left: 0; margin-left: 0;
+  }
+  .cabecera .menu .lupa--menu {
+    grid-column: 3; grid-row: 1 / span 2; align-self: center;
+    justify-self: end; margin: 0 -10px 0 0;
+  }
+  .cabecera__utiles { margin-top: -88px; pointer-events: none; }
+  .cabecera__utiles .controles {
+    pointer-events: auto; flex-direction: column; align-items: center;
+    gap: 0; width: max-content; margin: 0 auto; padding: 0;
+  }
+  .cabecera__utiles .idioma.idioma--interruptor,
+  .cabecera__utiles .tema.tema--interruptor { height: 44px; }
+}
+@media (max-width: 780px) {
+  .cabecera__utiles { margin-top: -107px; background: none; box-shadow: none; border: 0; }
+  .cabecera .menu .lupa--menu { margin-right: 0; }
+}
+@media (max-width: 780px) { .cabecera__utiles { margin-top: -112px; } }
+@media (max-width: 780px) { .cabecera__utiles { margin-top: -114px; } }

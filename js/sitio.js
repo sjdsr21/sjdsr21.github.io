@@ -2697,7 +2697,9 @@
   }
   function lienzoPropio(d, n) {
     var tope = Math.floor(24 * d), b = null;
-    if (n === 1) return Math.round(20 * d);
+    /* El cuadrado solo (teléfono) mide lo mismo que el de 2×2: antes iba
+       fijo a 20 px y se veía más chico que los otros (él, 18/09/2026). */
+    if (n === 1) return lienzoPropio(d, 2);
     for (var T = tope; T >= Math.floor(21.5 * d); T--) {
       var m = repartoVista(n, T);
       if (!m) continue;
