@@ -4332,3 +4332,10 @@ svg.icono-linea { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-li
    se llegó pulsándolo, no hace falta que vuelva a subir. */
 .menu__contacto[aria-current="page"] .menu__globo svg,
 .redes-movil__a[aria-current="page"] .redes-movil__icono svg { animation: none; }
+
+/* 18/09/2026 (él) · TELÉFONO: la ruedita | / — \ pasa al margen
+   DERECHO, encima de «ordenar», y en color de acento. */
+@media (max-width: 780px) {
+  .cargando { left: auto; right: 0; color: var(--acento-texto); }
+}
+@media (max-width: 780px) { .cargando { right: 9px; } }

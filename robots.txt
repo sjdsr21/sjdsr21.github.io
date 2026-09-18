@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://prototipoago.com/sitemap.xml
