@@ -27,8 +27,8 @@ window.TEXTOS = {
 
   /* --- Prototipos: la colección propia, con pedido --------- */
   pt_titulo:    { es: "Prototipos", en: "Prototypes" },
-  pt_bajada:    { es: "Piezas que puedes comprar. De diseño propio. Hechas en el taller.",
-                  en: "Pieces you can buy. Of my own design. Made in the shop." },
+  pt_bajada:    { es: "Piezas que puedes comprar. Hechas en el taller.",
+                  en: "Pieces you can buy. Made in the shop." },
   pt_con_stock: { es: "Listas ahora", en: "Ready now" },
   /* Va justo debajo del título "Listas ahora": es lo que antes
      decía la bajada de la página, pero pegado a lo que explica. */
@@ -185,8 +185,8 @@ window.TEXTOS = {
   /* --- Inicio ---------------------------------------------- */
   hero_titulo:  { es: "Muebles hechos de a uno.",
                   en: "Furniture made one at a time." },
-  hero_bajada:  { es: "Taller de carpintería en Caracas. Encargos a medida y piezas de diseño propio.",
-                  en: "A woodworking shop in Caracas. Commissions and pieces of my own design." },
+  hero_bajada:  { es: "Taller de carpintería en Caracas. Encargos a medida y piezas hechas en el taller.",
+                  en: "A woodworking shop in Caracas. Commissions and pieces made in the shop." },
   hero_cta1:    { es: "Ver prototipos",    en: "See the prototypes" },
   hero_cta2:    { es: "Ver exhibición",    en: "See the exhibition" },
 
@@ -237,8 +237,8 @@ window.TEXTOS = {
      06/09/2026 · Se queda la primera frase y cambia todo lo demás,
      dictado por él. Antes decía: «Ningún encargo se repite: aquí
      está cada pieza, de qué está hecha y cómo se resolvió.» */
-  trabajos_bajada: { es: "El catálogo de lo que ha salido del taller. Cada encargo parte de una propuesta única: la idea del cliente, que se materializa a partir de la resolución de un problema.",
-                     en: "The catalogue of what has come out of the shop. Every commission begins with a proposal of its own: the client's idea, which takes shape by solving a problem." },
+  trabajos_bajada: { es: "El catálogo de lo que ha salido del taller. Cada encargo parte de la propuesta única que ofrece el cliente: un problema que busca solucionar y unas ideas para lograrlo.",
+                     en: "The catalogue of what has come out of the shop. Every commission starts from the unique proposal the client brings: a problem to solve and some ideas for how to get there." },
 
   filtro_tipo:     { es: "Tipo",           en: "Type" },
   filtro_madera:   { es: "Material",       en: "Material" },

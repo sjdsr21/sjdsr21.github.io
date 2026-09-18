@@ -3981,3 +3981,354 @@ svg.icono-linea { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-li
 .contactos { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
 .contactos a, .contactos__buzon { padding-left: 1rem; padding-right: 1rem; }
 .contactos strong { overflow-wrap: anywhere; }
+
+/* ------------------------------------------------------------
+   (recuperado tras el truncado del 18/09/2026: este bloque lo
+   había escrito otra sesión sobre el archivo entero)
+   ------------------------------------------------------------ */
+
+/* ============================================================
+   18/09/2026 (él)
+   ============================================================ */
+
+/* VIDEO Y 3D: rectángulo como los de las fotos, solo que de su color. */
+.franja__extras { gap: 4px; margin-left: 4px; }
+.franja__extra { width: 9px; height: 3px; }
+
+/* TELÉFONO: botones de idioma más anchos, para que «español» y
+   «english» quepan enteros. */
+@media (max-width: 1060px) {
+  .cabecera__utiles .idioma button,
+  .cabecera__utiles .idioma .idioma__btn--es,
+  .cabecera__utiles .idioma .idioma__btn--en { width: 74px; }
+}
+
+/* TELÉFONO: en Contacto, WhatsApp de primero y el buzón de último (el
+   muñeco sigue sobre WhatsApp). En computadora, el buzón sigue primero. */
+@media (max-width: 780px) {
+  .contactos__buzon { order: 99; }
+}
+
+/* TELÉFONO: Contacto sale del ☰ — ahora se llega por el globo del
+   encabezado. */
+@media (max-width: 780px) {
+  .menu a[href="contacto.html"] { display: none; }
+  .redes-movil__a[aria-current="page"] { color: var(--barra-tinta); }
+}
+
+/* TELÉFONO: en el pie, WhatsApp, correo e Instagram uno debajo del otro
+   y bien juntos, en vez de que Instagram caiga suelto a otra línea. */
+@media (max-width: 780px) {
+  /* En teléfono la marca va arriba y este bloque debajo, a la
+     izquierda: los tres al ras del mismo borde que la marca. */
+  .pie__enlaces { flex-direction: column; align-items: flex-start; gap: 0; width: 100%; }
+  .pie__enlaces a,
+  .pie__enlaces a:first-child { padding: .2rem 0; min-height: 0; line-height: 1.3; }
+}
+
+/* LA RUEDITA DE CARGA ( | / — \ ): a la derecha de la barra de vistas,
+   filtros y orden en computadora; en teléfono, justo encima del primer
+   botón de vista (a la derecha está «ordenar»). Solo se ve mientras
+   quedan fotos por bajar. */
+.catalogo-barra { position: relative; }
+.cargando {
+  margin-left: auto; width: 1.2em; text-align: center;
+  font-family: ui-monospace, "Cascadia Mono", Consolas, monospace;
+  font-size: 1rem; line-height: 1; color: var(--apagado);
+  opacity: 0; transition: opacity .3s var(--curva-suave); pointer-events: none;
+}
+.cargando--activo { opacity: 1; }
+@media (max-width: 780px) {
+  .cargando { position: absolute; left: .7rem; top: -1.4rem; margin: 0; }
+}
+
+/* LA FOTO A PANTALLA COMPLETA (dentro de la página, no del sistema). */
+.foto-grande {
+  position: fixed; inset: 0; z-index: 200;
+  display: grid; place-items: center;
+  background: rgba(0, 0, 0, .94); cursor: zoom-out;
+  animation: foto-grande-entra .2s var(--curva-suave) both;
+}
+@keyframes foto-grande-entra { from { opacity: 0; } to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .foto-grande { animation: none; } }
+.foto-grande__img {
+  max-width: 100vw; max-height: 100vh; max-height: 100dvh;
+  width: auto; height: auto; object-fit: contain; cursor: default;
+}
+.foto-grande__volver {
+  position: absolute; top: max(.8rem, env(safe-area-inset-top)); left: .8rem;
+  width: 48px; height: 48px; display: grid; place-items: center;
+  border: 1px solid rgba(255, 255, 255, .35); border-radius: 0;
+  background: rgba(0, 0, 0, .55); color: #fff; cursor: pointer;
+}
+.foto-grande__volver:hover { border-color: #fff; background: rgba(0, 0, 0, .75); }
+.foto-grande__volver svg { width: 24px; height: 24px; }
+/* Que se note que la foto de la ficha se puede agrandar. */
+.visor-medios__principal img, #pt-pn-visual img.pt-visual__foto { cursor: zoom-in; }
+
+/* El globo de Contacto del encabezado, al tamaño de la lupa: es de
+   líneas y a 17 px (el tamaño del logo de WhatsApp) se veía chico. */
+@media (max-width: 780px) {
+  .redes-movil__a svg.icono-linea { width: 21px; height: 21px; fill: none; }
+}
+
+/* 18/09/2026 (él, 2.ª vuelta): arriba a la derecha, la palabra
+   «Contacto» en vez del globo, y sin lupa. La lupa vive en el ☰, a la
+   derecha de los botones de modo, y los tres grupos centrados. */
+.lupa--menu { display: none; }
+@media (max-width: 780px) {
+  .redes-movil { left: 0; }
+  .redes-movil__a {
+    width: auto; padding: 0 .9rem; font-size: .95rem; font-weight: 500;
+    letter-spacing: .01em; white-space: nowrap;
+  }
+  .redes-movil__a[aria-current="page"] { color: var(--acento-texto); }
+  .cabecera__utiles .controles { gap: 1.1rem; flex-wrap: nowrap; }
+  .cabecera__utiles .lupa--menu {
+    display: grid; place-items: center; flex: none;
+    width: 44px; height: 44px; padding: 0; margin: 0;
+    border: 1px solid var(--barra-linea); background: none; color: var(--barra-tinta);
+  }
+  .cabecera__utiles .lupa--menu .lupa__icono svg { width: 20px; height: 20px; }
+}
+@media (max-width: 780px) {
+  .redes-movil__a { text-decoration: none; }
+}
+@media (max-width: 780px) {
+  .cabecera__utiles .lupa--menu { height: 34px; width: 51px; min-height: 0; box-sizing: border-box; }
+}
+
+/* 18/09/2026 (él, 3.ª vuelta) · TELÉFONO: dentro del ☰, Novedades y El
+   taller en las MISMAS columnas que Prototipos y Exhibición de la barra
+   de arriba (misma cuenta: un tercio del ancho cada una). Y la lupa sin
+   marco, con el gris de la bolsa y del ☰, justo debajo del ☰; idioma y
+   modo centrados en lo que queda a su izquierda. */
+@media (max-width: 780px) {
+  .cabecera .menu.abierto { grid-template-columns: repeat(2, calc(100% / 3)) 1fr; }
+  .cabecera__utiles .controles { position: relative; padding-right: 52px; justify-content: center; }
+  .cabecera__utiles .lupa--menu {
+    position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
+    width: 44px; height: 44px; border: 0; background: none;
+    color: var(--barra-suave); opacity: 1;
+  }
+  .cabecera__utiles .lupa--menu:hover { color: var(--barra-tinta); background: none; }
+}
+@media (max-width: 780px) {
+  .cabecera__utiles .controles { gap: 12px; padding-right: 60px; }
+}
+
+/* 18/09/2026 (él) · TELÉFONO: la descripción del buzón iba de borde a
+   borde de la tarjeta. Más margen por dentro para que se parta antes. */
+@media (max-width: 780px) {
+  .contactos__buzon .contactos__accion { max-width: 30ch; margin-left: auto; margin-right: auto; text-wrap: balance; }
+}
+
+/* 18/09/2026 (él, 4.ª vuelta) · TELÉFONO: la lupa sube a la fila de
+   Novedades y El taller, con su dibujo centrado bajo el ☰ (antes el
+   dibujo iba pegado a la izquierda del botón y quedaba 12 px corto).
+   Idioma y modo, solos y centrados, y los de modo tan anchos como los
+   de idioma. */
+@media (max-width: 780px) {
+  .cabecera__utiles .controles { position: static; padding-right: 0; gap: 1.2rem; }
+  .cabecera__utiles .lupa--menu {
+    top: 143px; right: auto; left: calc(100% - 72px); transform: none;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .cabecera__utiles .tema button,
+  .cabecera__utiles .tema button.tema__bicho,
+  .cabecera__utiles .tema__auto { width: 74px; }
+}
+@media (max-width: 780px) {
+  .cabecera .menu .lupa--menu, .cabecera__utiles .lupa--menu {
+    position: static; top: auto; left: auto; transform: none;
+    grid-column: 3; grid-row: 1; justify-self: end; align-self: center;
+    margin-right: 8px; width: 44px; height: 44px; border: 0; background: none;
+    color: var(--barra-suave); display: flex; align-items: center; justify-content: center; padding: 0;
+  }
+  .cabecera .menu .lupa--menu .lupa__icono svg { width: 20px; height: 20px; }
+  .cabecera .menu .lupa--menu:hover { color: var(--barra-tinta); background: none; }
+}
+
+/* 18/09/2026 (él) · IDIOMA COMO INTERRUPTOR: «ES ( o) EN». Sin cajas:
+   las dos siglas son texto, la activa en siena; entre ellas un riel
+   redondo con su bolita, que se corre hacia el idioma puesto. */
+.cabecera__utiles .idioma.idioma--interruptor {
+  display: flex; align-items: center; justify-content: center; gap: .6rem;
+  height: 44px; border: 0; width: auto;
+}
+.cabecera__utiles .idioma--interruptor > button:not(.idioma__riel),
+.cabecera__utiles .idioma--interruptor .idioma__btn--es,
+.cabecera__utiles .idioma--interruptor .idioma__btn--en {
+  width: auto; height: 44px; min-width: 0; padding: 0 .15rem; margin: 0;
+  border: 0; background: none; color: var(--barra-suave); opacity: 1;
+  font-size: .875rem; letter-spacing: .06em; font-weight: 500;
+}
+.cabecera__utiles .idioma--interruptor > button[aria-pressed="true"] {
+  color: var(--acento-texto); border: 0; background: none;
+}
+.cabecera__utiles .idioma--interruptor > button .ctrl__corto { display: inline; }
+.cabecera__utiles .idioma--interruptor > button .ctrl__largo,
+.cabecera__utiles .idioma--interruptor .idioma__bandera { display: none; }
+.cabecera__utiles .idioma--interruptor .idioma__riel {
+  position: relative; flex: none; width: 44px; height: 24px; padding: 0; margin: 0;
+  border: 1px solid var(--barra-linea); border-radius: 999px; background: none; cursor: pointer;
+}
+.idioma__bola {
+  position: absolute; top: 50%; left: 3px; width: 16px; height: 16px; border-radius: 50%;
+  background: var(--acento-texto); transform: translateY(-50%);
+  transition: left .2s var(--curva);
+}
+.idioma__riel[aria-checked="true"] .idioma__bola { left: calc(100% - 19px); }
+@media (prefers-reduced-motion: reduce) { .idioma__bola { transition: none; } }
+.cabecera__utiles .idioma--interruptor > button,
+.cabecera__utiles .idioma--interruptor > button .ctrl__corto { text-transform: uppercase; }
+
+/* 18/09/2026 (él) · El globo redondo junto a «Contacto», para que se
+   use más: a su izquierda en teléfono, encima en computadora. */
+.redes-movil__a { display: inline-flex; align-items: center; gap: .4rem; }
+.redes-movil__icono { display: inline-flex; line-height: 0; }
+.redes-movil__a .redes-movil__icono svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linejoin: round; }
+.menu__globo { display: none; }
+@media (min-width: 781px) {
+  .menu a.menu__contacto { display: inline-flex; flex-direction: column; align-items: center; justify-content: center; }
+  .menu__contacto .menu__globo { display: block; order: -1; line-height: 0; margin-bottom: 3px; }
+  .menu__contacto .menu__globo svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linejoin: round; }
+}
+@media (min-width: 781px) {
+  .menu a.menu__contacto { display: revert; position: relative; }
+  .menu__contacto .menu__globo {
+    position: absolute; left: 50%; bottom: calc(50% + .55rem); transform: translateX(-50%); margin: 0;
+  }
+}
+
+/* 18/09/2026 (él) · Los dos interruptores CUADRADOS (riel y bolita), y
+   el modo con el mismo principio: lobo sin marco · riel · gallo sin
+   marco. El que está puesto va en siena; el otro, gris. */
+.cabecera__utiles .idioma__riel { border-radius: 0; }
+.idioma__bola { border-radius: 0; }
+.cabecera__utiles .tema.tema--interruptor {
+  display: flex; align-items: center; justify-content: center; gap: .5rem;
+  height: 44px; border: 0; width: auto;
+}
+.cabecera__utiles .tema--interruptor > button.tema__bicho,
+.cabecera__utiles .tema--interruptor > button.tema__bicho[aria-pressed] {
+  width: 36px; height: 44px; min-width: 0; padding: 0; margin: 0;
+  border: 0; background: none; color: var(--barra-suave); overflow: visible;
+  display: grid; place-items: center; box-shadow: none;
+}
+.cabecera__utiles .tema--interruptor > button.tema__bicho[aria-pressed="true"] {
+  color: var(--acento-texto); background: none; border: 0;
+}
+.cabecera__utiles .tema--interruptor .tema__bicho .tema__icono svg { width: 32px; height: 32px; }
+.cabecera__utiles .tema--interruptor .tema__riel { margin: 0; }
+.cabecera__utiles .controles button.idioma__riel,
+.cabecera__utiles .tema button.idioma__riel.tema__riel {
+  position: relative; flex: none; width: 44px; height: 24px; min-height: 0;
+  padding: 0; margin: 0; box-sizing: border-box;
+  border: 1px solid var(--barra-linea); border-radius: 0; background: none;
+  box-shadow: none; opacity: 1; cursor: pointer; overflow: visible;
+}
+.cabecera__utiles .controles .idioma__bola { border-radius: 0; left: 3px; }
+.cabecera__utiles .controles .idioma__riel[aria-checked="true"] .idioma__bola { left: calc(100% - 19px); }
+/* El gallo se dibuja más allá de su caja por la izquierda: se corre
+   para que no pise el riel. */
+.cabecera__utiles .tema--interruptor > button.tema__bicho[data-tema="claro"] { margin-left: 14px; }
+/* El globo, centrado sobre la PALABRA (el enlace lleva sangría solo a la
+   izquierda) y con el gris apagado de «Tienda de». */
+@media (min-width: 781px) {
+  .menu__contacto .menu__globo {
+    left: calc(50% + .31rem); bottom: calc(50% + .7rem); opacity: .62;
+  }
+  .menu__contacto[aria-current="page"] .menu__globo { opacity: 1; }
+}
+/* 18/09/2026 · El gallo ya no se sale por la izquierda (termina en su
+   cola): sin corrimiento. Y las siglas ES/EN del mismo ancho que los
+   bichos, con el mismo espacio, para que los dos rieles caigan uno
+   encima del otro cuando van apilados. */
+.cabecera__utiles .tema--interruptor > button.tema__bicho[data-tema="claro"] { margin-left: 0; }
+.cabecera__utiles .idioma.idioma--interruptor,
+.cabecera__utiles .tema.tema--interruptor { gap: .5rem; }
+.cabecera__utiles .idioma--interruptor > button.idioma__btn--es,
+.cabecera__utiles .idioma--interruptor > button.idioma__btn--en { width: 36px; padding: 0; text-align: center; justify-content: center; }
+
+/* 18/09/2026 (él) · COMPUTADORA: la palabrita de la sección abierta
+   («Tienda de», «Catálogo de»…) pasa DEBAJO del nombre, al ras de su
+   borde derecho y más chica. Al recogerse la cabecera se va, y con ella
+   el globo de Contacto. */
+@media (min-width: 781px) {
+  .menu__pre {
+    top: 100%; bottom: auto; left: auto; right: 0;
+    margin: .05rem 0 0; font-size: .625rem;
+    transition: opacity .2s var(--curva);
+  }
+  .menu__globo { transition: opacity .2s var(--curva); }
+  .cabecera.encogida .menu__pre,
+  .cabecera.encogida .menu__contacto .menu__globo { opacity: 0; visibility: hidden; }
+}
+
+/* 18/09/2026 (él) · El globo pasa a la DERECHA de «Contacto», en
+   teléfono y en computadora. */
+.redes-movil__a .redes-movil__icono { order: 2; }
+@media (min-width: 781px) {
+  .menu__contacto .menu__globo {
+    left: 100%; bottom: auto; top: 50%; transform: translateY(-50%);
+    margin-left: .35rem;
+  }
+}
+
+/* 18/09/2026 (él) · Globo, bolsa, lupa y ☰ con el MISMO gris que las
+   páginas no seleccionadas. El color ya era el mismo (#a0a0a0); lo que
+   los hacía ver más claros era el trazo grueso (2,1 px) frente a la
+   letra fina. Mismo trazo que el globo, y el globo sin la opacidad
+   rebajada. */
+@media (min-width: 781px) {
+  .menu__contacto .menu__globo { opacity: 1; }
+  .cabecera.encogida .menu__contacto .menu__globo { opacity: 0; }
+}
+.cabecera .bolsa svg, .cabecera .bolsa svg *,
+.cabecera .lupa svg, .cabecera .lupa svg * { stroke-width: 1.6px; }
+.hamburguesa { font-weight: 400; }
+.hamburguesa[aria-expanded="true"] { color: var(--barra-tinta); }
+
+/* 18/09/2026 (él) · El globo de Contacto se INFLA al abrir la página,
+   un poco después que todo lo demás. Se anima el <svg> de dentro y no
+   su caja, que en computadora ya usa transform para centrarse. */
+@keyframes globo-infla {
+  0%   { transform: scale(0); }
+  70%  { transform: scale(1.18); }
+  100% { transform: scale(1); }
+}
+.menu__globo svg, .redes-movil__icono svg {
+  /* 18/09 (él, 2.ª): no se infla; SUBE como los botones de la barra
+     de vistas (misma animación ola-sube), algo después que ellos. */
+  animation: ola-sube .5s cubic-bezier(.22, .68, 0, 1.25) .75s both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .menu__globo svg, .redes-movil__icono svg { animation: none; }
+}
+
+/* 18/09/2026 (él) · COMPUTADORA: los iconos de vista caían en medios
+   píxeles (x = 70,5 · 103,3 · 136,09…) y los cuadraditos salían de
+   grosores distintos. Separación en píxeles enteros y el dibujo
+   ajustado a la rejilla de píxeles de la pantalla. */
+.vistas { gap: 5px; }
+.vistas__btn svg { shape-rendering: crispEdges; }
+
+/* 18/09/2026 (él) · TELÉFONO: bolsa y ☰ un poco a la izquierda, para
+   que Exhibición→bolsa, bolsa→☰ y ☰→margen derecho midan lo mismo
+   (~30 px, medido a 375). Dentro del ☰: idioma ENCIMA de modo, los dos
+   debajo de la lupa, y la lupa centrada sobre ellos. */
+@media (max-width: 780px) {
+  .cabecera .bolsa--rapida { transform: translateX(-7px); }
+  .cabecera .hamburguesa { transform: translateX(-10px); }
+  .cabecera__utiles .controles {
+    flex-direction: column; align-items: center; gap: .35rem;
+    width: max-content; margin: 0 0 0 auto; padding: 0;
+  }
+  .cabecera .menu .lupa--menu { margin-right: 44px; }
+}
+
+/* 18/09/2026 (él) · En la página de Contacto el globo ya está quieto:
+   se llegó pulsándolo, no hace falta que vuelva a subir. */
+.menu__contacto[aria-current="page"] .menu__globo svg,
+.redes-movil__a[aria-current="page"] .redes-movil__icono svg { animation: none; }

@@ -1157,3 +1157,16 @@ video.pt-visual__foto {
   .pt-vista--cuatro .pt-ficha h3 { font-size: .68rem; }
   .pt-vista--cuatro .pt-precio { font-size: .78rem; }
 }
+
+/* 18/09/2026 (él) · TELÉFONO: «Tu pedido» centrado y con más aire
+   respecto de la cuadrícula de arriba. */
+@media (max-width: 780px) {
+  #pt-pedido-seccion { margin-top: 3.5rem; }
+  #pt-pedido-seccion .pt-cabeza { justify-content: center; text-align: center; }
+  #pt-pedido-seccion .pt-cabeza h2 { margin-left: auto; margin-right: auto; }
+}
+@media (max-width: 780px) {
+  #pt-pedido-seccion .pt-cabeza { gap: .55rem; align-items: center; }
+  #pt-pedido-seccion .pt-cabeza h2 { margin: 0; }
+  #pt-pedido-seccion .pt-cabeza .pt-bolsa { margin: 0; position: static; }
+}

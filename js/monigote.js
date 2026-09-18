@@ -94,6 +94,7 @@
       hx: 4, hy: 10,               /* mano B respecto del hombro:
                                       adelante / hacia ABAJO */
       agarre: 10,                  /* hacha: la mano A, a cuánto del pomo */
+      uL: 0.3,                     /* lápiz: dónde apoya, a lo largo del tablero */
       aX: 1, aY: 0,                /* "manos": la mano A, respecto de la B */
       rotT: 90,                    /* tronco en la mano: 90 tumbado, 0 de pie */
       rasgueo: 0.5,                /* guitarra: 0 arriba de las cuerdas, 1 abajo */
@@ -243,10 +244,12 @@
                        hombroA: 128, codoA: 60, hombroB: -26, codoB: 30,
                        caderaA: 20, rodillaA: 10, caderaB: -22, rodillaB: -14,
                        objeto: "espada", ang: 30 }),
-    guardia: pose({ tronco: -10, cabeza: 4, y: 3,
-                    hombroA: 150, codoA: 170, hombroB: -8, codoB: 70,
+    /* EN GUARDIA (él, 18/09): a la altura de la cintura, la hoja hacia
+       delante; antes la tenía en alto, por encima de la cabeza */
+    guardia: pose({ tronco: -8, cabeza: 2, y: 3,
+                    hombroA: 15, codoA: 75, hombroB: -8, codoB: 70,
                     caderaA: 30, rodillaA: 16, caderaB: -30, rodillaB: -20,
-                    objeto: "espada", ang: 186 }),
+                    objeto: "espada", ang: 95 }),
     tajo: pose({ tronco: 28, cabeza: -10, y: 6,
                  hombroA: 74, codoA: 88, hombroB: -22, codoB: 40,
                  caderaA: 46, rodillaA: 30, caderaB: -38, rodillaB: -52,
@@ -305,10 +308,10 @@
     s_estoc2: pose(mezcla(PIE.lance, { tronco: -20, cabeza: -4,
                  hombroA: 88, codoA: 92, hombroB: -22, codoB: 40, objeto: "espada", ang: 92 })),
     /* la misma guardia con la hoja escrita una vuelta más atrás */
-    guardiaN: pose({ tronco: -10, cabeza: 4, y: 3,
-                     hombroA: 150, codoA: 170, hombroB: -8, codoB: 70,
+    guardiaN: pose({ tronco: -8, cabeza: 2, y: 3,
+                     hombroA: 15, codoA: 75, hombroB: -8, codoB: 70,
                      caderaA: 30, rodillaA: 16, caderaB: -30, rodillaB: -20,
-                     objeto: "espada", ang: -174 }),
+                     objeto: "espada", ang: -265 }),
 
     /* --- guitarra ---------------------------------------------
        `ang` es la inclinación del mástil. La guitarra se apoya en
@@ -401,6 +404,18 @@
                      hombroA: 60, codoA: 100, hombroB: 50, codoB: 90,
                      caderaA: 82, rodillaA: 10, caderaB: 78, rodillaB: 2,
                      objeto: "lapiz", ik: 1, ikA: 1 }),
+    /* EL LÁPIZ (él, 18/09): espera en la mesa; se sienta con las manos
+       en los muslos, alarga la mano, lo agarra y se pone a dibujar. Al
+       irse, lo deja otra vez en la mesa. */
+    d_llega: pose({ tronco: -14, cabeza: -10, y: 3.5,
+                    hombroA: 25, codoA: 75, hombroB: 20, codoB: 70,
+                    caderaA: 82, rodillaA: 10, caderaB: 78, rodillaB: 2 }),
+    d_alcanza: pose({ tronco: -20, cabeza: -18, y: 3.5, hombroB: 20, codoB: 70,
+                      caderaA: 82, rodillaA: 10, caderaB: 78, rodillaB: 2,
+                      objeto: "manos", ikA: 1 }),
+    d_toma: pose({ tronco: -20, cabeza: -18, y: 3.5, hombroB: 20, codoB: 70,
+                   caderaA: 82, rodillaA: 10, caderaB: 78, rodillaB: 2,
+                   objeto: "lapiz", ikA: 1, uL: 0.1, alza: 0.5 }),
     d_mira: pose({ tronco: -8, cabeza: 4, y: 3.5,
                    hombroA: 60, codoA: 100, hombroB: 50, codoB: 90,
                    caderaA: 82, rodillaA: 18, caderaB: 78, rodillaB: -4,
@@ -890,7 +905,7 @@
      Desde la punta (origen) hacia atrás. Largo a propósito: 12
      unidades, casi el largo del antebrazo. */
   var lapiz = el("g", {}, cuerpo);
-  var LAPIZ_K = 1.5;
+  var LAPIZ_K = 1.2;          /* 18/09: un 20 % más corto (antes 1,5) */
   var ESPADA_K = 1.4;        /* 17/09: la gladius, un 40 % más grande (él) */         /* 17/09: era 2, un poco menos largo (él) */
   /* 17/09: más grande (15 unidades) y más grueso, amarillo intenso
      con una arista más oscura, y goma rosa en el extremo. */
@@ -1028,6 +1043,8 @@
      recta hombro-mano); `elegir` decide cuál. Si la mano no llega,
      se acerca la MANO hasta donde llega: el antebrazo nunca se
      estira. Todo en unidades. */
+  function cercanoA(c1, c2) { return dist(c1, st.codosPrev.A) <= dist(c2, st.codosPrev.A) ? c1 : c2; }
+  function cercanoB(c1, c2) { return dist(c1, st.codosPrev.B) <= dist(c2, st.codosPrev.B) ? c1 : c2; }
   function codoIK(hom, mano, l1, l2, elegir) {
     var dx = mano[0] - hom[0], dy = mano[1] - hom[1];
     var real = Math.sqrt(dx * dx + dy * dy) || 0.001;
@@ -1473,11 +1490,16 @@
 
   /* los tres leños de la pila; se recogen en este orden: el de
      arriba, el de abajo más cercano, el otro */
-  var pilaEl = [hacerTronco(dinFondo), hacerTronco(dinFondo), hacerTronco(dinFondo)];
+  /* Las piezas de la leña van en SU grupo, que solo se ve en la
+     escena del hacha. Sueltas en dinFondo/dinFrente salían en otras
+     escenas (café, cepillo, escritorio) sin colocar: clavadas en la
+     esquina de arriba a la izquierda (él, 18/09/2026). */
+  var hachaFondoG = el("g", {}, dinFondo), hachaFrenteG = el("g", {}, dinFrente);
+  var pilaEl = [hacerTronco(hachaFondoG), hacerTronco(hachaFondoG), hacerTronco(hachaFondoG)];
   var ORDEN_PILA = [2, 0, 1];
-  var troncoBloque = hacerTronco(dinFrente);
-  var hachaApoyada = hacerHacha(dinFrente);
-  var hachaClavadaEl = hacerHacha(dinFrente);
+  var troncoBloque = hacerTronco(hachaFrenteG);
+  var hachaApoyada = hacerHacha(hachaFrenteG);
+  var hachaClavadaEl = hacerHacha(hachaFrenteG);
   function hacerMitad(padre, lado) {
     var g = el("g", {}, padre);
     el("rect", { x: -1.5, y: -4, width: 3, height: 8, rx: 0.35, "class": "monigote__corteza" }, g);
@@ -1486,7 +1508,7 @@
     el("ellipse", { cx: 0, cy: -3.9, rx: 1.45, ry: 0.45, "class": "monigote__testa" }, g);
     return g;
   }
-  var mitadesEl = [hacerMitad(dinFrente, -1), hacerMitad(dinFrente, 1)];
+  var mitadesEl = [hacerMitad(hachaFrenteG, -1), hacerMitad(hachaFrenteG, 1)];
 
   /* ---------- efectos: hechizos y partículas -----------------
      17/09 (él): la bola de fuego va el doble de rápido, y hay tres
@@ -1784,6 +1806,12 @@
     var coA = mas(cue, dir(p.hombroA), L1), maA = mas(coA, dir(p.codoA), L2);
     var coB = mas(cue, dir(p.hombroB), L1), maB = mas(coB, dir(p.codoB), L2);
     var tA = null, tB = null, eligeA = masBajo, eligeB = masBajo;
+    /* En el café el codo se queda del lado en que estaba el fotograma
+       anterior: arrodillado, las dos soluciones quedan casi a la misma
+       altura y "el más bajo" saltaba de un lado a otro (él, 17/09). */
+    if (esc.tipo === "cafe" && st.codosPrev) {
+      eligeA = cercanoA; eligeB = cercanoB;
+    }
     var o = p.objeto, obj = null;
 
     if (o === "guitarra") {
@@ -2050,15 +2078,17 @@
     }
     /* recuerda el codo de la mano de la cuerda, para el siguiente fotograma */
     st.codoPrevB = o === "arco" ? g.coB : null;
+    st.codosPrev = { A: g.coA, B: g.coB };
     carcajG.style.display = o === "arco" ? "" : "none";
     cincel.style.display = mazo.style.display = o === "talla" ? "" : "none";
     st.puntaTalla = null; st.bocaCepillo = null; st.boquilla = null; st.boquillaPunta = null;
-    st.picoMoka = null;
+    st.picoMoka = null; st.bocaTaza = null;
     if (o === "moka" || o === "taza") {
       OBJETOS[o].style.display = "";
       tf(OBJETOS[o], g.obj.origen, g.obj.u);
       if (o === "moka") st.picoMoka = aP(mas(mas(g.obj.origen, g.obj.u, 8.4), perp(g.obj.u), 3.9));
       if (o === "taza") tazaG.__cafe.setAttribute("opacity", esc.cafe > 0.05 ? 1 : 0);
+      if (o === "taza") st.bocaTaza = aP(mas(g.obj.origen, g.obj.u, 3.9));
     }
     if (o === "manguera") {
       boquillaG.style.display = "";
@@ -2181,9 +2211,18 @@
       e.style.display = enHacha > 0 ? "" : "none";
     });
     /* la capa de piezas sueltas la usan la leña Y el café */
-    var sueltas = enHacha > 0 || esc.tipo === "cafe" || esc.tipo === "cepillo";
+    var sueltas = enHacha > 0 || esc.tipo === "cafe" || esc.tipo === "cepillo" || esc.tipo === "dibujo";
     dinFondo.style.display = dinFrente.style.display = sueltas ? "" : "none";
+    hachaFondoG.style.display = hachaFrenteG.style.display = enHacha > 0 ? "" : "none";
     /* el cepillo apoyado en la tabla, mientras descansa */
+    /* el lápiz, echado en el tablero junto al listón */
+    var enMesa = esc.tipo === "dibujo" && esc.lapizMesa && esc.op > 0;
+    lapizMesaEl.style.display = enMesa ? "" : "none";
+    if (enMesa) {
+      var pl = mas(tablero(0.07), NB, 1.3);
+      tfPx(lapizMesaEl, eP(pl[0], pl[1]), [esc.m * DB[0], -DB[1]], esc.m, LAPIZ_K);
+      lapizMesaEl.setAttribute("opacity", esc.op);
+    }
     var enBanco = esc.tipo === "cepillo" && esc.cepilloBanco && esc.op > 0;
     cepilloBancoEl.style.display = enBanco ? "" : "none";
     if (enBanco) {
@@ -2301,11 +2340,12 @@
       var td = st.reloj - esc.t0;
       /* Rachas de trazo y pausas para pensar, sin patrón fijo. */
       var activo = suaveStep((Math.sin(td / 1700) + 0.6 * Math.sin(td / 730 + 2) + 0.3) / 0.9);
-      p.uL = 0.3 + 0.05 * Math.sin(td / 2300) + activo * 0.02 * Math.sin(td / 85);
-      p.lift = (1 - activo) * 0.9 + activo * 0.15 * Math.max(0, Math.sin(td / 170));
-      p.giro = activo * 4 * Math.sin(td / 85 + 0.6) + 3 * Math.sin(td / 1100);
-      p.papel = 0.02 * Math.sin(td / 3100);
-      p.cabeza += activo * 1.5 * Math.sin(td / 340) - (1 - activo) * 2;
+      var wl = p.ik;
+      p.uL = lerp(p.uL, 0.3 + 0.05 * Math.sin(td / 2300) + activo * 0.02 * Math.sin(td / 85), wl);
+      p.lift = wl * ((1 - activo) * 0.9 + activo * 0.15 * Math.max(0, Math.sin(td / 170)));
+      p.giro = wl * (activo * 4 * Math.sin(td / 85 + 0.6) + 3 * Math.sin(td / 1100));
+      p.papel = wl * 0.02 * Math.sin(td / 3100);
+      p.cabeza += wl * (activo * 1.5 * Math.sin(td / 340) - (1 - activo) * 2);
       /* Las piernas: se balancean, cada una a su aire, y de vez en
          cuando una se queda quieta. */
       var w = p.ik;
@@ -2374,6 +2414,7 @@
       esc.flechas = []; esc.astillasF = []; esc.clavada = false;
       esc.talla = esc.brillo = esc.brilloObj = esc.abrir = esc.abrirObj = 0;
       esc.fresco = 0; esc.fuegoT = 0; esc.quemado = 0; esc.cepilloBanco = false;
+      esc.lapizMesa = tipo === "dibujo";
       esc.crece = esc.creceObj = 0; esc.mangueraSuelta = false;
       esc.gaveta = esc.gavetaV = 0; esc.moka = null; esc.taza = null;
       esc.llama = esc.vapor = esc.sirviendo = false; esc.cafe = 0;
@@ -2741,16 +2782,20 @@
      A): se elige entre todas MENOS las dos últimas. */
   var REPERTORIO = [
     ["espada", 1], ["guitarra", 1], ["varita", 1], ["arco", 1],
-    ["hacha", 1], ["sentado", 1.2], ["saludo", 1], ["piedra", 1],
+    /* «saludo» ya no es una actividad (él, 18/09): lo hace el 10 % de
+       las veces al salir del escritorio, antes de cruzar la puerta */
+    ["hacha", 1], ["sentado", 1.2], ["piedra", 1],
     /* «moria» quitada (él, 17/09: no le gustó); su código sigue abajo.
        «dibujo» ya no está: es su casa, a la que vuelve siempre */
     ["cepillo", 1], ["dragon", 1], ["anillo", 1], ["planta", 1], ["cafe", 1]
   ];
   var PUERTA = 26;              /* px más allá del borde: ya no se le ve */
   var VEL_PUERTA = 0.055;
+  var VEL_SALIDA = 0.085;       /* del escritorio a la puerta, con prisa */
   /* dónde se queda al entrar; si no está aquí, en su sitio */
   var PUESTOS = { arco: function () { return ancho - MARGEN - 6; } };
-  var ultimas = [], forzada = null;
+  var ultimas = [], forzada = null, saludoForzado = false;
+  var PROB_SALUDO = 0.1;
   function elegirActividad() {
     var libres = REPERTORIO.filter(function (r) { return ultimas.indexOf(r[0]) === -1; });
     var total = libres.reduce(function (a, r) { return a + r[1]; }, 0);
@@ -2774,10 +2819,19 @@
     return r;
   }
   /* en el escritorio: aparece, se sienta y dibuja un buen rato */
-  function sentarseADibujar() {
-    encolar(hacer(function () { st.mira = -1; }),
-            escena("dibujo"), pausa(450),
-            ir("d_sienta", 800));
+  /* la mano va justo a donde el lápiz estará al agarrarlo */
+  function medirAlcance() {
+    var g = geom(POSES.d_toma), q = POSES.d_alcanza;
+    q.hx = g.maA[0] - 1 - g.cue[0];
+    q.hy = g.cue[1] - g.maA[1];
+  }
+  function sentarseADibujar(yaEsta) {
+    encolar(hacer(function () { st.mira = -1; }));
+    if (!yaEsta) encolar(escena("dibujo"), pausa(450));
+    encolar(ir("d_llega", 800), pausa(300),
+            hacer(medirAlcance), ir("d_alcanza", 450), pausa(80),
+            hacer(function () { esc.lapizMesa = false; fijar("d_toma"); }),
+            pausa(120), ir("d_sienta", 650));
   }
   function ratoDibujando() {
     encolar(pausa(8000 + Math.random() * 4000),
@@ -2787,10 +2841,20 @@
   function rutinaOcio() {
     var sig = elegirActividad();
     /* se levanta; el escritorio se va mientras sale por la izquierda */
-    encolar(ir("quieto", 700), escenaFuera, pausa(200),
-            hacer(function () { st.fuera = true; }),
-            andarA(function () { return -PUERTA; }, VEL_PUERTA),
-            pausa(500));
+    encolar(hacer(medirAlcance), ir("d_toma", 450), pausa(80),
+            hacer(function () { esc.lapizMesa = true; fijar("d_alcanza"); }),
+            pausa(120),
+            ir("quieto", 600), escenaFuera,
+            hacer(function () { st.fuera = true; }));
+    if (saludoForzado || Math.random() < PROB_SALUDO) {
+      saludoForzado = false;
+      /* camina un poco, se para, saluda y sigue hacia la puerta */
+      encolar(andarA(function () { return Math.max(MARGEN + 24, casa - 55); }, VEL_PUERTA),
+              pausa(250));
+      encolar.apply(null, pasosDe("saludo"));
+    }
+    encolar(andarA(function () { return -PUERTA; }, VEL_SALIDA),
+            pausa(150));
     /* entra por la derecha, y el decorado aparece mientras entra */
     var pasos = pasosDe(sig);
     var decorado = pasos.length && pasos[0].esEscena ? [pasos.shift()] : [];
@@ -2809,9 +2873,11 @@
             andarA(function () { return Math.max(st.x, ancho + PUERTA); }, VEL_PUERTA),
             pausa(500),
             hacer(function () { st.x = -PUERTA; st.mira = 1; st.disfraz = false; }),
+            /* el escritorio aparece YA, cuando él entra al cuarto */
+            escena("dibujo", function () { return casa; }),
             andarA(function () { return casa; }, VEL_PUERTA),
             hacer(function () { st.fuera = false; }));
-    sentarseADibujar();
+    sentarseADibujar(true);
     ratoDibujando();
   }
 
@@ -2826,8 +2892,10 @@
   POSES.e_susto = pose({ tronco: 15, cabeza: 16, hombroA: 90, codoA: 98,
     hombroB: -40, codoB: 12, objeto: "espada", ang: 140,
     caderaA: 16, rodillaA: 2, caderaB: -16, rodillaB: -26, apoyo: true });
+  /* la hoja hacia DELANTE al correr (él, 18/09: con 200 iba hacia su
+     espalda) */
   POSES.e_huye = pose({ tronco: -12, cabeza: -4, hombroA: 30, codoA: 80,
-    hombroB: -20, codoB: 40, objeto: "espada", ang: 200 });
+    hombroB: -20, codoB: 40, objeto: "espada", ang: 135 });
   POSES.m_talla = pose(mezcla(PIE_ARCO, { tronco: -10, cabeza: -8,
     objeto: "talla", ik: 1, ikA: 1, golpe: 1, angM: 165 }));
   POSES.m_golpe = pose(mezcla(PIE_ARCO, { tronco: -12, cabeza: -10,
@@ -3039,6 +3107,7 @@
     d.x = lerp(d.x0, d.x1, u);
     d.y = lerp(d.y0, d.y1, u);
     d.alfa = d.vete ? Math.max(0, 1 - Math.max(0, u - 0.55) / 0.4) : Math.min(1, d.alfa + dt / 300);
+    if (d.vete && u >= 1) { st.dragon = null; return; }
     var q = posturaDragon(d);
     var boca = dragonAPx(d, q, rotar([8.5, -3.3], CUELLO_D, q.cab));
     if (d.fuego > 0) {
@@ -3269,10 +3338,16 @@
               /* a -40 seguía viéndose fuera del recuadro, flotando quieto
                  (él, 17/09): ahora sale de la pantalla y se desvanece */
               var izq = svg.getBoundingClientRect().left || 0;
-              dragonIr(-izq - 80, st.suelo - 150, 2200);
+              /* a la velocidad con la que llegó (~0,1 px/ms), no 3 veces
+                 más rápido (él, 17/09) */
+              /* ~300 px arriba a la izquierda, desvaneciéndose: cruzar
+                 toda la página a esa velocidad tardaba 12 s */
+              var hx = Math.max(-izq - 80, st.dragon.x - 300), hy = st.suelo - 160;
+              var dx = st.dragon.x - hx, dy = st.dragon.y - hy;
+              dragonIr(hx, hy, Math.sqrt(dx * dx + dy * dy) / 0.1);
             }),
             ir("v_guarda", 400), pausa(300), ir("quieto", 400),
-            pausa(1600), hacer(function () { st.dragon = null; }),
+            pausa(1600),
             escenaFuera, pausa(600));
   }
 
@@ -3313,11 +3388,27 @@
     hombroB: -10, codoB: 10, objeto: "manguera", ang: 250 });
   POSES.pl_trae = pose({ tronco: -4, cabeza: -2, hombroA: 44, codoA: 60,
     hombroB: -12, codoB: 16, objeto: "manguera", ang: 120 });
-  POSES.pl_riega = pose({ tronco: -4, cabeza: -6, hombroA: 78, codoA: 92,
-    hombroB: -20, codoB: 18, objeto: "manguera", ang: 112,
+  /* la boquilla a la altura de la cintura (él, 17/09) */
+  POSES.pl_riega = pose({ tronco: -2, cabeza: -10, hombroA: 2, codoA: 58,
+    hombroB: -20, codoB: 18, objeto: "manguera", ang: 104,
     caderaA: 14, rodillaA: 6, caderaB: -14, rodillaB: -12, apoyo: true });
   POSES.pl_suelta = pose({ tronco: 12, cabeza: 12, hombroA: 120, codoA: 150,
     hombroB: 110, codoB: 160, caderaA: 14, rodillaA: 4, caderaB: -16, rodillaB: -18, apoyo: true });
+  /* EL SUSTO (él, 17/09): se tambalea con los brazos arriba, da un
+     paso atrás, pierde el equilibrio y cae sentado mirando la mata.
+     Todo corrido CAIDA_AV hacia atrás, y se levanta como en la lectura. */
+  var CAIDA_AV = -6;
+  POSES.pl_tamb_a = pose({ tronco: 22, cabeza: 18, hombroA: 140, codoA: 170, hombroB: 150, codoB: 185,
+    caderaA: 32, rodillaA: 12, caderaB: -10, rodillaB: -14, apoyo: true, avance: -1 });
+  POSES.pl_tamb_b = pose({ tronco: 6, cabeza: 6, hombroA: 95, codoA: 125, hombroB: 125, codoB: 150,
+    caderaA: 12, rodillaA: 2, caderaB: -26, rodillaB: -32, apoyo: true, avance: -2.5 });
+  POSES.pl_cae = pose({ tronco: 34, cabeza: 22, hombroA: 150, codoA: 175, hombroB: -70, codoB: -50,
+    caderaA: 75, rodillaA: 25, caderaB: 55, rodillaB: 12, y: 9, avance: -4.5 });
+  POSES.pl_sentado = pose(mezcla(POSES.sentado, { tronco: 20, cabeza: 30,
+    hombroA: -25, codoA: -15, hombroB: -38, codoB: -26, avance: CAIDA_AV }));
+  ["lev_recoge", "lev_cuclillas", "lev_empuja", "lev_pie"].forEach(function (n) {
+    POSES["pl_" + n] = pose(mezcla(POSES[n], { avance: (POSES[n].avance || 0) + CAIDA_AV }));
+  });
 
   /* ---------- poses del café ----------
      Agachado en la gaveta, de pie en la hornilla, sirviendo y
@@ -3351,7 +3442,9 @@
   POSES.c_deja_taza_m = pose({ tronco: -24, cabeza: -14, objeto: "manos", ikA: 1 });
   /* la taza en la mano, y el sorbo */
   POSES.c_taza_arriba = pose({ tronco: 2, cabeza: 2, objeto: "taza", ikA: 1, hx: 6, hy: 6, ang: 180 });
-  POSES.c_bebe = pose({ tronco: 6, cabeza: 12, objeto: "taza", ikA: 1, hx: 3.4, hy: -1.4, ang: 138 });
+  /* ang > 180: la boca de la taza hacia la cara (él, 17/09: con 138
+     se inclinaba hacia afuera y no parecía que bebiera) */
+  POSES.c_bebe = pose({ tronco: 6, cabeza: 12, objeto: "taza", ikA: 1, hx: 6.4, hy: 1.2, ang: 232 });
 
   /* ---------- la fogata y el tronco de sentarse ---------- */
   /* más lejos (él, 17/09/2026): sentado, los pies quedaban en el fuego */
@@ -3617,6 +3710,8 @@
   /* DETRÁS del muñeco (él, 17/09/2026): nada debe taparlo */
   var mokaProp = hacerMoka(dinFondo), tazaProp = hacerTaza(dinFondo);
   var cepilloBancoEl = dinFondo.appendChild(cepilloG.cloneNode(true));
+  var lapizMesaEl = dinFondo.appendChild(lapiz.cloneNode(true));
+  lapizMesaEl.style.display = "none";
   cepilloBancoEl.style.display = "none";
   /* las piezas que lleva en la mano, y su sitio en las tablas (se
      registran AQUÍ: arriba las tablas todavía no existen) */
@@ -3689,6 +3784,11 @@
         }
         n -= 1;
       }
+    }
+    if (esc.cafe > 0.3 && Math.random() < dt / 170) {
+      var bt = esc.taza === "encimera" ? eP(CAFE.taza[0], CAFE.taza[1] + 4.3) : st.bocaTaza;
+      if (bt) particula("vapor", bt[0] + alAzar(-0.8, 0.8), bt[1] - 0.5, alAzar(-0.006, 0.006),
+                        alAzar(-0.03, -0.014), alAzar(900, 1400), alAzar(0.4, 0.8));
     }
     if (esc.vapor && Math.random() < dt / 120) {
       var v = eP(HORNILLA_F + 3.4, ENC_H + 8.9);
@@ -3804,13 +3904,22 @@
               st.regando = false;
               esc.mangueraSuelta = true;
             }),
-            ir("pl_suelta", 200, "frena"), pausa(1800),
-            ir("quieto", 600), pausa(1400),
+            ir("pl_suelta", 200, "frena"), pausa(250),
+            ir("pl_tamb_a", 260), ir("pl_tamb_b", 240), ir("pl_tamb_a", 230),
+            ir("pl_cae", 260, "acel"), ir("pl_sentado", 170, "frena"),
+            pausa(2200),
+            /* se levanta apoyándose en el piso */
+            ir("pl_lev_recoge", 650), pausa(250),
+            ir("pl_lev_cuclillas", 800), pausa(200),
+            ir("pl_lev_empuja", 650),
+            ir("pl_lev_pie", 550),
+            hacer(function () {
+              st.x += st.mira * POSES.pl_lev_pie.avance * ESCALA;
+              fijar("quieto");
+            }),
+            pausa(900),
             escenaFuera, pausa(700),
-            hacer(function () { esc.mangueraSuelta = false; }),
-            /* vuelve a su sitio */
-            andarA(function () { return casa; }, 0.05),
-            hacer(function () { st.mira = -1; }), pausa(300));
+            hacer(function () { esc.mangueraSuelta = false; }));
   }
 
   /* ---------- el bucle ---------------------------------------- */
@@ -3849,7 +3958,8 @@
 
     if (st.modo === "andando" && corriendo) {
       st.x += corriendo.vel * dt * corriendo.sentido;
-      st.ciclo += dt / (corriendo.corre ? 78 : 150) * (corriendo.atras ? -1 : 1);
+      st.ciclo += dt / (corriendo.corre ? 78 : 150) * (corriendo.atras ? -1 : 1) *
+                  (corriendo.corre ? 1 : Math.max(1, corriendo.vel / 0.055));
       var llego = corriendo.sentido < 0 ? st.x <= corriendo.destino : st.x >= corriendo.destino;
       if (llego) {
         st.x = corriendo.destino;
@@ -3948,13 +4058,15 @@
     st.mira = -1;
     esc.m = -1;
     st.llegado = true;
-    st.desde = st.hacia = POSES.quieto;
+    /* ya sentado y dibujando, con el escritorio puesto (él, 18/09) */
+    esc.tipo = "dibujo"; esc.vis = 1; esc.op = 1; esc.x0 = casa; esc.m = -1;
+    esc.t0 = 0; esc.lapizMesa = false;
+    st.desde = st.hacia = POSES.d_sienta;
     st.t = 1;
 
     /* Un fotograma YA, sin esperar al primer requestAnimationFrame. */
     dibujar(calcular());
 
-    sentarseADibujar();
     ratoDibujando();
     requestAnimationFrame(paso);
     vigilarTarjetas();
@@ -4018,7 +4130,7 @@
     get ultimas() { return ultimas.slice(); },
     elegir: function () { return elegirActividad(); },
     /* la próxima actividad del ciclo (para probar) */
-    forzar: function (n) { forzada = n; },
+    forzar: function (n) { if (n === "saludo") saludoForzado = true; else forzada = n; },
     avanzar: function (ms, salto) {
       salto = salto || 16;
       for (var i = 0; i < ms; i += salto) avanzarUno((anterior || 0) + salto);

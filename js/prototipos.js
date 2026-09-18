@@ -699,6 +699,15 @@
     if (secStock)  secStock.hidden  = !conStock.length;
     if (secPedido) secPedido.hidden = !porPedido.length;
 
+    /* Todas las fotos de todos los productos, poco a poco (él,
+       18/09/2026): así el panel y el carrusel de las cartas no esperan
+       la descarga, y la ruedita de la barra dice si aún falta algo. */
+    if (window.PA_PRECARGA) {
+      window.PA_PRECARGA([].concat.apply([], todos.concat(conStock.length ? [] : []).map(function (p) {
+        return todasLasFotos(p).map(srcTema);
+      })), barra && barra.querySelector(".catalogo-barra"));
+    }
+
     /* títulos y bajadas, que también cambian con el idioma */
     $("#pt-titulo").textContent      = t("pt_titulo");
     $("#pt-bajada").textContent      = t("pt_bajada");
@@ -905,6 +914,12 @@
     medioActivo = 0;   /* siempre abre por la foto de portada */
     $("#pt-panel").classList.add("abierto");
     $("#pt-panel").setAttribute("aria-hidden", "false");
+    /* EL GESTO DE ATRÁS CIERRA LA PIEZA (él, 18/09/2026) y deja el
+       catálogo como estaba, en vez de salir de la página. Se apunta un
+       paso en el historial al abrir; «atrás» lo consume. */
+    if (!(history.state && history.state.ptPieza)) {
+      try { history.pushState({ ptPieza: 1 }, ""); } catch (e) {}
+    }
     $("#pt-velo").classList.add("abierto");
     overflowPrevio = document.body.style.overflow;
     document.body.style.overflow = "hidden";
@@ -915,12 +930,29 @@
     var cerrar = $("#pt-pn-cerrar");
     if (cerrar) setTimeout(function () { cerrar.focus(); }, 0);
   }
+  var cerrandoDesdeAtras = false;
+  window.addEventListener("popstate", function () {
+    /* Si el paso al que se volvió sigue siendo el de la pieza (se cerró
+       la foto grande que estaba encima), la pieza se queda abierta:
+       cada «atrás» cierra UNA capa. */
+    if (history.state && history.state.ptPieza) return;
+    if ($("#pt-panel") && $("#pt-panel").classList.contains("abierto")) {
+      cerrandoDesdeAtras = true;
+      cerrarPanel();
+    }
+    cerrandoDesdeAtras = false;
+  });
   function cerrarPanel() {
     /* Si ya estaba cerrado no hay nada que deshacer. Esto importa
        porque Esc está escuchado en todo el documento y se dispara
        también con el panel cerrado; sin esta salida, cada Esc
        robaría el foco de vuelta a la tarjeta. */
     if (!$("#pt-panel").classList.contains("abierto")) return;
+    /* Cerrada con la X, el velo o Esc: se deshace el paso apuntado. */
+    if (!cerrandoDesdeAtras && history.state && history.state.ptPieza) {
+      cerrandoDesdeAtras = true;   /* el popstate que viene no debe cerrar dos veces */
+      history.back();
+    }
     $("#pt-panel").classList.remove("abierto");
     $("#pt-panel").setAttribute("aria-hidden", "true");
     $("#pt-velo").classList.remove("abierto");

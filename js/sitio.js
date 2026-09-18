@@ -66,6 +66,10 @@
   function marcarTema() {
     var bs = document.querySelectorAll(".tema button");
     for (var i = 0; i < bs.length; i++) {
+      if (bs[i].classList.contains("tema__riel")) {
+        bs[i].setAttribute("aria-checked", temaVisible() === TEMAS[1] ? "true" : "false");
+        continue;
+      }
       bs[i].setAttribute("aria-pressed", bs[i].dataset.tema === temaVisible());
     }
   }
@@ -538,6 +542,13 @@
     /* Sobre de LÍNEAS (él, 17/09/2026): como WhatsApp e Instagram, el
        color va solo en el contorno. Se dibuja con trazo y sin relleno. */
     correo:   '<svg viewBox="0 0 24 24" aria-hidden="true" class="icono-linea"><rect x="2.8" y="5" width="18.4" height="14" rx="2"/><path d="M3.6 6.4 12 12.6l8.4-6.2"/></svg>',
+    /* Globo de conversación (él, 18/09/2026): el botón del encabezado
+       del teléfono que lleva a Contacto, en el sitio del de WhatsApp. */
+    globo:    '<svg viewBox="0 0 24 24" aria-hidden="true" class="icono-linea"><path d="M5 4h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-8l-4.5 3.5V17H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>',
+    /* El mismo globo pero REDONDO (18/09/2026): va junto a «Contacto». */
+    globoRedondo: '<svg viewBox="0 0 24 24" aria-hidden="true" class="icono-linea"><path d="M13 3.5a8 8 0 1 1-3.3 15.3L2.5 21.5l2.6-6A8 8 0 0 1 13 3.5z"/></svg>',
+    /* Flecha curva hacia atrás: cierra la foto a pantalla completa. */
+    volver:   '<svg viewBox="0 0 24 24" aria-hidden="true" class="icono-linea"><path d="M9 14 4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11"/></svg>',
     /* Buzón de correo con su banderita (17/09/2026), de líneas como el sobre. */
     buzon:    '<svg viewBox="0 0 24 24" aria-hidden="true" class="icono-linea"><path d="M7 8h10a4 4 0 0 1 4 4v6H3v-6a4 4 0 0 1 4-4z"/><path d="M7 8a4 4 0 0 1 4 4v6"/><path d="M15 12V4h3.5v2.6H15"/><path d="M14 18v3"/></svg>',
     instagram:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.02 4.85.07 3.25.15 4.77 1.7 4.92 4.92.05 1.27.07 1.65.07 4.85s-.02 3.58-.07 4.85c-.15 3.23-1.67 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92C2.18 15.58 2.16 15.2 2.16 12s.02-3.58.07-4.85c.15-3.23 1.67-4.77 4.92-4.92C8.42 2.18 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 2.7.27.28 2.69.08 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95C23.73 2.7 21.31.28 16.95.08 15.67.01 15.26 0 12 0m0 5.84a6.16 6.16 0 100 12.32 6.16 6.16 0 000-12.32M12 16a4 4 0 110-8 4 4 0 010 8m6.41-11.85a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88"/></svg>',
@@ -592,8 +603,11 @@
     /* 16/09/2026 · La espalda sigue en horizontal hasta x = -12 y el
        SVG deja ver lo que sale de su lienzo: así llega hasta el borde
        izquierdo del botón, que es quien la recorta. */
+    /* 18/09/2026 (él) · La espalda ya NO sigue hasta el borde: el cuerpo
+       termina antes, en una curva hacia abajo que hace de cola. */
     gallo: '<svg class="gallo" viewBox="0 0 24 24" preserveAspectRatio="xMidYMax meet" aria-hidden="true">' +
-          '<path fill-rule="evenodd" d="M-12 24L-12 17.6L-1 17.6C2.4 17.6 5.2 16.6 6.4 14.8' +
+          '<path fill-rule="evenodd" d="M0 24C0.5 21.8 1.1 19.8 1.9 18.3C2.2 17.7 2.5 17.3 2.9 17.1' +
+          'C4.4 16.9 5.7 16.2 6.4 14.8' +
           'C7 13.9 7.3 13 7.3 12.2C6.9 10.6 7.3 9 8.3 8.1' +
           'C7.7 6.4 8.6 5 10 5.3C10 3.1 12.1 2.5 13 4.1C13.9 2.3 16.1 2.8 15.9 4.8' +
           'C17.5 4.9 17.8 6.7 16.6 7.5L17.3 8.2 21 9.7 17.2 10.7' +
@@ -999,8 +1013,103 @@
 
     document.body.appendChild(caja);
     caja.showModal();
+    sobreElTeclado(caja);
     campo.focus();
   }
+
+  /* ---------- precarga de las fotos del catálogo -----------
+     18/09/2026 (él): todas las fotos de las cuadrículas —no solo la que
+     se ve de cada tarjeta— se van bajando solas, de a tres, en segundo
+     plano. Así, al pasar de una foto a otra ya están, y el glitch no se
+     traba esperando la descarga. Mientras quede algo en la cola se ve
+     la «ruedita» de texto ( | / — \ ) junto a los botones de vista.
+     Con el mismo srcset que la foto de verdad, para que el navegador
+     baje la MISMA versión (la de teléfono o la grande) que luego pinta. */
+  var PRE = { cola: [], activos: 0, visto: {}, reloj: null, paso: 0 };
+  var RUEDA = ["|", "/", "—", "\\"];
+  function precargar(urls) {
+    (urls || []).forEach(function (u) {
+      if (!u || PRE.visto[u]) return;
+      PRE.visto[u] = 1;
+      PRE.cola.push(u);
+    });
+    siguientePrecarga();
+    pintarRueda();
+  }
+  function siguientePrecarga() {
+    while (PRE.activos < 3 && PRE.cola.length) {
+      var u = PRE.cola.shift();
+      PRE.activos++;
+      var im = new Image();
+      im.decoding = "async";
+      ponerSrcset(im, u);
+      im.onload = im.onerror = function () {
+        PRE.activos--;
+        siguientePrecarga();
+        pintarRueda();
+      };
+      im.src = u;
+    }
+  }
+  function pintarRueda() {
+    var ocupado = PRE.activos > 0 || PRE.cola.length > 0;
+    $$(".cargando").forEach(function (r) { r.classList.toggle("cargando--activo", ocupado); });
+    if (ocupado && !PRE.reloj && !menosMovimiento) {
+      PRE.reloj = setInterval(function () {
+        PRE.paso = (PRE.paso + 1) % RUEDA.length;
+        $$(".cargando").forEach(function (r) { r.textContent = RUEDA[PRE.paso]; });
+      }, 110);
+    } else if (!ocupado && PRE.reloj) {
+      clearInterval(PRE.reloj); PRE.reloj = null;
+    }
+  }
+  /* Pone la ruedita en una barra de catálogo, si no la tiene ya. */
+  function ruedaEn(barra) {
+    if (!barra || barra.querySelector(".cargando")) return;
+    barra.appendChild(el("span", { class: "cargando", "aria-hidden": "true", texto: RUEDA[PRE.paso] }));
+    pintarRueda();
+  }
+  window.PA_PRECARGA = function (urls, barra) { ruedaEn(barra); precargar(urls); };
+
+  /* ---------- foto a pantalla completa -----------------------
+     18/09/2026 (él): en la ficha de una pieza —la página de Exhibición y
+     el panel de Prototipos— un toque sobre la FOTO la agranda a toda la
+     página (no a pantalla completa del sistema). Arriba a la izquierda,
+     una flecha curva para volver; tocar fuera de la foto también cierra,
+     y el gesto de «atrás» del teléfono igual. */
+  function abrirFotoGrande(src, alt) {
+    if (!src || $(".foto-grande")) return;
+    var img = el("img", { class: "foto-grande__img", src: src, alt: alt || "" });
+    var volver = el("button", { class: "foto-grande__volver", type: "button",
+      "aria-label": t("ficha_volver"), html: ICONOS.volver });
+    var capa = el("div", { class: "foto-grande", role: "dialog", "aria-modal": "true" }, [img, volver]);
+    var prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    function cerrar(desdeAtras) {
+      if (!capa.parentNode) return;
+      capa.remove();
+      document.body.style.overflow = prev;
+      document.removeEventListener("keydown", tecla);
+      window.removeEventListener("popstate", atras);
+      if (!desdeAtras && history.state && history.state.paFoto) history.back();
+    }
+    function tecla(e) { if (e.key === "Escape") { e.stopPropagation(); cerrar(false); } }
+    function atras() { cerrar(true); }
+    volver.addEventListener("click", function (e) { e.stopPropagation(); cerrar(false); });
+    capa.addEventListener("click", function (e) { if (e.target !== img) cerrar(false); });
+    document.addEventListener("keydown", tecla, true);
+    try { history.pushState({ paFoto: 1 }, ""); } catch (e) {}
+    window.addEventListener("popstate", atras);
+    document.body.appendChild(capa);
+    volver.focus();
+  }
+  /* Un escuchador para las dos fichas. Solo fotos: el video, el 3D y
+     los planos tienen sus propios controles. */
+  document.addEventListener("click", function (e) {
+    var img = e.target.closest && e.target.closest(".visor-medios__principal img, #pt-pn-visual img.pt-visual__foto");
+    if (!img || e.target !== img) return;
+    abrirFotoGrande(img.currentSrc || img.getAttribute("src"), img.getAttribute("alt"));
+  });
 
   /* ---------- el lector del buzón (solo él) ----------------
      17/09/2026 · Se abre con los diez toques del pie. Pide la clave y,
@@ -1138,7 +1247,31 @@
 
     document.body.appendChild(caja);
     caja.showModal();
+    sobreElTeclado(caja);
     campo.focus();
+  }
+
+  /* LA VENTANA POR ENCIMA DEL TECLADO (él, 18/09/2026). En Chrome el
+     teclado encoge la página y la ventana se recoloca sola; en el
+     navegador que abre Instagram, no: el teclado la tapa. Con
+     visualViewport se sabe cuánto queda a la vista, y la ventana se
+     sube hasta que su borde de abajo quede justo encima del teclado. */
+  function sobreElTeclado(caja) {
+    var vv = window.visualViewport;
+    if (!vv) return;
+    function ajustar() {
+      if (!caja.isConnected) { vv.removeEventListener("resize", ajustar); vv.removeEventListener("scroll", ajustar); return; }
+      var tapado = window.innerHeight - vv.height;
+      if (tapado < 80) { caja.style.top = ""; caja.style.bottom = ""; caja.style.margin = ""; caja.style.maxHeight = ""; return; }
+      var alto = Math.min(caja.offsetHeight, vv.height - 16);
+      caja.style.maxHeight = (vv.height - 16) + "px";
+      caja.style.margin = "0 auto";
+      caja.style.bottom = "auto";
+      caja.style.top = Math.max(8, vv.offsetTop + vv.height - alto - 8) + "px";
+    }
+    vv.addEventListener("resize", ajustar);
+    vv.addEventListener("scroll", ajustar);
+    ajustar();
   }
 
   document.addEventListener("pa:pedido", pintarBolsa);
@@ -1637,8 +1770,20 @@
        16/09/2026). Contacto sigue también dentro del ☰. */
     var MR = window.MARCA || {};
     var redesMovil = el("div", { class: "redes-movil" });
-    if (MR.whatsapp) redesMovil.appendChild(el("a", { class: "redes-movil__a", href: enlaceWhatsApp(null),
-      target: "_blank", rel: "noopener", "aria-label": "WhatsApp", html: ICONOS.whatsapp }));
+    /* 18/09/2026 (él): aquí iba el icono de WhatsApp. Ahora es un globo
+       de conversación que lleva a la página de Contacto —donde están
+       WhatsApp, el correo, Instagram y el buzón—, y Contacto sale del ☰
+       en teléfono (el CSS lo esconde allí). */
+    redesMovil.appendChild(el("a", { class: "redes-movil__a", href: "contacto.html",
+      "aria-label": t("nav_contacto"),
+      "aria-current": aqui === "contacto.html" ? "page" : null }, [
+        el("span", { class: "redes-movil__icono", html: ICONOS.globoRedondo }),
+        el("span", { texto: t("nav_contacto") })
+      ]));
+    /* 18/09/2026 (él, 2.ª vuelta): el globo no le convenció. Ahora es la
+       PALABRA «Contacto» en esa esquina, y la lupa de arriba sale: se
+       busca desde el ☰, a la derecha de los botones de modo. */
+
     /* Instagram salió de aquí (él, 16/09/2026): queda solo WhatsApp. */
 
     var menu = el("nav", { class: "menu", id: "menu" },
@@ -1657,10 +1802,22 @@
             if (activa && m[2]) {
               a.appendChild(el("span", { class: "menu__pre", texto: t(m[2]) }));
             }
+            /* Contacto lleva su globo encima, para llamar la atención
+               (él, 18/09/2026). En teléfono este enlace no se ve. */
+            if (m[1] === "contacto.html") {
+              a.classList.add("menu__contacto");
+              a.appendChild(el("span", { class: "menu__globo", html: ICONOS.globoRedondo }));
+            }
             a.appendChild(el("span", { class: "menu__nombre", texto: t(m[0]) }));
             return a;
           })
     );
+
+    var lupaMenu = el("button", { class: "lupa lupa--menu", type: "button",
+      "aria-label": t("buscar") }, [el("span", { class: "lupa__icono", html: ICONOS.lupa })]);
+    lupaMenu.addEventListener("click", function () { if (cerrarMenuActivo) cerrarMenuActivo(); abrirBuscador(); });
+    /* Va en la fila de Novedades y El taller, en la 3.ª columna (él, 18/09). */
+    menu.appendChild(lupaMenu);
 
     /* 2026-08-17 · Cada control lleva DOS rótulos y el CSS enseña
        uno. En escritorio, donde el sitio son siete cosas apretadas
@@ -1697,6 +1854,17 @@
     });
     botones.forEach(function (b, n) {
       b.addEventListener("click", function () { ponerIdioma(IDIOMAS[n]); });
+    });
+
+    /* 18/09/2026 (él) · El idioma pasa a ser un INTERRUPTOR: «ES», un
+       riel con su bolita, «EN». Tocar el riel cambia al otro idioma;
+       tocar ES o EN pone ese. Las dos palabras largas (español /
+       english) siguen montadas pero el CSS las esconde. */
+    var interruptorIdioma = el("button", { type: "button", class: "idioma__riel",
+      role: "switch", "aria-checked": idioma === IDIOMAS[1] ? "true" : "false",
+      "aria-label": NOMBRE_IDIOMA[IDIOMAS[1]] }, [el("span", { class: "idioma__bola" })]);
+    interruptorIdioma.addEventListener("click", function () {
+      ponerIdioma(idioma === IDIOMAS[0] ? IDIOMAS[1] : IDIOMAS[0]);
     });
 
     /* Conmutador de tema, hermano del de idioma. Sol y luna: no
@@ -1742,6 +1910,15 @@
       b.dataset.tema = m;
       b.addEventListener("click", function () { ponerTema(m); });
       return b;
+    });
+
+    /* 18/09/2026 (él) · El modo también es INTERRUPTOR, como el idioma:
+       lobo sin marco, riel cuadrado, gallo sin marco. */
+    var interruptorTema = el("button", { type: "button", class: "idioma__riel tema__riel",
+      role: "switch", "aria-checked": temaVisible() === TEMAS[1] ? "true" : "false",
+      "aria-label": ETIQUETA_TEMA[TEMAS[1]][idioma] }, [el("span", { class: "idioma__bola" })]);
+    interruptorTema.addEventListener("click", function () {
+      ponerTema(temaVisible() === TEMAS[0] ? TEMAS[1] : TEMAS[0]);
     });
 
     /* aria-expanded dice si el menú está desplegado o no. Sin él,
@@ -1884,7 +2061,6 @@
         el("img", { class: "marca__perfil", src: "img/marca/perfil.webp", alt: "" })
       ]),
       redesMovil,
-      lupaMovil,
       rapida,
       menu,
       el("div", { class: "cabecera__botones" }, [bolsa, lupa]),
@@ -1905,8 +2081,8 @@
         /* Con título cada grupo (él, 16/09/2026): ahora viven en la
            hamburguesa también en computadora y hay sitio. */
         el("div", { class: "controles" }, [
-          el("div", { class: "idioma" }, botones),
-          el("div", { class: "tema" }, botonesTema)
+          el("div", { class: "idioma idioma--interruptor" }, [botones[0], interruptorIdioma, botones[1]]),
+          el("div", { class: "tema tema--interruptor" }, [botonesTema[0], interruptorTema, botonesTema[1]])
         ])
       ])
     ]));
@@ -2287,6 +2463,61 @@
            'aria-hidden="true" focusable="false">' + s + '</svg>';
   }
   window.PA_ICONO_VISTA_MOVIL = iconoVistaMovil;
+
+  /* 18/09/2026 · LOS ICONOS DE VISTA CON ZOOM DE PANTALLA. Todo lo de
+     arriba (una unidad = un píxel) solo se cumple con la pantalla al
+     100 %. Su computadora va al 125 % (devicePixelRatio 1,25): un
+     cuadradito de 6 medía 7,5 píxeles reales y el navegador pintaba
+     unos de 7 y otros de 8 — «desproporcionados» otra vez. Además la
+     barra caía en medio píxel real.
+     Arreglo: con zoom fraccionario, cada icono de cuadraditos se
+     REDIBUJA en píxeles reales (lado y paso redondeados UNA vez, así
+     todos los huecos salen iguales) y se corre lo que haga falta para
+     caer justo en la rejilla de la pantalla. La geometría original se
+     guarda en data-* para no redondear sobre lo ya redondeado. */
+  function ajustarIconosVista() {
+    var d = window.devicePixelRatio || 1;
+    $$(".vistas__btn svg").forEach(function (svg) {
+      var rs = svg.querySelectorAll("rect");
+      if (!rs.length || svg.querySelector("circle")) return;
+      if (!svg.dataset.geo) {
+        var xs = [], lado = +rs[0].getAttribute("width");
+        rs.forEach(function (r) { var x = +r.getAttribute("x"); if (xs.indexOf(x) < 0) xs.push(x); });
+        xs.sort(function (a, b) { return a - b; });
+        svg.dataset.geo = [xs.length, xs[0], xs.length > 1 ? xs[1] - xs[0] : 0, lado].join(",");
+      }
+      /* Ya redibujado para este zoom: solo se recoloca (sin tocar el
+         DOM, o el vigilante de abajo entraría en bucle). */
+      if (svg.dataset.hecho !== String(d)) {
+      var g = svg.dataset.geo.split(",").map(Number), n = g[0];
+      var T = Math.round(24 * d), I = Math.round(g[1] * d),
+          P = Math.round(g[2] * d), L = Math.round(g[3] * d), h = "", x, y;
+      for (y = 0; y < n; y++) for (x = 0; x < n; x++)
+        h += '<rect x="' + (I + x * P) + '" y="' + (I + y * P) + '" width="' + L + '" height="' + L + '"/>';
+      svg.innerHTML = h;
+      svg.setAttribute("viewBox", "0 0 " + T + " " + T);
+      svg.style.width = svg.style.height = (T / d) + "px";
+      svg.dataset.hecho = String(d);
+      }
+      svg.style.transform = "";
+      var r = svg.getBoundingClientRect();
+      var dx = (Math.round(r.left * d) - r.left * d) / d, dy = (Math.round(r.top * d) - r.top * d) / d;
+      if (dx || dy) svg.style.transform = "translate(" + dx + "px," + dy + "px)";
+    });
+  }
+  window.PA_AJUSTAR_ICONOS = ajustarIconosVista;
+  if ("MutationObserver" in window) {
+    var pendienteIconos = 0;
+    new MutationObserver(function () {
+      if (pendienteIconos) return;
+      pendienteIconos = setTimeout(function () { pendienteIconos = 0; ajustarIconosVista(); }, 30);
+    }).observe(document.documentElement, { childList: true, subtree: true });
+  }
+  window.addEventListener("resize", function () { ajustarIconosVista(); });
+  /* La ola de entrada mueve los botones: se recoloca cuando termina. */
+  document.addEventListener("animationend", function (ev) {
+    if (ev.target.classList && ev.target.classList.contains("vistas__btn")) ajustarIconosVista();
+  });
 
   function barraVistas(actual) {
     var caja = el("div", { class: "vistas", role: "group",
@@ -2755,6 +2986,11 @@
     host.appendChild(r);
     revelar(host, ".tarjeta", 45);
     moverPunto(false);
+    /* Todas las fotos de todas las piezas, en el orden en que salen. */
+    window.PA_PRECARGA([].concat.apply([], lista.map(function (w) {
+      var f = fotosDe(w);
+      return f.length ? f : (w.imagen ? [w.imagen] : []);
+    })), barra);
   }
 
   /* Un solo escuchador para toda la página, como el de las flechas. */
@@ -3230,9 +3466,42 @@
     return lista.slice().sort(function (a, b) { return pos(a) - pos(b); });
   }
 
+  /* VOLVER A LA EXHIBICIÓN COMO SE DEJÓ (él, 18/09/2026): al abrir una
+     pieza se apuntan la vista puesta y hasta dónde se había bajado. Al
+     volver —con el gesto de atrás, con el botón del navegador o con
+     «volver» de la ficha— la cuadrícula sale en el MISMO orden, la misma
+     vista y a la misma altura, en vez de barajarse otra vez desde
+     arriba. La nota se borra al usarla o al pasar por otra página. */
+  var CLAVE_VOLVER = "exh-volver";
+  document.addEventListener("click", function (e) {
+    if (document.body.getAttribute("data-pagina") !== "trabajos") return;
+    var a = e.target.closest && e.target.closest("#rejilla a[href^='trabajo.html']");
+    if (!a) return;
+    try { sessionStorage.setItem(CLAVE_VOLVER, JSON.stringify({ vista: vistaActual, y: window.scrollY })); } catch (x) {}
+  });
+
   paginas.trabajos = function () {
     $("#titulo").textContent = t("trabajos_titulo");
     $("#bajada").textContent = t("trabajos_bajada");
+
+    var vuelta = null;
+    try { vuelta = JSON.parse(sessionStorage.getItem(CLAVE_VOLVER) || "null"); } catch (x) {}
+    if (vuelta && !ordenDeEstaCarga) {
+      try { sessionStorage.removeItem(CLAVE_VOLVER); } catch (x) {}
+      var guardado = null;
+      try { guardado = JSON.parse(sessionStorage.getItem(CLAVE_ORDEN) || "null"); } catch (x) {}
+      if (guardado && guardado.length) ordenDeEstaCarga = guardado;   /* el mismo orden: no se baraja */
+      if (vuelta.vista && VISTAS.indexOf(vuelta.vista) !== -1) vistaActual = vuelta.vista;
+      if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+      /* Varios intentos: la cuadrícula crece mientras entran las
+         tarjetas y un solo salto temprano se queda corto. */
+      [60, 250, 600, 1200].forEach(function (ms) {
+        setTimeout(function () {
+          if (Math.abs(window.scrollY - (vuelta.y || 0)) > 4)
+            window.scrollTo({ top: vuelta.y || 0, behavior: "instant" });   /* sin el deslizamiento suave */
+        }, ms);
+      });
+    }
 
     if (!ordenDeEstaCarga) {
       ordenDeEstaCarga = barajar(trabajosVisibles()).map(function (w) { return w.slug; });
@@ -3275,6 +3544,12 @@
       class: "volver navpieza__volver", href: "trabajos.html",
       texto: t("ficha_volver")
     });
+    /* «Volver» hace lo mismo que el gesto de atrás si se llegó desde el
+       catálogo, para no dejar la ficha apilada detrás. */
+    volver.addEventListener("click", function (e) {
+      if (e.button !== 0 || e.metaKey || e.ctrlKey) return;
+      if (/trabajos\.html/.test(document.referrer)) { e.preventDefault(); history.back(); }
+    });
 
     if (i < 0 || lista.length < 2) {
       return el("nav", { class: "navpieza navpieza--sola" }, [volver]);
@@ -3305,8 +3580,15 @@
          que él copie y mande sigue siendo limpio, y la marca no
          sobrevive a cerrar la pestaña. La lee y la borra
          js/escaner.js. */
-      a.addEventListener("click", function () {
-        try { sessionStorage.setItem("pt-salto-pieza", "1"); } catch (e) { /* modo privado */ }
+      a.addEventListener("click", function (e) {
+        try { sessionStorage.setItem("pt-salto-pieza", "1"); } catch (x) { /* modo privado */ }
+        /* REEMPLAZA en el historial en vez de apilar (él, 18/09/2026):
+           así, pasando por diez piezas con las flechas, el gesto de
+           atrás lleva de una vez a la cuadrícula y no pieza por pieza. */
+        if (e.button === 0 && !e.metaKey && !e.ctrlKey && !e.shiftKey) {
+          e.preventDefault();
+          location.replace(a.getAttribute("href"));
+        }
       });
       return a;
     }
@@ -3328,6 +3610,7 @@
       return;
     }
     document.title = tx(w.titulo) + " · " + window.MARCA.nombre;
+    precargar(fotosDe(w));
 
     /* --- medios --- */
     var medios = el("div", { class: "ficha__medios" });
@@ -3735,6 +4018,9 @@
     vigilarCabecera();
     pintarPie();
     var cual = document.body.getAttribute("data-pagina");
+    if (cual !== "trabajos" && cual !== "trabajo") {
+      try { sessionStorage.removeItem("exh-volver"); } catch (x) {}
+    }
     if (paginas[cual]) paginas[cual]();
     if (verBorradores) document.body.classList.add("con-borradores");
   }
