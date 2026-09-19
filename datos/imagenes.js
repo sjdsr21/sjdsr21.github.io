@@ -1,5 +1,5 @@
 ﻿/* GENERADO POR Achicar-imagenes.ps1 — no editar a mano.
-   2026-09-17 01:16
+   2026-09-19 16:28
 
    Las fotos que tienen al lado una copia <nombre>-movil.webp de
    1000 px. sitio.js consulta esta lista para ofrecerle al
@@ -173,6 +173,8 @@ window.IMG_MOVIL = [
   "img/trabajos/plataformacha-foto-1.webp",
   "img/trabajos/plataformacha-foto-2.webp",
   "img/trabajos/plataformacha-foto-3.webp",
+  "img/trabajos/plataformacha-foto-4.webp",
+  "img/trabajos/plataformacha-foto-5.webp",
   "img/trabajos/puertas-closet-foto-2.webp",
   "img/trabajos/puertas-closet-foto-3.webp",
   "img/trabajos/puertas-closet-foto-4.webp",
