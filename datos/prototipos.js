@@ -38,7 +38,7 @@ window.PROTOTIPOS = [
     },
     /* $60 -> $50 el 14/09/2026 (él). 18/09/2026: sube a $55 (pino) y
        el samán sigue con +5, o sea $60 — al quitar el factor REF. */
-    precio_usd: 55,
+    precio_usd: 50,          /* 19/09/2026 (él): 50 pino y samán. */
     peso: 1.4,               /* RELLENO — sale del modelo 3D */
 
     /* Fotos recortadas sin fondo (PNG con transparencia). Salen de
@@ -101,7 +101,7 @@ window.PROTOTIPOS = [
          las de la ronda 1 de inventario. Los 3 y 2 de antes eran relleno. */
       valores: [
         { id: "pino",  etiqueta: { es: "Pino",  en: "Pine" },  delta: 0, stock: 1 },
-        { id: "saman", etiqueta: { es: "Samán", en: "Monkeypod" }, delta: 5, stock: 1 }
+        { id: "saman", etiqueta: { es: "Samán", en: "Monkeypod" }, delta: 0, stock: 1 }
       ]
     }]
   },
@@ -122,7 +122,7 @@ window.PROTOTIPOS = [
        delta. */
     /* $55 -> $50 el 14/09/2026 (él); 18/09/2026 vuelve a $55, igual en
        las dos maderas — al quitar el factor REF. */
-    precio_usd: 55,
+    precio_usd: 50,          /* 19/09/2026 (él). */
     peso: 1.1,               /* RELLENO */
 
     imagen: "img/prototipos/base-baja-saman.webp",
@@ -203,11 +203,11 @@ window.PROTOTIPOS = [
     matriz: {
       /* 18/09/2026 (él), al quitar el factor REF: teca M 50 y L 70,
          puy M 60 y L 75, algarrobo M 75 y L 100. Las S no cambian. */
-      "s|teca": 30, "m|teca": 50, "l|teca": 70,
-      /* Puy sube por encima de teca (él, 07/09/2026). */
-      "s|puy":  35, "m|puy":  60, "l|puy":  75,
-      /* Algarrobo sube a 45 / 70 / 90 (él, 16/09/2026). */
-      "s|algarrobo": 45, "m|algarrobo": 75, "l|algarrobo": 100
+      "s|teca": 30, "m|teca": 40, "l|teca": 60,   /* 19/09/2026 (él) */
+      /* 19/09/2026 (él): puy igual que teca. */
+      "s|puy":  30, "m|puy":  40, "l|puy":  60,
+      /* 19/09/2026 (él): algarrobo 30 / 45 / 80. */
+      "s|algarrobo": 30, "m|algarrobo": 45, "l|algarrobo": 80
     },
     /* Stock REAL 0 el 14/09/2026 (él): no queda ninguna tabla hecha. */
     stock_matriz: {          /* REAL: 0 de todo */
@@ -596,7 +596,7 @@ window.PROTOTIPOS = [
       en: "A beach-chair style seat with three recline settings: you decide whether to lie back or sit up."
     },
     /* Precio confirmado el 08/09/2026 al publicarla: sigue el mismo. */
-    precio_usd: 200,
+    precio_usd: 180,         /* 19/09/2026 (él): pino 180, teca 210. */
     peso: 14,                /* RELLENO */
 
     /* De portada va la 2 y no la 1, aunque el las numero al reves: es la
@@ -651,7 +651,7 @@ window.PROTOTIPOS = [
       etiqueta: { es: "Madera", en: "Wood" },
       valores: [
         { id: "pino", etiqueta: { es: "Pino", en: "Pine" }, delta: 0 },
-        { id: "teca", etiqueta: { es: "Teca", en: "Teak" }, delta: 50 }
+        { id: "teca", etiqueta: { es: "Teca", en: "Teak" }, delta: 30 }
       ]
     }]
   },
@@ -817,8 +817,8 @@ window.PROTOTIPOS = [
       valores: [
         /* STOCK DE RELLENO, como el del resto. */
         /* El stock ya no vive aquí sino en `stock_matriz`. */
-        { id: "p5",  etiqueta: { es: "Paquete de 5",  en: "Pack of 5" },  precio: 5,  unidades: 5 },
-        { id: "p20", etiqueta: { es: "Paquete de 20", en: "Pack of 20" }, precio: 15, unidades: 20 }
+        { id: "p5",  etiqueta: { es: "Paquete de 5",  en: "Pack of 5" },  precio: 7,  unidades: 5 },
+        { id: "p20", etiqueta: { es: "Paquete de 20", en: "Pack of 20" }, precio: 20, unidades: 20 }
       ]
     }, {
       /* Mismo precio en las dos maderas (él, 14/08/2026), así que
