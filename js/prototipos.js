@@ -46,10 +46,11 @@
   var $ = function (s, r) { return (r || document).querySelector(s); };
 
   /* ---------- dinero ---------------------------------------- */
-  /* REGLA QUE NO SE TOCA: los bolívares salen por REF, nunca por
-     USD × BCV. Ver el comentario largo en datos/envios.js. */
-  function aRef(usd) { return usd / window.TASAS.relacion_efectiva; }
-  function aBs(usd)  { return aRef(usd) * window.TASAS.bcv; }
+  /* 18/09/2026 (él) · SIN FACTOR REF: los bolívares son USD × BCV tal
+     cual. Él lo decidió a sabiendas de que regala la diferencia con
+     Binance, y subió algunos precios en dólares para compensar. La
+     regla anterior (REF = USD / 0,8) está en el historial de git. */
+  function aBs(usd)  { return usd * window.TASAS.bcv; }
 
   function dolar(v) {
     return "$" + (Math.round(v * 100) / 100).toLocaleString("en-US");
@@ -1830,9 +1831,9 @@
     var segundo = $("#pt-total-secundario");
 
     if (pago.moneda === "bs") {
-      /* REF × BCV. Nunca USD × BCV: eso regalaría el 20%. */
+      /* USD × BCV, sin factor (18/09/2026). */
       principal.textContent = bolivar(aBs(suma));
-      segundo.textContent = dolar(suma) + " · REF " + dolar(aRef(suma)) + " × BCV";
+      segundo.textContent = dolar(suma) + " × BCV";
     } else if (pago.moneda === "usdt") {
       principal.textContent = (Math.round(suma * 100) / 100).toLocaleString("en-US") + " USDT";
       segundo.textContent = rellena("pt_equivale", {m: dolar(suma)});

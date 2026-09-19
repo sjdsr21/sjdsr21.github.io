@@ -3,7 +3,13 @@
    ============================================================ */
 
 /* ------------------------------------------------------------
-   LA REGLA QUE NO SE TOCA
+   18/09/2026 · YA NO SE USA EN LA PÁGINA: él decidió cobrar en la
+   web USD × BCV tal cual, sin el factor, y subió algunos precios en
+   dólares para compensar. `relacion_efectiva` se deja aquí porque
+   sigue siendo su factor en el libro de Finanzas, pero la tienda ya
+   no lo lee. Lo de abajo es la regla como era antes.
+   ------------------------------------------------------------
+   LA REGLA QUE NO SE TOCA (anterior)
    ------------------------------------------------------------
    Los bolívares SIEMPRE salen por REF, nunca por conversión
    directa:

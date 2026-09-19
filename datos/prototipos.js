@@ -36,8 +36,9 @@ window.PROTOTIPOS = [
       es: "Eleva la pantalla entre 18 y 30 cm, hasta la altura de los ojos. Para trabajar con teclado aparte, sin encorvarte.",
       en: "Raises the screen by 18 to 30 cm, up to eye level. For working with a separate keyboard, without hunching over."
     },
-    /* $60 -> $50 el 14/09/2026 (él). El samán sigue con +5, o sea $55. */
-    precio_usd: 50,
+    /* $60 -> $50 el 14/09/2026 (él). 18/09/2026: sube a $55 (pino) y
+       el samán sigue con +5, o sea $60 — al quitar el factor REF. */
+    precio_usd: 55,
     peso: 1.4,               /* RELLENO — sale del modelo 3D */
 
     /* Fotos recortadas sin fondo (PNG con transparencia). Salen de
@@ -119,8 +120,9 @@ window.PROTOTIPOS = [
     /* Las dos maderas al mismo precio (él, 12/08/2026): apamate y
        samán cuestan lo mismo, 55. Por eso ningún valor lleva
        delta. */
-    /* $55 -> $50 el 14/09/2026 (él), igual en las dos maderas. */
-    precio_usd: 50,
+    /* $55 -> $50 el 14/09/2026 (él); 18/09/2026 vuelve a $55, igual en
+       las dos maderas — al quitar el factor REF. */
+    precio_usd: 55,
     peso: 1.1,               /* RELLENO */
 
     imagen: "img/prototipos/base-baja-saman.webp",
@@ -199,11 +201,13 @@ window.PROTOTIPOS = [
       en: "Long grain, eased edges and generous thickness. Finished in tung oil, the most durable food-safe finish."
     },
     matriz: {
-      "s|teca": 30, "m|teca": 45, "l|teca": 60,
+      /* 18/09/2026 (él), al quitar el factor REF: teca M 50 y L 70,
+         puy M 60 y L 75, algarrobo M 75 y L 100. Las S no cambian. */
+      "s|teca": 30, "m|teca": 50, "l|teca": 70,
       /* Puy sube por encima de teca (él, 07/09/2026). */
-      "s|puy":  35, "m|puy":  55, "l|puy":  70,
+      "s|puy":  35, "m|puy":  60, "l|puy":  75,
       /* Algarrobo sube a 45 / 70 / 90 (él, 16/09/2026). */
-      "s|algarrobo": 45, "m|algarrobo": 70, "l|algarrobo": 90
+      "s|algarrobo": 45, "m|algarrobo": 75, "l|algarrobo": 100
     },
     /* Stock REAL 0 el 14/09/2026 (él): no queda ninguna tabla hecha. */
     stock_matriz: {          /* REAL: 0 de todo */
@@ -968,7 +972,7 @@ window.PROTOTIPOS = [
       en: "Solid wood wall roll holder. Removable rod for changing the roll."
     },
     medidas: { es: "34 × 13 × 3,5 cm", en: "34 × 13 × 3,5 cm" },
-    precio_usd: 30,          /* Él, 06/09/2026 */
+    precio_usd: 35,          /* Él, 06/09/2026 ($30); $35 el 18/09/2026 */
     peso: 0.7,               /* RELLENO */
     /* Isométrico con transparencia: fondo liso, sin rayado (él). */
     fondo_liso: true,

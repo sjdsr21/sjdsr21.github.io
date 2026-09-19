@@ -3911,7 +3911,7 @@
       host.appendChild(el("p", { class: "vacio", texto: t("no_encontrado") }));
       return;
     }
-    document.title = tx(w.titulo) + " · " + window.MARCA.nombre;
+    document.title = tx(w.titulo) + " — prototipo ago";
     precargar(fotosDe(w));
 
     /* --- medios --- */
@@ -4064,7 +4064,7 @@
       host.appendChild(el("p", { class: "vacio", texto: t("no_encontrado") }));
       return;
     }
-    document.title = tx(p.nombre) + " · " + window.MARCA.nombre;
+    document.title = tx(p.nombre) + " — prototipo ago";
 
     /* --- medios --- */
     var medios = el("div", { class: "ficha__medios" });
