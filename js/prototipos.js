@@ -1624,7 +1624,7 @@
 
     var total = precioUnidad(p, o) * sel.cant;
     $("#pt-pn-precio").textContent = dolar(total);
-    $("#pt-pn-precio-bs").textContent = bolivar(aBs(total));
+    $("#pt-pn-precio-bs").textContent = bolivar(aBs(total)) + " " + t("pt_a_tasa_bcv");
     $("#pt-pn-agregar").textContent = t("pt_agregar_cerrar");
     $("#pt-pn-agregar").disabled = total === 0;
     $("#pt-pn-agregar-seguir").textContent = t("pt_agregar_seguir");
@@ -1747,14 +1747,11 @@
   function pintarEntrega() {
     var kg = pesoTotal();
 
-    /* Esta corrección va AQUÍ y no en el click. Si se deja en el
-       manejador, cambiar de método de pago apaga la opción pero
-       deja la selección pegada en ella, y el envío sigue
-       apareciendo. Ya pasó. */
-    if (pagoSel === "efectivo" && entregaActual() && !/^(gratis|definir)$/.test(entregaActual().tipo)) entregaSel = "taller";
+    /* 19/09/2026 (él): pagar en efectivo YA NO apaga delivery, MRW ni
+       Zoom. Antes se desactivaban y la selección saltaba a «taller». */
 
     $("#pt-entrega").innerHTML = window.ENTREGAS.map(function (e) {
-      var noEfectivo = pagoSel === "efectivo" && !/^(gratis|definir)$/.test(e.tipo);
+      var noEfectivo = false;
 
       var val;
       if (e.tipo === "definir") val = "";
@@ -1839,7 +1836,8 @@
       segundo.textContent = rellena("pt_equivale", {m: dolar(suma)});
     } else {
       principal.textContent = dolar(suma);
-      segundo.textContent = carrito.length ? rellena("pt_si_bs", {m: bolivar(aBs(suma))}) : "";
+      /* innerHTML: «a tasa BCV» va en su propio span, resaltado (él, 19/09/2026). */
+      segundo.innerHTML = carrito.length ? rellena("pt_si_bs", {m: bolivar(aBs(suma))}) : "";
     }
 
     /* El total «se infla» un instante cada vez que cambia (él, 16/09/2026).
@@ -1902,6 +1900,8 @@
     s += "\n" + (es ? "Total" : "Total") + ": " + dolar(suma);
     if (pago.moneda === "bs") s += " — " + bolivar(aBs(suma));
     else if (pago.moneda === "usdt") s += " — " + (Math.round(suma * 100) / 100) + " USDT";
+    /* Pago por definir: los bolívares debajo del total (él, 19/09/2026). */
+    else if (pago.moneda === "definir") s += "\n" + bolivar(aBs(suma)) + " " + t("pt_a_tasa_bcv");
     s += "\n" + (es ? "Pago" : "Payment") + ": " + tx(pago.nombre) + "\n";
 
     if (e.tipo === "gratis" || e.tipo === "definir") {
@@ -1921,7 +1921,7 @@
     /* La tasa va estampada: es la mitad de la cláusula de validez.
        Sin ella, dentro de una semana nadie sabe de dónde salió
        ese número en bolívares. */
-    if (pago.moneda === "bs") {
+    if (pago.moneda === "bs" || pago.moneda === "definir") {
       s += "\n" + (es ? "Tasa BCV " : "BCV rate ") + window.TASAS.fecha + ": " +
            window.TASAS.bcv.toLocaleString("es-VE");
     }

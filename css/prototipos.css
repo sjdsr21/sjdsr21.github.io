@@ -671,9 +671,11 @@ video.pt-visual__foto {
 .pt-cant--sobre { color: var(--acento-texto); }
 .pt-nota-sobre  { color: var(--acento-texto) !important; }
 
-.pt-precio-panel { display: flex; align-items: baseline; justify-content: space-between; gap: .8rem; margin-bottom: .9rem; }
+/* 19/09/2026 (él): como el panel «Tu pedido» — dólares arriba a la
+   derecha y, debajo, los bolívares «a tasa BCV» en pequeño y gris. */
+.pt-precio-panel { display: flex; flex-direction: column; align-items: flex-end; gap: .15rem; margin-bottom: .9rem; }
 .pt-precio-panel .n { font-size: 1.25rem; font-weight: 700; }
-.pt-precio-panel .bs { font-size: 1.25rem; color: var(--apagado); }
+.pt-precio-panel .bs { font-size: .8rem; color: var(--apagado); }
 
 /* --- botones ------------------------------------------------ */
 /* Sin rayado: sobre un botón el patrón se lee como "no funciona". */
@@ -1177,3 +1179,6 @@ video.pt-visual__foto {
   .pt-vista--cinco .pt-ficha__res { display: block; font-size: .75rem; line-height: 1.35; }
 }
 @media (max-width: 780px) { .pt-vista--cinco .pt-ficha__res { text-align: left; hyphens: auto; } }
+
+/* «a tasa BCV» dentro del gris del total: en el color pleno del texto, más sólido que el resto (él, 19/09/2026). */
+.pt-tasa-bcv { color: var(--tinta); font-weight: 500; }

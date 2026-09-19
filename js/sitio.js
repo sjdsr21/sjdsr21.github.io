@@ -1012,6 +1012,13 @@
       el("span", { texto: t("pt_piezas") }),
       el("b", { texto: dinero(suma) })
     ]));
+    /* Los bolívares debajo, a tasa BCV (él, 19/09/2026). Solo si la
+       página cargó datos/envios.js, que es donde vive la tasa. */
+    if (window.TASAS && window.TASAS.bcv) {
+      pie.appendChild(el("p", { class: "pedido-lateral__bs", texto:
+        "Bs " + (suma * window.TASAS.bcv).toLocaleString("es-VE", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) +
+        " " + t("pt_a_tasa_bcv") }));
+    }
     pie.appendChild(el("p", { class: "pedido-lateral__nota", texto: t("pedido_guardado") }));
     var ir = el("a", { class: "pedido-lateral__ir", href: "index.html#pt-pedido-seccion", texto: t("pedido_ir") });
     /* En Prototipos el pedido está en la misma página: se cierra el

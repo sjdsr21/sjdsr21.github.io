@@ -4678,3 +4678,6 @@ svg.icono-linea { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-li
 @media (max-width: 780px) { .cabecera__utiles { margin-top: -150px; } }
 @media (max-width: 780px) { .cabecera__utiles { margin-top: -154px; } .cabecera--abierta .cabecera__fila { padding-bottom: 0; } }
 @media (max-width: 780px) { .cabecera__utiles .tema--interruptor > button[data-tema="oscuro"] { transform: translateX(-6px); } }
+
+/* Bolívares bajo el total del panel «Tu pedido» (19/09/2026). */
+.pedido-lateral__bs { margin: .15rem 0 0; text-align: right; font-size: .8rem; color: var(--apagado); }

@@ -166,7 +166,8 @@ window.TEXTOS = {
 
   pt_piezas:    { es: "Piezas", en: "Pieces" },
   pt_total:     { es: "Total a pagar", en: "Total to pay" },
-  pt_si_bs:     { es: "({m} si pagas en bolívares)", en: "({m} if you pay in bolívares)" },
+  pt_si_bs:     { es: "({m} si pagas en bolívares, <span class=\"pt-tasa-bcv\">a tasa BCV</span>)", en: "({m} if you pay in bolívares, <span class=\"pt-tasa-bcv\">at the BCV rate</span>)" },
+  pt_a_tasa_bcv: { es: "a tasa BCV", en: "at the BCV rate" },
   pt_equivale:  { es: "equivale a {m}", en: "equals {m}" },
   pt_envio_est: { es: "Envío estimado", en: "Estimated shipping" },
   pt_envio_escoge: { es: "Escoge el estado de destino para estimarlo.", en: "Pick the destination state to estimate it." },

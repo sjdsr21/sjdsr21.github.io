@@ -15,7 +15,8 @@
    la página (proyectos de clientes, sofacama, el plato del comedero y
    dos pruebas de plano). Sus .glb siguen en modelos/ y en .gitignore.
    OJO: Convertir-modelos.ps1 reescribe este archivo entero y los
-   volverá a poner; al regenerarlo, quitarlos otra vez. */
+   volverá a poner; al regenerarlo, quitarlos otra vez.
+   2026-09-19 · Quitado también quillas-mariana (él): sin visor 3D. */
 window.MODELOS = {
   "bano-wichi": "modelos/bano-wichi.glb",
   "base-alta-de-laptop-pino": "modelos/base-alta-de-laptop-pino.glb",
@@ -40,7 +41,6 @@ window.MODELOS = {
   "mt-estefania": "modelos/mt-estefania.glb",
   "paraban-veronica": "modelos/paraban-veronica.glb",
   "porta-rollo-bano": "modelos/porta-rollo-bano.glb",
-  "quillas-mariana": "modelos/quillas-mariana.glb",
   "repicero-estefania": "modelos/repicero-estefania.glb",
   "repisa-bano": "modelos/repisa-bano.glb",
   "tabla-de-picar-teca-talla-l": "modelos/tabla-de-picar-teca-talla-l.glb",
