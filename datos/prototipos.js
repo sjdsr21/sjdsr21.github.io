@@ -343,11 +343,22 @@ window.PROTOTIPOS = [
        variante como en las bases de laptop. */
     modelo3d: "modelos/butcher-block-l.glb",
 
-    opciones: [{
-      id: "madera",
-      etiqueta: { es: "Madera", en: "Wood" },
-      valores: [{ id: "teca", etiqueta: { es: "Teca", en: "Teak" }, delta: 0, stock: 1 }]
-    }]
+    opciones: [
+      /* 19/09/2026 (él): el selector de tamaño, como en la tabla de
+         picar, con la única talla que existe por ahora. Sin `delta`. */
+      {
+        id: "tamano",
+        etiqueta: { es: "Tamaño", en: "Size" },
+        valores: [
+          { id: "l", etiqueta: { es: "L", en: "L" }, nota: { es: "60 × 40 × 4 cm", en: "60 × 40 × 4 cm" } }
+        ]
+      },
+      {
+        id: "madera",
+        etiqueta: { es: "Madera", en: "Wood" },
+        valores: [{ id: "teca", etiqueta: { es: "Teca", en: "Teak" }, delta: 0, stock: 1 }]
+      }
+    ]
   },
 
   /* ==========  POR ENCARGO  ================================ */
@@ -397,7 +408,7 @@ window.PROTOTIPOS = [
       es: "Para gatos o perros pequeños. Levanta los envases del piso, los mantiene en su sitio y mejora la postura de la mascota al comer.",
       en: "For cats or small dogs. Lifts the bowls off the floor, keeps them in place and improves your pet's posture while it eats."
     },
-    precio_usd: 50,
+    precio_usd: 40,          /* $50 -> $40 el 19/09/2026 (él). */
     peso: 1.8,               /* RELLENO */
 
     /* Dos fotos: la de portada de tres cuartos y una de perfil,
@@ -454,7 +465,7 @@ window.PROTOTIPOS = [
     /* 45 y no 75 (él, 07/09/2026). Lo bajó al decidir que la ficha
        dijera "individual": lleva un solo plato, no dos como el pequeño.
        Mismo precio en las dos maderas. */
-    precio_usd: 45,
+    precio_usd: 40,          /* $45 -> $40 el 19/09/2026 (él). */
     peso: 3.2,               /* RELLENO */
 
     /* 06/09/2026 · Ya tiene modelo: lo hizo en SketchUp en DOS
@@ -870,7 +881,7 @@ window.PROTOTIPOS = [
     acabado: ["poliuretano"],
     uso: ["repisas"],
     medidas: { es: "50 × 15 × 12 cm", en: "50 × 15 × 12 cm" },
-    precio_usd: 50,          /* Él, 06/09/2026 */
+    precio_usd: 45,          /* Él, 06/09/2026 ($50); $45 el 19/09/2026 */
     peso: 1.0,               /* RELLENO */
     /* Isométrico con transparencia: fondo liso, sin rayado (él). */
     fondo_liso: true,
@@ -903,7 +914,7 @@ window.PROTOTIPOS = [
       en: "A mirror in a solid wood frame."
     },
     medidas: { es: "52 × 2,5 × 63 cm", en: "52 × 2.5 × 63 cm" },
-    precio_usd: 120,          /* Él, 06/09/2026 */
+    precio_usd: 80,          /* Él, 06/09/2026 ($120); $80 el 19/09/2026 */
     peso: 4.0,               /* RELLENO */
     /* Isométrico con transparencia: fondo liso, sin rayado (él). */
     fondo_liso: true,
@@ -936,7 +947,7 @@ window.PROTOTIPOS = [
       en: "A two-bar wall towel rail in solid wood."
     },
     medidas: { es: "84 × 15,5 × 13 cm", en: "84 × 15.5 × 13 cm" },
-    precio_usd: 90,          /* Él, 06/09/2026 */
+    precio_usd: 80,          /* Él, 06/09/2026 ($90); $80 el 19/09/2026 */
     peso: 1.6,               /* RELLENO */
     /* Isométrico con transparencia: fondo liso, sin rayado (él). */
     fondo_liso: true,
