@@ -2131,6 +2131,14 @@
        hermanos de .menu, no hijos. Con la clase en el padre común
        el CSS los alcanza sin depender del orden de los hermanos. */
     function ponerMenu(abierto) {
+      /* 18/09/2026 (él) · TELÉFONO: la raya de abajo de la cabecera BAJA
+         (o sube) hasta su sitio y va destapando los botones a su paso.
+         Se anima la altura de la cabecera: se mide antes y después del
+         cambio y se va de una a otra con la caja recortada. */
+      var cambia = menu.classList.contains("abierto") !== abierto;
+      var animar = cambia && window.matchMedia("(max-width: 780px)").matches &&
+                   !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var h0 = animar ? host.getBoundingClientRect().height : 0;
       menu.classList.toggle("abierto", abierto);
       host.classList.toggle("cabecera--abierta", abierto);
       /* Idioma y modo se esconden TAMBIÉN por su cuenta (él, 16/09/2026:
@@ -2140,6 +2148,19 @@
       if (utiles) utiles.classList.toggle("cabecera__utiles--cerrado", !abierto);
       hamb.setAttribute("aria-expanded", abierto ? "true" : "false");
       menuEstaAbierto = function () { return menu.classList.contains("abierto"); };
+      if (animar) {
+        var h1 = host.getBoundingClientRect().height;
+        host.style.transition = "none";
+        host.style.height = h0 + "px";
+        host.style.overflow = "hidden";
+        host.getBoundingClientRect();              /* fija el punto de partida */
+        host.style.transition = "height .38s cubic-bezier(.22, .61, .36, 1)";
+        host.style.height = h1 + "px";
+        clearTimeout(host._cortina);
+        host._cortina = setTimeout(function () {
+          host.style.height = ""; host.style.overflow = ""; host.style.transition = "";
+        }, 420);
+      }
       if (abierto) {
         yMenuAbierto = window.scrollY;
         /* Al abrirse, la cabecera crece y el navegador puede mover la

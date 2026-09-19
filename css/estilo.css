@@ -4520,3 +4520,161 @@ svg.icono-linea { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-li
 }
 @media (max-width: 780px) { .cabecera__utiles { margin-top: -112px; } }
 @media (max-width: 780px) { .cabecera__utiles { margin-top: -114px; } }
+
+/* 18/09/2026 (él) · EL TALLER, TELÉFONO: los títulos de sección
+   centrados, y más aire ENCIMA de la raya que los abre (la distancia
+   raya→título no cambia). «Cómo funciona un encargo» estaba pegado a las
+   fotos de la introducción: ahí el aire es mayor y la raya se ve. */
+@media (max-width: 780px) {
+  #encargo h2, #propuesta h2, #materiales h2, #maderas h2 { text-align: center; }
+  #propuesta, #materiales, #maderas { margin-top: 2rem; }
+  #encargo { margin-top: 2.5rem; border-top: 1px solid var(--linea); }
+}
+
+/* 18/09/2026 (él, 3.ª vuelta del ☰ en teléfono):
+   · Novedades y El taller vuelven a su fila, en las columnas de
+     Prototipos y Exhibición.
+   · A la derecha de El taller: ES bajo la bolsa y EN bajo el ☰.
+   · Debajo: lobo bajo la bolsa y gallo bajo el ☰.
+   · Debajo del gallo: la lupa, también bajo el ☰.
+   Medido a 375: centro de la bolsa 264,5 · centro del ☰ 315. */
+@media (max-width: 780px) {
+  .cabecera .menu.abierto {
+    grid-template-columns: repeat(2, calc(100% / 3)) 1fr; grid-auto-rows: 44px;
+  }
+  .cabecera .menu.abierto a:not([data-principal]) {
+    grid-column: auto; grid-row: 1; justify-self: stretch; justify-content: center;
+    text-align: center; padding-left: 0;
+  }
+  .cabecera .menu .lupa--menu {
+    grid-column: 3; grid-row: 3; align-self: center;
+    justify-self: end; margin: 0 18px 0 0;
+  }
+  .cabecera__utiles { margin-top: -140px; }
+  .cabecera__utiles .controles {
+    flex-direction: column; align-items: flex-end; gap: 0;
+    width: auto; margin: 0; padding: 0;
+  }
+  .cabecera__utiles .idioma.idioma--interruptor { gap: 4.5px; margin-right: 17px; }
+  .cabecera__utiles .tema.tema--interruptor { gap: 10.5px; margin-right: 20px; }
+}
+@media (max-width: 780px) {
+  .cabecera__utiles { margin-top: -171px; }
+  .cabecera__utiles .tema.tema--interruptor { gap: 8.8px; }
+}
+@media (max-width: 780px) { .cabecera__utiles { margin-top: -187px; } }
+
+/* 18/09/2026 (él) · Los rectangulitos de video/3D caían 4,5 px más abajo
+   que los de las fotos en Exhibición: su envoltorio era un span en
+   línea, apoyado en la línea base del texto. Ahora es flex y centrado. */
+.tarjeta__franja > span:not(.tarjeta__cuenta) { display: flex; align-items: center; }
+.tarjeta__franja .franja__extras { display: flex; }
+
+/* 18/09/2026 (él) · EL TALLER, TELÉFONO: más aire en los títulos de
+   sección. Sube el espacio encima de la raya, el de la raya al título y
+   el del título a lo de abajo — salvo en «Con qué trabajo», que deja
+   igual la distancia al contenido. */
+@media (max-width: 780px) {
+  #propuesta, #materiales, #maderas { margin-top: 3rem; }
+  #encargo { margin-top: 3.5rem; }
+  #encargo, #propuesta, #materiales, #maderas { padding-top: 2.25rem; }
+  #encargo h2, #propuesta h2, #maderas h2 { padding-bottom: .9rem; }
+}
+
+/* 18/09/2026 (él, 4.ª vuelta del ☰ en teléfono): la lupa pasa DEBAJO de
+   Novedades, pegada al margen izquierdo (el dibujo empieza donde empieza
+   la «N»). Idioma y modo siguen bajo la bolsa y el ☰. El menú queda en
+   dos filas, así que el bloque de idioma y modo sube 44 px menos. */
+@media (max-width: 780px) {
+  .cabecera .menu .lupa--menu {
+    grid-column: 1; grid-row: 2; justify-self: start; margin: 0 0 0 -12px;
+  }
+  .cabecera__utiles { margin-top: -143px; }
+}
+@media (max-width: 780px) {
+  /* El bloque de idioma y modo solo ocupa su ancho: no tapa las páginas. */
+  .cabecera__utiles .controles { width: max-content; margin-left: auto; }
+  .cabecera .menu .lupa--menu { margin-left: -15px; }
+}
+
+/* ============================================================
+   18/09/2026 (él) · PRUEBA: VENTANAS EN EL ESQUEMA OPUESTO
+   La bolsa lateral, la caja del buscador y el buzón anónimo van en
+   el tema contrario al de la página: blancas si la página es oscura
+   y negras si es clara. Solo esas tres. Para deshacer, borra el bloque.
+   ============================================================ */
+:root:not([data-tema="claro"]) .pedido-lateral__caja,
+:root:not([data-tema="claro"]) .buscador__caja,
+:root:not([data-tema="claro"]) dialog.buzon {
+  --tinta: #000000; --papel: #FFFFFF; --apagado: #5A5A5A; --linea: #DDDDDD;
+  --caja: #F4F4F4; --caja-alta: #EAEAEA; --raya: rgba(0,0,0,.03);
+  --realce: #B4441F; --realce-hondo: #93361A; --realce-vivo: #B4441F;
+  --acento-texto: #A05429; --madera-texto: #7D5C2B;
+  --barra: #FFFFFF; --barra-tinta: #000000; --barra-suave: #5A5A5A; --barra-linea: #DDDDDD;
+  color-scheme: light;
+}
+:root[data-tema="claro"] .pedido-lateral__caja,
+:root[data-tema="claro"] .buscador__caja,
+:root[data-tema="claro"] dialog.buzon {
+  --tinta: #FFFFFF; --papel: #000000; --apagado: #A0A0A0; --linea: #2E2E2E;
+  --caja: #0D0D0D; --caja-alta: #171717; --raya: rgba(255,255,255,.085);
+  --realce: #E97451; --realce-hondo: #B4441F; --realce-vivo: #E97451;
+  --acento-texto: #D07847; --madera-texto: #C9A063;
+  --barra: #000000; --barra-tinta: #FFFFFF; --barra-suave: #A0A0A0; --barra-linea: #2E2E2E;
+  color-scheme: dark;
+}
+.pedido-lateral__caja, .buscador__caja, dialog.buzon { background: var(--papel); color: var(--tinta); }
+
+/* 18/09/2026 (él) · ☰ en teléfono, afinado (medido a 375):
+   · Novedades y El taller estaban 4 px a la izquierda de Prototipos y
+     Exhibición: se corren 4 px.
+   · El lobo, 3 px a la izquierda (a ojo se veía corrido a la derecha).
+   · La lupa empieza bajo la «N» de Novedades y a la altura del lobo.
+   · es / en en minúsculas. */
+@media (max-width: 780px) {
+  .cabecera .menu.abierto a[href="novedades.html"],
+  .cabecera .menu.abierto a[href="taller.html"] { transform: translateX(4px); }
+  .cabecera__utiles .tema--interruptor > button[data-tema="oscuro"] { transform: translateX(-3px); }
+  .cabecera .menu .lupa--menu { margin-left: 0.5px; }
+}
+.cabecera__utiles .idioma--interruptor > button .ctrl__corto,
+.cabecera__utiles .idioma--interruptor > button { text-transform: lowercase; }
+@media (max-width: 780px) { .cabecera .menu .lupa--menu { transform: translateY(-13px); } }
+
+/* 18/09/2026 (él) · ES / EN otra vez en MAYÚSCULAS, pero en letra
+   delgada (Poppins normal, no negrita). */
+.cabecera__utiles .idioma--interruptor > button .ctrl__corto,
+.cabecera__utiles .idioma--interruptor > button { text-transform: uppercase; font-weight: 400; }
+
+/* 18/09/2026 (él) · ES/EN más grandes (teléfono y computadora). En
+   teléfono, la lupa se ancla al CENTRO de la columna de Novedades y se
+   corre hasta el borde de la «N» (así sigue a la palabra en cualquier
+   ancho de pantalla, no al margen). */
+.cabecera__utiles .idioma--interruptor > button.idioma__btn--es,
+.cabecera__utiles .idioma--interruptor > button.idioma__btn--en { font-size: 1.45rem; }
+@media (max-width: 780px) {
+  .cabecera__utiles .idioma--interruptor > button.idioma__btn--es,
+  .cabecera__utiles .idioma--interruptor > button.idioma__btn--en { font-size: 1.7rem; }
+  .cabecera .menu .lupa--menu { justify-self: center; margin: 0; }
+}
+@media (max-width: 780px) {
+  .cabecera .menu .lupa--menu { transform: translate(-33.4px, -13px); }
+  .cabecera .menu.abierto a[href="novedades.html"],
+  .cabecera .menu.abierto a[href="taller.html"] { transform: translate(4px, -13px); }
+}
+
+/* 18/09/2026 (él) · TELÉFONO: el ☰ ya no aparece con su animación de
+   caída propia — ahora lo destapa la raya de la cabecera al bajar (JS,
+   ponerMenu). Y su borde de abajo, un poco más arriba. */
+@media (max-width: 780px) {
+  .cabecera--abierta .cabecera__utiles, .cabecera--abierta .menu.abierto { animation: none; }
+  .cabecera__utiles { padding-bottom: 0; }
+}
+@media (max-width: 780px) { .cabecera__utiles { margin-bottom: -22px; } }
+@media (max-width: 780px) {
+  .cabecera .menu.abierto { padding-bottom: 0; row-gap: 0; }
+  .cabecera--abierta .cabecera__fila { padding-bottom: .4rem; }
+}
+@media (max-width: 780px) { .cabecera__utiles { margin-top: -150px; } }
+@media (max-width: 780px) { .cabecera__utiles { margin-top: -154px; } .cabecera--abierta .cabecera__fila { padding-bottom: 0; } }
+@media (max-width: 780px) { .cabecera__utiles .tema--interruptor > button[data-tema="oscuro"] { transform: translateX(-6px); } }
