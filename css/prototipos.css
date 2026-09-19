@@ -1182,3 +1182,13 @@ video.pt-visual__foto {
 
 /* «a tasa BCV» dentro del gris del total: en el color pleno del texto, más sólido que el resto (él, 19/09/2026). */
 .pt-tasa-bcv { color: var(--tinta); font-weight: 500; }
+
+/* 19/09/2026 (él) · SOLO TELÉFONO: el pie de la ficha ocupa menos alto.
+   Precio en una sola fila — bolívares a la IZQUIERDA (un poco más
+   grandes que en escritorio) y dólares a la DERECHA, donde estaban —
+   y los botones de agregar un poco más bajos, sin bajar de 44 px. */
+@media (max-width: 560px) {
+  .pt-precio-panel { flex-direction: row-reverse; justify-content: space-between; align-items: baseline; margin-bottom: .7rem; }
+  .pt-precio-panel .bs { font-size: .9rem; }
+  .pt-acciones .pt-btn { padding: .8rem; min-height: 44px; }
+}
