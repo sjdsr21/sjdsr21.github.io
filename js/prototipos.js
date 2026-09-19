@@ -704,9 +704,9 @@
        18/09/2026): así el panel y el carrusel de las cartas no esperan
        la descarga, y la ruedita de la barra dice si aún falta algo. */
     if (window.PA_PRECARGA) {
-      window.PA_PRECARGA([].concat.apply([], todos.concat(conStock.length ? [] : []).map(function (p) {
+      window.PA_PRECARGA(todos.map(function (p) {
         return todasLasFotos(p).map(srcTema);
-      })), barra && barra.querySelector(".catalogo-barra"));
+      }), barra && barra.querySelector(".catalogo-barra"));
     }
 
     /* títulos y bajadas, que también cambian con el idioma */

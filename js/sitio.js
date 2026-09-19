@@ -1227,7 +1227,7 @@
     pintarRueda();
   }
   function siguientePrecarga() {
-    while (PRE.activos < 3 && PRE.cola.length) {
+    while (PRE.activos < 6 && PRE.cola.length) {
       var u = PRE.cola.shift();
       PRE.activos++;
       var im = new Image();
@@ -1259,7 +1259,24 @@
     barra.appendChild(el("span", { class: "cargando", "aria-hidden": "true", texto: RUEDA[PRE.paso] }));
     pintarRueda();
   }
-  window.PA_PRECARGA = function (urls, barra) { ruedaEn(barra); precargar(urls); };
+  /* 18/09/2026 (él: «no cargan antes de abrirlas») · Si llega una lista
+     POR PIEZA (una lista de listas), se baja en ORDEN INTERCALADO: la
+     1.ª foto de todas, luego la 2.ª de todas, la 3.ª… Así la foto que
+     enseña la flecha de cada tarjeta está lista muy pronto, en vez de
+     esperar a que se bajen enteras las piezas de más arriba. Y de a
+     6 a la vez, no de a 3. */
+  function intercalar(grupos) {
+    var out = [], i, hay = true;
+    for (i = 0; hay; i++) {
+      hay = false;
+      grupos.forEach(function (g) { if (g && i < g.length) { out.push(g[i]); hay = true; } });
+    }
+    return out;
+  }
+  window.PA_PRECARGA = function (urls, barra) {
+    ruedaEn(barra);
+    precargar(urls && Array.isArray(urls[0]) ? intercalar(urls) : urls);
+  };
 
   /* ---------- foto a pantalla completa -----------------------
      18/09/2026 (él): en la ficha de una pieza —la página de Exhibición y
@@ -3289,10 +3306,10 @@
     revelar(host, ".tarjeta", 45);
     moverPunto(false);
     /* Todas las fotos de todas las piezas, en el orden en que salen. */
-    window.PA_PRECARGA([].concat.apply([], lista.map(function (w) {
+    window.PA_PRECARGA(lista.map(function (w) {
       var f = fotosDe(w);
       return f.length ? f : (w.imagen ? [w.imagen] : []);
-    })), barra);
+    }), barra);
   }
 
   /* Un solo escuchador para toda la página, como el de las flechas. */
