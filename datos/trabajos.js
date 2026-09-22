@@ -417,6 +417,15 @@ window.TRABAJOS = [
   /* Sus cuatro fotos son del 15/12/2023; hay otra suelta del 01/06/2024.
      Título con la madera dentro para no chocar con la «Zapatera» de
      Rosa, que ya está publicada — son dos piezas distintas. */
+  /* 21/09/2026 · DOS FICHAS NUEVAS, pedidas por él. Fotos numeradas de
+     E:\Contenido PrototipoAgo\Repisero Teca y \Repisa Teca, en sRGB.
+     Ambas 2025 y aceite Rubio Monocoat (él). El repisero lleva teca Y puy;
+     la repisa solo teca, y se publica como «Repisa tornapunta» (él).
+     Mismo día: las 4 de la repisa se cambiaron por sus «Repisa Tornapunta N
+     final.jpg» (cuadradas). Los originales viejos quedaron en _originales
+     como «-anterior-2026-09-21». */
+  { slug:"repisero-teca",         carpeta:"Repisero Teca",          publicado:true,  titulo:{es:"Repisero en teca",en:"Teak shelving unit"},             anio:2025, anio_estimado:false, tipo:"repisa",     materiales:["teca","puy"], acabado:["rubio-monocoat"], medidas:null, resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/repisero-teca-foto-1.webp",   es_render:false, galeria:["img/trabajos/repisero-teca-foto-2.webp","img/trabajos/repisero-teca-foto-3.webp","img/trabajos/repisero-teca-foto-4.webp","img/trabajos/repisero-teca-foto-5.webp"], video:null },
+  { slug:"repisa-tornapunta",     carpeta:"Repisa Teca",            publicado:true,  titulo:{es:"Repisa tornapunta",en:"Bracket shelf"},                 anio:2025, anio_estimado:false, tipo:"repisa",     materiales:["teca"], acabado:["rubio-monocoat"], medidas:null, resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/repisa-tornapunta-foto-1.webp", es_render:false, galeria:["img/trabajos/repisa-tornapunta-foto-2.webp","img/trabajos/repisa-tornapunta-foto-3.webp","img/trabajos/repisa-tornapunta-foto-4.webp"], video:null },
   { slug:"zapatera-teca",         carpeta:"Zapatera Teca",          publicado:true,  titulo:{es:"Zapatera en teca",en:"Teak shoe rack"},                 anio:2024, anio_estimado:false, tipo:"zapatera",   materiales:["teca"], acabado:["rubio-monocoat"], medidas:null, resumen:{es:"",en:""}, como:{es:[],en:[]}, imagen:"img/trabajos/zapatera-teca-foto-4.webp",   es_render:false, galeria:["img/trabajos/zapatera-teca-foto-1.webp","img/trabajos/zapatera-teca-foto-2.webp","img/trabajos/zapatera-teca-foto-3.webp"], video:null },
   /* 15/09/2026 · TRES FICHAS NUEVAS, pedidas por él.
      ANILLOS — carpeta «Showcase Anillos» en E:\Contenido PrototipoAgo, publicada
