@@ -32,10 +32,10 @@
    página y ya no se actualiza.
    ------------------------------------------------------------ */
 window.TASAS = {
-  bcv: 852.4168,               /* ve.dolarapi.com → oficial.promedio */
+  bcv: 853.4993,               /* ve.dolarapi.com → oficial.promedio */
   paralelo: 863.96439,         /* Binance P2P, mediana de 20 ofertas */
   relacion_efectiva: 0.8,      /* factor manual suyo */
-  fecha: "22/09/2026"
+  fecha: "23/09/2026"
 };
 
 /* ------------------------------------------------------------
