@@ -242,6 +242,7 @@ window.addEventListener('message',e=>{
 });
 try{const r=await fetch('asistente/conocimiento.json');if(!r.ok)throw Error();data=await r.json();}catch{}
 restoreConversation(readConversation());ready=true;
+$('#mensaje').disabled=!data;
 if(!data)say('No pudimos cargar la información del taller. Intenta recargar el chat.',false,false);
 $('#enviar').disabled=!data;
 if(chatVisible)$('#mensaje').focus();
