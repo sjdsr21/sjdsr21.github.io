@@ -9,6 +9,8 @@
     :host{position:fixed;right:calc(max(0px, (100vw - var(--ancho,1240px)) / 2) + var(--canal,56px));bottom:max(14px,env(safe-area-inset-bottom));z-index:190;pointer-events:none}
     *{box-sizing:border-box}.launch{display:grid;place-items:center;border:0;background:transparent;box-shadow:none;border-radius:0;width:68px;height:80px;padding:4px;cursor:pointer;pointer-events:auto}.launch:focus-visible{outline:2px solid var(--barra-tinta);outline-offset:3px}.launch canvas{display:block;width:60px;height:72px;pointer-events:none;background:transparent}
     .launch.away{visibility:hidden;pointer-events:none}
+    :host([product-open]) .launch{visibility:hidden;pointer-events:none}
+    @media(max-width:780px){:host([product-open]) .launch:not(.away){position:fixed;left:var(--product-face-x);top:var(--product-face-y);visibility:visible;pointer-events:auto}}
     .launch canvas{filter:var(--rostro-mini-sombra,drop-shadow(0 0 2px rgba(0,0,0,.85)) drop-shadow(0 0 6px rgba(0,0,0,.7)))}
     .panel{position:absolute;right:0;bottom:94px;width:600px;height:min(584px,calc(100dvh - 136px));border:1px solid #2e2e2e;border-radius:0;overflow:hidden;background:color-mix(in srgb,#000 var(--ventana-opacidad,88%),transparent);-webkit-backdrop-filter:var(--ventana-filtro,saturate(1.1) blur(2px));backdrop-filter:var(--ventana-filtro,saturate(1.1) blur(2px));box-shadow:0 12px 35px #0002;opacity:0;transform:translateX(48px);visibility:hidden;pointer-events:none;transition:transform .32s var(--curva,cubic-bezier(.22,.68,0,1)),opacity .25s ease,visibility 0s .32s}
     .panel.open{opacity:1;transform:translateX(0);visibility:visible;pointer-events:auto;transition-delay:0s}iframe{color-scheme:dark;display:block;width:100%;height:100%;border:0}
@@ -47,7 +49,7 @@
       await loaded;
       if(current!==generation)return;
       theme();panel.inert=false;panel.classList.add('open');visibility(true,true);
-      frame.contentWindow.postMessage({type:'ago-focus'},location.origin);
+      frame.contentWindow.postMessage({type:'ago-focus',input:matchMedia('(min-width:781px)').matches},location.origin);
     }else{
       visibility(false);panel.inert=true;panel.classList.remove('open');
       if(!reduced.matches)await new Promise(resolve=>setTimeout(resolve,280));
@@ -68,6 +70,25 @@
   document.addEventListener('click',e=>{if(opened&&!e.composedPath().includes(host))toggle(false,false);},true);
   new MutationObserver(theme).observe(document.documentElement,{attributes:true,attributeFilter:['data-tema','class','style']});
   document.body.append(host);
+  // Anclar solo la miniatura al precio: el chat conserva su posición en pantalla.
+  const product=document.getElementById('pt-panel');
+  const price=document.getElementById('pt-pn-precio');
+  const productFooter=product?.querySelector('.pt-panel__pie');
+  function placeProductFace(){
+    const active=product?.classList.contains('abierto');
+    host.toggleAttribute('product-open',!!active);
+    if(!active||!price||!productFooter)return;
+    const amount=price.getBoundingClientRect(),footer=productFooter.getBoundingClientRect();
+    host.style.setProperty('--product-face-x',Math.max(8,Math.min(innerWidth-76,amount.left+amount.width/2-34))+'px');
+    host.style.setProperty('--product-face-y',Math.max(8,footer.top-84)+'px');
+  }
+  if(product&&price&&productFooter){
+    new MutationObserver(placeProductFace).observe(product,{attributes:true,attributeFilter:['class']});
+    const geometry=new ResizeObserver(placeProductFace);
+    geometry.observe(productFooter);geometry.observe(price);
+    window.addEventListener('resize',placeProductFace);
+    placeProductFace();
+  }
   const launcherReady=import(faceModuleURL).then(({createAgoFace})=>{launcherFace=createAgoFace(button.querySelector('canvas'));});
   Promise.all([import(sharingModuleURL),import(configURL)]).then(([{installContactSharing}])=>installContactSharing());
 })();

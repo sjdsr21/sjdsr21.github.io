@@ -51,6 +51,7 @@ function startTyping(record){
 }
 function say(text,user=false,animate=true,rememberBot=animate){
  const bubble=el('div',null,'burbuja'+(user?' usuario':'')),paragraph=el('p');
+ if(!user)bubble.append(el('div','Natas','burbuja__autor'));
  bubble.append(paragraph);$('#conversacion').append(bubble);
  if(!user&&rememberBot){
   const full=String(text??''),visible=el('span',null,'texto-progresivo');
@@ -196,7 +197,10 @@ $('#minimizar').onclick=()=>parent.postMessage({type:'ago-close'},location.origi
 window.addEventListener('keydown',e=>{if(embedded&&e.key==='Escape')parent.postMessage({type:'ago-close'},location.origin);});
 window.addEventListener('message',e=>{
  if(e.origin!==location.origin||e.source!==parent)return;
- if(e.data?.type==='ago-focus')$('#mensaje').focus();
+ if(e.data?.type==='ago-focus'){
+  if(e.data.input&&matchMedia('(min-width:500px)').matches)$('#mensaje').focus();
+  else $('.chat__titulo').focus({preventScroll:true});
+ }
  if(e.data?.type==='ago-visibility'){
   const opening=!chatVisible&&e.data.visible===true;
   chatVisible=e.data.visible===true;
@@ -245,5 +249,5 @@ restoreConversation(readConversation());ready=true;
 $('#mensaje').disabled=!data;
 if(!data)say('No pudimos cargar la información del taller. Intenta recargar el chat.',false,false);
 $('#enviar').disabled=!data;
-if(chatVisible)$('#mensaje').focus();
+if(chatVisible&&matchMedia('(min-width:500px)').matches)$('#mensaje').focus();
 installContactSharing(contactState);

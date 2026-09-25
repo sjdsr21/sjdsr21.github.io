@@ -102,7 +102,10 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:1px solid var
 /* Título compacto: deja el rostro centrado y el cierre en su esquina. */
 .chat{position:relative}
 .chat__dialogo{grid-template-rows:minmax(0,1fr)}
-.chat__titulo{position:absolute;top:17px;left:16px;margin:0;padding:0;font-size:14px;font-weight:400;color:var(--apagado)}
+.chat__titulo{position:absolute;top:17px;left:16px;margin:0;padding:0;font-size:20px;line-height:20px;font-weight:700;color:#fff}
+.chat__titulo:focus{outline:none}
+.chat__subtitulo{display:block;margin-top:3px;font-size:11px;line-height:12px;font-weight:400;color:var(--apagado)}
+.burbuja__autor{margin-bottom:5px;font-size:12px;font-weight:700;color:var(--acento-texto)}
 #conversacion{grid-row:1}
 @media(max-width:499px){
  .chat__dialogo{grid-template-rows:minmax(0,1fr)}
@@ -125,6 +128,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:1px solid var
 @media(max-width:499px){
  .chat__contacto{top:calc(50% + 25px);left:auto;right:calc(100% + 10px);width:clamp(76px,calc((100vw - 104px)/2 - 26px),124px);margin-top:0;transform:translateY(-50%)}
  #contactar-idea{padding:7px 0;font-size:11px;line-height:1.35}
+ .contacto__detalle{display:none}
  .chat.con-contacto{grid-template-rows:140px minmax(0,1fr) auto}
  :root:not(.embedded) .chat__rostro{grid-column:1/-1;justify-self:center;margin-left:0}
 }

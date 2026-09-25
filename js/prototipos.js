@@ -2016,6 +2016,8 @@
   $("#pt-pn-cerrar").addEventListener("click", cerrarPanel);
   $("#pt-velo").addEventListener("click", cerrarPanel);
   document.addEventListener("keydown", function (e) {
+    /* El asistente es una capa propia; no cerrar ni navegar la pieza desde él. */
+    if (e.composedPath().some(function (node) { return node.id === "ago-chat-widget"; })) return;
     if (e.key === "Escape") { cerrarPanel(); return; }
 
     /* TRAMPA DE FOCO. Con el panel abierto, el tabulador da la
