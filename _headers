@@ -3,7 +3,18 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
   Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://gpt-vault-asistente-ago.sjdesousar.workers.dev https://record-apilar.sjdesousar.workers.dev; frame-src 'self'; frame-ancestors 'self'; object-src 'none'; base-uri 'self'; form-action 'self' https://wa.me https://api.whatsapp.com
-  Cache-Control: public, max-age=0, must-revalidate
+/
+  Cache-Control: no-cache
+/:page
+  Cache-Control: no-cache
+/js/*
+  Cache-Control: no-cache
+/css/*
+  Cache-Control: no-cache
+/datos/*
+  Cache-Control: no-cache
+/asistente/*
+  Cache-Control: no-cache
 /img/*
   Cache-Control: public, max-age=86400
 /video/*
@@ -12,3 +23,7 @@
   Cache-Control: public, max-age=86400
 /fuentes/*
   Cache-Control: public, max-age=604800
+https://prototipo-ago.pages.dev/*
+  X-Robots-Tag: noindex
+https://:version.prototipo-ago.pages.dev/*
+  X-Robots-Tag: noindex
