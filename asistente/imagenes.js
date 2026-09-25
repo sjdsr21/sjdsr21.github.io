@@ -1,16 +1,1 @@
-export async function prepareImage(file){
- if(!file||!['image/jpeg','image/png','image/webp'].includes(file.type))throw Error('Elige una imagen JPG, PNG o WebP.');
- if(file.size>10*1024*1024)throw Error('La imagen debe pesar menos de 10 MB.');
- const bitmap=await createImageBitmap(file),scale=Math.min(1,1200/Math.max(bitmap.width,bitmap.height));
- const canvas=document.createElement('canvas');canvas.width=Math.max(1,Math.round(bitmap.width*scale));canvas.height=Math.max(1,Math.round(bitmap.height*scale));
- const context=canvas.getContext('2d');context.fillStyle='#fff';context.fillRect(0,0,canvas.width,canvas.height);context.drawImage(bitmap,0,0,canvas.width,canvas.height);bitmap.close();
- let url=canvas.toDataURL('image/jpeg',.8);
- if(url.length>700000)url=canvas.toDataURL('image/jpeg',.5);
- if(url.length>700000)throw Error('La imagen es demasiado compleja. Recórtala e inténtalo de nuevo.');
- return {name:file.name.slice(0,120),url};
-}
-export function validImageURL(value){
- if(typeof value!=='string'||value.length>700000)return false;
- if(!/^data:image\/jpeg;base64,\/9j\/[A-Za-z0-9+/]*={0,2}$/.test(value))return false;
- try{const bytes=atob(value.split(',')[1]);return bytes.length>10&&bytes.charCodeAt(0)===255&&bytes.charCodeAt(1)===216&&bytes.charCodeAt(2)===255&&bytes.charCodeAt(bytes.length-2)===255&&bytes.charCodeAt(bytes.length-1)===217;}catch{return false;}
-}
+export async function prepareImage(t){if(!t||!["image/jpeg","image/png","image/webp"].includes(t.type))throw Error("Elige una imagen JPG, PNG o WebP.");if(t.size>10*1024*1024)throw Error("La imagen debe pesar menos de 10 MB.");const e=await createImageBitmap(t),i=Math.min(1,1200/Math.max(e.width,e.height)),a=document.createElement("canvas");a.width=Math.max(1,Math.round(e.width*i)),a.height=Math.max(1,Math.round(e.height*i));const r=a.getContext("2d");r.fillStyle="#fff",r.fillRect(0,0,a.width,a.height),r.drawImage(e,0,0,a.width,a.height),e.close();let n=a.toDataURL("image/jpeg",.8);if(n.length>7e5&&(n=a.toDataURL("image/jpeg",.5)),n.length>7e5)throw Error("La imagen es demasiado compleja. Rec\xF3rtala e int\xE9ntalo de nuevo.");return{name:t.name.slice(0,120),url:n}}export function validImageURL(t){if(typeof t!="string"||t.length>7e5||!/^data:image\/jpeg;base64,\/9j\/[A-Za-z0-9+/]*={0,2}$/.test(t))return!1;try{const e=atob(t.split(",")[1]);return e.length>10&&e.charCodeAt(0)===255&&e.charCodeAt(1)===216&&e.charCodeAt(2)===255&&e.charCodeAt(e.length-2)===255&&e.charCodeAt(e.length-1)===217}catch{return!1}}

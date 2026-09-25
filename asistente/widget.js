@@ -1,11 +1,4 @@
-(() => {
-  if (document.getElementById('ago-chat-widget')) return;
-  const host=document.createElement('div');host.id='ago-chat-widget';
-  const root=host.attachShadow({mode:'open'});
-  const faceModuleURL=new URL('rostro.js',document.currentScript.src).href;
-  const sharingModuleURL=new URL('contacto.js',document.currentScript.src).href;
-  const configURL=new URL('config.js',document.currentScript.src).href;
-  root.innerHTML=`<style>
+(()=>{if(document.getElementById("ago-chat-widget"))return;const r=document.createElement("div");r.id="ago-chat-widget";const d=r.attachShadow({mode:"open"}),y=new URL("rostro.js",document.currentScript.src).href,A=new URL("contacto.js",document.currentScript.src).href,E=new URL("config.js",document.currentScript.src).href;d.innerHTML=`<style>
     :host{position:fixed;right:calc(max(0px, (100vw - var(--ancho,1240px)) / 2) + var(--canal,56px));bottom:max(14px,env(safe-area-inset-bottom));z-index:190;pointer-events:none}
     *{box-sizing:border-box}.launch{display:grid;place-items:center;border:0;background:transparent;box-shadow:none;border-radius:0;width:68px;height:80px;padding:4px;cursor:pointer;pointer-events:auto}.launch:focus-visible{outline:2px solid var(--barra-tinta);outline-offset:3px}.launch canvas{display:block;width:60px;height:72px;pointer-events:none;background:transparent}
     .launch.away{visibility:hidden;pointer-events:none}
@@ -15,75 +8,4 @@
     .panel.open{opacity:1;transform:translateX(0);visibility:visible;pointer-events:auto;transition-delay:0s}iframe{color-scheme:dark;display:block;width:100%;height:100%;border:0}
     @media(max-width:780px){:host{right:14px;bottom:max(14px,env(safe-area-inset-bottom))}.launch canvas{filter:var(--rostro-mini-sombra,drop-shadow(0 0 2px rgba(0,0,0,.95)) drop-shadow(0 0 8px rgba(0,0,0,.85)))}.panel{bottom:0;width:min(380px,calc(100vw - 28px));height:min(648px,calc(100dvh - 28px - env(safe-area-inset-top) - env(safe-area-inset-bottom)))}}
     @media(prefers-reduced-motion:reduce){.launch,.panel{transition:none}.panel{transform:none}}
-  </style><section class="panel" id="chatbot-panel" aria-label="Chatbot" inert><iframe title="Chatbot"></iframe></section><button class="launch" type="button" aria-label="Abrir chatbot" aria-expanded="false" aria-controls="chatbot-panel" title="Chatbot"><canvas width="60" height="72" aria-hidden="true"></canvas></button>`;
-  const button=root.querySelector('button'),panel=root.querySelector('.panel'),frame=root.querySelector('iframe');
-  const reduced=matchMedia('(prefers-reduced-motion: reduce)');
-  let opened=false,opener=null,launcherFace=null,generation=0,readyPromise=null,resolveReady=null;
-  function language(){
-    const lang=document.documentElement.lang==='en'?'en':'es';
-    frame.contentWindow?.postMessage({type:'chatbot-language',language:lang},location.origin);
-    button.title='Anorak';button.setAttribute('aria-label',lang==='en'?(opened?'Close chatbot':'Open chatbot'):(opened?'Cerrar chatbot':'Abrir chatbot'));
-    frame.title=lang==='en'?'Anorak · AI assistant':'Anorak · Asistente IA';
-  }
-  window.addEventListener('idioma-cambiado',language);
-  function theme(){
-    language();
-    const values={'--papel':'#000000','--tinta':'#FFFFFF','--apagado':'#A0A0A0','--linea':'#2E2E2E','--acento-texto':'#D07847'};
-    values['--rostro-pupila']='#ff9828';
-    const styles=getComputedStyle(document.documentElement);
-    values['--tinta']=styles.getPropertyValue('--blanco').trim()||'#FFFFFF';
-    for(const name of ['--curva','--curva-suave'])values[name]=styles.getPropertyValue(name).trim();
-    frame.contentWindow?.postMessage({type:'chatbot-theme',values},location.origin);
-  }
-  function visibility(visible,teleport=false){frame.contentWindow?.postMessage({type:'ago-visibility',visible,teleport,phase:launcherFace?.getPhase()},location.origin);}
-  function loadFrame(){
-    if(!readyPromise){readyPromise=new Promise(resolve=>{resolveReady=resolve;});frame.src='asistente.html?lang='+encodeURIComponent(document.documentElement.lang==='en'?'en':'es');}
-    return readyPromise;
-  }
-  async function toggle(open,restoreFocus=true){
-    if(open===opened)return;
-    if(open)opener=document.activeElement===host?button:document.activeElement;
-    const current=++generation;opened=open;
-    button.setAttribute('aria-expanded',String(open));
-    button.setAttribute('aria-label',open?'Cerrar chatbot':'Abrir chatbot');
-    if(open){
-      const loaded=loadFrame();
-      await launcherReady;
-      if(current!==generation)return;
-      await launcherFace?.teleport(false);
-      if(current!==generation)return;
-      button.classList.add('away');button.inert=true;button.setAttribute('aria-hidden','true');
-      await loaded;
-      if(current!==generation)return;
-      theme();panel.inert=false;panel.classList.add('open');visibility(true,true);
-      frame.contentWindow.postMessage({type:'ago-focus',input:matchMedia('(min-width:781px)').matches},location.origin);
-    }else{
-      visibility(false);panel.inert=true;panel.classList.remove('open');
-      if(!reduced.matches)await new Promise(resolve=>setTimeout(resolve,280));
-      if(current!==generation)return;
-      button.classList.remove('away');button.inert=false;button.removeAttribute('aria-hidden');
-      await launcherReady;
-      if(current!==generation)return;
-      launcherFace?.teleport(true);
-      if(restoreFocus)(opener?.isConnected?opener:button).focus();
-    }
-  }
-  button.onclick=()=>toggle(!opened);
-  frame.onload=()=>{theme();visibility(false);resolveReady?.();};
-  window.addEventListener('chatbot-open',()=>toggle(true));
-  window.addEventListener('message',e=>{if(e.origin===location.origin&&e.source===frame.contentWindow&&e.data?.type==='ago-close')toggle(false);});
-  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&opened)toggle(false);});
-  // Captura antes de los enlaces que abren el chat; sus clics no lo cierran de inmediato.
-  document.addEventListener('click',e=>{if(opened&&!e.composedPath().includes(host))toggle(false,false);},true);
-  new MutationObserver(theme).observe(document.documentElement,{attributes:true,attributeFilter:['data-tema','class','style']});
-  document.body.append(host);
-  // La miniatura no se superpone a una ficha abierta en ningún tamaño.
-  const product=document.getElementById('pt-panel');
-  if(product){
-    const syncProduct=()=>host.toggleAttribute('product-open',product.classList.contains('abierto'));
-    new MutationObserver(syncProduct).observe(product,{attributes:true,attributeFilter:['class']});
-    syncProduct();
-  }
-  const launcherReady=import(faceModuleURL).then(({createAgoFace})=>{launcherFace=createAgoFace(button.querySelector('canvas'));});
-  Promise.all([import(sharingModuleURL),import(configURL)]).then(([{installContactSharing}])=>installContactSharing());
-})();
+  </style><section class="panel" id="chatbot-panel" aria-label="Chatbot" inert><iframe title="Chatbot"></iframe></section><button class="launch" type="button" aria-label="Abrir chatbot" aria-expanded="false" aria-controls="chatbot-panel" title="Chatbot"><canvas width="60" height="72" aria-hidden="true"></canvas></button>`;const t=d.querySelector("button"),u=d.querySelector(".panel"),n=d.querySelector("iframe"),L=matchMedia("(prefers-reduced-motion: reduce)");let o=!1,p=null,s=null,c=0,b=null,v=null;function w(){const e=document.documentElement.lang==="en"?"en":"es";n.contentWindow?.postMessage({type:"chatbot-language",language:e},location.origin),t.title="Anorak",t.setAttribute("aria-label",e==="en"?o?"Close chatbot":"Open chatbot":o?"Cerrar chatbot":"Abrir chatbot"),n.title=e==="en"?"Anorak \xB7 AI assistant":"Anorak \xB7 Asistente IA"}window.addEventListener("idioma-cambiado",w);function m(){w();const e={"--papel":"#000000","--tinta":"#FFFFFF","--apagado":"#A0A0A0","--linea":"#2E2E2E","--acento-texto":"#D07847"};e["--rostro-pupila"]="#ff9828";const a=getComputedStyle(document.documentElement);e["--tinta"]=a.getPropertyValue("--blanco").trim()||"#FFFFFF";for(const i of["--curva","--curva-suave"])e[i]=a.getPropertyValue(i).trim();n.contentWindow?.postMessage({type:"chatbot-theme",values:e},location.origin)}function h(e,a=!1){n.contentWindow?.postMessage({type:"ago-visibility",visible:e,teleport:a,phase:s?.getPhase()},location.origin)}function k(){return b||(b=new Promise(e=>{v=e}),n.src="asistente.html?lang="+encodeURIComponent(document.documentElement.lang==="en"?"en":"es")),b}async function l(e,a=!0){if(e===o)return;e&&(p=document.activeElement===r?t:document.activeElement);const i=++c;if(o=e,t.setAttribute("aria-expanded",String(e)),t.setAttribute("aria-label",e?"Cerrar chatbot":"Abrir chatbot"),e){const g=k();if(await x,i!==c||(await s?.teleport(!1),i!==c)||(t.classList.add("away"),t.inert=!0,t.setAttribute("aria-hidden","true"),await g,i!==c))return;m(),u.inert=!1,u.classList.add("open"),h(!0,!0),n.contentWindow.postMessage({type:"ago-focus",input:matchMedia("(min-width:781px)").matches},location.origin)}else{if(h(!1),u.inert=!0,u.classList.remove("open"),L.matches||await new Promise(g=>setTimeout(g,280)),i!==c||(t.classList.remove("away"),t.inert=!1,t.removeAttribute("aria-hidden"),await x,i!==c))return;s?.teleport(!0),a&&(p?.isConnected?p:t).focus()}}t.onclick=()=>l(!o),n.onload=()=>{m(),h(!1),v?.()},window.addEventListener("chatbot-open",()=>l(!0)),window.addEventListener("message",e=>{e.origin===location.origin&&e.source===n.contentWindow&&e.data?.type==="ago-close"&&l(!1)}),document.addEventListener("keydown",e=>{e.key==="Escape"&&o&&l(!1)}),document.addEventListener("click",e=>{o&&!e.composedPath().includes(r)&&l(!1,!1)},!0),new MutationObserver(m).observe(document.documentElement,{attributes:!0,attributeFilter:["data-tema","class","style"]}),document.body.append(r);const f=document.getElementById("pt-panel");if(f){const e=()=>{const a=f.classList.contains("abierto");r.toggleAttribute("product-open",a),o||s?.setVisible(!a)};new MutationObserver(e).observe(f,{attributes:!0,attributeFilter:["class"]}),e()}const x=import(y).then(({createAgoFace:e})=>{s=e(t.querySelector("canvas")),s.setVisible(!r.hasAttribute("product-open"))});Promise.all([import(A),import(E)]).then(([{installContactSharing:e}])=>e())})();

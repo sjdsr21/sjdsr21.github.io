@@ -1,0 +1,14 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://gpt-vault-asistente-ago.sjdesousar.workers.dev https://record-apilar.sjdesousar.workers.dev; frame-src 'self'; frame-ancestors 'self'; object-src 'none'; base-uri 'self'; form-action 'self' https://wa.me https://api.whatsapp.com
+  Cache-Control: public, max-age=0, must-revalidate
+/img/*
+  Cache-Control: public, max-age=86400
+/video/*
+  Cache-Control: public, max-age=86400
+/modelos/*
+  Cache-Control: public, max-age=86400
+/fuentes/*
+  Cache-Control: public, max-age=604800

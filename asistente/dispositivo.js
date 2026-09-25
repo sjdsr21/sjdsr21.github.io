@@ -1,10 +1,1 @@
-// Anónimo y separado de la conversación: borrar el chat no reinicia el cupo.
-let deviceId;
-export function getDeviceId(){
- if(deviceId)return deviceId;
- try{deviceId=localStorage.getItem('ago-chat-device-v1');}catch{}
- if(!/^[a-f0-9-]{36}$/i.test(deviceId||'')){
-  deviceId=crypto.randomUUID();try{localStorage.setItem('ago-chat-device-v1',deviceId);}catch{}
- }
- return deviceId;
-}
+let t;export function getDeviceId(){if(t)return t;try{t=localStorage.getItem("ago-chat-device-v1")}catch{}if(!/^[a-f0-9-]{36}$/i.test(t||"")){t=crypto.randomUUID();try{localStorage.setItem("ago-chat-device-v1",t)}catch{}}return t}let n,c;export async function getSessionToken(s,a,l=!1){if(n)return n;const r="ago-chat-session-v1";let e=c;try{e=localStorage.getItem(r)||e}catch{}if(!l&&e&&Number(e.split(".")[2])>Date.now()+864e5)return e;n=(async()=>{const i=await fetch(s.replace(/\/chat\/?$/,"/session"),{method:"POST",headers:{"Content-Type":"application/json"},signal:a?AbortSignal.any([a,AbortSignal.timeout(1e4)]):AbortSignal.timeout(1e4),body:JSON.stringify({token:e})}),o=await i.json();if(!i.ok||!o.token)throw Error(o.error||"No se pudo iniciar la sesi\xF3n del asistente.");c=o.token;try{localStorage.setItem(r,o.token)}catch{}return o.token})();try{return await n}finally{n=null}}
