@@ -32,10 +32,6 @@ window.MARCA = {
      Con null, el juego enseña solo el récord personal. */
   apilar_api: "https://record-apilar.sjdesousar.workers.dev/",
 
-  /* BUZÓN ANÓNIMO (él, 17/09/2026): el Worker de Cloudflare que recibe
-     los mensajes. Vacío = modo prueba: la ventana hace como que envía,
-     pero no sale nada de la computadora. */
-  buzon_api: "https://buzon-anonimo.sjdesousar.workers.dev/enviar",
 
   /* Mensaje con el que se abre WhatsApp desde una ficha.
      {pieza} se reemplaza por el nombre de lo que estaba viendo. */
@@ -53,27 +49,28 @@ window.MARCA = {
      Sale en TODAS las fichas de la tienda. Se escribe una vez
      aquí y cambia en todas partes.
 
-     OJO CON LA GARANTÍA: ese texto es un borrador mío. Es un
-     compromiso tuyo con el cliente, así que léelo y cámbialo
-     antes de publicar el sitio. No me lo inventé de la nada,
-     pero tampoco me lo dijiste tú.
+     LA GARANTÍA: la redactó Claude y él la APROBÓ tal cual el
+     21/09/2026. Es un compromiso suyo con el cliente: no se
+     cambia sin preguntarle.
      ============================================================ */
   politicas: {
     entrega: {
-      es: "Entrega y montaje dentro de Caracas: $25. Fuera de Caracas se cotiza aparte según la distancia.",
-      en: "Delivery and mounting within Caracas: $25. Outside Caracas quoted separately by distance."
+      /* 21/09/2026 (él): el delivery depende del tamaño. Pieza
+         pequeña $4–15; pieza grande $20–30, y ahí entran los $25 de
+         entrega y montaje. */
+      es: "Delivery en Caracas: de $4 a $15 si la pieza es pequeña, y de $20 a $30 si es grande, con el montaje incluido. Fuera de Caracas se cotiza aparte según la distancia.",
+      en: "Delivery in Caracas: $4 to $15 for a small piece, and $20 to $30 for a large one, mounting included. Outside Caracas quoted separately by distance."
     },
     garantia: {
       es: "Si algo falla por mi trabajo —una unión que cede, un acabado que se levanta— lo reparo o lo repongo sin costo. No cubre el desgaste normal ni los daños por golpes o humedad.",
       en: "If something fails because of my work — a joint that gives, a finish that lifts — I repair or replace it at no cost. It doesn't cover normal wear, knocks or moisture damage."
     },
-    /* CORREGIDO 2026-08-11. Antes decía "se cobra a la tasa BCV
-       del día del pago", que es justo la regla que NO se usa:
-       convertir directo a BCV regala ~20% de cada venta. Lo que
-       se cobra es REF × BCV. Ver datos/envios.js. */
+    /* 21/09/2026 (él): se cobra dólar × tasa BCV, sin REF. Es la
+       regla del 18/09 que ya usa el carrito (ver datos/envios.js);
+       esta línea se había quedado con la del 11/08 (REF × BCV). */
     bolivares: {
-      es: "Los precios están en dólares. En bolívares se cobra en REF a la tasa BCV del día del pago, y la cotización vale 7 días.",
-      en: "Prices are in US dollars. Bolívar payments are charged in REF at the BCV rate on the day of payment; quotes hold for 7 days."
+      es: "Los precios están en dólares. Si pagas en bolívares, se cobra el monto en dólares a la tasa BCV del día del pago, y la cotización vale 7 días.",
+      en: "Prices are in US dollars. If you pay in bolívares, the dollar amount is charged at the BCV rate on the day of payment; quotes hold for 7 days."
     }
   }
 };

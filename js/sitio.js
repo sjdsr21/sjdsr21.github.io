@@ -13,14 +13,10 @@
   /* Se aplica ANTES que nada, en la primera linea util del script:
      si se esperara a pintar, quien tenga guardado el modo claro
      veria un fogonazo negro en cada carga. */
-  /* 16/09/2026 (él): SIN botón de automático. Por defecto la página
-     sigue el modo del sistema («auto»). Si el visitante elige oscuro o
-     claro, se recuerda UNA SEMANA y luego vuelve a seguir al sistema.
-     Se guarda como {"tema":…,"hasta":ms}. Un valor viejo sin fecha (de
-     antes de este cambio) se descarta y la página arranca en auto. */
+  /* Oscuro por defecto; una elección manual se conserva durante siete días. */
   var TEMAS = ["oscuro", "claro"];
   var TEMA_VIDA = 7 * 24 * 60 * 60 * 1000;
-  var tema = "auto";
+  var tema = "oscuro";
   try {
     var guardadoTema = JSON.parse(localStorage.getItem("tema") || "null");
     if (guardadoTema && TEMAS.indexOf(guardadoTema.tema) > -1 && guardadoTema.hasta > Date.now()) {
@@ -32,20 +28,10 @@
     try { localStorage.removeItem("tema"); } catch (e2) {}
   }
 
-  var consultaOscuro = window.matchMedia("(prefers-color-scheme: dark)");
-  /* En auto, si el sistema cambia de modo mientras la pagina esta
-     abierta, la pagina cambia con el. */
-  if (consultaOscuro.addEventListener) {
-    consultaOscuro.addEventListener("change", function () {
-      if (tema === "auto") { aplicarTema(); marcarTema(); }
-    });
-  }
-
   aplicarTema();
 
   function aplicarTema() {
-    var claro = (tema === "claro") ||
-                (tema === "auto" && !consultaOscuro.matches);
+    var claro = tema === "claro";
     if (claro) { document.documentElement.setAttribute("data-tema", "claro"); }
     else { document.documentElement.removeAttribute("data-tema"); }
     /* 06/09/2026 · Aviso para quien tenga IMÁGENES distintas por tema
@@ -57,12 +43,7 @@
     } catch (e) { /* navegador viejo: se queda la imagen que hubiera */ }
   }
 
-  /* El modo que SE VE: en auto, el del sistema. Es el que sale
-     marcado en los botones. */
-  function temaVisible() {
-    if (tema !== "auto") return tema;
-    return consultaOscuro.matches ? "oscuro" : "claro";
-  }
+  function temaVisible() { return tema; }
   function marcarTema() {
     var bs = document.querySelectorAll(".tema button");
     for (var i = 0; i < bs.length; i++) {
@@ -550,8 +531,6 @@
     globoRedondo: '<svg viewBox="0 0 24 24" aria-hidden="true" class="icono-linea"><path d="M6.5 3.5H19.5A1.5 1.5 0 0 1 21 5V17.3A1.5 1.5 0 0 1 19.5 18.8H9.7L2.5 21.5L5 15.5V5A1.5 1.5 0 0 1 6.5 3.5Z"/><circle class="globo__punto" cx="21" cy="3.5" r="4.6"/></svg>',
     /* Flecha curva hacia atrás: cierra la foto a pantalla completa. */
     volver:   '<svg viewBox="0 0 24 24" aria-hidden="true" class="icono-linea"><path d="M9 14 4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11"/></svg>',
-    /* Buzón de correo con su banderita (17/09/2026), de líneas como el sobre. */
-    buzon:    '<svg viewBox="0 0 24 24" aria-hidden="true" class="icono-linea"><path d="M7 8h10a4 4 0 0 1 4 4v6H3v-6a4 4 0 0 1 4-4z"/><path d="M7 8a4 4 0 0 1 4 4v6"/><path d="M15 12V4h3.5v2.6H15"/><path d="M14 18v3"/></svg>',
     instagram:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.02 4.85.07 3.25.15 4.77 1.7 4.92 4.92.05 1.27.07 1.65.07 4.85s-.02 3.58-.07 4.85c-.15 3.23-1.67 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92C2.18 15.58 2.16 15.2 2.16 12s.02-3.58.07-4.85c.15-3.23 1.67-4.77 4.92-4.92C8.42 2.18 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 2.7.27.28 2.69.08 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95C23.73 2.7 21.31.28 16.95.08 15.67.01 15.26 0 12 0m0 5.84a6.16 6.16 0 100 12.32 6.16 6.16 0 000-12.32M12 16a4 4 0 110-8 4 4 0 010 8m6.41-11.85a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88"/></svg>',
     lupa:     '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.4 15.4 21 21" stroke-linecap="round"/></svg>',
     /* La bolsa del pedido (él, 16/09/2026): va en la cabecera, a la
@@ -574,10 +553,10 @@
        dibuja cada sistema a su manera —en Windows sale de color y
        más grande que la línea— mientras que un trazo heredado con
        currentColor se ve igual en todas partes y sigue al tema. */
-    sol:  '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.4"/>' +
-          '<path d="M12 1.8v2.6M12 19.6v2.6M22.2 12h-2.6M4.4 12H1.8' +
-          'M19.2 4.8l-1.85 1.85M6.65 17.35 4.8 19.2M19.2 19.2l-1.85-1.85M6.65 6.65 4.8 4.8" stroke-linecap="round"/></svg>',
-    luna: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.9A9 9 0 119.1 3.5a7.2 7.2 0 0011.4 11.4z" stroke-linejoin="round"/></svg>',
+    sol:  '<svg class="tema__astro tema__sol" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5.5"/>' +
+          '<path d="M11.3 1.8h1.4v3.8h-1.4zM11.3 18.4h1.4v3.8h-1.4zM1.8 11.3h3.8v1.4H1.8zM18.4 11.3h3.8v1.4h-3.8z"/>' +
+          '<path transform="rotate(45 12 12)" d="M11.3 1.8h1.4v3.8h-1.4zM11.3 18.4h1.4v3.8h-1.4zM1.8 11.3h3.8v1.4H1.8zM18.4 11.3h3.8v1.4h-3.8z"/></svg>',
+    luna: '<svg class="tema__astro tema__luna" viewBox="0 0 24 24" aria-hidden="true"><path transform="translate(1.2 1.2) scale(.9)" d="M15.7 2.7A10 10 0 1 1 2.7 15.7A9.5 9.5 0 0 0 15.7 2.7Z"/></svg>',
     /* 2026-09-16 · El sol y la luna del conmutador pasaron a ser dos
        animales (él): un LOBO aullando para el oscuro y la cabeza de un
        GALLO para el claro. Son siluetas rellenas, del cuello hacia
@@ -1128,92 +1107,6 @@
     focoAntesDelPedido = null;
   }
 
-  /* ---------- buzón anónimo -------------------------------
-     17/09/2026 · La ventana que abre el buzón del ☰. Un <dialog>
-     nativo: Esc lo cierra y el foco se queda dentro solo. Se arma de
-     nuevo en cada apertura, así sale siempre en el idioma de ahora.
-     El mensaje va a MARCA.buzon_api (un Worker de Cloudflare) y solo
-     lleva el texto y el idioma: ni nombre, ni correo, ni nada del
-     navegador. El campo «sitio» está escondido: una persona no lo ve
-     ni lo llena, un robot sí, y el Worker descarta esos. */
-  var BUZON_MAX = 2000;
-  function abrirBuzon() {
-    var viejo = $(".buzon");
-    if (viejo) viejo.remove();
-
-    var campo = el("textarea", { class: "buzon__campo", id: "buzon-campo", rows: "6",
-      maxlength: String(BUZON_MAX), required: "" });
-    var cuenta = el("span", { class: "buzon__cuenta", texto: "0 / " + BUZON_MAX });
-    var trampa = el("input", { class: "buzon__trampa", type: "text", name: "sitio",
-      tabindex: "-1", autocomplete: "off", "aria-hidden": "true" });
-    var aviso = el("p", { class: "buzon__aviso", role: "status" });
-    var enviar = el("button", { class: "boton buzon__enviar", type: "submit", texto: t("buzon_enviar") });
-    var cerrar = el("button", { class: "buzon__cerrar", type: "button",
-      "aria-label": t("pedido_cerrar"), html: "&times;" });
-
-    var form = el("form", { class: "buzon__form", novalidate: "" }, [
-      el("label", { class: "solo-lectores", for: "buzon-campo", texto: t("buzon_campo") }),
-      campo, trampa,
-      el("div", { class: "buzon__fila" }, [cuenta, enviar]),
-      aviso
-    ]);
-    var caja = el("dialog", { class: "buzon", "aria-labelledby": "buzon-titulo" }, [
-      el("div", { class: "buzon__arriba" }, [
-        el("span", { class: "buzon__icono", html: ICONOS.buzon }),
-        cerrar
-      ]),
-      el("h2", { class: "buzon__titulo", id: "buzon-titulo", texto: t("buzon_titulo") }),
-      el("p", { class: "buzon__bajada", texto: t("buzon_bajada") }),
-      form
-    ]);
-
-    campo.setAttribute("placeholder", t("buzon_campo"));
-    campo.addEventListener("input", function () {
-      cuenta.textContent = campo.value.length + " / " + BUZON_MAX;
-      aviso.textContent = "";
-    });
-    cerrar.addEventListener("click", function () { caja.close(); });
-    /* Tocar fuera de la caja (en el velo) también la cierra. */
-    caja.addEventListener("click", function (e) { if (e.target === caja) caja.close(); });
-    caja.addEventListener("close", function () { caja.remove(); });
-
-    function listo() {
-      form.replaceWith(el("div", { class: "buzon__listo" }, [
-        el("p", { texto: t("buzon_listo") }),
-        (function () {
-          var b = el("button", { class: "boton", type: "button", texto: t("buzon_otro") });
-          b.addEventListener("click", abrirBuzon);
-          return b;
-        })()
-      ]));
-    }
-
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      var texto = campo.value.trim();
-      if (!texto) { aviso.textContent = t("buzon_vacio"); campo.focus(); return; }
-      if (trampa.value) { listo(); return; }   /* robot: se le dice que sí y no se manda */
-      enviar.disabled = true;
-      enviar.textContent = t("buzon_enviando");
-      var api = (window.MARCA || {}).buzon_api;
-      var envio = api
-        ? fetch(api, { method: "POST", headers: { "content-type": "application/json" },
-                       body: JSON.stringify({ mensaje: texto, idioma: idioma, sitio: trampa.value }) })
-            .then(function (r) { if (!r.ok) throw new Error(r.status); })
-        : new Promise(function (ok) { console.info("[buzón] modo prueba, no se envió:", texto); setTimeout(ok, 600); });
-      envio.then(listo, function () {
-        enviar.disabled = false;
-        enviar.textContent = t("buzon_enviar");
-        aviso.textContent = t("buzon_error");
-      });
-    });
-
-    document.body.appendChild(caja);
-    caja.showModal();
-    sobreElTeclado(caja);
-    campo.focus();
-  }
-
   /* ---------- precarga de las fotos del catálogo -----------
      18/09/2026 (él): todas las fotos de las cuadrículas —no solo la que
      se ve de cada tarjeta— se van bajando solas, de a tres, en segundo
@@ -1324,169 +1217,6 @@
     if (!img || e.target !== img) return;
     abrirFotoGrande(img.currentSrc || img.getAttribute("src"), img.getAttribute("alt"));
   });
-
-  /* ---------- el lector del buzón (solo él) ----------------
-     17/09/2026 · Se abre con los diez toques del pie. Pide la clave y,
-     si el Worker la acepta, enseña los mensajes con sus botones de
-     leído y borrar.
-
-     LA CLAVE NO ESTÁ AQUÍ: vive en una variable del Worker, en
-     Cloudflare. Esta página solo la manda a comprobar en cada
-     petición, dentro de la cabecera `x-clave`, y la guarda mientras
-     dure la ventana (en memoria, no en el disco del navegador). El
-     Worker frena los intentos seguidos desde la misma conexión. */
-  function apiBuzon() {
-    var u = (window.MARCA || {}).buzon_api || "";
-    return u.replace(/\/enviar$/, "");
-  }
-
-  /* EL AVISO DE NUEVOS (él, 17/09/2026): si este navegador ya entró al
-     lector alguna vez, guarda una ficha (no la clave) y con ella pregunta
-     al Worker cuántos mensajes sin leer hay. Si hay alguno, «prototipo
-     ago» del pie se pinta de acento. En cualquier otro navegador no hay
-     ficha, no se pregunta nada y el pie se ve como siempre. */
-  var FICHA_CLAVE = "pa-buzon-ficha";
-  function leerFicha() { try { return localStorage.getItem(FICHA_CLAVE) || ""; } catch (e) { return ""; } }
-  function guardarFicha(f) { try { localStorage.setItem(FICHA_CLAVE, f); } catch (e) {} }
-  function comprobarNuevos() {
-    var f = leerFicha();
-    if (!f || !apiBuzon()) return;
-    fetch(apiBuzon() + "/api/nuevos", { headers: { "x-ficha": f } })
-      .then(function (r) {
-        if (r.status === 403) { try { localStorage.removeItem(FICHA_CLAVE); } catch (e) {} return null; }
-        return r.ok ? r.json() : null;
-      })
-      .then(function (d) {
-        if (!d) return;
-        $$(".pie__marca").forEach(function (b) { b.classList.toggle("pie__marca--nuevos", d.nuevos > 0); });
-      }, function () {});
-  }
-
-  function abrirLector() {
-    if (!apiBuzon()) return;
-    var viejo = $(".lector"); if (viejo) viejo.remove();
-
-    var campo = el("input", { class: "buzon__campo lector__clave", type: "password",
-                              id: "lector-clave", autocomplete: "off" });
-    var aviso = el("p", { class: "buzon__aviso", role: "status" });
-    var entrar = el("button", { class: "boton", type: "submit", texto: t("lector_entrar") });
-    var cerrar = el("button", { class: "buzon__cerrar", type: "button",
-                                "aria-label": t("pedido_cerrar"), html: "&times;" });
-    var cuerpo = el("div", { class: "lector__cuerpo" });
-    var resumen = el("p", { class: "buzon__bajada" });
-
-    var puerta = el("form", { class: "buzon__form" }, [
-      el("label", { class: "solo-lectores", for: "lector-clave", texto: t("lector_clave") }),
-      campo,
-      el("div", { class: "buzon__fila" }, [el("span"), entrar]),
-      aviso
-    ]);
-
-    var caja = el("dialog", { class: "buzon lector", "aria-labelledby": "lector-titulo" }, [
-      el("div", { class: "buzon__arriba" }, [
-        el("span", { class: "buzon__icono", html: ICONOS.buzon }), cerrar
-      ]),
-      el("h2", { class: "buzon__titulo", id: "lector-titulo", texto: t("lector_titulo") }),
-      resumen, puerta, cuerpo
-    ]);
-    campo.setAttribute("placeholder", t("lector_clave"));
-    cerrar.addEventListener("click", function () { caja.close(); });
-    caja.addEventListener("click", function (e) { if (e.target === caja) caja.close(); });
-    caja.addEventListener("close", function () { caja.remove(); comprobarNuevos(); });
-
-    var clave = null;
-
-    function pedir(ruta, datos) {
-      return fetch(apiBuzon() + ruta, {
-        method: datos ? "POST" : "GET",
-        headers: datos ? { "content-type": "application/json", "x-clave": clave }
-                       : { "x-clave": clave },
-        body: datos ? JSON.stringify(datos) : undefined
-      });
-    }
-
-    function pintar(mensajes) {
-      cuerpo.innerHTML = "";
-      var nuevos = mensajes.filter(function (m) { return !m.leido; }).length;
-      resumen.textContent = t("lector_resumen")
-        .replace("{n}", mensajes.length).replace("{nuevos}", nuevos);
-      if (!mensajes.length) {
-        cuerpo.appendChild(el("p", { class: "lector__vacio", texto: t("lector_vacio") }));
-        return;
-      }
-      mensajes.forEach(function (m) {
-        var fecha = new Date(m.fecha).toLocaleString(idioma === "es" ? "es-VE" : "en-GB",
-          { dateStyle: "medium", timeStyle: "short" });
-        var bLeido = el("button", { class: "lector__accion", type: "button",
-          texto: m.leido ? t("lector_noleido") : t("lector_leido") });
-        bLeido.addEventListener("click", function () {
-          pedir("/api/leido", { id: m.id, leido: !m.leido }).then(function () {
-            m.leido = !m.leido; pintar(mensajes);
-          });
-        });
-        var bBorrar = el("button", { class: "lector__accion lector__accion--borrar",
-          type: "button", texto: t("lector_borrar") });
-        bBorrar.addEventListener("click", function () {
-          if (!window.confirm(t("lector_seguro"))) return;
-          pedir("/api/borrar", { id: m.id }).then(function () {
-            pintar(mensajes.filter(function (x) { return x !== m; }));
-          });
-        });
-        cuerpo.appendChild(el("article", { class: "lector__msg" + (m.leido ? "" : " lector__msg--nuevo") }, [
-          el("div", { class: "lector__fecha", texto: fecha + (m.idioma === "en" ? " · en inglés" : "") }),
-          el("p", { class: "lector__texto", texto: m.texto }),
-          el("div", { class: "lector__acciones" }, [bLeido, bBorrar])
-        ]));
-      });
-    }
-
-    puerta.addEventListener("submit", function (e) {
-      e.preventDefault();
-      clave = campo.value;
-      entrar.disabled = true;
-      pedir("/api/mensajes").then(function (r) {
-        entrar.disabled = false;
-        if (r.status === 429) { aviso.textContent = t("lector_espera"); return; }
-        if (!r.ok) { aviso.textContent = t("lector_mala"); campo.select(); return; }
-        return r.json().then(function (d) {
-          if (d.ficha) guardarFicha(d.ficha);
-          puerta.remove();
-          pintar(d.mensajes || []);
-        });
-      }, function () {
-        entrar.disabled = false;
-        aviso.textContent = t("lector_caido");
-      });
-    });
-
-    document.body.appendChild(caja);
-    caja.showModal();
-    sobreElTeclado(caja);
-    campo.focus();
-  }
-
-  /* LA VENTANA POR ENCIMA DEL TECLADO (él, 18/09/2026). En Chrome el
-     teclado encoge la página y la ventana se recoloca sola; en el
-     navegador que abre Instagram, no: el teclado la tapa. Con
-     visualViewport se sabe cuánto queda a la vista, y la ventana se
-     sube hasta que su borde de abajo quede justo encima del teclado. */
-  function sobreElTeclado(caja) {
-    var vv = window.visualViewport;
-    if (!vv) return;
-    function ajustar() {
-      if (!caja.isConnected) { vv.removeEventListener("resize", ajustar); vv.removeEventListener("scroll", ajustar); return; }
-      var tapado = window.innerHeight - vv.height;
-      if (tapado < 80) { caja.style.top = ""; caja.style.bottom = ""; caja.style.margin = ""; caja.style.maxHeight = ""; return; }
-      var alto = Math.min(caja.offsetHeight, vv.height - 16);
-      caja.style.maxHeight = (vv.height - 16) + "px";
-      caja.style.margin = "0 auto";
-      caja.style.bottom = "auto";
-      caja.style.top = Math.max(8, vv.offsetTop + vv.height - alto - 8) + "px";
-    }
-    vv.addEventListener("resize", ajustar);
-    vv.addEventListener("scroll", ajustar);
-    ajustar();
-  }
 
   document.addEventListener("pa:pedido", pintarBolsa);
   window.addEventListener("storage", function (e) { if (e.key === PEDIDO_CLAVE) pintarBolsa(); });
@@ -1732,15 +1462,18 @@
   }
 
   function construirBuscador() {
-    var campo = el("input", { type: "search", placeholder: t("buscar_ph"),
+    var campo = el("input", { type: "search", placeholder: " ",
                               "aria-label": t("buscar"), autocomplete: "off" });
+    var entrada = el("span", { class: "buscador__entrada" }, [campo,
+      el("span", { class: "buscador__cursor", "aria-hidden": "true", texto: "|" })
+    ]);
     var lista = el("div", { class: "buscador__lista" });
     var cerrar = el("button", { class: "buscador__cerrar", type: "button", texto: "Esc" });
 
     var caja = el("div", { class: "buscador" }, [
       el("div", { class: "buscador__caja" }, [
         el("div", { class: "buscador__arriba" }, [
-          el("span", { html: ICONOS.lupa }), campo, cerrar
+          el("span", { html: ICONOS.lupa }), entrada, cerrar
         ]),
         lista
       ])
@@ -1917,6 +1650,12 @@
     ["nav_contacto",     "contacto.html",   "nav_pre_contacto",   false]
   ];
 
+  function etiquetaNavegacion(texto, activa, clase) {
+    var nombre = el("span", { class: "nav-etiqueta" + (clase ? " " + clase : ""), texto: texto });
+    if (activa) nombre.appendChild(el("span", { class: "nav-marca", "aria-hidden": "true", texto: ">" }));
+    return nombre;
+  }
+
   function pintarCabecera() {
     var host = $("#cabecera");
     if (!host) return;
@@ -1945,27 +1684,13 @@
                              "aria-label": t("nav_secciones") },
       visibles.filter(function (m) { return m[3]; })
               .map(function (m) {
-                var vieneDeToque = false;
-                try { vieneDeToque = sessionStorage.getItem("pa-franja") === m[1]; } catch (e) {}
-                var a = el("a", {
-                  class: "barra-rapida__a" + (m[1] === aqui && vieneDeToque ? " barra-rapida__a--crece" : ""),
+                return el("a", {
+                  class: "barra-rapida__a",
                   href: m[1],
-                  "aria-current": m[1] === aqui ? "page" : null,
-                  texto: t(m[0])
-                });
-                /* LA FRANJA CRECE DESDE EL CENTRO al tocar (él, 16/09/2026).
-                   Empieza en el enlace tocado y, como la página cambia, se
-                   apunta en sessionStorage para repetirla al llegar. */
-                a.addEventListener("click", function () {
-                  a.classList.remove("barra-rapida__a--crece");
-                  void a.offsetWidth;
-                  a.classList.add("barra-rapida__a--crece");
-                  try { sessionStorage.setItem("pa-franja", m[1]); } catch (e) {}
-                });
-                return a;
+                  "aria-current": m[1] === aqui ? "page" : null
+                }, [etiquetaNavegacion(t(m[0]), m[1] === aqui)]);
               })
     );
-    try { sessionStorage.removeItem("pa-franja"); } catch (e) {}
 
     /* 2026-09-16 · En teléfono la bolsa va en la fila de abajo, al
        lado de Exhibición, solo con su dibujo. Y la lupa sube a la
@@ -1986,13 +1711,13 @@
     var redesMovil = el("div", { class: "redes-movil" });
     /* 18/09/2026 (él): aquí iba el icono de WhatsApp. Ahora es un globo
        de conversación que lleva a la página de Contacto —donde están
-       WhatsApp, el correo, Instagram y el buzón—, y Contacto sale del ☰
+       WhatsApp, el correo, Instagram y el chatbot—, y Contacto sale del ☰
        en teléfono (el CSS lo esconde allí). */
     redesMovil.appendChild(el("a", { class: "redes-movil__a", href: "contacto.html",
       "aria-label": t("nav_contacto"),
       "aria-current": aqui === "contacto.html" ? "page" : null }, [
         el("span", { class: "redes-movil__icono", html: ICONOS.globoRedondo }),
-        el("span", { texto: t("nav_contacto") })
+        etiquetaNavegacion(t("nav_contacto"), aqui === "contacto.html")
       ]));
     /* 18/09/2026 (él, 2.ª vuelta): el globo no le convenció. Ahora es la
        PALABRA «Contacto» en esa esquina, y la lupa de arriba sale: se
@@ -2022,7 +1747,7 @@
               a.classList.add("menu__contacto");
               a.appendChild(el("span", { class: "menu__globo", html: ICONOS.globoRedondo }));
             }
-            a.appendChild(el("span", { class: "menu__nombre", texto: t(m[0]) }));
+            a.appendChild(etiquetaNavegacion(t(m[0]), activa, "menu__nombre"));
             return a;
           })
     );
@@ -2097,7 +1822,7 @@
       claro:  { es: "Claro",  en: "Light" },
       auto:   { es: "Automático", en: "Automatic" }
     };
-    var ICONO_TEMA = { oscuro: ICONOS.lobo, claro: ICONOS.gallo, auto: ICONOS.auto };
+    var ICONO_TEMA = { oscuro: ICONOS.luna, claro: ICONOS.sol, auto: ICONOS.auto };
     var botonesTema = TEMAS.map(function (m) {
       var b = el("button", {
         type: "button",
@@ -2264,9 +1989,7 @@
     ]);
     bolsa.addEventListener("click", abrirPedido);
 
-    /* 17/09/2026 · El BUZÓN ANÓNIMO estuvo aquí, como un renglón del ☰.
-       Lo mudó él a la página de Contacto, de primera tarjeta; la ventana
-       la sigue abriendo abrirBuzon(). */
+
 
     /* Si el menú estaba abierto (se cambió el idioma desde dentro), el
        nuevo se deja abierto también: antes el encabezado conservaba la
@@ -2296,7 +2019,9 @@
            pintarse a 71 px y viajaba en TODAS las páginas — era lo
            más pesado que bajaba el sitio de entrada. En WebP son
            10 KB. El .png sigue en img/marca/ por si acaso. */
-        el("img", { class: "marca__perfil", src: "img/marca/perfil.webp", alt: "" })
+        el("span", { class: "marca__perfil-ventana", "aria-hidden": "true" }, [
+          el("img", { class: "marca__perfil", src: "img/marca/perfil.webp", alt: "" })
+        ])
       ]),
       redesMovil,
       rapida,
@@ -2328,6 +2053,7 @@
         ])
       ])
     ]));
+    animarPerfil(host);
     ponerMenu(menuEstabaAbierto);
     pintarBolsa();
   }
@@ -2337,6 +2063,17 @@
      izquierda. Se probó y no le gustó, así que fuera entera —el
      JS, su CSS y la lista `avisos` de datos/marca.js—. */
 
+  function animarPerfil(host) {
+    if (host._limpiarPerfil) host._limpiarPerfil();
+    var foto=host.querySelector('.marca__perfil'),raf=0,muerto=false;
+    host.classList.remove('perfil-listo');
+    function mostrar(){
+      if(muerto)return;
+      raf=requestAnimationFrame(function(){raf=requestAnimationFrame(function(){if(!muerto)host.classList.add('perfil-listo');});});
+    }
+    foto.decode().then(mostrar,mostrar);
+    host._limpiarPerfil=function(){muerto=true;cancelAnimationFrame(raf);};
+  }
   function pintarPie() {
     var host = $("#pie");
     if (!host) return;
@@ -2361,29 +2098,11 @@
       el("div", { class: "pie__fila" }, [
         /* En minúsculas, como el logotipo (él, 15/09/2026). Solo aquí:
            M.nombre sigue con mayúsculas para títulos y mensajes. */
-        /* ENTRADA ESCONDIDA AL BUZÓN (él, 17/09/2026): el nombre de la
-           marca es un botón que no se ve como tal —sin subrayado, sin
-           cambio de color, sin cursor de mano—. A los DIEZ toques
-           seguidos (con menos de 2 s entre uno y otro) abre el lector,
-           que pide la clave. Quien no lo sepa, no lo encuentra. */
-        (function () {
-          var b = el("button", { class: "pie__marca", type: "button", tabindex: "-1",
-                                 "aria-hidden": "true",
-                                 texto: M.nombre.toLowerCase() + " · " + tx(M.ciudad) });
-          var n = 0, ultimo = 0;
-          b.addEventListener("click", function () {
-            var ahora = Date.now();
-            n = (ahora - ultimo < 2000) ? n + 1 : 1;
-            ultimo = ahora;
-            if (n >= 10) { n = 0; abrirLector(); }
-          });
-          return b;
-        })(),
+        el("span", { class: "pie__marca", texto: M.nombre.toLowerCase() + " · " + tx(M.ciudad) }),
         el("div", { class: "pie__enlaces" }, enlaces)
       ]),
       el("div", { class: "pie__fila pie__fila--huevo" }, [huevoApilar()])
     ]));
-    comprobarNuevos();
   }
 
   /* EASTER EGG (él, 16/09/2026): un huevo bajo Instagram abre el juego
@@ -4296,24 +4015,16 @@
 
     host.innerHTML = "";
 
-    /* EL BUZÓN ANÓNIMO, de PRIMERA (él, 17/09/2026): no lleva a ningún
-       lado —abre la ventana del mensaje—, así que es un <button> y no un
-       enlace, y va sin icono ni flecha: solo el nombre y su línea,
-       centrados (.contactos__buzon en el CSS). */
-    var tBuzon = el("button", { class: "contactos__buzon", type: "button" }, [
-      /* El mismo dibujo de líneas que WhatsApp y el correo, con la
-         paletica LEVANTADA —la del buzón que tiene algo dentro— (él,
-         17/09/2026). Va centrado, encima del texto. */
-      el("span", { class: "contactos__icono", html: ICONOS.buzon }),
+    var chat = el("button", { class: "contactos__chatbot", type: "button" }, [
+      el("span", { class: "contactos__icono", html: '<svg viewBox="0 0 24 24" class="icono-linea" aria-hidden="true"><path d="M12 3v3m-2-3h4M5 7h14v12H9l-4 3V7Z"/><path d="M8 11v2m8-2v2m-7 3h6"/></svg>' }),
       el("span", { class: "contactos__texto" }, [
-        /* Mismo rótulo que WhatsApp, Correo e Instagram (él, 17/09/2026):
-           la misma letra chica en versalitas, no un titular aparte. */
-        el("span", { class: "rotulo", texto: t("buzon_boton") }),
-        el("span", { class: "contactos__accion", texto: t("buzon_tarjeta") })
+        el("span", { class: "rotulo", texto: "Chatbot" }),
+        el("strong", { texto: es ? "Asistente virtual" : "Virtual assistant" }),
+        el("span", { class: "contactos__accion", texto: es ? "Consulta sobre las piezas y explora la página" : "Ask about the pieces and explore the website" })
       ])
     ]);
-    tBuzon.addEventListener("click", abrirBuzon);
-    host.appendChild(tBuzon);
+    chat.addEventListener("click", function () { window.dispatchEvent(new Event("chatbot-open")); });
+    host.appendChild(chat);
 
     tarjetas.forEach(function (c) {
       host.appendChild(el("a", { href: c[3], target: "_blank", rel: "noopener" }, [

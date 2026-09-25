@@ -1,0 +1,1219 @@
+{
+  "generado": "2026-09-25T05:15:30.075Z",
+  "marca": "Prototipo Ago",
+  "whatsapp": "https://wa.me/584120152753",
+  "perfil": {
+    "nombre": "Santiago De Sousa",
+    "historia": {
+      "fuente": "taller.html#introduccion",
+      "inicios": "Santiago decidió dedicarse a la carpintería después de graduarse como economista, movido por las ganas de materializar sus inventos y resolver problemas del mundo físico. Comenzó trabajando en un estacionamiento con apoyo familiar y algunas herramientas de su papá.",
+      "aprendizaje": "En YouTube encontró creadores, carpinteros y no carpinteros, que contaban sus procesos creativos y a quienes considera mentores. También describe el fracaso repetido como parte fundamental de su aprendizaje.",
+      "prototipo": "Para Santiago, diseñar algo por primera vez implica fallos naturales e inevitables. Entiende cada resultado como el prototipo de algo mayor que sigue desarrollándose, más allá de una pieza o un momento concreto."
+    },
+    "instagram": {
+      "usuario": "prototipo_ago",
+      "url": "https://www.instagram.com/prototipo_ago/",
+      "consultado": "2026-09-25",
+      "nombre_publico": "Taller de carpintería con Ago",
+      "biografia": "Caracas, Venezuela. Carpintería fina y no tan fina. Hago encargos.",
+      "seguidores": 515,
+      "publicaciones": 59,
+      "primera_publicacion": {
+        "fecha": "2024-10-17",
+        "fuente": "Confirmada por Santiago el 25 de septiembre de 2026"
+      },
+      "nota": "Cifras observadas en el perfil público y su descripción pública el día de consulta; no se actualizan en tiempo real. La fecha de primera publicación fue proporcionada por Santiago."
+    },
+    "lecturas": {
+      "actualizado": "2026-09-25",
+      "fuente": "Lista de lecturas de Santiago, compartida con su autorización",
+      "criterio": "Registros de libros o sagas marcados como leído; no equivale a un conteo de volúmenes individuales.",
+      "libros": [
+        {
+          "titulo": "21 Licoes sobre o século XXI",
+          "autor": "Yuval Noah Harari"
+        },
+        {
+          "titulo": "7 Habits of Highly Effective People",
+          "autor": "Steven Covey"
+        },
+        {
+          "titulo": "A Man's Search For Meaning",
+          "autor": "Victor Frankl"
+        },
+        {
+          "titulo": "A Place Of My Own, The Architecture of Daydreams",
+          "autor": "Michael Pollan"
+        },
+        {
+          "titulo": "Atomic Habits",
+          "autor": "James Clear"
+        },
+        {
+          "titulo": "Can't Hurt Me",
+          "autor": "David Goggins"
+        },
+        {
+          "titulo": "Chatter",
+          "autor": "Ethan Kross"
+        },
+        {
+          "titulo": "Cien Años de Soledad",
+          "autor": "Gabriel García Marquéz"
+        },
+        {
+          "titulo": "Crimen y Castigo",
+          "autor": "Fyodor Dostoevsky"
+        },
+        {
+          "titulo": "Deep Work",
+          "autor": "Cal Newport"
+        },
+        {
+          "titulo": "Digital Minimalism",
+          "autor": "Cal Newport"
+        },
+        {
+          "titulo": "Doce Cuentos Peregrinos",
+          "autor": "Gabriel García Marquéz"
+        },
+        {
+          "titulo": "El General en su Laberinto",
+          "autor": "Gabriel García Marquéz"
+        },
+        {
+          "titulo": "El Señor De Los Anillos, El Retorno Del Rey",
+          "autor": "J R R Tolkien"
+        },
+        {
+          "titulo": "El Señor De Los Anillos, La Comunidad Del Anillo",
+          "autor": "J R R Tolkien"
+        },
+        {
+          "titulo": "El Señor De Los Anillos, Las Dos Torres",
+          "autor": "J R R Tolkien"
+        },
+        {
+          "titulo": "Ender's Game",
+          "autor": "Orson Scott Card"
+        },
+        {
+          "titulo": "Ensaio sobre a cegueira",
+          "autor": "Jose Saramago"
+        },
+        {
+          "titulo": "Ficciones",
+          "autor": "Jorge L. Borges"
+        },
+        {
+          "titulo": "Finding The Mother Tree",
+          "autor": "Suzanne Simard"
+        },
+        {
+          "titulo": "Four Thousand Weeks",
+          "autor": "Oliver Burkeman"
+        },
+        {
+          "titulo": "Freakonomics",
+          "autor": "Steven Levitt & Stephen J Dubner"
+        },
+        {
+          "titulo": "Harry Potter and the Methods of Rationality",
+          "autor": "Eliezer Yudkowsky"
+        },
+        {
+          "titulo": "Harry Potter Saga",
+          "autor": "J K Rowling"
+        },
+        {
+          "titulo": "How To Take Smart Notes",
+          "autor": "Sonke Ahrens"
+        },
+        {
+          "titulo": "Kafka On The Shore",
+          "autor": "Haruki Murakami"
+        },
+        {
+          "titulo": "Los Árboles Mueren De Pie",
+          "autor": "Alejandro Casona"
+        },
+        {
+          "titulo": "Norwegian Wood",
+          "autor": "Haruki Murakami"
+        },
+        {
+          "titulo": "Percy Jackson, El Ladrón Del Rayo",
+          "autor": "Rick Riordan"
+        },
+        {
+          "titulo": "Quiet, the power of introverts in a world that can't stop talking",
+          "autor": "Susan Cain"
+        },
+        {
+          "titulo": "Ready Player One",
+          "autor": "Ernest Cline"
+        },
+        {
+          "titulo": "Ready Player Two",
+          "autor": "Ernest Cline"
+        },
+        {
+          "titulo": "Rebelión en la granja",
+          "autor": "George Orwell"
+        },
+        {
+          "titulo": "Rich Dad, Poor Dad",
+          "autor": "Robert Kiyosaki"
+        },
+        {
+          "titulo": "Sapiens",
+          "autor": "Yuval Noah Harari"
+        },
+        {
+          "titulo": "Shop Class as Soulcraft",
+          "autor": "Matthew B. Crawford"
+        },
+        {
+          "titulo": "Slow Productivity",
+          "autor": "Cal Newport"
+        },
+        {
+          "titulo": "So Good They Can't Ignore You",
+          "autor": "Cal Newport"
+        },
+        {
+          "titulo": "Stoner",
+          "autor": "John Williams"
+        },
+        {
+          "titulo": "SuperFreakonomics",
+          "autor": "Steven Levitt & Stephen J Dubner"
+        },
+        {
+          "titulo": "The Creative Act",
+          "autor": "Rick Rubin"
+        },
+        {
+          "titulo": "The Da Vinci Code",
+          "autor": "Dan Brown"
+        },
+        {
+          "titulo": "The Mountain is You",
+          "autor": "Brianna Weist"
+        },
+        {
+          "titulo": "The Nature and Art of Workmanship",
+          "autor": "David Pye"
+        },
+        {
+          "titulo": "The Nicomachean Ethics",
+          "autor": "Aristóteles"
+        },
+        {
+          "titulo": "The Practice",
+          "autor": "Seth Godin"
+        },
+        {
+          "titulo": "The Soul of a Tree",
+          "autor": "George Nakashima"
+        },
+        {
+          "titulo": "The War Of Art",
+          "autor": "Steven Pressfield"
+        }
+      ]
+    }
+  },
+  "secciones": [
+    {
+      "id": "catalogo",
+      "nombre": "Prototipos",
+      "url": "index.html",
+      "texto": "Piezas de diseño propio. Consulta sus variantes; confirma la disponibilidad con nosotros."
+    },
+    {
+      "id": "trabajos",
+      "nombre": "Exhibición",
+      "url": "trabajos.html",
+      "texto": "Portafolio de nuestros trabajos; no constituye catálogo de precios."
+    },
+    {
+      "id": "encargos",
+      "nombre": "Encargos a medida",
+      "url": "taller.html",
+      "texto": "Idea y medidas, dibujo 3D, propuesta, anticipo y fabricación. Unas 3 semanas para piezas pequeñas o medianas, desde 4 para grandes; según nuestra agenda. Confirmamos el precio y la moneda del encargo en nuestra propuesta."
+    },
+    {
+      "id": "contacto",
+      "nombre": "Habla con nosotros",
+      "url": "contacto.html",
+      "texto": "Instagram @prototipo_ago. Correo: sjdesousar@gmail.com. WhatsApp: +58 412 015 27 53."
+    },
+    {
+      "id": "entregas",
+      "nombre": "Entrega y envíos",
+      "url": "contacto.html",
+      "texto": "Delivery en Caracas: de $4 a $15 si la pieza es pequeña, y de $20 a $30 si es grande, con el montaje incluido. Fuera de Caracas se cotiza aparte según la distancia. Retiro en El Placer; dirección exacta por chat. MRW o Zoom al resto del país, cobro en destino."
+    },
+    {
+      "id": "pagos",
+      "nombre": "Pago del catálogo",
+      "url": "contacto.html",
+      "texto": "Los precios están en dólares. Si pagas en bolívares, se cobra el monto en dólares a la tasa BCV del día del pago, y la cotización vale 7 días. Para encargos a medida, confirma las condiciones con nosotros."
+    },
+    {
+      "id": "garantia",
+      "nombre": "Garantía",
+      "url": "contacto.html",
+      "texto": "Si algo falla por mi trabajo —una unión que cede, un acabado que se levanta— lo reparo o lo repongo sin costo. No cubre el desgaste normal ni los daños por golpes o humedad."
+    }
+  ],
+  "fichas": [
+    {
+      "id": "producto:base-laptop-alta",
+      "tipo": "producto",
+      "nombre": "Base de laptop — alta",
+      "descripcion": "Eleva la pantalla entre 18 y 30 cm, hasta la altura de los ojos. Para trabajar con teclado aparte, sin encorvarte.",
+      "imagen": "img/prototipos/base-alta-saman.webp",
+      "galeria": [],
+      "precios": [
+        {
+          "nombre": "Pino",
+          "usd": 50
+        },
+        {
+          "nombre": "Samán",
+          "usd": 50
+        }
+      ],
+      "plazo": "Confirma la disponibilidad con nosotros",
+      "url": "index.html?pieza=base-laptop-alta",
+      "materiales": [
+        "Pino",
+        "Samán"
+      ]
+    },
+    {
+      "id": "producto:base-laptop-baja",
+      "tipo": "producto",
+      "nombre": "Base de laptop — baja",
+      "descripcion": "Eleva la pantalla entre 11 y 13 cm, inclina el equipo y le da aire por debajo. Puedes seguir escribiendo en el teclado de la laptop.",
+      "imagen": "img/prototipos/base-baja-saman.webp",
+      "galeria": [],
+      "precios": [
+        {
+          "nombre": "Samán",
+          "usd": 50
+        },
+        {
+          "nombre": "Apamate",
+          "usd": 50
+        }
+      ],
+      "plazo": "Confirma la disponibilidad con nosotros",
+      "url": "index.html?pieza=base-laptop-baja",
+      "materiales": [
+        "Samán",
+        "Apamate"
+      ]
+    },
+    {
+      "id": "producto:tabla-picar",
+      "tipo": "producto",
+      "nombre": "Tabla de picar (por talla)",
+      "descripcion": "Veta a lo largo, cantos suavizados y buen espesor. Acabado en aceite de tung, el más resistente para uso alimentario. La talla L viene sobre cuatro patas de goma.",
+      "imagen": "img/prototipos/tabla-de-picar.webp",
+      "galeria": [
+        "img/prototipos/tabla-de-picar-2.webp"
+      ],
+      "precios": [
+        {
+          "nombre": "S · Teca",
+          "usd": 30
+        },
+        {
+          "nombre": "S · Puy",
+          "usd": 30
+        },
+        {
+          "nombre": "S · Algarrobo",
+          "usd": 30
+        },
+        {
+          "nombre": "M · Teca",
+          "usd": 40
+        },
+        {
+          "nombre": "M · Puy",
+          "usd": 40
+        },
+        {
+          "nombre": "M · Algarrobo",
+          "usd": 45
+        },
+        {
+          "nombre": "L · Teca",
+          "usd": 60
+        },
+        {
+          "nombre": "L · Puy",
+          "usd": 60
+        },
+        {
+          "nombre": "L · Algarrobo",
+          "usd": 80
+        }
+      ],
+      "plazo": "3 semanas estimadas, según nuestra agenda",
+      "url": "index.html?pieza=tabla-picar",
+      "materiales": [
+        "Teca",
+        "Puy",
+        "Algarrobo"
+      ]
+    },
+    {
+      "id": "producto:butcher-block-l",
+      "tipo": "producto",
+      "nombre": "Butcher Block L",
+      "descripcion": "Veta vertical: el cuchillo entra entre las fibras en vez de cortarlas. No marca, no desafila y aguanta años de uso diario. Va sobre cuatro patas de goma, que la despegan del mesón y la dejan agarrada mientras picas.",
+      "imagen": "img/prototipos/butcher-block.webp",
+      "galeria": [],
+      "precios": [
+        {
+          "nombre": "L · Teca",
+          "usd": 160
+        }
+      ],
+      "plazo": "3 semanas estimadas, según nuestra agenda",
+      "url": "index.html?pieza=butcher-block-l",
+      "materiales": [
+        "Teca"
+      ]
+    },
+    {
+      "id": "producto:comedero-pequeno",
+      "tipo": "producto",
+      "nombre": "Comedero pequeño (doble)",
+      "descripcion": "Para gatos o perros pequeños. Levanta los envases del piso, los mantiene en su sitio y mejora la postura de la mascota al comer.",
+      "imagen": "img/prototipos/comedero-pequeno-1.webp",
+      "galeria": [
+        "img/prototipos/comedero-pequeno-2.webp",
+        "img/prototipos/comedero-pequeno-3.webp"
+      ],
+      "precios": [
+        {
+          "nombre": "Apamate, Puy",
+          "usd": 40
+        }
+      ],
+      "plazo": "3 semanas estimadas, según nuestra agenda",
+      "url": "index.html?pieza=comedero-pequeno",
+      "materiales": [
+        "Apamate, Puy"
+      ]
+    },
+    {
+      "id": "producto:comedero-grande",
+      "tipo": "producto",
+      "nombre": "Comedero grande (individual)",
+      "descripcion": "Para perros grandes. Levanta los envases del piso, los mantiene en su sitio y mejora la postura de la mascota al comer.",
+      "imagen": "img/prototipos/comedero-grande-iso.webp",
+      "galeria": [],
+      "precios": [
+        {
+          "nombre": "Samán",
+          "usd": 40
+        },
+        {
+          "nombre": "Apamate",
+          "usd": 40
+        }
+      ],
+      "plazo": "3 semanas estimadas, según nuestra agenda",
+      "url": "index.html?pieza=comedero-grande",
+      "materiales": [
+        "Samán",
+        "Apamate"
+      ]
+    },
+    {
+      "id": "producto:gancho-pared",
+      "tipo": "producto",
+      "nombre": "Gancho de pared",
+      "descripcion": "Bloque con gancho retráctil de tres puestos, para ropa o lo que se te ocurra.",
+      "imagen": "img/prototipos/gancho-pared-2.webp",
+      "galeria": [
+        "img/prototipos/gancho-pared-1.webp",
+        "img/prototipos/gancho-pared-3.webp",
+        "img/prototipos/gancho-pared-4.webp"
+      ],
+      "precios": [
+        {
+          "nombre": "Samán",
+          "usd": 45
+        }
+      ],
+      "plazo": "3 semanas estimadas, según nuestra agenda",
+      "url": "index.html?pieza=gancho-pared",
+      "materiales": [
+        "Samán"
+      ]
+    },
+    {
+      "id": "producto:tumbona",
+      "tipo": "producto",
+      "nombre": "Tumbona",
+      "descripcion": "Asiento tipo playero, con tres configuraciones de inclinación: decides si te quieres acostar o sentar.",
+      "imagen": "img/prototipos/tumbona-1.webp",
+      "galeria": [
+        "img/prototipos/tumbona-2.webp",
+        "img/prototipos/tumbona-6.webp",
+        "img/prototipos/tumbona-5.webp",
+        "img/prototipos/tumbona-3.webp",
+        "img/prototipos/tumbona-4.webp"
+      ],
+      "precios": [
+        {
+          "nombre": "Pino",
+          "usd": 180
+        },
+        {
+          "nombre": "Teca",
+          "usd": 210
+        }
+      ],
+      "plazo": "4 semanas estimadas, según nuestra agenda",
+      "url": "index.html?pieza=tumbona",
+      "materiales": [
+        "Pino",
+        "Teca"
+      ]
+    },
+    {
+      "id": "producto:bases-foto",
+      "tipo": "producto",
+      "nombre": "Bases para foto (paquete)",
+      "descripcion": "Piecitas para montar producto o fotografía de mesa. Se venden por paquete.",
+      "imagen": "img/prototipos/bases-foto-1.webp",
+      "galeria": [
+        "img/prototipos/bases-foto-4.webp"
+      ],
+      "precios": [
+        {
+          "nombre": "Paquete de 5 · Pino",
+          "usd": 7
+        },
+        {
+          "nombre": "Paquete de 5 · Samán",
+          "usd": 7
+        },
+        {
+          "nombre": "Paquete de 20 · Pino",
+          "usd": 20
+        },
+        {
+          "nombre": "Paquete de 20 · Samán",
+          "usd": 20
+        }
+      ],
+      "plazo": "Confirma la disponibilidad con nosotros",
+      "url": "index.html?pieza=bases-foto",
+      "materiales": [
+        "Pino",
+        "Samán"
+      ]
+    },
+    {
+      "id": "producto:repisa-bano",
+      "tipo": "producto",
+      "nombre": "Repisa 1.0",
+      "descripcion": "Repisa de pared con reborde.",
+      "imagen": "img/prototipos/repisa-bano-foto-1.webp",
+      "galeria": [
+        "img/prototipos/repisa-bano-foto-2.webp",
+        "img/prototipos/repisa-bano-foto-3.webp",
+        "img/prototipos/repisa-bano-foto-4.webp",
+        "img/prototipos/repisa-bano-iso.webp"
+      ],
+      "precios": [
+        {
+          "nombre": "Pino",
+          "usd": 45
+        }
+      ],
+      "plazo": "3 semanas estimadas, según nuestra agenda",
+      "url": "index.html?pieza=repisa-bano",
+      "materiales": [
+        "Pino"
+      ]
+    },
+    {
+      "id": "producto:espejo-bano",
+      "tipo": "producto",
+      "nombre": "Espejo de baño",
+      "descripcion": "Espejo con marco de madera maciza.",
+      "imagen": "img/prototipos/espejo-bano-foto-1.webp",
+      "galeria": [
+        "img/prototipos/espejo-bano-foto-2.webp",
+        "img/prototipos/espejo-bano-foto-3.webp",
+        "img/prototipos/espejo-bano-foto-4.webp",
+        "img/prototipos/espejo-bano-foto-5.webp",
+        "img/prototipos/espejo-bano-iso.webp"
+      ],
+      "precios": [
+        {
+          "nombre": "Pino",
+          "usd": 80
+        }
+      ],
+      "plazo": "3 semanas estimadas, según nuestra agenda",
+      "url": "index.html?pieza=espejo-bano",
+      "materiales": [
+        "Pino"
+      ]
+    },
+    {
+      "id": "producto:toallero-bano",
+      "tipo": "producto",
+      "nombre": "Toallero",
+      "descripcion": "Toallero de pared de dos barras, en madera maciza.",
+      "imagen": "img/prototipos/toallero-bano-foto-1.webp",
+      "galeria": [
+        "img/prototipos/toallero-bano-foto-2.webp",
+        "img/prototipos/toallero-bano-foto-3.webp",
+        "img/prototipos/toallero-bano-foto-4.webp",
+        "img/prototipos/toallero-bano-foto-5.webp",
+        "img/prototipos/toallero-bano-iso.webp"
+      ],
+      "precios": [
+        {
+          "nombre": "Pino",
+          "usd": 80
+        }
+      ],
+      "plazo": "3 semanas estimadas, según nuestra agenda",
+      "url": "index.html?pieza=toallero-bano",
+      "materiales": [
+        "Pino"
+      ]
+    },
+    {
+      "id": "producto:porta-rollo-bano",
+      "tipo": "producto",
+      "nombre": "Portarrollo",
+      "descripcion": "Portarrollo de pared en madera maciza. Listón removible para cambio de rollo.",
+      "imagen": "img/prototipos/porta-rollo-bano-iso.webp",
+      "galeria": [],
+      "precios": [
+        {
+          "nombre": "Pino",
+          "usd": 35
+        }
+      ],
+      "plazo": "3 semanas estimadas, según nuestra agenda",
+      "url": "index.html?pieza=porta-rollo-bano",
+      "materiales": [
+        "Pino"
+      ]
+    },
+    {
+      "id": "trabajo:rolitronco",
+      "tipo": "trabajo",
+      "nombre": "Rolo X Matías Arapé",
+      "descripcion": "Un bloque macizo quemado, para exteriores. Pensado para acompañar una fogata: sirve de asiento, de mesa auxiliar o de pedestal, y se carga de un sitio a otro por la cadena. El video y las fotos salieron de una colaboración con Matías Arapé, @matiasarape en Instagram.",
+      "categoria": "exterior",
+      "acabado": [
+        "quemado"
+      ],
+      "detalles": [],
+      "medidas": "29 × 20 × 20 cm",
+      "imagen": "img/trabajos/rolitronco-foto-2.webp",
+      "galeria": [],
+      "materiales": [
+        "eucalipto"
+      ],
+      "precios": [],
+      "url": "trabajo.html?id=rolitronco"
+    },
+    {
+      "id": "trabajo:quillas-pared",
+      "tipo": "trabajo",
+      "nombre": "Quillas de pared",
+      "descripcion": "Dos soportes tallados en samán macizo. Colgados no se ve ni un tornillo: encajan sobre ranuras keyhole fresadas en la propia madera. El diseño se hizo en colaboración con @casagreca_ en Instagram.",
+      "categoria": "repisa",
+      "acabado": [
+        "linaza",
+        "cera"
+      ],
+      "detalles": [
+        "Dos soportes tallados en samán macizo de 4 cm de espesor, con todo el canto redondeado.",
+        "Montaje invisible: cada quilla encaja sobre ranuras keyhole fresadas en la propia madera. Colgadas, no se ve ni un tornillo ni un herraje.",
+        "Acabado en aceite de linaza, que realza la veta del samán y protege la madera."
+      ],
+      "medidas": "26 × 18,5 × 4 cm",
+      "imagen": "img/trabajos/quillas-mariana-foto-1.webp",
+      "galeria": [
+        "img/trabajos/quillas-mariana-foto-2.webp",
+        "img/trabajos/quillas-mariana-foto-3.webp",
+        "img/trabajos/quillas-mariana-foto-4.webp"
+      ],
+      "materiales": [
+        "saman"
+      ],
+      "precios": [],
+      "url": "trabajo.html?id=quillas-pared"
+    },
+    {
+      "id": "trabajo:mueble-bano",
+      "tipo": "trabajo",
+      "nombre": "Vanitarios laqueados",
+      "descripcion": "Vanitarios laqueados: gabinetes para el baño realizados en MDF HR, con acabado pintado y poliuretano. Referencia de mobiliario para baño; las medidas de un nuevo encargo se definen aparte.",
+      "categoria": "gabinete",
+      "acabado": [
+        "pintado",
+        "poliuretano"
+      ],
+      "detalles": [],
+      "medidas": null,
+      "imagen": "img/trabajos/vanitarios-wichi-foto-1.webp",
+      "galeria": [
+        "img/trabajos/vanitarios-wichi-foto-2.webp",
+        "img/trabajos/vanitarios-wichi-foto-3.webp"
+      ],
+      "materiales": [
+        "mdf-hr"
+      ],
+      "precios": [],
+      "url": "trabajo.html?id=mueble-bano"
+    },
+    {
+      "id": "trabajo:gavetero",
+      "tipo": "trabajo",
+      "nombre": "Gavetero",
+      "descripcion": "Gavetero en cedro, con acabado de linaza y cera. Referencia para una propuesta de almacenamiento con gavetas.",
+      "categoria": "gabinete",
+      "acabado": [
+        "linaza",
+        "cera"
+      ],
+      "detalles": [],
+      "medidas": null,
+      "imagen": "img/trabajos/gavetero-wichi-foto-1.webp",
+      "galeria": [
+        "img/trabajos/gavetero-wichi-foto-2.webp",
+        "img/trabajos/gavetero-wichi-foto-3.webp",
+        "img/trabajos/gavetero-wichi-foto-4.webp"
+      ],
+      "materiales": [
+        "cedro"
+      ],
+      "precios": [],
+      "url": "trabajo.html?id=gavetero"
+    },
+    {
+      "id": "trabajo:zapatera",
+      "tipo": "trabajo",
+      "nombre": "Zapatera en samán",
+      "descripcion": "Zapatera en samán con acabado de poliuretano. Referencia para organizar calzado; la capacidad de un nuevo diseño debe revisarse según las medidas y los zapatos.",
+      "categoria": "zapatera",
+      "acabado": [
+        "poliuretano"
+      ],
+      "detalles": [],
+      "medidas": null,
+      "imagen": "img/trabajos/zapatera-rosa-foto-0.webp",
+      "galeria": [
+        "img/trabajos/zapatera-rosa-foto-2.webp",
+        "img/trabajos/zapatera-rosa-foto-1.webp",
+        "img/trabajos/zapatera-rosa-foto-3.webp"
+      ],
+      "materiales": [
+        "saman"
+      ],
+      "precios": [],
+      "url": "trabajo.html?id=zapatera"
+    },
+    {
+      "id": "trabajo:consola-2",
+      "tipo": "trabajo",
+      "nombre": "Consola mid-century",
+      "descripcion": "Consola mid-century de melamina, MDF y tela. Medidas publicadas: 152 × 60 × 43 cm. Referencia de consola y mobiliario auxiliar de ese estilo.",
+      "categoria": "gabinete",
+      "acabado": [],
+      "detalles": [],
+      "medidas": "152 × 60 × 43 cm",
+      "imagen": "img/trabajos/consola-matias-foto-1.webp",
+      "galeria": [
+        "img/trabajos/consola-matias-foto-2.webp",
+        "img/trabajos/consola-matias-foto-3.webp"
+      ],
+      "materiales": [
+        "melamina",
+        "mdf",
+        "tela"
+      ],
+      "precios": [],
+      "url": "trabajo.html?id=consola-2"
+    },
+    {
+      "id": "trabajo:repisas",
+      "tipo": "trabajo",
+      "nombre": "Repisas removibles",
+      "descripcion": "Repisas removibles en apamate, con acabado de poliuretano. Referencia para explorar superficies de almacenamiento o exposición en la pared; el soporte y la instalación se revisan para cada espacio.",
+      "categoria": "repisa",
+      "acabado": [
+        "poliuretano"
+      ],
+      "detalles": [],
+      "medidas": null,
+      "imagen": "img/trabajos/repisas-julia-foto-1.webp",
+      "galeria": [
+        "img/trabajos/repisas-julia-foto-2.webp",
+        "img/trabajos/repisas-julia-foto-3.webp",
+        "img/trabajos/repisas-julia-foto-4.webp",
+        "img/trabajos/repisas-julia-foto-5.webp"
+      ],
+      "materiales": [
+        "apamate"
+      ],
+      "precios": [],
+      "url": "trabajo.html?id=repisas"
+    },
+    {
+      "id": "trabajo:paraban",
+      "tipo": "trabajo",
+      "nombre": "Parabán “hippie”",
+      "descripcion": "Parabán hippie de apamate y tela, con acabado de poliuretano. Medidas publicadas: 90 × 4 × 142 cm. Referencia para separar o delimitar ambientes.",
+      "categoria": "paraban",
+      "acabado": [
+        "poliuretano"
+      ],
+      "detalles": [],
+      "medidas": "90 × 4 × 142 cm",
+      "imagen": "img/trabajos/paraban-veronica-foto-1.webp",
+      "galeria": [
+        "img/trabajos/paraban-veronica-foto-2.webp",
+        "img/trabajos/paraban-veronica-foto-3.webp",
+        "img/trabajos/paraban-veronica-foto-4.webp",
+        "img/trabajos/paraban-veronica-foto-5.webp",
+        "img/trabajos/paraban-veronica-foto-6.webp"
+      ],
+      "materiales": [
+        "apamate",
+        "tela"
+      ],
+      "precios": [],
+      "url": "trabajo.html?id=paraban"
+    },
+    {
+      "id": "trabajo:caja",
+      "tipo": "trabajo",
+      "nombre": "Caja de relojes",
+      "descripcion": "Caja de relojes en samán y tela, con acabado de linaza y cera. Referencia de caja para organizar y presentar objetos personales.",
+      "categoria": "accesorio",
+      "acabado": [
+        "linaza",
+        "cera"
+      ],
+      "detalles": [],
+      "medidas": null,
+      "imagen": "img/trabajos/caja-martin-foto-1.webp",
+      "galeria": [
+        "img/trabajos/caja-martin-foto-2.webp",
+        "img/trabajos/caja-martin-foto-3.webp",
+        "img/trabajos/caja-martin-foto-4.webp"
+      ],
+      "materiales": [
+        "saman",
+        "tela"
+      ],
+      "precios": [],
+      "url": "trabajo.html?id=caja"
+    },
+    {
+      "id": "trabajo:madriguera",
+      "tipo": "trabajo",
+      "nombre": "Madriguera de conejo",
+      "descripcion": "Madriguera de conejo realizada con pino, okume y PVC expandido, con acabado crudo. Referencia de un proyecto para una mascota; no equivale a una certificación de seguridad para otras especies o usos.",
+      "categoria": "mascotas",
+      "acabado": [
+        "crudo"
+      ],
+      "detalles": [],
+      "medidas": null,
+      "imagen": "img/trabajos/madriguera-estefania-foto-4.webp",
+      "galeria": [
+        "img/trabajos/madriguera-estefania-foto-1.webp",
+        "img/trabajos/madriguera-estefania-foto-2.webp",
+        "img/trabajos/madriguera-estefania-foto-5.webp",
+        "img/trabajos/madriguera-estefania-foto-6.webp",
+        "img/trabajos/madriguera-estefania-foto-7.webp"
+      ],
+      "materiales": [
+        "pino",
+        "okume",
+        "pvc-expandido"
+      ],
+      "precios": [],
+      "url": "trabajo.html?id=madriguera"
+    },
+    {
+      "id": "trabajo:escenografia",
+      "tipo": "trabajo",
+      "nombre": "Escenografía X 40 Años de Paz",
+      "descripcion": "Proyecto por encargo para la obra 40 Años de Paz, dirigida por Gabriel y Daniel La Rosa y presentada en la Decimoprimera edición del Festival de Jóvenes Directores del Trasnocho Cultural, donde fue galardonada con mención de honor y otros reconocimientos.",
+      "categoria": "otro",
+      "acabado": [
+        "crudo"
+      ],
+      "detalles": [],
+      "medidas": null,
+      "imagen": "img/trabajos/escenografia-morochos-foto-3.webp",
+      "galeria": [
+        "img/trabajos/escenografia-morochos-foto-4.webp",
+        "img/trabajos/escenografia-morochos-foto-5.webp",
+        "img/trabajos/escenografia-morochos-foto-1.webp",
+        "img/trabajos/escenografia-morochos-foto-2.webp"
+      ],
+      "materiales": [
+        "pino"
+      ],
+      "precios": [],
+      "url": "trabajo.html?id=escenografia"
+    },
+    {
+      "id": "trabajo:elevacho",
+      "tipo": "trabajo",
+      "nombre": "Elevacho X Centro Estepario",
+      "descripcion": "Plataforma para elevar los monitores sobre el escritorio y mejorar así la postura. Diseño e impresión 3D elaborados por Centro Estepario, @centro_estepario en Instagram.",
+      "categoria": "accesorio",
+      "acabado": [
+        "poliuretano"
+      ],
+      "detalles": [],
+      "medidas": null,
+      "imagen": "img/trabajos/elevacho-foto-1.webp",
+      "galeria": [
+        "img/trabajos/elevacho-foto-2.webp",
+        "img/trabajos/elevacho-foto-3.webp",
+        "img/trabajos/elevacho-foto-4.webp",
+        "img/trabajos/elevacho-foto-5.webp",
+        "img/trabajos/elevacho-foto-6.webp",
+        "img/trabajos/elevacho-foto-7.webp",
+        "img/trabajos/elevacho-foto-8.webp"
+      ],
+      "materiales": [
+        "pino",
+        "plastico"
+      ],
+      "precios": [],
+      "url": "trabajo.html?id=elevacho"
+    },
+    {
+      "id": "trabajo:bandeja",
+      "tipo": "trabajo",
+      "nombre": "Bandeja",
+      "descripcion": "Bandeja en samán con acabado de linaza. Referencia de un objeto para servir o agrupar objetos.",
+      "categoria": "accesorio",
+      "acabado": [
+        "linaza"
+      ],
+      "detalles": [],
+      "medidas": null,
+      "imagen": "img/trabajos/bandeja-foto-2.webp",
+      "galeria": [
+        "img/trabajos/bandeja-foto-1.webp",
+        "img/trabajos/bandeja-foto-3.webp"
+      ],
+      "materiales": [
+        "saman"
+      ],
+      "precios": [],
+      "url": "trabajo.html?id=bandeja"
+    },
+    {
+      "id": "trabajo:escritorio-teca",
+      "tipo": "trabajo",
+      "nombre": "Escritorio en teca",
+      "descripcion": "Escritorio en teca con acabado Rubio Monocoat. Referencia de un espacio de trabajo; dimensiones, distribución y necesidades del usuario se definen para un nuevo encargo.",
+      "categoria": "mesa",
+      "acabado": [
+        "rubio-monocoat"
+      ],
+      "detalles": [],
+      "medidas": null,
+      "imagen": "img/trabajos/escritorio-teca-foto-2.webp",
+      "galeria": [
+        "img/trabajos/escritorio-teca-foto-1.webp",
+        "img/trabajos/escritorio-teca-foto-3.webp",
+        "img/trabajos/escritorio-teca-foto-4.webp",
+        "img/trabajos/escritorio-teca-foto-5.webp",
+        "img/trabajos/escritorio-teca-foto-6.webp"
+      ],
+      "materiales": [
+        "teca"
+      ],
+      "precios": [],
+      "url": "trabajo.html?id=escritorio-teca"
+    },
+    {
+      "id": "trabajo:cuadro-tallado",
+      "tipo": "trabajo",
+      "nombre": "Cuadro tallado",
+      "descripcion": "Cuadro tallado en teca, con acabado de poliuretano. Referencia de talla y pieza decorativa en madera.",
+      "categoria": "decoracion",
+      "acabado": [
+        "poliuretano"
+      ],
+      "detalles": [],
+      "medidas": null,
+      "imagen": "img/trabajos/cuadro-tallado-foto-1.webp",
+      "galeria": [
+        "img/trabajos/cuadro-tallado-foto-2.webp"
+      ],
+      "materiales": [
+        "teca"
+      ],
+      "precios": [],
+      "url": "trabajo.html?id=cuadro-tallado"
+    },
+    {
+      "id": "trabajo:repisero-teca",
+      "tipo": "trabajo",
+      "nombre": "Repisero en teca",
+      "descripcion": "Repisero en teca y puy con acabado Rubio Monocoat. Referencia de mobiliario para ordenar o exhibir objetos.",
+      "categoria": "repisa",
+      "acabado": [
+        "rubio-monocoat"
+      ],
+      "detalles": [],
+      "medidas": null,
+      "imagen": "img/trabajos/repisero-teca-foto-1.webp",
+      "galeria": [
+        "img/trabajos/repisero-teca-foto-2.webp",
+        "img/trabajos/repisero-teca-foto-3.webp",
+        "img/trabajos/repisero-teca-foto-4.webp",
+        "img/trabajos/repisero-teca-foto-5.webp"
+      ],
+      "materiales": [
+        "teca",
+        "puy"
+      ],
+      "precios": [],
+      "url": "trabajo.html?id=repisero-teca"
+    },
+    {
+      "id": "trabajo:repisa-tornapunta",
+      "tipo": "trabajo",
+      "nombre": "Repisa tornapunta",
+      "descripcion": "Repisa tornapunta en teca con acabado Rubio Monocoat. Referencia de una repisa y su soporte; la capacidad de carga se revisa según el diseño y la instalación.",
+      "categoria": "repisa",
+      "acabado": [
+        "rubio-monocoat"
+      ],
+      "detalles": [],
+      "medidas": null,
+      "imagen": "img/trabajos/repisa-tornapunta-foto-1.webp",
+      "galeria": [
+        "img/trabajos/repisa-tornapunta-foto-2.webp",
+        "img/trabajos/repisa-tornapunta-foto-3.webp",
+        "img/trabajos/repisa-tornapunta-foto-4.webp"
+      ],
+      "materiales": [
+        "teca"
+      ],
+      "precios": [],
+      "url": "trabajo.html?id=repisa-tornapunta"
+    },
+    {
+      "id": "trabajo:zapatera-teca",
+      "tipo": "trabajo",
+      "nombre": "Zapatera en teca",
+      "descripcion": "Zapatera en teca con acabado Rubio Monocoat. Referencia de almacenamiento para calzado, alternativa a la Zapatera en samán publicada en Exhibición.",
+      "categoria": "zapatera",
+      "acabado": [
+        "rubio-monocoat"
+      ],
+      "detalles": [],
+      "medidas": null,
+      "imagen": "img/trabajos/zapatera-teca-foto-4.webp",
+      "galeria": [
+        "img/trabajos/zapatera-teca-foto-1.webp",
+        "img/trabajos/zapatera-teca-foto-2.webp",
+        "img/trabajos/zapatera-teca-foto-3.webp"
+      ],
+      "materiales": [
+        "teca"
+      ],
+      "precios": [],
+      "url": "trabajo.html?id=zapatera-teca"
+    },
+    {
+      "id": "trabajo:anillos",
+      "tipo": "trabajo",
+      "nombre": "Anillos",
+      "descripcion": "Anillos realizados en madera. Referencia de accesorios y objetos pequeños de uso personal; las especies publicadas se detallan en la ficha.",
+      "categoria": "accesorio",
+      "acabado": [
+        "poliuretano"
+      ],
+      "detalles": [],
+      "medidas": null,
+      "imagen": "img/trabajos/anillos-foto-1.webp",
+      "galeria": [
+        "img/trabajos/anillos-foto-2.webp",
+        "img/trabajos/anillos-foto-3.webp",
+        "img/trabajos/anillos-foto-4.webp",
+        "img/trabajos/anillos-foto-5.webp",
+        "img/trabajos/anillos-foto-6.webp"
+      ],
+      "materiales": [
+        "zapatero",
+        "aceite",
+        "puy"
+      ],
+      "precios": [],
+      "url": "trabajo.html?id=anillos"
+    },
+    {
+      "id": "trabajo:lampara-shoji",
+      "tipo": "trabajo",
+      "nombre": "Lámpara Shoji",
+      "descripcion": "Lámpara Shoji realizada con apamate y pino. Referencia de una pieza de iluminación de ese estilo; los componentes de otro diseño se confirman al preparar la propuesta.",
+      "categoria": "lampara",
+      "acabado": [],
+      "detalles": [],
+      "medidas": null,
+      "imagen": "img/trabajos/lampara-shoji-foto-1.webp",
+      "galeria": [
+        "img/trabajos/lampara-shoji-foto-2.webp",
+        "img/trabajos/lampara-shoji-foto-3.webp",
+        "img/trabajos/lampara-shoji-foto-4.webp",
+        "img/trabajos/lampara-shoji-foto-5.webp"
+      ],
+      "materiales": [
+        "apamate",
+        "pino"
+      ],
+      "precios": [],
+      "url": "trabajo.html?id=lampara-shoji"
+    },
+    {
+      "id": "trabajo:plataforma-macetas",
+      "tipo": "trabajo",
+      "nombre": "Macetero X Centro Estepario",
+      "descripcion": "Diseño elaborado por Centro Estepario, @centro_estepario en Instagram.",
+      "categoria": "exterior",
+      "acabado": [
+        "poliuretano"
+      ],
+      "detalles": [],
+      "medidas": null,
+      "imagen": "img/trabajos/plataformacha-foto-1.webp",
+      "galeria": [
+        "img/trabajos/plataformacha-foto-2.webp",
+        "img/trabajos/plataformacha-foto-3.webp",
+        "img/trabajos/plataformacha-foto-4.webp",
+        "img/trabajos/plataformacha-foto-5.webp"
+      ],
+      "materiales": [
+        "hierro",
+        "pino"
+      ],
+      "precios": [],
+      "url": "trabajo.html?id=plataforma-macetas"
+    },
+    {
+      "id": "trabajo:puertas-closet",
+      "tipo": "trabajo",
+      "nombre": "Puertas de clóset",
+      "descripcion": "Puertas de clóset en cedro y chapa de cedro, con barniz alquídico. La ficha muestra puertas, no un clóset completo. Sirven como referencia para conversar sobre frentes de clóset.",
+      "categoria": "puerta",
+      "acabado": [
+        "barniz-alquidico"
+      ],
+      "detalles": [],
+      "medidas": null,
+      "imagen": "img/trabajos/puertas-closet-foto-1.webp",
+      "galeria": [
+        "img/trabajos/puertas-closet-foto-2.webp",
+        "img/trabajos/puertas-closet-foto-3.webp",
+        "img/trabajos/puertas-closet-foto-4.webp"
+      ],
+      "materiales": [
+        "cedro",
+        "chapa-cedro"
+      ],
+      "precios": [],
+      "url": "trabajo.html?id=puertas-closet"
+    },
+    {
+      "id": "trabajo:set-de-utensilios",
+      "tipo": "trabajo",
+      "nombre": "Set de utensilios",
+      "descripcion": "Set de utensilios de algarrobo, puy, teca y caoba, con acabado de tung. Referencia de objetos pequeños de cocina trabajados en madera.",
+      "categoria": "cocina",
+      "acabado": [
+        "tung"
+      ],
+      "detalles": [],
+      "medidas": null,
+      "imagen": "img/trabajos/set-de-utensilios-foto-1.webp",
+      "galeria": [
+        "img/trabajos/set-de-utensilios-foto-2.webp"
+      ],
+      "materiales": [
+        "algarrobo",
+        "puy",
+        "teca",
+        "caoba"
+      ],
+      "precios": [],
+      "url": "trabajo.html?id=set-de-utensilios"
+    },
+    {
+      "id": "trabajo:mueble-espejo",
+      "tipo": "trabajo",
+      "nombre": "Mueble de espejo",
+      "descripcion": "Mueble de espejo realizado con melamina y espejo. Referencia de un mueble que incorpora un espejo.",
+      "categoria": "gabinete",
+      "acabado": [],
+      "detalles": [],
+      "medidas": null,
+      "imagen": "img/trabajos/bano-ery-espejo-foto-1.webp",
+      "galeria": [],
+      "materiales": [
+        "melamina",
+        "espejo"
+      ],
+      "precios": [],
+      "url": "trabajo.html?id=mueble-espejo"
+    },
+    {
+      "id": "trabajo:meson-trabajo",
+      "tipo": "trabajo",
+      "nombre": "Mesón de patronaje",
+      "descripcion": "Mesón de patronaje en okume con acabado de poliuretano. Medidas publicadas: 222 × 97 × 81 cm. Referencia de una superficie de trabajo para patronaje.",
+      "categoria": "taller",
+      "acabado": [
+        "poliuretano"
+      ],
+      "detalles": [],
+      "medidas": "222 × 97 × 81 cm",
+      "imagen": "img/trabajos/mt-estefania-foto-1.webp",
+      "galeria": [
+        "img/trabajos/mt-estefania-foto-2.webp",
+        "img/trabajos/mt-estefania-foto-3.webp",
+        "img/trabajos/mt-estefania-foto-4.webp",
+        "img/trabajos/mt-estefania-foto-5.webp",
+        "img/trabajos/mt-estefania-foto-6.webp"
+      ],
+      "materiales": [
+        "okume"
+      ],
+      "precios": [],
+      "url": "trabajo.html?id=meson-trabajo"
+    }
+  ]
+}

@@ -61,6 +61,8 @@ desktop.ini
 # Config de Claude Code para arrancar el servidor local desde aqui.
 # Es de esta maquina, no del sitio.
 .claude/
+vista-local.html
+asistente/rostro-demo.html
 
 # 2026-09-16 · El lanzador de la versión teléfono (como Abrir sitio.cmd).
 Abrir sitio movil.cmd

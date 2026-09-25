@@ -2520,36 +2520,7 @@
     encolar(ir("v_guarda", 400), pausa(300), ir("quieto", 420));
   }
 
-  /* Arco y flecha (17/09): aparece la diana, cuatro tiros que se
-     quedan clavados, y el último parte en dos la del centro. */
-  /* LA PRUEBA DE ODISEO (él, 17/09/2026): con capa y gorro, tensa el
-     arco en vacío y suelta la cuerda; luego saca UNA flecha, apunta
-     con mucha paciencia y la pasa por los cuatro pares de hachas
-     hasta el centro del blanco. */
-  function rutinaArco() {
-    encolar(escena("arco"), ir("a_saca", 550), pausa(900),
-            /* la cuerda, en vacío */
-            hacer(function () { st.cuerdaEnMano = true; }),
-            ir("a_carga", 380), pausa(150),
-            ir("a_apunta", 1100), pausa(700),
-            hacer(function () { st.cuerdaEnMano = false; st.cuerdaVibra = 1; }),
-            ir("a_suelta", 90), pausa(1400),
-            ir("a_saca", 600), pausa(1200),
-            /* una sola flecha */
-            ir("a_toma", 600), pausa(150),
-            hacer(function () { st.flechaMano = true; }),
-            ir("a_extrae", 420), pausa(120),
-            ir("a_lleva", 650),
-            hacer(function () { st.flechaMano = false; st.flechaCargada = true; }),
-            ir("a_carga", 300), pausa(400),
-            /* tensa despacio y aguanta: paciencia */
-            ir("a_apunta", 1500), pausa(3000),
-            hacer(tiroOdiseo),
-            ir("a_suelta", 90), pausa(2600),
-            ir("a_saca", 600), pausa(1800),
-            escenaFuera, pausa(600), ir("quieto", 450));
-  }
-
+  /* Tiro con arco archivado en Archivo/monigote-arco-2026-09-25. */
   function rutinaDibujo() {
     encolar(escena("dibujo"), ir("quieto", 300), ir("d_sienta", 800),
             pausa(9500),
@@ -2784,7 +2755,7 @@
      Ninguna actividad sale dos veces seguidas, ni intercalada (A, B,
      A): se elige entre todas MENOS las dos últimas. */
   var REPERTORIO = [
-    ["espada", 1], ["guitarra", 1], ["varita", 1], ["arco", 1],
+    ["espada", 1], ["guitarra", 1], ["varita", 1],
     /* «saludo» ya no es una actividad (él, 18/09): lo hace el 10 % de
        las veces al salir del escritorio, antes de cruzar la puerta */
     ["hacha", 1], ["sentado", 1.2], ["piedra", 1],
@@ -4122,7 +4093,7 @@
   capaFondo.appendChild(dinFondo);
 
   var RUTINAS = { cafe: rutinaCafe, planta: rutinaPlanta, moria: rutinaMoria, cepillo: rutinaCepillo, dragon: rutinaDragon, anillo: rutinaAnillo,
-                  arco: rutinaArco, saludo: rutinaSaludo, estira: rutinaEstira, piedra: rutinaPiedra,
+                  saludo: rutinaSaludo, estira: rutinaEstira, piedra: rutinaPiedra,
                   sentado: rutinaSentado, espada: rutinaEspada, guitarra: rutinaGuitarra, varita: rutinaVarita,
                   dibujo: rutinaDibujo, hacha: rutinaHacha };
   window.__monigote = {
@@ -4133,12 +4104,13 @@
     get ultimas() { return ultimas.slice(); },
     elegir: function () { return elegirActividad(); },
     /* la próxima actividad del ciclo (para probar) */
-    forzar: function (n) { if (n === "saludo") saludoForzado = true; else forzada = n; },
+    forzar: function (n) { if (n === "saludo") saludoForzado = true; else if (REPERTORIO.some(function (r) { return r[0] === n; })) forzada = n; },
     avanzar: function (ms, salto) {
       salto = salto || 16;
       for (var i = 0; i < ms; i += salto) avanzarUno((anterior || 0) + salto);
     },
     hacer: function (nombre) {
+      if (!RUTINAS[nombre]) return false;
       st.guion = []; st.espera = 0; corriendo = null; st.modo = "quieto";
       st.x = casa; st.mira = -1; esc.vis = 0; esc.op = 0; esc.tipo = null;
       st.musica = null; st.chispas = false; st.serie = null; st.lectura = null;

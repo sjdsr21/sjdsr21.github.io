@@ -105,8 +105,11 @@ window.ENTREGAS = [
      No se nombra una sola app a propósito: se usa la que salga
      mejor ese día. El rango cubre desde un trayecto corto dentro
      del mismo municipio hasta cruzar la ciudad con una pieza
-     grande, que es cuando toca carro y no moto. */
-  { id: "delivery", tipo: "local", monto_min: 4, monto_max: 12,
+     grande, que es cuando toca carro y no moto.
+     21/09/2026 (él): $4–15 es para piezas pequeñas (antes 4–12). Una
+     pieza grande va de $20 a $30 y entra en los $25 de entrega y
+     montaje de datos/marca.js. */
+  { id: "delivery", tipo: "local", monto_min: 4, monto_max: 15,
     nombre:  { es: "Servicio de Delivery (Yummy, otros)",
                en: "Delivery service (Yummy, others)" },
     detalle: { es: "Misma ciudad", en: "Same city" } },

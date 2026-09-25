@@ -476,6 +476,12 @@
     if (!ordenPt.campo) return lista;
     var signo = ordenPt.dir === "desc" ? -1 : 1;
     return lista.slice().sort(function (a, b) {
+      if (ordenPt.campo === "precio") {
+        var pa = precioDesde(a), pb = precioDesde(b);
+        var tieneA = Number.isFinite(pa) && pa > 0, tieneB = Number.isFinite(pb) && pb > 0;
+        if (!tieneA || !tieneB) return tieneA ? -1 : tieneB ? 1 : 0;
+        return (pa - pb) * signo;
+      }
       var x = valorOrdenPt(a, ordenPt.campo), y = valorOrdenPt(b, ordenPt.campo);
       if (!x && !y) return 0;
       if (!x) return 1;                  /* los huecos, al final */
@@ -486,7 +492,7 @@
 
   function cajaOrdenPtHTML() {
     var ops = '<option value="">' + t("orden_ninguno") + '</option>' +
-      CAMPOS_PT.map(function (c) {
+      CAMPOS_PT.concat([{id: "precio", clave: "orden_precio"}]).map(function (c) {
         return '<option value="' + c.id + '"' +
                (ordenPt.campo === c.id ? ' selected' : '') + '>' +
                t(c.clave) + '</option>';
@@ -496,7 +502,7 @@
       return '<button type="button" data-orden-dir-pt="' + d[0] + '"' +
              ' aria-pressed="' + (ordenPt.dir === d[0] ? "true" : "false") + '"' +
              (ordenPt.campo ? '' : ' disabled') + '>' +
-             d[2] + ' ' + t(d[1]) + '</button>';
+             d[2] + ' ' + (ordenPt.campo === "precio" ? t(d[0] === "asc" ? "precio_menor_mayor" : "precio_mayor_menor") : t(d[1])) + '</button>';
     }).join("");
 
     return '<div class="filtros-caja" data-caja="orden">' +
@@ -2170,4 +2176,10 @@
   });
 
   pintarTodo();
+  // Los enlaces del chatbot abren directamente una pieza publicada. No permiten
+  // acceder a borradores aunque la URL también incluya el parámetro de edición.
+  var piezaEnlace = new URLSearchParams(location.search).get("pieza");
+  if (piezaEnlace && window.PROTOTIPOS.some(function (p) {
+    return p.publicado === true && p.slug === piezaEnlace;
+  })) abrirPanel(piezaEnlace);
 })();

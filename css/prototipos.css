@@ -716,7 +716,7 @@ video.pt-visual__foto {
    texto grande. El vivo #25D366 se reserva para el hover, con
    texto oscuro encima (8,54:1). */
 .pt-btn--wa {
-  background-color: #075E54; color: #fff;
+  background-color: #075E54; color: var(--blanco);
   display: flex; align-items: center; justify-content: center; gap: .55rem;
 }
 .pt-btn--wa:hover { background-color: #25D366; color: #06281F; }
@@ -786,7 +786,7 @@ video.pt-visual__foto {
   transition: color .15s, border-color .15s, background-color .15s;
 }
 .pt-quitar:hover, .pt-quitar:focus-visible {
-  color: #fff; background-color: var(--de); border-color: var(--de);
+  color: var(--blanco); background-color: var(--de); border-color: var(--de);
 }
 .pt-vacio { color: var(--apagado); font-size: 0.875rem; padding: 1.6rem 0; text-align: center; }
 
@@ -1191,4 +1191,13 @@ video.pt-visual__foto {
   .pt-precio-panel { flex-direction: row-reverse; justify-content: space-between; align-items: baseline; margin-bottom: .7rem; }
   .pt-precio-panel .bs { font-size: .9rem; }
   .pt-acciones .pt-btn { padding: .8rem; min-height: 44px; }
+}
+
+/* Descripción de Tu pedido centrada en teléfono. */
+@media (max-width: 780px) {
+  #pt-baj-pedidoc {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
