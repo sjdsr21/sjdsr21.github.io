@@ -58,8 +58,8 @@ window.MARCA = {
       /* 21/09/2026 (él): el delivery depende del tamaño. Pieza
          pequeña $4–15; pieza grande $20–30, y ahí entran los $25 de
          entrega y montaje. */
-      es: "Delivery en Caracas: de $4 a $15 si la pieza es pequeña, y de $20 a $30 si es grande, con el montaje incluido. Fuera de Caracas se cotiza aparte según la distancia.",
-      en: "Delivery in Caracas: $4 to $15 for a small piece, and $20 to $30 for a large one, mounting included. Outside Caracas quoted separately by distance."
+      es: "Delivery en Caracas: de $4 a $15 si la pieza es pequeña, y de $20 a $30 si es grande, con el montaje incluido. En el catálogo, los pedidos que incluyen tumbona, espejo de baño o toallero tienen un delivery estimado de $10 a $25. Fuera de Caracas se cotiza aparte según la distancia.",
+      en: "Delivery in Caracas: $4 to $15 for a small piece, and $20 to $30 for a large one, mounting included. Catalogue orders containing a lounger, bathroom mirror or towel rail have an estimated delivery cost of $10 to $25. Outside Caracas quoted separately by distance."
     },
     garantia: {
       es: "Si algo falla por mi trabajo —una unión que cede, un acabado que se levanta— lo reparo o lo repongo sin costo. No cubre el desgaste normal ni los daños por golpes o humedad.",

@@ -1678,7 +1678,7 @@
   function costoEnvio() {
     var e = entregaActual();
     if (!e || e.tipo === "gratis" || e.tipo === "definir") return { min: 0, max: 0 };
-    if (e.tipo === "local") return { min: e.monto_min, max: e.monto_max };
+    if (e.tipo === "local") return window.rangoDelivery(carrito, e);
     if (!estadoSel) return null;
     var z = window.ZONAS[window.ESTADOS[estadoSel]];
     var centro = (z.base + z.por_kg * pesoTotal()) * e.factor * window.MULTIPLICADOR_ENVIO;
@@ -1762,7 +1762,7 @@
       var val;
       if (e.tipo === "definir") val = "";
       else if (e.tipo === "gratis") val = t("pt_sin_costo");
-      else if (e.tipo === "local") val = "~" + rango({ min: e.monto_min, max: e.monto_max });
+      else if (e.tipo === "local") val = "~" + rango(window.rangoDelivery(carrito, e));
       else if (estadoSel) {
         var z = window.ZONAS[window.ESTADOS[estadoSel]];
         var c = (z.base + z.por_kg * kg) * e.factor * window.MULTIPLICADOR_ENVIO;

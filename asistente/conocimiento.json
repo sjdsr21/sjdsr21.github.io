@@ -1,5 +1,5 @@
 {
-  "generado": "2026-09-25T05:15:30.075Z",
+  "generado": "2026-09-25T06:17:32.099Z",
   "marca": "Prototipo Ago",
   "whatsapp": "https://wa.me/584120152753",
   "perfil": {
@@ -253,7 +253,7 @@
       "id": "entregas",
       "nombre": "Entrega y envíos",
       "url": "contacto.html",
-      "texto": "Delivery en Caracas: de $4 a $15 si la pieza es pequeña, y de $20 a $30 si es grande, con el montaje incluido. Fuera de Caracas se cotiza aparte según la distancia. Retiro en El Placer; dirección exacta por chat. MRW o Zoom al resto del país, cobro en destino."
+      "texto": "Delivery en Caracas: de $4 a $15 si la pieza es pequeña, y de $20 a $30 si es grande, con el montaje incluido. En el catálogo, los pedidos que incluyen tumbona, espejo de baño o toallero tienen un delivery estimado de $10 a $25. Fuera de Caracas se cotiza aparte según la distancia. Retiro en El Placer; dirección exacta por chat. MRW o Zoom al resto del país, cobro en destino."
     },
     {
       "id": "pagos",
@@ -291,7 +291,22 @@
       "materiales": [
         "Pino",
         "Samán"
-      ]
+      ],
+      "en": {
+        "nombre": "Laptop stand — tall",
+        "descripcion": "Raises the screen by 18 to 30 cm, up to eye level. For working with a separate keyboard, without hunching over.",
+        "precios": [
+          {
+            "nombre": "Pine",
+            "usd": 50
+          },
+          {
+            "nombre": "Monkeypod",
+            "usd": 50
+          }
+        ],
+        "plazo": "Check availability with us"
+      }
     },
     {
       "id": "producto:base-laptop-baja",
@@ -315,7 +330,22 @@
       "materiales": [
         "Samán",
         "Apamate"
-      ]
+      ],
+      "en": {
+        "nombre": "Laptop stand — low",
+        "descripcion": "Raises the screen by 11 to 13 cm, tilts the machine and lets it breathe underneath. You can keep typing on the laptop's own keyboard.",
+        "precios": [
+          {
+            "nombre": "Monkeypod",
+            "usd": 50
+          },
+          {
+            "nombre": "Apamate",
+            "usd": 50
+          }
+        ],
+        "plazo": "Check availability with us"
+      }
     },
     {
       "id": "producto:tabla-picar",
@@ -370,7 +400,50 @@
         "Teca",
         "Puy",
         "Algarrobo"
-      ]
+      ],
+      "en": {
+        "nombre": "Cutting board (by size)",
+        "descripcion": "Long grain, eased edges and generous thickness. Finished in tung oil, the most durable food-safe finish. The L size comes on four rubber feet.",
+        "precios": [
+          {
+            "nombre": "S · Teak",
+            "usd": 30
+          },
+          {
+            "nombre": "S · Puy",
+            "usd": 30
+          },
+          {
+            "nombre": "S · Carob",
+            "usd": 30
+          },
+          {
+            "nombre": "M · Teak",
+            "usd": 40
+          },
+          {
+            "nombre": "M · Puy",
+            "usd": 40
+          },
+          {
+            "nombre": "M · Carob",
+            "usd": 45
+          },
+          {
+            "nombre": "L · Teak",
+            "usd": 60
+          },
+          {
+            "nombre": "L · Puy",
+            "usd": 60
+          },
+          {
+            "nombre": "L · Carob",
+            "usd": 80
+          }
+        ],
+        "plazo": "3 estimated weeks, depending on our schedule"
+      }
     },
     {
       "id": "producto:butcher-block-l",
@@ -389,7 +462,18 @@
       "url": "index.html?pieza=butcher-block-l",
       "materiales": [
         "Teca"
-      ]
+      ],
+      "en": {
+        "nombre": "Butcher Block L",
+        "descripcion": "End grain: the knife slips between the fibres instead of cutting them. It doesn't scar, doesn't dull the blade, and takes years of daily use. It sits on four rubber feet that lift it off the counter and keep it from sliding while you chop.",
+        "precios": [
+          {
+            "nombre": "L · Teak",
+            "usd": 160
+          }
+        ],
+        "plazo": "3 estimated weeks, depending on our schedule"
+      }
     },
     {
       "id": "producto:comedero-pequeno",
@@ -411,7 +495,18 @@
       "url": "index.html?pieza=comedero-pequeno",
       "materiales": [
         "Apamate, Puy"
-      ]
+      ],
+      "en": {
+        "nombre": "Pet feeder — small (double)",
+        "descripcion": "For cats or small dogs. Lifts the bowls off the floor, keeps them in place and improves your pet's posture while it eats.",
+        "precios": [
+          {
+            "nombre": "Apamate, Puy",
+            "usd": 40
+          }
+        ],
+        "plazo": "3 estimated weeks, depending on our schedule"
+      }
     },
     {
       "id": "producto:comedero-grande",
@@ -435,7 +530,22 @@
       "materiales": [
         "Samán",
         "Apamate"
-      ]
+      ],
+      "en": {
+        "nombre": "Pet feeder — large (single)",
+        "descripcion": "For large dogs. Lifts the bowls off the floor, keeps them in place and improves your pet's posture while it eats.",
+        "precios": [
+          {
+            "nombre": "Monkeypod",
+            "usd": 40
+          },
+          {
+            "nombre": "Apamate",
+            "usd": 40
+          }
+        ],
+        "plazo": "3 estimated weeks, depending on our schedule"
+      }
     },
     {
       "id": "producto:gancho-pared",
@@ -458,7 +568,18 @@
       "url": "index.html?pieza=gancho-pared",
       "materiales": [
         "Samán"
-      ]
+      ],
+      "en": {
+        "nombre": "Wall hook",
+        "descripcion": "A block with a three-position retractable hook, for coats or whatever you come up with.",
+        "precios": [
+          {
+            "nombre": "Monkeypod",
+            "usd": 45
+          }
+        ],
+        "plazo": "3 estimated weeks, depending on our schedule"
+      }
     },
     {
       "id": "producto:tumbona",
@@ -488,7 +609,22 @@
       "materiales": [
         "Pino",
         "Teca"
-      ]
+      ],
+      "en": {
+        "nombre": "Lounger",
+        "descripcion": "A beach-chair style seat with three recline settings: you decide whether to lie back or sit up.",
+        "precios": [
+          {
+            "nombre": "Pine",
+            "usd": 180
+          },
+          {
+            "nombre": "Teak",
+            "usd": 210
+          }
+        ],
+        "plazo": "4 estimated weeks, depending on our schedule"
+      }
     },
     {
       "id": "producto:bases-foto",
@@ -522,7 +658,30 @@
       "materiales": [
         "Pino",
         "Samán"
-      ]
+      ],
+      "en": {
+        "nombre": "Photo risers (pack)",
+        "descripcion": "Small blocks for staging product or tabletop photography. Sold in packs.",
+        "precios": [
+          {
+            "nombre": "Pack of 5 · Pine",
+            "usd": 7
+          },
+          {
+            "nombre": "Pack of 5 · Monkeypod",
+            "usd": 7
+          },
+          {
+            "nombre": "Pack of 20 · Pine",
+            "usd": 20
+          },
+          {
+            "nombre": "Pack of 20 · Monkeypod",
+            "usd": 20
+          }
+        ],
+        "plazo": "Check availability with us"
+      }
     },
     {
       "id": "producto:repisa-bano",
@@ -546,7 +705,18 @@
       "url": "index.html?pieza=repisa-bano",
       "materiales": [
         "Pino"
-      ]
+      ],
+      "en": {
+        "nombre": "Shelf 1.0",
+        "descripcion": "A wall shelf with a lip.",
+        "precios": [
+          {
+            "nombre": "Pine",
+            "usd": 45
+          }
+        ],
+        "plazo": "3 estimated weeks, depending on our schedule"
+      }
     },
     {
       "id": "producto:espejo-bano",
@@ -571,7 +741,18 @@
       "url": "index.html?pieza=espejo-bano",
       "materiales": [
         "Pino"
-      ]
+      ],
+      "en": {
+        "nombre": "Bathroom mirror",
+        "descripcion": "A mirror in a solid wood frame.",
+        "precios": [
+          {
+            "nombre": "Pine",
+            "usd": 80
+          }
+        ],
+        "plazo": "3 estimated weeks, depending on our schedule"
+      }
     },
     {
       "id": "producto:toallero-bano",
@@ -596,7 +777,18 @@
       "url": "index.html?pieza=toallero-bano",
       "materiales": [
         "Pino"
-      ]
+      ],
+      "en": {
+        "nombre": "Towel rail",
+        "descripcion": "A two-bar wall towel rail in solid wood.",
+        "precios": [
+          {
+            "nombre": "Pine",
+            "usd": 80
+          }
+        ],
+        "plazo": "3 estimated weeks, depending on our schedule"
+      }
     },
     {
       "id": "producto:porta-rollo-bano",
@@ -615,7 +807,18 @@
       "url": "index.html?pieza=porta-rollo-bano",
       "materiales": [
         "Pino"
-      ]
+      ],
+      "en": {
+        "nombre": "Toilet roll holder",
+        "descripcion": "Solid wood wall roll holder. Removable rod for changing the roll.",
+        "precios": [
+          {
+            "nombre": "Pine",
+            "usd": 35
+          }
+        ],
+        "plazo": "3 estimated weeks, depending on our schedule"
+      }
     },
     {
       "id": "trabajo:rolitronco",
@@ -634,7 +837,13 @@
         "eucalipto"
       ],
       "precios": [],
-      "url": "trabajo.html?id=rolitronco"
+      "url": "trabajo.html?id=rolitronco",
+      "en": {
+        "nombre": "Rolo X Matías Arapé",
+        "descripcion": "A charred solid block for outdoor use. Made to sit by a fire: a seat, a side table or a pedestal, carried from place to place by its chain. The video and photography came out of a collaboration with Matías Arapé, @matiasarape on Instagram.",
+        "precios": [],
+        "plazo": ""
+      }
     },
     {
       "id": "trabajo:quillas-pared",
@@ -662,7 +871,13 @@
         "saman"
       ],
       "precios": [],
-      "url": "trabajo.html?id=quillas-pared"
+      "url": "trabajo.html?id=quillas-pared",
+      "en": {
+        "nombre": "Wall-mounted board rests",
+        "descripcion": "Two rests carved from solid monkeypod. Hung on the wall not a single screw shows — they seat on keyhole slots routed into the wood itself. Designed in collaboration with @casagreca_ on Instagram.",
+        "precios": [],
+        "plazo": ""
+      }
     },
     {
       "id": "trabajo:mueble-bano",
@@ -685,7 +900,13 @@
         "mdf-hr"
       ],
       "precios": [],
-      "url": "trabajo.html?id=mueble-bano"
+      "url": "trabajo.html?id=mueble-bano",
+      "en": {
+        "nombre": "Lacquered bathroom vanities",
+        "descripcion": "A completed workshop project. Ask us about a similar commission.",
+        "precios": [],
+        "plazo": ""
+      }
     },
     {
       "id": "trabajo:gavetero",
@@ -709,7 +930,13 @@
         "cedro"
       ],
       "precios": [],
-      "url": "trabajo.html?id=gavetero"
+      "url": "trabajo.html?id=gavetero",
+      "en": {
+        "nombre": "Chest of drawers",
+        "descripcion": "A completed workshop project. Ask us about a similar commission.",
+        "precios": [],
+        "plazo": ""
+      }
     },
     {
       "id": "trabajo:zapatera",
@@ -732,7 +959,13 @@
         "saman"
       ],
       "precios": [],
-      "url": "trabajo.html?id=zapatera"
+      "url": "trabajo.html?id=zapatera",
+      "en": {
+        "nombre": "Monkeypod shoe rack",
+        "descripcion": "A completed workshop project. Ask us about a similar commission.",
+        "precios": [],
+        "plazo": ""
+      }
     },
     {
       "id": "trabajo:consola-2",
@@ -754,7 +987,13 @@
         "tela"
       ],
       "precios": [],
-      "url": "trabajo.html?id=consola-2"
+      "url": "trabajo.html?id=consola-2",
+      "en": {
+        "nombre": "Mid-century console",
+        "descripcion": "A completed workshop project. Ask us about a similar commission.",
+        "precios": [],
+        "plazo": ""
+      }
     },
     {
       "id": "trabajo:repisas",
@@ -778,7 +1017,13 @@
         "apamate"
       ],
       "precios": [],
-      "url": "trabajo.html?id=repisas"
+      "url": "trabajo.html?id=repisas",
+      "en": {
+        "nombre": "Removable shelves",
+        "descripcion": "A completed workshop project. Ask us about a similar commission.",
+        "precios": [],
+        "plazo": ""
+      }
     },
     {
       "id": "trabajo:paraban",
@@ -804,7 +1049,13 @@
         "tela"
       ],
       "precios": [],
-      "url": "trabajo.html?id=paraban"
+      "url": "trabajo.html?id=paraban",
+      "en": {
+        "nombre": "“Hippie” folding screen",
+        "descripcion": "A completed workshop project. Ask us about a similar commission.",
+        "precios": [],
+        "plazo": ""
+      }
     },
     {
       "id": "trabajo:caja",
@@ -829,7 +1080,13 @@
         "tela"
       ],
       "precios": [],
-      "url": "trabajo.html?id=caja"
+      "url": "trabajo.html?id=caja",
+      "en": {
+        "nombre": "Watch box",
+        "descripcion": "A completed workshop project. Ask us about a similar commission.",
+        "precios": [],
+        "plazo": ""
+      }
     },
     {
       "id": "trabajo:madriguera",
@@ -856,7 +1113,13 @@
         "pvc-expandido"
       ],
       "precios": [],
-      "url": "trabajo.html?id=madriguera"
+      "url": "trabajo.html?id=madriguera",
+      "en": {
+        "nombre": "Rabbit den",
+        "descripcion": "A completed workshop project. Ask us about a similar commission.",
+        "precios": [],
+        "plazo": ""
+      }
     },
     {
       "id": "trabajo:escenografia",
@@ -880,7 +1143,13 @@
         "pino"
       ],
       "precios": [],
-      "url": "trabajo.html?id=escenografia"
+      "url": "trabajo.html?id=escenografia",
+      "en": {
+        "nombre": "Set design X 40 Años de Paz",
+        "descripcion": "A commissioned set for the play 40 Años de Paz, directed by Gabriel and Daniel La Rosa and staged at the 11th edition of the Trasnocho Cultural Young Directors' Festival, where it received an honourable mention and other awards.",
+        "precios": [],
+        "plazo": ""
+      }
     },
     {
       "id": "trabajo:elevacho",
@@ -908,7 +1177,13 @@
         "plastico"
       ],
       "precios": [],
-      "url": "trabajo.html?id=elevacho"
+      "url": "trabajo.html?id=elevacho",
+      "en": {
+        "nombre": "Elevacho X Centro Estepario",
+        "descripcion": "A platform that raises your monitors above the desk to improve your posture. Design and 3D printing by Centro Estepario, @centro_estepario on Instagram.",
+        "precios": [],
+        "plazo": ""
+      }
     },
     {
       "id": "trabajo:bandeja",
@@ -930,7 +1205,13 @@
         "saman"
       ],
       "precios": [],
-      "url": "trabajo.html?id=bandeja"
+      "url": "trabajo.html?id=bandeja",
+      "en": {
+        "nombre": "Serving tray",
+        "descripcion": "A completed workshop project. Ask us about a similar commission.",
+        "precios": [],
+        "plazo": ""
+      }
     },
     {
       "id": "trabajo:escritorio-teca",
@@ -955,7 +1236,13 @@
         "teca"
       ],
       "precios": [],
-      "url": "trabajo.html?id=escritorio-teca"
+      "url": "trabajo.html?id=escritorio-teca",
+      "en": {
+        "nombre": "Teak desk",
+        "descripcion": "A completed workshop project. Ask us about a similar commission.",
+        "precios": [],
+        "plazo": ""
+      }
     },
     {
       "id": "trabajo:cuadro-tallado",
@@ -976,7 +1263,13 @@
         "teca"
       ],
       "precios": [],
-      "url": "trabajo.html?id=cuadro-tallado"
+      "url": "trabajo.html?id=cuadro-tallado",
+      "en": {
+        "nombre": "Carved wall panel",
+        "descripcion": "A completed workshop project. Ask us about a similar commission.",
+        "precios": [],
+        "plazo": ""
+      }
     },
     {
       "id": "trabajo:repisero-teca",
@@ -1001,7 +1294,13 @@
         "puy"
       ],
       "precios": [],
-      "url": "trabajo.html?id=repisero-teca"
+      "url": "trabajo.html?id=repisero-teca",
+      "en": {
+        "nombre": "Teak shelving unit",
+        "descripcion": "A completed workshop project. Ask us about a similar commission.",
+        "precios": [],
+        "plazo": ""
+      }
     },
     {
       "id": "trabajo:repisa-tornapunta",
@@ -1024,7 +1323,13 @@
         "teca"
       ],
       "precios": [],
-      "url": "trabajo.html?id=repisa-tornapunta"
+      "url": "trabajo.html?id=repisa-tornapunta",
+      "en": {
+        "nombre": "Bracket shelf",
+        "descripcion": "A completed workshop project. Ask us about a similar commission.",
+        "precios": [],
+        "plazo": ""
+      }
     },
     {
       "id": "trabajo:zapatera-teca",
@@ -1047,7 +1352,13 @@
         "teca"
       ],
       "precios": [],
-      "url": "trabajo.html?id=zapatera-teca"
+      "url": "trabajo.html?id=zapatera-teca",
+      "en": {
+        "nombre": "Teak shoe rack",
+        "descripcion": "A completed workshop project. Ask us about a similar commission.",
+        "precios": [],
+        "plazo": ""
+      }
     },
     {
       "id": "trabajo:anillos",
@@ -1074,7 +1385,13 @@
         "puy"
       ],
       "precios": [],
-      "url": "trabajo.html?id=anillos"
+      "url": "trabajo.html?id=anillos",
+      "en": {
+        "nombre": "Rings",
+        "descripcion": "A completed workshop project. Ask us about a similar commission.",
+        "precios": [],
+        "plazo": ""
+      }
     },
     {
       "id": "trabajo:lampara-shoji",
@@ -1097,7 +1414,13 @@
         "pino"
       ],
       "precios": [],
-      "url": "trabajo.html?id=lampara-shoji"
+      "url": "trabajo.html?id=lampara-shoji",
+      "en": {
+        "nombre": "Shoji lamp",
+        "descripcion": "A completed workshop project. Ask us about a similar commission.",
+        "precios": [],
+        "plazo": ""
+      }
     },
     {
       "id": "trabajo:plataforma-macetas",
@@ -1122,7 +1445,13 @@
         "pino"
       ],
       "precios": [],
-      "url": "trabajo.html?id=plataforma-macetas"
+      "url": "trabajo.html?id=plataforma-macetas",
+      "en": {
+        "nombre": "Macetero X Centro Estepario",
+        "descripcion": "Design by Centro Estepario, @centro_estepario on Instagram.",
+        "precios": [],
+        "plazo": ""
+      }
     },
     {
       "id": "trabajo:puertas-closet",
@@ -1146,7 +1475,13 @@
         "chapa-cedro"
       ],
       "precios": [],
-      "url": "trabajo.html?id=puertas-closet"
+      "url": "trabajo.html?id=puertas-closet",
+      "en": {
+        "nombre": "Closet doors",
+        "descripcion": "A completed workshop project. Ask us about a similar commission.",
+        "precios": [],
+        "plazo": ""
+      }
     },
     {
       "id": "trabajo:set-de-utensilios",
@@ -1170,7 +1505,13 @@
         "caoba"
       ],
       "precios": [],
-      "url": "trabajo.html?id=set-de-utensilios"
+      "url": "trabajo.html?id=set-de-utensilios",
+      "en": {
+        "nombre": "Utensil set",
+        "descripcion": "A completed workshop project. Ask us about a similar commission.",
+        "precios": [],
+        "plazo": ""
+      }
     },
     {
       "id": "trabajo:mueble-espejo",
@@ -1188,7 +1529,13 @@
         "espejo"
       ],
       "precios": [],
-      "url": "trabajo.html?id=mueble-espejo"
+      "url": "trabajo.html?id=mueble-espejo",
+      "en": {
+        "nombre": "Mirror cabinet",
+        "descripcion": "A completed workshop project. Ask us about a similar commission.",
+        "precios": [],
+        "plazo": ""
+      }
     },
     {
       "id": "trabajo:meson-trabajo",
@@ -1213,7 +1560,13 @@
         "okume"
       ],
       "precios": [],
-      "url": "trabajo.html?id=meson-trabajo"
+      "url": "trabajo.html?id=meson-trabajo",
+      "en": {
+        "nombre": "Pattern-making counter",
+        "descripcion": "A completed workshop project. Ask us about a similar commission.",
+        "precios": [],
+        "plazo": ""
+      }
     }
   ]
 }

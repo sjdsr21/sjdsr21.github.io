@@ -31,17 +31,19 @@ export async function prepareWhatsAppContact(saved,endpoint){
 }
 export function contactChannel(href,base=location.href){
  let url;try{url=new URL(href,base);}catch{return null;}
- if(url.origin===new URL(base).origin&&url.pathname.endsWith('/contacto.html'))return 'contacto';
  if(url.protocol==='https:'&&url.hostname==='wa.me'&&url.pathname==='/584120152753')return 'whatsapp';
  if(url.protocol==='mailto:'&&url.pathname.toLowerCase()==='sjdesousar@gmail.com')return 'correo';
  if(url.protocol==='https:'&&url.hostname==='instagram.com'&&url.pathname.replace(/\/$/,'')==='/prototipo_ago')return 'instagram';return null;
 }
-function choice(){
+async function choice(channel){
+ const {setLanguage}=await import('./idioma.js');
+
  const dialog=document.createElement('dialog');dialog.setAttribute('aria-label','Compartir conversación con el taller');
  dialog.style.cssText='max-width:390px;width:calc(100% - 32px);padding:22px;border:1px solid #444;background:#101010;color:#fff;font:14px/1.5 Roboto,Arial,sans-serif';
- dialog.innerHTML='<form method="dialog" style="display:block;padding:0;border:0;background:none"><h2 style="font-size:18px;margin-top:0">Continuar con el taller</h2><p>Podemos compartir esta conversación y los detalles de tu idea para que no tengas que explicarlos de nuevo. Solo el taller podrá consultarlos, durante 90 días. Las imágenes originales no se incluyen.</p><p style="display:grid;gap:8px"><button value="compartir">Compartir y continuar</button><button value="sin">Continuar sin compartir</button><button value="cancelar">Cancelar</button></p></form>';
+ dialog.innerHTML='<form method="dialog" style="display:block;padding:0;border:0;background:none"><h2 style="font-size:18px;margin-top:0">¿Compartir lo conversado con Anorak?</h2><p>Puedes compartir con el taller la información que discutiste con Anorak (asistente IA) sobre tu proyecto: la conversación y el resumen de tu idea, para que no tengas que explicarlo de nuevo.</p><p>Solo el taller podrá consultar esta información durante 90 días. Las imágenes originales no se incluyen. También puedes abrir el contacto sin compartir nada.</p><p style="display:grid;gap:8px"><button value="compartir">Compartir y continuar</button><button value="sin">Continuar sin compartir</button><button value="cancelar">Cancelar</button></p></form>';
  dialog.querySelectorAll('button').forEach(b=>b.style.cssText='font:inherit;padding:9px;border:1px solid #70452f;background:transparent;color:#eee;cursor:pointer');
- document.body.append(dialog);dialog.showModal();
+ const next=document.createElement('p');next.textContent=channel==='whatsapp'?'Vas a abrir WhatsApp.':channel==='correo'?'Vas a abrir tu aplicación de correo.':'Vas a abrir Instagram.';dialog.querySelector('h2').after(next);
+ document.body.append(dialog);setLanguage(document.documentElement.lang,dialog);dialog.showModal();
  return new Promise(resolve=>dialog.addEventListener('close',()=>{const value=dialog.returnValue;dialog.remove();resolve(value==='compartir'?true:value==='sin'?false:null);},{once:true}));
 }
 export function installContactSharing(getState=readConversation){
@@ -54,7 +56,7 @@ export function installContactSharing(getState=readConversation){
   event.preventDefault();if(handling)return;handling=true;
   try{
    const key='ago-compartir-'+saved.conversationId;let previous;try{previous=sessionStorage.getItem(key);}catch{}
-   const share=previous==='si'?true:previous==='no'?false:await choice();if(share===null)return;
+   const share=previous==='si'?true:previous==='no'?false:await choice(channel);if(share===null)return;
    try{sessionStorage.setItem(key,share?'si':'no');}catch{}
    let href=a.href;const external=a.target==='_blank',newTab=external?window.open('about:blank','_blank'):null;if(newTab)newTab.opener=null;
    if(share){

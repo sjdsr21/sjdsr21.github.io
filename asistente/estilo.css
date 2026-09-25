@@ -137,3 +137,6 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:1px solid var
 #cerrar-privacidad{display:grid;place-items:center;width:30px;height:30px;padding:5px;border:0;background:var(--papel);color:var(--apagado);pointer-events:auto}
 #cerrar-privacidad:hover{color:var(--tinta)}
 #cerrar-privacidad svg{width:20px;height:20px}
+
+/* Campo de escritura opaco, también dentro del panel de cristal. */
+#consulta{background:#000;opacity:1}

@@ -1,3 +1,5 @@
+import {getDeviceId} from './dispositivo.js';
+import {language,t,setLanguage,installLanguageUI,greetingES,greetingEN} from './idioma.js';
 import {agoFace} from './rostro.js';
 import {enlaceFicha} from './enlaces.js';
 import {conversationContext} from './contexto.js';
@@ -12,8 +14,9 @@ let chatVisible=!embedded, lastBot=null, typing=null, typingTimer=0;
 let messages=[],updatedAt=0,requestController=null,ready=false;
 let project=cleanProject(),conversationId=crypto.randomUUID(),pendingImage=null,imageGeneration=0,preparingImage=false;
 let ticket,sharing=false;
-const greeting='¡Hola! ¿Qué pieza tienes en mente, o qué problema necesitas solucionar en tu espacio?';
-function el(tag,text,cls){const e=document.createElement(tag);if(text)e.textContent=text;if(cls)e.className=cls;return e;}
+const greeting=()=>t(greetingES);
+installLanguageUI();
+function el(tag,text,cls){const e=document.createElement(tag);if(text)e.textContent=t(text);if(cls)e.className=cls;return e;}
 function scrollEnd(){$('#conversacion').scrollTop=$('#conversacion').scrollHeight;}
 function characterDelay(char,record){
  const pause=/[.!?…]/.test(char)?230:/[,;:]/.test(char)?110:char==='\n'?180:0;
@@ -51,7 +54,7 @@ function startTyping(record){
 }
 function say(text,user=false,animate=true,rememberBot=animate){
  const bubble=el('div',null,'burbuja'+(user?' usuario':'')),paragraph=el('p');
- if(!user)bubble.append(el('div','Natas','burbuja__autor'));
+ if(!user)bubble.append(el('div','Anorak','burbuja__autor'));
  bubble.append(paragraph);$('#conversacion').append(bubble);
  if(!user&&rememberBot){
   const full=String(text??''),visible=el('span',null,'texto-progresivo');
@@ -59,7 +62,7 @@ function say(text,user=false,animate=true,rememberBot=animate){
   const chars=Array.from(full),delay=6+26/(1+Math.max(0,chars.length-60)/180);
   lastBot={bubble,visible,text:full,chars,index:0,delay};
   if(animate)startTyping(lastBot);else visible.textContent=full;
- }else paragraph.textContent=text;
+ }else paragraph.textContent=user?text:t(text);
  scrollEnd();return bubble;
 }
 function persist(){
@@ -113,13 +116,13 @@ function clearView(){
 }
 function restoreConversation(saved){
  clearView();
- if(!saved){appendMessage({role:'assistant',content:greeting});return;}
+ if(!saved){appendMessage({role:'assistant',content:greeting()});return;}
  updatedAt=saved.updatedAt;selected=data?.fichas.some(f=>f.id===saved.selected)?saved.selected:undefined;
  project=cleanProject(saved.project);conversationId=/^[a-f0-9-]{36}$/i.test(saved.conversationId||'')?saved.conversationId:crypto.randomUUID();renderProject();
  ticket=saved.ticket;
  history.push(...saved.history);
  for(const [index,stored] of saved.messages.entries()){
-  const message=index===0&&stored.role==='assistant'&&stored.content==='¡Hola! ¿Qué estás buscando para tu espacio?'?{...stored,content:greeting}:stored;
+  const message=index===0&&stored.role==='assistant'&&[greetingES,greetingEN,'¡Hola! ¿Qué estás buscando para tu espacio?'].includes(stored.content)?{...stored,content:greeting()}:stored;
   appendMessage(message,false);
  }
  if(messages.at(-1).role==='assistant'){choices(messages.at(-1).opciones||[],lastBot.bubble);startTyping(lastBot);}
@@ -138,14 +141,15 @@ function photo(src,name){if(typeof src!=='string'||!/^img\/[a-zA-Z0-9_./ -]+\.(w
 function references(ids,bubble){
  const wrap=el('div',null,'enlaces');
  for(const id of new Set(ids)){
-  const f=data.fichas.find(f=>f.id===id),href=enlaceFicha(f);
+  const source=data.fichas.find(f=>f.id===id),f=source&&localizedCard(source),href=enlaceFicha(f);
   if(!href)continue;
   const a=el('a','Ver '+f.nombre+' en '+(f.tipo==='producto'?'Prototipos':'Exhibición'));
   a.href=href;a.target='_top';wrap.append(a);
  }
  if(wrap.childElementCount)bubble.append(wrap);
 }
-function cards(ids,bubble){const list=ids.map(id=>data.fichas.find(f=>f.id===id)).filter(Boolean);if(!list.length)return;const wrap=el('div',null,'fichas');for(const f of list){const card=el('details',null,'ficha'),summary=el('summary'),img=photo(f.imagen,f.nombre),label=el('span',f.nombre,'nombre');if(img)summary.append(img);if(f.precios.length)label.append(el('span','Desde $'+Math.min(...f.precios.map(p=>p.usd))+' · Ver variantes','precio'));summary.append(label);card.append(summary);const body=el('div',null,'detalle');body.append(el('p',f.descripcion));const large=photo(f.imagen,f.nombre);if(large)body.append(large);if(f.precios.length){const table=el('table');table.setAttribute('aria-label','Precios por variante');for(const p of f.precios){const tr=el('tr');tr.append(el('td',p.nombre),el('td','$'+p.usd));table.append(tr);}body.append(table);}body.append(el('p',f.plazo||'Trabajo realizado; un encargo similar se cotiza por separado.'));const a=el('a','Consultar con nosotros');a.href=data.whatsapp+'?text='+encodeURIComponent('Hola, me interesa '+f.nombre);a.target='_blank';a.rel='noopener';body.append(a);card.append(body);card.ontoggle=()=>{if(card.open){selected=f.id;persist();}};wrap.append(card);}bubble.append(wrap);}
+function localizedCard(f){return language==='en'&&f.en?{...f,...f.en}:f;}
+function cards(ids,bubble){const list=ids.map(id=>data.fichas.find(f=>f.id===id)).filter(Boolean).map(localizedCard);if(!list.length)return;const wrap=el('div',null,'fichas');for(const f of list){const card=el('details',null,'ficha'),summary=el('summary'),img=photo(f.imagen,f.nombre),label=el('span',f.nombre,'nombre');if(img)summary.append(img);if(f.precios.length)label.append(el('span','Desde $'+Math.min(...f.precios.map(p=>p.usd))+' · Ver variantes','precio'));summary.append(label);card.append(summary);const body=el('div',null,'detalle');body.append(el('p',f.descripcion));const large=photo(f.imagen,f.nombre);if(large)body.append(large);if(f.precios.length){const table=el('table');table.setAttribute('aria-label','Precios por variante');for(const p of f.precios){const tr=el('tr');tr.append(el('td',p.nombre),el('td','$'+p.usd));table.append(tr);}body.append(table);}body.append(el('p',f.plazo||'Trabajo realizado; un encargo similar se cotiza por separado.'));const a=el('a','Consultar con nosotros');a.href=data.whatsapp+'?text='+encodeURIComponent((language==='en'?'Hi, I am interested in ':'Hola, me interesa ')+f.nombre);a.target='_blank';a.rel='noopener';body.append(a);card.append(body);card.ontoggle=()=>{if(card.open){selected=f.id;persist();}};wrap.append(card);}bubble.append(wrap);}
 function sections(ids,bubble){const wrap=el('div',null,'enlaces');for(const id of ids){const s=data.secciones.find(x=>x.id===id);if(!s)continue;const a=el('a',s.nombre);a.href=s.url;a.target='_top';wrap.append(a);}if(wrap.childElementCount)bubble.append(wrap);}
 async function ask(q){
  if(busy||sharing||preparingImage||!data)return;
@@ -155,14 +159,18 @@ async function ask(q){
  appendMessage({role:'user',content:q,imageName:attachment?.name,imageURL:attachment?.url});updatedAt=Date.now();persist();
  renderContact();
  $('#enviar').disabled=true;
- const pending=say('Escribiendo…',false,false);pending.classList.add('espera');
+ const pending=say(t('Escribiendo…'),false,false);pending.classList.add('espera');
  try{
   if(!window.AGO_CHAT_ENDPOINT)throw Error('La conexión no está disponible. Inténtalo más tarde.');
   const r=await fetch(window.AGO_CHAT_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},
    signal:AbortSignal.any([controller.signal,AbortSignal.timeout(30000)]),
-   body:JSON.stringify({message:q,history:conversationContext(history),selected,project,image:attachment?.url,conversationId})});
+   body:JSON.stringify({message:q,language,deviceId:getDeviceId(),history:conversationContext(history),selected,project,image:attachment?.url,conversationId})});
   const out=await r.json();
   if(controller!==requestController)return;
+  if(out.code==='MESSAGE_LIMIT'){
+   const minutes=Math.max(1,Math.ceil(out.retryAfter/60));
+   throw Error(language==='en'?'You have reached the limit of '+(out.window==='daily'?'20 messages in 24 hours':'5 messages in 10 minutes')+'. Try again in '+minutes+' minutes. You can still contact the workshop.':'Alcanzaste el límite de '+(out.window==='daily'?'20 mensajes en 24 horas':'5 mensajes en 10 minutos')+'. Vuelve a intentarlo en '+minutes+' minutos. Puedes contactar con el taller mientras tanto.');
+  }
   if(!r.ok)throw Error(out.error||'No se pudo consultar');
   if(typeof out.texto!=='string'||!out.texto.trim())throw Error('La respuesta llegó vacía. Inténtalo de nuevo.');
   pending.remove();
@@ -173,7 +181,7 @@ async function ask(q){
   updatedAt=Date.now();persist();scrollEnd();
  }catch(e){
   if(controller!==requestController)return;
-  pending.remove();appendMessage({role:'assistant',content:e.name==='TimeoutError'?'La respuesta está tardando. Inténtalo de nuevo.':e.message||'No se pudo conectar. Inténtalo de nuevo.'});
+  pending.remove();appendMessage({role:'assistant',content:t(e.name==='TimeoutError'?'La respuesta está tardando. Inténtalo de nuevo.':e.message||'No se pudo conectar. Inténtalo de nuevo.')});
   updatedAt=Date.now();persist();
  }finally{if(controller===requestController){requestController=null;busy=false;$('#enviar').disabled=false;renderContact();}}
 }
@@ -197,6 +205,15 @@ $('#minimizar').onclick=()=>parent.postMessage({type:'ago-close'},location.origi
 window.addEventListener('keydown',e=>{if(embedded&&e.key==='Escape')parent.postMessage({type:'ago-close'},location.origin);});
 window.addEventListener('message',e=>{
  if(e.origin!==location.origin||e.source!==parent)return;
+ if(e.data?.type==='chatbot-language'&&e.data.language!==language){
+  setLanguage(e.data.language);
+  if(ready&&!busy){
+   finishTyping();const previous=messages.slice();messages=[];lastBot=null;$('#conversacion').replaceChildren();
+   previous.forEach((m,i)=>appendMessage(i===0&&m.role==='assistant'&&[greetingES,greetingEN].includes(m.content)?{...m,content:greeting()}:m,false));
+   if(messages.at(-1)?.role==='assistant')choices(messages.at(-1).opciones||[],lastBot.bubble);
+   renderProject();
+  }
+ }
  if(e.data?.type==='ago-focus'){
   if(e.data.input&&matchMedia('(min-width:500px)').matches)$('#mensaje').focus();
   else $('.chat__titulo').focus({preventScroll:true});
@@ -224,7 +241,7 @@ $('#cerrar-privacidad').onclick=()=>{
 };
 reduced.addEventListener('change',()=>{if(reduced.matches&&typing){finishTyping();scrollEnd();}});
 $('#enviar').disabled=true;
-$('#consulta').onsubmit=e=>{e.preventDefault();if(busy||sharing||preparingImage||!data)return;const q=$('#mensaje').value.trim()||(pendingImage?'Esta imagen es una referencia para mi idea.':'');if(q){$('#mensaje').value='';ask(q);}};
+$('#consulta').onsubmit=e=>{e.preventDefault();if(busy||sharing||preparingImage||!data)return;const q=$('#mensaje').value.trim()||(pendingImage?t('Esta imagen es una referencia para mi idea.'):'');if(q){$('#mensaje').value='';ask(q);}};
 $('#adjuntar').onclick=()=>{if(!busy&&!sharing)$('#archivo-imagen').click();};
 $('#archivo-imagen').onchange=async()=>{
  const file=$('#archivo-imagen').files[0];if(!file)return;

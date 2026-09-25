@@ -110,6 +110,7 @@ window.ENTREGAS = [
      pieza grande va de $20 a $30 y entra en los $25 de entrega y
      montaje de datos/marca.js. */
   { id: "delivery", tipo: "local", monto_min: 4, monto_max: 15,
+    piezas_mayores: ["tumbona", "espejo-bano", "toallero-bano"], monto_mayor_min: 10, monto_mayor_max: 25,
     nombre:  { es: "Servicio de Delivery (Yummy, otros)",
                en: "Delivery service (Yummy, others)" },
     detalle: { es: "Misma ciudad", en: "Same city" } },
@@ -150,3 +151,9 @@ window.PAGOS = [
     condicion: { es: "Solo con entrega personal, a coordinar.",
                  en: "In-person handover only, to be arranged." } }
 ];
+
+/* El pedido mixto usa el rango mayor si contiene alguna de estas piezas. */
+window.rangoDelivery = function (lineas, entrega) {
+  var mayor = lineas.some(function (linea) { return linea.cant > 0 && (entrega.piezas_mayores || []).indexOf(linea.slug) !== -1; });
+  return mayor ? { min: entrega.monto_mayor_min, max: entrega.monto_mayor_max } : { min: entrega.monto_min, max: entrega.monto_max };
+};
