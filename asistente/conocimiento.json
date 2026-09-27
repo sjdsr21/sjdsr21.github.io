@@ -279,11 +279,11 @@
       "precios": [
         {
           "nombre": "Pino",
-          "usd": 50
+          "usd": 40
         },
         {
           "nombre": "Samán",
-          "usd": 50
+          "usd": 40
         }
       ],
       "plazo": "Confirma la disponibilidad con nosotros",
@@ -298,11 +298,11 @@
         "precios": [
           {
             "nombre": "Pine",
-            "usd": 50
+            "usd": 40
           },
           {
             "nombre": "Monkeypod",
-            "usd": 50
+            "usd": 40
           }
         ],
         "plazo": "Check availability with us"
@@ -318,11 +318,11 @@
       "precios": [
         {
           "nombre": "Samán",
-          "usd": 50
+          "usd": 40
         },
         {
           "nombre": "Apamate",
-          "usd": 50
+          "usd": 40
         }
       ],
       "plazo": "Confirma la disponibilidad con nosotros",
@@ -337,11 +337,11 @@
         "precios": [
           {
             "nombre": "Monkeypod",
-            "usd": 50
+            "usd": 40
           },
           {
             "nombre": "Apamate",
-            "usd": 50
+            "usd": 40
           }
         ],
         "plazo": "Check availability with us"
@@ -561,7 +561,7 @@
       "precios": [
         {
           "nombre": "Samán",
-          "usd": 45
+          "usd": 40
         }
       ],
       "plazo": "3 semanas estimadas, según nuestra agenda",
@@ -575,7 +575,7 @@
         "precios": [
           {
             "nombre": "Monkeypod",
-            "usd": 45
+            "usd": 40
           }
         ],
         "plazo": "3 estimated weeks, depending on our schedule"
@@ -638,11 +638,11 @@
       "precios": [
         {
           "nombre": "Paquete de 5 · Pino",
-          "usd": 7
+          "usd": 6
         },
         {
           "nombre": "Paquete de 5 · Samán",
-          "usd": 7
+          "usd": 6
         },
         {
           "nombre": "Paquete de 20 · Pino",
@@ -665,11 +665,11 @@
         "precios": [
           {
             "nombre": "Pack of 5 · Pine",
-            "usd": 7
+            "usd": 6
           },
           {
             "nombre": "Pack of 5 · Monkeypod",
-            "usd": 7
+            "usd": 6
           },
           {
             "nombre": "Pack of 20 · Pine",
@@ -698,7 +698,7 @@
       "precios": [
         {
           "nombre": "Pino",
-          "usd": 45
+          "usd": 40
         }
       ],
       "plazo": "3 semanas estimadas, según nuestra agenda",
@@ -712,7 +712,7 @@
         "precios": [
           {
             "nombre": "Pine",
-            "usd": 45
+            "usd": 40
           }
         ],
         "plazo": "3 estimated weeks, depending on our schedule"
@@ -770,7 +770,7 @@
       "precios": [
         {
           "nombre": "Pino",
-          "usd": 80
+          "usd": 70
         }
       ],
       "plazo": "3 semanas estimadas, según nuestra agenda",
@@ -784,7 +784,7 @@
         "precios": [
           {
             "nombre": "Pine",
-            "usd": 80
+            "usd": 70
           }
         ],
         "plazo": "3 estimated weeks, depending on our schedule"
@@ -800,7 +800,7 @@
       "precios": [
         {
           "nombre": "Pino",
-          "usd": 35
+          "usd": 30
         }
       ],
       "plazo": "3 semanas estimadas, según nuestra agenda",
@@ -814,7 +814,7 @@
         "precios": [
           {
             "nombre": "Pine",
-            "usd": 35
+            "usd": 30
           }
         ],
         "plazo": "3 estimated weeks, depending on our schedule"
