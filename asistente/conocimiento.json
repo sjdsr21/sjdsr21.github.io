@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-03T03:00:06.595Z",
+  "generado": "2026-10-03T16:01:23.995Z",
   "marca": "Prototipo Ago",
   "whatsapp": "https://wa.me/584120152753",
   "perfil": {
@@ -351,7 +351,7 @@
       "id": "producto:tabla-picar",
       "tipo": "producto",
       "nombre": "Tabla de picar",
-      "descripcion": "Veta a lo largo, cantos suavizados y buen espesor. Acabado en aceite de tung, el más resistente para uso alimentario. La talla L viene sobre cuatro patas de goma.",
+      "descripcion": "Veta a lo largo, cantos suavizados y buen espesor. Acabado en aceite de tung. La talla L viene sobre cuatro patas de goma.",
       "imagen": "img/prototipos/tabla-de-picar.webp",
       "galeria": [
         "img/prototipos/tabla-de-picar-2.webp"
@@ -403,7 +403,7 @@
       ],
       "en": {
         "nombre": "Cutting board",
-        "descripcion": "Long grain, eased edges and generous thickness. Finished in tung oil, the most durable food-safe finish. The L size comes on four rubber feet.",
+        "descripcion": "Long grain, eased edges and generous thickness. Finished in tung oil. The L size comes on four rubber feet.",
         "precios": [
           {
             "nombre": "S · Teak",
@@ -449,7 +449,7 @@
       "id": "producto:butcher-block-l",
       "tipo": "producto",
       "nombre": "Butcher Block",
-      "descripcion": "Veta vertical: el cuchillo entra entre las fibras en vez de cortarlas. No marca, no desafila y aguanta años de uso diario. Va sobre cuatro patas de goma, que la despegan del mesón y la dejan agarrada mientras picas.",
+      "descripcion": "Tabla de veta vertical, de 4 cm de espesor y acabado en aceite de tung, para preparar tus alimentos. Va sobre cuatro patas de goma, que la despegan del mesón y la dejan agarrada mientras picas.",
       "imagen": "img/prototipos/butcher-block.webp",
       "galeria": [],
       "precios": [
@@ -465,7 +465,7 @@
       ],
       "en": {
         "nombre": "Butcher Block",
-        "descripcion": "End grain: the knife slips between the fibres instead of cutting them. It doesn't scar, doesn't dull the blade, and takes years of daily use. It sits on four rubber feet that lift it off the counter and keep it from sliding while you chop.",
+        "descripcion": "A 4 cm thick end-grain board, finished in tung oil, for preparing food. It sits on four rubber feet that lift it off the counter and keep it from sliding while you chop.",
         "precios": [
           {
             "nombre": "L · Teak",
