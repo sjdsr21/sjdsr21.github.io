@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1116" height="1430" viewBox="0 0 1116 1430" preserveAspectRatio="xMidYMid meet">
+<g transform="translate(63,0)">
+<g class="pt-plano__silueta" fill="#000" fill-rule="evenodd" stroke="none">
+<path d="M 922.88,132.67 L 923.24,760.87 L 921.44,761.23 L 921.08,763.03 L 923.24,769.51 L 868.52,785.35 L 868.52,1051.03 L 326.00,1051.39 L 316.28,948.07 L 316.28,937.27 L 308.00,906.67 L 890.84,745.75 L 890.84,133.03 Z M 394.04,916.39 L 389.36,916.75 L 330.68,933.67 L 335.36,933.31 Z M 625.88,853.03 L 683.48,837.19 L 682.40,836.11 L 655.76,843.31 L 629.84,850.51 Z"/>
+</g>
+<path d="M 625.88,851.59 L 625.88,853.03 L 622.64,854.83 L 331.04,936.91 L 330.68,1048.87 L 325.64,1048.87 L 316.28,947.35 L 316.64,918.19 L 323.84,918.19 L 330.68,933.67 L 332.48,934.03 L 603.20,856.99 Z M 625.88,851.59 L 625.88,853.03 L 622.64,854.83 L 331.04,936.91 L 330.68,1048.87 L 325.64,1048.87 L 316.28,947.35 L 316.64,918.19 L 323.84,918.19 L 330.68,933.67 L 332.48,934.03 L 603.20,856.99 Z M 325.64,1048.87 L 316.28,948.07 L 316.64,940.51 L 624.80,853.39 L 626.60,853.75 L 642.44,910.63 L 664.40,905.23 L 699.32,894.79 L 684.92,844.39 L 683.84,836.83 L 868.52,785.35 L 868.16,1049.23 Z M 325.64,1048.87 L 316.28,948.07 L 316.64,940.51 L 624.80,853.39 L 626.60,853.75 L 642.44,910.63 L 664.40,905.23 L 699.32,894.79 L 684.92,844.39 L 683.84,836.83 L 868.52,785.35 L 868.16,1049.23 Z M 700.04,894.79 L 642.08,910.99 L 625.88,853.75 L 683.84,837.55 Z M 868.52,783.19 L 867.44,785.71 L 683.84,837.55 L 682.76,836.47 L 683.12,834.67 L 687.44,833.23 L 863.12,783.55 Z M 868.52,783.19 L 867.44,785.71 L 683.84,837.55 L 682.76,836.47 L 683.12,834.67 L 687.44,833.23 L 863.12,783.55 Z M 325.64,1051.03 L 326.00,1049.23 L 868.52,1049.59 L 868.16,1051.39 Z M 325.64,1051.03 L 326.00,1049.23 L 868.52,1049.59 L 868.16,1051.39 Z M 315.56,936.55 L 307.64,907.75 L 309.44,905.95 L 899.84,743.23 L 915.32,739.99 L 923.24,768.79 L 922.16,770.59 L 323.84,935.47 Z M 891.20,132.67 L 923.24,133.03 L 922.88,761.23 L 890.84,760.87 Z" fill="none" stroke="#fff" stroke-width="4.95" stroke-linejoin="round"/>
+<g stroke="#000" fill="none" stroke-linecap="round">
+<line x1="258.5" y1="1051.0" x2="973.0" y2="1051.0" stroke-width="8.25"/>
+<path d="M 270.1,1051.0 L 257.3,1063.7 M 293.1,1051.0 L 280.4,1063.7 M 316.2,1051.0 L 303.5,1063.7 M 339.4,1051.0 L 326.6,1063.7 M 362.4,1051.0 L 349.7,1063.7 M 385.5,1051.0 L 372.8,1063.7 M 408.6,1051.0 L 395.9,1063.7 M 431.8,1051.0 L 419.0,1063.7 M 454.9,1051.0 L 442.1,1063.7 M 477.9,1051.0 L 465.2,1063.7 M 501.0,1051.0 L 488.3,1063.7 M 524.1,1051.0 L 511.4,1063.7 M 547.2,1051.0 L 534.5,1063.7 M 570.3,1051.0 L 557.6,1063.7 M 593.5,1051.0 L 580.7,1063.7 M 616.5,1051.0 L 603.8,1063.7 M 639.6,1051.0 L 626.9,1063.7 M 662.8,1051.0 L 650.0,1063.7 M 685.8,1051.0 L 673.1,1063.7 M 708.9,1051.0 L 696.2,1063.7 M 732.0,1051.0 L 719.3,1063.7 M 755.1,1051.0 L 742.4,1063.7 M 778.2,1051.0 L 765.5,1063.7 M 801.3,1051.0 L 788.6,1063.7 M 824.4,1051.0 L 811.7,1063.7 M 847.5,1051.0 L 834.8,1063.7 M 870.6,1051.0 L 857.9,1063.7 M 893.7,1051.0 L 881.0,1063.7 M 916.8,1051.0 L 904.1,1063.7 M 939.9,1051.0 L 927.2,1063.7" stroke-width="2.75"/>
+</g>
+<g stroke="#000" stroke-width="4.95" fill="#000" font-family="Roboto, Arial, sans-serif" font-size="55.0">
+<line x1="88.0" y1="1051.0" x2="88.0" y2="709.8"/>
+<line x1="88.0" y1="473.3" x2="88.0" y2="132.0"/>
+<line x1="88.0" y1="1051.0" x2="308.0" y2="1051.0" stroke-width="2.75"/>
+<line x1="88.0" y1="132.0" x2="308.0" y2="132.0" stroke-width="2.75"/>
+<path d="M 88.0,1051.0 L 88.0,1020.8 L 97.7,1020.8 Z" stroke="none"/><path d="M 88.0,132.0 L 88.0,162.2 L 78.3,162.2 Z" stroke="none"/>
+<text x="88.0" y="591.5" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round" transform="rotate(-90 88.0 591.5)">38 cm</text>
+<line x1="220.0" y1="1048.6" x2="220.0" y2="1034.9"/>
+<line x1="220.0" y1="798.4" x2="220.0" y2="784.6"/>
+<line x1="220.0" y1="1048.6" x2="316.4" y2="1048.6" stroke-width="2.75"/>
+<line x1="220.0" y1="784.6" x2="316.4" y2="784.6" stroke-width="2.75"/>
+<path d="M 220.0,1048.6 L 220.0,1018.4 L 229.7,1018.4 Z" stroke="none"/><path d="M 220.0,784.6 L 220.0,814.9 L 210.3,814.9 Z" stroke="none"/>
+<text x="220.0" y="916.6" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round" transform="rotate(-90 220.0 916.6)">11 cm</text>
+<line x1="316.4" y1="1139.0" x2="474.1" y2="1139.0"/>
+<line x1="710.6" y1="1139.0" x2="868.4" y2="1139.0"/>
+<line x1="316.4" y1="1139.0" x2="316.4" y2="1051.0" stroke-width="2.75"/>
+<line x1="868.4" y1="1139.0" x2="868.4" y2="1051.0" stroke-width="2.75"/>
+<path d="M 316.4,1139.0 L 286.1,1139.0 L 286.1,1129.4 Z" stroke="none"/><path d="M 868.4,1139.0 L 898.7,1139.0 L 898.7,1148.7 Z" stroke="none"/>
+<text x="592.4" y="1139.0" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">23 cm</text>
+<line x1="913.0" y1="757.8" x2="764.1" y2="798.4" stroke-width="2.75"/>
+<line x1="913.0" y1="757.8" x2="911.6" y2="603.5" stroke-width="2.75"/>
+<path d="M 791.0,791.1 A 126.5,126.5 0 0 1 911.9,631.3" fill="none" stroke-width="4.95"/>
+<text x="770.5" y="650.0" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">105°</text>
+</g>
+</g>
+<text class="pt-plano__nota" data-es="(Laptop de referencia: 15,6″ ·" data-en="(Reference laptop: 15.6″ ·" x="558" y="1296" text-anchor="middle" font-family="Roboto, Arial, sans-serif" font-size="55.0" font-weight="300" fill="#000">(Laptop de referencia: 15,6″ ·</text>
+<text class="pt-plano__nota" data-es="altura de pantalla 24–26 cm)" data-en="screen height 24–26 cm)" x="558" y="1370" text-anchor="middle" font-family="Roboto, Arial, sans-serif" font-size="55.0" font-weight="300" fill="#000">altura de pantalla 24–26 cm)</text>
+<text x="589" y="59" font-weight="300" class="pt-plano__titulo" data-es="Vista lateral" data-en="Side view" text-anchor="middle" font-family="Roboto, Arial, sans-serif" font-size="60.5" fill="#000">Vista lateral</text>
+
+
+</svg>

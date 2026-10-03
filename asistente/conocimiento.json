@@ -1,5 +1,5 @@
 {
-  "generado": "2026-09-30T03:49:41.799Z",
+  "generado": "2026-10-03T03:00:06.595Z",
   "marca": "Prototipo Ago",
   "whatsapp": "https://wa.me/584120152753",
   "perfil": {
@@ -273,8 +273,8 @@
       "id": "producto:base-laptop-alta",
       "tipo": "producto",
       "nombre": "Base de laptop — alta",
-      "descripcion": "Eleva la pantalla entre 18 y 30 cm, hasta la altura de los ojos. Para trabajar con teclado aparte, sin encorvarte.",
-      "imagen": "img/prototipos/base-alta-saman.webp",
+      "descripcion": "Eleva la pantalla entre 18 y 32 cm, hasta la altura de los ojos. Para trabajar con teclado externo, sin encorvarte.",
+      "imagen": "img/prototipos/base-alta-saman-final-1.webp",
       "galeria": [],
       "precios": [
         {
@@ -294,7 +294,7 @@
       ],
       "en": {
         "nombre": "Laptop stand — tall",
-        "descripcion": "Raises the screen by 18 to 30 cm, up to eye level. For working with a separate keyboard, without hunching over.",
+        "descripcion": "Raises the screen by 18 to 32 cm, up to eye level. For working with an external keyboard, without hunching over.",
         "precios": [
           {
             "nombre": "Pine",
@@ -312,8 +312,8 @@
       "id": "producto:base-laptop-baja",
       "tipo": "producto",
       "nombre": "Base de laptop — baja",
-      "descripcion": "Eleva la pantalla entre 11 y 13 cm, inclina el equipo y le da aire por debajo. Puedes seguir escribiendo en el teclado de la laptop.",
-      "imagen": "img/prototipos/base-baja-saman.webp",
+      "descripcion": "Eleva la pantalla entre 12 y 14 cm, inclina el equipo y le da aire por debajo. Taipea con mejor ergonomía en el teclado de la laptop.",
+      "imagen": "img/prototipos/base-baja-saman-final-1.webp",
       "galeria": [],
       "precios": [
         {
@@ -333,7 +333,7 @@
       ],
       "en": {
         "nombre": "Laptop stand — low",
-        "descripcion": "Raises the screen by 11 to 13 cm, tilts the machine and lets it breathe underneath. You can keep typing on the laptop's own keyboard.",
+        "descripcion": "Raises the screen by 12 to 14 cm, tilts the machine and lets it breathe underneath. Type more ergonomically on the laptop's keyboard.",
         "precios": [
           {
             "nombre": "Monkeypod",
@@ -350,7 +350,7 @@
     {
       "id": "producto:tabla-picar",
       "tipo": "producto",
-      "nombre": "Tabla de picar (por talla)",
+      "nombre": "Tabla de picar",
       "descripcion": "Veta a lo largo, cantos suavizados y buen espesor. Acabado en aceite de tung, el más resistente para uso alimentario. La talla L viene sobre cuatro patas de goma.",
       "imagen": "img/prototipos/tabla-de-picar.webp",
       "galeria": [
@@ -402,7 +402,7 @@
         "Algarrobo"
       ],
       "en": {
-        "nombre": "Cutting board (by size)",
+        "nombre": "Cutting board",
         "descripcion": "Long grain, eased edges and generous thickness. Finished in tung oil, the most durable food-safe finish. The L size comes on four rubber feet.",
         "precios": [
           {
@@ -448,7 +448,7 @@
     {
       "id": "producto:butcher-block-l",
       "tipo": "producto",
-      "nombre": "Butcher Block L",
+      "nombre": "Butcher Block",
       "descripcion": "Veta vertical: el cuchillo entra entre las fibras en vez de cortarlas. No marca, no desafila y aguanta años de uso diario. Va sobre cuatro patas de goma, que la despegan del mesón y la dejan agarrada mientras picas.",
       "imagen": "img/prototipos/butcher-block.webp",
       "galeria": [],
@@ -464,7 +464,7 @@
         "Teca"
       ],
       "en": {
-        "nombre": "Butcher Block L",
+        "nombre": "Butcher Block",
         "descripcion": "End grain: the knife slips between the fibres instead of cutting them. It doesn't scar, doesn't dull the blade, and takes years of daily use. It sits on four rubber feet that lift it off the counter and keep it from sliding while you chop.",
         "precios": [
           {
@@ -478,7 +478,7 @@
     {
       "id": "producto:comedero-pequeno",
       "tipo": "producto",
-      "nombre": "Comedero pequeño (doble)",
+      "nombre": "Comedero pequeño",
       "descripcion": "Para gatos o perros pequeños. Levanta los envases del piso, los mantiene en su sitio y mejora la postura de la mascota al comer.",
       "imagen": "img/prototipos/comedero-pequeno-1.webp",
       "galeria": [
@@ -497,50 +497,11 @@
         "Apamate, Puy"
       ],
       "en": {
-        "nombre": "Pet feeder — small (double)",
+        "nombre": "Pet feeder — small",
         "descripcion": "For cats or small dogs. Lifts the bowls off the floor, keeps them in place and improves your pet's posture while it eats.",
         "precios": [
           {
             "nombre": "Apamate, Puy",
-            "usd": 40
-          }
-        ],
-        "plazo": "3 estimated weeks, depending on our schedule"
-      }
-    },
-    {
-      "id": "producto:comedero-grande",
-      "tipo": "producto",
-      "nombre": "Comedero grande (individual)",
-      "descripcion": "Para perros grandes. Levanta los envases del piso, los mantiene en su sitio y mejora la postura de la mascota al comer.",
-      "imagen": "img/prototipos/comedero-grande-iso.webp",
-      "galeria": [],
-      "precios": [
-        {
-          "nombre": "Samán",
-          "usd": 40
-        },
-        {
-          "nombre": "Apamate",
-          "usd": 40
-        }
-      ],
-      "plazo": "3 semanas estimadas, según nuestra agenda",
-      "url": "index.html?pieza=comedero-grande",
-      "materiales": [
-        "Samán",
-        "Apamate"
-      ],
-      "en": {
-        "nombre": "Pet feeder — large (single)",
-        "descripcion": "For large dogs. Lifts the bowls off the floor, keeps them in place and improves your pet's posture while it eats.",
-        "precios": [
-          {
-            "nombre": "Monkeypod",
-            "usd": 40
-          },
-          {
-            "nombre": "Apamate",
             "usd": 40
           }
         ],
@@ -684,44 +645,9 @@
       }
     },
     {
-      "id": "producto:repisa-bano",
-      "tipo": "producto",
-      "nombre": "Repisa 1.0",
-      "descripcion": "Repisa de pared con reborde.",
-      "imagen": "img/prototipos/repisa-bano-foto-1.webp",
-      "galeria": [
-        "img/prototipos/repisa-bano-foto-2.webp",
-        "img/prototipos/repisa-bano-foto-3.webp",
-        "img/prototipos/repisa-bano-foto-4.webp",
-        "img/prototipos/repisa-bano-iso.webp"
-      ],
-      "precios": [
-        {
-          "nombre": "Pino",
-          "usd": 40
-        }
-      ],
-      "plazo": "3 semanas estimadas, según nuestra agenda",
-      "url": "index.html?pieza=repisa-bano",
-      "materiales": [
-        "Pino"
-      ],
-      "en": {
-        "nombre": "Shelf 1.0",
-        "descripcion": "A wall shelf with a lip.",
-        "precios": [
-          {
-            "nombre": "Pine",
-            "usd": 40
-          }
-        ],
-        "plazo": "3 estimated weeks, depending on our schedule"
-      }
-    },
-    {
       "id": "producto:espejo-bano",
       "tipo": "producto",
-      "nombre": "Espejo de baño",
+      "nombre": "Espejo enmarcado",
       "descripcion": "Espejo con marco de madera maciza.",
       "imagen": "img/prototipos/espejo-bano-foto-1.webp",
       "galeria": [
@@ -743,7 +669,7 @@
         "Pino"
       ],
       "en": {
-        "nombre": "Bathroom mirror",
+        "nombre": "Framed mirror",
         "descripcion": "A mirror in a solid wood frame.",
         "precios": [
           {
@@ -785,36 +711,6 @@
           {
             "nombre": "Pine",
             "usd": 70
-          }
-        ],
-        "plazo": "3 estimated weeks, depending on our schedule"
-      }
-    },
-    {
-      "id": "producto:porta-rollo-bano",
-      "tipo": "producto",
-      "nombre": "Portarrollo",
-      "descripcion": "Portarrollo de pared en madera maciza. Listón removible para cambio de rollo.",
-      "imagen": "img/prototipos/porta-rollo-bano-iso.webp",
-      "galeria": [],
-      "precios": [
-        {
-          "nombre": "Pino",
-          "usd": 30
-        }
-      ],
-      "plazo": "3 semanas estimadas, según nuestra agenda",
-      "url": "index.html?pieza=porta-rollo-bano",
-      "materiales": [
-        "Pino"
-      ],
-      "en": {
-        "nombre": "Toilet roll holder",
-        "descripcion": "Solid wood wall roll holder. Removable rod for changing the roll.",
-        "precios": [
-          {
-            "nombre": "Pine",
-            "usd": 30
           }
         ],
         "plazo": "3 estimated weeks, depending on our schedule"
@@ -911,7 +807,7 @@
     {
       "id": "trabajo:gavetero",
       "tipo": "trabajo",
-      "nombre": "Gavetero",
+      "nombre": "Gavetero en cedro",
       "descripcion": "Gavetero en cedro, con acabado de linaza y cera. Referencia para una propuesta de almacenamiento con gavetas.",
       "categoria": "gabinete",
       "acabado": [
@@ -932,7 +828,7 @@
       "precios": [],
       "url": "trabajo.html?id=gavetero",
       "en": {
-        "nombre": "Chest of drawers",
+        "nombre": "Cedar chest of drawers",
         "descripcion": "A completed workshop project. Ask us about a similar commission.",
         "precios": [],
         "plazo": ""
@@ -1188,7 +1084,7 @@
     {
       "id": "trabajo:bandeja",
       "tipo": "trabajo",
-      "nombre": "Bandeja",
+      "nombre": "Bandeja en samán",
       "descripcion": "Bandeja en samán con acabado de linaza. Referencia de un objeto para servir o agrupar objetos.",
       "categoria": "accesorio",
       "acabado": [
@@ -1207,7 +1103,7 @@
       "precios": [],
       "url": "trabajo.html?id=bandeja",
       "en": {
-        "nombre": "Serving tray",
+        "nombre": "Monkeypod serving tray",
         "descripcion": "A completed workshop project. Ask us about a similar commission.",
         "precios": [],
         "plazo": ""

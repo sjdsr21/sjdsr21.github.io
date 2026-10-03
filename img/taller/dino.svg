@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="60" viewBox="0 0 24 15" shape-rendering="crispEdges">
+  <title>Velociraptor amarillo del taller</title>
+  <!-- Cabeza de silueta fija con movimiento vertical leve; cola extendida. -->
+  <style>
+
+svg { fill: #ffe829; }
+.ojo { fill: #d9860b; }
+.pose, .fotograma { opacity: 0; }
+.base { opacity: 1; }
+.ojo-izquierdo { animation: girar 14s steps(1, end) infinite; }
+@keyframes girar { 0%,48%,90%,100% { opacity:1; } 28%,73% { opacity:0; } }
+.pose-0 { animation: pose-0 32s steps(1, end) infinite; }
+@keyframes pose-0 { 0% { opacity:1; } 60% { opacity:0; } 61.5% { opacity:0; } 79% { opacity:0; } 80.5% { opacity:1; } 100% { opacity:1; } }
+.pose-1 { animation: pose-1 32s steps(1, end) infinite; }
+@keyframes pose-1 { 0% { opacity:0; } 60% { opacity:1; } 61.5% { opacity:0; } 79% { opacity:1; } 80.5% { opacity:0; } 100% { opacity:0; } }
+.pose-2 { animation: pose-2 32s steps(1, end) infinite; }
+@keyframes pose-2 { 0% { opacity:0; } 60% { opacity:0; } 61.5% { opacity:1; } 79% { opacity:0; } 80.5% { opacity:0; } 100% { opacity:0; } }
+.cuerpo-0 { animation: cuerpo-0 6.4s steps(1, end) infinite; }
+@keyframes cuerpo-0 { 0% { opacity:1; } 12.5% { opacity:0; } 16.25% { opacity:0; } 33.75% { opacity:0; } 37.5% { opacity:1; } 100% { opacity:1; } }
+.cuerpo-1 { animation: cuerpo-1 6.4s steps(1, end) infinite; }
+@keyframes cuerpo-1 { 0% { opacity:0; } 12.5% { opacity:1; } 16.25% { opacity:0; } 33.75% { opacity:1; } 37.5% { opacity:0; } 100% { opacity:0; } }
+.cuerpo-2 { animation: cuerpo-2 6.4s steps(1, end) infinite; }
+@keyframes cuerpo-2 { 0% { opacity:0; } 12.5% { opacity:0; } 16.25% { opacity:1; } 33.75% { opacity:0; } 37.5% { opacity:0; } 100% { opacity:0; } }
+
+.cabeza { animation: cabecear 6.4s steps(2, end) infinite; }
+@keyframes cabecear {
+  0%, 12.5%, 43.75%, 100% { transform: translateY(0); }
+  22.5%, 33.75% { transform: translateY(-1px); }
+}
+
+@media (prefers-reduced-motion: reduce) { .pose, .fotograma, .cabeza, .ojo-izquierdo { animation:none; } }
+</style>
+  <g class="pose pose-0 base">
+    <g class="cola">
+      <rect x="1" y="3" width="5" height="1" />
+      <rect x="4" y="4" width="6" height="1" />
+      <rect x="8" y="5" width="7" height="1" />
+      <rect x="9" y="6" width="7" height="1" />
+    </g>
+    <g class="fotograma cuerpo-0 base">
+      <rect x="11" y="7" width="7" height="1" />
+      <rect x="12" y="8" width="6" height="1" />
+      <rect x="12" y="9" width="4" height="1" />
+    </g>
+    <g class="fotograma cuerpo-1">
+      <rect x="11" y="7" width="7" height="1" />
+      <rect x="11" y="8" width="7" height="1" />
+      <rect x="12" y="9" width="4" height="1" />
+    </g>
+    <g class="fotograma cuerpo-2">
+      <rect x="12" y="6" width="4" height="1" />
+      <rect x="11" y="7" width="7" height="1" />
+      <rect x="11" y="8" width="7" height="1" />
+      <rect x="11" y="9" width="5" height="1" />
+    </g>
+    <rect x="18" y="9" width="2" height="1" />
+    <rect x="11" y="10" width="2" height="1" />
+    <rect x="15" y="10" width="1" height="1" />
+    <rect x="11" y="11" width="2" height="1" />
+    <rect x="15" y="11" width="1" height="1" />
+    <rect x="11" y="12" width="1" height="1" />
+    <rect x="15" y="12" width="1" height="1" />
+    <rect x="11" y="13" width="1" height="1" />
+    <rect x="15" y="13" width="1" height="1" />
+    <rect x="11" y="14" width="2" height="1" />
+    <rect x="15" y="14" width="2" height="1" />
+    <g class="cabeza">
+      <rect x="19" y="3" width="3" height="1" />
+      <rect x="18" y="4" width="5" height="1" />
+      <rect x="18" y="5" width="5" height="1" />
+      <rect x="18" y="6" width="2" height="1" />
+      <rect x="17" y="7" width="2" height="1" />
+      <rect x="16" y="8" width="2" height="1" />
+      <rect class="ojo ojo-izquierdo" x="19" y="4" width="1" height="1" />
+      <rect class="ojo" x="22" y="4" width="1" height="1" />
+    </g>
+  </g>
+  <g class="pose pose-1">
+    <g class="cola">
+      <rect x="1" y="7" width="5" height="1" />
+      <rect x="4" y="8" width="6" height="1" />
+      <rect x="8" y="9" width="7" height="1" />
+      <rect x="9" y="10" width="7" height="1" />
+    </g>
+    <g class="fotograma cuerpo-0 base">
+      <rect x="11" y="10" width="7" height="1" />
+      <rect x="12" y="11" width="6" height="1" />
+      <rect x="12" y="12" width="4" height="1" />
+    </g>
+    <g class="fotograma cuerpo-1">
+      <rect x="11" y="10" width="7" height="1" />
+      <rect x="11" y="11" width="7" height="1" />
+      <rect x="12" y="12" width="4" height="1" />
+    </g>
+    <g class="fotograma cuerpo-2">
+      <rect x="12" y="9" width="4" height="1" />
+      <rect x="11" y="10" width="7" height="1" />
+      <rect x="11" y="11" width="7" height="1" />
+      <rect x="12" y="12" width="4" height="1" />
+    </g>
+    <rect x="18" y="11" width="2" height="1" />
+    <rect x="16" y="12" width="1" height="1" />
+    <rect x="12" y="13" width="1" height="1" />
+    <rect x="16" y="13" width="1" height="1" />
+    <rect x="12" y="14" width="3" height="1" />
+    <rect x="16" y="14" width="2" height="1" />
+    <g class="cabeza">
+      <rect x="19" y="5" width="3" height="1" />
+      <rect x="18" y="6" width="5" height="1" />
+      <rect x="18" y="7" width="5" height="1" />
+      <rect x="18" y="8" width="2" height="1" />
+      <rect x="17" y="9" width="2" height="1" />
+      <rect x="16" y="10" width="2" height="1" />
+      <rect class="ojo ojo-izquierdo" x="19" y="6" width="1" height="1" />
+      <rect class="ojo" x="22" y="6" width="1" height="1" />
+    </g>
+  </g>
+  <g class="pose pose-2">
+    <g class="cola">
+      <rect x="6" y="13" width="7" height="1" />
+      <rect x="1" y="14" width="12" height="1" />
+    </g>
+    <g class="fotograma cuerpo-0 base">
+      <rect x="17" y="10" width="2" height="1" />
+      <rect x="14" y="11" width="5" height="1" />
+      <rect x="12" y="12" width="6" height="1" />
+      <rect x="12" y="13" width="5" height="1" />
+      <rect x="11" y="14" width="7" height="1" />
+    </g>
+    <g class="fotograma cuerpo-1">
+      <rect x="17" y="10" width="2" height="1" />
+      <rect x="14" y="11" width="5" height="1" />
+      <rect x="12" y="12" width="6" height="1" />
+      <rect x="11" y="13" width="6" height="1" />
+      <rect x="11" y="14" width="7" height="1" />
+    </g>
+    <g class="fotograma cuerpo-2">
+      <rect x="17" y="10" width="2" height="1" />
+      <rect x="13" y="11" width="6" height="1" />
+      <rect x="12" y="12" width="6" height="1" />
+      <rect x="11" y="13" width="6" height="1" />
+      <rect x="11" y="14" width="7" height="1" />
+    </g>
+    <rect x="19" y="12" width="2" height="1" />
+    <rect x="18" y="14" width="2" height="1" />
+    <g class="cabeza">
+      <rect x="19" y="6" width="3" height="1" />
+      <rect x="18" y="7" width="5" height="1" />
+      <rect x="18" y="8" width="5" height="1" />
+      <rect x="18" y="9" width="2" height="1" />
+      <rect x="17" y="10" width="2" height="1" />
+      <rect x="16" y="11" width="2" height="1" />
+      <rect class="ojo ojo-izquierdo" x="19" y="7" width="1" height="1" />
+      <rect class="ojo" x="22" y="7" width="1" height="1" />
+    </g>
+  </g>
+</svg>
