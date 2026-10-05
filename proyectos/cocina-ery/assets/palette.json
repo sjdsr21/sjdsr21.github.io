@@ -1,1947 +1,2190 @@
 [
   {
     "id": "colors-color-m00",
-    "name": "Color M00",
+    "name": "Blanco 12",
     "sourceName": "Color M00",
     "collection": "Colors",
     "color": "#ffffff",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-color-m01",
-    "name": "Color M01",
+    "name": "Gris muy claro 02",
     "sourceName": "Color M01",
     "collection": "Colors",
     "color": "#e2e2e2",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-color-m02",
-    "name": "Color M02",
+    "name": "Gris perla 02",
     "sourceName": "Color M02",
     "collection": "Colors",
     "color": "#c6c6c6",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-color-m03",
-    "name": "Color M03",
+    "name": "Gris piedra 03",
     "sourceName": "Color M03",
     "collection": "Colors",
     "color": "#aaaaaa",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "medio"
   },
   {
     "id": "colors-color-m04",
-    "name": "Color M04",
+    "name": "Gris piedra 01",
     "sourceName": "Color M04",
     "collection": "Colors",
     "color": "#8e8e8e",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "medio"
   },
   {
     "id": "colors-color-m05",
-    "name": "Color M05",
+    "name": "Gris medio 02",
     "sourceName": "Color M05",
     "collection": "Colors",
     "color": "#727272",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "medio"
   },
   {
     "id": "colors-color-m06",
-    "name": "Color M06",
+    "name": "Gris grafito 03",
     "sourceName": "Color M06",
     "collection": "Colors",
     "color": "#565656",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "oscuro"
   },
   {
     "id": "colors-color-m07",
-    "name": "Color M07",
+    "name": "Gris grafito 01",
     "sourceName": "Color M07",
     "collection": "Colors",
     "color": "#3a3a3a",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "oscuro"
   },
   {
     "id": "colors-color-m08",
-    "name": "Color M08",
+    "name": "Gris carbón 01",
     "sourceName": "Color M08",
     "collection": "Colors",
     "color": "#1e1e1e",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "oscuro"
   },
   {
     "id": "colors-color-m09",
-    "name": "Color M09",
+    "name": "Negro 01",
     "sourceName": "Color M09",
     "collection": "Colors",
     "color": "#000000",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "oscuro"
   },
   {
     "id": "colors-color-c01",
-    "name": "Color C01",
+    "name": "Beige claro 08",
     "sourceName": "Color C01",
     "collection": "Colors",
     "color": "#ffe5cc",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-color-c02",
-    "name": "Color C02",
+    "name": "Naranja pastel",
     "sourceName": "Color C02",
     "collection": "Colors",
     "color": "#ffcc99",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-color-d01",
-    "name": "Color D01",
+    "name": "Beige claro 10",
     "sourceName": "Color D01",
     "collection": "Colors",
     "color": "#fff2cc",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-color-d02",
-    "name": "Color D02",
+    "name": "Ocre pastel",
     "sourceName": "Color D02",
     "collection": "Colors",
     "color": "#ffe599",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0007-mistyrose",
-    "name": "0007_MistyRose",
+    "name": "Gris rosado 06",
     "sourceName": "0007_MistyRose",
     "collection": "Colors-Named",
     "color": "#ffe4e1",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0008-lavenderblush",
-    "name": "0008_LavenderBlush",
+    "name": "Blanco 07",
     "sourceName": "0008_LavenderBlush",
     "collection": "Colors-Named",
     "color": "#fff0f5",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0009-linen",
-    "name": "0009_Linen",
+    "name": "Marfil 03",
     "sourceName": "0009_Linen",
     "collection": "Colors-Named",
     "color": "#faf0e6",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0010-snow",
-    "name": "0010_Snow",
+    "name": "Blanco 10",
     "sourceName": "0010_Snow",
     "collection": "Colors-Named",
     "color": "#fffafa",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0011-seashell",
-    "name": "0011_Seashell",
+    "name": "Blanco 08",
     "sourceName": "0011_Seashell",
     "collection": "Colors-Named",
     "color": "#fff5ee",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0012-bisque",
-    "name": "0012_Bisque",
+    "name": "Beige claro 07",
     "sourceName": "0012_Bisque",
     "collection": "Colors-Named",
     "color": "#ffe4c4",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0027-peachpuff",
-    "name": "0027_PeachPuff",
+    "name": "Beige claro 04",
     "sourceName": "0027_PeachPuff",
     "collection": "Colors-Named",
     "color": "#ffdab9",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0028-antiquewhite",
-    "name": "0028_AntiqueWhite",
+    "name": "Marfil 02",
     "sourceName": "0028_AntiqueWhite",
     "collection": "Colors-Named",
     "color": "#faebd7",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0029-blanchedalmond",
-    "name": "0029_BlanchedAlmond",
+    "name": "Beige claro 09",
     "sourceName": "0029_BlanchedAlmond",
     "collection": "Colors-Named",
     "color": "#ffebcd",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0030-oldlace",
-    "name": "0030_OldLace",
+    "name": "Marfil 05",
     "sourceName": "0030_OldLace",
     "collection": "Colors-Named",
     "color": "#fdf5e6",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0031-papayawhip",
-    "name": "0031_PapayaWhip",
+    "name": "Marfil 06",
     "sourceName": "0031_PapayaWhip",
     "collection": "Colors-Named",
     "color": "#ffefd5",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0032-moccasin",
-    "name": "0032_Moccasin",
+    "name": "Beige claro 06",
     "sourceName": "0032_Moccasin",
     "collection": "Colors-Named",
     "color": "#ffe4b5",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0033-navajowhite",
-    "name": "0033_NavajoWhite",
+    "name": "Beige claro 05",
     "sourceName": "0033_NavajoWhite",
     "collection": "Colors-Named",
     "color": "#ffdead",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0034-wheat",
-    "name": "0034_Wheat",
+    "name": "Beige claro 03",
     "sourceName": "0034_Wheat",
     "collection": "Colors-Named",
     "color": "#f5deb3",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0035-tan",
-    "name": "0035_Tan",
+    "name": "Beige arena",
     "sourceName": "0035_Tan",
     "collection": "Colors-Named",
     "color": "#d2b48c",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0036-burlywood",
-    "name": "0036_BurlyWood",
+    "name": "Beige claro 01",
     "sourceName": "0036_BurlyWood",
     "collection": "Colors-Named",
     "color": "#deb887",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0049-beige",
-    "name": "0049_Beige",
+    "name": "Marfil 01",
     "sourceName": "0049_Beige",
     "collection": "Colors-Named",
     "color": "#f5f5dc",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0050-lemonchiffon",
-    "name": "0050_LemonChiffon",
+    "name": "Beige claro 11",
     "sourceName": "0050_LemonChiffon",
     "collection": "Colors-Named",
     "color": "#fffacd",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0051-cornsilk",
-    "name": "0051_Cornsilk",
+    "name": "Marfil 07",
     "sourceName": "0051_Cornsilk",
     "collection": "Colors-Named",
     "color": "#fff8dc",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0052-floralwhite",
-    "name": "0052_FloralWhite",
+    "name": "Blanco 09",
     "sourceName": "0052_FloralWhite",
     "collection": "Colors-Named",
     "color": "#fffaf0",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0053-ivory",
-    "name": "0053_Ivory",
+    "name": "Blanco 11",
     "sourceName": "0053_Ivory",
     "collection": "Colors-Named",
     "color": "#fffff0",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0066-honeydew",
-    "name": "0066_Honeydew",
+    "name": "Blanco 02",
     "sourceName": "0066_Honeydew",
     "collection": "Colors-Named",
     "color": "#f0fff0",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0091-mintcream",
-    "name": "0091_MintCream",
+    "name": "Blanco 05",
     "sourceName": "0091_MintCream",
     "collection": "Colors-Named",
     "color": "#f5fffa",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0092-azure",
-    "name": "0092_Azure",
+    "name": "Blanco 03",
     "sourceName": "0092_Azure",
     "collection": "Colors-Named",
     "color": "#f0ffff",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0093-aliceblue",
-    "name": "0093_AliceBlue",
+    "name": "Blanco 01",
     "sourceName": "0093_AliceBlue",
     "collection": "Colors-Named",
     "color": "#f0f8ff",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0116-lavender",
-    "name": "0116_Lavender",
+    "name": "Gris azulado 04",
     "sourceName": "0116_Lavender",
     "collection": "Colors-Named",
     "color": "#e6e6fa",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0117-ghostwhite",
-    "name": "0117_GhostWhite",
+    "name": "Blanco 06",
     "sourceName": "0117_GhostWhite",
     "collection": "Colors-Named",
     "color": "#f8f8ff",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0118-thistle",
-    "name": "0118_Thistle",
+    "name": "Gris rosado 01",
     "sourceName": "0118_Thistle",
     "collection": "Colors-Named",
     "color": "#d8bfd8",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0128-white",
-    "name": "0128_White",
+    "name": "Blanco 13",
     "sourceName": "0128_White",
     "collection": "Colors-Named",
     "color": "#ffffff",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0129-whitesmoke",
-    "name": "0129_WhiteSmoke",
+    "name": "Blanco 04",
     "sourceName": "0129_WhiteSmoke",
     "collection": "Colors-Named",
     "color": "#f5f5f5",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0130-gainsboro",
-    "name": "0130_Gainsboro",
+    "name": "Gris muy claro 01",
     "sourceName": "0130_Gainsboro",
     "collection": "Colors-Named",
     "color": "#dcdcdc",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0131-silver",
-    "name": "0131_Silver",
+    "name": "Gris perla 01",
     "sourceName": "0131_Silver",
     "collection": "Colors-Named",
     "color": "#c0c0c0",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0132-lightgray",
-    "name": "0132_LightGray",
+    "name": "Gris piedra 02",
     "sourceName": "0132_LightGray",
     "collection": "Colors-Named",
     "color": "#a9a9a9",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0133-gray",
-    "name": "0133_Gray",
+    "name": "Gris medio 03",
     "sourceName": "0133_Gray",
     "collection": "Colors-Named",
     "color": "#808080",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0134-dimgray",
-    "name": "0134_DimGray",
+    "name": "Gris medio 01",
     "sourceName": "0134_DimGray",
     "collection": "Colors-Named",
     "color": "#696969",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0135-darkgray",
-    "name": "0135_DarkGray",
+    "name": "Gris grafito 02",
     "sourceName": "0135_DarkGray",
     "collection": "Colors-Named",
     "color": "#515151",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "oscuro"
   },
   {
     "id": "colors-named-0136-charcoal",
-    "name": "0136_Charcoal",
+    "name": "Gris carbón 02",
     "sourceName": "0136_Charcoal",
     "collection": "Colors-Named",
     "color": "#232323",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "oscuro"
   },
   {
     "id": "colors-named-0137-black",
-    "name": "0137_Black",
+    "name": "Negro 02",
     "sourceName": "0137_Black",
     "collection": "Colors-Named",
     "color": "#000000",
-    "category": "neutral"
+    "category": "neutral",
+    "tone": "oscuro"
   },
   {
     "id": "colors-color-a01",
-    "name": "Color A01",
+    "name": "Gris rosado 02",
     "sourceName": "Color A01",
     "collection": "Colors",
     "color": "#ffcccc",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-color-a02",
-    "name": "Color A02",
+    "name": "Rojo pastel 01",
     "sourceName": "Color A02",
     "collection": "Colors",
     "color": "#ff9999",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-color-a03",
-    "name": "Color A03",
+    "name": "Rojo suave 04",
     "sourceName": "Color A03",
     "collection": "Colors",
     "color": "#ff6565",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-color-a04",
-    "name": "Color A04",
+    "name": "Rojo intenso 12",
     "sourceName": "Color A04",
     "collection": "Colors",
     "color": "#ff3232",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-color-a05",
-    "name": "Color A05",
+    "name": "Rojo intenso 10",
     "sourceName": "Color A05",
     "collection": "Colors",
     "color": "#ff0000",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-color-a06",
-    "name": "Color A06",
+    "name": "Rojo intenso 07",
     "sourceName": "Color A06",
     "collection": "Colors",
     "color": "#cc0000",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-color-a07",
-    "name": "Color A07",
+    "name": "Rojo intenso 03",
     "sourceName": "Color A07",
     "collection": "Colors",
     "color": "#990000",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-color-a08",
-    "name": "Color A08",
+    "name": "Rojo oscuro 01",
     "sourceName": "Color A08",
     "collection": "Colors",
     "color": "#660000",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-color-b01",
-    "name": "Color B01",
+    "name": "Gris rosado 05",
     "sourceName": "Color B01",
     "collection": "Colors",
     "color": "#ffd8cc",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-color-b02",
-    "name": "Color B02",
+    "name": "Rojo pastel 02",
     "sourceName": "Color B02",
     "collection": "Colors",
     "color": "#ffb299",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-color-b03",
-    "name": "Color B03",
+    "name": "Naranja suave 03",
     "sourceName": "Color B03",
     "collection": "Colors",
     "color": "#ff8c65",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-color-b04",
-    "name": "Color B04",
+    "name": "Rojo intenso 15",
     "sourceName": "Color B04",
     "collection": "Colors",
     "color": "#ff6532",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-color-b05",
-    "name": "Color B05",
+    "name": "Rojo intenso 13",
     "sourceName": "Color B05",
     "collection": "Colors",
     "color": "#ff3f00",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-color-b06",
-    "name": "Color B06",
+    "name": "Rojo intenso 08",
     "sourceName": "Color B06",
     "collection": "Colors",
     "color": "#cc3300",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-color-b07",
-    "name": "Color B07",
+    "name": "Rojo intenso 04",
     "sourceName": "Color B07",
     "collection": "Colors",
     "color": "#992600",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-color-b08",
-    "name": "Color B08",
+    "name": "Rojo oscuro 02",
     "sourceName": "Color B08",
     "collection": "Colors",
     "color": "#661900",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-color-c03",
-    "name": "Color C03",
+    "name": "Naranja suave 05",
     "sourceName": "Color C03",
     "collection": "Colors",
     "color": "#ffb265",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-color-c04",
-    "name": "Color C04",
+    "name": "Naranja intenso 08",
     "sourceName": "Color C04",
     "collection": "Colors",
     "color": "#ff9932",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-color-c05",
-    "name": "Color C05",
+    "name": "Naranja intenso 05",
     "sourceName": "Color C05",
     "collection": "Colors",
     "color": "#ff7f00",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-color-c06",
-    "name": "Color C06",
+    "name": "Naranja intenso 01",
     "sourceName": "Color C06",
     "collection": "Colors",
     "color": "#cc6600",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-color-c07",
-    "name": "Color C07",
+    "name": "Marrón tierra 04",
     "sourceName": "Color C07",
     "collection": "Colors",
     "color": "#994c00",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-color-c08",
-    "name": "Color C08",
+    "name": "Marrón tierra 01",
     "sourceName": "Color C08",
     "collection": "Colors",
     "color": "#663300",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-color-d03",
-    "name": "Color D03",
+    "name": "Ocre suave",
     "sourceName": "Color D03",
     "collection": "Colors",
     "color": "#ffd865",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-color-d04",
-    "name": "Color D04",
+    "name": "Ocre intenso 06",
     "sourceName": "Color D04",
     "collection": "Colors",
     "color": "#ffcc32",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-color-d05",
-    "name": "Color D05",
+    "name": "Ocre intenso 05",
     "sourceName": "Color D05",
     "collection": "Colors",
     "color": "#ffbf00",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-color-d06",
-    "name": "Color D06",
+    "name": "Ocre intenso 02",
     "sourceName": "Color D06",
     "collection": "Colors",
     "color": "#cc9900",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-color-d07",
-    "name": "Color D07",
+    "name": "Marrón tierra 05",
     "sourceName": "Color D07",
     "collection": "Colors",
     "color": "#997200",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-color-d08",
-    "name": "Color D08",
+    "name": "Marrón tierra 02",
     "sourceName": "Color D08",
     "collection": "Colors",
     "color": "#664c00",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-color-e01",
-    "name": "Color E01",
+    "name": "Beige claro 12",
     "sourceName": "Color E01",
     "collection": "Colors",
     "color": "#ffffcc",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-color-e02",
-    "name": "Color E02",
+    "name": "Amarillo pastel 02",
     "sourceName": "Color E02",
     "collection": "Colors",
     "color": "#ffff99",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-color-e03",
-    "name": "Color E03",
+    "name": "Amarillo suave",
     "sourceName": "Color E03",
     "collection": "Colors",
     "color": "#ffff65",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-color-e04",
-    "name": "Color E04",
+    "name": "Amarillo intenso 06",
     "sourceName": "Color E04",
     "collection": "Colors",
     "color": "#ffff32",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-color-e05",
-    "name": "Color E05",
+    "name": "Amarillo intenso 04",
     "sourceName": "Color E05",
     "collection": "Colors",
     "color": "#ffff00",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-color-e06",
-    "name": "Color E06",
+    "name": "Amarillo intenso 03",
     "sourceName": "Color E06",
     "collection": "Colors",
     "color": "#cccc00",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-color-e07",
-    "name": "Color E07",
+    "name": "Amarillo intenso 02",
     "sourceName": "Color E07",
     "collection": "Colors",
     "color": "#999900",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-color-e08",
-    "name": "Color E08",
+    "name": "Amarillo oscuro",
     "sourceName": "Color E08",
     "collection": "Colors",
     "color": "#666600",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-color-f01",
-    "name": "Color F01",
+    "name": "Gris verdoso 02",
     "sourceName": "Color F01",
     "collection": "Colors",
     "color": "#e5ffcc",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-color-f02",
-    "name": "Color F02",
+    "name": "Verde pastel 04",
     "sourceName": "Color F02",
     "collection": "Colors",
     "color": "#ccff99",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-color-f03",
-    "name": "Color F03",
+    "name": "Verde suave 02",
     "sourceName": "Color F03",
     "collection": "Colors",
     "color": "#b2ff65",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-color-f04",
-    "name": "Color F04",
+    "name": "Verde lima intenso 02",
     "sourceName": "Color F04",
     "collection": "Colors",
     "color": "#99ff32",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-color-f05",
-    "name": "Color F05",
+    "name": "Verde intenso 14",
     "sourceName": "Color F05",
     "collection": "Colors",
     "color": "#7fff00",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-color-f06",
-    "name": "Color F06",
+    "name": "Verde intenso 13",
     "sourceName": "Color F06",
     "collection": "Colors",
     "color": "#66cc00",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-color-f07",
-    "name": "Color F07",
+    "name": "Verde intenso 12",
     "sourceName": "Color F07",
     "collection": "Colors",
     "color": "#4c9900",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-color-f08",
-    "name": "Color F08",
+    "name": "Verde oscuro 03",
     "sourceName": "Color F08",
     "collection": "Colors",
     "color": "#336600",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-color-g01",
-    "name": "Color G01",
+    "name": "Gris verdoso 01",
     "sourceName": "Color G01",
     "collection": "Colors",
     "color": "#ccffcc",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-color-g02",
-    "name": "Color G02",
+    "name": "Verde pastel 03",
     "sourceName": "Color G02",
     "collection": "Colors",
     "color": "#99ff99",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-color-g03",
-    "name": "Color G03",
+    "name": "Verde suave 01",
     "sourceName": "Color G03",
     "collection": "Colors",
     "color": "#65ff65",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-color-g04",
-    "name": "Color G04",
+    "name": "Verde intenso 10",
     "sourceName": "Color G04",
     "collection": "Colors",
     "color": "#32ff32",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-color-g05",
-    "name": "Color G05",
+    "name": "Verde intenso 04",
     "sourceName": "Color G05",
     "collection": "Colors",
     "color": "#00ff00",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-color-g06",
-    "name": "Color G06",
+    "name": "Verde intenso 03",
     "sourceName": "Color G06",
     "collection": "Colors",
     "color": "#00cc00",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-color-g07",
-    "name": "Color G07",
+    "name": "Verde intenso 02",
     "sourceName": "Color G07",
     "collection": "Colors",
     "color": "#009900",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-color-g08",
-    "name": "Color G08",
+    "name": "Verde oscuro 02",
     "sourceName": "Color G08",
     "collection": "Colors",
     "color": "#006600",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-color-h01",
-    "name": "Color H01",
+    "name": "Gris azulado 02",
     "sourceName": "Color H01",
     "collection": "Colors",
     "color": "#ccffff",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-color-h02",
-    "name": "Color H02",
+    "name": "Turquesa pastel 02",
     "sourceName": "Color H02",
     "collection": "Colors",
     "color": "#99ffff",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-color-h03",
-    "name": "Color H03",
+    "name": "Turquesa suave",
     "sourceName": "Color H03",
     "collection": "Colors",
     "color": "#65ffff",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-color-h04",
-    "name": "Color H04",
+    "name": "Turquesa intenso 09",
     "sourceName": "Color H04",
     "collection": "Colors",
     "color": "#32ffff",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-color-h05",
-    "name": "Color H05",
+    "name": "Turquesa intenso 07",
     "sourceName": "Color H05",
     "collection": "Colors",
     "color": "#00ffff",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-color-h06",
-    "name": "Color H06",
+    "name": "Turquesa intenso 05",
     "sourceName": "Color H06",
     "collection": "Colors",
     "color": "#00cccc",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-color-h07",
-    "name": "Color H07",
+    "name": "Turquesa intenso 03",
     "sourceName": "Color H07",
     "collection": "Colors",
     "color": "#009999",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-color-h08",
-    "name": "Color H08",
+    "name": "Turquesa oscuro 01",
     "sourceName": "Color H08",
     "collection": "Colors",
     "color": "#006666",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-color-i01",
-    "name": "Color I01",
+    "name": "Gris azulado 01",
     "sourceName": "Color I01",
     "collection": "Colors",
     "color": "#ccccff",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-color-i02",
-    "name": "Color I02",
+    "name": "Azul pastel 01",
     "sourceName": "Color I02",
     "collection": "Colors",
     "color": "#9999ff",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-color-i03",
-    "name": "Color I03",
+    "name": "Azul suave 03",
     "sourceName": "Color I03",
     "collection": "Colors",
     "color": "#6565ff",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-color-i04",
-    "name": "Color I04",
+    "name": "Azul intenso 09",
     "sourceName": "Color I04",
     "collection": "Colors",
     "color": "#3232ff",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-color-i05",
-    "name": "Color I05",
+    "name": "Azul intenso 06",
     "sourceName": "Color I05",
     "collection": "Colors",
     "color": "#0000ff",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-color-i06",
-    "name": "Color I06",
+    "name": "Azul intenso 04",
     "sourceName": "Color I06",
     "collection": "Colors",
     "color": "#0000cc",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-color-i07",
-    "name": "Color I07",
+    "name": "Azul intenso 03",
     "sourceName": "Color I07",
     "collection": "Colors",
     "color": "#000099",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-color-i08",
-    "name": "Color I08",
+    "name": "Azul oscuro 01",
     "sourceName": "Color I08",
     "collection": "Colors",
     "color": "#000066",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-color-j01",
-    "name": "Color J01",
+    "name": "Gris cálido",
     "sourceName": "Color J01",
     "collection": "Colors",
     "color": "#e5ccff",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-color-j02",
-    "name": "Color J02",
+    "name": "Violeta pastel",
     "sourceName": "Color J02",
     "collection": "Colors",
     "color": "#cc99ff",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-color-j03",
-    "name": "Color J03",
+    "name": "Violeta suave 04",
     "sourceName": "Color J03",
     "collection": "Colors",
     "color": "#b265ff",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-color-j04",
-    "name": "Color J04",
+    "name": "Violeta intenso 06",
     "sourceName": "Color J04",
     "collection": "Colors",
     "color": "#9932ff",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-color-j05",
-    "name": "Color J05",
+    "name": "Violeta intenso 04",
     "sourceName": "Color J05",
     "collection": "Colors",
     "color": "#7f00ff",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-color-j06",
-    "name": "Color J06",
+    "name": "Violeta intenso 03",
     "sourceName": "Color J06",
     "collection": "Colors",
     "color": "#6600cc",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-color-j07",
-    "name": "Color J07",
+    "name": "Violeta intenso 02",
     "sourceName": "Color J07",
     "collection": "Colors",
     "color": "#4c0099",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-color-j08",
-    "name": "Color J08",
+    "name": "Violeta oscuro",
     "sourceName": "Color J08",
     "collection": "Colors",
     "color": "#330066",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-color-k01",
-    "name": "Color K01",
+    "name": "Gris rosado 04",
     "sourceName": "Color K01",
     "collection": "Colors",
     "color": "#ffccff",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-color-k02",
-    "name": "Color K02",
+    "name": "Púrpura pastel 02",
     "sourceName": "Color K02",
     "collection": "Colors",
     "color": "#ff99ff",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-color-k03",
-    "name": "Color K03",
+    "name": "Púrpura suave 04",
     "sourceName": "Color K03",
     "collection": "Colors",
     "color": "#ff65ff",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-color-k04",
-    "name": "Color K04",
+    "name": "Púrpura intenso 08",
     "sourceName": "Color K04",
     "collection": "Colors",
     "color": "#ff32ff",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-color-k05",
-    "name": "Color K05",
+    "name": "Púrpura intenso 06",
     "sourceName": "Color K05",
     "collection": "Colors",
     "color": "#ff00ff",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-color-k06",
-    "name": "Color K06",
+    "name": "Púrpura intenso 05",
     "sourceName": "Color K06",
     "collection": "Colors",
     "color": "#cc00cc",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-color-k07",
-    "name": "Color K07",
+    "name": "Púrpura intenso 03",
     "sourceName": "Color K07",
     "collection": "Colors",
     "color": "#990099",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-color-k08",
-    "name": "Color K08",
+    "name": "Púrpura oscuro",
     "sourceName": "Color K08",
     "collection": "Colors",
     "color": "#660066",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-color-l01",
-    "name": "Color L01",
+    "name": "Gris rosado 03",
     "sourceName": "Color L01",
     "collection": "Colors",
     "color": "#ffcce5",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-color-l02",
-    "name": "Color L02",
+    "name": "Rosa pastel",
     "sourceName": "Color L02",
     "collection": "Colors",
     "color": "#ff99cc",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-color-l03",
-    "name": "Color L03",
+    "name": "Rosa suave 02",
     "sourceName": "Color L03",
     "collection": "Colors",
     "color": "#ff65b2",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-color-l04",
-    "name": "Color L04",
+    "name": "Rosa intenso 06",
     "sourceName": "Color L04",
     "collection": "Colors",
     "color": "#ff3298",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-color-l05",
-    "name": "Color L05",
+    "name": "Rosa intenso 04",
     "sourceName": "Color L05",
     "collection": "Colors",
     "color": "#ff007f",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-color-l06",
-    "name": "Color L06",
+    "name": "Rosa intenso 03",
     "sourceName": "Color L06",
     "collection": "Colors",
     "color": "#cc0064",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-color-l11",
-    "name": "Color L11",
+    "name": "Rosa intenso 01",
     "sourceName": "Color L11",
     "collection": "Colors",
     "color": "#99004c",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-color-l16",
-    "name": "Color L16",
+    "name": "Rosa oscuro",
     "sourceName": "Color L16",
     "collection": "Colors",
     "color": "#660033",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-named-0001-palevioletred",
-    "name": "0001_PaleVioletRed",
+    "name": "Rosa suave 01",
     "sourceName": "0001_PaleVioletRed",
     "collection": "Colors-Named",
     "color": "#db7093",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0002-mediumvioletred",
-    "name": "0002_MediumVioletRed",
+    "name": "Rosa intenso 02",
     "sourceName": "0002_MediumVioletRed",
     "collection": "Colors-Named",
     "color": "#c71585",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-named-0003-deeppink",
-    "name": "0003_DeepPink",
+    "name": "Rosa intenso 05",
     "sourceName": "0003_DeepPink",
     "collection": "Colors-Named",
     "color": "#ff1493",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-named-0004-hotpink",
-    "name": "0004_HotPink",
+    "name": "Rosa suave 03",
     "sourceName": "0004_HotPink",
     "collection": "Colors-Named",
     "color": "#ff69b4",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0005-lightpink",
-    "name": "0005_LightPink",
+    "name": "Rojo pastel 03",
     "sourceName": "0005_LightPink",
     "collection": "Colors-Named",
     "color": "#ffb6c1",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0006-pink",
-    "name": "0006_Pink",
+    "name": "Rojo pastel 04",
     "sourceName": "0006_Pink",
     "collection": "Colors-Named",
     "color": "#ffc0cb",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0013-lightcoral",
-    "name": "0013_LightCoral",
+    "name": "Rojo suave 02",
     "sourceName": "0013_LightCoral",
     "collection": "Colors-Named",
     "color": "#f08080",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0014-darksalmon",
-    "name": "0014_DarkSalmon",
+    "name": "Naranja suave 01",
     "sourceName": "0014_DarkSalmon",
     "collection": "Colors-Named",
     "color": "#e9967a",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0015-salmon",
-    "name": "0015_Salmon",
+    "name": "Rojo suave 03",
     "sourceName": "0015_Salmon",
     "collection": "Colors-Named",
     "color": "#fa8072",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0016-tomato",
-    "name": "0016_Tomato",
+    "name": "Rojo intenso 14",
     "sourceName": "0016_Tomato",
     "collection": "Colors-Named",
     "color": "#ff6347",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0017-indianred",
-    "name": "0017_IndianRed",
+    "name": "Rojo suave 01",
     "sourceName": "0017_IndianRed",
     "collection": "Colors-Named",
     "color": "#cd5c5c",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0018-brown",
-    "name": "0018_Brown",
+    "name": "Rojo intenso 05",
     "sourceName": "0018_Brown",
     "collection": "Colors-Named",
     "color": "#a52a2a",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-named-0019-crimson",
-    "name": "0019_Crimson",
+    "name": "Rojo intenso 09",
     "sourceName": "0019_Crimson",
     "collection": "Colors-Named",
     "color": "#dc143c",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-named-0020-red",
-    "name": "0020_Red",
+    "name": "Rojo intenso 11",
     "sourceName": "0020_Red",
     "collection": "Colors-Named",
     "color": "#ff0000",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-named-0021-darkred",
-    "name": "0021_DarkRed",
+    "name": "Rojo intenso 02",
     "sourceName": "0021_DarkRed",
     "collection": "Colors-Named",
     "color": "#8b0000",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-named-0022-maroon",
-    "name": "0022_Maroon",
+    "name": "Rojo intenso 01",
     "sourceName": "0022_Maroon",
     "collection": "Colors-Named",
     "color": "#800000",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-named-0023-firebrick",
-    "name": "0023_FireBrick",
+    "name": "Rojo intenso 06",
     "sourceName": "0023_FireBrick",
     "collection": "Colors-Named",
     "color": "#b22222",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-named-0024-orangered",
-    "name": "0024_OrangeRed",
+    "name": "Naranja intenso 04",
     "sourceName": "0024_OrangeRed",
     "collection": "Colors-Named",
     "color": "#ff4500",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0025-coral",
-    "name": "0025_Coral",
+    "name": "Naranja intenso 06",
     "sourceName": "0025_Coral",
     "collection": "Colors-Named",
     "color": "#ff7f50",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0026-lightsalmon",
-    "name": "0026_LightSalmon",
+    "name": "Naranja suave 04",
     "sourceName": "0026_LightSalmon",
     "collection": "Colors-Named",
     "color": "#ffa07a",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0037-sandybrown",
-    "name": "0037_SandyBrown",
+    "name": "Naranja suave 02",
     "sourceName": "0037_SandyBrown",
     "collection": "Colors-Named",
     "color": "#f4a460",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0038-orange",
-    "name": "0038_Orange",
+    "name": "Ocre intenso 04",
     "sourceName": "0038_Orange",
     "collection": "Colors-Named",
     "color": "#ffa500",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0039-darkorange",
-    "name": "0039_DarkOrange",
+    "name": "Naranja intenso 07",
     "sourceName": "0039_DarkOrange",
     "collection": "Colors-Named",
     "color": "#ff8c00",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0040-peru",
-    "name": "0040_Peru",
+    "name": "Naranja intenso 02",
     "sourceName": "0040_Peru",
     "collection": "Colors-Named",
     "color": "#cd853f",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0041-chocolate",
-    "name": "0041_Chocolate",
+    "name": "Naranja intenso 03",
     "sourceName": "0041_Chocolate",
     "collection": "Colors-Named",
     "color": "#d2691e",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0042-sienna",
-    "name": "0042_Sienna",
+    "name": "Marrón tierra 06",
     "sourceName": "0042_Sienna",
     "collection": "Colors-Named",
     "color": "#a0522d",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-named-0043-saddlebrown",
-    "name": "0043_SaddleBrown",
+    "name": "Marrón tierra 03",
     "sourceName": "0043_SaddleBrown",
     "collection": "Colors-Named",
     "color": "#8b4513",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-named-0044-darkgoldenrod",
-    "name": "0044_DarkGoldenrod",
+    "name": "Ocre intenso 01",
     "sourceName": "0044_DarkGoldenrod",
     "collection": "Colors-Named",
     "color": "#b8860b",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0045-goldenrod",
-    "name": "0045_Goldenrod",
+    "name": "Ocre intenso 03",
     "sourceName": "0045_Goldenrod",
     "collection": "Colors-Named",
     "color": "#daa520",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0046-gold",
-    "name": "0046_Gold",
+    "name": "Ocre intenso 07",
     "sourceName": "0046_Gold",
     "collection": "Colors-Named",
     "color": "#ffd700",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0047-khaki",
-    "name": "0047_Khaki",
+    "name": "Amarillo pastel 01",
     "sourceName": "0047_Khaki",
     "collection": "Colors-Named",
     "color": "#f0e68c",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0048-palegoldenrod",
-    "name": "0048_PaleGoldenrod",
+    "name": "Beige claro 02",
     "sourceName": "0048_PaleGoldenrod",
     "collection": "Colors-Named",
     "color": "#eee8aa",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0054-lightyellow",
-    "name": "0054_LightYellow",
+    "name": "Marfil 08",
     "sourceName": "0054_LightYellow",
     "collection": "Colors-Named",
     "color": "#ffffe0",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0055-lightgoldenrodyellow",
-    "name": "0055_LightGoldenrodYellow",
+    "name": "Marfil 04",
     "sourceName": "0055_LightGoldenrodYellow",
     "collection": "Colors-Named",
     "color": "#fafad2",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0056-yellow",
-    "name": "0056_Yellow",
+    "name": "Amarillo intenso 05",
     "sourceName": "0056_Yellow",
     "collection": "Colors-Named",
     "color": "#ffff00",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0057-darkkhaki",
-    "name": "0057_DarkKhaki",
+    "name": "Amarillo apagado",
     "sourceName": "0057_DarkKhaki",
     "collection": "Colors-Named",
     "color": "#bdb76b",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0058-olive",
-    "name": "0058_Olive",
+    "name": "Amarillo intenso 01",
     "sourceName": "0058_Olive",
     "collection": "Colors-Named",
     "color": "#808000",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0059-darkolivegreen",
-    "name": "0059_DarkOliveGreen",
+    "name": "Verde lima oscuro 02",
     "sourceName": "0059_DarkOliveGreen",
     "collection": "Colors-Named",
     "color": "#556b2f",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0060-grassgreen",
-    "name": "0060_GrassGreen",
+    "name": "Verde lima oscuro 01",
     "sourceName": "0060_GrassGreen",
     "collection": "Colors-Named",
     "color": "#3e5b05",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-named-0061-olivedrab",
-    "name": "0061_OliveDrab",
+    "name": "Verde lima intenso 01",
     "sourceName": "0061_OliveDrab",
     "collection": "Colors-Named",
     "color": "#6b8e23",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0062-yellowgreen",
-    "name": "0062_YellowGreen",
+    "name": "Verde lima intenso 03",
     "sourceName": "0062_YellowGreen",
     "collection": "Colors-Named",
     "color": "#9acd32",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0063-greenyellow",
-    "name": "0063_GreenYellow",
+    "name": "Verde lima intenso 04",
     "sourceName": "0063_GreenYellow",
     "collection": "Colors-Named",
     "color": "#adff2f",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0064-chartreuse",
-    "name": "0064_Chartreuse",
+    "name": "Verde intenso 15",
     "sourceName": "0064_Chartreuse",
     "collection": "Colors-Named",
     "color": "#7fff00",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0065-lime",
-    "name": "0065_Lime",
+    "name": "Verde intenso 05",
     "sourceName": "0065_Lime",
     "collection": "Colors-Named",
     "color": "#00ff00",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0067-palegreen",
-    "name": "0067_PaleGreen",
+    "name": "Verde pastel 02",
     "sourceName": "0067_PaleGreen",
     "collection": "Colors-Named",
     "color": "#98fb98",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0068-lightgreen",
-    "name": "0068_LightGreen",
+    "name": "Verde pastel 01",
     "sourceName": "0068_LightGreen",
     "collection": "Colors-Named",
     "color": "#90ee90",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0069-limegreen",
-    "name": "0069_LimeGreen",
+    "name": "Verde intenso 09",
     "sourceName": "0069_LimeGreen",
     "collection": "Colors-Named",
     "color": "#32cd32",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0070-springgreen",
-    "name": "0070_SpringGreen",
+    "name": "Verde intenso 06",
     "sourceName": "0070_SpringGreen",
     "collection": "Colors-Named",
     "color": "#00ff7f",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0071-mediumspringgreen",
-    "name": "0071_MediumSpringGreen",
+    "name": "Verde agua intenso 01",
     "sourceName": "0071_MediumSpringGreen",
     "collection": "Colors-Named",
     "color": "#00fa9a",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0072-darkseagreen",
-    "name": "0072_DarkSeaGreen",
+    "name": "Verde apagado",
     "sourceName": "0072_DarkSeaGreen",
     "collection": "Colors-Named",
     "color": "#8fbc8f",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0073-mediumseagreen",
-    "name": "0073_MediumSeaGreen",
+    "name": "Verde intenso 11",
     "sourceName": "0073_MediumSeaGreen",
     "collection": "Colors-Named",
     "color": "#3cb371",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0074-seagreen",
-    "name": "0074_SeaGreen",
+    "name": "Verde intenso 08",
     "sourceName": "0074_SeaGreen",
     "collection": "Colors-Named",
     "color": "#2e8b57",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0075-forestgreen",
-    "name": "0075_ForestGreen",
+    "name": "Verde intenso 07",
     "sourceName": "0075_ForestGreen",
     "collection": "Colors-Named",
     "color": "#228b22",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0076-green",
-    "name": "0076_Green",
+    "name": "Verde intenso 01",
     "sourceName": "0076_Green",
     "collection": "Colors-Named",
     "color": "#008000",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-named-0077-darkgreen",
-    "name": "0077_DarkGreen",
+    "name": "Verde oscuro 01",
     "sourceName": "0077_DarkGreen",
     "collection": "Colors-Named",
     "color": "#006400",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-named-0078-darkslategray",
-    "name": "0078_DarkSlateGray",
+    "name": "Turquesa oscuro 02",
     "sourceName": "0078_DarkSlateGray",
     "collection": "Colors-Named",
     "color": "#2f4f4f",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-named-0079-teal",
-    "name": "0079_Teal",
+    "name": "Turquesa intenso 01",
     "sourceName": "0079_Teal",
     "collection": "Colors-Named",
     "color": "#008080",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0080-darkcyan",
-    "name": "0080_DarkCyan",
+    "name": "Turquesa intenso 02",
     "sourceName": "0080_DarkCyan",
     "collection": "Colors-Named",
     "color": "#008b8b",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0081-cadetblue",
-    "name": "0081_CadetBlue",
+    "name": "Turquesa apagado",
     "sourceName": "0081_CadetBlue",
     "collection": "Colors-Named",
     "color": "#5f9ea0",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0082-lightseagreen",
-    "name": "0082_LightSeaGreen",
+    "name": "Verde agua intenso 02",
     "sourceName": "0082_LightSeaGreen",
     "collection": "Colors-Named",
     "color": "#20b2aa",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0083-darkturquoise",
-    "name": "0083_DarkTurquoise",
+    "name": "Turquesa intenso 06",
     "sourceName": "0083_DarkTurquoise",
     "collection": "Colors-Named",
     "color": "#00ced1",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0084-mediumturquoise",
-    "name": "0084_MediumTurquoise",
+    "name": "Verde agua intenso 04",
     "sourceName": "0084_MediumTurquoise",
     "collection": "Colors-Named",
     "color": "#48d1cc",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0085-turquoise",
-    "name": "0085_Turquoise",
+    "name": "Verde agua intenso 03",
     "sourceName": "0085_Turquoise",
     "collection": "Colors-Named",
     "color": "#40e0d0",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0086-mediumaquamarine",
-    "name": "0086_MediumAquamarine",
+    "name": "Verde agua suave 01",
     "sourceName": "0086_MediumAquamarine",
     "collection": "Colors-Named",
     "color": "#66cdaa",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0087-cyan",
-    "name": "0087_Cyan",
+    "name": "Turquesa intenso 08",
     "sourceName": "0087_Cyan",
     "collection": "Colors-Named",
     "color": "#00ffff",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0088-aquamarine",
-    "name": "0088_Aquamarine",
+    "name": "Verde agua suave 02",
     "sourceName": "0088_Aquamarine",
     "collection": "Colors-Named",
     "color": "#7fffd4",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0089-paleturquoise",
-    "name": "0089_PaleTurquoise",
+    "name": "Turquesa pastel 04",
     "sourceName": "0089_PaleTurquoise",
     "collection": "Colors-Named",
     "color": "#afeeee",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0090-lightcyan",
-    "name": "0090_LightCyan",
+    "name": "Gris azulado 03",
     "sourceName": "0090_LightCyan",
     "collection": "Colors-Named",
     "color": "#e0ffff",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0094-powderblue",
-    "name": "0094_PowderBlue",
+    "name": "Turquesa pastel 05",
     "sourceName": "0094_PowderBlue",
     "collection": "Colors-Named",
     "color": "#b0e0e6",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0095-lightblue",
-    "name": "0095_LightBlue",
+    "name": "Turquesa pastel 03",
     "sourceName": "0095_LightBlue",
     "collection": "Colors-Named",
     "color": "#add8e6",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0096-skyblue",
-    "name": "0096_SkyBlue",
+    "name": "Turquesa pastel 01",
     "sourceName": "0096_SkyBlue",
     "collection": "Colors-Named",
     "color": "#87ceeb",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0097-deepskyblue",
-    "name": "0097_DeepSkyBlue",
+    "name": "Turquesa intenso 04",
     "sourceName": "0097_DeepSkyBlue",
     "collection": "Colors-Named",
     "color": "#00bfff",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0098-dodgerblue",
-    "name": "0098_DodgerBlue",
+    "name": "Azul intenso 08",
     "sourceName": "0098_DodgerBlue",
     "collection": "Colors-Named",
     "color": "#1e90ff",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0099-lightsteelblue",
-    "name": "0099_LightSteelBlue",
+    "name": "Azul pastel 02",
     "sourceName": "0099_LightSteelBlue",
     "collection": "Colors-Named",
     "color": "#b0c4de",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0100-steelblue",
-    "name": "0100_SteelBlue",
+    "name": "Azul suave 01",
     "sourceName": "0100_SteelBlue",
     "collection": "Colors-Named",
     "color": "#4682b4",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0101-cornflowerblue",
-    "name": "0101_CornflowerBlue",
+    "name": "Azul suave 02",
     "sourceName": "0101_CornflowerBlue",
     "collection": "Colors-Named",
     "color": "#6495ed",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0102-royalblue",
-    "name": "0102_RoyalBlue",
+    "name": "Azul intenso 10",
     "sourceName": "0102_RoyalBlue",
     "collection": "Colors-Named",
     "color": "#4169e1",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0103-blue",
-    "name": "0103_Blue",
+    "name": "Azul intenso 07",
     "sourceName": "0103_Blue",
     "collection": "Colors-Named",
     "color": "#0000ff",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-named-0104-mediumblue",
-    "name": "0104_MediumBlue",
+    "name": "Azul intenso 05",
     "sourceName": "0104_MediumBlue",
     "collection": "Colors-Named",
     "color": "#0000cd",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-named-0105-navy",
-    "name": "0105_Navy",
+    "name": "Azul intenso 01",
     "sourceName": "0105_Navy",
     "collection": "Colors-Named",
     "color": "#000080",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-named-0106-darkblue",
-    "name": "0106_DarkBlue",
+    "name": "Azul intenso 02",
     "sourceName": "0106_DarkBlue",
     "collection": "Colors-Named",
     "color": "#00008b",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-named-0107-midnightblue",
-    "name": "0107_MidnightBlue",
+    "name": "Azul oscuro 02",
     "sourceName": "0107_MidnightBlue",
     "collection": "Colors-Named",
     "color": "#191970",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-named-0108-indigo",
-    "name": "0108_Indigo",
+    "name": "Violeta intenso 01",
     "sourceName": "0108_Indigo",
     "collection": "Colors-Named",
     "color": "#4b0082",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-named-0109-darkslateblue",
-    "name": "0109_DarkSlateBlue",
+    "name": "Violeta apagado",
     "sourceName": "0109_DarkSlateBlue",
     "collection": "Colors-Named",
     "color": "#483d8b",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-named-0110-lightslategray",
-    "name": "0110_LightSlateGray",
+    "name": "Azul apagado 02",
     "sourceName": "0110_LightSlateGray",
     "collection": "Colors-Named",
     "color": "#778899",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0111-slategray",
-    "name": "0111_SlateGray",
+    "name": "Azul apagado 01",
     "sourceName": "0111_SlateGray",
     "collection": "Colors-Named",
     "color": "#708090",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0112-slateblue",
-    "name": "0112_SlateBlue",
+    "name": "Violeta suave 01",
     "sourceName": "0112_SlateBlue",
     "collection": "Colors-Named",
     "color": "#6a5acd",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0113-mediumslateblue",
-    "name": "0113_MediumSlateBlue",
+    "name": "Violeta suave 02",
     "sourceName": "0113_MediumSlateBlue",
     "collection": "Colors-Named",
     "color": "#7b68ee",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0114-blueviolet",
-    "name": "0114_BlueViolet",
+    "name": "Violeta intenso 05",
     "sourceName": "0114_BlueViolet",
     "collection": "Colors-Named",
     "color": "#8a2be2",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-named-0115-mediumpurple",
-    "name": "0115_MediumPurple",
+    "name": "Violeta suave 03",
     "sourceName": "0115_MediumPurple",
     "collection": "Colors-Named",
     "color": "#9370db",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0119-rosybrown",
-    "name": "0119_RosyBrown",
+    "name": "Rojo apagado",
     "sourceName": "0119_RosyBrown",
     "collection": "Colors-Named",
     "color": "#bc8f8f",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0120-orchid",
-    "name": "0120_Orchid",
+    "name": "Púrpura suave 02",
     "sourceName": "0120_Orchid",
     "collection": "Colors-Named",
     "color": "#da70d6",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0121-mediumorchid",
-    "name": "0121_MediumOrchid",
+    "name": "Púrpura suave 01",
     "sourceName": "0121_MediumOrchid",
     "collection": "Colors-Named",
     "color": "#ba55d3",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0122-darkorchid",
-    "name": "0122_DarkOrchid",
+    "name": "Púrpura intenso 04",
     "sourceName": "0122_DarkOrchid",
     "collection": "Colors-Named",
     "color": "#9932cc",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-named-0123-darkmagenta",
-    "name": "0123_DarkMagenta",
+    "name": "Púrpura intenso 02",
     "sourceName": "0123_DarkMagenta",
     "collection": "Colors-Named",
     "color": "#8b008b",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-named-0124-purple",
-    "name": "0124_Purple",
+    "name": "Púrpura intenso 01",
     "sourceName": "0124_Purple",
     "collection": "Colors-Named",
     "color": "#800080",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "colors-named-0125-plum",
-    "name": "0125_Plum",
+    "name": "Púrpura pastel 01",
     "sourceName": "0125_Plum",
     "collection": "Colors-Named",
     "color": "#dda0dd",
-    "category": "color"
+    "category": "color",
+    "tone": "claro"
   },
   {
     "id": "colors-named-0126-violet",
-    "name": "0126_Violet",
+    "name": "Púrpura suave 03",
     "sourceName": "0126_Violet",
     "collection": "Colors-Named",
     "color": "#ee82ee",
-    "category": "color"
+    "category": "color",
+    "tone": "medio"
   },
   {
     "id": "colors-named-0127-magenta",
-    "name": "0127_Magenta",
+    "name": "Púrpura intenso 07",
     "sourceName": "0127_Magenta",
     "collection": "Colors-Named",
     "color": "#ff00ff",
-    "category": "color"
+    "category": "color",
+    "tone": "oscuro"
   },
   {
     "id": "acg-marble025",
@@ -1956,11 +2199,13 @@
     ],
     "source": "https://ambientcg.com/a/Marble025",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "claro",
+    "pattern": "suave"
   },
   {
     "id": "acg-marble015",
-    "name": "Mármol marfil",
+    "name": "Mármol marfil 02",
     "category": "stone",
     "family": "Mármol",
     "color": "#d8cdbb",
@@ -1971,7 +2216,9 @@
     ],
     "source": "https://ambientcg.com/a/Marble015",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "claro",
+    "pattern": "suave"
   },
   {
     "id": "acg-marble021",
@@ -1986,7 +2233,9 @@
     ],
     "source": "https://ambientcg.com/a/Marble021",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "claro",
+    "pattern": "suave"
   },
   {
     "id": "acg-terrazzo019l",
@@ -2001,7 +2250,9 @@
     ],
     "source": "https://ambientcg.com/a/Terrazzo019L",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "medio",
+    "pattern": "suave"
   },
   {
     "id": "acg-granite006a",
@@ -2016,7 +2267,9 @@
     ],
     "source": "https://ambientcg.com/a/Granite006A",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "medio",
+    "pattern": "granulado"
   },
   {
     "id": "acg-granite007a",
@@ -2031,7 +2284,9 @@
     ],
     "source": "https://ambientcg.com/a/Granite007A",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "medio",
+    "pattern": "granulado"
   },
   {
     "id": "stone-carrera-marble",
@@ -2044,7 +2299,9 @@
     "size": [
       0.9144,
       0.9144
-    ]
+    ],
+    "tone": "claro",
+    "pattern": "veteado"
   },
   {
     "id": "stone-granite-brown",
@@ -2057,7 +2314,9 @@
     "size": [
       0.6095999999999999,
       0.6095999999999999
-    ]
+    ],
+    "tone": "medio",
+    "pattern": "granulado"
   },
   {
     "id": "stone-granite-dark-gray",
@@ -2070,11 +2329,13 @@
     "size": [
       0.30479999999999996,
       0.30479999999999996
-    ]
+    ],
+    "tone": "oscuro",
+    "pattern": "granulado"
   },
   {
     "id": "stone-granite-light-gray",
-    "name": "Granito gris claro",
+    "name": "Granito gris claro 01",
     "sourceName": "Granite Light Gray",
     "collection": "Stone",
     "color": "#959490",
@@ -2083,7 +2344,9 @@
     "size": [
       0.30479999999999996,
       0.30479999999999996
-    ]
+    ],
+    "tone": "medio",
+    "pattern": "granulado"
   },
   {
     "id": "stone-sandstone",
@@ -2096,7 +2359,9 @@
     "size": [
       0.9144,
       0.9144
-    ]
+    ],
+    "tone": "oscuro",
+    "pattern": "suave"
   },
   {
     "id": "stone-stone-brushed-khaki",
@@ -2109,7 +2374,9 @@
     "size": [
       0.6095999999999999,
       0.6095999999999999
-    ]
+    ],
+    "tone": "claro",
+    "pattern": "suave"
   },
   {
     "id": "stone-stone-marble",
@@ -2122,7 +2389,9 @@
     "size": [
       1.2191999999999998,
       1.2191999999999998
-    ]
+    ],
+    "tone": "medio",
+    "pattern": "veteado"
   },
   {
     "id": "stone-stone-vein-gray",
@@ -2135,11 +2404,13 @@
     "size": [
       1.2191999999999998,
       1.2191999999999998
-    ]
+    ],
+    "tone": "medio",
+    "pattern": "veteado"
   },
   {
     "id": "acg-marble012",
-    "name": "Mármol blanco veteado",
+    "name": "Mármol blanco veteado 01",
     "category": "stone",
     "family": "Mármol",
     "color": "#acadb6",
@@ -2150,7 +2421,9 @@
     ],
     "source": "https://ambientcg.com/a/Marble012",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "claro",
+    "pattern": "veteado"
   },
   {
     "id": "acg-marble016",
@@ -2165,11 +2438,13 @@
     ],
     "source": "https://ambientcg.com/a/Marble016",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "oscuro",
+    "pattern": "veteado"
   },
   {
     "id": "acg-marble014",
-    "name": "Mármol marfil",
+    "name": "Mármol marfil 01",
     "category": "stone",
     "family": "Mármol",
     "color": "#d1c4b1",
@@ -2180,7 +2455,9 @@
     ],
     "source": "https://ambientcg.com/a/Marble014",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "claro",
+    "pattern": "suave"
   },
   {
     "id": "acg-marble020",
@@ -2195,7 +2472,9 @@
     ],
     "source": "https://ambientcg.com/a/Marble020",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "medio",
+    "pattern": "veteado"
   },
   {
     "id": "acg-granite001a",
@@ -2210,11 +2489,13 @@
     ],
     "source": "https://ambientcg.com/a/Granite001A",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "medio",
+    "pattern": "granulado"
   },
   {
     "id": "acg-granite002a",
-    "name": "Granito gris claro",
+    "name": "Granito gris claro 02",
     "category": "stone",
     "family": "Granito",
     "color": "#b5b1ad",
@@ -2225,7 +2506,9 @@
     ],
     "source": "https://ambientcg.com/a/Granite002A",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "claro",
+    "pattern": "granulado"
   },
   {
     "id": "acg-granite003a",
@@ -2240,7 +2523,9 @@
     ],
     "source": "https://ambientcg.com/a/Granite003A",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "medio",
+    "pattern": "granulado"
   },
   {
     "id": "acg-granite004a",
@@ -2255,7 +2540,9 @@
     ],
     "source": "https://ambientcg.com/a/Granite004A",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "medio",
+    "pattern": "granulado"
   },
   {
     "id": "acg-granite005a",
@@ -2270,7 +2557,9 @@
     ],
     "source": "https://ambientcg.com/a/Granite005A",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "medio",
+    "pattern": "granulado"
   },
   {
     "id": "acg-travertine009",
@@ -2285,7 +2574,9 @@
     ],
     "source": "https://ambientcg.com/a/Travertine009",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "claro",
+    "pattern": "veteado"
   },
   {
     "id": "acg-terrazzo013",
@@ -2300,7 +2591,9 @@
     ],
     "source": "https://ambientcg.com/a/Terrazzo013",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "claro",
+    "pattern": "granulado"
   },
   {
     "id": "acg-terrazzo015",
@@ -2315,7 +2608,9 @@
     ],
     "source": "https://ambientcg.com/a/Terrazzo015",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "oscuro",
+    "pattern": "granulado"
   },
   {
     "id": "acg-onyx015",
@@ -2330,7 +2625,9 @@
     ],
     "source": "https://ambientcg.com/a/Onyx015",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "claro",
+    "pattern": "veteado"
   },
   {
     "id": "acg-travertine001",
@@ -2345,7 +2642,9 @@
     ],
     "source": "https://ambientcg.com/a/Travertine001",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "medio",
+    "pattern": "veteado"
   },
   {
     "id": "acg-marble007",
@@ -2360,11 +2659,13 @@
     ],
     "source": "https://ambientcg.com/a/Marble007",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "medio",
+    "pattern": "veteado"
   },
   {
     "id": "acg-marble019",
-    "name": "Mármol blanco veteado",
+    "name": "Mármol blanco veteado 02",
     "category": "stone",
     "family": "Mármol",
     "color": "#eaeaea",
@@ -2375,7 +2676,9 @@
     ],
     "source": "https://ambientcg.com/a/Marble019",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "claro",
+    "pattern": "veteado"
   },
   {
     "id": "acg-wood095",
@@ -2390,7 +2693,8 @@
     ],
     "source": "https://ambientcg.com/a/Wood095",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "medio"
   },
   {
     "id": "acg-wood049",
@@ -2405,7 +2709,8 @@
     ],
     "source": "https://ambientcg.com/a/Wood049",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "medio"
   },
   {
     "id": "acg-wood051",
@@ -2420,7 +2725,8 @@
     ],
     "source": "https://ambientcg.com/a/Wood051",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "oscuro"
   },
   {
     "id": "acg-wood026",
@@ -2435,7 +2741,8 @@
     ],
     "source": "https://ambientcg.com/a/Wood026",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "oscuro"
   },
   {
     "id": "acg-wood048",
@@ -2450,7 +2757,8 @@
     ],
     "source": "https://ambientcg.com/a/Wood048",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "medio"
   },
   {
     "id": "acg-concrete034",
@@ -2465,7 +2773,8 @@
     ],
     "source": "https://ambientcg.com/a/Concrete034",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "claro"
   },
   {
     "id": "acg-concrete036",
@@ -2480,7 +2789,8 @@
     ],
     "source": "https://ambientcg.com/a/Concrete036",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "medio"
   },
   {
     "id": "acg-concrete048",
@@ -2495,7 +2805,8 @@
     ],
     "source": "https://ambientcg.com/a/Concrete048",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "medio"
   },
   {
     "id": "acg-fabric030",
@@ -2510,7 +2821,8 @@
     ],
     "source": "https://ambientcg.com/a/Fabric030",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "oscuro"
   },
   {
     "id": "acg-fabric036",
@@ -2525,7 +2837,8 @@
     ],
     "source": "https://ambientcg.com/a/Fabric036",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "claro"
   },
   {
     "id": "acg-fabric081a",
@@ -2540,7 +2853,8 @@
     ],
     "source": "https://ambientcg.com/a/Fabric081A",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "medio"
   },
   {
     "id": "acg-metal009",
@@ -2555,7 +2869,8 @@
     ],
     "source": "https://ambientcg.com/a/Metal009",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "medio"
   },
   {
     "id": "acg-metal063",
@@ -2570,7 +2885,8 @@
     ],
     "source": "https://ambientcg.com/a/Metal063",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "medio"
   },
   {
     "id": "acg-leather026",
@@ -2585,7 +2901,8 @@
     ],
     "source": "https://ambientcg.com/a/Leather026",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "oscuro"
   },
   {
     "id": "acg-concrete046",
@@ -2600,7 +2917,8 @@
     ],
     "source": "https://ambientcg.com/a/Concrete046",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "claro"
   },
   {
     "id": "acg-concrete030",
@@ -2615,7 +2933,8 @@
     ],
     "source": "https://ambientcg.com/a/Concrete030",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "oscuro"
   },
   {
     "id": "acg-wood092",
@@ -2630,7 +2949,8 @@
     ],
     "source": "https://ambientcg.com/a/Wood092",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "medio"
   },
   {
     "id": "acg-wood058",
@@ -2645,7 +2965,8 @@
     ],
     "source": "https://ambientcg.com/a/Wood058",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "medio"
   },
   {
     "id": "acg-wood066",
@@ -2660,7 +2981,8 @@
     ],
     "source": "https://ambientcg.com/a/Wood066",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "oscuro"
   },
   {
     "id": "acg-wood067",
@@ -2675,7 +2997,8 @@
     ],
     "source": "https://ambientcg.com/a/Wood067",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "oscuro"
   },
   {
     "id": "acg-fabric082a",
@@ -2690,7 +3013,8 @@
     ],
     "source": "https://ambientcg.com/a/Fabric082A",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "claro"
   },
   {
     "id": "acg-fabric048",
@@ -2705,7 +3029,8 @@
     ],
     "source": "https://ambientcg.com/a/Fabric048",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "claro"
   },
   {
     "id": "acg-fabric060",
@@ -2720,7 +3045,8 @@
     ],
     "source": "https://ambientcg.com/a/Fabric060",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "claro"
   },
   {
     "id": "acg-leather038",
@@ -2735,7 +3061,8 @@
     ],
     "source": "https://ambientcg.com/a/Leather038",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "medio"
   },
   {
     "id": "acg-metal049a",
@@ -2750,7 +3077,8 @@
     ],
     "source": "https://ambientcg.com/a/Metal049A",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "claro"
   },
   {
     "id": "acg-metal048a",
@@ -2765,6 +3093,7 @@
     ],
     "source": "https://ambientcg.com/a/Metal048A",
     "license": "CC0-1.0",
-    "provider": "ambientCG"
+    "provider": "ambientCG",
+    "tone": "claro"
   }
 ]
