@@ -1944,6 +1944,96 @@
     "category": "color"
   },
   {
+    "id": "acg-marble025",
+    "name": "Piedra blanca mate",
+    "category": "stone",
+    "family": "Mármol",
+    "color": "#d7d7d7",
+    "texture": "assets/acg-marble025.webp",
+    "size": [
+      1.2,
+      1.2
+    ],
+    "source": "https://ambientcg.com/a/Marble025",
+    "license": "CC0-1.0",
+    "provider": "ambientCG"
+  },
+  {
+    "id": "acg-marble015",
+    "name": "Mármol marfil",
+    "category": "stone",
+    "family": "Mármol",
+    "color": "#d8cdbb",
+    "texture": "assets/acg-marble015.webp",
+    "size": [
+      1.2,
+      1.2
+    ],
+    "source": "https://ambientcg.com/a/Marble015",
+    "license": "CC0-1.0",
+    "provider": "ambientCG"
+  },
+  {
+    "id": "acg-marble021",
+    "name": "Mármol nube",
+    "category": "stone",
+    "family": "Mármol",
+    "color": "#f4f2f0",
+    "texture": "assets/acg-marble021.webp",
+    "size": [
+      1.2,
+      1.2
+    ],
+    "source": "https://ambientcg.com/a/Marble021",
+    "license": "CC0-1.0",
+    "provider": "ambientCG"
+  },
+  {
+    "id": "acg-terrazzo019l",
+    "name": "Terrazo arena fino",
+    "category": "stone",
+    "family": "Terrazo",
+    "color": "#a08e75",
+    "texture": "assets/acg-terrazzo019l.webp",
+    "size": [
+      0.8,
+      0.8
+    ],
+    "source": "https://ambientcg.com/a/Terrazzo019L",
+    "license": "CC0-1.0",
+    "provider": "ambientCG"
+  },
+  {
+    "id": "acg-granite006a",
+    "name": "Granito fino café",
+    "category": "stone",
+    "family": "Granito",
+    "color": "#8b5d41",
+    "texture": "assets/acg-granite006a.webp",
+    "size": [
+      0.65,
+      0.65
+    ],
+    "source": "https://ambientcg.com/a/Granite006A",
+    "license": "CC0-1.0",
+    "provider": "ambientCG"
+  },
+  {
+    "id": "acg-granite007a",
+    "name": "Granito beige suave",
+    "category": "stone",
+    "family": "Granito",
+    "color": "#87745a",
+    "texture": "assets/acg-granite007a.webp",
+    "size": [
+      0.65,
+      0.65
+    ],
+    "source": "https://ambientcg.com/a/Granite007A",
+    "license": "CC0-1.0",
+    "provider": "ambientCG"
+  },
+  {
     "id": "stone-carrera-marble",
     "name": "Mármol Carrara",
     "sourceName": "Carrera Marble",
@@ -2228,6 +2318,66 @@
     "provider": "ambientCG"
   },
   {
+    "id": "acg-onyx015",
+    "name": "Ónix blanco estriado",
+    "category": "stone",
+    "family": "Ónix",
+    "color": "#cdcbc8",
+    "texture": "assets/acg-onyx015.webp",
+    "size": [
+      1.2,
+      1.2
+    ],
+    "source": "https://ambientcg.com/a/Onyx015",
+    "license": "CC0-1.0",
+    "provider": "ambientCG"
+  },
+  {
+    "id": "acg-travertine001",
+    "name": "Travertino arena",
+    "category": "stone",
+    "family": "Travertino",
+    "color": "#a59982",
+    "texture": "assets/acg-travertine001.webp",
+    "size": [
+      1.2,
+      1.2
+    ],
+    "source": "https://ambientcg.com/a/Travertine001",
+    "license": "CC0-1.0",
+    "provider": "ambientCG"
+  },
+  {
+    "id": "acg-marble007",
+    "name": "Mármol marrón veteado",
+    "category": "stone",
+    "family": "Mármol",
+    "color": "#907b6b",
+    "texture": "assets/acg-marble007.webp",
+    "size": [
+      1.2,
+      1.2
+    ],
+    "source": "https://ambientcg.com/a/Marble007",
+    "license": "CC0-1.0",
+    "provider": "ambientCG"
+  },
+  {
+    "id": "acg-marble019",
+    "name": "Mármol blanco veteado",
+    "category": "stone",
+    "family": "Mármol",
+    "color": "#eaeaea",
+    "texture": "assets/acg-marble019.webp",
+    "size": [
+      1.2,
+      1.2
+    ],
+    "source": "https://ambientcg.com/a/Marble019",
+    "license": "CC0-1.0",
+    "provider": "ambientCG"
+  },
+  {
     "id": "acg-wood095",
     "name": "Madera clara",
     "category": "textured",
@@ -2434,6 +2584,186 @@
       0.4
     ],
     "source": "https://ambientcg.com/a/Leather026",
+    "license": "CC0-1.0",
+    "provider": "ambientCG"
+  },
+  {
+    "id": "acg-concrete046",
+    "name": "Cemento blanco suave",
+    "category": "textured",
+    "family": "Concreto",
+    "color": "#cdceb9",
+    "texture": "assets/acg-concrete046.webp",
+    "size": [
+      1.1,
+      1.1
+    ],
+    "source": "https://ambientcg.com/a/Concrete046",
+    "license": "CC0-1.0",
+    "provider": "ambientCG"
+  },
+  {
+    "id": "acg-concrete030",
+    "name": "Cemento liso",
+    "category": "textured",
+    "family": "Concreto",
+    "color": "#64605c",
+    "texture": "assets/acg-concrete030.webp",
+    "size": [
+      1.1,
+      1.1
+    ],
+    "source": "https://ambientcg.com/a/Concrete030",
+    "license": "CC0-1.0",
+    "provider": "ambientCG"
+  },
+  {
+    "id": "acg-wood092",
+    "name": "Madera miel fina",
+    "category": "textured",
+    "family": "Madera",
+    "color": "#b0733f",
+    "texture": "assets/acg-wood092.webp",
+    "size": [
+      1.2,
+      1.2
+    ],
+    "source": "https://ambientcg.com/a/Wood092",
+    "license": "CC0-1.0",
+    "provider": "ambientCG"
+  },
+  {
+    "id": "acg-wood058",
+    "name": "Madera lineal",
+    "category": "textured",
+    "family": "Madera",
+    "color": "#a0795b",
+    "texture": "assets/acg-wood058.webp",
+    "size": [
+      1.2,
+      1.2
+    ],
+    "source": "https://ambientcg.com/a/Wood058",
+    "license": "CC0-1.0",
+    "provider": "ambientCG"
+  },
+  {
+    "id": "acg-wood066",
+    "name": "Madera avellana",
+    "category": "textured",
+    "family": "Madera",
+    "color": "#593413",
+    "texture": "assets/acg-wood066.webp",
+    "size": [
+      1.2,
+      1.2
+    ],
+    "source": "https://ambientcg.com/a/Wood066",
+    "license": "CC0-1.0",
+    "provider": "ambientCG"
+  },
+  {
+    "id": "acg-wood067",
+    "name": "Madera tostada",
+    "category": "textured",
+    "family": "Madera",
+    "color": "#371f0e",
+    "texture": "assets/acg-wood067.webp",
+    "size": [
+      1.2,
+      1.2
+    ],
+    "source": "https://ambientcg.com/a/Wood067",
+    "license": "CC0-1.0",
+    "provider": "ambientCG"
+  },
+  {
+    "id": "acg-fabric082a",
+    "name": "Lino fino gris",
+    "category": "textured",
+    "family": "Tejido",
+    "color": "#b6b7b9",
+    "texture": "assets/acg-fabric082a.webp",
+    "size": [
+      0.35,
+      0.35
+    ],
+    "source": "https://ambientcg.com/a/Fabric082A",
+    "license": "CC0-1.0",
+    "provider": "ambientCG"
+  },
+  {
+    "id": "acg-fabric048",
+    "name": "Tejido blanco fino",
+    "category": "textured",
+    "family": "Tejido",
+    "color": "#f4f4f3",
+    "texture": "assets/acg-fabric048.webp",
+    "size": [
+      0.35,
+      0.35
+    ],
+    "source": "https://ambientcg.com/a/Fabric048",
+    "license": "CC0-1.0",
+    "provider": "ambientCG"
+  },
+  {
+    "id": "acg-fabric060",
+    "name": "Tejido cruzado",
+    "category": "textured",
+    "family": "Tejido",
+    "color": "#f4f6fa",
+    "texture": "assets/acg-fabric060.webp",
+    "size": [
+      0.35,
+      0.35
+    ],
+    "source": "https://ambientcg.com/a/Fabric060",
+    "license": "CC0-1.0",
+    "provider": "ambientCG"
+  },
+  {
+    "id": "acg-leather038",
+    "name": "Cuero grano fino",
+    "category": "textured",
+    "family": "Cuero",
+    "color": "#d36e2f",
+    "texture": "assets/acg-leather038.webp",
+    "size": [
+      0.45,
+      0.45
+    ],
+    "source": "https://ambientcg.com/a/Leather038",
+    "license": "CC0-1.0",
+    "provider": "ambientCG"
+  },
+  {
+    "id": "acg-metal049a",
+    "name": "Metal satinado plata",
+    "category": "textured",
+    "family": "Metal",
+    "color": "#fcfbf6",
+    "texture": "assets/acg-metal049a.webp",
+    "size": [
+      0.65,
+      0.65
+    ],
+    "source": "https://ambientcg.com/a/Metal049A",
+    "license": "CC0-1.0",
+    "provider": "ambientCG"
+  },
+  {
+    "id": "acg-metal048a",
+    "name": "Metal satinado dorado",
+    "category": "textured",
+    "family": "Metal",
+    "color": "#fee39c",
+    "texture": "assets/acg-metal048a.webp",
+    "size": [
+      0.65,
+      0.65
+    ],
+    "source": "https://ambientcg.com/a/Metal048A",
     "license": "CC0-1.0",
     "provider": "ambientCG"
   }

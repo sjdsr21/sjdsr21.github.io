@@ -185,6 +185,160 @@
       "source": "https://ambientcg.com/a/Leather026",
       "sha256": "9ae68868b9d786cf6e10f8d4ac3ec862fe876ca4452ae30301f2db7e5a3b044c",
       "file": "assets/acg-leather026.webp"
+    },
+    {
+      "id": "acg-granite006a",
+      "name": "Granito fino café",
+      "source": "https://ambientcg.com/a/Granite006A",
+      "file": "assets/acg-granite006a.webp",
+      "sha256": "fb45d49a2496504ac7ae2c06766746eb4772b8082baac0806b3b7ea23da25540"
+    },
+    {
+      "id": "acg-granite007a",
+      "name": "Granito beige suave",
+      "source": "https://ambientcg.com/a/Granite007A",
+      "file": "assets/acg-granite007a.webp",
+      "sha256": "4f8a64888a46587d7953d7f1408f13e248599a74cf5d62b822e81cb731642853"
+    },
+    {
+      "id": "acg-onyx015",
+      "name": "Ónix blanco estriado",
+      "source": "https://ambientcg.com/a/Onyx015",
+      "file": "assets/acg-onyx015.webp",
+      "sha256": "9d2bb402ebea3cf3af18a2bac889d54ee7ec2be96d5482bd0660b108f719a1b7"
+    },
+    {
+      "id": "acg-marble021",
+      "name": "Mármol nube",
+      "source": "https://ambientcg.com/a/Marble021",
+      "file": "assets/acg-marble021.webp",
+      "sha256": "ef8f26632409060bf152874c3635eafbd86e06559794c7691b45016107685950"
+    },
+    {
+      "id": "acg-travertine001",
+      "name": "Travertino arena",
+      "source": "https://ambientcg.com/a/Travertine001",
+      "file": "assets/acg-travertine001.webp",
+      "sha256": "b18202ef11ee99430afe40f3e4f93ed4ef2bd10395f66a297dea3e96043713f0"
+    },
+    {
+      "id": "acg-terrazzo019l",
+      "name": "Terrazo arena fino",
+      "source": "https://ambientcg.com/a/Terrazzo019L",
+      "file": "assets/acg-terrazzo019l.webp",
+      "sha256": "fec69edbd423bdde76dd17583bda27b25f95af27f5d2487b68e0698596d774d5"
+    },
+    {
+      "id": "acg-concrete046",
+      "name": "Cemento blanco suave",
+      "source": "https://ambientcg.com/a/Concrete046",
+      "file": "assets/acg-concrete046.webp",
+      "sha256": "f77ae7e14191ae0c85792d086fd83d268129ec00f9d3d8edd9af3f143e9173e6"
+    },
+    {
+      "id": "acg-concrete030",
+      "name": "Cemento liso",
+      "source": "https://ambientcg.com/a/Concrete030",
+      "file": "assets/acg-concrete030.webp",
+      "sha256": "8bf1009896653e8194147f8cb421211030dd9861c8e1ba311a4e84db7b1385e2"
+    },
+    {
+      "id": "acg-wood092",
+      "name": "Madera miel fina",
+      "source": "https://ambientcg.com/a/Wood092",
+      "file": "assets/acg-wood092.webp",
+      "sha256": "b0d44de5ed37608bc32b17066d505c56f62880f55fd089773f615751620d0e7e"
+    },
+    {
+      "id": "acg-wood058",
+      "name": "Madera lineal",
+      "source": "https://ambientcg.com/a/Wood058",
+      "file": "assets/acg-wood058.webp",
+      "sha256": "2c5df2424cb8e70538127971642fa15a0275d3d982862bb86f0d78dccd8803b9"
+    },
+    {
+      "id": "acg-wood066",
+      "name": "Madera avellana",
+      "source": "https://ambientcg.com/a/Wood066",
+      "file": "assets/acg-wood066.webp",
+      "sha256": "2bbe2015c6836c20d7f524e32e226edbb4d3bac9038ed03413d3c5f47d79fa51"
+    },
+    {
+      "id": "acg-wood067",
+      "name": "Madera tostada",
+      "source": "https://ambientcg.com/a/Wood067",
+      "file": "assets/acg-wood067.webp",
+      "sha256": "2a0b32ba59aa1a2027a3b0e4739cb0e7a3f55f5a811c955627a96e43d1091921"
+    },
+    {
+      "id": "acg-fabric082a",
+      "name": "Lino fino gris",
+      "source": "https://ambientcg.com/a/Fabric082A",
+      "file": "assets/acg-fabric082a.webp",
+      "sha256": "8c45e4c4ff08b09909b1e00cfb2b87f8fbd1157261e4f586d86f516559ad27ef"
+    },
+    {
+      "id": "acg-fabric048",
+      "name": "Tejido blanco fino",
+      "source": "https://ambientcg.com/a/Fabric048",
+      "file": "assets/acg-fabric048.webp",
+      "sha256": "646acdbdbad8cc7165f0f7d26bc1d30b08eee226930c69ae3a238eb10e60b8a0"
+    },
+    {
+      "id": "acg-fabric060",
+      "name": "Tejido cruzado",
+      "source": "https://ambientcg.com/a/Fabric060",
+      "file": "assets/acg-fabric060.webp",
+      "sha256": "a0758f94623759a2ce98cc29c9c60ec9664919665b34a961c8e0f76eecc8d466"
+    },
+    {
+      "id": "acg-leather038",
+      "name": "Cuero grano fino",
+      "source": "https://ambientcg.com/a/Leather038",
+      "file": "assets/acg-leather038.webp",
+      "sha256": "c6f529ee970ef620d2b6b7b577c2ad1b343ba44d85de62e29e4d2c74841e4664"
+    },
+    {
+      "id": "acg-metal049a",
+      "name": "Metal satinado plata",
+      "source": "https://ambientcg.com/a/Metal049A",
+      "file": "assets/acg-metal049a.webp",
+      "sha256": "cdfd1c443cee1c3654e469eac7ed65c7c7eba076392842e25008c8b03c5b797a"
+    },
+    {
+      "id": "acg-metal048a",
+      "name": "Metal satinado dorado",
+      "source": "https://ambientcg.com/a/Metal048A",
+      "file": "assets/acg-metal048a.webp",
+      "sha256": "04d1e91f09f3dec805fdf45ee81664226c4831fad971b7ee837ff8acca17f786"
+    },
+    {
+      "id": "acg-marble007",
+      "name": "Mármol marrón veteado",
+      "source": "https://ambientcg.com/a/Marble007",
+      "file": "assets/acg-marble007.webp",
+      "sha256": "9f341acc0a30b7db1a4ce09d62818e859e11566e828452748520be5d2f6faef0"
+    },
+    {
+      "id": "acg-marble015",
+      "name": "Mármol marfil",
+      "source": "https://ambientcg.com/a/Marble015",
+      "file": "assets/acg-marble015.webp",
+      "sha256": "73f3a479a2ca93d98e17ec59fe1010fb524ce20aefd8ca25776ef39b8bdf8e68"
+    },
+    {
+      "id": "acg-marble019",
+      "name": "Mármol blanco veteado",
+      "source": "https://ambientcg.com/a/Marble019",
+      "file": "assets/acg-marble019.webp",
+      "sha256": "414cfdeab89ce73c45874349fc91cd405616f4d02fe80e4c585e453ecb6bdefe"
+    },
+    {
+      "id": "acg-marble025",
+      "name": "Piedra blanca mate",
+      "source": "https://ambientcg.com/a/Marble025",
+      "file": "assets/acg-marble025.webp",
+      "sha256": "8bb546901838f932fd83638f494b8f8c9b82ec31b9d014d36afa442fb0b49e33"
     }
   ],
   "encoding": "WebP, 1024-pixel source resolution, quality 85; no recoloring or generated patterns."
