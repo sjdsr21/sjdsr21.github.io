@@ -91,6 +91,10 @@ function paintEditor(){
   $('tone-note').textContent=custom?'Arrastra por la rueda o ajusta los controles.':'El color tiñe el dibujo de la textura. Usa «Restaurar tono» para recuperar sus colores originales.';
   if(tones[zone])wheel.render(tones[zone]);
 }
+function revealEditor(){
+  const mobile=matchMedia('(max-width:800px)').matches;
+  (mobile?$('color-wheel'):$('color-editor')).scrollIntoView({behavior:'instant',block:mobile?'start':'nearest'});
+}
 const wheel=createColorWheel(value=>{
   if(!ready)return;tones[zone]={...value,enabled:true};applyMaterials();updateLabels();paintEditor();
 });
@@ -104,7 +108,7 @@ function paintPalette(){
   $('palette-count').textContent=`${options.length} acabados`+(['neutral','color'].includes(category)?' + color libre':'');
   if(['neutral','color'].includes(category)){
     const b=document.createElement('button');b.className='swatch custom-swatch';b.dataset.finish='custom';b.title='Elegir color personalizado';b.setAttribute('aria-label','Elegir color personalizado');b.innerHTML='<span class="wheel-icon" aria-hidden="true"></span>';
-    b.addEventListener('click',()=>{setFinish(zone,'custom');$('color-editor').scrollIntoView({behavior:'smooth',block:'nearest'});});container.append(b);
+    b.addEventListener('click',()=>{setFinish(zone,'custom');revealEditor();});container.append(b);
   }
   for(const finish of options){
     const b=document.createElement('button');b.className='swatch'+(finish.texture?' texture '+finish.category:'');b.style.setProperty('--swatch',finish.color);
@@ -188,7 +192,7 @@ $('reset').addEventListener('click',()=>{Object.keys(selection).forEach(k=>{sele
 $('home').addEventListener('click',resetCamera);$('zoom-in').addEventListener('click',()=>zoom(.85));$('zoom-out').addEventListener('click',()=>zoom(1.15));
 for(const mode of ['orbit','pan'])$(mode).addEventListener('click',()=>{if(!controls)return;controls.mouseButtons.LEFT=mode==='orbit'?THREE.MOUSE.ROTATE:THREE.MOUSE.PAN;controls.touches.ONE=mode==='orbit'?THREE.TOUCH.ROTATE:THREE.TOUCH.PAN;for(const key of ['orbit','pan']){$(key).classList.toggle('active',key===mode);$(key).setAttribute('aria-pressed',String(key===mode));}$('gesture-help').textContent=mode==='orbit'?'Arrastra para girar · rueda para acercar':'Arrastra para desplazar · rueda para acercar';});
 for(const name of ['shadows','edges','profiles'])$('show-'+name).addEventListener('change',e=>{if(ready)viewOptions.set(name,e.target.checked);});
-$('edit-tone').addEventListener('click',()=>{editorOpen[zone]=!editorOpen[zone];paintEditor();if(editorOpen[zone])$('color-editor').scrollIntoView({behavior:'smooth',block:'nearest'});});
+$('edit-tone').addEventListener('click',()=>{editorOpen[zone]=!editorOpen[zone];paintEditor();if(editorOpen[zone])revealEditor();});
 $('reset-tone').addEventListener('click',()=>{const f=finishFor(zone);tones[zone]={...hexHsv(f.color),v:100,enabled:false};applyMaterials();updateLabels();paintEditor();});
 $('screenshot').addEventListener('click',async()=>{
   if(!ready)return;const button=$('screenshot');button.disabled=true;button.querySelector('span').textContent='Preparando imagen…';
