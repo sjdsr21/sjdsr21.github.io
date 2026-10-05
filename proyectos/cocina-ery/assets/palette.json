@@ -2683,11 +2683,11 @@
   {
     "category": "textured",
     "family": "Cerámica",
-    "color": "#b69a7b",
-    "texture": "assets/eri-terracotta.webp",
+    "color": "#b07e51",
+    "texture": "assets/eri-terracotta-warm.webp",
     "size": [
-      0.6,
-      0.6
+      0.4,
+      0.36
     ],
     "mapping": "terracotta",
     "zones": [
@@ -2696,17 +2696,21 @@
     "provider": "Prototipo Ago · referencia generada",
     "tone": "medio",
     "id": "eri-terracotta-ceramic",
-    "name": "Terracota · todo cerámica",
-    "description": "Cerámica en la superficie, los cantos y el salpicadero. Rectángulos desfasados; formato visual aproximado de 15 × 30 cm."
+    "name": "Terracota rectangular · todo cerámica",
+    "description": "Cerámica de 10 × 18 cm en rectángulos desfasados, en superficie, cantos y salpicadero.",
+    "tileSize": [
+      0.1,
+      0.18
+    ]
   },
   {
     "category": "textured",
     "family": "Cerámica",
-    "color": "#b69a7b",
-    "texture": "assets/eri-terracotta.webp",
+    "color": "#b07e51",
+    "texture": "assets/eri-terracotta-warm.webp",
     "size": [
-      0.6,
-      0.6
+      0.4,
+      0.36
     ],
     "mapping": "terracotta",
     "zones": [
@@ -2715,9 +2719,60 @@
     "provider": "Prototipo Ago · referencia generada",
     "tone": "medio",
     "id": "eri-terracotta-wood",
-    "name": "Terracota · cantos de madera",
+    "name": "Terracota rectangular · madera",
     "trimFinish": "acg-wood049",
-    "description": "Cerámica en la superficie. Madera en el canto frontal, el izquierdo y el salpicadero. El ajuste de tono cambia solo la cerámica."
+    "description": "Cerámica rectangular de 10 × 18 cm en la superficie. Madera en el frente, el lado izquierdo y el salpicadero. El tono cambia solo la cerámica.",
+    "tileSize": [
+      0.1,
+      0.18
+    ]
+  },
+  {
+    "category": "textured",
+    "family": "Cerámica",
+    "color": "#b37f51",
+    "texture": "assets/eri-terracotta-square.webp",
+    "size": [
+      0.4,
+      0.4
+    ],
+    "tileSize": [
+      0.1,
+      0.1
+    ],
+    "mapping": "terracotta-square",
+    "zones": [
+      "counter"
+    ],
+    "provider": "Prototipo Ago · referencia generada",
+    "tone": "medio",
+    "id": "eri-terracotta-square-ceramic",
+    "name": "Terracota 10 × 10 · todo cerámica",
+    "description": "La misma cerámica cortada en cuadrados de 10 × 10 cm, alineados sin desfase. Superficie, cantos y salpicadero de cerámica."
+  },
+  {
+    "category": "textured",
+    "family": "Cerámica",
+    "color": "#b37f51",
+    "texture": "assets/eri-terracotta-square.webp",
+    "size": [
+      0.4,
+      0.4
+    ],
+    "tileSize": [
+      0.1,
+      0.1
+    ],
+    "mapping": "terracotta-square",
+    "zones": [
+      "counter"
+    ],
+    "provider": "Prototipo Ago · referencia generada",
+    "tone": "medio",
+    "id": "eri-terracotta-square-wood",
+    "name": "Terracota 10 × 10 · madera",
+    "trimFinish": "acg-wood049",
+    "description": "Cuadrados alineados de 10 × 10 cm en la superficie. Madera en el frente, el lado izquierdo y el salpicadero. El tono cambia solo la cerámica."
   },
   {
     "id": "acg-wood095",

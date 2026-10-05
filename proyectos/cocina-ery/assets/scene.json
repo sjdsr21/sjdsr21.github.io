@@ -51,5 +51,15 @@
     "36684": "backsplash",
     "36686": "backsplash",
     "36687": "backsplash"
+  },
+  "floor": {
+    "persistentId": 36688,
+    "originalMaterial": "Wood Square Tile 02",
+    "finishId": "eri-terracotta-ceramic",
+    "origin": {
+      "left": 0.2495041794501643,
+      "front": -0.6312539212253839,
+      "top": 0
+    }
   }
 }

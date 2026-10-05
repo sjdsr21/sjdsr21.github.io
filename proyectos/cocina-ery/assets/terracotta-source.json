@@ -1,12 +1,35 @@
 {
-  "asset": "assets/eri-terracotta.webp",
-  "purpose": "Visual reference for the Cocina Ery countertop; not a manufacturer sample.",
-  "origin": "Generated with the built-in image_gen tool from the user-provided ceramic photograph; layout refined in a second image_gen edit.",
-  "tile_reference_metres": [
-    0.15,
-    0.3
+  "revision": "v7",
+  "purpose": "Visual reference for the Cocina Ery floor and countertop; not a manufacturer sample.",
+  "origin": "Built-in image_gen editing of the v6 ceramic: modestly warmer/more saturated using the former floor for color guidance; second image_gen edit rearranges the same ceramic into aligned squares.",
+  "assets": [
+    {
+      "file": "assets/eri-terracotta-warm.webp",
+      "layout": "Staggered rectangles, half-tile offset",
+      "tile_metres": [
+        0.1,
+        0.18
+      ],
+      "repeat_metres": [
+        0.4,
+        0.36
+      ],
+      "sha256": "05001ec975641c753cf31538738f5e885c296c03caa8c750b2cd90f1ad23d1d9"
+    },
+    {
+      "file": "assets/eri-terracotta-square.webp",
+      "layout": "Aligned squares, no offset",
+      "tile_metres": [
+        0.1,
+        0.1
+      ],
+      "repeat_metres": [
+        0.4,
+        0.4
+      ],
+      "sha256": "b08b2cf1f61366e20a5134c1017a6668a0f91c665f20064652c4b4efb57657e5"
+    }
   ],
-  "layout": "Staggered rectangular tiles, half-tile offset. Renderer completes boundary grout for repetition.",
-  "sha256": "29fc42167fbb552a19aa3dd85584aac8125118682b03e5c34bcb0de4b9848c4b",
-  "wood_reference": "Existing ambientCG Wood049, CC0; visual wood reference only, not a specified fabrication species."
+  "floor": "Existing floor mesh (SketchUp persistent ID 36688), rectangular ceramic applied as the fixed baseline of the web model. Same map as the rectangular countertop; tint is independent.",
+  "wood_reference": "Existing ambientCG Wood049, CC0; visual wood reference only."
 }

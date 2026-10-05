@@ -11,7 +11,7 @@ import {downloadView} from './capture.js';
 import {createWorkflow} from './workflow.js';
 import {createModelInteraction} from './model-interaction.js';
 import {filterCatalog} from './catalog.js';
-import {counterPart,resolveCounterFinish,ceramicUV} from './countertop.js';
+import {counterPart,resolveCounterFinish,ceramicUV,isCeramicFloor} from './countertop.js';
 import {createTheme} from './theme.js';
 const $=id=>document.getElementById(id);
 const labels={cabinet:'Puertas y muebles inferiores',counter:'Tope de cocina',table:'Mesa auxiliar',pantry:'Despensa',base:'Fórmica existente · color base'};
@@ -49,8 +49,10 @@ function enableTint(material,finish){
     shader.fragmentShader=shader.fragmentShader.replace('#include <map_fragment>',`#include <map_fragment>
       ${finish.mapping==='terracotta'?`// Complete the half-grout at the repeat boundary of the generated tile map.
       vec2 tileUV=fract(vMapUv);
-      if(mod(floor(tileUV.x*4.),2.)<.5 && min(tileUV.y,1.-tileUV.y)<.0025)
-        diffuseColor.rgb=sRGBTransferEOTF(vec4(.86,.84,.80,1.)).rgb;`:''}
+      float seamAA=max(fwidth(vMapUv.y),.0001);
+      float seamCoverage=1.-smoothstep(.0025-seamAA*.5,.0025+seamAA*.5,min(tileUV.y,1.-tileUV.y));
+      if(mod(floor(tileUV.x*4.),2.)<.5)
+        diffuseColor.rgb=mix(diffuseColor.rgb,sRGBTransferEOTF(vec4(.86,.84,.80,1.)).rgb,seamCoverage);`:''}
       if(eriTintEnabled>0.5){
         vec3 source=sRGBTransferOETF(vec4(diffuseColor.rgb,1.)).rgb;
         float value=max(source.r,max(source.g,source.b));
@@ -63,7 +65,7 @@ function projectTexture(mesh,finish){
   const p=mesh.geometry.attributes.position,n=mesh.geometry.attributes.normal,uv=new Float32Array(p.count*2),sx=finish.size[0],sy=finish.size[1];
   for(let i=0;i<p.count;i++){
     const nx=Math.abs(n.getX(i)),ny=Math.abs(n.getY(i)),nz=Math.abs(n.getZ(i));
-    if(finish.mapping==='terracotta'){uv.set(ceramicUV(p.getX(i),p.getY(i),p.getZ(i),nx,ny,nz,finish.size),i*2);continue;}
+    if(finish.family==='Cerámica'){uv.set(ceramicUV(p.getX(i),p.getY(i),p.getZ(i),nx,ny,nz,finish.size,mesh.userData.isFloor?config.floor.origin:undefined),i*2);continue;}
     if(ny>=nx&&ny>=nz){uv[i*2]=p.getX(i)/sx;uv[i*2+1]=-p.getZ(i)/sy;}
     else if(nx>=nz){uv[i*2]=-p.getZ(i)/sx;uv[i*2+1]=p.getY(i)/sy;}
     else{uv[i*2]=p.getX(i)/sx;uv[i*2+1]=p.getY(i)/sy;}
@@ -83,7 +85,7 @@ function applyMaterials(){
       if(mesh.material!==mesh.userData.original)mesh.material.dispose();
       if(!finish&&!linked){mesh.material=mesh.userData.original;mesh.geometry.setAttribute('uv',mesh.userData.originalUV.clone());continue;}
       mesh.material=mesh.userData.original.clone();mesh.material.map=null;mesh.material.color.set(finish?.color||originalColors[z]);
-      if(finish?.texture){mesh.material.map=textureFor(finish);mesh.material.color.set(0xffffff);projectTexture(mesh,finish);mesh.material.roughness=finish.mapping==='terracotta'?.82:.62;mesh.material.metalness=0;enableTint(mesh.material,finish);}
+      if(finish?.texture){mesh.material.map=textureFor(finish);mesh.material.color.set(0xffffff);projectTexture(mesh,finish);mesh.material.roughness=finish.family==='Cerámica'?.82:.62;mesh.material.metalness=0;enableTint(mesh.material,finish);}
       else mesh.geometry.setAttribute('uv',mesh.userData.originalUV.clone());
       mesh.material.needsUpdate=true;
     }
@@ -180,7 +182,7 @@ function applyCombination(value,{camera:restoreCamera=false}={}){
   Object.assign(matches,value.matches);$('match-pantry').checked=matches.pantry;$('match-upper').checked=matches.upper;
   for(const name of ['shadows','edges','profiles']){if(viewOptions.state[name]!==value.view[name])viewOptions.set(name,value.view[name]);$('show-'+name).checked=value.view[name];}
   applyMaterials();paintPalette();
-  if(restoreCamera&&value.camera){controls.enableDamping=false;controls.update();camera.position.fromArray(value.camera.eye);controls.target.fromArray(value.camera.target);controls.update();controls.enableDamping=true;markQuickView(null);}
+  if(restoreCamera&&value.camera){controls.enableDamping=false;controls.update();camera.position.fromArray(value.camera.eye);controls.target.fromArray(value.camera.target);controls.update();controls.enableDamping=true;}
   requestRender();
 }
 async function waitForTextures(){
@@ -199,19 +201,7 @@ function selectZone(next,fromModel=false){
   if(fromModel){openPanel();$('palette-title').scrollIntoView({block:'start',behavior:'instant'});}
   interaction?.highlight(zone);$('picked-zone').textContent=labels[zone];$('picked-zone').hidden=false;clearTimeout(pickTimer);pickTimer=setTimeout(()=>$('picked-zone').hidden=true,1100);
 }
-function markQuickView(view){document.querySelectorAll('[data-view]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.view===view)));}
-function quickView(which){
-  if(!ready)return;if(which==='general'){resetCamera();markQuickView(which);workflow?.persist();return;}
-  const regions=which==='pantry'?['pantry','pantryExisting','table']:which==='counter'?['counter']:['cabinet','counter','upper'];
-  const box=new THREE.Box3();meshes.filter(m=>regions.includes(m.userData.region)).forEach(m=>box.expandByObject(m));
-  const target=box.getCenter(new THREE.Vector3()),size=box.getSize(new THREE.Vector3());
-  const direction=new THREE.Vector3(...(which==='pantry'?[1,.35,.65]:which==='counter'?[.35,1.25,1]:[0,.04,1])).normalize();
-  const up=new THREE.Vector3(0,1,0),right=new THREE.Vector3().crossVectors(up,direction).normalize(),vertical=new THREE.Vector3().crossVectors(direction,right).normalize();
-  const half=size.multiplyScalar(.5),extent=axis=>Math.abs(axis.x)*half.x+Math.abs(axis.y)*half.y+Math.abs(axis.z)*half.z;
-  const vfov=THREE.MathUtils.degToRad(camera.fov)/2,distance=Math.max(extent(vertical)/Math.tan(vfov),extent(right)/(Math.tan(vfov)*camera.aspect))+extent(direction);
-  controls.enableDamping=false;controls.update();controls.target.copy(target);camera.position.copy(target).addScaledVector(direction,Math.min(13.5,distance*1.18));controls.update();controls.enableDamping=true;markQuickView(which);requestRender();workflow?.persist();
-}
-function resetCamera(){if(!ready)return;controls.enableDamping=false;controls.update();camera.position.copy(initial.eye);controls.target.copy(initial.target);camera.up.set(0,1,0);camera.zoom=1;resize();controls.update();controls.enableDamping=true;markQuickView('general');requestRender();workflow?.persist();}
+function resetCamera(){if(!ready)return;controls.enableDamping=false;controls.update();camera.position.copy(initial.eye);controls.target.copy(initial.target);camera.up.set(0,1,0);camera.zoom=1;resize();controls.update();controls.enableDamping=true;requestRender();workflow?.persist();}
 function resize(){
   if(!renderer)return;const w=$('viewer').clientWidth,h=$('viewer').clientHeight,a=w/h;
   camera.aspect=a;camera.fov=THREE.MathUtils.radToDeg(2*Math.atan(Math.tan(THREE.MathUtils.degToRad(initial.fov/2))*Math.max(1,config.camera.aspect/a)));
@@ -231,11 +221,23 @@ async function init(){
     document.querySelectorAll('aside button,aside input,aside select,#reset,#screenshot,#share').forEach(b=>b.disabled=true);
     [palette,config]=await Promise.all(['palette','scene'].map(async name=>{const response=await fetch(`assets/${name}.json`);if(!response.ok)throw new Error('No se pudieron cargar los acabados.');return response.json();}));
     renderer=new THREE.WebGLRenderer({antialias:true,alpha:false,powerPreference:'high-performance'});renderer.setPixelRatio(Math.min(devicePixelRatio,1.7));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.NoToneMapping;renderer.shadowMap.enabled=false;
-    renderer.domElement.setAttribute('aria-label','Cocina Ery en 3D. Arrastra para girar, usa dos dedos para desplazar y pellizca para acercar.');renderer.domElement.setAttribute('tabindex','0');
+    renderer.domElement.setAttribute('aria-label','Cocina Ery en 3D. Arrastra para girar, usa dos dedos para desplazar y pellizca para acercar.');renderer.domElement.setAttribute('aria-describedby','gesture-help');renderer.domElement.setAttribute('tabindex','0');
     scene=new THREE.Scene();scene.background=new THREE.Color(0xffffff);camera=new THREE.PerspectiveCamera(35,1,.03,70);camera.up.set(0,1,0);
     scene.add(new THREE.HemisphereLight(0xffffff,0xb9b7b2,1.5));const key=new THREE.DirectionalLight(0xffffff,1.05);key.position.set(4,7,5);scene.add(key);const fill=new THREE.DirectionalLight(0xffffff,.3);fill.position.set(-5,3,-2);scene.add(fill);
     const loaded=await new GLTFLoader().loadAsync('assets/kitchen.glb');model=loaded.scene;scene.add(model);
-    model.traverse(mesh=>{if(!mesh.isMesh)return;mesh.castShadow=false;mesh.receiveShadow=false;mesh.userData.region=mesh.userData.region||mesh.parent?.userData.region||'fixed';mesh.userData.counterPart=counterPart(mesh,config);mesh.userData.original=mesh.material;mesh.userData.originalUV=mesh.geometry.attributes.uv.clone();mesh.userData.applied='original';mesh.userData.materialFinish=null;meshes.push(mesh);});
+    model.traverse(mesh=>{
+      if(!mesh.isMesh)return;mesh.castShadow=false;mesh.receiveShadow=false;
+      mesh.userData.region=mesh.userData.region||mesh.parent?.userData.region||'fixed';mesh.userData.counterPart=counterPart(mesh,config);
+      mesh.userData.isFloor=isCeramicFloor(mesh,config);mesh.userData.materialFinish=null;
+      if(mesh.userData.isFloor){
+        const finish=palette.find(f=>f.id===config.floor.finishId);
+        mesh.material=mesh.material.clone();mesh.material.map=textureFor(finish);mesh.material.color.set(0xffffff);mesh.material.roughness=.82;
+        projectTexture(mesh,finish);enableTint(mesh.material,finish);mesh.userData.materialFinish=finish.id;
+      }
+      mesh.userData.original=mesh.material;mesh.userData.originalUV=mesh.geometry.attributes.uv.clone();mesh.userData.applied='original';meshes.push(mesh);
+    });
+    if(!meshes.some(m=>m.userData.isFloor))throw Error('No se encontró la superficie del piso.');
+    await waitForTextures();
     const bounds=new THREE.Box3().setFromObject(model),center=bounds.getCenter(new THREE.Vector3()),eye=new THREE.Vector3().fromArray(config.camera.eye),target=new THREE.Vector3().fromArray(config.camera.target),direction=target.clone().sub(eye).normalize();
     target.copy(eye).addScaledVector(direction,center.clone().sub(eye).dot(direction));let fov=config.camera.fov;if(!config.camera.fov_is_height)fov=THREE.MathUtils.radToDeg(2*Math.atan(Math.tan(THREE.MathUtils.degToRad(fov/2))/config.camera.aspect));
     viewOptions=createViewOptions(scene,meshes,camera,renderer,key,bounds,requestRender);
@@ -245,11 +247,11 @@ async function init(){
     $('viewer').prepend(renderer.domElement);theme=createTheme(scene,requestRender);ready=true;resize();composer.render();$('reference').hidden=true;$('load-status').hidden=true;document.querySelectorAll('aside button,aside input,aside select,#reset,#screenshot,#share').forEach(b=>b.disabled=false);
     interaction=createModelInteraction({scene,meshes,camera,canvas:renderer.domElement,selectedZone,onPick:z=>selectZone(z,true),requestRender});
     workflow=createWorkflow({palette,snapshot,appearance,apply:applyCombination,thumbnail,announce,onFavorites:()=>paintPalette()});workflow.restore();
-    controls.addEventListener('start',()=>{markQuickView(null);interaction.clear();});controls.addEventListener('end',()=>workflow.persist());controls.addEventListener('change',()=>workflow.persist());
+    controls.addEventListener('start',()=>interaction.clear());controls.addEventListener('end',()=>workflow.persist());controls.addEventListener('change',()=>workflow.persist());
     paintPalette();registerTools();new ResizeObserver(resize).observe($('viewer'));
     renderer.domElement.addEventListener('webglcontextlost',event=>{event.preventDefault();ready=false;$('reference').hidden=false;$('load-status').hidden=false;$('load-status').textContent='Se interrumpió la vista 3D. Recarga la página para continuar.';});
     renderer.domElement.addEventListener('keydown',event=>{if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','+','-','Home'].includes(event.key))return;event.preventDefault();if(event.key==='Home')return resetCamera();if(event.key==='+'||event.key==='-'){zoom(event.key==='+'?.85:1.15);return;}const offset=camera.position.clone().sub(controls.target),sphere=new THREE.Spherical().setFromVector3(offset);if(event.key==='ArrowLeft')sphere.theta-=.1;if(event.key==='ArrowRight')sphere.theta+=.1;if(event.key==='ArrowUp')sphere.phi=Math.max(.1,sphere.phi-.1);if(event.key==='ArrowDown')sphere.phi=Math.min(Math.PI*.92,sphere.phi+.1);camera.position.copy(controls.target).add(new THREE.Vector3().setFromSpherical(sphere));controls.update();requestRender();});
-    window.eriDiagnostics=()=>({ready,triangles:meshes.reduce((s,m)=>s+m.geometry.attributes.position.count/3,0),state:readState(),theme:theme.dark?'dark':'light',background:scene.background.getHexString(),camera:camera.position.toArray(),target:controls.target.toArray(),meshes:meshes.map(m=>({name:m.name,region:m.userData.region,counterPart:m.userData.counterPart,materialFinish:m.userData.materialFinish,finish:m.userData.applied,color:m.material.color.getHexString(),map:!!m.material.map,mapReady:!!m.material.map?.image?.width,tint:m.material.userData.tintUniforms?.eriTintEnabled.value||0})),view:viewOptions.diagnostics(),workflow:workflow.diagnostics(),highlight:{zone:interaction.highlighted,count:interaction.highlightedCount},shadows:renderer.shadowMap.enabled,ao:ao.enabled,render:renderer.info.render,bounds:[bounds.min.toArray(),bounds.max.toArray()],projected:center.clone().project(camera).toArray()});
+    window.eriDiagnostics=()=>({ready,triangles:meshes.reduce((s,m)=>s+m.geometry.attributes.position.count/3,0),state:readState(),theme:theme.dark?'dark':'light',background:scene.background.getHexString(),camera:camera.position.toArray(),target:controls.target.toArray(),meshes:meshes.map(m=>({name:m.name,region:m.userData.region,counterPart:m.userData.counterPart,isFloor:m.userData.isFloor,materialFinish:m.userData.materialFinish,finish:m.userData.applied,color:m.material.color.getHexString(),map:!!m.material.map,mapReady:!!m.material.map?.image?.width,tint:m.material.userData.tintUniforms?.eriTintEnabled.value||0})),view:viewOptions.diagnostics(),workflow:workflow.diagnostics(),highlight:{zone:interaction.highlighted,count:interaction.highlightedCount},shadows:renderer.shadowMap.enabled,ao:ao.enabled,render:renderer.info.render,bounds:[bounds.min.toArray(),bounds.max.toArray()],projected:center.clone().project(camera).toArray()});
   }catch(error){console.error(error);$('load-status').textContent='No se pudo abrir la vista 3D. Recarga la página o usa un navegador actualizado.';$('reference').hidden=false;}
 }
 function zoom(factor){if(!ready)return;camera.position.sub(controls.target).multiplyScalar(factor).add(controls.target);controls.update();requestRender();}
@@ -267,9 +269,10 @@ $('screenshot').addEventListener('click',async()=>{
     await waitForTextures();interaction.clear();
     const finishes=Object.keys(labels).map(z=>labels[z]+': '+(finishFor(z)?.name||'Original')+(selection[z]==='custom'?' '+hsvHex(tones[z]).toUpperCase():tones[z]?.enabled?' · tono '+hsvHex(tones[z]).toUpperCase():''));
     if(matches.upper)finishes.push('Superiores: iguales a las puertas');if(matches.pantry)finishes.push('Despensa: acabado unificado');
-    await downloadView({renderer,composer,viewOptions,viewer:$('viewer'),finishes});announce('Imagen descargada. Puedes enviarla para compartir tu selección.');
-  }catch(error){announce(error.message);alert(error.message);}
-  finally{button.disabled=false;button.querySelector('span').textContent='Descargar imagen';requestRender();}
+    finishes.push('Piso: terracota rectangular · 10 × 18 cm');
+    await downloadView({renderer,composer,viewOptions,viewer:$('viewer'),finishes});$('share-feedback').textContent='Imagen descargada. Puedes enviarla para compartir tu selección.';announce($('share-feedback').textContent);
+  }catch(error){$('share-feedback').textContent=error.message;announce(error.message);}
+  finally{button.disabled=false;button.querySelector('span').textContent='Descargar imagen';if($('share-dialog').open)button.focus();requestRender();}
 });
 $('finish-search').addEventListener('input',e=>{filters.query=e.target.value;paintPalette();});
 $('filter-tone').addEventListener('change',e=>{filters.tone=e.target.value;paintPalette();});
@@ -277,6 +280,5 @@ $('filter-detail').addEventListener('change',e=>{filters.detail=e.target.value;p
 $('filter-favorites').addEventListener('change',e=>{filters.favoritesOnly=e.target.checked;paintPalette();});
 $('favorite-finish').addEventListener('click',()=>{const f=finishFor(zone);if(f&&f.id!=='custom')workflow.toggleFavorite(f.id);});
 $('panel-toggle').addEventListener('click',()=>{const closed=document.body.classList.toggle('panel-collapsed');$('panel-toggle').setAttribute('aria-expanded',String(!closed));$('panel-toggle').innerHTML=(closed?'Editar acabados':'Ocultar acabados')+' <span aria-hidden="true">⌄</span>';});
-document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>quickView(b.dataset.view)));
 for(const event of ['pointerup','pointercancel','keyup','change','focusout'])$('color-editor').addEventListener(event,()=>workflow?.endGroup());
 init();
