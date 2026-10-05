@@ -11,6 +11,14 @@ export function resolveCounterFinish(mesh,finish,palette){
   return finish;
 }
 
+// A flush wood border occupies the outer 3 cm of the actual top surfaces.
+// Existing vertical edge and backsplash components receive the same wood above.
+export function counterWoodBand(mesh,finish,palette,config){
+  if(mesh.userData.counterPart!=='surface'||!finish?.trimFinish)return null;
+  const wood=palette.find(f=>f.id===finish.trimFinish),band=config.counterWoodBand;
+  return wood?.texture&&band?{...band,finish:wood}:null;
+}
+
 // Rectangular tiles run along the length of each surface. Coordinates in metres
 // keep the chosen tile size consistent across separate components and the floor.
 export function ceramicUV(x,y,z,nx,ny,nz,size,origin={left:1.8255041794501716,front:-2.074253921225379,top:.94}){

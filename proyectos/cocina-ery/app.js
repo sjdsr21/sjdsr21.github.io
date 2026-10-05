@@ -11,7 +11,7 @@ import {downloadView} from './capture.js';
 import {createWorkflow} from './workflow.js';
 import {createModelInteraction} from './model-interaction.js';
 import {filterCatalog} from './catalog.js';
-import {counterPart,resolveCounterFinish,ceramicUV,isCeramicFloor} from './countertop.js';
+import {counterPart,resolveCounterFinish,counterWoodBand,ceramicUV,isCeramicFloor} from './countertop.js';
 import {createTheme} from './theme.js';
 const $=id=>document.getElementById(id);
 const labels={cabinet:'Puertas y muebles inferiores',counter:'Tope de cocina',table:'Mesa auxiliar',pantry:'Despensa',base:'Fórmica existente · color base'};
@@ -37,11 +37,22 @@ function textureFor(finish){
   }
   return textureCache.get(finish.id);
 }
-function enableTint(material,finish){
+function enableTint(material,finish,band=null){
   const uniforms={eriTintEnabled:{value:0},eriTint:{value:new THREE.Vector3(0,0,1)}};
   material.userData.tintUniforms=uniforms;
+  material.userData.woodBand=band?{width:band.width,finish:band.finish.id}:null;
+  if(band)Object.assign(uniforms,{
+    eriWoodMap:{value:textureFor(band.finish)},
+    eriWoodSize:{value:new THREE.Vector2(...band.finish.size)},
+    eriBand:{value:new THREE.Vector3(band.origin.left,band.origin.front,band.width)}
+  });
   material.onBeforeCompile=shader=>{
     Object.assign(shader.uniforms,uniforms);
+    if(band){
+      shader.vertexShader='varying vec3 eriSurfacePosition;\n'+shader.vertexShader;
+      shader.vertexShader=shader.vertexShader.replace('#include <begin_vertex>','#include <begin_vertex>\neriSurfacePosition=position;');
+      shader.fragmentShader='varying vec3 eriSurfacePosition;\nuniform sampler2D eriWoodMap;\nuniform vec2 eriWoodSize;\nuniform vec3 eriBand;\n'+shader.fragmentShader;
+    }
     shader.fragmentShader=shader.fragmentShader.replace('void main() {',`uniform float eriTintEnabled;
       uniform vec3 eriTint;
       vec3 eriHSV(vec3 c){vec3 p=abs(fract(c.xxx+vec3(0.,2./3.,1./3.))*6.-3.);return c.z*mix(vec3(1.),clamp(p-1.,0.,1.),c.y);}
@@ -57,9 +68,20 @@ function enableTint(material,finish){
         vec3 source=sRGBTransferOETF(vec4(diffuseColor.rgb,1.)).rgb;
         float value=max(source.r,max(source.g,source.b));
         diffuseColor.rgb=sRGBTransferEOTF(vec4(eriHSV(vec3(eriTint.xy,value*eriTint.z)),1.)).rgb;
-      }`);
+        }
+        ${band?`// These meshes have baked model coordinates in metres. Front and left
+        // strips meet with a mitre; no band crosses the cooker gap or the back bridge.
+        float fromLeft=eriSurfacePosition.x-eriBand.x;
+        float fromFront=eriBand.y-eriSurfacePosition.z;
+        float bandDistance=min(fromLeft,fromFront);
+        float bandAA=max(fwidth(bandDistance),.00001);
+        float woodCoverage=1.-smoothstep(eriBand.z-bandAA*.5,eriBand.z+bandAA*.5,bandDistance);
+        vec2 woodUV=fromFront<=fromLeft?vec2(eriSurfacePosition.x,-eriSurfacePosition.z):vec2(-eriSurfacePosition.z,eriSurfacePosition.x);
+        // SRGBColorSpace textures are decoded by the GPU, as for the main map.
+        vec3 woodColor=texture2D(eriWoodMap,woodUV/eriWoodSize).rgb;
+        diffuseColor.rgb=mix(diffuseColor.rgb,woodColor,woodCoverage);`:''}`);
   };
-  material.customProgramCacheKey=()=> 'eri-texture-tint-v2-'+(finish.mapping||'plain');
+  material.customProgramCacheKey=()=> 'eri-texture-tint-v3-'+(finish.mapping||'plain')+(band?'-wood-band':'');
 }
 function projectTexture(mesh,finish){
   const p=mesh.geometry.attributes.position,n=mesh.geometry.attributes.normal,uv=new Float32Array(p.count*2),sx=finish.size[0],sy=finish.size[1];
@@ -85,7 +107,7 @@ function applyMaterials(){
       if(mesh.material!==mesh.userData.original)mesh.material.dispose();
       if(!finish&&!linked){mesh.material=mesh.userData.original;mesh.geometry.setAttribute('uv',mesh.userData.originalUV.clone());continue;}
       mesh.material=mesh.userData.original.clone();mesh.material.map=null;mesh.material.color.set(finish?.color||originalColors[z]);
-      if(finish?.texture){mesh.material.map=textureFor(finish);mesh.material.color.set(0xffffff);projectTexture(mesh,finish);mesh.material.roughness=finish.family==='Cerámica'?.82:.62;mesh.material.metalness=0;enableTint(mesh.material,finish);}
+      if(finish?.texture){mesh.material.map=textureFor(finish);mesh.material.color.set(0xffffff);projectTexture(mesh,finish);mesh.material.roughness=finish.family==='Cerámica'?.82:.62;mesh.material.metalness=0;enableTint(mesh.material,finish,counterWoodBand(mesh,chosen,palette,config));}
       else mesh.geometry.setAttribute('uv',mesh.userData.originalUV.clone());
       mesh.material.needsUpdate=true;
     }
@@ -251,7 +273,7 @@ async function init(){
     paintPalette();registerTools();new ResizeObserver(resize).observe($('viewer'));
     renderer.domElement.addEventListener('webglcontextlost',event=>{event.preventDefault();ready=false;$('reference').hidden=false;$('load-status').hidden=false;$('load-status').textContent='Se interrumpió la vista 3D. Recarga la página para continuar.';});
     renderer.domElement.addEventListener('keydown',event=>{if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','+','-','Home'].includes(event.key))return;event.preventDefault();if(event.key==='Home')return resetCamera();if(event.key==='+'||event.key==='-'){zoom(event.key==='+'?.85:1.15);return;}const offset=camera.position.clone().sub(controls.target),sphere=new THREE.Spherical().setFromVector3(offset);if(event.key==='ArrowLeft')sphere.theta-=.1;if(event.key==='ArrowRight')sphere.theta+=.1;if(event.key==='ArrowUp')sphere.phi=Math.max(.1,sphere.phi-.1);if(event.key==='ArrowDown')sphere.phi=Math.min(Math.PI*.92,sphere.phi+.1);camera.position.copy(controls.target).add(new THREE.Vector3().setFromSpherical(sphere));controls.update();requestRender();});
-    window.eriDiagnostics=()=>({ready,triangles:meshes.reduce((s,m)=>s+m.geometry.attributes.position.count/3,0),state:readState(),theme:theme.dark?'dark':'light',background:scene.background.getHexString(),camera:camera.position.toArray(),target:controls.target.toArray(),meshes:meshes.map(m=>({name:m.name,region:m.userData.region,counterPart:m.userData.counterPart,isFloor:m.userData.isFloor,materialFinish:m.userData.materialFinish,finish:m.userData.applied,color:m.material.color.getHexString(),map:!!m.material.map,mapReady:!!m.material.map?.image?.width,tint:m.material.userData.tintUniforms?.eriTintEnabled.value||0})),view:viewOptions.diagnostics(),workflow:workflow.diagnostics(),highlight:{zone:interaction.highlighted,count:interaction.highlightedCount},shadows:renderer.shadowMap.enabled,ao:ao.enabled,render:renderer.info.render,bounds:[bounds.min.toArray(),bounds.max.toArray()],projected:center.clone().project(camera).toArray()});
+    window.eriDiagnostics=()=>({ready,triangles:meshes.reduce((s,m)=>s+m.geometry.attributes.position.count/3,0),state:readState(),theme:theme.dark?'dark':'light',background:scene.background.getHexString(),camera:camera.position.toArray(),target:controls.target.toArray(),meshes:meshes.map(m=>({name:m.name,region:m.userData.region,counterPart:m.userData.counterPart,woodBand:m.material.userData.woodBand||null,isFloor:m.userData.isFloor,materialFinish:m.userData.materialFinish,finish:m.userData.applied,color:m.material.color.getHexString(),map:!!m.material.map,mapReady:!!m.material.map?.image?.width,tint:m.material.userData.tintUniforms?.eriTintEnabled.value||0})),view:viewOptions.diagnostics(),workflow:workflow.diagnostics(),highlight:{zone:interaction.highlighted,count:interaction.highlightedCount},shadows:renderer.shadowMap.enabled,ao:ao.enabled,render:renderer.info.render,bounds:[bounds.min.toArray(),bounds.max.toArray()],projected:center.clone().project(camera).toArray()});
   }catch(error){console.error(error);$('load-status').textContent='No se pudo abrir la vista 3D. Recarga la página o usa un navegador actualizado.';$('reference').hidden=false;}
 }
 function zoom(factor){if(!ready)return;camera.position.sub(controls.target).multiplyScalar(factor).add(controls.target);controls.update();requestRender();}
@@ -269,7 +291,8 @@ $('screenshot').addEventListener('click',async()=>{
     await waitForTextures();interaction.clear();
     const finishes=Object.keys(labels).map(z=>labels[z]+': '+(finishFor(z)?.name||'Original')+(selection[z]==='custom'?' '+hsvHex(tones[z]).toUpperCase():tones[z]?.enabled?' · tono '+hsvHex(tones[z]).toUpperCase():''));
     if(matches.upper)finishes.push('Superiores: iguales a las puertas');if(matches.pantry)finishes.push('Despensa: acabado unificado');
-    finishes.push('Piso: terracota rectangular · 10 × 18 cm');
+    const floorFinish=palette.find(f=>f.id===config.floor.finishId);
+    finishes.push('Piso: terracota rectangular · '+floorFinish.tileSize.map(n=>Number((n*100).toFixed(1)).toLocaleString('es')).join(' × ')+' cm');
     await downloadView({renderer,composer,viewOptions,viewer:$('viewer'),finishes});$('share-feedback').textContent='Imagen descargada. Puedes enviarla para compartir tu selección.';announce($('share-feedback').textContent);
   }catch(error){$('share-feedback').textContent=error.message;announce(error.message);}
   finally{button.disabled=false;button.querySelector('span').textContent='Descargar imagen';if($('share-dialog').open)button.focus();requestRender();}

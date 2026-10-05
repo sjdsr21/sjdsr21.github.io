@@ -2686,8 +2686,8 @@
     "color": "#b07e51",
     "texture": "assets/eri-terracotta-warm.webp",
     "size": [
-      0.4,
-      0.36
+      0.56,
+      0.504
     ],
     "mapping": "terracotta",
     "zones": [
@@ -2697,10 +2697,10 @@
     "tone": "medio",
     "id": "eri-terracotta-ceramic",
     "name": "Terracota rectangular · todo cerámica",
-    "description": "Cerámica de 10 × 18 cm en rectángulos desfasados, en superficie, cantos y salpicadero.",
+    "description": "Cerámica de 14 × 25,2 cm en rectángulos desfasados, en superficie, cantos y salpicadero.",
     "tileSize": [
-      0.1,
-      0.18
+      0.14,
+      0.252
     ]
   },
   {
@@ -2709,8 +2709,8 @@
     "color": "#b07e51",
     "texture": "assets/eri-terracotta-warm.webp",
     "size": [
-      0.4,
-      0.36
+      0.56,
+      0.504
     ],
     "mapping": "terracotta",
     "zones": [
@@ -2720,11 +2720,11 @@
     "tone": "medio",
     "id": "eri-terracotta-wood",
     "name": "Terracota rectangular · madera",
-    "trimFinish": "acg-wood049",
-    "description": "Cerámica rectangular de 10 × 18 cm en la superficie. Madera en el frente, el lado izquierdo y el salpicadero. El tono cambia solo la cerámica.",
+    "trimFinish": "eri-mahogany-light",
+    "description": "Cerámica rectangular de 14 × 25,2 cm en la superficie. Madera clara rojiza tipo caoba en el frente, el lado izquierdo y el salpicadero; el remate entra 3 cm sobre la superficie del tope. El tono cambia solo la cerámica.",
     "tileSize": [
-      0.1,
-      0.18
+      0.14,
+      0.252
     ]
   },
   {
@@ -2733,12 +2733,12 @@
     "color": "#b37f51",
     "texture": "assets/eri-terracotta-square.webp",
     "size": [
-      0.4,
-      0.4
+      0.56,
+      0.56
     ],
     "tileSize": [
-      0.1,
-      0.1
+      0.14,
+      0.14
     ],
     "mapping": "terracotta-square",
     "zones": [
@@ -2747,8 +2747,8 @@
     "provider": "Prototipo Ago · referencia generada",
     "tone": "medio",
     "id": "eri-terracotta-square-ceramic",
-    "name": "Terracota 10 × 10 · todo cerámica",
-    "description": "La misma cerámica cortada en cuadrados de 10 × 10 cm, alineados sin desfase. Superficie, cantos y salpicadero de cerámica."
+    "name": "Terracota 14 × 14 · todo cerámica",
+    "description": "La misma cerámica cortada en cuadrados de 14 × 14 cm, alineados sin desfase. Superficie, cantos y salpicadero de cerámica."
   },
   {
     "category": "textured",
@@ -2756,12 +2756,12 @@
     "color": "#b37f51",
     "texture": "assets/eri-terracotta-square.webp",
     "size": [
-      0.4,
-      0.4
+      0.56,
+      0.56
     ],
     "tileSize": [
-      0.1,
-      0.1
+      0.14,
+      0.14
     ],
     "mapping": "terracotta-square",
     "zones": [
@@ -2770,9 +2770,24 @@
     "provider": "Prototipo Ago · referencia generada",
     "tone": "medio",
     "id": "eri-terracotta-square-wood",
-    "name": "Terracota 10 × 10 · madera",
-    "trimFinish": "acg-wood049",
-    "description": "Cuadrados alineados de 10 × 10 cm en la superficie. Madera en el frente, el lado izquierdo y el salpicadero. El tono cambia solo la cerámica."
+    "name": "Terracota 14 × 14 · madera",
+    "trimFinish": "eri-mahogany-light",
+    "description": "Cuadrados alineados de 14 × 14 cm en la superficie. Madera clara rojiza tipo caoba en el frente, el lado izquierdo y el salpicadero; el remate entra 3 cm sobre la superficie del tope. El tono cambia solo la cerámica."
+  },
+  {
+    "id": "eri-mahogany-light",
+    "name": "Caoba clara",
+    "category": "textured",
+    "family": "Madera",
+    "color": "#b98262",
+    "texture": "assets/eri-mahogany-light.webp",
+    "size": [
+      1.2,
+      1.2
+    ],
+    "provider": "Prototipo Ago · referencia generada",
+    "tone": "medio",
+    "description": "Madera clara de veta fina y matiz rojizo, inspirada en la caoba. Referencia visual."
   },
   {
     "id": "acg-wood095",

@@ -1,5 +1,5 @@
 {
-  "revision": "v7",
+  "revision": "v8",
   "purpose": "Visual reference for the Cocina Ery floor and countertop; not a manufacturer sample.",
   "origin": "Built-in image_gen editing of the v6 ceramic: modestly warmer/more saturated using the former floor for color guidance; second image_gen edit rearranges the same ceramic into aligned squares.",
   "assets": [
@@ -7,12 +7,12 @@
       "file": "assets/eri-terracotta-warm.webp",
       "layout": "Staggered rectangles, half-tile offset",
       "tile_metres": [
-        0.1,
-        0.18
+        0.14,
+        0.252
       ],
       "repeat_metres": [
-        0.4,
-        0.36
+        0.56,
+        0.504
       ],
       "sha256": "05001ec975641c753cf31538738f5e885c296c03caa8c750b2cd90f1ad23d1d9"
     },
@@ -20,16 +20,22 @@
       "file": "assets/eri-terracotta-square.webp",
       "layout": "Aligned squares, no offset",
       "tile_metres": [
-        0.1,
-        0.1
+        0.14,
+        0.14
       ],
       "repeat_metres": [
-        0.4,
-        0.4
+        0.56,
+        0.56
       ],
       "sha256": "b08b2cf1f61366e20a5134c1017a6668a0f91c665f20064652c4b4efb57657e5"
     }
   ],
   "floor": "Existing floor mesh (SketchUp persistent ID 36688), rectangular ceramic applied as the fixed baseline of the web model. Same map as the rectangular countertop; tint is independent.",
-  "wood_reference": "Existing ambientCG Wood049, CC0; visual wood reference only."
+  "wood_reference": {
+    "file": "assets/eri-mahogany-light.webp",
+    "source": "Built-in image_gen edit of ambientCG Wood026 (CC0-1.0), light fine-grained reddish wood inspired by mahogany; visual reference, not a commercial sample.",
+    "sha256": "2aeda0d2474b0bcfd8c3f3bcd0c6d7bcf674cc2775a01e75cd1e3d7f3afd238f",
+    "top_band_metres": 0.03,
+    "placement": "Front and left vertical edge, backsplash and a flush 3 cm strip inward on the existing countertop surface. Top strips meet with a mitre; the cooker gap and right edge remain unchanged."
+  }
 }
