@@ -27,3 +27,9 @@ https://prototipo-ago.pages.dev/*
   X-Robots-Tag: noindex
 https://:version.prototipo-ago.pages.dev/*
   X-Robots-Tag: noindex
+/proyectos/cocina-ery
+  X-Robots-Tag: noindex, nofollow, noarchive
+  Cache-Control: no-cache
+/proyectos/cocina-ery/*
+  X-Robots-Tag: noindex, nofollow, noarchive
+  Cache-Control: no-cache
