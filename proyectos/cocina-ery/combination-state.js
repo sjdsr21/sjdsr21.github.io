@@ -9,6 +9,7 @@ export function validateCombination(value,palette){
     const id=value.selection[z],finish=palette.find(f=>f.id===id);
     if(id!==null&&id!=='custom'&&!finish)throw Error('Un acabado del enlace no está disponible.');
     if(finish?.texture&&!['counter','table'].includes(z))throw Error('El acabado no corresponde a esa zona.');
+    if(finish?.zones&&!finish.zones.includes(z))throw Error('El acabado no corresponde a esa zona.');
     result.selection[z]=id;
     const t=value.tones?.[z];
     if(t){

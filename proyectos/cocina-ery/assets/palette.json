@@ -2681,6 +2681,45 @@
     "pattern": "veteado"
   },
   {
+    "category": "textured",
+    "family": "Cerámica",
+    "color": "#b69a7b",
+    "texture": "assets/eri-terracotta.webp",
+    "size": [
+      0.6,
+      0.6
+    ],
+    "mapping": "terracotta",
+    "zones": [
+      "counter"
+    ],
+    "provider": "Prototipo Ago · referencia generada",
+    "tone": "medio",
+    "id": "eri-terracotta-ceramic",
+    "name": "Terracota · todo cerámica",
+    "description": "Cerámica en la superficie, los cantos y el salpicadero. Rectángulos desfasados; formato visual aproximado de 15 × 30 cm."
+  },
+  {
+    "category": "textured",
+    "family": "Cerámica",
+    "color": "#b69a7b",
+    "texture": "assets/eri-terracotta.webp",
+    "size": [
+      0.6,
+      0.6
+    ],
+    "mapping": "terracotta",
+    "zones": [
+      "counter"
+    ],
+    "provider": "Prototipo Ago · referencia generada",
+    "tone": "medio",
+    "id": "eri-terracotta-wood",
+    "name": "Terracota · cantos de madera",
+    "trimFinish": "acg-wood049",
+    "description": "Cerámica en la superficie. Madera en el canto frontal, el izquierdo y el salpicadero. El ajuste de tono cambia solo la cerámica."
+  },
+  {
     "id": "acg-wood095",
     "name": "Madera clara",
     "category": "textured",

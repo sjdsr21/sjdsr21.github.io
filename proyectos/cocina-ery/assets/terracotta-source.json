@@ -1,0 +1,12 @@
+{
+  "asset": "assets/eri-terracotta.webp",
+  "purpose": "Visual reference for the Cocina Ery countertop; not a manufacturer sample.",
+  "origin": "Generated with the built-in image_gen tool from the user-provided ceramic photograph; layout refined in a second image_gen edit.",
+  "tile_reference_metres": [
+    0.15,
+    0.3
+  ],
+  "layout": "Staggered rectangular tiles, half-tile offset. Renderer completes boundary grout for repetition.",
+  "sha256": "29fc42167fbb552a19aa3dd85584aac8125118682b03e5c34bcb0de4b9848c4b",
+  "wood_reference": "Existing ambientCG Wood049, CC0; visual wood reference only, not a specified fabrication species."
+}
