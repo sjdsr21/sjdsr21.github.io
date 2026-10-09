@@ -241,12 +241,12 @@ function registerTools(){
 async function init(){
   try{
     document.querySelectorAll('aside button,aside input,aside select,#reset,#screenshot,#share').forEach(b=>b.disabled=true);
-    [palette,config]=await Promise.all(['palette','scene'].map(async name=>{const response=await fetch(`assets/${name}.json`);if(!response.ok)throw new Error('No se pudieron cargar los acabados.');return response.json();}));
+    [palette,config]=await Promise.all(['palette','scene'].map(async name=>{const response=await fetch(`assets/${name}.json?v=20261008-r10`);if(!response.ok)throw new Error('No se pudieron cargar los acabados.');return response.json();}));
     renderer=new THREE.WebGLRenderer({antialias:true,alpha:false,powerPreference:'high-performance'});renderer.setPixelRatio(Math.min(devicePixelRatio,1.7));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.NoToneMapping;renderer.shadowMap.enabled=false;
     renderer.domElement.setAttribute('aria-label','Cocina Ery en 3D. Arrastra para girar, usa dos dedos para desplazar y pellizca para acercar.');renderer.domElement.setAttribute('aria-describedby','gesture-help');renderer.domElement.setAttribute('tabindex','0');
     scene=new THREE.Scene();scene.background=new THREE.Color(0xffffff);camera=new THREE.PerspectiveCamera(35,1,.03,70);camera.up.set(0,1,0);
     scene.add(new THREE.HemisphereLight(0xffffff,0xb9b7b2,1.5));const key=new THREE.DirectionalLight(0xffffff,1.05);key.position.set(4,7,5);scene.add(key);const fill=new THREE.DirectionalLight(0xffffff,.3);fill.position.set(-5,3,-2);scene.add(fill);
-    const loaded=await new GLTFLoader().loadAsync('assets/kitchen.glb');model=loaded.scene;scene.add(model);
+    const loaded=await new GLTFLoader().loadAsync('assets/kitchen.glb?v=20261008-r10');model=loaded.scene;scene.add(model);
     model.traverse(mesh=>{
       if(!mesh.isMesh)return;mesh.castShadow=false;mesh.receiveShadow=false;
       mesh.userData.region=mesh.userData.region||mesh.parent?.userData.region||'fixed';mesh.userData.counterPart=counterPart(mesh,config);
