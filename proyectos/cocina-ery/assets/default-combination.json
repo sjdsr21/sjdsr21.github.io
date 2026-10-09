@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "selection": {
+    "cabinet": "custom",
+    "upperDoors": "colors-color-c01",
+    "counter": "greenlam-sanganer",
+    "table": "greenlam-sanganer",
+    "pantry": "custom",
+    "base": "colors-color-c01"
+  },
+  "matches": {
+    "pantry": false,
+    "upper": false,
+    "surfaces": true
+  },
+  "tones": {
+    "cabinet": {
+      "h": 26,
+      "s": 27,
+      "v": 68,
+      "enabled": true
+    },
+    "upperDoors": {
+      "h": 29.411764705882376,
+      "s": 19.999999999999996,
+      "v": 100,
+      "enabled": false
+    },
+    "counter": {
+      "h": 26,
+      "s": 37,
+      "v": 100,
+      "enabled": true
+    },
+    "pantry": {
+      "h": 25,
+      "s": 23,
+      "v": 71,
+      "enabled": true
+    },
+    "base": {
+      "h": 29.411764705882376,
+      "s": 19.999999999999996,
+      "v": 100,
+      "enabled": false
+    },
+    "table": {
+      "h": 26,
+      "s": 37,
+      "v": 100,
+      "enabled": true
+    }
+  },
+  "view": {
+    "shadows": true,
+    "edges": false,
+    "profiles": false
+  },
+  "camera": {
+    "eye": [
+      6.1049689816102966,
+      3.6927486994218874,
+      0.66872692026514
+    ],
+    "target": [
+      3.060609149993291,
+      0.6474517436893197,
+      -1.9911715664695167
+    ]
+  }
+}

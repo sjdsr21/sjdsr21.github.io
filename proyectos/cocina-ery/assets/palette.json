@@ -3221,8 +3221,12 @@
       1.22
     ],
     "zones": [
+      "cabinet",
+      "upperDoors",
       "counter",
-      "table"
+      "table",
+      "pantry",
+      "base"
     ],
     "provider": "IA · muestra Greenlam",
     "brand": "Greenlam",
@@ -3244,8 +3248,12 @@
       1.22
     ],
     "zones": [
+      "cabinet",
+      "upperDoors",
       "counter",
-      "table"
+      "table",
+      "pantry",
+      "base"
     ],
     "provider": "IA · muestra Greenlam",
     "brand": "Greenlam",
@@ -4068,5 +4076,69 @@
     "collection": "Selección provisional",
     "family": "Colores provisionales",
     "roughness": 0.88
+  },
+  {
+    "category": "textured",
+    "family": "Cerámica",
+    "color": "#b07e51",
+    "texture": "assets/eri-terracotta-warm.webp",
+    "size": [
+      0.56,
+      0.504
+    ],
+    "mapping": "terracotta",
+    "zones": [
+      "floor"
+    ],
+    "provider": "Prototipo Ago · referencia generada",
+    "tone": "medio",
+    "id": "eri-floor-terracotta",
+    "name": "Terracota rectangular · piso actual",
+    "description": "Cerámica terracota de la referencia del proyecto.",
+    "tileSize": [
+      0.14,
+      0.252
+    ]
+  },
+  {
+    "category": "textured",
+    "family": "Cerámica",
+    "color": "#b37f51",
+    "texture": "assets/eri-terracotta-square.webp",
+    "size": [
+      0.56,
+      0.56
+    ],
+    "tileSize": [
+      0.14,
+      0.14
+    ],
+    "mapping": "terracotta-square",
+    "zones": [
+      "floor"
+    ],
+    "provider": "Prototipo Ago · referencia generada",
+    "tone": "medio",
+    "id": "eri-floor-square",
+    "name": "Terracota cuadrada",
+    "description": "Cerámica terracota de la referencia del proyecto."
+  },
+  {
+    "id": "plinth-silver",
+    "name": "Plateado satinado",
+    "category": "textured",
+    "family": "Metal",
+    "color": "#bfc3c7",
+    "roughness": 0.32,
+    "metalness": 0.4
+  },
+  {
+    "id": "plinth-black",
+    "name": "Negro satinado",
+    "category": "textured",
+    "family": "Metal",
+    "color": "#25272a",
+    "roughness": 0.32,
+    "metalness": 0.4
   }
 ]

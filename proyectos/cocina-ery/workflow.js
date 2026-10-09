@@ -1,29 +1,28 @@
-import {STORAGE_KEY,loadNotebook,decodeCombination,encodeCombination,createHistory} from './combination-state.js?v=20261009-unificar';
-export function createWorkflow({palette,snapshot,appearance,apply,thumbnail,announce,onFavorites}){
+import {STORAGE_KEY,loadNotebook,decodeCombination,encodeCombination,createHistory} from './combination-state.js?v=20261009-panel';
+export function createWorkflow({palette,snapshot,appearance,apply,defaultCombination,announce,onFavorites}){
   const $=id=>document.getElementById(id);let storage,book;
-  try{storage=window.localStorage;book=loadNotebook(palette,storage);}catch{book={current:null,options:[null,null,null],favorites:[],available:false};}
-  let history,timer,busy=false;const letter=i=>'ABC'[i];
+  try{storage=window.localStorage;book=loadNotebook(palette,storage);}catch{book={current:null,saved:[],favorites:[],available:false};}
+  let history,timer;
   function status(text){$('save-status').textContent=text;}
   function persist(){
     clearTimeout(timer);
-    try{if(!storage)throw Error();storage.setItem(STORAGE_KEY,JSON.stringify({version:1,current:snapshot(),options:book.options,favorites:book.favorites}));status('Guardado en este navegador');}
-    catch{status('Para conservarla, usa Compartir. El guardado local no está disponible.');}
+    try{if(!storage)throw Error();storage.setItem(STORAGE_KEY,JSON.stringify({version:1,current:snapshot(),saved:book.saved,favorites:book.favorites}));status('Guardado en este navegador');return true;}
+    catch{status('Para conservarla, usa Compartir. El guardado local no está disponible.');return false;}
   }
   function schedule(){clearTimeout(timer);timer=setTimeout(persist,350);}
   function controls(){$('undo').disabled=!history?.canUndo;$('redo').disabled=!history?.canRedo;}
   function renderOptions(){
-    for(let i=0;i<3;i++){
-      const option=book.options[i],button=$('option-'+i),image=button.querySelector('img');button.disabled=!option;
-      image.hidden=!option?.image;if(option?.image)image.src=option.image;else image.removeAttribute('src');
-      button.querySelector('.option-empty').hidden=!!option?.image;
-      button.setAttribute('aria-pressed',String(!!option&&JSON.stringify(withoutCamera(option.state))===JSON.stringify(appearance())));
-      $('save-option-'+i).textContent=option?'Actualizar '+letter(i):'Guardar '+letter(i);
-    }
+    const select=$('saved-combinations'),previous=select.value,current=JSON.stringify(appearance());
+    const entries=[{name:'Propuesta de Santiago',state:defaultCombination},...book.saved];
+    select.replaceChildren(new Option('Combinación sin guardar',''));
+    entries.forEach((entry,i)=>select.add(new Option(entry.name,String(i))));
+    const match=entries.findIndex(entry=>JSON.stringify(withoutCamera(entry.state))===current);
+    select.value=previous!==''&&entries[Number(previous)]&&JSON.stringify(withoutCamera(entries[Number(previous)].state))===current?previous:match<0?'':String(match);
   }
   function withoutCamera(state){const {camera,...value}=state;return value;}
-  function changed(group=null){if(!history)return;history.record(appearance(),group);controls();renderOptions();schedule();}
+  function changed(group=null){if(!history)return;$('combination-feedback').textContent='';history.record(appearance(),group);controls();renderOptions();schedule();}
   function restore(){
-    let chosen=book.current,message=chosen?'Recuperamos tu última combinación.':'';
+    let chosen=book.current||defaultCombination,message=book.current?'Recuperamos tu última combinación.':'Propuesta de Santiago abierta.';
     if(location.hash.startsWith('#c=')){
       try{chosen=decodeCombination(location.hash.slice(3),palette);message='Combinación del enlace abierta.';}
       catch(error){message=error.message;$('restore-note').hidden=false;$('restore-note').textContent=message;}
@@ -39,16 +38,30 @@ export function createWorkflow({palette,snapshot,appearance,apply,thumbnail,anno
     if(!(event.ctrlKey||event.metaKey)||event.altKey||event.target.closest('input,textarea,[contenteditable="true"]'))return;
     const key=event.key.toLowerCase();if(key==='z'||key==='y'){event.preventDefault();undoRedo(key==='y'||event.shiftKey?'redo':'undo');}
   });
-  for(let i=0;i<3;i++){
-    $('option-'+i).addEventListener('click',()=>{if(book.options[i]){apply(book.options[i].state);changed();announce('Mostrando opción '+letter(i)+'. Se conserva el ángulo actual.');}});
-    $('save-option-'+i).addEventListener('click',async()=>{
-      if(busy)return;busy=true;const button=$('save-option-'+i);button.disabled=true;
-      try{
-        const image=await thumbnail(),state=snapshot();book.options[i]={state,image};renderOptions();persist();announce('Opción '+letter(i)+' guardada.');
-      }catch{announce('No se pudo guardar la miniatura. Espera a que cargue el acabado e inténtalo de nuevo.');}
-      finally{busy=false;button.disabled=false;}
-    });
+  $('saved-combinations').addEventListener('change',event=>{
+    if(event.target.value==='')return;
+    const index=Number(event.target.value),entry=index===0?{name:'Propuesta de Santiago',state:defaultCombination}:book.saved[index-1];
+    if(entry){apply(entry.state);changed();announce(entry.name+'. Se conserva el ángulo actual.');}
+  });
+  const saveDialog=$('save-combination-dialog');
+  function nameNote(){
+    const name=$('combination-name').value.trim();
+    $('combination-name-note').textContent=name==='Propuesta de Santiago'?'Elige otro nombre para conservar la propuesta inicial.':book.saved.some(e=>e.name===name)?'Ya existe una combinación con este nombre. Al guardar se actualizará.':'Se guardará en este navegador.';
   }
+  $('save-combination').addEventListener('click',()=>{
+    let n=1;while(book.saved.some(e=>e.name==='Mi combinación '+n))n++;
+    $('combination-name').value='Mi combinación '+n;nameNote();saveDialog.showModal();$('combination-name').select();
+  });
+  $('combination-name').addEventListener('input',nameNote);
+  $('cancel-combination').addEventListener('click',()=>saveDialog.close());
+  $('save-combination-form').addEventListener('submit',event=>{
+    event.preventDefault();const name=$('combination-name').value.trim();
+    if(!name||name==='Propuesta de Santiago'){nameNote();$('combination-name').focus();return;}
+    const previous=[...book.saved],index=book.saved.findIndex(e=>e.name===name),entry={name,state:snapshot()};
+    if(index<0)book.saved.push(entry);else book.saved[index]=entry;
+    if(!persist()){book.saved=previous;$('combination-name-note').textContent='No se pudo guardar. Usa Compartir para conservar esta combinación.';return;}
+    renderOptions();$('saved-combinations').value=String(book.saved.findIndex(e=>e.name===name)+1);saveDialog.close();$('combination-feedback').textContent='Guardado exitosamente';announce('Combinación '+name+' guardada exitosamente.');
+  });
   const dialog=$('share-dialog');
   $('share').addEventListener('click',()=>{
     const url=new URL(location.protocol==='file:'?'https://prototipoago.com/proyectos/cocina-ery/':location.href);url.hash='c='+encodeCombination(snapshot());
@@ -66,7 +79,7 @@ export function createWorkflow({palette,snapshot,appearance,apply,thumbnail,anno
   });
   window.addEventListener('pagehide',persist);
   document.addEventListener('visibilitychange',()=>{if(document.hidden)persist();});
-  return {restore,changed,persist:schedule,endGroup:()=>history?.endGroup(),get favorites(){return [...book.favorites];},toggleFavorite(id){
+  return {restore,resetDefault(){apply(defaultCombination,{camera:true});$('saved-combinations').value='0';changed();persist();announce('Propuesta de Santiago restaurada.');},changed,persist:schedule,endGroup:()=>history?.endGroup(),get favorites(){return [...book.favorites];},toggleFavorite(id){
     if(!palette.some(f=>f.id===id))return;book.favorites=book.favorites.includes(id)?book.favorites.filter(f=>f!==id):[...book.favorites,id];onFavorites(book.favorites);persist();
-  },diagnostics:()=>({undo:!!history?.canUndo,redo:!!history?.canRedo,options:book.options.map(o=>!!o),favorites:[...book.favorites]})};
+  },diagnostics:()=>({undo:!!history?.canUndo,redo:!!history?.canRedo,saved:book.saved.map(o=>o.name),favorites:[...book.favorites]})};
 }

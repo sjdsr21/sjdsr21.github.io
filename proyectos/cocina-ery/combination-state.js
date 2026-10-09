@@ -1,5 +1,7 @@
-export const ZONES=['cabinet','upperDoors','counter','table','pantry','base'];
-export const STORAGE_KEY='prototipoago.cocina-ery.v1';
+import {allowsFinish} from './finish-zones.js?v=20261009-panel';
+export const ZONES=['cabinet','upperDoors','counter','table','pantry','base','wall','floor','plinth'];
+export const STORAGE_KEY='prototipoago.cocina-ery.v2';
+const LEGACY_STORAGE_KEY='prototipoago.cocina-ery.v1';
 const clone=value=>JSON.parse(JSON.stringify(value));
 export function copySurfaceFinish(selection,tones,source='counter'){
   const target=source==='counter'?'table':'counter';selection[target]=selection[source];
@@ -11,10 +13,10 @@ export function validateCombination(value,palette){
   const result={version:1,selection:{},matches:{},tones:{},view:{}};
   for(const z of ZONES){
     const legacyUpper=z==='upperDoors'&&!Object.hasOwn(value.selection,'upperDoors');
-    const id=legacyUpper?value.selection.cabinet:value.selection[z],finish=palette.find(f=>f.id===id);
+    const legacySurface=['wall','floor','plinth'].includes(z)&&!Object.hasOwn(value.selection,z);
+    const id=legacyUpper?value.selection.cabinet:legacySurface?null:value.selection[z],finish=palette.find(f=>f.id===id);
     if(id!==null&&id!=='custom'&&!finish)throw Error('Un acabado del enlace no está disponible.');
-    if(finish?.texture&&!['counter','table'].includes(z))throw Error('El acabado no corresponde a esa zona.');
-    if(finish?.zones&&!finish.zones.includes(z))throw Error('El acabado no corresponde a esa zona.');
+    if(!allowsFinish(z,id==='custom'?{id}:finish))throw Error('El acabado no corresponde a esa zona.');
     result.selection[z]=id;
     const t=value.tones?.[legacyUpper?'cabinet':z];
     if(t){
@@ -61,16 +63,18 @@ export function createHistory(initial,limit=60){
   };
 }
 export function loadNotebook(palette,storage){
-  const empty={current:null,options:[null,null,null],favorites:[],available:true};
+  const empty={current:null,saved:[],favorites:[],available:true};
   try{
-    const raw=storage.getItem(STORAGE_KEY);if(!raw)return empty;
+    // Old open tabs can still write v1; they must not overwrite named saves.
+    const raw=storage.getItem(STORAGE_KEY)??storage.getItem(LEGACY_STORAGE_KEY);if(!raw)return empty;
     if(raw.length>1000000)return empty;const data=JSON.parse(raw);if(data.version!==1)return empty;
     const safe=value=>{try{return validateCombination(value,palette);}catch{return null;}};
     empty.current=safe(data.current);
-    empty.options=[0,1,2].map(i=>{
-      const item=data.options?.[i],state=safe(item?.state);if(!state)return null;
-      const image=typeof item.image==='string'&&/^data:image\/jpeg;base64,[A-Za-z0-9+/=]+$/.test(item.image)&&item.image.length<200000?item.image:null;
-      return {state,image};
+    const entries=Array.isArray(data.saved)?data.saved:[0,1,2].map(i=>({...data.options?.[i],name:'Opción '+'ABC'[i]}));
+    const names=new Set();
+    empty.saved=entries.flatMap(item=>{
+      const state=safe(item?.state),name=typeof item?.name==='string'?item.name.trim().slice(0,60):'';
+      if(!state||!name||names.has(name))return [];names.add(name);return [{name,state}];
     });
     empty.favorites=Array.isArray(data.favorites)?[...new Set(data.favorites.filter(id=>palette.some(p=>p.id===id)))].slice(0,400):[];
     return empty;

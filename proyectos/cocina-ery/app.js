@@ -4,24 +4,27 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
 import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
 import { SSAOPass } from 'three/addons/postprocessing/SSAOPass.js';
+import { OutlinePass } from 'three/addons/postprocessing/OutlinePass.js';
+import {allowsFinish,surfaceRegion,changesTogether} from './finish-zones.js?v=20261009-panel';
 import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 import {createColorWheel,hsvHex,hexHsv} from './color-tools.js';
 import {createViewOptions} from './view-options.js';
 import {downloadView} from './capture.js';
-import {createWorkflow} from './workflow.js?v=20261009-unificar';
-import {createModelInteraction} from './model-interaction.js';
-import {filterCatalog} from './catalog.js?v=20261009-texturas';
+import {createWorkflow} from './workflow.js?v=20261009-panel';
+import {createModelInteraction} from './model-interaction.js?v=20261009-panel';
+import {filterCatalog} from './catalog.js?v=20261009-panel';
 import {counterPart,resolveCounterFinish,counterWoodBand,ceramicUV,isCeramicFloor} from './countertop.js';
-import {createTheme} from './theme.js';
-import {copySurfaceFinish} from './combination-state.js?v=20261009-unificar';
+import {createTheme} from './theme.js?v=20261009-panel';
+import {copySurfaceFinish,validateCombination} from './combination-state.js?v=20261009-panel';
 const $=id=>document.getElementById(id);
-const labels={cabinet:'Modulares inferiores',upperDoors:'Puertas superiores',counter:'Tope de cocina',table:'Mesa auxiliar',pantry:'Despensa',base:'Fórmica existente · color base'};
-const originalColors={cabinet:'#aaa599',upperDoors:'#e3cfbe',counter:'#994c00',table:'#994c00',pantry:'#c46100',base:'#ffe4ca'};
-const selection={cabinet:null,upperDoors:null,counter:'greenlam-sanganer',table:'greenlam-sanganer',pantry:null,base:null};
+const labels={cabinet:'Modulares inferiores',upperDoors:'Puertas superiores',counter:'Tope de cocina',table:'Mesa auxiliar',pantry:'Despensa',base:'Fórmica existente · color base',wall:'Pintura de la pared',floor:'Piso',plinth:'Zócalo'};
+const originalColors={cabinet:'#aaa599',upperDoors:'#e3cfbe',counter:'#994c00',table:'#994c00',pantry:'#c46100',base:'#ffe4ca',wall:'#ffe4ca',floor:'#b07e51',plinth:'#bfc3c7'};
+const selection={cabinet:null,upperDoors:null,counter:'greenlam-sanganer',table:'greenlam-sanganer',pantry:null,base:null,wall:null,floor:null,plinth:null};
 const matches={pantry:false,upper:false,surfaces:false};
 function syncSurfaces(source){if(matches.surfaces&&['counter','table'].includes(source))copySurfaceFinish(selection,tones,source);}
 function canUnify(finish){return !finish?.zones||['counter','table'].every(z=>finish.zones.includes(z));}
 const tones={},editorOpen={};let viewOptions,workflow,interaction,theme;
+let sampling=false,copiedFinish=null,defaultCombination;
 let pickTimer;const filters={query:'',tone:'all',detail:'all',favoritesOnly:false};
 const textureReady=new Map();
 let zone='cabinet',category='neutral',palette=[],scene,camera,renderer,composer,controls,config,model,initial,ready=false;
@@ -110,7 +113,9 @@ function applyMaterials(){
       if(mesh.material!==mesh.userData.original)mesh.material.dispose();
       if(!finish&&!linked){mesh.material=mesh.userData.original;mesh.geometry.setAttribute('uv',mesh.userData.originalUV.clone());continue;}
       mesh.material=mesh.userData.original.clone();mesh.material.map=null;mesh.material.color.set(finish?.color||originalColors[z]);
-      if(finish?.texture){mesh.material.map=textureFor(finish);mesh.material.color.set(0xffffff);projectTexture(mesh,finish);mesh.material.roughness=finish.roughness??(finish.family==='Cerámica'?.82:.62);mesh.material.metalness=0;enableTint(mesh.material,finish,counterWoodBand(mesh,chosen,palette,config));}
+      mesh.material.metalness=finish?.metalness??(finish?.family==='Metal'?.4:0);
+      mesh.material.roughness=finish?.roughness??(finish?.family==='Metal'?.32:.62);
+      if(finish?.texture){mesh.material.map=textureFor(finish);mesh.material.color.set(0xffffff);projectTexture(mesh,finish);mesh.material.roughness=finish.roughness??(finish.family==='Metal'?.32:finish.family==='Cerámica'?.82:.62);enableTint(mesh.material,finish,counterWoodBand(mesh,chosen,palette,config));}
       else mesh.geometry.setAttribute('uv',mesh.userData.originalUV.clone());
       mesh.material.needsUpdate=true;
     }
@@ -140,27 +145,27 @@ const wheel=createColorWheel(value=>{
   if(!ready)return;tones[zone]={...value,enabled:true};syncSurfaces(zone);applyMaterials();updateLabels();paintEditor();workflow?.changed('color-'+zone);
 });
 function paintPalette(){
-  const container=$('palette');container.replaceChildren();const surfaces=zone==='counter'||zone==='table';
-  for(const key of ['stone','textured'])document.querySelector(`[data-palette="${key}"]`).hidden=!surfaces;
-  if(!surfaces&&['stone','textured'].includes(category))category='neutral';
+  const container=$('palette');container.replaceChildren();const surfaces=['counter','table'].includes(zone);
+  const categories=zone==='plinth'?['textured']:zone==='wall'?['neutral','color']:['neutral','color','stone','textured'];
+  for(const button of document.querySelectorAll('[data-palette]'))button.hidden=!categories.includes(button.dataset.palette);
+  if(!categories.includes(category))category=categories[0];
   container.classList.toggle('textures',['stone','textured'].includes(category));
   document.querySelectorAll('[data-palette]').forEach(b=>{const active=b.dataset.palette===category;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});
-  const details=category==='stone'?[['all','Todos los dibujos'],['Referencias Ery','Fotos de referencia Ery'],['suave','Piedras suaves'],['veteado','Veteadas'],['granulado','Granuladas']]:category==='textured'?[['all','Todas las familias'],['Laminado Greenlam','Laminado Greenlam'],['Colores provisionales','Colores provisionales'],...(zone==='counter'?[['Cerámica','Cerámicas']]:[]),['Madera','Maderas'],['Concreto','Cementos'],['Tejido','Tejidos'],['Metal','Metales'],['Cuero','Cueros']]:[];
+  const details=category==='stone'?[['all','Todos los dibujos'],['Referencias Ery','Fotos de referencia Ery'],['suave','Piedras suaves'],['veteado','Veteadas'],['granulado','Granuladas']]:category==='textured'?[['all','Todas las familias'],...['Laminado Greenlam','Colores provisionales','Cerámica','Madera','Concreto','Tejido','Metal','Cuero'].filter(family=>palette.some(f=>f.family===family&&allowsFinish(zone,f))).map(family=>[family,family])]:[];
   $('filter-detail').hidden=!details.length;
   if(!details.some(d=>d[0]===filters.detail))filters.detail='all';
   $('filter-detail').replaceChildren(...details.map(([value,label])=>{const option=document.createElement('option');option.value=value;option.textContent=label;return option;}));
   $('filter-detail').value=filters.detail;
   const options=filterCatalog(palette,{...filters,category,zone,favorites:workflow?.favorites||[]}).filter(f=>!matches.surfaces||!surfaces||canUnify(f));
   $('catalog-empty').hidden=options.length>0;
-  $('palette-count').textContent=`${options.length} acabados`+(['neutral','color'].includes(category)&&!filters.favoritesOnly&&!filters.query?' + color libre':'');
   if(['neutral','color'].includes(category)&&!filters.favoritesOnly&&!filters.query){
     const b=document.createElement('button');b.className='swatch custom-swatch';b.dataset.finish='custom';b.title='Elegir color personalizado';b.setAttribute('aria-label','Elegir color personalizado');b.innerHTML='<span class="wheel-icon" aria-hidden="true"></span>';
     b.addEventListener('click',()=>{setFinish(zone,'custom');revealEditor();});container.append(b);
   }
   for(const finish of options){
-    const b=document.createElement('button');b.className='swatch'+(finish.texture?' texture '+finish.category:'');b.style.setProperty('--swatch',finish.color);
-    if(finish.texture){
-      const sample=document.createElement('span');sample.className='sample';sample.style.backgroundImage=`url("${finish.texture}")`;sample.setAttribute('aria-hidden','true');
+    const b=document.createElement('button');b.className='swatch'+(finish.texture||finish.family==='Metal'?' texture '+finish.category:'');b.style.setProperty('--swatch',finish.color);
+    if(finish.texture||finish.family==='Metal'){
+      const sample=document.createElement('span');sample.className='sample';if(finish.texture)sample.style.backgroundImage=`url("${finish.texture}")`;else sample.style.background=`linear-gradient(125deg,${finish.color},${finish.color} 45%,#ffffff55 50%,${finish.color} 60%)`;sample.setAttribute('aria-hidden','true');
       const name=document.createElement('span');name.className='sample-name';name.textContent=finish.name;b.append(sample,name);
       if(finish.trimFinish){const trim=palette.find(p=>p.id===finish.trimFinish);const strip=document.createElement('span');strip.className='trim-sample';strip.style.backgroundImage=`url("${trim.texture}")`;sample.append(strip);}
     }
@@ -174,7 +179,7 @@ function updateLabels(){
   $('table-link-label').textContent=matches.surfaces?'Vinculado al tope de cocina':'Un acabado independiente';
   const current=finishFor(zone),favorite=!!current&&(workflow?.favorites||[]).includes(current.id);
   $('favorite-finish').disabled=!current||current.id==='custom';$('favorite-finish').textContent=favorite?'★ Acabado favorito':'☆ Guardar acabado';$('favorite-finish').setAttribute('aria-pressed',String(favorite));
-  $('favorite-finish').title=current?.id==='custom'?'Guarda este color libre en una combinación A, B o C.':'';
+  $('favorite-finish').title=current?.id==='custom'?'Guarda este color libre en una combinación.':'';
   $('palette-title').textContent=labels[zone];$('chosen-name').textContent=(finishFor(zone)?.name||'Acabado original')+(tones[zone]?.enabled&&finishFor(zone)?.texture?' · tono personalizado':'');
   $('finish-description').hidden=!current?.description;$('finish-description').textContent=current?.description||'';
   for(const b of document.querySelectorAll('[data-zone]')){
@@ -186,15 +191,18 @@ function updateLabels(){
   $('base-note').hidden=zone!=='base';
   $('base-note').textContent=linked.length?`«Unificar» está activo para ${linked.join(' y ')}. Desmarca esa casilla para ver allí el color base.`:'Cambia el color de los cuerpos existentes de los gabinetes superiores y la despensa.';
 }
-function setFinish(z,id){
+function setFinish(z,id,copiedTone){
   if(!Object.hasOwn(labels,z))throw new Error('Zona desconocida');const f=id===null||id==='custom'?null:palette.find(p=>p.id===id);
-  if(id!==null&&id!=='custom'&&!f)throw new Error('Acabado desconocido');if(f?.texture&&!['counter','table'].includes(z))throw new Error('Las piedras y los texturizados están disponibles para el tope y la mesa auxiliar.');
-  if(f?.zones&&!f.zones.includes(z))throw new Error('Este acabado está disponible solo para el tope de cocina.');
+  if(id!==null&&id!=='custom'&&!f)throw new Error('Acabado desconocido');if(!allowsFinish(z,id==='custom'?{id}:f))throw new Error(z==='wall'?'La pintura de la pared admite colores lisos.':z==='plinth'?'El zócalo admite maderas y acabados metálicos.':'Este acabado no está disponible para esta zona.');
   if(matches.surfaces&&['counter','table'].includes(z)&&!canUnify(f))throw new Error('Desmarca la unificación para usar un acabado exclusivo del tope.');
   if(selection[z]!==id){
     tones[z]={...hexHsv(f?.color||finishFor(z)?.color||originalColors[z]),enabled:false};
     if(f?.texture)tones[z].v=100;
     editorOpen[z]=false;
+  }
+  if(copiedTone!==undefined){
+    tones[z]=copiedTone?{...copiedTone}:{...hexHsv(f?.color||originalColors[z]),enabled:false};
+    if(f?.texture&&!copiedTone)tones[z].v=100;
   }
   selection[z]=id;syncSurfaces(z);applyMaterials();updateLabels();paintEditor();workflow?.changed();announce(`${labels[z]}: ${finishFor(z)?.name||'acabado original'}`);return readState();
 }
@@ -210,7 +218,39 @@ function setMatches(pantry,upper,surfaces=matches.surfaces){
   if(typeof pantry!=='boolean'||typeof upper!=='boolean')throw new Error('Las casillas requieren valores booleanos.');
   matches.pantry=pantry;matches.upper=upper;$('match-pantry').checked=pantry;$('match-upper').checked=upper;applyMaterials();paintPalette();workflow?.changed();return readState();
 }
-function readState(){return {selection:{...selection},matches:{...matches},tones:structuredClone(tones),view:{...viewOptions?.state},zone};}
+function samplerMessage(text){$('sampler-note').textContent=text;announce(text);}
+async function paintCopiedSample(finish,tone,entry){
+  const sample=$('copied-finish').querySelector('.copied-sample');sample.style.backgroundColor=finish.color;
+  sample.style.backgroundImage=finish.texture?`url("${finish.texture}")`:'';
+  if(!finish.texture||!tone?.enabled)return;
+  const texture=textureFor(finish);await textureReady.get(finish.id);if(copiedFinish!==entry||!texture.image)return;
+  const canvas=document.createElement('canvas');canvas.width=96;canvas.height=96;
+  const ctx=canvas.getContext('2d',{willReadFrequently:true});ctx.drawImage(texture.image,0,0,96,96);
+  const pixels=ctx.getImageData(0,0,96,96),target=hsvHex({...tone,v:100}).slice(1).match(/../g).map(c=>parseInt(c,16));
+  for(let i=0;i<pixels.data.length;i+=4){const v=Math.max(pixels.data[i],pixels.data[i+1],pixels.data[i+2])/255*tone.v/100;for(let c=0;c<3;c++)pixels.data[i+c]=target[c]*v;}
+  ctx.putImageData(pixels,0,0);sample.style.backgroundImage=`url("${canvas.toDataURL()}")`;
+}
+function setSampling(enabled){
+  sampling=enabled;$('eyedropper').setAttribute('aria-pressed',String(enabled));interaction?.clear();
+  samplerMessage(enabled?'Selecciona en el modelo el acabado que quieres copiar. Esc para cancelar.':copiedFinish?'Selecciona otra pieza y pulsa la muestra para aplicar el acabado.':'Copia un acabado con el cuentagotas y aplícalo a otra pieza.');
+}
+function copyFinish(source){
+  if(!Object.hasOwn(labels,source))throw Error('Zona desconocida.');
+  const id=selection[source]||(source==='floor'?'eri-floor-terracotta':source==='plinth'?'plinth-silver':'custom');
+  const tone=selection[source]?tones[source]:id==='custom'?{...hexHsv(originalColors[source]),enabled:true}:null;
+  const finish=id==='custom'?{id,name:'Color personalizado',color:hsvHex(tone)}:palette.find(f=>f.id===id);
+  copiedFinish={id,tone:tone?{...tone}:null,name:finish.name+(tone?.enabled&&finish.texture?' · tono personalizado':''),source};
+  paintCopiedSample(finish,tone,copiedFinish).catch(()=>{});
+  $('copied-finish').disabled=false;$('copied-name').textContent=copiedFinish.name;
+  $('copied-finish').setAttribute('aria-label','Aplicar acabado copiado: '+copiedFinish.name);
+  setSampling(false);samplerMessage('Acabado copiado. Selecciona otra pieza y pulsa la muestra para aplicarlo.');return readState();
+}
+function applyCopiedFinish(){
+  if(!copiedFinish)throw Error('Primero copia un acabado con el cuentagotas.');
+  setFinish(zone,copiedFinish.id,copiedFinish.tone);paintPalette();interaction.highlight(zone);
+  samplerMessage('Acabado aplicado a '+labels[zone].toLowerCase()+'.');return readState();
+}
+function readState(){return {selection:{...selection},matches:{...matches},tones:structuredClone(tones),view:{...viewOptions?.state},zone,copiedFinish:copiedFinish?structuredClone(copiedFinish):null};}
 function appearance(){return {version:1,selection:{...selection},matches:{...matches},tones:structuredClone(tones),view:{...viewOptions.state}};}
 function snapshot(){return {...appearance(),camera:{eye:camera.position.toArray(),target:controls.target.toArray()}};}
 function applyCombination(value,{camera:restoreCamera=false}={}){
@@ -225,15 +265,9 @@ async function waitForTextures(){
   const active=[...new Set(meshes.map(m=>m.userData.materialFinish).filter(id=>textureReady.has(id)))];
   if((await Promise.all(active.map(id=>textureReady.get(id)))).some(ok=>!ok))throw Error('Espera a que se carguen las texturas o elige otro acabado.');
 }
-async function thumbnail(){
-  await waitForTextures();interaction.clear();viewOptions.update();composer.render();
-  const result=document.createElement('canvas');result.width=320;result.height=208;const ctx=result.getContext('2d');ctx.fillStyle=theme.dark?'#000':'#fff';ctx.fillRect(0,0,320,208);
-  const source=renderer.domElement,scale=Math.min(320/source.width,208/source.height),w=source.width*scale,h=source.height*scale;
-  ctx.drawImage(source,(320-w)/2,(208-h)/2,w,h);return result.toDataURL('image/jpeg',.75);
-}
 function openPanel(){document.body.classList.remove('panel-collapsed');$('panel-toggle').setAttribute('aria-expanded','true');$('panel-toggle').innerHTML='Ocultar acabados <span aria-hidden="true">⌄</span>';}
 function selectZone(next,fromModel=false){
-  zone=next;filters.query='';filters.tone='all';filters.detail='all';$('finish-search').value='';$('filter-tone').value='all';paintPalette();
+  zone=next;filters.detail='all';paintPalette();
   if(fromModel){openPanel();$('palette-title').scrollIntoView({block:'start',behavior:'instant'});}
   interaction?.highlight(zone);$('picked-zone').textContent=labels[zone];$('picked-zone').hidden=false;clearTimeout(pickTimer);pickTimer=setTimeout(()=>$('picked-zone').hidden=true,1100);
 }
@@ -249,13 +283,16 @@ function registerTools(){
     {name:'read_kitchen_finishes',title:'Consultar acabados',description:'Consultar las selecciones, colores, piedras y texturizados disponibles.',inputSchema:{type:'object',properties:{},additionalProperties:false},annotations:{readOnlyHint:true,untrustedContentHint:false},execute:()=>({...readState(),finishes:palette.map(p=>({id:p.id,name:p.name,category:p.category}))})},
     {name:'set_kitchen_finish',title:'Cambiar acabado',description:'Cambiar el acabado de una zona de la cocina en la vista 3D.',inputSchema:{type:'object',properties:{zone:{type:'string',enum:Object.keys(labels)},finishId:{type:['string','null']}},required:['zone','finishId'],additionalProperties:false},annotations:{readOnlyHint:false,untrustedContentHint:false},execute:input=>{if(!ready)throw new Error('El modelo todavía se está cargando.');return setFinish(input.zone,input.finishId);}},
     {name:'set_kitchen_matching',title:'Unificar acabados',description:'Activar o desactivar la unificación de la despensa, los gabinetes superiores y los acabados del tope y la mesa auxiliar.',inputSchema:{type:'object',properties:{pantry:{type:'boolean'},upper:{type:'boolean'},surfaces:{type:'boolean',description:'Vincular los acabados del tope de cocina y la mesa auxiliar.'}},required:['pantry','upper'],additionalProperties:false},annotations:{readOnlyHint:false,untrustedContentHint:false},execute:input=>{if(!ready)throw new Error('El modelo todavía se está cargando.');return setMatches(input.pantry,input.upper,input.surfaces??matches.surfaces);}}
+    ,{name:'copy_kitchen_finish',title:'Copiar acabado con cuentagotas',description:'Tomar el acabado y el tono de una zona del modelo y guardarlos en la muestra del cuentagotas.',inputSchema:{type:'object',properties:{zone:{type:'string',enum:Object.keys(labels)}},required:['zone'],additionalProperties:false},annotations:{readOnlyHint:false,untrustedContentHint:false},execute:input=>copyFinish(input.zone)}
+    ,{name:'apply_copied_kitchen_finish',title:'Aplicar acabado copiado',description:'Aplicar la muestra del cuentagotas a la zona indicada.',inputSchema:{type:'object',properties:{zone:{type:'string',enum:Object.keys(labels)}},required:['zone'],additionalProperties:false},annotations:{readOnlyHint:false,untrustedContentHint:false},execute:input=>{selectZone(input.zone);return applyCopiedFinish();}}
   ];
   for(const tool of definitions){try{Promise.resolve(context.registerTool(tool,{signal:lifecycle.signal})).catch(()=>{});}catch{}}
 }
 async function init(){
   try{
     document.querySelectorAll('aside button,aside input,aside select,#reset,#screenshot,#share').forEach(b=>b.disabled=true);
-    [palette,config]=await Promise.all(['palette','scene'].map(async name=>{const response=await fetch(`assets/${name}.json?v=20261009-texturas`);if(!response.ok)throw new Error('No se pudieron cargar los acabados.');return response.json();}));
+    [palette,config,defaultCombination]=await Promise.all(['palette','scene','default-combination'].map(async name=>{const response=await fetch(`assets/${name}.json?v=20261009-panel`);if(!response.ok)throw new Error('No se pudieron cargar los acabados.');return response.json();}));
+    defaultCombination=validateCombination(defaultCombination,palette);
     renderer=new THREE.WebGLRenderer({antialias:true,alpha:false,powerPreference:'high-performance'});renderer.setPixelRatio(Math.min(devicePixelRatio,1.7));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.NoToneMapping;renderer.shadowMap.enabled=false;
     renderer.domElement.setAttribute('aria-label','Cocina Ery en 3D. Arrastra para girar, usa dos dedos para desplazar y pellizca para acercar.');renderer.domElement.setAttribute('aria-describedby','gesture-help');renderer.domElement.setAttribute('tabindex','0');
     scene=new THREE.Scene();scene.background=new THREE.Color(0xffffff);camera=new THREE.PerspectiveCamera(35,1,.03,70);camera.up.set(0,1,0);
@@ -263,13 +300,14 @@ async function init(){
     const loaded=await new GLTFLoader().loadAsync('assets/kitchen.glb?v=20261008-r10');model=loaded.scene;scene.add(model);
     model.traverse(mesh=>{
       if(!mesh.isMesh)return;mesh.castShadow=false;mesh.receiveShadow=false;
-      mesh.userData.region=mesh.userData.region||mesh.parent?.userData.region||'fixed';mesh.userData.counterPart=counterPart(mesh,config);
-      mesh.userData.isFloor=isCeramicFloor(mesh,config);mesh.userData.materialFinish=null;
+      mesh.userData.region=surfaceRegion({...mesh.parent?.userData,...mesh.userData},config);mesh.userData.counterPart=counterPart(mesh,config);
+      mesh.userData.isFloor=mesh.userData.region==='floor'||isCeramicFloor(mesh,config);mesh.userData.materialFinish=null;
       if(mesh.userData.isFloor){
         const finish=palette.find(f=>f.id===config.floor.finishId);
         mesh.material=mesh.material.clone();mesh.material.map=textureFor(finish);mesh.material.color.set(0xffffff);mesh.material.roughness=.82;
         projectTexture(mesh,finish);enableTint(mesh.material,finish);mesh.userData.materialFinish=finish.id;
       }
+      if(mesh.userData.region==='plinth'){mesh.material=mesh.material.clone();mesh.material.color.set(originalColors.plinth);mesh.material.roughness=.32;mesh.material.metalness=.4;}
       mesh.userData.original=mesh.material;mesh.userData.originalUV=mesh.geometry.attributes.uv.clone();mesh.userData.applied='original';meshes.push(mesh);
     });
     if(!meshes.some(m=>m.userData.isFloor))throw Error('No se encontró la superficie del piso.');
@@ -279,11 +317,11 @@ async function init(){
     viewOptions=createViewOptions(scene,meshes,camera,renderer,key,bounds,requestRender);
     initial={eye,target,fov:fov*1.08};camera.position.copy(eye);camera.lookAt(target);
     controls=new OrbitControls(camera,renderer.domElement);controls.target.copy(target);controls.enableDamping=true;controls.dampingFactor=.12;controls.minDistance=.4;controls.maxDistance=14;controls.maxPolarAngle=Math.PI*.92;controls.zoomSpeed=.7;controls.panSpeed=.75;controls.addEventListener('change',requestRender);
-    composer=new EffectComposer(renderer);composer.renderTarget1.samples=4;composer.renderTarget2.samples=4;composer.addPass(new RenderPass(scene,camera));const ao=new SSAOPass(scene,camera,640,640,24);ao.kernelRadius=.18;ao.minDistance=.001;ao.maxDistance=.09;composer.addPass(ao);composer.addPass(new OutputPass());
+    composer=new EffectComposer(renderer);composer.renderTarget1.samples=4;composer.renderTarget2.samples=4;composer.addPass(new RenderPass(scene,camera));const ao=new SSAOPass(scene,camera,640,640,24);ao.kernelRadius=.18;ao.minDistance=.001;ao.maxDistance=.09;composer.addPass(ao);const outline=new OutlinePass(new THREE.Vector2(640,640),scene,camera);outline.visibleEdgeColor.set('#e2a379');outline.hiddenEdgeColor.set(0x000000);outline.edgeStrength=4;outline.edgeThickness=1.5;outline.pulsePeriod=0;composer.addPass(outline);composer.addPass(new OutputPass());
     $('viewer').prepend(renderer.domElement);theme=createTheme(scene,requestRender);ready=true;resize();composer.render();$('reference').hidden=true;$('load-status').hidden=true;document.querySelectorAll('aside button,aside input,aside select,#reset,#screenshot,#share').forEach(b=>b.disabled=false);
-    applyMaterials();
-    interaction=createModelInteraction({scene,meshes,camera,canvas:renderer.domElement,selectedZone,onPick:z=>selectZone(z,true),requestRender});
-    workflow=createWorkflow({palette,snapshot,appearance,apply:applyCombination,thumbnail,announce,onFavorites:()=>paintPalette()});workflow.restore();
+    $('copied-finish').disabled=!copiedFinish;applyMaterials();
+    interaction=createModelInteraction({scene,meshes,camera,canvas:renderer.domElement,selectedZone,onPick:z=>sampling?copyFinish(z):selectZone(z,true),requestRender,outline,related:(a,b)=>changesTogether(a,b,matches),isSampling:()=>sampling});
+    workflow=createWorkflow({palette,snapshot,appearance,apply:applyCombination,defaultCombination,announce,onFavorites:()=>paintPalette()});workflow.restore();
     controls.addEventListener('start',()=>interaction.clear());controls.addEventListener('end',()=>workflow.persist());controls.addEventListener('change',()=>workflow.persist());
     paintPalette();registerTools();new ResizeObserver(resize).observe($('viewer'));
     renderer.domElement.addEventListener('webglcontextlost',event=>{event.preventDefault();ready=false;$('reference').hidden=false;$('load-status').hidden=false;$('load-status').textContent='Se interrumpió la vista 3D. Recarga la página para continuar.';});
@@ -295,7 +333,7 @@ function zoom(factor){if(!ready)return;camera.position.sub(controls.target).mult
 document.querySelectorAll('[data-zone]').forEach(b=>b.addEventListener('click',()=>selectZone(b.dataset.zone)));document.querySelectorAll('[data-palette]').forEach(b=>b.addEventListener('click',()=>{category=b.dataset.palette;filters.detail='all';paintPalette();}));
 $('original').addEventListener('click',()=>setFinish(zone,null));$('match-pantry').addEventListener('change',()=>setMatches($('match-pantry').checked,matches.upper));$('match-upper').addEventListener('change',()=>setMatches(matches.pantry,$('match-upper').checked));
 $('match-surfaces').addEventListener('change',()=>setMatches(matches.pantry,matches.upper,$('match-surfaces').checked));
-$('reset').addEventListener('click',()=>{Object.keys(selection).forEach(k=>{selection[k]=null;delete tones[k];editorOpen[k]=false;});setMatches(false,false,false);paintPalette();announce('Se restauraron todos los acabados originales.');});
+$('reset').addEventListener('click',()=>workflow?.resetDefault());
 $('home').addEventListener('click',resetCamera);$('zoom-in').addEventListener('click',()=>zoom(.85));$('zoom-out').addEventListener('click',()=>zoom(1.15));
 for(const mode of ['orbit','pan'])$(mode).addEventListener('click',()=>{if(!controls)return;controls.mouseButtons.LEFT=mode==='orbit'?THREE.MOUSE.ROTATE:THREE.MOUSE.PAN;controls.touches.ONE=mode==='orbit'?THREE.TOUCH.ROTATE:THREE.TOUCH.PAN;for(const key of ['orbit','pan']){$(key).classList.toggle('active',key===mode);$(key).setAttribute('aria-pressed',String(key===mode));}$('gesture-help').textContent=mode==='orbit'?'Arrastra para girar · rueda para acercar':'Arrastra para desplazar · rueda para acercar';});
 for(const name of ['shadows','edges','profiles'])$('show-'+name).addEventListener('change',e=>{if(ready){viewOptions.set(name,e.target.checked);workflow.changed();}});
@@ -309,16 +347,16 @@ $('screenshot').addEventListener('click',async()=>{
     if(matches.surfaces)finishes.push('Tope y mesa auxiliar: acabado unificado');
     if(matches.upper)finishes.push('Superiores: iguales a las puertas');if(matches.pantry)finishes.push('Despensa: acabado unificado');
     const floorFinish=palette.find(f=>f.id===config.floor.finishId);
-    finishes.push('Piso: terracota rectangular · '+floorFinish.tileSize.map(n=>Number((n*100).toFixed(1)).toLocaleString('es')).join(' × ')+' cm');
+    if(!selection.floor)finishes.push('Piso: terracota rectangular · '+floorFinish.tileSize.map(n=>Number((n*100).toFixed(1)).toLocaleString('es')).join(' × ')+' cm');
     await downloadView({renderer,composer,viewOptions,viewer:$('viewer'),finishes});$('share-feedback').textContent='Imagen descargada. Puedes enviarla para compartir tu selección.';announce($('share-feedback').textContent);
   }catch(error){$('share-feedback').textContent=error.message;announce(error.message);}
   finally{button.disabled=false;button.querySelector('span').textContent='Descargar imagen';if($('share-dialog').open)button.focus();requestRender();}
 });
-$('finish-search').addEventListener('input',e=>{filters.query=e.target.value;paintPalette();});
-$('filter-tone').addEventListener('change',e=>{filters.tone=e.target.value;paintPalette();});
 $('filter-detail').addEventListener('change',e=>{filters.detail=e.target.value;paintPalette();});
-$('filter-favorites').addEventListener('change',e=>{filters.favoritesOnly=e.target.checked;paintPalette();});
 $('favorite-finish').addEventListener('click',()=>{const f=finishFor(zone);if(f&&f.id!=='custom')workflow.toggleFavorite(f.id);});
 $('panel-toggle').addEventListener('click',()=>{const closed=document.body.classList.toggle('panel-collapsed');$('panel-toggle').setAttribute('aria-expanded',String(!closed));$('panel-toggle').innerHTML=(closed?'Editar acabados':'Ocultar acabados')+' <span aria-hidden="true">⌄</span>';});
 for(const event of ['pointerup','pointercancel','keyup','change','focusout'])$('color-editor').addEventListener(event,()=>workflow?.endGroup());
+$('eyedropper').addEventListener('click',()=>setSampling(!sampling));
+$('copied-finish').addEventListener('click',()=>{try{applyCopiedFinish();}catch(error){samplerMessage(error.message);}});
+document.addEventListener('keydown',event=>{if(event.key==='Escape'&&sampling)setSampling(false);});
 init();
