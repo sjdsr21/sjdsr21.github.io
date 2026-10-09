@@ -4,14 +4,15 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
 import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
 import { SSAOPass } from 'three/addons/postprocessing/SSAOPass.js';
-import { OutlinePass } from 'three/addons/postprocessing/OutlinePass.js';
+import {SilhouettePass} from './silhouette-pass.js?v=20261009-materiales';
+import {connectProfiles,applyRenderProfile} from './material-profile.js?v=20261009-materiales';
 import {allowsFinish,surfaceRegion,changesTogether} from './finish-zones.js?v=20261009-panel';
 import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 import {createColorWheel,hsvHex,hexHsv} from './color-tools.js';
 import {createViewOptions} from './view-options.js';
 import {downloadView} from './capture.js';
 import {createWorkflow} from './workflow.js?v=20261009-panel';
-import {createModelInteraction} from './model-interaction.js?v=20261009-panel';
+import {createModelInteraction} from './model-interaction.js?v=20261009-materiales';
 import {filterCatalog} from './catalog.js?v=20261009-panel';
 import {counterPart,resolveCounterFinish,counterWoodBand,ceramicUV,isCeramicFloor} from './countertop.js';
 import {createTheme} from './theme.js?v=20261009-panel';
@@ -117,6 +118,7 @@ function applyMaterials(){
       mesh.material.roughness=finish?.roughness??(finish?.family==='Metal'?.32:.62);
       if(finish?.texture){mesh.material.map=textureFor(finish);mesh.material.color.set(0xffffff);projectTexture(mesh,finish);mesh.material.roughness=finish.roughness??(finish.family==='Metal'?.32:finish.family==='Cerámica'?.82:.62);enableTint(mesh.material,finish,counterWoodBand(mesh,chosen,palette,config));}
       else mesh.geometry.setAttribute('uv',mesh.userData.originalUV.clone());
+      applyRenderProfile(mesh.material,finish);
       mesh.material.needsUpdate=true;
     }
     if(finish?.id==='custom')mesh.material.color.set(finish.color);
@@ -292,6 +294,9 @@ async function init(){
   try{
     document.querySelectorAll('aside button,aside input,aside select,#reset,#screenshot,#share').forEach(b=>b.disabled=true);
     [palette,config,defaultCombination]=await Promise.all(['palette','scene','default-combination'].map(async name=>{const response=await fetch(`assets/${name}.json?v=20261009-panel`);if(!response.ok)throw new Error('No se pudieron cargar los acabados.');return response.json();}));
+    const profilesResponse=await fetch('assets/render-profiles.json?v=20261009-materiales');
+    if(!profilesResponse.ok)throw new Error('No se pudieron cargar las propiedades de materiales.');
+    connectProfiles(palette,await profilesResponse.json());
     defaultCombination=validateCombination(defaultCombination,palette);
     renderer=new THREE.WebGLRenderer({antialias:true,alpha:false,powerPreference:'high-performance'});renderer.setPixelRatio(Math.min(devicePixelRatio,1.7));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.NoToneMapping;renderer.shadowMap.enabled=false;
     renderer.domElement.setAttribute('aria-label','Cocina Ery en 3D. Arrastra para girar, usa dos dedos para desplazar y pellizca para acercar.');renderer.domElement.setAttribute('aria-describedby','gesture-help');renderer.domElement.setAttribute('tabindex','0');
@@ -317,7 +322,7 @@ async function init(){
     viewOptions=createViewOptions(scene,meshes,camera,renderer,key,bounds,requestRender);
     initial={eye,target,fov:fov*1.08};camera.position.copy(eye);camera.lookAt(target);
     controls=new OrbitControls(camera,renderer.domElement);controls.target.copy(target);controls.enableDamping=true;controls.dampingFactor=.12;controls.minDistance=.4;controls.maxDistance=14;controls.maxPolarAngle=Math.PI*.92;controls.zoomSpeed=.7;controls.panSpeed=.75;controls.addEventListener('change',requestRender);
-    composer=new EffectComposer(renderer);composer.renderTarget1.samples=4;composer.renderTarget2.samples=4;composer.addPass(new RenderPass(scene,camera));const ao=new SSAOPass(scene,camera,640,640,24);ao.kernelRadius=.18;ao.minDistance=.001;ao.maxDistance=.09;composer.addPass(ao);const outline=new OutlinePass(new THREE.Vector2(640,640),scene,camera);outline.visibleEdgeColor.set('#e2a379');outline.hiddenEdgeColor.set(0x000000);outline.edgeStrength=4;outline.edgeThickness=1.5;outline.pulsePeriod=0;composer.addPass(outline);composer.addPass(new OutputPass());
+    composer=new EffectComposer(renderer);composer.renderTarget1.samples=4;composer.renderTarget2.samples=4;composer.addPass(new RenderPass(scene,camera));const ao=new SSAOPass(scene,camera,640,640,24);ao.kernelRadius=.18;ao.minDistance=.001;ao.maxDistance=.09;composer.addPass(ao);const outline=new SilhouettePass(scene,camera);composer.addPass(outline);composer.addPass(new OutputPass());
     $('viewer').prepend(renderer.domElement);theme=createTheme(scene,requestRender);ready=true;resize();composer.render();$('reference').hidden=true;$('load-status').hidden=true;document.querySelectorAll('aside button,aside input,aside select,#reset,#screenshot,#share').forEach(b=>b.disabled=false);
     $('copied-finish').disabled=!copiedFinish;applyMaterials();
     interaction=createModelInteraction({scene,meshes,camera,canvas:renderer.domElement,selectedZone,onPick:z=>sampling?copyFinish(z):selectZone(z,true),requestRender,outline,related:(a,b)=>changesTogether(a,b,matches),isSampling:()=>sampling});
@@ -326,7 +331,7 @@ async function init(){
     paintPalette();registerTools();new ResizeObserver(resize).observe($('viewer'));
     renderer.domElement.addEventListener('webglcontextlost',event=>{event.preventDefault();ready=false;$('reference').hidden=false;$('load-status').hidden=false;$('load-status').textContent='Se interrumpió la vista 3D. Recarga la página para continuar.';});
     renderer.domElement.addEventListener('keydown',event=>{if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','+','-','Home'].includes(event.key))return;event.preventDefault();if(event.key==='Home')return resetCamera();if(event.key==='+'||event.key==='-'){zoom(event.key==='+'?.85:1.15);return;}const offset=camera.position.clone().sub(controls.target),sphere=new THREE.Spherical().setFromVector3(offset);if(event.key==='ArrowLeft')sphere.theta-=.1;if(event.key==='ArrowRight')sphere.theta+=.1;if(event.key==='ArrowUp')sphere.phi=Math.max(.1,sphere.phi-.1);if(event.key==='ArrowDown')sphere.phi=Math.min(Math.PI*.92,sphere.phi+.1);camera.position.copy(controls.target).add(new THREE.Vector3().setFromSpherical(sphere));controls.update();requestRender();});
-    window.eriDiagnostics=()=>({ready,triangles:meshes.reduce((s,m)=>s+m.geometry.attributes.position.count/3,0),state:readState(),theme:theme.dark?'dark':'light',background:scene.background.getHexString(),camera:camera.position.toArray(),target:controls.target.toArray(),meshes:meshes.map(m=>({name:m.name,region:m.userData.region,counterPart:m.userData.counterPart,woodBand:m.material.userData.woodBand||null,isFloor:m.userData.isFloor,materialFinish:m.userData.materialFinish,finish:m.userData.applied,color:m.material.color.getHexString(),map:!!m.material.map,mapReady:!!m.material.map?.image?.width,tint:m.material.userData.tintUniforms?.eriTintEnabled.value||0})),view:viewOptions.diagnostics(),workflow:workflow.diagnostics(),highlight:{zone:interaction.highlighted,count:interaction.highlightedCount},shadows:renderer.shadowMap.enabled,ao:ao.enabled,render:renderer.info.render,bounds:[bounds.min.toArray(),bounds.max.toArray()],projected:center.clone().project(camera).toArray()});
+    window.eriDiagnostics=()=>({ready,triangles:meshes.reduce((s,m)=>s+m.geometry.attributes.position.count/3,0),state:readState(),theme:theme.dark?'dark':'light',background:scene.background.getHexString(),camera:camera.position.toArray(),target:controls.target.toArray(),meshes:meshes.map(m=>({name:m.name,region:m.userData.region,counterPart:m.userData.counterPart,woodBand:m.material.userData.woodBand||null,isFloor:m.userData.isFloor,materialFinish:m.userData.materialFinish,finish:m.userData.applied,color:m.material.color.getHexString(),map:!!m.material.map,mapReady:!!m.material.map?.image?.width,tint:m.material.userData.tintUniforms?.eriTintEnabled.value||0})),view:viewOptions.diagnostics(),workflow:workflow.diagnostics(),highlight:{zone:interaction.highlighted,count:interaction.highlightedCount,method:"visible-silhouette-mask"},shadows:renderer.shadowMap.enabled,ao:ao.enabled,render:renderer.info.render,bounds:[bounds.min.toArray(),bounds.max.toArray()],projected:center.clone().project(camera).toArray()});
   }catch(error){console.error(error);$('load-status').textContent='No se pudo abrir la vista 3D. Recarga la página o usa un navegador actualizado.';$('reference').hidden=false;}
 }
 function zoom(factor){if(!ready)return;camera.position.sub(controls.target).multiplyScalar(factor).add(controls.target);controls.update();requestRender();}
