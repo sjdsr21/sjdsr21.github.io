@@ -33,3 +33,10 @@ https://:version.prototipo-ago.pages.dev/*
 /proyectos/cocina-ery/*
   X-Robots-Tag: noindex, nofollow, noarchive
   Cache-Control: no-cache
+
+/materiales
+  X-Robots-Tag: noindex, nofollow, noarchive
+  Cache-Control: no-cache
+/materiales/*
+  X-Robots-Tag: noindex, nofollow, noarchive
+  Cache-Control: no-cache

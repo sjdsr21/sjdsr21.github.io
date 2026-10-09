@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="description" content="Explora maderas, tableros, laminados y acabados para tu proyecto con Prototipo AGO.">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:title" content="Materiales y acabados | Prototipo AGO">
+  <meta property="og:description" content="Maderas, superficies y acabados para imaginar tu proyecto. Compara tus opciones y comparte tu selección.">
+  <meta property="og:image" content="https://prototipoago.com/img/marca/vista-previa.jpg">
+  <meta property="og:url" content="https://prototipoago.com/materiales/">
+  <link rel="icon" href="../favicon.ico">
+  <link rel="stylesheet" href="estilo.css">
+  <title>Materiales y acabados | Prototipo AGO</title>
+  <script src="catalogo.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#catalogo">Ir al catálogo</a>
+<header class="masthead">
+  <a class="back" href="../">Volver a Prototipo AGO</a>
+  <a class="brand" href="../" aria-label="Prototipo AGO, inicio">prototipo<br>ago</a>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero-copy"><p class="eyebrow">EL MATERIAL CAMBIA LA PIEZA</p><h1>Materiales<br>y acabados.</h1><p class="lead">Explora vetas, colores y superficies para imaginar tu proyecto con nosotros.</p><a class="text-link" href="Prototipo%20AGO%20-%20Materiales%20y%20acabados.pdf" download>Descargar guía PDF <span aria-hidden="true">↗</span></a></div>
+    <div class="hero-samples" aria-label="Muestras de pino, samán y apamate"><img src="muestras/madera-pino.webp" alt="Muestra de pino" width="600" height="600"><img src="muestras/madera-saman.webp" alt="Muestra de samán" width="600" height="600"><img src="muestras/madera-apamate.webp" alt="Muestra de apamate" width="600" height="600"></div>
+  </section>
+  <section id="catalogo" class="catalogue" aria-label="Catálogo de materiales">
+    <nav id="categories" class="categories" aria-label="Categorías de materiales"></nav>
+    <div class="section-heading"><div><p class="eyebrow" id="section-index">01 / MADERAS</p><h2 id="section-title">Maderas sólidas</h2><p id="section-intro">Cargando las muestras del catálogo…</p></div><p id="result-count" class="result-count" aria-live="polite"></p></div>
+    <form class="filters" id="filters" role="search">
+      <label class="search-label">Buscar en esta categoría<input id="search" type="search" placeholder="Nombre, código, marca o proveedor" autocomplete="off"></label>
+      <label>Marca<select id="brand"><option value="">Todas las marcas</option></select></label>
+      <label>Proveedor<select id="supplier"><option value="">Todos los proveedores</option></select></label>
+      <label>Referencias<select id="market"><option value="">Todas</option><option value="venezuela">Taller y mercado venezolano</option><option value="internacional">Colecciones internacionales</option></select></label>
+    </form>
+    <p class="category-note" id="category-note"></p>
+    <div class="grid" id="grid"></div>
+    <div id="empty" class="empty" hidden><h3>No encontramos esa combinación.</h3><p>Prueba otro nombre o restablece los filtros.</p><button type="button" id="reset">Restablecer filtros</button></div>
+    <p id="message" class="message" aria-live="polite"></p>
+    <noscript><p>Activa JavaScript para filtrar las muestras o <a href="Prototipo%20AGO%20-%20Materiales%20y%20acabados.pdf">abre la guía PDF</a>.</p></noscript>
+  </section>
+  <section class="closing"><h2>La elección se confirma<br>con una muestra.</h2><p>El color en pantalla es orientativo. Al desarrollar tu proyecto, revisamos juntos el material, el acabado y las existencias del proveedor.</p><a href="../contacto.html" class="text-link">Conversar sobre mi proyecto <span aria-hidden="true">↗</span></a></section>
+</main>
+<footer><span>prototipo ago · Caracas</span><span>Catálogo en desarrollo · Octubre 2026</span></footer>
+<aside id="selection-bar" class="selection-bar" hidden aria-label="Materiales seleccionados"><div><strong id="selection-count">0 de 4 opciones</strong><span>Tu selección para comparar</span></div><div class="selection-actions"><button id="compare" type="button">Comparar</button><button id="share" type="button" class="primary">Copiar enlace</button><button id="clear" type="button" class="quiet">Limpiar</button></div></aside>
+<dialog id="detail"><button class="close" type="button" data-close aria-label="Cerrar ficha">✕</button><div id="detail-content"></div></dialog>
+<dialog id="comparison"><button class="close" type="button" data-close aria-label="Cerrar comparación">✕</button><h2>Tu selección</h2><p class="muted">Compara el aspecto y lo que conviene revisar en cada opción.</p><div id="comparison-content" class="comparison-grid"></div><p id="share-status" aria-live="polite"></p><button id="compare-share" type="button" class="primary">Copiar enlace de la selección</button></dialog>
+<dialog id="copy-fallback"><button class="close" type="button" data-close aria-label="Cerrar enlace">✕</button><h2>Enlace de tu selección</h2><p>Selecciona y copia este enlace para compartirlo.</p><input id="copy-url" aria-label="Enlace de la selección" readonly></dialog>
+</body>
+</html>
