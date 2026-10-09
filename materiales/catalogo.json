@@ -21,9 +21,15 @@
       "note": "Los catálogos muestran diseños; las existencias se consultan. Las colecciones internacionales aparecen identificadas."
     },
     {
+      "id": "piedras",
+      "name": "Piedras",
+      "intro": "Piedras sinterizadas, granitos y cuarzos con referencias de proveedores en Venezuela.",
+      "note": "Se confirma la muestra, el formato, el acabado y el lote para el proyecto."
+    },
+    {
       "id": "metales",
       "name": "Metales",
-      "intro": "Primeras referencias visuales para conversar colores y superficies metálicas.",
+      "intro": "Láminas, perforados, mallas, rejillas y relieves con referencias concretas de materiales.",
       "note": "Aleación, espesor, formato y proveedor se definen con el producto real."
     },
     {
@@ -417,9 +423,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/tablero-aglomerado-crudo.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/tablero-aglomerado-crudo-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -446,9 +452,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/tablero-alistonado-pino.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/tablero-alistonado-pino-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -475,9 +481,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/tablero-alistonado-saman.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/tablero-alistonado-saman-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -504,9 +510,9 @@
       "thicknessMm": 18,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/tablero-compuesto-okume.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/tablero-compuesto-okume-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -533,9 +539,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/tablero-pino-ranurado.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/tablero-pino-ranurado-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -562,9 +568,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/tablero-fenolico-film.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/tablero-fenolico-film-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -678,9 +684,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/taller-chapilla.webp",
-        "width": 1000,
-        "height": 1000
+        "src": "muestras/taller-chapilla-detalle26.webp",
+        "width": 1250,
+        "height": 1250
       },
       "supplier": ""
     },
@@ -746,9 +752,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/masisa-ve-02.webp",
-        "width": 1000,
-        "height": 1000
+        "src": "muestras/masisa-ve-02-detalle26.webp",
+        "width": 1200,
+        "height": 1200
       },
       "supplier": ""
     },
@@ -950,9 +956,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/masisa-ve-08.webp",
-        "width": 1000,
-        "height": 458
+        "src": "muestras/masisa-ve-08-detalle26.webp",
+        "width": 1600,
+        "height": 733
       },
       "supplier": ""
     },
@@ -984,9 +990,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/masisa-ve-09.webp",
-        "width": 1000,
-        "height": 460
+        "src": "muestras/masisa-ve-09-detalle26.webp",
+        "width": 1600,
+        "height": 736
       },
       "supplier": ""
     },
@@ -1018,9 +1024,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/masisa-ve-10.webp",
-        "width": 1000,
-        "height": 462
+        "src": "muestras/masisa-ve-10-detalle26.webp",
+        "width": 1600,
+        "height": 740
       },
       "supplier": ""
     },
@@ -1154,9 +1160,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/masisa-ve-14.webp",
-        "width": 1000,
-        "height": 503
+        "src": "muestras/masisa-ve-14-detalle26.webp",
+        "width": 1600,
+        "height": 805
       },
       "supplier": ""
     },
@@ -1188,9 +1194,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/masisa-ve-15.webp",
-        "width": 1000,
-        "height": 462
+        "src": "muestras/masisa-ve-15-detalle26.webp",
+        "width": 1600,
+        "height": 739
       },
       "supplier": ""
     },
@@ -1222,9 +1228,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/masisa-ve-16.webp",
-        "width": 1000,
-        "height": 1000
+        "src": "muestras/masisa-ve-16-detalle26.webp",
+        "width": 1200,
+        "height": 1200
       },
       "supplier": ""
     },
@@ -1256,9 +1262,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/masisa-ve-17.webp",
-        "width": 1000,
-        "height": 1000
+        "src": "muestras/masisa-ve-17-detalle26.webp",
+        "width": 1200,
+        "height": 1200
       },
       "supplier": ""
     },
@@ -1290,9 +1296,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/masisa-ve-18.webp",
-        "width": 1000,
-        "height": 1000
+        "src": "muestras/masisa-ve-18-detalle26.webp",
+        "width": 1200,
+        "height": 1200
       },
       "supplier": ""
     },
@@ -1324,9 +1330,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/masisa-ve-19.webp",
-        "width": 1000,
-        "height": 1000
+        "src": "muestras/masisa-ve-19-detalle26.webp",
+        "width": 1200,
+        "height": 1200
       },
       "supplier": ""
     },
@@ -1358,9 +1364,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/masisa-ve-20.webp",
-        "width": 1000,
-        "height": 1000
+        "src": "muestras/masisa-ve-20-detalle26.webp",
+        "width": 1200,
+        "height": 1200
       },
       "supplier": ""
     },
@@ -1392,9 +1398,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/masisa-ve-21.webp",
-        "width": 1000,
-        "height": 1000
+        "src": "muestras/masisa-ve-21-detalle26.webp",
+        "width": 1200,
+        "height": 1200
       },
       "supplier": ""
     },
@@ -1426,9 +1432,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/vesto-aserrado-nordico.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/vesto-aserrado-nordico-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -1460,9 +1466,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/vesto-awoura.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/vesto-awoura-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -1494,9 +1500,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/vesto-blanco-nieve.webp",
-        "width": 1000,
-        "height": 979
+        "src": "muestras/vesto-blanco-nieve-detalle26.webp",
+        "width": 1600,
+        "height": 1566
       },
       "supplier": ""
     },
@@ -1528,9 +1534,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/vesto-caramel.webp",
-        "width": 1000,
-        "height": 462
+        "src": "muestras/vesto-caramel-detalle26.webp",
+        "width": 1600,
+        "height": 739
       },
       "supplier": ""
     },
@@ -1562,9 +1568,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/vesto-cedro-natural.webp",
-        "width": 1000,
-        "height": 462
+        "src": "muestras/vesto-cedro-natural-detalle26.webp",
+        "width": 1600,
+        "height": 739
       },
       "supplier": ""
     },
@@ -1596,9 +1602,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/vesto-cendra-escandinavo.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/vesto-cendra-escandinavo-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -1664,9 +1670,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/vesto-jerez.webp",
-        "width": 591,
-        "height": 1000
+        "src": "muestras/vesto-jerez-detalle26.webp",
+        "width": 709,
+        "height": 1200
       },
       "supplier": ""
     },
@@ -1698,9 +1704,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/vesto-legno.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/vesto-legno-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -1732,9 +1738,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/vesto-linosa-cinza.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/vesto-linosa-cinza-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -1766,9 +1772,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/vesto-negro.webp",
-        "width": 1000,
-        "height": 664
+        "src": "muestras/vesto-negro-detalle26.webp",
+        "width": 1600,
+        "height": 1063
       },
       "supplier": ""
     },
@@ -1800,9 +1806,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/vesto-nocce-milano.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/vesto-nocce-milano-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -1834,9 +1840,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/vesto-nogal-terracota.webp",
-        "width": 1000,
-        "height": 461
+        "src": "muestras/vesto-nogal-terracota-detalle26.webp",
+        "width": 1600,
+        "height": 738
       },
       "supplier": ""
     },
@@ -1868,9 +1874,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/vesto-olmo-pardo.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/vesto-olmo-pardo-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -1902,9 +1908,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/vesto-origen-andino.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/vesto-origen-andino-detalle26.webp",
+        "width": 1600,
+        "height": 801
       },
       "supplier": ""
     },
@@ -1936,9 +1942,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/vesto-roble-americano.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/vesto-roble-americano-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -1970,9 +1976,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/vesto-roble-cava.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/vesto-roble-cava-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -2004,9 +2010,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/vesto-roble-dakar-wengue.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/vesto-roble-dakar-wengue-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -2038,9 +2044,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/vesto-roble-provenzal.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/vesto-roble-provenzal-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -2072,9 +2078,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/vesto-roble-rustico.webp",
-        "width": 1000,
-        "height": 461
+        "src": "muestras/vesto-roble-rustico-detalle26.webp",
+        "width": 1600,
+        "height": 738
       },
       "supplier": ""
     },
@@ -2106,9 +2112,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/vesto-teka-artico-readywall.webp",
-        "width": 1000,
-        "height": 732
+        "src": "muestras/vesto-teka-artico-readywall-detalle26.webp",
+        "width": 1366,
+        "height": 1000
       },
       "supplier": ""
     },
@@ -2140,9 +2146,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/vesto-toscana.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/vesto-toscana-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -2178,9 +2184,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-arizona.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/maxpanel-arizona-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -2216,9 +2222,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-artisan.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/maxpanel-artisan-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -2254,9 +2260,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-ash-grey.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/maxpanel-ash-grey-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -2292,9 +2298,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-austin.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/maxpanel-austin-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -2330,9 +2336,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-brushed-oak.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/maxpanel-brushed-oak-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -2368,9 +2374,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-callahan.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/maxpanel-callahan-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -2406,9 +2412,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-hoff.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/maxpanel-hoff-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -2444,9 +2450,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-inverness.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/maxpanel-inverness-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -2482,9 +2488,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-kent.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/maxpanel-kent-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -2520,9 +2526,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-levo.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/maxpanel-levo-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -2558,9 +2564,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-niagara-oak.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/maxpanel-niagara-oak-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -2596,9 +2602,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-roble-joplin.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/maxpanel-roble-joplin-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -2634,9 +2640,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-roble-monteiro.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/maxpanel-roble-monteiro-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -2672,9 +2678,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-roble-tostado.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/maxpanel-roble-tostado-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -2710,9 +2716,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-roble-virginia.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/maxpanel-roble-virginia-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -2748,9 +2754,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-sacramento.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/maxpanel-sacramento-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -2786,9 +2792,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-antracita-std.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/maxpanel-antracita-std-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -2824,9 +2830,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-arena-std.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/maxpanel-arena-std-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -2862,9 +2868,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-azul-midnight.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/maxpanel-azul-midnight-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -2900,9 +2906,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-blanco-std.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/maxpanel-blanco-std-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -2938,9 +2944,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-blanco-artico.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/maxpanel-blanco-artico-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -2976,9 +2982,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-cashmere.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/maxpanel-cashmere-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -3014,9 +3020,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-gris-cristal.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/maxpanel-gris-cristal-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -3052,9 +3058,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-gris-medio.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/maxpanel-gris-medio-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -3090,9 +3096,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-negro-std.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/maxpanel-negro-std-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -3128,9 +3134,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-terracota.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/maxpanel-terracota-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -3166,9 +3172,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-tortora.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/maxpanel-tortora-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -3204,9 +3210,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-verde-savia.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/maxpanel-verde-savia-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -3242,9 +3248,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-lino-antracita.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/maxpanel-lino-antracita-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -3280,9 +3286,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-lino-blanco.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/maxpanel-lino-blanco-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -3318,9 +3324,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-lino-crudo.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/maxpanel-lino-crudo-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -3356,9 +3362,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-aluminio-brushed.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/maxpanel-aluminio-brushed-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -3394,9 +3400,9 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-dorado-brushed.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/maxpanel-dorado-brushed-detalle26.webp",
+        "width": 1600,
+        "height": 800
       },
       "supplier": ""
     },
@@ -3426,9 +3432,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1006-ce.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1006-ce-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -3457,9 +3463,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1006-co.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1006-co-detalle26.webp",
+        "width": 800,
+        "height": 1600
       }
     },
     {
@@ -3488,9 +3494,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1006-dc.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1006-dc-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -3519,9 +3525,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1006-ga.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1006-ga-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -3550,9 +3556,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1006-gloss.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1006-gloss-detalle26.webp",
+        "width": 600,
+        "height": 1217
       }
     },
     {
@@ -3581,9 +3587,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1006-hz.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1006-hz-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -3612,9 +3618,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1006-ol.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1006-ol-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -3643,9 +3649,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1006-sf.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1006-sf-detalle26.webp",
+        "width": 600,
+        "height": 1217
       }
     },
     {
@@ -3674,9 +3680,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1006-smt.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1006-smt-detalle26.webp",
+        "width": 600,
+        "height": 1217
       }
     },
     {
@@ -3705,9 +3711,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1006-tl.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1006-tl-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -3736,9 +3742,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1035-dm.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1035-dm-detalle26.webp",
+        "width": 600,
+        "height": 1217
       }
     },
     {
@@ -3767,9 +3773,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1038-dm.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1038-dm-detalle26.webp",
+        "width": 600,
+        "height": 1217
       }
     },
     {
@@ -3798,9 +3804,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1038-gloss.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1038-gloss-detalle26.webp",
+        "width": 600,
+        "height": 1217
       }
     },
     {
@@ -3829,9 +3835,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1047-dm.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1047-dm-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -3860,9 +3866,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1055-dm.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1055-dm-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -3891,9 +3897,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1063-dm.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1063-dm-detalle26.webp",
+        "width": 600,
+        "height": 1217
       }
     },
     {
@@ -3922,9 +3928,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1067-dm.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1067-dm-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -3953,9 +3959,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1068-dm.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1068-dm-detalle26.webp",
+        "width": 600,
+        "height": 1217
       }
     },
     {
@@ -3984,9 +3990,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1068-gloss.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1068-gloss-detalle26.webp",
+        "width": 600,
+        "height": 1217
       }
     },
     {
@@ -4015,9 +4021,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1068-ol.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1068-ol-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -4046,9 +4052,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1078-dm.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1078-dm-detalle26.webp",
+        "width": 813,
+        "height": 1600
       }
     },
     {
@@ -4077,9 +4083,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1098-dm.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1098-dm-detalle26.webp",
+        "width": 600,
+        "height": 1217
       }
     },
     {
@@ -4108,9 +4114,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1101-gloss.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1101-gloss-detalle26.webp",
+        "width": 813,
+        "height": 1600
       }
     },
     {
@@ -4139,9 +4145,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1101-sf.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1101-sf-detalle26.webp",
+        "width": 813,
+        "height": 1600
       }
     },
     {
@@ -4170,9 +4176,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1245-dm.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1245-dm-detalle26.webp",
+        "width": 800,
+        "height": 1600
       }
     },
     {
@@ -4201,9 +4207,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1245-gloss.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1245-gloss-detalle26.webp",
+        "width": 800,
+        "height": 1600
       }
     },
     {
@@ -4232,9 +4238,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1319-glt.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1319-glt-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -4263,9 +4269,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1341-hg.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1341-hg-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -4294,9 +4300,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1342-hg.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1342-hg-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -4325,9 +4331,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1346-hg.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1346-hg-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -4356,9 +4362,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1348-hg.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1348-hg-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -4387,9 +4393,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1507-dm.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1507-dm-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -4418,9 +4424,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1509-dm.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1509-dm-detalle26.webp",
+        "width": 813,
+        "height": 1600
       }
     },
     {
@@ -4449,9 +4455,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1929-sf.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1929-sf-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -4480,9 +4486,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1931-smt.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1931-smt-detalle26.webp",
+        "width": 800,
+        "height": 1600
       }
     },
     {
@@ -4511,9 +4517,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1934-gloss.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1934-gloss-detalle26.webp",
+        "width": 813,
+        "height": 1600
       }
     },
     {
@@ -4542,9 +4548,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1934-smt.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1934-smt-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -4573,9 +4579,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1935-gloss.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1935-gloss-detalle26.webp",
+        "width": 600,
+        "height": 1217
       }
     },
     {
@@ -4604,9 +4610,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1935-hz.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1935-hz-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -4635,9 +4641,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1935-sf.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1935-sf-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -4666,9 +4672,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1935-smt.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1935-smt-detalle26.webp",
+        "width": 600,
+        "height": 1217
       }
     },
     {
@@ -4697,9 +4703,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1935-tn.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1935-tn-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -4728,9 +4734,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1936-gloss.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1936-gloss-detalle26.webp",
+        "width": 800,
+        "height": 1600
       }
     },
     {
@@ -4759,9 +4765,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1936-sf.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1936-sf-detalle26.webp",
+        "width": 800,
+        "height": 1600
       }
     },
     {
@@ -4790,9 +4796,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1936-smt.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1936-smt-detalle26.webp",
+        "width": 800,
+        "height": 1600
       }
     },
     {
@@ -4821,9 +4827,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1937-gloss.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1937-gloss-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -4852,9 +4858,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1937-smt.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1937-smt-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -4883,9 +4889,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1939-tn.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1939-tn-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -4914,9 +4920,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1947-sf.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-1947-sf-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -4976,9 +4982,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-2362-sf.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-2362-sf-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -5007,9 +5013,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-2702-ga.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-2702-ga-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -5038,9 +5044,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-2702-sf.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-2702-sf-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -5069,9 +5075,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-2708-mf.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-2708-mf-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -5100,9 +5106,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-2814-dc.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-2814-dc-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -5131,9 +5137,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-2814-ga.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-2814-ga-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -5162,9 +5168,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-2833-sf.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-2833-sf-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -5193,9 +5199,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-2868-sf.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-2868-sf-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -5224,9 +5230,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-2872-sf.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-2872-sf-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -5255,9 +5261,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-2878-sf.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-2878-sf-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -5286,9 +5292,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-2917-sf.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-2917-sf-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -5317,9 +5323,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-2920-jw.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-2920-jw-detalle26.webp",
+        "width": 600,
+        "height": 1217
       }
     },
     {
@@ -5348,9 +5354,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-2944-sf.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-2944-sf-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -5379,9 +5385,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-2946-sf.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-2946-sf-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -5410,9 +5416,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-2957-hg.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-2957-hg-detalle26.webp",
+        "width": 600,
+        "height": 1217
       }
     },
     {
@@ -5441,9 +5447,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-4071-dm.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-4071-dm-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -5472,9 +5478,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-4075-smt.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-4075-smt-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -5503,9 +5509,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-4078-smt.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-4078-smt-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -5534,9 +5540,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-4080-smt.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-4080-smt-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -5565,9 +5571,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-5102-smt.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-5102-smt-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -5596,9 +5602,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-5271-sc.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-5271-sc-detalle26.webp",
+        "width": 560,
+        "height": 1102
       }
     },
     {
@@ -5627,9 +5633,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-5272-sc.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-5272-sc-detalle26.webp",
+        "width": 560,
+        "height": 1120
       }
     },
     {
@@ -5658,9 +5664,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-5615-jw.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-5615-jw-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -5689,9 +5695,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-5624-sf.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-5624-sf-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -5720,9 +5726,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-5664-jw.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-5664-jw-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -5751,9 +5757,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-5804-jw.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-5804-jw-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -5782,9 +5788,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-6316-ce.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-6316-ce-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -5813,9 +5819,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-6323-shg.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-6323-shg-detalle26.webp",
+        "width": 813,
+        "height": 1600
       }
     },
     {
@@ -5844,9 +5850,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-6333-shg.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-6333-shg-detalle26.webp",
+        "width": 813,
+        "height": 1600
       }
     },
     {
@@ -5875,9 +5881,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-6334-smt.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-6334-smt-detalle26.webp",
+        "width": 813,
+        "height": 1600
       }
     },
     {
@@ -5906,9 +5912,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-6336-shg.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-6336-shg-detalle26.webp",
+        "width": 800,
+        "height": 1600
       }
     },
     {
@@ -5937,9 +5943,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-6410-pa.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-6410-pa-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -5968,9 +5974,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-6411-pa.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-6411-pa-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -5999,9 +6005,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-6447-ce.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-6447-ce-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -6030,9 +6036,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-6501-hz.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-6501-hz-detalle26.webp",
+        "width": 813,
+        "height": 1600
       }
     },
     {
@@ -6061,9 +6067,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-6503-hz.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-6503-hz-detalle26.webp",
+        "width": 600,
+        "height": 1217
       }
     },
     {
@@ -6092,9 +6098,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-6504-hz.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-6504-hz-detalle26.webp",
+        "width": 813,
+        "height": 1600
       }
     },
     {
@@ -6123,9 +6129,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-6670-pp.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-6670-pp-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -6154,9 +6160,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-6677-jw.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-6677-jw-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -6185,9 +6191,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-6758-sf.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-6758-sf-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -6216,9 +6222,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-6911-ca.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-6911-ca-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -6247,9 +6253,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-6917-sf.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-6917-sf-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -6278,9 +6284,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-6973-pa.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-6973-pa-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -6309,9 +6315,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-7149-sc.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-7149-sc-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -6340,9 +6346,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-7150-sc.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-7150-sc-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -6371,9 +6377,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-7501-cn.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-7501-cn-detalle26.webp",
+        "width": 813,
+        "height": 1600
       }
     },
     {
@@ -6402,9 +6408,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-7503-cn.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-7503-cn-detalle26.webp",
+        "width": 813,
+        "height": 1600
       }
     },
     {
@@ -6433,9 +6439,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-7621-sf.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-7621-sf-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -6464,9 +6470,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-7655-go.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-7655-go-detalle26.webp",
+        "width": 813,
+        "height": 1600
       }
     },
     {
@@ -6495,9 +6501,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-7659-jw.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-7659-jw-detalle26.webp",
+        "width": 799,
+        "height": 1600
       }
     },
     {
@@ -6526,9 +6532,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-8106-smt.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-8106-smt-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -6557,9 +6563,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-8108-smt.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-8108-smt-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -6588,9 +6594,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-8433-jw.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-8433-jw-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -6619,9 +6625,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-8434-jw.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-8434-jw-detalle26.webp",
+        "width": 560,
+        "height": 1102
       }
     },
     {
@@ -6650,9 +6656,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-9000-brush.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-9000-brush-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -6681,9 +6687,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-9001-brush.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-9001-brush-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -6712,9 +6718,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-9106-tn.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-9106-tn-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -6743,9 +6749,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-9952-brush.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-9952-brush-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -6774,9 +6780,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-9975-shg.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-9975-shg-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -6805,9 +6811,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-9977-shg.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-9977-shg-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -6836,9 +6842,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-9978-shg.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-9978-shg-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -6867,9 +6873,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-9997-co.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-9997-co-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -6898,9 +6904,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-9997-dc.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-9997-dc-detalle26.webp",
+        "width": 800,
+        "height": 1600
       }
     },
     {
@@ -6929,9 +6935,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-9997-gloss.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-9997-gloss-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -6960,9 +6966,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-9997-hz.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-9997-hz-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -6991,9 +6997,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-9997-sf.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-9997-sf-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -7022,9 +7028,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-9997-smt.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-9997-smt-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -7053,9 +7059,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-9997-tl.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-9997-tl-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -7084,9 +7090,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-9997-tn.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-9997-tn-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -7115,9 +7121,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-9998-gloss.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-9998-gloss-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -7146,9 +7152,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-101-cr.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-101-cr-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -7177,9 +7183,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-101-gt.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-101-gt-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -7208,9 +7214,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-101-lh.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-101-lh-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -7239,9 +7245,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-101-ls.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-101-ls-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -7270,9 +7276,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-101-lu.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-101-lu-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -7301,9 +7307,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-109-gloss.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-109-gloss-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -7332,9 +7338,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-109-suede.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-109-suede-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -7363,9 +7369,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-181-lu.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-181-lu-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -7394,9 +7400,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-226-lu.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-226-lu-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -7425,9 +7431,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-226-suede.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-226-suede-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -7456,9 +7462,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-227-lu.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-227-lu-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -7487,9 +7493,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-227-suede.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-227-suede-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -7518,9 +7524,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-236-cr.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-236-cr-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -7549,9 +7555,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-236-lu.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-236-lu-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -7580,9 +7586,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-236-suede.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-236-suede-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -7611,9 +7617,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-2386-np.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-2386-np-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -7642,9 +7648,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-2417-np.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-2417-np-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -7673,9 +7679,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-2592-np.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-2592-np-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -7704,9 +7710,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-2593-np.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-2593-np-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -7735,9 +7741,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-2595-np.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-2595-np-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -7766,9 +7772,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-265-lu.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-265-lu-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -7797,9 +7803,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-293-cr.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-293-cr-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -7828,9 +7834,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-293-gt.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-293-gt-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -7859,9 +7865,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-293-lh.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-293-lh-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -7890,9 +7896,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-293-ls.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-293-ls-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -7921,9 +7927,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-293-lu.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-293-lu-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -7952,9 +7958,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-293-suede.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-293-suede-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -7983,9 +7989,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-3271-lu.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-3271-lu-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -8014,9 +8020,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-3341-at.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-3341-at-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -8045,9 +8051,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-3371-km.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-3371-km-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -8076,9 +8082,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-3372-ls.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-3372-ls-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -8107,9 +8113,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-3417-at.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-3417-at-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -8138,9 +8144,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-3425-ls.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-3425-ls-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -8169,9 +8175,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-3447-km.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-3447-km-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -8200,9 +8206,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-3639-at.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-3639-at-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -8231,9 +8237,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-3742-km.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-3742-km-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -8262,9 +8268,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-3814-lp.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-3814-lp-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -8293,9 +8299,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-3917-lu.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-3917-lu-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -8324,9 +8330,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-3918-lu.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-3918-lu-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -8355,9 +8361,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-3919-lu.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-3919-lu-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -8386,9 +8392,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-3953-ml.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-3953-ml-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -8417,9 +8423,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-3955-ml.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-3955-ml-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -8448,9 +8454,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-421-ls.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-421-ls-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -8479,9 +8485,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-4392-lh.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-4392-lh-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -8510,9 +8516,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-4393-lh.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-4393-lh-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -8541,9 +8547,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-4505-km.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-4505-km-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -8572,9 +8578,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-4506-km.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-4506-km-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -8603,9 +8609,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-4514-ls.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-4514-ls-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -8634,9 +8640,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-4531-ml.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-4531-ml-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -8665,9 +8671,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-4532-ml.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-4532-ml-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -8696,9 +8702,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-4538-pk.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-4538-pk-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -8727,9 +8733,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-4643-ls.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-4643-ls-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -8758,9 +8764,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-4648-at.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-4648-at-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -8789,9 +8795,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-4824-ts.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-4824-ts-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -8820,9 +8826,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-4825-ts.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-4825-ts-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -8851,9 +8857,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-4857-vo.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-4857-vo-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -8882,9 +8888,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-4858-ts.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-4858-ts-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -8913,9 +8919,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-4953-mo.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-4953-mo-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -8944,9 +8950,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-859-ts.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-859-ts-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -8975,9 +8981,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-904-lu.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-904-lu-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -9006,9 +9012,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-93877-pe.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-93877-pe-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -9037,9 +9043,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-93878-pe.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-93878-pe-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -9068,9 +9074,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-973-ts.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/century-laminates-973-ts-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -9099,9 +9105,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-101-matt.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/starline-101-matt-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -9130,9 +9136,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-167-matt.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/starline-167-matt-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -9161,9 +9167,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-222-suede.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/starline-222-suede-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -9192,9 +9198,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-236-matt.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/starline-236-matt-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -9223,9 +9229,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-293-matt.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/starline-293-matt-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -9254,9 +9260,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-293-suede.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/starline-293-suede-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -9285,9 +9291,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-3271-matt.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/starline-3271-matt-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -9316,9 +9322,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-3324-suede.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/starline-3324-suede-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -9347,9 +9353,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-3405-suede.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/starline-3405-suede-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -9378,9 +9384,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-3683-suede.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/starline-3683-suede-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -9409,9 +9415,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-3708-suede.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/starline-3708-suede-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -9440,9 +9446,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-3709-suede.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/starline-3709-suede-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -9471,9 +9477,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-3765-suede.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/starline-3765-suede-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -9502,9 +9508,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-3766-suede.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/starline-3766-suede-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -9533,9 +9539,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-4413-suede.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/starline-4413-suede-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -9564,9 +9570,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-4427-suede.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/starline-4427-suede-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -9595,9 +9601,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-4482-suede.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/starline-4482-suede-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -9626,9 +9632,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-4504-suede.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/starline-4504-suede-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -9657,9 +9663,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-4597-suede.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/starline-4597-suede-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -9688,9 +9694,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-4744-suede.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/starline-4744-suede-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -9719,9 +9725,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-4835-gloss-suede.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/starline-4835-gloss-suede-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -9750,9 +9756,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-4836-gloss-suede.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/starline-4836-gloss-suede-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -9781,9 +9787,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-4845-gloss-suede.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/starline-4845-gloss-suede-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -9812,9 +9818,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-4849-gloss-suede.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/starline-4849-gloss-suede-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -9843,9 +9849,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-4871-suede.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/starline-4871-suede-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -9874,9 +9880,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-4872-suede.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/starline-4872-suede-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -9905,9 +9911,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-4893-suede.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/starline-4893-suede-detalle26.webp",
+        "width": 900,
+        "height": 1600
       }
     },
     {
@@ -9936,9 +9942,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-539-suede.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/starline-539-suede-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -9967,9 +9973,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-5821-suede-interni-arqui.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/starline-5821-suede-interni-arqui-detalle26.webp",
+        "width": 900,
+        "height": 1600
       }
     },
     {
@@ -9998,9 +10004,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-5821-suede-interni-white.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/starline-5821-suede-interni-white-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -10029,9 +10035,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-5823-suede.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/starline-5823-suede-detalle26.webp",
+        "width": 823,
+        "height": 1600
       }
     },
     {
@@ -10060,9 +10066,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-676-suede.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/starline-676-suede-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -10091,9 +10097,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-80008-gloss.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/starline-80008-gloss-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -10122,9 +10128,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-80008-suede.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/starline-80008-suede-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -10153,9 +10159,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-84421-cl.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/starline-84421-cl-detalle26.webp",
+        "width": 822,
+        "height": 1600
       }
     },
     {
@@ -10184,9 +10190,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/greenlam-5598-sat.webp",
-        "width": 150,
-        "height": 300
+        "src": "muestras/greenlam-5598-sat-detalle26.webp",
+        "width": 800,
+        "height": 1600
       }
     },
     {
@@ -10215,9 +10221,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/greenlam-5583-sat.webp",
-        "width": 150,
-        "height": 300
+        "src": "muestras/greenlam-5583-sat-detalle26.webp",
+        "width": 800,
+        "height": 1600
       }
     },
     {
@@ -10246,9 +10252,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/greenlam-145-sud.webp",
-        "width": 150,
-        "height": 300
+        "src": "muestras/greenlam-145-sud-detalle26.webp",
+        "width": 800,
+        "height": 1600
       }
     },
     {
@@ -10277,9 +10283,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/greenlam-148-sud.webp",
-        "width": 150,
-        "height": 300
+        "src": "muestras/greenlam-148-sud-detalle26.webp",
+        "width": 800,
+        "height": 1600
       }
     },
     {
@@ -10308,9 +10314,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/greenlam-152-sud.webp",
-        "width": 150,
-        "height": 300
+        "src": "muestras/greenlam-152-sud-detalle26.webp",
+        "width": 800,
+        "height": 1600
       }
     },
     {
@@ -10339,9 +10345,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/greenlam-134-sud.webp",
-        "width": 150,
-        "height": 300
+        "src": "muestras/greenlam-134-sud-detalle26.webp",
+        "width": 800,
+        "height": 1600
       }
     },
     {
@@ -10370,9 +10376,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/greenlam-181-sat.webp",
-        "width": 150,
-        "height": 300
+        "src": "muestras/greenlam-181-sat-detalle26.webp",
+        "width": 800,
+        "height": 1600
       }
     },
     {
@@ -10401,9 +10407,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/greenlam-182-sud.webp",
-        "width": 150,
-        "height": 300
+        "src": "muestras/greenlam-182-sud-detalle26.webp",
+        "width": 800,
+        "height": 1600
       }
     },
     {
@@ -10432,9 +10438,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/greenlam-205-sat.webp",
-        "width": 150,
-        "height": 300
+        "src": "muestras/greenlam-205-sat-detalle26.webp",
+        "width": 800,
+        "height": 1600
       }
     },
     {
@@ -10463,9 +10469,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/greenlam-246-sud.webp",
-        "width": 150,
-        "height": 300
+        "src": "muestras/greenlam-246-sud-detalle26.webp",
+        "width": 800,
+        "height": 1600
       }
     },
     {
@@ -10494,9 +10500,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/greenlam-5107-sat.webp",
-        "width": 150,
-        "height": 300
+        "src": "muestras/greenlam-5107-sat-detalle26.webp",
+        "width": 800,
+        "height": 1600
       }
     },
     {
@@ -10525,9 +10531,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/greenlam-5101-sud.webp",
-        "width": 150,
-        "height": 300
+        "src": "muestras/greenlam-5101-sud-detalle26.webp",
+        "width": 800,
+        "height": 1600
       }
     },
     {
@@ -10556,9 +10562,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/greenlam-5102-sud.webp",
-        "width": 150,
-        "height": 300
+        "src": "muestras/greenlam-5102-sud-detalle26.webp",
+        "width": 800,
+        "height": 1600
       }
     },
     {
@@ -10587,9 +10593,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/greenlam-5105-sud.webp",
-        "width": 150,
-        "height": 300
+        "src": "muestras/greenlam-5105-sud-detalle26.webp",
+        "width": 800,
+        "height": 1600
       }
     },
     {
@@ -10618,9 +10624,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/greenlam-5643-sud.webp",
-        "width": 150,
-        "height": 300
+        "src": "muestras/greenlam-5643-sud-detalle26.webp",
+        "width": 800,
+        "height": 1600
       }
     },
     {
@@ -10649,9 +10655,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/greenlam-5592-sud.webp",
-        "width": 150,
-        "height": 300
+        "src": "muestras/greenlam-5592-sud-detalle26.webp",
+        "width": 800,
+        "height": 1600
       }
     },
     {
@@ -11368,208 +11374,6 @@
       }
     },
     {
-      "id": "taller-bronce",
-      "category": "metales",
-      "name": "Bronce",
-      "family": "Apariencia metálica",
-      "description": "Referencia de color y superficie metálica para conversar el aspecto del proyecto.",
-      "use": "Detalles, láminas o componentes cuando se especifique el metal real.",
-      "care": "La imagen no define aleación, espesor, resistencia ni proceso. Esos datos se eligen con el proveedor.",
-      "imageKind": "Textura orientativa",
-      "imageNote": "Textura de referencia de la biblioteca del taller. No acredita un producto comercial.",
-      "sourceLinks": [],
-      "availability": "Metal, acabado y proveedor por consultar.",
-      "textureId": "taller-bronce",
-      "appId": null,
-      "image": {
-        "src": "muestras/taller-bronce.webp",
-        "width": 628,
-        "height": 1000
-      },
-      "international": false,
-      "brand": "",
-      "supplier": "",
-      "code": "",
-      "finish": "",
-      "market": "Referencia del taller"
-    },
-    {
-      "id": "taller-cobre",
-      "category": "metales",
-      "name": "Cobre",
-      "family": "Apariencia metálica",
-      "description": "Referencia de color y superficie metálica para conversar el aspecto del proyecto.",
-      "use": "Detalles, láminas o componentes cuando se especifique el metal real.",
-      "care": "La imagen no define aleación, espesor, resistencia ni proceso. Esos datos se eligen con el proveedor.",
-      "imageKind": "Textura orientativa",
-      "imageNote": "Textura de referencia de la biblioteca del taller. No acredita un producto comercial.",
-      "sourceLinks": [],
-      "availability": "Metal, acabado y proveedor por consultar.",
-      "textureId": "taller-cobre",
-      "appId": null,
-      "image": {
-        "src": "muestras/taller-cobre.webp",
-        "width": 1000,
-        "height": 1000
-      },
-      "international": false,
-      "brand": "",
-      "supplier": "",
-      "code": "",
-      "finish": "",
-      "market": "Referencia del taller"
-    },
-    {
-      "id": "taller-oro",
-      "category": "metales",
-      "name": "Dorado",
-      "family": "Apariencia metálica",
-      "description": "Referencia de color y superficie metálica para conversar el aspecto del proyecto.",
-      "use": "Detalles, láminas o componentes cuando se especifique el metal real.",
-      "care": "La imagen no define aleación, espesor, resistencia ni proceso. Esos datos se eligen con el proveedor.",
-      "imageKind": "Textura orientativa",
-      "imageNote": "Textura de referencia de la biblioteca del taller. No acredita un producto comercial.",
-      "sourceLinks": [],
-      "availability": "Metal, acabado y proveedor por consultar.",
-      "textureId": "taller-oro",
-      "appId": null,
-      "image": {
-        "src": "muestras/taller-oro.webp",
-        "width": 1000,
-        "height": 1000
-      },
-      "international": false,
-      "brand": "",
-      "supplier": "",
-      "code": "",
-      "finish": "",
-      "market": "Referencia del taller"
-    },
-    {
-      "id": "acg-metal009",
-      "category": "metales",
-      "name": "Metal cepillado",
-      "family": "Apariencia metálica",
-      "description": "Referencia de color y superficie metálica para conversar el aspecto del proyecto.",
-      "use": "Detalles, láminas o componentes cuando se especifique el metal real.",
-      "care": "La imagen no define aleación, espesor, resistencia ni proceso. Esos datos se eligen con el proveedor.",
-      "imageKind": "Textura orientativa",
-      "imageNote": "Textura ambientCG, licencia CC0. No acredita un producto comercial.",
-      "sourceLinks": [
-        {
-          "label": "Origen de la textura",
-          "url": "https://ambientcg.com/a/Metal009"
-        }
-      ],
-      "availability": "Metal, acabado y proveedor por consultar.",
-      "textureId": "acg-metal009",
-      "appId": "acg-metal009",
-      "image": {
-        "src": "muestras/acg-metal009.webp",
-        "width": 1000,
-        "height": 1000
-      },
-      "international": false,
-      "brand": "",
-      "supplier": "",
-      "code": "",
-      "finish": "",
-      "market": "Referencia del taller"
-    },
-    {
-      "id": "acg-metal063",
-      "category": "metales",
-      "name": "Metal envejecido",
-      "family": "Apariencia metálica",
-      "description": "Referencia de color y superficie metálica para conversar el aspecto del proyecto.",
-      "use": "Detalles, láminas o componentes cuando se especifique el metal real.",
-      "care": "La imagen no define aleación, espesor, resistencia ni proceso. Esos datos se eligen con el proveedor.",
-      "imageKind": "Textura orientativa",
-      "imageNote": "Textura ambientCG, licencia CC0. No acredita un producto comercial.",
-      "sourceLinks": [
-        {
-          "label": "Origen de la textura",
-          "url": "https://ambientcg.com/a/Metal063"
-        }
-      ],
-      "availability": "Metal, acabado y proveedor por consultar.",
-      "textureId": "acg-metal063",
-      "appId": "acg-metal063",
-      "image": {
-        "src": "muestras/acg-metal063.webp",
-        "width": 1000,
-        "height": 1000
-      },
-      "international": false,
-      "brand": "",
-      "supplier": "",
-      "code": "",
-      "finish": "",
-      "market": "Referencia del taller"
-    },
-    {
-      "id": "acg-metal049a",
-      "category": "metales",
-      "name": "Metal satinado plata",
-      "family": "Apariencia metálica",
-      "description": "Referencia de color y superficie metálica para conversar el aspecto del proyecto.",
-      "use": "Detalles, láminas o componentes cuando se especifique el metal real.",
-      "care": "La imagen no define aleación, espesor, resistencia ni proceso. Esos datos se eligen con el proveedor.",
-      "imageKind": "Textura orientativa",
-      "imageNote": "Textura ambientCG, licencia CC0. No acredita un producto comercial.",
-      "sourceLinks": [
-        {
-          "label": "Origen de la textura",
-          "url": "https://ambientcg.com/a/Metal049A"
-        }
-      ],
-      "availability": "Metal, acabado y proveedor por consultar.",
-      "textureId": "acg-metal049a",
-      "appId": "acg-metal049a",
-      "image": {
-        "src": "muestras/acg-metal049a.webp",
-        "width": 1000,
-        "height": 1000
-      },
-      "international": false,
-      "brand": "",
-      "supplier": "",
-      "code": "",
-      "finish": "",
-      "market": "Referencia del taller"
-    },
-    {
-      "id": "acg-metal048a",
-      "category": "metales",
-      "name": "Metal satinado dorado",
-      "family": "Apariencia metálica",
-      "description": "Referencia de color y superficie metálica para conversar el aspecto del proyecto.",
-      "use": "Detalles, láminas o componentes cuando se especifique el metal real.",
-      "care": "La imagen no define aleación, espesor, resistencia ni proceso. Esos datos se eligen con el proveedor.",
-      "imageKind": "Textura orientativa",
-      "imageNote": "Textura ambientCG, licencia CC0. No acredita un producto comercial.",
-      "sourceLinks": [
-        {
-          "label": "Origen de la textura",
-          "url": "https://ambientcg.com/a/Metal048A"
-        }
-      ],
-      "availability": "Metal, acabado y proveedor por consultar.",
-      "textureId": "acg-metal048a",
-      "appId": "acg-metal048a",
-      "image": {
-        "src": "muestras/acg-metal048a.webp",
-        "width": 1000,
-        "height": 1000
-      },
-      "international": false,
-      "brand": "",
-      "supplier": "",
-      "code": "",
-      "finish": "",
-      "market": "Referencia del taller"
-    },
-    {
       "id": "acabado-aceite",
       "name": "Aceites",
       "family": "Acabado de tacto natural",
@@ -11590,9 +11394,9 @@
       "availability": "Producto, color y existencias se definen para cada proyecto.",
       "imageKind": "Foto de trabajo AGO",
       "image": {
-        "src": "muestras/acabado-aceite.webp",
-        "width": 680,
-        "height": 1000
+        "src": "muestras/acabado-aceite-detalle26.webp",
+        "width": 1087,
+        "height": 1600
       },
       "international": false,
       "brand": "",
@@ -11622,9 +11426,9 @@
       "availability": "Producto, color y existencias se definen para cada proyecto.",
       "imageKind": "Foto de trabajo AGO",
       "image": {
-        "src": "muestras/acabado-cera.webp",
-        "width": 753,
-        "height": 1000
+        "src": "muestras/acabado-cera-detalle26.webp",
+        "width": 1054,
+        "height": 1400
       },
       "international": false,
       "brand": "",
@@ -11659,9 +11463,9 @@
       "availability": "Producto, color y existencias se definen para cada proyecto.",
       "imageKind": "Foto de trabajo AGO",
       "image": {
-        "src": "muestras/acabado-cera-dura.webp",
-        "width": 563,
-        "height": 1000
+        "src": "muestras/acabado-cera-dura-detalle26.webp",
+        "width": 788,
+        "height": 1400
       },
       "international": false,
       "supplier": "",
@@ -11718,15 +11522,1814 @@
       "availability": "Producto, color y existencias se definen para cada proyecto.",
       "imageKind": "Foto de trabajo AGO",
       "image": {
-        "src": "muestras/acabado-poliuretano.webp",
-        "width": 750,
-        "height": 1000
+        "src": "muestras/acabado-poliuretano-detalle26.webp",
+        "width": 960,
+        "height": 1280
       },
       "international": false,
       "supplier": "",
       "code": "",
       "textureId": null,
       "appId": null
+    },
+    {
+      "id": "granitec-piedras-sinterizadas-statuario-golden-pegasus--12",
+      "category": "piedras",
+      "name": "Statuario Golden Pegasus",
+      "family": "Piedras sinterizadas",
+      "supplier": "Granitec",
+      "brand": "Ultralam",
+      "finish": "",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-piedras-sinterizadas-statuario-golden-pegasus--12-superficie26.webp",
+        "width": 600,
+        "height": 600,
+        "crop": [
+          60,
+          20,
+          305,
+          560
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Superficie de piedra sinterizada Ultralam. El dibujo se consulta con su nombre y con el acabado de esta referencia. Referencia de 12 mm del catálogo consultado.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/statuario-golden-pegasus"
+        }
+      ]
+    },
+    {
+      "id": "granitec-piedras-sinterizadas-gris-marengo--12",
+      "category": "piedras",
+      "name": "Gris Marengo",
+      "family": "Piedras sinterizadas",
+      "supplier": "Granitec",
+      "brand": "Ultralam",
+      "finish": "",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-piedras-sinterizadas-gris-marengo--12-superficie26.webp",
+        "width": 600,
+        "height": 600,
+        "crop": [
+          60,
+          20,
+          305,
+          560
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Superficie de piedra sinterizada Ultralam. El dibujo se consulta con su nombre y con el acabado de esta referencia. Referencia de 12 mm del catálogo consultado.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/gris"
+        }
+      ]
+    },
+    {
+      "id": "granitec-piedras-sinterizadas-bianco-apollo-a-pulido-12",
+      "category": "piedras",
+      "name": "Bianco Apollo \"A\" · pulido",
+      "family": "Piedras sinterizadas",
+      "supplier": "Granitec",
+      "brand": "Ultralam",
+      "finish": "Pulido",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-piedras-sinterizadas-bianco-apollo-a-pulido-12-superficie26.webp",
+        "width": 445,
+        "height": 820,
+        "crop": [
+          48,
+          45,
+          347,
+          713
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Superficie de piedra sinterizada Ultralam. El dibujo se consulta con su nombre y con el acabado de esta referencia. Referencia de 12 mm del catálogo consultado.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/bianco-apollo-a-"
+        }
+      ]
+    },
+    {
+      "id": "granitec-piedras-sinterizadas-statuario-toscano-pulido-12",
+      "category": "piedras",
+      "name": "Statuario Toscano · pulido",
+      "family": "Piedras sinterizadas",
+      "supplier": "Granitec",
+      "brand": "Ultralam",
+      "finish": "Pulido",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-piedras-sinterizadas-statuario-toscano-pulido-12-superficie26.webp",
+        "width": 445,
+        "height": 820,
+        "crop": [
+          48,
+          45,
+          347,
+          713
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Superficie de piedra sinterizada Ultralam. El dibujo se consulta con su nombre y con el acabado de esta referencia. Referencia de 12 mm del catálogo consultado.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/statuario-toscano"
+        }
+      ]
+    },
+    {
+      "id": "granitec-piedras-sinterizadas-calacatta-gold-fusion-a-pulido-12",
+      "category": "piedras",
+      "name": "Calacatta Gold Fusion \"A\" · pulido",
+      "family": "Piedras sinterizadas",
+      "supplier": "Granitec",
+      "brand": "Ultralam",
+      "finish": "Pulido",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-piedras-sinterizadas-calacatta-gold-fusion-a-pulido-12-superficie26.webp",
+        "width": 445,
+        "height": 820,
+        "crop": [
+          48,
+          45,
+          347,
+          713
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Superficie de piedra sinterizada Ultralam. El dibujo se consulta con su nombre y con el acabado de esta referencia. Referencia de 12 mm del catálogo consultado.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/calacatta-gold-fusion-a-"
+        }
+      ]
+    },
+    {
+      "id": "granitec-piedras-sinterizadas-manhattan-pulido-12",
+      "category": "piedras",
+      "name": "Manhattan · pulido",
+      "family": "Piedras sinterizadas",
+      "supplier": "Granitec",
+      "brand": "Ultralam",
+      "finish": "Pulido",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-piedras-sinterizadas-manhattan-pulido-12-superficie26.webp",
+        "width": 445,
+        "height": 820,
+        "crop": [
+          48,
+          45,
+          347,
+          713
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Superficie de piedra sinterizada Ultralam. El dibujo se consulta con su nombre y con el acabado de esta referencia. Referencia de 12 mm del catálogo consultado.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/manhattan"
+        }
+      ]
+    },
+    {
+      "id": "granitec-piedras-sinterizadas-perla-oceano-pulido-12",
+      "category": "piedras",
+      "name": "Perla Océano · pulido",
+      "family": "Piedras sinterizadas",
+      "supplier": "Granitec",
+      "brand": "Ultralam",
+      "finish": "Pulido",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-piedras-sinterizadas-perla-oceano-pulido-12-superficie26.webp",
+        "width": 445,
+        "height": 820,
+        "crop": [
+          48,
+          45,
+          347,
+          713
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Superficie de piedra sinterizada Ultralam. El dibujo se consulta con su nombre y con el acabado de esta referencia. Referencia de 12 mm del catálogo consultado.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/perla-oceano"
+        }
+      ]
+    },
+    {
+      "id": "granitec-piedras-sinterizadas-travertino-imperiale-pulido-12",
+      "category": "piedras",
+      "name": "Travertino Imperiale · pulido",
+      "family": "Piedras sinterizadas",
+      "supplier": "Granitec",
+      "brand": "Ultralam",
+      "finish": "Pulido",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-piedras-sinterizadas-travertino-imperiale-pulido-12-superficie26.webp",
+        "width": 445,
+        "height": 820,
+        "crop": [
+          48,
+          45,
+          347,
+          713
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Superficie de piedra sinterizada Ultralam. El dibujo se consulta con su nombre y con el acabado de esta referencia. Referencia de 12 mm del catálogo consultado.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/travertino-imperiale"
+        }
+      ]
+    },
+    {
+      "id": "granitec-piedras-sinterizadas-giada-imperiale-pulido-12",
+      "category": "piedras",
+      "name": "Giada Imperiale · pulido",
+      "family": "Piedras sinterizadas",
+      "supplier": "Granitec",
+      "brand": "Ultralam",
+      "finish": "Pulido",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-piedras-sinterizadas-giada-imperiale-pulido-12-superficie26.webp",
+        "width": 445,
+        "height": 820,
+        "crop": [
+          48,
+          45,
+          347,
+          713
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Superficie de piedra sinterizada Ultralam. El dibujo se consulta con su nombre y con el acabado de esta referencia. Referencia de 12 mm del catálogo consultado.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/giada-imperiale"
+        }
+      ]
+    },
+    {
+      "id": "granitec-piedras-sinterizadas-perla-aurora-pulido-12",
+      "category": "piedras",
+      "name": "Perla Aurora · pulido",
+      "family": "Piedras sinterizadas",
+      "supplier": "Granitec",
+      "brand": "Ultralam",
+      "finish": "Pulido",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-piedras-sinterizadas-perla-aurora-pulido-12-superficie26.webp",
+        "width": 445,
+        "height": 820,
+        "crop": [
+          48,
+          45,
+          347,
+          713
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Superficie de piedra sinterizada Ultralam. El dibujo se consulta con su nombre y con el acabado de esta referencia. Referencia de 12 mm del catálogo consultado.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/perla-aurora"
+        }
+      ]
+    },
+    {
+      "id": "granitec-piedras-sinterizadas-travertino-romano-mate-12",
+      "category": "piedras",
+      "name": "Travertino Romano · mate",
+      "family": "Piedras sinterizadas",
+      "supplier": "Granitec",
+      "brand": "Ultralam",
+      "finish": "Mate",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-piedras-sinterizadas-travertino-romano-mate-12-superficie26.webp",
+        "width": 445,
+        "height": 820,
+        "crop": [
+          48,
+          45,
+          347,
+          713
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Superficie de piedra sinterizada Ultralam. El dibujo se consulta con su nombre y con el acabado de esta referencia. Referencia de 12 mm del catálogo consultado.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/travertino-romano-mate"
+        }
+      ]
+    },
+    {
+      "id": "granitec-piedras-sinterizadas-calacatta-gold-fusion-b-mate-12",
+      "category": "piedras",
+      "name": "Calacatta Gold Fusion \"B\" · mate",
+      "family": "Piedras sinterizadas",
+      "supplier": "Granitec",
+      "brand": "Ultralam",
+      "finish": "Mate",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-piedras-sinterizadas-calacatta-gold-fusion-b-mate-12-superficie26.webp",
+        "width": 445,
+        "height": 820,
+        "crop": [
+          48,
+          45,
+          347,
+          713
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Superficie de piedra sinterizada Ultralam. El dibujo se consulta con su nombre y con el acabado de esta referencia. Referencia de 12 mm del catálogo consultado.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/calacatta-gold-fusion-b-mate"
+        }
+      ]
+    },
+    {
+      "id": "granitec-piedras-sinterizadas-white-mate-12",
+      "category": "piedras",
+      "name": "White · mate",
+      "family": "Piedras sinterizadas",
+      "supplier": "Granitec",
+      "brand": "Ultralam",
+      "finish": "Mate",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-piedras-sinterizadas-white-mate-12-superficie26.webp",
+        "width": 445,
+        "height": 820,
+        "crop": [
+          48,
+          45,
+          347,
+          713
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Superficie de piedra sinterizada Ultralam. El dibujo se consulta con su nombre y con el acabado de esta referencia. Referencia de 12 mm del catálogo consultado.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/white-mate"
+        }
+      ]
+    },
+    {
+      "id": "granitec-piedras-sinterizadas-statuario-oro-classic-3d-mate-12",
+      "category": "piedras",
+      "name": "Statuario Oro Classic 3D · mate",
+      "family": "Piedras sinterizadas",
+      "supplier": "Granitec",
+      "brand": "Ultralam",
+      "finish": "Mate",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-piedras-sinterizadas-statuario-oro-classic-3d-mate-12-superficie26.webp",
+        "width": 445,
+        "height": 820,
+        "crop": [
+          48,
+          45,
+          347,
+          713
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Superficie de piedra sinterizada Ultralam. El dibujo se consulta con su nombre y con el acabado de esta referencia. Referencia de 12 mm del catálogo consultado.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/statuario-oro-classic-3d-mate"
+        }
+      ]
+    },
+    {
+      "id": "granitec-piedras-sinterizadas-bianco-etere-mate-12",
+      "category": "piedras",
+      "name": "Bianco Etere · mate",
+      "family": "Piedras sinterizadas",
+      "supplier": "Granitec",
+      "brand": "Ultralam",
+      "finish": "Mate",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-piedras-sinterizadas-bianco-etere-mate-12-superficie26.webp",
+        "width": 445,
+        "height": 820,
+        "crop": [
+          48,
+          45,
+          347,
+          713
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Superficie de piedra sinterizada Ultralam. El dibujo se consulta con su nombre y con el acabado de esta referencia. Referencia de 12 mm del catálogo consultado.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/bianco-etere"
+        }
+      ]
+    },
+    {
+      "id": "granitec-piedras-sinterizadas-black-pulido-12",
+      "category": "piedras",
+      "name": "Black · pulido",
+      "family": "Piedras sinterizadas",
+      "supplier": "Granitec",
+      "brand": "Ultralam",
+      "finish": "Pulido",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-piedras-sinterizadas-black-pulido-12-superficie26.webp",
+        "width": 445,
+        "height": 820,
+        "crop": [
+          48,
+          45,
+          347,
+          713
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Superficie de piedra sinterizada Ultralam. El dibujo se consulta con su nombre y con el acabado de esta referencia. Referencia de 12 mm del catálogo consultado.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/black-polished"
+        }
+      ]
+    },
+    {
+      "id": "granitec-piedras-sinterizadas-grigio-oro-pulido-12",
+      "category": "piedras",
+      "name": "Grigio Oro · pulido",
+      "family": "Piedras sinterizadas",
+      "supplier": "Granitec",
+      "brand": "Ultralam",
+      "finish": "Pulido",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-piedras-sinterizadas-grigio-oro-pulido-12-superficie26.webp",
+        "width": 445,
+        "height": 820,
+        "crop": [
+          48,
+          45,
+          347,
+          713
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Superficie de piedra sinterizada Ultralam. El dibujo se consulta con su nombre y con el acabado de esta referencia. Referencia de 12 mm del catálogo consultado.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/grigio-oro"
+        }
+      ]
+    },
+    {
+      "id": "granitec-piedras-sinterizadas-nero-marquina-a-pulido-12",
+      "category": "piedras",
+      "name": "Nero Marquina \"A\" · pulido",
+      "family": "Piedras sinterizadas",
+      "supplier": "Granitec",
+      "brand": "Ultralam",
+      "finish": "Pulido",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-piedras-sinterizadas-nero-marquina-a-pulido-12-superficie26.webp",
+        "width": 445,
+        "height": 820,
+        "crop": [
+          48,
+          45,
+          347,
+          713
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Superficie de piedra sinterizada Ultralam. El dibujo se consulta con su nombre y con el acabado de esta referencia. Referencia de 12 mm del catálogo consultado.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/nero-marquina-a-"
+        }
+      ]
+    },
+    {
+      "id": "granitec-piedras-sinterizadas-opera-ferroso-mate-12",
+      "category": "piedras",
+      "name": "Opera Ferroso · mate",
+      "family": "Piedras sinterizadas",
+      "supplier": "Granitec",
+      "brand": "Ultralam",
+      "finish": "Mate",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-piedras-sinterizadas-opera-ferroso-mate-12-superficie26.webp",
+        "width": 445,
+        "height": 820,
+        "crop": [
+          48,
+          45,
+          347,
+          713
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Superficie de piedra sinterizada Ultralam. El dibujo se consulta con su nombre y con el acabado de esta referencia. Referencia de 12 mm del catálogo consultado.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/opera-ferroso"
+        }
+      ]
+    },
+    {
+      "id": "granitec-piedras-sinterizadas-pietra-grey-scuro-mate-12",
+      "category": "piedras",
+      "name": "Pietra Grey Scuro · mate",
+      "family": "Piedras sinterizadas",
+      "supplier": "Granitec",
+      "brand": "Ultralam",
+      "finish": "Mate",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-piedras-sinterizadas-pietra-grey-scuro-mate-12-superficie26.webp",
+        "width": 445,
+        "height": 820,
+        "crop": [
+          48,
+          45,
+          347,
+          713
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Superficie de piedra sinterizada Ultralam. El dibujo se consulta con su nombre y con el acabado de esta referencia. Referencia de 12 mm del catálogo consultado.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/pietra-grey-scuro"
+        }
+      ]
+    },
+    {
+      "id": "granitec-granitos-blanco-cristal",
+      "category": "piedras",
+      "name": "Blanco Cristal",
+      "family": "Granitos",
+      "supplier": "Granitec",
+      "brand": "",
+      "finish": "",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-granitos-blanco-cristal-superficie26.webp",
+        "width": 600,
+        "height": 600,
+        "crop": [
+          60,
+          20,
+          305,
+          560
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Granito natural del catálogo de Granitec. El grano, el tono y las vetas pueden variar entre las láminas.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/blanco-cristal"
+        }
+      ]
+    },
+    {
+      "id": "granitec-granitos-crema-camelia",
+      "category": "piedras",
+      "name": "Crema Camelia",
+      "family": "Granitos",
+      "supplier": "Granitec",
+      "brand": "",
+      "finish": "",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-granitos-crema-camelia-superficie26.webp",
+        "width": 600,
+        "height": 600,
+        "crop": [
+          60,
+          20,
+          305,
+          560
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Granito natural del catálogo de Granitec. El grano, el tono y las vetas pueden variar entre las láminas.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/crema-camelia2"
+        }
+      ]
+    },
+    {
+      "id": "granitec-granitos-gris-messi",
+      "category": "piedras",
+      "name": "Gris Messi",
+      "family": "Granitos",
+      "supplier": "Granitec",
+      "brand": "",
+      "finish": "",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-granitos-gris-messi-superficie26.webp",
+        "width": 600,
+        "height": 600,
+        "crop": [
+          60,
+          20,
+          305,
+          560
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Granito natural del catálogo de Granitec. El grano, el tono y las vetas pueden variar entre las láminas.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/granito-espanol-gris-messi"
+        }
+      ]
+    },
+    {
+      "id": "granitec-granitos-negro-san-gabriel",
+      "category": "piedras",
+      "name": "Negro San Gabriel",
+      "family": "Granitos",
+      "supplier": "Granitec",
+      "brand": "",
+      "finish": "",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-granitos-negro-san-gabriel-superficie26.webp",
+        "width": 600,
+        "height": 600,
+        "crop": [
+          60,
+          20,
+          305,
+          560
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Granito natural del catálogo de Granitec. El grano, el tono y las vetas pueden variar entre las láminas.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/negro-san-gabriel"
+        }
+      ]
+    },
+    {
+      "id": "granitec-granitos-blanco-sienna",
+      "category": "piedras",
+      "name": "Blanco Sienna",
+      "family": "Granitos",
+      "supplier": "Granitec",
+      "brand": "",
+      "finish": "",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-granitos-blanco-sienna-superficie26.webp",
+        "width": 600,
+        "height": 600,
+        "crop": [
+          60,
+          20,
+          305,
+          560
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Granito natural del catálogo de Granitec. El grano, el tono y las vetas pueden variar entre las láminas.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/blanco-sienna"
+        }
+      ]
+    },
+    {
+      "id": "granitec-granitos-marfim-white",
+      "category": "piedras",
+      "name": "Marfim White",
+      "family": "Granitos",
+      "supplier": "Granitec",
+      "brand": "",
+      "finish": "",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-granitos-marfim-white-superficie26.webp",
+        "width": 600,
+        "height": 600,
+        "crop": [
+          60,
+          20,
+          305,
+          560
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Granito natural del catálogo de Granitec. El grano, el tono y las vetas pueden variar entre las láminas.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/marfim-white"
+        }
+      ]
+    },
+    {
+      "id": "granitec-granitos-santa-cecilia",
+      "category": "piedras",
+      "name": "Santa Cecilia",
+      "family": "Granitos",
+      "supplier": "Granitec",
+      "brand": "",
+      "finish": "",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-granitos-santa-cecilia-superficie26.webp",
+        "width": 600,
+        "height": 600,
+        "crop": [
+          60,
+          20,
+          305,
+          560
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Granito natural del catálogo de Granitec. El grano, el tono y las vetas pueden variar entre las láminas.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/granito-santa-cecilia"
+        }
+      ]
+    },
+    {
+      "id": "granitec-cuarzos-calacatta-extra",
+      "category": "piedras",
+      "name": "Calacatta Extra",
+      "family": "Cuarzos",
+      "supplier": "Granitec",
+      "brand": "Beancchi",
+      "finish": "",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-cuarzos-calacatta-extra-superficie26.webp",
+        "width": 600,
+        "height": 600,
+        "crop": [
+          60,
+          20,
+          305,
+          560
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Superficie de cuarzo Beancchi del catálogo de Granitec. El diseño se identifica con su nombre comercial.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/blanco-calacatta-extra"
+        }
+      ]
+    },
+    {
+      "id": "granitec-cuarzos-negro-marquina",
+      "category": "piedras",
+      "name": "Negro Marquina",
+      "family": "Cuarzos",
+      "supplier": "Granitec",
+      "brand": "Beancchi",
+      "finish": "",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-cuarzos-negro-marquina-superficie26.webp",
+        "width": 600,
+        "height": 600,
+        "crop": [
+          60,
+          20,
+          305,
+          560
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Superficie de cuarzo Beancchi del catálogo de Granitec. El diseño se identifica con su nombre comercial.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/negro-maquina"
+        }
+      ]
+    },
+    {
+      "id": "granitec-cuarzos-calacatta-deluxe",
+      "category": "piedras",
+      "name": "Calacatta Deluxe",
+      "family": "Cuarzos",
+      "supplier": "Granitec",
+      "brand": "Beancchi",
+      "finish": "",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-cuarzos-calacatta-deluxe-superficie26.webp",
+        "width": 600,
+        "height": 600,
+        "crop": [
+          60,
+          20,
+          305,
+          560
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Superficie de cuarzo Beancchi del catálogo de Granitec. El diseño se identifica con su nombre comercial.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/blanco-calacatta"
+        }
+      ]
+    },
+    {
+      "id": "granitec-cuarzos-blanco-puro",
+      "category": "piedras",
+      "name": "Blanco Puro",
+      "family": "Cuarzos",
+      "supplier": "Granitec",
+      "brand": "Beancchi",
+      "finish": "",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-cuarzos-blanco-puro-superficie26.webp",
+        "width": 600,
+        "height": 600,
+        "crop": [
+          60,
+          20,
+          305,
+          560
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Superficie de cuarzo Beancchi del catálogo de Granitec. El diseño se identifica con su nombre comercial.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/blanco-puro"
+        }
+      ]
+    },
+    {
+      "id": "granitec-cuarzos-negro-estelar-brillante",
+      "category": "piedras",
+      "name": "Negro Estelar Brillante",
+      "family": "Cuarzos",
+      "supplier": "Granitec",
+      "brand": "Beancchi",
+      "finish": "Brillante",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-cuarzos-negro-estelar-brillante-superficie26.webp",
+        "width": 600,
+        "height": 600,
+        "crop": [
+          60,
+          20,
+          305,
+          560
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Superficie de cuarzo Beancchi del catálogo de Granitec. El diseño se identifica con su nombre comercial.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/negro-brillante"
+        }
+      ]
+    },
+    {
+      "id": "granitec-cuarzos-gris-estelar",
+      "category": "piedras",
+      "name": "Gris Estelar",
+      "family": "Cuarzos",
+      "supplier": "Granitec",
+      "brand": "Beancchi",
+      "finish": "",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-cuarzos-gris-estelar-superficie26.webp",
+        "width": 600,
+        "height": 600,
+        "crop": [
+          60,
+          20,
+          305,
+          560
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Superficie de cuarzo Beancchi del catálogo de Granitec. El diseño se identifica con su nombre comercial.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/gris-brillante"
+        }
+      ]
+    },
+    {
+      "id": "granitec-cuarzos-blanco-estelar",
+      "category": "piedras",
+      "name": "Blanco Estelar",
+      "family": "Cuarzos",
+      "supplier": "Granitec",
+      "brand": "Beancchi",
+      "finish": "",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-cuarzos-blanco-estelar-superficie26.webp",
+        "width": 600,
+        "height": 600,
+        "crop": [
+          60,
+          20,
+          305,
+          560
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Superficie de cuarzo Beancchi del catálogo de Granitec. El diseño se identifica con su nombre comercial.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/blanco-brillante"
+        }
+      ]
+    },
+    {
+      "id": "granitec-cuarzos-rojo-estelar",
+      "category": "piedras",
+      "name": "Rojo Estelar",
+      "family": "Cuarzos",
+      "supplier": "Granitec",
+      "brand": "Beancchi",
+      "finish": "",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-cuarzos-rojo-estelar-superficie26.webp",
+        "width": 600,
+        "height": 600,
+        "crop": [
+          60,
+          20,
+          305,
+          560
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Superficie de cuarzo Beancchi del catálogo de Granitec. El diseño se identifica con su nombre comercial.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/rojo-brillante"
+        }
+      ]
+    },
+    {
+      "id": "granitec-cuarzos-gris-puro",
+      "category": "piedras",
+      "name": "Gris Puro",
+      "family": "Cuarzos",
+      "supplier": "Granitec",
+      "brand": "Beancchi",
+      "finish": "",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-cuarzos-gris-puro-superficie26.webp",
+        "width": 600,
+        "height": 600,
+        "crop": [
+          60,
+          20,
+          305,
+          560
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Superficie de cuarzo Beancchi del catálogo de Granitec. El diseño se identifica con su nombre comercial.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/gris-puro"
+        }
+      ]
+    },
+    {
+      "id": "granitec-cuarzos-carrara-deluxe",
+      "category": "piedras",
+      "name": "Carrara Deluxe",
+      "family": "Cuarzos",
+      "supplier": "Granitec",
+      "brand": "Beancchi",
+      "finish": "",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-cuarzos-carrara-deluxe-superficie26.webp",
+        "width": 416,
+        "height": 423,
+        "crop": [
+          45,
+          23,
+          324,
+          368
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Superficie de cuarzo Beancchi del catálogo de Granitec. El diseño se identifica con su nombre comercial.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/carrara-deluxe"
+        }
+      ]
+    },
+    {
+      "id": "granitec-cuarzos-calacatta-delicatus",
+      "category": "piedras",
+      "name": "Calacatta Delicatus",
+      "family": "Cuarzos",
+      "supplier": "Granitec",
+      "brand": "Beancchi",
+      "finish": "",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-cuarzos-calacatta-delicatus-superficie26.webp",
+        "width": 600,
+        "height": 600,
+        "crop": [
+          60,
+          20,
+          305,
+          560
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Superficie de cuarzo Beancchi del catálogo de Granitec. El diseño se identifica con su nombre comercial.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/delicatus-calacatta"
+        }
+      ]
+    },
+    {
+      "id": "granitec-cuarzos-calacatta-oro",
+      "category": "piedras",
+      "name": "Calacatta Oro",
+      "family": "Cuarzos",
+      "supplier": "Granitec",
+      "brand": "Beancchi",
+      "finish": "",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-cuarzos-calacatta-oro-superficie26.webp",
+        "width": 600,
+        "height": 600,
+        "crop": [
+          60,
+          20,
+          305,
+          560
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Superficie de cuarzo Beancchi del catálogo de Granitec. El diseño se identifica con su nombre comercial.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/oro-calacatta"
+        }
+      ]
+    },
+    {
+      "id": "granitec-cuarzos-calacatta-gold-supreme",
+      "category": "piedras",
+      "name": "Calacatta Gold Supreme",
+      "family": "Cuarzos",
+      "supplier": "Granitec",
+      "brand": "Beancchi",
+      "finish": "",
+      "code": "",
+      "image": {
+        "src": "muestras/granitec-cuarzos-calacatta-gold-supreme-superficie26.webp",
+        "width": 600,
+        "height": 600,
+        "crop": [
+          60,
+          20,
+          305,
+          560
+        ]
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Superficie de cuarzo Beancchi del catálogo de Granitec. El diseño se identifica con su nombre comercial.",
+      "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
+      "care": "Comparar una muestra física y revisar el formato, el espesor, las uniones y el cuidado indicado por el proveedor.",
+      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular.",
+      "imageKind": "Muestra comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://granitec.com.ve/calacatta-gold-supreme"
+        }
+      ]
+    },
+    {
+      "id": "hsf-aluminio-liso",
+      "category": "metales",
+      "name": "Aluminio liso",
+      "family": "Láminas lisas",
+      "supplier": "Hierros San Félix",
+      "brand": "",
+      "finish": "Liso",
+      "code": "2193",
+      "image": {
+        "src": "muestras/hsf-aluminio-liso-referencia26.webp",
+        "width": 400,
+        "height": 400,
+        "display": "product"
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Lámina de aluminio que permite valorar el aspecto de una superficie lisa.",
+      "use": "Frentes, detalles y revestimientos según el proyecto.",
+      "care": "Confirmar metal, espesor, abertura o patrón, medidas y protección para el uso previsto.",
+      "imageNote": "Fotografía comercial de Hierros San Félix. Se muestra el producto completo. Derechos de imagen de su titular.",
+      "imageKind": "Fotografía comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://hsf.com.ve/producto/lamina-aluminio-lisa-1-00-mm-x-1-22-x-2-44-mts/"
+        }
+      ]
+    },
+    {
+      "id": "hsf-acero-estriado",
+      "category": "metales",
+      "name": "Acero estriado",
+      "family": "Estriados",
+      "supplier": "Hierros San Félix",
+      "brand": "",
+      "finish": "Estriado",
+      "code": "15318",
+      "image": {
+        "src": "muestras/hsf-acero-estriado-referencia26.webp",
+        "width": 400,
+        "height": 400,
+        "display": "product"
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Lámina de hierro negro con relieve estriado.",
+      "use": "Puertas o superficies donde se busca este patrón en relieve.",
+      "care": "Confirmar metal, espesor, abertura o patrón, medidas y protección para el uso previsto.",
+      "imageNote": "Fotografía comercial de Hierros San Félix. Se muestra el producto completo. Derechos de imagen de su titular.",
+      "imageKind": "Fotografía comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://hsf.com.ve/producto/lamina-estriada-3-00-mm-x-2-00-x-1-00-mts/"
+        }
+      ]
+    },
+    {
+      "id": "hsf-malla-expandida",
+      "category": "metales",
+      "name": "Malla expandida de acero",
+      "family": "Mallas",
+      "supplier": "Hierros San Félix",
+      "brand": "",
+      "finish": "Expandido",
+      "code": "2157",
+      "image": {
+        "src": "muestras/hsf-malla-expandida-referencia26.webp",
+        "width": 400,
+        "height": 400,
+        "display": "product"
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Lámina abierta con trama de rombos.",
+      "use": "Paños ventilados, cerramientos y detalles de mobiliario según diseño.",
+      "care": "Confirmar metal, espesor, abertura o patrón, medidas y protección para el uso previsto.",
+      "imageNote": "Fotografía comercial de Hierros San Félix. Se muestra el producto completo. Derechos de imagen de su titular.",
+      "imageKind": "Fotografía comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://hsf.com.ve/producto/lamina-expandida-1-x-1-20-x-2-40-mts-c-10/"
+        }
+      ]
+    },
+    {
+      "id": "metallca-rejilla-grating",
+      "category": "metales",
+      "name": "Rejilla grating galvanizada",
+      "family": "Rejillas",
+      "supplier": "Metallca",
+      "brand": "",
+      "finish": "Galvanizado",
+      "code": "",
+      "image": {
+        "src": "muestras/metallca-rejilla-grating-referencia26.webp",
+        "width": 1280,
+        "height": 720,
+        "display": "product"
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Rejilla de pletinas de acero al carbono galvanizadas.",
+      "use": "Rejillas, plataformas y piezas que requieren especificar apoyo y cargas.",
+      "care": "Confirmar metal, espesor, abertura o patrón, medidas y protección para el uso previsto.",
+      "imageNote": "Fotografía comercial de Metallca. Se muestra el producto completo. Derechos de imagen de su titular.",
+      "imageKind": "Fotografía comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://metallca.com.ve/service/rejillas-grating/"
+        }
+      ]
+    },
+    {
+      "id": "metalnet-perforado-circular",
+      "category": "metales",
+      "name": "Perforado circular pintado",
+      "family": "Perforados",
+      "supplier": "Metalnet",
+      "brand": "",
+      "finish": "Pintura electrostática",
+      "code": "MP-00044",
+      "image": {
+        "src": "muestras/metalnet-perforado-circular-referencia26.webp",
+        "width": 1000,
+        "height": 1000,
+        "display": "product"
+      },
+      "international": false,
+      "textureId": null,
+      "appId": null,
+      "description": "Lámina perforada de hierro pulido con patrón circular.",
+      "use": "Paneles ventilados, organizadores y paños de mobiliario según diseño.",
+      "care": "Confirmar metal, espesor, abertura o patrón, medidas y protección para el uso previsto.",
+      "imageNote": "Fotografía comercial de Metalnet. Se muestra el producto completo. Derechos de imagen de su titular.",
+      "imageKind": "Fotografía comercial",
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "sourceLinks": [
+        {
+          "label": "Ficha del proveedor",
+          "url": "https://www.metalnet.shop/collections/laminas-microperforadas/products/lamina-de-hierro-pulido-microperforado-100cm-x-50cm-x-1-5mm-distancia-de-perforacion-separacion-de-25mm-pintura-electrostatica"
+        }
+      ]
+    },
+    {
+      "category": "metales",
+      "brand": "",
+      "textureId": null,
+      "appId": null,
+      "international": false,
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "care": "Confirmar aleación, espesor, formato, acabado y aptitud para el proyecto.",
+      "id": "inox-304-satinado",
+      "name": "Acero inoxidable 304 satinado",
+      "family": "Láminas lisas",
+      "supplier": "Inox Total Services",
+      "finish": "N4 satinado",
+      "description": "Lámina de acero inoxidable AISI 304 con acabado N4 satinado. La foto del proveedor muestra una aplicación de este acabado.",
+      "use": "Mesas, frentes, salpicaderos y detalles según el diseño.",
+      "code": "",
+      "imageKind": "Fotografía comercial",
+      "imageNote": "Imagen del catálogo de Inox Total Services. Derechos de imagen de su titular.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo del proveedor",
+          "url": "https://inoxtotalven.com/laminas-de-acero-inoxidable-disponibles/"
+        }
+      ],
+      "image": {
+        "src": "muestras/inox-304-satinado-referencia26.webp",
+        "width": 1024,
+        "height": 768,
+        "display": "product"
+      }
+    },
+    {
+      "category": "metales",
+      "brand": "",
+      "textureId": null,
+      "appId": null,
+      "international": false,
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "care": "Confirmar aleación, espesor, formato, acabado y aptitud para el proyecto.",
+      "id": "inox-304-perforado",
+      "name": "Acero inoxidable 304 perforado",
+      "family": "Perforados",
+      "supplier": "Inox Total Services",
+      "finish": "2B perforado",
+      "description": "Lámina de acero inoxidable AISI 304 perforada. Las aberturas y el espesor se eligen en el catálogo del proveedor.",
+      "use": "Paños ventilados, filtros o detalles de mobiliario según la abertura elegida.",
+      "code": "",
+      "imageKind": "Fotografía comercial",
+      "imageNote": "Imagen del catálogo de Inox Total Services. Derechos de imagen de su titular.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo del proveedor",
+          "url": "https://inoxtotalven.com/laminas-de-acero-inoxidable-disponibles/"
+        }
+      ],
+      "image": {
+        "src": "muestras/inox-304-perforado-referencia26.webp",
+        "width": 434,
+        "height": 434,
+        "display": "product"
+      }
+    },
+    {
+      "category": "metales",
+      "brand": "",
+      "textureId": null,
+      "appId": null,
+      "international": false,
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "care": "Confirmar aleación, espesor, formato, acabado y aptitud para el proyecto.",
+      "id": "metalnet-microperforado",
+      "name": "Microperforado pintado · trama 12,5 mm",
+      "family": "Perforados",
+      "supplier": "Metalnet",
+      "finish": "Pintura electrostática",
+      "description": "Lámina de hierro pulido de 0,7 mm. El proveedor indica una separación de perforaciones de 12,5 mm; esta medida no identifica el diámetro del agujero.",
+      "use": "Paños ventilados y piezas de mobiliario según la apertura y la rigidez necesarias.",
+      "code": "MP-00046",
+      "imageKind": "Fotografía comercial",
+      "imageNote": "Imagen del catálogo de Metalnet. Derechos de imagen de su titular.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo del proveedor",
+          "url": "https://www.metalnet.shop/collections/laminas-microperforadas/products/lamina-de-hierro-pulido-microperforado-100cm-x-50cm-x-0-7mm-distancia-de-perforacion-separacion-de-12-5mm-pintura-electrostatica"
+        }
+      ],
+      "image": {
+        "src": "muestras/metalnet-microperforado-referencia26.webp",
+        "width": 1000,
+        "height": 1000,
+        "display": "product"
+      }
+    },
+    {
+      "category": "metales",
+      "brand": "",
+      "textureId": null,
+      "appId": null,
+      "international": false,
+      "market": "Catálogo de proveedor en Venezuela",
+      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "care": "Confirmar aleación, espesor, formato, acabado y aptitud para el proyecto.",
+      "id": "rollerdoors-microperforado",
+      "name": "Perfil microperforado de hierro pulido",
+      "family": "Perforados",
+      "supplier": "Rollerdoors",
+      "finish": "Microperforado",
+      "description": "Perfil de hierro pulido de 0,70 mm para puertas enrollables. Se distingue de una lámina plana perforada.",
+      "use": "Paños de puertas enrollables, según el sistema de perfiles.",
+      "code": "",
+      "imageKind": "Fotografía comercial",
+      "imageNote": "Imagen del catálogo de Rollerdoors. Derechos de imagen de su titular.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo del proveedor",
+          "url": "https://rollerdoors.com.ve/producto/lamina-microperforada-070-mm-hierro-pulido/"
+        }
+      ],
+      "image": {
+        "src": "muestras/rollerdoors-microperforado-referencia26.webp",
+        "width": 1080,
+        "height": 1080,
+        "display": "product"
+      }
+    },
+    {
+      "category": "metales",
+      "brand": "",
+      "textureId": null,
+      "appId": null,
+      "international": false,
+      "market": "Tipo de panel por consultar en Venezuela",
+      "availability": "Proveedor, calibre, dimensiones y existencias por confirmar con Santiago.",
+      "care": "Confirmar aleación, espesor, formato, acabado y aptitud para el proyecto.",
+      "id": "panel-punta-diamante",
+      "name": "Panel punta de diamante",
+      "family": "Estampados",
+      "supplier": "",
+      "finish": "Relieve plegado",
+      "code": "",
+      "description": "Referencia del panel de lámina con relieve en punta de diamante utilizado en puertas y portones. El dibujo muestra la geometría del pliegue; no es una fotografía de un producto específico.",
+      "use": "Paños de puertas, portones y cerramientos según fabricación.",
+      "imageKind": "Esquema de relieve",
+      "imageNote": "Esquema de AGO para reconocer el relieve. El color y las proporciones son orientativos.",
+      "sourceLinks": [
+        {
+          "label": "Publicación venezolana de referencia",
+          "url": "https://articulo.mercadolibre.com.ve/MLV-744728199-lamina-punta-de-diamante-6060cm-_JM"
+        }
+      ],
+      "image": {
+        "src": "muestras/panel-punta-diamante-esquema26.svg",
+        "width": 1200,
+        "height": 1200
+      }
     }
   ]
 }
