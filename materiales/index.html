@@ -9,10 +9,10 @@
   <meta property="og:description" content="Explora las muestras, guarda tus favoritas y descubre cómo se ven juntas.">
   <meta property="og:image" content="https://prototipoago.com/img/marca/vista-previa.jpg">
   <meta property="og:url" content="https://prototipoago.com/materiales/">
-  <link rel="icon" href="../favicon.ico"><link rel="stylesheet" href="estilo.css?v=8">
+  <link rel="icon" href="../favicon.ico"><link rel="stylesheet" href="estilo.css?v=9">
   <title>Catálogo de materiales | Prototipo AGO</title>
   <script src="../datos/marca.js" defer></script>
-  <script src="catalogo.js?v=8" type="module"></script>
+  <script src="catalogo.js?v=9" type="module"></script>
   <script src="../asistente/widget.js?v=20261009-materiales" data-catalogue="materiales" defer></script>
 </head>
 <body>
@@ -22,7 +22,7 @@
 
 </header>
 <main>
-  <section class="intro"><div><h1>Catálogo de materiales</h1><p>Abre una muestra y guarda las que te gusten. Después, míralas juntas.</p></div><a class="text-link" href="Prototipo%20AGO%20-%20Materiales%20y%20acabados.pdf" download>Guía de materiales <span aria-hidden="true">↗</span></a></section>
+  <section class="intro"><div><h1>Catálogo de materiales</h1><p>Abre una muestra y guarda las que te gusten. Después, míralas juntas.</p></div></section>
   <section id="catalogo" aria-label="Catálogo visual de materiales">
     <div class="catalogue-controls">
       <div class="category-bar"><nav id="categories" class="categories" aria-label="Categorías de materiales"></nav><button type="button" id="toggle-search" class="search-launch" aria-label="Buscar materiales" aria-expanded="false" aria-controls="search-form"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.4 15.4 5.1 5.1"/></svg></button></div>
@@ -32,7 +32,7 @@
     <div class="grid" id="grid" tabindex="-1"></div>
     <div id="empty" class="empty" hidden><h2>No encontramos esa combinación.</h2><button type="button" data-reset>Ver todas las muestras</button></div>
     <p id="message" class="toast" role="status"></p>
-    <noscript><p>Activa JavaScript para explorar las muestras o <a href="Prototipo%20AGO%20-%20Materiales%20y%20acabados.pdf">abre la guía PDF</a>.</p></noscript>
+    <noscript><p>Activa JavaScript para explorar las muestras y crear tu paleta.</p></noscript>
   </section>
   <section class="closing"><p>El color en pantalla es orientativo. Confirmamos el material y las existencias con una muestra.</p><button id="ask-anorak" type="button" class="text-link">Explorar mi proyecto con Anorak ↗</button></section>
 </main>
@@ -48,7 +48,7 @@
     <nav class="view-tabs" aria-label="Cómo ver la paleta"><button type="button" data-view="mosaic" aria-pressed="true">Juntas</button><button type="button" data-view="row" aria-pressed="false">En fila</button><button type="button" data-view="pair" aria-pressed="false">Comparar dos</button></nav>
     <div id="pair-tools" class="pair-tools" hidden><label>Primera muestra<select id="pair-a"></select></label><label>Segunda muestra<select id="pair-b"></select></label><label class="compare-switch"><input id="overlay-mode" type="checkbox"> Superponer</label></div>
     <div id="palette-content" class="palette-grid"></div>
-    <div class="palette-actions"><button id="palette-copy" type="button">Copiar enlace</button><button id="palette-image" type="button">Guardar imagen</button><button id="palette-pdf" type="button">Guardar PDF</button><button id="palette-list" type="button">Copiar lista</button><button id="palette-send" type="button" class="primary">Preparar para Santiago ↗</button></div>
+    <div class="palette-actions"><button id="palette-copy" type="button">Copiar enlace</button><button id="palette-image" type="button">Guardar imagen</button><button id="palette-list" type="button">Copiar lista</button><button id="palette-send" type="button" class="primary">Preparar para Santiago ↗</button></div>
     <p id="palette-status" role="status"></p><p class="muted storage-note" id="storage-note">Se guarda en este navegador. Puedes compartirla con su enlace.</p>
     <div class="palette-bottom"><button id="palette-ai" type="button" class="text-link">Consultar mi paleta con Anorak ↗</button><button id="palette-clear" type="button" class="quiet">Vaciar paleta</button></div>
   </div>
