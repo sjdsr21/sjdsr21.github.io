@@ -11321,7 +11321,7 @@
       "international": false,
       "availability": "Reconfirmar existencias antes de comprar",
       "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación visual con IA. Los derechos de marca e imagen pertenecen a su titular.",
+      "imageNote": "Recreación visual con IA, con ajuste de color aprobado por Prototipo AGO. El tono se confirma con una muestra física. Los derechos de marca e imagen pertenecen a su titular.",
       "sourceLinks": [
         {
           "label": "Catálogos Greenlam",
@@ -11331,9 +11331,9 @@
       "appId": null,
       "textureId": "greenlam-sanganer",
       "image": {
-        "src": "muestras/greenlam-sanganer-sm.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/greenlam-sanganer-sm-color-20261009.webp",
+        "width": 1774,
+        "height": 887
       }
     },
     {
@@ -11352,7 +11352,7 @@
       "international": false,
       "availability": "Reconfirmar existencias antes de comprar",
       "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación visual con IA. Los derechos de marca e imagen pertenecen a su titular.",
+      "imageNote": "Recreación visual con IA, con ajuste de color aprobado por Prototipo AGO. El tono se confirma con una muestra física. Los derechos de marca e imagen pertenecen a su titular.",
       "sourceLinks": [
         {
           "label": "Catálogos Greenlam",
@@ -11362,9 +11362,9 @@
       "appId": null,
       "textureId": "greenlam-visconti",
       "image": {
-        "src": "muestras/greenlam-visconti-sm.webp",
-        "width": 1000,
-        "height": 500
+        "src": "muestras/greenlam-visconti-sm-color-20261009.webp",
+        "width": 1774,
+        "height": 887
       }
     },
     {
