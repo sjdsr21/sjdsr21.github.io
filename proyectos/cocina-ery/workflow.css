@@ -38,5 +38,8 @@ dialog{max-height:calc(100dvh - 32px);overflow:auto}
 .view-options{margin-top:24px;grid-template-columns:repeat(3,1fr);gap:14px 8px}.ao-note{grid-column:1/-1;color:var(--muted);font-size:10px;margin:0}
 .view-options label{font-size:11px}.catalog-filters:has(select[hidden]){display:none}
 :root[data-theme=dark] #combination-feedback{color:var(--accent)}
-.sampler{position:sticky;top:-1px;z-index:3;background:#000;padding:7px 0 1px;border-bottom:1px solid var(--line);margin-bottom:22px}
-.sampler .sampler-note{margin:8px 0 12px}#palette-title{scroll-margin-top:140px}
+.catalog-toolbar{position:sticky;top:-22px;z-index:3;background:#000;padding:7px 0 0;margin-bottom:13px}
+.sampler{margin:0;padding:0}
+.catalog-toolbar #palette-tabs{margin-bottom:0}
+.sampler .sampler-note{margin:8px 0 12px}#palette-title{scroll-margin-top:12px}
+@media(max-width:800px){.catalog-toolbar{top:-20px}}

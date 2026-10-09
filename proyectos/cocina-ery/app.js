@@ -148,7 +148,9 @@ function paintEditor(){
 function revealEditor(){
   const mobile=matchMedia('(max-width:800px)').matches;
   openPanel();
-  $('color-editor').scrollIntoView({behavior:'instant',block:mobile?'start':'nearest'});
+  const panel=$('finishes-panel'),editor=$('color-editor'),toolbar=panel.querySelector('.catalog-toolbar');
+  editor.style.scrollMarginTop=(toolbar.offsetHeight+12)+'px';
+  editor.scrollIntoView({behavior:'instant',block:mobile?'start':'nearest'});
 }
 const wheel=createColorWheel(value=>{
   if(!ready)return;tones[zone]={...value,enabled:true};syncSurfaces(zone);applyMaterials();updateLabels();paintEditor();workflow?.changed('color-'+zone);
