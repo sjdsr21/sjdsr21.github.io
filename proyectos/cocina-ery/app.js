@@ -14,9 +14,9 @@ import {filterCatalog} from './catalog.js';
 import {counterPart,resolveCounterFinish,counterWoodBand,ceramicUV,isCeramicFloor} from './countertop.js';
 import {createTheme} from './theme.js';
 const $=id=>document.getElementById(id);
-const labels={cabinet:'Puertas y muebles inferiores',counter:'Tope de cocina',table:'Mesa auxiliar',pantry:'Despensa',base:'Fórmica existente · color base'};
-const originalColors={cabinet:'#fff2cc',counter:'#994c00',table:'#994c00',pantry:'#c46100',base:'#ffe4ca'};
-const selection={cabinet:null,counter:null,table:null,pantry:null,base:null};
+const labels={cabinet:'Modulares inferiores',upperDoors:'Puertas superiores',counter:'Tope de cocina',table:'Mesa auxiliar',pantry:'Despensa',base:'Fórmica existente · color base'};
+const originalColors={cabinet:'#aaa599',upperDoors:'#e3cfbe',counter:'#994c00',table:'#994c00',pantry:'#c46100',base:'#ffe4ca'};
+const selection={cabinet:null,upperDoors:null,counter:null,table:null,pantry:null,base:null};
 const matches={pantry:false,upper:false};
 const tones={},editorOpen={};let viewOptions,workflow,interaction,theme;
 let pickTimer;const filters={query:'',tone:'all',detail:'all',favoritesOnly:false};
@@ -27,7 +27,7 @@ let renderFrames=0,framePending=false;
 function announce(text){$('announcement').textContent=text;}
 function requestRender(){renderFrames=3;if(!framePending){framePending=true;requestAnimationFrame(frame);}}
 function frame(){framePending=false;if(!ready)return;const changed=controls.update();viewOptions.update();composer.render();if(!framePending&&(changed||--renderFrames>0)){framePending=true;requestAnimationFrame(frame);}}
-function selectedZone(mesh){const r=mesh.userData.region;if(r==='upper')return matches.upper?'cabinet':'base';if(r==='pantryExisting')return matches.pantry?'pantry':'base';return labels[r]?r:null;}
+function selectedZone(mesh){const r=mesh.userData.region;if(r==='upper')return matches.upper?'upperDoors':'base';if(r==='pantryExisting')return matches.pantry?'pantry':'base';return labels[r]?r:null;}
 function finishFor(z){return selection[z]==='custom'?{id:'custom',name:'Color personalizado',color:hsvHex(tones[z])}:palette.find(p=>p.id===selection[z]);}
 function textureFor(finish){
   if(!textureCache.has(finish.id)){
@@ -87,7 +87,7 @@ function projectTexture(mesh,finish){
   const p=mesh.geometry.attributes.position,n=mesh.geometry.attributes.normal,uv=new Float32Array(p.count*2),sx=finish.size[0],sy=finish.size[1];
   for(let i=0;i<p.count;i++){
     const nx=Math.abs(n.getX(i)),ny=Math.abs(n.getY(i)),nz=Math.abs(n.getZ(i));
-    if(finish.family==='Cerámica'){uv.set(ceramicUV(p.getX(i),p.getY(i),p.getZ(i),nx,ny,nz,finish.size,mesh.userData.isFloor?config.floor.origin:undefined),i*2);continue;}
+    if(finish.family==='Cerámica'){uv.set(ceramicUV(p.getX(i),p.getY(i),p.getZ(i),nx,ny,nz,finish.size,mesh.userData.isFloor?config.floor.origin:config.counterOrigin),i*2);continue;}
     if(ny>=nx&&ny>=nz){uv[i*2]=p.getX(i)/sx;uv[i*2+1]=-p.getZ(i)/sy;}
     else if(nx>=nz){uv[i*2]=-p.getZ(i)/sx;uv[i*2+1]=p.getY(i)/sy;}
     else{uv[i*2]=p.getX(i)/sx;uv[i*2+1]=p.getY(i)/sy;}

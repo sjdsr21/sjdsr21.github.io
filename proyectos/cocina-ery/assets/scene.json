@@ -1,23 +1,23 @@
 {
   "camera": {
     "eye": [
-      7.008711564798677,
-      3.790612792774154,
-      0.3455203249300392
+      6.9,
+      3.55,
+      0.8
     ],
     "target": [
-      -3.305019853589986,
-      -3.5214951876750895,
-      -5.446258565775412
+      2.7,
+      1.1,
+      -1.9
     ],
     "up": [
-      -0.45847003860546826,
-      0.850600012263535,
-      -0.2574584293403014
+      -0.370549920743068,
+      0.897746309438745,
+      -0.2382106633348294
     ],
     "perspective": true,
-    "aspect": 1.2640449438202248,
-    "fov": 35.0,
+    "aspect": 1.6251468860164513,
+    "fov": 40.0,
     "fov_is_height": true
   },
   "background": [
@@ -26,35 +26,34 @@
     201
   ],
   "regions": {
-    "fixed": 43,
-    "cabinet": 50,
+    "fixed": 30,
+    "upperDoors": 6,
+    "cabinet": 47,
     "upper": 20,
-    "counter": 15,
     "table": 2,
     "pantry": 8,
-    "pantryExisting": 6
+    "pantryExisting": 6,
+    "counter": 13
   },
-  "revision": "2026-10-05",
+  "revision": "2026-10-08 R8",
   "counterParts": {
-    "36678": "surface",
-    "36679": "surface",
-    "36680": "surface",
-    "36675": "left",
-    "36676": "front",
-    "36677": "front",
-    "36668": "right",
-    "36669": "right",
-    "36674": "right",
-    "36739": "backsplash",
-    "36685": "backsplash",
-    "36683": "backsplash",
-    "36684": "backsplash",
-    "36686": "backsplash",
-    "36687": "backsplash"
+    "64844": "left",
+    "64845": "front",
+    "64846": "front",
+    "64847": "surface",
+    "64848": "surface",
+    "64842": "left",
+    "64849": "surface",
+    "64854": "backsplash",
+    "64852": "front",
+    "64853": "front",
+    "64855": "backsplash",
+    "64856": "left",
+    "64857": "left"
   },
   "floor": {
     "persistentId": 36688,
-    "originalMaterial": "Wood Square Tile 02",
+    "originalMaterial": "Piso Ery - ceramica rectangular real 14 x 25.2 cm",
     "finishId": "eri-terracotta-ceramic",
     "origin": {
       "left": 0.2495041794501643,
@@ -68,5 +67,10 @@
       "left": 1.8255041794501716,
       "front": -2.074253921225379
     }
+  },
+  "counterOrigin": {
+    "left": 1.8255041794501716,
+    "front": -2.074253921225379,
+    "top": 0.922
   }
 }

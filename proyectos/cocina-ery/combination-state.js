@@ -1,4 +1,4 @@
-export const ZONES=['cabinet','counter','table','pantry','base'];
+export const ZONES=['cabinet','upperDoors','counter','table','pantry','base'];
 export const STORAGE_KEY='prototipoago.cocina-ery.v1';
 const clone=value=>JSON.parse(JSON.stringify(value));
 const number=(n,min,max)=>typeof n==='number'&&Number.isFinite(n)&&n>=min&&n<=max;
@@ -6,12 +6,13 @@ export function validateCombination(value,palette){
   if(!value||value.version!==1||!value.selection||!value.matches||!value.view)throw Error('Esta combinación no es compatible.');
   const result={version:1,selection:{},matches:{},tones:{},view:{}};
   for(const z of ZONES){
-    const id=value.selection[z],finish=palette.find(f=>f.id===id);
+    const legacyUpper=z==='upperDoors'&&!Object.hasOwn(value.selection,'upperDoors');
+    const id=legacyUpper?value.selection.cabinet:value.selection[z],finish=palette.find(f=>f.id===id);
     if(id!==null&&id!=='custom'&&!finish)throw Error('Un acabado del enlace no está disponible.');
     if(finish?.texture&&!['counter','table'].includes(z))throw Error('El acabado no corresponde a esa zona.');
     if(finish?.zones&&!finish.zones.includes(z))throw Error('El acabado no corresponde a esa zona.');
     result.selection[z]=id;
-    const t=value.tones?.[z];
+    const t=value.tones?.[legacyUpper?'cabinet':z];
     if(t){
       if(!number(t.h,0,360)||!number(t.s,0,100)||!number(t.v,0,100)||typeof t.enabled!=='boolean')throw Error('El color guardado no es válido.');
       result.tones[z]={h:t.h,s:t.s,v:t.v,enabled:t.enabled};
