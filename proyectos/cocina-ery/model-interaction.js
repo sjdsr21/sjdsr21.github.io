@@ -1,10 +1,10 @@
 import * as THREE from 'three';
-export function createModelInteraction({meshes,camera,canvas,selectedZone,onPick,requestRender,outline,related=(a,b)=>a===b,isSampling=()=>false}){
+export function createModelInteraction({meshes,camera,canvas,selectedZone,onPick,requestRender,outline,related=(a,b)=>a===b,isSampling=()=>false,isNavigating=()=>false}){
   const ray=new THREE.Raycaster(),pointer=new THREE.Vector2(),active=new Set();
-  let timeout,start=null,multi=false,highlighted=null;
+  let timeout,start=null,multi=false,highlighted=null,hoverFrame=0,lastMouse=null;
   function visible(mesh){for(let p=mesh;p;p=p.parent)if(!p.visible)return false;return true;}
   function cursor(zone=null){canvas.style.cursor=active.size?'grabbing':isSampling()?'crosshair':zone?'pointer':'grab';}
-  function clear(){clearTimeout(timeout);highlighted=null;outline.selectedObjects=[];cursor();requestRender();}
+  function clear(){clearTimeout(timeout);cancelAnimationFrame(hoverFrame);hoverFrame=0;highlighted=null;outline.selectedObjects=[];cursor();requestRender();}
   function highlight(zone,persistent=false){
     clearTimeout(timeout);highlighted=zone;
     outline.selectedObjects=meshes.filter(mesh=>visible(mesh)&&(isSampling()?selectedZone(mesh)===zone:related(selectedZone(mesh),zone)));
@@ -16,6 +16,7 @@ export function createModelInteraction({meshes,camera,canvas,selectedZone,onPick
     const hit=ray.intersectObjects(meshes.filter(visible),false)[0];return hit?selectedZone(hit.object):null;
   }
   function hover(event){
+    if(isNavigating())return;
     const zone=pickAt(event);cursor(zone);
     if(zone!==highlighted){if(zone)highlight(zone,true);else clear();}
   }
@@ -28,17 +29,18 @@ export function createModelInteraction({meshes,camera,canvas,selectedZone,onPick
   });
   canvas.addEventListener('pointermove',event=>{
     if(start&&Math.hypot(event.clientX-start.x,event.clientY-start.y)>6)start.moved=true;
-    if(!active.size&&event.pointerType==='mouse'&&!event.buttons)hover(event);
+    if(event.pointerType==='mouse')lastMouse={clientX:event.clientX,clientY:event.clientY};
+    if(!active.size&&event.pointerType==='mouse'&&!event.buttons&&!hoverFrame)hoverFrame=requestAnimationFrame(()=>{hoverFrame=0;if(!active.size&&lastMouse)hover(lastMouse);});
   });
   canvas.addEventListener('pointerup',event=>{
     const pick=start&&start.id===event.pointerId&&!start.moved&&!multi&&event.button===0;
     active.delete(event.pointerId);if(active.size===0)start=null;
     if(canvas.hasPointerCapture(event.pointerId))canvas.releasePointerCapture(event.pointerId);
     if(pick){const zone=pickAt(event);if(zone){onPick(zone);highlight(zone,event.pointerType==='mouse');}}
-    if(!active.size){cursor();if(event.pointerType==='mouse')hover(event);}
+    if(!active.size){cursor();if(event.pointerType==='mouse'){lastMouse={clientX:event.clientX,clientY:event.clientY};hover(event);}}
   });
   canvas.addEventListener('pointercancel',event=>{active.delete(event.pointerId);start=null;multi=true;clear();});
-  canvas.addEventListener('pointerleave',clear);
-  window.addEventListener('blur',()=>{active.clear();start=null;clear();});
-  return {clear,highlight,get highlighted(){return highlighted;},get highlightedCount(){return outline.selectedObjects.length;}};
+  canvas.addEventListener('pointerleave',()=>{lastMouse=null;clear();});
+  window.addEventListener('blur',()=>{active.clear();start=null;lastMouse=null;clear();});
+  return {clear,highlight,refreshHover(){if(lastMouse&&!active.size)hover(lastMouse);},get highlighted(){return highlighted;},get highlightedCount(){return outline.selectedObjects.length;}};
 }

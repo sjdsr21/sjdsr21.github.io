@@ -3,16 +3,17 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
 import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
-import { SSAOPass } from 'three/addons/postprocessing/SSAOPass.js';
+import {CachedAOPass} from './cached-ao-pass.js?v=20261009-fluidez';
 import {SilhouettePass} from './silhouette-pass.js?v=20261009-materiales';
 import {connectProfiles,applyRenderProfile} from './material-profile.js?v=20261009-materiales';
+import {createPerformanceRenderer} from './performance-renderer.js?v=20261009-fluidez';
 import {allowsFinish,surfaceRegion,changesTogether} from './finish-zones.js?v=20261009-panel';
 import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 import {createColorWheel,hsvHex,hexHsv} from './color-tools.js';
-import {createViewOptions} from './view-options.js';
-import {downloadView} from './capture.js';
+import {createViewOptions} from './view-options.js?v=20261009-fluidez';
+import {downloadView} from './capture.js?v=20261009-fluidez';
 import {createWorkflow} from './workflow.js?v=20261009-panel';
-import {createModelInteraction} from './model-interaction.js?v=20261009-materiales';
+import {createModelInteraction} from './model-interaction.js?v=20261009-fluidez';
 import {filterCatalog} from './catalog.js?v=20261009-panel';
 import {counterPart,resolveCounterFinish,counterWoodBand,ceramicUV,isCeramicFloor} from './countertop.js';
 import {createTheme} from './theme.js?v=20261009-panel';
@@ -24,16 +25,22 @@ const selection={cabinet:null,upperDoors:null,counter:'greenlam-sanganer',table:
 const matches={pantry:false,upper:false,surfaces:false};
 function syncSurfaces(source){if(matches.surfaces&&['counter','table'].includes(source))copySurfaceFinish(selection,tones,source);}
 function canUnify(finish){return !finish?.zones||['counter','table'].every(z=>finish.zones.includes(z));}
-const tones={},editorOpen={};let viewOptions,workflow,interaction,theme;
+const tones={},editorOpen={};let viewOptions,workflow,interaction,theme,performanceRenderer;
 let sampling=false,copiedFinish=null,defaultCombination;
 let pickTimer;const filters={query:'',tone:'all',detail:'all',favoritesOnly:false};
 const textureReady=new Map();
 let zone='cabinet',category='neutral',palette=[],scene,camera,renderer,composer,controls,config,model,initial,ready=false;
 const meshes=[],textureCache=new Map();
-let renderFrames=0,framePending=false;
+let framePending=false;
 function announce(text){$('announcement').textContent=text;}
-function requestRender(){renderFrames=3;if(!framePending){framePending=true;requestAnimationFrame(frame);}}
-function frame(){framePending=false;if(!ready)return;const changed=controls.update();viewOptions.update();composer.render();if(!framePending&&(changed||--renderFrames>0)){framePending=true;requestAnimationFrame(frame);}}
+function requestRender(){if(!framePending&&!document.hidden){framePending=true;requestAnimationFrame(frame);}}
+function frame(timestamp){
+  framePending=false;if(!ready||document.hidden)return;
+  // Do not apply residual camera damping to a stationary color/hover update.
+  const changed=performanceRenderer.moving?controls.update():false;
+  viewOptions.update();performanceRenderer.render(timestamp);if(changed)requestRender();
+}
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)requestRender();});
 function selectedZone(mesh){const r=mesh.userData.region;if(r==='upper')return matches.upper?'upperDoors':'base';if(r==='pantryExisting')return matches.pantry?'pantry':'base';return labels[r]?r:null;}
 function finishFor(z){return selection[z]==='custom'?{id:'custom',name:'Color personalizado',color:hsvHex(tones[z])}:palette.find(p=>p.id===selection[z]);}
 function textureFor(finish){
@@ -277,7 +284,7 @@ function resetCamera(){if(!ready)return;controls.enableDamping=false;controls.up
 function resize(){
   if(!renderer)return;const w=$('viewer').clientWidth,h=$('viewer').clientHeight,a=w/h;
   camera.aspect=a;camera.fov=THREE.MathUtils.radToDeg(2*Math.atan(Math.tan(THREE.MathUtils.degToRad(initial.fov/2))*Math.max(1,config.camera.aspect/a)));
-  camera.updateProjectionMatrix();renderer.setSize(w,h);composer.setSize(w,h);requestRender();
+  camera.updateProjectionMatrix();performanceRenderer.resize(w,h);requestRender();
 }
 function registerTools(){
   const context=document.modelContext;if(!context?.registerTool)return;const lifecycle=new AbortController();window.addEventListener('pagehide',()=>lifecycle.abort(),{once:true});
@@ -322,16 +329,19 @@ async function init(){
     viewOptions=createViewOptions(scene,meshes,camera,renderer,key,bounds,requestRender);
     initial={eye,target,fov:fov*1.08};camera.position.copy(eye);camera.lookAt(target);
     controls=new OrbitControls(camera,renderer.domElement);controls.target.copy(target);controls.enableDamping=true;controls.dampingFactor=.12;controls.minDistance=.4;controls.maxDistance=14;controls.maxPolarAngle=Math.PI*.92;controls.zoomSpeed=.7;controls.panSpeed=.75;controls.addEventListener('change',requestRender);
-    composer=new EffectComposer(renderer);composer.renderTarget1.samples=4;composer.renderTarget2.samples=4;composer.addPass(new RenderPass(scene,camera));const ao=new SSAOPass(scene,camera,640,640,24);ao.kernelRadius=.18;ao.minDistance=.001;ao.maxDistance=.09;composer.addPass(ao);const outline=new SilhouettePass(scene,camera);composer.addPass(outline);composer.addPass(new OutputPass());
+    composer=new EffectComposer(renderer);composer.renderTarget1.samples=4;composer.renderTarget2.samples=4;composer.addPass(new RenderPass(scene,camera));const ao=new CachedAOPass(scene,camera,640,640,24);ao.kernelRadius=.18;ao.minDistance=.001;ao.maxDistance=.09;composer.addPass(ao);const outline=new SilhouettePass(scene,camera);composer.addPass(outline);composer.addPass(new OutputPass());
+    performanceRenderer=createPerformanceRenderer({renderer,composer,scene,camera,requestRender,onSettled:()=>interaction?.refreshHover()});
+    controls.addEventListener('change',()=>performanceRenderer.cameraChanged());
+    window.addEventListener('pagehide',()=>performanceRenderer.dispose());
     $('viewer').prepend(renderer.domElement);theme=createTheme(scene,requestRender);ready=true;resize();composer.render();$('reference').hidden=true;$('load-status').hidden=true;document.querySelectorAll('aside button,aside input,aside select,#reset,#screenshot,#share').forEach(b=>b.disabled=false);
     $('copied-finish').disabled=!copiedFinish;applyMaterials();
-    interaction=createModelInteraction({scene,meshes,camera,canvas:renderer.domElement,selectedZone,onPick:z=>sampling?copyFinish(z):selectZone(z,true),requestRender,outline,related:(a,b)=>changesTogether(a,b,matches),isSampling:()=>sampling});
+    interaction=createModelInteraction({scene,meshes,camera,canvas:renderer.domElement,selectedZone,onPick:z=>sampling?copyFinish(z):selectZone(z,true),requestRender,outline,related:(a,b)=>changesTogether(a,b,matches),isSampling:()=>sampling,isNavigating:()=>performanceRenderer.moving});
     workflow=createWorkflow({palette,snapshot,appearance,apply:applyCombination,defaultCombination,announce,onFavorites:()=>paintPalette()});workflow.restore();
     controls.addEventListener('start',()=>interaction.clear());controls.addEventListener('end',()=>workflow.persist());controls.addEventListener('change',()=>workflow.persist());
     paintPalette();registerTools();new ResizeObserver(resize).observe($('viewer'));
     renderer.domElement.addEventListener('webglcontextlost',event=>{event.preventDefault();ready=false;$('reference').hidden=false;$('load-status').hidden=false;$('load-status').textContent='Se interrumpió la vista 3D. Recarga la página para continuar.';});
     renderer.domElement.addEventListener('keydown',event=>{if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','+','-','Home'].includes(event.key))return;event.preventDefault();if(event.key==='Home')return resetCamera();if(event.key==='+'||event.key==='-'){zoom(event.key==='+'?.85:1.15);return;}const offset=camera.position.clone().sub(controls.target),sphere=new THREE.Spherical().setFromVector3(offset);if(event.key==='ArrowLeft')sphere.theta-=.1;if(event.key==='ArrowRight')sphere.theta+=.1;if(event.key==='ArrowUp')sphere.phi=Math.max(.1,sphere.phi-.1);if(event.key==='ArrowDown')sphere.phi=Math.min(Math.PI*.92,sphere.phi+.1);camera.position.copy(controls.target).add(new THREE.Vector3().setFromSpherical(sphere));controls.update();requestRender();});
-    window.eriDiagnostics=()=>({ready,triangles:meshes.reduce((s,m)=>s+m.geometry.attributes.position.count/3,0),state:readState(),theme:theme.dark?'dark':'light',background:scene.background.getHexString(),camera:camera.position.toArray(),target:controls.target.toArray(),meshes:meshes.map(m=>({name:m.name,region:m.userData.region,counterPart:m.userData.counterPart,woodBand:m.material.userData.woodBand||null,isFloor:m.userData.isFloor,materialFinish:m.userData.materialFinish,finish:m.userData.applied,color:m.material.color.getHexString(),map:!!m.material.map,mapReady:!!m.material.map?.image?.width,tint:m.material.userData.tintUniforms?.eriTintEnabled.value||0})),view:viewOptions.diagnostics(),workflow:workflow.diagnostics(),highlight:{zone:interaction.highlighted,count:interaction.highlightedCount,method:"visible-silhouette-mask"},shadows:renderer.shadowMap.enabled,ao:ao.enabled,render:renderer.info.render,bounds:[bounds.min.toArray(),bounds.max.toArray()],projected:center.clone().project(camera).toArray()});
+    window.eriDiagnostics=()=>({ready,performance:performanceRenderer.diagnostics(),triangles:meshes.reduce((s,m)=>s+m.geometry.attributes.position.count/3,0),state:readState(),theme:theme.dark?'dark':'light',background:scene.background.getHexString(),camera:camera.position.toArray(),target:controls.target.toArray(),meshes:meshes.map(m=>({name:m.name,region:m.userData.region,counterPart:m.userData.counterPart,woodBand:m.material.userData.woodBand||null,isFloor:m.userData.isFloor,materialFinish:m.userData.materialFinish,finish:m.userData.applied,color:m.material.color.getHexString(),map:!!m.material.map,mapReady:!!m.material.map?.image?.width,tint:m.material.userData.tintUniforms?.eriTintEnabled.value||0})),view:viewOptions.diagnostics(),workflow:workflow.diagnostics(),highlight:{zone:interaction.highlighted,count:interaction.highlightedCount,method:"visible-silhouette-mask"},shadows:renderer.shadowMap.enabled,ao:ao.enabled,aoCache:{computations:ao.computations,reuses:ao.reuses},render:renderer.info.render,bounds:[bounds.min.toArray(),bounds.max.toArray()],projected:center.clone().project(camera).toArray()});
   }catch(error){console.error(error);$('load-status').textContent='No se pudo abrir la vista 3D. Recarga la página o usa un navegador actualizado.';$('reference').hidden=false;}
 }
 function zoom(factor){if(!ready)return;camera.position.sub(controls.target).multiplyScalar(factor).add(controls.target);controls.update();requestRender();}
@@ -353,7 +363,7 @@ $('screenshot').addEventListener('click',async()=>{
     if(matches.upper)finishes.push('Superiores: iguales a las puertas');if(matches.pantry)finishes.push('Despensa: acabado unificado');
     const floorFinish=palette.find(f=>f.id===config.floor.finishId);
     if(!selection.floor)finishes.push('Piso: terracota rectangular · '+floorFinish.tileSize.map(n=>Number((n*100).toFixed(1)).toLocaleString('es')).join(' × ')+' cm');
-    await downloadView({renderer,composer,viewOptions,viewer:$('viewer'),finishes});$('share-feedback').textContent='Imagen descargada. Puedes enviarla para compartir tu selección.';announce($('share-feedback').textContent);
+    await downloadView({renderer,composer,viewOptions,viewer:$('viewer'),finishes,composerPixelRatio:performanceRenderer.detailPixelRatio});$('share-feedback').textContent='Imagen descargada. Puedes enviarla para compartir tu selección.';announce($('share-feedback').textContent);
   }catch(error){$('share-feedback').textContent=error.message;announce(error.message);}
   finally{button.disabled=false;button.querySelector('span').textContent='Descargar imagen';if($('share-dialog').open)button.focus();requestRender();}
 });

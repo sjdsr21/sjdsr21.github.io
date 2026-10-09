@@ -1,5 +1,5 @@
 // Capture the rendered scene immediately, before the WebGL drawing buffer is cleared.
-export async function downloadView({renderer,composer,viewOptions,viewer,finishes}){
+export async function downloadView({renderer,composer,viewOptions,viewer,finishes,composerPixelRatio=renderer.getPixelRatio()}){
   await document.fonts.ready;
   const width=1600,height=Math.round(width*viewer.clientHeight/viewer.clientWidth),canvas=document.createElement('canvas');
   canvas.width=width;canvas.height=height+190+Math.ceil(finishes.length/2)*32;const ctx=canvas.getContext('2d');
@@ -9,7 +9,7 @@ export async function downloadView({renderer,composer,viewOptions,viewer,finishe
     renderer.setPixelRatio(1);renderer.setSize(width,height,false);composer.setPixelRatio(1);composer.setSize(width,height);
     viewOptions.update();composer.render();ctx.drawImage(renderer.domElement,0,110,width,height);
   }finally{
-    renderer.setPixelRatio(ratio);renderer.setSize(size.x,size.y,false);composer.setPixelRatio(ratio);composer.setSize(size.x,size.y);
+    renderer.setPixelRatio(ratio);renderer.setSize(size.x,size.y,false);composer.setPixelRatio(composerPixelRatio);composer.setSize(size.x,size.y);
   }
   ctx.fillStyle='#151515';ctx.font='700 30px Poppins';ctx.textAlign='right';ctx.fillText('prototipo',190,45);ctx.fillText('ago',190,74);
   ctx.textAlign='left';ctx.font='700 32px Roboto';ctx.fillText('Cocina Ery',240,58);ctx.font='20px Roboto';ctx.fillStyle='#646464';ctx.fillText('Selección de acabados',240,87);

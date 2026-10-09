@@ -36,11 +36,14 @@ export function createViewOptions(scene,meshes,camera,renderer,key,bounds,reques
     profiles=new LineSegments2(pg,new LineMaterial({color:0x171717,linewidth:2.4,depthWrite:false,worldUnits:false}));
     profiles.visible=false;profiles.frustumCulled=false;scene.add(profiles);update();
   }
-  function update(){
+  const lastPosition=new THREE.Vector3(Infinity,Infinity,Infinity),lastQuaternion=new THREE.Quaternion(),direction=new THREE.Vector3();
+  function update(force=false){
     if(!profiles||!state.profiles)return;
+    if(!force&&lastPosition.equals(camera.position)&&lastQuaternion.equals(camera.quaternion))return;
+    lastPosition.copy(camera.position);lastQuaternion.copy(camera.quaternion);
     const array=profiles.geometry.attributes.instanceStart.data.array;let count=0;
     for(const e of candidates){
-      const direction=camera.position.clone().sub(e.mid);let front=false,back=false;
+      direction.copy(camera.position).sub(e.mid);let front=false,back=false;
       for(const n of e.normals){if(n.dot(direction)>=0)front=true;else back=true;}
       if(e.normals.length===1||(front&&back)){array.set(e.a,count*6);array.set(e.b,count*6+3);count++;}
     }
@@ -51,7 +54,7 @@ export function createViewOptions(scene,meshes,camera,renderer,key,bounds,reques
     if(name==='shadows'){
       renderer.shadowMap.enabled=state.shadows;renderer.shadowMap.needsUpdate=true;
       for(const mesh of meshes)mesh.material.needsUpdate=true;
-    }else {build();edges.visible=state.edges;profiles.visible=state.profiles;update();}
+    }else {build();edges.visible=state.edges;profiles.visible=state.profiles;update(true);}
     requestRender();
   }
   return {set,update,state,diagnostics:()=>({...state,edgeSegments:candidates?.length||0,profileSegments:profiles?.geometry.instanceCount||0})};
