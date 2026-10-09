@@ -1,4 +1,4 @@
-import {STORAGE_KEY,loadNotebook,decodeCombination,encodeCombination,createHistory} from './combination-state.js';
+import {STORAGE_KEY,loadNotebook,decodeCombination,encodeCombination,createHistory} from './combination-state.js?v=20261009-unificar';
 export function createWorkflow({palette,snapshot,appearance,apply,thumbnail,announce,onFavorites}){
   const $=id=>document.getElementById(id);let storage,book;
   try{storage=window.localStorage;book=loadNotebook(palette,storage);}catch{book={current:null,options:[null,null,null],favorites:[],available:false};}

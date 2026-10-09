@@ -8,16 +8,19 @@ import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 import {createColorWheel,hsvHex,hexHsv} from './color-tools.js';
 import {createViewOptions} from './view-options.js';
 import {downloadView} from './capture.js';
-import {createWorkflow} from './workflow.js';
+import {createWorkflow} from './workflow.js?v=20261009-unificar';
 import {createModelInteraction} from './model-interaction.js';
 import {filterCatalog} from './catalog.js?v=20261009-texturas';
 import {counterPart,resolveCounterFinish,counterWoodBand,ceramicUV,isCeramicFloor} from './countertop.js';
 import {createTheme} from './theme.js';
+import {copySurfaceFinish} from './combination-state.js?v=20261009-unificar';
 const $=id=>document.getElementById(id);
 const labels={cabinet:'Modulares inferiores',upperDoors:'Puertas superiores',counter:'Tope de cocina',table:'Mesa auxiliar',pantry:'Despensa',base:'Fórmica existente · color base'};
 const originalColors={cabinet:'#aaa599',upperDoors:'#e3cfbe',counter:'#994c00',table:'#994c00',pantry:'#c46100',base:'#ffe4ca'};
 const selection={cabinet:null,upperDoors:null,counter:'greenlam-sanganer',table:'greenlam-sanganer',pantry:null,base:null};
-const matches={pantry:false,upper:false};
+const matches={pantry:false,upper:false,surfaces:false};
+function syncSurfaces(source){if(matches.surfaces&&['counter','table'].includes(source))copySurfaceFinish(selection,tones,source);}
+function canUnify(finish){return !finish?.zones||['counter','table'].every(z=>finish.zones.includes(z));}
 const tones={},editorOpen={};let viewOptions,workflow,interaction,theme;
 let pickTimer;const filters={query:'',tone:'all',detail:'all',favoritesOnly:false};
 const textureReady=new Map();
@@ -134,7 +137,7 @@ function revealEditor(){
   $('color-editor').scrollIntoView({behavior:'instant',block:mobile?'start':'nearest'});
 }
 const wheel=createColorWheel(value=>{
-  if(!ready)return;tones[zone]={...value,enabled:true};applyMaterials();updateLabels();paintEditor();workflow?.changed('color-'+zone);
+  if(!ready)return;tones[zone]={...value,enabled:true};syncSurfaces(zone);applyMaterials();updateLabels();paintEditor();workflow?.changed('color-'+zone);
 });
 function paintPalette(){
   const container=$('palette');container.replaceChildren();const surfaces=zone==='counter'||zone==='table';
@@ -147,7 +150,7 @@ function paintPalette(){
   if(!details.some(d=>d[0]===filters.detail))filters.detail='all';
   $('filter-detail').replaceChildren(...details.map(([value,label])=>{const option=document.createElement('option');option.value=value;option.textContent=label;return option;}));
   $('filter-detail').value=filters.detail;
-  const options=filterCatalog(palette,{...filters,category,zone,favorites:workflow?.favorites||[]});
+  const options=filterCatalog(palette,{...filters,category,zone,favorites:workflow?.favorites||[]}).filter(f=>!matches.surfaces||!surfaces||canUnify(f));
   $('catalog-empty').hidden=options.length>0;
   $('palette-count').textContent=`${options.length} acabados`+(['neutral','color'].includes(category)&&!filters.favoritesOnly&&!filters.query?' + color libre':'');
   if(['neutral','color'].includes(category)&&!filters.favoritesOnly&&!filters.query){
@@ -167,6 +170,8 @@ function paintPalette(){
   updateLabels();paintEditor();
 }
 function updateLabels(){
+  $('surface-link-note').textContent=canUnify(finishFor('counter'))?'Al activarla, la mesa toma el acabado del tope. Después, ambos cambian juntos.':'Este acabado es exclusivo del tope. Elige otro para unificarlos.';
+  $('table-link-label').textContent=matches.surfaces?'Vinculado al tope de cocina':'Un acabado independiente';
   const current=finishFor(zone),favorite=!!current&&(workflow?.favorites||[]).includes(current.id);
   $('favorite-finish').disabled=!current||current.id==='custom';$('favorite-finish').textContent=favorite?'★ Acabado favorito':'☆ Guardar acabado';$('favorite-finish').setAttribute('aria-pressed',String(favorite));
   $('favorite-finish').title=current?.id==='custom'?'Guarda este color libre en una combinación A, B o C.':'';
@@ -185,23 +190,32 @@ function setFinish(z,id){
   if(!Object.hasOwn(labels,z))throw new Error('Zona desconocida');const f=id===null||id==='custom'?null:palette.find(p=>p.id===id);
   if(id!==null&&id!=='custom'&&!f)throw new Error('Acabado desconocido');if(f?.texture&&!['counter','table'].includes(z))throw new Error('Las piedras y los texturizados están disponibles para el tope y la mesa auxiliar.');
   if(f?.zones&&!f.zones.includes(z))throw new Error('Este acabado está disponible solo para el tope de cocina.');
+  if(matches.surfaces&&['counter','table'].includes(z)&&!canUnify(f))throw new Error('Desmarca la unificación para usar un acabado exclusivo del tope.');
   if(selection[z]!==id){
     tones[z]={...hexHsv(f?.color||finishFor(z)?.color||originalColors[z]),enabled:false};
     if(f?.texture)tones[z].v=100;
     editorOpen[z]=false;
   }
-  selection[z]=id;applyMaterials();updateLabels();paintEditor();workflow?.changed();announce(`${labels[z]}: ${finishFor(z)?.name||'acabado original'}`);return readState();
+  selection[z]=id;syncSurfaces(z);applyMaterials();updateLabels();paintEditor();workflow?.changed();announce(`${labels[z]}: ${finishFor(z)?.name||'acabado original'}`);return readState();
 }
-function setMatches(pantry,upper){
+function setMatches(pantry,upper,surfaces=matches.surfaces){
+  if(typeof surfaces!=='boolean')throw new Error('La casilla requiere un valor booleano.');
+  if(surfaces&&!canUnify(finishFor('counter'))){
+    $('match-surfaces').checked=matches.surfaces;
+    $('surface-link-note').textContent='Este acabado es exclusivo del tope. Elige otro para unificarlos.';
+    announce($('surface-link-note').textContent);return readState();
+  }
+  matches.surfaces=surfaces;syncSurfaces('counter');$('match-surfaces').checked=surfaces;
+  $('surface-link-note').textContent='Al activarla, la mesa toma el acabado del tope. Después, ambos cambian juntos.';
   if(typeof pantry!=='boolean'||typeof upper!=='boolean')throw new Error('Las casillas requieren valores booleanos.');
-  matches.pantry=pantry;matches.upper=upper;$('match-pantry').checked=pantry;$('match-upper').checked=upper;applyMaterials();updateLabels();workflow?.changed();return readState();
+  matches.pantry=pantry;matches.upper=upper;$('match-pantry').checked=pantry;$('match-upper').checked=upper;applyMaterials();paintPalette();workflow?.changed();return readState();
 }
 function readState(){return {selection:{...selection},matches:{...matches},tones:structuredClone(tones),view:{...viewOptions?.state},zone};}
 function appearance(){return {version:1,selection:{...selection},matches:{...matches},tones:structuredClone(tones),view:{...viewOptions.state}};}
 function snapshot(){return {...appearance(),camera:{eye:camera.position.toArray(),target:controls.target.toArray()}};}
 function applyCombination(value,{camera:restoreCamera=false}={}){
   for(const z of Object.keys(selection)){selection[z]=value.selection[z];delete tones[z];if(value.tones[z])tones[z]={...value.tones[z]};editorOpen[z]=false;}
-  Object.assign(matches,value.matches);$('match-pantry').checked=matches.pantry;$('match-upper').checked=matches.upper;
+  Object.assign(matches,value.matches);matches.surfaces=value.matches.surfaces??false;syncSurfaces('counter');$('match-surfaces').checked=matches.surfaces;$('match-pantry').checked=matches.pantry;$('match-upper').checked=matches.upper;
   for(const name of ['shadows','edges','profiles']){if(viewOptions.state[name]!==value.view[name])viewOptions.set(name,value.view[name]);$('show-'+name).checked=value.view[name];}
   applyMaterials();paintPalette();
   if(restoreCamera&&value.camera){controls.enableDamping=false;controls.update();camera.position.fromArray(value.camera.eye);controls.target.fromArray(value.camera.target);controls.update();controls.enableDamping=true;}
@@ -234,7 +248,7 @@ function registerTools(){
   const definitions=[
     {name:'read_kitchen_finishes',title:'Consultar acabados',description:'Consultar las selecciones, colores, piedras y texturizados disponibles.',inputSchema:{type:'object',properties:{},additionalProperties:false},annotations:{readOnlyHint:true,untrustedContentHint:false},execute:()=>({...readState(),finishes:palette.map(p=>({id:p.id,name:p.name,category:p.category}))})},
     {name:'set_kitchen_finish',title:'Cambiar acabado',description:'Cambiar el acabado de una zona de la cocina en la vista 3D.',inputSchema:{type:'object',properties:{zone:{type:'string',enum:Object.keys(labels)},finishId:{type:['string','null']}},required:['zone','finishId'],additionalProperties:false},annotations:{readOnlyHint:false,untrustedContentHint:false},execute:input=>{if(!ready)throw new Error('El modelo todavía se está cargando.');return setFinish(input.zone,input.finishId);}},
-    {name:'set_kitchen_matching',title:'Unificar acabados',description:'Activar o desactivar la unificación de la despensa y los cuerpos de gabinetes superiores.',inputSchema:{type:'object',properties:{pantry:{type:'boolean'},upper:{type:'boolean'}},required:['pantry','upper'],additionalProperties:false},annotations:{readOnlyHint:false,untrustedContentHint:false},execute:input=>{if(!ready)throw new Error('El modelo todavía se está cargando.');return setMatches(input.pantry,input.upper);}}
+    {name:'set_kitchen_matching',title:'Unificar acabados',description:'Activar o desactivar la unificación de la despensa, los gabinetes superiores y los acabados del tope y la mesa auxiliar.',inputSchema:{type:'object',properties:{pantry:{type:'boolean'},upper:{type:'boolean'},surfaces:{type:'boolean',description:'Vincular los acabados del tope de cocina y la mesa auxiliar.'}},required:['pantry','upper'],additionalProperties:false},annotations:{readOnlyHint:false,untrustedContentHint:false},execute:input=>{if(!ready)throw new Error('El modelo todavía se está cargando.');return setMatches(input.pantry,input.upper,input.surfaces??matches.surfaces);}}
   ];
   for(const tool of definitions){try{Promise.resolve(context.registerTool(tool,{signal:lifecycle.signal})).catch(()=>{});}catch{}}
 }
@@ -280,17 +294,19 @@ async function init(){
 function zoom(factor){if(!ready)return;camera.position.sub(controls.target).multiplyScalar(factor).add(controls.target);controls.update();requestRender();}
 document.querySelectorAll('[data-zone]').forEach(b=>b.addEventListener('click',()=>selectZone(b.dataset.zone)));document.querySelectorAll('[data-palette]').forEach(b=>b.addEventListener('click',()=>{category=b.dataset.palette;filters.detail='all';paintPalette();}));
 $('original').addEventListener('click',()=>setFinish(zone,null));$('match-pantry').addEventListener('change',()=>setMatches($('match-pantry').checked,matches.upper));$('match-upper').addEventListener('change',()=>setMatches(matches.pantry,$('match-upper').checked));
-$('reset').addEventListener('click',()=>{Object.keys(selection).forEach(k=>{selection[k]=null;delete tones[k];editorOpen[k]=false;});setMatches(false,false);paintPalette();announce('Se restauraron todos los acabados originales.');});
+$('match-surfaces').addEventListener('change',()=>setMatches(matches.pantry,matches.upper,$('match-surfaces').checked));
+$('reset').addEventListener('click',()=>{Object.keys(selection).forEach(k=>{selection[k]=null;delete tones[k];editorOpen[k]=false;});setMatches(false,false,false);paintPalette();announce('Se restauraron todos los acabados originales.');});
 $('home').addEventListener('click',resetCamera);$('zoom-in').addEventListener('click',()=>zoom(.85));$('zoom-out').addEventListener('click',()=>zoom(1.15));
 for(const mode of ['orbit','pan'])$(mode).addEventListener('click',()=>{if(!controls)return;controls.mouseButtons.LEFT=mode==='orbit'?THREE.MOUSE.ROTATE:THREE.MOUSE.PAN;controls.touches.ONE=mode==='orbit'?THREE.TOUCH.ROTATE:THREE.TOUCH.PAN;for(const key of ['orbit','pan']){$(key).classList.toggle('active',key===mode);$(key).setAttribute('aria-pressed',String(key===mode));}$('gesture-help').textContent=mode==='orbit'?'Arrastra para girar · rueda para acercar':'Arrastra para desplazar · rueda para acercar';});
 for(const name of ['shadows','edges','profiles'])$('show-'+name).addEventListener('change',e=>{if(ready){viewOptions.set(name,e.target.checked);workflow.changed();}});
 $('edit-tone').addEventListener('click',()=>{editorOpen[zone]=!editorOpen[zone];paintEditor();if(editorOpen[zone])revealEditor();});
-$('reset-tone').addEventListener('click',()=>{const f=finishFor(zone);tones[zone]={...hexHsv(f.color),v:100,enabled:false};applyMaterials();updateLabels();paintEditor();workflow.changed();});
+$('reset-tone').addEventListener('click',()=>{const f=finishFor(zone);tones[zone]={...hexHsv(f.color),v:100,enabled:false};syncSurfaces(zone);applyMaterials();updateLabels();paintEditor();workflow.changed();});
 $('screenshot').addEventListener('click',async()=>{
   if(!ready)return;const button=$('screenshot');button.disabled=true;button.querySelector('span').textContent='Preparando imagen…';
   try{
     await waitForTextures();interaction.clear();
     const finishes=Object.keys(labels).map(z=>labels[z]+': '+(finishFor(z)?.name||'Original')+(selection[z]==='custom'?' '+hsvHex(tones[z]).toUpperCase():tones[z]?.enabled?' · tono '+hsvHex(tones[z]).toUpperCase():''));
+    if(matches.surfaces)finishes.push('Tope y mesa auxiliar: acabado unificado');
     if(matches.upper)finishes.push('Superiores: iguales a las puertas');if(matches.pantry)finishes.push('Despensa: acabado unificado');
     const floorFinish=palette.find(f=>f.id===config.floor.finishId);
     finishes.push('Piso: terracota rectangular · '+floorFinish.tileSize.map(n=>Number((n*100).toFixed(1)).toLocaleString('es')).join(' × ')+' cm');

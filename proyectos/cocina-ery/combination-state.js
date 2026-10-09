@@ -1,6 +1,10 @@
 export const ZONES=['cabinet','upperDoors','counter','table','pantry','base'];
 export const STORAGE_KEY='prototipoago.cocina-ery.v1';
 const clone=value=>JSON.parse(JSON.stringify(value));
+export function copySurfaceFinish(selection,tones,source='counter'){
+  const target=source==='counter'?'table':'counter';selection[target]=selection[source];
+  delete tones[target];if(tones[source])tones[target]={...tones[source]};
+}
 const number=(n,min,max)=>typeof n==='number'&&Number.isFinite(n)&&n>=min&&n<=max;
 export function validateCombination(value,palette){
   if(!value||value.version!==1||!value.selection||!value.matches||!value.view)throw Error('Esta combinación no es compatible.');
@@ -19,6 +23,13 @@ export function validateCombination(value,palette){
     }else if(id==='custom')throw Error('Falta el color personalizado.');
   }
   for(const k of ['pantry','upper']){if(typeof value.matches[k]!=='boolean')throw Error('Faltan las opciones de unificación.');result.matches[k]=value.matches[k];}
+  if(value.matches.surfaces!==undefined&&typeof value.matches.surfaces!=='boolean')throw Error('La unificación de superficies no es válida.');
+  result.matches.surfaces=value.matches.surfaces??false;
+  if(result.matches.surfaces){
+    const finish=palette.find(f=>f.id===result.selection.counter);
+    if(finish?.zones&&!finish.zones.includes('table'))throw Error('Ese acabado no permite unificar la mesa.');
+    copySurfaceFinish(result.selection,result.tones);
+  }
   for(const k of ['shadows','edges','profiles']){if(typeof value.view[k]!=='boolean')throw Error('Faltan las opciones de visualización.');result.view[k]=value.view[k];}
   if(value.camera){
     const c=value.camera;
