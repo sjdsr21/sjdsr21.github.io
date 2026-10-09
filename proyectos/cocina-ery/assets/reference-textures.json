@@ -1,0 +1,326 @@
+{
+  "date": "2026-10-09",
+  "type": "Recreaciones visuales IA y colores genéricos; no mapas oficiales de fabricante",
+  "greenlamSources": [
+    "https://www.greenlam.co.in/sanganer-terracotta-31812",
+    "https://www.greenlam.co.in/new-collection-2025-27/"
+  ],
+  "assets": [
+    {
+      "id": "greenlam-sanganer",
+      "name": "Greenlam - Sanganer Terracota SM",
+      "texture": "assets/greenlam-sanganer.webp",
+      "provider": "IA · muestra Greenlam",
+      "description": "Elegido para el tope de cocina y la mesa auxiliar. Greenlam 5598 · Super Mate según la muestra. Recreación visual de la fotografía; color y escala del dibujo aproximados.",
+      "brand": "Greenlam",
+      "designCode": "5598"
+    },
+    {
+      "id": "greenlam-visconti",
+      "name": "Greenlam - Visconti Super Mate",
+      "texture": "assets/greenlam-visconti.webp",
+      "provider": "IA · muestra Greenlam",
+      "description": "Greenlam 5583 · Super Mate según la muestra. Recreación visual de la fotografía; color y escala del dibujo aproximados.",
+      "brand": "Greenlam",
+      "designCode": "5583"
+    },
+    {
+      "id": "ery-ref-p01",
+      "name": "P01 - Blanco Calacatta Extra",
+      "texture": "assets/ery-ref-p01.webp",
+      "provider": "IA · fotos Cocina Ery",
+      "description": "Recreación visual de la muestra P01 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+      "sampleCode": "P01"
+    },
+    {
+      "id": "ery-ref-p02",
+      "name": "P02 - Blanco Calacatta Deluxe",
+      "texture": "assets/ery-ref-p02.webp",
+      "provider": "IA · fotos Cocina Ery",
+      "description": "Recreación visual de la muestra P02 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+      "sampleCode": "P02"
+    },
+    {
+      "id": "ery-ref-p03",
+      "name": "P03 - Negro veta dorada suave",
+      "texture": "assets/ery-ref-p03.webp",
+      "provider": "IA · fotos Cocina Ery",
+      "description": "Recreación visual de la muestra P03 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+      "sampleCode": "P03"
+    },
+    {
+      "id": "ery-ref-p04",
+      "name": "P04 - Gris nube",
+      "texture": "assets/ery-ref-p04.webp",
+      "provider": "IA · fotos Cocina Ery",
+      "description": "Recreación visual de la muestra P04 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+      "sampleCode": "P04"
+    },
+    {
+      "id": "ery-ref-p05",
+      "name": "P05 - Negro veta cobre",
+      "texture": "assets/ery-ref-p05.webp",
+      "provider": "IA · fotos Cocina Ery",
+      "description": "Recreación visual de la muestra P05 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+      "sampleCode": "P05"
+    },
+    {
+      "id": "ery-ref-p06",
+      "name": "P06 - Gris perla veteado",
+      "texture": "assets/ery-ref-p06.webp",
+      "provider": "IA · fotos Cocina Ery",
+      "description": "Recreación visual de la muestra P06 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+      "sampleCode": "P06"
+    },
+    {
+      "id": "ery-ref-p07",
+      "name": "P07 - Cafe mineral",
+      "texture": "assets/ery-ref-p07.webp",
+      "provider": "IA · fotos Cocina Ery",
+      "description": "Recreación visual de la muestra P07 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+      "sampleCode": "P07"
+    },
+    {
+      "id": "ery-ref-p08",
+      "name": "P08 - Blanco moteado fino",
+      "texture": "assets/ery-ref-p08.webp",
+      "provider": "IA · fotos Cocina Ery",
+      "description": "Recreación visual de la muestra P08 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+      "sampleCode": "P08"
+    },
+    {
+      "id": "ery-ref-p09",
+      "name": "P09 - Blanco nube suave",
+      "texture": "assets/ery-ref-p09.webp",
+      "provider": "IA · fotos Cocina Ery",
+      "description": "Recreación visual de la muestra P09 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+      "sampleCode": "P09"
+    },
+    {
+      "id": "ery-ref-p10",
+      "name": "P10 - Beige brecha rosada",
+      "texture": "assets/ery-ref-p10.webp",
+      "provider": "IA · fotos Cocina Ery",
+      "description": "Recreación visual de la muestra P10 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+      "sampleCode": "P10"
+    },
+    {
+      "id": "ery-ref-p11",
+      "name": "P11 - Greige veta fina",
+      "texture": "assets/ery-ref-p11.webp",
+      "provider": "IA · fotos Cocina Ery",
+      "description": "Recreación visual de la muestra P11 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+      "sampleCode": "P11"
+    },
+    {
+      "id": "ery-ref-p12",
+      "name": "P12 - Negro granulado fino",
+      "texture": "assets/ery-ref-p12.webp",
+      "provider": "IA · fotos Cocina Ery",
+      "description": "Recreación visual de la muestra P12 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+      "sampleCode": "P12"
+    },
+    {
+      "id": "ery-ref-p13",
+      "name": "P13 - Crema punteado fino",
+      "texture": "assets/ery-ref-p13.webp",
+      "provider": "IA · fotos Cocina Ery",
+      "description": "Recreación visual de la muestra P13 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+      "sampleCode": "P13"
+    },
+    {
+      "id": "ery-ref-p14",
+      "name": "P14 - Gris calizo moteado",
+      "texture": "assets/ery-ref-p14.webp",
+      "provider": "IA · fotos Cocina Ery",
+      "description": "Recreación visual de la muestra P14 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+      "sampleCode": "P14"
+    },
+    {
+      "id": "ery-ref-p15",
+      "name": "P15 - Negro red blanca",
+      "texture": "assets/ery-ref-p15.webp",
+      "provider": "IA · fotos Cocina Ery",
+      "description": "Recreación visual de la muestra P15 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+      "sampleCode": "P15"
+    },
+    {
+      "id": "ery-ref-p16",
+      "name": "P16 - Arena veta ondulada",
+      "texture": "assets/ery-ref-p16.webp",
+      "provider": "IA · fotos Cocina Ery",
+      "description": "Recreación visual de la muestra P16 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+      "sampleCode": "P16"
+    },
+    {
+      "id": "ery-ref-p17",
+      "name": "P17 - Marron estriado",
+      "texture": "assets/ery-ref-p17.webp",
+      "provider": "IA · fotos Cocina Ery",
+      "description": "Recreación visual de la muestra P17 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+      "sampleCode": "P17"
+    },
+    {
+      "id": "ery-ref-p18",
+      "name": "P18 - Brecha gris oscura",
+      "texture": "assets/ery-ref-p18.webp",
+      "provider": "IA · fotos Cocina Ery",
+      "description": "Recreación visual de la muestra P18 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+      "sampleCode": "P18"
+    },
+    {
+      "id": "ery-ref-p19",
+      "name": "P19 - Brecha beige grafito",
+      "texture": "assets/ery-ref-p19.webp",
+      "provider": "IA · fotos Cocina Ery",
+      "description": "Recreación visual de la muestra P19 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+      "sampleCode": "P19"
+    },
+    {
+      "id": "ery-ref-p20",
+      "name": "P20 - Gris fino fisura",
+      "texture": "assets/ery-ref-p20.webp",
+      "provider": "IA · fotos Cocina Ery",
+      "description": "Recreación visual de la muestra P20 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+      "sampleCode": "P20"
+    },
+    {
+      "id": "ery-ref-p21",
+      "name": "P21 - Blanco veta oro",
+      "texture": "assets/ery-ref-p21.webp",
+      "provider": "IA · fotos Cocina Ery",
+      "description": "Recreación visual de la muestra P21 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+      "sampleCode": "P21"
+    },
+    {
+      "id": "ery-ref-p22",
+      "name": "P22 - Marfil vetas largas",
+      "texture": "assets/ery-ref-p22.webp",
+      "provider": "IA · fotos Cocina Ery",
+      "description": "Recreación visual de la muestra P22 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+      "sampleCode": "P22"
+    },
+    {
+      "id": "ery-ref-p23",
+      "name": "P23 - Onice gris dorado",
+      "texture": "assets/ery-ref-p23.webp",
+      "provider": "IA · fotos Cocina Ery",
+      "description": "Recreación visual de la muestra P23 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+      "sampleCode": "P23"
+    },
+    {
+      "id": "ery-ref-p24",
+      "name": "P24 - Beige nube lisa",
+      "texture": "assets/ery-ref-p24.webp",
+      "provider": "IA · fotos Cocina Ery",
+      "description": "Recreación visual de la muestra P24 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+      "sampleCode": "P24"
+    },
+    {
+      "id": "ery-ref-p25",
+      "name": "P25 - Marfil motas dispersas",
+      "texture": "assets/ery-ref-p25.webp",
+      "provider": "IA · fotos Cocina Ery",
+      "description": "Recreación visual de la muestra P25 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+      "sampleCode": "P25"
+    },
+    {
+      "id": "ery-ref-p26",
+      "name": "P26 - Negro diagonales blancas",
+      "texture": "assets/ery-ref-p26.webp",
+      "provider": "IA · fotos Cocina Ery",
+      "description": "Recreación visual de la muestra P26 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+      "sampleCode": "P26"
+    },
+    {
+      "id": "ery-ref-p27",
+      "name": "P27 - Crema cristalino",
+      "texture": "assets/ery-ref-p27.webp",
+      "provider": "IA · fotos Cocina Ery",
+      "description": "Recreación visual de la muestra P27 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+      "sampleCode": "P27"
+    },
+    {
+      "id": "ery-ref-p28",
+      "name": "P28 - Blanco diagonales grises",
+      "texture": "assets/ery-ref-p28.webp",
+      "provider": "IA · fotos Cocina Ery",
+      "description": "Recreación visual de la muestra P28 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+      "sampleCode": "P28"
+    },
+    {
+      "id": "solid-marfil-micro",
+      "name": "Marfil microtextura",
+      "texture": "assets/solid-marfil-micro.webp",
+      "provider": "IA · selección propia provisional",
+      "description": "Color y microtextura genéricos. Sin marca ni equivalencia comercial. Pendiente de muestras disponibles en Venezuela."
+    },
+    {
+      "id": "solid-topo-micro",
+      "name": "Topo microtextura",
+      "texture": "assets/solid-topo-micro.webp",
+      "provider": "IA · selección propia provisional",
+      "description": "Color y microtextura genéricos. Sin marca ni equivalencia comercial. Pendiente de muestras disponibles en Venezuela."
+    },
+    {
+      "id": "solid-hueso",
+      "name": "Hueso cálido",
+      "description": "Color liso genérico, sin marca ni equivalencia comercial. Por corroborar con los catálogos disponibles en Venezuela."
+    },
+    {
+      "id": "solid-marfil",
+      "name": "Marfil",
+      "description": "Color liso genérico, sin marca ni equivalencia comercial. Por corroborar con los catálogos disponibles en Venezuela."
+    },
+    {
+      "id": "solid-avena",
+      "name": "Avena",
+      "description": "Color liso genérico, sin marca ni equivalencia comercial. Por corroborar con los catálogos disponibles en Venezuela."
+    },
+    {
+      "id": "solid-arena",
+      "name": "Arena",
+      "description": "Color liso genérico, sin marca ni equivalencia comercial. Por corroborar con los catálogos disponibles en Venezuela."
+    },
+    {
+      "id": "solid-greige",
+      "name": "Greige claro",
+      "description": "Color liso genérico, sin marca ni equivalencia comercial. Por corroborar con los catálogos disponibles en Venezuela."
+    },
+    {
+      "id": "solid-lino",
+      "name": "Lino gris cálido",
+      "description": "Color liso genérico, sin marca ni equivalencia comercial. Por corroborar con los catálogos disponibles en Venezuela."
+    },
+    {
+      "id": "solid-topo",
+      "name": "Topo",
+      "description": "Color liso genérico, sin marca ni equivalencia comercial. Por corroborar con los catálogos disponibles en Venezuela."
+    },
+    {
+      "id": "solid-cacao",
+      "name": "Cacao",
+      "description": "Color liso genérico, sin marca ni equivalencia comercial. Por corroborar con los catálogos disponibles en Venezuela."
+    },
+    {
+      "id": "solid-grafito",
+      "name": "Grafito cálido",
+      "description": "Color liso genérico, sin marca ni equivalencia comercial. Por corroborar con los catálogos disponibles en Venezuela."
+    },
+    {
+      "id": "solid-salvia",
+      "name": "Salvia gris",
+      "description": "Color liso genérico, sin marca ni equivalencia comercial. Por corroborar con los catálogos disponibles en Venezuela."
+    },
+    {
+      "id": "solid-oliva",
+      "name": "Oliva apagado",
+      "description": "Color liso genérico, sin marca ni equivalencia comercial. Por corroborar con los catálogos disponibles en Venezuela."
+    },
+    {
+      "id": "solid-arcilla",
+      "name": "Arcilla suave",
+      "description": "Color liso genérico, sin marca ni equivalencia comercial. Por corroborar con los catálogos disponibles en Venezuela."
+    }
+  ]
+}

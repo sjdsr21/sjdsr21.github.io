@@ -3204,5 +3204,869 @@
     "license": "CC0-1.0",
     "provider": "ambientCG",
     "tone": "claro"
+  },
+  {
+    "id": "greenlam-sanganer",
+    "name": "Greenlam - Sanganer Terracota SM",
+    "color": "#af9b8c",
+    "tone": "medio",
+    "category": "textured",
+    "description": "Elegido para el tope de cocina y la mesa auxiliar. Greenlam 5598 · Super Mate según la muestra. Recreación visual de la fotografía; color y escala del dibujo aproximados.",
+    "collection": "Greenlam",
+    "family": "Laminado Greenlam",
+    "roughness": 0.88,
+    "texture": "assets/greenlam-sanganer.webp",
+    "size": [
+      2.44,
+      1.22
+    ],
+    "zones": [
+      "counter",
+      "table"
+    ],
+    "provider": "IA · muestra Greenlam",
+    "brand": "Greenlam",
+    "designCode": "5598"
+  },
+  {
+    "id": "greenlam-visconti",
+    "name": "Greenlam - Visconti Super Mate",
+    "color": "#978f88",
+    "tone": "medio",
+    "category": "textured",
+    "description": "Greenlam 5583 · Super Mate según la muestra. Recreación visual de la fotografía; color y escala del dibujo aproximados.",
+    "collection": "Greenlam",
+    "family": "Laminado Greenlam",
+    "roughness": 0.88,
+    "texture": "assets/greenlam-visconti.webp",
+    "size": [
+      2.44,
+      1.22
+    ],
+    "zones": [
+      "counter",
+      "table"
+    ],
+    "provider": "IA · muestra Greenlam",
+    "brand": "Greenlam",
+    "designCode": "5583"
+  },
+  {
+    "id": "ery-ref-p01",
+    "name": "P01 - Blanco Calacatta Extra",
+    "color": "#eae7e3",
+    "tone": "claro",
+    "category": "stone",
+    "description": "Recreación visual de la muestra P01 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+    "collection": "Referencias Ery",
+    "family": "Piedra",
+    "roughness": 0.68,
+    "texture": "assets/ery-ref-p01.webp",
+    "size": [
+      2.4,
+      1.2
+    ],
+    "zones": [
+      "counter",
+      "table"
+    ],
+    "provider": "IA · fotos Cocina Ery",
+    "pattern": "veteado",
+    "sampleCode": "P01"
+  },
+  {
+    "id": "ery-ref-p02",
+    "name": "P02 - Blanco Calacatta Deluxe",
+    "color": "#e8e7e6",
+    "tone": "claro",
+    "category": "stone",
+    "description": "Recreación visual de la muestra P02 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+    "collection": "Referencias Ery",
+    "family": "Piedra",
+    "roughness": 0.68,
+    "texture": "assets/ery-ref-p02.webp",
+    "size": [
+      2.4,
+      1.2
+    ],
+    "zones": [
+      "counter",
+      "table"
+    ],
+    "provider": "IA · fotos Cocina Ery",
+    "pattern": "veteado",
+    "sampleCode": "P02"
+  },
+  {
+    "id": "ery-ref-p03",
+    "name": "P03 - Negro veta dorada suave",
+    "color": "#282724",
+    "tone": "oscuro",
+    "category": "stone",
+    "description": "Recreación visual de la muestra P03 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+    "collection": "Referencias Ery",
+    "family": "Piedra",
+    "roughness": 0.68,
+    "texture": "assets/ery-ref-p03.webp",
+    "size": [
+      2.4,
+      1.2
+    ],
+    "zones": [
+      "counter",
+      "table"
+    ],
+    "provider": "IA · fotos Cocina Ery",
+    "pattern": "veteado",
+    "sampleCode": "P03"
+  },
+  {
+    "id": "ery-ref-p04",
+    "name": "P04 - Gris nube",
+    "color": "#9e9e9e",
+    "tone": "medio",
+    "category": "stone",
+    "description": "Recreación visual de la muestra P04 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+    "collection": "Referencias Ery",
+    "family": "Piedra",
+    "roughness": 0.68,
+    "texture": "assets/ery-ref-p04.webp",
+    "size": [
+      2.4,
+      1.2
+    ],
+    "zones": [
+      "counter",
+      "table"
+    ],
+    "provider": "IA · fotos Cocina Ery",
+    "pattern": "suave",
+    "sampleCode": "P04"
+  },
+  {
+    "id": "ery-ref-p05",
+    "name": "P05 - Negro veta cobre",
+    "color": "#191716",
+    "tone": "oscuro",
+    "category": "stone",
+    "description": "Recreación visual de la muestra P05 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+    "collection": "Referencias Ery",
+    "family": "Piedra",
+    "roughness": 0.68,
+    "texture": "assets/ery-ref-p05.webp",
+    "size": [
+      2.4,
+      1.2
+    ],
+    "zones": [
+      "counter",
+      "table"
+    ],
+    "provider": "IA · fotos Cocina Ery",
+    "pattern": "veteado",
+    "sampleCode": "P05"
+  },
+  {
+    "id": "ery-ref-p06",
+    "name": "P06 - Gris perla veteado",
+    "color": "#b0aaa5",
+    "tone": "claro",
+    "category": "stone",
+    "description": "Recreación visual de la muestra P06 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+    "collection": "Referencias Ery",
+    "family": "Piedra",
+    "roughness": 0.68,
+    "texture": "assets/ery-ref-p06.webp",
+    "size": [
+      2.4,
+      1.2
+    ],
+    "zones": [
+      "counter",
+      "table"
+    ],
+    "provider": "IA · fotos Cocina Ery",
+    "pattern": "veteado",
+    "sampleCode": "P06"
+  },
+  {
+    "id": "ery-ref-p07",
+    "name": "P07 - Cafe mineral",
+    "color": "#57473a",
+    "tone": "oscuro",
+    "category": "stone",
+    "description": "Recreación visual de la muestra P07 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+    "collection": "Referencias Ery",
+    "family": "Piedra",
+    "roughness": 0.68,
+    "texture": "assets/ery-ref-p07.webp",
+    "size": [
+      2.4,
+      1.2
+    ],
+    "zones": [
+      "counter",
+      "table"
+    ],
+    "provider": "IA · fotos Cocina Ery",
+    "pattern": "veteado",
+    "sampleCode": "P07"
+  },
+  {
+    "id": "ery-ref-p08",
+    "name": "P08 - Blanco moteado fino",
+    "color": "#d8d5d2",
+    "tone": "claro",
+    "category": "stone",
+    "description": "Recreación visual de la muestra P08 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+    "collection": "Referencias Ery",
+    "family": "Piedra",
+    "roughness": 0.68,
+    "texture": "assets/ery-ref-p08.webp",
+    "size": [
+      2.4,
+      1.2
+    ],
+    "zones": [
+      "counter",
+      "table"
+    ],
+    "provider": "IA · fotos Cocina Ery",
+    "pattern": "granulado",
+    "sampleCode": "P08"
+  },
+  {
+    "id": "ery-ref-p09",
+    "name": "P09 - Blanco nube suave",
+    "color": "#e1e1e3",
+    "tone": "claro",
+    "category": "stone",
+    "description": "Recreación visual de la muestra P09 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+    "collection": "Referencias Ery",
+    "family": "Piedra",
+    "roughness": 0.68,
+    "texture": "assets/ery-ref-p09.webp",
+    "size": [
+      2.4,
+      1.2
+    ],
+    "zones": [
+      "counter",
+      "table"
+    ],
+    "provider": "IA · fotos Cocina Ery",
+    "pattern": "suave",
+    "sampleCode": "P09"
+  },
+  {
+    "id": "ery-ref-p10",
+    "name": "P10 - Beige brecha rosada",
+    "color": "#b9a699",
+    "tone": "medio",
+    "category": "stone",
+    "description": "Recreación visual de la muestra P10 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+    "collection": "Referencias Ery",
+    "family": "Piedra",
+    "roughness": 0.68,
+    "texture": "assets/ery-ref-p10.webp",
+    "size": [
+      2.4,
+      1.2
+    ],
+    "zones": [
+      "counter",
+      "table"
+    ],
+    "provider": "IA · fotos Cocina Ery",
+    "pattern": "veteado",
+    "sampleCode": "P10"
+  },
+  {
+    "id": "ery-ref-p11",
+    "name": "P11 - Greige veta fina",
+    "color": "#898076",
+    "tone": "medio",
+    "category": "stone",
+    "description": "Recreación visual de la muestra P11 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+    "collection": "Referencias Ery",
+    "family": "Piedra",
+    "roughness": 0.68,
+    "texture": "assets/ery-ref-p11.webp",
+    "size": [
+      2.4,
+      1.2
+    ],
+    "zones": [
+      "counter",
+      "table"
+    ],
+    "provider": "IA · fotos Cocina Ery",
+    "pattern": "veteado",
+    "sampleCode": "P11"
+  },
+  {
+    "id": "ery-ref-p12",
+    "name": "P12 - Negro granulado fino",
+    "color": "#2e3033",
+    "tone": "oscuro",
+    "category": "stone",
+    "description": "Recreación visual de la muestra P12 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+    "collection": "Referencias Ery",
+    "family": "Piedra",
+    "roughness": 0.68,
+    "texture": "assets/ery-ref-p12.webp",
+    "size": [
+      2.4,
+      1.2
+    ],
+    "zones": [
+      "counter",
+      "table"
+    ],
+    "provider": "IA · fotos Cocina Ery",
+    "pattern": "granulado",
+    "sampleCode": "P12"
+  },
+  {
+    "id": "ery-ref-p13",
+    "name": "P13 - Crema punteado fino",
+    "color": "#e5ded5",
+    "tone": "claro",
+    "category": "stone",
+    "description": "Recreación visual de la muestra P13 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+    "collection": "Referencias Ery",
+    "family": "Piedra",
+    "roughness": 0.68,
+    "texture": "assets/ery-ref-p13.webp",
+    "size": [
+      2.4,
+      1.2
+    ],
+    "zones": [
+      "counter",
+      "table"
+    ],
+    "provider": "IA · fotos Cocina Ery",
+    "pattern": "granulado",
+    "sampleCode": "P13"
+  },
+  {
+    "id": "ery-ref-p14",
+    "name": "P14 - Gris calizo moteado",
+    "color": "#c6bfb6",
+    "tone": "claro",
+    "category": "stone",
+    "description": "Recreación visual de la muestra P14 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+    "collection": "Referencias Ery",
+    "family": "Piedra",
+    "roughness": 0.68,
+    "texture": "assets/ery-ref-p14.webp",
+    "size": [
+      2.4,
+      1.2
+    ],
+    "zones": [
+      "counter",
+      "table"
+    ],
+    "provider": "IA · fotos Cocina Ery",
+    "pattern": "granulado",
+    "sampleCode": "P14"
+  },
+  {
+    "id": "ery-ref-p15",
+    "name": "P15 - Negro red blanca",
+    "color": "#2c2b2a",
+    "tone": "oscuro",
+    "category": "stone",
+    "description": "Recreación visual de la muestra P15 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+    "collection": "Referencias Ery",
+    "family": "Piedra",
+    "roughness": 0.68,
+    "texture": "assets/ery-ref-p15.webp",
+    "size": [
+      2.4,
+      1.2
+    ],
+    "zones": [
+      "counter",
+      "table"
+    ],
+    "provider": "IA · fotos Cocina Ery",
+    "pattern": "veteado",
+    "sampleCode": "P15"
+  },
+  {
+    "id": "ery-ref-p16",
+    "name": "P16 - Arena veta ondulada",
+    "color": "#d3c3af",
+    "tone": "claro",
+    "category": "stone",
+    "description": "Recreación visual de la muestra P16 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+    "collection": "Referencias Ery",
+    "family": "Piedra",
+    "roughness": 0.68,
+    "texture": "assets/ery-ref-p16.webp",
+    "size": [
+      2.4,
+      1.2
+    ],
+    "zones": [
+      "counter",
+      "table"
+    ],
+    "provider": "IA · fotos Cocina Ery",
+    "pattern": "veteado",
+    "sampleCode": "P16"
+  },
+  {
+    "id": "ery-ref-p17",
+    "name": "P17 - Marron estriado",
+    "color": "#644e3e",
+    "tone": "oscuro",
+    "category": "stone",
+    "description": "Recreación visual de la muestra P17 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+    "collection": "Referencias Ery",
+    "family": "Piedra",
+    "roughness": 0.68,
+    "texture": "assets/ery-ref-p17.webp",
+    "size": [
+      2.4,
+      1.2
+    ],
+    "zones": [
+      "counter",
+      "table"
+    ],
+    "provider": "IA · fotos Cocina Ery",
+    "pattern": "veteado",
+    "sampleCode": "P17"
+  },
+  {
+    "id": "ery-ref-p18",
+    "name": "P18 - Brecha gris oscura",
+    "color": "#625f5c",
+    "tone": "medio",
+    "category": "stone",
+    "description": "Recreación visual de la muestra P18 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+    "collection": "Referencias Ery",
+    "family": "Piedra",
+    "roughness": 0.68,
+    "texture": "assets/ery-ref-p18.webp",
+    "size": [
+      2.4,
+      1.2
+    ],
+    "zones": [
+      "counter",
+      "table"
+    ],
+    "provider": "IA · fotos Cocina Ery",
+    "pattern": "veteado",
+    "sampleCode": "P18"
+  },
+  {
+    "id": "ery-ref-p19",
+    "name": "P19 - Brecha beige grafito",
+    "color": "#a39384",
+    "tone": "medio",
+    "category": "stone",
+    "description": "Recreación visual de la muestra P19 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+    "collection": "Referencias Ery",
+    "family": "Piedra",
+    "roughness": 0.68,
+    "texture": "assets/ery-ref-p19.webp",
+    "size": [
+      2.4,
+      1.2
+    ],
+    "zones": [
+      "counter",
+      "table"
+    ],
+    "provider": "IA · fotos Cocina Ery",
+    "pattern": "veteado",
+    "sampleCode": "P19"
+  },
+  {
+    "id": "ery-ref-p20",
+    "name": "P20 - Gris fino fisura",
+    "color": "#95908b",
+    "tone": "medio",
+    "category": "stone",
+    "description": "Recreación visual de la muestra P20 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+    "collection": "Referencias Ery",
+    "family": "Piedra",
+    "roughness": 0.68,
+    "texture": "assets/ery-ref-p20.webp",
+    "size": [
+      2.4,
+      1.2
+    ],
+    "zones": [
+      "counter",
+      "table"
+    ],
+    "provider": "IA · fotos Cocina Ery",
+    "pattern": "veteado",
+    "sampleCode": "P20"
+  },
+  {
+    "id": "ery-ref-p21",
+    "name": "P21 - Blanco veta oro",
+    "color": "#eae6df",
+    "tone": "claro",
+    "category": "stone",
+    "description": "Recreación visual de la muestra P21 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+    "collection": "Referencias Ery",
+    "family": "Piedra",
+    "roughness": 0.68,
+    "texture": "assets/ery-ref-p21.webp",
+    "size": [
+      2.4,
+      1.2
+    ],
+    "zones": [
+      "counter",
+      "table"
+    ],
+    "provider": "IA · fotos Cocina Ery",
+    "pattern": "veteado",
+    "sampleCode": "P21"
+  },
+  {
+    "id": "ery-ref-p22",
+    "name": "P22 - Marfil vetas largas",
+    "color": "#e6e0d6",
+    "tone": "claro",
+    "category": "stone",
+    "description": "Recreación visual de la muestra P22 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+    "collection": "Referencias Ery",
+    "family": "Piedra",
+    "roughness": 0.68,
+    "texture": "assets/ery-ref-p22.webp",
+    "size": [
+      2.4,
+      1.2
+    ],
+    "zones": [
+      "counter",
+      "table"
+    ],
+    "provider": "IA · fotos Cocina Ery",
+    "pattern": "veteado",
+    "sampleCode": "P22"
+  },
+  {
+    "id": "ery-ref-p23",
+    "name": "P23 - Onice gris dorado",
+    "color": "#c3beb7",
+    "tone": "claro",
+    "category": "stone",
+    "description": "Recreación visual de la muestra P23 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+    "collection": "Referencias Ery",
+    "family": "Piedra",
+    "roughness": 0.68,
+    "texture": "assets/ery-ref-p23.webp",
+    "size": [
+      2.4,
+      1.2
+    ],
+    "zones": [
+      "counter",
+      "table"
+    ],
+    "provider": "IA · fotos Cocina Ery",
+    "pattern": "veteado",
+    "sampleCode": "P23"
+  },
+  {
+    "id": "ery-ref-p24",
+    "name": "P24 - Beige nube lisa",
+    "color": "#c8c3bd",
+    "tone": "claro",
+    "category": "stone",
+    "description": "Recreación visual de la muestra P24 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+    "collection": "Referencias Ery",
+    "family": "Piedra",
+    "roughness": 0.68,
+    "texture": "assets/ery-ref-p24.webp",
+    "size": [
+      2.4,
+      1.2
+    ],
+    "zones": [
+      "counter",
+      "table"
+    ],
+    "provider": "IA · fotos Cocina Ery",
+    "pattern": "suave",
+    "sampleCode": "P24"
+  },
+  {
+    "id": "ery-ref-p25",
+    "name": "P25 - Marfil motas dispersas",
+    "color": "#e3dacd",
+    "tone": "claro",
+    "category": "stone",
+    "description": "Recreación visual de la muestra P25 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+    "collection": "Referencias Ery",
+    "family": "Piedra",
+    "roughness": 0.68,
+    "texture": "assets/ery-ref-p25.webp",
+    "size": [
+      2.4,
+      1.2
+    ],
+    "zones": [
+      "counter",
+      "table"
+    ],
+    "provider": "IA · fotos Cocina Ery",
+    "pattern": "granulado",
+    "sampleCode": "P25"
+  },
+  {
+    "id": "ery-ref-p26",
+    "name": "P26 - Negro diagonales blancas",
+    "color": "#33312e",
+    "tone": "oscuro",
+    "category": "stone",
+    "description": "Recreación visual de la muestra P26 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+    "collection": "Referencias Ery",
+    "family": "Piedra",
+    "roughness": 0.68,
+    "texture": "assets/ery-ref-p26.webp",
+    "size": [
+      2.4,
+      1.2
+    ],
+    "zones": [
+      "counter",
+      "table"
+    ],
+    "provider": "IA · fotos Cocina Ery",
+    "pattern": "veteado",
+    "sampleCode": "P26"
+  },
+  {
+    "id": "ery-ref-p27",
+    "name": "P27 - Crema cristalino",
+    "color": "#dfd5c8",
+    "tone": "claro",
+    "category": "stone",
+    "description": "Recreación visual de la muestra P27 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+    "collection": "Referencias Ery",
+    "family": "Piedra",
+    "roughness": 0.68,
+    "texture": "assets/ery-ref-p27.webp",
+    "size": [
+      2.4,
+      1.2
+    ],
+    "zones": [
+      "counter",
+      "table"
+    ],
+    "provider": "IA · fotos Cocina Ery",
+    "pattern": "granulado",
+    "sampleCode": "P27"
+  },
+  {
+    "id": "ery-ref-p28",
+    "name": "P28 - Blanco diagonales grises",
+    "color": "#e5ded5",
+    "tone": "claro",
+    "category": "stone",
+    "description": "Recreación visual de la muestra P28 de las fotos de referencia. Color y escala de veta aproximados; tipo y marca por corroborar.",
+    "collection": "Referencias Ery",
+    "family": "Piedra",
+    "roughness": 0.68,
+    "texture": "assets/ery-ref-p28.webp",
+    "size": [
+      2.4,
+      1.2
+    ],
+    "zones": [
+      "counter",
+      "table"
+    ],
+    "provider": "IA · fotos Cocina Ery",
+    "pattern": "veteado",
+    "sampleCode": "P28"
+  },
+  {
+    "id": "solid-marfil-micro",
+    "name": "Marfil microtextura",
+    "color": "#e6ddca",
+    "tone": "claro",
+    "category": "textured",
+    "description": "Color y microtextura genéricos. Sin marca ni equivalencia comercial. Pendiente de muestras disponibles en Venezuela.",
+    "collection": "Selección provisional",
+    "family": "Colores provisionales",
+    "roughness": 0.88,
+    "texture": "assets/solid-marfil-micro.webp",
+    "size": [
+      0.6,
+      0.3
+    ],
+    "zones": [
+      "counter",
+      "table"
+    ],
+    "provider": "IA · selección propia provisional"
+  },
+  {
+    "id": "solid-topo-micro",
+    "name": "Topo microtextura",
+    "color": "#94867b",
+    "tone": "medio",
+    "category": "textured",
+    "description": "Color y microtextura genéricos. Sin marca ni equivalencia comercial. Pendiente de muestras disponibles en Venezuela.",
+    "collection": "Selección provisional",
+    "family": "Colores provisionales",
+    "roughness": 0.88,
+    "texture": "assets/solid-topo-micro.webp",
+    "size": [
+      0.6,
+      0.3
+    ],
+    "zones": [
+      "counter",
+      "table"
+    ],
+    "provider": "IA · selección propia provisional"
+  },
+  {
+    "id": "solid-hueso",
+    "name": "Hueso cálido",
+    "color": "#EAE4D8",
+    "tone": "claro",
+    "category": "neutral",
+    "description": "Color liso genérico, sin marca ni equivalencia comercial. Por corroborar con los catálogos disponibles en Venezuela.",
+    "collection": "Selección provisional",
+    "family": "Colores provisionales",
+    "roughness": 0.88
+  },
+  {
+    "id": "solid-marfil",
+    "name": "Marfil",
+    "color": "#E5D8BF",
+    "tone": "claro",
+    "category": "neutral",
+    "description": "Color liso genérico, sin marca ni equivalencia comercial. Por corroborar con los catálogos disponibles en Venezuela.",
+    "collection": "Selección provisional",
+    "family": "Colores provisionales",
+    "roughness": 0.88
+  },
+  {
+    "id": "solid-avena",
+    "name": "Avena",
+    "color": "#D8CAB4",
+    "tone": "claro",
+    "category": "neutral",
+    "description": "Color liso genérico, sin marca ni equivalencia comercial. Por corroborar con los catálogos disponibles en Venezuela.",
+    "collection": "Selección provisional",
+    "family": "Colores provisionales",
+    "roughness": 0.88
+  },
+  {
+    "id": "solid-arena",
+    "name": "Arena",
+    "color": "#C8B79C",
+    "tone": "claro",
+    "category": "neutral",
+    "description": "Color liso genérico, sin marca ni equivalencia comercial. Por corroborar con los catálogos disponibles en Venezuela.",
+    "collection": "Selección provisional",
+    "family": "Colores provisionales",
+    "roughness": 0.88
+  },
+  {
+    "id": "solid-greige",
+    "name": "Greige claro",
+    "color": "#BCB4A6",
+    "tone": "claro",
+    "category": "neutral",
+    "description": "Color liso genérico, sin marca ni equivalencia comercial. Por corroborar con los catálogos disponibles en Venezuela.",
+    "collection": "Selección provisional",
+    "family": "Colores provisionales",
+    "roughness": 0.88
+  },
+  {
+    "id": "solid-lino",
+    "name": "Lino gris cálido",
+    "color": "#A59F93",
+    "tone": "medio",
+    "category": "neutral",
+    "description": "Color liso genérico, sin marca ni equivalencia comercial. Por corroborar con los catálogos disponibles en Venezuela.",
+    "collection": "Selección provisional",
+    "family": "Colores provisionales",
+    "roughness": 0.88
+  },
+  {
+    "id": "solid-topo",
+    "name": "Topo",
+    "color": "#918276",
+    "tone": "medio",
+    "category": "neutral",
+    "description": "Color liso genérico, sin marca ni equivalencia comercial. Por corroborar con los catálogos disponibles en Venezuela.",
+    "collection": "Selección provisional",
+    "family": "Colores provisionales",
+    "roughness": 0.88
+  },
+  {
+    "id": "solid-cacao",
+    "name": "Cacao",
+    "color": "#655248",
+    "tone": "oscuro",
+    "category": "neutral",
+    "description": "Color liso genérico, sin marca ni equivalencia comercial. Por corroborar con los catálogos disponibles en Venezuela.",
+    "collection": "Selección provisional",
+    "family": "Colores provisionales",
+    "roughness": 0.88
+  },
+  {
+    "id": "solid-grafito",
+    "name": "Grafito cálido",
+    "color": "#4B4843",
+    "tone": "oscuro",
+    "category": "neutral",
+    "description": "Color liso genérico, sin marca ni equivalencia comercial. Por corroborar con los catálogos disponibles en Venezuela.",
+    "collection": "Selección provisional",
+    "family": "Colores provisionales",
+    "roughness": 0.88
+  },
+  {
+    "id": "solid-salvia",
+    "name": "Salvia gris",
+    "color": "#A4AB99",
+    "tone": "medio",
+    "category": "color",
+    "description": "Color liso genérico, sin marca ni equivalencia comercial. Por corroborar con los catálogos disponibles en Venezuela.",
+    "collection": "Selección provisional",
+    "family": "Colores provisionales",
+    "roughness": 0.88
+  },
+  {
+    "id": "solid-oliva",
+    "name": "Oliva apagado",
+    "color": "#767C65",
+    "tone": "medio",
+    "category": "color",
+    "description": "Color liso genérico, sin marca ni equivalencia comercial. Por corroborar con los catálogos disponibles en Venezuela.",
+    "collection": "Selección provisional",
+    "family": "Colores provisionales",
+    "roughness": 0.88
+  },
+  {
+    "id": "solid-arcilla",
+    "name": "Arcilla suave",
+    "color": "#BC8F79",
+    "tone": "medio",
+    "category": "color",
+    "description": "Color liso genérico, sin marca ni equivalencia comercial. Por corroborar con los catálogos disponibles en Venezuela.",
+    "collection": "Selección provisional",
+    "family": "Colores provisionales",
+    "roughness": 0.88
   }
 ]

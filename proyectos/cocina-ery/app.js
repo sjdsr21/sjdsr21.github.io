@@ -10,13 +10,13 @@ import {createViewOptions} from './view-options.js';
 import {downloadView} from './capture.js';
 import {createWorkflow} from './workflow.js';
 import {createModelInteraction} from './model-interaction.js';
-import {filterCatalog} from './catalog.js';
+import {filterCatalog} from './catalog.js?v=20261009-texturas';
 import {counterPart,resolveCounterFinish,counterWoodBand,ceramicUV,isCeramicFloor} from './countertop.js';
 import {createTheme} from './theme.js';
 const $=id=>document.getElementById(id);
 const labels={cabinet:'Modulares inferiores',upperDoors:'Puertas superiores',counter:'Tope de cocina',table:'Mesa auxiliar',pantry:'Despensa',base:'Fórmica existente · color base'};
 const originalColors={cabinet:'#aaa599',upperDoors:'#e3cfbe',counter:'#994c00',table:'#994c00',pantry:'#c46100',base:'#ffe4ca'};
-const selection={cabinet:null,upperDoors:null,counter:null,table:null,pantry:null,base:null};
+const selection={cabinet:null,upperDoors:null,counter:'greenlam-sanganer',table:'greenlam-sanganer',pantry:null,base:null};
 const matches={pantry:false,upper:false};
 const tones={},editorOpen={};let viewOptions,workflow,interaction,theme;
 let pickTimer;const filters={query:'',tone:'all',detail:'all',favoritesOnly:false};
@@ -107,7 +107,7 @@ function applyMaterials(){
       if(mesh.material!==mesh.userData.original)mesh.material.dispose();
       if(!finish&&!linked){mesh.material=mesh.userData.original;mesh.geometry.setAttribute('uv',mesh.userData.originalUV.clone());continue;}
       mesh.material=mesh.userData.original.clone();mesh.material.map=null;mesh.material.color.set(finish?.color||originalColors[z]);
-      if(finish?.texture){mesh.material.map=textureFor(finish);mesh.material.color.set(0xffffff);projectTexture(mesh,finish);mesh.material.roughness=finish.family==='Cerámica'?.82:.62;mesh.material.metalness=0;enableTint(mesh.material,finish,counterWoodBand(mesh,chosen,palette,config));}
+      if(finish?.texture){mesh.material.map=textureFor(finish);mesh.material.color.set(0xffffff);projectTexture(mesh,finish);mesh.material.roughness=finish.roughness??(finish.family==='Cerámica'?.82:.62);mesh.material.metalness=0;enableTint(mesh.material,finish,counterWoodBand(mesh,chosen,palette,config));}
       else mesh.geometry.setAttribute('uv',mesh.userData.originalUV.clone());
       mesh.material.needsUpdate=true;
     }
@@ -142,7 +142,7 @@ function paintPalette(){
   if(!surfaces&&['stone','textured'].includes(category))category='neutral';
   container.classList.toggle('textures',['stone','textured'].includes(category));
   document.querySelectorAll('[data-palette]').forEach(b=>{const active=b.dataset.palette===category;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});
-  const details=category==='stone'?[['all','Todos los dibujos'],['suave','Piedras suaves'],['veteado','Veteadas'],['granulado','Granuladas']]:category==='textured'?[['all','Todas las familias'],...(zone==='counter'?[['Cerámica','Cerámicas']]:[]),['Madera','Maderas'],['Concreto','Cementos'],['Tejido','Tejidos'],['Metal','Metales'],['Cuero','Cueros']]:[];
+  const details=category==='stone'?[['all','Todos los dibujos'],['Referencias Ery','Fotos de referencia Ery'],['suave','Piedras suaves'],['veteado','Veteadas'],['granulado','Granuladas']]:category==='textured'?[['all','Todas las familias'],['Laminado Greenlam','Laminado Greenlam'],['Colores provisionales','Colores provisionales'],...(zone==='counter'?[['Cerámica','Cerámicas']]:[]),['Madera','Maderas'],['Concreto','Cementos'],['Tejido','Tejidos'],['Metal','Metales'],['Cuero','Cueros']]:[];
   $('filter-detail').hidden=!details.length;
   if(!details.some(d=>d[0]===filters.detail))filters.detail='all';
   $('filter-detail').replaceChildren(...details.map(([value,label])=>{const option=document.createElement('option');option.value=value;option.textContent=label;return option;}));
@@ -241,7 +241,7 @@ function registerTools(){
 async function init(){
   try{
     document.querySelectorAll('aside button,aside input,aside select,#reset,#screenshot,#share').forEach(b=>b.disabled=true);
-    [palette,config]=await Promise.all(['palette','scene'].map(async name=>{const response=await fetch(`assets/${name}.json?v=20261008-r10`);if(!response.ok)throw new Error('No se pudieron cargar los acabados.');return response.json();}));
+    [palette,config]=await Promise.all(['palette','scene'].map(async name=>{const response=await fetch(`assets/${name}.json?v=20261009-texturas`);if(!response.ok)throw new Error('No se pudieron cargar los acabados.');return response.json();}));
     renderer=new THREE.WebGLRenderer({antialias:true,alpha:false,powerPreference:'high-performance'});renderer.setPixelRatio(Math.min(devicePixelRatio,1.7));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.NoToneMapping;renderer.shadowMap.enabled=false;
     renderer.domElement.setAttribute('aria-label','Cocina Ery en 3D. Arrastra para girar, usa dos dedos para desplazar y pellizca para acercar.');renderer.domElement.setAttribute('aria-describedby','gesture-help');renderer.domElement.setAttribute('tabindex','0');
     scene=new THREE.Scene();scene.background=new THREE.Color(0xffffff);camera=new THREE.PerspectiveCamera(35,1,.03,70);camera.up.set(0,1,0);
@@ -267,6 +267,7 @@ async function init(){
     controls=new OrbitControls(camera,renderer.domElement);controls.target.copy(target);controls.enableDamping=true;controls.dampingFactor=.12;controls.minDistance=.4;controls.maxDistance=14;controls.maxPolarAngle=Math.PI*.92;controls.zoomSpeed=.7;controls.panSpeed=.75;controls.addEventListener('change',requestRender);
     composer=new EffectComposer(renderer);composer.renderTarget1.samples=4;composer.renderTarget2.samples=4;composer.addPass(new RenderPass(scene,camera));const ao=new SSAOPass(scene,camera,640,640,24);ao.kernelRadius=.18;ao.minDistance=.001;ao.maxDistance=.09;composer.addPass(ao);composer.addPass(new OutputPass());
     $('viewer').prepend(renderer.domElement);theme=createTheme(scene,requestRender);ready=true;resize();composer.render();$('reference').hidden=true;$('load-status').hidden=true;document.querySelectorAll('aside button,aside input,aside select,#reset,#screenshot,#share').forEach(b=>b.disabled=false);
+    applyMaterials();
     interaction=createModelInteraction({scene,meshes,camera,canvas:renderer.domElement,selectedZone,onPick:z=>selectZone(z,true),requestRender});
     workflow=createWorkflow({palette,snapshot,appearance,apply:applyCombination,thumbnail,announce,onFavorites:()=>paintPalette()});workflow.restore();
     controls.addEventListener('start',()=>interaction.clear());controls.addEventListener('end',()=>workflow.persist());controls.addEventListener('change',()=>workflow.persist());
