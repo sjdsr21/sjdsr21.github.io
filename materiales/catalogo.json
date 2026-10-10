@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-09",
+  "updated": "2026-10-10",
   "categories": [
     {
       "id": "maderas",
@@ -45,7 +45,7 @@
       "category": "maderas",
       "name": "Pino",
       "family": "Madera sólida",
-      "description": "Clara y cálida, con veta recta y nudos visibles. Con el tiempo suele tomar un tono más dorado.",
+      "description": "Blanda y liviana, de veta recta y nudos vivos. Es la de estructura: barata, fácil de trabajar y de repuesto seguro. Con los años dora.",
       "use": "Estructuras, listones y mobiliario de madera maciza.",
       "care": "Madera blanda: puede marcarse con golpes. El aspecto depende de los nudos y del acabado.",
       "supplier": "Mato Grosso",
@@ -55,12 +55,7 @@
       "imageNote": "Foto de muestra: Xylothèque du Cirad, dominio público, vía Wikimedia Commons.",
       "textureId": "taller-pino",
       "appId": null,
-      "sourceLinks": [
-        {
-          "label": "Maderas en Prototipo AGO",
-          "url": "https://prototipoago.com/taller.html#maderas"
-        }
-      ],
+      "sourceLinks": [],
       "image": {
         "src": "muestras/madera-pino.webp",
         "width": 480,
@@ -70,14 +65,22 @@
       "brand": "",
       "code": "",
       "finish": "",
-      "availability": "Existencias por consultar para cada proyecto."
+      "availability": "Existencias por consultar para cada proyecto.",
+      "botanicalName": "Pinus caribaea · Pino Caribe",
+      "translations": {
+        "en": {
+          "name": "Pine",
+          "botanicalName": "Pinus caribaea · Caribbean pine",
+          "description": "Soft and light, straight-grained with live knots. This is the structural one: cheap, easy to work and easy to replace. It turns golden over the years."
+        }
+      }
     },
     {
       "id": "madera-saman",
       "category": "maderas",
       "name": "Samán",
       "family": "Madera sólida",
-      "description": "Veta marcada, tonos pardos y contraste entre zonas claras y oscuras. Cada tabla tiene un dibujo propio.",
+      "description": "Dura, pesada y de veta muy marcada, con el albura clara contrastando contra un corazón chocolate. Cuando la madera es lo que se mira, es ésta.",
       "use": "Mesas, superficies y piezas donde la veta tiene protagonismo.",
       "care": "El dibujo y el contraste varían entre tablas; conviene escoger el lote para la pieza.",
       "supplier": "Mato Grosso",
@@ -87,12 +90,7 @@
       "imageNote": "Foto de muestra: Xylothèque du Cirad, dominio público, vía Wikimedia Commons.",
       "textureId": "taller-saman",
       "appId": null,
-      "sourceLinks": [
-        {
-          "label": "Maderas en Prototipo AGO",
-          "url": "https://prototipoago.com/taller.html#maderas"
-        }
-      ],
+      "sourceLinks": [],
       "image": {
         "src": "muestras/madera-saman.webp",
         "width": 480,
@@ -102,14 +100,22 @@
       "brand": "",
       "code": "",
       "finish": "",
-      "availability": "Existencias por consultar para cada proyecto."
+      "availability": "Existencias por consultar para cada proyecto.",
+      "botanicalName": "Samanea saman",
+      "translations": {
+        "en": {
+          "name": "Monkeypod",
+          "botanicalName": "Samanea saman",
+          "description": "Hard, heavy and strongly figured, pale sapwood set against a chocolate heart. When the wood is the thing you look at, it's this one."
+        }
+      }
     },
     {
       "id": "madera-apamate",
       "category": "maderas",
       "name": "Apamate",
       "family": "Madera sólida",
-      "description": "Tono rosado tostado y veta tranquila. Una opción de carácter cálido y discreto.",
+      "description": "Dureza media y tono rosado tostado, de veta tranquila. Estable y agradecida al cepillo; buena para piezas que se tocan mucho.",
       "use": "Mobiliario, repisas y piezas que se tocan y se ven de cerca.",
       "care": "El aceite o el barniz pueden intensificar su tono. La foto es una muestra del taller.",
       "supplier": "Mato Grosso",
@@ -119,12 +125,7 @@
       "imageNote": "Foto de muestra propia de Prototipo AGO.",
       "textureId": "taller-apamate",
       "appId": null,
-      "sourceLinks": [
-        {
-          "label": "Maderas en Prototipo AGO",
-          "url": "https://prototipoago.com/taller.html#maderas"
-        }
-      ],
+      "sourceLinks": [],
       "image": {
         "src": "muestras/madera-apamate.webp",
         "width": 480,
@@ -134,14 +135,22 @@
       "brand": "",
       "code": "",
       "finish": "",
-      "availability": "Existencias por consultar para cada proyecto."
+      "availability": "Existencias por consultar para cada proyecto.",
+      "botanicalName": "Tabebuia rosea",
+      "translations": {
+        "en": {
+          "name": "Apamate",
+          "botanicalName": "Tabebuia rosea",
+          "description": "Medium hardness, a toasted rose tone and quiet grain. Stable and rewarding under the plane; good for pieces that get handled a lot."
+        }
+      }
     },
     {
       "id": "madera-cedro",
       "category": "maderas",
       "name": "Cedro",
       "family": "Madera sólida",
-      "description": "Madera rojiza, relativamente liviana y aromática, tradicional en mueblería.",
+      "description": "Liviana para lo rojiza que es, aromática, y de las más nobles para tallar. Clásica de mueblería fina. Se raya con facilidad: no es para una tabla de picar.",
       "use": "Muebles, puertas, gaveteros y trabajos de talla.",
       "care": "Su superficie puede rayarse con facilidad; se elige según el uso de la pieza.",
       "supplier": "Mato Grosso",
@@ -151,12 +160,7 @@
       "imageNote": "Foto de muestra: Xylothèque du Cirad, dominio público, vía Wikimedia Commons.",
       "textureId": "taller-cedro",
       "appId": null,
-      "sourceLinks": [
-        {
-          "label": "Maderas en Prototipo AGO",
-          "url": "https://prototipoago.com/taller.html#maderas"
-        }
-      ],
+      "sourceLinks": [],
       "image": {
         "src": "muestras/madera-cedro.webp",
         "width": 480,
@@ -166,14 +170,22 @@
       "brand": "",
       "code": "",
       "finish": "",
-      "availability": "Existencias por consultar para cada proyecto."
+      "availability": "Existencias por consultar para cada proyecto.",
+      "botanicalName": "Cedrela odorata",
+      "translations": {
+        "en": {
+          "name": "Spanish cedar",
+          "botanicalName": "Cedrela odorata",
+          "description": "Light for how red it is, aromatic, and one of the finest to carve. A classic of good cabinetwork. It marks easily, so not for a cutting board."
+        }
+      }
     },
     {
       "id": "madera-caoba",
       "category": "maderas",
       "name": "Caoba",
       "family": "Madera sólida",
-      "description": "Pardo rojiza, de veta elegante. Su color puede oscurecer con el paso del tiempo.",
+      "description": "Pardo rojiza, que se oscurece y gana brillo con los años. Estable, dócil al trabajo y fácil de pulir: la madera clásica del mueble fino.",
       "use": "Muebles y detalles donde interesa una superficie cálida y pulida.",
       "care": "Conviene comparar una muestra acabada: el pulido y la protección cambian su apariencia.",
       "supplier": "",
@@ -183,12 +195,7 @@
       "imageNote": "Foto de muestra: Xylothèque du Cirad, dominio público, vía Wikimedia Commons.",
       "textureId": "taller-caoba",
       "appId": null,
-      "sourceLinks": [
-        {
-          "label": "Maderas en Prototipo AGO",
-          "url": "https://prototipoago.com/taller.html#maderas"
-        }
-      ],
+      "sourceLinks": [],
       "image": {
         "src": "muestras/madera-caoba.webp",
         "width": 480,
@@ -198,14 +205,22 @@
       "brand": "",
       "code": "",
       "finish": "",
-      "availability": "Existencias por consultar para cada proyecto."
+      "availability": "Existencias por consultar para cada proyecto.",
+      "botanicalName": "Swietenia macrophylla",
+      "translations": {
+        "en": {
+          "name": "Mahogany",
+          "botanicalName": "Swietenia macrophylla",
+          "description": "Reddish brown that darkens and gains lustre with age. Stable, easy to work and to polish: the classic fine-furniture wood."
+        }
+      }
     },
     {
       "id": "madera-aurora",
       "category": "maderas",
       "name": "Aurora",
       "family": "Madera sólida",
-      "description": "Rojiza y oscura, con una apariencia cálida y un peso relativamente bajo.",
+      "description": "Rojiza, oscura y muy liviana. Astilla bastante al trabajarla.",
       "use": "Mobiliario y componentes según el lote y el diseño.",
       "care": "Tiende a astillarse al trabajarla; el estado de las tablas influye en la selección.",
       "supplier": "",
@@ -215,12 +230,7 @@
       "imageNote": "Foto de muestra: Xylothèque du Cirad, dominio público, vía Wikimedia Commons.",
       "textureId": null,
       "appId": null,
-      "sourceLinks": [
-        {
-          "label": "Maderas en Prototipo AGO",
-          "url": "https://prototipoago.com/taller.html#maderas"
-        }
-      ],
+      "sourceLinks": [],
       "image": {
         "src": "muestras/madera-aurora.webp",
         "width": 480,
@@ -230,14 +240,22 @@
       "brand": "",
       "code": "",
       "finish": "",
-      "availability": "Existencias por consultar para cada proyecto."
+      "availability": "Existencias por consultar para cada proyecto.",
+      "botanicalName": "Erisma uncinatum · mureillo",
+      "translations": {
+        "en": {
+          "name": "Aurora",
+          "botanicalName": "Erisma uncinatum · mureillo",
+          "description": "Reddish, dark and very light. It splinters quite a bit when worked."
+        }
+      }
     },
     {
       "id": "madera-puy",
       "category": "maderas",
       "name": "Puy",
       "family": "Madera sólida",
-      "description": "Pardo oliva, muy dura y densa. Tiene una presencia visual sobria.",
+      "description": "Muy dura y densa, pardo oliva. Aguanta a la intemperie y el uso rudo mejor que casi cualquier otra de aquí. Cuesta trabajarla, y se nota en el filo de las herramientas.",
       "use": "Piezas de uso exigente y elementos según exposición y diseño.",
       "care": "Su dureza aumenta el trabajo de mecanizado. La aptitud exterior se revisa para el caso concreto.",
       "supplier": "",
@@ -248,10 +266,6 @@
       "textureId": "taller-puy",
       "appId": null,
       "sourceLinks": [
-        {
-          "label": "Maderas en Prototipo AGO",
-          "url": "https://prototipoago.com/taller.html#maderas"
-        },
         {
           "label": "Autoría de la foto",
           "url": "https://commons.wikimedia.org/wiki/File:Tabebuia_serratifolia_MHNT.BOT.2010.6.46.jpg"
@@ -270,14 +284,22 @@
       "brand": "",
       "code": "",
       "finish": "",
-      "availability": "Existencias por consultar para cada proyecto."
+      "availability": "Existencias por consultar para cada proyecto.",
+      "botanicalName": "Tabebuia serratifolia",
+      "translations": {
+        "en": {
+          "name": "Ipê",
+          "botanicalName": "Tabebuia serratifolia",
+          "description": "Very hard and dense, olive brown. It stands up to weather and rough use better than almost anything else here. Hard on tools, and you feel it on the edge."
+        }
+      }
     },
     {
       "id": "madera-teca",
       "category": "maderas",
       "name": "Teca",
       "family": "Madera sólida",
-      "description": "Dorada y con aceites naturales. Su veta aporta un carácter cálido al mueble.",
+      "description": "Dorada, grasosa al tacto por sus aceites naturales, y la más estable de todas frente a la humedad. Por eso es la de cocina y la de exterior.",
       "use": "Muebles, repisas y piezas que requieren estudiar su exposición a humedad.",
       "care": "La protección y el mantenimiento se eligen según el entorno; no se promete impermeabilidad.",
       "supplier": "Mato Grosso",
@@ -287,12 +309,7 @@
       "imageNote": "Foto de muestra: Xylothèque du Cirad, dominio público, vía Wikimedia Commons.",
       "textureId": "taller-teca",
       "appId": null,
-      "sourceLinks": [
-        {
-          "label": "Maderas en Prototipo AGO",
-          "url": "https://prototipoago.com/taller.html#maderas"
-        }
-      ],
+      "sourceLinks": [],
       "image": {
         "src": "muestras/madera-teca.webp",
         "width": 480,
@@ -302,14 +319,22 @@
       "brand": "",
       "code": "",
       "finish": "",
-      "availability": "Existencias por consultar para cada proyecto."
+      "availability": "Existencias por consultar para cada proyecto.",
+      "botanicalName": "Tectona grandis",
+      "translations": {
+        "en": {
+          "name": "Teak",
+          "botanicalName": "Tectona grandis",
+          "description": "Golden, faintly oily to the touch from its natural resins, and the most stable of all against moisture. That's why it's the kitchen and outdoor wood."
+        }
+      }
     },
     {
       "id": "madera-algarrobo",
       "category": "maderas",
       "name": "Algarrobo",
       "family": "Madera sólida",
-      "description": "Rojo anaranjado que se oscurece con la luz. Es una madera dura y pesada.",
+      "description": "Muy dura y pesada, de un rojo anaranjado que se oscurece con la luz. Pesa de verdad: una tabla grande se siente en la mano.",
       "use": "Piezas macizas y detalles donde interesa un tono intenso.",
       "care": "El peso importa al dimensionar y montar una pieza grande.",
       "supplier": "",
@@ -319,12 +344,7 @@
       "imageNote": "Foto de muestra: Xylothèque du Cirad, dominio público, vía Wikimedia Commons.",
       "textureId": "taller-algarrobo",
       "appId": null,
-      "sourceLinks": [
-        {
-          "label": "Maderas en Prototipo AGO",
-          "url": "https://prototipoago.com/taller.html#maderas"
-        }
-      ],
+      "sourceLinks": [],
       "image": {
         "src": "muestras/madera-algarrobo.webp",
         "width": 480,
@@ -334,14 +354,22 @@
       "brand": "",
       "code": "",
       "finish": "",
-      "availability": "Existencias por consultar para cada proyecto."
+      "availability": "Existencias por consultar para cada proyecto.",
+      "botanicalName": "Hymenaea courbaril",
+      "translations": {
+        "en": {
+          "name": "Jatoba",
+          "botanicalName": "Hymenaea courbaril",
+          "description": "Very hard and heavy, an orange red that darkens with light. It genuinely weighs: you feel a large board in the hand."
+        }
+      }
     },
     {
       "id": "madera-nazareno",
       "category": "maderas",
       "name": "Nazareno",
       "family": "Madera sólida",
-      "description": "Su color vira de pardo a violeta y después puede evolucionar hacia un vino oscuro.",
+      "description": "La morada. Sale parda del corte y vira a violeta con el aire, luego calma hacia un vino oscuro. Muy dura. Se usa poco y en poca cantidad, como acento.",
       "use": "Acentos, pequeños detalles y piezas donde se busca un color singular.",
       "care": "El violeta no permanece idéntico con el tiempo. Es una madera dura.",
       "supplier": "",
@@ -351,12 +379,7 @@
       "imageNote": "Foto de muestra: Xylothèque du Cirad, dominio público, vía Wikimedia Commons.",
       "textureId": null,
       "appId": null,
-      "sourceLinks": [
-        {
-          "label": "Maderas en Prototipo AGO",
-          "url": "https://prototipoago.com/taller.html#maderas"
-        }
-      ],
+      "sourceLinks": [],
       "image": {
         "src": "muestras/madera-nazareno.webp",
         "width": 480,
@@ -366,14 +389,22 @@
       "brand": "",
       "code": "",
       "finish": "",
-      "availability": "Existencias por consultar para cada proyecto."
+      "availability": "Existencias por consultar para cada proyecto.",
+      "botanicalName": "Peltogyne spp.",
+      "translations": {
+        "en": {
+          "name": "Purpleheart",
+          "botanicalName": "Peltogyne spp.",
+          "description": "The purple one. It comes off the saw brown, turns violet in the air, then settles toward dark wine. Very hard. Used sparingly, as an accent."
+        }
+      }
     },
     {
       "id": "madera-melina",
       "category": "maderas",
       "name": "Melina",
       "family": "Madera sólida",
-      "description": "Clara y liviana, con veta discreta y apariencia relativamente pareja.",
+      "description": "Clara, liviana y de crecimiento rápido, con veta discreta. Alternativa al pino cuando se quiere un tono más pálido y parejo.",
       "use": "Mobiliario y piezas que buscan una madera de tono pálido.",
       "care": "El color final depende del lote y del acabado aplicado.",
       "supplier": "",
@@ -383,12 +414,7 @@
       "imageNote": "Foto de muestra: Xylothèque du Cirad, dominio público, vía Wikimedia Commons.",
       "textureId": "taller-melina",
       "appId": null,
-      "sourceLinks": [
-        {
-          "label": "Maderas en Prototipo AGO",
-          "url": "https://prototipoago.com/taller.html#maderas"
-        }
-      ],
+      "sourceLinks": [],
       "image": {
         "src": "muestras/madera-melina.webp",
         "width": 480,
@@ -398,7 +424,15 @@
       "brand": "",
       "code": "",
       "finish": "",
-      "availability": "Existencias por consultar para cada proyecto."
+      "availability": "Existencias por consultar para cada proyecto.",
+      "botanicalName": "Gmelina arborea",
+      "translations": {
+        "en": {
+          "name": "Gmelina",
+          "botanicalName": "Gmelina arborea",
+          "description": "Pale, light and fast-growing, with discreet grain. An alternative to pine when you want a paler, more even tone."
+        }
+      }
     },
     {
       "id": "tablero-aglomerado-crudo",
