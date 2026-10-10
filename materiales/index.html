@@ -9,10 +9,10 @@
   <meta property="og:description" content="Explora las muestras, guarda tus favoritas y descubre cómo se ven juntas.">
   <meta property="og:image" content="https://prototipoago.com/img/marca/vista-previa.jpg">
   <meta property="og:url" content="https://prototipoago.com/materiales/">
-  <link rel="icon" href="../favicon.ico"><link rel="stylesheet" href="../css/estilo.css?v=20261009-blanco-solido"><link rel="stylesheet" href="estilo.css?v=10">
+  <link rel="icon" href="../favicon.ico"><link rel="stylesheet" href="../css/estilo.css?v=20261009-blanco-solido"><link rel="stylesheet" href="estilo.css?v=11">
   <title>Catálogo de materiales | Prototipo AGO</title>
   <script src="../datos/marca.js" defer></script>
-  <script src="catalogo.js?v=10" type="module"></script>
+  <script src="catalogo.js?v=11" type="module"></script>
   <script src="../asistente/widget.js?v=20261009-anorak-suave" data-catalogue="materiales" defer></script>
 </head>
 <body data-pagina="materiales">
@@ -20,7 +20,7 @@
 <header class="cabecera" id="cabecera">
   <div class="cabecera__fila">
     <a class="marca" href="../" aria-label="Prototipo Ago, inicio"><span class="marca__texto">prototipo<br>ago</span></a>
-    <div class="category-bar"><nav id="categories" class="categories" aria-label="Categorías de materiales"></nav><button type="button" id="toggle-search" class="search-launch" aria-label="Buscar materiales" aria-expanded="false" aria-controls="search-form"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.4 15.4 5.1 5.1"/></svg></button></div>
+    <button type="button" id="toggle-search" class="search-launch" aria-label="Buscar materiales" aria-expanded="false" aria-controls="search-form"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.4 15.4 5.1 5.1"/></svg></button>
   </div>
 </header>
 <main>
@@ -28,6 +28,7 @@
   <section id="catalogo" aria-label="Catálogo visual de materiales">
     <div class="catalogue-controls">
       <div class="browse-tools"><span id="result-count" aria-live="polite">Cargando muestras…</span><button type="button" id="active-type" hidden></button><form id="search-form" role="search" hidden><label class="sr-only" for="search">Buscar muestras</label><input id="search" type="search" placeholder="Busca un nombre, color o textura" autocomplete="off"></form><details class="extra-filters"><summary>Más filtros</summary><form id="filters"><label>Marca<select id="brand"><option value="">Todas</option></select></label><label>Proveedor<select id="supplier"><option value="">Todos</option></select></label><label>Referencias<select id="market"><option value="">Todas</option><option value="venezuela">Taller y Venezuela</option><option value="internacional">Colecciones internacionales</option></select></label><button type="button" id="reset-filters">Restablecer</button></form></details></div>
+      <div class="category-bar"><nav id="categories" class="categories" aria-label="Categorías de materiales"></nav></div>
     </div>
     <h2 id="section-title" class="sr-only">Maderas sólidas</h2>
     <div class="grid" id="grid" tabindex="-1"></div>
@@ -38,7 +39,7 @@
   <section class="closing"><p>El color en pantalla es orientativo. Confirmamos el material y las existencias con una muestra.</p><button id="ask-anorak" type="button" class="text-link">Explorar mi proyecto con Anorak ↗</button></section>
 </main>
 <footer><span>prototipo ago · Caracas</span><a href="../">Volver al taller ↗</a></footer>
-  <button class="palette-launch" id="open-palette" type="button" aria-haspopup="dialog" aria-label="Abrir paleta de materiales, 0 guardados" title="Mi paleta" aria-controls="palette" aria-expanded="false"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 5C13 5 5 13 5 24s8 19 18 19c5 0 7-3 5-7-2-5 1-8 6-7 6 1 9-3 9-8C43 12 35 5 24 5Z" stroke="currentColor" stroke-width="1.6"/><ellipse cx="15" cy="30" rx="3.3" ry="4.5" transform="rotate(-25 15 30)" stroke="currentColor" stroke-width="1.4"/></svg><span id="palette-peek" class="palette-peek" aria-hidden="true"></span><span id="palette-label">Crear mi paleta</span><b id="palette-count">0</b><span class="drawer-arrow" aria-hidden="true">⌃</span></button>
+  <button class="palette-launch" id="open-palette" type="button" aria-haspopup="dialog" aria-label="Abrir paleta de materiales, 0 guardados" title="Mi paleta" aria-controls="palette" aria-expanded="false"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 5C13 5 5 13 5 24s8 19 18 19c5 0 7-3 5-7-2-5 1-8 6-7 6 1 9-3 9-8C43 12 35 5 24 5Z" stroke="currentColor" stroke-width="1.6"/><ellipse cx="15" cy="30" rx="3.3" ry="4.5" transform="rotate(-25 15 30)" stroke="currentColor" stroke-width="1.4"/></svg><span id="palette-peek" class="palette-peek" aria-hidden="true"></span><b id="palette-count">0</b></button>
 <dialog id="detail" aria-labelledby="detail-title"><button class="close" type="button" data-close aria-label="Cerrar ficha">✕</button><div id="detail-content"></div></dialog>
 <dialog id="palette" class="palette-dialog" aria-labelledby="palette-title"><div class="drawer-handle" aria-hidden="true"></div>
   <button class="close" type="button" data-close aria-label="Cerrar paleta">✕</button>

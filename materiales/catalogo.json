@@ -589,17 +589,18 @@
       "market": "Referencia del taller; proveedor por confirmar",
       "international": false,
       "availability": "Por confirmar con proveedor",
-      "imageKind": "Referencia visual",
-      "imageNote": "Referencia visual del taller; no representa una marca.",
+      "imageKind": "Referencia visual ajustada con IA",
+      "imageNote": "Referencia visual del taller de MDF HR verde, ajustada con IA; no representa una marca. El tono se confirma con una muestra del proveedor.",
       "sourceLinks": [],
       "textureId": "tablero-mdf-hr",
       "appId": null,
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/tablero-mdf-hr.webp",
-        "width": 1000,
-        "height": 1000
+        "src": "muestras/tablero-mdf-hr-verde26.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/tablero-mdf-hr-verde26-640.webp 640w, muestras/tablero-mdf-hr-verde26.webp 1254w"
       },
       "supplier": ""
     },
@@ -875,8 +876,8 @@
       "market": "Página Venezuela",
       "international": false,
       "availability": "Consultar diseño, base y espesor con distribuidor",
-      "imageKind": "Muestra del fabricante",
-      "imageNote": "Muestra publicada por Masisa. El color en pantalla es orientativo.",
+      "imageKind": "Muestra del fabricante, editada con IA",
+      "imageNote": "Muestra publicada por Masisa, con el distintivo gráfico retirado mediante IA. El color en pantalla es orientativo.",
       "sourceLinks": [
         {
           "label": "Referencia del fabricante",
@@ -888,9 +889,10 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/masisa-ve-06.webp",
-        "width": 697,
-        "height": 650
+        "src": "muestras/masisa-ve-06-limpia26.webp",
+        "width": 1299,
+        "height": 1211,
+        "srcset": "muestras/masisa-ve-06-limpia26-640.webp 640w, muestras/masisa-ve-06-limpia26.webp 1299w"
       },
       "supplier": ""
     },
@@ -1215,8 +1217,8 @@
       "market": "Página Venezuela",
       "international": false,
       "availability": "Consultar diseño, base y espesor con distribuidor",
-      "imageKind": "Muestra del fabricante",
-      "imageNote": "Muestra publicada por Masisa. El color en pantalla es orientativo.",
+      "imageKind": "Muestra del fabricante, editada con IA",
+      "imageNote": "Muestra publicada por Masisa, con el distintivo gráfico retirado mediante IA. El color en pantalla es orientativo.",
       "sourceLinks": [
         {
           "label": "Referencia del fabricante",
@@ -1228,9 +1230,10 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/masisa-ve-16-detalle26.webp",
-        "width": 1200,
-        "height": 1200
+        "src": "muestras/masisa-ve-16-limpia26.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/masisa-ve-16-limpia26-640.webp 640w, muestras/masisa-ve-16-limpia26.webp 1254w"
       },
       "supplier": ""
     },
@@ -1249,8 +1252,8 @@
       "market": "Página Venezuela",
       "international": false,
       "availability": "Consultar diseño, base y espesor con distribuidor",
-      "imageKind": "Muestra del fabricante",
-      "imageNote": "Muestra publicada por Masisa. El color en pantalla es orientativo.",
+      "imageKind": "Muestra del fabricante, editada con IA",
+      "imageNote": "Muestra publicada por Masisa, con el distintivo gráfico retirado mediante IA. El color en pantalla es orientativo.",
       "sourceLinks": [
         {
           "label": "Referencia del fabricante",
@@ -1262,9 +1265,10 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/masisa-ve-17-detalle26.webp",
-        "width": 1200,
-        "height": 1200
+        "src": "muestras/masisa-ve-17-limpia26.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/masisa-ve-17-limpia26-640.webp 640w, muestras/masisa-ve-17-limpia26.webp 1254w"
       },
       "supplier": ""
     },
@@ -1283,8 +1287,8 @@
       "market": "Página Venezuela",
       "international": false,
       "availability": "Consultar diseño, base y espesor con distribuidor",
-      "imageKind": "Muestra del fabricante",
-      "imageNote": "Muestra publicada por Masisa. El color en pantalla es orientativo.",
+      "imageKind": "Muestra del fabricante, editada con IA",
+      "imageNote": "Muestra publicada por Masisa, con el distintivo gráfico retirado mediante IA. El color en pantalla es orientativo.",
       "sourceLinks": [
         {
           "label": "Referencia del fabricante",
@@ -1296,9 +1300,10 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/masisa-ve-18-detalle26.webp",
-        "width": 1200,
-        "height": 1200
+        "src": "muestras/masisa-ve-18-limpia26.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/masisa-ve-18-limpia26-640.webp 640w, muestras/masisa-ve-18-limpia26.webp 1254w"
       },
       "supplier": ""
     },
@@ -1317,8 +1322,8 @@
       "market": "Página Venezuela",
       "international": false,
       "availability": "Consultar diseño, base y espesor con distribuidor",
-      "imageKind": "Muestra del fabricante",
-      "imageNote": "Muestra publicada por Masisa. El color en pantalla es orientativo.",
+      "imageKind": "Muestra del fabricante, editada con IA",
+      "imageNote": "Muestra publicada por Masisa, con el distintivo gráfico retirado mediante IA. El color en pantalla es orientativo.",
       "sourceLinks": [
         {
           "label": "Referencia del fabricante",
@@ -1330,9 +1335,10 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/masisa-ve-19-detalle26.webp",
-        "width": 1200,
-        "height": 1200
+        "src": "muestras/masisa-ve-19-limpia26.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/masisa-ve-19-limpia26-640.webp 640w, muestras/masisa-ve-19-limpia26.webp 1254w"
       },
       "supplier": ""
     },
@@ -1351,8 +1357,8 @@
       "market": "Página Venezuela",
       "international": false,
       "availability": "Consultar diseño, base y espesor con distribuidor",
-      "imageKind": "Muestra del fabricante",
-      "imageNote": "Muestra publicada por Masisa. El color en pantalla es orientativo.",
+      "imageKind": "Muestra del fabricante, editada con IA",
+      "imageNote": "Muestra publicada por Masisa, con el distintivo gráfico retirado mediante IA. El color en pantalla es orientativo.",
       "sourceLinks": [
         {
           "label": "Referencia del fabricante",
@@ -1364,9 +1370,10 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/masisa-ve-20-detalle26.webp",
-        "width": 1200,
-        "height": 1200
+        "src": "muestras/masisa-ve-20-limpia26.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/masisa-ve-20-limpia26-640.webp 640w, muestras/masisa-ve-20-limpia26.webp 1254w"
       },
       "supplier": ""
     },
@@ -1385,8 +1392,8 @@
       "market": "Página Venezuela",
       "international": false,
       "availability": "Consultar diseño, base y espesor con distribuidor",
-      "imageKind": "Muestra del fabricante",
-      "imageNote": "Muestra publicada por Masisa. El color en pantalla es orientativo.",
+      "imageKind": "Muestra del fabricante, editada con IA",
+      "imageNote": "Muestra publicada por Masisa, con el distintivo gráfico retirado mediante IA. El color en pantalla es orientativo.",
       "sourceLinks": [
         {
           "label": "Referencia del fabricante",
@@ -1398,9 +1405,10 @@
       "thicknessMm": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/masisa-ve-21-detalle26.webp",
-        "width": 1200,
-        "height": 1200
+        "src": "muestras/masisa-ve-21-limpia26.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/masisa-ve-21-limpia26-640.webp 640w, muestras/masisa-ve-21-limpia26.webp 1254w"
       },
       "supplier": ""
     },
