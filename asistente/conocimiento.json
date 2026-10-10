@@ -278,30 +278,30 @@
       "galeria": [],
       "precios": [
         {
-          "nombre": "Pino",
+          "nombre": "Samán",
           "usd": 40
         },
         {
-          "nombre": "Samán",
+          "nombre": "Pino",
           "usd": 40
         }
       ],
       "plazo": "Confirma la disponibilidad con nosotros",
       "url": "index.html?pieza=base-laptop-alta",
       "materiales": [
-        "Pino",
-        "Samán"
+        "Samán",
+        "Pino"
       ],
       "en": {
         "nombre": "Laptop stand — tall",
         "descripcion": "Raises the screen by 18 to 32 cm, up to eye level. For working with an external keyboard, without hunching over.",
         "precios": [
           {
-            "nombre": "Pine",
+            "nombre": "Monkeypod",
             "usd": 40
           },
           {
-            "nombre": "Monkeypod",
+            "nombre": "Pine",
             "usd": 40
           }
         ],
