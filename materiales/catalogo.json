@@ -3528,6 +3528,14 @@
         "src": "muestras/virgo-1006-ga-detalle26.webp",
         "width": 823,
         "height": 1600
+      },
+      "overview": {
+        "src": "muestras/virgo-1006-ga-continuidad26.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/virgo-1006-ga-continuidad26-640.webp 640w, muestras/virgo-1006-ga-continuidad26.webp 1254w",
+        "kind": "Continuidad recreada con IA",
+        "note": "Vista ampliada recreada con IA a partir de la muestra original. Santiago aprobó la continuidad del Panel Negro el 09/10/2026."
       }
     },
     {

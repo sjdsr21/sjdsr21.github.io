@@ -9,23 +9,24 @@
   <meta property="og:description" content="Explora las muestras, guarda tus favoritas y descubre cómo se ven juntas.">
   <meta property="og:image" content="https://prototipoago.com/img/marca/vista-previa.jpg">
   <meta property="og:url" content="https://prototipoago.com/materiales/">
-  <link rel="icon" href="../favicon.ico"><link rel="stylesheet" href="estilo.css?v=9">
+  <link rel="icon" href="../favicon.ico"><link rel="stylesheet" href="../css/estilo.css?v=20261009-blanco-solido"><link rel="stylesheet" href="estilo.css?v=10">
   <title>Catálogo de materiales | Prototipo AGO</title>
   <script src="../datos/marca.js" defer></script>
-  <script src="catalogo.js?v=9" type="module"></script>
+  <script src="catalogo.js?v=10" type="module"></script>
   <script src="../asistente/widget.js?v=20261009-tienda-anorak" data-catalogue="materiales" defer></script>
 </head>
-<body>
+<body data-pagina="materiales">
 <a class="skip" href="#grid">Ir a las muestras</a>
-<header class="masthead" id="cabecera">
-  <a class="brand" href="../" aria-label="Prototipo AGO, inicio"><span>prototipo</span><span>ago</span></a>
-
+<header class="cabecera" id="cabecera">
+  <div class="cabecera__fila">
+    <a class="marca" href="../" aria-label="Prototipo Ago, inicio"><span class="marca__texto">prototipo<br>ago</span></a>
+    <div class="category-bar"><nav id="categories" class="categories" aria-label="Categorías de materiales"></nav><button type="button" id="toggle-search" class="search-launch" aria-label="Buscar materiales" aria-expanded="false" aria-controls="search-form"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.4 15.4 5.1 5.1"/></svg></button></div>
+  </div>
 </header>
 <main>
   <section class="intro"><div><h1>Catálogo de materiales</h1><p>Abre una muestra y guarda las que te gusten. Después, míralas juntas.</p></div></section>
   <section id="catalogo" aria-label="Catálogo visual de materiales">
     <div class="catalogue-controls">
-      <div class="category-bar"><nav id="categories" class="categories" aria-label="Categorías de materiales"></nav><button type="button" id="toggle-search" class="search-launch" aria-label="Buscar materiales" aria-expanded="false" aria-controls="search-form"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.4 15.4 5.1 5.1"/></svg></button></div>
       <div class="browse-tools"><span id="result-count" aria-live="polite">Cargando muestras…</span><button type="button" id="active-type" hidden></button><form id="search-form" role="search" hidden><label class="sr-only" for="search">Buscar muestras</label><input id="search" type="search" placeholder="Busca un nombre, color o textura" autocomplete="off"></form><details class="extra-filters"><summary>Más filtros</summary><form id="filters"><label>Marca<select id="brand"><option value="">Todas</option></select></label><label>Proveedor<select id="supplier"><option value="">Todos</option></select></label><label>Referencias<select id="market"><option value="">Todas</option><option value="venezuela">Taller y Venezuela</option><option value="internacional">Colecciones internacionales</option></select></label><button type="button" id="reset-filters">Restablecer</button></form></details></div>
     </div>
     <h2 id="section-title" class="sr-only">Maderas sólidas</h2>
