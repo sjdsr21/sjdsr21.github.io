@@ -5,11 +5,11 @@
     :host([product-open]) .launch{visibility:hidden;pointer-events:none}
     .launch canvas{filter:var(--rostro-mini-sombra,drop-shadow(0 0 2px rgba(0,0,0,.85)) drop-shadow(0 0 6px rgba(0,0,0,.7)))}
     .panel{position:fixed;left:50%;right:auto;bottom:calc(max(14px,env(safe-area-inset-bottom)) + 94px);width:680px;height:min(584px,calc(100dvh - 136px));border:1px solid #2e2e2e;border-radius:0;overflow:hidden;background:transparent;-webkit-backdrop-filter:var(--ventana-filtro,saturate(1.1) blur(2px));backdrop-filter:var(--ventana-filtro,saturate(1.1) blur(2px));box-shadow:0 12px 35px #0002;opacity:0;transform:translateX(-50%);visibility:hidden;pointer-events:none;transition:opacity .14s ease,visibility 0s .14s}
-    .panel.open{opacity:1;transform:translateX(-50%);visibility:visible;pointer-events:auto;transition:none;animation:ago-crt-open .24s steps(6,end)}
-    /* 240 ms: punto central, l\xEDnea horizontal y apertura vertical, en pasos discretos. */
+    .panel.open{opacity:1;transform:translateX(-50%);visibility:visible;pointer-events:auto;transition:none;animation:ago-crt-open .14s steps(6,end)}
+    /* 140 ms: punto central, l\xEDnea horizontal y apertura vertical, en pasos discretos. */
     @keyframes ago-crt-open{0%{clip-path:inset(calc(50% - 1px) calc(50% - 1px))}36%{clip-path:inset(calc(50% - 1px) 0)}100%{clip-path:inset(0)}}
     .panel::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:0;background-image:repeating-linear-gradient(0deg,#0000000a 0 1px,transparent 1px 4px),repeating-linear-gradient(90deg,#ffffff0a 0 1px,transparent 1px 4px)}
-    .panel.open::after{animation:ago-crt-pixels .24s steps(3,end)}
+    .panel.open::after{animation:ago-crt-pixels .14s steps(3,end)}
     @keyframes ago-crt-pixels{0%{opacity:.6}50%{opacity:.25}100%{opacity:0}}iframe{color-scheme:dark;display:block;width:100%;height:100%;border:0}
     @media(max-width:780px){:host{right:14px;bottom:max(14px,env(safe-area-inset-bottom))}.launch canvas{filter:var(--rostro-mini-sombra,drop-shadow(0 0 2px rgba(0,0,0,.95)) drop-shadow(0 0 8px rgba(0,0,0,.85)))}.panel{bottom:max(14px,env(safe-area-inset-bottom));width:min(380px,calc(100vw - 28px));height:min(648px,calc(100dvh - 28px - env(safe-area-inset-top) - env(safe-area-inset-bottom)))}}
     .panel.expanded{position:fixed;top:var(--chat-top,120px);right:8px;bottom:var(--chat-bottom,8px);left:8px;width:auto;height:auto;transform:none}
