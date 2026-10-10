@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-03T16:01:23.995Z",
+  "generado": "2026-10-10T19:01:36.371Z",
   "marca": "Prototipo Ago",
   "whatsapp": "https://wa.me/584120152753",
   "perfil": {
@@ -234,7 +234,7 @@
     {
       "id": "trabajos",
       "nombre": "Exhibición",
-      "url": "trabajos.html",
+      "url": "/exhibicion",
       "texto": "Portafolio de nuestros trabajos; no constituye catálogo de precios."
     },
     {
@@ -312,7 +312,7 @@
       "id": "producto:base-laptop-baja",
       "tipo": "producto",
       "nombre": "Base de laptop — baja",
-      "descripcion": "Eleva la pantalla entre 12 y 14 cm, inclina el equipo y le da aire por debajo. Taipea con mejor ergonomía en el teclado de la laptop.",
+      "descripcion": "Eleva la pantalla entre 12 y 14 cm, inclina el equipo y le da aire por debajo. Escribe con mejor ergonomía en el teclado de la laptop.",
       "imagen": "img/prototipos/base-baja-saman-final-1.webp",
       "galeria": [],
       "precios": [

@@ -1,2 +1,7 @@
 /movil.html /index.html 301
 /materiales/ /materiales 301
+
+/exhibicion /trabajos.html 200
+/exhibicion/ /exhibicion 301
+/trabajos /exhibicion 301
+/trabajos.html /exhibicion 301
