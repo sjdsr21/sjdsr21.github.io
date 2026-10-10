@@ -50,9 +50,9 @@
   <meta name="twitter:description" content="Piezas hechas en Caracas: desde tablas de picar hasta gabinetes.">
   <meta name="twitter:image" content="https://prototipoago.com/img/marca/vista-previa.jpg">
 <!-- meta:fin -->
-  <link rel="stylesheet" href="css/estilo.css?v=20261009-tipografia">
+  <link rel="stylesheet" href="css/estilo.css?v=20261009-controles">
   <link rel="stylesheet" href="css/escaner.css">
-  <link rel="stylesheet" href="css/prototipos.css?v=20261009-tienda64-margen">
+  <link rel="stylesheet" href="css/prototipos.css?v=20261009-unificada">
   <link rel="stylesheet" href="css/diagramas.css">
   <link rel="stylesheet" href="css/desarrollador.css?v=20261009">
 </head>
@@ -74,27 +74,9 @@
       <p class="bajada" id="pt-bajada"></p>
     </section>
 
-    <!-- ---------- listas ahora ---------- -->
-    <section class="pt-seccion">
-      <div class="pt-cabeza">
-        <h2 id="pt-tit-stock"></h2>
-        <span class="pt-cuenta" id="pt-n-stock"></span>
-      </div>
-      <!-- 15/09/2026 · Fuera la bajada («En inventario. Sin tiempo de
-           espera…»): él la quitó porque «Listas ahora» ya se explica
-           solo. Si vuelve, hay que reponer también la línea que la
-           rellenaba en js/prototipos.js. -->
+    <!-- Una sola cuadrícula; pt-stock conserva los enlaces existentes. -->
+    <section class="pt-seccion" aria-labelledby="pt-titulo">
       <div class="rejilla" id="pt-stock"></div>
-    </section>
-
-    <!-- ---------- por encargo ---------- -->
-    <section class="pt-seccion">
-      <div class="pt-cabeza">
-        <h2 id="pt-tit-pedido"></h2>
-        <span class="pt-cuenta" id="pt-n-pedido"></span>
-      </div>
-      <!-- Fuera la bajada, igual que en «Listas ahora» (él, 15/09/2026). -->
-      <div class="rejilla" id="pt-pedido"></div>
     </section>
 
     <!-- ---------- el pedido ---------- -->
@@ -243,7 +225,7 @@
   <script src="js/visor3d.js"></script>
   <script src="js/diagramas.js"></script>
   <script src="js/sitio.js?v=20261009-compacto"></script>
-  <script src="js/prototipos.js?v=20261009-tienda64"></script>
+  <script src="js/prototipos.js?v=20261009-unificada"></script>
   <!-- al final del todo: mide la pagina YA pintada -->
   <script src="js/escaner.js"></script>
 <script src="asistente/widget.js?v=20260927-fuego2" defer></script><script src="js/desarrollador.js?v=20261009"></script>
