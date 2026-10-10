@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="es">
 <head>
+  <base href="/">
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex,nofollow,noarchive">
   <meta name="description" content="Vetas, colores y texturas para tu proyecto. Crea y comparte tu paleta de materiales con Prototipo AGO.">
@@ -8,21 +9,17 @@
   <meta property="og:title" content="Tu paleta de materiales | Prototipo AGO">
   <meta property="og:description" content="Explora las muestras, guarda tus favoritas y descubre cómo se ven juntas.">
   <meta property="og:image" content="https://prototipoago.com/img/marca/vista-previa.jpg">
-  <meta property="og:url" content="https://prototipoago.com/materiales/">
-  <link rel="icon" href="../favicon.ico"><link rel="stylesheet" href="../css/estilo.css?v=20261010-menu-idiomas"><link rel="stylesheet" href="estilo.css?v=11">
+  <meta property="og:url" content="https://prototipoago.com/materiales">
+  <link rel="icon" href="/favicon.ico"><link rel="stylesheet" href="/css/estilo.css?v=20261010-menu-idiomas"><link rel="stylesheet" href="/materiales/estilo.css?v=20261010-catalogo">
+  <link rel="stylesheet" href="/css/desarrollador.css?v=20261009">
   <title>Catálogo de materiales | Prototipo AGO</title>
-  <script src="../datos/marca.js" defer></script>
-  <script src="catalogo.js?v=11" type="module"></script>
-  <script src="../asistente/widget.js?v=20261009-menu-catalogo" data-catalogue="materiales" defer></script>
+  <script src="/datos/marca.js" defer></script>
+  <script src="/materiales/catalogo.js?v=20261010-catalogo" type="module"></script>
+  <script src="/asistente/widget.js?v=20261009-menu-catalogo" data-catalogue="materiales" defer></script>
 </head>
 <body data-pagina="materiales">
-<a class="skip" href="#grid">Ir a las muestras</a>
-<header class="cabecera" id="cabecera">
-  <div class="cabecera__fila">
-    <a class="marca" href="../" aria-label="Prototipo Ago, inicio"><span class="marca__texto">prototipo<br>ago</span></a>
-    <button type="button" id="toggle-search" class="search-launch" aria-label="Buscar materiales" aria-expanded="false" aria-controls="search-form"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.4 15.4 5.1 5.1"/></svg></button>
-  </div>
-</header>
+<a class="skip" href="/materiales#grid">Ir a las muestras</a>
+<header class="cabecera" id="cabecera"></header>
 <main>
   <section class="intro"><div><h1>Catálogo de materiales</h1><p>Abre una muestra y guarda las que te gusten. Después, míralas juntas.</p></div></section>
   <section id="catalogo" aria-label="Catálogo visual de materiales">
@@ -38,7 +35,7 @@
   </section>
   <section class="closing"><p>El color en pantalla es orientativo. Confirmamos el material y las existencias con una muestra.</p><button id="ask-anorak" type="button" class="text-link">Explorar mi proyecto con Anorak ↗</button></section>
 </main>
-<footer><span>prototipo ago · Caracas</span><a href="../">Volver al taller ↗</a></footer>
+<footer><span>prototipo ago · Caracas</span><a href="/">Volver al taller ↗</a></footer>
   <button class="palette-launch" id="open-palette" type="button" aria-haspopup="dialog" aria-label="Abrir paleta de materiales, 0 guardados" title="Mi paleta" aria-controls="palette" aria-expanded="false"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 5C13 5 5 13 5 24s8 19 18 19c5 0 7-3 5-7-2-5 1-8 6-7 6 1 9-3 9-8C43 12 35 5 24 5Z" stroke="currentColor" stroke-width="1.6"/><ellipse cx="15" cy="30" rx="3.3" ry="4.5" transform="rotate(-25 15 30)" stroke="currentColor" stroke-width="1.4"/></svg><span id="palette-peek" class="palette-peek" aria-hidden="true"></span><b id="palette-count">0</b></button>
 <dialog id="detail" aria-labelledby="detail-title"><button class="close" type="button" data-close aria-label="Cerrar ficha">✕</button><div id="detail-content"></div></dialog>
 <dialog id="palette" class="palette-dialog" aria-labelledby="palette-title"><div class="drawer-handle" aria-hidden="true"></div>
@@ -57,4 +54,22 @@
 </dialog>
 <dialog id="copy-fallback" aria-labelledby="copy-title"><button class="close" type="button" data-close aria-label="Cerrar texto">✕</button><h2 id="copy-title">Copiar selección</h2><p>Selecciona y copia este texto para compartirlo.</p><textarea id="copy-text" aria-label="Texto para copiar" readonly rows="6"></textarea></dialog>
 <dialog id="confirm-clear" class="small-dialog" aria-labelledby="clear-title"><h2 id="clear-title">¿Vaciar tu paleta?</h2><p>Puedes seguir explorando y empezar otra selección.</p><div class="confirm-actions"><button type="button" data-close>Conservarla</button><button type="button" id="confirm-empty" class="primary">Vaciar paleta</button></div></dialog>
+<dialog id="material-image" class="material-image" aria-labelledby="material-image-title" aria-describedby="material-image-help">
+  <div class="material-image__bar">
+    <button type="button" data-close aria-label="Volver a la ficha" class="material-image__back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m9 14-5-5 5-5M4 9h10.5a5.5 5.5 0 0 1 0 11H11"/></svg></button>
+    <h2 id="material-image-title"></h2>
+    <div class="material-image__tools"><button id="material-image-less" type="button" aria-label="Reducir imagen">−</button><button id="material-image-reset" type="button" aria-label="Restablecer imagen"><output id="material-image-scale" aria-live="polite">100 %</output></button><button id="material-image-more" type="button" aria-label="Acercar imagen">+</button></div>
+  </div>
+  <div id="material-image-stage" class="material-image__stage"><div id="material-image-visual" class="material-image__visual"></div></div>
+  <p id="material-image-help">Amplía y arrastra para explorar la textura.</p>
+</dialog>
+
+<script src="/datos/imagenes.js"></script>
+<script src="/datos/textos.js?v=20261009-menu-catalogo"></script>
+<script src="/datos/trabajos.js"></script>
+<script src="/datos/prototipos.js?v=20261009-tienda-anorak"></script>
+<script src="/datos/busqueda.js"></script>
+<script src="/datos/envios.js"></script>
+<script src="/js/sitio.js?v=20261010-catalogo" defer></script>
+<script src="/js/desarrollador.js?v=20261010-catalogo" defer></script>
 </body></html>
