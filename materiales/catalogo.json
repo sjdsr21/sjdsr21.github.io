@@ -12269,10 +12269,10 @@
         "width": 600,
         "height": 600,
         "crop": [
-          60,
-          20,
-          305,
-          560
+          70,
+          35,
+          310,
+          540
         ]
       },
       "international": false,
@@ -12968,10 +12968,15 @@
       "finish": "Liso",
       "code": "2193",
       "image": {
-        "src": "muestras/hsf-aluminio-liso-referencia26.webp",
-        "width": 400,
-        "height": 400,
-        "display": "product"
+        "src": "muestras/aluminio-liso-frontal26.jpg",
+        "width": 2362,
+        "height": 2362,
+        "crop": [
+          8,
+          8,
+          2346,
+          2346
+        ]
       },
       "international": false,
       "textureId": null,
@@ -12979,14 +12984,18 @@
       "description": "Lámina de aluminio que permite valorar el aspecto de una superficie lisa.",
       "use": "Frentes, detalles y revestimientos según el proyecto.",
       "care": "Confirmar metal, abertura o patrón, medidas y protección para el uso previsto.",
-      "imageNote": "Fotografía comercial de Hierros San Félix. Se muestra el producto completo. Derechos de imagen de su titular.",
-      "imageKind": "Fotografía comercial",
+      "imageNote": "Muestra frontal de aluminio liso natural publicada por alfer. Referencia de superficie; no es el lote de Hierros San Félix. Aleación y espesor se consultan en la ficha comercial local. Los derechos de imagen pertenecen a su titular. Color y acabado se confirman con una muestra física.",
+      "imageKind": "Fotografía de referencia frontal",
       "market": "Catálogo de proveedor en Venezuela",
-      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "availability": "La ficha de Hierros San Félix indica 3 disponibles al consultarla el 11/10/2026; confirmar antes de comprar.",
       "sourceLinks": [
         {
           "label": "Ficha del proveedor",
           "url": "https://hsf.com.ve/producto/lamina-aluminio-lisa-1-00-mm-x-1-22-x-2-44-mts/"
+        },
+        {
+          "label": "Origen de la muestra de aluminio",
+          "url": "https://products.alfer.com/de/produkte/glattblech-aluminium-blank-37002.html"
         }
       ]
     },
@@ -13000,10 +13009,9 @@
       "finish": "Estriado",
       "code": "15318",
       "image": {
-        "src": "muestras/hsf-acero-estriado-referencia26.webp",
-        "width": 400,
-        "height": 400,
-        "display": "product"
+        "src": "muestras/acero-estriado-frontal26.jpg",
+        "width": 800,
+        "height": 600
       },
       "international": false,
       "textureId": null,
@@ -13011,14 +13019,22 @@
       "description": "Lámina de hierro negro con relieve estriado.",
       "use": "Puertas o superficies donde se busca este patrón en relieve.",
       "care": "Confirmar metal, abertura o patrón, medidas y protección para el uso previsto.",
-      "imageNote": "Fotografía comercial de Hierros San Félix. Se muestra el producto completo. Derechos de imagen de su titular.",
-      "imageKind": "Fotografía comercial",
+      "imageNote": "Fotografía frontal de chapa de acero estriada publicada por Lajeaço. Referencia del tipo de relieve; dibujo, medidas y calibre se confirman con el distribuidor venezolano. Los derechos de imagen pertenecen a su titular. Color y acabado se confirman con una muestra física.",
+      "imageKind": "Fotografía de referencia frontal",
       "market": "Catálogo de proveedor en Venezuela",
-      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "availability": "Hierros San Félix marca esta referencia sin existencias el 11/10/2026. Metallca también publica láminas estriadas; formato y stock por consultar.",
       "sourceLinks": [
         {
           "label": "Ficha del proveedor",
           "url": "https://hsf.com.ve/producto/lamina-estriada-3-00-mm-x-2-00-x-1-00-mts/"
+        },
+        {
+          "label": "Otro distribuidor venezolano de láminas estriadas",
+          "url": "https://metallca.com.ve/laminas-de-acero/"
+        },
+        {
+          "label": "Fotografía frontal de acero estriado publicada por Lajeaço",
+          "url": "https://static.wixstatic.com/media/525583_efc23a5031aa451b98b0ada535824888~mv2.jpg"
         }
       ]
     },
@@ -13032,10 +13048,9 @@
       "finish": "Expandido",
       "code": "2157",
       "image": {
-        "src": "muestras/hsf-malla-expandida-referencia26.webp",
-        "width": 400,
-        "height": 400,
-        "display": "product"
+        "src": "muestras/acero-expandido-frontal26.jpg",
+        "width": 2362,
+        "height": 2362
       },
       "international": false,
       "textureId": null,
@@ -13043,14 +13058,18 @@
       "description": "Lámina abierta con trama de rombos.",
       "use": "Paños ventilados, cerramientos y detalles de mobiliario según diseño.",
       "care": "Confirmar metal, abertura o patrón, medidas y protección para el uso previsto.",
-      "imageNote": "Fotografía comercial de Hierros San Félix. Se muestra el producto completo. Derechos de imagen de su titular.",
-      "imageKind": "Fotografía comercial",
+      "imageNote": "Muestra frontal de malla expandida de acero sin recubrimiento publicada por alfer. Ilustra el tipo de entramado; la abertura y el calibre de la oferta local se eligen con su ficha, no midiendo esta fotografía. Los derechos de imagen pertenecen a su titular. Color y acabado se confirman con una muestra física.",
+      "imageKind": "Fotografía de referencia frontal",
       "market": "Catálogo de proveedor en Venezuela",
-      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "availability": "La ficha de Hierros San Félix indica 15 disponibles al consultarla el 11/10/2026; confirmar antes de comprar.",
       "sourceLinks": [
         {
           "label": "Ficha del proveedor",
           "url": "https://hsf.com.ve/producto/lamina-expandida-1-x-1-20-x-2-40-mts-c-10/"
+        },
+        {
+          "label": "Origen de la muestra de malla expandida",
+          "url": "https://products.alfer.com/de/eisenwaren/combitech-system-modellbau/lochbleche-und-streckmetall/streckmetall-stahl-roh.html"
         }
       ]
     },
@@ -13064,10 +13083,15 @@
       "finish": "Galvanizado",
       "code": "",
       "image": {
-        "src": "muestras/metallca-rejilla-grating-referencia26.webp",
-        "width": 1280,
-        "height": 720,
-        "display": "product"
+        "src": "muestras/grating-galvanizado-frontal26.jpg",
+        "width": 1800,
+        "height": 748,
+        "crop": [
+          130,
+          115,
+          1450,
+          500
+        ]
       },
       "international": false,
       "textureId": null,
@@ -13075,14 +13099,18 @@
       "description": "Rejilla de pletinas de acero al carbono galvanizadas.",
       "use": "Rejillas, plataformas y piezas que requieren especificar apoyo y cargas.",
       "care": "Confirmar metal, abertura o patrón, medidas y protección para el uso previsto.",
-      "imageNote": "Fotografía comercial de Metallca. Se muestra el producto completo. Derechos de imagen de su titular.",
-      "imageKind": "Fotografía comercial",
+      "imageNote": "Fotografía frontal de rejilla de acero galvanizada publicada por Kraty Pomostowe. Recorte de la zona central en la cuadrícula. Ilustra el entramado; no representa dimensiones, carga, pletina dentada ni fabricación específica de Metallca. Los derechos de imagen pertenecen a su titular. Color y acabado se confirman con una muestra física.",
+      "imageKind": "Fotografía de referencia frontal",
       "market": "Catálogo de proveedor en Venezuela",
-      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "availability": "Metallca publica rejillas grating galvanizadas en su oferta venezolana; fabricación, formato y existencias por consultar.",
       "sourceLinks": [
         {
           "label": "Ficha del proveedor",
           "url": "https://metallca.com.ve/service/rejillas-grating/"
+        },
+        {
+          "label": "Origen de la muestra de rejilla galvanizada",
+          "url": "https://www.kraty-pomostowe.com.pl/krata-pomostowa-zgrzewana-300x1000-mm-34x38-mm-30x2-mm-ocynkowana-p-62.html"
         }
       ]
     },
@@ -13099,7 +13127,12 @@
         "src": "muestras/metalnet-perforado-circular-referencia26.webp",
         "width": 1000,
         "height": 1000,
-        "display": "product"
+        "crop": [
+          288,
+          34,
+          420,
+          930
+        ]
       },
       "international": false,
       "textureId": null,
@@ -13107,10 +13140,10 @@
       "description": "Lámina perforada de hierro pulido con patrón circular.",
       "use": "Paneles ventilados, organizadores y paños de mobiliario según diseño.",
       "care": "Confirmar metal, abertura o patrón, medidas y protección para el uso previsto.",
-      "imageNote": "Fotografía comercial de Metalnet. Se muestra el producto completo. Derechos de imagen de su titular.",
-      "imageKind": "Fotografía comercial",
+      "imageNote": "Fotografía frontal publicada por Metalnet, con recorte de la superficie para llenar la cuadrícula. La ficha conserva la foto completa. El proveedor usa una imagen común en variantes; la separación se toma de la ficha y no se mide en esta foto.",
+      "imageKind": "Fotografía frontal del proveedor",
       "market": "Catálogo de proveedor en Venezuela",
-      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "availability": "La ficha de Metalnet indica 5 en stock al consultarla el 11/10/2026; confirmar color y existencias antes de comprar.",
       "sourceLinks": [
         {
           "label": "Ficha del proveedor",
@@ -13125,7 +13158,7 @@
       "appId": null,
       "international": false,
       "market": "Catálogo de proveedor en Venezuela",
-      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "availability": "Inox Total Services publica inoxidable 304 satinado N4 para entrega en Venezuela; confirmar el espesor, formato y lote.",
       "care": "Confirmar aleación, formato, acabado y aptitud para el proyecto.",
       "id": "inox-304-satinado",
       "name": "Acero inoxidable 304 satinado",
@@ -13135,19 +13168,22 @@
       "description": "Lámina de acero inoxidable AISI 304 con acabado N4 satinado. La foto del proveedor muestra una aplicación de este acabado.",
       "use": "Mesas, frentes, salpicaderos y detalles según el diseño.",
       "code": "",
-      "imageKind": "Fotografía comercial",
-      "imageNote": "Imagen del catálogo de Inox Total Services. Derechos de imagen de su titular.",
+      "imageKind": "Textura de referencia · CC0",
+      "imageNote": "Textura frontal de metal cepillado ambientCG Metal009, licencia CC0. Referencia de aspecto cepillado; no es una fotografía del lote ni acredita aleación o acabado N4 de Inox Total Services. La ficha local sí publica inoxidable 304 satinado N4. Los derechos de imagen pertenecen a su titular. Color y acabado se confirman con una muestra física.",
       "sourceLinks": [
         {
           "label": "Catálogo del proveedor",
           "url": "https://inoxtotalven.com/laminas-de-acero-inoxidable-disponibles/"
+        },
+        {
+          "label": "Origen de la textura frontal · ambientCG CC0",
+          "url": "https://ambientcg.com/a/Metal009"
         }
       ],
       "image": {
-        "src": "muestras/inox-304-satinado-referencia26.webp",
+        "src": "muestras/inox-cepillado-frontal26.png",
         "width": 1024,
-        "height": 768,
-        "display": "product"
+        "height": 1024
       }
     },
     {
@@ -13157,7 +13193,7 @@
       "appId": null,
       "international": false,
       "market": "Catálogo de proveedor en Venezuela",
-      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "availability": "Inox Total Services publica inoxidable 304 2B perforado en Venezuela; diámetro, paso, formato y existencias por consultar.",
       "care": "Confirmar aleación, formato, acabado y aptitud para el proyecto.",
       "id": "inox-304-perforado",
       "name": "Acero inoxidable 304 perforado",
@@ -13167,19 +13203,22 @@
       "description": "Lámina de acero inoxidable AISI 304 perforada. Las aberturas se eligen en el catálogo del proveedor.",
       "use": "Paños ventilados, filtros o detalles de mobiliario según la abertura elegida.",
       "code": "",
-      "imageKind": "Fotografía comercial",
-      "imageNote": "Imagen del catálogo de Inox Total Services. Derechos de imagen de su titular.",
+      "imageKind": "Fotografía de referencia frontal",
+      "imageNote": "Fotografía frontal de inoxidable 304 perforado publicada por Setka Rabica. Muestra de trama circular, fotografiada en variante BA; la oferta venezolana enlazada es 2B mate. Brillo, abertura y separación de la compra se confirman con la ficha y muestra local. Los derechos de imagen pertenecen a su titular. Color y acabado se confirman con una muestra física.",
       "sourceLinks": [
         {
           "label": "Catálogo del proveedor",
           "url": "https://inoxtotalven.com/laminas-de-acero-inoxidable-disponibles/"
+        },
+        {
+          "label": "Origen de la muestra de perforación circular",
+          "url": "https://setka-rabica.com/ua/product/perforirovannii_list_nerzh_1000h2000_08x20"
         }
       ],
       "image": {
-        "src": "muestras/inox-304-perforado-referencia26.webp",
-        "width": 434,
-        "height": 434,
-        "display": "product"
+        "src": "muestras/inox-perforado-frontal26.jpg",
+        "width": 600,
+        "height": 600
       }
     },
     {
@@ -13189,7 +13228,7 @@
       "appId": null,
       "international": false,
       "market": "Catálogo de proveedor en Venezuela",
-      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "availability": "La ficha de Metalnet indica 5 en stock al consultarla el 11/10/2026; confirmar color y existencias antes de comprar.",
       "care": "Confirmar aleación, formato, acabado y aptitud para el proyecto.",
       "id": "metalnet-microperforado",
       "name": "Microperforado pintado · trama 12,5 mm",
@@ -13199,8 +13238,8 @@
       "description": "Lámina de hierro pulido. El proveedor indica una separación de perforaciones de 12,5 mm; esta medida no identifica el diámetro del agujero.",
       "use": "Paños ventilados y piezas de mobiliario según la apertura y la rigidez necesarias.",
       "code": "MP-00046",
-      "imageKind": "Fotografía comercial",
-      "imageNote": "Imagen del catálogo de Metalnet. Derechos de imagen de su titular.",
+      "imageKind": "Fotografía frontal del proveedor",
+      "imageNote": "Fotografía frontal publicada por Metalnet, con recorte de la superficie para llenar la cuadrícula. La ficha conserva la foto completa. El proveedor usa una imagen común en variantes; la separación se toma de la ficha y no se mide en esta foto.",
       "sourceLinks": [
         {
           "label": "Catálogo del proveedor",
@@ -13211,7 +13250,12 @@
         "src": "muestras/metalnet-microperforado-referencia26.webp",
         "width": 1000,
         "height": 1000,
-        "display": "product"
+        "crop": [
+          288,
+          34,
+          420,
+          930
+        ]
       }
     },
     {
@@ -13221,60 +13265,36 @@
       "appId": null,
       "international": false,
       "market": "Catálogo de proveedor en Venezuela",
-      "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
+      "availability": "Rollerdoors publica perfiles microperforados de hierro pulido y galvanizado en Venezuela; formato y existencias por consultar.",
       "care": "Confirmar aleación, formato, acabado y aptitud para el proyecto.",
       "id": "rollerdoors-microperforado",
-      "name": "Perfil microperforado de hierro pulido",
+      "name": "Perfil microperforado para santa maría",
       "family": "Perforados",
       "supplier": "Rollerdoors",
-      "finish": "Microperforado",
-      "description": "Perfil de hierro pulido para puertas enrollables. Se distingue de una lámina plana perforada.",
+      "finish": "Hierro pulido o galvanizado, según versión",
+      "description": "Perfil de acero microperforado para puertas enrollables. Rollerdoors publica versiones de hierro pulido y galvanizado; se elige el perfil y el recubrimiento para cada proyecto.",
       "use": "Paños de puertas enrollables, según el sistema de perfiles.",
       "code": "",
-      "imageKind": "Fotografía comercial",
-      "imageNote": "Imagen del catálogo de Rollerdoors. Derechos de imagen de su titular.",
+      "imageKind": "Fotografía de referencia frontal",
+      "imageNote": "Fotografía frontal de perfiles microperforados de persiana metálica publicada por RH Beveiliging. Referencia del tipo de perfil ensamblado; no es el lote ni define el recubrimiento o calibre de Rollerdoors. Los derechos de imagen pertenecen a su titular. Color y acabado se confirman con una muestra física.",
       "sourceLinks": [
         {
           "label": "Catálogo del proveedor",
           "url": "https://rollerdoors.com.ve/producto/lamina-microperforada-070-mm-hierro-pulido/"
-        }
-      ],
-      "image": {
-        "src": "muestras/rollerdoors-microperforado-referencia26.webp",
-        "width": 1080,
-        "height": 1080,
-        "display": "product"
-      }
-    },
-    {
-      "category": "metales",
-      "brand": "",
-      "textureId": null,
-      "appId": null,
-      "international": false,
-      "market": "Tipo de panel por consultar en Venezuela",
-      "availability": "Proveedor, calibre, dimensiones y existencias por confirmar con Santiago.",
-      "care": "Confirmar aleación, formato, acabado y aptitud para el proyecto.",
-      "id": "panel-punta-diamante",
-      "name": "Panel punta de diamante (esquema)",
-      "family": "Estampados",
-      "supplier": "",
-      "finish": "Relieve plegado",
-      "code": "",
-      "description": "Referencia del panel de lámina con relieve en punta de diamante utilizado en puertas y portones. El dibujo muestra la geometría del pliegue; no es una fotografía de un producto específico.",
-      "use": "Paños de puertas, portones y cerramientos según fabricación.",
-      "imageKind": "Esquema de relieve",
-      "imageNote": "Esquema de AGO para reconocer el relieve. El color y las proporciones son orientativos.",
-      "sourceLinks": [
+        },
         {
-          "label": "Publicación venezolana de referencia",
-          "url": "https://articulo.mercadolibre.com.ve/MLV-744728199-lamina-punta-de-diamante-6060cm-_JM"
+          "label": "Versión galvanizada publicada por Rollerdoors",
+          "url": "https://rollerdoors.com.ve/producto/perfil-de-santa-maria-microperforado-h-g-en-0-90mm/"
+        },
+        {
+          "label": "Origen de la fotografía frontal de perfiles",
+          "url": "https://www.rhbeveiliging.nl/uw-roldeuren-en-rolluiken-beheren-in-spanje-met-uw-ajax-alarmsysteem"
         }
       ],
       "image": {
-        "src": "muestras/panel-punta-diamante-esquema26.svg",
-        "width": 1200,
-        "height": 1200
+        "src": "muestras/perfil-microperforado-frontal26.jpg",
+        "width": 1920,
+        "height": 1440
       }
     },
     {
@@ -13456,26 +13476,24 @@
       "market": "Publicación comercial en Venezuela",
       "international": false,
       "availability": "Producto publicado por el proveedor; existencias por confirmar.",
-      "imageKind": "Fotografía publicada por el proveedor",
-      "imageNote": "Fotografía de referencia publicada por Madeaceros. Recorte de la superficie en la cuadrícula; imagen completa en esta ficha. Color y veta se confirman con una muestra física. Los derechos de imagen pertenecen a su titular.",
+      "imageKind": "Fotografía de referencia frontal",
+      "imageNote": "Muestra frontal de chapilla de curupixa publicada por M. Bohlke. Referencia de veta de curupixa; no es una fotografía del lote de Madeaceros ni establece equivalencia botánica con otras maderas llamadas cedrillo. Los derechos de imagen pertenecen a su titular. Color y acabado se confirman con una muestra física.",
       "textureId": null,
       "appId": null,
       "sourceLinks": [
         {
           "label": "Publicación del proveedor",
           "url": "https://madeaceros.com/producto/chapilla-cedrillo-curupixa/"
+        },
+        {
+          "label": "Origen de la muestra de curupixa",
+          "url": "https://mbveneer.com/veneercatalogpage/curupixa-veneer/"
         }
       ],
       "image": {
-        "src": "muestras/chapilla-cedrillo-local.png",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          50,
-          530,
-          400,
-          220
-        ]
+        "src": "muestras/chapilla-curupixa-frontal26.jpg",
+        "width": 800,
+        "height": 1100
       }
     },
     {
@@ -13530,26 +13548,24 @@
       "market": "Publicación comercial en Venezuela",
       "international": false,
       "availability": "Producto publicado por el proveedor; existencias por confirmar.",
-      "imageKind": "Fotografía publicada por el proveedor",
-      "imageNote": "Fotografía de referencia publicada por La Casa de la Madera. Recorte de la superficie en la cuadrícula; imagen completa en esta ficha. Color y veta se confirman con una muestra física. Los derechos de imagen pertenecen a su titular.",
+      "imageKind": "Fotografía de referencia frontal",
+      "imageNote": "Fotografía frontal de la cara de Selex Plywood B/C, contrachapado de pino radiata con adhesivo fenólico, publicada por CMPC Maderas. Veta longitudinal vertical. Referencia de construcción y apariencia; la publicación venezolana no identifica esta marca ni este lote. Los derechos de imagen pertenecen a su titular. Color y acabado se confirman con una muestra física.",
       "textureId": null,
       "appId": null,
       "sourceLinks": [
         {
           "label": "Publicación del proveedor",
           "url": "https://articulo.mercadolibre.com.ve/MLV-796094640-compuesto-fenolico-pino-acabado-natural-18mm-122x244-import-_JM"
+        },
+        {
+          "label": "Origen de la muestra de pino fenólico",
+          "url": "https://cmpcmaderas.com/producto/selex-plywood-b-c/"
         }
       ],
       "image": {
-        "src": "muestras/fenolico-pino-natural-local.webp",
-        "width": 448,
-        "height": 448,
-        "crop": [
-          100,
-          70,
-          160,
-          115
-        ]
+        "src": "muestras/fenolico-pino-cara-frontal26.jpg",
+        "width": 920,
+        "height": 555
       },
       "sheetSizeMm": [
         1220,
