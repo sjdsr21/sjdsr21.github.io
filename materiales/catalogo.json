@@ -13165,25 +13165,31 @@
       "family": "Láminas lisas",
       "supplier": "Inox Total Services",
       "finish": "N4 satinado",
-      "description": "Lámina de acero inoxidable AISI 304 con acabado N4 satinado. La foto del proveedor muestra una aplicación de este acabado.",
+      "description": "Lámina de acero inoxidable AISI 304 con acabado N4 satinado. La referencia visual muestra un satinado fino; el grano y brillo del producto local se confirman con una muestra.",
       "use": "Mesas, frentes, salpicaderos y detalles según el diseño.",
       "code": "",
-      "imageKind": "Textura de referencia · CC0",
-      "imageNote": "Textura frontal de metal cepillado ambientCG Metal009, licencia CC0. Referencia de aspecto cepillado; no es una fotografía del lote ni acredita aleación o acabado N4 de Inox Total Services. La ficha local sí publica inoxidable 304 satinado N4. Los derechos de imagen pertenecen a su titular. Color y acabado se confirman con una muestra física.",
+      "imageKind": "Referencia visual de fabricante",
+      "imageNote": "Referencia Silver Satin 9802 publicada por Arch & Inox, con satinado fino y reflejo suave. La cuadrícula muestra solo la superficie; esta ficha conserva la muestra completa. No es fotografía del lote de Inox Total ni acredita su grano específico N4. Color y acabado se confirman con muestra física. Derechos de imagen de su titular.",
       "sourceLinks": [
         {
-          "label": "Catálogo del proveedor",
+          "label": "Catálogo del proveedor venezolano",
           "url": "https://inoxtotalven.com/laminas-de-acero-inoxidable-disponibles/"
         },
         {
-          "label": "Origen de la textura frontal · ambientCG CC0",
-          "url": "https://ambientcg.com/a/Metal009"
+          "label": "Origen de la referencia Silver Satin",
+          "url": "https://arch-inox.com/en/satin/"
         }
       ],
       "image": {
-        "src": "muestras/inox-cepillado-frontal26.png",
-        "width": 1024,
-        "height": 1024
+        "src": "muestras/inox-satinado-fino26.webp",
+        "width": 2560,
+        "height": 2560,
+        "crop": [
+          800,
+          850,
+          900,
+          750
+        ]
       }
     },
     {
@@ -13312,26 +13318,24 @@
       "market": "Publicación comercial en Venezuela",
       "international": false,
       "availability": "Producto publicado por el proveedor; existencias por confirmar.",
-      "imageKind": "Fotografía publicada por el proveedor",
-      "imageNote": "Fotografía de referencia publicada por Madeaceros. Recorte de la superficie en la cuadrícula; imagen completa en esta ficha. Color y veta se confirman con una muestra física. Los derechos de imagen pertenecen a su titular.",
+      "imageKind": "Fotografía de referencia de curupixa",
+      "imageNote": "Muestra completa de cara de curupixa publicada por M. Bohlke, con veta y detalle fino visibles. Referencia de apariencia; no es fotografía del lote ni del panel de 3 mm de Madeaceros. La especie o denominación comercial, el tono y la presentación se confirman con el proveedor. Derechos de imagen de su titular.",
       "textureId": null,
       "appId": null,
       "sourceLinks": [
         {
           "label": "Publicación del proveedor",
           "url": "https://madeaceros.com/producto/chapa-curupixa-162-x-220-x-3-mm/"
+        },
+        {
+          "label": "Origen de la muestra completa de curupixa",
+          "url": "https://mbveneer.com/veneercatalogpage/curupixa-veneer/"
         }
       ],
       "image": {
-        "src": "muestras/chapa-curupixa-local.png",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          240,
-          440,
-          430,
-          520
-        ]
+        "src": "muestras/chapilla-curupixa-frontal26.jpg",
+        "width": 800,
+        "height": 1100
       },
       "sheetSizeMm": [
         1620,
@@ -13353,26 +13357,24 @@
       "market": "Publicación comercial en Venezuela",
       "international": false,
       "availability": "Producto publicado por el proveedor; existencias por confirmar.",
-      "imageKind": "Fotografía publicada por el proveedor",
-      "imageNote": "Fotografía de referencia publicada por Madeaceros. Recorte de la superficie en la cuadrícula; imagen completa en esta ficha. Color y veta se confirman con una muestra física. Los derechos de imagen pertenecen a su titular.",
+      "imageKind": "Fotografía de referencia de veta",
+      "imageNote": "Muestra frontal publicada como Banack/Banak/Virola por Maderas y Maderas, Guadalajara, con veta longitudinal visible. Referencia de la apariencia de madera, no fotografía del lote o de la chapa de 3 mm de Madeaceros. No permite identificar la especie exacta ni la construcción del panel local. Derechos de imagen de su titular.",
       "textureId": null,
       "appId": null,
       "sourceLinks": [
         {
           "label": "Publicación del proveedor",
           "url": "https://madeaceros.com/producto/chapa-virola-122-x-244-x-3-mm/"
+        },
+        {
+          "label": "Origen de la muestra de Banak/Virola",
+          "url": "https://www.maderasymaderas.com/madera-natural/madera-de-banack"
         }
       ],
       "image": {
-        "src": "muestras/chapa-virola-local.png",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          420,
-          545,
-          190,
-          150
-        ]
+        "src": "muestras/virola-veta-frontal26.jpg",
+        "width": 1000,
+        "height": 1000
       },
       "sheetSizeMm": [
         1220,
@@ -13394,8 +13396,8 @@
       "market": "Publicación comercial en Venezuela",
       "international": false,
       "availability": "Producto publicado por el proveedor; existencias por confirmar.",
-      "imageKind": "Fotografía publicada por el proveedor",
-      "imageNote": "Foto publicada por Madeaceros para su chapa de okumé de 2,7 mm; referencia de apariencia, no foto de la presentación de 3 mm de Grupo Migo. Recorte de la superficie en la cuadrícula. El producto y el tono se confirman con el proveedor.",
+      "imageKind": "Referencia visual ajustada con IA",
+      "imageNote": "Referencia visual ajustada con IA desde la muestra de Madeaceros, aproximando el tono al del compuesto de okumé del taller, por indicación de Santiago. Se conserva la veta vertical y se recrea detalle fino. No es una fotografía del lote ni una certificación del color del producto comercial. Comparar una muestra física.",
       "textureId": null,
       "appId": null,
       "sourceLinks": [
@@ -13406,18 +13408,20 @@
         {
           "label": "Chapa de okumé publicada por Madeaceros",
           "url": "https://madeaceros.com/producto/chapa-okume-212-x-0-70-x-2-7-mm/"
+        },
+        {
+          "label": "Imagen original publicada por Madeaceros",
+          "url": "https://prototipoago.com/materiales/muestras/chapa-okume-local.png"
+        },
+        {
+          "label": "Referencia de tono: compuesto de okumé",
+          "url": "https://prototipoago.com/materiales/muestras/tablero-compuesto-okume-detalle26.webp"
         }
       ],
       "image": {
-        "src": "muestras/chapa-okume-local.png",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          280,
-          320,
-          500,
-          680
-        ]
+        "src": "muestras/chapa-okume-tono26.png",
+        "width": 1254,
+        "height": 1254
       },
       "sheetSizeMm": [
         800,
@@ -13439,26 +13443,24 @@
       "market": "Publicación comercial en Venezuela",
       "international": false,
       "availability": "Producto publicado por el proveedor; existencias por confirmar.",
-      "imageKind": "Referencia de veta de cedro",
-      "imageNote": "Referencia de veta de cedro (Cedrela odorata), no fotografía del lote de Grupo Migo. Foto de muestra: Xylothèque du Cirad, dominio público, vía Wikimedia Commons. La presentación de la chapilla se confirma con el proveedor.",
+      "imageKind": "Referencia visual ajustada con IA",
+      "imageNote": "Referencia visual de cedro ajustada con IA: tono ligeramente más claro y detalle recreado, por indicación de Santiago. Parte de la muestra de Cedrela odorata de Xylothèque du Cirad, dominio público vía Wikimedia Commons. No es fotografía del lote de Grupo Migo. Color y presentación se confirman con muestra física.",
       "textureId": null,
       "appId": null,
       "sourceLinks": [
         {
           "label": "Publicación del proveedor",
           "url": "https://grupomigo.net/producto/4059"
+        },
+        {
+          "label": "Referencia de veta original del taller",
+          "url": "https://prototipoago.com/materiales/muestras/madera-cedro.webp"
         }
       ],
       "image": {
-        "src": "muestras/madera-cedro.webp",
-        "width": 480,
-        "height": 240,
-        "crop": [
-          0,
-          0,
-          480,
-          240
-        ]
+        "src": "muestras/chapilla-cedro-claro26.png",
+        "width": 1774,
+        "height": 887
       }
     },
     {
@@ -13571,6 +13573,46 @@
         1220,
         2440
       ]
+    },
+    {
+      "id": "corinox-aluminio-estriado",
+      "category": "metales",
+      "family": "Estriados",
+      "name": "Aluminio estriado",
+      "brand": "",
+      "supplier": "Corinox / Aluminca",
+      "code": "",
+      "finish": "Estriado",
+      "description": "Lámina de aluminio con relieve estriado. Corinox publica grado 3003H14; Aluminca ofrece otra presentación en Mercado Libre. El dibujo y el formato se eligen en la ficha del producto.",
+      "use": "Revestimientos, superficies de protección y detalles de mobiliario según el proyecto y la aptitud del producto.",
+      "care": "Confirmar aleación, tipo de relieve, calibre, formato y protección antes de elegir.",
+      "market": "Publicaciones comerciales en Venezuela",
+      "international": false,
+      "availability": "Ofertas consultadas el 11/10/2026 en Corinox y Aluminca/Mercado Libre; existencias, relieve, espesor y formato por confirmar.",
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": null,
+      "imageKind": "Fotografía de referencia frontal",
+      "imageNote": "Muestra frontal de aluminio estriado natural publicada por alfer, trama de dos resaltes. Referencia del tipo de superficie; no es el lote de Corinox o Aluminca ni acredita su dibujo, aleación o calibre. Confirmar el relieve comercial con muestra física. Derechos de imagen de su titular.",
+      "sourceLinks": [
+        {
+          "label": "Corinox: catálogo venezolano de aluminio estriado",
+          "url": "https://corinoxca.com/laminas.html"
+        },
+        {
+          "label": "Aluminca: aluminio estriado publicado en Venezuela",
+          "url": "https://articulo.mercadolibre.com.ve/MLV-495229827-lamina-de-aluminio-estriada-espesor-317mm-_JM"
+        },
+        {
+          "label": "Origen de la muestra frontal de aluminio estriado",
+          "url": "https://products.alfer.com/de/eisenwaren/combitech-system-bleche-platten-und-zubeh%C3%B6r/pr%C3%A4gebleche-aluminium/riffelblech-aluminium-blank.html"
+        }
+      ],
+      "image": {
+        "src": "muestras/aluminio-estriado-natural26.jpg",
+        "width": 2362,
+        "height": 2362
+      }
     }
   ]
 }
