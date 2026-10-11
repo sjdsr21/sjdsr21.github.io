@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-10",
+  "updated": "2026-10-11",
   "categories": [
     {
       "id": "maderas",
@@ -438,7 +438,7 @@
       "id": "tablero-aglomerado-crudo",
       "category": "tableros",
       "name": "Aglomerado crudo",
-      "family": "Aglomerados",
+      "family": "Compuestos y chapillados",
       "pattern": "",
       "brand": "",
       "code": "",
@@ -684,34 +684,6 @@
         "src": "muestras/taller-mdf.webp",
         "width": 1000,
         "height": 1000
-      },
-      "supplier": ""
-    },
-    {
-      "id": "taller-chapilla",
-      "category": "tableros",
-      "name": "Chapilla",
-      "family": "Compuestos y chapillados",
-      "pattern": "",
-      "brand": "",
-      "code": "",
-      "finish": "",
-      "description": "Tablero o compuesto con cara de madera. La especie de la cara no describe por sí sola su núcleo.",
-      "use": "Superficies con apariencia de madera y piezas de tablero.",
-      "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
-      "market": "Referencia del taller; proveedor por confirmar",
-      "international": false,
-      "availability": "Por confirmar con proveedor",
-      "imageKind": "Referencia visual",
-      "imageNote": "Referencia visual del taller; no representa una marca.",
-      "sourceLinks": [],
-      "textureId": "taller-chapilla",
-      "appId": null,
-      "sheetSizeMm": null,
-      "image": {
-        "src": "muestras/taller-chapilla-detalle26.webp",
-        "width": 1250,
-        "height": 1250
       },
       "supplier": ""
     },
@@ -4904,20 +4876,24 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra publicada por ArquiStore",
-      "imageNote": "Muestra publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular.",
+      "imageKind": "Muestra extraída del catálogo de Virgo",
+      "imageNote": "Muestra 2155 SF Wengue, extraída sin modificar de la página 54 del muestrario Virgo publicado por ArquiStore. Los derechos de marca e imagen pertenecen a su titular.",
       "sourceLinks": [
         {
-          "label": "Ficha o catálogo de referencia",
+          "label": "Ficha de ArquiStore",
           "url": "https://arquistore.online/producto/2155-sf-wengue/"
+        },
+        {
+          "label": "Muestrario Virgo, página 54",
+          "url": "https://arquistore.online/wp-content/uploads/2026/04/Muestrario-Virgo-2025-Clientes-3.pdf#page=54"
         }
       ],
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-2155-sf.webp",
-        "width": 300,
-        "height": 300
+        "src": "muestras/virgo-2155-sf-muestrario.jpg",
+        "width": 500,
+        "height": 500
       }
     },
     {
@@ -10342,7 +10318,13 @@
       "image": {
         "src": "muestras/greenlam-181-sat-detalle26.webp",
         "width": 800,
-        "height": 1600
+        "height": 1600,
+        "crop": [
+          8,
+          8,
+          784,
+          1584
+        ]
       }
     },
     {
@@ -13294,6 +13276,285 @@
         "width": 1200,
         "height": 1200
       }
+    },
+    {
+      "id": "chapa-curupixa-local",
+      "category": "tableros",
+      "family": "Compuestos y chapillados",
+      "name": "Chapa de curupixa",
+      "description": "Chapa de curupixa de 3 mm. Madeaceros publica la presentación de 1,62 × 2,20 m. La cara visible no identifica por sí sola la construcción interior.",
+      "use": "Revestimientos y piezas de carpintería según la ficha y el soporte del producto.",
+      "care": "Confirmamos formato, construcción, acabado y existencias con el proveedor antes de elegir el material para el proyecto.",
+      "brand": "",
+      "supplier": "Madeaceros",
+      "code": "",
+      "finish": "",
+      "market": "Publicación comercial en Venezuela",
+      "international": false,
+      "availability": "Producto publicado por el proveedor; existencias por confirmar.",
+      "imageKind": "Fotografía publicada por el proveedor",
+      "imageNote": "Fotografía de referencia publicada por Madeaceros. Recorte de la superficie en la cuadrícula; imagen completa en esta ficha. Color y veta se confirman con una muestra física. Los derechos de imagen pertenecen a su titular.",
+      "textureId": null,
+      "appId": null,
+      "sourceLinks": [
+        {
+          "label": "Publicación del proveedor",
+          "url": "https://madeaceros.com/producto/chapa-curupixa-162-x-220-x-3-mm/"
+        }
+      ],
+      "image": {
+        "src": "muestras/chapa-curupixa-local.png",
+        "width": 1080,
+        "height": 1080,
+        "crop": [
+          240,
+          440,
+          430,
+          520
+        ]
+      },
+      "sheetSizeMm": [
+        1620,
+        2200
+      ]
+    },
+    {
+      "id": "chapa-virola-local",
+      "category": "tableros",
+      "family": "Compuestos y chapillados",
+      "name": "Chapa de virola",
+      "description": "Chapa de virola de 3 mm, publicada por Madeaceros en formato de 1,22 × 2,44 m.",
+      "use": "Revestimientos, fondos y piezas ligeras de carpintería según construcción y uso.",
+      "care": "Confirmamos formato, construcción, acabado y existencias con el proveedor antes de elegir el material para el proyecto.",
+      "brand": "",
+      "supplier": "Madeaceros",
+      "code": "",
+      "finish": "",
+      "market": "Publicación comercial en Venezuela",
+      "international": false,
+      "availability": "Producto publicado por el proveedor; existencias por confirmar.",
+      "imageKind": "Fotografía publicada por el proveedor",
+      "imageNote": "Fotografía de referencia publicada por Madeaceros. Recorte de la superficie en la cuadrícula; imagen completa en esta ficha. Color y veta se confirman con una muestra física. Los derechos de imagen pertenecen a su titular.",
+      "textureId": null,
+      "appId": null,
+      "sourceLinks": [
+        {
+          "label": "Publicación del proveedor",
+          "url": "https://madeaceros.com/producto/chapa-virola-122-x-244-x-3-mm/"
+        }
+      ],
+      "image": {
+        "src": "muestras/chapa-virola-local.png",
+        "width": 1080,
+        "height": 1080,
+        "crop": [
+          420,
+          545,
+          190,
+          150
+        ]
+      },
+      "sheetSizeMm": [
+        1220,
+        2440
+      ]
+    },
+    {
+      "id": "chapa-okume-local",
+      "category": "tableros",
+      "family": "Compuestos y chapillados",
+      "name": "Chapa de okumé",
+      "description": "Grupo Migo publica una chapa de okumé de 3 mm en formato de 0,80 × 2,13 m. Madeaceros también publica chapa de okumé de 2,7 mm; las presentaciones se consultan por separado.",
+      "use": "Revestimientos y componentes de carpintería de poco espesor, según producto y diseño.",
+      "care": "Confirmamos formato, construcción, acabado y existencias con el proveedor antes de elegir el material para el proyecto.",
+      "brand": "",
+      "supplier": "Grupo Migo / Madeaceros",
+      "code": "",
+      "finish": "",
+      "market": "Publicación comercial en Venezuela",
+      "international": false,
+      "availability": "Producto publicado por el proveedor; existencias por confirmar.",
+      "imageKind": "Fotografía publicada por el proveedor",
+      "imageNote": "Foto publicada por Madeaceros para su chapa de okumé de 2,7 mm; referencia de apariencia, no foto de la presentación de 3 mm de Grupo Migo. Recorte de la superficie en la cuadrícula. El producto y el tono se confirman con el proveedor.",
+      "textureId": null,
+      "appId": null,
+      "sourceLinks": [
+        {
+          "label": "Publicación del proveedor",
+          "url": "https://grupomigo.net/producto/4060"
+        },
+        {
+          "label": "Chapa de okumé publicada por Madeaceros",
+          "url": "https://madeaceros.com/producto/chapa-okume-212-x-0-70-x-2-7-mm/"
+        }
+      ],
+      "image": {
+        "src": "muestras/chapa-okume-local.png",
+        "width": 1080,
+        "height": 1080,
+        "crop": [
+          280,
+          320,
+          500,
+          680
+        ]
+      },
+      "sheetSizeMm": [
+        800,
+        2130
+      ]
+    },
+    {
+      "id": "chapilla-cedro-local",
+      "category": "tableros",
+      "family": "Compuestos y chapillados",
+      "name": "Chapilla de cedro",
+      "description": "Lámina delgada de cedro para enchapar un soporte. Grupo Migo la publica como «CHAPILLA CEDRO MT2». Su ficha no especifica espesor ni dimensiones de cada tira; esos datos se consultan al proveedor.",
+      "use": "Enchapado de tableros y detalles con cara de cedro.",
+      "care": "Confirmamos formato, construcción, acabado y existencias con el proveedor antes de elegir el material para el proyecto.",
+      "brand": "",
+      "supplier": "Grupo Migo",
+      "code": "8017-061",
+      "finish": "",
+      "market": "Publicación comercial en Venezuela",
+      "international": false,
+      "availability": "Producto publicado por el proveedor; existencias por confirmar.",
+      "imageKind": "Referencia de veta de cedro",
+      "imageNote": "Referencia de veta de cedro (Cedrela odorata), no fotografía del lote de Grupo Migo. Foto de muestra: Xylothèque du Cirad, dominio público, vía Wikimedia Commons. La presentación de la chapilla se confirma con el proveedor.",
+      "textureId": null,
+      "appId": null,
+      "sourceLinks": [
+        {
+          "label": "Publicación del proveedor",
+          "url": "https://grupomigo.net/producto/4059"
+        }
+      ],
+      "image": {
+        "src": "muestras/madera-cedro.webp",
+        "width": 480,
+        "height": 240,
+        "crop": [
+          0,
+          0,
+          480,
+          240
+        ]
+      }
+    },
+    {
+      "id": "chapilla-cedrillo-local",
+      "category": "tableros",
+      "family": "Compuestos y chapillados",
+      "name": "Chapilla de cedrillo / curupixa",
+      "description": "Lámina delgada para enchapar. Madeaceros la publica con la denominación comercial «cedrillo/curupixa»; conservar ese nombre permite localizar la oferta sin asumir una equivalencia botánica.",
+      "use": "Enchapado de tableros, frentes y detalles de mobiliario.",
+      "care": "Confirmamos formato, construcción, acabado y existencias con el proveedor antes de elegir el material para el proyecto.",
+      "brand": "",
+      "supplier": "Madeaceros",
+      "code": "",
+      "finish": "",
+      "market": "Publicación comercial en Venezuela",
+      "international": false,
+      "availability": "Producto publicado por el proveedor; existencias por confirmar.",
+      "imageKind": "Fotografía publicada por el proveedor",
+      "imageNote": "Fotografía de referencia publicada por Madeaceros. Recorte de la superficie en la cuadrícula; imagen completa en esta ficha. Color y veta se confirman con una muestra física. Los derechos de imagen pertenecen a su titular.",
+      "textureId": null,
+      "appId": null,
+      "sourceLinks": [
+        {
+          "label": "Publicación del proveedor",
+          "url": "https://madeaceros.com/producto/chapilla-cedrillo-curupixa/"
+        }
+      ],
+      "image": {
+        "src": "muestras/chapilla-cedrillo-local.png",
+        "width": 1080,
+        "height": 1080,
+        "crop": [
+          50,
+          530,
+          400,
+          220
+        ]
+      }
+    },
+    {
+      "id": "chapilla-pardillo-local",
+      "category": "tableros",
+      "family": "Compuestos y chapillados",
+      "name": "Chapilla precompuesta de pardillo",
+      "description": "Chapilla precompuesta publicada por Madeaceros como Pardillo. Es una superficie decorativa de madera reconstituida; el nombre del diseño no acredita una lámina natural de esa especie.",
+      "use": "Enchapado decorativo de tableros y frentes de mobiliario.",
+      "care": "Confirmamos formato, construcción, acabado y existencias con el proveedor antes de elegir el material para el proyecto.",
+      "brand": "",
+      "supplier": "Madeaceros",
+      "code": "",
+      "finish": "",
+      "market": "Publicación comercial en Venezuela",
+      "international": false,
+      "availability": "Producto publicado por el proveedor; existencias por confirmar.",
+      "imageKind": "Fotografía publicada por el proveedor",
+      "imageNote": "Fotografía de referencia publicada por Madeaceros. Recorte de la superficie en la cuadrícula; imagen completa en esta ficha. Color y veta se confirman con una muestra física. Los derechos de imagen pertenecen a su titular.",
+      "textureId": null,
+      "appId": null,
+      "sourceLinks": [
+        {
+          "label": "Publicación del proveedor",
+          "url": "https://madeaceros.com/producto/chapilla-precompuesta-pardillo/"
+        }
+      ],
+      "image": {
+        "src": "muestras/chapilla-pardillo-local.png",
+        "width": 1080,
+        "height": 1080,
+        "crop": [
+          250,
+          440,
+          440,
+          530
+        ]
+      }
+    },
+    {
+      "id": "tablero-fenolico-pino-natural",
+      "category": "tableros",
+      "family": "Compuestos y chapillados",
+      "name": "Compuesto fenólico de pino",
+      "description": "Compuesto fenólico de pino con acabado natural. La Casa de la Madera publica una presentación importada de 18 mm y 1,22 × 2,44 m. Es distinta de la referencia con película oscura y del contrachapado de pino sin especificación fenólica.",
+      "use": "Paneles y piezas de carpintería según grado, construcción y ficha del producto.",
+      "care": "Confirmamos formato, construcción, acabado y existencias con el proveedor antes de elegir el material para el proyecto.",
+      "brand": "",
+      "supplier": "La Casa de la Madera",
+      "code": "",
+      "finish": "",
+      "market": "Publicación comercial en Venezuela",
+      "international": false,
+      "availability": "Producto publicado por el proveedor; existencias por confirmar.",
+      "imageKind": "Fotografía publicada por el proveedor",
+      "imageNote": "Fotografía de referencia publicada por La Casa de la Madera. Recorte de la superficie en la cuadrícula; imagen completa en esta ficha. Color y veta se confirman con una muestra física. Los derechos de imagen pertenecen a su titular.",
+      "textureId": null,
+      "appId": null,
+      "sourceLinks": [
+        {
+          "label": "Publicación del proveedor",
+          "url": "https://articulo.mercadolibre.com.ve/MLV-796094640-compuesto-fenolico-pino-acabado-natural-18mm-122x244-import-_JM"
+        }
+      ],
+      "image": {
+        "src": "muestras/fenolico-pino-natural-local.webp",
+        "width": 448,
+        "height": 448,
+        "crop": [
+          100,
+          70,
+          160,
+          115
+        ]
+      },
+      "sheetSizeMm": [
+        1220,
+        2440
+      ]
     }
   ]
 }
