@@ -468,10 +468,10 @@
       "name": "Alistonado de pino",
       "family": "Alistonados",
       "pattern": "",
-      "brand": "",
+      "brand": "Maciza",
       "code": "",
       "finish": "",
-      "description": "Listones de madera encolados para formar un tablero. Conserva las variaciones propias de la madera.",
+      "description": "Listones de madera encolados para formar un tablero. Conserva las variaciones propias de la madera. Maciza se usa como marca provisional de catálogo; el fabricante está por identificar.",
       "use": "Superficies y piezas según construcción y dimensiones.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
       "market": "Referencia del taller; proveedor por confirmar",
@@ -494,7 +494,8 @@
         "height": 1254,
         "srcset": "muestras/tablero-alistonado-pino-empates-20261012-640.webp 640w, muestras/tablero-alistonado-pino-empates-20261012.webp 1254w"
       },
-      "supplier": ""
+      "supplier": "",
+      "brandStatus": "provisional"
     },
     {
       "id": "tablero-alistonado-saman",
@@ -502,10 +503,10 @@
       "name": "Alistonado de samán",
       "family": "Alistonados",
       "pattern": "",
-      "brand": "",
+      "brand": "Maciza",
       "code": "",
       "finish": "",
-      "description": "Listones de madera encolados para formar un tablero. Conserva las variaciones propias de la madera.",
+      "description": "Listones de madera encolados para formar un tablero. Conserva las variaciones propias de la madera. Maciza se usa como marca provisional de catálogo; el fabricante está por identificar.",
       "use": "Superficies y piezas según construcción y dimensiones.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
       "market": "Referencia del taller; proveedor por confirmar",
@@ -528,7 +529,8 @@
         "height": 1254,
         "srcset": "muestras/tablero-alistonado-saman-empates-20261012-640.webp 640w, muestras/tablero-alistonado-saman-empates-20261012.webp 1254w"
       },
-      "supplier": ""
+      "supplier": "",
+      "brandStatus": "provisional"
     },
     {
       "id": "tablero-compuesto-okume",
@@ -565,10 +567,10 @@
       "name": "Pino ranurado - Techo fácil",
       "family": "Ranurados",
       "pattern": "",
-      "brand": "",
+      "brand": "Maciza",
       "code": "",
       "finish": "",
-      "description": "Panel de apariencia ranurada. Se confirma la especie y el perfil del producto real.",
+      "description": "Panel de apariencia ranurada. Se confirma la especie y el perfil del producto real. Maciza se usa como marca provisional de catálogo; el fabricante está por identificar.",
       "use": "Revestimientos y paneles según especificación.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
       "market": "Referencia del taller; proveedor por confirmar",
@@ -586,7 +588,8 @@
         "height": 800,
         "displayRotation": 90
       },
-      "supplier": ""
+      "supplier": "",
+      "brandStatus": "provisional"
     },
     {
       "id": "tablero-mdf-hr",
@@ -2141,15 +2144,19 @@
       "description": "Diseño decorativo sobre un tablero. El color se elige junto con el soporte y acabado.",
       "use": "Cuerpos y frentes de mobiliario, según el tablero seleccionado.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
-      "market": "Venezuela · edición septiembre 2025",
+      "market": "Venezuela · Galería oficial MaxPanel",
       "international": false,
       "availability": "Confirmar existencias y combinación de base con distribuidor",
-      "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación aproximada con IA. Comparar con el catálogo original y una muestra física.",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Imagen publicada en la galería oficial de MaxPanel. El color en pantalla es orientativo; el soporte, formato y acabado se eligen con el producto real.",
       "sourceLinks": [
         {
-          "label": "Referencia del fabricante",
-          "url": "https://maxpanel.com.ve/"
+          "label": "Galería oficial MaxPanel",
+          "url": "https://maxpanel.com.ve/#catalogo"
+        },
+        {
+          "label": "Imagen original del fabricante",
+          "url": "https://maxpanel.com.ve/wp-content/uploads/2024/08/ARIZONA.jpg"
         },
         {
           "label": "Catálogo original, pág. 5",
@@ -2160,10 +2167,10 @@
       "appId": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-arizona-detalle26.webp",
-        "width": 1600,
-        "height": 800,
-        "displayRotation": 90
+        "src": "muestras/maxpanel-arizona-oficial26.webp",
+        "srcset": "muestras/maxpanel-arizona-oficial26-640.webp 295w, muestras/maxpanel-arizona-oficial26.webp 1087w",
+        "width": 1087,
+        "height": 2355
       },
       "supplier": ""
     },
@@ -2179,15 +2186,19 @@
       "description": "Diseño decorativo sobre un tablero. El color se elige junto con el soporte y acabado.",
       "use": "Cuerpos y frentes de mobiliario, según el tablero seleccionado.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
-      "market": "Venezuela · edición septiembre 2025",
+      "market": "Venezuela · Galería oficial MaxPanel",
       "international": false,
       "availability": "Confirmar existencias y combinación de base con distribuidor",
-      "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación aproximada con IA. Comparar con el catálogo original y una muestra física.",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Imagen publicada en la galería oficial de MaxPanel. El color en pantalla es orientativo; el soporte, formato y acabado se eligen con el producto real.",
       "sourceLinks": [
         {
-          "label": "Referencia del fabricante",
-          "url": "https://maxpanel.com.ve/"
+          "label": "Galería oficial MaxPanel",
+          "url": "https://maxpanel.com.ve/#catalogo"
+        },
+        {
+          "label": "Imagen original del fabricante",
+          "url": "https://maxpanel.com.ve/wp-content/uploads/2024/08/ARTISAN.jpg"
         },
         {
           "label": "Catálogo original, pág. 6",
@@ -2198,10 +2209,10 @@
       "appId": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-artisan-detalle26.webp",
-        "width": 1600,
-        "height": 800,
-        "displayRotation": 90
+        "src": "muestras/maxpanel-artisan-oficial26.webp",
+        "srcset": "muestras/maxpanel-artisan-oficial26-640.webp 600w, muestras/maxpanel-artisan-oficial26.webp 600w",
+        "width": 600,
+        "height": 600
       },
       "supplier": ""
     },
@@ -2217,15 +2228,19 @@
       "description": "Diseño decorativo sobre un tablero. El color se elige junto con el soporte y acabado.",
       "use": "Cuerpos y frentes de mobiliario, según el tablero seleccionado.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
-      "market": "Venezuela · edición septiembre 2025",
+      "market": "Venezuela · Galería oficial MaxPanel",
       "international": false,
       "availability": "Confirmar existencias y combinación de base con distribuidor",
-      "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación aproximada con IA. Comparar con el catálogo original y una muestra física.",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Imagen publicada en la galería oficial de MaxPanel. El color en pantalla es orientativo; el soporte, formato y acabado se eligen con el producto real.",
       "sourceLinks": [
         {
-          "label": "Referencia del fabricante",
-          "url": "https://maxpanel.com.ve/"
+          "label": "Galería oficial MaxPanel",
+          "url": "https://maxpanel.com.ve/#catalogo"
+        },
+        {
+          "label": "Imagen original del fabricante",
+          "url": "https://maxpanel.com.ve/wp-content/uploads/2024/08/ASH-GREY.jpg"
         },
         {
           "label": "Catálogo original, pág. 7",
@@ -2236,10 +2251,10 @@
       "appId": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-ash-grey-detalle26.webp",
-        "width": 1600,
-        "height": 800,
-        "displayRotation": 90
+        "src": "muestras/maxpanel-ash-grey-oficial26.webp",
+        "srcset": "muestras/maxpanel-ash-grey-oficial26-640.webp 296w, muestras/maxpanel-ash-grey-oficial26.webp 1087w",
+        "width": 1087,
+        "height": 2354
       },
       "supplier": ""
     },
@@ -2255,15 +2270,19 @@
       "description": "Diseño decorativo sobre un tablero. El color se elige junto con el soporte y acabado.",
       "use": "Cuerpos y frentes de mobiliario, según el tablero seleccionado.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
-      "market": "Venezuela · edición septiembre 2025",
+      "market": "Venezuela · Galería oficial MaxPanel",
       "international": false,
       "availability": "Confirmar existencias y combinación de base con distribuidor",
-      "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación aproximada con IA. Comparar con el catálogo original y una muestra física.",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Imagen publicada en la galería oficial de MaxPanel. El color en pantalla es orientativo; el soporte, formato y acabado se eligen con el producto real.",
       "sourceLinks": [
         {
-          "label": "Referencia del fabricante",
-          "url": "https://maxpanel.com.ve/"
+          "label": "Galería oficial MaxPanel",
+          "url": "https://maxpanel.com.ve/#catalogo"
+        },
+        {
+          "label": "Imagen original del fabricante",
+          "url": "https://maxpanel.com.ve/wp-content/uploads/2024/08/AUSTIN.jpg"
         },
         {
           "label": "Catálogo original, pág. 8",
@@ -2274,10 +2293,10 @@
       "appId": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-austin-detalle26.webp",
-        "width": 1600,
-        "height": 800,
-        "displayRotation": 90
+        "src": "muestras/maxpanel-austin-oficial26.webp",
+        "srcset": "muestras/maxpanel-austin-oficial26-640.webp 296w, muestras/maxpanel-austin-oficial26.webp 1087w",
+        "width": 1087,
+        "height": 2354
       },
       "supplier": ""
     },
@@ -2293,15 +2312,19 @@
       "description": "Diseño decorativo sobre un tablero. El color se elige junto con el soporte y acabado.",
       "use": "Cuerpos y frentes de mobiliario, según el tablero seleccionado.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
-      "market": "Venezuela · edición septiembre 2025",
+      "market": "Venezuela · Galería oficial MaxPanel",
       "international": false,
       "availability": "Confirmar existencias y combinación de base con distribuidor",
-      "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación aproximada con IA. Comparar con el catálogo original y una muestra física.",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Imagen publicada en la galería oficial de MaxPanel. El color en pantalla es orientativo; el soporte, formato y acabado se eligen con el producto real.",
       "sourceLinks": [
         {
-          "label": "Referencia del fabricante",
-          "url": "https://maxpanel.com.ve/"
+          "label": "Galería oficial MaxPanel",
+          "url": "https://maxpanel.com.ve/#catalogo"
+        },
+        {
+          "label": "Imagen original del fabricante",
+          "url": "https://maxpanel.com.ve/wp-content/uploads/2024/08/BRUSHED-OAK.jpg"
         },
         {
           "label": "Catálogo original, pág. 9",
@@ -2312,10 +2335,10 @@
       "appId": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-brushed-oak-detalle26.webp",
-        "width": 1600,
-        "height": 800,
-        "displayRotation": 90
+        "src": "muestras/maxpanel-brushed-oak-oficial26.webp",
+        "srcset": "muestras/maxpanel-brushed-oak-oficial26-640.webp 610w, muestras/maxpanel-brushed-oak-oficial26.webp 610w",
+        "width": 610,
+        "height": 610
       },
       "supplier": ""
     },
@@ -2331,15 +2354,19 @@
       "description": "Diseño decorativo sobre un tablero. El color se elige junto con el soporte y acabado.",
       "use": "Cuerpos y frentes de mobiliario, según el tablero seleccionado.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
-      "market": "Venezuela · edición septiembre 2025",
+      "market": "Venezuela · Galería oficial MaxPanel",
       "international": false,
       "availability": "Confirmar existencias y combinación de base con distribuidor",
-      "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación aproximada con IA. Comparar con el catálogo original y una muestra física.",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Imagen publicada en la galería oficial de MaxPanel. El color en pantalla es orientativo; el soporte, formato y acabado se eligen con el producto real.",
       "sourceLinks": [
         {
-          "label": "Referencia del fabricante",
-          "url": "https://maxpanel.com.ve/"
+          "label": "Galería oficial MaxPanel",
+          "url": "https://maxpanel.com.ve/#catalogo"
+        },
+        {
+          "label": "Imagen original del fabricante",
+          "url": "https://maxpanel.com.ve/wp-content/uploads/2025/08/CALLAHAN.jpg"
         },
         {
           "label": "Catálogo original, pág. 10",
@@ -2350,10 +2377,10 @@
       "appId": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-callahan-detalle26.webp",
-        "width": 1600,
-        "height": 800,
-        "displayRotation": 90
+        "src": "muestras/maxpanel-callahan-oficial26.webp",
+        "srcset": "muestras/maxpanel-callahan-oficial26-640.webp 640w, muestras/maxpanel-callahan-oficial26.webp 1271w",
+        "width": 1271,
+        "height": 1271
       },
       "supplier": ""
     },
@@ -2369,15 +2396,19 @@
       "description": "Diseño decorativo sobre un tablero. El color se elige junto con el soporte y acabado.",
       "use": "Cuerpos y frentes de mobiliario, según el tablero seleccionado.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
-      "market": "Venezuela · edición septiembre 2025",
+      "market": "Venezuela · Galería oficial MaxPanel",
       "international": false,
       "availability": "Confirmar existencias y combinación de base con distribuidor",
-      "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación aproximada con IA. Comparar con el catálogo original y una muestra física.",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Imagen publicada en la galería oficial de MaxPanel. El color en pantalla es orientativo; el soporte, formato y acabado se eligen con el producto real.",
       "sourceLinks": [
         {
-          "label": "Referencia del fabricante",
-          "url": "https://maxpanel.com.ve/"
+          "label": "Galería oficial MaxPanel",
+          "url": "https://maxpanel.com.ve/#catalogo"
+        },
+        {
+          "label": "Imagen original del fabricante",
+          "url": "https://maxpanel.com.ve/wp-content/uploads/2024/08/HOFF.jpg"
         },
         {
           "label": "Catálogo original, pág. 11",
@@ -2388,10 +2419,10 @@
       "appId": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-hoff-detalle26.webp",
-        "width": 1600,
-        "height": 800,
-        "displayRotation": 90
+        "src": "muestras/maxpanel-hoff-oficial26.webp",
+        "srcset": "muestras/maxpanel-hoff-oficial26-640.webp 610w, muestras/maxpanel-hoff-oficial26.webp 610w",
+        "width": 610,
+        "height": 610
       },
       "supplier": ""
     },
@@ -2407,15 +2438,19 @@
       "description": "Diseño decorativo sobre un tablero. El color se elige junto con el soporte y acabado.",
       "use": "Cuerpos y frentes de mobiliario, según el tablero seleccionado.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
-      "market": "Venezuela · edición septiembre 2025",
+      "market": "Venezuela · Galería oficial MaxPanel",
       "international": false,
       "availability": "Confirmar existencias y combinación de base con distribuidor",
-      "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación aproximada con IA. Comparar con el catálogo original y una muestra física.",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Imagen publicada en la galería oficial de MaxPanel. El color en pantalla es orientativo; el soporte, formato y acabado se eligen con el producto real.",
       "sourceLinks": [
         {
-          "label": "Referencia del fabricante",
-          "url": "https://maxpanel.com.ve/"
+          "label": "Galería oficial MaxPanel",
+          "url": "https://maxpanel.com.ve/#catalogo"
+        },
+        {
+          "label": "Imagen original del fabricante",
+          "url": "https://maxpanel.com.ve/wp-content/uploads/2025/08/INVERNESS.jpg"
         },
         {
           "label": "Catálogo original, pág. 12",
@@ -2426,10 +2461,10 @@
       "appId": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-inverness-detalle26.webp",
-        "width": 1600,
-        "height": 800,
-        "displayRotation": 90
+        "src": "muestras/maxpanel-inverness-oficial26.webp",
+        "srcset": "muestras/maxpanel-inverness-oficial26-640.webp 640w, muestras/maxpanel-inverness-oficial26.webp 1250w",
+        "width": 1250,
+        "height": 1250
       },
       "supplier": ""
     },
@@ -2445,15 +2480,19 @@
       "description": "Diseño decorativo sobre un tablero. El color se elige junto con el soporte y acabado.",
       "use": "Cuerpos y frentes de mobiliario, según el tablero seleccionado.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
-      "market": "Venezuela · edición septiembre 2025",
+      "market": "Venezuela · Galería oficial MaxPanel",
       "international": false,
       "availability": "Confirmar existencias y combinación de base con distribuidor",
-      "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación aproximada con IA. Comparar con el catálogo original y una muestra física.",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Imagen publicada en la galería oficial de MaxPanel. El color en pantalla es orientativo; el soporte, formato y acabado se eligen con el producto real.",
       "sourceLinks": [
         {
-          "label": "Referencia del fabricante",
-          "url": "https://maxpanel.com.ve/"
+          "label": "Galería oficial MaxPanel",
+          "url": "https://maxpanel.com.ve/#catalogo"
+        },
+        {
+          "label": "Imagen original del fabricante",
+          "url": "https://maxpanel.com.ve/wp-content/uploads/2024/08/KENT-600x600-1.jpg"
         },
         {
           "label": "Catálogo original, pág. 13",
@@ -2464,10 +2503,10 @@
       "appId": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-kent-detalle26.webp",
-        "width": 1600,
-        "height": 800,
-        "displayRotation": 90
+        "src": "muestras/maxpanel-kent-oficial26.webp",
+        "srcset": "muestras/maxpanel-kent-oficial26-640.webp 600w, muestras/maxpanel-kent-oficial26.webp 600w",
+        "width": 600,
+        "height": 600
       },
       "supplier": ""
     },
@@ -2483,15 +2522,19 @@
       "description": "Diseño decorativo sobre un tablero. El color se elige junto con el soporte y acabado.",
       "use": "Cuerpos y frentes de mobiliario, según el tablero seleccionado.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
-      "market": "Venezuela · edición septiembre 2025",
+      "market": "Venezuela · Galería oficial MaxPanel",
       "international": false,
       "availability": "Confirmar existencias y combinación de base con distribuidor",
-      "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación aproximada con IA. Comparar con el catálogo original y una muestra física.",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Imagen publicada en la galería oficial de MaxPanel. El color en pantalla es orientativo; el soporte, formato y acabado se eligen con el producto real.",
       "sourceLinks": [
         {
-          "label": "Referencia del fabricante",
-          "url": "https://maxpanel.com.ve/"
+          "label": "Galería oficial MaxPanel",
+          "url": "https://maxpanel.com.ve/#catalogo"
+        },
+        {
+          "label": "Imagen original del fabricante",
+          "url": "https://maxpanel.com.ve/wp-content/uploads/2024/08/LEVO.jpg"
         },
         {
           "label": "Catálogo original, pág. 14",
@@ -2502,10 +2545,10 @@
       "appId": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-levo-detalle26.webp",
-        "width": 1600,
-        "height": 800,
-        "displayRotation": 90
+        "src": "muestras/maxpanel-levo-oficial26.webp",
+        "srcset": "muestras/maxpanel-levo-oficial26-640.webp 295w, muestras/maxpanel-levo-oficial26.webp 1087w",
+        "width": 1087,
+        "height": 2355
       },
       "supplier": ""
     },
@@ -2521,15 +2564,19 @@
       "description": "Diseño decorativo sobre un tablero. El color se elige junto con el soporte y acabado.",
       "use": "Cuerpos y frentes de mobiliario, según el tablero seleccionado.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
-      "market": "Venezuela · edición septiembre 2025",
+      "market": "Venezuela · Galería oficial MaxPanel",
       "international": false,
       "availability": "Confirmar existencias y combinación de base con distribuidor",
-      "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación aproximada con IA. Comparar con el catálogo original y una muestra física.",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Imagen publicada en la galería oficial de MaxPanel. El color en pantalla es orientativo; el soporte, formato y acabado se eligen con el producto real.",
       "sourceLinks": [
         {
-          "label": "Referencia del fabricante",
-          "url": "https://maxpanel.com.ve/"
+          "label": "Galería oficial MaxPanel",
+          "url": "https://maxpanel.com.ve/#catalogo"
+        },
+        {
+          "label": "Imagen original del fabricante",
+          "url": "https://maxpanel.com.ve/wp-content/uploads/2024/08/NIAGARA-OAK-600x600-1.jpg"
         },
         {
           "label": "Catálogo original, pág. 15",
@@ -2540,10 +2587,10 @@
       "appId": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-niagara-oak-detalle26.webp",
-        "width": 1600,
-        "height": 800,
-        "displayRotation": 90
+        "src": "muestras/maxpanel-niagara-oak-oficial26.webp",
+        "srcset": "muestras/maxpanel-niagara-oak-oficial26-640.webp 600w, muestras/maxpanel-niagara-oak-oficial26.webp 600w",
+        "width": 600,
+        "height": 600
       },
       "supplier": ""
     },
@@ -2559,15 +2606,19 @@
       "description": "Diseño decorativo sobre un tablero. El color se elige junto con el soporte y acabado.",
       "use": "Cuerpos y frentes de mobiliario, según el tablero seleccionado.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
-      "market": "Venezuela · edición septiembre 2025",
+      "market": "Venezuela · Galería oficial MaxPanel",
       "international": false,
       "availability": "Confirmar existencias y combinación de base con distribuidor",
-      "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación aproximada con IA. Comparar con el catálogo original y una muestra física.",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Imagen publicada en la galería oficial de MaxPanel. El color en pantalla es orientativo; el soporte, formato y acabado se eligen con el producto real.",
       "sourceLinks": [
         {
-          "label": "Referencia del fabricante",
-          "url": "https://maxpanel.com.ve/"
+          "label": "Galería oficial MaxPanel",
+          "url": "https://maxpanel.com.ve/#catalogo"
+        },
+        {
+          "label": "Imagen original del fabricante",
+          "url": "https://maxpanel.com.ve/wp-content/uploads/2024/08/ROBLE-JOPLIN.jpg"
         },
         {
           "label": "Catálogo original, pág. 16",
@@ -2578,10 +2629,10 @@
       "appId": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-roble-joplin-detalle26.webp",
-        "width": 1600,
-        "height": 800,
-        "displayRotation": 90
+        "src": "muestras/maxpanel-roble-joplin-oficial26.webp",
+        "srcset": "muestras/maxpanel-roble-joplin-oficial26-640.webp 600w, muestras/maxpanel-roble-joplin-oficial26.webp 600w",
+        "width": 600,
+        "height": 600
       },
       "supplier": ""
     },
@@ -2597,15 +2648,19 @@
       "description": "Diseño decorativo sobre un tablero. El color se elige junto con el soporte y acabado.",
       "use": "Cuerpos y frentes de mobiliario, según el tablero seleccionado.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
-      "market": "Venezuela · edición septiembre 2025",
+      "market": "Venezuela · Galería oficial MaxPanel",
       "international": false,
       "availability": "Confirmar existencias y combinación de base con distribuidor",
-      "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación aproximada con IA. Comparar con el catálogo original y una muestra física.",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Imagen publicada en la galería oficial de MaxPanel. El color en pantalla es orientativo; el soporte, formato y acabado se eligen con el producto real.",
       "sourceLinks": [
         {
-          "label": "Referencia del fabricante",
-          "url": "https://maxpanel.com.ve/"
+          "label": "Galería oficial MaxPanel",
+          "url": "https://maxpanel.com.ve/#catalogo"
+        },
+        {
+          "label": "Imagen original del fabricante",
+          "url": "https://maxpanel.com.ve/wp-content/uploads/2025/08/ROBLE-MONTEIRO.jpg"
         },
         {
           "label": "Catálogo original, pág. 17",
@@ -2616,10 +2671,10 @@
       "appId": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-roble-monteiro-detalle26.webp",
-        "width": 1600,
-        "height": 800,
-        "displayRotation": 90
+        "src": "muestras/maxpanel-roble-monteiro-oficial26.webp",
+        "srcset": "muestras/maxpanel-roble-monteiro-oficial26-640.webp 316w, muestras/maxpanel-roble-monteiro-oficial26.webp 1087w",
+        "width": 1087,
+        "height": 2200
       },
       "supplier": ""
     },
@@ -2635,15 +2690,19 @@
       "description": "Diseño decorativo sobre un tablero. El color se elige junto con el soporte y acabado.",
       "use": "Cuerpos y frentes de mobiliario, según el tablero seleccionado.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
-      "market": "Venezuela · edición septiembre 2025",
+      "market": "Venezuela · Galería oficial MaxPanel",
       "international": false,
       "availability": "Confirmar existencias y combinación de base con distribuidor",
-      "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación aproximada con IA. Comparar con el catálogo original y una muestra física.",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Imagen publicada en la galería oficial de MaxPanel. El color en pantalla es orientativo; el soporte, formato y acabado se eligen con el producto real.",
       "sourceLinks": [
         {
-          "label": "Referencia del fabricante",
-          "url": "https://maxpanel.com.ve/"
+          "label": "Galería oficial MaxPanel",
+          "url": "https://maxpanel.com.ve/#catalogo"
+        },
+        {
+          "label": "Imagen original del fabricante",
+          "url": "https://maxpanel.com.ve/wp-content/uploads/2024/08/ROBLE-TOSTADO.jpg"
         },
         {
           "label": "Catálogo original, pág. 18",
@@ -2654,10 +2713,10 @@
       "appId": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-roble-tostado-detalle26.webp",
-        "width": 1600,
-        "height": 800,
-        "displayRotation": 90
+        "src": "muestras/maxpanel-roble-tostado-oficial26.webp",
+        "srcset": "muestras/maxpanel-roble-tostado-oficial26-640.webp 600w, muestras/maxpanel-roble-tostado-oficial26.webp 600w",
+        "width": 600,
+        "height": 600
       },
       "supplier": ""
     },
@@ -2673,15 +2732,19 @@
       "description": "Diseño decorativo sobre un tablero. El color se elige junto con el soporte y acabado.",
       "use": "Cuerpos y frentes de mobiliario, según el tablero seleccionado.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
-      "market": "Venezuela · edición septiembre 2025",
+      "market": "Venezuela · Galería oficial MaxPanel",
       "international": false,
       "availability": "Confirmar existencias y combinación de base con distribuidor",
-      "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación aproximada con IA. Comparar con el catálogo original y una muestra física.",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Imagen publicada en la galería oficial de MaxPanel. El color en pantalla es orientativo; el soporte, formato y acabado se eligen con el producto real.",
       "sourceLinks": [
         {
-          "label": "Referencia del fabricante",
-          "url": "https://maxpanel.com.ve/"
+          "label": "Galería oficial MaxPanel",
+          "url": "https://maxpanel.com.ve/#catalogo"
+        },
+        {
+          "label": "Imagen original del fabricante",
+          "url": "https://maxpanel.com.ve/wp-content/uploads/2025/08/ROBLE-VIRGINIA-scaled.jpg"
         },
         {
           "label": "Catálogo original, pág. 19",
@@ -2692,10 +2755,10 @@
       "appId": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-roble-virginia-detalle26.webp",
-        "width": 1600,
-        "height": 800,
-        "displayRotation": 90
+        "src": "muestras/maxpanel-roble-virginia-oficial26.webp",
+        "srcset": "muestras/maxpanel-roble-virginia-oficial26-640.webp 307w, muestras/maxpanel-roble-virginia-oficial26.webp 1229w",
+        "width": 1229,
+        "height": 2560
       },
       "supplier": ""
     },
@@ -2711,15 +2774,19 @@
       "description": "Diseño decorativo sobre un tablero. El color se elige junto con el soporte y acabado.",
       "use": "Cuerpos y frentes de mobiliario, según el tablero seleccionado.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
-      "market": "Venezuela · edición septiembre 2025",
+      "market": "Venezuela · Galería oficial MaxPanel",
       "international": false,
       "availability": "Confirmar existencias y combinación de base con distribuidor",
-      "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación aproximada con IA. Comparar con el catálogo original y una muestra física.",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Imagen publicada en la galería oficial de MaxPanel. El color en pantalla es orientativo; el soporte, formato y acabado se eligen con el producto real.",
       "sourceLinks": [
         {
-          "label": "Referencia del fabricante",
-          "url": "https://maxpanel.com.ve/"
+          "label": "Galería oficial MaxPanel",
+          "url": "https://maxpanel.com.ve/#catalogo"
+        },
+        {
+          "label": "Imagen original del fabricante",
+          "url": "https://maxpanel.com.ve/wp-content/uploads/2025/09/SACRAMENTO-1-scaled.jpg"
         },
         {
           "label": "Catálogo original, pág. 20",
@@ -2730,10 +2797,10 @@
       "appId": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-sacramento-detalle26.webp",
-        "width": 1600,
-        "height": 800,
-        "displayRotation": 90
+        "src": "muestras/maxpanel-sacramento-oficial26.webp",
+        "srcset": "muestras/maxpanel-sacramento-oficial26-640.webp 360w, muestras/maxpanel-sacramento-oficial26.webp 1440w",
+        "width": 1440,
+        "height": 2560
       },
       "supplier": ""
     },
@@ -2749,15 +2816,19 @@
       "description": "Diseño decorativo sobre un tablero. El color se elige junto con el soporte y acabado.",
       "use": "Cuerpos y frentes de mobiliario, según el tablero seleccionado.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
-      "market": "Venezuela · edición septiembre 2025",
+      "market": "Venezuela · Galería oficial MaxPanel",
       "international": false,
       "availability": "Confirmar existencias y combinación de base con distribuidor",
-      "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación aproximada con IA. Comparar con el catálogo original y una muestra física.",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Imagen publicada en la galería oficial de MaxPanel. El color en pantalla es orientativo; el soporte, formato y acabado se eligen con el producto real.",
       "sourceLinks": [
         {
-          "label": "Referencia del fabricante",
-          "url": "https://maxpanel.com.ve/"
+          "label": "Galería oficial MaxPanel",
+          "url": "https://maxpanel.com.ve/#catalogo"
+        },
+        {
+          "label": "Imagen original del fabricante",
+          "url": "https://maxpanel.com.ve/wp-content/uploads/2025/08/ANTRACITA-STD.jpg"
         },
         {
           "label": "Catálogo original, pág. 22",
@@ -2768,9 +2839,10 @@
       "appId": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-antracita-std-detalle26.webp",
-        "width": 1600,
-        "height": 800
+        "src": "muestras/maxpanel-antracita-std-oficial26.webp",
+        "srcset": "muestras/maxpanel-antracita-std-oficial26-640.webp 640w, muestras/maxpanel-antracita-std-oficial26.webp 720w",
+        "width": 720,
+        "height": 720
       },
       "supplier": ""
     },
@@ -2786,15 +2858,19 @@
       "description": "Diseño decorativo sobre un tablero. El color se elige junto con el soporte y acabado.",
       "use": "Cuerpos y frentes de mobiliario, según el tablero seleccionado.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
-      "market": "Venezuela · edición septiembre 2025",
+      "market": "Venezuela · Galería oficial MaxPanel",
       "international": false,
       "availability": "Confirmar existencias y combinación de base con distribuidor",
-      "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación aproximada con IA. Comparar con el catálogo original y una muestra física.",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Imagen publicada en la galería oficial de MaxPanel. El color en pantalla es orientativo; el soporte, formato y acabado se eligen con el producto real.",
       "sourceLinks": [
         {
-          "label": "Referencia del fabricante",
-          "url": "https://maxpanel.com.ve/"
+          "label": "Galería oficial MaxPanel",
+          "url": "https://maxpanel.com.ve/#catalogo"
+        },
+        {
+          "label": "Imagen original del fabricante",
+          "url": "https://maxpanel.com.ve/wp-content/uploads/2024/12/ARENA-STDb.jpg"
         },
         {
           "label": "Catálogo original, pág. 23",
@@ -2805,9 +2881,10 @@
       "appId": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-arena-std-detalle26.webp",
-        "width": 1600,
-        "height": 800
+        "src": "muestras/maxpanel-arena-std-oficial26.webp",
+        "srcset": "muestras/maxpanel-arena-std-oficial26-640.webp 400w, muestras/maxpanel-arena-std-oficial26.webp 1000w",
+        "width": 1000,
+        "height": 1600
       },
       "supplier": ""
     },
@@ -2823,15 +2900,19 @@
       "description": "Diseño decorativo sobre un tablero. El color se elige junto con el soporte y acabado.",
       "use": "Cuerpos y frentes de mobiliario, según el tablero seleccionado.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
-      "market": "Venezuela · edición septiembre 2025",
+      "market": "Venezuela · Galería oficial MaxPanel",
       "international": false,
       "availability": "Confirmar existencias y combinación de base con distribuidor",
-      "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación aproximada con IA. Comparar con el catálogo original y una muestra física.",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Imagen publicada en la galería oficial de MaxPanel. El color en pantalla es orientativo; el soporte, formato y acabado se eligen con el producto real.",
       "sourceLinks": [
         {
-          "label": "Referencia del fabricante",
-          "url": "https://maxpanel.com.ve/"
+          "label": "Galería oficial MaxPanel",
+          "url": "https://maxpanel.com.ve/#catalogo"
+        },
+        {
+          "label": "Imagen original del fabricante",
+          "url": "https://maxpanel.com.ve/wp-content/uploads/2024/08/AZUL-MIDNIGHT.png"
         },
         {
           "label": "Catálogo original, pág. 24",
@@ -2842,9 +2923,10 @@
       "appId": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-azul-midnight-detalle26.webp",
-        "width": 1600,
-        "height": 800
+        "src": "muestras/maxpanel-azul-midnight-oficial26.webp",
+        "srcset": "muestras/maxpanel-azul-midnight-oficial26-640.webp 360w, muestras/maxpanel-azul-midnight-oficial26.webp 1080w",
+        "width": 1080,
+        "height": 1920
       },
       "supplier": ""
     },
@@ -2860,15 +2942,19 @@
       "description": "Diseño decorativo sobre un tablero. El color se elige junto con el soporte y acabado.",
       "use": "Cuerpos y frentes de mobiliario, según el tablero seleccionado.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
-      "market": "Venezuela · edición septiembre 2025",
+      "market": "Venezuela · Galería oficial MaxPanel",
       "international": false,
       "availability": "Confirmar existencias y combinación de base con distribuidor",
-      "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación aproximada con IA. Comparar con el catálogo original y una muestra física.",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Imagen publicada en la galería oficial de MaxPanel. El color en pantalla es orientativo; el soporte, formato y acabado se eligen con el producto real.",
       "sourceLinks": [
         {
-          "label": "Referencia del fabricante",
-          "url": "https://maxpanel.com.ve/"
+          "label": "Galería oficial MaxPanel",
+          "url": "https://maxpanel.com.ve/#catalogo"
+        },
+        {
+          "label": "Imagen original del fabricante",
+          "url": "https://maxpanel.com.ve/wp-content/uploads/2024/08/BLANCO-STD.jpg"
         },
         {
           "label": "Catálogo original, pág. 25",
@@ -2879,9 +2965,10 @@
       "appId": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-blanco-std-detalle26.webp",
-        "width": 1600,
-        "height": 800
+        "src": "muestras/maxpanel-blanco-std-oficial26.webp",
+        "srcset": "muestras/maxpanel-blanco-std-oficial26-640.webp 600w, muestras/maxpanel-blanco-std-oficial26.webp 600w",
+        "width": 600,
+        "height": 600
       },
       "supplier": ""
     },
@@ -2897,15 +2984,19 @@
       "description": "Diseño decorativo sobre un tablero. El color se elige junto con el soporte y acabado.",
       "use": "Cuerpos y frentes de mobiliario, según el tablero seleccionado.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
-      "market": "Venezuela · edición septiembre 2025",
+      "market": "Venezuela · Galería oficial MaxPanel",
       "international": false,
       "availability": "Confirmar existencias y combinación de base con distribuidor",
-      "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación aproximada con IA. Comparar con el catálogo original y una muestra física.",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Imagen publicada en la galería oficial de MaxPanel. El color en pantalla es orientativo; el soporte, formato y acabado se eligen con el producto real.",
       "sourceLinks": [
         {
-          "label": "Referencia del fabricante",
-          "url": "https://maxpanel.com.ve/"
+          "label": "Galería oficial MaxPanel",
+          "url": "https://maxpanel.com.ve/#catalogo"
+        },
+        {
+          "label": "Imagen original del fabricante",
+          "url": "https://maxpanel.com.ve/wp-content/uploads/2024/08/BLANCO-ARTICO.jpg"
         },
         {
           "label": "Catálogo original, pág. 26",
@@ -2916,9 +3007,10 @@
       "appId": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-blanco-artico-detalle26.webp",
-        "width": 1600,
-        "height": 800
+        "src": "muestras/maxpanel-blanco-artico-oficial26.webp",
+        "srcset": "muestras/maxpanel-blanco-artico-oficial26-640.webp 600w, muestras/maxpanel-blanco-artico-oficial26.webp 600w",
+        "width": 600,
+        "height": 600
       },
       "supplier": ""
     },
@@ -2934,15 +3026,19 @@
       "description": "Diseño decorativo sobre un tablero. El color se elige junto con el soporte y acabado.",
       "use": "Cuerpos y frentes de mobiliario, según el tablero seleccionado.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
-      "market": "Venezuela · edición septiembre 2025",
+      "market": "Venezuela · Galería oficial MaxPanel",
       "international": false,
       "availability": "Confirmar existencias y combinación de base con distribuidor",
-      "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación aproximada con IA. Comparar con el catálogo original y una muestra física.",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Imagen publicada en la galería oficial de MaxPanel. El color en pantalla es orientativo; el soporte, formato y acabado se eligen con el producto real.",
       "sourceLinks": [
         {
-          "label": "Referencia del fabricante",
-          "url": "https://maxpanel.com.ve/"
+          "label": "Galería oficial MaxPanel",
+          "url": "https://maxpanel.com.ve/#catalogo"
+        },
+        {
+          "label": "Imagen original del fabricante",
+          "url": "https://maxpanel.com.ve/wp-content/uploads/2025/09/CASHMERE-1.jpg"
         },
         {
           "label": "Catálogo original, pág. 27",
@@ -2953,9 +3049,10 @@
       "appId": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-cashmere-detalle26.webp",
-        "width": 1600,
-        "height": 800
+        "src": "muestras/maxpanel-cashmere-oficial26.webp",
+        "srcset": "muestras/maxpanel-cashmere-oficial26-640.webp 640w, muestras/maxpanel-cashmere-oficial26.webp 1181w",
+        "width": 1181,
+        "height": 1181
       },
       "supplier": ""
     },
@@ -2971,15 +3068,19 @@
       "description": "Diseño decorativo sobre un tablero. El color se elige junto con el soporte y acabado.",
       "use": "Cuerpos y frentes de mobiliario, según el tablero seleccionado.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
-      "market": "Venezuela · edición septiembre 2025",
+      "market": "Venezuela · Galería oficial MaxPanel",
       "international": false,
       "availability": "Confirmar existencias y combinación de base con distribuidor",
-      "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación aproximada con IA. Comparar con el catálogo original y una muestra física.",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Imagen publicada en la galería oficial de MaxPanel. El color en pantalla es orientativo; el soporte, formato y acabado se eligen con el producto real.",
       "sourceLinks": [
         {
-          "label": "Referencia del fabricante",
-          "url": "https://maxpanel.com.ve/"
+          "label": "Galería oficial MaxPanel",
+          "url": "https://maxpanel.com.ve/#catalogo"
+        },
+        {
+          "label": "Imagen original del fabricante",
+          "url": "https://maxpanel.com.ve/wp-content/uploads/2024/08/GRIS-CRISTAL-STD.jpg"
         },
         {
           "label": "Catálogo original, pág. 28",
@@ -2990,8 +3091,9 @@
       "appId": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-gris-cristal-detalle26.webp",
-        "width": 1600,
+        "src": "muestras/maxpanel-gris-cristal-oficial26.webp",
+        "srcset": "muestras/maxpanel-gris-cristal-oficial26-640.webp 640w, muestras/maxpanel-gris-cristal-oficial26.webp 800w",
+        "width": 800,
         "height": 800
       },
       "supplier": ""
@@ -3008,15 +3110,19 @@
       "description": "Diseño decorativo sobre un tablero. El color se elige junto con el soporte y acabado.",
       "use": "Cuerpos y frentes de mobiliario, según el tablero seleccionado.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
-      "market": "Venezuela · edición septiembre 2025",
+      "market": "Venezuela · Galería oficial MaxPanel",
       "international": false,
       "availability": "Confirmar existencias y combinación de base con distribuidor",
-      "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación aproximada con IA. Comparar con el catálogo original y una muestra física.",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Imagen publicada en la galería oficial de MaxPanel. El color en pantalla es orientativo; el soporte, formato y acabado se eligen con el producto real.",
       "sourceLinks": [
         {
-          "label": "Referencia del fabricante",
-          "url": "https://maxpanel.com.ve/"
+          "label": "Galería oficial MaxPanel",
+          "url": "https://maxpanel.com.ve/#catalogo"
+        },
+        {
+          "label": "Imagen original del fabricante",
+          "url": "https://maxpanel.com.ve/wp-content/uploads/2025/09/GRIS-MEDIO-1-scaled.jpg"
         },
         {
           "label": "Catálogo original, pág. 29",
@@ -3027,9 +3133,10 @@
       "appId": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-gris-medio-detalle26.webp",
-        "width": 1600,
-        "height": 800
+        "src": "muestras/maxpanel-gris-medio-oficial26.webp",
+        "srcset": "muestras/maxpanel-gris-medio-oficial26-640.webp 360w, muestras/maxpanel-gris-medio-oficial26.webp 1440w",
+        "width": 1440,
+        "height": 2560
       },
       "supplier": ""
     },
@@ -3045,15 +3152,19 @@
       "description": "Diseño decorativo sobre un tablero. El color se elige junto con el soporte y acabado.",
       "use": "Cuerpos y frentes de mobiliario, según el tablero seleccionado.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
-      "market": "Venezuela · edición septiembre 2025",
+      "market": "Venezuela · Galería oficial MaxPanel",
       "international": false,
       "availability": "Confirmar existencias y combinación de base con distribuidor",
-      "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación aproximada con IA. Comparar con el catálogo original y una muestra física.",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Imagen publicada en la galería oficial de MaxPanel. El color en pantalla es orientativo; el soporte, formato y acabado se eligen con el producto real.",
       "sourceLinks": [
         {
-          "label": "Referencia del fabricante",
-          "url": "https://maxpanel.com.ve/"
+          "label": "Galería oficial MaxPanel",
+          "url": "https://maxpanel.com.ve/#catalogo"
+        },
+        {
+          "label": "Imagen original del fabricante",
+          "url": "https://maxpanel.com.ve/wp-content/uploads/2024/08/NEGRO-STD-600x600-1.jpg"
         },
         {
           "label": "Catálogo original, pág. 30",
@@ -3064,9 +3175,10 @@
       "appId": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-negro-std-detalle26.webp",
-        "width": 1600,
-        "height": 800
+        "src": "muestras/maxpanel-negro-std-oficial26.webp",
+        "srcset": "muestras/maxpanel-negro-std-oficial26-640.webp 600w, muestras/maxpanel-negro-std-oficial26.webp 600w",
+        "width": 600,
+        "height": 600
       },
       "supplier": ""
     },
@@ -3082,15 +3194,19 @@
       "description": "Diseño decorativo sobre un tablero. El color se elige junto con el soporte y acabado.",
       "use": "Cuerpos y frentes de mobiliario, según el tablero seleccionado.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
-      "market": "Venezuela · edición septiembre 2025",
+      "market": "Venezuela · Galería oficial MaxPanel",
       "international": false,
       "availability": "Confirmar existencias y combinación de base con distribuidor",
-      "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación aproximada con IA. Comparar con el catálogo original y una muestra física.",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Imagen publicada en la galería oficial de MaxPanel. El color en pantalla es orientativo; el soporte, formato y acabado se eligen con el producto real.",
       "sourceLinks": [
         {
-          "label": "Referencia del fabricante",
-          "url": "https://maxpanel.com.ve/"
+          "label": "Galería oficial MaxPanel",
+          "url": "https://maxpanel.com.ve/#catalogo"
+        },
+        {
+          "label": "Imagen original del fabricante",
+          "url": "https://maxpanel.com.ve/wp-content/uploads/2024/08/TERRACOTA.png"
         },
         {
           "label": "Catálogo original, pág. 31",
@@ -3101,9 +3217,10 @@
       "appId": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-terracota-detalle26.webp",
-        "width": 1600,
-        "height": 800
+        "src": "muestras/maxpanel-terracota-oficial26.webp",
+        "srcset": "muestras/maxpanel-terracota-oficial26-640.webp 360w, muestras/maxpanel-terracota-oficial26.webp 1080w",
+        "width": 1080,
+        "height": 1920
       },
       "supplier": ""
     },
@@ -3119,15 +3236,19 @@
       "description": "Diseño decorativo sobre un tablero. El color se elige junto con el soporte y acabado.",
       "use": "Cuerpos y frentes de mobiliario, según el tablero seleccionado.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
-      "market": "Venezuela · edición septiembre 2025",
+      "market": "Venezuela · Galería oficial MaxPanel",
       "international": false,
       "availability": "Confirmar existencias y combinación de base con distribuidor",
-      "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación aproximada con IA. Comparar con el catálogo original y una muestra física.",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Imagen publicada en la galería oficial de MaxPanel. El color en pantalla es orientativo; el soporte, formato y acabado se eligen con el producto real.",
       "sourceLinks": [
         {
-          "label": "Referencia del fabricante",
-          "url": "https://maxpanel.com.ve/"
+          "label": "Galería oficial MaxPanel",
+          "url": "https://maxpanel.com.ve/#catalogo"
+        },
+        {
+          "label": "Imagen original del fabricante",
+          "url": "https://maxpanel.com.ve/wp-content/uploads/2024/08/TORTORA.jpg"
         },
         {
           "label": "Catálogo original, pág. 32",
@@ -3138,9 +3259,10 @@
       "appId": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-tortora-detalle26.webp",
-        "width": 1600,
-        "height": 800
+        "src": "muestras/maxpanel-tortora-oficial26.webp",
+        "srcset": "muestras/maxpanel-tortora-oficial26-640.webp 295w, muestras/maxpanel-tortora-oficial26.webp 1087w",
+        "width": 1087,
+        "height": 2355
       },
       "supplier": ""
     },
@@ -3156,15 +3278,19 @@
       "description": "Diseño decorativo sobre un tablero. El color se elige junto con el soporte y acabado.",
       "use": "Cuerpos y frentes de mobiliario, según el tablero seleccionado.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
-      "market": "Venezuela · edición septiembre 2025",
+      "market": "Venezuela · Galería oficial MaxPanel",
       "international": false,
       "availability": "Confirmar existencias y combinación de base con distribuidor",
-      "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación aproximada con IA. Comparar con el catálogo original y una muestra física.",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Imagen publicada en la galería oficial de MaxPanel. El color en pantalla es orientativo; el soporte, formato y acabado se eligen con el producto real.",
       "sourceLinks": [
         {
-          "label": "Referencia del fabricante",
-          "url": "https://maxpanel.com.ve/"
+          "label": "Galería oficial MaxPanel",
+          "url": "https://maxpanel.com.ve/#catalogo"
+        },
+        {
+          "label": "Imagen original del fabricante",
+          "url": "https://maxpanel.com.ve/wp-content/uploads/2024/08/VERDE-SAVIA.jpg"
         },
         {
           "label": "Catálogo original, pág. 33",
@@ -3175,9 +3301,10 @@
       "appId": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-verde-savia-detalle26.webp",
-        "width": 1600,
-        "height": 800
+        "src": "muestras/maxpanel-verde-savia-oficial26.webp",
+        "srcset": "muestras/maxpanel-verde-savia-oficial26-640.webp 295w, muestras/maxpanel-verde-savia-oficial26.webp 1087w",
+        "width": 1087,
+        "height": 2355
       },
       "supplier": ""
     },
@@ -3193,15 +3320,19 @@
       "description": "Diseño decorativo sobre un tablero. El color se elige junto con el soporte y acabado.",
       "use": "Cuerpos y frentes de mobiliario, según el tablero seleccionado.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
-      "market": "Venezuela · edición septiembre 2025",
+      "market": "Venezuela · Galería oficial MaxPanel",
       "international": false,
       "availability": "Confirmar existencias y combinación de base con distribuidor",
-      "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación aproximada con IA. Comparar con el catálogo original y una muestra física.",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Imagen publicada en la galería oficial de MaxPanel. El color en pantalla es orientativo; el soporte, formato y acabado se eligen con el producto real.",
       "sourceLinks": [
         {
-          "label": "Referencia del fabricante",
-          "url": "https://maxpanel.com.ve/"
+          "label": "Galería oficial MaxPanel",
+          "url": "https://maxpanel.com.ve/#catalogo"
+        },
+        {
+          "label": "Imagen original del fabricante",
+          "url": "https://maxpanel.com.ve/wp-content/uploads/2025/08/LINO-ANTRACITA-scaled.jpg"
         },
         {
           "label": "Catálogo original, pág. 35",
@@ -3212,9 +3343,10 @@
       "appId": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-lino-antracita-detalle26.webp",
-        "width": 1600,
-        "height": 800
+        "src": "muestras/maxpanel-lino-antracita-oficial26.webp",
+        "srcset": "muestras/maxpanel-lino-antracita-oficial26-640.webp 430w, muestras/maxpanel-lino-antracita-oficial26.webp 1721w",
+        "width": 1721,
+        "height": 2560
       },
       "supplier": ""
     },
@@ -3230,15 +3362,19 @@
       "description": "Diseño decorativo sobre un tablero. El color se elige junto con el soporte y acabado.",
       "use": "Cuerpos y frentes de mobiliario, según el tablero seleccionado.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
-      "market": "Venezuela · edición septiembre 2025",
+      "market": "Venezuela · Galería oficial MaxPanel",
       "international": false,
       "availability": "Confirmar existencias y combinación de base con distribuidor",
-      "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación aproximada con IA. Comparar con el catálogo original y una muestra física.",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Imagen publicada en la galería oficial de MaxPanel. El color en pantalla es orientativo; el soporte, formato y acabado se eligen con el producto real.",
       "sourceLinks": [
         {
-          "label": "Referencia del fabricante",
-          "url": "https://maxpanel.com.ve/"
+          "label": "Galería oficial MaxPanel",
+          "url": "https://maxpanel.com.ve/#catalogo"
+        },
+        {
+          "label": "Imagen original del fabricante",
+          "url": "https://maxpanel.com.ve/wp-content/uploads/2024/08/LINO-BLANCO.jpg"
         },
         {
           "label": "Catálogo original, pág. 36",
@@ -3249,9 +3385,10 @@
       "appId": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-lino-blanco-detalle26.webp",
-        "width": 1600,
-        "height": 800
+        "src": "muestras/maxpanel-lino-blanco-oficial26.webp",
+        "srcset": "muestras/maxpanel-lino-blanco-oficial26-640.webp 296w, muestras/maxpanel-lino-blanco-oficial26.webp 1087w",
+        "width": 1087,
+        "height": 2354
       },
       "supplier": ""
     },
@@ -3267,15 +3404,19 @@
       "description": "Diseño decorativo sobre un tablero. El color se elige junto con el soporte y acabado.",
       "use": "Cuerpos y frentes de mobiliario, según el tablero seleccionado.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
-      "market": "Venezuela · edición septiembre 2025",
+      "market": "Venezuela · Galería oficial MaxPanel",
       "international": false,
       "availability": "Confirmar existencias y combinación de base con distribuidor",
-      "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación aproximada con IA. Comparar con el catálogo original y una muestra física.",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Imagen publicada en la galería oficial de MaxPanel. El color en pantalla es orientativo; el soporte, formato y acabado se eligen con el producto real.",
       "sourceLinks": [
         {
-          "label": "Referencia del fabricante",
-          "url": "https://maxpanel.com.ve/"
+          "label": "Galería oficial MaxPanel",
+          "url": "https://maxpanel.com.ve/#catalogo"
+        },
+        {
+          "label": "Imagen original del fabricante",
+          "url": "https://maxpanel.com.ve/wp-content/uploads/2024/08/LINO-CRUDO.jpg"
         },
         {
           "label": "Catálogo original, pág. 37",
@@ -3286,9 +3427,10 @@
       "appId": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-lino-crudo-detalle26.webp",
-        "width": 1600,
-        "height": 800
+        "src": "muestras/maxpanel-lino-crudo-oficial26.webp",
+        "srcset": "muestras/maxpanel-lino-crudo-oficial26-640.webp 296w, muestras/maxpanel-lino-crudo-oficial26.webp 1087w",
+        "width": 1087,
+        "height": 2354
       },
       "supplier": ""
     },
@@ -3304,15 +3446,19 @@
       "description": "Diseño decorativo sobre un tablero. El color se elige junto con el soporte y acabado.",
       "use": "Cuerpos y frentes de mobiliario, según el tablero seleccionado.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
-      "market": "Venezuela · edición septiembre 2025",
+      "market": "Venezuela · Galería oficial MaxPanel",
       "international": false,
       "availability": "Confirmar existencias y combinación de base con distribuidor",
-      "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación aproximada con IA. Comparar con el catálogo original y una muestra física.",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Imagen publicada en la galería oficial de MaxPanel. El color en pantalla es orientativo; el soporte, formato y acabado se eligen con el producto real.",
       "sourceLinks": [
         {
-          "label": "Referencia del fabricante",
-          "url": "https://maxpanel.com.ve/"
+          "label": "Galería oficial MaxPanel",
+          "url": "https://maxpanel.com.ve/#catalogo"
+        },
+        {
+          "label": "Imagen original del fabricante",
+          "url": "https://maxpanel.com.ve/wp-content/uploads/2025/08/ALUMINIO-BRUSHED-scaled.jpg"
         },
         {
           "label": "Catálogo original, pág. 39",
@@ -3323,9 +3469,10 @@
       "appId": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-aluminio-brushed-detalle26.webp",
-        "width": 1600,
-        "height": 800
+        "src": "muestras/maxpanel-aluminio-brushed-oficial26.webp",
+        "srcset": "muestras/maxpanel-aluminio-brushed-oficial26-640.webp 295w, muestras/maxpanel-aluminio-brushed-oficial26.webp 1182w",
+        "width": 1182,
+        "height": 2560
       },
       "supplier": ""
     },
@@ -3341,15 +3488,19 @@
       "description": "Diseño decorativo sobre un tablero. El color se elige junto con el soporte y acabado.",
       "use": "Cuerpos y frentes de mobiliario, según el tablero seleccionado.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
-      "market": "Venezuela · edición septiembre 2025",
+      "market": "Venezuela · Galería oficial MaxPanel",
       "international": false,
       "availability": "Confirmar existencias y combinación de base con distribuidor",
-      "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación aproximada con IA. Comparar con el catálogo original y una muestra física.",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Imagen publicada en la galería oficial de MaxPanel. El color en pantalla es orientativo; el soporte, formato y acabado se eligen con el producto real.",
       "sourceLinks": [
         {
-          "label": "Referencia del fabricante",
-          "url": "https://maxpanel.com.ve/"
+          "label": "Galería oficial MaxPanel",
+          "url": "https://maxpanel.com.ve/#catalogo"
+        },
+        {
+          "label": "Imagen original del fabricante",
+          "url": "https://maxpanel.com.ve/wp-content/uploads/2025/08/DORADO-BRUSHED.jpg"
         },
         {
           "label": "Catálogo original, pág. 40",
@@ -3360,9 +3511,10 @@
       "appId": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-dorado-brushed-detalle26.webp",
-        "width": 1600,
-        "height": 800
+        "src": "muestras/maxpanel-dorado-brushed-oficial26.webp",
+        "srcset": "muestras/maxpanel-dorado-brushed-oficial26-640.webp 309w, muestras/maxpanel-dorado-brushed-oficial26.webp 1087w",
+        "width": 1087,
+        "height": 2251
       },
       "supplier": ""
     },
@@ -13620,10 +13772,10 @@
       "name": "Alistonado de teca",
       "family": "Alistonados",
       "pattern": "",
-      "brand": "",
+      "brand": "Maciza",
       "code": "",
       "finish": "",
-      "description": "Listones cortos de teca encolados, con empates alternados y variación natural de color y veta.",
+      "description": "Listones cortos de teca encolados, con empates alternados y variación natural de color y veta. Maciza se usa como marca provisional de catálogo; el fabricante está por identificar.",
       "use": "Superficies y piezas según construcción y dimensiones.",
       "care": "Confirmamos especie, construcción, formato, acabado y existencias antes de elegir.",
       "market": "Referencia visual del taller; producto local por confirmar",
@@ -13645,7 +13797,8 @@
           "label": "Referencia constructiva de teca · Nordic Core GT",
           "url": "https://nordiccoregt.com/"
         }
-      ]
+      ],
+      "brandStatus": "provisional"
     },
     {
       "id": "esanos-boleita-4592-madrid-baltic",
@@ -15016,14 +15169,14 @@
       "category": "tableros",
       "name": "Negro carbón · listones finos",
       "family": "Wall panels",
-      "brand": "",
-      "supplier": "Ecoplaca 3000 · Manzanares",
+      "brand": "Maciza",
+      "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en Ecoplaca 3000, Manzanares. Nombre descriptivo provisional; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Ecoplaca 3000 Manzanares",
+      "market": "Venezuela · Maciza",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -15039,21 +15192,22 @@
         "srcset": "muestras/ecoplaca-wp-01-pareja-vertical26-640.webp 640w, muestras/ecoplaca-wp-01-pareja-vertical26.webp 1536w",
         "width": 1536,
         "height": 1024
-      }
+      },
+      "brandStatus": "provisional"
     },
     {
       "id": "ecoplaca-wp-02-ranurado",
       "category": "tableros",
       "name": "Nogal oscuro · listones finos",
       "family": "Wall panels",
-      "brand": "",
-      "supplier": "Ecoplaca 3000 · Manzanares",
+      "brand": "Maciza",
+      "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en Ecoplaca 3000, Manzanares. Nombre descriptivo provisional; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Ecoplaca 3000 Manzanares",
+      "market": "Venezuela · Maciza",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -15069,21 +15223,22 @@
         "srcset": "muestras/ecoplaca-wp-02-pareja-vertical26-640.webp 640w, muestras/ecoplaca-wp-02-pareja-vertical26.webp 1536w",
         "width": 1536,
         "height": 1024
-      }
+      },
+      "brandStatus": "provisional"
     },
     {
       "id": "ecoplaca-wp-03-ranurado",
       "category": "tableros",
       "name": "Nogal rojizo · listones finos",
       "family": "Wall panels",
-      "brand": "",
-      "supplier": "Ecoplaca 3000 · Manzanares",
+      "brand": "Maciza",
+      "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en Ecoplaca 3000, Manzanares. Nombre descriptivo provisional; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Ecoplaca 3000 Manzanares",
+      "market": "Venezuela · Maciza",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -15099,21 +15254,22 @@
         "srcset": "muestras/ecoplaca-wp-03-pareja-vertical26-640.webp 640w, muestras/ecoplaca-wp-03-pareja-vertical26.webp 1536w",
         "width": 1536,
         "height": 1024
-      }
+      },
+      "brandStatus": "provisional"
     },
     {
       "id": "ecoplaca-wp-04-ranurado",
       "category": "tableros",
       "name": "Moka · listones finos",
       "family": "Wall panels",
-      "brand": "",
-      "supplier": "Ecoplaca 3000 · Manzanares",
+      "brand": "Maciza",
+      "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en Ecoplaca 3000, Manzanares. Nombre descriptivo provisional; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Ecoplaca 3000 Manzanares",
+      "market": "Venezuela · Maciza",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -15129,21 +15285,22 @@
         "srcset": "muestras/ecoplaca-wp-04-pareja-vertical26-640.webp 640w, muestras/ecoplaca-wp-04-pareja-vertical26.webp 1536w",
         "width": 1536,
         "height": 1024
-      }
+      },
+      "brandStatus": "provisional"
     },
     {
       "id": "ecoplaca-wp-05-ranurado",
       "category": "tableros",
       "name": "Roble blanqueado · listones finos",
       "family": "Wall panels",
-      "brand": "",
-      "supplier": "Ecoplaca 3000 · Manzanares",
+      "brand": "Maciza",
+      "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en Ecoplaca 3000, Manzanares. Nombre descriptivo provisional; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Ecoplaca 3000 Manzanares",
+      "market": "Venezuela · Maciza",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -15159,21 +15316,22 @@
         "srcset": "muestras/ecoplaca-wp-05-pareja-vertical26-640.webp 640w, muestras/ecoplaca-wp-05-pareja-vertical26.webp 1536w",
         "width": 1536,
         "height": 1024
-      }
+      },
+      "brandStatus": "provisional"
     },
     {
       "id": "ecoplaca-wp-06-ranurado",
       "category": "tableros",
       "name": "Gris ceniza · listones finos",
       "family": "Wall panels",
-      "brand": "",
-      "supplier": "Ecoplaca 3000 · Manzanares",
+      "brand": "Maciza",
+      "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en Ecoplaca 3000, Manzanares. Nombre descriptivo provisional; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Ecoplaca 3000 Manzanares",
+      "market": "Venezuela · Maciza",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -15189,21 +15347,22 @@
         "srcset": "muestras/ecoplaca-wp-06-pareja-vertical26-640.webp 640w, muestras/ecoplaca-wp-06-pareja-vertical26.webp 1536w",
         "width": 1536,
         "height": 1024
-      }
+      },
+      "brandStatus": "provisional"
     },
     {
       "id": "ecoplaca-wp-07-ranurado",
       "category": "tableros",
       "name": "Blanco · listones finos",
       "family": "Wall panels",
-      "brand": "",
-      "supplier": "Ecoplaca 3000 · Manzanares",
+      "brand": "Maciza",
+      "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en Ecoplaca 3000, Manzanares. Nombre descriptivo provisional; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Ecoplaca 3000 Manzanares",
+      "market": "Venezuela · Maciza",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -15219,21 +15378,22 @@
         "srcset": "muestras/ecoplaca-wp-07-pareja-vertical26-640.webp 640w, muestras/ecoplaca-wp-07-pareja-vertical26.webp 1536w",
         "width": 1536,
         "height": 1024
-      }
+      },
+      "brandStatus": "provisional"
     },
     {
       "id": "ecoplaca-wp-08-ranurado",
       "category": "tableros",
       "name": "Perla · listones finos",
       "family": "Wall panels",
-      "brand": "",
-      "supplier": "Ecoplaca 3000 · Manzanares",
+      "brand": "Maciza",
+      "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en Ecoplaca 3000, Manzanares. Nombre descriptivo provisional; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Ecoplaca 3000 Manzanares",
+      "market": "Venezuela · Maciza",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -15249,21 +15409,22 @@
         "srcset": "muestras/ecoplaca-wp-08-pareja-vertical26-640.webp 640w, muestras/ecoplaca-wp-08-pareja-vertical26.webp 1536w",
         "width": 1536,
         "height": 1024
-      }
+      },
+      "brandStatus": "provisional"
     },
     {
       "id": "ecoplaca-wp-09-ranurado",
       "category": "tableros",
       "name": "Madera gris · listones finos",
       "family": "Wall panels",
-      "brand": "",
-      "supplier": "Ecoplaca 3000 · Manzanares",
+      "brand": "Maciza",
+      "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en Ecoplaca 3000, Manzanares. Nombre descriptivo provisional; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Ecoplaca 3000 Manzanares",
+      "market": "Venezuela · Maciza",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -15279,21 +15440,22 @@
         "srcset": "muestras/ecoplaca-wp-09-pareja-vertical26-640.webp 640w, muestras/ecoplaca-wp-09-pareja-vertical26.webp 1536w",
         "width": 1536,
         "height": 1024
-      }
+      },
+      "brandStatus": "provisional"
     },
     {
       "id": "ecoplaca-wp-10-ranurado",
       "category": "tableros",
       "name": "Madera miel · listones finos",
       "family": "Wall panels",
-      "brand": "",
-      "supplier": "Ecoplaca 3000 · Manzanares",
+      "brand": "Maciza",
+      "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en Ecoplaca 3000, Manzanares. Nombre descriptivo provisional; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Ecoplaca 3000 Manzanares",
+      "market": "Venezuela · Maciza",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -15309,21 +15471,22 @@
         "srcset": "muestras/ecoplaca-wp-10-pareja-vertical26-640.webp 640w, muestras/ecoplaca-wp-10-pareja-vertical26.webp 1536w",
         "width": 1536,
         "height": 1024
-      }
+      },
+      "brandStatus": "provisional"
     },
     {
       "id": "ecoplaca-wp-11-ranurado",
       "category": "tableros",
       "name": "Roble cálido · listones finos",
       "family": "Wall panels",
-      "brand": "",
-      "supplier": "Ecoplaca 3000 · Manzanares",
+      "brand": "Maciza",
+      "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en Ecoplaca 3000, Manzanares. Nombre descriptivo provisional; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Ecoplaca 3000 Manzanares",
+      "market": "Venezuela · Maciza",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -15339,21 +15502,22 @@
         "srcset": "muestras/ecoplaca-wp-11-pareja-vertical26-640.webp 640w, muestras/ecoplaca-wp-11-pareja-vertical26.webp 1536w",
         "width": 1536,
         "height": 1024
-      }
+      },
+      "brandStatus": "provisional"
     },
     {
       "id": "ecoplaca-wp-12-ranurado",
       "category": "tableros",
       "name": "Madera negra · listones finos",
       "family": "Wall panels",
-      "brand": "",
-      "supplier": "Ecoplaca 3000 · Manzanares",
+      "brand": "Maciza",
+      "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en Ecoplaca 3000, Manzanares. Nombre descriptivo provisional; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Ecoplaca 3000 Manzanares",
+      "market": "Venezuela · Maciza",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -15369,21 +15533,22 @@
         "srcset": "muestras/ecoplaca-wp-12-pareja-vertical26-640.webp 640w, muestras/ecoplaca-wp-12-pareja-vertical26.webp 1536w",
         "width": 1536,
         "height": 1024
-      }
+      },
+      "brandStatus": "provisional"
     },
     {
       "id": "ecoplaca-wp-13-ranurado",
       "category": "tableros",
       "name": "Blanco con juntas doradas",
       "family": "Wall panels",
-      "brand": "",
-      "supplier": "Ecoplaca 3000 · Manzanares",
+      "brand": "Maciza",
+      "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en Ecoplaca 3000, Manzanares. Nombre descriptivo provisional; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Ecoplaca 3000 Manzanares",
+      "market": "Venezuela · Maciza",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -15399,21 +15564,22 @@
         "srcset": "muestras/ecoplaca-wp-13-pareja-vertical26-640.webp 640w, muestras/ecoplaca-wp-13-pareja-vertical26.webp 1536w",
         "width": 1536,
         "height": 1024
-      }
+      },
+      "brandStatus": "provisional"
     },
     {
       "id": "ecoplaca-wp-14-ranurado",
       "category": "tableros",
       "name": "Madera clara · juntas verticales",
       "family": "Wall panels",
-      "brand": "",
-      "supplier": "Ecoplaca 3000 · Manzanares",
+      "brand": "Maciza",
+      "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en Ecoplaca 3000, Manzanares. Nombre descriptivo provisional; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Ecoplaca 3000 Manzanares",
+      "market": "Venezuela · Maciza",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -15429,21 +15595,22 @@
         "srcset": "muestras/ecoplaca-wp-14-pareja-vertical26-640.webp 640w, muestras/ecoplaca-wp-14-pareja-vertical26.webp 1536w",
         "width": 1536,
         "height": 576
-      }
+      },
+      "brandStatus": "provisional"
     },
     {
       "id": "ecoplaca-wp-15-ranurado",
       "category": "tableros",
       "name": "Textil oscuro · ranurado y liso",
       "family": "Wall panels",
-      "brand": "",
-      "supplier": "Ecoplaca 3000 · Manzanares",
+      "brand": "Maciza",
+      "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en Ecoplaca 3000, Manzanares. Nombre descriptivo provisional; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Ecoplaca 3000 Manzanares",
+      "market": "Venezuela · Maciza",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -15459,21 +15626,22 @@
         "srcset": "muestras/ecoplaca-wp-15-pareja-vertical26-640.webp 640w, muestras/ecoplaca-wp-15-pareja-vertical26.webp 1536w",
         "width": 1536,
         "height": 1024
-      }
+      },
+      "brandStatus": "provisional"
     },
     {
       "id": "ecoplaca-wp-16-ranurado",
       "category": "tableros",
       "name": "Grafito · canal ancho",
       "family": "Wall panels",
-      "brand": "",
-      "supplier": "Ecoplaca 3000 · Manzanares",
+      "brand": "Maciza",
+      "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en Ecoplaca 3000, Manzanares. Nombre descriptivo provisional; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Ecoplaca 3000 Manzanares",
+      "market": "Venezuela · Maciza",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -15489,21 +15657,22 @@
         "srcset": "muestras/ecoplaca-wp-16-pareja-vertical26-640.webp 640w, muestras/ecoplaca-wp-16-pareja-vertical26.webp 1536w",
         "width": 1536,
         "height": 1024
-      }
+      },
+      "brandStatus": "provisional"
     },
     {
       "id": "ecoplaca-wp-17-ranurado",
       "category": "tableros",
       "name": "Gris medio · canal ancho",
       "family": "Wall panels",
-      "brand": "",
-      "supplier": "Ecoplaca 3000 · Manzanares",
+      "brand": "Maciza",
+      "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en Ecoplaca 3000, Manzanares. Nombre descriptivo provisional; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Ecoplaca 3000 Manzanares",
+      "market": "Venezuela · Maciza",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -15519,21 +15688,22 @@
         "srcset": "muestras/ecoplaca-wp-17-pareja-vertical26-640.webp 640w, muestras/ecoplaca-wp-17-pareja-vertical26.webp 1536w",
         "width": 1536,
         "height": 1024
-      }
+      },
+      "brandStatus": "provisional"
     },
     {
       "id": "ecoplaca-wp-18-ranurado",
       "category": "tableros",
       "name": "Arena · canal ancho",
       "family": "Wall panels",
-      "brand": "",
-      "supplier": "Ecoplaca 3000 · Manzanares",
+      "brand": "Maciza",
+      "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en Ecoplaca 3000, Manzanares. Nombre descriptivo provisional; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Ecoplaca 3000 Manzanares",
+      "market": "Venezuela · Maciza",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -15549,21 +15719,22 @@
         "srcset": "muestras/ecoplaca-wp-18-pareja-vertical26-640.webp 640w, muestras/ecoplaca-wp-18-pareja-vertical26.webp 1536w",
         "width": 1536,
         "height": 1024
-      }
+      },
+      "brandStatus": "provisional"
     },
     {
       "id": "ecoplaca-wp-19-ranurado",
       "category": "tableros",
       "name": "Blanco · canal ancho",
       "family": "Wall panels",
-      "brand": "",
-      "supplier": "Ecoplaca 3000 · Manzanares",
+      "brand": "Maciza",
+      "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en Ecoplaca 3000, Manzanares. Nombre descriptivo provisional; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Ecoplaca 3000 Manzanares",
+      "market": "Venezuela · Maciza",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -15579,21 +15750,22 @@
         "srcset": "muestras/ecoplaca-wp-19-pareja-vertical26-640.webp 640w, muestras/ecoplaca-wp-19-pareja-vertical26.webp 1536w",
         "width": 1536,
         "height": 1024
-      }
+      },
+      "brandStatus": "provisional"
     },
     {
       "id": "ecoplaca-wp-20-ranurado",
       "category": "tableros",
       "name": "Verde agua · canal ancho",
       "family": "Wall panels",
-      "brand": "",
-      "supplier": "Ecoplaca 3000 · Manzanares",
+      "brand": "Maciza",
+      "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en Ecoplaca 3000, Manzanares. Nombre descriptivo provisional; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Ecoplaca 3000 Manzanares",
+      "market": "Venezuela · Maciza",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -15609,21 +15781,22 @@
         "srcset": "muestras/ecoplaca-wp-20-pareja-vertical26-640.webp 640w, muestras/ecoplaca-wp-20-pareja-vertical26.webp 1536w",
         "width": 1536,
         "height": 1024
-      }
+      },
+      "brandStatus": "provisional"
     },
     {
       "id": "ecoplaca-wp-21-ranurado",
       "category": "tableros",
       "name": "Textil plata · canal ancho",
       "family": "Wall panels",
-      "brand": "",
-      "supplier": "Ecoplaca 3000 · Manzanares",
+      "brand": "Maciza",
+      "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en Ecoplaca 3000, Manzanares. Nombre descriptivo provisional; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Ecoplaca 3000 Manzanares",
+      "market": "Venezuela · Maciza",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -15639,7 +15812,8 @@
         "srcset": "muestras/ecoplaca-wp-21-pareja-vertical26-640.webp 640w, muestras/ecoplaca-wp-21-pareja-vertical26.webp 1536w",
         "width": 1536,
         "height": 1024
-      }
+      },
+      "brandStatus": "provisional"
     }
   ]
 }
