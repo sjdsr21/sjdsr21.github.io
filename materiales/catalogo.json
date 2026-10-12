@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-11 · orientación de muestras y acabado satinado",
+  "updated": "2026-10-12",
   "categories": [
     {
       "id": "maderas",
@@ -477,17 +477,22 @@
       "market": "Referencia del taller; proveedor por confirmar",
       "international": false,
       "availability": "Por confirmar con proveedor",
-      "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación aproximada con IA. Comparar con el catálogo original y una muestra física.",
-      "sourceLinks": [],
+      "imageKind": "Referencia visual recreada con IA",
+      "imageNote": "Reconstrucción visual con IA de tablero alistonado con piezas cortas y empates horizontales alternados. Color, ancho y largo de listones aproximados; no es fotografía de un lote ni confirma una oferta local.",
+      "sourceLinks": [
+        {
+          "label": "Referencia constructiva de pino · Maderas Gómez",
+          "url": "https://www.madgom.com/alistonado-de-pino/"
+        }
+      ],
       "textureId": "tablero-alistonado-pino",
       "appId": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/tablero-alistonado-pino-detalle26.webp",
-        "width": 1600,
-        "height": 800,
-        "displayRotation": 90
+        "src": "muestras/tablero-alistonado-pino-empates-20261012.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/tablero-alistonado-pino-empates-20261012-640.webp 640w, muestras/tablero-alistonado-pino-empates-20261012.webp 1254w"
       },
       "supplier": ""
     },
@@ -506,17 +511,22 @@
       "market": "Referencia del taller; proveedor por confirmar",
       "international": false,
       "availability": "Por confirmar con proveedor",
-      "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación aproximada con IA. Comparar con el catálogo original y una muestra física.",
-      "sourceLinks": [],
+      "imageKind": "Referencia visual recreada con IA",
+      "imageNote": "Reconstrucción visual con IA de tablero alistonado con piezas cortas y empates horizontales alternados. Color, ancho y largo de listones aproximados; no es fotografía de un lote ni confirma una oferta local.",
+      "sourceLinks": [
+        {
+          "label": "Referencia visual de samán alistonado · G&A / Win Depot",
+          "url": "https://www.windepotstore.com/g-a-hs2430-24-x-30-x-1-5-saman-hardwood-table-top/"
+        }
+      ],
       "textureId": "tablero-alistonado-saman",
       "appId": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/tablero-alistonado-saman-detalle26.webp",
-        "width": 1600,
-        "height": 800,
-        "displayRotation": 90
+        "src": "muestras/tablero-alistonado-saman-empates-20261012.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/tablero-alistonado-saman-empates-20261012-640.webp 640w, muestras/tablero-alistonado-saman-empates-20261012.webp 1254w"
       },
       "supplier": ""
     },
@@ -581,7 +591,7 @@
     {
       "id": "tablero-mdf-hr",
       "category": "tableros",
-      "name": "MDF HR - apariencia natural provisional",
+      "name": "MDF HR",
       "family": "MDF",
       "pattern": "",
       "brand": "",
@@ -610,7 +620,7 @@
     {
       "id": "tablero-contrachapado-pino",
       "category": "tableros",
-      "name": "Contrachapado de pino - referencia",
+      "name": "Contrachapado de pino",
       "family": "Contrachapados",
       "pattern": "",
       "brand": "",
@@ -13469,8 +13479,8 @@
       "market": "Publicación comercial en Venezuela",
       "international": false,
       "availability": "Producto publicado por el proveedor; existencias por confirmar.",
-      "imageKind": "Referencia visual ajustada con IA",
-      "imageNote": "Referencia visual de cedro ajustada con IA: tono ligeramente más claro y detalle recreado, por indicación de Santiago. Parte de la muestra de Cedrela odorata de Xylothèque du Cirad, dominio público vía Wikimedia Commons. No es fotografía del lote de Grupo Migo. Color y presentación se confirman con muestra física.",
+      "imageKind": "Referencia visual recreada con IA",
+      "imageNote": "Referencia de chapilla de cedro ajustada con IA, más clara y apenas más oscura y amarilla que la chapa de okumé del catálogo. Veta y poros recreados; no es fotografía del lote del proveedor.",
       "textureId": null,
       "appId": null,
       "sourceLinks": [
@@ -13484,10 +13494,10 @@
         }
       ],
       "image": {
-        "src": "muestras/chapilla-cedro-claro26.png",
-        "width": 1774,
-        "height": 887,
-        "displayRotation": 90
+        "src": "muestras/chapilla-cedro-local-tono-20261012.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/chapilla-cedro-local-tono-20261012-640.webp 640w, muestras/chapilla-cedro-local-tono-20261012.webp 1254w"
       }
     },
     {
@@ -13603,6 +13613,39 @@
         "width": 2362,
         "height": 2362
       }
+    },
+    {
+      "id": "tablero-alistonado-teca",
+      "category": "tableros",
+      "name": "Alistonado de teca",
+      "family": "Alistonados",
+      "pattern": "",
+      "brand": "",
+      "code": "",
+      "finish": "",
+      "description": "Listones cortos de teca encolados, con empates alternados y variación natural de color y veta.",
+      "use": "Superficies y piezas según construcción y dimensiones.",
+      "care": "Confirmamos especie, construcción, formato, acabado y existencias antes de elegir.",
+      "market": "Referencia visual del taller; producto local por confirmar",
+      "international": false,
+      "availability": "Proveedor y existencias por confirmar.",
+      "textureId": "tablero-alistonado-teca",
+      "appId": null,
+      "supplier": "",
+      "image": {
+        "src": "muestras/tablero-alistonado-teca-empates-20261012.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/tablero-alistonado-teca-empates-20261012-640.webp 640w, muestras/tablero-alistonado-teca-empates-20261012.webp 1254w"
+      },
+      "imageNote": "Reconstrucción visual con IA de tablero alistonado con piezas cortas y empates horizontales alternados. Color, ancho y largo de listones aproximados; no es fotografía de un lote ni confirma una oferta local.",
+      "imageKind": "Referencia visual recreada con IA",
+      "sourceLinks": [
+        {
+          "label": "Referencia constructiva de teca · Nordic Core GT",
+          "url": "https://nordiccoregt.com/"
+        }
+      ]
     }
   ]
 }
