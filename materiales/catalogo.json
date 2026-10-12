@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-11",
+  "updated": "2026-10-11 · orientación de muestras y acabado satinado",
   "categories": [
     {
       "id": "maderas",
@@ -486,7 +486,8 @@
       "image": {
         "src": "muestras/tablero-alistonado-pino-detalle26.webp",
         "width": 1600,
-        "height": 800
+        "height": 800,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -514,7 +515,8 @@
       "image": {
         "src": "muestras/tablero-alistonado-saman-detalle26.webp",
         "width": 1600,
-        "height": 800
+        "height": 800,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -542,7 +544,8 @@
       "image": {
         "src": "muestras/tablero-compuesto-okume-detalle26.webp",
         "width": 1600,
-        "height": 800
+        "height": 800,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -570,35 +573,8 @@
       "image": {
         "src": "muestras/tablero-pino-ranurado-detalle26.webp",
         "width": 1600,
-        "height": 800
-      },
-      "supplier": ""
-    },
-    {
-      "id": "tablero-fenolico-film",
-      "category": "tableros",
-      "name": "Compuesto fenólico - película oscura provisional",
-      "family": "Contrachapados",
-      "pattern": "",
-      "brand": "",
-      "code": "",
-      "finish": "",
-      "description": "Tablero construido con chapas de madera en capas. La cara visible y la construcción se eligen por separado.",
-      "use": "Cuerpos, bases y superficies según calidad.",
-      "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
-      "market": "Referencia del taller; proveedor por confirmar",
-      "international": false,
-      "availability": "Por confirmar con proveedor",
-      "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación aproximada con IA. Comparar con el catálogo original y una muestra física.",
-      "sourceLinks": [],
-      "textureId": "tablero-fenolico-film",
-      "appId": null,
-      "sheetSizeMm": null,
-      "image": {
-        "src": "muestras/tablero-fenolico-film-detalle26.webp",
-        "width": 1600,
-        "height": 800
+        "height": 800,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -655,7 +631,8 @@
       "image": {
         "src": "muestras/tablero-contrachapado-pino.webp",
         "width": 1000,
-        "height": 670
+        "height": 670,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -915,7 +892,8 @@
       "image": {
         "src": "muestras/masisa-ve-07.webp",
         "width": 1000,
-        "height": 1000
+        "height": 1000,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -948,7 +926,8 @@
       "image": {
         "src": "muestras/masisa-ve-08-detalle26.webp",
         "width": 1600,
-        "height": 733
+        "height": 733,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -981,7 +960,8 @@
       "image": {
         "src": "muestras/masisa-ve-09-detalle26.webp",
         "width": 1600,
-        "height": 736
+        "height": 736,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -1014,7 +994,8 @@
       "image": {
         "src": "muestras/masisa-ve-10-detalle26.webp",
         "width": 1600,
-        "height": 740
+        "height": 740,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -1047,7 +1028,8 @@
       "image": {
         "src": "muestras/masisa-ve-11.webp",
         "width": 1000,
-        "height": 1000
+        "height": 1000,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -1080,7 +1062,8 @@
       "image": {
         "src": "muestras/masisa-ve-12.webp",
         "width": 1000,
-        "height": 1000
+        "height": 1000,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -1113,7 +1096,8 @@
       "image": {
         "src": "muestras/masisa-ve-13.webp",
         "width": 1000,
-        "height": 1000
+        "height": 1000,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -1146,7 +1130,8 @@
       "image": {
         "src": "muestras/masisa-ve-14-detalle26.webp",
         "width": 1600,
-        "height": 805
+        "height": 805,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -1179,7 +1164,8 @@
       "image": {
         "src": "muestras/masisa-ve-15-detalle26.webp",
         "width": 1600,
-        "height": 739
+        "height": 739,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -1416,7 +1402,8 @@
       "image": {
         "src": "muestras/vesto-aserrado-nordico-detalle26.webp",
         "width": 1600,
-        "height": 800
+        "height": 800,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -1449,7 +1436,8 @@
       "image": {
         "src": "muestras/vesto-awoura-detalle26.webp",
         "width": 1600,
-        "height": 800
+        "height": 800,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -1515,7 +1503,8 @@
       "image": {
         "src": "muestras/vesto-caramel-detalle26.webp",
         "width": 1600,
-        "height": 739
+        "height": 739,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -1548,7 +1537,8 @@
       "image": {
         "src": "muestras/vesto-cedro-natural-detalle26.webp",
         "width": 1600,
-        "height": 739
+        "height": 739,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -1581,7 +1571,8 @@
       "image": {
         "src": "muestras/vesto-cendra-escandinavo-detalle26.webp",
         "width": 1600,
-        "height": 800
+        "height": 800,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -1614,7 +1605,8 @@
       "image": {
         "src": "muestras/vesto-espresso.webp",
         "width": 1000,
-        "height": 481
+        "height": 481,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -1647,7 +1639,8 @@
       "image": {
         "src": "muestras/vesto-jerez-detalle26.webp",
         "width": 709,
-        "height": 1200
+        "height": 1200,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -1680,7 +1673,8 @@
       "image": {
         "src": "muestras/vesto-legno-detalle26.webp",
         "width": 1600,
-        "height": 800
+        "height": 800,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -1713,7 +1707,8 @@
       "image": {
         "src": "muestras/vesto-linosa-cinza-detalle26.webp",
         "width": 1600,
-        "height": 800
+        "height": 800,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -1779,7 +1774,8 @@
       "image": {
         "src": "muestras/vesto-nocce-milano-detalle26.webp",
         "width": 1600,
-        "height": 800
+        "height": 800,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -1812,7 +1808,8 @@
       "image": {
         "src": "muestras/vesto-nogal-terracota-detalle26.webp",
         "width": 1600,
-        "height": 738
+        "height": 738,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -1845,7 +1842,8 @@
       "image": {
         "src": "muestras/vesto-olmo-pardo-detalle26.webp",
         "width": 1600,
-        "height": 800
+        "height": 800,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -1878,7 +1876,8 @@
       "image": {
         "src": "muestras/vesto-origen-andino-detalle26.webp",
         "width": 1600,
-        "height": 801
+        "height": 801,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -1911,7 +1910,8 @@
       "image": {
         "src": "muestras/vesto-roble-americano-detalle26.webp",
         "width": 1600,
-        "height": 800
+        "height": 800,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -1944,7 +1944,8 @@
       "image": {
         "src": "muestras/vesto-roble-cava-detalle26.webp",
         "width": 1600,
-        "height": 800
+        "height": 800,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -1977,7 +1978,8 @@
       "image": {
         "src": "muestras/vesto-roble-dakar-wengue-detalle26.webp",
         "width": 1600,
-        "height": 800
+        "height": 800,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -2010,7 +2012,8 @@
       "image": {
         "src": "muestras/vesto-roble-provenzal-detalle26.webp",
         "width": 1600,
-        "height": 800
+        "height": 800,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -2043,7 +2046,8 @@
       "image": {
         "src": "muestras/vesto-roble-rustico-detalle26.webp",
         "width": 1600,
-        "height": 738
+        "height": 738,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -2076,7 +2080,8 @@
       "image": {
         "src": "muestras/vesto-teka-artico-readywall-detalle26.webp",
         "width": 1366,
-        "height": 1000
+        "height": 1000,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -2109,7 +2114,8 @@
       "image": {
         "src": "muestras/vesto-toscana-detalle26.webp",
         "width": 1600,
-        "height": 800
+        "height": 800,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -2146,7 +2152,8 @@
       "image": {
         "src": "muestras/maxpanel-arizona-detalle26.webp",
         "width": 1600,
-        "height": 800
+        "height": 800,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -2183,7 +2190,8 @@
       "image": {
         "src": "muestras/maxpanel-artisan-detalle26.webp",
         "width": 1600,
-        "height": 800
+        "height": 800,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -2220,7 +2228,8 @@
       "image": {
         "src": "muestras/maxpanel-ash-grey-detalle26.webp",
         "width": 1600,
-        "height": 800
+        "height": 800,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -2257,7 +2266,8 @@
       "image": {
         "src": "muestras/maxpanel-austin-detalle26.webp",
         "width": 1600,
-        "height": 800
+        "height": 800,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -2294,7 +2304,8 @@
       "image": {
         "src": "muestras/maxpanel-brushed-oak-detalle26.webp",
         "width": 1600,
-        "height": 800
+        "height": 800,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -2331,7 +2342,8 @@
       "image": {
         "src": "muestras/maxpanel-callahan-detalle26.webp",
         "width": 1600,
-        "height": 800
+        "height": 800,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -2368,7 +2380,8 @@
       "image": {
         "src": "muestras/maxpanel-hoff-detalle26.webp",
         "width": 1600,
-        "height": 800
+        "height": 800,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -2405,7 +2418,8 @@
       "image": {
         "src": "muestras/maxpanel-inverness-detalle26.webp",
         "width": 1600,
-        "height": 800
+        "height": 800,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -2442,7 +2456,8 @@
       "image": {
         "src": "muestras/maxpanel-kent-detalle26.webp",
         "width": 1600,
-        "height": 800
+        "height": 800,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -2479,7 +2494,8 @@
       "image": {
         "src": "muestras/maxpanel-levo-detalle26.webp",
         "width": 1600,
-        "height": 800
+        "height": 800,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -2516,7 +2532,8 @@
       "image": {
         "src": "muestras/maxpanel-niagara-oak-detalle26.webp",
         "width": 1600,
-        "height": 800
+        "height": 800,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -2553,7 +2570,8 @@
       "image": {
         "src": "muestras/maxpanel-roble-joplin-detalle26.webp",
         "width": 1600,
-        "height": 800
+        "height": 800,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -2590,7 +2608,8 @@
       "image": {
         "src": "muestras/maxpanel-roble-monteiro-detalle26.webp",
         "width": 1600,
-        "height": 800
+        "height": 800,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -2627,7 +2646,8 @@
       "image": {
         "src": "muestras/maxpanel-roble-tostado-detalle26.webp",
         "width": 1600,
-        "height": 800
+        "height": 800,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -2664,7 +2684,8 @@
       "image": {
         "src": "muestras/maxpanel-roble-virginia-detalle26.webp",
         "width": 1600,
-        "height": 800
+        "height": 800,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -2701,7 +2722,8 @@
       "image": {
         "src": "muestras/maxpanel-sacramento-detalle26.webp",
         "width": 1600,
-        "height": 800
+        "height": 800,
+        "displayRotation": 90
       },
       "supplier": ""
     },
@@ -5978,7 +6000,8 @@
       "image": {
         "src": "muestras/virgo-6501-hz-detalle26.webp",
         "width": 813,
-        "height": 1600
+        "height": 1600,
+        "displayRotation": 90
       }
     },
     {
@@ -6009,7 +6032,8 @@
       "image": {
         "src": "muestras/virgo-6503-hz-detalle26.webp",
         "width": 600,
-        "height": 1217
+        "height": 1217,
+        "displayRotation": 90
       }
     },
     {
@@ -8427,7 +8451,8 @@
       "image": {
         "src": "muestras/century-laminates-4392-lh-detalle26.webp",
         "width": 822,
-        "height": 1600
+        "height": 1600,
+        "displayRotation": 90
       }
     },
     {
@@ -8458,7 +8483,8 @@
       "image": {
         "src": "muestras/century-laminates-4393-lh-detalle26.webp",
         "width": 822,
-        "height": 1600
+        "height": 1600,
+        "displayRotation": 90
       }
     },
     {
@@ -13307,8 +13333,8 @@
       "id": "chapa-curupixa-local",
       "category": "tableros",
       "family": "Compuestos y chapillados",
-      "name": "Chapa de curupixa",
-      "description": "Chapa de curupixa de 3 mm. Madeaceros publica la presentación de 1,62 × 2,20 m. La cara visible no identifica por sí sola la construcción interior.",
+      "name": "Chapa de cedrillo / curupixá",
+      "description": "Panel delgado de curupixá para revestimientos y piezas de carpintería. La denominación cedrillo / curupixá se confirma con el proveedor; la chapilla fina para enchapar es otra presentación.",
       "use": "Revestimientos y piezas de carpintería según la ficha y el soporte del producto.",
       "care": "Confirmamos formato, construcción, acabado y existencias con el proveedor antes de elegir el material para el proyecto.",
       "brand": "",
@@ -13460,42 +13486,8 @@
       "image": {
         "src": "muestras/chapilla-cedro-claro26.png",
         "width": 1774,
-        "height": 887
-      }
-    },
-    {
-      "id": "chapilla-cedrillo-local",
-      "category": "tableros",
-      "family": "Compuestos y chapillados",
-      "name": "Chapilla de cedrillo / curupixa",
-      "description": "Lámina delgada para enchapar. Madeaceros la publica con la denominación comercial «cedrillo/curupixa»; conservar ese nombre permite localizar la oferta sin asumir una equivalencia botánica.",
-      "use": "Enchapado de tableros, frentes y detalles de mobiliario.",
-      "care": "Confirmamos formato, construcción, acabado y existencias con el proveedor antes de elegir el material para el proyecto.",
-      "brand": "",
-      "supplier": "Madeaceros",
-      "code": "",
-      "finish": "",
-      "market": "Publicación comercial en Venezuela",
-      "international": false,
-      "availability": "Producto publicado por el proveedor; existencias por confirmar.",
-      "imageKind": "Fotografía de referencia frontal",
-      "imageNote": "Muestra frontal de chapilla de curupixa publicada por M. Bohlke. Referencia de veta de curupixa; no es una fotografía del lote de Madeaceros ni establece equivalencia botánica con otras maderas llamadas cedrillo. Los derechos de imagen pertenecen a su titular. Color y acabado se confirman con una muestra física.",
-      "textureId": null,
-      "appId": null,
-      "sourceLinks": [
-        {
-          "label": "Publicación del proveedor",
-          "url": "https://madeaceros.com/producto/chapilla-cedrillo-curupixa/"
-        },
-        {
-          "label": "Origen de la muestra de curupixa",
-          "url": "https://mbveneer.com/veneercatalogpage/curupixa-veneer/"
-        }
-      ],
-      "image": {
-        "src": "muestras/chapilla-curupixa-frontal26.jpg",
-        "width": 800,
-        "height": 1100
+        "height": 887,
+        "displayRotation": 90
       }
     },
     {
@@ -13513,26 +13505,24 @@
       "market": "Publicación comercial en Venezuela",
       "international": false,
       "availability": "Producto publicado por el proveedor; existencias por confirmar.",
-      "imageKind": "Fotografía publicada por el proveedor",
-      "imageNote": "Fotografía de referencia publicada por Madeaceros. Recorte de la superficie en la cuadrícula; imagen completa en esta ficha. Color y veta se confirman con una muestra física. Los derechos de imagen pertenecen a su titular.",
+      "imageKind": "Referencia visual editada con IA",
+      "imageNote": "Referencia mejorada con IA a partir de la fotografía de Madeaceros: mayor nitidez y tono más neutro, con veta vertical. Es una aproximación ilustrativa; no certifica el color, la especie ni el lote comercial. La fotografía original y sus derechos se conservan como fuente.",
       "textureId": null,
       "appId": null,
       "sourceLinks": [
         {
           "label": "Publicación del proveedor",
           "url": "https://madeaceros.com/producto/chapilla-precompuesta-pardillo/"
+        },
+        {
+          "label": "Fotografía original del proveedor",
+          "url": "https://prototipoago.com/materiales/muestras/chapilla-pardillo-local.png"
         }
       ],
       "image": {
-        "src": "muestras/chapilla-pardillo-local.png",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          250,
-          440,
-          440,
-          530
-        ]
+        "src": "muestras/pardillo-mejorado26.png",
+        "width": 1254,
+        "height": 1254
       }
     },
     {

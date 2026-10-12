@@ -1,0 +1,1 @@
+export function sampleGeometry(t){const[n,a,e,r]=t.crop||[0,0,t.width,t.height],o=t.displayRotation===90?90:0;return{x:n,y:a,w:e,h:r,rotation:o,width:o?r:e,height:o?e:r,transform:o?`translate(${r} 0) rotate(90) translate(${-n} ${-a})`:`translate(${-n} ${-a})`}}
