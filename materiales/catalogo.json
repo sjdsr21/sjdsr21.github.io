@@ -2661,8 +2661,8 @@
       "market": "Venezuela · Galería oficial MaxPanel",
       "international": false,
       "availability": "Confirmar existencias y combinación de base con distribuidor",
-      "imageKind": "Muestra del fabricante",
-      "imageNote": "Imagen publicada en la galería oficial de MaxPanel. El color en pantalla es orientativo; el soporte, formato y acabado se eligen con el producto real.",
+      "imageKind": "Muestra ajustada con IA",
+      "imageNote": "Referencia visual ajustada con IA a partir de la imagen oficial de MaxPanel: iluminación uniforme y reducción de reflejos y franjas, conservando el aspecto del lino. Tono, trama y escala aproximados; cotejar con la muestra física. El original del fabricante permanece enlazado.",
       "sourceLinks": [
         {
           "label": "Galería oficial MaxPanel",
@@ -2681,10 +2681,10 @@
       "appId": null,
       "sheetSizeMm": null,
       "image": {
-        "src": "muestras/maxpanel-lino-crudo-oficial26.webp",
-        "srcset": "muestras/maxpanel-lino-crudo-oficial26-640.webp 296w, muestras/maxpanel-lino-crudo-oficial26.webp 1087w",
-        "width": 1087,
-        "height": 2354
+        "src": "muestras/maxpanel-lino-crudo-ajustado-20261013.webp",
+        "srcset": "muestras/maxpanel-lino-crudo-ajustado-20261013-640.webp 640w, muestras/maxpanel-lino-crudo-ajustado-20261013.webp 1254w",
+        "width": 1254,
+        "height": 1254
       },
       "supplier": ""
     },
@@ -14880,8 +14880,8 @@
       "international": false,
       "availability": "Listado en catálogo venezolano; stock actual por confirmar",
       "supplier": "",
-      "imageKind": "Muestra del fabricante",
-      "imageNote": "Muestra extraída del catálogo oficial AGT, página 20. La imagen original tiene resolución limitada; confirmar el diseño y el tono con una muestra física.",
+      "imageKind": "Muestra de referencia",
+      "imageNote": "Muestra de la referencia AGT 374 publicada por Dekada Partners, girada para presentar la veta vertical. Fuente de 350 × 350 px, con mayor detalle que la miniatura anterior; el tono y dibujo se cotejan con la muestra física.",
       "sourceLinks": [
         {
           "label": "Referencia publicada en Venezuela",
@@ -14894,6 +14894,14 @@
         {
           "label": "Imagen o catálogo original del fabricante",
           "url": "https://cdn.agt.com.tr/assets/files/AGT-genel-katalog-Kf9kL58kIT1661516473102.pdf#page=20"
+        },
+        {
+          "label": "Fuente de la muestra · Dekada Partners",
+          "url": "https://dekada-partners.md/product/agt-374-white-grey-country/"
+        },
+        {
+          "label": "Imagen de la referencia 374",
+          "url": "https://dekada-partners.md/wp-content/uploads/2024/07/c30b4777e02fa65495f40e97c577937d.jpg"
         }
       ],
       "textureId": null,
@@ -14903,10 +14911,11 @@
         2800
       ],
       "image": {
-        "src": "muestras/agt-374-oficial.webp",
-        "srcset": "muestras/agt-374-oficial-640.webp 121w, muestras/agt-374-oficial.webp 121w",
-        "width": 121,
-        "height": 59
+        "src": "muestras/agt-374-referencia-20261013.webp",
+        "srcset": "muestras/agt-374-referencia-20261013-640.webp 350w, muestras/agt-374-referencia-20261013.webp 350w",
+        "width": 350,
+        "height": 350,
+        "displayRotation": 90
       }
     },
     {
@@ -15241,7 +15250,7 @@
       "availability": "Listado en catálogo venezolano; stock actual por confirmar",
       "supplier": "",
       "imageKind": "Muestra del fabricante",
-      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "imageNote": "Muestra plana del color 739 extraída del catálogo oficial AGT 2023, página 38. Sustituye la fotografía de cocina. El color en pantalla es orientativo; comparar con una muestra física.",
       "sourceLinks": [
         {
           "label": "Referencia publicada en Venezuela",
@@ -15252,8 +15261,8 @@
           "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/soft-touch-sari"
         },
         {
-          "label": "Imagen o catálogo original del fabricante",
-          "url": "https://www.agt.com.tr/medium/Product/Image/eede8bc6-81a4-4dde-bb2d-2e54046d1352"
+          "label": "Fuente de la muestra plana · AGT 2023, pág. 38",
+          "url": "https://cdn.agt.com.tr/assets/files/AGT-agt-genel-koleksiyon-katalogu-2023-hEHglyuWY01679474158556.pdf#page=38"
         }
       ],
       "textureId": null,
@@ -15263,10 +15272,10 @@
         2800
       ],
       "image": {
-        "src": "muestras/agt-739-oficial.webp",
-        "srcset": "muestras/agt-739-oficial-640.webp 640w, muestras/agt-739-oficial.webp 768w",
-        "width": 768,
-        "height": 768
+        "src": "muestras/agt-739-muestra-20261013.webp",
+        "srcset": "muestras/agt-739-muestra-20261013-640.webp 352w, muestras/agt-739-muestra-20261013.webp 352w",
+        "width": 352,
+        "height": 179
       }
     },
     {
@@ -15375,8 +15384,8 @@
       "international": false,
       "availability": "Listado en catálogo venezolano; stock actual por confirmar",
       "supplier": "",
-      "imageKind": "Muestra del fabricante",
-      "imageNote": "Muestra extraída del catálogo oficial AGT, página 20. La imagen original tiene resolución limitada; confirmar el diseño y el tono con una muestra física.",
+      "imageKind": "Muestra de referencia",
+      "imageNote": "Muestra de Toros Black Marble 3031 mate publicada por Steropal. Conserva el código y acabado de la referencia; el tono y dibujo se cotejan con una muestra física.",
       "sourceLinks": [
         {
           "label": "Referencia publicada en Venezuela",
@@ -15389,6 +15398,14 @@
         {
           "label": "Imagen o catálogo original del fabricante",
           "url": "https://cdn.agt.com.tr/assets/files/AGT-genel-katalog-Kf9kL58kIT1661516473102.pdf#page=20"
+        },
+        {
+          "label": "Fuente de la muestra · AGT 3031 en Steropal",
+          "url": "https://steropal.gr/en/matt/3807-2800122018-mdf-pvc-agt-3031-matt-black-marble.html"
+        },
+        {
+          "label": "Imagen de la referencia 3031",
+          "url": "https://steropal.gr/13802-large_default/2800122018-mdf-pvc-agt-3031-matt-black-marble.jpg"
         }
       ],
       "textureId": null,
@@ -15398,10 +15415,10 @@
         2800
       ],
       "image": {
-        "src": "muestras/agt-3031-oficial.webp",
-        "srcset": "muestras/agt-3031-oficial-640.webp 142w, muestras/agt-3031-oficial.webp 142w",
-        "width": 142,
-        "height": 82
+        "src": "muestras/agt-3031-referencia-20261013.webp",
+        "srcset": "muestras/agt-3031-referencia-20261013-640.webp 493w, muestras/agt-3031-referencia-20261013.webp 771w",
+        "width": 771,
+        "height": 1000
       }
     },
     {
@@ -15691,7 +15708,7 @@
       "availability": "Listado en catálogo venezolano; stock actual por confirmar",
       "supplier": "",
       "imageKind": "Muestra del fabricante",
-      "imageNote": "Muestra extraída del catálogo oficial AGT, página 20. La imagen original tiene resolución limitada; confirmar el diseño y el tono con una muestra física.",
+      "imageNote": "Muestra extraída del catálogo oficial AGT 2023, página 41, a partir de su imagen de 573 × 330 px. El color en pantalla es orientativo; comparar con una muestra física.",
       "sourceLinks": [
         {
           "label": "Referencia publicada en Venezuela",
@@ -15704,6 +15721,10 @@
         {
           "label": "Imagen o catálogo original del fabricante",
           "url": "https://cdn.agt.com.tr/assets/files/AGT-genel-katalog-Kf9kL58kIT1661516473102.pdf#page=20"
+        },
+        {
+          "label": "Fuente de la muestra · AGT 2023, pág. 41",
+          "url": "https://cdn.agt.com.tr/assets/files/AGT-agt-genel-koleksiyon-katalogu-2023-hEHglyuWY01679474158556.pdf#page=41"
         }
       ],
       "textureId": null,
@@ -15713,10 +15734,10 @@
         2800
       ],
       "image": {
-        "src": "muestras/agt-3033-oficial.webp",
-        "srcset": "muestras/agt-3033-oficial-640.webp 144w, muestras/agt-3033-oficial.webp 144w",
-        "width": 144,
-        "height": 70
+        "src": "muestras/agt-3033-muestra-20261013.webp",
+        "srcset": "muestras/agt-3033-muestra-20261013-640.webp 573w, muestras/agt-3033-muestra-20261013.webp 573w",
+        "width": 573,
+        "height": 330
       }
     },
     {
