@@ -19233,14 +19233,8 @@
       ],
       "image": {
         "src": "muestras/ldp-colores-solidos-blanco-milky-oficial.webp",
-        "width": 1402,
-        "height": 1753,
-        "crop": [
-          505,
-          754,
-          407,
-          473
-        ]
+        "width": 407,
+        "height": 473
       },
       "textureId": null,
       "appId": null,
@@ -19275,14 +19269,8 @@
       ],
       "image": {
         "src": "muestras/ldp-colores-solidos-azul-rey-oficial.webp",
-        "width": 1402,
-        "height": 1753,
-        "crop": [
-          505,
-          754,
-          407,
-          473
-        ]
+        "width": 407,
+        "height": 473
       },
       "textureId": null,
       "appId": null,
@@ -19317,14 +19305,8 @@
       ],
       "image": {
         "src": "muestras/ldp-colores-solidos-azul-bebe-oficial.webp",
-        "width": 1402,
-        "height": 1753,
-        "crop": [
-          505,
-          754,
-          407,
-          473
-        ]
+        "width": 407,
+        "height": 473
       },
       "textureId": null,
       "appId": null,
@@ -19359,14 +19341,8 @@
       ],
       "image": {
         "src": "muestras/ldp-maderas-design-madera-oficial.webp",
-        "width": 1402,
-        "height": 1753,
-        "crop": [
-          505,
-          754,
-          407,
-          473
-        ]
+        "width": 407,
+        "height": 473
       },
       "textureId": null,
       "appId": null,
@@ -19401,14 +19377,8 @@
       ],
       "image": {
         "src": "muestras/ldp-maderas-madera-moderna-oficial.webp",
-        "width": 1402,
-        "height": 1753,
-        "crop": [
-          505,
-          754,
-          407,
-          473
-        ]
+        "width": 407,
+        "height": 473
       },
       "textureId": null,
       "appId": null,
@@ -19443,14 +19413,8 @@
       ],
       "image": {
         "src": "muestras/ldp-maderas-madera-real-oficial.webp",
-        "width": 1402,
-        "height": 1753,
-        "crop": [
-          505,
-          754,
-          407,
-          473
-        ]
+        "width": 407,
+        "height": 473
       },
       "textureId": null,
       "appId": null,
@@ -19485,14 +19449,8 @@
       ],
       "image": {
         "src": "muestras/ldp-maderas-tropical-oak-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          490,
-          774,
-          461,
-          522
-        ]
+        "width": 461,
+        "height": 522
       },
       "textureId": null,
       "appId": null,
@@ -19527,14 +19485,8 @@
       ],
       "image": {
         "src": "muestras/ldp-maderas-roble-amazonas-oficial.webp",
-        "width": 1402,
-        "height": 1753,
-        "crop": [
-          505,
-          754,
-          407,
-          473
-        ]
+        "width": 407,
+        "height": 473
       },
       "textureId": null,
       "appId": null,
@@ -19569,14 +19521,8 @@
       ],
       "image": {
         "src": "muestras/ldp-maderas-sienna-oakwood-oficial.webp",
-        "width": 1402,
-        "height": 1753,
-        "crop": [
-          505,
-          754,
-          407,
-          473
-        ]
+        "width": 407,
+        "height": 473
       },
       "textureId": null,
       "appId": null,
@@ -19611,14 +19557,8 @@
       ],
       "image": {
         "src": "muestras/ldp-maderas-suva-grey-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          490,
-          774,
-          461,
-          522
-        ]
+        "width": 461,
+        "height": 522
       },
       "textureId": null,
       "appId": null,
@@ -19653,14 +19593,8 @@
       ],
       "image": {
         "src": "muestras/ldp-maderas-elevated-light-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          490,
-          774,
-          461,
-          522
-        ]
+        "width": 461,
+        "height": 522
       },
       "textureId": null,
       "appId": null,
@@ -19695,14 +19629,8 @@
       ],
       "image": {
         "src": "muestras/ldp-maderas-tablilla-dark-oficial.webp",
-        "width": 1161,
-        "height": 1440,
-        "crop": [
-          395,
-          619,
-          372,
-          418
-        ]
+        "width": 372,
+        "height": 418
       },
       "textureId": null,
       "appId": null,
@@ -19737,14 +19665,8 @@
       ],
       "image": {
         "src": "muestras/ldp-maderas-tablilla-light-oficial.webp",
-        "width": 1161,
-        "height": 1440,
-        "crop": [
-          395,
-          619,
-          372,
-          418
-        ]
+        "width": 372,
+        "height": 418
       },
       "textureId": null,
       "appId": null,
@@ -19779,14 +19701,8 @@
       ],
       "image": {
         "src": "muestras/ldp-maderas-doredos-pine-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          490,
-          774,
-          461,
-          522
-        ]
+        "width": 461,
+        "height": 522
       },
       "textureId": null,
       "appId": null,
@@ -19821,14 +19737,8 @@
       ],
       "image": {
         "src": "muestras/ldp-maderas-novecento-pine-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          490,
-          774,
-          461,
-          522
-        ]
+        "width": 461,
+        "height": 522
       },
       "textureId": null,
       "appId": null,
@@ -19863,14 +19773,8 @@
       ],
       "image": {
         "src": "muestras/ldp-colores-solidos-black-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          490,
-          774,
-          461,
-          522
-        ]
+        "width": 461,
+        "height": 522
       },
       "textureId": null,
       "appId": null,
@@ -19905,14 +19809,8 @@
       ],
       "image": {
         "src": "muestras/ldp-colores-solidos-white-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          490,
-          774,
-          461,
-          522
-        ]
+        "width": 461,
+        "height": 522
       },
       "textureId": null,
       "appId": null,
@@ -19947,14 +19845,8 @@
       ],
       "image": {
         "src": "muestras/ldp-maderas-kampia-wengue-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          490,
-          774,
-          461,
-          522
-        ]
+        "width": 461,
+        "height": 522
       },
       "textureId": null,
       "appId": null,
@@ -19989,14 +19881,8 @@
       ],
       "image": {
         "src": "muestras/ldp-maderas-hebra-metalizada-natural-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          85,
-          120,
-          180,
-          270
-        ]
+        "width": 180,
+        "height": 270
       },
       "textureId": null,
       "appId": null,
@@ -20031,14 +19917,8 @@
       ],
       "image": {
         "src": "muestras/ldp-maderas-hebra-metalizada-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          325,
-          120,
-          180,
-          270
-        ]
+        "width": 180,
+        "height": 270
       },
       "textureId": null,
       "appId": null,
@@ -20073,14 +19953,8 @@
       ],
       "image": {
         "src": "muestras/ldp-maderas-hebra-crema-natural-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          565,
-          120,
-          180,
-          270
-        ]
+        "width": 180,
+        "height": 270
       },
       "textureId": null,
       "appId": null,
@@ -20115,14 +19989,8 @@
       ],
       "image": {
         "src": "muestras/ldp-maderas-genesis-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          805,
-          120,
-          180,
-          270
-        ]
+        "width": 180,
+        "height": 270
       },
       "textureId": null,
       "appId": null,
@@ -20157,14 +20025,8 @@
       ],
       "image": {
         "src": "muestras/ldp-maderas-costa-del-sol-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          85,
-          565,
-          180,
-          270
-        ]
+        "width": 180,
+        "height": 270
       },
       "textureId": null,
       "appId": null,
@@ -20199,14 +20061,8 @@
       ],
       "image": {
         "src": "muestras/ldp-maderas-canaima-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          325,
-          565,
-          180,
-          270
-        ]
+        "width": 180,
+        "height": 270
       },
       "textureId": null,
       "appId": null,
@@ -20241,14 +20097,8 @@
       ],
       "image": {
         "src": "muestras/ldp-maderas-ultimate-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          805,
-          565,
-          180,
-          270
-        ]
+        "width": 180,
+        "height": 270
       },
       "textureId": null,
       "appId": null,
@@ -20283,14 +20133,8 @@
       ],
       "image": {
         "src": "muestras/ldp-piedras-y-minerales-astonishing-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          421,
-          281,
-          184,
-          216
-        ]
+        "width": 184,
+        "height": 216
       },
       "textureId": null,
       "appId": null,
@@ -20325,14 +20169,8 @@
       ],
       "image": {
         "src": "muestras/ldp-texturas-y-relieves-blanco-textura-elegance-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          205,
-          572,
-          130,
-          108
-        ]
+        "width": 130,
+        "height": 108
       },
       "textureId": null,
       "appId": null,
@@ -20367,14 +20205,8 @@
       ],
       "image": {
         "src": "muestras/ldp-texturas-y-relieves-high-design-blanco-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          540,
-          702,
-          173,
-          194
-        ]
+        "width": 173,
+        "height": 194
       },
       "textureId": null,
       "appId": null,
@@ -20409,14 +20241,8 @@
       ],
       "image": {
         "src": "muestras/ldp-maderas-high-design-brown-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          346,
-          842,
-          140,
-          108
-        ]
+        "width": 140,
+        "height": 108
       },
       "textureId": null,
       "appId": null,
@@ -20451,14 +20277,8 @@
       ],
       "image": {
         "src": "muestras/ldp-maderas-madera-luxury-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          821,
-          551,
-          97,
-          248
-        ]
+        "width": 97,
+        "height": 248
       },
       "textureId": null,
       "appId": null,
@@ -20493,14 +20313,8 @@
       ],
       "image": {
         "src": "muestras/ldp-textiles-textil-high-design-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          432,
-          194,
-          86,
-          108
-        ]
+        "width": 86,
+        "height": 108
       },
       "textureId": null,
       "appId": null,
@@ -20535,14 +20349,8 @@
       ],
       "image": {
         "src": "muestras/ldp-textiles-textil-superior-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          205,
-          421,
-          194,
-          184
-        ]
+        "width": 194,
+        "height": 184
       },
       "textureId": null,
       "appId": null,
@@ -20577,14 +20385,8 @@
       ],
       "image": {
         "src": "muestras/ldp-metales-brushed-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          572,
-          356,
-          173,
-          292
-        ]
+        "width": 173,
+        "height": 292
       },
       "textureId": null,
       "appId": null,
@@ -20619,14 +20421,8 @@
       ],
       "image": {
         "src": "muestras/ldp-maderas-innovation-cream-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          853,
-          572,
-          86,
-          76
-        ]
+        "width": 86,
+        "height": 76
       },
       "textureId": null,
       "appId": null,
@@ -20661,14 +20457,8 @@
       ],
       "image": {
         "src": "muestras/ldp-maderas-innovation-wood-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          810,
-          788,
-          108,
-          108
-        ]
+        "width": 108,
+        "height": 108
       },
       "textureId": null,
       "appId": null,
@@ -20703,14 +20493,8 @@
       ],
       "image": {
         "src": "muestras/ldp-maderas-innovation-grey-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          302,
-          745,
-          97,
-          76
-        ]
+        "width": 97,
+        "height": 76
       },
       "textureId": null,
       "appId": null,
@@ -20745,14 +20529,8 @@
       ],
       "image": {
         "src": "muestras/ldp-colores-solidos-azul-rey-galaxy-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          281,
-          216,
-          151,
-          184
-        ]
+        "width": 151,
+        "height": 184
       },
       "textureId": null,
       "appId": null,
@@ -20787,14 +20565,8 @@
       ],
       "image": {
         "src": "muestras/ldp-colores-solidos-rojo-galaxy-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          637,
-          367,
-          184,
-          238
-        ]
+        "width": 184,
+        "height": 238
       },
       "textureId": null,
       "appId": null,
@@ -20829,14 +20601,8 @@
       ],
       "image": {
         "src": "muestras/ldp-colores-solidos-antracita-galaxy-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          270,
-          562,
-          130,
-          140
-        ]
+        "width": 130,
+        "height": 140
       },
       "textureId": null,
       "appId": null,
@@ -20871,14 +20637,8 @@
       ],
       "image": {
         "src": "muestras/ldp-colores-solidos-blanco-galaxy-superior-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          551,
-          745,
-          205,
-          130
-        ]
+        "width": 205,
+        "height": 130
       },
       "textureId": null,
       "appId": null,
@@ -20913,14 +20673,8 @@
       ],
       "image": {
         "src": "muestras/ldp-colores-solidos-mint-green-oficial.webp",
-        "width": 540,
-        "height": 960,
-        "crop": [
-          11,
-          298,
-          38,
-          77
-        ]
+        "width": 38,
+        "height": 77
       },
       "textureId": null,
       "appId": null,
@@ -20955,14 +20709,8 @@
       ],
       "image": {
         "src": "muestras/ldp-colores-solidos-rust-oficial.webp",
-        "width": 1080,
-        "height": 1350,
-        "crop": [
-          799,
-          432,
-          86,
-          108
-        ]
+        "width": 86,
+        "height": 108
       },
       "textureId": null,
       "appId": null,
@@ -20997,14 +20745,8 @@
       ],
       "image": {
         "src": "muestras/ldp-colores-solidos-cadet-blue-oficial.webp",
-        "width": 1080,
-        "height": 1278,
-        "crop": [
-          853,
-          524,
-          76,
-          89
-        ]
+        "width": 76,
+        "height": 89
       },
       "textureId": null,
       "appId": null,
@@ -21039,14 +20781,8 @@
       ],
       "image": {
         "src": "muestras/ldp-maderas-madera-grisly-oficial.webp",
-        "width": 1080,
-        "height": 1350,
-        "crop": [
-          97,
-          256,
-          130,
-          148
-        ]
+        "width": 130,
+        "height": 148
       },
       "textureId": null,
       "appId": null,
@@ -21081,14 +20817,8 @@
       ],
       "image": {
         "src": "muestras/ldp-piedras-y-minerales-gris-imperial-oficial.webp",
-        "width": 1080,
-        "height": 1350,
-        "crop": [
-          788,
-          459,
-          86,
-          108
-        ]
+        "width": 86,
+        "height": 108
       },
       "textureId": null,
       "appId": null,
@@ -21123,14 +20853,8 @@
       ],
       "image": {
         "src": "muestras/ldp-piedras-y-minerales-crema-imperial-oficial.webp",
-        "width": 1080,
-        "height": 1350,
-        "crop": [
-          832,
-          256,
-          130,
-          88
-        ]
+        "width": 130,
+        "height": 88
       },
       "textureId": null,
       "appId": null,
@@ -21165,14 +20889,8 @@
       ],
       "image": {
         "src": "muestras/ldp-texturas-y-relieves-blanco-3d-oficial.webp",
-        "width": 1080,
-        "height": 1350,
-        "crop": [
-          162,
-          351,
-          86,
-          122
-        ]
+        "width": 86,
+        "height": 122
       },
       "textureId": null,
       "appId": null,
@@ -21207,14 +20925,8 @@
       ],
       "image": {
         "src": "muestras/ldp-texturas-y-relieves-blanco-4d-oficial.webp",
-        "width": 540,
-        "height": 960,
-        "crop": [
-          173,
-          77,
-          140,
-          154
-        ]
+        "width": 140,
+        "height": 154
       },
       "textureId": null,
       "appId": null,
@@ -21249,14 +20961,8 @@
       ],
       "image": {
         "src": "muestras/ldp-piedras-y-minerales-marmol-cream-marron-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          576,
-          1152,
-          187,
-          216
-        ]
+        "width": 187,
+        "height": 216
       },
       "textureId": null,
       "appId": null,
@@ -21291,14 +20997,8 @@
       ],
       "image": {
         "src": "muestras/ldp-piedras-y-minerales-marmol-elegance-oficial.webp",
-        "width": 1024,
-        "height": 1024,
-        "crop": [
-          492,
-          92,
-          205,
-          276
-        ]
+        "width": 205,
+        "height": 276
       },
       "textureId": null,
       "appId": null,
@@ -21333,14 +21033,8 @@
       ],
       "image": {
         "src": "muestras/ldp-maderas-innovation-brown-oficial.webp",
-        "width": 1023,
-        "height": 1023,
-        "crop": [
-          368,
-          31,
-          174,
-          164
-        ]
+        "width": 174,
+        "height": 164
       },
       "textureId": null,
       "appId": null,
@@ -21375,14 +21069,8 @@
       ],
       "image": {
         "src": "muestras/ldp-textiles-textil-crema-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          691,
-          292,
-          184,
-          518
-        ]
+        "width": 184,
+        "height": 518
       },
       "textureId": null,
       "appId": null,
@@ -21417,14 +21105,8 @@
       ],
       "image": {
         "src": "muestras/ldp-flat-wall-panels-walnut-oficial.webp",
-        "width": 1401,
-        "height": 1748,
-        "crop": [
-          743,
-          682,
-          210,
-          227
-        ]
+        "width": 210,
+        "height": 227
       },
       "textureId": null,
       "appId": null,
@@ -21459,14 +21141,8 @@
       ],
       "image": {
         "src": "muestras/ldp-flat-wall-panels-dark-oak-oficial.webp",
-        "width": 1365,
-        "height": 1800,
-        "crop": [
-          723,
-          702,
-          205,
-          234
-        ]
+        "width": 205,
+        "height": 234
       },
       "textureId": null,
       "appId": null,
@@ -21501,14 +21177,8 @@
       ],
       "image": {
         "src": "muestras/ldp-flat-wall-panels-golden-oak-oficial.webp",
-        "width": 1402,
-        "height": 1753,
-        "crop": [
-          743,
-          684,
-          210,
-          228
-        ]
+        "width": 210,
+        "height": 228
       },
       "textureId": null,
       "appId": null,
@@ -21543,14 +21213,8 @@
       ],
       "image": {
         "src": "muestras/ldp-flat-wall-panels-blanco-ash-oficial.webp",
-        "width": 1402,
-        "height": 1753,
-        "crop": [
-          743,
-          684,
-          210,
-          228
-        ]
+        "width": 210,
+        "height": 228
       },
       "textureId": null,
       "appId": null,
@@ -21585,14 +21249,8 @@
       ],
       "image": {
         "src": "muestras/ldp-flat-wall-panels-madera-clasica-oficial.webp",
-        "width": 1350,
-        "height": 1800,
-        "crop": [
-          716,
-          702,
-          202,
-          234
-        ]
+        "width": 202,
+        "height": 234
       },
       "textureId": null,
       "appId": null,
@@ -21627,14 +21285,8 @@
       ],
       "image": {
         "src": "muestras/ldp-flat-wall-panels-blanco-gold-oficial.webp",
-        "width": 1350,
-        "height": 1800,
-        "crop": [
-          716,
-          702,
-          202,
-          234
-        ]
+        "width": 202,
+        "height": 234
       },
       "textureId": null,
       "appId": null,
@@ -21669,14 +21321,8 @@
       ],
       "image": {
         "src": "muestras/ldp-flat-wall-panels-pino-claro-oficial.webp",
-        "width": 1402,
-        "height": 1753,
-        "crop": [
-          743,
-          684,
-          210,
-          228
-        ]
+        "width": 210,
+        "height": 228
       },
       "textureId": null,
       "appId": null,
@@ -21711,14 +21357,8 @@
       ],
       "image": {
         "src": "muestras/ldp-flat-wall-panels-costa-del-sol-oficial.webp",
-        "width": 1440,
-        "height": 1799,
-        "crop": [
-          763,
-          702,
-          216,
-          234
-        ]
+        "width": 216,
+        "height": 234
       },
       "textureId": null,
       "appId": null,
@@ -21753,14 +21393,8 @@
       ],
       "image": {
         "src": "muestras/ldp-flat-wall-panels-dark-caramel-oficial.webp",
-        "width": 1350,
-        "height": 1800,
-        "crop": [
-          716,
-          702,
-          202,
-          234
-        ]
+        "width": 202,
+        "height": 234
       },
       "textureId": null,
       "appId": null,
@@ -21795,14 +21429,8 @@
       ],
       "image": {
         "src": "muestras/ldp-flat-wall-panels-black-gold-oficial.webp",
-        "width": 640,
-        "height": 1138,
-        "crop": [
-          64,
-          91,
-          256,
-          205
-        ]
+        "width": 256,
+        "height": 205
       },
       "textureId": null,
       "appId": null,
@@ -21837,14 +21465,8 @@
       ],
       "image": {
         "src": "muestras/ldp-wall-panels-golden-oak-oficial.webp",
-        "width": 1440,
-        "height": 1759,
-        "crop": [
-          1008,
-          897,
-          288,
-          405
-        ]
+        "width": 288,
+        "height": 405
       },
       "textureId": null,
       "appId": null,
@@ -21879,14 +21501,8 @@
       ],
       "image": {
         "src": "muestras/ldp-wall-panels-blanco-ash-oficial.webp",
-        "width": 1440,
-        "height": 1760,
-        "crop": [
-          1008,
-          898,
-          288,
-          405
-        ]
+        "width": 288,
+        "height": 405
       },
       "textureId": null,
       "appId": null,
@@ -21921,14 +21537,8 @@
       ],
       "image": {
         "src": "muestras/ldp-wall-panels-costa-del-sol-oficial.webp",
-        "width": 1440,
-        "height": 1759,
-        "crop": [
-          1008,
-          897,
-          288,
-          405
-        ]
+        "width": 288,
+        "height": 405
       },
       "textureId": null,
       "appId": null,
@@ -21963,14 +21573,8 @@
       ],
       "image": {
         "src": "muestras/ldp-wall-panels-madera-clasica-oficial.webp",
-        "width": 1440,
-        "height": 1760,
-        "crop": [
-          1008,
-          898,
-          288,
-          405
-        ]
+        "width": 288,
+        "height": 405
       },
       "textureId": null,
       "appId": null,
@@ -22005,14 +21609,8 @@
       ],
       "image": {
         "src": "muestras/ldp-wall-panels-ash-wood-oficial.webp",
-        "width": 1440,
-        "height": 1760,
-        "crop": [
-          1008,
-          898,
-          288,
-          405
-        ]
+        "width": 288,
+        "height": 405
       },
       "textureId": null,
       "appId": null,
@@ -22047,14 +21645,8 @@
       ],
       "image": {
         "src": "muestras/ldp-wall-panels-negro-mate-oficial.webp",
-        "width": 1440,
-        "height": 1760,
-        "crop": [
-          1008,
-          898,
-          288,
-          405
-        ]
+        "width": 288,
+        "height": 405
       },
       "textureId": null,
       "appId": null,
@@ -22089,14 +21681,8 @@
       ],
       "image": {
         "src": "muestras/ldp-wall-panels-walnut-oficial.webp",
-        "width": 1440,
-        "height": 1760,
-        "crop": [
-          1008,
-          898,
-          288,
-          405
-        ]
+        "width": 288,
+        "height": 405
       },
       "textureId": null,
       "appId": null,
@@ -22131,14 +21717,8 @@
       ],
       "image": {
         "src": "muestras/ldp-wall-panels-blanco-mate-oficial.webp",
-        "width": 1440,
-        "height": 1759,
-        "crop": [
-          1008,
-          897,
-          288,
-          405
-        ]
+        "width": 288,
+        "height": 405
       },
       "textureId": null,
       "appId": null,
@@ -22173,14 +21753,8 @@
       ],
       "image": {
         "src": "muestras/ldp-wall-panels-aregue-oficial.webp",
-        "width": 1440,
-        "height": 1760,
-        "crop": [
-          1008,
-          898,
-          288,
-          405
-        ]
+        "width": 288,
+        "height": 405
       },
       "textureId": null,
       "appId": null,
@@ -22215,14 +21789,8 @@
       ],
       "image": {
         "src": "muestras/ldp-wall-panels-black-gold-oficial.webp",
-        "width": 1440,
-        "height": 1760,
-        "crop": [
-          1008,
-          898,
-          288,
-          405
-        ]
+        "width": 288,
+        "height": 405
       },
       "textureId": null,
       "appId": null,
@@ -22257,14 +21825,8 @@
       ],
       "image": {
         "src": "muestras/ldp-wall-panels-blanco-gold-oficial.webp",
-        "width": 1440,
-        "height": 1760,
-        "crop": [
-          1008,
-          898,
-          288,
-          405
-        ]
+        "width": 288,
+        "height": 405
       },
       "textureId": null,
       "appId": null,
@@ -22299,14 +21861,8 @@
       ],
       "image": {
         "src": "muestras/ldp-wall-panels-innovation-grey-oficial.webp",
-        "width": 1440,
-        "height": 1760,
-        "crop": [
-          1008,
-          898,
-          288,
-          405
-        ]
+        "width": 288,
+        "height": 405
       },
       "textureId": null,
       "appId": null,
@@ -22341,14 +21897,8 @@
       ],
       "image": {
         "src": "muestras/ldp-wall-panels-blanco-carrara-oficial.webp",
-        "width": 1440,
-        "height": 1760,
-        "crop": [
-          1008,
-          898,
-          288,
-          405
-        ]
+        "width": 288,
+        "height": 405
       },
       "textureId": null,
       "appId": null,
@@ -22383,14 +21933,8 @@
       ],
       "image": {
         "src": "muestras/ldp-wall-panels-gold-premium-oficial.webp",
-        "width": 1440,
-        "height": 1760,
-        "crop": [
-          1008,
-          898,
-          288,
-          405
-        ]
+        "width": 288,
+        "height": 405
       },
       "textureId": null,
       "appId": null,
@@ -22425,14 +21969,8 @@
       ],
       "image": {
         "src": "muestras/ldp-wall-panels-dark-caramel-oficial.webp",
-        "width": 1440,
-        "height": 1760,
-        "crop": [
-          1008,
-          898,
-          288,
-          405
-        ]
+        "width": 288,
+        "height": 405
       },
       "textureId": null,
       "appId": null,
@@ -22467,14 +22005,8 @@
       ],
       "image": {
         "src": "muestras/ldp-wall-panels-dark-oak-oficial.webp",
-        "width": 1080,
-        "height": 1350,
-        "crop": [
-          151,
-          688,
-          194,
-          135
-        ]
+        "width": 194,
+        "height": 135
       },
       "textureId": null,
       "appId": null
@@ -22505,14 +22037,8 @@
       ],
       "image": {
         "src": "muestras/ldp-wall-panels-black-kare-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          288,
-          594,
-          634,
-          810
-        ]
+        "width": 634,
+        "height": 810
       },
       "textureId": null,
       "appId": null
@@ -22543,14 +22069,8 @@
       ],
       "image": {
         "src": "muestras/ldp-wall-panels-nogal-americano-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          662,
-          882,
-          245,
-          360
-        ]
+        "width": 245,
+        "height": 360
       },
       "textureId": null,
       "appId": null
@@ -22581,14 +22101,8 @@
       ],
       "image": {
         "src": "muestras/ldp-wall-panels-blanco-mate-bajo-relieve-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          259,
-          630,
-          893,
-          612
-        ]
+        "width": 893,
+        "height": 612
       },
       "textureId": null,
       "appId": null,
@@ -22623,14 +22137,8 @@
       ],
       "image": {
         "src": "muestras/ldp-wall-panels-pino-claro-bajo-relieve-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          259,
-          630,
-          893,
-          612
-        ]
+        "width": 893,
+        "height": 612
       },
       "textureId": null,
       "appId": null,
@@ -22665,14 +22173,8 @@
       ],
       "image": {
         "src": "muestras/ldp-wall-panels-blanco-carrara-bajo-relieve-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          259,
-          630,
-          893,
-          612
-        ]
+        "width": 893,
+        "height": 612
       },
       "textureId": null,
       "appId": null,
@@ -22707,14 +22209,8 @@
       ],
       "image": {
         "src": "muestras/ldp-wall-panels-black-gold-bajo-relieve-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          259,
-          630,
-          893,
-          612
-        ]
+        "width": 893,
+        "height": 612
       },
       "textureId": null,
       "appId": null,
@@ -22749,14 +22245,8 @@
       ],
       "image": {
         "src": "muestras/ldp-wall-panels-blanco-ash-bajo-relieve-oficial.webp",
-        "width": 1439,
-        "height": 1800,
-        "crop": [
-          259,
-          630,
-          892,
-          612
-        ]
+        "width": 892,
+        "height": 612
       },
       "textureId": null,
       "appId": null,
@@ -22791,14 +22281,8 @@
       ],
       "image": {
         "src": "muestras/ldp-wall-panels-costa-del-sol-bajo-relieve-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          259,
-          630,
-          893,
-          612
-        ]
+        "width": 893,
+        "height": 612
       },
       "textureId": null,
       "appId": null,
@@ -22833,14 +22317,8 @@
       ],
       "image": {
         "src": "muestras/ldp-wall-panels-nogal-americano-bajo-relieve-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          259,
-          630,
-          893,
-          612
-        ]
+        "width": 893,
+        "height": 612
       },
       "textureId": null,
       "appId": null,
@@ -22875,14 +22353,8 @@
       ],
       "image": {
         "src": "muestras/ldp-wall-panels-dark-oak-bajo-relieve-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          259,
-          630,
-          893,
-          612
-        ]
+        "width": 893,
+        "height": 612
       },
       "textureId": null,
       "appId": null,
@@ -22917,14 +22389,8 @@
       ],
       "image": {
         "src": "muestras/ldp-wall-panels-ash-wood-bajo-relieve-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          259,
-          630,
-          893,
-          612
-        ]
+        "width": 893,
+        "height": 612
       },
       "textureId": null,
       "appId": null,
@@ -22959,14 +22425,8 @@
       ],
       "image": {
         "src": "muestras/ldp-wall-panels-dark-brown-exterior-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          317,
-          594,
-          878,
-          702
-        ]
+        "width": 878,
+        "height": 702
       },
       "textureId": null,
       "appId": null
@@ -22997,14 +22457,8 @@
       ],
       "image": {
         "src": "muestras/ldp-wall-panels-canela-exterior-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          317,
-          594,
-          878,
-          702
-        ]
+        "width": 878,
+        "height": 702
       },
       "textureId": null,
       "appId": null
@@ -23035,14 +22489,8 @@
       ],
       "image": {
         "src": "muestras/ldp-vigas-de-pvc-nogal-americano-oficial.webp",
-        "width": 1438,
-        "height": 1800,
-        "crop": [
-          575,
-          648,
-          460,
-          612
-        ]
+        "width": 460,
+        "height": 612
       },
       "textureId": null,
       "appId": null,
@@ -23078,14 +22526,8 @@
       ],
       "image": {
         "src": "muestras/ldp-vigas-de-pvc-costa-del-sol-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          576,
-          648,
-          461,
-          612
-        ]
+        "width": 461,
+        "height": 612
       },
       "textureId": null,
       "appId": null,
@@ -23121,14 +22563,8 @@
       ],
       "image": {
         "src": "muestras/ldp-vigas-de-pvc-madera-clara-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          576,
-          648,
-          461,
-          612
-        ]
+        "width": 461,
+        "height": 612
       },
       "textureId": null,
       "appId": null,
@@ -23164,14 +22600,8 @@
       ],
       "image": {
         "src": "muestras/ldp-vigas-de-pvc-aregue-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          576,
-          648,
-          461,
-          612
-        ]
+        "width": 461,
+        "height": 612
       },
       "textureId": null,
       "appId": null,
@@ -23207,14 +22637,8 @@
       ],
       "image": {
         "src": "muestras/ldp-vigas-de-pvc-ash-wood-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          576,
-          648,
-          461,
-          612
-        ]
+        "width": 461,
+        "height": 612
       },
       "textureId": null,
       "appId": null,
@@ -23250,14 +22674,8 @@
       ],
       "image": {
         "src": "muestras/ldp-vigas-de-pvc-madera-clasica-oficial.webp",
-        "width": 1356,
-        "height": 1800,
-        "crop": [
-          963,
-          1242,
-          68,
-          162
-        ]
+        "width": 68,
+        "height": 162
       },
       "textureId": null,
       "appId": null,
@@ -23293,14 +22711,8 @@
       ],
       "image": {
         "src": "muestras/ldp-laminas-de-pvc-aluminio-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          518,
-          594,
-          490,
-          576
-        ]
+        "width": 490,
+        "height": 576
       },
       "textureId": null,
       "appId": null,
@@ -23335,14 +22747,8 @@
       ],
       "image": {
         "src": "muestras/ldp-laminas-de-pvc-negro-galaxy-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          504,
-          666,
-          518,
-          630
-        ]
+        "width": 518,
+        "height": 630
       },
       "textureId": null,
       "appId": null,
@@ -23377,14 +22783,8 @@
       ],
       "image": {
         "src": "muestras/ldp-laminas-de-pvc-gris-plomo-antracita-oficial.webp",
-        "width": 1152,
-        "height": 1440,
-        "crop": [
-          403,
-          533,
-          415,
-          504
-        ]
+        "width": 415,
+        "height": 504
       },
       "textureId": null,
       "appId": null,
@@ -23419,14 +22819,8 @@
       ],
       "image": {
         "src": "muestras/ldp-laminas-de-pvc-black-mirage-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          533,
-          666,
-          490,
-          630
-        ]
+        "width": 490,
+        "height": 630
       },
       "textureId": null,
       "appId": null,
@@ -23461,14 +22855,8 @@
       ],
       "image": {
         "src": "muestras/ldp-laminas-de-pvc-dark-london-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          504,
-          666,
-          490,
-          612
-        ]
+        "width": 490,
+        "height": 612
       },
       "textureId": null,
       "appId": null,
@@ -23503,14 +22891,8 @@
       ],
       "image": {
         "src": "muestras/ldp-laminas-de-pvc-blanco-ibiza-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          504,
-          666,
-          490,
-          612
-        ]
+        "width": 490,
+        "height": 612
       },
       "textureId": null,
       "appId": null,
@@ -23545,14 +22927,8 @@
       ],
       "image": {
         "src": "muestras/ldp-laminas-de-pvc-blanco-carrara-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          504,
-          666,
-          490,
-          612
-        ]
+        "width": 490,
+        "height": 612
       },
       "textureId": null,
       "appId": null,
@@ -23587,14 +22963,8 @@
       ],
       "image": {
         "src": "muestras/ldp-laminas-de-pvc-blanco-carrara-gold-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          461,
-          612,
-          432,
-          576
-        ]
+        "width": 432,
+        "height": 576
       },
       "textureId": null,
       "appId": null,
@@ -23629,14 +22999,8 @@
       ],
       "image": {
         "src": "muestras/ldp-laminas-de-pvc-grey-gold-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          490,
-          666,
-          490,
-          612
-        ]
+        "width": 490,
+        "height": 612
       },
       "textureId": null,
       "appId": null,
@@ -23671,14 +23035,8 @@
       ],
       "image": {
         "src": "muestras/ldp-laminas-de-pvc-blanco-milano-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          533,
-          720,
-          418,
-          486
-        ]
+        "width": 418,
+        "height": 486
       },
       "textureId": null,
       "appId": null,
@@ -23713,14 +23071,8 @@
       ],
       "image": {
         "src": "muestras/ldp-laminas-de-pvc-negro-marquina-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          1022,
-          270,
-          216,
-          252
-        ]
+        "width": 216,
+        "height": 252
       },
       "textureId": null,
       "appId": null,
@@ -23755,14 +23107,8 @@
       ],
       "image": {
         "src": "muestras/ldp-laminas-de-pvc-beige-travertino-oficial.webp",
-        "width": 429,
-        "height": 466,
-        "crop": [
-          296,
-          116,
-          43,
-          47
-        ]
+        "width": 43,
+        "height": 47
       },
       "textureId": null,
       "appId": null,
@@ -23797,14 +23143,8 @@
       ],
       "image": {
         "src": "muestras/ldp-laminas-de-pvc-blanco-calacatta-oficial.webp",
-        "width": 1080,
-        "height": 1350,
-        "crop": [
-          540,
-          378,
-          130,
-          284
-        ]
+        "width": 130,
+        "height": 284
       },
       "textureId": null,
       "appId": null,
@@ -23839,14 +23179,8 @@
       ],
       "image": {
         "src": "muestras/ldp-laminas-de-pvc-espejo-ccs-style-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          533,
-          738,
-          446,
-          522
-        ]
+        "width": 446,
+        "height": 522
       },
       "textureId": null,
       "appId": null,
@@ -23881,14 +23215,8 @@
       ],
       "image": {
         "src": "muestras/ldp-laminas-de-pvc-espejo-ccs-bronce-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          533,
-          738,
-          446,
-          522
-        ]
+        "width": 446,
+        "height": 522
       },
       "textureId": null,
       "appId": null,
@@ -23923,14 +23251,8 @@
       ],
       "image": {
         "src": "muestras/ldp-laminas-de-pvc-espejo-ccs-gold-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          533,
-          738,
-          446,
-          522
-        ]
+        "width": 446,
+        "height": 522
       },
       "textureId": null,
       "appId": null,
@@ -23965,14 +23287,8 @@
       ],
       "image": {
         "src": "muestras/ldp-laminas-de-pvc-espejo-ccs-mirror-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          533,
-          738,
-          446,
-          522
-        ]
+        "width": 446,
+        "height": 522
       },
       "textureId": null,
       "appId": null,
@@ -24007,14 +23323,8 @@
       ],
       "image": {
         "src": "muestras/ldp-laminas-de-pvc-pvc-espumado-blanco-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          108,
-          54,
-          486,
-          216
-        ]
+        "width": 486,
+        "height": 216
       },
       "textureId": null,
       "appId": null,
@@ -24049,14 +23359,8 @@
       ],
       "image": {
         "src": "muestras/ldp-laminas-de-pvc-blanco-perla-decofilm-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          194,
-          297,
-          108,
-          54
-        ]
+        "width": 108,
+        "height": 54
       },
       "textureId": null,
       "appId": null
@@ -24087,14 +23391,8 @@
       ],
       "image": {
         "src": "muestras/ldp-laminas-de-pvc-azul-jeans-textil-decofilm-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          194,
-          545,
-          108,
-          54
-        ]
+        "width": 108,
+        "height": 54
       },
       "textureId": null,
       "appId": null
@@ -24125,14 +23423,8 @@
       ],
       "image": {
         "src": "muestras/ldp-laminas-de-pvc-blanco-ash-decofilm-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          194,
-          826,
-          108,
-          54
-        ]
+        "width": 108,
+        "height": 54
       },
       "textureId": null,
       "appId": null
@@ -24163,14 +23455,8 @@
       ],
       "image": {
         "src": "muestras/ldp-laminas-de-pvc-gris-plomo-mate-decofilm-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          194,
-          297,
-          108,
-          54
-        ]
+        "width": 108,
+        "height": 54
       },
       "textureId": null,
       "appId": null
@@ -24201,14 +23487,8 @@
       ],
       "image": {
         "src": "muestras/ldp-laminas-de-pvc-negro-mate-decofilm-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          194,
-          556,
-          108,
-          54
-        ]
+        "width": 108,
+        "height": 54
       },
       "textureId": null,
       "appId": null
@@ -24239,14 +23519,8 @@
       ],
       "image": {
         "src": "muestras/ldp-laminas-de-pvc-gris-plomo-astonishing-decofilm-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          194,
-          837,
-          108,
-          54
-        ]
+        "width": 108,
+        "height": 54
       },
       "textureId": null,
       "appId": null
@@ -24277,14 +23551,8 @@
       ],
       "image": {
         "src": "muestras/ldp-laminas-de-pvc-blanco-mate-decofilm-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          724,
-          319,
-          108,
-          54
-        ]
+        "width": 108,
+        "height": 54
       },
       "textureId": null,
       "appId": null
@@ -24315,14 +23583,8 @@
       ],
       "image": {
         "src": "muestras/ldp-laminas-de-pvc-azul-marino-mate-decofilm-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          724,
-          567,
-          108,
-          54
-        ]
+        "width": 108,
+        "height": 54
       },
       "textureId": null,
       "appId": null
@@ -24353,14 +23615,8 @@
       ],
       "image": {
         "src": "muestras/ldp-laminas-de-pvc-blanco-super-mate-decofilm-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          724,
-          837,
-          108,
-          54
-        ]
+        "width": 108,
+        "height": 54
       },
       "textureId": null,
       "appId": null
@@ -24391,14 +23647,8 @@
       ],
       "image": {
         "src": "muestras/ldp-laminas-de-pvc-madera-invernal-decofilm-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          734,
-          578,
-          108,
-          54
-        ]
+        "width": 108,
+        "height": 54
       },
       "textureId": null,
       "appId": null
@@ -24429,14 +23679,8 @@
       ],
       "image": {
         "src": "muestras/ldp-laminas-de-pvc-palisandro-decofilm-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          734,
-          859,
-          108,
-          54
-        ]
+        "width": 108,
+        "height": 54
       },
       "textureId": null,
       "appId": null
@@ -24467,14 +23711,8 @@
       ],
       "image": {
         "src": "muestras/ldp-paneles-autoadhesivos-ladrillo-blanco-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          619,
-          936,
-          317,
-          360
-        ]
+        "width": 317,
+        "height": 360
       },
       "textureId": null,
       "appId": null
@@ -24505,14 +23743,8 @@
       ],
       "image": {
         "src": "muestras/ldp-paneles-autoadhesivos-ladrillo-naranja-oficial.webp",
-        "width": 1080,
-        "height": 1350,
-        "crop": [
-          54,
-          486,
-          216,
-          500
-        ]
+        "width": 216,
+        "height": 500
       },
       "textureId": null,
       "appId": null
@@ -24543,14 +23775,8 @@
       ],
       "image": {
         "src": "muestras/ldp-paneles-autoadhesivos-tapiz-crema-oficial.webp",
-        "width": 1080,
-        "height": 1350,
-        "crop": [
-          216,
-          486,
-          594,
-          472
-        ]
+        "width": 594,
+        "height": 472
       },
       "textureId": null,
       "appId": null
@@ -24581,14 +23807,8 @@
       ],
       "image": {
         "src": "muestras/ldp-compuestos-y-chapillados-compuesto-fenolico-c-plus-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          187,
-          522,
-          518,
-          1008
-        ]
+        "width": 518,
+        "height": 1008
       },
       "textureId": null,
       "appId": null,
@@ -24623,14 +23843,8 @@
       ],
       "image": {
         "src": "muestras/ldp-compuestos-y-chapillados-compuesto-fenolico-c-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          763,
-          522,
-          504,
-          1008
-        ]
+        "width": 504,
+        "height": 1008
       },
       "textureId": null,
       "appId": null,
@@ -24665,14 +23879,8 @@
       ],
       "image": {
         "src": "muestras/ldp-melaminas-grisly-oak-oficial.webp",
-        "width": 1152,
-        "height": 1440,
-        "crop": [
-          380,
-          590,
-          346,
-          504
-        ]
+        "width": 346,
+        "height": 504
       },
       "textureId": null,
       "appId": null,
@@ -24707,14 +23915,8 @@
       ],
       "image": {
         "src": "muestras/ldp-melaminas-velvet-tundra-grey-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          734,
-          792,
-          216,
-          504
-        ]
+        "width": 216,
+        "height": 504
       },
       "textureId": null,
       "appId": null,
@@ -24749,14 +23951,8 @@
       ],
       "image": {
         "src": "muestras/ldp-melaminas-hg-sand-beige-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          734,
-          792,
-          216,
-          504
-        ]
+        "width": 216,
+        "height": 504
       },
       "textureId": null,
       "appId": null,
@@ -24791,14 +23987,8 @@
       ],
       "image": {
         "src": "muestras/ldp-melaminas-hg-bianco-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          734,
-          792,
-          216,
-          504
-        ]
+        "width": 216,
+        "height": 504
       },
       "textureId": null,
       "appId": null,
@@ -24833,14 +24023,8 @@
       ],
       "image": {
         "src": "muestras/ldp-melaminas-hg-light-cappuccino-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          734,
-          792,
-          216,
-          504
-        ]
+        "width": 216,
+        "height": 504
       },
       "textureId": null,
       "appId": null,
@@ -24875,14 +24059,8 @@
       ],
       "image": {
         "src": "muestras/ldp-melaminas-velvet-dust-gray-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          734,
-          792,
-          216,
-          504
-        ]
+        "width": 216,
+        "height": 504
       },
       "textureId": null,
       "appId": null,
@@ -24917,14 +24095,8 @@
       ],
       "image": {
         "src": "muestras/ldp-melaminas-hg-black-oficial.webp",
-        "width": 1440,
-        "height": 1800,
-        "crop": [
-          734,
-          792,
-          216,
-          504
-        ]
+        "width": 216,
+        "height": 504
       },
       "textureId": null,
       "appId": null,
@@ -24959,14 +24131,8 @@
       ],
       "image": {
         "src": "muestras/ldp-melaminas-oro-metalizado-oficial.webp",
-        "width": 1080,
-        "height": 1350,
-        "crop": [
-          551,
-          446,
-          184,
-          446
-        ]
+        "width": 184,
+        "height": 446
       },
       "textureId": null,
       "appId": null,
@@ -25001,14 +24167,8 @@
       ],
       "image": {
         "src": "muestras/ldp-texturas-y-relieves-wengue-4d-oficial.webp",
-        "width": 1080,
-        "height": 1350,
-        "crop": [
-          86,
-          338,
-          130,
-          95
-        ]
+        "width": 130,
+        "height": 95
       },
       "textureId": null,
       "appId": null,
@@ -25043,14 +24203,8 @@
       ],
       "image": {
         "src": "muestras/ldp-maderas-madera-vintage-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          324,
-          54,
-          130,
-          302
-        ]
+        "width": 130,
+        "height": 302
       },
       "textureId": null,
       "appId": null,
@@ -25085,14 +24239,8 @@
       ],
       "image": {
         "src": "muestras/ldp-maderas-conomita-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          648,
-          583,
-          86,
-          97
-        ]
+        "width": 86,
+        "height": 97
       },
       "textureId": null,
       "appId": null,
@@ -25127,14 +24275,8 @@
       ],
       "image": {
         "src": "muestras/ldp-maderas-haya-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          324,
-          475,
-          108,
-          108
-        ]
+        "width": 108,
+        "height": 108
       },
       "textureId": null,
       "appId": null,
@@ -25169,14 +24311,8 @@
       ],
       "image": {
         "src": "muestras/ldp-maderas-roble-oscuro-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          270,
-          832,
-          140,
-          151
-        ]
+        "width": 140,
+        "height": 151
       },
       "textureId": null,
       "appId": null,
@@ -25211,14 +24347,8 @@
       ],
       "image": {
         "src": "muestras/ldp-colores-solidos-gris-cristal-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          648,
-          972,
-          140,
-          38
-        ]
+        "width": 140,
+        "height": 38
       },
       "textureId": null,
       "appId": null,
@@ -25253,14 +24383,8 @@
       ],
       "image": {
         "src": "muestras/ldp-maderas-karela-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          356,
-          97,
-          162,
-          194
-        ]
+        "width": 162,
+        "height": 194
       },
       "textureId": null,
       "appId": null,
@@ -25295,14 +24419,8 @@
       ],
       "image": {
         "src": "muestras/ldp-maderas-wengue-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          400,
-          421,
-          108,
-          162
-        ]
+        "width": 108,
+        "height": 162
       },
       "textureId": null,
       "appId": null,
@@ -25337,14 +24455,8 @@
       ],
       "image": {
         "src": "muestras/ldp-colores-solidos-blanco-galaxy-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          594,
-          32,
-          108,
-          140
-        ]
+        "width": 108,
+        "height": 140
       },
       "textureId": null,
       "appId": null,
@@ -25379,14 +24491,8 @@
       ],
       "image": {
         "src": "muestras/ldp-metales-aluminio-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          540,
-          767,
-          108,
-          162
-        ]
+        "width": 108,
+        "height": 162
       },
       "textureId": null,
       "appId": null,
@@ -25421,14 +24527,8 @@
       ],
       "image": {
         "src": "muestras/ldp-colores-solidos-gris-plomo-mate-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          302,
-          659,
-          108,
-          97
-        ]
+        "width": 108,
+        "height": 97
       },
       "textureId": null,
       "appId": null,
@@ -25463,14 +24563,8 @@
       ],
       "image": {
         "src": "muestras/ldp-laminas-de-pvc-blanco-galaxy-oficial.webp",
-        "width": 1080,
-        "height": 1350,
-        "crop": [
-          162,
-          554,
-          205,
-          176
-        ]
+        "width": 205,
+        "height": 176
       },
       "textureId": null,
       "appId": null,
@@ -25505,14 +24599,8 @@
       ],
       "image": {
         "src": "muestras/ldp-laminas-de-pvc-gris-plomo-galaxy-oficial.webp",
-        "width": 1080,
-        "height": 1350,
-        "crop": [
-          464,
-          540,
-          173,
-          148
-        ]
+        "width": 173,
+        "height": 148
       },
       "textureId": null,
       "appId": null,
@@ -25547,14 +24635,8 @@
       ],
       "image": {
         "src": "muestras/ldp-laminas-de-pvc-blanco-innovation-decofilm-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          756,
-          302,
-          108,
-          59
-        ]
+        "width": 108,
+        "height": 59
       },
       "textureId": null,
       "appId": null
@@ -25585,14 +24667,8 @@
       ],
       "image": {
         "src": "muestras/ldp-melaminas-blanco-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          140,
-          497,
-          216,
-          97
-        ]
+        "width": 216,
+        "height": 97
       },
       "textureId": null,
       "appId": null,
@@ -25627,14 +24703,8 @@
       ],
       "image": {
         "src": "muestras/ldp-melaminas-vinotinto-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          108,
-          335,
-          238,
-          205
-        ]
+        "width": 238,
+        "height": 205
       },
       "textureId": null,
       "appId": null,
@@ -25669,14 +24739,8 @@
       ],
       "image": {
         "src": "muestras/ldp-melaminas-gris-antracita-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          713,
-          324,
-          194,
-          184
-        ]
+        "width": 194,
+        "height": 184
       },
       "textureId": null,
       "appId": null,
@@ -25711,14 +24775,8 @@
       ],
       "image": {
         "src": "muestras/ldp-melaminas-negro-galaxy-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          745,
-          162,
-          205,
-          184
-        ]
+        "width": 205,
+        "height": 184
       },
       "textureId": null,
       "appId": null,
@@ -25753,14 +24811,8 @@
       ],
       "image": {
         "src": "muestras/ldp-melaminas-crema-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          788,
-          832,
-          216,
-          162
-        ]
+        "width": 216,
+        "height": 162
       },
       "textureId": null,
       "appId": null,
@@ -25795,14 +24847,8 @@
       ],
       "image": {
         "src": "muestras/ldp-melaminas-blanco-galaxy-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          670,
-          346,
-          238,
-          184
-        ]
+        "width": 238,
+        "height": 184
       },
       "textureId": null,
       "appId": null,
@@ -25837,14 +24883,8 @@
       ],
       "image": {
         "src": "muestras/ldp-melaminas-acrylic-light-grey-oficial.webp",
-        "width": 1042,
-        "height": 1042,
-        "crop": [
-          31,
-          313,
-          83,
-          177
-        ]
+        "width": 83,
+        "height": 177
       },
       "textureId": null,
       "appId": null,
@@ -25879,14 +24919,8 @@
       ],
       "image": {
         "src": "muestras/ldp-melaminas-acrylic-anthracite-oficial.webp",
-        "width": 1042,
-        "height": 1042,
-        "crop": [
-          584,
-          834,
-          167,
-          78
-        ]
+        "width": 167,
+        "height": 78
       },
       "textureId": null,
       "appId": null,
@@ -25921,14 +24955,8 @@
       ],
       "image": {
         "src": "muestras/ldp-melaminas-acrylic-black-oficial.webp",
-        "width": 1042,
-        "height": 1042,
-        "crop": [
-          375,
-          667,
-          240,
-          167
-        ]
+        "width": 240,
+        "height": 167
       },
       "textureId": null,
       "appId": null,
@@ -25963,14 +24991,8 @@
       ],
       "image": {
         "src": "muestras/ldp-melaminas-acrylic-bordeaux-oficial.webp",
-        "width": 1042,
-        "height": 1042,
-        "crop": [
-          667,
-          698,
-          156,
-          125
-        ]
+        "width": 156,
+        "height": 125
       },
       "textureId": null,
       "appId": null,
@@ -26005,14 +25027,8 @@
       ],
       "image": {
         "src": "muestras/ldp-melaminas-acrylic-project-white-oficial.webp",
-        "width": 1042,
-        "height": 1042,
-        "crop": [
-          740,
-          386,
-          104,
-          63
-        ]
+        "width": 104,
+        "height": 63
       },
       "textureId": null,
       "appId": null,
@@ -26047,14 +25063,8 @@
       ],
       "image": {
         "src": "muestras/ldp-mdf-mdf-crudo-oficial.webp",
-        "width": 1080,
-        "height": 1080,
-        "crop": [
-          292,
-          734,
-          281,
-          86
-        ]
+        "width": 281,
+        "height": 86
       },
       "textureId": null,
       "appId": null
