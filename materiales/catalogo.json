@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-12",
+  "updated": "2026-10-13",
   "categories": [
     {
       "id": "maderas",
@@ -10049,657 +10049,6 @@
       }
     },
     {
-      "id": "pertech-3171-sa",
-      "category": "laminados",
-      "name": "Palazzo",
-      "family": "Piedras y minerales",
-      "brand": "Pertech",
-      "supplier": "Ferrofasil (marca; confirmar diseño)",
-      "code": "PP 3171",
-      "finish": "SA Spatolatto",
-      "description": "Lámina decorativa HPL que se aplica sobre un soporte. Este diseño se consulta con su código y acabado de marca.",
-      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
-      "care": "El relieve, el brillo y el color se confirman con una muestra física. Un HPL no es una melamina de tablero.",
-      "market": "Brasil · catálogo 2026-2027",
-      "international": true,
-      "availability": "Diseño y existencias por confirmar",
-      "imageKind": "Detalle de la muestra impresa en el catálogo PDF",
-      "imageNote": "Detalle de la muestra impresa en el catálogo PDF. Los derechos de marca e imagen pertenecen a su titular.",
-      "sourceLinks": [
-        {
-          "label": "Ficha o catálogo de referencia",
-          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=3"
-        }
-      ],
-      "appId": null,
-      "textureId": null,
-      "image": {
-        "src": "muestras/pertech-3171-sa.webp",
-        "width": 280,
-        "height": 394
-      }
-    },
-    {
-      "id": "pertech-5859-sa",
-      "category": "laminados",
-      "name": "Mármore Carrara",
-      "family": "Piedras y minerales",
-      "brand": "Pertech",
-      "supplier": "Ferrofasil (marca; confirmar diseño)",
-      "code": "PP 5859",
-      "finish": "SA Spatolatto",
-      "description": "Lámina decorativa HPL que se aplica sobre un soporte. Este diseño se consulta con su código y acabado de marca.",
-      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
-      "care": "El relieve, el brillo y el color se confirman con una muestra física. Un HPL no es una melamina de tablero.",
-      "market": "Brasil · catálogo 2026-2027",
-      "international": true,
-      "availability": "Diseño y existencias por confirmar",
-      "imageKind": "Detalle de la muestra impresa en el catálogo PDF",
-      "imageNote": "Detalle de la muestra impresa en el catálogo PDF. Los derechos de marca e imagen pertenecen a su titular.",
-      "sourceLinks": [
-        {
-          "label": "Ficha o catálogo de referencia",
-          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=3"
-        }
-      ],
-      "appId": null,
-      "textureId": null,
-      "image": {
-        "src": "muestras/pertech-5859-sa.webp",
-        "width": 220,
-        "height": 276
-      }
-    },
-    {
-      "id": "pertech-5978-sa",
-      "category": "laminados",
-      "name": "Calacata Bronze",
-      "family": "Piedras y minerales",
-      "brand": "Pertech",
-      "supplier": "Ferrofasil (marca; confirmar diseño)",
-      "code": "PP 5978",
-      "finish": "SA Spatolatto",
-      "description": "Lámina decorativa HPL que se aplica sobre un soporte. Este diseño se consulta con su código y acabado de marca.",
-      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
-      "care": "El relieve, el brillo y el color se confirman con una muestra física. Un HPL no es una melamina de tablero.",
-      "market": "Brasil · catálogo 2026-2027",
-      "international": true,
-      "availability": "Diseño y existencias por confirmar",
-      "imageKind": "Detalle de la muestra impresa en el catálogo PDF",
-      "imageNote": "Detalle de la muestra impresa en el catálogo PDF. Los derechos de marca e imagen pertenecen a su titular.",
-      "sourceLinks": [
-        {
-          "label": "Ficha o catálogo de referencia",
-          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=3"
-        }
-      ],
-      "appId": null,
-      "textureId": null,
-      "image": {
-        "src": "muestras/pertech-5978-sa.webp",
-        "width": 220,
-        "height": 280
-      }
-    },
-    {
-      "id": "pertech-5983-sa",
-      "category": "laminados",
-      "name": "Millenia",
-      "family": "Piedras y minerales",
-      "brand": "Pertech",
-      "supplier": "Ferrofasil (marca; confirmar diseño)",
-      "code": "PP 5983",
-      "finish": "SA Spatolatto",
-      "description": "Lámina decorativa HPL que se aplica sobre un soporte. Este diseño se consulta con su código y acabado de marca.",
-      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
-      "care": "El relieve, el brillo y el color se confirman con una muestra física. Un HPL no es una melamina de tablero.",
-      "market": "Brasil · catálogo 2026-2027",
-      "international": true,
-      "availability": "Diseño y existencias por confirmar",
-      "imageKind": "Detalle de la muestra impresa en el catálogo PDF",
-      "imageNote": "Detalle de la muestra impresa en el catálogo PDF. Los derechos de marca e imagen pertenecen a su titular.",
-      "sourceLinks": [
-        {
-          "label": "Ficha o catálogo de referencia",
-          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=3"
-        }
-      ],
-      "appId": null,
-      "textureId": null,
-      "image": {
-        "src": "muestras/pertech-5983-sa.webp",
-        "width": 220,
-        "height": 280
-      }
-    },
-    {
-      "id": "pertech-5986-sa",
-      "category": "laminados",
-      "name": "Concrete Beige",
-      "family": "Piedras y minerales",
-      "brand": "Pertech",
-      "supplier": "Ferrofasil (marca; confirmar diseño)",
-      "code": "PP 5986",
-      "finish": "SA Spatolatto",
-      "description": "Lámina decorativa HPL que se aplica sobre un soporte. Este diseño se consulta con su código y acabado de marca.",
-      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
-      "care": "El relieve, el brillo y el color se confirman con una muestra física. Un HPL no es una melamina de tablero.",
-      "market": "Brasil · catálogo 2026-2027",
-      "international": true,
-      "availability": "Diseño y existencias por confirmar",
-      "imageKind": "Detalle de la muestra impresa en el catálogo PDF",
-      "imageNote": "Detalle de la muestra impresa en el catálogo PDF. Los derechos de marca e imagen pertenecen a su titular.",
-      "sourceLinks": [
-        {
-          "label": "Ficha o catálogo de referencia",
-          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=3"
-        }
-      ],
-      "appId": null,
-      "textureId": null,
-      "image": {
-        "src": "muestras/pertech-5986-sa.webp",
-        "width": 164,
-        "height": 218
-      }
-    },
-    {
-      "id": "pertech-3124-sa",
-      "category": "laminados",
-      "name": "Urban Concrete",
-      "family": "Piedras y minerales",
-      "brand": "Pertech",
-      "supplier": "Ferrofasil (marca; confirmar diseño)",
-      "code": "PP 3124",
-      "finish": "SA Spatolatto",
-      "description": "Lámina decorativa HPL que se aplica sobre un soporte. Este diseño se consulta con su código y acabado de marca.",
-      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
-      "care": "El relieve, el brillo y el color se confirman con una muestra física. Un HPL no es una melamina de tablero.",
-      "market": "Brasil · catálogo 2026-2027",
-      "international": true,
-      "availability": "Diseño y existencias por confirmar",
-      "imageKind": "Detalle de la muestra impresa en el catálogo PDF",
-      "imageNote": "Detalle de la muestra impresa en el catálogo PDF. Los derechos de marca e imagen pertenecen a su titular.",
-      "sourceLinks": [
-        {
-          "label": "Ficha o catálogo de referencia",
-          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=3"
-        }
-      ],
-      "appId": null,
-      "textureId": null,
-      "image": {
-        "src": "muestras/pertech-3124-sa.webp",
-        "width": 164,
-        "height": 218
-      }
-    },
-    {
-      "id": "pertech-7848-lg",
-      "category": "laminados",
-      "name": "Italian Oak",
-      "family": "Maderas",
-      "brand": "Pertech",
-      "supplier": "Ferrofasil (marca; confirmar diseño)",
-      "code": "PP 7848",
-      "finish": "LG Legno",
-      "description": "Lámina decorativa HPL que se aplica sobre un soporte. Este diseño se consulta con su código y acabado de marca.",
-      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
-      "care": "El relieve, el brillo y el color se confirman con una muestra física. Un HPL no es una melamina de tablero.",
-      "market": "Brasil · catálogo 2026-2027",
-      "international": true,
-      "availability": "Diseño y existencias por confirmar",
-      "imageKind": "Detalle de la muestra impresa en el catálogo PDF",
-      "imageNote": "Detalle de la muestra impresa en el catálogo PDF. Los derechos de marca e imagen pertenecen a su titular.",
-      "sourceLinks": [
-        {
-          "label": "Ficha o catálogo de referencia",
-          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=4"
-        }
-      ],
-      "appId": null,
-      "textureId": null,
-      "image": {
-        "src": "muestras/pertech-7848-lg.webp",
-        "width": 284,
-        "height": 406
-      }
-    },
-    {
-      "id": "pertech-7983-up",
-      "category": "laminados",
-      "name": "Saint Tropez",
-      "family": "Maderas",
-      "brand": "Pertech",
-      "supplier": "Ferrofasil (marca; confirmar diseño)",
-      "code": "PP 7983",
-      "finish": "UP Ultra Poro",
-      "description": "Lámina decorativa HPL que se aplica sobre un soporte. Este diseño se consulta con su código y acabado de marca.",
-      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
-      "care": "El relieve, el brillo y el color se confirman con una muestra física. Un HPL no es una melamina de tablero.",
-      "market": "Brasil · catálogo 2026-2027",
-      "international": true,
-      "availability": "Diseño y existencias por confirmar",
-      "imageKind": "Detalle de la muestra impresa en el catálogo PDF",
-      "imageNote": "Detalle de la muestra impresa en el catálogo PDF. Los derechos de marca e imagen pertenecen a su titular.",
-      "sourceLinks": [
-        {
-          "label": "Ficha o catálogo de referencia",
-          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=4"
-        }
-      ],
-      "appId": null,
-      "textureId": null,
-      "image": {
-        "src": "muestras/pertech-7983-up.webp",
-        "width": 286,
-        "height": 404
-      }
-    },
-    {
-      "id": "pertech-7971-lg",
-      "category": "laminados",
-      "name": "American Oak",
-      "family": "Maderas",
-      "brand": "Pertech",
-      "supplier": "Ferrofasil (marca; confirmar diseño)",
-      "code": "PP 7971",
-      "finish": "LG Legno",
-      "description": "Lámina decorativa HPL que se aplica sobre un soporte. Este diseño se consulta con su código y acabado de marca.",
-      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
-      "care": "El relieve, el brillo y el color se confirman con una muestra física. Un HPL no es una melamina de tablero.",
-      "market": "Brasil · catálogo 2026-2027",
-      "international": true,
-      "availability": "Diseño y existencias por confirmar",
-      "imageKind": "Detalle de la muestra impresa en el catálogo PDF",
-      "imageNote": "Detalle de la muestra impresa en el catálogo PDF. Los derechos de marca e imagen pertenecen a su titular.",
-      "sourceLinks": [
-        {
-          "label": "Ficha o catálogo de referencia",
-          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=5"
-        }
-      ],
-      "appId": null,
-      "textureId": null,
-      "image": {
-        "src": "muestras/pertech-7971-lg.webp",
-        "width": 220,
-        "height": 280
-      }
-    },
-    {
-      "id": "pertech-7989-up",
-      "category": "laminados",
-      "name": "Century Oak",
-      "family": "Maderas",
-      "brand": "Pertech",
-      "supplier": "Ferrofasil (marca; confirmar diseño)",
-      "code": "PP 7989",
-      "finish": "UP Ultra Poro",
-      "description": "Lámina decorativa HPL que se aplica sobre un soporte. Este diseño se consulta con su código y acabado de marca.",
-      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
-      "care": "El relieve, el brillo y el color se confirman con una muestra física. Un HPL no es una melamina de tablero.",
-      "market": "Brasil · catálogo 2026-2027",
-      "international": true,
-      "availability": "Diseño y existencias por confirmar",
-      "imageKind": "Detalle de la muestra impresa en el catálogo PDF",
-      "imageNote": "Detalle de la muestra impresa en el catálogo PDF. Los derechos de marca e imagen pertenecen a su titular.",
-      "sourceLinks": [
-        {
-          "label": "Ficha o catálogo de referencia",
-          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=5"
-        }
-      ],
-      "appId": null,
-      "textureId": null,
-      "image": {
-        "src": "muestras/pertech-7989-up.webp",
-        "width": 278,
-        "height": 394
-      }
-    },
-    {
-      "id": "pertech-1565-sm",
-      "category": "laminados",
-      "name": "Sahara",
-      "family": "Maderas",
-      "brand": "Pertech",
-      "supplier": "Ferrofasil (marca; confirmar diseño)",
-      "code": "PP 1565",
-      "finish": "SM Super Matte",
-      "description": "Lámina decorativa HPL que se aplica sobre un soporte. Este diseño se consulta con su código y acabado de marca.",
-      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
-      "care": "El relieve, el brillo y el color se confirman con una muestra física. Un HPL no es una melamina de tablero.",
-      "market": "Brasil · catálogo 2026-2027",
-      "international": true,
-      "availability": "Diseño y existencias por confirmar",
-      "imageKind": "Detalle de la muestra impresa en el catálogo PDF",
-      "imageNote": "Detalle de la muestra impresa en el catálogo PDF. Los derechos de marca e imagen pertenecen a su titular.",
-      "sourceLinks": [
-        {
-          "label": "Ficha o catálogo de referencia",
-          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=5"
-        }
-      ],
-      "appId": null,
-      "textureId": null,
-      "image": {
-        "src": "muestras/pertech-1565-sm.webp",
-        "width": 278,
-        "height": 394
-      }
-    },
-    {
-      "id": "pertech-7948-sm",
-      "category": "laminados",
-      "name": "Nogal Terracota",
-      "family": "Maderas",
-      "brand": "Pertech",
-      "supplier": "Ferrofasil (marca; confirmar diseño)",
-      "code": "PP 7948",
-      "finish": "SM Super Matte",
-      "description": "Lámina decorativa HPL que se aplica sobre un soporte. Este diseño se consulta con su código y acabado de marca.",
-      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
-      "care": "El relieve, el brillo y el color se confirman con una muestra física. Un HPL no es una melamina de tablero.",
-      "market": "Brasil · catálogo 2026-2027",
-      "international": true,
-      "availability": "Diseño y existencias por confirmar",
-      "imageKind": "Detalle de la muestra impresa en el catálogo PDF",
-      "imageNote": "Detalle de la muestra impresa en el catálogo PDF. Los derechos de marca e imagen pertenecen a su titular.",
-      "sourceLinks": [
-        {
-          "label": "Ficha o catálogo de referencia",
-          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=6"
-        }
-      ],
-      "appId": null,
-      "textureId": null,
-      "image": {
-        "src": "muestras/pertech-7948-sm.webp",
-        "width": 286,
-        "height": 404
-      }
-    },
-    {
-      "id": "pertech-7973-mc",
-      "category": "laminados",
-      "name": "Walnut Minnesota",
-      "family": "Maderas",
-      "brand": "Pertech",
-      "supplier": "Ferrofasil (marca; confirmar diseño)",
-      "code": "PP 7973",
-      "finish": "MC Marcatto",
-      "description": "Lámina decorativa HPL que se aplica sobre un soporte. Este diseño se consulta con su código y acabado de marca.",
-      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
-      "care": "El relieve, el brillo y el color se confirman con una muestra física. Un HPL no es una melamina de tablero.",
-      "market": "Brasil · catálogo 2026-2027",
-      "international": true,
-      "availability": "Diseño y existencias por confirmar",
-      "imageKind": "Detalle de la muestra impresa en el catálogo PDF",
-      "imageNote": "Detalle de la muestra impresa en el catálogo PDF. Los derechos de marca e imagen pertenecen a su titular.",
-      "sourceLinks": [
-        {
-          "label": "Ficha o catálogo de referencia",
-          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=6"
-        }
-      ],
-      "appId": null,
-      "textureId": null,
-      "image": {
-        "src": "muestras/pertech-7973-mc.webp",
-        "width": 286,
-        "height": 404
-      }
-    },
-    {
-      "id": "pertech-1979-sm",
-      "category": "laminados",
-      "name": "Taupe",
-      "family": "Colores sólidos",
-      "brand": "Pertech",
-      "supplier": "Ferrofasil (marca; confirmar diseño)",
-      "code": "PP 1979",
-      "finish": "SM Super Matte",
-      "description": "Lámina decorativa HPL que se aplica sobre un soporte. Este diseño se consulta con su código y acabado de marca.",
-      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
-      "care": "El relieve, el brillo y el color se confirman con una muestra física. Un HPL no es una melamina de tablero.",
-      "market": "Brasil · catálogo 2026-2027",
-      "international": true,
-      "availability": "Diseño y existencias por confirmar",
-      "imageKind": "Detalle de la muestra impresa en el catálogo PDF",
-      "imageNote": "Detalle de la muestra impresa en el catálogo PDF. Los derechos de marca e imagen pertenecen a su titular.",
-      "sourceLinks": [
-        {
-          "label": "Ficha o catálogo de referencia",
-          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=12"
-        }
-      ],
-      "appId": null,
-      "textureId": null,
-      "image": {
-        "src": "muestras/pertech-1979-sm.webp",
-        "width": 166,
-        "height": 224
-      }
-    },
-    {
-      "id": "pertech-26-tx",
-      "category": "laminados",
-      "name": "Almond",
-      "family": "Colores sólidos",
-      "brand": "Pertech",
-      "supplier": "Ferrofasil (marca; confirmar diseño)",
-      "code": "PP 26",
-      "finish": "TX Texturizado",
-      "description": "Lámina decorativa HPL que se aplica sobre un soporte. Este diseño se consulta con su código y acabado de marca.",
-      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
-      "care": "El relieve, el brillo y el color se confirman con una muestra física. Un HPL no es una melamina de tablero.",
-      "market": "Brasil · catálogo 2026-2027",
-      "international": true,
-      "availability": "Diseño y existencias por confirmar",
-      "imageKind": "Detalle de la muestra impresa en el catálogo PDF",
-      "imageNote": "Detalle de la muestra impresa en el catálogo PDF. Los derechos de marca e imagen pertenecen a su titular.",
-      "sourceLinks": [
-        {
-          "label": "Ficha o catálogo de referencia",
-          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=12"
-        }
-      ],
-      "appId": null,
-      "textureId": null,
-      "image": {
-        "src": "muestras/pertech-26-tx.webp",
-        "width": 166,
-        "height": 224
-      }
-    },
-    {
-      "id": "pertech-3727-cr",
-      "category": "laminados",
-      "name": "Atacama",
-      "family": "Colores sólidos",
-      "brand": "Pertech",
-      "supplier": "Ferrofasil (marca; confirmar diseño)",
-      "code": "PP 3727",
-      "finish": "CR Couro",
-      "description": "Lámina decorativa HPL que se aplica sobre un soporte. Este diseño se consulta con su código y acabado de marca.",
-      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
-      "care": "El relieve, el brillo y el color se confirman con una muestra física. Un HPL no es una melamina de tablero.",
-      "market": "Brasil · catálogo 2026-2027",
-      "international": true,
-      "availability": "Diseño y existencias por confirmar",
-      "imageKind": "Detalle de la muestra impresa en el catálogo PDF",
-      "imageNote": "Detalle de la muestra impresa en el catálogo PDF. Los derechos de marca e imagen pertenecen a su titular.",
-      "sourceLinks": [
-        {
-          "label": "Ficha o catálogo de referencia",
-          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=12"
-        }
-      ],
-      "appId": null,
-      "textureId": null,
-      "image": {
-        "src": "muestras/pertech-3727-cr.webp",
-        "width": 166,
-        "height": 224
-      }
-    },
-    {
-      "id": "pertech-3731-tx",
-      "category": "laminados",
-      "name": "Brick",
-      "family": "Colores sólidos",
-      "brand": "Pertech",
-      "supplier": "Ferrofasil (marca; confirmar diseño)",
-      "code": "PP 3731",
-      "finish": "TX Texturizado",
-      "description": "Lámina decorativa HPL que se aplica sobre un soporte. Este diseño se consulta con su código y acabado de marca.",
-      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
-      "care": "El relieve, el brillo y el color se confirman con una muestra física. Un HPL no es una melamina de tablero.",
-      "market": "Brasil · catálogo 2026-2027",
-      "international": true,
-      "availability": "Diseño y existencias por confirmar",
-      "imageKind": "Detalle de la muestra impresa en el catálogo PDF",
-      "imageNote": "Detalle de la muestra impresa en el catálogo PDF. Los derechos de marca e imagen pertenecen a su titular.",
-      "sourceLinks": [
-        {
-          "label": "Ficha o catálogo de referencia",
-          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=12"
-        }
-      ],
-      "appId": null,
-      "textureId": null,
-      "image": {
-        "src": "muestras/pertech-3731-tx.webp",
-        "width": 166,
-        "height": 224
-      }
-    },
-    {
-      "id": "pertech-2325-sm",
-      "category": "laminados",
-      "name": "Bonsai",
-      "family": "Colores sólidos",
-      "brand": "Pertech",
-      "supplier": "Ferrofasil (marca; confirmar diseño)",
-      "code": "PP 2325",
-      "finish": "SM Super Matte",
-      "description": "Lámina decorativa HPL que se aplica sobre un soporte. Este diseño se consulta con su código y acabado de marca.",
-      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
-      "care": "El relieve, el brillo y el color se confirman con una muestra física. Un HPL no es una melamina de tablero.",
-      "market": "Brasil · catálogo 2026-2027",
-      "international": true,
-      "availability": "Diseño y existencias por confirmar",
-      "imageKind": "Detalle de la muestra impresa en el catálogo PDF",
-      "imageNote": "Detalle de la muestra impresa en el catálogo PDF. Los derechos de marca e imagen pertenecen a su titular.",
-      "sourceLinks": [
-        {
-          "label": "Ficha o catálogo de referencia",
-          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=12"
-        }
-      ],
-      "appId": null,
-      "textureId": null,
-      "image": {
-        "src": "muestras/pertech-2325-sm.webp",
-        "width": 166,
-        "height": 224
-      }
-    },
-    {
-      "id": "pertech-96-tx",
-      "category": "laminados",
-      "name": "Ovo",
-      "family": "Colores sólidos",
-      "brand": "Pertech",
-      "supplier": "Ferrofasil (marca; confirmar diseño)",
-      "code": "PP 96",
-      "finish": "TX Texturizado",
-      "description": "Lámina decorativa HPL que se aplica sobre un soporte. Este diseño se consulta con su código y acabado de marca.",
-      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
-      "care": "El relieve, el brillo y el color se confirman con una muestra física. Un HPL no es una melamina de tablero.",
-      "market": "Brasil · catálogo 2026-2027",
-      "international": true,
-      "availability": "Diseño y existencias por confirmar",
-      "imageKind": "Detalle de la muestra impresa en el catálogo PDF",
-      "imageNote": "Detalle de la muestra impresa en el catálogo PDF. Los derechos de marca e imagen pertenecen a su titular.",
-      "sourceLinks": [
-        {
-          "label": "Ficha o catálogo de referencia",
-          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=13"
-        }
-      ],
-      "appId": null,
-      "textureId": null,
-      "image": {
-        "src": "muestras/pertech-96-tx.webp",
-        "width": 160,
-        "height": 220
-      }
-    },
-    {
-      "id": "pertech-98-tx",
-      "category": "laminados",
-      "name": "Marfim",
-      "family": "Colores sólidos",
-      "brand": "Pertech",
-      "supplier": "Ferrofasil (marca; confirmar diseño)",
-      "code": "PP 98",
-      "finish": "TX Texturizado",
-      "description": "Lámina decorativa HPL que se aplica sobre un soporte. Este diseño se consulta con su código y acabado de marca.",
-      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
-      "care": "El relieve, el brillo y el color se confirman con una muestra física. Un HPL no es una melamina de tablero.",
-      "market": "Brasil · catálogo 2026-2027",
-      "international": true,
-      "availability": "Diseño y existencias por confirmar",
-      "imageKind": "Detalle de la muestra impresa en el catálogo PDF",
-      "imageNote": "Detalle de la muestra impresa en el catálogo PDF. Los derechos de marca e imagen pertenecen a su titular.",
-      "sourceLinks": [
-        {
-          "label": "Ficha o catálogo de referencia",
-          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=13"
-        }
-      ],
-      "appId": null,
-      "textureId": null,
-      "image": {
-        "src": "muestras/pertech-98-tx.webp",
-        "width": 162,
-        "height": 220
-      }
-    },
-    {
-      "id": "pertech-40-tx",
-      "category": "laminados",
-      "name": "Branco Neve",
-      "family": "Colores sólidos",
-      "brand": "Pertech",
-      "supplier": "Ferrofasil (marca; confirmar diseño)",
-      "code": "PP 40",
-      "finish": "TX Texturizado",
-      "description": "Lámina decorativa HPL que se aplica sobre un soporte. Este diseño se consulta con su código y acabado de marca.",
-      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
-      "care": "El relieve, el brillo y el color se confirman con una muestra física. Un HPL no es una melamina de tablero.",
-      "market": "Brasil · catálogo 2026-2027",
-      "international": true,
-      "availability": "Diseño y existencias por confirmar",
-      "imageKind": "Detalle de la muestra impresa en el catálogo PDF",
-      "imageNote": "Detalle de la muestra impresa en el catálogo PDF. Los derechos de marca e imagen pertenecen a su titular.",
-      "sourceLinks": [
-        {
-          "label": "Ficha o catálogo de referencia",
-          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=13"
-        }
-      ],
-      "appId": null,
-      "textureId": null,
-      "image": {
-        "src": "muestras/pertech-40-tx.webp",
-        "width": 162,
-        "height": 220
-      }
-    },
-    {
       "id": "greenlam-sanganer-sm",
       "category": "laminados",
       "name": "Sanganer Terracota",
@@ -17718,6 +17067,2144 @@
         "srcset": "muestras/agt-878-oficial-640.webp 640w, muestras/agt-878-oficial.webp 682w",
         "width": 682,
         "height": 682
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-6134",
+      "category": "laminados",
+      "name": "Metallic",
+      "family": "Metales",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 6134",
+      "finish": "Texturizado (TX)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/ConaXtMuZu3/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=9"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-6134-ferrofasil.webp",
+        "width": 756,
+        "height": 756,
+        "srcset": "muestras/pertech-ferrofasil-6134-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-6134-ferrofasil.webp 756w"
+      }
+    },
+    {
+      "id": "pertech-5983-sa",
+      "category": "laminados",
+      "name": "Millenia",
+      "family": "Piedras y minerales",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 5983",
+      "finish": "Spatolato (SA)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/ConaLnXuAgj/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=3"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-5983-sa-ferrofasil.webp",
+        "width": 756,
+        "height": 756,
+        "srcset": "muestras/pertech-5983-sa-ferrofasil-420.webp 420w, muestras/pertech-5983-sa-ferrofasil.webp 756w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-7959",
+      "category": "laminados",
+      "name": "Wengue",
+      "family": "Maderas",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 7959",
+      "finish": "Rajada (RA)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/ConZ3Wqu2S6/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=7"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-7959-ferrofasil.webp",
+        "width": 756,
+        "height": 756,
+        "srcset": "muestras/pertech-ferrofasil-7959-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-7959-ferrofasil.webp 756w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-7922",
+      "category": "laminados",
+      "name": "Chang",
+      "family": "Maderas",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 7922",
+      "finish": "Rajado (RA)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/ConZmD7uZW9/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=4"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-7922-ferrofasil.webp",
+        "width": 756,
+        "height": 756,
+        "srcset": "muestras/pertech-ferrofasil-7922-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-7922-ferrofasil.webp 756w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-3741",
+      "category": "laminados",
+      "name": "Onix",
+      "family": "Colores sólidos",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 3741",
+      "finish": "Brillo (BR)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/ConZbEvO0UF/"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-3741-ferrofasil.webp",
+        "width": 756,
+        "height": 756,
+        "srcset": "muestras/pertech-ferrofasil-3741-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-3741-ferrofasil.webp 756w"
+      }
+    },
+    {
+      "id": "pertech-7948-sm",
+      "category": "laminados",
+      "name": "Nogal Terracota",
+      "family": "Maderas",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 7948",
+      "finish": "Brillo (B) · Ultra poroso (UP)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/ConZQY_u93s/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=6"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-7948-sm-ferrofasil.webp",
+        "width": 756,
+        "height": 756,
+        "srcset": "muestras/pertech-7948-sm-ferrofasil-420.webp 420w, muestras/pertech-7948-sm-ferrofasil.webp 756w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-7268",
+      "category": "laminados",
+      "name": "Carvalho Mel",
+      "family": "Maderas",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 7268",
+      "finish": "Rajada (RA)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales. La ficha individual escribe PP 7269. La composición y Brasil identifican Carvalho Mel como PP 7268; PP 7269 corresponde a Carvalho Milano.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/ConYk2cuiLW/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=5"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-7268-ferrofasil.webp",
+        "width": 756,
+        "height": 756,
+        "srcset": "muestras/pertech-ferrofasil-7268-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-7268-ferrofasil.webp 756w"
+      }
+    },
+    {
+      "id": "pertech-7971-lg",
+      "category": "laminados",
+      "name": "American Oak",
+      "family": "Maderas",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 7971",
+      "finish": "Legno (LG)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/ConSeM0uYLx/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=5"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-7971-lg-ferrofasil.webp",
+        "width": 756,
+        "height": 756,
+        "srcset": "muestras/pertech-7971-lg-ferrofasil-420.webp 420w, muestras/pertech-7971-lg-ferrofasil.webp 756w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-100",
+      "category": "laminados",
+      "name": "Ultra Blanco",
+      "family": "Colores sólidos",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 100",
+      "finish": "AB - Alto brillo",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/ConCCApOgZf/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=13"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-100-ferrofasil.webp",
+        "width": 756,
+        "height": 756,
+        "srcset": "muestras/pertech-ferrofasil-100-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-100-ferrofasil.webp 756w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-56",
+      "category": "laminados",
+      "name": "Grafite",
+      "family": "Colores sólidos",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 56",
+      "finish": "SM - Super Mate · B - Brillo · CR (rotulado en composición)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales. La ficha individual anuncia SM y B; la composición rotula Grafite-CR. Se registran las tres opciones con fuentes distintas.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/ConBxhpO9y_/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=12"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-56-ferrofasil.webp",
+        "width": 756,
+        "height": 756,
+        "srcset": "muestras/pertech-ferrofasil-56-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-56-ferrofasil.webp 756w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-6060",
+      "category": "laminados",
+      "name": "Mineral Steel",
+      "family": "Metales",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 6060",
+      "finish": "TX- Texturizado",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/ConBa89uqET/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=9"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-6060-ferrofasil.webp",
+        "width": 756,
+        "height": 756,
+        "srcset": "muestras/pertech-ferrofasil-6060-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-6060-ferrofasil.webp 756w"
+      }
+    },
+    {
+      "id": "pertech-5978-sa",
+      "category": "laminados",
+      "name": "Calacata Bronze",
+      "family": "Piedras y minerales",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 5978",
+      "finish": "Spatolato · código por confirmar / Brillo",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales. Ferrofasil escribe SP para Spatolato; Brasil usa SA. Conservar el acabado anunciado y confirmar el código antes de comprar.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/ConA_S8uqJP/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=3"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-5978-sa-ferrofasil.webp",
+        "width": 756,
+        "height": 756,
+        "srcset": "muestras/pertech-5978-sa-ferrofasil-420.webp 420w, muestras/pertech-5978-sa-ferrofasil.webp 756w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-7919",
+      "category": "laminados",
+      "name": "Teca",
+      "family": "Maderas",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 7919",
+      "finish": "LG",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/Cc1kKWEs4SS/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=4"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-7919-ferrofasil.webp",
+        "width": 756,
+        "height": 756,
+        "srcset": "muestras/pertech-ferrofasil-7919-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-7919-ferrofasil.webp 756w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-6035",
+      "category": "laminados",
+      "name": "Oxid Moro",
+      "family": "Metales",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 6035",
+      "finish": "SA",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/Cc1kJJHMRIq/"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-6035-ferrofasil.webp",
+        "width": 756,
+        "height": 756,
+        "srcset": "muestras/pertech-ferrofasil-6035-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-6035-ferrofasil.webp 756w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-5979",
+      "category": "laminados",
+      "name": "Nero Supreme",
+      "family": "Piedras y minerales",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 5979",
+      "finish": "Spatolato / Súper mate · código por confirmar",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales. La ficha atribuye SM tanto a Spatolato como a Súper mate. Acabados publicados con contradicción; no resolverla por suposición.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/Cc1i-zzsmVl/"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-5979-ferrofasil.webp",
+        "width": 756,
+        "height": 756,
+        "srcset": "muestras/pertech-ferrofasil-5979-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-5979-ferrofasil.webp 756w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-5862",
+      "category": "laminados",
+      "name": "Domus",
+      "family": "Piedras y minerales",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 5862",
+      "finish": "BR",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/Cc1isxQMbMK/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=3"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-5862-ferrofasil.webp",
+        "width": 756,
+        "height": 756,
+        "srcset": "muestras/pertech-ferrofasil-5862-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-5862-ferrofasil.webp 756w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-5985",
+      "category": "laminados",
+      "name": "Concrete Gray",
+      "family": "Piedras y minerales",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 5985",
+      "finish": "SA",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/Cc1ieD3sI7k/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=3"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-5985-ferrofasil.webp",
+        "width": 756,
+        "height": 756,
+        "srcset": "muestras/pertech-ferrofasil-5985-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-5985-ferrofasil.webp 756w"
+      }
+    },
+    {
+      "id": "pertech-5986-sa",
+      "category": "laminados",
+      "name": "Concrete Beige",
+      "family": "Piedras y minerales",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 5986",
+      "finish": "SA",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales. La ficha individual escribe PP 5985. La composición de Ferrofasil y Brasil identifican Concrete Beige como PP 5986; se conserva esa identidad y la errata literal.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/Cc1ibQhMZar/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=3"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-5986-sa-ferrofasil.webp",
+        "width": 756,
+        "height": 756,
+        "srcset": "muestras/pertech-5986-sa-ferrofasil-420.webp 420w, muestras/pertech-5986-sa-ferrofasil.webp 756w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-7927",
+      "category": "laminados",
+      "name": "Cioccolatta",
+      "family": "Maderas",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 7927",
+      "finish": "LG",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/Cc1iQ5fs3Sq/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=7"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-7927-ferrofasil.webp",
+        "width": 756,
+        "height": 756,
+        "srcset": "muestras/pertech-ferrofasil-7927-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-7927-ferrofasil.webp 756w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-2004",
+      "category": "laminados",
+      "name": "Arachinis",
+      "family": "Piedras y minerales",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 2004",
+      "finish": "BR",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/Cc1h-_QMKM2/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=3"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-2004-ferrofasil.webp",
+        "width": 756,
+        "height": 756,
+        "srcset": "muestras/pertech-ferrofasil-2004-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-2004-ferrofasil.webp 756w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-5974",
+      "category": "laminados",
+      "name": "Nero Marchina",
+      "family": "Piedras y minerales",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 5974",
+      "finish": "SA",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CL7ymTABhma/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=3"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-5974-ferrofasil.webp",
+        "width": 756,
+        "height": 756,
+        "srcset": "muestras/pertech-ferrofasil-5974-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-5974-ferrofasil.webp 756w"
+      }
+    },
+    {
+      "id": "pertech-5859-sa",
+      "category": "laminados",
+      "name": "Marmore Carrara",
+      "family": "Piedras y minerales",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 5859",
+      "finish": "Spatolato (SA) · Brillo (B)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CL7yXSDBEGG/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=3"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-5859-sa-ferrofasil.webp",
+        "width": 756,
+        "height": 756,
+        "srcset": "muestras/pertech-5859-sa-ferrofasil-420.webp 420w, muestras/pertech-5859-sa-ferrofasil.webp 756w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-6034",
+      "category": "laminados",
+      "name": "Oxid Red",
+      "family": "Metales",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 6034",
+      "finish": "Sin acabado declarado",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CL7yEwZhXLo/"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-6034-ferrofasil.webp",
+        "width": 756,
+        "height": 756,
+        "srcset": "muestras/pertech-ferrofasil-6034-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-6034-ferrofasil.webp 756w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-3729",
+      "category": "laminados",
+      "name": "Volcano",
+      "family": "Colores sólidos",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 3729",
+      "finish": "Super mate (SM) · Brillo (B)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CL7xmuHBz9K/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=12"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-3729-ferrofasil.webp",
+        "width": 756,
+        "height": 756,
+        "srcset": "muestras/pertech-ferrofasil-3729-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-3729-ferrofasil.webp 756w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-85",
+      "category": "laminados",
+      "name": "Uranio",
+      "family": "Colores sólidos",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 85",
+      "finish": "Super mate (SM)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CL7xUi9hPna/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=12"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-85-ferrofasil.webp",
+        "width": 756,
+        "height": 756,
+        "srcset": "muestras/pertech-ferrofasil-85-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-85-ferrofasil.webp 756w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-95",
+      "category": "laminados",
+      "name": "Cinza",
+      "family": "Colores sólidos",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 95",
+      "finish": "Super matte (SM) · Brillo (B)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CL7xF56hk1G/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=13"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-95-ferrofasil.webp",
+        "width": 756,
+        "height": 756,
+        "srcset": "muestras/pertech-ferrofasil-95-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-95-ferrofasil.webp 756w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-15",
+      "category": "laminados",
+      "name": "Negro",
+      "family": "Colores sólidos",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 15",
+      "finish": "Alto Brillo (AB) · Ultramatte (UM) · Texturizados (TX)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CAuCUPmBqZT/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=12"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-15-ferrofasil.webp",
+        "width": 755,
+        "height": 755,
+        "srcset": "muestras/pertech-ferrofasil-15-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-15-ferrofasil.webp 755w"
+      }
+    },
+    {
+      "id": "pertech-40-tx",
+      "category": "laminados",
+      "name": "Blanco Nieve",
+      "family": "Colores sólidos",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 40",
+      "finish": "TX · descripción por confirmar",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales. Ferrofasil escribe Sin textura (TX); Brasil define TX como Texturizado. Confirmar la superficie.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CAuCJTYh7Di/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=13"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-40-tx-ferrofasil.webp",
+        "width": 755,
+        "height": 755,
+        "srcset": "muestras/pertech-40-tx-ferrofasil-420.webp 420w, muestras/pertech-40-tx-ferrofasil.webp 755w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-185",
+      "category": "laminados",
+      "name": "Chumbo",
+      "family": "Colores sólidos",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 185",
+      "finish": "Alto Brillo (AB) · Super Mate (SM)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CAuB2dphWyv/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=12"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-185-ferrofasil.webp",
+        "width": 755,
+        "height": 755,
+        "srcset": "muestras/pertech-ferrofasil-185-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-185-ferrofasil.webp 755w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-67",
+      "category": "laminados",
+      "name": "Cobalto",
+      "family": "Colores sólidos",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 67",
+      "finish": "Alto Brillo (AB) · Súper Mate (SM)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CAuByCABQcB/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=12"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-67-ferrofasil.webp",
+        "width": 755,
+        "height": 755,
+        "srcset": "muestras/pertech-ferrofasil-67-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-67-ferrofasil.webp 755w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-3737",
+      "category": "laminados",
+      "name": "Super Titan",
+      "family": "Metales",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 3737",
+      "finish": "Escobado (EN)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CAuBqKEBekI/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=9"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-3737-ferrofasil.webp",
+        "width": 755,
+        "height": 755,
+        "srcset": "muestras/pertech-ferrofasil-3737-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-3737-ferrofasil.webp 755w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-55",
+      "category": "laminados",
+      "name": "Manganes",
+      "family": "Colores sólidos",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 55",
+      "finish": "Brillo / Súper mate · código por confirmar",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales. Ferrofasil escribe SP junto a Súper mate. No corregir el código a SM sin confirmación del proveedor.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CAuBA_5BrQH/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=13"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-55-ferrofasil.webp",
+        "width": 755,
+        "height": 755,
+        "srcset": "muestras/pertech-ferrofasil-55-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-55-ferrofasil.webp 755w"
+      }
+    },
+    {
+      "id": "pertech-1979-sm",
+      "category": "laminados",
+      "name": "Taupe",
+      "family": "Colores sólidos",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 1979",
+      "finish": "Alto Brillo (AB) · Super mate(SM)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CAuAnfHhq-I/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=12"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-1979-sm-ferrofasil.webp",
+        "width": 755,
+        "height": 755,
+        "srcset": "muestras/pertech-1979-sm-ferrofasil-420.webp 420w, muestras/pertech-1979-sm-ferrofasil.webp 755w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-7935",
+      "category": "laminados",
+      "name": "Carvalho Cinza",
+      "family": "Maderas",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 7935",
+      "finish": "Rajado (RA)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CAuAeQ-BjlI/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=6"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-7935-ferrofasil.webp",
+        "width": 755,
+        "height": 755,
+        "srcset": "muestras/pertech-ferrofasil-7935-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-7935-ferrofasil.webp 755w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-7937",
+      "category": "laminados",
+      "name": "Pinho Chileno",
+      "family": "Maderas",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 7937",
+      "finish": "Rajado (RA)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CAuAYjvBoSU/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=5"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-7937-ferrofasil.webp",
+        "width": 755,
+        "height": 755,
+        "srcset": "muestras/pertech-ferrofasil-7937-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-7937-ferrofasil.webp 755w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-7947",
+      "category": "laminados",
+      "name": "Teca Palau",
+      "family": "Maderas",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 7947",
+      "finish": "Rajado (RA)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CAuASCSBWJ7/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=5"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-7947-ferrofasil.webp",
+        "width": 755,
+        "height": 755,
+        "srcset": "muestras/pertech-ferrofasil-7947-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-7947-ferrofasil.webp 755w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-7269",
+      "category": "laminados",
+      "name": "Carvalho Milano",
+      "family": "Maderas",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 7269",
+      "finish": "Marcatto (MC)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CAuAJDzhqzg/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=7"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-7269-ferrofasil.webp",
+        "width": 755,
+        "height": 755,
+        "srcset": "muestras/pertech-ferrofasil-7269-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-7269-ferrofasil.webp 755w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-7958",
+      "category": "laminados",
+      "name": "Silver Oak",
+      "family": "Maderas",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 7958",
+      "finish": "Legno (LG) · Marcatto (MC)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CAuAAqxhs_M/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=4"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-7958-ferrofasil.webp",
+        "width": 755,
+        "height": 755,
+        "srcset": "muestras/pertech-ferrofasil-7958-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-7958-ferrofasil.webp 755w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-7968",
+      "category": "laminados",
+      "name": "Thuja",
+      "family": "Maderas",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 7968",
+      "finish": "Legno (LG) · Marcatto (MC)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CAt_4gYB67u/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=5"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-7968-ferrofasil.webp",
+        "width": 755,
+        "height": 755,
+        "srcset": "muestras/pertech-ferrofasil-7968-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-7968-ferrofasil.webp 755w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-7952",
+      "category": "laminados",
+      "name": "Ciliegio",
+      "family": "Maderas",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 7952",
+      "finish": "Legno (LG)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CAt_wnyhpgx/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=4"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-7952-ferrofasil.webp",
+        "width": 755,
+        "height": 755,
+        "srcset": "muestras/pertech-ferrofasil-7952-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-7952-ferrofasil.webp 755w"
+      }
+    },
+    {
+      "id": "pertech-7848-lg",
+      "category": "laminados",
+      "name": "Italian Oak",
+      "family": "Maderas",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 7848",
+      "finish": "Legno (LG)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CAt_mzfB2pz/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=4"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-7848-lg-ferrofasil.webp",
+        "width": 755,
+        "height": 755,
+        "srcset": "muestras/pertech-7848-lg-ferrofasil-420.webp 420w, muestras/pertech-7848-lg-ferrofasil.webp 755w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-7976",
+      "category": "laminados",
+      "name": "Essenza",
+      "family": "Maderas",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 7976",
+      "finish": "Saw Cut (SC)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CAt-KYXh5OT/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=5"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-7976-ferrofasil.webp",
+        "width": 755,
+        "height": 755,
+        "srcset": "muestras/pertech-ferrofasil-7976-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-7976-ferrofasil.webp 755w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-7906",
+      "category": "laminados",
+      "name": "Pátina",
+      "family": "Maderas",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 7906",
+      "finish": "Rajado (RA)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CAt9zbBhFZk/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=11"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-7906-ferrofasil.webp",
+        "width": 755,
+        "height": 755,
+        "srcset": "muestras/pertech-ferrofasil-7906-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-7906-ferrofasil.webp 755w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-7967",
+      "category": "laminados",
+      "name": "Walnut Maribo",
+      "family": "Maderas",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 7967",
+      "finish": "Saw Cut (SC)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CAt9rOjhrgA/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=6"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-7967-ferrofasil.webp",
+        "width": 755,
+        "height": 755,
+        "srcset": "muestras/pertech-ferrofasil-7967-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-7967-ferrofasil.webp 755w"
+      }
+    },
+    {
+      "id": "pertech-7973-mc",
+      "category": "laminados",
+      "name": "Walnut Minnesota",
+      "family": "Maderas",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 7973",
+      "finish": "Marcatto (MC)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CAt9j-GBD6M/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=6"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-7973-mc-ferrofasil.webp",
+        "width": 755,
+        "height": 755,
+        "srcset": "muestras/pertech-7973-mc-ferrofasil-420.webp 420w, muestras/pertech-7973-mc-ferrofasil.webp 755w"
+      }
+    },
+    {
+      "id": "pertech-7983-up",
+      "category": "laminados",
+      "name": "Saint Tropez",
+      "family": "Maderas",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 7983",
+      "finish": "Ultra poro (UP)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CAt9YQzB9Cm/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=4"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-7983-up-ferrofasil.webp",
+        "width": 755,
+        "height": 755,
+        "srcset": "muestras/pertech-7983-up-ferrofasil-420.webp 420w, muestras/pertech-7983-up-ferrofasil.webp 755w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-3726",
+      "category": "laminados",
+      "name": "Piazza",
+      "family": "Colores sólidos",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 3726",
+      "finish": "Super Mate (SM)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CAt7Bb3hx8N/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=12"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-3726-ferrofasil.webp",
+        "width": 755,
+        "height": 755,
+        "srcset": "muestras/pertech-ferrofasil-3726-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-3726-ferrofasil.webp 755w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-6044",
+      "category": "laminados",
+      "name": "Rose Gold",
+      "family": "Metales",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 6044",
+      "finish": "Alto Brillo (AB)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CAt63RKBzSG/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=9"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-6044-ferrofasil.webp",
+        "width": 755,
+        "height": 755,
+        "srcset": "muestras/pertech-ferrofasil-6044-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-6044-ferrofasil.webp 755w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-7984",
+      "category": "laminados",
+      "name": "Puerto Madero",
+      "family": "Maderas",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 7984",
+      "finish": "Ultra poro (UP)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CAt6rnghEUw/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=5"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-7984-ferrofasil.webp",
+        "width": 755,
+        "height": 755,
+        "srcset": "muestras/pertech-ferrofasil-7984-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-7984-ferrofasil.webp 755w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-7985",
+      "category": "laminados",
+      "name": "Zaragoza Maple",
+      "family": "Maderas",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 7985",
+      "finish": "Ultra poro (UP)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CAt6j6-BR5y/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=5"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-7985-ferrofasil.webp",
+        "width": 755,
+        "height": 755,
+        "srcset": "muestras/pertech-ferrofasil-7985-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-7985-ferrofasil.webp 755w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-7986",
+      "category": "laminados",
+      "name": "Cannes Walnut",
+      "family": "Maderas",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 7986",
+      "finish": "Ultra poro (UP)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CAt6dLBhWgx/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=7"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-7986-ferrofasil.webp",
+        "width": 755,
+        "height": 755,
+        "srcset": "muestras/pertech-ferrofasil-7986-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-7986-ferrofasil.webp 755w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-7987",
+      "category": "laminados",
+      "name": "Noce Aveiro",
+      "family": "Maderas",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 7987",
+      "finish": "Ultra poro (UP)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CAt6VwpBaJ0/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=7"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-7987-ferrofasil.webp",
+        "width": 755,
+        "height": 755,
+        "srcset": "muestras/pertech-ferrofasil-7987-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-7987-ferrofasil.webp 755w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-6043",
+      "category": "laminados",
+      "name": "Bronze",
+      "family": "Metales",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 6043",
+      "finish": "Acabado por confirmar",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales. La ficha individual escribe PP 7935 y RA. La composición y Brasil identifican Bronze como PP 6043; Brasil publica EN. Código y acabado de la ficha individual por confirmar.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CAt6HTih91t/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=9"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-6043-ferrofasil.webp",
+        "width": 755,
+        "height": 755,
+        "srcset": "muestras/pertech-ferrofasil-6043-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-6043-ferrofasil.webp 755w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-7988",
+      "category": "laminados",
+      "name": "Natural Cherry",
+      "family": "Maderas",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 7988",
+      "finish": "Ultra poro (UP)",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
+      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CAt55vYhAfg/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=11"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-7988-ferrofasil.webp",
+        "width": 755,
+        "height": 755,
+        "srcset": "muestras/pertech-ferrofasil-7988-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-7988-ferrofasil.webp 755w"
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-3724",
+      "category": "laminados",
+      "name": "Mattone",
+      "family": "Colores sólidos",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 3724",
+      "finish": "Acabado por confirmar",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Muestra del catálogo oficial de Pertech Brasil; diseño rotulado por Ferrofasil",
+      "imageNote": "Muestra del catálogo oficial de Pertech Brasil; diseño rotulado por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CuZj_pWNoyG/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=12"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-3724-ferrofasil.webp",
+        "width": 160,
+        "height": 214
+      }
+    },
+    {
+      "id": "pertech-26-tx",
+      "category": "laminados",
+      "name": "Almond",
+      "family": "Colores sólidos",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 26",
+      "finish": "Acabado por confirmar",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Muestra del catálogo oficial de Pertech Brasil; diseño rotulado por Ferrofasil",
+      "imageNote": "Muestra del catálogo oficial de Pertech Brasil; diseño rotulado por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CuZj_pWNoyG/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=12"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-26-tx-ferrofasil.webp",
+        "width": 166,
+        "height": 224
+      }
+    },
+    {
+      "id": "pertech-7989-up",
+      "category": "laminados",
+      "name": "Century Oak",
+      "family": "Maderas",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 7989",
+      "finish": "Acabado por confirmar",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Muestra del catálogo oficial de Pertech Brasil; diseño rotulado por Ferrofasil",
+      "imageNote": "Muestra del catálogo oficial de Pertech Brasil; diseño rotulado por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/Ct4NMC7ubt2/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=5"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-7989-up-ferrofasil.webp",
+        "width": 278,
+        "height": 394
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-7969",
+      "category": "laminados",
+      "name": "Antico",
+      "family": "Maderas",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 7969",
+      "finish": "Acabado por confirmar",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Muestra del catálogo oficial de Pertech Brasil; diseño rotulado por Ferrofasil",
+      "imageNote": "Muestra del catálogo oficial de Pertech Brasil; diseño rotulado por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/Ct9_43eOdLJ/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=7"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-7969-ferrofasil.webp",
+        "width": 212,
+        "height": 268
+      }
+    },
+    {
+      "id": "pertech-96-tx",
+      "category": "laminados",
+      "name": "Ovo",
+      "family": "Colores sólidos",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 96",
+      "finish": "Acabado por confirmar",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Muestra del catálogo oficial de Pertech Brasil; diseño rotulado por Ferrofasil",
+      "imageNote": "Muestra del catálogo oficial de Pertech Brasil; diseño rotulado por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CtZ8Q6TO4pk/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=13"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-96-tx-ferrofasil.webp",
+        "width": 160,
+        "height": 220
+      }
+    },
+    {
+      "id": "pertech-ferrofasil-7975",
+      "category": "laminados",
+      "name": "Nero Urban",
+      "family": "Metales",
+      "brand": "Pertech",
+      "supplier": "Ferrofasil",
+      "code": "PP 7975",
+      "finish": "Acabado por confirmar",
+      "description": "Laminado decorativo HPL de Pertech. Diseño publicado en el catálogo de Ferrofasil; se aplica sobre un soporte compatible.",
+      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
+      "care": "Confirmamos acabado, tono y presentación con una muestra física antes de elegir. Las publicaciones del catálogo no acreditan existencias actuales.",
+      "market": "Venezuela · catálogo Ferrofasil",
+      "international": false,
+      "availability": "Existencias por confirmar",
+      "imageKind": "Muestra del catálogo oficial de Pertech Brasil; diseño rotulado por Ferrofasil",
+      "imageNote": "Muestra del catálogo oficial de Pertech Brasil; diseño rotulado por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "sourceLinks": [
+        {
+          "label": "Diseño publicado por Ferrofasil",
+          "url": "https://www.instagram.com/pertechferrofasil/p/CtUNsPTuZ8P/"
+        },
+        {
+          "label": "Catálogo oficial Pertech Brasil",
+          "url": "https://pertech.com.br/wp-content/uploads/2026/08/CARTELA-CORESETEXTURAS-2026-.pdf#page=9"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/pertech-ferrofasil-7975-ferrofasil.webp",
+        "width": 212,
+        "height": 268
       }
     }
   ]
