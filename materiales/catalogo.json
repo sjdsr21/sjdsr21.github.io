@@ -15197,6 +15197,2526 @@
       },
       "brandStatus": "provisional",
       "pattern": "liso"
+    },
+    {
+      "id": "agt-726",
+      "category": "tableros",
+      "name": "Storm Grey",
+      "family": "Melaminas",
+      "pattern": "Colores sólidos",
+      "brand": "AGT",
+      "code": "726",
+      "finish": "Super mate",
+      "description": "Panel decorativo AGT sobre MDF, referencia 726, acabado super mate. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000006301-mdf-mel-agt-super-mate-storm-grey-726-1-22x2-80x18mm-43367"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/soft-touch-firtina-gri"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/3d68d401-8fdd-4321-a4f7-ee8bf4ae2400"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-726-oficial.webp",
+        "srcset": "muestras/agt-726-oficial-640.webp 640w, muestras/agt-726-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-734",
+      "category": "tableros",
+      "name": "Blanco",
+      "family": "Melaminas",
+      "pattern": "Colores sólidos",
+      "brand": "AGT",
+      "code": "734",
+      "finish": "Super mate",
+      "description": "Panel decorativo AGT sobre MDF, referencia 734, acabado super mate. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000006298-mdf-mel-agt-super-mate-blanco-734-1-22x2-80x18mm-43366"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/soft-touch-beyaz"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/c078de5a-1ebd-46d7-9ffa-208e863513d8"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-734-oficial.webp",
+        "srcset": "muestras/agt-734-oficial-640.webp 640w, muestras/agt-734-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-3039",
+      "category": "tableros",
+      "name": "Delphi Oak",
+      "family": "Melaminas",
+      "pattern": "Maderas",
+      "brand": "AGT",
+      "code": "3039",
+      "finish": "Mate texturado",
+      "description": "Panel decorativo AGT sobre MDF, referencia 3039, acabado mate texturado. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000008007-mdf-mel-agt-mate-textura-delphi-oak-3039-1-22x2-80x18mm-43365"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/delphi-mese"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/c462da51-228c-4acd-b598-7331319c9a32"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-3039-oficial.webp",
+        "srcset": "muestras/agt-3039-oficial-640.webp 640w, muestras/agt-3039-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-600",
+      "category": "tableros",
+      "name": "Rojo",
+      "family": "Melaminas",
+      "pattern": "Colores sólidos",
+      "brand": "AGT",
+      "code": "600",
+      "finish": "Alto brillo",
+      "description": "Panel decorativo AGT sobre MDF, referencia 600, acabado alto brillo. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra extraída del catálogo oficial AGT, página 17. La imagen original tiene resolución limitada; confirmar el diseño y el tono con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000006297-mdf-mel-agt-alto-brillo-rojo-600-1-22x2-80x18mm-43364"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://cdn.agt.com.tr/assets/files/agt-genel-urun-katalogu.pdf#page=17"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://cdn.agt.com.tr/assets/files/agt-genel-urun-katalogu.pdf#page=17"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-600-oficial.webp",
+        "srcset": "muestras/agt-600-oficial-640.webp 59w, muestras/agt-600-oficial.webp 59w",
+        "width": 59,
+        "height": 125
+      }
+    },
+    {
+      "id": "agt-6002",
+      "category": "tableros",
+      "name": "Negro",
+      "family": "Melaminas",
+      "pattern": "Colores sólidos",
+      "brand": "AGT",
+      "code": "6002",
+      "finish": "Alto brillo",
+      "description": "Panel decorativo AGT sobre MDF, referencia 6002, acabado alto brillo. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000006296-mdf-mel-agt-alto-brillo-negro-6002-1-22x2-80x18mm-43363"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/hg-yeni-siyah"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/d7735216-7dd1-44b7-8dab-48e1e789800e"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-6002-oficial.webp",
+        "srcset": "muestras/agt-6002-oficial-640.webp 640w, muestras/agt-6002-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-601",
+      "category": "tableros",
+      "name": "Blanco",
+      "family": "Melaminas",
+      "pattern": "Colores sólidos",
+      "brand": "AGT",
+      "code": "601",
+      "finish": "Alto brillo",
+      "description": "Panel decorativo AGT sobre MDF, referencia 601, acabado alto brillo. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000006294-mdf-mel-agt-alto-brillo-blanco-601-1-22x2-80x18mm-43362"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/hg-beyaz"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/81446170-c174-4317-bc15-93a043a3f9cf"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-601-oficial.webp",
+        "srcset": "muestras/agt-601-oficial-640.webp 374w, muestras/agt-601-oficial.webp 374w",
+        "width": 374,
+        "height": 374
+      }
+    },
+    {
+      "id": "agt-397",
+      "category": "tableros",
+      "name": "Natural Touch Oak",
+      "family": "Melaminas",
+      "pattern": "Maderas",
+      "brand": "AGT",
+      "code": "397",
+      "finish": "Texturado",
+      "description": "Panel decorativo AGT sobre MDF, referencia 397, acabado texturado. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000007682-mdf-agt-mel-tex-natural-touch-oak-397-1-22x2-80x18mm-43353"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/natural-touch-mese"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/90d117ec-ac62-4fc5-9257-caa877ce7665"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-397-oficial.webp",
+        "srcset": "muestras/agt-397-oficial-640.webp 640w, muestras/agt-397-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-374",
+      "category": "tableros",
+      "name": "Grey Country White",
+      "family": "Melaminas",
+      "pattern": "Maderas",
+      "brand": "AGT",
+      "code": "374",
+      "finish": "Texturado",
+      "description": "Panel decorativo AGT sobre MDF, referencia 374, acabado texturado. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra extraída del catálogo oficial AGT, página 20. La imagen original tiene resolución limitada; confirmar el diseño y el tono con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000007170-mdf-agt-mel-tex-grey-country-white-374-1-22x2-80x18mm-43352"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://cdn.agt.com.tr/assets/files/AGT-genel-katalog-Kf9kL58kIT1661516473102.pdf#page=20"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://cdn.agt.com.tr/assets/files/AGT-genel-katalog-Kf9kL58kIT1661516473102.pdf#page=20"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-374-oficial.webp",
+        "srcset": "muestras/agt-374-oficial-640.webp 121w, muestras/agt-374-oficial.webp 121w",
+        "width": 121,
+        "height": 59
+      }
+    },
+    {
+      "id": "agt-3019",
+      "category": "tableros",
+      "name": "Sahara Cream",
+      "family": "Melaminas",
+      "pattern": "Colores sólidos",
+      "brand": "AGT",
+      "code": "3019",
+      "finish": "Supramat · Mate",
+      "description": "Panel decorativo AGT sobre MDF, referencia 3019, acabado supramat · mate. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000007493-mdf-agt-mel-supramat-sahara-cream-3019-1-22x2-80x18mm-43351"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/supramat-panel/sahara-krem"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/5598bb00-1568-45ac-ba47-a693f56f7d1c"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-3019-oficial.webp",
+        "srcset": "muestras/agt-3019-oficial-640.webp 640w, muestras/agt-3019-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-3020",
+      "category": "tableros",
+      "name": "Safari Grey",
+      "family": "Melaminas",
+      "pattern": "Colores sólidos",
+      "brand": "AGT",
+      "code": "3020",
+      "finish": "Supramat · Mate",
+      "description": "Panel decorativo AGT sobre MDF, referencia 3020, acabado supramat · mate. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000007488-mdf-agt-mel-supramat-safari-grey-3020-1-22x2-80x18mm-43350"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/supramat-panel/safari-gri"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/39fe28c8-80e6-44b3-8621-a1708e93dc37"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-3020-oficial.webp",
+        "srcset": "muestras/agt-3020-oficial-640.webp 640w, muestras/agt-3020-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-3024",
+      "category": "tableros",
+      "name": "Pebble Grey",
+      "family": "Melaminas",
+      "pattern": "Colores sólidos",
+      "brand": "AGT",
+      "code": "3024",
+      "finish": "Supramat · Mate",
+      "description": "Panel decorativo AGT sobre MDF, referencia 3024, acabado supramat · mate. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000007486-mdf-agt-mel-supramat-pebble-grey-3024-1-22x2-80x18mm-43349"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/supramat-panel/cakil-gri"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/97b57aa8-b69f-4caf-b839-114380c93062"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-3024-oficial.webp",
+        "srcset": "muestras/agt-3024-oficial-640.webp 640w, muestras/agt-3024-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-3015",
+      "category": "tableros",
+      "name": "Macaron Green",
+      "family": "Melaminas",
+      "pattern": "Colores sólidos",
+      "brand": "AGT",
+      "code": "3015",
+      "finish": "Supramat · Mate",
+      "description": "Panel decorativo AGT sobre MDF, referencia 3015, acabado supramat · mate. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000007665-mdf-agt-mel-supramat-macaron-green-3015-1-22x2-80x18mm-43348"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/supramat-panel/makaron-yesil"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/4809df4b-55b7-431c-81ac-0d3e8d16cd2b"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-3015-oficial.webp",
+        "srcset": "muestras/agt-3015-oficial-640.webp 640w, muestras/agt-3015-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-3027",
+      "category": "tableros",
+      "name": "Forest Green",
+      "family": "Melaminas",
+      "pattern": "Colores sólidos",
+      "brand": "AGT",
+      "code": "3027",
+      "finish": "Supramat · Mate",
+      "description": "Panel decorativo AGT sobre MDF, referencia 3027, acabado supramat · mate. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000008009-mdf-agt-mel-supramat-forest-green-3027-1-22x2-80x18mm-43347"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/supramat-panel/orman-yesili"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/e3d6b9c1-c783-4a40-b31a-c4f94a5d1a66"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-3027-oficial.webp",
+        "srcset": "muestras/agt-3027-oficial-640.webp 640w, muestras/agt-3027-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-3013",
+      "category": "tableros",
+      "name": "Breeze Beige",
+      "family": "Melaminas",
+      "pattern": "Colores sólidos",
+      "brand": "AGT",
+      "code": "3013",
+      "finish": "Supramat · Mate",
+      "description": "Panel decorativo AGT sobre MDF, referencia 3013, acabado supramat · mate. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000007490-mdf-agt-mel-supramat-brezee-beige-3013-1-22x2-80x18mm-43345"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/supramat-panel/meltem-bej"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/648737a7-027e-40f9-8545-27035547668a"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-3013-oficial.webp",
+        "srcset": "muestras/agt-3013-oficial-640.webp 640w, muestras/agt-3013-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-3018",
+      "category": "tableros",
+      "name": "Moonlight",
+      "family": "Melaminas",
+      "pattern": "Colores sólidos",
+      "brand": "AGT",
+      "code": "3018",
+      "finish": "Supramat · Mate",
+      "description": "Panel decorativo AGT sobre MDF, referencia 3018, acabado supramat · mate. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000007693-mdf-agt-mel-supra-mat-moonlight-3018-1-22x2-80x18mm-43344"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/supramat-panel/supramat-ayisigi"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/72b00daf-3332-4eff-a2a9-315dcbb5481a"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-3018-oficial.webp",
+        "srcset": "muestras/agt-3018-oficial-640.webp 640w, muestras/agt-3018-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-739",
+      "category": "tableros",
+      "name": "Yellow",
+      "family": "Melaminas",
+      "pattern": "Colores sólidos",
+      "brand": "AGT",
+      "code": "739",
+      "finish": "Super mate",
+      "description": "Panel decorativo AGT sobre MDF, referencia 739, acabado super mate. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000007546-mdf-agt-mel-super-mate-yellow-739-1-22x2-80x18mm-43343"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/soft-touch-sari"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/eede8bc6-81a4-4dde-bb2d-2e54046d1352"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-739-oficial.webp",
+        "srcset": "muestras/agt-739-oficial-640.webp 640w, muestras/agt-739-oficial.webp 768w",
+        "width": 768,
+        "height": 768
+      }
+    },
+    {
+      "id": "agt-732",
+      "category": "tableros",
+      "name": "Vison",
+      "family": "Melaminas",
+      "pattern": "Colores sólidos",
+      "brand": "AGT",
+      "code": "732",
+      "finish": "Super mate",
+      "description": "Panel decorativo AGT sobre MDF, referencia 732, acabado super mate. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000006562-mdf-agt-mel-super-mate-vison-732-1-22x2-80x18mm-43342"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/soft-touch-vizon"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/ddbe3ab7-a1f4-4144-ab92-49bcdec2f875"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-732-oficial.webp",
+        "srcset": "muestras/agt-732-oficial-640.webp 640w, muestras/agt-732-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-3030",
+      "category": "tableros",
+      "name": "Toros White Marble",
+      "family": "Melaminas",
+      "pattern": "Piedras y minerales",
+      "brand": "AGT",
+      "code": "3030",
+      "finish": "Super mate",
+      "description": "Panel decorativo AGT sobre MDF, referencia 3030, acabado super mate. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra extraída del catálogo oficial AGT, página 20. La imagen original tiene resolución limitada; confirmar el diseño y el tono con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000006561-mdf-agt-mel-super-mate-toros-white-marble-3030-1-22x2-80x18mm-43341"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://cdn.agt.com.tr/assets/files/AGT-genel-katalog-Kf9kL58kIT1661516473102.pdf#page=20"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://cdn.agt.com.tr/assets/files/AGT-genel-katalog-Kf9kL58kIT1661516473102.pdf#page=20"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-3030-oficial.webp",
+        "srcset": "muestras/agt-3030-oficial-640.webp 144w, muestras/agt-3030-oficial.webp 144w",
+        "width": 144,
+        "height": 80
+      }
+    },
+    {
+      "id": "agt-3031",
+      "category": "tableros",
+      "name": "Toros Black Marble",
+      "family": "Melaminas",
+      "pattern": "Piedras y minerales",
+      "brand": "AGT",
+      "code": "3031",
+      "finish": "Super mate",
+      "description": "Panel decorativo AGT sobre MDF, referencia 3031, acabado super mate. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra extraída del catálogo oficial AGT, página 20. La imagen original tiene resolución limitada; confirmar el diseño y el tono con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000007168-mdf-agt-mel-super-mate-toros-black-marble-3031-1-22x2-80x18mm-43340"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://cdn.agt.com.tr/assets/files/AGT-genel-katalog-Kf9kL58kIT1661516473102.pdf#page=20"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://cdn.agt.com.tr/assets/files/AGT-genel-katalog-Kf9kL58kIT1661516473102.pdf#page=20"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-3031-oficial.webp",
+        "srcset": "muestras/agt-3031-oficial-640.webp 142w, muestras/agt-3031-oficial.webp 142w",
+        "width": 142,
+        "height": 82
+      }
+    },
+    {
+      "id": "agt-728",
+      "category": "tableros",
+      "name": "Stone Grey",
+      "family": "Melaminas",
+      "pattern": "Colores sólidos",
+      "brand": "AGT",
+      "code": "728",
+      "finish": "Super mate",
+      "description": "Panel decorativo AGT sobre MDF, referencia 728, acabado super mate. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000006300-mdf-agt-mel-super-mate-stone-grey-728-1-22x2-80x18mm-43339"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/soft-touch-kaya-gri"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/f425fa02-4995-4a20-b86d-361e3447ba01"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-728-oficial.webp",
+        "srcset": "muestras/agt-728-oficial-640.webp 640w, muestras/agt-728-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-735",
+      "category": "tableros",
+      "name": "Relax Green",
+      "family": "Melaminas",
+      "pattern": "Colores sólidos",
+      "brand": "AGT",
+      "code": "735",
+      "finish": "Super mate",
+      "description": "Panel decorativo AGT sobre MDF, referencia 735, acabado super mate. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000006560-mdf-agt-mel-super-mate-relax-green-735-1-22x2-80x18mm-43338"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/soft-touch-su-yesili"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/3749a295-935e-49d9-a1d7-2c0c26f5b75c"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-735-oficial.webp",
+        "srcset": "muestras/agt-735-oficial-640.webp 640w, muestras/agt-735-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-736",
+      "category": "tableros",
+      "name": "Ocean Blue",
+      "family": "Melaminas",
+      "pattern": "Colores sólidos",
+      "brand": "AGT",
+      "code": "736",
+      "finish": "Super mate",
+      "description": "Panel decorativo AGT sobre MDF, referencia 736, acabado super mate. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000006380-mdf-agt-mel-super-mate-ocean-blue-736-1-22x2-80x18mm-43337"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/soft-touch-okyanus-mavi"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/fa1c9051-99e4-4358-88bb-d77cc01e9c4f"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-736-oficial.webp",
+        "srcset": "muestras/agt-736-oficial-640.webp 640w, muestras/agt-736-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-729",
+      "category": "tableros",
+      "name": "New Grey",
+      "family": "Melaminas",
+      "pattern": "Colores sólidos",
+      "brand": "AGT",
+      "code": "729",
+      "finish": "Super mate",
+      "description": "Panel decorativo AGT sobre MDF, referencia 729, acabado super mate. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000006559-mdf-agt-mel-super-mate-new-grey-729-1-22x2-80x18mm-43336"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/soft-touch-yeni-gri"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/4553cf77-80ff-43f7-bf11-de2dfaaf4449"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-729-oficial.webp",
+        "srcset": "muestras/agt-729-oficial-640.webp 640w, muestras/agt-729-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-723",
+      "category": "tableros",
+      "name": "Negro",
+      "family": "Melaminas",
+      "pattern": "Colores sólidos",
+      "brand": "AGT",
+      "code": "723",
+      "finish": "Super mate",
+      "description": "Panel decorativo AGT sobre MDF, referencia 723, acabado super mate. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000006299-mdf-agt-mel-super-mate-negro-723-1-22x2-80x18mm-43335"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/soft-touch-siyah"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/2aa8458e-3847-46de-b1e9-a0b590554edf"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-723-oficial.webp",
+        "srcset": "muestras/agt-723-oficial-640.webp 640w, muestras/agt-723-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-733",
+      "category": "tableros",
+      "name": "Mocca",
+      "family": "Melaminas",
+      "pattern": "Colores sólidos",
+      "brand": "AGT",
+      "code": "733",
+      "finish": "Super mate",
+      "description": "Panel decorativo AGT sobre MDF, referencia 733, acabado super mate. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra extraída del catálogo oficial AGT, página 17. La imagen original tiene resolución limitada; confirmar el diseño y el tono con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000006558-mdf-agt-mel-super-mate-mocca-733-1-22x2-80x18mm-43334"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://cdn.agt.com.tr/assets/files/agt-genel-urun-katalogu.pdf#page=17"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://cdn.agt.com.tr/assets/files/agt-genel-urun-katalogu.pdf#page=17"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-733-oficial.webp",
+        "srcset": "muestras/agt-733-oficial-640.webp 123w, muestras/agt-733-oficial.webp 123w",
+        "width": 123,
+        "height": 60
+      }
+    },
+    {
+      "id": "agt-3033",
+      "category": "tableros",
+      "name": "Galaxy Grey",
+      "family": "Melaminas",
+      "pattern": "Colores sólidos",
+      "brand": "AGT",
+      "code": "3033",
+      "finish": "Super mate",
+      "description": "Panel decorativo AGT sobre MDF, referencia 3033, acabado super mate. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra extraída del catálogo oficial AGT, página 20. La imagen original tiene resolución limitada; confirmar el diseño y el tono con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000007680-mdf-agt-mel-super-mate-galaxy-grey-3033-1-22x2-80x18mm-43333"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://cdn.agt.com.tr/assets/files/AGT-genel-katalog-Kf9kL58kIT1661516473102.pdf#page=20"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://cdn.agt.com.tr/assets/files/AGT-genel-katalog-Kf9kL58kIT1661516473102.pdf#page=20"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-3033-oficial.webp",
+        "srcset": "muestras/agt-3033-oficial-640.webp 144w, muestras/agt-3033-oficial.webp 144w",
+        "width": 144,
+        "height": 70
+      }
+    },
+    {
+      "id": "agt-730",
+      "category": "tableros",
+      "name": "Cream",
+      "family": "Melaminas",
+      "pattern": "Colores sólidos",
+      "brand": "AGT",
+      "code": "730",
+      "finish": "Super mate",
+      "description": "Panel decorativo AGT sobre MDF, referencia 730, acabado super mate. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000006946-mdf-agt-mel-super-mate-cream-730-1-22x2-80x18mm-43332"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/soft-touch-krem"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/7c6657e7-6166-4835-ab45-1dc66061b1c0"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-730-oficial.webp",
+        "srcset": "muestras/agt-730-oficial-640.webp 640w, muestras/agt-730-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-738",
+      "category": "tableros",
+      "name": "Clay",
+      "family": "Melaminas",
+      "pattern": "Colores sólidos",
+      "brand": "AGT",
+      "code": "738",
+      "finish": "Super mate",
+      "description": "Panel decorativo AGT sobre MDF, referencia 738, acabado super mate. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000007676-mdf-agt-mel-super-mate-clay-738-1-22x2-80x18mm-43331"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/soft-touch-kiremit"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/8216d64f-dfc8-42c2-82bb-2fe65629f2e4"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-738-oficial.webp",
+        "srcset": "muestras/agt-738-oficial-640.webp 640w, muestras/agt-738-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-394",
+      "category": "tableros",
+      "name": "Picasso Inox",
+      "family": "Melaminas",
+      "pattern": "Metales",
+      "brand": "AGT",
+      "code": "394",
+      "finish": "Decorativo metálico · acabado por confirmar",
+      "description": "Panel decorativo AGT sobre MDF, referencia 394, acabado decorativo metálico · acabado por confirmar. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000007686-mdf-agt-mel-picasso-inox-394-1-22x2-80x18mm-43330"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/picasso-inoks"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/645f34ba-3573-4484-806f-874ae3decd78"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-394-oficial.webp",
+        "srcset": "muestras/agt-394-oficial-640.webp 640w, muestras/agt-394-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-395",
+      "category": "tableros",
+      "name": "Picasso Gold",
+      "family": "Melaminas",
+      "pattern": "Metales",
+      "brand": "AGT",
+      "code": "395",
+      "finish": "Decorativo metálico · acabado por confirmar",
+      "description": "Panel decorativo AGT sobre MDF, referencia 395, acabado decorativo metálico · acabado por confirmar. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000007172-mdf-agt-mel-picasso-gold-395-1-22x2-80x18mm-43329"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/picasso-gold"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/87000a13-7183-4a63-bf01-10d4b631fa8a"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-395-oficial.webp",
+        "srcset": "muestras/agt-395-oficial-640.webp 640w, muestras/agt-395-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-390",
+      "category": "tableros",
+      "name": "Stone Grey",
+      "family": "Melaminas",
+      "pattern": "Piedras y minerales",
+      "brand": "AGT",
+      "code": "390",
+      "finish": "Mate",
+      "description": "Panel decorativo AGT sobre MDF, referencia 390, acabado mate. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000007667-mdf-agt-mel-matt-stone-grey-390-1-22x2-80x18mm-43328"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/mat-stone-gri"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/0af37aca-da20-4e1d-9a77-f5dd25d581cf"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-390-oficial.webp",
+        "srcset": "muestras/agt-390-oficial-640.webp 640w, muestras/agt-390-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-388",
+      "category": "tableros",
+      "name": "Toledo Light Wood",
+      "family": "Melaminas",
+      "pattern": "Maderas",
+      "brand": "AGT",
+      "code": "388",
+      "finish": "Mate texturado",
+      "description": "Panel decorativo AGT sobre MDF, referencia 388, acabado mate texturado. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000007556-mdf-agt-mel-mate-textura-toledo-ligth-wood-388-1-22x2-80x18mm-43327"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/toledo-acik-ahsap"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/6976521a-5857-4077-8911-e91275789884"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-388-oficial.webp",
+        "srcset": "muestras/agt-388-oficial-640.webp 640w, muestras/agt-388-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-3042",
+      "category": "tableros",
+      "name": "Akra Oak",
+      "family": "Melaminas",
+      "pattern": "Maderas",
+      "brand": "AGT",
+      "code": "3042",
+      "finish": "Mate texturado",
+      "description": "Panel decorativo AGT sobre MDF, referencia 3042, acabado mate texturado. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000007552-mdf-agt-mel-mate-textura-akra-oak-3042-1-22x2-80x18mm-43326"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/akra-mese"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/34b54154-1a3e-4834-90c4-85980b8c33a0"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-3042-oficial.webp",
+        "srcset": "muestras/agt-3042-oficial-640.webp 640w, muestras/agt-3042-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-300",
+      "category": "tableros",
+      "name": "Inox",
+      "family": "Melaminas",
+      "pattern": "Metales",
+      "brand": "AGT",
+      "code": "300",
+      "finish": "Decorativo metálico · acabado por confirmar",
+      "description": "Panel decorativo AGT sobre MDF, referencia 300, acabado decorativo metálico · acabado por confirmar. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra extraída del catálogo oficial AGT, página 20. La imagen original tiene resolución limitada; confirmar el diseño y el tono con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000006557-mdf-agt-mel-inox-300-1-22x2-80x18mm-43324"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://cdn.agt.com.tr/assets/files/AGT-genel-katalog-Kf9kL58kIT1661516473102.pdf#page=20"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://cdn.agt.com.tr/assets/files/AGT-genel-katalog-Kf9kL58kIT1661516473102.pdf#page=20"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-300-oficial.webp",
+        "srcset": "muestras/agt-300-oficial-640.webp 118w, muestras/agt-300-oficial.webp 118w",
+        "width": 118,
+        "height": 59
+      }
+    },
+    {
+      "id": "agt-623",
+      "category": "tableros",
+      "name": "Vison",
+      "family": "Melaminas",
+      "pattern": "Colores sólidos",
+      "brand": "AGT",
+      "code": "623",
+      "finish": "Alto brillo",
+      "description": "Panel decorativo AGT sobre MDF, referencia 623, acabado alto brillo. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000006556-mdf-agt-mel-alto-brillo-vison-623-1-22x2-80x18mm-43323"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/hg-vizon"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/9473804d-0671-4f5f-bd99-4d1e58f90be0"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-623-oficial.webp",
+        "srcset": "muestras/agt-623-oficial-640.webp 640w, muestras/agt-623-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-6018",
+      "category": "tableros",
+      "name": "Toros White Marble",
+      "family": "Melaminas",
+      "pattern": "Piedras y minerales",
+      "brand": "AGT",
+      "code": "6018",
+      "finish": "Alto brillo",
+      "description": "Panel decorativo AGT sobre MDF, referencia 6018, acabado alto brillo. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000007169-mdf-agt-mel-alto-brillo-toros-white-marble-6018-1-22x2-80x18mm-43322"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/hg-toros-beyaz-mermer"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/0d5028f1-321b-44cd-b7f9-740e92d45a2f"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-6018-oficial.webp",
+        "srcset": "muestras/agt-6018-oficial-640.webp 640w, muestras/agt-6018-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-6019",
+      "category": "tableros",
+      "name": "Toros Black Marble",
+      "family": "Melaminas",
+      "pattern": "Piedras y minerales",
+      "brand": "AGT",
+      "code": "6019",
+      "finish": "Alto brillo",
+      "description": "Panel decorativo AGT sobre MDF, referencia 6019, acabado alto brillo. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000007171-mdf-agt-mel-alto-brillo-toros-black-marble-6019-1-22x2-80x18mm-43321"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/hg-toros-siyah-mermer"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/3d6b4434-9500-4de0-ab91-b117062f5552"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-6019-oficial.webp",
+        "srcset": "muestras/agt-6019-oficial-640.webp 640w, muestras/agt-6019-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-6016",
+      "category": "tableros",
+      "name": "Onyx Grey",
+      "family": "Melaminas",
+      "pattern": "Piedras y minerales",
+      "brand": "AGT",
+      "code": "6016",
+      "finish": "Alto brillo",
+      "description": "Panel decorativo AGT sobre MDF, referencia 6016, acabado alto brillo. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000007678-mdf-agt-mel-alto-brillo-onyx-grey-6016-1-22x2-80x18mm-43320"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/hg-onyx-gri"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/af9ee32f-4f76-41b6-9fa2-39b68ab054c5"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-6016-oficial.webp",
+        "srcset": "muestras/agt-6016-oficial-640.webp 640w, muestras/agt-6016-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-699",
+      "category": "tableros",
+      "name": "Metallic White",
+      "family": "Melaminas",
+      "pattern": "Metales",
+      "brand": "AGT",
+      "code": "699",
+      "finish": "Alto brillo",
+      "description": "Panel decorativo AGT sobre MDF, referencia 699, acabado alto brillo. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000006948-mdf-agt-mel-alto-brillo-metallic-white-699-1-22x2-80x18mm-43319"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/hg-metalik-beyaz"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/35c881fc-848e-4855-ad07-d64151098ef3"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-699-oficial.webp",
+        "srcset": "muestras/agt-699-oficial-640.webp 640w, muestras/agt-699-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-608",
+      "category": "tableros",
+      "name": "Metalic Anthracite",
+      "family": "Melaminas",
+      "pattern": "Metales",
+      "brand": "AGT",
+      "code": "608",
+      "finish": "Alto brillo",
+      "description": "Panel decorativo AGT sobre MDF, referencia 608, acabado alto brillo. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000006555-mdf-agt-mel-alto-brillo-metalic-anthracite-608-1-22x2-80x18mm-43318"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/hg-metalik-antrasit"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/29cd0729-974e-4909-b24e-ce211f347111"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-608-oficial.webp",
+        "srcset": "muestras/agt-608-oficial-640.webp 640w, muestras/agt-608-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-670",
+      "category": "tableros",
+      "name": "Galaxy White",
+      "family": "Melaminas",
+      "pattern": "Colores sólidos",
+      "brand": "AGT",
+      "code": "670",
+      "finish": "Alto brillo",
+      "description": "Panel decorativo AGT sobre MDF, referencia 670, acabado alto brillo. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000006554-mdf-agt-mel-alto-brillo-galaxy-white-670-1-22x2-80x18mm-43317"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/hg-galaksi-beyaz"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/c91807ee-444c-4b5e-8d11-bdf25f52e951"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-670-oficial.webp",
+        "srcset": "muestras/agt-670-oficial-640.webp 640w, muestras/agt-670-oficial.webp 768w",
+        "width": 768,
+        "height": 768
+      }
+    },
+    {
+      "id": "agt-640",
+      "category": "tableros",
+      "name": "Galaxy Honey Mist",
+      "family": "Melaminas",
+      "pattern": "Colores sólidos",
+      "brand": "AGT",
+      "code": "640",
+      "finish": "Alto brillo",
+      "description": "Panel decorativo AGT sobre MDF, referencia 640, acabado alto brillo. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000006952-mdf-agt-mel-alto-brillo-galaxy-honey-mist-640-1-22x2-80x18mm-43316"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/hg-galaksi-balbugu"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/ac7b7d7c-4733-4c25-bee6-4c7ccd252e73"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-640-oficial.webp",
+        "srcset": "muestras/agt-640-oficial-640.webp 640w, muestras/agt-640-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-6008",
+      "category": "tableros",
+      "name": "Deluxe Grey",
+      "family": "Melaminas",
+      "pattern": "Colores sólidos",
+      "brand": "AGT",
+      "code": "6008",
+      "finish": "Alto brillo",
+      "description": "Panel decorativo AGT sobre MDF, referencia 6008, acabado alto brillo. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000007674-mdf-agt-mel-alto-brillo-deluxe-grey-6008-1-22x-80x18mm-43315"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/hg-deluxe-gri"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/2d8ca4d3-a78e-4a55-8914-13f78a467317"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-6008-oficial.webp",
+        "srcset": "muestras/agt-6008-oficial-640.webp 640w, muestras/agt-6008-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-6017",
+      "category": "tableros",
+      "name": "Cool Grey",
+      "family": "Melaminas",
+      "pattern": "Colores sólidos",
+      "brand": "AGT",
+      "code": "6017",
+      "finish": "Alto brillo",
+      "description": "Panel decorativo AGT sobre MDF, referencia 6017, acabado alto brillo. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000006295-mdf-agt-mel-alto-brillo-cool-grey-6017-1-22x2-80x18mm-43314"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/hg-cool-gri"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/b5941994-53d9-46c8-9b7a-be2c3ad35d9e"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-6017-oficial.webp",
+        "srcset": "muestras/agt-6017-oficial-640.webp 640w, muestras/agt-6017-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-6022",
+      "category": "tableros",
+      "name": "Anthracite",
+      "family": "Melaminas",
+      "pattern": "Colores sólidos",
+      "brand": "AGT",
+      "code": "6022",
+      "finish": "Alto brillo",
+      "description": "Panel decorativo AGT sobre MDF, referencia 6022, acabado alto brillo. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000007165-mdf-agt-mel-alto-brillo-anthracite-6022-1-22x2-80x18mm-43313"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/hg-antrasit"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/9f4cb6e7-6ce0-4aec-b827-8d4cbbfb3653"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-6022-oficial.webp",
+        "srcset": "muestras/agt-6022-oficial-640.webp 640w, muestras/agt-6022-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-6020",
+      "category": "tableros",
+      "name": "Trend Grey",
+      "family": "Melaminas",
+      "pattern": "Colores sólidos",
+      "brand": "AGT",
+      "code": "6020",
+      "finish": "Alto brillo",
+      "description": "Panel decorativo AGT sobre MDF, referencia 6020, acabado alto brillo. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000007167-mdf-agt-mel-alto-brillo-trend-grey-6020-1-22x2-80x18mm-43312"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/hg-trend-gri"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/b1bfe0d4-2767-4659-9645-5bcaad49730c"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-6020-oficial.webp",
+        "srcset": "muestras/agt-6020-oficial-640.webp 640w, muestras/agt-6020-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-678",
+      "category": "tableros",
+      "name": "Galaxy Cream",
+      "family": "Melaminas",
+      "pattern": "Colores sólidos",
+      "brand": "AGT",
+      "code": "678",
+      "finish": "Alto brillo",
+      "description": "Panel decorativo AGT sobre MDF, referencia 678, acabado alto brillo. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000006950-mdf-agt-mel-alto-brillo-galaxy-cream-678-1-22x2-80x18mm-43311"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/hg-galaksi-krem"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/5fd14c2e-f021-43b7-b5be-89b104f79822"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-678-oficial.webp",
+        "srcset": "muestras/agt-678-oficial-640.webp 640w, muestras/agt-678-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-605",
+      "category": "tableros",
+      "name": "Cream",
+      "family": "Melaminas",
+      "pattern": "Colores sólidos",
+      "brand": "AGT",
+      "code": "605",
+      "finish": "Alto brillo",
+      "description": "Panel decorativo AGT sobre MDF, referencia 605, acabado alto brillo. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000006551-mdf-agt-mel-alto-brillo-cream-605-1-22x2-80x18mm-53986"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/hg-krem"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/6e670f8b-6158-4d89-95e2-23774389a6a1"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-605-oficial.webp",
+        "srcset": "muestras/agt-605-oficial-640.webp 640w, muestras/agt-605-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-6021",
+      "category": "tableros",
+      "name": "Chrome Grey",
+      "family": "Melaminas",
+      "pattern": "Colores sólidos",
+      "brand": "AGT",
+      "code": "6021",
+      "finish": "Alto brillo",
+      "description": "Panel decorativo AGT sobre MDF, referencia 6021, acabado alto brillo. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000007166-mdf-agt-mel-alto-brillo-chrome-grey-6021-1-22x2-80x18mm-53987"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/hg-krom-gri"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/9f8eb77b-bba9-4c88-b920-dda68aae1acf"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-6021-oficial.webp",
+        "srcset": "muestras/agt-6021-oficial-640.webp 640w, muestras/agt-6021-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-389",
+      "category": "tableros",
+      "name": "Toledo Dark Wood",
+      "family": "Melaminas",
+      "pattern": "Maderas",
+      "brand": "AGT",
+      "code": "389",
+      "finish": "Texturado",
+      "description": "Panel decorativo AGT sobre MDF, referencia 389, acabado texturado. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000007173-mdf-agt-mel-tex-toledo-dark-wood-389-1-22x2-80x18mm-53988"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/toledo-koyu-ahsap"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/b255b1a6-fc86-47e1-8ab6-d8c31584563b"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-389-oficial.webp",
+        "srcset": "muestras/agt-389-oficial-640.webp 640w, muestras/agt-389-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-3023",
+      "category": "tableros",
+      "name": "Dolphin Grey",
+      "family": "Melaminas",
+      "pattern": "Colores sólidos",
+      "brand": "AGT",
+      "code": "3023",
+      "finish": "Supramat · Mate",
+      "description": "Panel decorativo AGT sobre MDF, referencia 3023, acabado supramat · mate. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000007485-mdf-agt-mel-supramat-dolphin-grey-3023-1-22x2-80x18mm-53991"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/supramat-panel/yunus-gri"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/17952c3b-5de3-4bfa-8dab-3a6433f43d41"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-3023-oficial.webp",
+        "srcset": "muestras/agt-3023-oficial-640.webp 640w, muestras/agt-3023-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-3041",
+      "category": "tableros",
+      "name": "Peru Oak",
+      "family": "Melaminas",
+      "pattern": "Maderas",
+      "brand": "AGT",
+      "code": "3041",
+      "finish": "Mate texturado",
+      "description": "Panel decorativo AGT sobre MDF, referencia 3041, acabado mate texturado. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000007548-mdf-agt-mel-mate-textura-peru-oak-3041-1-22x2-80x18mm-53992"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/peru-mese"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/725c9a49-7331-4ad4-af1d-2145d796c684"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-3041-oficial.webp",
+        "srcset": "muestras/agt-3041-oficial-640.webp 640w, muestras/agt-3041-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-3037",
+      "category": "tableros",
+      "name": "Texas Oak",
+      "family": "Melaminas",
+      "pattern": "Maderas",
+      "brand": "AGT",
+      "code": "3037",
+      "finish": "Mate texturado",
+      "description": "Panel decorativo AGT sobre MDF, referencia 3037, acabado mate texturado. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000007550-mdf-agt-mel-mate-textura-texas-oak-3037-1-22x2-80x18mm-53994"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/teksas-mese"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/9c3975d6-dbdc-4563-a53c-b2bc254d1d2b"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-3037-oficial.webp",
+        "srcset": "muestras/agt-3037-oficial-640.webp 640w, muestras/agt-3037-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-3040",
+      "category": "tableros",
+      "name": "Orlando Oak",
+      "family": "Melaminas",
+      "pattern": "Maderas",
+      "brand": "AGT",
+      "code": "3040",
+      "finish": "Mate texturado",
+      "description": "Panel decorativo AGT sobre MDF, referencia 3040, acabado mate texturado. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000007554-mdf-agt-mel-mate-textura-orlando-oak-3040-1-22x2-80x18mm-53997"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/orlando-mese"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/690f20da-1688-4118-b5b6-75f876359ef1"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-3040-oficial.webp",
+        "srcset": "muestras/agt-3040-oficial-640.webp 640w, muestras/agt-3040-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-3011",
+      "category": "tableros",
+      "name": "London Blues",
+      "family": "Melaminas",
+      "pattern": "Colores sólidos",
+      "brand": "AGT",
+      "code": "3011",
+      "finish": "Supramat · Mate",
+      "description": "Panel decorativo AGT sobre MDF, referencia 3011, acabado supramat · mate. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000007663-mdf-agt-mel-supramat-london-blues-3011-1-22x2-80x18mm-53999"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/supramat-panel/londra-mavisi"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/0f31d6da-4765-4a8e-96d2-d1db4f181f5b"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-3011-oficial.webp",
+        "srcset": "muestras/agt-3011-oficial-640.webp 640w, muestras/agt-3011-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
+    },
+    {
+      "id": "agt-878",
+      "category": "tableros",
+      "name": "New Vison",
+      "family": "Melaminas",
+      "pattern": "Colores sólidos",
+      "brand": "AGT",
+      "code": "878",
+      "finish": "Alto brillo",
+      "description": "Panel decorativo AGT sobre MDF, referencia 878, acabado alto brillo. La gama incluye recubrimientos específicos por colección; verificar la ficha técnica del producto elegido.",
+      "use": "Frentes de cocina, clósets y mobiliario interior, según la ficha técnica y el producto seleccionado.",
+      "care": "Oferta publicada en un catálogo venezolano, revisada el 12/10/2026. Existencias actuales por confirmar. Revisar muestra física, caras, recubrimiento y lote antes de elegir.",
+      "market": "Venezuela · Oferta publicada; confirmar existencias",
+      "international": false,
+      "availability": "Listado en catálogo venezolano; stock actual por confirmar",
+      "supplier": "",
+      "imageKind": "Muestra del fabricante",
+      "imageNote": "Muestra oficial de AGT, sin recreación IA ni retoque de color. El color en pantalla es orientativo; comparar con una muestra física.",
+      "sourceLinks": [
+        {
+          "label": "Referencia publicada en Venezuela",
+          "url": "https://www.imeca.com.ve/en/shop/1000008114-mdf-mel-agt-alto-brillo-new-vision-878-1-22x2-80x18mm-54000"
+        },
+        {
+          "label": "Referencia oficial AGT",
+          "url": "https://www.agt.com.tr/urunler/agt-levha/dekoratif-mobilya-paneli/trendy-panel/hg-yeni-vizon"
+        },
+        {
+          "label": "Imagen o catálogo original del fabricante",
+          "url": "https://www.agt.com.tr/medium/Product/Image/fe3d424a-bdca-4482-a72c-83d60fc54862"
+        }
+      ],
+      "textureId": null,
+      "appId": null,
+      "sheetSizeMm": [
+        1220,
+        2800
+      ],
+      "image": {
+        "src": "muestras/agt-878-oficial.webp",
+        "srcset": "muestras/agt-878-oficial-640.webp 640w, muestras/agt-878-oficial.webp 682w",
+        "width": 682,
+        "height": 682
+      }
     }
   ]
 }
