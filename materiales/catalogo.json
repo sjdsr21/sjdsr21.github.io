@@ -468,10 +468,10 @@
       "name": "Alistonado de pino",
       "family": "Alistonados",
       "pattern": "",
-      "brand": "Maciza",
+      "brand": "",
       "code": "",
       "finish": "",
-      "description": "Listones de madera encolados para formar un tablero. Conserva las variaciones propias de la madera. Maciza se usa como marca provisional de catálogo; el fabricante está por identificar.",
+      "description": "Listones de madera encolados para formar un tablero. Conserva las variaciones propias de la madera. Fabricante por identificar.",
       "use": "Superficies y piezas según construcción y dimensiones.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
       "market": "Referencia del taller; proveedor por confirmar",
@@ -495,7 +495,7 @@
         "srcset": "muestras/tablero-alistonado-pino-empates-20261012-640.webp 640w, muestras/tablero-alistonado-pino-empates-20261012.webp 1254w"
       },
       "supplier": "",
-      "brandStatus": "provisional"
+      "brandStatus": "sin_identificar"
     },
     {
       "id": "tablero-alistonado-saman",
@@ -503,10 +503,10 @@
       "name": "Alistonado de samán",
       "family": "Alistonados",
       "pattern": "",
-      "brand": "Maciza",
+      "brand": "",
       "code": "",
       "finish": "",
-      "description": "Listones de madera encolados para formar un tablero. Conserva las variaciones propias de la madera. Maciza se usa como marca provisional de catálogo; el fabricante está por identificar.",
+      "description": "Listones de madera encolados para formar un tablero. Conserva las variaciones propias de la madera. Fabricante por identificar.",
       "use": "Superficies y piezas según construcción y dimensiones.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
       "market": "Referencia del taller; proveedor por confirmar",
@@ -530,7 +530,7 @@
         "srcset": "muestras/tablero-alistonado-saman-empates-20261012-640.webp 640w, muestras/tablero-alistonado-saman-empates-20261012.webp 1254w"
       },
       "supplier": "",
-      "brandStatus": "provisional"
+      "brandStatus": "sin_identificar"
     },
     {
       "id": "tablero-compuesto-okume",
@@ -567,10 +567,10 @@
       "name": "Pino ranurado - Techo fácil",
       "family": "Ranurados",
       "pattern": "",
-      "brand": "Maciza",
+      "brand": "",
       "code": "",
       "finish": "",
-      "description": "Panel de apariencia ranurada. Se confirma la especie y el perfil del producto real. Maciza se usa como marca provisional de catálogo; el fabricante está por identificar.",
+      "description": "Panel de apariencia ranurada. Se confirma la especie y el perfil del producto real. Fabricante por identificar.",
       "use": "Revestimientos y paneles según especificación.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
       "market": "Referencia del taller; proveedor por confirmar",
@@ -589,7 +589,7 @@
         "displayRotation": 90
       },
       "supplier": "",
-      "brandStatus": "provisional"
+      "brandStatus": "sin_identificar"
     },
     {
       "id": "tablero-mdf-hr",
@@ -12375,10 +12375,10 @@
       "name": "Alistonado de teca",
       "family": "Alistonados",
       "pattern": "",
-      "brand": "Maciza",
+      "brand": "",
       "code": "",
       "finish": "",
-      "description": "Listones cortos de teca encolados, con empates alternados y variación natural de color y veta. Maciza se usa como marca provisional de catálogo; el fabricante está por identificar.",
+      "description": "Listones cortos de teca encolados, con empates alternados y variación natural de color y veta. Fabricante por identificar.",
       "use": "Superficies y piezas según construcción y dimensiones.",
       "care": "Confirmamos especie, construcción, formato, acabado y existencias antes de elegir.",
       "market": "Referencia visual del taller; producto local por confirmar",
@@ -12401,7 +12401,7 @@
           "url": "https://nordiccoregt.com/"
         }
       ],
-      "brandStatus": "provisional"
+      "brandStatus": "sin_identificar"
     },
     {
       "id": "esanos-boleita-4592-madrid-baltic",
@@ -13772,14 +13772,14 @@
       "category": "tableros",
       "name": "Negro carbón · listones finos",
       "family": "Wall panels",
-      "brand": "Maciza",
+      "brand": "",
       "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Fabricante y nombre comercial por identificar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Maciza",
+      "market": "Venezuela · referencia de exposición",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -13796,21 +13796,21 @@
         "width": 1536,
         "height": 1024
       },
-      "brandStatus": "provisional"
+      "brandStatus": "sin_identificar"
     },
     {
       "id": "ecoplaca-wp-02-ranurado",
       "category": "tableros",
       "name": "Nogal oscuro · listones finos",
       "family": "Wall panels",
-      "brand": "Maciza",
+      "brand": "",
       "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Fabricante y nombre comercial por identificar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Maciza",
+      "market": "Venezuela · referencia de exposición",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -13827,21 +13827,21 @@
         "width": 1536,
         "height": 1024
       },
-      "brandStatus": "provisional"
+      "brandStatus": "sin_identificar"
     },
     {
       "id": "ecoplaca-wp-03-ranurado",
       "category": "tableros",
       "name": "Nogal rojizo · listones finos",
       "family": "Wall panels",
-      "brand": "Maciza",
+      "brand": "",
       "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Fabricante y nombre comercial por identificar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Maciza",
+      "market": "Venezuela · referencia de exposición",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -13858,21 +13858,21 @@
         "width": 1536,
         "height": 1024
       },
-      "brandStatus": "provisional"
+      "brandStatus": "sin_identificar"
     },
     {
       "id": "ecoplaca-wp-04-ranurado",
       "category": "tableros",
       "name": "Moka · listones finos",
       "family": "Wall panels",
-      "brand": "Maciza",
+      "brand": "",
       "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Fabricante y nombre comercial por identificar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Maciza",
+      "market": "Venezuela · referencia de exposición",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -13889,21 +13889,21 @@
         "width": 1536,
         "height": 1024
       },
-      "brandStatus": "provisional"
+      "brandStatus": "sin_identificar"
     },
     {
       "id": "ecoplaca-wp-05-ranurado",
       "category": "tableros",
       "name": "Roble blanqueado · listones finos",
       "family": "Wall panels",
-      "brand": "Maciza",
+      "brand": "",
       "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Fabricante y nombre comercial por identificar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Maciza",
+      "market": "Venezuela · referencia de exposición",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -13920,21 +13920,21 @@
         "width": 1536,
         "height": 1024
       },
-      "brandStatus": "provisional"
+      "brandStatus": "sin_identificar"
     },
     {
       "id": "ecoplaca-wp-06-ranurado",
       "category": "tableros",
       "name": "Gris ceniza · listones finos",
       "family": "Wall panels",
-      "brand": "Maciza",
+      "brand": "",
       "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Fabricante y nombre comercial por identificar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Maciza",
+      "market": "Venezuela · referencia de exposición",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -13951,21 +13951,21 @@
         "width": 1536,
         "height": 1024
       },
-      "brandStatus": "provisional"
+      "brandStatus": "sin_identificar"
     },
     {
       "id": "ecoplaca-wp-07-ranurado",
       "category": "tableros",
       "name": "Blanco · listones finos",
       "family": "Wall panels",
-      "brand": "Maciza",
+      "brand": "",
       "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Fabricante y nombre comercial por identificar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Maciza",
+      "market": "Venezuela · referencia de exposición",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -13982,21 +13982,21 @@
         "width": 1536,
         "height": 1024
       },
-      "brandStatus": "provisional"
+      "brandStatus": "sin_identificar"
     },
     {
       "id": "ecoplaca-wp-08-ranurado",
       "category": "tableros",
       "name": "Perla · listones finos",
       "family": "Wall panels",
-      "brand": "Maciza",
+      "brand": "",
       "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Fabricante y nombre comercial por identificar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Maciza",
+      "market": "Venezuela · referencia de exposición",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -14013,21 +14013,21 @@
         "width": 1536,
         "height": 1024
       },
-      "brandStatus": "provisional"
+      "brandStatus": "sin_identificar"
     },
     {
       "id": "ecoplaca-wp-09-ranurado",
       "category": "tableros",
       "name": "Madera gris · listones finos",
       "family": "Wall panels",
-      "brand": "Maciza",
+      "brand": "",
       "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Fabricante y nombre comercial por identificar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Maciza",
+      "market": "Venezuela · referencia de exposición",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -14044,21 +14044,21 @@
         "width": 1536,
         "height": 1024
       },
-      "brandStatus": "provisional"
+      "brandStatus": "sin_identificar"
     },
     {
       "id": "ecoplaca-wp-10-ranurado",
       "category": "tableros",
       "name": "Wall panel de pino · tipo 1",
       "family": "Wall panels",
-      "brand": "Maciza",
+      "brand": "",
       "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
       "description": "Revestimiento de pino con listones finos, identificado por Santiago en la exposición de Manzanares.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Consultar formato, acabado y dimensiones reales del perfil.",
-      "market": "Venezuela · Maciza",
+      "market": "Venezuela · referencia de exposición",
       "international": false,
       "availability": "Consultar formato, acabado y existencias con el local.",
       "imageKind": "Recreación visual con IA desde fotografía de Santiago",
@@ -14075,7 +14075,7 @@
         "height": 1024,
         "srcset": "muestras/pino-1-maciza-20261012-640.webp 640w, muestras/pino-1-maciza-20261012.webp 1536w"
       },
-      "brandStatus": "provisional",
+      "brandStatus": "sin_identificar",
       "pattern": "listones finos"
     },
     {
@@ -14083,14 +14083,14 @@
       "category": "tableros",
       "name": "Wall panel de pino · tipo 2",
       "family": "Wall panels",
-      "brand": "Maciza",
+      "brand": "",
       "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
       "description": "Revestimiento de pino con listones medios, identificado por Santiago en la exposición de Manzanares.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Consultar formato, acabado y dimensiones reales del perfil.",
-      "market": "Venezuela · Maciza",
+      "market": "Venezuela · referencia de exposición",
       "international": false,
       "availability": "Consultar formato, acabado y existencias con el local.",
       "imageKind": "Recreación visual con IA desde fotografía de Santiago",
@@ -14107,7 +14107,7 @@
         "height": 1024,
         "srcset": "muestras/pino-2-maciza-20261012-640.webp 640w, muestras/pino-2-maciza-20261012.webp 1536w"
       },
-      "brandStatus": "provisional",
+      "brandStatus": "sin_identificar",
       "pattern": "listones medios"
     },
     {
@@ -14115,14 +14115,14 @@
       "category": "tableros",
       "name": "Madera negra · listones finos",
       "family": "Wall panels",
-      "brand": "Maciza",
+      "brand": "",
       "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Fabricante y nombre comercial por identificar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Maciza",
+      "market": "Venezuela · referencia de exposición",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -14139,21 +14139,21 @@
         "width": 1536,
         "height": 1024
       },
-      "brandStatus": "provisional"
+      "brandStatus": "sin_identificar"
     },
     {
       "id": "ecoplaca-wp-13-ranurado",
       "category": "tableros",
       "name": "Blanco con juntas doradas",
       "family": "Wall panels",
-      "brand": "Maciza",
+      "brand": "",
       "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Fabricante y nombre comercial por identificar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Maciza",
+      "market": "Venezuela · referencia de exposición",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -14170,21 +14170,21 @@
         "width": 1536,
         "height": 1024
       },
-      "brandStatus": "provisional"
+      "brandStatus": "sin_identificar"
     },
     {
       "id": "ecoplaca-wp-14-ranurado",
       "category": "tableros",
       "name": "Wall panel de pino · tipo 3",
       "family": "Wall panels",
-      "brand": "Maciza",
+      "brand": "",
       "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
       "description": "Revestimiento de pino con listones gruesos, identificado por Santiago en la exposición de Manzanares.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Consultar formato, acabado y dimensiones reales del perfil.",
-      "market": "Venezuela · Maciza",
+      "market": "Venezuela · referencia de exposición",
       "international": false,
       "availability": "Consultar formato, acabado y existencias con el local.",
       "imageKind": "Recreación visual con IA desde fotografía de Santiago",
@@ -14201,7 +14201,7 @@
         "height": 1024,
         "srcset": "muestras/pino-3-maciza-20261012-640.webp 640w, muestras/pino-3-maciza-20261012.webp 1536w"
       },
-      "brandStatus": "provisional",
+      "brandStatus": "sin_identificar",
       "pattern": "listones gruesos"
     },
     {
@@ -14209,14 +14209,14 @@
       "category": "tableros",
       "name": "Textil oscuro · ranurado y liso",
       "family": "Wall panels",
-      "brand": "Maciza",
+      "brand": "",
       "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Fabricante y nombre comercial por identificar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Maciza",
+      "market": "Venezuela · referencia de exposición",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -14233,21 +14233,21 @@
         "width": 1536,
         "height": 1024
       },
-      "brandStatus": "provisional"
+      "brandStatus": "sin_identificar"
     },
     {
       "id": "ecoplaca-wp-16-ranurado",
       "category": "tableros",
       "name": "Grafito · canal ancho",
       "family": "Wall panels",
-      "brand": "Maciza",
+      "brand": "",
       "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Fabricante y nombre comercial por identificar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Maciza",
+      "market": "Venezuela · referencia de exposición",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -14264,21 +14264,21 @@
         "width": 1536,
         "height": 1024
       },
-      "brandStatus": "provisional"
+      "brandStatus": "sin_identificar"
     },
     {
       "id": "ecoplaca-wp-17-ranurado",
       "category": "tableros",
       "name": "Gris medio · canal ancho",
       "family": "Wall panels",
-      "brand": "Maciza",
+      "brand": "",
       "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Fabricante y nombre comercial por identificar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Maciza",
+      "market": "Venezuela · referencia de exposición",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -14295,21 +14295,21 @@
         "width": 1536,
         "height": 1024
       },
-      "brandStatus": "provisional"
+      "brandStatus": "sin_identificar"
     },
     {
       "id": "ecoplaca-wp-18-ranurado",
       "category": "tableros",
       "name": "Arena · canal ancho",
       "family": "Wall panels",
-      "brand": "Maciza",
+      "brand": "",
       "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Fabricante y nombre comercial por identificar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Maciza",
+      "market": "Venezuela · referencia de exposición",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -14326,21 +14326,21 @@
         "width": 1536,
         "height": 1024
       },
-      "brandStatus": "provisional"
+      "brandStatus": "sin_identificar"
     },
     {
       "id": "ecoplaca-wp-19-ranurado",
       "category": "tableros",
       "name": "Blanco · canal ancho",
       "family": "Wall panels",
-      "brand": "Maciza",
+      "brand": "",
       "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Fabricante y nombre comercial por identificar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Maciza",
+      "market": "Venezuela · referencia de exposición",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -14357,21 +14357,21 @@
         "width": 1536,
         "height": 1024
       },
-      "brandStatus": "provisional"
+      "brandStatus": "sin_identificar"
     },
     {
       "id": "ecoplaca-wp-20-ranurado",
       "category": "tableros",
       "name": "Verde agua · canal ancho",
       "family": "Wall panels",
-      "brand": "Maciza",
+      "brand": "",
       "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Fabricante y nombre comercial por identificar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Maciza",
+      "market": "Venezuela · referencia de exposición",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -14388,21 +14388,21 @@
         "width": 1536,
         "height": 1024
       },
-      "brandStatus": "provisional"
+      "brandStatus": "sin_identificar"
     },
     {
       "id": "ecoplaca-wp-21-ranurado",
       "category": "tableros",
       "name": "Textil plata · canal ancho",
       "family": "Wall panels",
-      "brand": "Maciza",
+      "brand": "",
       "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Maciza es la marca provisional para identificarlo en este catálogo; fabricante y nombre comercial por cotejar.",
+      "description": "Referencia visual de un revestimiento expuesto en el local de Manzanares. Fabricante y nombre comercial por identificar.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Cotejar tono, composición, formato y perfil de las ranuras con una muestra física.",
-      "market": "Venezuela · Maciza",
+      "market": "Venezuela · referencia de exposición",
       "international": false,
       "availability": "Consultar el producto real con el distribuidor.",
       "imageKind": "Recreación visual con IA",
@@ -14419,21 +14419,21 @@
         "width": 1536,
         "height": 1024
       },
-      "brandStatus": "provisional"
+      "brandStatus": "sin_identificar"
     },
     {
       "id": "ecoplaca-pino-tipo-4-ranurado",
       "category": "tableros",
       "name": "Wall panel de pino · tipo 4",
       "family": "Wall panels",
-      "brand": "Maciza",
+      "brand": "",
       "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
       "description": "Revestimiento de pino con listones verticales y cambios de veta entre piezas; corresponde al panel derecho de la fotografía de detalle.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Consultar formato, acabado y dimensiones reales del perfil.",
-      "market": "Venezuela · Maciza",
+      "market": "Venezuela · referencia de exposición",
       "international": false,
       "availability": "Consultar formato, acabado y existencias con el local.",
       "imageKind": "Recreación visual con IA desde fotografía de Santiago",
@@ -14450,7 +14450,7 @@
         "height": 1024,
         "srcset": "muestras/pino-4-maciza-detalle-v2-20261012-640.webp 640w, muestras/pino-4-maciza-detalle-v2-20261012.webp 1536w"
       },
-      "brandStatus": "provisional",
+      "brandStatus": "sin_identificar",
       "pattern": "listones verticales combinados",
       "visualRevision": "2026-10-12-detalle-v2"
     },
@@ -14459,14 +14459,14 @@
       "category": "tableros",
       "name": "Wall panel de pino · tipo 5",
       "family": "Wall panels",
-      "brand": "Maciza",
+      "brand": "",
       "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
       "description": "Revestimiento de pino con perfil redondeado, identificado por Santiago en la exposición de Manzanares.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Consultar formato, acabado y dimensiones reales del perfil.",
-      "market": "Venezuela · Maciza",
+      "market": "Venezuela · referencia de exposición",
       "international": false,
       "availability": "Consultar formato, acabado y existencias con el local.",
       "imageKind": "Recreación visual con IA desde fotografía de Santiago",
@@ -14483,7 +14483,7 @@
         "height": 1024,
         "srcset": "muestras/pino-5-maciza-20261012-640.webp 640w, muestras/pino-5-maciza-20261012.webp 1536w"
       },
-      "brandStatus": "provisional",
+      "brandStatus": "sin_identificar",
       "pattern": "perfil redondeado"
     },
     {
@@ -14491,14 +14491,14 @@
       "category": "tableros",
       "name": "Tablero ranurado de samán sólido",
       "family": "Wall panels",
-      "brand": "Maciza",
+      "brand": "",
       "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
       "description": "Tablero de samán sólido con un perfil vertical de listones anchos y estrechos; corresponde al panel izquierdo de la fotografía de detalle.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Consultar formato, acabado y dimensiones reales del perfil.",
-      "market": "Venezuela · Maciza",
+      "market": "Venezuela · referencia de exposición",
       "international": false,
       "availability": "Consultar formato, acabado y existencias con el local.",
       "imageKind": "Recreación visual con IA desde fotografía de Santiago",
@@ -14515,7 +14515,7 @@
         "height": 1024,
         "srcset": "muestras/saman-ranurado-maciza-detalle-v2-20261012-640.webp 640w, muestras/saman-ranurado-maciza-detalle-v2-20261012.webp 1536w"
       },
-      "brandStatus": "provisional",
+      "brandStatus": "sin_identificar",
       "pattern": "listones verticales anchos y estrechos",
       "visualRevision": "2026-10-12-detalle-v2"
     },
@@ -14524,14 +14524,14 @@
       "category": "tableros",
       "name": "OSB",
       "family": "Compuestos y chapillados",
-      "brand": "Maciza",
+      "brand": "",
       "supplier": "",
       "code": "",
       "finish": "",
       "description": "Tablero OSB de virutas de madera orientadas, identificado en la exposición de Manzanares.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Consultar espesor, grado, formato y acabado del producto real.",
-      "market": "Venezuela · Maciza",
+      "market": "Venezuela · referencia de exposición",
       "international": false,
       "availability": "Consultar formato, acabado y existencias con el local.",
       "imageKind": "Recreación visual con IA desde fotografía de Santiago",
@@ -14546,7 +14546,7 @@
         "height": 1254,
         "srcset": "muestras/osb-maciza-20261012-640.webp 640w, muestras/osb-maciza-20261012.webp 1254w"
       },
-      "brandStatus": "provisional",
+      "brandStatus": "sin_identificar",
       "pattern": "liso"
     },
     {
