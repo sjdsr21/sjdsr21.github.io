@@ -15081,14 +15081,14 @@
       "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Revestimiento de pino con listones combinados, identificado por Santiago en la exposición de Manzanares.",
+      "description": "Revestimiento de pino con listones verticales y cambios de veta entre piezas; corresponde al panel derecho de la fotografía de detalle.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Consultar formato, acabado y dimensiones reales del perfil.",
       "market": "Venezuela · Maciza",
       "international": false,
       "availability": "Consultar formato, acabado y existencias con el local.",
       "imageKind": "Recreación visual con IA desde fotografía de Santiago",
-      "imageNote": "Recreación frontal con IA desde los perfiles de pino de la segunda fila de la foto 6730 de Santiago. Lisa a la izquierda y ranurada a la derecha. Especie confirmada por Santiago el 12/10/2026; números de tipo asignados para el catálogo, sin código comercial ni dimensiones de perfil medidas.",
+      "imageNote": "Recreación frontal con IA del panel derecho de la foto de detalle aportada por Santiago. En esta pareja, superficie lisa a la izquierda y ranurada a la derecha, ambas de pino. Veta y ranuras verticales; tono y perfil aproximados, sin dimensiones físicas medidas.",
       "sourceLinks": [],
       "textureId": "ecoplaca-pino-tipo-4-ranurado",
       "flatTextureId": "ecoplaca-pino-tipo-4-liso",
@@ -15096,13 +15096,14 @@
       "appId": null,
       "identificationStatus": "identificado_por_usuario",
       "image": {
-        "src": "muestras/pino-4-maciza-20261012.webp",
+        "src": "muestras/pino-4-maciza-detalle-v2-20261012.webp",
         "width": 1536,
         "height": 1024,
-        "srcset": "muestras/pino-4-maciza-20261012-640.webp 640w, muestras/pino-4-maciza-20261012.webp 1536w"
+        "srcset": "muestras/pino-4-maciza-detalle-v2-20261012-640.webp 640w, muestras/pino-4-maciza-detalle-v2-20261012.webp 1536w"
       },
       "brandStatus": "provisional",
-      "pattern": "listones combinados"
+      "pattern": "listones verticales combinados",
+      "visualRevision": "2026-10-12-detalle-v2"
     },
     {
       "id": "ecoplaca-pino-tipo-5-ranurado",
@@ -15145,14 +15146,14 @@
       "supplier": "",
       "code": "",
       "finish": "Lisa y ranurada",
-      "description": "Tablero de samán sólido con ranuras horizontales; muestra antepenúltima de la segunda fila de la pared derecha.",
+      "description": "Tablero de samán sólido con un perfil vertical de listones anchos y estrechos; corresponde al panel izquierdo de la fotografía de detalle.",
       "use": "Revestimientos y detalles decorativos según el producto real elegido.",
       "care": "Consultar formato, acabado y dimensiones reales del perfil.",
       "market": "Venezuela · Maciza",
       "international": false,
       "availability": "Consultar formato, acabado y existencias con el local.",
       "imageKind": "Recreación visual con IA desde fotografía de Santiago",
-      "imageNote": "Recreación frontal con IA desde la foto 6730 de Santiago. Lisa a la izquierda y ranurada a la derecha. Se conserva la orientación horizontal de la muestra de samán. Especie y madera sólida confirmadas por Santiago el 12/10/2026; dimensiones del perfil aproximadas.",
+      "imageNote": "Recreación frontal con IA del panel izquierdo de la foto de detalle aportada por Santiago. En esta pareja, superficie lisa a la izquierda y ranurada a la derecha, ambas de samán sólido. Veta y ranuras verticales; tono y perfil aproximados, sin dimensiones físicas medidas.",
       "sourceLinks": [],
       "textureId": "ecoplaca-saman-solido-ranurado",
       "flatTextureId": "ecoplaca-saman-solido-liso",
@@ -15160,13 +15161,14 @@
       "appId": null,
       "identificationStatus": "identificado_por_usuario",
       "image": {
-        "src": "muestras/saman-ranurado-maciza-20261012.webp",
+        "src": "muestras/saman-ranurado-maciza-detalle-v2-20261012.webp",
         "width": 1536,
         "height": 1024,
-        "srcset": "muestras/saman-ranurado-maciza-20261012-640.webp 640w, muestras/saman-ranurado-maciza-20261012.webp 1536w"
+        "srcset": "muestras/saman-ranurado-maciza-detalle-v2-20261012-640.webp 640w, muestras/saman-ranurado-maciza-detalle-v2-20261012.webp 1536w"
       },
       "brandStatus": "provisional",
-      "pattern": "ranuras horizontales"
+      "pattern": "listones verticales anchos y estrechos",
+      "visualRevision": "2026-10-12-detalle-v2"
     },
     {
       "id": "tablero-osb-ecoplaca",
