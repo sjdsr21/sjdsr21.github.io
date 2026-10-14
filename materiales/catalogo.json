@@ -28736,9 +28736,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 8. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/laminado-decorativo-formipak-roble-tarik-matrix-1-22-m-x-2-44-m-x-0-8-mm/"
+        },
         {
           "label": "Catálogo oficial · página 8",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=8"
@@ -28747,9 +28751,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f514-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f514-superficie-20261014.webp",
+        "width": 1074,
+        "height": 1074,
+        "srcset": "muestras/formipak-f514-superficie-20261014-640.webp 640w, muestras/formipak-f514-superficie-20261014.webp 1074w"
       }
     },
     {
@@ -28767,9 +28772,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 8. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/laminado-decorativo-formipak-laricin-arena-textura-1-22-m-x-2-44-m-x-0-7-mm/"
+        },
         {
           "label": "Catálogo oficial · página 8",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=8"
@@ -28778,9 +28787,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f513-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f513-superficie-20261014.webp",
+        "width": 950,
+        "height": 950,
+        "srcset": "muestras/formipak-f513-superficie-20261014-640.webp 640w, muestras/formipak-f513-superficie-20261014.webp 950w"
       }
     },
     {
@@ -28798,9 +28808,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 8. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/lino-formipak-text/"
+        },
         {
           "label": "Catálogo oficial · página 8",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=8"
@@ -28809,9 +28823,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f560-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f560-superficie-20261014.webp",
+        "width": 1056,
+        "height": 1056,
+        "srcset": "muestras/formipak-f560-superficie-20261014-640.webp 640w, muestras/formipak-f560-superficie-20261014.webp 1056w"
       }
     },
     {
@@ -28829,9 +28844,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 9. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/maple-matrix-premium/"
+        },
         {
           "label": "Catálogo oficial · página 9",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=9"
@@ -28840,9 +28859,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f940-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f940-superficie-20261014.webp",
+        "width": 1056,
+        "height": 1056,
+        "srcset": "muestras/formipak-f940-superficie-20261014-640.webp 640w, muestras/formipak-f940-superficie-20261014.webp 1056w"
       }
     },
     {
@@ -28860,9 +28880,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 9. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/baltic-wood-premium/"
+        },
         {
           "label": "Catálogo oficial · página 9",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=9"
@@ -28871,9 +28895,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f930-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f930-superficie-20261014.webp",
+        "width": 1056,
+        "height": 1056,
+        "srcset": "muestras/formipak-f930-superficie-20261014-640.webp 640w, muestras/formipak-f930-superficie-20261014.webp 1056w"
       }
     },
     {
@@ -28891,8 +28916,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 9. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen original extraída del PDF oficial Pisopak, página 9, con recorte de superficie completo. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 9",
@@ -28902,9 +28927,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f571-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f571-superficie-20261014.webp",
+        "width": 489,
+        "height": 489
       }
     },
     {
@@ -28922,9 +28947,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 10. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/olivo-wood-premium/"
+        },
         {
           "label": "Catálogo oficial · página 10",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=10"
@@ -28933,9 +28962,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f570-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f570-superficie-20261014.webp",
+        "width": 1056,
+        "height": 1056,
+        "srcset": "muestras/formipak-f570-superficie-20261014-640.webp 640w, muestras/formipak-f570-superficie-20261014.webp 1056w"
       }
     },
     {
@@ -28953,9 +28983,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 10. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/entablado-text/"
+        },
         {
           "label": "Catálogo oficial · página 10",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=10"
@@ -28964,9 +28998,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-m554-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-m554-superficie-20261014.webp",
+        "width": 1056,
+        "height": 1056,
+        "srcset": "muestras/formipak-m554-superficie-20261014-640.webp 640w, muestras/formipak-m554-superficie-20261014.webp 1056w"
       }
     },
     {
@@ -28984,9 +29019,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 10. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/laminado-decorativo-formipak-arce-matrix-1-22-m-x-2-44-m-x-0-7-mm/"
+        },
         {
           "label": "Catálogo oficial · página 10",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=10"
@@ -28995,9 +29034,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f519-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f519-superficie-20261014.webp",
+        "width": 950,
+        "height": 950,
+        "srcset": "muestras/formipak-f519-superficie-20261014-640.webp 640w, muestras/formipak-f519-superficie-20261014.webp 950w"
       }
     },
     {
@@ -29015,9 +29055,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 11. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/haya-formipak-pf-bril/"
+        },
         {
           "label": "Catálogo oficial · página 11",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=11"
@@ -29026,9 +29070,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f512-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f512-superficie-20261014.webp",
+        "width": 950,
+        "height": 950,
+        "srcset": "muestras/formipak-f512-superficie-20261014-640.webp 640w, muestras/formipak-f512-superficie-20261014.webp 950w"
       }
     },
     {
@@ -29046,9 +29091,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 11. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/pino-formipak-pf-bril/"
+        },
         {
           "label": "Catálogo oficial · página 11",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=11"
@@ -29057,9 +29106,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f530-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f530-superficie-20261014.webp",
+        "width": 1056,
+        "height": 1056,
+        "srcset": "muestras/formipak-f530-superficie-20261014-640.webp 640w, muestras/formipak-f530-superficie-20261014.webp 1056w"
       }
     },
     {
@@ -29077,9 +29127,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 11. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/caoba-clara-formipak-pf-bri/"
+        },
         {
           "label": "Catálogo oficial · página 11",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=11"
@@ -29088,9 +29142,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f532-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f532-superficie-20261014.webp",
+        "width": 1056,
+        "height": 1056,
+        "srcset": "muestras/formipak-f532-superficie-20261014-640.webp 640w, muestras/formipak-f532-superficie-20261014.webp 1056w"
       }
     },
     {
@@ -29108,9 +29163,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 12. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/roble-flormorado-wood-prem/"
+        },
         {
           "label": "Catálogo oficial · página 12",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=12"
@@ -29119,9 +29178,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f522-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f522-superficie-20261014.webp",
+        "width": 1074,
+        "height": 1074,
+        "srcset": "muestras/formipak-f522-superficie-20261014-640.webp 640w, muestras/formipak-f522-superficie-20261014.webp 1074w"
       }
     },
     {
@@ -29139,9 +29199,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 12. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/bamboo-matrix-premium/"
+        },
         {
           "label": "Catálogo oficial · página 12",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=12"
@@ -29150,9 +29214,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f550-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f550-superficie-20261014.webp",
+        "width": 1008,
+        "height": 1008,
+        "srcset": "muestras/formipak-f550-superficie-20261014-640.webp 640w, muestras/formipak-f550-superficie-20261014.webp 1008w"
       }
     },
     {
@@ -29170,9 +29235,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 12. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/laminado-decorativo-formipak-nuevo-cerezo-brillante-1-22-m-x-2-44-m-x-0-7-mm/"
+        },
         {
           "label": "Catálogo oficial · página 12",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=12"
@@ -29181,9 +29250,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f533-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f533-superficie-20261014.webp",
+        "width": 950,
+        "height": 950,
+        "srcset": "muestras/formipak-f533-superficie-20261014-640.webp 640w, muestras/formipak-f533-superficie-20261014.webp 950w"
       }
     },
     {
@@ -29201,9 +29271,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 13. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/palisandro-pf-bri/"
+        },
         {
           "label": "Catálogo oficial · página 13",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=13"
@@ -29212,9 +29286,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f534-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f534-superficie-20261014.webp",
+        "width": 1600,
+        "height": 1600,
+        "srcset": "muestras/formipak-f534-superficie-20261014-640.webp 640w, muestras/formipak-f534-superficie-20261014.webp 1600w"
       }
     },
     {
@@ -29232,9 +29307,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 13. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/haya-natural-text/"
+        },
         {
           "label": "Catálogo oficial · página 13",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=13"
@@ -29243,9 +29322,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f544-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f544-superficie-20261014.webp",
+        "width": 1126,
+        "height": 1126,
+        "srcset": "muestras/formipak-f544-superficie-20261014-640.webp 640w, muestras/formipak-f544-superficie-20261014.webp 1126w"
       }
     },
     {
@@ -29263,9 +29343,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 13. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/r-cherry-formipak-pf-bril/"
+        },
         {
           "label": "Catálogo oficial · página 13",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=13"
@@ -29274,9 +29358,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f545-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f545-superficie-20261014.webp",
+        "width": 1126,
+        "height": 1126,
+        "srcset": "muestras/formipak-f545-superficie-20261014-640.webp 640w, muestras/formipak-f545-superficie-20261014.webp 1126w"
       }
     },
     {
@@ -29294,9 +29379,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 14. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/sapelli-wood-premium/"
+        },
         {
           "label": "Catálogo oficial · página 14",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=14"
@@ -29305,9 +29394,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f935-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f935-superficie-20261014.webp",
+        "width": 1056,
+        "height": 1056,
+        "srcset": "muestras/formipak-f935-superficie-20261014-640.webp 640w, muestras/formipak-f935-superficie-20261014.webp 1056w"
       }
     },
     {
@@ -29325,9 +29415,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 14. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/laminado-decorativo-formipak-granadillo-natural-matrix-1-22-m-x-2-44-m-x-0-7-mm/"
+        },
         {
           "label": "Catálogo oficial · página 14",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=14"
@@ -29336,9 +29430,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f540-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f540-superficie-20261014.webp",
+        "width": 950,
+        "height": 950,
+        "srcset": "muestras/formipak-f540-superficie-20261014-640.webp 640w, muestras/formipak-f540-superficie-20261014.webp 950w"
       }
     },
     {
@@ -29356,9 +29451,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 14. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/cedro-pf-bril/"
+        },
         {
           "label": "Catálogo oficial · página 14",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=14"
@@ -29367,9 +29466,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f531-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f531-superficie-20261014.webp",
+        "width": 1600,
+        "height": 1600,
+        "srcset": "muestras/formipak-f531-superficie-20261014-640.webp 640w, muestras/formipak-f531-superficie-20261014.webp 1600w"
       }
     },
     {
@@ -29387,9 +29487,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 15. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/caramel-oak-matrix-premium/"
+        },
         {
           "label": "Catálogo oficial · página 15",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=15"
@@ -29398,9 +29502,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f934-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f934-superficie-20261014.webp",
+        "width": 1056,
+        "height": 1056,
+        "srcset": "muestras/formipak-f934-superficie-20261014-640.webp 640w, muestras/formipak-f934-superficie-20261014.webp 1056w"
       }
     },
     {
@@ -29418,9 +29523,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 15. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/carpino-wood-premium/"
+        },
         {
           "label": "Catálogo oficial · página 15",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=15"
@@ -29429,9 +29538,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f932-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f932-superficie-20261014.webp",
+        "width": 1056,
+        "height": 1056,
+        "srcset": "muestras/formipak-f932-superficie-20261014-640.webp 640w, muestras/formipak-f932-superficie-20261014.webp 1056w"
       }
     },
     {
@@ -29449,9 +29559,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 15. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/cocoa-matrix-premium/"
+        },
         {
           "label": "Catálogo oficial · página 15",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=15"
@@ -29460,9 +29574,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f961-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f961-superficie-20261014.webp",
+        "width": 1074,
+        "height": 1074,
+        "srcset": "muestras/formipak-f961-superficie-20261014-640.webp 640w, muestras/formipak-f961-superficie-20261014.webp 1074w"
       }
     },
     {
@@ -29480,9 +29595,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 16. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/porto-matrix-premium/"
+        },
         {
           "label": "Catálogo oficial · página 16",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=16"
@@ -29491,9 +29610,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f931-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f931-superficie-20261014.webp",
+        "width": 1056,
+        "height": 1056,
+        "srcset": "muestras/formipak-f931-superficie-20261014-640.webp 640w, muestras/formipak-f931-superficie-20261014.webp 1056w"
       }
     },
     {
@@ -29511,9 +29631,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 16. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/rosewood-rio-pf-b/"
+        },
         {
           "label": "Catálogo oficial · página 16",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=16"
@@ -29522,9 +29646,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f515-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f515-superficie-20261014.webp",
+        "width": 1074,
+        "height": 1074,
+        "srcset": "muestras/formipak-f515-superficie-20261014-640.webp 640w, muestras/formipak-f515-superficie-20261014.webp 1074w"
       }
     },
     {
@@ -29542,9 +29667,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 16. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/palorosa-formipak-pf-bril/"
+        },
         {
           "label": "Catálogo oficial · página 16",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=16"
@@ -29553,9 +29682,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f535-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f535-superficie-20261014.webp",
+        "width": 1600,
+        "height": 1600,
+        "srcset": "muestras/formipak-f535-superficie-20261014-640.webp 640w, muestras/formipak-f535-superficie-20261014.webp 1600w"
       }
     },
     {
@@ -29573,9 +29703,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 17. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/nogal-formipak-text/"
+        },
         {
           "label": "Catálogo oficial · página 17",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=17"
@@ -29584,9 +29718,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f521-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f521-superficie-20261014.webp",
+        "width": 1056,
+        "height": 1056,
+        "srcset": "muestras/formipak-f521-superficie-20261014-640.webp 640w, muestras/formipak-f521-superficie-20261014.webp 1056w"
       }
     },
     {
@@ -29604,9 +29739,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 17. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/wengue-a-formipak-pf-bril/"
+        },
         {
           "label": "Catálogo oficial · página 17",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=17"
@@ -29615,9 +29754,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f551-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f551-superficie-20261014.webp",
+        "width": 1600,
+        "height": 1600,
+        "srcset": "muestras/formipak-f551-superficie-20261014-640.webp 640w, muestras/formipak-f551-superficie-20261014.webp 1600w"
       }
     },
     {
@@ -29635,9 +29775,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 17. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/ebano-wood-premium/"
+        },
         {
           "label": "Catálogo oficial · página 17",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=17"
@@ -29646,9 +29790,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f941-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f941-superficie-20261014.webp",
+        "width": 1056,
+        "height": 1056,
+        "srcset": "muestras/formipak-f941-superficie-20261014-640.webp 640w, muestras/formipak-f941-superficie-20261014.webp 1056w"
       }
     },
     {
@@ -29666,8 +29811,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 19. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Color sólido del catálogo oficial Formipak",
+      "imageNote": "Superficie uniforme tomada del color central del PDF oficial Pisopak, página 19. Color orientativo por confirmar con muestra física; derechos de Formipak/Pisopak.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 19",
@@ -29677,9 +29822,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f650-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f650-solido-20261014.svg",
+        "width": 1024,
+        "height": 1024
       }
     },
     {
@@ -29697,8 +29842,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 19. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Color sólido del catálogo oficial Formipak",
+      "imageNote": "Superficie uniforme tomada del color central del PDF oficial Pisopak, página 19. Color orientativo por confirmar con muestra física; derechos de Formipak/Pisopak.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 19",
@@ -29708,9 +29853,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f649-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f649-solido-20261014.svg",
+        "width": 1024,
+        "height": 1024
       }
     },
     {
@@ -29728,8 +29873,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 19. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Color sólido del catálogo oficial Formipak",
+      "imageNote": "Superficie uniforme tomada del color central del PDF oficial Pisopak, página 19. Color orientativo por confirmar con muestra física; derechos de Formipak/Pisopak.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 19",
@@ -29739,9 +29884,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f685-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f685-solido-20261014.svg",
+        "width": 1024,
+        "height": 1024
       }
     },
     {
@@ -29759,8 +29904,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 20. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Color sólido del catálogo oficial Formipak",
+      "imageNote": "Superficie uniforme tomada del color central del PDF oficial Pisopak, página 20. Color orientativo por confirmar con muestra física; derechos de Formipak/Pisopak.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 20",
@@ -29770,9 +29915,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f658-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f658-solido-20261014.svg",
+        "width": 1024,
+        "height": 1024
       }
     },
     {
@@ -29790,8 +29935,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 20. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Color sólido del catálogo oficial Formipak",
+      "imageNote": "Superficie uniforme tomada del color central del PDF oficial Pisopak, página 20. Color orientativo por confirmar con muestra física; derechos de Formipak/Pisopak.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 20",
@@ -29801,9 +29946,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f618-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f618-solido-20261014.svg",
+        "width": 1024,
+        "height": 1024
       }
     },
     {
@@ -29821,8 +29966,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 21. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Color sólido del catálogo oficial Formipak",
+      "imageNote": "Superficie uniforme tomada del color central del PDF oficial Pisopak, página 21. Color orientativo por confirmar con muestra física; derechos de Formipak/Pisopak.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 21",
@@ -29832,9 +29977,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f628-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f628-solido-20261014.svg",
+        "width": 1024,
+        "height": 1024
       }
     },
     {
@@ -29852,8 +29997,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 21. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Color sólido del catálogo oficial Formipak",
+      "imageNote": "Superficie uniforme tomada del color central del PDF oficial Pisopak, página 21. Color orientativo por confirmar con muestra física; derechos de Formipak/Pisopak.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 21",
@@ -29863,9 +30008,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f638-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f638-solido-20261014.svg",
+        "width": 1024,
+        "height": 1024
       }
     },
     {
@@ -29883,8 +30028,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 21. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Color sólido del catálogo oficial Formipak",
+      "imageNote": "Superficie uniforme tomada del color central del PDF oficial Pisopak, página 21. Color orientativo por confirmar con muestra física; derechos de Formipak/Pisopak.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 21",
@@ -29894,9 +30039,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f669-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f669-solido-20261014.svg",
+        "width": 1024,
+        "height": 1024
       }
     },
     {
@@ -29914,8 +30059,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 22. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Color sólido del catálogo oficial Formipak",
+      "imageNote": "Superficie uniforme tomada del color central del PDF oficial Pisopak, página 22. Color orientativo por confirmar con muestra física; derechos de Formipak/Pisopak.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 22",
@@ -29925,9 +30070,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f629-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f629-solido-20261014.svg",
+        "width": 1024,
+        "height": 1024
       }
     },
     {
@@ -29945,8 +30090,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 22. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Color sólido del catálogo oficial Formipak",
+      "imageNote": "Superficie uniforme tomada del color central del PDF oficial Pisopak, página 22. Color orientativo por confirmar con muestra física; derechos de Formipak/Pisopak.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 22",
@@ -29956,9 +30101,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f659-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f659-solido-20261014.svg",
+        "width": 1024,
+        "height": 1024
       }
     },
     {
@@ -29976,8 +30121,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 22. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Color sólido del catálogo oficial Formipak",
+      "imageNote": "Superficie uniforme tomada del color central del PDF oficial Pisopak, página 22. Color orientativo por confirmar con muestra física; derechos de Formipak/Pisopak.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 22",
@@ -29987,9 +30132,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f695-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f695-solido-20261014.svg",
+        "width": 1024,
+        "height": 1024
       }
     },
     {
@@ -30007,8 +30152,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 23. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Color sólido del catálogo oficial Formipak",
+      "imageNote": "Superficie uniforme tomada del color central del PDF oficial Pisopak, página 23. Color orientativo por confirmar con muestra física; derechos de Formipak/Pisopak.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 23",
@@ -30018,9 +30163,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f635-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f635-solido-20261014.svg",
+        "width": 1024,
+        "height": 1024
       }
     },
     {
@@ -30038,8 +30183,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 23. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Color sólido del catálogo oficial Formipak",
+      "imageNote": "Superficie uniforme tomada del color central del PDF oficial Pisopak, página 23. Color orientativo por confirmar con muestra física; derechos de Formipak/Pisopak.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 23",
@@ -30049,9 +30194,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f675-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f675-solido-20261014.svg",
+        "width": 1024,
+        "height": 1024
       }
     },
     {
@@ -30069,8 +30214,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 23. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Color sólido del catálogo oficial Formipak",
+      "imageNote": "Superficie uniforme tomada del color central del PDF oficial Pisopak, página 23. Color orientativo por confirmar con muestra física; derechos de Formipak/Pisopak.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 23",
@@ -30080,9 +30225,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f615-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f615-solido-20261014.svg",
+        "width": 1024,
+        "height": 1024
       }
     },
     {
@@ -30100,8 +30245,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 24. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Color sólido del catálogo oficial Formipak",
+      "imageNote": "Superficie uniforme tomada del color central del PDF oficial Pisopak, página 24. Color orientativo por confirmar con muestra física; derechos de Formipak/Pisopak.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 24",
@@ -30111,9 +30256,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f626-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f626-solido-20261014.svg",
+        "width": 1024,
+        "height": 1024
       }
     },
     {
@@ -30131,8 +30276,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 24. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Color sólido del catálogo oficial Formipak",
+      "imageNote": "Superficie uniforme tomada del color central del PDF oficial Pisopak, página 24. Color orientativo por confirmar con muestra física; derechos de Formipak/Pisopak.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 24",
@@ -30142,9 +30287,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f634-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f634-solido-20261014.svg",
+        "width": 1024,
+        "height": 1024
       }
     },
     {
@@ -30162,8 +30307,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 24. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Color sólido del catálogo oficial Formipak",
+      "imageNote": "Superficie uniforme tomada del color central del PDF oficial Pisopak, página 24. Color orientativo por confirmar con muestra física; derechos de Formipak/Pisopak.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 24",
@@ -30173,9 +30318,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f644-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f644-solido-20261014.svg",
+        "width": 1024,
+        "height": 1024
       }
     },
     {
@@ -30193,8 +30338,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 25. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Color sólido del catálogo oficial Formipak",
+      "imageNote": "Superficie uniforme tomada del color central del PDF oficial Pisopak, página 25. Color orientativo por confirmar con muestra física; derechos de Formipak/Pisopak.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 25",
@@ -30204,9 +30349,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f632-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f632-solido-20261014.svg",
+        "width": 1024,
+        "height": 1024
       }
     },
     {
@@ -30224,8 +30369,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 25. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Color sólido del catálogo oficial Formipak",
+      "imageNote": "Superficie uniforme tomada del color central del PDF oficial Pisopak, página 25. Color orientativo por confirmar con muestra física; derechos de Formipak/Pisopak.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 25",
@@ -30235,9 +30380,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f622-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f622-solido-20261014.svg",
+        "width": 1024,
+        "height": 1024
       }
     },
     {
@@ -30255,8 +30400,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 25. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Color sólido del catálogo oficial Formipak",
+      "imageNote": "Superficie uniforme tomada del color central del PDF oficial Pisopak, página 25. Color orientativo por confirmar con muestra física; derechos de Formipak/Pisopak.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 25",
@@ -30266,9 +30411,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f652-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f652-solido-20261014.svg",
+        "width": 1024,
+        "height": 1024
       }
     },
     {
@@ -30286,8 +30431,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 26. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Color sólido del catálogo oficial Formipak",
+      "imageNote": "Superficie uniforme tomada del color central del PDF oficial Pisopak, página 26. Color orientativo por confirmar con muestra física; derechos de Formipak/Pisopak.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 26",
@@ -30297,9 +30442,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f630-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f630-solido-20261014.svg",
+        "width": 1024,
+        "height": 1024
       }
     },
     {
@@ -30317,8 +30462,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 26. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Color sólido del catálogo oficial Formipak",
+      "imageNote": "Superficie uniforme tomada del color central del PDF oficial Pisopak, página 26. Color orientativo por confirmar con muestra física; derechos de Formipak/Pisopak.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 26",
@@ -30328,9 +30473,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f620-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f620-solido-20261014.svg",
+        "width": 1024,
+        "height": 1024
       }
     },
     {
@@ -30348,8 +30493,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 26. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Color sólido del catálogo oficial Formipak",
+      "imageNote": "Superficie uniforme tomada del color central del PDF oficial Pisopak, página 26. Color orientativo por confirmar con muestra física; derechos de Formipak/Pisopak.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 26",
@@ -30359,9 +30504,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f663-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f663-solido-20261014.svg",
+        "width": 1024,
+        "height": 1024
       }
     },
     {
@@ -30379,8 +30524,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 27. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Color sólido del catálogo oficial Formipak",
+      "imageNote": "Superficie uniforme tomada del color central del PDF oficial Pisopak, página 27. Color orientativo por confirmar con muestra física; derechos de Formipak/Pisopak.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 27",
@@ -30390,9 +30535,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f623-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f623-solido-20261014.svg",
+        "width": 1024,
+        "height": 1024
       }
     },
     {
@@ -30410,8 +30555,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 27. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Color sólido del catálogo oficial Formipak",
+      "imageNote": "Superficie uniforme tomada del color central del PDF oficial Pisopak, página 27. Color orientativo por confirmar con muestra física; derechos de Formipak/Pisopak.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 27",
@@ -30421,9 +30566,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f672-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f672-solido-20261014.svg",
+        "width": 1024,
+        "height": 1024
       }
     },
     {
@@ -30441,8 +30586,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 27. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Color sólido del catálogo oficial Formipak",
+      "imageNote": "Superficie uniforme tomada del color central del PDF oficial Pisopak, página 27. Color orientativo por confirmar con muestra física; derechos de Formipak/Pisopak.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 27",
@@ -30452,9 +30597,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f643-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f643-solido-20261014.svg",
+        "width": 1024,
+        "height": 1024
       }
     },
     {
@@ -30472,8 +30617,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 28. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Color sólido del catálogo oficial Formipak",
+      "imageNote": "Superficie uniforme tomada del color central del PDF oficial Pisopak, página 28. Color orientativo por confirmar con muestra física; derechos de Formipak/Pisopak.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 28",
@@ -30483,9 +30628,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f673-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f673-solido-20261014.svg",
+        "width": 1024,
+        "height": 1024
       }
     },
     {
@@ -30503,8 +30648,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 28. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Color sólido del catálogo oficial Formipak",
+      "imageNote": "Superficie uniforme tomada del color central del PDF oficial Pisopak, página 28. Color orientativo por confirmar con muestra física; derechos de Formipak/Pisopak.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 28",
@@ -30514,9 +30659,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f613-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f613-solido-20261014.svg",
+        "width": 1024,
+        "height": 1024
       }
     },
     {
@@ -30534,8 +30679,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 28. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Color sólido del catálogo oficial Formipak",
+      "imageNote": "Superficie uniforme tomada del color central del PDF oficial Pisopak, página 28. Color orientativo por confirmar con muestra física; derechos de Formipak/Pisopak.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 28",
@@ -30545,9 +30690,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f611-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f611-solido-20261014.svg",
+        "width": 1024,
+        "height": 1024
       }
     },
     {
@@ -30565,9 +30710,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 29. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/laminado-decorativo-formipak-salinas-textura-1-22-m-x-2-44-m-x-0-7-mm/"
+        },
         {
           "label": "Catálogo oficial · página 29",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=29"
@@ -30576,9 +30725,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f704-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f704-superficie-20261014.webp",
+        "width": 1600,
+        "height": 1600,
+        "srcset": "muestras/formipak-f704-superficie-20261014-640.webp 640w, muestras/formipak-f704-superficie-20261014.webp 1600w"
       }
     },
     {
@@ -30596,9 +30746,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 30. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/laminado-decorativo-formipak-calacatta-textura-1-22-m-x-2-44-m-x-0-7-mm/"
+        },
         {
           "label": "Catálogo oficial · página 30",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=30"
@@ -30607,9 +30761,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f702-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f702-superficie-20261014.webp",
+        "width": 1253,
+        "height": 1253,
+        "srcset": "muestras/formipak-f702-superficie-20261014-640.webp 640w, muestras/formipak-f702-superficie-20261014.webp 1253w"
       }
     },
     {
@@ -30627,9 +30782,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 30. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/laminado-decorativo-formipak-cantera-textura-1-22-m-x-2-44-m-x-0-7-mm/"
+        },
         {
           "label": "Catálogo oficial · página 30",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=30"
@@ -30638,9 +30797,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f705-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f705-superficie-20261014.webp",
+        "width": 1600,
+        "height": 1600,
+        "srcset": "muestras/formipak-f705-superficie-20261014-640.webp 640w, muestras/formipak-f705-superficie-20261014.webp 1600w"
       }
     },
     {
@@ -30658,9 +30818,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 30. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/laminado-decorativo-formipak-atacama-textura-1-22-m-x-2-44-m-x-0-6-mm/"
+        },
         {
           "label": "Catálogo oficial · página 30",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=30"
@@ -30669,9 +30833,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f703-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f703-superficie-20261014.webp",
+        "width": 1126,
+        "height": 1126,
+        "srcset": "muestras/formipak-f703-superficie-20261014-640.webp 640w, muestras/formipak-f703-superficie-20261014.webp 1126w"
       }
     },
     {
@@ -30689,9 +30854,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 31. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/laminado-decorativo-formipak-pietra-gris-textura-1-22-m-x-2-44-m-x-0-7-mm/"
+        },
         {
           "label": "Catálogo oficial · página 31",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=31"
@@ -30700,9 +30869,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f773-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f773-superficie-20261014.webp",
+        "width": 1600,
+        "height": 1600,
+        "srcset": "muestras/formipak-f773-superficie-20261014-640.webp 640w, muestras/formipak-f773-superficie-20261014.webp 1600w"
       }
     },
     {
@@ -30720,9 +30890,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 31. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/otono-azul-formipak-pf-bril/"
+        },
         {
           "label": "Catálogo oficial · página 31",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=31"
@@ -30731,9 +30905,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f809-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f809-superficie-20261014.webp",
+        "width": 1056,
+        "height": 1056,
+        "srcset": "muestras/formipak-f809-superficie-20261014-640.webp 640w, muestras/formipak-f809-superficie-20261014.webp 1056w"
       }
     },
     {
@@ -30751,9 +30926,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 31. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/otono-verde-formipak-text/"
+        },
         {
           "label": "Catálogo oficial · página 31",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=31"
@@ -30762,9 +30941,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f808-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f808-superficie-20261014.webp",
+        "width": 1056,
+        "height": 1056,
+        "srcset": "muestras/formipak-f808-superficie-20261014-640.webp 640w, muestras/formipak-f808-superficie-20261014.webp 1056w"
       }
     },
     {
@@ -30782,8 +30962,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 32. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen original extraída del PDF oficial Pisopak, página 32, con recorte de superficie completo. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 32",
@@ -30793,9 +30973,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f720-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f720-superficie-20261014.webp",
+        "width": 450,
+        "height": 450
       }
     },
     {
@@ -30813,9 +30993,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 32. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/marmol-onix-formipak-pf-bri/"
+        },
         {
           "label": "Catálogo oficial · página 32",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=32"
@@ -30824,9 +31008,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f742-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f742-superficie-20261014.webp",
+        "width": 1056,
+        "height": 1056,
+        "srcset": "muestras/formipak-f742-superficie-20261014-640.webp 640w, muestras/formipak-f742-superficie-20261014.webp 1056w"
       }
     },
     {
@@ -30844,9 +31029,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 32. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/m-travertino-formipak-pf-br/"
+        },
         {
           "label": "Catálogo oficial · página 32",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=32"
@@ -30855,9 +31044,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f752-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f752-superficie-20261014.webp",
+        "width": 1056,
+        "height": 1056,
+        "srcset": "muestras/formipak-f752-superficie-20261014-640.webp 640w, muestras/formipak-f752-superficie-20261014.webp 1056w"
       }
     },
     {
@@ -30875,9 +31065,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 33. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/marmol-dulce-formipak-text/"
+        },
         {
           "label": "Catálogo oficial · página 33",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=33"
@@ -30886,9 +31080,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f716-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f716-superficie-20261014.webp",
+        "width": 1126,
+        "height": 1126,
+        "srcset": "muestras/formipak-f716-superficie-20261014-640.webp 640w, muestras/formipak-f716-superficie-20261014.webp 1126w"
       }
     },
     {
@@ -30906,9 +31101,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 33. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/marmol-clasico-formipak-pf/"
+        },
         {
           "label": "Catálogo oficial · página 33",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=33"
@@ -30917,9 +31116,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f717-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f717-superficie-20261014.webp",
+        "width": 1056,
+        "height": 1056,
+        "srcset": "muestras/formipak-f717-superficie-20261014-640.webp 640w, muestras/formipak-f717-superficie-20261014.webp 1056w"
       }
     },
     {
@@ -30937,9 +31137,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 33. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/marmol-nubio-formipak-pf-br/"
+        },
         {
           "label": "Catálogo oficial · página 33",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=33"
@@ -30948,9 +31152,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f711-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f711-superficie-20261014.webp",
+        "width": 1056,
+        "height": 1056,
+        "srcset": "muestras/formipak-f711-superficie-20261014-640.webp 640w, muestras/formipak-f711-superficie-20261014.webp 1056w"
       }
     },
     {
@@ -30968,9 +31173,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 34. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/laminado-decorativo-formipak-terrazo-natural-textura-1-22-m-x-2-44-m-x-0-7-mm/"
+        },
         {
           "label": "Catálogo oficial · página 34",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=34"
@@ -30979,9 +31188,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f701-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f701-superficie-20261014.webp",
+        "width": 870,
+        "height": 870,
+        "srcset": "muestras/formipak-f701-superficie-20261014-640.webp 640w, muestras/formipak-f701-superficie-20261014.webp 870w"
       }
     },
     {
@@ -30999,9 +31209,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 34. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/galaxia-blanco-formipak-pf/"
+        },
         {
           "label": "Catálogo oficial · página 34",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=34"
@@ -31010,9 +31224,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f700-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f700-superficie-20261014.webp",
+        "width": 1056,
+        "height": 1056,
+        "srcset": "muestras/formipak-f700-superficie-20261014-640.webp 640w, muestras/formipak-f700-superficie-20261014.webp 1056w"
       }
     },
     {
@@ -31030,9 +31245,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 34. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/granito-novo-formipak-text/"
+        },
         {
           "label": "Catálogo oficial · página 34",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=34"
@@ -31041,9 +31260,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f725-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f725-superficie-20261014.webp",
+        "width": 1056,
+        "height": 1056,
+        "srcset": "muestras/formipak-f725-superficie-20261014-640.webp 640w, muestras/formipak-f725-superficie-20261014.webp 1056w"
       }
     },
     {
@@ -31061,8 +31281,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 35. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen original extraída del PDF oficial Pisopak, página 35, con recorte de superficie completo. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 35",
@@ -31072,9 +31292,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f744-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f744-superficie-20261014.webp",
+        "width": 672,
+        "height": 672,
+        "srcset": "muestras/formipak-f744-superficie-20261014-640.webp 640w, muestras/formipak-f744-superficie-20261014.webp 672w"
       }
     },
     {
@@ -31092,9 +31313,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 35. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/granito-negro-formipak-pf-b/"
+        },
         {
           "label": "Catálogo oficial · página 35",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=35"
@@ -31103,9 +31328,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f753-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f753-superficie-20261014.webp",
+        "width": 1056,
+        "height": 1056,
+        "srcset": "muestras/formipak-f753-superficie-20261014-640.webp 640w, muestras/formipak-f753-superficie-20261014.webp 1056w"
       }
     },
     {
@@ -31123,9 +31349,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 35. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/granitino-formipak-pf-bril/"
+        },
         {
           "label": "Catálogo oficial · página 35",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=35"
@@ -31134,319 +31364,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f741-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
-      }
-    },
-    {
-      "id": "formipak-f813",
-      "category": "laminados",
-      "name": "Manto",
-      "family": "Texturas y relieves",
-      "brand": "Formipak",
-      "supplier": "",
-      "code": "F813",
-      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
-      "description": "Lámina decorativa HPL de la colección Fantasías del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
-      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
-      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
-      "market": "Perú · catálogo oficial Pisopak",
-      "international": true,
-      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 36. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
-      "sourceLinks": [
-        {
-          "label": "Catálogo oficial · página 36",
-          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=36"
-        }
-      ],
-      "appId": null,
-      "textureId": null,
-      "image": {
-        "src": "muestras/formipak-f813-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
-      }
-    },
-    {
-      "id": "formipak-f818",
-      "category": "laminados",
-      "name": "Nature",
-      "family": "Texturas y relieves",
-      "brand": "Formipak",
-      "supplier": "",
-      "code": "F818",
-      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
-      "description": "Lámina decorativa HPL de la colección Fantasías del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
-      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
-      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
-      "market": "Perú · catálogo oficial Pisopak",
-      "international": true,
-      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 36. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
-      "sourceLinks": [
-        {
-          "label": "Catálogo oficial · página 36",
-          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=36"
-        }
-      ],
-      "appId": null,
-      "textureId": null,
-      "image": {
-        "src": "muestras/formipak-f818-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
-      }
-    },
-    {
-      "id": "formipak-f815",
-      "category": "laminados",
-      "name": "Bloody",
-      "family": "Texturas y relieves",
-      "brand": "Formipak",
-      "supplier": "",
-      "code": "F815",
-      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
-      "description": "Lámina decorativa HPL de la colección Fantasías del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
-      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
-      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
-      "market": "Perú · catálogo oficial Pisopak",
-      "international": true,
-      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 37. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
-      "sourceLinks": [
-        {
-          "label": "Catálogo oficial · página 37",
-          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=37"
-        }
-      ],
-      "appId": null,
-      "textureId": null,
-      "image": {
-        "src": "muestras/formipak-f815-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
-      }
-    },
-    {
-      "id": "formipak-f879",
-      "category": "laminados",
-      "name": "Burbujas Azules",
-      "family": "Texturas y relieves",
-      "brand": "Formipak",
-      "supplier": "",
-      "code": "F879",
-      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
-      "description": "Lámina decorativa HPL de la colección Fantasías del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
-      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
-      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
-      "market": "Perú · catálogo oficial Pisopak",
-      "international": true,
-      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 37. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
-      "sourceLinks": [
-        {
-          "label": "Catálogo oficial · página 37",
-          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=37"
-        }
-      ],
-      "appId": null,
-      "textureId": null,
-      "image": {
-        "src": "muestras/formipak-f879-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
-      }
-    },
-    {
-      "id": "formipak-f881",
-      "category": "laminados",
-      "name": "Burbujas Verdes",
-      "family": "Texturas y relieves",
-      "brand": "Formipak",
-      "supplier": "",
-      "code": "F881",
-      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
-      "description": "Lámina decorativa HPL de la colección Fantasías del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
-      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
-      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
-      "market": "Perú · catálogo oficial Pisopak",
-      "international": true,
-      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 37. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
-      "sourceLinks": [
-        {
-          "label": "Catálogo oficial · página 37",
-          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=37"
-        }
-      ],
-      "appId": null,
-      "textureId": null,
-      "image": {
-        "src": "muestras/formipak-f881-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
-      }
-    },
-    {
-      "id": "formipak-f816",
-      "category": "laminados",
-      "name": "Floral Amarillo",
-      "family": "Texturas y relieves",
-      "brand": "Formipak",
-      "supplier": "",
-      "code": "F816",
-      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
-      "description": "Lámina decorativa HPL de la colección Fantasías del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
-      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
-      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
-      "market": "Perú · catálogo oficial Pisopak",
-      "international": true,
-      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 38. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
-      "sourceLinks": [
-        {
-          "label": "Catálogo oficial · página 38",
-          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=38"
-        }
-      ],
-      "appId": null,
-      "textureId": null,
-      "image": {
-        "src": "muestras/formipak-f816-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
-      }
-    },
-    {
-      "id": "formipak-f817",
-      "category": "laminados",
-      "name": "Floral Celeste",
-      "family": "Texturas y relieves",
-      "brand": "Formipak",
-      "supplier": "",
-      "code": "F817",
-      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
-      "description": "Lámina decorativa HPL de la colección Fantasías del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
-      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
-      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
-      "market": "Perú · catálogo oficial Pisopak",
-      "international": true,
-      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 38. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
-      "sourceLinks": [
-        {
-          "label": "Catálogo oficial · página 38",
-          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=38"
-        }
-      ],
-      "appId": null,
-      "textureId": null,
-      "image": {
-        "src": "muestras/formipak-f817-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
-      }
-    },
-    {
-      "id": "formipak-f880",
-      "category": "laminados",
-      "name": "Hojas",
-      "family": "Texturas y relieves",
-      "brand": "Formipak",
-      "supplier": "",
-      "code": "F880",
-      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
-      "description": "Lámina decorativa HPL de la colección Fantasías del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
-      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
-      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
-      "market": "Perú · catálogo oficial Pisopak",
-      "international": true,
-      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 38. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
-      "sourceLinks": [
-        {
-          "label": "Catálogo oficial · página 38",
-          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=38"
-        }
-      ],
-      "appId": null,
-      "textureId": null,
-      "image": {
-        "src": "muestras/formipak-f880-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
-      }
-    },
-    {
-      "id": "formipak-f840",
-      "category": "laminados",
-      "name": "Blanco Cuad 35 mm",
-      "family": "Texturas y relieves",
-      "brand": "Formipak",
-      "supplier": "",
-      "code": "F840",
-      "finish": "Brillante",
-      "description": "Lámina decorativa HPL de la colección Pizarras del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
-      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
-      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
-      "market": "Perú · catálogo oficial Pisopak",
-      "international": true,
-      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 39. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
-      "sourceLinks": [
-        {
-          "label": "Catálogo oficial · página 39",
-          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=39"
-        }
-      ],
-      "appId": null,
-      "textureId": null,
-      "image": {
-        "src": "muestras/formipak-f840-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
-      }
-    },
-    {
-      "id": "formipak-f830",
-      "category": "laminados",
-      "name": "Blanco Cuad 50 mm",
-      "family": "Texturas y relieves",
-      "brand": "Formipak",
-      "supplier": "",
-      "code": "F830",
-      "finish": "Brillante",
-      "description": "Lámina decorativa HPL de la colección Pizarras del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
-      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
-      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
-      "market": "Perú · catálogo oficial Pisopak",
-      "international": true,
-      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 39. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
-      "sourceLinks": [
-        {
-          "label": "Catálogo oficial · página 39",
-          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=39"
-        }
-      ],
-      "appId": null,
-      "textureId": null,
-      "image": {
-        "src": "muestras/formipak-f830-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f741-superficie-20261014.webp",
+        "width": 1056,
+        "height": 1056,
+        "srcset": "muestras/formipak-f741-superficie-20261014-640.webp 640w, muestras/formipak-f741-superficie-20261014.webp 1056w"
       }
     },
     {
@@ -31464,9 +31385,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 41. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/metalic-80-brush/"
+        },
         {
           "label": "Catálogo oficial · página 41",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=41"
@@ -31475,9 +31400,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f900as-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f900as-superficie-20261014.webp",
+        "width": 1056,
+        "height": 1056,
+        "srcset": "muestras/formipak-f900as-superficie-20261014-640.webp 640w, muestras/formipak-f900as-superficie-20261014.webp 1056w"
       }
     },
     {
@@ -31495,8 +31421,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 41. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen original extraída del PDF oficial Pisopak, página 41, con recorte de superficie completo. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 41",
@@ -31506,9 +31432,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f611as-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f611as-superficie-20261014.webp",
+        "width": 817,
+        "height": 817,
+        "srcset": "muestras/formipak-f611as-superficie-20261014-640.webp 640w, muestras/formipak-f611as-superficie-20261014.webp 817w"
       }
     },
     {
@@ -31526,8 +31453,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 41. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen original extraída del PDF oficial Pisopak, página 41, con recorte de superficie completo. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 41",
@@ -31537,9 +31464,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f675as-catalogo-20261014.webp",
-        "width": 340,
-        "height": 780
+        "src": "muestras/formipak-f675as-superficie-20261014.webp",
+        "width": 832,
+        "height": 832,
+        "srcset": "muestras/formipak-f675as-superficie-20261014-640.webp 640w, muestras/formipak-f675as-superficie-20261014.webp 832w"
       }
     },
     {
@@ -31557,9 +31485,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 42. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/formipak-aluminio/"
+        },
         {
           "label": "Catálogo oficial · página 42",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=42"
@@ -31568,9 +31500,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f400-catalogo-20261014.webp",
-        "width": 300,
-        "height": 130
+        "src": "muestras/formipak-f400-superficie-20261014.webp",
+        "width": 1126,
+        "height": 1126,
+        "srcset": "muestras/formipak-f400-superficie-20261014-640.webp 640w, muestras/formipak-f400-superficie-20261014.webp 1126w"
       }
     },
     {
@@ -31588,9 +31521,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 42. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/laminado-decorativo-formipak-aluminio-oro-1-22-m-x-2-44-m-x-0-8-mm/"
+        },
         {
           "label": "Catálogo oficial · página 42",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=42"
@@ -31599,9 +31536,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f410-catalogo-20261014.webp",
-        "width": 300,
-        "height": 100
+        "src": "muestras/formipak-f410-superficie-20261014.webp",
+        "width": 950,
+        "height": 950,
+        "srcset": "muestras/formipak-f410-superficie-20261014-640.webp 640w, muestras/formipak-f410-superficie-20261014.webp 950w"
       }
     },
     {
@@ -31619,9 +31557,13 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 42. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
+        {
+          "label": "Producto oficial · Pisopak",
+          "url": "https://www.pisopak.com/producto/laminado-decorativo-formipak-aluminio-bronce-1-22-m-x-2-44-m-x-0-8-mm/"
+        },
         {
           "label": "Catálogo oficial · página 42",
           "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=42"
@@ -31630,9 +31572,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f420-catalogo-20261014.webp",
-        "width": 300,
-        "height": 100
+        "src": "muestras/formipak-f420-superficie-20261014.webp",
+        "width": 950,
+        "height": 950,
+        "srcset": "muestras/formipak-f420-superficie-20261014-640.webp 640w, muestras/formipak-f420-superficie-20261014.webp 950w"
       }
     },
     {
@@ -31650,8 +31593,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra del catálogo oficial Formipak",
-      "imageNote": "Recorte del PDF oficial Pisopak, página 42. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra oficial Formipak · superficie completa",
+      "imageNote": "Imagen original extraída del PDF oficial Pisopak, página 42, con recorte de superficie completo. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 42",
@@ -31661,9 +31604,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f430-catalogo-20261014.webp",
-        "width": 180,
-        "height": 100
+        "src": "muestras/formipak-f430-superficie-20261014.webp",
+        "width": 512,
+        "height": 512
       }
     }
   ]
