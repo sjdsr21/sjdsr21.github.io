@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-13",
+  "updated": "2026-10-14",
   "categories": [
     {
       "id": "maderas",
@@ -28720,6 +28720,2951 @@
         }
       ],
       "pattern": "Colores sólidos"
+    },
+    {
+      "id": "formipak-f514",
+      "category": "laminados",
+      "name": "Roble Tarik",
+      "family": "Maderas",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F514",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Maderas del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 8. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 8",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=8"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f514-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f513",
+      "category": "laminados",
+      "name": "Laricin Arena",
+      "family": "Maderas",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F513",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Maderas del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 8. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 8",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=8"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f513-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f560",
+      "category": "laminados",
+      "name": "Lino",
+      "family": "Maderas",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F560",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Maderas del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 8. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 8",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=8"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f560-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f940",
+      "category": "laminados",
+      "name": "Maple",
+      "family": "Maderas",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F940",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Maderas del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 9. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 9",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=9"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f940-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f930",
+      "category": "laminados",
+      "name": "Baltic",
+      "family": "Maderas",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F930",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Maderas del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 9. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 9",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=9"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f930-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f571",
+      "category": "laminados",
+      "name": "Roble Cenizo",
+      "family": "Maderas",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F571",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Maderas del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 9. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 9",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=9"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f571-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f570",
+      "category": "laminados",
+      "name": "Olivo",
+      "family": "Maderas",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F570",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Maderas del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 10. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 10",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=10"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f570-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-m554",
+      "category": "laminados",
+      "name": "Entablado",
+      "family": "Maderas",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "M554",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Maderas del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 10. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 10",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=10"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-m554-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f519",
+      "category": "laminados",
+      "name": "Arce",
+      "family": "Maderas",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F519",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Maderas del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 10. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 10",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=10"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f519-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f512",
+      "category": "laminados",
+      "name": "Haya",
+      "family": "Maderas",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F512",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Maderas del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 11. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 11",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=11"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f512-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f530",
+      "category": "laminados",
+      "name": "Pino",
+      "family": "Maderas",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F530",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Maderas del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 11. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 11",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=11"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f530-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f532",
+      "category": "laminados",
+      "name": "Caoba Clara",
+      "family": "Maderas",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F532",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Maderas del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 11. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 11",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=11"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f532-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f522",
+      "category": "laminados",
+      "name": "Roble Flor Morado",
+      "family": "Maderas",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F522",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Maderas del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 12. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 12",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=12"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f522-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f550",
+      "category": "laminados",
+      "name": "Bamboo",
+      "family": "Maderas",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F550",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Maderas del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 12. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 12",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=12"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f550-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f533",
+      "category": "laminados",
+      "name": "Nuevo Cerezo",
+      "family": "Maderas",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F533",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Maderas del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 12. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 12",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=12"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f533-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f534",
+      "category": "laminados",
+      "name": "Palisandro",
+      "family": "Maderas",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F534",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Maderas del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 13. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 13",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=13"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f534-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f544",
+      "category": "laminados",
+      "name": "Haya Natural",
+      "family": "Maderas",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F544",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Maderas del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 13. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 13",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=13"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f544-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f545",
+      "category": "laminados",
+      "name": "Royal Cherry",
+      "family": "Maderas",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F545",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Maderas del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 13. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 13",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=13"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f545-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f935",
+      "category": "laminados",
+      "name": "Sapelli",
+      "family": "Maderas",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F935",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Maderas del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 14. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 14",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=14"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f935-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f540",
+      "category": "laminados",
+      "name": "Granadillo Natural",
+      "family": "Maderas",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F540",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Maderas del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 14. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 14",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=14"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f540-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f531",
+      "category": "laminados",
+      "name": "Cedro",
+      "family": "Maderas",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F531",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Maderas del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 14. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 14",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=14"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f531-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f934",
+      "category": "laminados",
+      "name": "Caramel Oak",
+      "family": "Maderas",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F934",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Maderas del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 15. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 15",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=15"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f934-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f932",
+      "category": "laminados",
+      "name": "Carpiño",
+      "family": "Maderas",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F932",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Maderas del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 15. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 15",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=15"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f932-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f961",
+      "category": "laminados",
+      "name": "Cocoa",
+      "family": "Maderas",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F961",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Maderas del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 15. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 15",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=15"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f961-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f931",
+      "category": "laminados",
+      "name": "Porto",
+      "family": "Maderas",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F931",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Maderas del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 16. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 16",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=16"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f931-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f515",
+      "category": "laminados",
+      "name": "Rosewood Rio",
+      "family": "Maderas",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F515",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Maderas del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 16. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 16",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=16"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f515-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f535",
+      "category": "laminados",
+      "name": "Palorosa",
+      "family": "Maderas",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F535",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Maderas del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 16. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 16",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=16"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f535-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f521",
+      "category": "laminados",
+      "name": "Nogal",
+      "family": "Maderas",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F521",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Maderas del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 17. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 17",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=17"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f521-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f551",
+      "category": "laminados",
+      "name": "Wengue A",
+      "family": "Maderas",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F551",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Maderas del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 17. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 17",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=17"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f551-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f941",
+      "category": "laminados",
+      "name": "Ébano",
+      "family": "Maderas",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F941",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Maderas del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 17. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 17",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=17"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f941-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f650",
+      "category": "laminados",
+      "name": "Arcilla Rosada",
+      "family": "Colores sólidos",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F650",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Sólidos del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 19. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 19",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=19"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f650-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f649",
+      "category": "laminados",
+      "name": "Lila",
+      "family": "Colores sólidos",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F649",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Sólidos del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 19. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 19",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=19"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f649-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f685",
+      "category": "laminados",
+      "name": "Fucsia",
+      "family": "Colores sólidos",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F685",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Sólidos del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 19. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 19",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=19"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f685-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f658",
+      "category": "laminados",
+      "name": "Lima",
+      "family": "Colores sólidos",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F658",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Sólidos del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 20. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 20",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=20"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f658-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f618",
+      "category": "laminados",
+      "name": "Verde Limón",
+      "family": "Colores sólidos",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F618",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Sólidos del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 20. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 20",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=20"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f618-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f628",
+      "category": "laminados",
+      "name": "Verde Amazon",
+      "family": "Colores sólidos",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F628",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Sólidos del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 21. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 21",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=21"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f628-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f638",
+      "category": "laminados",
+      "name": "Turquesa",
+      "family": "Colores sólidos",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F638",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Sólidos del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 21. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 21",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=21"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f638-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f669",
+      "category": "laminados",
+      "name": "Azul Mediterráneo",
+      "family": "Colores sólidos",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F669",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Sólidos del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 21. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 21",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=21"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f669-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f629",
+      "category": "laminados",
+      "name": "Azul",
+      "family": "Colores sólidos",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F629",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Sólidos del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 22. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 22",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=22"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f629-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f659",
+      "category": "laminados",
+      "name": "Lapizlasuli",
+      "family": "Colores sólidos",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F659",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Sólidos del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 22. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 22",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=22"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f659-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f695",
+      "category": "laminados",
+      "name": "Violeta",
+      "family": "Colores sólidos",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F695",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Sólidos del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 22. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 22",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=22"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f695-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f635",
+      "category": "laminados",
+      "name": "Granate",
+      "family": "Colores sólidos",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F635",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Sólidos del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 23. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 23",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=23"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f635-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f675",
+      "category": "laminados",
+      "name": "Rojo Rubí",
+      "family": "Colores sólidos",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F675",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Sólidos del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 23. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 23",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=23"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f675-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f615",
+      "category": "laminados",
+      "name": "Rojo",
+      "family": "Colores sólidos",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F615",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Sólidos del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 23. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 23",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=23"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f615-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f626",
+      "category": "laminados",
+      "name": "Lúcuma",
+      "family": "Colores sólidos",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F626",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Sólidos del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 24. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 24",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=24"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f626-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f634",
+      "category": "laminados",
+      "name": "Amarillo Castell",
+      "family": "Colores sólidos",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F634",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Sólidos del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 24. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 24",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=24"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f634-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f644",
+      "category": "laminados",
+      "name": "Amarillo Trigo",
+      "family": "Colores sólidos",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F644",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Sólidos del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 24. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 24",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=24"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f644-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f632",
+      "category": "laminados",
+      "name": "Crema",
+      "family": "Colores sólidos",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F632",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Sólidos del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 25. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 25",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=25"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f632-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f622",
+      "category": "laminados",
+      "name": "Almendra",
+      "family": "Colores sólidos",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F622",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Sólidos del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 25. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 25",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=25"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f622-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f652",
+      "category": "laminados",
+      "name": "Avellana",
+      "family": "Colores sólidos",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F652",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Sólidos del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 25. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 25",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=25"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f652-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f630",
+      "category": "laminados",
+      "name": "Blanco Nieve",
+      "family": "Colores sólidos",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F630",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Sólidos del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 26. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 26",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=26"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f630-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f620",
+      "category": "laminados",
+      "name": "Blanco Andino",
+      "family": "Colores sólidos",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F620",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Sólidos del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 26. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 26",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=26"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f620-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f663",
+      "category": "laminados",
+      "name": "Gris Claro",
+      "family": "Colores sólidos",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F663",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Sólidos del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 26. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 26",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=26"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f663-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f623",
+      "category": "laminados",
+      "name": "Gris",
+      "family": "Colores sólidos",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F623",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Sólidos del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 27. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 27",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=27"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f623-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f672",
+      "category": "laminados",
+      "name": "Moka",
+      "family": "Colores sólidos",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F672",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Sólidos del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 27. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 27",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=27"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f672-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f643",
+      "category": "laminados",
+      "name": "Gris Humo",
+      "family": "Colores sólidos",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F643",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Sólidos del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 27. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 27",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=27"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f643-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f673",
+      "category": "laminados",
+      "name": "Gris Acero",
+      "family": "Colores sólidos",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F673",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Sólidos del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 28. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 28",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=28"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f673-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f613",
+      "category": "laminados",
+      "name": "Gris Oscuro",
+      "family": "Colores sólidos",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F613",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Sólidos del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 28. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 28",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=28"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f613-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f611",
+      "category": "laminados",
+      "name": "Negro",
+      "family": "Colores sólidos",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F611",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Sólidos del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 28. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 28",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=28"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f611-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f704",
+      "category": "laminados",
+      "name": "Salinas",
+      "family": "Piedras y minerales",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F704",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Piedras del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 29. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 29",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=29"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f704-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f702",
+      "category": "laminados",
+      "name": "Calacatta",
+      "family": "Piedras y minerales",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F702",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Piedras del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 30. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 30",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=30"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f702-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f705",
+      "category": "laminados",
+      "name": "Cantera",
+      "family": "Piedras y minerales",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F705",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Piedras del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 30. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 30",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=30"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f705-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f703",
+      "category": "laminados",
+      "name": "Atacama",
+      "family": "Piedras y minerales",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F703",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Piedras del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 30. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 30",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=30"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f703-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f773",
+      "category": "laminados",
+      "name": "Pietra Gris",
+      "family": "Piedras y minerales",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F773",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Piedras del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 31. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 31",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=31"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f773-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f809",
+      "category": "laminados",
+      "name": "Otoño Azul",
+      "family": "Piedras y minerales",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F809",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Piedras del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 31. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 31",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=31"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f809-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f808",
+      "category": "laminados",
+      "name": "Otoño Verde",
+      "family": "Piedras y minerales",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F808",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Piedras del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 31. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 31",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=31"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f808-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f720",
+      "category": "laminados",
+      "name": "Mármol Carrara",
+      "family": "Piedras y minerales",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F720",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Piedras del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 32. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 32",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=32"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f720-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f742",
+      "category": "laminados",
+      "name": "Mármol Onix",
+      "family": "Piedras y minerales",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F742",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Piedras del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 32. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 32",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=32"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f742-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f752",
+      "category": "laminados",
+      "name": "Mármol Travertino",
+      "family": "Piedras y minerales",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F752",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Piedras del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 32. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 32",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=32"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f752-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f716",
+      "category": "laminados",
+      "name": "Mármol Dulce",
+      "family": "Piedras y minerales",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F716",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Piedras del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 33. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 33",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=33"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f716-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f717",
+      "category": "laminados",
+      "name": "Mármol Clásico",
+      "family": "Piedras y minerales",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F717",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Piedras del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 33. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 33",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=33"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f717-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f711",
+      "category": "laminados",
+      "name": "Mármol Nubio",
+      "family": "Piedras y minerales",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F711",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Piedras del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 33. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 33",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=33"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f711-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f701",
+      "category": "laminados",
+      "name": "Terrazo Nat.",
+      "family": "Piedras y minerales",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F701",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Piedras del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 34. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 34",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=34"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f701-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f700",
+      "category": "laminados",
+      "name": "Galaxia Blanco",
+      "family": "Piedras y minerales",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F700",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Piedras del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 34. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 34",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=34"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f700-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f725",
+      "category": "laminados",
+      "name": "Granito Novo",
+      "family": "Piedras y minerales",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F725",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Piedras del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 34. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 34",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=34"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f725-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f744",
+      "category": "laminados",
+      "name": "Granito Café",
+      "family": "Piedras y minerales",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F744",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Piedras del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 35. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 35",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=35"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f744-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f753",
+      "category": "laminados",
+      "name": "Granito Negro",
+      "family": "Piedras y minerales",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F753",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Piedras del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 35. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 35",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=35"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f753-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f741",
+      "category": "laminados",
+      "name": "Granitino Negro",
+      "family": "Piedras y minerales",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F741",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Piedras del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 35. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 35",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=35"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f741-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f813",
+      "category": "laminados",
+      "name": "Manto",
+      "family": "Texturas y relieves",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F813",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Fantasías del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 36. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 36",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=36"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f813-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f818",
+      "category": "laminados",
+      "name": "Nature",
+      "family": "Texturas y relieves",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F818",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Fantasías del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 36. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 36",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=36"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f818-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f815",
+      "category": "laminados",
+      "name": "Bloody",
+      "family": "Texturas y relieves",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F815",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Fantasías del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 37. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 37",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=37"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f815-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f879",
+      "category": "laminados",
+      "name": "Burbujas Azules",
+      "family": "Texturas y relieves",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F879",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Fantasías del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 37. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 37",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=37"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f879-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f881",
+      "category": "laminados",
+      "name": "Burbujas Verdes",
+      "family": "Texturas y relieves",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F881",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Fantasías del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 37. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 37",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=37"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f881-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f816",
+      "category": "laminados",
+      "name": "Floral Amarillo",
+      "family": "Texturas y relieves",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F816",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Fantasías del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 38. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 38",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=38"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f816-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f817",
+      "category": "laminados",
+      "name": "Floral Celeste",
+      "family": "Texturas y relieves",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F817",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Fantasías del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 38. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 38",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=38"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f817-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f880",
+      "category": "laminados",
+      "name": "Hojas",
+      "family": "Texturas y relieves",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F880",
+      "finish": "Brillo y mate · Wood/Matrix Premium según diseño",
+      "description": "Lámina decorativa HPL de la colección Fantasías del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 38. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 38",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=38"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f880-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f840",
+      "category": "laminados",
+      "name": "Blanco Cuad 35 mm",
+      "family": "Texturas y relieves",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F840",
+      "finish": "Brillante",
+      "description": "Lámina decorativa HPL de la colección Pizarras del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 39. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 39",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=39"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f840-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f830",
+      "category": "laminados",
+      "name": "Blanco Cuad 50 mm",
+      "family": "Texturas y relieves",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F830",
+      "finish": "Brillante",
+      "description": "Lámina decorativa HPL de la colección Pizarras del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 39. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 39",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=39"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f830-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f900as",
+      "category": "laminados",
+      "name": "Metalic 80 Brush",
+      "family": "Metales",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F900AS",
+      "finish": "Brush",
+      "description": "Lámina decorativa HPL de la colección Brush del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 41. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 41",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=41"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f900as-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f611as",
+      "category": "laminados",
+      "name": "Negro Brush",
+      "family": "Metales",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F611AS",
+      "finish": "Brush",
+      "description": "Lámina decorativa HPL de la colección Brush del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 41. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 41",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=41"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f611as-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f675as",
+      "category": "laminados",
+      "name": "Rojo Rubí Brush",
+      "family": "Metales",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F675AS",
+      "finish": "Brush",
+      "description": "Lámina decorativa HPL de la colección Brush del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 41. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 41",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=41"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f675as-catalogo-20261014.webp",
+        "width": 340,
+        "height": 780
+      }
+    },
+    {
+      "id": "formipak-f400",
+      "category": "laminados",
+      "name": "Aluminio",
+      "family": "Metales",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F400",
+      "finish": "Aluminio",
+      "description": "Lámina decorativa HPL de la colección Aluminio del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 42. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 42",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=42"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f400-catalogo-20261014.webp",
+        "width": 300,
+        "height": 130
+      }
+    },
+    {
+      "id": "formipak-f410",
+      "category": "laminados",
+      "name": "Aluminio Oro",
+      "family": "Metales",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F410",
+      "finish": "Aluminio",
+      "description": "Lámina decorativa HPL de la colección Aluminio del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 42. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 42",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=42"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f410-catalogo-20261014.webp",
+        "width": 300,
+        "height": 100
+      }
+    },
+    {
+      "id": "formipak-f420",
+      "category": "laminados",
+      "name": "Aluminio Bronce",
+      "family": "Metales",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F420",
+      "finish": "Aluminio",
+      "description": "Lámina decorativa HPL de la colección Aluminio del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 42. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 42",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=42"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f420-catalogo-20261014.webp",
+        "width": 300,
+        "height": 100
+      }
+    },
+    {
+      "id": "formipak-f430",
+      "category": "laminados",
+      "name": "Aluminio Cobre",
+      "family": "Metales",
+      "brand": "Formipak",
+      "supplier": "",
+      "code": "F430",
+      "finish": "Aluminio",
+      "description": "Lámina decorativa HPL de la colección Aluminio del catálogo oficial Formipak de Pisopak Perú. Se consulta por código, acabado y presentación.",
+      "use": "Enchapado de superficies y frentes, según la ficha técnica del producto y el soporte elegido.",
+      "care": "Limpieza suave. Confirmar color, acabado y uso con la muestra física y la ficha del fabricante.",
+      "market": "Perú · catálogo oficial Pisopak",
+      "international": true,
+      "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
+      "imageKind": "Muestra del catálogo oficial Formipak",
+      "imageNote": "Recorte del PDF oficial Pisopak, página 42. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "sourceLinks": [
+        {
+          "label": "Catálogo oficial · página 42",
+          "url": "https://www.pisopak.com/wp-content/uploads/2024/01/CATALOGO-FORMIPAK-PERU.pdf#page=42"
+        }
+      ],
+      "appId": null,
+      "textureId": null,
+      "image": {
+        "src": "muestras/formipak-f430-catalogo-20261014.webp",
+        "width": 180,
+        "height": 100
+      }
     }
   ]
 }
