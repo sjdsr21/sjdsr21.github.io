@@ -3287,25 +3287,44 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra publicada por ArquiStore",
-      "imageNote": "Muestra publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular.",
+      "imageKind": "Fotografía original del catálogo Virgo de ArquiStore",
+      "imageNote": "Fotografía original del muestrario Virgo publicado por ArquiStore, página 47, con recorte de la superficie para ocultar fondo y etiqueta. Sin recreación IA. Acabado DC Diamante; corresponde a Texturas y relieves. Derechos de sus titulares.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
           "url": "https://arquistore.online/producto/1006-dc-diamante-negro/"
+        },
+        {
+          "label": "Laminados El Pardillo · Diamante Negro DC 1006 · DC",
+          "url": "https://articulo.mercadolibre.com.ve/MLV-796499622-virgo-laminados-decorativos-texturizados-alto-brillo--_JM?searchVariation=182897557439"
+        },
+        {
+          "label": "Catálogo Virgo · DC Diamante · página 47",
+          "url": "https://arquistore.online/wp-content/uploads/2026/04/Muestrario-Virgo-2025-Clientes-3.pdf#page=47"
         }
       ],
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1006-dc-detalle26.webp",
-        "width": 823,
-        "height": 1600
+        "src": "muestras/virgo-1006-dc-catalogo-20261015.webp",
+        "width": 908,
+        "height": 1280,
+        "crop": [
+          15,
+          15,
+          875,
+          1090
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
-        "ArquiStore"
+        "ArquiStore",
+        "Laminados El Pardillo"
       ],
-      "supplierAssociationStatus": "oferta_publicada"
+      "supplierAssociationStatus": "oferta_publicada",
+      "aliases": [
+        "Diamante Negro DC 1006"
+      ]
     },
     {
       "id": "virgo-1006-ga",
@@ -3379,16 +3398,12 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageKind": "Muestra publicada por ArquiStore",
+      "imageNote": "Muestra lisa GLOSS publicada por ArquiStore. Identidad contrastada con el catálogo Virgo, página 40; el acabado DC Diamante corresponde a una ficha distinta. Derechos de sus titulares; confirmar con muestra física.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
           "url": "https://arquistore.online/producto/1006-gloss-negro-alto-brillo/"
-        },
-        {
-          "label": "Laminados El Pardillo · Diamante Negro DC 1006 · GLOSS",
-          "url": "https://articulo.mercadolibre.com.ve/MLV-796499622-virgo-laminados-decorativos-texturizados-alto-brillo--_JM?searchVariation=182897557439"
         },
         {
           "label": "Laminados El Pardillo · Negro GLOSS 1006",
@@ -3397,19 +3412,23 @@
         {
           "label": "ArquiStore · Formica Lamina Decorativa Virgo Negro Alto Brillo 1006 · GLOSS",
           "url": "https://articulo.mercadolibre.com.ve/MLV-711213643-formica-lamina-decorativa-virgo-negro-alto-brillo-1006-_JM"
+        },
+        {
+          "label": "Catálogo Virgo · GLOSS · página 40",
+          "url": "https://arquistore.online/wp-content/uploads/2026/04/Muestrario-Virgo-2025-Clientes-3.pdf#page=40"
         }
       ],
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1006-gloss-fuente-20261015-b36cc9df0e.webp",
-        "width": 386,
-        "height": 500,
+        "src": "muestras/virgo-1006-gloss-detalle26.webp",
+        "width": 600,
+        "height": 1217,
         "crop": [
-          31,
-          40,
-          324,
-          420
+          0,
+          0,
+          600,
+          1217
         ],
         "surfaceCrop": true
       },
@@ -3419,7 +3438,6 @@
       ],
       "supplierAssociationStatus": "oferta_publicada",
       "aliases": [
-        "Diamante Negro DC 1006",
         "1006",
         "Negro GLOSS 1006",
         "Formica Lamina Decorativa Virgo Negro Alto Brillo 1006"
@@ -3430,7 +3448,7 @@
       "id": "virgo-1006-hz",
       "category": "laminados",
       "name": "Negro Skorpa",
-      "family": "Colores sólidos",
+      "family": "Texturas y relieves",
       "brand": "Virgo",
       "supplier": "ArquiStore",
       "code": "1006",
@@ -3442,7 +3460,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado. Presentación vertical solicitada por Santiago; se conserva el código y nombre del acabado de origen.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -3469,7 +3487,8 @@
           335,
           420
         ],
-        "surfaceCrop": true
+        "surfaceCrop": true,
+        "displayRotation": 90
       },
       "supplierNames": [
         "ArquiStore",
@@ -5218,7 +5237,7 @@
       "id": "virgo-1935-hz",
       "category": "laminados",
       "name": "Gris Niebla Skorpa",
-      "family": "Colores sólidos",
+      "family": "Texturas y relieves",
       "brand": "Virgo",
       "supplier": "ArquiStore",
       "code": "1935",
@@ -5230,7 +5249,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado. Presentación vertical solicitada por Santiago; se conserva el código y nombre del acabado de origen.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -5257,7 +5276,8 @@
           330,
           420
         ],
-        "surfaceCrop": true
+        "surfaceCrop": true,
+        "displayRotation": 90
       },
       "supplierNames": [
         "ArquiStore",
@@ -7629,7 +7649,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado. Presentación vertical solicitada por Santiago; se conserva el código y nombre del acabado de origen.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -7656,7 +7676,8 @@
           331,
           420
         ],
-        "surfaceCrop": true
+        "surfaceCrop": true,
+        "displayRotation": 90
       },
       "supplierNames": [
         "ArquiStore",
@@ -7686,7 +7707,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado. Presentación vertical solicitada por Santiago; se conserva el código y nombre del acabado de origen.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -7713,7 +7734,8 @@
           333,
           420
         ],
-        "surfaceCrop": true
+        "surfaceCrop": true,
+        "displayRotation": 90
       },
       "supplierNames": [
         "ArquiStore",
@@ -7743,7 +7765,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado. Presentación vertical solicitada por Santiago; se conserva el código y nombre del acabado de origen.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -7774,7 +7796,8 @@
           333,
           420
         ],
-        "surfaceCrop": true
+        "surfaceCrop": true,
+        "displayRotation": 90
       },
       "supplierNames": [
         "ArquiStore",
@@ -8444,7 +8467,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado. Presentación vertical solicitada por Santiago; se conserva el código y nombre del acabado de origen.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -8471,7 +8494,8 @@
           310,
           420
         ],
-        "surfaceCrop": true
+        "surfaceCrop": true,
+        "displayRotation": 90
       },
       "supplierNames": [
         "ArquiStore",
@@ -8980,8 +9004,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageKind": "Muestra mejorada con IA",
+      "imageNote": "Muestra de ArquiStore mejorada con IA para recuperar claridad y retirar el rótulo. Referencia visual aproximada; original conservado y acabado por confirmar con una muestra física. Derechos de sus titulares.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -8995,14 +9019,14 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-9978-shg-fuente-20261015-e84a90aba8.webp",
-        "width": 500,
-        "height": 500,
+        "src": "muestras/virgo-9978-shg-restaurada-ia-20261015.webp",
+        "width": 1254,
+        "height": 1254,
         "crop": [
-          40,
-          40,
-          420,
-          360
+          0,
+          0,
+          1254,
+          1254
         ],
         "surfaceCrop": true
       },
@@ -9082,25 +9106,44 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra publicada por ArquiStore",
-      "imageNote": "Muestra publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular.",
+      "imageKind": "Fotografía original del catálogo Virgo de ArquiStore",
+      "imageNote": "Fotografía original del muestrario Virgo publicado por ArquiStore, página 47, con recorte de la superficie para ocultar fondo y etiqueta. Sin recreación IA. Acabado DC Diamante; corresponde a Texturas y relieves. Derechos de sus titulares.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
           "url": "https://arquistore.online/producto/9997-dc-diamante-blanco/"
+        },
+        {
+          "label": "Laminados El Pardillo · Diamante Blanco DC 9997 · DC",
+          "url": "https://articulo.mercadolibre.com.ve/MLV-796499622-virgo-laminados-decorativos-texturizados-alto-brillo--_JM?searchVariation=182897557439"
+        },
+        {
+          "label": "Catálogo Virgo · DC Diamante · página 47",
+          "url": "https://arquistore.online/wp-content/uploads/2026/04/Muestrario-Virgo-2025-Clientes-3.pdf#page=47"
         }
       ],
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-9997-dc-detalle26.webp",
-        "width": 800,
-        "height": 1600
+        "src": "muestras/virgo-9997-dc-catalogo-20261015.webp",
+        "width": 750,
+        "height": 1000,
+        "crop": [
+          165,
+          155,
+          425,
+          570
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
-        "ArquiStore"
+        "ArquiStore",
+        "Laminados El Pardillo"
       ],
-      "supplierAssociationStatus": "oferta_publicada"
+      "supplierAssociationStatus": "oferta_publicada",
+      "aliases": [
+        "Diamante Blanco DC 9997"
+      ]
     },
     {
       "id": "virgo-9997-gloss",
@@ -9117,8 +9160,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageKind": "Muestra publicada por ArquiStore",
+      "imageNote": "Muestra lisa GLOSS publicada por ArquiStore. Identidad contrastada con el catálogo Virgo, página 40; el acabado DC Diamante corresponde a una ficha distinta. Derechos de sus titulares; confirmar con muestra física.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -9129,29 +9172,29 @@
           "url": "https://articulo.mercadolibre.com.ve/MLV-796498096-virgo-laminados-decorativos-blanco-brillante-blanco-brillante-9997-blanco-brillante-_JM"
         },
         {
-          "label": "Laminados El Pardillo · Diamante Blanco DC 9997 · GLOSS",
-          "url": "https://articulo.mercadolibre.com.ve/MLV-796499622-virgo-laminados-decorativos-texturizados-alto-brillo--_JM?searchVariation=182897557439"
-        },
-        {
           "label": "Laminados El Pardillo · Blanco GLOSS 9997",
           "url": "https://articulo.mercadolibre.com.ve/MLV-796512202-virgo-laminados-decorativos-blanco-negro-alto-brillo--_JM?attributes=PATTERN_NAME:QmxhbmNvIEdMT1NTIDk5OTc=&picker=true"
         },
         {
           "label": "PintaPeg · Blanco Alto Brillo 9997 Gloss",
           "url": "https://articulo.mercadolibre.com.ve/MLV-832898352-laminado-decorativo-virgo-alto-brillo-varios-colores-varios-_JM"
+        },
+        {
+          "label": "Catálogo Virgo · GLOSS · página 40",
+          "url": "https://arquistore.online/wp-content/uploads/2026/04/Muestrario-Virgo-2025-Clientes-3.pdf#page=40"
         }
       ],
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-9997-gloss-fuente-20261015-9bdf75ef6f.webp",
-        "width": 387,
-        "height": 500,
+        "src": "muestras/virgo-9997-gloss-detalle26.webp",
+        "width": 823,
+        "height": 1600,
         "crop": [
-          31,
-          40,
-          325,
-          420
+          0,
+          0,
+          823,
+          1600
         ],
         "surfaceCrop": true
       },
@@ -9164,7 +9207,6 @@
       "aliases": [
         "Blanco Brillante 9997",
         "9997",
-        "Diamante Blanco DC 9997",
         "Blanco GLOSS 9997",
         "Blanco Alto Brillo 9997 Gloss"
       ],
@@ -9174,7 +9216,7 @@
       "id": "virgo-9997-hz",
       "category": "laminados",
       "name": "Blanco Skorpa",
-      "family": "Colores sólidos",
+      "family": "Texturas y relieves",
       "brand": "Virgo",
       "supplier": "ArquiStore",
       "code": "9997",
@@ -9186,7 +9228,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado. Presentación vertical solicitada por Santiago; se conserva el código y nombre del acabado de origen.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -9213,7 +9255,8 @@
           338,
           420
         ],
-        "surfaceCrop": true
+        "surfaceCrop": true,
+        "displayRotation": 90
       },
       "supplierNames": [
         "ArquiStore",
@@ -11428,7 +11471,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado. Presentación vertical solicitada por Santiago; se conserva el código y nombre del acabado de origen.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -11451,7 +11494,8 @@
           417,
           420
         ],
-        "surfaceCrop": true
+        "surfaceCrop": true,
+        "displayRotation": 90
       },
       "supplierNames": [
         "ArquiStore"
@@ -11479,7 +11523,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado. Presentación vertical solicitada por Santiago; se conserva el código y nombre del acabado de origen.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -11506,7 +11550,8 @@
           420,
           360
         ],
-        "surfaceCrop": true
+        "surfaceCrop": true,
+        "displayRotation": 90
       },
       "supplierNames": [
         "ArquiStore",
