@@ -11982,8 +11982,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra publicada por ArquiStore",
-      "imageNote": "Muestra publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular.",
+      "imageKind": "Superficie reconstruida con IA a partir de la fotografía del proveedor",
+      "imageNote": "Referencia visual aproximada reconstruida con IA integrada a partir de la fotografía de ArquiStore. Vista frontal, trama vertical y detalle mejorado; color y acabado por confirmar con muestra física. Fotografía original, fuente y prompt conservados. Derechos de la imagen y marca original de su titular.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -11993,14 +11993,21 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-4825-ts-detalle26.webp",
-        "width": 822,
-        "height": 1600
+        "src": "muestras/century-laminates-4825-ts-frontal-ia-20261015.webp",
+        "srcset": "muestras/century-laminates-4825-ts-frontal-ia-20261015-640.webp 640w, muestras/century-laminates-4825-ts-frontal-ia-20261015.webp 1254w",
+        "width": 1254,
+        "height": 1254
       },
       "supplierNames": [
         "ArquiStore"
       ],
-      "supplierAssociationStatus": "oferta_publicada"
+      "supplierAssociationStatus": "oferta_publicada",
+      "imageProvenance": {
+        "method": "image_gen.imagegen",
+        "sourceURL": "https://arquistore.online/wp-content/uploads/2025/04/4825-TS-ANTRACITA-TEXTIL-scaled.webp",
+        "originalPreserved": true,
+        "generated": "2026-10-15"
+      }
     },
     {
       "id": "century-laminates-4857-vo",
@@ -12017,8 +12024,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageKind": "Superficie reconstruida con IA a partir de la fotografía del proveedor",
+      "imageNote": "Referencia visual aproximada reconstruida con IA integrada a partir de la fotografía de ArquiStore. Vista frontal, trama vertical y detalle mejorado; color y acabado por confirmar con muestra física. Fotografía original, fuente y prompt conservados. Derechos de la imagen y marca original de su titular.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -12032,16 +12039,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-4857-vo-fuente-20261015-ba4f15089d.webp",
-        "width": 394,
-        "height": 500,
-        "crop": [
-          32,
-          40,
-          330,
-          420
-        ],
-        "surfaceCrop": true
+        "src": "muestras/century-laminates-4857-vo-frontal-ia-20261015.webp",
+        "srcset": "muestras/century-laminates-4857-vo-frontal-ia-20261015-640.webp 640w, muestras/century-laminates-4857-vo-frontal-ia-20261015.webp 1254w",
+        "width": 1254,
+        "height": 1254
       },
       "supplierNames": [
         "ArquiStore"
@@ -12051,7 +12052,13 @@
         "Laminado Century Lavada Textil 4857 Vo - Formica Texturizada",
         "4857"
       ],
-      "codeAliases": []
+      "codeAliases": [],
+      "imageProvenance": {
+        "method": "image_gen.imagegen",
+        "sourceURL": "https://arquistore.online/wp-content/uploads/2025/04/4857-VO-LAVADA-TEXTIL-scaled.webp",
+        "originalPreserved": true,
+        "generated": "2026-10-15"
+      }
     },
     {
       "id": "century-laminates-4858-ts",
@@ -12068,8 +12075,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageKind": "Superficie reconstruida con IA a partir de la fotografía del proveedor",
+      "imageNote": "Referencia visual aproximada reconstruida con IA integrada a partir de la fotografía de ArquiStore. Vista frontal, trama vertical y detalle mejorado; color y acabado por confirmar con muestra física. Fotografía original, fuente y prompt conservados. Derechos de la imagen y marca original de su titular.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -12083,16 +12090,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-4858-ts-fuente-20261015-5db0bb8efc.webp",
-        "width": 394,
-        "height": 500,
-        "crop": [
-          32,
-          40,
-          330,
-          420
-        ],
-        "surfaceCrop": true
+        "src": "muestras/century-laminates-4858-ts-frontal-ia-20261015.webp",
+        "srcset": "muestras/century-laminates-4858-ts-frontal-ia-20261015-640.webp 640w, muestras/century-laminates-4858-ts-frontal-ia-20261015.webp 1254w",
+        "width": 1254,
+        "height": 1254
       },
       "supplierNames": [
         "ArquiStore"
@@ -12102,7 +12103,13 @@
         "Laminado Century Blue Jean 4858 Ts - Formica Texturizada",
         "4858"
       ],
-      "codeAliases": []
+      "codeAliases": [],
+      "imageProvenance": {
+        "method": "image_gen.imagegen",
+        "sourceURL": "https://arquistore.online/wp-content/uploads/2025/04/4858-TS-BLUE-JEAN-TEXTIL-scaled.webp",
+        "originalPreserved": true,
+        "generated": "2026-10-15"
+      }
     },
     {
       "id": "century-laminates-4953-mo",
@@ -13348,8 +13355,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageKind": "Muestra original del proveedor en alta resolución",
+      "imageNote": "Imagen de la ficha 4835 Marfil Gloss y Suede publicada por ArquiStore, recuperada a 1317 × 2560 px, sin símbolos ni rótulos. Se conservan las asociaciones comerciales originales; color y acabado se confirman con muestra física.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -13367,16 +13374,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-4835-gloss-suede-fuente-20261015-914626e6ea.webp",
-        "width": 500,
-        "height": 500,
-        "crop": [
-          40,
-          115,
-          420,
-          285
-        ],
-        "surfaceCrop": true
+        "src": "muestras/starline-4835-gloss-suede-fuente-hd-20261015.webp",
+        "srcset": "muestras/starline-4835-gloss-suede-fuente-hd-20261015-640.webp 329w, muestras/starline-4835-gloss-suede-fuente-hd-20261015.webp 1317w",
+        "width": 1317,
+        "height": 2560
       },
       "supplierNames": [
         "ArquiStore"
@@ -13387,7 +13388,12 @@
         "4835",
         "Laminado Starline Marfil 4835 Gloss - Formica Alto Brillo"
       ],
-      "codeAliases": []
+      "codeAliases": [],
+      "imageProvenance": {
+        "method": "provider_high_resolution",
+        "sourceURL": "https://arquistore.online/wp-content/uploads/2025/04/4835-GLOSS_SUEDE-MARFIL--scaled.webp",
+        "retrieved": "2026-10-15"
+      }
     },
     {
       "id": "starline-4836-gloss-suede",
@@ -14478,7 +14484,7 @@
       "id": "greenlam-5643-sud",
       "category": "laminados",
       "name": "Manilla Beige",
-      "family": "Piedras y minerales",
+      "family": "Textiles",
       "brand": "Greenlam",
       "supplier": "",
       "code": "5643",
@@ -14503,13 +14509,14 @@
         "src": "muestras/greenlam-5643-sud-detalle26.webp",
         "width": 800,
         "height": 1600
-      }
+      },
+      "classificationNote": "Agrupación visual Tipo textil, revisada por Santiago el 15/10/2026; conserva código y acabado comercial de Greenlam."
     },
     {
       "id": "greenlam-5592-sud",
       "category": "laminados",
       "name": "Kota Sage",
-      "family": "Piedras y minerales",
+      "family": "Textiles",
       "brand": "Greenlam",
       "supplier": "",
       "code": "5592",
@@ -14534,7 +14541,8 @@
         "src": "muestras/greenlam-5592-sud-detalle26.webp",
         "width": 800,
         "height": 1600
-      }
+      },
+      "classificationNote": "Agrupación visual Tipo textil, revisada por Santiago el 15/10/2026; conserva código y acabado comercial de Greenlam."
     },
     {
       "id": "greenlam-sanganer-sm",
@@ -34628,13 +34636,27 @@
       "image": {
         "src": "muestras/formipak-f742-superficie-20261014.webp",
         "width": 1056,
-        "height": 1056
+        "height": 1056,
+        "crop": [
+          18,
+          18,
+          1020,
+          1020
+        ],
+        "surfaceCrop": true
       },
       "overview": {
         "src": "muestras/formipak-f742-superficie-20261014.webp",
         "width": 1056,
         "height": 1056,
-        "srcset": "muestras/formipak-f742-superficie-20261014-640.webp 640w, muestras/formipak-f742-superficie-20261014.webp 1056w"
+        "srcset": "muestras/formipak-f742-superficie-20261014-640.webp 640w, muestras/formipak-f742-superficie-20261014.webp 1056w",
+        "crop": [
+          18,
+          18,
+          1020,
+          1020
+        ],
+        "surfaceCrop": true
       },
       "overviewNote": "Misma muestra oficial."
     },
@@ -34670,13 +34692,27 @@
       "image": {
         "src": "muestras/formipak-f752-superficie-20261014.webp",
         "width": 1056,
-        "height": 1056
+        "height": 1056,
+        "crop": [
+          18,
+          18,
+          1020,
+          1020
+        ],
+        "surfaceCrop": true
       },
       "overview": {
         "src": "muestras/formipak-f752-superficie-20261014.webp",
         "width": 1056,
         "height": 1056,
-        "srcset": "muestras/formipak-f752-superficie-20261014-640.webp 640w, muestras/formipak-f752-superficie-20261014.webp 1056w"
+        "srcset": "muestras/formipak-f752-superficie-20261014-640.webp 640w, muestras/formipak-f752-superficie-20261014.webp 1056w",
+        "crop": [
+          18,
+          18,
+          1020,
+          1020
+        ],
+        "surfaceCrop": true
       },
       "overviewNote": "Misma muestra oficial."
     },
@@ -34754,13 +34790,27 @@
       "image": {
         "src": "muestras/formipak-f717-superficie-20261014.webp",
         "width": 1056,
-        "height": 1056
+        "height": 1056,
+        "crop": [
+          18,
+          18,
+          1020,
+          1020
+        ],
+        "surfaceCrop": true
       },
       "overview": {
         "src": "muestras/formipak-f717-superficie-20261014.webp",
         "width": 1056,
         "height": 1056,
-        "srcset": "muestras/formipak-f717-superficie-20261014-640.webp 640w, muestras/formipak-f717-superficie-20261014.webp 1056w"
+        "srcset": "muestras/formipak-f717-superficie-20261014-640.webp 640w, muestras/formipak-f717-superficie-20261014.webp 1056w",
+        "crop": [
+          18,
+          18,
+          1020,
+          1020
+        ],
+        "surfaceCrop": true
       },
       "overviewNote": "Misma muestra oficial."
     },
@@ -34880,13 +34930,27 @@
       "image": {
         "src": "muestras/formipak-f700-superficie-20261014.webp",
         "width": 1056,
-        "height": 1056
+        "height": 1056,
+        "crop": [
+          18,
+          18,
+          1020,
+          1020
+        ],
+        "surfaceCrop": true
       },
       "overview": {
         "src": "muestras/formipak-f700-superficie-20261014.webp",
         "width": 1056,
         "height": 1056,
-        "srcset": "muestras/formipak-f700-superficie-20261014-640.webp 640w, muestras/formipak-f700-superficie-20261014.webp 1056w"
+        "srcset": "muestras/formipak-f700-superficie-20261014-640.webp 640w, muestras/formipak-f700-superficie-20261014.webp 1056w",
+        "crop": [
+          18,
+          18,
+          1020,
+          1020
+        ],
+        "surfaceCrop": true
       },
       "overviewNote": "Misma muestra oficial."
     },
@@ -34922,13 +34986,27 @@
       "image": {
         "src": "muestras/formipak-f725-superficie-20261014.webp",
         "width": 1056,
-        "height": 1056
+        "height": 1056,
+        "crop": [
+          18,
+          18,
+          1020,
+          1020
+        ],
+        "surfaceCrop": true
       },
       "overview": {
         "src": "muestras/formipak-f725-superficie-20261014.webp",
         "width": 1056,
         "height": 1056,
-        "srcset": "muestras/formipak-f725-superficie-20261014-640.webp 640w, muestras/formipak-f725-superficie-20261014.webp 1056w"
+        "srcset": "muestras/formipak-f725-superficie-20261014-640.webp 640w, muestras/formipak-f725-superficie-20261014.webp 1056w",
+        "crop": [
+          18,
+          18,
+          1020,
+          1020
+        ],
+        "surfaceCrop": true
       },
       "overviewNote": "Misma muestra oficial."
     },
@@ -34960,13 +35038,27 @@
       "image": {
         "src": "muestras/formipak-f744-superficie-20261014.webp",
         "width": 672,
-        "height": 672
+        "height": 672,
+        "crop": [
+          12,
+          12,
+          648,
+          648
+        ],
+        "surfaceCrop": true
       },
       "overview": {
         "src": "muestras/formipak-f744-superficie-20261014.webp",
         "width": 672,
         "height": 672,
-        "srcset": "muestras/formipak-f744-superficie-20261014-640.webp 640w, muestras/formipak-f744-superficie-20261014.webp 672w"
+        "srcset": "muestras/formipak-f744-superficie-20261014-640.webp 640w, muestras/formipak-f744-superficie-20261014.webp 672w",
+        "crop": [
+          12,
+          12,
+          648,
+          648
+        ],
+        "surfaceCrop": true
       },
       "overviewNote": "Misma muestra oficial."
     },
