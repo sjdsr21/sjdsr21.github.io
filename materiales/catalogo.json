@@ -3180,7 +3180,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -3200,7 +3200,14 @@
       "image": {
         "src": "muestras/virgo-1006-ce-fuente-20261015-9eba6f0950.webp",
         "width": 391,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          327,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -3230,7 +3237,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -3246,7 +3253,14 @@
       "image": {
         "src": "muestras/virgo-1006-co-fuente-20261015-18c4ebc340.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -3309,7 +3323,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -3329,7 +3343,14 @@
       "image": {
         "src": "muestras/virgo-1006-ga-fuente-20261015-357122ca7f.webp",
         "width": 387,
-        "height": 500
+        "height": 500,
+        "crop": [
+          31,
+          40,
+          325,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -3359,7 +3380,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -3383,7 +3404,14 @@
       "image": {
         "src": "muestras/virgo-1006-gloss-fuente-20261015-b36cc9df0e.webp",
         "width": 386,
-        "height": 500
+        "height": 500,
+        "crop": [
+          31,
+          40,
+          324,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -3414,7 +3442,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -3434,7 +3462,14 @@
       "image": {
         "src": "muestras/virgo-1006-hz-fuente-20261015-862f7c953f.webp",
         "width": 401,
-        "height": 500
+        "height": 500,
+        "crop": [
+          33,
+          40,
+          335,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -3464,7 +3499,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -3480,7 +3515,14 @@
       "image": {
         "src": "muestras/virgo-1006-ol-fuente-20261015-a5c21c9e47.webp",
         "width": 385,
-        "height": 500
+        "height": 500,
+        "crop": [
+          31,
+          40,
+          323,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -3544,7 +3586,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -3560,7 +3602,14 @@
       "image": {
         "src": "muestras/virgo-1006-smt-fuente-20261015-bdad183187.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -3588,7 +3637,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -3608,7 +3657,14 @@
       "image": {
         "src": "muestras/virgo-1006-tl-fuente-20261015-67faf958b3.webp",
         "width": 397,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          333,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -3673,7 +3729,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -3689,7 +3745,14 @@
       "image": {
         "src": "muestras/virgo-1038-dm-fuente-20261015-e6e4ce4f6d.webp",
         "width": 325,
-        "height": 500
+        "height": 500,
+        "crop": [
+          26,
+          40,
+          273,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -3718,7 +3781,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -3738,7 +3801,14 @@
       "image": {
         "src": "muestras/virgo-1038-gloss-fuente-20261015-98467ae092.webp",
         "width": 385,
-        "height": 500
+        "height": 500,
+        "crop": [
+          31,
+          40,
+          323,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -3768,7 +3838,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -3784,7 +3854,14 @@
       "image": {
         "src": "muestras/virgo-1047-dm-fuente-20261015-86453b9f9c.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -3812,7 +3889,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -3828,7 +3905,14 @@
       "image": {
         "src": "muestras/virgo-1055-dm-fuente-20261015-4b9bfcfd94.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -3856,7 +3940,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -3872,7 +3956,14 @@
       "image": {
         "src": "muestras/virgo-1063-dm-fuente-20261015-67d3caf7f6.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -3935,7 +4026,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -3955,7 +4046,14 @@
       "image": {
         "src": "muestras/virgo-1068-dm-fuente-20261015-7aa95c4e18.webp",
         "width": 326,
-        "height": 500
+        "height": 500,
+        "crop": [
+          27,
+          40,
+          272,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -3985,7 +4083,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -4005,7 +4103,14 @@
       "image": {
         "src": "muestras/virgo-1068-gloss-fuente-20261015-bc0eecb59d.webp",
         "width": 386,
-        "height": 500
+        "height": 500,
+        "crop": [
+          31,
+          40,
+          324,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -4035,7 +4140,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -4055,7 +4160,14 @@
       "image": {
         "src": "muestras/virgo-1068-ol-fuente-20261015-1348e54512.webp",
         "width": 387,
-        "height": 500
+        "height": 500,
+        "crop": [
+          31,
+          40,
+          325,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -4085,7 +4197,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -4105,7 +4217,14 @@
       "image": {
         "src": "muestras/virgo-1078-dm-fuente-20261015-60f0110e9f.webp",
         "width": 392,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          328,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -4135,7 +4254,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -4155,7 +4274,14 @@
       "image": {
         "src": "muestras/virgo-1098-dm-fuente-20261015-d4992e3026.webp",
         "width": 327,
-        "height": 500
+        "height": 500,
+        "crop": [
+          27,
+          40,
+          273,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -4185,7 +4311,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -4209,7 +4335,14 @@
       "image": {
         "src": "muestras/virgo-1101-gloss-fuente-20261015-de5cbf647f.webp",
         "width": 386,
-        "height": 500
+        "height": 500,
+        "crop": [
+          31,
+          40,
+          324,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -4241,7 +4374,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -4265,7 +4398,14 @@
       "image": {
         "src": "muestras/virgo-1101-sf-fuente-20261015-ec7218dcb3.webp",
         "width": 391,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          327,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -4297,7 +4437,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -4317,7 +4457,14 @@
       "image": {
         "src": "muestras/virgo-1245-dm-fuente-20261015-21e6120870.webp",
         "width": 325,
-        "height": 500
+        "height": 500,
+        "crop": [
+          26,
+          40,
+          273,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -4347,7 +4494,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -4371,7 +4518,14 @@
       "image": {
         "src": "muestras/virgo-1245-gloss-fuente-20261015-1122f97781.webp",
         "width": 395,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          331,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -4403,7 +4557,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -4423,7 +4577,14 @@
       "image": {
         "src": "muestras/virgo-1319-glt-fuente-20261015-48ad357dfb.webp",
         "width": 411,
-        "height": 500
+        "height": 500,
+        "crop": [
+          33,
+          40,
+          345,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -4453,7 +4614,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -4473,7 +4634,14 @@
       "image": {
         "src": "muestras/virgo-1341-hg-fuente-20261015-d0c5eda137.webp",
         "width": 414,
-        "height": 500
+        "height": 500,
+        "crop": [
+          34,
+          40,
+          346,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -4503,7 +4671,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -4523,7 +4691,14 @@
       "image": {
         "src": "muestras/virgo-1342-hg-fuente-20261015-226425250d.webp",
         "width": 389,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          325,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -4552,8 +4727,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageKind": "Muestra de superficie mejorada con IA",
+      "imageNote": "Muestra mejorada con IA a partir de la fotografía publicada por el proveedor; se retiraron la esfera superpuesta y los márgenes. Referencia visual aproximada; diseño, tono y acabado se confirman con una muestra física. Original y fuente conservados; derechos de sus titulares.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -4571,9 +4746,16 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1346-hg-fuente-20261015-1aae122eb0.webp",
-        "width": 421,
-        "height": 500
+        "src": "muestras/virgo-1346-hg-limpia-ia-20261015.webp",
+        "width": 1254,
+        "height": 1254,
+        "crop": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -4603,7 +4785,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -4623,7 +4805,14 @@
       "image": {
         "src": "muestras/virgo-1348-hg-fuente-20261015-1fc968d39b.webp",
         "width": 396,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          332,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -4653,7 +4842,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -4669,7 +4858,14 @@
       "image": {
         "src": "muestras/virgo-1507-dm-fuente-20261015-d30c89f7bd.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -4697,7 +4893,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -4713,7 +4909,14 @@
       "image": {
         "src": "muestras/virgo-1509-dm-fuente-20261015-3189630e59.webp",
         "width": 391,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          327,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -4742,7 +4945,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -4762,7 +4965,14 @@
       "image": {
         "src": "muestras/virgo-1929-sf-fuente-20261015-33133a8af5.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -4792,7 +5002,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -4808,7 +5018,14 @@
       "image": {
         "src": "muestras/virgo-1931-smt-fuente-20261015-e61dda983d.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -4836,7 +5053,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -4852,7 +5069,14 @@
       "image": {
         "src": "muestras/virgo-1934-gloss-fuente-20261015-c29b174c76.webp",
         "width": 391,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          327,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -4881,7 +5105,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -4901,7 +5125,14 @@
       "image": {
         "src": "muestras/virgo-1934-smt-fuente-20261015-c5c82a1ce0.webp",
         "width": 388,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          324,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -4931,7 +5162,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -4959,7 +5190,14 @@
       "image": {
         "src": "muestras/virgo-1935-gloss-fuente-20261015-8e0d1c8422.webp",
         "width": 393,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          329,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -4992,7 +5230,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -5012,7 +5250,14 @@
       "image": {
         "src": "muestras/virgo-1935-hz-fuente-20261015-0089413ff9.webp",
         "width": 394,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          330,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -5042,7 +5287,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -5062,7 +5307,14 @@
       "image": {
         "src": "muestras/virgo-1935-sf-fuente-20261015-ec7218dcb3.webp",
         "width": 391,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          327,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -5093,7 +5345,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -5113,7 +5365,14 @@
       "image": {
         "src": "muestras/virgo-1935-smt-fuente-20261015-f3a187144c.webp",
         "width": 383,
-        "height": 500
+        "height": 500,
+        "crop": [
+          31,
+          40,
+          321,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -5143,7 +5402,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -5159,7 +5418,14 @@
       "image": {
         "src": "muestras/virgo-1935-tn-fuente-20261015-e3ca9bc711.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -5187,7 +5453,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -5211,7 +5477,14 @@
       "image": {
         "src": "muestras/virgo-1936-gloss-fuente-20261015-491cd4707d.webp",
         "width": 395,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          331,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -5278,7 +5551,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -5294,7 +5567,14 @@
       "image": {
         "src": "muestras/virgo-1936-smt-fuente-20261015-9a02f94a2e.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -5322,7 +5602,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -5338,7 +5618,14 @@
       "image": {
         "src": "muestras/virgo-1937-gloss-fuente-20261015-2804c7e9db.webp",
         "width": 387,
-        "height": 500
+        "height": 500,
+        "crop": [
+          31,
+          40,
+          325,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -5367,7 +5654,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -5383,7 +5670,14 @@
       "image": {
         "src": "muestras/virgo-1937-smt-fuente-20261015-f7ec31532f.webp",
         "width": 388,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          324,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -5412,7 +5706,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -5428,7 +5722,14 @@
       "image": {
         "src": "muestras/virgo-1939-tn-fuente-20261015-17661bd284.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -5456,7 +5757,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -5472,7 +5773,14 @@
       "image": {
         "src": "muestras/virgo-1947-sf-fuente-20261015-37ca1807dc.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -5549,7 +5857,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -5565,7 +5873,14 @@
       "image": {
         "src": "muestras/virgo-2362-sf-fuente-20261015-15e876f23d.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -5593,7 +5908,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -5609,7 +5924,14 @@
       "image": {
         "src": "muestras/virgo-2702-ga-fuente-20261015-9b71a43085.webp",
         "width": 387,
-        "height": 500
+        "height": 500,
+        "crop": [
+          31,
+          40,
+          325,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -5638,7 +5960,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -5658,7 +5980,14 @@
       "image": {
         "src": "muestras/virgo-2702-sf-fuente-20261015-59e9725f3d.webp",
         "width": 385,
-        "height": 500
+        "height": 500,
+        "crop": [
+          31,
+          40,
+          323,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -5688,7 +6017,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -5712,7 +6041,14 @@
       "image": {
         "src": "muestras/virgo-2708-mf-fuente-20261015-7fc219d11e.webp",
         "width": 385,
-        "height": 500
+        "height": 500,
+        "crop": [
+          31,
+          40,
+          323,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -5814,7 +6150,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -5830,7 +6166,14 @@
       "image": {
         "src": "muestras/virgo-2833-sf-fuente-20261015-2c668ba92c.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -5858,7 +6201,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -5874,7 +6217,14 @@
       "image": {
         "src": "muestras/virgo-2868-sf-fuente-20261015-b7f4efcdec.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -5902,7 +6252,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -5918,7 +6268,14 @@
       "image": {
         "src": "muestras/virgo-2872-sf-fuente-20261015-8146c8a665.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -5946,7 +6303,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -5962,7 +6319,14 @@
       "image": {
         "src": "muestras/virgo-2878-sf-fuente-20261015-eb34fab433.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -5990,7 +6354,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -6006,7 +6370,14 @@
       "image": {
         "src": "muestras/virgo-2917-sf-fuente-20261015-984586c447.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -6034,7 +6405,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -6050,7 +6421,14 @@
       "image": {
         "src": "muestras/virgo-2920-jw-fuente-20261015-cb0f79e262.webp",
         "width": 478,
-        "height": 500
+        "height": 500,
+        "crop": [
+          39,
+          40,
+          400,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -6079,7 +6457,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -6095,7 +6473,14 @@
       "image": {
         "src": "muestras/virgo-2944-sf-fuente-20261015-603e9c0c09.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -6123,7 +6508,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -6139,7 +6524,14 @@
       "image": {
         "src": "muestras/virgo-2946-sf-fuente-20261015-78752ab01e.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -6167,7 +6559,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -6187,7 +6579,14 @@
       "image": {
         "src": "muestras/virgo-2957-hg-fuente-20261015-6c501bc83a.webp",
         "width": 413,
-        "height": 500
+        "height": 500,
+        "crop": [
+          34,
+          40,
+          345,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -6217,7 +6616,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -6233,7 +6632,14 @@
       "image": {
         "src": "muestras/virgo-4071-dm-fuente-20261015-466c0b1edf.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -6261,7 +6667,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -6277,7 +6683,14 @@
       "image": {
         "src": "muestras/virgo-4075-smt-fuente-20261015-d4496a2fca.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -6305,7 +6718,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -6321,7 +6734,14 @@
       "image": {
         "src": "muestras/virgo-4078-smt-fuente-20261015-02742b7656.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -6349,7 +6769,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -6365,7 +6785,14 @@
       "image": {
         "src": "muestras/virgo-4080-smt-fuente-20261015-9e405f8249.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -6393,7 +6820,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -6409,7 +6836,14 @@
       "image": {
         "src": "muestras/virgo-5102-smt-fuente-20261015-33c815cb74.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -6437,7 +6871,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -6457,7 +6891,14 @@
       "image": {
         "src": "muestras/virgo-5271-sc-fuente-20261015-ca715cc343.webp",
         "width": 392,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          328,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -6487,7 +6928,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -6511,7 +6952,14 @@
       "image": {
         "src": "muestras/virgo-5272-sc-fuente-20261015-8f36129d20.webp",
         "width": 391,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          327,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -6543,7 +6991,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -6567,7 +7015,14 @@
       "image": {
         "src": "muestras/virgo-5615-jw-fuente-20261015-35e97c5a0b.webp",
         "width": 396,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          332,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -6599,7 +7054,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -6615,7 +7070,14 @@
       "image": {
         "src": "muestras/virgo-5624-sf-fuente-20261015-edcebb8e91.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -6643,7 +7105,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -6659,7 +7121,14 @@
       "image": {
         "src": "muestras/virgo-5664-jw-fuente-20261015-c3f1470909.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -6687,7 +7156,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -6703,7 +7172,14 @@
       "image": {
         "src": "muestras/virgo-5804-jw-fuente-20261015-ae1a994d2c.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -6731,7 +7207,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -6751,7 +7227,14 @@
       "image": {
         "src": "muestras/virgo-6316-ce-fuente-20261015-7daccadb17.webp",
         "width": 392,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          328,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -6781,7 +7264,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -6801,7 +7284,14 @@
       "image": {
         "src": "muestras/virgo-6323-shg-fuente-20261015-d91e988439.webp",
         "width": 382,
-        "height": 500
+        "height": 500,
+        "crop": [
+          31,
+          40,
+          320,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -6831,7 +7321,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -6851,7 +7341,14 @@
       "image": {
         "src": "muestras/virgo-6333-shg-fuente-20261015-903a787e9c.webp",
         "width": 397,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          333,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -6881,7 +7378,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -6901,7 +7398,14 @@
       "image": {
         "src": "muestras/virgo-6334-smt-fuente-20261015-80a9e5f989.webp",
         "width": 341,
-        "height": 500
+        "height": 500,
+        "crop": [
+          28,
+          40,
+          285,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -6931,7 +7435,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -6947,7 +7451,14 @@
       "image": {
         "src": "muestras/virgo-6336-shg-fuente-20261015-e634d012ad.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -7010,7 +7521,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -7026,7 +7537,14 @@
       "image": {
         "src": "muestras/virgo-6411-pa-fuente-20261015-129f6aa53e.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -7054,7 +7572,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -7074,7 +7592,14 @@
       "image": {
         "src": "muestras/virgo-6447-ce-fuente-20261015-2094e6641e.webp",
         "width": 388,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          324,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -7104,7 +7629,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -7124,7 +7649,14 @@
       "image": {
         "src": "muestras/virgo-6501-hz-fuente-20261015-97ddd3c1c5.webp",
         "width": 395,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          331,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -7154,7 +7686,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -7174,7 +7706,14 @@
       "image": {
         "src": "muestras/virgo-6503-hz-fuente-20261015-bb942b1231.webp",
         "width": 397,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          333,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -7204,7 +7743,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -7228,7 +7767,14 @@
       "image": {
         "src": "muestras/virgo-6504-hz-fuente-20261015-8b7556758f.webp",
         "width": 397,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          333,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -7258,7 +7804,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -7274,7 +7820,14 @@
       "image": {
         "src": "muestras/virgo-6670-pp-fuente-20261015-87f6a6a530.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -7337,7 +7890,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -7357,7 +7910,14 @@
       "image": {
         "src": "muestras/virgo-6758-sf-fuente-20261015-a380021989.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -7394,7 +7954,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -7410,7 +7970,14 @@
       "image": {
         "src": "muestras/virgo-6911-ca-fuente-20261015-068d692d24.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -7489,7 +8056,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -7505,7 +8072,14 @@
       "image": {
         "src": "muestras/virgo-6973-pa-fuente-20261015-a6eaa34672.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -7533,7 +8107,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -7557,7 +8131,14 @@
       "image": {
         "src": "muestras/virgo-7149-sc-fuente-20261015-617a50443c.webp",
         "width": 392,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          328,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -7589,7 +8170,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -7609,7 +8190,14 @@
       "image": {
         "src": "muestras/virgo-7150-sc-fuente-20261015-d5d4e3144f.webp",
         "width": 395,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          331,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -7638,8 +8226,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageKind": "Muestra de superficie mejorada con IA",
+      "imageNote": "Muestra mejorada con IA a partir de la fotografía publicada por el proveedor; se retiraron la esfera superpuesta y los márgenes. Referencia visual aproximada; diseño, tono y acabado se confirman con una muestra física. Original y fuente conservados; derechos de sus titulares.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -7657,9 +8245,16 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-7501-cn-fuente-20261015-c91ba067e5.webp",
-        "width": 387,
-        "height": 500
+        "src": "muestras/virgo-7501-cn-limpia-ia-20261015.webp",
+        "width": 1254,
+        "height": 1254,
+        "crop": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -7688,8 +8283,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageKind": "Muestra de superficie mejorada con IA",
+      "imageNote": "Muestra mejorada con IA a partir de la fotografía publicada por el proveedor; se retiraron la esfera superpuesta y los márgenes. Referencia visual aproximada; diseño, tono y acabado se confirman con una muestra física. Original y fuente conservados; derechos de sus titulares.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -7707,9 +8302,16 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-7503-cn-fuente-20261015-b727c51775.webp",
-        "width": 385,
-        "height": 500
+        "src": "muestras/virgo-7503-cn-limpia-ia-20261015.webp",
+        "width": 1254,
+        "height": 1254,
+        "crop": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -7790,7 +8392,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -7806,7 +8408,14 @@
       "image": {
         "src": "muestras/virgo-7655-go-fuente-20261015-1ec0f1c3f6.webp",
         "width": 477,
-        "height": 500
+        "height": 500,
+        "crop": [
+          39,
+          40,
+          399,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -7835,7 +8444,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -7855,7 +8464,14 @@
       "image": {
         "src": "muestras/virgo-7659-jw-fuente-20261015-007057e8e3.webp",
         "width": 370,
-        "height": 500
+        "height": 500,
+        "crop": [
+          30,
+          40,
+          310,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -7885,7 +8501,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -7901,7 +8517,14 @@
       "image": {
         "src": "muestras/virgo-8106-smt-fuente-20261015-f4cd94139f.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -7929,7 +8552,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -7945,7 +8568,14 @@
       "image": {
         "src": "muestras/virgo-8108-smt-fuente-20261015-3c696ff041.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -7973,7 +8603,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -7989,7 +8619,14 @@
       "image": {
         "src": "muestras/virgo-8433-jw-fuente-20261015-33b9c34720.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -8017,7 +8654,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -8041,7 +8678,14 @@
       "image": {
         "src": "muestras/virgo-8434-jw-fuente-20261015-ee5b27a53e.webp",
         "width": 410,
-        "height": 500
+        "height": 500,
+        "crop": [
+          33,
+          40,
+          344,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -8073,7 +8717,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -8093,7 +8737,14 @@
       "image": {
         "src": "muestras/virgo-9000-brush-fuente-20261015-71d2a2302f.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -8158,7 +8809,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -8174,7 +8825,14 @@
       "image": {
         "src": "muestras/virgo-9106-tn-fuente-20261015-31918644b6.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -8236,8 +8894,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageKind": "Muestra publicada por ArquiStore",
+      "imageNote": "Muestra publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -8251,9 +8909,16 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-9975-shg-fuente-20261015-400636f344.webp",
-        "width": 500,
-        "height": 500
+        "src": "muestras/virgo-9975-shg-detalle26.webp",
+        "width": 822,
+        "height": 1600,
+        "crop": [
+          0,
+          0,
+          822,
+          1600
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -8316,7 +8981,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -8332,7 +8997,14 @@
       "image": {
         "src": "muestras/virgo-9978-shg-fuente-20261015-e84a90aba8.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -8360,7 +9032,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -8376,7 +9048,14 @@
       "image": {
         "src": "muestras/virgo-9997-co-fuente-20261015-6dc56c287c.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -8439,7 +9118,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -8467,7 +9146,14 @@
       "image": {
         "src": "muestras/virgo-9997-gloss-fuente-20261015-9bdf75ef6f.webp",
         "width": 387,
-        "height": 500
+        "height": 500,
+        "crop": [
+          31,
+          40,
+          325,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -8500,7 +9186,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -8520,7 +9206,14 @@
       "image": {
         "src": "muestras/virgo-9997-hz-fuente-20261015-c33df30ccc.webp",
         "width": 404,
-        "height": 500
+        "height": 500,
+        "crop": [
+          33,
+          40,
+          338,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -8550,7 +9243,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -8566,7 +9259,14 @@
       "image": {
         "src": "muestras/virgo-9997-sf-fuente-20261015-c09a93f90c.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -8638,7 +9338,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -8658,7 +9358,14 @@
       "image": {
         "src": "muestras/virgo-9997-tl-fuente-20261015-704a1246a8.webp",
         "width": 389,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          325,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -8688,7 +9395,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -8704,7 +9411,14 @@
       "image": {
         "src": "muestras/virgo-9997-tn-fuente-20261015-8cf710c6bb.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -8767,7 +9481,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -8783,7 +9497,14 @@
       "image": {
         "src": "muestras/century-laminates-101-cr-fuente-20261015-57054480df.webp",
         "width": 404,
-        "height": 500
+        "height": 500,
+        "crop": [
+          33,
+          40,
+          338,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -8811,7 +9532,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -8827,7 +9548,14 @@
       "image": {
         "src": "muestras/century-laminates-101-gt-fuente-20261015-78bab931ee.webp",
         "width": 398,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          334,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -8855,7 +9583,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -8871,7 +9599,14 @@
       "image": {
         "src": "muestras/century-laminates-101-lh-fuente-20261015-687813142c.webp",
         "width": 399,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          335,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -8899,7 +9634,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -8915,7 +9650,14 @@
       "image": {
         "src": "muestras/century-laminates-101-ls-fuente-20261015-2f63e783f5.webp",
         "width": 439,
-        "height": 500
+        "height": 500,
+        "crop": [
+          36,
+          40,
+          367,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -9093,7 +9835,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -9113,7 +9855,14 @@
       "image": {
         "src": "muestras/century-laminates-226-lu-fuente-20261015-26354d84b5.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          105,
+          110,
+          280,
+          235
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -9178,7 +9927,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -9198,7 +9947,14 @@
       "image": {
         "src": "muestras/century-laminates-227-lu-fuente-20261015-e8eb423bfc.webp",
         "width": 402,
-        "height": 500
+        "height": 500,
+        "crop": [
+          33,
+          40,
+          336,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -9263,7 +10019,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -9279,7 +10035,14 @@
       "image": {
         "src": "muestras/century-laminates-236-cr-fuente-20261015-475feb2c2e.webp",
         "width": 393,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          329,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -9307,7 +10070,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -9327,7 +10090,14 @@
       "image": {
         "src": "muestras/century-laminates-236-lu-fuente-20261015-3cfd727c68.webp",
         "width": 398,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          115,
+          334,
+          275
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -9392,7 +10162,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -9412,7 +10182,14 @@
       "image": {
         "src": "muestras/century-laminates-2386-np-fuente-20261015-68ce5a0a48.webp",
         "width": 492,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          412,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -9442,7 +10219,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -9462,7 +10239,14 @@
       "image": {
         "src": "muestras/century-laminates-2417-np-fuente-20261015-b981fb227f.webp",
         "width": 394,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          330,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -9572,7 +10356,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -9588,7 +10372,14 @@
       "image": {
         "src": "muestras/century-laminates-2595-np-fuente-20261015-f682d11255.webp",
         "width": 397,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          333,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -9616,7 +10407,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -9632,7 +10423,14 @@
       "image": {
         "src": "muestras/century-laminates-265-lu-fuente-20261015-2f8ba87acd.webp",
         "width": 398,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          115,
+          334,
+          275
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -9660,7 +10458,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -9676,7 +10474,14 @@
       "image": {
         "src": "muestras/century-laminates-293-cr-fuente-20261015-2826c952e4.webp",
         "width": 405,
-        "height": 500
+        "height": 500,
+        "crop": [
+          33,
+          40,
+          339,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -9739,7 +10544,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -9755,7 +10560,14 @@
       "image": {
         "src": "muestras/century-laminates-293-lh-fuente-20261015-3a251d8b86.webp",
         "width": 395,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          331,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -9783,7 +10595,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -9799,7 +10611,14 @@
       "image": {
         "src": "muestras/century-laminates-293-ls-fuente-20261015-1cd73071b3.webp",
         "width": 397,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          333,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -9827,7 +10646,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -9843,7 +10662,14 @@
       "image": {
         "src": "muestras/century-laminates-293-lu-fuente-20261015-df3c6a68cf.webp",
         "width": 397,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          115,
+          333,
+          275
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -9906,7 +10732,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -9922,7 +10748,14 @@
       "image": {
         "src": "muestras/century-laminates-3271-lu-fuente-20261015-03da3ffd7b.webp",
         "width": 498,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          418,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -10040,7 +10873,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -10056,7 +10889,14 @@
       "image": {
         "src": "muestras/century-laminates-3372-ls-fuente-20261015-e65f11e752.webp",
         "width": 402,
-        "height": 500
+        "height": 500,
+        "crop": [
+          33,
+          40,
+          336,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -10119,7 +10959,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -10135,7 +10975,14 @@
       "image": {
         "src": "muestras/century-laminates-3425-ls-fuente-20261015-b439dc666d.webp",
         "width": 403,
-        "height": 500
+        "height": 500,
+        "crop": [
+          33,
+          40,
+          337,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -10208,7 +11055,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -10224,7 +11071,14 @@
       "image": {
         "src": "muestras/century-laminates-3639-at-fuente-20261015-198254f3dc.webp",
         "width": 391,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          327,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -10357,7 +11211,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -10373,7 +11227,14 @@
       "image": {
         "src": "muestras/century-laminates-3918-lu-fuente-20261015-95684c3db3.webp",
         "width": 492,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          412,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -10471,7 +11332,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -10487,7 +11348,14 @@
       "image": {
         "src": "muestras/century-laminates-3955-ml-fuente-20261015-fec2e814d9.webp",
         "width": 396,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          332,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -10560,7 +11428,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -10576,7 +11444,14 @@
       "image": {
         "src": "muestras/century-laminates-4392-lh-fuente-20261015-7eb787d5f7.webp",
         "width": 497,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          417,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -10604,7 +11479,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -10624,7 +11499,14 @@
       "image": {
         "src": "muestras/century-laminates-4393-lh-fuente-20261015-49e8b61cc5.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -10734,7 +11616,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -10750,7 +11632,14 @@
       "image": {
         "src": "muestras/century-laminates-4514-ls-fuente-20261015-a36f048332.webp",
         "width": 497,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          417,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -10778,7 +11667,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -10798,7 +11687,14 @@
       "image": {
         "src": "muestras/century-laminates-4531-ml-fuente-20261015-396819e21f.webp",
         "width": 395,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          331,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -10863,7 +11759,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -10879,7 +11775,14 @@
       "image": {
         "src": "muestras/century-laminates-4538-pk-fuente-20261015-070fdb99db.webp",
         "width": 398,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          334,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -10907,7 +11810,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -10923,7 +11826,14 @@
       "image": {
         "src": "muestras/century-laminates-4643-ls-fuente-20261015-a1f4bb7080.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -11056,7 +11966,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -11072,7 +11982,14 @@
       "image": {
         "src": "muestras/century-laminates-4857-vo-fuente-20261015-ba4f15089d.webp",
         "width": 394,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          330,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -11100,7 +12017,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -11116,7 +12033,14 @@
       "image": {
         "src": "muestras/century-laminates-4858-ts-fuente-20261015-5db0bb8efc.webp",
         "width": 394,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          330,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -11179,7 +12103,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -11195,7 +12119,14 @@
       "image": {
         "src": "muestras/century-laminates-859-ts-fuente-20261015-c79339575a.webp",
         "width": 391,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          327,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -11223,7 +12154,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -11239,7 +12170,14 @@
       "image": {
         "src": "muestras/century-laminates-904-lu-fuente-20261015-9f1020f6bb.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          105,
+          110,
+          280,
+          235
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -11267,7 +12205,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -11283,7 +12221,14 @@
       "image": {
         "src": "muestras/century-laminates-93877-pe-fuente-20261015-d85484c9a6.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -11311,7 +12256,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -11327,7 +12272,14 @@
       "image": {
         "src": "muestras/century-laminates-93878-pe-fuente-20261015-528041d63b.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -11355,7 +12307,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -11371,7 +12323,14 @@
       "image": {
         "src": "muestras/century-laminates-973-ts-fuente-20261015-03f3d5a42b.webp",
         "width": 391,
-        "height": 500
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          327,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -11443,7 +12402,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -11459,7 +12418,14 @@
       "image": {
         "src": "muestras/starline-167-matt-fuente-20261015-54894545ad.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -11487,7 +12453,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -11503,7 +12469,14 @@
       "image": {
         "src": "muestras/starline-222-suede-fuente-20261015-5c728d41aa.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -11531,7 +12504,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -11547,7 +12520,14 @@
       "image": {
         "src": "muestras/starline-236-matt-fuente-20261015-9eead2d14f.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -11574,8 +12554,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageKind": "Muestra publicada por ArquiStore",
+      "imageNote": "Muestra publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -11589,9 +12569,16 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-293-matt-fuente-20261015-a6b03161e5.webp",
-        "width": 500,
-        "height": 500
+        "src": "muestras/starline-293-matt-detalle26.webp",
+        "width": 822,
+        "height": 1600,
+        "crop": [
+          0,
+          0,
+          822,
+          1600
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -11653,8 +12640,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageKind": "Muestra publicada por ArquiStore",
+      "imageNote": "Muestra publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -11668,9 +12655,16 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-3271-matt-fuente-20261015-553ac5c2e3.webp",
-        "width": 500,
-        "height": 500
+        "src": "muestras/starline-3271-matt-detalle26.webp",
+        "width": 822,
+        "height": 1600,
+        "crop": [
+          0,
+          0,
+          822,
+          1600
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -11698,7 +12692,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -11714,7 +12708,14 @@
       "image": {
         "src": "muestras/starline-3324-suede-fuente-20261015-ed9de3d7a8.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -11741,8 +12742,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageKind": "Muestra publicada por ArquiStore",
+      "imageNote": "Muestra publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -11760,9 +12761,16 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-3405-suede-fuente-20261015-1518dcba7b.webp",
-        "width": 500,
-        "height": 500
+        "src": "muestras/starline-3405-suede-detalle26.webp",
+        "width": 823,
+        "height": 1600,
+        "crop": [
+          0,
+          0,
+          823,
+          1600
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore",
@@ -11792,7 +12800,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -11808,7 +12816,14 @@
       "image": {
         "src": "muestras/starline-3683-suede-fuente-20261015-30a578732e.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -11906,7 +12921,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -11922,7 +12937,14 @@
       "image": {
         "src": "muestras/starline-3765-suede-fuente-20261015-3fef974d70.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -11950,7 +12972,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -11966,7 +12988,14 @@
       "image": {
         "src": "muestras/starline-3766-suede-fuente-20261015-4737aa7a91.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -12029,7 +13058,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -12045,7 +13074,14 @@
       "image": {
         "src": "muestras/starline-4427-suede-fuente-20261015-8da3d3e0fd.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -12073,7 +13109,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -12089,7 +13125,14 @@
       "image": {
         "src": "muestras/starline-4482-suede-fuente-20261015-c6cc5852c1.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -12152,7 +13195,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -12168,7 +13211,14 @@
       "image": {
         "src": "muestras/starline-4597-suede-fuente-20261015-601d0889bf.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -12196,7 +13246,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -12212,7 +13262,14 @@
       "image": {
         "src": "muestras/starline-4744-suede-fuente-20261015-3b716bb66c.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -12240,7 +13297,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -12260,7 +13317,14 @@
       "image": {
         "src": "muestras/starline-4835-gloss-suede-fuente-20261015-914626e6ea.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          115,
+          420,
+          285
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -12289,7 +13353,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -12309,7 +13373,14 @@
       "image": {
         "src": "muestras/starline-4836-gloss-suede-fuente-20261015-7e432a59de.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -12338,7 +13409,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -12358,7 +13429,14 @@
       "image": {
         "src": "muestras/starline-4845-gloss-suede-fuente-20261015-6d959187da.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -12387,7 +13465,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -12403,7 +13481,14 @@
       "image": {
         "src": "muestras/starline-4849-gloss-suede-fuente-20261015-b6848879f4.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -12721,7 +13806,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -12737,7 +13822,14 @@
       "image": {
         "src": "muestras/starline-676-suede-fuente-20261015-f7d4b49e1e.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -12835,7 +13927,7 @@
       "international": false,
       "availability": "Existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -12851,7 +13943,14 @@
       "image": {
         "src": "muestras/starline-84421-cl-fuente-20261015-20169e6e47.webp",
         "width": 500,
-        "height": 500
+        "height": 500,
+        "crop": [
+          40,
+          40,
+          420,
+          360
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "ArquiStore"
@@ -12972,7 +14071,7 @@
       "international": true,
       "availability": "Importación y existencias por confirmar",
       "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -12988,7 +14087,14 @@
       "image": {
         "src": "muestras/greenlam-148-sud-fuente-20261015-4bb87d2ad7.webp",
         "width": 327,
-        "height": 500
+        "height": 500,
+        "crop": [
+          27,
+          40,
+          273,
+          420
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "Laminados El Pardillo"
@@ -31011,8 +32117,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra oficial Formipak · superficie completa",
-      "imageNote": "Imagen original extraída del PDF oficial Pisopak, página 9, con recorte de superficie completo. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra de superficie mejorada con IA",
+      "imageNote": "Muestra mejorada con IA a partir del catálogo oficial Formipak/Pisopak. Referencia visual aproximada; diseño, tono y acabado se confirman con una muestra física. Original y fuente conservados; derechos de sus titulares.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 9",
@@ -31022,9 +32128,16 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f571-superficie-20261014.webp",
-        "width": 489,
-        "height": 489
+        "src": "muestras/formipak-f571-limpia-ia-20261015.webp",
+        "width": 1254,
+        "height": 1254,
+        "crop": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "surfaceCrop": true
       }
     },
     {
@@ -33243,8 +34356,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra oficial Formipak · superficie completa",
-      "imageNote": "Imagen original extraída del PDF oficial Pisopak, página 32, con recorte de superficie completo. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra de superficie mejorada con IA",
+      "imageNote": "Muestra mejorada con IA a partir del catálogo oficial Formipak/Pisopak. Referencia visual aproximada; diseño, tono y acabado se confirman con una muestra física. Original y fuente conservados; derechos de sus titulares.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 32",
@@ -33254,9 +34367,16 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f720-superficie-20261014.webp",
-        "width": 450,
-        "height": 450
+        "src": "muestras/formipak-f720-limpia-ia-20261015.webp",
+        "width": 1254,
+        "height": 1254,
+        "crop": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "surfaceCrop": true
       }
     },
     {
@@ -33976,8 +35096,8 @@
       "market": "Perú · catálogo oficial Pisopak",
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
-      "imageKind": "Muestra oficial Formipak · superficie completa",
-      "imageNote": "Imagen original extraída del PDF oficial Pisopak, página 42, con recorte de superficie completo. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageKind": "Muestra de superficie mejorada con IA",
+      "imageNote": "Muestra mejorada con IA a partir del catálogo oficial Formipak/Pisopak. Referencia visual aproximada; diseño, tono y acabado se confirman con una muestra física. Original y fuente conservados; derechos de sus titulares.",
       "sourceLinks": [
         {
           "label": "Catálogo oficial · página 42",
@@ -33987,9 +35107,16 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/formipak-f430-superficie-20261014.webp",
-        "width": 512,
-        "height": 512
+        "src": "muestras/formipak-f430-limpia-ia-20261015.webp",
+        "width": 1254,
+        "height": 1254,
+        "crop": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "surfaceCrop": true
       }
     }
   ]
