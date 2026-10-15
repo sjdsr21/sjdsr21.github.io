@@ -955,7 +955,14 @@
         "src": "muestras/masisa-ve-10-detalle26.webp",
         "width": 1600,
         "height": 740,
-        "displayRotation": 90
+        "displayRotation": 90,
+        "crop": [
+          3,
+          3,
+          1594,
+          734
+        ],
+        "surfaceCrop": true
       },
       "supplier": ""
     },
@@ -20007,7 +20014,14 @@
         "src": "muestras/agt-3031-referencia-20261013.webp",
         "srcset": "muestras/agt-3031-referencia-20261013-640.webp 493w, muestras/agt-3031-referencia-20261013.webp 771w",
         "width": 771,
-        "height": 1000
+        "height": 1000,
+        "crop": [
+          3,
+          3,
+          765,
+          994
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "Imeca Venezuela"
@@ -22461,7 +22475,14 @@
         "src": "muestras/pertech-ferrofasil-5862-ferrofasil.webp",
         "width": 756,
         "height": 756,
-        "srcset": "muestras/pertech-ferrofasil-5862-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-5862-ferrofasil.webp 756w"
+        "srcset": "muestras/pertech-ferrofasil-5862-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-5862-ferrofasil.webp 756w",
+        "crop": [
+          6,
+          6,
+          744,
+          744
+        ],
+        "surfaceCrop": true
       },
       "supplierNames": [
         "Ferrofasil"
@@ -24529,8 +24550,8 @@
       "market": "Venezuela · LD Premium",
       "international": false,
       "availability": "Producto publicado por LD Premium; consultar existencias.",
-      "imageKind": "Imagen oficial publicada por LD Premium",
-      "imageNote": "Recorte de la imagen oficial publicada por LD Premium, conservando sus píxeles. Puede proceder de una ilustración comercial; es una referencia visual, sin escala ni color calibrados. La publicación original está enlazada.",
+      "imageKind": "Referencia frontal ajustada con IA",
+      "imageNote": "Vista frontal ajustada con IA a partir de la muestra publicada, con veta vertical y sin perspectiva. Tono, motivo y escala aproximados; confirmar con una muestra física. El original y su fuente se conservan en el registro técnico.",
       "sourceLinks": [
         {
           "label": "Publicación original LD Premium",
@@ -24538,9 +24559,10 @@
         }
       ],
       "image": {
-        "src": "muestras/ldp-maderas-roble-amazonas-oficial.webp",
-        "width": 407,
-        "height": 473
+        "src": "muestras/ldp-maderas-roble-amazonas-frontal-20261014.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/ldp-maderas-roble-amazonas-frontal-20261014-640.webp 640w, muestras/ldp-maderas-roble-amazonas-frontal-20261014.webp 1254w"
       },
       "textureId": null,
       "appId": null,
@@ -24569,8 +24591,8 @@
       "market": "Venezuela · LD Premium",
       "international": false,
       "availability": "Producto publicado por LD Premium; consultar existencias.",
-      "imageKind": "Imagen oficial publicada por LD Premium",
-      "imageNote": "Recorte de la imagen oficial publicada por LD Premium, conservando sus píxeles. Puede proceder de una ilustración comercial; es una referencia visual, sin escala ni color calibrados. La publicación original está enlazada.",
+      "imageKind": "Referencia frontal ajustada con IA",
+      "imageNote": "Vista frontal ajustada con IA a partir de la muestra publicada, con veta vertical y sin perspectiva. Tono, motivo y escala aproximados; confirmar con una muestra física. El original y su fuente se conservan en el registro técnico.",
       "sourceLinks": [
         {
           "label": "Publicación original LD Premium",
@@ -24578,9 +24600,10 @@
         }
       ],
       "image": {
-        "src": "muestras/ldp-maderas-sienna-oakwood-oficial.webp",
-        "width": 407,
-        "height": 473
+        "src": "muestras/ldp-maderas-sienna-oakwood-frontal-20261014.webp",
+        "width": 1163,
+        "height": 1352,
+        "srcset": "muestras/ldp-maderas-sienna-oakwood-frontal-20261014-640.webp 551w, muestras/ldp-maderas-sienna-oakwood-frontal-20261014.webp 1163w"
       },
       "textureId": null,
       "appId": null,
@@ -29215,7 +29238,7 @@
       "international": false,
       "availability": "Producto publicado por LD Premium; consultar existencias.",
       "imageKind": "Muestra de catálogo",
-      "imageNote": "Recorte de la cara izquierda de la publicación C+/C de LD Premium. Las dos caras del anuncio no identifican individualmente el grado; confirmar con el proveedor la correspondencia C o C Plus. Píxeles originales conservados, sin recreación IA ni color o escala calibrados.",
+      "imageNote": "Recorte de la cara izquierda de la publicación C+/C de LD Premium. Las dos caras del anuncio no identifican individualmente el grado; confirmar con el proveedor la correspondencia C o C Plus. Píxeles originales conservados, sin recreación IA ni color o escala calibrados. Presentación con saturación aumentada suavemente y un toque cálido por indicación de Santiago; el archivo original permanece intacto. No es color calibrado.",
       "sourceLinks": [
         {
           "label": "Publicación original LD Premium",
@@ -29225,7 +29248,8 @@
       "image": {
         "src": "muestras/ldp-compuestos-y-chapillados-compuesto-fenolico-c-plus-oficial.webp",
         "width": 518,
-        "height": 1008
+        "height": 1008,
+        "displayFilter": "saturate(1.18) sepia(0.06)"
       },
       "textureId": null,
       "appId": null,
@@ -29255,7 +29279,7 @@
       "international": false,
       "availability": "Producto publicado por LD Premium; consultar existencias.",
       "imageKind": "Muestra de catálogo",
-      "imageNote": "Recorte de la cara derecha de la publicación C+/C de LD Premium. Las dos caras del anuncio no identifican individualmente el grado; confirmar con el proveedor la correspondencia C o C Plus. Píxeles originales conservados, sin recreación IA ni color o escala calibrados.",
+      "imageNote": "Recorte de la cara derecha de la publicación C+/C de LD Premium. Las dos caras del anuncio no identifican individualmente el grado; confirmar con el proveedor la correspondencia C o C Plus. Píxeles originales conservados, sin recreación IA ni color o escala calibrados. Presentación con saturación aumentada suavemente y un toque cálido por indicación de Santiago; el archivo original permanece intacto. No es color calibrado.",
       "sourceLinks": [
         {
           "label": "Publicación original LD Premium",
@@ -29265,7 +29289,8 @@
       "image": {
         "src": "muestras/ldp-compuestos-y-chapillados-compuesto-fenolico-c-oficial.webp",
         "width": 504,
-        "height": 1008
+        "height": 1008,
+        "displayFilter": "saturate(1.18) sepia(0.06)"
       },
       "textureId": null,
       "appId": null,
@@ -30320,7 +30345,14 @@
       "image": {
         "src": "muestras/ferrofasil-saviola-tr9-oxyd.webp",
         "width": 501,
-        "height": 667
+        "height": 667,
+        "crop": [
+          6,
+          6,
+          489,
+          655
+        ],
+        "surfaceCrop": true
       },
       "textureId": null,
       "appId": null,
@@ -30370,7 +30402,14 @@
       "image": {
         "src": "muestras/ferrofasil-saviola-t09-statuario-venato.webp",
         "width": 534,
-        "height": 667
+        "height": 667,
+        "crop": [
+          6,
+          6,
+          522,
+          655
+        ],
+        "surfaceCrop": true
       },
       "textureId": null,
       "appId": null,
@@ -30420,7 +30459,14 @@
       "image": {
         "src": "muestras/ferrofasil-saviola-t08-marmo-patagonia.webp",
         "width": 534,
-        "height": 667
+        "height": 667,
+        "crop": [
+          6,
+          6,
+          522,
+          655
+        ],
+        "surfaceCrop": true
       },
       "textureId": null,
       "appId": null,
@@ -30470,7 +30516,14 @@
       "image": {
         "src": "muestras/ferrofasil-saviola-dn6-kena-bronzo.webp",
         "width": 534,
-        "height": 667
+        "height": 667,
+        "crop": [
+          6,
+          6,
+          522,
+          655
+        ],
+        "surfaceCrop": true
       },
       "textureId": null,
       "appId": null,
@@ -30520,7 +30573,14 @@
       "image": {
         "src": "muestras/ferrofasil-saviola-dn8-kena-cemento.webp",
         "width": 537,
-        "height": 667
+        "height": 667,
+        "crop": [
+          6,
+          6,
+          525,
+          655
+        ],
+        "surfaceCrop": true
       },
       "textureId": null,
       "appId": null,
@@ -30570,7 +30630,14 @@
       "image": {
         "src": "muestras/ferrofasil-saviola-dn9-kena-verde.webp",
         "width": 534,
-        "height": 667
+        "height": 667,
+        "crop": [
+          6,
+          6,
+          522,
+          655
+        ],
+        "surfaceCrop": true
       },
       "textureId": null,
       "appId": null,
@@ -30620,7 +30687,14 @@
       "image": {
         "src": "muestras/ferrofasil-saviola-a83-calacatta-bianco.webp",
         "width": 534,
-        "height": 667
+        "height": 667,
+        "crop": [
+          6,
+          6,
+          522,
+          655
+        ],
+        "surfaceCrop": true
       },
       "textureId": null,
       "appId": null,
@@ -30670,7 +30744,14 @@
       "image": {
         "src": "muestras/ferrofasil-saviola-ap2-grigio.webp",
         "width": 534,
-        "height": 667
+        "height": 667,
+        "crop": [
+          6,
+          6,
+          522,
+          655
+        ],
+        "surfaceCrop": true
       },
       "textureId": null,
       "appId": null,
@@ -30720,7 +30801,14 @@
       "image": {
         "src": "muestras/ferrofasil-saviola-797-grigio-grafite.webp",
         "width": 537,
-        "height": 667
+        "height": 667,
+        "crop": [
+          6,
+          6,
+          525,
+          655
+        ],
+        "surfaceCrop": true
       },
       "textureId": null,
       "appId": null,
@@ -30770,7 +30858,14 @@
       "image": {
         "src": "muestras/ferrofasil-saviola-wd3-grigio.webp",
         "width": 534,
-        "height": 667
+        "height": 667,
+        "crop": [
+          6,
+          6,
+          522,
+          655
+        ],
+        "surfaceCrop": true
       },
       "textureId": null,
       "appId": null,
@@ -30820,7 +30915,14 @@
       "image": {
         "src": "muestras/ferrofasil-saviola-49m-twist-corda.webp",
         "width": 534,
-        "height": 667
+        "height": 667,
+        "crop": [
+          6,
+          6,
+          522,
+          655
+        ],
+        "surfaceCrop": true
       },
       "textureId": null,
       "appId": null,
@@ -30870,7 +30972,14 @@
       "image": {
         "src": "muestras/ferrofasil-saviola-ds4-leizu-azzurro.webp",
         "width": 534,
-        "height": 667
+        "height": 667,
+        "crop": [
+          6,
+          6,
+          522,
+          655
+        ],
+        "surfaceCrop": true
       },
       "textureId": null,
       "appId": null,
@@ -30920,7 +31029,14 @@
       "image": {
         "src": "muestras/ferrofasil-saviola-0k8-unimetallic-metal.webp",
         "width": 534,
-        "height": 667
+        "height": 667,
+        "crop": [
+          6,
+          6,
+          522,
+          655
+        ],
+        "surfaceCrop": true
       },
       "textureId": null,
       "appId": null,
@@ -30970,7 +31086,14 @@
       "image": {
         "src": "muestras/ferrofasil-saviola-p52-sand-oak-naturale.webp",
         "width": 534,
-        "height": 667
+        "height": 667,
+        "crop": [
+          6,
+          6,
+          522,
+          655
+        ],
+        "surfaceCrop": true
       },
       "textureId": null,
       "appId": null,
@@ -31020,7 +31143,14 @@
       "image": {
         "src": "muestras/ferrofasil-saviola-p48-sand-oak-grigio.webp",
         "width": 537,
-        "height": 667
+        "height": 667,
+        "crop": [
+          6,
+          6,
+          525,
+          655
+        ],
+        "surfaceCrop": true
       },
       "textureId": null,
       "appId": null,
@@ -31070,7 +31200,14 @@
       "image": {
         "src": "muestras/ferrofasil-saviola-p24-noce-vanguard-grigio.webp",
         "width": 533,
-        "height": 667
+        "height": 667,
+        "crop": [
+          6,
+          6,
+          521,
+          655
+        ],
+        "surfaceCrop": true
       },
       "textureId": null,
       "appId": null,
@@ -31120,7 +31257,14 @@
       "image": {
         "src": "muestras/ferrofasil-saviola-p23-noce-vanguard-chiaro.webp",
         "width": 534,
-        "height": 667
+        "height": 667,
+        "crop": [
+          6,
+          6,
+          522,
+          655
+        ],
+        "surfaceCrop": true
       },
       "textureId": null,
       "appId": null,
@@ -31170,7 +31314,14 @@
       "image": {
         "src": "muestras/ferrofasil-saviola-p20-gessato-dark.webp",
         "width": 534,
-        "height": 667
+        "height": 667,
+        "crop": [
+          6,
+          6,
+          522,
+          655
+        ],
+        "surfaceCrop": true
       },
       "textureId": null,
       "appId": null,
@@ -31220,7 +31371,14 @@
       "image": {
         "src": "muestras/ferrofasil-saviola-p05-aralie-white.webp",
         "width": 534,
-        "height": 667
+        "height": 667,
+        "crop": [
+          6,
+          6,
+          522,
+          655
+        ],
+        "surfaceCrop": true
       },
       "textureId": null,
       "appId": null,
@@ -31270,7 +31428,14 @@
       "image": {
         "src": "muestras/ferrofasil-saviola-a89-leander-olmo-brown.webp",
         "width": 534,
-        "height": 667
+        "height": 667,
+        "crop": [
+          6,
+          6,
+          522,
+          655
+        ],
+        "surfaceCrop": true
       },
       "textureId": null,
       "appId": null,
@@ -31320,7 +31485,14 @@
       "image": {
         "src": "muestras/ferrofasil-saviola-db2-nitens-grey.webp",
         "width": 534,
-        "height": 667
+        "height": 667,
+        "crop": [
+          6,
+          6,
+          522,
+          655
+        ],
+        "surfaceCrop": true
       },
       "textureId": null,
       "appId": null,
