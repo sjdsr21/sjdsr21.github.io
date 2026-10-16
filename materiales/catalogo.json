@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-15",
+  "updated": "2026-10-16",
   "categories": [
     {
       "id": "maderas",
@@ -10,8 +10,8 @@
     },
     {
       "id": "tableros",
-      "name": "Tableros y melaminas",
-      "intro": "Aglomerados, MDF, contrachapados, alistonados y diseños melamínicos por marca.",
+      "name": "Chapas y compuestos",
+      "intro": "Chapas, MDF, aglomerados, contrachapados y láminas de PVC.",
       "note": "El soporte y el diseño son elecciones distintas. Confirmamos base y acabado."
     },
     {
@@ -28809,6 +28809,70 @@
         "LD Premium"
       ],
       "supplierAssociationStatus": "oferta_publicada"
+    },
+    {
+      "id": "ago-pvc-espumado-blanco",
+      "category": "tableros",
+      "family": "Compuestos y chapillados",
+      "name": "Lámina de PVC",
+      "brand": "",
+      "code": "",
+      "finish": "Blanco",
+      "description": "Lámina de PVC blanco para mobiliario y revestimientos. Formato de referencia: 1,22 × 2,44 m. Publicaciones en 12 y 18 mm; el catálogo del proveedor también incluye 6, 8 y 15 mm. Espesor de 9 mm por confirmar. Las presentaciones comerciales pueden tener especificaciones distintas.",
+      "use": "Muebles de baño y cocina, fondos, revestimientos y exhibidores, según la ficha del producto elegido. Para topes se deben comprobar rigidez, apoyos, temperatura y adhesivo.",
+      "care": "Limpiar con paño suave y productos compatibles. Evitar calor directo y confirmar la especificación del producto para cada aplicación.",
+      "market": "Venezuela · ArquiStore",
+      "international": false,
+      "availability": "Referencias comerciales publicadas en 12 y 18 mm. Consultar existencias de cada presentación.",
+      "supplier": "ArquiStore",
+      "supplierNames": [
+        "ArquiStore"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "sheetSizeMm": [
+        1220,
+        2440
+      ],
+      "imageKind": "Muestra de color orientativa",
+      "imageNote": "Representación uniforme del blanco de referencia del taller; no es una fotografía del lote ni una textura superficial calibrada. Una misma muestra para todos los espesores.",
+      "image": {
+        "src": "muestras/lamina-pvc-blanco-20261016.webp",
+        "width": 512,
+        "height": 512
+      },
+      "textureId": "ago-pvc-espumado-blanco",
+      "appId": null,
+      "sourceLinks": [
+        {
+          "label": "ArquiStore · PVC-C Arqui Premium Big 12 mm (índice de publicaciones)",
+          "url": "https://listado.mercadolibre.com.ve/arqui-pvc"
+        },
+        {
+          "label": "ArquiStore · Century PVC 18 mm",
+          "url": "https://articulo.mercadolibre.com.ve/MLV-789868112-lamina-de-pvc-century-18mm-122-x-244-color-blanco-_JM"
+        },
+        {
+          "label": "Catálogo ArquiStore · otras presentaciones de PVC",
+          "url": "https://arquistore.online/wp-content/uploads/2025/04/Catalogo-general-.pdf#page=12"
+        }
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "arquistore",
+          "relationship": "proveedor",
+          "sourceIds": [
+            "arquistore-ml",
+            "arquistore-web"
+          ],
+          "evidenceIds": [
+            "arquistore-pvc-premium-big-12",
+            "arquistore-century-pvc-18"
+          ],
+          "evidenceStatuses": [
+            "publicacion_aportada"
+          ]
+        }
+      ]
     },
     {
       "id": "ldp-melaminas-grisly-oak",
