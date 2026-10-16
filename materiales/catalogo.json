@@ -34953,6 +34953,1626 @@
         ],
         "surfaceCrop": true
       }
+    },
+    {
+      "id": "stylam-101-gl",
+      "category": "laminados",
+      "name": "Blanco brillante",
+      "family": "Colores sólidos",
+      "brand": "Stylam",
+      "supplier": "Laminados El Pardillo",
+      "supplierNames": [
+        "Laminados El Pardillo"
+      ],
+      "supplierAssociationStatus": "catalogo_indexado_stock_por_confirmar",
+      "code": "101",
+      "finish": "GL",
+      "description": "Laminado decorativo HPL para aplicar sobre un soporte. Nombre y acabado del catálogo venezolano de El Pardillo.",
+      "use": "Mobiliario y revestimientos según la ficha técnica del producto y el soporte elegido.",
+      "care": "Confirmamos formato, espesor, acabado, precio y existencias con el proveedor. La muestra digital no permite comprobar el brillo ni la textura del acabado local.",
+      "market": "Venezuela · referencia de catálogo",
+      "international": false,
+      "availability": "Precio y existencias por confirmar",
+      "imageKind": "Muestra documental por código de diseño",
+      "imageNote": "Muestra digital del diseño 101 publicada por Stylam Industries. Coincidencia por código de diseño; no verifica la textura ni el brillo del acabado local. Sin recreación IA.",
+      "sourceLinks": [
+        {
+          "label": "El Pardillo · catálogo venezolano (acceso directo pendiente)",
+          "url": "https://laminadoselpardillo.com/categoria-producto/laminados-decorativos/stylam/"
+        },
+        {
+          "label": "Origen de la muestra · Stylam Industries",
+          "url": "https://stylam.com/product/azure-white"
+        }
+      ],
+      "image": {
+        "src": "muestras/stylam-101-gl-20261016.webp",
+        "width": 400,
+        "height": 800,
+        "surfaceCrop": true
+      },
+      "appId": null,
+      "textureId": null,
+      "aliases": [
+        "101 GL",
+        "AZURE WHITE"
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "laminados-el-pardillo",
+          "relationship": "proveedor_catalogo_indexado",
+          "sourceIds": [
+            "laminados-el-pardillo-web-stylam"
+          ]
+        },
+        {
+          "entityId": "stylam",
+          "relationship": "fuente_visual_por_codigo",
+          "sourceIds": [
+            "stylam-productos"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stylam-142-gl",
+      "category": "laminados",
+      "name": "Negro brillante",
+      "family": "Colores sólidos",
+      "brand": "Stylam",
+      "supplier": "Laminados El Pardillo",
+      "supplierNames": [
+        "Laminados El Pardillo"
+      ],
+      "supplierAssociationStatus": "catalogo_indexado_stock_por_confirmar",
+      "code": "142",
+      "finish": "GL",
+      "description": "Laminado decorativo HPL para aplicar sobre un soporte. Nombre y acabado del catálogo venezolano de El Pardillo.",
+      "use": "Mobiliario y revestimientos según la ficha técnica del producto y el soporte elegido.",
+      "care": "Confirmamos formato, espesor, acabado, precio y existencias con el proveedor. La muestra digital no permite comprobar el brillo ni la textura del acabado local.",
+      "market": "Venezuela · referencia de catálogo",
+      "international": false,
+      "availability": "Precio y existencias por confirmar",
+      "imageKind": "Muestra documental por código de diseño",
+      "imageNote": "Muestra digital del diseño 142 publicada por Stylam Industries. Coincidencia por código de diseño; no verifica la textura ni el brillo del acabado local. Sin recreación IA.",
+      "sourceLinks": [
+        {
+          "label": "El Pardillo · catálogo venezolano (acceso directo pendiente)",
+          "url": "https://laminadoselpardillo.com/categoria-producto/laminados-decorativos/stylam/"
+        },
+        {
+          "label": "Origen de la muestra · Stylam Industries",
+          "url": "https://stylam.com/product/black-magic-3"
+        }
+      ],
+      "image": {
+        "src": "muestras/stylam-142-gl-20261016.webp",
+        "width": 625,
+        "height": 1000,
+        "surfaceCrop": true
+      },
+      "appId": null,
+      "textureId": null,
+      "aliases": [
+        "142 GL",
+        "BLACK MAGIC"
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "laminados-el-pardillo",
+          "relationship": "proveedor_catalogo_indexado",
+          "sourceIds": [
+            "laminados-el-pardillo-web-stylam"
+          ]
+        },
+        {
+          "entityId": "stylam",
+          "relationship": "fuente_visual_por_codigo",
+          "sourceIds": [
+            "stylam-productos"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stylam-1710-gl",
+      "category": "laminados",
+      "name": "Gris metal brillante",
+      "family": "Colores sólidos",
+      "brand": "Stylam",
+      "supplier": "Laminados El Pardillo",
+      "supplierNames": [
+        "Laminados El Pardillo"
+      ],
+      "supplierAssociationStatus": "catalogo_indexado_stock_por_confirmar",
+      "code": "1710",
+      "finish": "GL",
+      "description": "Laminado decorativo HPL para aplicar sobre un soporte. Nombre y acabado del catálogo venezolano de El Pardillo.",
+      "use": "Mobiliario y revestimientos según la ficha técnica del producto y el soporte elegido.",
+      "care": "Confirmamos formato, espesor, acabado, precio y existencias con el proveedor. La muestra digital no permite comprobar el brillo ni la textura del acabado local.",
+      "market": "Venezuela · referencia de catálogo",
+      "international": false,
+      "availability": "Precio y existencias por confirmar",
+      "imageKind": "Muestra documental por código de diseño",
+      "imageNote": "Muestra digital del diseño 1710 publicada por Stylam Industries. Coincidencia por código de diseño; no verifica la textura ni el brillo del acabado local. Sin recreación IA.",
+      "sourceLinks": [
+        {
+          "label": "El Pardillo · catálogo venezolano (acceso directo pendiente)",
+          "url": "https://laminadoselpardillo.com/categoria-producto/laminados-decorativos/stylam/"
+        },
+        {
+          "label": "Origen de la muestra · Stylam Industries",
+          "url": "https://stylam.com/product/mazo-grey"
+        }
+      ],
+      "image": {
+        "src": "muestras/stylam-1710-gl-20261016.webp",
+        "width": 625,
+        "height": 1000,
+        "surfaceCrop": true
+      },
+      "appId": null,
+      "textureId": null,
+      "aliases": [
+        "1710 GL",
+        "Mazo Grey"
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "laminados-el-pardillo",
+          "relationship": "proveedor_catalogo_indexado",
+          "sourceIds": [
+            "laminados-el-pardillo-web-stylam"
+          ]
+        },
+        {
+          "entityId": "stylam",
+          "relationship": "fuente_visual_por_codigo",
+          "sourceIds": [
+            "stylam-productos"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stylam-2585-sm",
+      "category": "laminados",
+      "name": "Aspen horizontal",
+      "family": "Maderas",
+      "brand": "Stylam",
+      "supplier": "Laminados El Pardillo",
+      "supplierNames": [
+        "Laminados El Pardillo"
+      ],
+      "supplierAssociationStatus": "catalogo_indexado_stock_por_confirmar",
+      "code": "2585",
+      "finish": "SM",
+      "description": "Laminado decorativo HPL para aplicar sobre un soporte. Nombre y acabado del catálogo venezolano de El Pardillo.",
+      "use": "Mobiliario y revestimientos según la ficha técnica del producto y el soporte elegido.",
+      "care": "Confirmamos formato, espesor, acabado, precio y existencias con el proveedor. La muestra digital no permite comprobar el brillo ni la textura del acabado local.",
+      "market": "Venezuela · referencia de catálogo",
+      "international": false,
+      "availability": "Precio y existencias por confirmar",
+      "imageKind": "Muestra documental por código de diseño",
+      "imageNote": "Muestra digital del diseño 2585 publicada por Stylam Industries · catálogo Woodgrains. Coincidencia por código de diseño; no verifica la textura ni el brillo del acabado local. Sin recreación IA.",
+      "sourceLinks": [
+        {
+          "label": "El Pardillo · catálogo venezolano (acceso directo pendiente)",
+          "url": "https://laminadoselpardillo.com/categoria-producto/laminados-decorativos/stylam/"
+        },
+        {
+          "label": "Origen de la muestra · Stylam Industries · catálogo Woodgrains",
+          "url": "https://www.stylam.com/assets/front/pdf/catalogue/Woodgrains.pdf#page=13"
+        }
+      ],
+      "image": {
+        "src": "muestras/stylam-2585-sm-20261016.webp",
+        "width": 402,
+        "height": 237,
+        "surfaceCrop": true
+      },
+      "appId": null,
+      "textureId": null,
+      "aliases": [
+        "2585 SM",
+        ""
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "laminados-el-pardillo",
+          "relationship": "proveedor_catalogo_indexado",
+          "sourceIds": [
+            "laminados-el-pardillo-web-stylam"
+          ]
+        },
+        {
+          "entityId": "stylam",
+          "relationship": "fuente_visual_por_codigo",
+          "sourceIds": [
+            "stylam-woodgrains-pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stylam-1989-s2",
+      "category": "laminados",
+      "name": "Beech",
+      "family": "Maderas",
+      "brand": "Stylam",
+      "supplier": "Laminados El Pardillo",
+      "supplierNames": [
+        "Laminados El Pardillo"
+      ],
+      "supplierAssociationStatus": "catalogo_indexado_stock_por_confirmar",
+      "code": "1989",
+      "finish": "S2",
+      "description": "Laminado decorativo HPL para aplicar sobre un soporte. Nombre y acabado del catálogo venezolano de El Pardillo.",
+      "use": "Mobiliario y revestimientos según la ficha técnica del producto y el soporte elegido.",
+      "care": "Confirmamos formato, espesor, acabado, precio y existencias con el proveedor. La muestra digital no permite comprobar el brillo ni la textura del acabado local.",
+      "market": "Venezuela · referencia de catálogo",
+      "international": false,
+      "availability": "Precio y existencias por confirmar",
+      "imageKind": "Muestra documental por código de diseño",
+      "imageNote": "Muestra digital del diseño 1989 publicada por Stylam Industries. Coincidencia por código de diseño; no verifica la textura ni el brillo del acabado local. Sin recreación IA.",
+      "sourceLinks": [
+        {
+          "label": "El Pardillo · catálogo venezolano (acceso directo pendiente)",
+          "url": "https://laminadoselpardillo.com/categoria-producto/laminados-decorativos/stylam/"
+        },
+        {
+          "label": "Origen de la muestra · Stylam Industries",
+          "url": "https://stylam.com/product/japan-beech"
+        }
+      ],
+      "image": {
+        "src": "muestras/stylam-1989-s2-20261016.webp",
+        "width": 568,
+        "height": 1000,
+        "surfaceCrop": true
+      },
+      "appId": null,
+      "textureId": null,
+      "aliases": [
+        "1989 S2",
+        "Japan Beech"
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "laminados-el-pardillo",
+          "relationship": "proveedor_catalogo_indexado",
+          "sourceIds": [
+            "laminados-el-pardillo-web-stylam"
+          ]
+        },
+        {
+          "entityId": "stylam",
+          "relationship": "fuente_visual_por_codigo",
+          "sourceIds": [
+            "stylam-productos"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stylam-7283-s2",
+      "category": "laminados",
+      "name": "Cherry",
+      "family": "Maderas",
+      "brand": "Stylam",
+      "supplier": "Laminados El Pardillo",
+      "supplierNames": [
+        "Laminados El Pardillo"
+      ],
+      "supplierAssociationStatus": "catalogo_indexado_stock_por_confirmar",
+      "code": "7283",
+      "finish": "S2",
+      "description": "Laminado decorativo HPL para aplicar sobre un soporte. Nombre y acabado del catálogo venezolano de El Pardillo.",
+      "use": "Mobiliario y revestimientos según la ficha técnica del producto y el soporte elegido.",
+      "care": "Confirmamos formato, espesor, acabado, precio y existencias con el proveedor. La muestra digital no permite comprobar el brillo ni la textura del acabado local.",
+      "market": "Venezuela · referencia de catálogo",
+      "international": false,
+      "availability": "Precio y existencias por confirmar",
+      "imageKind": "Muestra documental por código de diseño",
+      "imageNote": "Muestra digital del diseño 7283 publicada por Cuboid by CBC · muestra Stylam. Coincidencia por código de diseño; no verifica la textura ni el brillo del acabado local. Sin recreación IA.",
+      "sourceLinks": [
+        {
+          "label": "El Pardillo · catálogo venezolano (acceso directo pendiente)",
+          "url": "https://laminadoselpardillo.com/categoria-producto/laminados-decorativos/stylam/"
+        },
+        {
+          "label": "Origen de la muestra · Cuboid by CBC · muestra Stylam",
+          "url": "https://www.wazzadu.com/product/22713"
+        }
+      ],
+      "image": {
+        "src": "muestras/stylam-7283-s2-20261016.webp",
+        "width": 500,
+        "height": 1000,
+        "surfaceCrop": true
+      },
+      "appId": null,
+      "textureId": null,
+      "aliases": [
+        "7283 S2",
+        ""
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "laminados-el-pardillo",
+          "relationship": "proveedor_catalogo_indexado",
+          "sourceIds": [
+            "laminados-el-pardillo-web-stylam"
+          ]
+        },
+        {
+          "entityId": "cuboid-cbc",
+          "relationship": "fuente_visual_por_codigo",
+          "sourceIds": [
+            "cuboid-cbc-cherry-7283"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stylam-2012-s2",
+      "category": "laminados",
+      "name": "Cherry Light",
+      "family": "Maderas",
+      "brand": "Stylam",
+      "supplier": "Laminados El Pardillo",
+      "supplierNames": [
+        "Laminados El Pardillo"
+      ],
+      "supplierAssociationStatus": "catalogo_indexado_stock_por_confirmar",
+      "code": "2012",
+      "finish": "S2",
+      "description": "Laminado decorativo HPL para aplicar sobre un soporte. Nombre y acabado del catálogo venezolano de El Pardillo.",
+      "use": "Mobiliario y revestimientos según la ficha técnica del producto y el soporte elegido.",
+      "care": "Confirmamos formato, espesor, acabado, precio y existencias con el proveedor. La muestra digital no permite comprobar el brillo ni la textura del acabado local.",
+      "market": "Venezuela · referencia de catálogo",
+      "international": false,
+      "availability": "Precio y existencias por confirmar",
+      "imageKind": "Muestra documental por código de diseño",
+      "imageNote": "Muestra digital del diseño 2012 publicada por Stylam Industries. Coincidencia por código de diseño; no verifica la textura ni el brillo del acabado local. Sin recreación IA.",
+      "sourceLinks": [
+        {
+          "label": "El Pardillo · catálogo venezolano (acceso directo pendiente)",
+          "url": "https://laminadoselpardillo.com/categoria-producto/laminados-decorativos/stylam/"
+        },
+        {
+          "label": "Origen de la muestra · Stylam Industries",
+          "url": "https://stylam.com/product/cherry-light"
+        }
+      ],
+      "image": {
+        "src": "muestras/stylam-2012-s2-20261016.webp",
+        "width": 569,
+        "height": 1000,
+        "surfaceCrop": true
+      },
+      "appId": null,
+      "textureId": null,
+      "aliases": [
+        "2012 S2",
+        "Cherry Light"
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "laminados-el-pardillo",
+          "relationship": "proveedor_catalogo_indexado",
+          "sourceIds": [
+            "laminados-el-pardillo-web-stylam"
+          ]
+        },
+        {
+          "entityId": "stylam",
+          "relationship": "fuente_visual_por_codigo",
+          "sourceIds": [
+            "stylam-productos"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stylam-7408-lm",
+      "category": "laminados",
+      "name": "Roble antiguo",
+      "family": "Maderas",
+      "brand": "Stylam",
+      "supplier": "Laminados El Pardillo",
+      "supplierNames": [
+        "Laminados El Pardillo"
+      ],
+      "supplierAssociationStatus": "catalogo_indexado_stock_por_confirmar",
+      "code": "7408",
+      "finish": "LM",
+      "description": "Laminado decorativo HPL para aplicar sobre un soporte. Nombre y acabado del catálogo venezolano de El Pardillo.",
+      "use": "Mobiliario y revestimientos según la ficha técnica del producto y el soporte elegido.",
+      "care": "Confirmamos formato, espesor, acabado, precio y existencias con el proveedor. La muestra digital no permite comprobar el brillo ni la textura del acabado local.",
+      "market": "Venezuela · referencia de catálogo",
+      "international": false,
+      "availability": "Precio y existencias por confirmar",
+      "imageKind": "Muestra documental por código de diseño",
+      "imageNote": "Muestra digital del diseño 7408 publicada por Stylam Industries. Coincidencia por código de diseño; no verifica la textura ni el brillo del acabado local. Sin recreación IA.",
+      "sourceLinks": [
+        {
+          "label": "El Pardillo · catálogo venezolano (acceso directo pendiente)",
+          "url": "https://laminadoselpardillo.com/categoria-producto/laminados-decorativos/stylam/"
+        },
+        {
+          "label": "Origen de la muestra · Stylam Industries",
+          "url": "https://stylam.com/product/antique-oak"
+        }
+      ],
+      "image": {
+        "src": "muestras/stylam-7408-lm-20261016.webp",
+        "width": 568,
+        "height": 1000,
+        "surfaceCrop": true
+      },
+      "appId": null,
+      "textureId": null,
+      "aliases": [
+        "7408 LM",
+        "Antique Oak"
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "laminados-el-pardillo",
+          "relationship": "proveedor_catalogo_indexado",
+          "sourceIds": [
+            "laminados-el-pardillo-web-stylam"
+          ]
+        },
+        {
+          "entityId": "stylam",
+          "relationship": "fuente_visual_por_codigo",
+          "sourceIds": [
+            "stylam-productos"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stylam-2233-sd",
+      "category": "laminados",
+      "name": "Madera Hielo",
+      "family": "Maderas",
+      "brand": "Stylam",
+      "supplier": "Laminados El Pardillo",
+      "supplierNames": [
+        "Laminados El Pardillo"
+      ],
+      "supplierAssociationStatus": "catalogo_indexado_stock_por_confirmar",
+      "code": "2233",
+      "finish": "SD",
+      "description": "Laminado decorativo HPL para aplicar sobre un soporte. Nombre y acabado del catálogo venezolano de El Pardillo.",
+      "use": "Mobiliario y revestimientos según la ficha técnica del producto y el soporte elegido.",
+      "care": "Confirmamos formato, espesor, acabado, precio y existencias con el proveedor. La muestra digital no permite comprobar el brillo ni la textura del acabado local.",
+      "market": "Venezuela · referencia de catálogo",
+      "international": false,
+      "availability": "Precio y existencias por confirmar",
+      "imageKind": "Muestra documental por código de diseño",
+      "imageNote": "Muestra digital del diseño 2233 publicada por Stylam Industries. Coincidencia por código de diseño; no verifica la textura ni el brillo del acabado local. Sin recreación IA.",
+      "sourceLinks": [
+        {
+          "label": "El Pardillo · catálogo venezolano (acceso directo pendiente)",
+          "url": "https://laminadoselpardillo.com/categoria-producto/laminados-decorativos/stylam/"
+        },
+        {
+          "label": "Origen de la muestra · Stylam Industries",
+          "url": "https://stylam.com/product/frozen-wood"
+        }
+      ],
+      "image": {
+        "src": "muestras/stylam-2233-sd-20261016.webp",
+        "width": 569,
+        "height": 1000,
+        "surfaceCrop": true
+      },
+      "appId": null,
+      "textureId": null,
+      "aliases": [
+        "2233 SD",
+        "Frozen Wood"
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "laminados-el-pardillo",
+          "relationship": "proveedor_catalogo_indexado",
+          "sourceIds": [
+            "laminados-el-pardillo-web-stylam"
+          ]
+        },
+        {
+          "entityId": "stylam",
+          "relationship": "fuente_visual_por_codigo",
+          "sourceIds": [
+            "stylam-productos"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stylam-2594-sd",
+      "category": "laminados",
+      "name": "Maple gris",
+      "family": "Maderas",
+      "brand": "Stylam",
+      "supplier": "Laminados El Pardillo",
+      "supplierNames": [
+        "Laminados El Pardillo"
+      ],
+      "supplierAssociationStatus": "catalogo_indexado_stock_por_confirmar",
+      "code": "2594",
+      "finish": "SD",
+      "description": "Laminado decorativo HPL para aplicar sobre un soporte. Nombre y acabado del catálogo venezolano de El Pardillo.",
+      "use": "Mobiliario y revestimientos según la ficha técnica del producto y el soporte elegido.",
+      "care": "Confirmamos formato, espesor, acabado, precio y existencias con el proveedor. La muestra digital no permite comprobar el brillo ni la textura del acabado local.",
+      "market": "Venezuela · referencia de catálogo",
+      "international": false,
+      "availability": "Precio y existencias por confirmar",
+      "imageKind": "Muestra documental por código de diseño",
+      "imageNote": "Muestra digital del diseño 2594 publicada por Stylam Industries · catálogo Woodgrains. Coincidencia por código de diseño; no verifica la textura ni el brillo del acabado local. Sin recreación IA.",
+      "sourceLinks": [
+        {
+          "label": "El Pardillo · catálogo venezolano (acceso directo pendiente)",
+          "url": "https://laminadoselpardillo.com/categoria-producto/laminados-decorativos/stylam/"
+        },
+        {
+          "label": "Origen de la muestra · Stylam Industries · catálogo Woodgrains",
+          "url": "https://www.stylam.com/assets/front/pdf/catalogue/Woodgrains.pdf#page=15"
+        }
+      ],
+      "image": {
+        "src": "muestras/stylam-2594-sd-20261016.webp",
+        "width": 399,
+        "height": 231,
+        "surfaceCrop": true
+      },
+      "appId": null,
+      "textureId": null,
+      "aliases": [
+        "2594 SD",
+        ""
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "laminados-el-pardillo",
+          "relationship": "proveedor_catalogo_indexado",
+          "sourceIds": [
+            "laminados-el-pardillo-web-stylam"
+          ]
+        },
+        {
+          "entityId": "stylam",
+          "relationship": "fuente_visual_por_codigo",
+          "sourceIds": [
+            "stylam-woodgrains-pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stylam-2052-s",
+      "category": "laminados",
+      "name": "Maple natural",
+      "family": "Maderas",
+      "brand": "Stylam",
+      "supplier": "Laminados El Pardillo",
+      "supplierNames": [
+        "Laminados El Pardillo"
+      ],
+      "supplierAssociationStatus": "catalogo_indexado_stock_por_confirmar",
+      "code": "2052",
+      "finish": "S",
+      "description": "Laminado decorativo HPL para aplicar sobre un soporte. Nombre y acabado del catálogo venezolano de El Pardillo.",
+      "use": "Mobiliario y revestimientos según la ficha técnica del producto y el soporte elegido.",
+      "care": "Confirmamos formato, espesor, acabado, precio y existencias con el proveedor. La muestra digital no permite comprobar el brillo ni la textura del acabado local.",
+      "market": "Venezuela · referencia de catálogo",
+      "international": false,
+      "availability": "Precio y existencias por confirmar",
+      "imageKind": "Muestra documental por código de diseño",
+      "imageNote": "Muestra digital del diseño 2052 publicada por Stylam Industries. Coincidencia por código de diseño; no verifica la textura ni el brillo del acabado local. Sin recreación IA.",
+      "sourceLinks": [
+        {
+          "label": "El Pardillo · catálogo venezolano (acceso directo pendiente)",
+          "url": "https://laminadoselpardillo.com/categoria-producto/laminados-decorativos/stylam/"
+        },
+        {
+          "label": "Origen de la muestra · Stylam Industries",
+          "url": "https://stylam.com/product/natural-maple"
+        }
+      ],
+      "image": {
+        "src": "muestras/stylam-2052-s-20261016.webp",
+        "width": 562,
+        "height": 1000,
+        "surfaceCrop": true
+      },
+      "appId": null,
+      "textureId": null,
+      "aliases": [
+        "2052 S",
+        "Natural Maple"
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "laminados-el-pardillo",
+          "relationship": "proveedor_catalogo_indexado",
+          "sourceIds": [
+            "laminados-el-pardillo-web-stylam"
+          ]
+        },
+        {
+          "entityId": "stylam",
+          "relationship": "fuente_visual_por_codigo",
+          "sourceIds": [
+            "stylam-productos"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stylam-1991-s2",
+      "category": "laminados",
+      "name": "Nogal tropical",
+      "family": "Maderas",
+      "brand": "Stylam",
+      "supplier": "Laminados El Pardillo",
+      "supplierNames": [
+        "Laminados El Pardillo"
+      ],
+      "supplierAssociationStatus": "catalogo_indexado_stock_por_confirmar",
+      "code": "1991",
+      "finish": "S2",
+      "description": "Laminado decorativo HPL para aplicar sobre un soporte. Nombre y acabado del catálogo venezolano de El Pardillo.",
+      "use": "Mobiliario y revestimientos según la ficha técnica del producto y el soporte elegido.",
+      "care": "Confirmamos formato, espesor, acabado, precio y existencias con el proveedor. La muestra digital no permite comprobar el brillo ni la textura del acabado local.",
+      "market": "Venezuela · referencia de catálogo",
+      "international": false,
+      "availability": "Precio y existencias por confirmar",
+      "imageKind": "Muestra documental por código de diseño",
+      "imageNote": "Muestra digital del diseño 1991 publicada por Stylam Industries. Coincidencia por código de diseño; no verifica la textura ni el brillo del acabado local. Sin recreación IA.",
+      "sourceLinks": [
+        {
+          "label": "El Pardillo · catálogo venezolano (acceso directo pendiente)",
+          "url": "https://laminadoselpardillo.com/categoria-producto/laminados-decorativos/stylam/"
+        },
+        {
+          "label": "Origen de la muestra · Stylam Industries",
+          "url": "https://stylam.com/product/tropical-walnut"
+        }
+      ],
+      "image": {
+        "src": "muestras/stylam-1991-s2-20261016.webp",
+        "width": 568,
+        "height": 1000,
+        "surfaceCrop": true
+      },
+      "appId": null,
+      "textureId": null,
+      "aliases": [
+        "1991 S2",
+        "Tropical Walnut"
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "laminados-el-pardillo",
+          "relationship": "proveedor_catalogo_indexado",
+          "sourceIds": [
+            "laminados-el-pardillo-web-stylam"
+          ]
+        },
+        {
+          "entityId": "stylam",
+          "relationship": "fuente_visual_por_codigo",
+          "sourceIds": [
+            "stylam-productos"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stylam-2382-s2",
+      "category": "laminados",
+      "name": "Olmo claro",
+      "family": "Maderas",
+      "brand": "Stylam",
+      "supplier": "Laminados El Pardillo",
+      "supplierNames": [
+        "Laminados El Pardillo"
+      ],
+      "supplierAssociationStatus": "catalogo_indexado_stock_por_confirmar",
+      "code": "2382",
+      "finish": "S2",
+      "description": "Laminado decorativo HPL para aplicar sobre un soporte. Nombre y acabado del catálogo venezolano de El Pardillo.",
+      "use": "Mobiliario y revestimientos según la ficha técnica del producto y el soporte elegido.",
+      "care": "Confirmamos formato, espesor, acabado, precio y existencias con el proveedor. La muestra digital no permite comprobar el brillo ni la textura del acabado local.",
+      "market": "Venezuela · referencia de catálogo",
+      "international": false,
+      "availability": "Precio y existencias por confirmar",
+      "imageKind": "Muestra documental por código de diseño",
+      "imageNote": "Muestra digital del diseño 2382 publicada por Stylam Industries. Coincidencia por código de diseño; no verifica la textura ni el brillo del acabado local. Sin recreación IA.",
+      "sourceLinks": [
+        {
+          "label": "El Pardillo · catálogo venezolano (acceso directo pendiente)",
+          "url": "https://laminadoselpardillo.com/categoria-producto/laminados-decorativos/stylam/"
+        },
+        {
+          "label": "Origen de la muestra · Stylam Industries",
+          "url": "https://stylam.com/product/orvella-elm"
+        }
+      ],
+      "image": {
+        "src": "muestras/stylam-2382-s2-20261016.webp",
+        "width": 400,
+        "height": 800,
+        "surfaceCrop": true
+      },
+      "appId": null,
+      "textureId": null,
+      "aliases": [
+        "2382 S2",
+        "Orvella Elm"
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "laminados-el-pardillo",
+          "relationship": "proveedor_catalogo_indexado",
+          "sourceIds": [
+            "laminados-el-pardillo-web-stylam"
+          ]
+        },
+        {
+          "entityId": "stylam",
+          "relationship": "fuente_visual_por_codigo",
+          "sourceIds": [
+            "stylam-productos"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stylam-2118-s2",
+      "category": "laminados",
+      "name": "Palao Wood",
+      "family": "Maderas",
+      "brand": "Stylam",
+      "supplier": "Laminados El Pardillo",
+      "supplierNames": [
+        "Laminados El Pardillo"
+      ],
+      "supplierAssociationStatus": "catalogo_indexado_stock_por_confirmar",
+      "code": "2118",
+      "finish": "S2",
+      "description": "Laminado decorativo HPL para aplicar sobre un soporte. Nombre y acabado del catálogo venezolano de El Pardillo.",
+      "use": "Mobiliario y revestimientos según la ficha técnica del producto y el soporte elegido.",
+      "care": "Confirmamos formato, espesor, acabado, precio y existencias con el proveedor. La muestra digital no permite comprobar el brillo ni la textura del acabado local.",
+      "market": "Venezuela · referencia de catálogo",
+      "international": false,
+      "availability": "Precio y existencias por confirmar",
+      "imageKind": "Muestra documental por código de diseño",
+      "imageNote": "Muestra digital del diseño 2118 publicada por Stylam Industries. Coincidencia por código de diseño; no verifica la textura ni el brillo del acabado local. Sin recreación IA.",
+      "sourceLinks": [
+        {
+          "label": "El Pardillo · catálogo venezolano (acceso directo pendiente)",
+          "url": "https://laminadoselpardillo.com/categoria-producto/laminados-decorativos/stylam/page/2/"
+        },
+        {
+          "label": "Origen de la muestra · Stylam Industries",
+          "url": "https://stylam.com/product/palau-wood"
+        }
+      ],
+      "image": {
+        "src": "muestras/stylam-2118-s2-20261016.webp",
+        "width": 568,
+        "height": 1000,
+        "surfaceCrop": true
+      },
+      "appId": null,
+      "textureId": null,
+      "aliases": [
+        "2118 S2",
+        "Palau Wood"
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "laminados-el-pardillo",
+          "relationship": "proveedor_catalogo_indexado",
+          "sourceIds": [
+            "laminados-el-pardillo-web-stylam"
+          ]
+        },
+        {
+          "entityId": "stylam",
+          "relationship": "fuente_visual_por_codigo",
+          "sourceIds": [
+            "stylam-productos"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stylam-2130-s2",
+      "category": "laminados",
+      "name": "Savannah Grey",
+      "family": "Maderas",
+      "brand": "Stylam",
+      "supplier": "Laminados El Pardillo",
+      "supplierNames": [
+        "Laminados El Pardillo"
+      ],
+      "supplierAssociationStatus": "catalogo_indexado_stock_por_confirmar",
+      "code": "2130",
+      "finish": "S2",
+      "description": "Laminado decorativo HPL para aplicar sobre un soporte. Nombre y acabado del catálogo venezolano de El Pardillo.",
+      "use": "Mobiliario y revestimientos según la ficha técnica del producto y el soporte elegido.",
+      "care": "Confirmamos formato, espesor, acabado, precio y existencias con el proveedor. La muestra digital no permite comprobar el brillo ni la textura del acabado local.",
+      "market": "Venezuela · referencia de catálogo",
+      "international": false,
+      "availability": "Precio y existencias por confirmar",
+      "imageKind": "Muestra documental por código de diseño",
+      "imageNote": "Muestra digital del diseño 2130 publicada por Stylam Industries. Coincidencia por código de diseño; no verifica la textura ni el brillo del acabado local. Sin recreación IA.",
+      "sourceLinks": [
+        {
+          "label": "El Pardillo · catálogo venezolano (acceso directo pendiente)",
+          "url": "https://laminadoselpardillo.com/categoria-producto/laminados-decorativos/stylam/page/2/"
+        },
+        {
+          "label": "Origen de la muestra · Stylam Industries",
+          "url": "https://stylam.com/product/savannah-grey"
+        }
+      ],
+      "image": {
+        "src": "muestras/stylam-2130-s2-20261016.webp",
+        "width": 562,
+        "height": 1000,
+        "surfaceCrop": true
+      },
+      "appId": null,
+      "textureId": null,
+      "aliases": [
+        "2130 S2",
+        "Savannah Grey"
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "laminados-el-pardillo",
+          "relationship": "proveedor_catalogo_indexado",
+          "sourceIds": [
+            "laminados-el-pardillo-web-stylam"
+          ]
+        },
+        {
+          "entityId": "stylam",
+          "relationship": "fuente_visual_por_codigo",
+          "sourceIds": [
+            "stylam-productos"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stylam-1946-sd",
+      "category": "laminados",
+      "name": "Wengue Condesa",
+      "family": "Maderas",
+      "brand": "Stylam",
+      "supplier": "Laminados El Pardillo",
+      "supplierNames": [
+        "Laminados El Pardillo"
+      ],
+      "supplierAssociationStatus": "catalogo_indexado_stock_por_confirmar",
+      "code": "1946",
+      "finish": "SD",
+      "description": "Laminado decorativo HPL para aplicar sobre un soporte. Nombre y acabado del catálogo venezolano de El Pardillo.",
+      "use": "Mobiliario y revestimientos según la ficha técnica del producto y el soporte elegido.",
+      "care": "Confirmamos formato, espesor, acabado, precio y existencias con el proveedor. La muestra digital no permite comprobar el brillo ni la textura del acabado local.",
+      "market": "Venezuela · referencia de catálogo",
+      "international": false,
+      "availability": "Precio y existencias por confirmar",
+      "imageKind": "Muestra documental por código de diseño",
+      "imageNote": "Muestra digital del diseño 1946 publicada por Stylam Industries. Coincidencia por código de diseño; no verifica la textura ni el brillo del acabado local. Sin recreación IA.",
+      "sourceLinks": [
+        {
+          "label": "El Pardillo · catálogo venezolano (acceso directo pendiente)",
+          "url": "https://laminadoselpardillo.com/categoria-producto/laminados-decorativos/stylam/page/2/"
+        },
+        {
+          "label": "Origen de la muestra · Stylam Industries",
+          "url": "https://stylam.com/product/condense-wenge"
+        }
+      ],
+      "image": {
+        "src": "muestras/stylam-1946-sd-20261016.webp",
+        "width": 1000,
+        "height": 980,
+        "surfaceCrop": true
+      },
+      "appId": null,
+      "textureId": null,
+      "aliases": [
+        "1946 SD",
+        "Condense Wenge"
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "laminados-el-pardillo",
+          "relationship": "proveedor_catalogo_indexado",
+          "sourceIds": [
+            "laminados-el-pardillo-web-stylam"
+          ]
+        },
+        {
+          "entityId": "stylam",
+          "relationship": "fuente_visual_por_codigo",
+          "sourceIds": [
+            "stylam-productos"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stylam-7505-s",
+      "category": "laminados",
+      "name": "Wengue Corona",
+      "family": "Maderas",
+      "brand": "Stylam",
+      "supplier": "Laminados El Pardillo",
+      "supplierNames": [
+        "Laminados El Pardillo"
+      ],
+      "supplierAssociationStatus": "catalogo_indexado_stock_por_confirmar",
+      "code": "7505",
+      "finish": "S",
+      "description": "Laminado decorativo HPL para aplicar sobre un soporte. Nombre y acabado del catálogo venezolano de El Pardillo.",
+      "use": "Mobiliario y revestimientos según la ficha técnica del producto y el soporte elegido.",
+      "care": "Confirmamos formato, espesor, acabado, precio y existencias con el proveedor. La muestra digital no permite comprobar el brillo ni la textura del acabado local.",
+      "market": "Venezuela · referencia de catálogo",
+      "international": false,
+      "availability": "Precio y existencias por confirmar",
+      "imageKind": "Muestra documental por código de diseño",
+      "imageNote": "Muestra digital del diseño 7505 publicada por Stylam Industries · catálogo Woodgrains. Coincidencia por código de diseño; no verifica la textura ni el brillo del acabado local. Sin recreación IA.",
+      "sourceLinks": [
+        {
+          "label": "El Pardillo · catálogo venezolano (acceso directo pendiente)",
+          "url": "https://laminadoselpardillo.com/categoria-producto/laminados-decorativos/stylam/page/2/"
+        },
+        {
+          "label": "Origen de la muestra · Stylam Industries · catálogo Woodgrains",
+          "url": "https://www.stylam.com/assets/front/pdf/catalogue/Woodgrains.pdf#page=14"
+        }
+      ],
+      "image": {
+        "src": "muestras/stylam-7505-s-20261016.webp",
+        "width": 402,
+        "height": 234,
+        "surfaceCrop": true
+      },
+      "appId": null,
+      "textureId": null,
+      "aliases": [
+        "7505 S",
+        ""
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "laminados-el-pardillo",
+          "relationship": "proveedor_catalogo_indexado",
+          "sourceIds": [
+            "laminados-el-pardillo-web-stylam"
+          ]
+        },
+        {
+          "entityId": "stylam",
+          "relationship": "fuente_visual_por_codigo",
+          "sourceIds": [
+            "stylam-woodgrains-pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stylam-2138-s2",
+      "category": "laminados",
+      "name": "Wengue moderno",
+      "family": "Maderas",
+      "brand": "Stylam",
+      "supplier": "Laminados El Pardillo",
+      "supplierNames": [
+        "Laminados El Pardillo"
+      ],
+      "supplierAssociationStatus": "catalogo_indexado_stock_por_confirmar",
+      "code": "2138",
+      "finish": "S2",
+      "description": "Laminado decorativo HPL para aplicar sobre un soporte. Nombre y acabado del catálogo venezolano de El Pardillo.",
+      "use": "Mobiliario y revestimientos según la ficha técnica del producto y el soporte elegido.",
+      "care": "Confirmamos formato, espesor, acabado, precio y existencias con el proveedor. La muestra digital no permite comprobar el brillo ni la textura del acabado local.",
+      "market": "Venezuela · referencia de catálogo",
+      "international": false,
+      "availability": "Precio y existencias por confirmar",
+      "imageKind": "Muestra documental por código de diseño",
+      "imageNote": "Muestra digital del diseño 2138 publicada por Stylam Industries. Coincidencia por código de diseño; no verifica la textura ni el brillo del acabado local. Sin recreación IA.",
+      "sourceLinks": [
+        {
+          "label": "El Pardillo · catálogo venezolano (acceso directo pendiente)",
+          "url": "https://laminadoselpardillo.com/categoria-producto/laminados-decorativos/stylam/page/2/"
+        },
+        {
+          "label": "Origen de la muestra · Stylam Industries",
+          "url": "https://stylam.com/product/natural-wenge"
+        }
+      ],
+      "image": {
+        "src": "muestras/stylam-2138-s2-20261016.webp",
+        "width": 400,
+        "height": 800,
+        "surfaceCrop": true
+      },
+      "appId": null,
+      "textureId": null,
+      "aliases": [
+        "2138 S2",
+        "Natural Wenge"
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "laminados-el-pardillo",
+          "relationship": "proveedor_catalogo_indexado",
+          "sourceIds": [
+            "laminados-el-pardillo-web-stylam"
+          ]
+        },
+        {
+          "entityId": "stylam",
+          "relationship": "fuente_visual_por_codigo",
+          "sourceIds": [
+            "stylam-productos"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stylam-2054-s2",
+      "category": "laminados",
+      "name": "Zebra clara",
+      "family": "Maderas",
+      "brand": "Stylam",
+      "supplier": "Laminados El Pardillo",
+      "supplierNames": [
+        "Laminados El Pardillo"
+      ],
+      "supplierAssociationStatus": "catalogo_indexado_stock_por_confirmar",
+      "code": "2054",
+      "finish": "S2",
+      "description": "Laminado decorativo HPL para aplicar sobre un soporte. Nombre y acabado del catálogo venezolano de El Pardillo.",
+      "use": "Mobiliario y revestimientos según la ficha técnica del producto y el soporte elegido.",
+      "care": "Confirmamos formato, espesor, acabado, precio y existencias con el proveedor. La muestra digital no permite comprobar el brillo ni la textura del acabado local.",
+      "market": "Venezuela · referencia de catálogo",
+      "international": false,
+      "availability": "Precio y existencias por confirmar",
+      "imageKind": "Muestra documental por código de diseño",
+      "imageNote": "Muestra digital del diseño 2054 publicada por Stylam Industries · catálogo Woodgrains. Coincidencia por código de diseño; no verifica la textura ni el brillo del acabado local. Sin recreación IA.",
+      "sourceLinks": [
+        {
+          "label": "El Pardillo · catálogo venezolano (acceso directo pendiente)",
+          "url": "https://laminadoselpardillo.com/categoria-producto/laminados-decorativos/stylam/page/2/"
+        },
+        {
+          "label": "Origen de la muestra · Stylam Industries · catálogo Woodgrains",
+          "url": "https://www.stylam.com/assets/front/pdf/catalogue/Woodgrains.pdf#page=17"
+        }
+      ],
+      "image": {
+        "src": "muestras/stylam-2054-s2-20261016.webp",
+        "width": 393,
+        "height": 234,
+        "surfaceCrop": true
+      },
+      "appId": null,
+      "textureId": null,
+      "aliases": [
+        "2054 S2",
+        ""
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "laminados-el-pardillo",
+          "relationship": "proveedor_catalogo_indexado",
+          "sourceIds": [
+            "laminados-el-pardillo-web-stylam"
+          ]
+        },
+        {
+          "entityId": "stylam",
+          "relationship": "fuente_visual_por_codigo",
+          "sourceIds": [
+            "stylam-woodgrains-pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stylam-8521-s2",
+      "category": "laminados",
+      "name": "Amarillo Mango mate",
+      "family": "Colores sólidos",
+      "brand": "Stylam",
+      "supplier": "Laminados El Pardillo",
+      "supplierNames": [
+        "Laminados El Pardillo"
+      ],
+      "supplierAssociationStatus": "catalogo_indexado_stock_por_confirmar",
+      "code": "8521",
+      "finish": "S2",
+      "description": "Laminado decorativo HPL para aplicar sobre un soporte. Nombre y acabado del catálogo venezolano de El Pardillo.",
+      "use": "Mobiliario y revestimientos según la ficha técnica del producto y el soporte elegido.",
+      "care": "Confirmamos formato, espesor, acabado, precio y existencias con el proveedor. La muestra digital no permite comprobar el brillo ni la textura del acabado local.",
+      "market": "Venezuela · referencia de catálogo",
+      "international": false,
+      "availability": "Precio y existencias por confirmar",
+      "imageKind": "Muestra documental por código de diseño",
+      "imageNote": "Muestra digital del diseño 8521 publicada por Stylam Industries. Coincidencia por código de diseño; no verifica la textura ni el brillo del acabado local. Sin recreación IA.",
+      "sourceLinks": [
+        {
+          "label": "El Pardillo · catálogo venezolano (acceso directo pendiente)",
+          "url": "https://laminadoselpardillo.com/categoria-producto/laminados-decorativos/stylam/page/2/"
+        },
+        {
+          "label": "Origen de la muestra · Stylam Industries",
+          "url": "https://stylam.com/product/mango"
+        }
+      ],
+      "image": {
+        "src": "muestras/stylam-8521-s2-20261016.webp",
+        "width": 400,
+        "height": 800,
+        "surfaceCrop": true
+      },
+      "appId": null,
+      "textureId": null,
+      "aliases": [
+        "8521 S2",
+        "Mango"
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "laminados-el-pardillo",
+          "relationship": "proveedor_catalogo_indexado",
+          "sourceIds": [
+            "laminados-el-pardillo-web-stylam"
+          ]
+        },
+        {
+          "entityId": "stylam",
+          "relationship": "fuente_visual_por_codigo",
+          "sourceIds": [
+            "stylam-productos"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stylam-8404-s2",
+      "category": "laminados",
+      "name": "Azul celeste mate",
+      "family": "Colores sólidos",
+      "brand": "Stylam",
+      "supplier": "Laminados El Pardillo",
+      "supplierNames": [
+        "Laminados El Pardillo"
+      ],
+      "supplierAssociationStatus": "catalogo_indexado_stock_por_confirmar",
+      "code": "8404",
+      "finish": "S2",
+      "description": "Laminado decorativo HPL para aplicar sobre un soporte. Nombre y acabado del catálogo venezolano de El Pardillo.",
+      "use": "Mobiliario y revestimientos según la ficha técnica del producto y el soporte elegido.",
+      "care": "Confirmamos formato, espesor, acabado, precio y existencias con el proveedor. La muestra digital no permite comprobar el brillo ni la textura del acabado local.",
+      "market": "Venezuela · referencia de catálogo",
+      "international": false,
+      "availability": "Precio y existencias por confirmar",
+      "imageKind": "Muestra documental por código de diseño",
+      "imageNote": "Muestra digital del diseño 8404 publicada por Stylam Industries. Coincidencia por código de diseño; no verifica la textura ni el brillo del acabado local. Sin recreación IA.",
+      "sourceLinks": [
+        {
+          "label": "El Pardillo · catálogo venezolano (acceso directo pendiente)",
+          "url": "https://laminadoselpardillo.com/categoria-producto/laminados-decorativos/stylam/page/2/"
+        },
+        {
+          "label": "Origen de la muestra · Stylam Industries",
+          "url": "https://stylam.com/product/flip-blue"
+        }
+      ],
+      "image": {
+        "src": "muestras/stylam-8404-s2-20261016.webp",
+        "width": 562,
+        "height": 1000,
+        "surfaceCrop": true
+      },
+      "appId": null,
+      "textureId": null,
+      "aliases": [
+        "8404 S2",
+        "FLIP BLUE"
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "laminados-el-pardillo",
+          "relationship": "proveedor_catalogo_indexado",
+          "sourceIds": [
+            "laminados-el-pardillo-web-stylam"
+          ]
+        },
+        {
+          "entityId": "stylam",
+          "relationship": "fuente_visual_por_codigo",
+          "sourceIds": [
+            "stylam-productos"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stylam-1074-s2",
+      "category": "laminados",
+      "name": "Azul Larva mate",
+      "family": "Colores sólidos",
+      "brand": "Stylam",
+      "supplier": "Laminados El Pardillo",
+      "supplierNames": [
+        "Laminados El Pardillo"
+      ],
+      "supplierAssociationStatus": "catalogo_indexado_stock_por_confirmar",
+      "code": "1074",
+      "finish": "S2",
+      "description": "Laminado decorativo HPL para aplicar sobre un soporte. Nombre y acabado del catálogo venezolano de El Pardillo.",
+      "use": "Mobiliario y revestimientos según la ficha técnica del producto y el soporte elegido.",
+      "care": "Confirmamos formato, espesor, acabado, precio y existencias con el proveedor. La muestra digital no permite comprobar el brillo ni la textura del acabado local.",
+      "market": "Venezuela · referencia de catálogo",
+      "international": false,
+      "availability": "Precio y existencias por confirmar",
+      "imageKind": "Muestra documental por código de diseño",
+      "imageNote": "Muestra digital del diseño 1074 publicada por Stylam Industries. Coincidencia por código de diseño; no verifica la textura ni el brillo del acabado local. Sin recreación IA.",
+      "sourceLinks": [
+        {
+          "label": "El Pardillo · catálogo venezolano (acceso directo pendiente)",
+          "url": "https://laminadoselpardillo.com/categoria-producto/laminados-decorativos/stylam/page/2/"
+        },
+        {
+          "label": "Origen de la muestra · Stylam Industries",
+          "url": "https://stylam.com/product/larva-blue"
+        }
+      ],
+      "image": {
+        "src": "muestras/stylam-1074-s2-20261016.webp",
+        "width": 400,
+        "height": 800,
+        "surfaceCrop": true
+      },
+      "appId": null,
+      "textureId": null,
+      "aliases": [
+        "1074 S2",
+        "Larva BLUE"
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "laminados-el-pardillo",
+          "relationship": "proveedor_catalogo_indexado",
+          "sourceIds": [
+            "laminados-el-pardillo-web-stylam"
+          ]
+        },
+        {
+          "entityId": "stylam",
+          "relationship": "fuente_visual_por_codigo",
+          "sourceIds": [
+            "stylam-productos"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stylam-101-s2",
+      "category": "laminados",
+      "name": "Blanco mate",
+      "family": "Colores sólidos",
+      "brand": "Stylam",
+      "supplier": "Laminados El Pardillo",
+      "supplierNames": [
+        "Laminados El Pardillo"
+      ],
+      "supplierAssociationStatus": "catalogo_indexado_stock_por_confirmar",
+      "code": "101",
+      "finish": "S2",
+      "description": "Laminado decorativo HPL para aplicar sobre un soporte. Nombre y acabado del catálogo venezolano de El Pardillo.",
+      "use": "Mobiliario y revestimientos según la ficha técnica del producto y el soporte elegido.",
+      "care": "Confirmamos formato, espesor, acabado, precio y existencias con el proveedor. La muestra digital no permite comprobar el brillo ni la textura del acabado local.",
+      "market": "Venezuela · referencia de catálogo",
+      "international": false,
+      "availability": "Precio y existencias por confirmar",
+      "imageKind": "Muestra documental por código de diseño",
+      "imageNote": "Muestra digital del diseño 101 publicada por Stylam Industries. Coincidencia por código de diseño; no verifica la textura ni el brillo del acabado local. Sin recreación IA.",
+      "sourceLinks": [
+        {
+          "label": "El Pardillo · catálogo venezolano (acceso directo pendiente)",
+          "url": "https://laminadoselpardillo.com/categoria-producto/laminados-decorativos/stylam/page/2/"
+        },
+        {
+          "label": "Origen de la muestra · Stylam Industries",
+          "url": "https://stylam.com/product/azure-white"
+        }
+      ],
+      "image": {
+        "src": "muestras/stylam-101-s2-20261016.webp",
+        "width": 400,
+        "height": 800,
+        "surfaceCrop": true
+      },
+      "appId": null,
+      "textureId": null,
+      "aliases": [
+        "101 S2",
+        "AZURE WHITE"
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "laminados-el-pardillo",
+          "relationship": "proveedor_catalogo_indexado",
+          "sourceIds": [
+            "laminados-el-pardillo-web-stylam"
+          ]
+        },
+        {
+          "entityId": "stylam",
+          "relationship": "fuente_visual_por_codigo",
+          "sourceIds": [
+            "stylam-productos"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stylam-1158-s2",
+      "category": "laminados",
+      "name": "Champang mate",
+      "family": "Colores sólidos",
+      "brand": "Stylam",
+      "supplier": "Laminados El Pardillo",
+      "supplierNames": [
+        "Laminados El Pardillo"
+      ],
+      "supplierAssociationStatus": "catalogo_indexado_stock_por_confirmar",
+      "code": "1158",
+      "finish": "S2",
+      "description": "Laminado decorativo HPL para aplicar sobre un soporte. Nombre y acabado del catálogo venezolano de El Pardillo.",
+      "use": "Mobiliario y revestimientos según la ficha técnica del producto y el soporte elegido.",
+      "care": "Confirmamos formato, espesor, acabado, precio y existencias con el proveedor. La muestra digital no permite comprobar el brillo ni la textura del acabado local.",
+      "market": "Venezuela · referencia de catálogo",
+      "international": false,
+      "availability": "Precio y existencias por confirmar",
+      "imageKind": "Muestra documental por código de diseño",
+      "imageNote": "Muestra digital del diseño 1158 publicada por Stylam Industries. Coincidencia por código de diseño; no verifica la textura ni el brillo del acabado local. Sin recreación IA.",
+      "sourceLinks": [
+        {
+          "label": "El Pardillo · catálogo venezolano (acceso directo pendiente)",
+          "url": "https://laminadoselpardillo.com/categoria-producto/laminados-decorativos/stylam/page/2/"
+        },
+        {
+          "label": "Origen de la muestra · Stylam Industries",
+          "url": "https://stylam.com/product/interior-white"
+        }
+      ],
+      "image": {
+        "src": "muestras/stylam-1158-s2-20261016.webp",
+        "width": 707,
+        "height": 1000,
+        "surfaceCrop": true
+      },
+      "appId": null,
+      "textureId": null,
+      "aliases": [
+        "1158 S2",
+        "Interior White"
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "laminados-el-pardillo",
+          "relationship": "proveedor_catalogo_indexado",
+          "sourceIds": [
+            "laminados-el-pardillo-web-stylam"
+          ]
+        },
+        {
+          "entityId": "stylam",
+          "relationship": "fuente_visual_por_codigo",
+          "sourceIds": [
+            "stylam-productos"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stylam-4011-s2",
+      "category": "laminados",
+      "name": "Crema vibrante mate",
+      "family": "Colores sólidos",
+      "brand": "Stylam",
+      "supplier": "Laminados El Pardillo",
+      "supplierNames": [
+        "Laminados El Pardillo"
+      ],
+      "supplierAssociationStatus": "catalogo_indexado_stock_por_confirmar",
+      "code": "4011",
+      "finish": "S2",
+      "description": "Laminado decorativo HPL para aplicar sobre un soporte. Nombre y acabado del catálogo venezolano de El Pardillo.",
+      "use": "Mobiliario y revestimientos según la ficha técnica del producto y el soporte elegido.",
+      "care": "Confirmamos formato, espesor, acabado, precio y existencias con el proveedor. La muestra digital no permite comprobar el brillo ni la textura del acabado local.",
+      "market": "Venezuela · referencia de catálogo",
+      "international": false,
+      "availability": "Precio y existencias por confirmar",
+      "imageKind": "Muestra documental por código de diseño",
+      "imageNote": "Muestra digital del diseño 4011 publicada por Stylam Industries. Coincidencia por código de diseño; no verifica la textura ni el brillo del acabado local. Sin recreación IA.",
+      "sourceLinks": [
+        {
+          "label": "El Pardillo · catálogo venezolano (acceso directo pendiente)",
+          "url": "https://laminadoselpardillo.com/categoria-producto/laminados-decorativos/stylam/page/2/"
+        },
+        {
+          "label": "Origen de la muestra · Stylam Industries",
+          "url": "https://stylam.com/product/vibrant-cream"
+        }
+      ],
+      "image": {
+        "src": "muestras/stylam-4011-s2-20261016.webp",
+        "width": 562,
+        "height": 1000,
+        "surfaceCrop": true
+      },
+      "appId": null,
+      "textureId": null,
+      "aliases": [
+        "4011 S2",
+        "Vibrant cream"
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "laminados-el-pardillo",
+          "relationship": "proveedor_catalogo_indexado",
+          "sourceIds": [
+            "laminados-el-pardillo-web-stylam"
+          ]
+        },
+        {
+          "entityId": "stylam",
+          "relationship": "fuente_visual_por_codigo",
+          "sourceIds": [
+            "stylam-productos"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stylam-120-a-sd",
+      "category": "laminados",
+      "name": "Gris aluminio mate",
+      "family": "Colores sólidos",
+      "brand": "Stylam",
+      "supplier": "Laminados El Pardillo",
+      "supplierNames": [
+        "Laminados El Pardillo"
+      ],
+      "supplierAssociationStatus": "catalogo_indexado_stock_por_confirmar",
+      "code": "120",
+      "finish": "A SD",
+      "description": "Laminado decorativo HPL para aplicar sobre un soporte. Nombre y acabado del catálogo venezolano de El Pardillo.",
+      "use": "Mobiliario y revestimientos según la ficha técnica del producto y el soporte elegido.",
+      "care": "Confirmamos formato, espesor, acabado, precio y existencias con el proveedor. La muestra digital no permite comprobar el brillo ni la textura del acabado local.",
+      "market": "Venezuela · referencia de catálogo",
+      "international": false,
+      "availability": "Precio y existencias por confirmar",
+      "imageKind": "Muestra documental por código de diseño",
+      "imageNote": "Muestra digital del diseño 120 publicada por Stylam Industries. Coincidencia por código de diseño; no verifica la textura ni el brillo del acabado local. Sin recreación IA. Se conserva literalmente A SD de la fuente local; la muestra del fabricante corresponde al código 120.",
+      "sourceLinks": [
+        {
+          "label": "El Pardillo · catálogo venezolano (acceso directo pendiente)",
+          "url": "https://laminadoselpardillo.com/categoria-producto/laminados-decorativos/stylam/page/2/"
+        },
+        {
+          "label": "Origen de la muestra · Stylam Industries",
+          "url": "https://stylam.com/product/alumina-grey"
+        }
+      ],
+      "image": {
+        "src": "muestras/stylam-120-a-sd-20261016.webp",
+        "width": 569,
+        "height": 1000,
+        "surfaceCrop": true
+      },
+      "appId": null,
+      "textureId": null,
+      "aliases": [
+        "120 A SD",
+        "ALUMINA GREY"
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "laminados-el-pardillo",
+          "relationship": "proveedor_catalogo_indexado",
+          "sourceIds": [
+            "laminados-el-pardillo-web-stylam"
+          ]
+        },
+        {
+          "entityId": "stylam",
+          "relationship": "fuente_visual_por_codigo",
+          "sourceIds": [
+            "stylam-productos"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stylam-8117-s",
+      "category": "laminados",
+      "name": "Gris cálido mate",
+      "family": "Colores sólidos",
+      "brand": "Stylam",
+      "supplier": "Laminados El Pardillo",
+      "supplierNames": [
+        "Laminados El Pardillo"
+      ],
+      "supplierAssociationStatus": "catalogo_indexado_stock_por_confirmar",
+      "code": "8117",
+      "finish": "S",
+      "description": "Laminado decorativo HPL para aplicar sobre un soporte. Nombre y acabado del catálogo venezolano de El Pardillo.",
+      "use": "Mobiliario y revestimientos según la ficha técnica del producto y el soporte elegido.",
+      "care": "Confirmamos formato, espesor, acabado, precio y existencias con el proveedor. La muestra digital no permite comprobar el brillo ni la textura del acabado local.",
+      "market": "Venezuela · referencia de catálogo",
+      "international": false,
+      "availability": "Precio y existencias por confirmar",
+      "imageKind": "Muestra documental por código de diseño",
+      "imageNote": "Muestra digital del diseño 8117 publicada por Stylam Industries. Coincidencia por código de diseño; no verifica la textura ni el brillo del acabado local. Sin recreación IA.",
+      "sourceLinks": [
+        {
+          "label": "El Pardillo · catálogo venezolano (acceso directo pendiente)",
+          "url": "https://laminadoselpardillo.com/categoria-producto/laminados-decorativos/stylam/page/2/"
+        },
+        {
+          "label": "Origen de la muestra · Stylam Industries",
+          "url": "https://stylam.com/product/warm-grey"
+        }
+      ],
+      "image": {
+        "src": "muestras/stylam-8117-s-20261016.webp",
+        "width": 400,
+        "height": 800,
+        "surfaceCrop": true
+      },
+      "appId": null,
+      "textureId": null,
+      "aliases": [
+        "8117 S",
+        "WARM GREY"
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "laminados-el-pardillo",
+          "relationship": "proveedor_catalogo_indexado",
+          "sourceIds": [
+            "laminados-el-pardillo-web-stylam"
+          ]
+        },
+        {
+          "entityId": "stylam",
+          "relationship": "fuente_visual_por_codigo",
+          "sourceIds": [
+            "stylam-productos"
+          ]
+        }
+      ]
     }
   ]
 }
