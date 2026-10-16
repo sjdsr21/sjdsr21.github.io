@@ -16603,8 +16603,8 @@
       "market": "Publicación comercial en Venezuela",
       "international": false,
       "availability": "Producto publicado por el proveedor; existencias por confirmar.",
-      "imageKind": "Fotografía de referencia de curupixa",
-      "imageNote": "Muestra completa de cara de curupixa publicada por M. Bohlke, con veta y detalle fino visibles. Referencia de apariencia; no es fotografía del lote ni del panel de 3 mm de Madeaceros. La especie o denominación comercial, el tono y la presentación se confirman con el proveedor. Derechos de imagen de su titular.",
+      "imageKind": "Fotografía de referencia de curupixá",
+      "imageNote": "Fotografía de curupixá publicada por Wolfgang Vetters, con tono marrón rosado y veta recta vertical. Referencia de apariencia; no es fotografía del lote ni del panel de Madeaceros. Derechos de imagen de su titular.",
       "textureId": null,
       "appId": null,
       "sourceLinks": [
@@ -16613,19 +16613,34 @@
           "url": "https://madeaceros.com/producto/chapa-curupixa-162-x-220-x-3-mm/"
         },
         {
-          "label": "Origen de la muestra completa de curupixa",
-          "url": "https://mbveneer.com/veneercatalogpage/curupixa-veneer/"
+          "label": "Origen de la muestra de curupixá · Wolfgang Vetters",
+          "url": "https://www.wood-veneer.eu/woods-and-veneers/curupixa.html"
         }
       ],
       "image": {
-        "src": "muestras/chapilla-curupixa-frontal26.jpg",
-        "width": 800,
-        "height": 1100
+        "src": "muestras/chapa-curupixa-vetters-20261015.jpg",
+        "width": 600,
+        "height": 600
       },
       "sheetSizeMm": [
         1620,
         2200
-      ]
+      ],
+      "imageProvenance": {
+        "method": "user_selected_provider_reference",
+        "sourceURL": "https://www.wood-veneer.eu/woods-and-veneers/curupixa.html",
+        "sourceImage": "https://www.wood-veneer.eu/files/woodveneer/content/veneers/Produktbilder%20600%20x%20600%20pixel/Curupixa.jpg",
+        "originalSha256": "37cb552356c39327b8e8d2b581d49b9afde2c19f90dd81904330a5cbb281dccd",
+        "originalPreserved": true,
+        "selectedOn": "2026-10-15",
+        "selectedBy": "Santiago",
+        "previousImage": {
+          "src": "muestras/chapilla-curupixa-frontal26.jpg",
+          "width": 800,
+          "height": 1100
+        },
+        "previousSourceURL": "https://mbveneer.com/veneercatalogpage/curupixa-veneer/"
+      }
     },
     {
       "id": "chapa-virola-local",
