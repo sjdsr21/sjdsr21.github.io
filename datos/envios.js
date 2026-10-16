@@ -1,4 +1,4 @@
-window.TASAS = { bcv: 879.1225, fecha: "15/10/2026" };
+window.TASAS = { bcv: 880.1159, fecha: "16/10/2026" };
 window.MULTIPLICADOR_ENVIO = 1;
 window.HORQUILLA = 0.3;
 window.ZONAS = {
