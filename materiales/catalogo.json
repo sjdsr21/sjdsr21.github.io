@@ -36573,6 +36573,42 @@
           ]
         }
       ]
+    },
+    {
+      "id": "wall-panel-cedro-cs-007",
+      "category": "tableros",
+      "name": "Cedro CS-007",
+      "family": "Wall panels",
+      "pattern": "Maderas",
+      "brand": "",
+      "supplier": "",
+      "code": "CS-007",
+      "finish": "Ranurado",
+      "description": "Wall panel de PVC con apariencia de madera cálida y ranuras verticales, identificado por el rótulo Cedro CS-007 de la muestra física.",
+      "use": "Revestimiento decorativo de paredes interiores y detalles de mobiliario, según la ficha del producto.",
+      "care": "Confirmar composición, perfil, dimensiones y sistema de fijación con el proveedor. La referencia lisa utilizada en visualizaciones no acredita una presentación comercial.",
+      "market": "Venezuela · muestra física",
+      "international": false,
+      "availability": "Marca, proveedor, formato y existencias por confirmar.",
+      "imageKind": "Recreación visual con IA",
+      "imageNote": "Recreación visual con IA a partir de una muestra física rotulada Cedro CS-007. Imagen aprobada el 18/10/2026. El tono, la veta y el relieve son aproximados; comparar con la muestra física. No es una imagen oficial del fabricante.",
+      "sourceLinks": [],
+      "textureId": "wall-panel-cedro-cs-007",
+      "appId": null,
+      "sheetSizeMm": null,
+      "aliases": [
+        "Cedro CS007",
+        "Wall panel Cedro",
+        "PVC Cedro CS-007"
+      ],
+      "image": {
+        "src": "muestras/wall-panel-cedro-cs-007-ia-20261018-f1ef60e3.webp",
+        "srcset": "muestras/wall-panel-cedro-cs-007-ia-20261018-f1ef60e3-640.webp 640w, muestras/wall-panel-cedro-cs-007-ia-20261018-f1ef60e3.webp 1254w",
+        "width": 1254,
+        "height": 1254
+      },
+      "identificationStatus": "nombre_y_codigo_de_etiqueta_fotografiada",
+      "visualRevision": 1
     }
   ]
 }
