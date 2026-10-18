@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-16",
+  "updated": "2026-10-18",
   "categories": [
     {
       "id": "maderas",
@@ -2900,7 +2900,7 @@
       "international": false,
       "availability": "Oferta publicada; existencias actuales por consultar",
       "imageKind": "Referencia visual recreada con IA",
-      "imageNote": "Referencia visual recreada con IA a partir de la muestra del proveedor; comparar con una muestra física.",
+      "imageNote": "Referencia visual refinada con IA a partir de fotografías de muestra física y aprobada el 18/10/2026: tono cálido más profundo, saturación moderada y veta más uniforme. Color y escala orientativos; confirmar con la muestra física.",
       "sourceLinks": [
         {
           "label": "Referencia del fabricante",
@@ -2914,8 +2914,8 @@
         2440
       ],
       "image": {
-        "src": "muestras/elsol-carora-ia-20261013-r2-54f5637a.webp",
-        "srcset": "muestras/elsol-carora-ia-20261013-r2-54f5637a-640.webp 640w, muestras/elsol-carora-ia-20261013-r2-54f5637a.webp 1254w",
+        "src": "muestras/elsol-carora-ia-20261018-4e17eb3e.webp",
+        "srcset": "muestras/elsol-carora-ia-20261018-4e17eb3e-640.webp 640w, muestras/elsol-carora-ia-20261018-4e17eb3e.webp 1254w",
         "width": 1254,
         "height": 1254
       },
