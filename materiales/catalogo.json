@@ -37419,7 +37419,7 @@
       "international": false,
       "availability": "Por pedido para proyectos de volumen; cantidad mínima y plazo por confirmar.",
       "imageKind": "Muestra del catálogo oficial",
-      "imageNote": "Imagen oficial conservada con ajuste reversible de presentación, según la segunda comparación de Santiago con su catálogo físico el 20/10/2026. Subir un poco la saturación para dar más intensidad al color. El tono es orientativo y se confirma con la muestra física.",
+      "imageNote": "Imagen oficial conservada con ajustes de presentación según la comparación con el catálogo físico del 20/10/2026: tono cálido, saturación algo más intensa y un ligero oscurecimiento posterior solicitado por Santiago. Confirmar con la muestra física.",
       "sourceLinks": [
         {
           "label": "Catálogo digital Timber · página 18",
@@ -37439,9 +37439,9 @@
         "src": "muestras/timber-dark-walnut-oficial-20261020.webp",
         "width": 1198,
         "height": 1086,
-        "displayFilter": "sepia(0.17) saturate(1.22) brightness(0.98)"
+        "displayFilter": "sepia(0.17) saturate(1.22) brightness(0.92)"
       },
-      "visualRevision": 3
+      "visualRevision": 4
     },
     {
       "id": "inox-304-2b",
