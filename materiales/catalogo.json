@@ -31,12 +31,6 @@
       "name": "Metales",
       "intro": "Láminas, perforados, mallas, rejillas y relieves con referencias concretas de materiales.",
       "note": "Aleación, formato y proveedor se definen con el producto real."
-    },
-    {
-      "id": "acabados",
-      "name": "Acabados y protección",
-      "intro": "Aceites, ceras, aceites de cera dura, nitrocelulosa y poliuretanos.",
-      "note": "Las fotos muestran trabajos del taller. La madera y la luz influyen tanto como el producto en su apariencia."
     }
   ],
   "records": [
@@ -412,32 +406,134 @@
       "availability": "Existencias por consultar para cada proyecto."
     },
     {
-      "id": "tablero-aglomerado-crudo",
-      "category": "tableros",
-      "name": "Aglomerado crudo",
-      "family": "Compuestos y chapillados",
-      "pattern": "",
+      "id": "machihembrado-pino",
+      "category": "maderas",
+      "name": "Machihembrado de pino",
+      "family": "Machihembrados",
+      "botanicalName": "Pinus spp.",
       "brand": "",
       "code": "",
       "finish": "",
-      "description": "Tablero de partículas de madera. Puede utilizarse como soporte de revestimientos decorativos.",
-      "use": "Mobiliario de tablero, según recubrimiento y uso.",
-      "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
-      "market": "Referencia del taller; proveedor por confirmar",
+      "description": "Tablas de pino unidas por lengüeta y ranura. Superficie clara, cálida y con nudos naturales.",
+      "use": "Revestimientos interiores, cielos rasos y techos según el sistema de instalación.",
+      "care": "Confirmar secado, humedad, ancho útil, perfil, espesor, largo y tratamiento con el proveedor. Dejar las juntas de movimiento y usar el sistema de fijación apropiado.",
+      "supplier": "Industrial Maderero Oro Verde",
+      "supplierNote": "Referencia comercial venezolana consultada el 20/10/2026; lote y disponibilidad por confirmar.",
+      "market": "Venezuela · referencias comerciales locales",
       "international": false,
-      "availability": "Por confirmar con proveedor",
-      "imageKind": "Recreación visual con IA",
-      "imageNote": "Recreación aproximada con IA. Comparar con el catálogo original y una muestra física.",
-      "sourceLinks": [],
-      "textureId": "tablero-aglomerado-crudo",
-      "appId": null,
-      "sheetSizeMm": null,
+      "availability": "Existencias y presentación por consultar para cada proyecto.",
+      "imageKind": "Referencia visual de ensamblaje creada con IA",
+      "imageNote": "Referencia visual creada con IA a partir de una muestra de la especie. El color, la veta, el perfil y la escala son aproximados; no es fotografía de un lote ni del producto del proveedor.",
+      "sourceLinks": [
+        {
+          "label": "Oro Verde · machihembrado de pino",
+          "url": "https://caracas.imoroverde.com/shop/machihembrado-de-pino-1-4cm-x-14cm-x-3-66m-102"
+        },
+        {
+          "label": "Fabricante en Los Guayos · referencia en Mercado Libre",
+          "url": "https://articulo.mercadolibre.com.ve/MLV-730900672-machihembrado-de-pino-madera-diferentes-medidas-_JM"
+        }
+      ],
       "image": {
-        "src": "muestras/tablero-aglomerado-crudo-detalle26.webp",
-        "width": 1600,
-        "height": 800
+        "src": "muestras/machihembrado-pino-ia-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/machihembrado-pino-ia-20261020-640.webp 640w, muestras/machihembrado-pino-ia-20261020.webp 1254w"
       },
-      "supplier": ""
+      "textureId": null,
+      "appId": null
+    },
+    {
+      "id": "machihembrado-teca",
+      "category": "maderas",
+      "name": "Machihembrado de teca",
+      "family": "Machihembrados",
+      "botanicalName": "Tectona grandis",
+      "brand": "",
+      "code": "",
+      "finish": "",
+      "description": "Tablas de teca machihembradas, de tono dorado a pardo y veta natural. La junta perfila una superficie continua.",
+      "use": "Revestimientos y techos de madera; el acabado se define según exposición y proyecto.",
+      "care": "Confirmar secado, humedad, ancho útil, perfil, espesor, largo y tratamiento con el proveedor. Dejar las juntas de movimiento y usar el sistema de fijación apropiado.",
+      "supplier": "Aserradero La Teca",
+      "supplierNote": "Referencia comercial venezolana consultada el 20/10/2026; lote y disponibilidad por confirmar.",
+      "market": "Venezuela · referencias comerciales locales",
+      "international": false,
+      "availability": "Existencias y presentación por consultar para cada proyecto.",
+      "imageKind": "Fotografía comercial de referencia",
+      "imageNote": "Fotografía real de tablas de machihembrado de teca publicada por La Casa de la Madera, Caracas. Derechos de imagen de su titular; tonalidad, perfil y lote por confirmar.",
+      "sourceLinks": [
+        {
+          "label": "Aserradero La Teca · Barinas",
+          "url": "https://www.aserraderolateca.com/"
+        },
+        {
+          "label": "Aserradero La Teca · machihembrado en Mercado Libre",
+          "url": "https://articulo.mercadolibre.com.ve/MLV-563140809-machimbrado-machihembrado-de-teca-y-liston-de-teca-_JM"
+        },
+        {
+          "label": "Machihembrado de teca · fotos reales de La Casa de la Madera, Caracas",
+          "url": "https://articulo.mercadolibre.com.ve/MLV-490288115-machihembrado-machimbre-de-teca-oferta-tu-techo-de-lujo-_JM"
+        }
+      ],
+      "image": {
+        "src": "muestras/machihembrado-teca-foto-casa-madera-20261020.webp",
+        "width": 880,
+        "height": 965,
+        "srcset": "muestras/machihembrado-teca-foto-casa-madera-20261020-640.webp 640w, muestras/machihembrado-teca-foto-casa-madera-20261020.webp 880w"
+      },
+      "textureId": null,
+      "appId": null,
+      "supplierNames": [
+        "Aserradero La Teca",
+        "La Casa de la Madera"
+      ],
+      "overview": {
+        "src": "muestras/machihembrado-teca-ensamblaje-revisado-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/machihembrado-teca-ensamblaje-revisado-20261020-640.webp 640w, muestras/machihembrado-teca-ensamblaje-revisado-20261020.webp 1254w"
+      },
+      "overviewImageKind": "Referencia de ensamblaje creada con IA a partir de fotos reales",
+      "overviewNote": "Ensamblaje frontal ilustrativo creado con IA usando las fotos reales de teca de La Casa de la Madera: veta suave, variación natural entre tablas y ranuras visibles. La ficha muestra la fotografía original. Color, escala y perfil aproximados."
+    },
+    {
+      "id": "machihembrado-melina",
+      "category": "maderas",
+      "name": "Machihembrado de melina",
+      "family": "Machihembrados",
+      "botanicalName": "Gmelina arborea",
+      "brand": "",
+      "code": "",
+      "finish": "",
+      "description": "Tablas de melina ensambladas por lengüeta y ranura. Madera clara y de veta discreta, con variaciones naturales de tono.",
+      "use": "Cielos rasos y revestimientos interiores según selección, secado y montaje.",
+      "care": "Confirmar secado, humedad, ancho útil, perfil, espesor, largo y tratamiento con el proveedor. Dejar las juntas de movimiento y usar el sistema de fijación apropiado.",
+      "supplier": "ANALBERTOCELIS · Socopó",
+      "supplierNote": "Referencia comercial venezolana consultada el 20/10/2026; lote y disponibilidad por confirmar.",
+      "market": "Venezuela · referencias comerciales locales",
+      "international": false,
+      "availability": "Existencias y presentación por consultar para cada proyecto.",
+      "imageKind": "Referencia visual de ensamblaje creada con IA",
+      "imageNote": "Referencia visual creada con IA a partir de una muestra de la especie. El color, la veta, el perfil y la escala son aproximados; no es fotografía de un lote ni del producto del proveedor.",
+      "sourceLinks": [
+        {
+          "label": "Machihembrado de teca y melina · oferta en Socopó",
+          "url": "https://articulo.mercadolibre.com.ve/MLV-773133004-machihembrado-o-machimbrado-en-madera-teca-y-melina-_JM"
+        },
+        {
+          "label": "Maderas Alguri · referencia comercial de pino, teca y melina",
+          "url": "https://www.aiyellow.com/alguri/"
+        }
+      ],
+      "image": {
+        "src": "muestras/machihembrado-melina-ia-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/machihembrado-melina-ia-20261020-640.webp 640w, muestras/machihembrado-melina-ia-20261020.webp 1254w"
+      },
+      "textureId": null,
+      "appId": null
     },
     {
       "id": "tablero-alistonado-pino",
@@ -6329,8 +6425,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageKind": "Muestra original de alta resolución",
+      "imageNote": "Imagen original publicada por ArquiStore, con más detalle que la miniatura anterior. Sin recreación IA ni cambio de color; derechos de imagen de su titular. El tono y el acabado se confirman con una muestra física.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -6339,21 +6435,19 @@
         {
           "label": "ArquiStore · Laminado Virgo Pino Dorado 2878 - Formica Maderas Lisas",
           "url": "https://articulo.mercadolibre.com.ve/MLV-826799262-laminado-virgo-pino-dorado-2878-formica-maderas-lisas-_JM"
+        },
+        {
+          "label": "Imagen de alta resolución · ArquiStore",
+          "url": "https://arquistore.online/wp-content/uploads/2025/03/2878-SF-Pino-Dorado.webp"
         }
       ],
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-2878-sf-fuente-20261015-eb34fab433.webp",
-        "width": 500,
-        "height": 500,
-        "crop": [
-          40,
-          40,
-          420,
-          360
-        ],
-        "surfaceCrop": true
+        "src": "muestras/virgo-2878-sf-original-hd-20261020.webp",
+        "width": 1316,
+        "height": 2560,
+        "srcset": "muestras/virgo-2878-sf-original-hd-20261020-640.webp 329w, muestras/virgo-2878-sf-original-hd-20261020.webp 1316w"
       },
       "supplierNames": [
         "ArquiStore"
@@ -6380,8 +6474,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageKind": "Muestra original de alta resolución",
+      "imageNote": "Imagen original publicada por ArquiStore, con más detalle que la miniatura anterior. Sin recreación IA ni cambio de color; derechos de imagen de su titular. El tono y el acabado se confirman con una muestra física.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -6390,21 +6484,19 @@
         {
           "label": "ArquiStore · Formica Lamina Decorativa Virgo- 2917 Madera Tostada Marrón Claro",
           "url": "https://articulo.mercadolibre.com.ve/MLV-1015308834-formica-lamina-decorativa-virgo-2917-madera-tostada-marron-claro-_JM"
+        },
+        {
+          "label": "Imagen de alta resolución · ArquiStore",
+          "url": "https://arquistore.online/wp-content/uploads/2025/03/2917-SF-Madera-Tostada.webp"
         }
       ],
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-2917-sf-fuente-20261015-984586c447.webp",
-        "width": 500,
-        "height": 500,
-        "crop": [
-          40,
-          40,
-          420,
-          360
-        ],
-        "surfaceCrop": true
+        "src": "muestras/virgo-2917-sf-original-hd-20261020.webp",
+        "width": 1316,
+        "height": 2560,
+        "srcset": "muestras/virgo-2917-sf-original-hd-20261020-640.webp 329w, muestras/virgo-2917-sf-original-hd-20261020.webp 1316w"
       },
       "supplierNames": [
         "ArquiStore"
@@ -6431,8 +6523,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageKind": "Muestra original de alta resolución",
+      "imageNote": "Imagen original publicada por ArquiStore, con más detalle que la miniatura anterior. Sin recreación IA ni cambio de color; derechos de imagen de su titular. El tono y el acabado se confirman con una muestra física.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -6441,21 +6533,19 @@
         {
           "label": "Laminados El Pardillo · Nuez Clásica JW 2920",
           "url": "https://articulo.mercadolibre.com.ve/MLV-796369638-virgo-laminados-decorativos-super-mate-texturas--_JM?searchVariation=180565890158"
+        },
+        {
+          "label": "Imagen de alta resolución · ArquiStore",
+          "url": "https://arquistore.online/wp-content/uploads/2025/02/2920-JW-NUEZ-CLASICA.webp"
         }
       ],
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-2920-jw-fuente-20261015-cb0f79e262.webp",
-        "width": 478,
-        "height": 500,
-        "crop": [
-          39,
-          40,
-          400,
-          420
-        ],
-        "surfaceCrop": true
+        "src": "muestras/virgo-2920-jw-original-hd-20261020.webp",
+        "width": 600,
+        "height": 1217,
+        "srcset": "muestras/virgo-2920-jw-original-hd-20261020-640.webp 316w, muestras/virgo-2920-jw-original-hd-20261020.webp 600w"
       },
       "supplierNames": [
         "ArquiStore",
@@ -7655,8 +7745,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado. Presentación vertical solicitada por Santiago; se conserva el código y nombre del acabado de origen.",
+      "imageKind": "Muestra original de alta resolución",
+      "imageNote": "Imagen original publicada por ArquiStore, con más detalle que la miniatura anterior. Sin recreación IA ni cambio de color; derechos de imagen de su titular. El tono y el acabado se confirman con una muestra física. Veta presentada verticalmente; código HZ conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -7669,21 +7759,19 @@
         {
           "label": "ArquiStore · Laminado Virgo Alamo Calido 6501 Hz - Formica Texturizada",
           "url": "https://articulo.mercadolibre.com.ve/MLV-578964406-laminado-virgo-alamo-calido-6501-hz-formica-texturizada-_JM"
+        },
+        {
+          "label": "Imagen de alta resolución · ArquiStore",
+          "url": "https://arquistore.online/wp-content/uploads/2025/02/6501-HZ-ALAMO-CALIDO.webp"
         }
       ],
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-6501-hz-fuente-20261015-97ddd3c1c5.webp",
-        "width": 395,
-        "height": 500,
-        "crop": [
-          32,
-          40,
-          331,
-          420
-        ],
-        "surfaceCrop": true,
+        "src": "muestras/virgo-6501-hz-original-hd-20261020.webp",
+        "width": 1301,
+        "height": 2560,
+        "srcset": "muestras/virgo-6501-hz-original-hd-20261020-640.webp 325w, muestras/virgo-6501-hz-original-hd-20261020.webp 1301w",
         "displayRotation": 90
       },
       "supplierNames": [
@@ -7713,8 +7801,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado. Presentación vertical solicitada por Santiago; se conserva el código y nombre del acabado de origen.",
+      "imageKind": "Muestra original de alta resolución",
+      "imageNote": "Imagen original publicada por ArquiStore, con más detalle que la miniatura anterior. Sin recreación IA ni cambio de color; derechos de imagen de su titular. El tono y el acabado se confirman con una muestra física. Veta presentada verticalmente; código HZ conservado.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -7727,21 +7815,19 @@
         {
           "label": "ArquiStore · Laminado Virgo Alamo Otoñal 6503 Hz - Formica Texturizada",
           "url": "https://articulo.mercadolibre.com.ve/MLV-822649960-laminado-virgo-alamo-otonal-6503-hz-formica-texturizada-_JM"
+        },
+        {
+          "label": "Imagen de alta resolución · ArquiStore",
+          "url": "https://arquistore.online/wp-content/uploads/2025/02/6503-HZ-ALAMO-OTONAL.webp"
         }
       ],
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-6503-hz-fuente-20261015-bb942b1231.webp",
-        "width": 397,
-        "height": 500,
-        "crop": [
-          32,
-          40,
-          333,
-          420
-        ],
-        "surfaceCrop": true,
+        "src": "muestras/virgo-6503-hz-original-hd-20261020.webp",
+        "width": 600,
+        "height": 1217,
+        "srcset": "muestras/virgo-6503-hz-original-hd-20261020-640.webp 316w, muestras/virgo-6503-hz-original-hd-20261020.webp 600w",
         "displayRotation": 90
       },
       "supplierNames": [
@@ -12979,8 +13065,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageKind": "Muestra original de alta resolución",
+      "imageNote": "Imagen original publicada por ArquiStore, con más detalle que la miniatura anterior. Sin recreación IA ni cambio de color; derechos de imagen de su titular. El tono y el acabado se confirman con una muestra física.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -12989,21 +13075,19 @@
         {
           "label": "ArquiStore · Formica Lamina Decorativa Starline - 3765 Malta Mate Suede Marrón Claro",
           "url": "https://articulo.mercadolibre.com.ve/MLV-1015011562-formica-lamina-decorativa-starline-3765-malta-mate-suede-marron-claro-_JM"
+        },
+        {
+          "label": "Imagen de alta resolución · ArquiStore",
+          "url": "https://arquistore.online/wp-content/uploads/2025/04/3765-Suede-Malta.webp"
         }
       ],
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-3765-suede-fuente-20261015-3fef974d70.webp",
-        "width": 500,
-        "height": 500,
-        "crop": [
-          40,
-          40,
-          420,
-          360
-        ],
-        "surfaceCrop": true
+        "src": "muestras/starline-3765-suede-original-hd-20261020.webp",
+        "width": 1317,
+        "height": 2560,
+        "srcset": "muestras/starline-3765-suede-original-hd-20261020-640.webp 329w, muestras/starline-3765-suede-original-hd-20261020.webp 1317w"
       },
       "supplierNames": [
         "ArquiStore"
@@ -14607,165 +14691,6 @@
       }
     },
     {
-      "id": "acabado-aceite",
-      "name": "Aceites",
-      "family": "Acabado de tacto natural",
-      "description": "Realzan la veta y suelen intensificar el color de la madera. La apariencia depende del aceite y del número de aplicaciones.",
-      "use": "Piezas que buscan conservar una sensación cercana a la madera.",
-      "care": "Requieren mantenimiento según uso y producto. No todos los aceites ofrecen la misma protección.",
-      "finish": "Natural a satinado, según sistema",
-      "sourceLinks": [
-        {
-          "label": "Referencia técnica sobre aceites",
-          "url": "https://liberon.co.uk/product/finishing-oil/"
-        }
-      ],
-      "imageNote": "Trabajo de AGO: gavetero de cedro con aceite de linaza y cera. La foto muestra el sistema combinado.",
-      "workURL": "https://prototipoago.com/trabajo.html?p=gavetero",
-      "category": "acabados",
-      "market": "Familias de acabado que trabaja Prototipo AGO",
-      "availability": "Producto, color y existencias se definen para cada proyecto.",
-      "imageKind": "Foto de trabajo AGO",
-      "image": {
-        "src": "muestras/acabado-aceite-detalle26.webp",
-        "width": 1087,
-        "height": 1600
-      },
-      "international": false,
-      "brand": "",
-      "supplier": "",
-      "code": "",
-      "textureId": null,
-      "appId": null
-    },
-    {
-      "id": "acabado-cera",
-      "name": "Ceras",
-      "family": "Acabado y mantenimiento",
-      "description": "Aportan tacto suave y lustre al pulir. Pueden complementar un acabado compatible, como el aceite.",
-      "use": "Detalles y mobiliario de interior, según el sistema de acabado.",
-      "care": "Se renuevan cuando la superficie pierde lustre. La exposición a humedad debe revisarse con el producto elegido.",
-      "finish": "Lustre suave según pulido",
-      "sourceLinks": [
-        {
-          "label": "Referencia técnica sobre ceras",
-          "url": "https://liberon.co.uk/product/liquid-wax-polish-black-bison/"
-        }
-      ],
-      "imageNote": "Trabajo de AGO: quillas de samán con aceite de linaza y cera. La foto muestra el sistema combinado.",
-      "workURL": "https://prototipoago.com/trabajo.html?p=quillas-pared",
-      "category": "acabados",
-      "market": "Familias de acabado que trabaja Prototipo AGO",
-      "availability": "Producto, color y existencias se definen para cada proyecto.",
-      "imageKind": "Foto de trabajo AGO",
-      "image": {
-        "src": "muestras/acabado-cera-detalle26.webp",
-        "width": 1054,
-        "height": 1400
-      },
-      "international": false,
-      "brand": "",
-      "supplier": "",
-      "code": "",
-      "textureId": null,
-      "appId": null
-    },
-    {
-      "id": "acabado-cera-dura",
-      "name": "Aceites de cera dura",
-      "brand": "Rubio Monocoat",
-      "family": "Acabado de tacto natural",
-      "description": "Protegen y realzan la madera con una apariencia mate. Rubio Monocoat es una de las marcas que trabaja el taller.",
-      "use": "Mobiliario de madera donde interesa conservar un aspecto natural.",
-      "care": "El mantenimiento y las reparaciones se hacen con el sistema compatible del fabricante. La tonalidad se confirma sobre la misma madera.",
-      "finish": "Mate; otras respuestas según producto",
-      "sourceLinks": [
-        {
-          "label": "Referencia técnica: Oil Plus 2C",
-          "url": "https://www.rubiomonocoatusa.com/products/oil-plus-2c-390ml"
-        },
-        {
-          "label": "Cuidado de muebles Rubio Monocoat",
-          "url": "https://www.rubiomonocoatusa.com/blogs/blog/how-to-care-for-your-rubio-monocoat-finished-furniture"
-        }
-      ],
-      "imageNote": "Trabajo de AGO: escritorio en teca con Rubio Monocoat. Producto y color exactos se eligen para cada proyecto.",
-      "workURL": "https://prototipoago.com/trabajo.html?p=escritorio-teca",
-      "category": "acabados",
-      "market": "Familias de acabado que trabaja Prototipo AGO",
-      "availability": "Producto, color y existencias se definen para cada proyecto.",
-      "imageKind": "Foto de trabajo AGO",
-      "image": {
-        "src": "muestras/acabado-cera-dura-detalle26.webp",
-        "width": 788,
-        "height": 1400
-      },
-      "international": false,
-      "supplier": "",
-      "code": "",
-      "textureId": null,
-      "appId": null
-    },
-    {
-      "id": "acabado-nitrocelulosa",
-      "name": "Nitrocelulosa",
-      "family": "Laca para mobiliario",
-      "description": "Forma una película sobre la superficie y permite acabados de mobiliario con secado rápido. Se trabaja como un sistema de sellador y laca compatibles.",
-      "use": "Muebles de interior, según la formulación elegida.",
-      "care": "La resistencia y el brillo dependen del producto. Se compara una muestra antes de definirlo para superficies exigentes.",
-      "finish": "Brillo según la laca elegida",
-      "sourceLinks": [
-        {
-          "label": "Referencia técnica de la familia",
-          "url": "https://industrial.sherwin-williams.com/na/us/en/industrial-wood/catalog/product/products-by-industry.11543394/sher-wood-low-voc-lacquer.9540323.html"
-        }
-      ],
-      "imageNote": "Guía de la familia de acabado. La muestra del producto utilizado se define para el proyecto.",
-      "category": "acabados",
-      "market": "Familias de acabado que trabaja Prototipo AGO",
-      "availability": "Producto, color y existencias se definen para cada proyecto.",
-      "imageKind": "Guía de acabado",
-      "image": null,
-      "international": false,
-      "brand": "",
-      "supplier": "",
-      "code": "",
-      "textureId": null,
-      "appId": null
-    },
-    {
-      "id": "acabado-poliuretano",
-      "name": "Poliuretanos",
-      "family": "Acabado con película protectora",
-      "description": "Forman una película protectora. Pueden presentarse en mate, satinado o brillante, según la línea y el producto.",
-      "use": "Mobiliario y superficies que necesitan estudiar resistencia y facilidad de cuidado.",
-      "care": "Hay sistemas de uno y de dos componentes. La aptitud para exterior o humedad se confirma en la ficha del producto.",
-      "finish": "Mate, satinado o brillante según producto",
-      "brand": "Menequim / ICA",
-      "sourceLinks": [
-        {
-          "label": "Referencia técnica Menequim",
-          "url": "https://menequim.com/producto/el-poliuretano-para-parquet-mate/"
-        }
-      ],
-      "imageNote": "Trabajo de AGO: repisas en apamate con poliuretano. La foto no identifica una marca ni un grado de brillo.",
-      "workURL": "https://prototipoago.com/trabajo.html?p=repisas",
-      "category": "acabados",
-      "market": "Familias de acabado que trabaja Prototipo AGO",
-      "availability": "Producto, color y existencias se definen para cada proyecto.",
-      "imageKind": "Foto de trabajo AGO",
-      "image": {
-        "src": "muestras/acabado-poliuretano-detalle26.webp",
-        "width": 960,
-        "height": 1280
-      },
-      "international": false,
-      "supplier": "",
-      "code": "",
-      "textureId": null,
-      "appId": null
-    },
-    {
       "id": "granitec-piedras-sinterizadas-statuario-golden-pegasus--12",
       "category": "piedras",
       "name": "Statuario Golden Pegasus",
@@ -15246,15 +15171,10 @@
       "finish": "Mate",
       "code": "",
       "image": {
-        "src": "muestras/granitec-piedras-sinterizadas-statuario-oro-classic-3d-mate-12-superficie26.webp",
-        "width": 445,
-        "height": 820,
-        "crop": [
-          48,
-          45,
-          347,
-          713
-        ]
+        "src": "muestras/granitec-piedras-sinterizadas-statuario-oro-classic-3d-mate-12-ia-revision-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/granitec-piedras-sinterizadas-statuario-oro-classic-3d-mate-12-ia-revision-20261020-640.webp 640w, muestras/granitec-piedras-sinterizadas-statuario-oro-classic-3d-mate-12-ia-revision-20261020.webp 1254w"
       },
       "international": false,
       "textureId": null,
@@ -15262,8 +15182,8 @@
       "description": "Superficie de piedra sinterizada Ultralam. El dibujo se consulta con su nombre y con el acabado de esta referencia.",
       "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
       "care": "Comparar una muestra física y revisar el formato, las uniones y el cuidado indicado por el proveedor.",
-      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular. La imagen original tiene resolución limitada; permite una elección visual inicial. El detalle y el tono se confirman con una muestra física.",
-      "imageKind": "Muestra comercial",
+      "imageNote": "Superficie frontal reconstruida con IA a partir de la muestra comercial de Granitec, sin marcos, placas laterales ni uniones. Se conserva el original y su fuente. El color, el dibujo y la escala son aproximados; no es una fotografía calibrada ni de un lote real.",
+      "imageKind": "Referencia visual mejorada con IA",
       "market": "Catálogo de proveedor en Venezuela",
       "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
       "sourceLinks": [
@@ -15439,15 +15359,10 @@
       "finish": "Mate",
       "code": "",
       "image": {
-        "src": "muestras/granitec-piedras-sinterizadas-opera-ferroso-mate-12-superficie26.webp",
-        "width": 445,
-        "height": 820,
-        "crop": [
-          48,
-          45,
-          347,
-          713
-        ]
+        "src": "muestras/granitec-piedras-sinterizadas-opera-ferroso-mate-12-ia-revision-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/granitec-piedras-sinterizadas-opera-ferroso-mate-12-ia-revision-20261020-640.webp 640w, muestras/granitec-piedras-sinterizadas-opera-ferroso-mate-12-ia-revision-20261020.webp 1254w"
       },
       "international": false,
       "textureId": null,
@@ -15455,8 +15370,8 @@
       "description": "Superficie de piedra sinterizada Ultralam. El dibujo se consulta con su nombre y con el acabado de esta referencia.",
       "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
       "care": "Comparar una muestra física y revisar el formato, las uniones y el cuidado indicado por el proveedor.",
-      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular. La imagen original tiene resolución limitada; permite una elección visual inicial. El detalle y el tono se confirman con una muestra física.",
-      "imageKind": "Muestra comercial",
+      "imageNote": "Superficie frontal reconstruida con IA a partir de la muestra comercial de Granitec, sin marcos, placas laterales ni uniones. Se conserva el original y su fuente. El color, el dibujo y la escala son aproximados; no es una fotografía calibrada ni de un lote real.",
+      "imageKind": "Referencia visual mejorada con IA",
       "market": "Catálogo de proveedor en Venezuela",
       "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
       "sourceLinks": [
@@ -15513,15 +15428,10 @@
       "finish": "",
       "code": "",
       "image": {
-        "src": "muestras/granitec-granitos-blanco-cristal-superficie26.webp",
-        "width": 600,
-        "height": 600,
-        "crop": [
-          60,
-          20,
-          305,
-          560
-        ]
+        "src": "muestras/granitec-granitos-blanco-cristal-ia-revision-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/granitec-granitos-blanco-cristal-ia-revision-20261020-640.webp 640w, muestras/granitec-granitos-blanco-cristal-ia-revision-20261020.webp 1254w"
       },
       "international": false,
       "textureId": null,
@@ -15529,8 +15439,8 @@
       "description": "Granito natural del catálogo de Granitec. El grano, el tono y las vetas pueden variar entre las láminas.",
       "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
       "care": "Comparar una muestra física y revisar el formato, las uniones y el cuidado indicado por el proveedor.",
-      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular. La imagen original tiene resolución limitada; permite una elección visual inicial. El detalle y el tono se confirman con una muestra física.",
-      "imageKind": "Muestra comercial",
+      "imageNote": "Superficie frontal reconstruida con IA a partir de la muestra comercial de Granitec, sin marcos, placas laterales ni uniones. Se conserva el original y su fuente. El color, el dibujo y la escala son aproximados; no es una fotografía calibrada ni de un lote real.",
+      "imageKind": "Referencia visual mejorada con IA",
       "market": "Catálogo de proveedor en Venezuela",
       "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
       "sourceLinks": [
@@ -15587,15 +15497,10 @@
       "finish": "",
       "code": "",
       "image": {
-        "src": "muestras/granitec-granitos-gris-messi-superficie26.webp",
-        "width": 600,
-        "height": 600,
-        "crop": [
-          60,
-          20,
-          305,
-          560
-        ]
+        "src": "muestras/granitec-granitos-gris-messi-ia-revision-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/granitec-granitos-gris-messi-ia-revision-20261020-640.webp 640w, muestras/granitec-granitos-gris-messi-ia-revision-20261020.webp 1254w"
       },
       "international": false,
       "textureId": null,
@@ -15603,8 +15508,8 @@
       "description": "Granito natural del catálogo de Granitec. El grano, el tono y las vetas pueden variar entre las láminas.",
       "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
       "care": "Comparar una muestra física y revisar el formato, las uniones y el cuidado indicado por el proveedor.",
-      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular. La imagen original tiene resolución limitada; permite una elección visual inicial. El detalle y el tono se confirman con una muestra física.",
-      "imageKind": "Muestra comercial",
+      "imageNote": "Superficie frontal reconstruida con IA a partir de la muestra comercial de Granitec, sin marcos, placas laterales ni uniones. Se conserva el original y su fuente. El color, el dibujo y la escala son aproximados; no es una fotografía calibrada ni de un lote real.",
+      "imageKind": "Referencia visual mejorada con IA",
       "market": "Catálogo de proveedor en Venezuela",
       "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
       "sourceLinks": [
@@ -15624,15 +15529,10 @@
       "finish": "",
       "code": "",
       "image": {
-        "src": "muestras/granitec-granitos-negro-san-gabriel-superficie26.webp",
-        "width": 600,
-        "height": 600,
-        "crop": [
-          60,
-          20,
-          305,
-          560
-        ]
+        "src": "muestras/granitec-granitos-negro-san-gabriel-ia-revision-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/granitec-granitos-negro-san-gabriel-ia-revision-20261020-640.webp 640w, muestras/granitec-granitos-negro-san-gabriel-ia-revision-20261020.webp 1254w"
       },
       "international": false,
       "textureId": null,
@@ -15640,8 +15540,8 @@
       "description": "Granito natural del catálogo de Granitec. El grano, el tono y las vetas pueden variar entre las láminas.",
       "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
       "care": "Comparar una muestra física y revisar el formato, las uniones y el cuidado indicado por el proveedor.",
-      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular. La imagen original tiene resolución limitada; permite una elección visual inicial. El detalle y el tono se confirman con una muestra física.",
-      "imageKind": "Muestra comercial",
+      "imageNote": "Superficie frontal reconstruida con IA a partir de la muestra comercial de Granitec, sin marcos, placas laterales ni uniones. Se conserva el original y su fuente. El color, el dibujo y la escala son aproximados; no es una fotografía calibrada ni de un lote real.",
+      "imageKind": "Referencia visual mejorada con IA",
       "market": "Catálogo de proveedor en Venezuela",
       "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
       "sourceLinks": [
@@ -15661,15 +15561,10 @@
       "finish": "",
       "code": "",
       "image": {
-        "src": "muestras/granitec-granitos-blanco-sienna-superficie26.webp",
-        "width": 600,
-        "height": 600,
-        "crop": [
-          60,
-          20,
-          305,
-          560
-        ]
+        "src": "muestras/granitec-granitos-blanco-sienna-ia-revision-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/granitec-granitos-blanco-sienna-ia-revision-20261020-640.webp 640w, muestras/granitec-granitos-blanco-sienna-ia-revision-20261020.webp 1254w"
       },
       "international": false,
       "textureId": null,
@@ -15677,8 +15572,8 @@
       "description": "Granito natural del catálogo de Granitec. El grano, el tono y las vetas pueden variar entre las láminas.",
       "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
       "care": "Comparar una muestra física y revisar el formato, las uniones y el cuidado indicado por el proveedor.",
-      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular. La imagen original tiene resolución limitada; permite una elección visual inicial. El detalle y el tono se confirman con una muestra física.",
-      "imageKind": "Muestra comercial",
+      "imageNote": "Superficie frontal reconstruida con IA a partir de la muestra comercial de Granitec, sin marcos, placas laterales ni uniones. Se conserva el original y su fuente. El color, el dibujo y la escala son aproximados; no es una fotografía calibrada ni de un lote real.",
+      "imageKind": "Referencia visual mejorada con IA",
       "market": "Catálogo de proveedor en Venezuela",
       "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
       "sourceLinks": [
@@ -15772,15 +15667,10 @@
       "finish": "",
       "code": "",
       "image": {
-        "src": "muestras/granitec-cuarzos-calacatta-extra-superficie26.webp",
-        "width": 600,
-        "height": 600,
-        "crop": [
-          60,
-          20,
-          305,
-          560
-        ]
+        "src": "muestras/granitec-cuarzos-calacatta-extra-ia-revision-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/granitec-cuarzos-calacatta-extra-ia-revision-20261020-640.webp 640w, muestras/granitec-cuarzos-calacatta-extra-ia-revision-20261020.webp 1254w"
       },
       "international": false,
       "textureId": null,
@@ -15788,8 +15678,8 @@
       "description": "Superficie de cuarzo Beancchi del catálogo de Granitec. El diseño se identifica con su nombre comercial.",
       "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
       "care": "Comparar una muestra física y revisar el formato, las uniones y el cuidado indicado por el proveedor.",
-      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular. La imagen original tiene resolución limitada; permite una elección visual inicial. El detalle y el tono se confirman con una muestra física.",
-      "imageKind": "Muestra comercial",
+      "imageNote": "Superficie frontal reconstruida con IA a partir de la muestra comercial de Granitec, sin marcos, placas laterales ni uniones. Se conserva el original y su fuente. El color, el dibujo y la escala son aproximados; no es una fotografía calibrada ni de un lote real.",
+      "imageKind": "Referencia visual mejorada con IA",
       "market": "Catálogo de proveedor en Venezuela",
       "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
       "sourceLinks": [
@@ -15813,11 +15703,12 @@
         "width": 600,
         "height": 600,
         "crop": [
-          60,
-          20,
-          305,
-          560
-        ]
+          65,
+          30,
+          285,
+          540
+        ],
+        "surfaceCrop": true
       },
       "international": false,
       "textureId": null,
@@ -15825,8 +15716,8 @@
       "description": "Superficie de cuarzo Beancchi del catálogo de Granitec. El diseño se identifica con su nombre comercial.",
       "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
       "care": "Comparar una muestra física y revisar el formato, las uniones y el cuidado indicado por el proveedor.",
-      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular. La imagen original tiene resolución limitada; permite una elección visual inicial. El detalle y el tono se confirman con una muestra física.",
-      "imageKind": "Muestra comercial",
+      "imageNote": "Recorte de una sola cara frontal de la muestra de Granitec. Se excluyen marcos, cantos, placas laterales y franjas del montaje sin modificar los píxeles originales. Derechos de imagen de su titular. Color y escala orientativos; confirmar con la muestra física.",
+      "imageKind": "Muestra comercial frontal",
       "market": "Catálogo de proveedor en Venezuela",
       "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
       "sourceLinks": [
@@ -15850,11 +15741,12 @@
         "width": 600,
         "height": 600,
         "crop": [
-          60,
-          20,
-          305,
-          560
-        ]
+          65,
+          30,
+          285,
+          540
+        ],
+        "surfaceCrop": true
       },
       "international": false,
       "textureId": null,
@@ -15862,8 +15754,8 @@
       "description": "Superficie de cuarzo Beancchi del catálogo de Granitec. El diseño se identifica con su nombre comercial.",
       "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
       "care": "Comparar una muestra física y revisar el formato, las uniones y el cuidado indicado por el proveedor.",
-      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular. La imagen original tiene resolución limitada; permite una elección visual inicial. El detalle y el tono se confirman con una muestra física.",
-      "imageKind": "Muestra comercial",
+      "imageNote": "Recorte de una sola cara frontal de la muestra de Granitec. Se excluyen marcos, cantos, placas laterales y franjas del montaje sin modificar los píxeles originales. Derechos de imagen de su titular. Color y escala orientativos; confirmar con la muestra física.",
+      "imageKind": "Muestra comercial frontal",
       "market": "Catálogo de proveedor en Venezuela",
       "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
       "sourceLinks": [
@@ -15887,11 +15779,12 @@
         "width": 600,
         "height": 600,
         "crop": [
-          60,
-          20,
-          305,
-          560
-        ]
+          65,
+          30,
+          285,
+          540
+        ],
+        "surfaceCrop": true
       },
       "international": false,
       "textureId": null,
@@ -15899,8 +15792,8 @@
       "description": "Superficie de cuarzo Beancchi del catálogo de Granitec. El diseño se identifica con su nombre comercial.",
       "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
       "care": "Comparar una muestra física y revisar el formato, las uniones y el cuidado indicado por el proveedor.",
-      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular. La imagen original tiene resolución limitada; permite una elección visual inicial. El detalle y el tono se confirman con una muestra física.",
-      "imageKind": "Muestra comercial",
+      "imageNote": "Recorte de una sola cara frontal de la muestra de Granitec. Se excluyen marcos, cantos, placas laterales y franjas del montaje sin modificar los píxeles originales. Derechos de imagen de su titular. Color y escala orientativos; confirmar con la muestra física.",
+      "imageKind": "Muestra comercial frontal",
       "market": "Catálogo de proveedor en Venezuela",
       "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
       "sourceLinks": [
@@ -15924,11 +15817,12 @@
         "width": 600,
         "height": 600,
         "crop": [
-          60,
-          20,
-          305,
-          560
-        ]
+          65,
+          30,
+          285,
+          540
+        ],
+        "surfaceCrop": true
       },
       "international": false,
       "textureId": null,
@@ -15936,8 +15830,8 @@
       "description": "Superficie de cuarzo Beancchi del catálogo de Granitec. El diseño se identifica con su nombre comercial.",
       "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
       "care": "Comparar una muestra física y revisar el formato, las uniones y el cuidado indicado por el proveedor.",
-      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular. La imagen original tiene resolución limitada; permite una elección visual inicial. El detalle y el tono se confirman con una muestra física.",
-      "imageKind": "Muestra comercial",
+      "imageNote": "Recorte de una sola cara frontal de la muestra de Granitec. Se excluyen marcos, cantos, placas laterales y franjas del montaje sin modificar los píxeles originales. Derechos de imagen de su titular. Color y escala orientativos; confirmar con la muestra física.",
+      "imageKind": "Muestra comercial frontal",
       "market": "Catálogo de proveedor en Venezuela",
       "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
       "sourceLinks": [
@@ -15957,15 +15851,10 @@
       "finish": "",
       "code": "",
       "image": {
-        "src": "muestras/granitec-cuarzos-gris-estelar-superficie26.webp",
-        "width": 600,
-        "height": 600,
-        "crop": [
-          60,
-          20,
-          305,
-          560
-        ]
+        "src": "muestras/granitec-cuarzos-gris-estelar-ia-revision-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/granitec-cuarzos-gris-estelar-ia-revision-20261020-640.webp 640w, muestras/granitec-cuarzos-gris-estelar-ia-revision-20261020.webp 1254w"
       },
       "international": false,
       "textureId": null,
@@ -15973,8 +15862,8 @@
       "description": "Superficie de cuarzo Beancchi del catálogo de Granitec. El diseño se identifica con su nombre comercial.",
       "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
       "care": "Comparar una muestra física y revisar el formato, las uniones y el cuidado indicado por el proveedor.",
-      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular. La imagen original tiene resolución limitada; permite una elección visual inicial. El detalle y el tono se confirman con una muestra física.",
-      "imageKind": "Muestra comercial",
+      "imageNote": "Superficie frontal reconstruida con IA a partir de la muestra comercial de Granitec, sin marcos, placas laterales ni uniones. Se conserva el original y su fuente. El color, el dibujo y la escala son aproximados; no es una fotografía calibrada ni de un lote real.",
+      "imageKind": "Referencia visual mejorada con IA",
       "market": "Catálogo de proveedor en Venezuela",
       "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
       "sourceLinks": [
@@ -15994,15 +15883,10 @@
       "finish": "",
       "code": "",
       "image": {
-        "src": "muestras/granitec-cuarzos-blanco-estelar-superficie26.webp",
-        "width": 600,
-        "height": 600,
-        "crop": [
-          60,
-          20,
-          305,
-          560
-        ]
+        "src": "muestras/granitec-cuarzos-blanco-estelar-ia-revision-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/granitec-cuarzos-blanco-estelar-ia-revision-20261020-640.webp 640w, muestras/granitec-cuarzos-blanco-estelar-ia-revision-20261020.webp 1254w"
       },
       "international": false,
       "textureId": null,
@@ -16010,8 +15894,8 @@
       "description": "Superficie de cuarzo Beancchi del catálogo de Granitec. El diseño se identifica con su nombre comercial.",
       "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
       "care": "Comparar una muestra física y revisar el formato, las uniones y el cuidado indicado por el proveedor.",
-      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular. La imagen original tiene resolución limitada; permite una elección visual inicial. El detalle y el tono se confirman con una muestra física.",
-      "imageKind": "Muestra comercial",
+      "imageNote": "Superficie frontal reconstruida con IA a partir de la muestra comercial de Granitec, sin marcos, placas laterales ni uniones. Se conserva el original y su fuente. El color, el dibujo y la escala son aproximados; no es una fotografía calibrada ni de un lote real.",
+      "imageKind": "Referencia visual mejorada con IA",
       "market": "Catálogo de proveedor en Venezuela",
       "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
       "sourceLinks": [
@@ -16031,15 +15915,10 @@
       "finish": "",
       "code": "",
       "image": {
-        "src": "muestras/granitec-cuarzos-rojo-estelar-superficie26.webp",
-        "width": 600,
-        "height": 600,
-        "crop": [
-          60,
-          20,
-          305,
-          560
-        ]
+        "src": "muestras/granitec-cuarzos-rojo-estelar-ia-revision-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/granitec-cuarzos-rojo-estelar-ia-revision-20261020-640.webp 640w, muestras/granitec-cuarzos-rojo-estelar-ia-revision-20261020.webp 1254w"
       },
       "international": false,
       "textureId": null,
@@ -16047,8 +15926,8 @@
       "description": "Superficie de cuarzo Beancchi del catálogo de Granitec. El diseño se identifica con su nombre comercial.",
       "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
       "care": "Comparar una muestra física y revisar el formato, las uniones y el cuidado indicado por el proveedor.",
-      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular. La imagen original tiene resolución limitada; permite una elección visual inicial. El detalle y el tono se confirman con una muestra física.",
-      "imageKind": "Muestra comercial",
+      "imageNote": "Superficie frontal reconstruida con IA a partir de la muestra comercial de Granitec, sin marcos, placas laterales ni uniones. Se conserva el original y su fuente. El color, el dibujo y la escala son aproximados; no es una fotografía calibrada ni de un lote real.",
+      "imageKind": "Referencia visual mejorada con IA",
       "market": "Catálogo de proveedor en Venezuela",
       "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
       "sourceLinks": [
@@ -16068,15 +15947,10 @@
       "finish": "",
       "code": "",
       "image": {
-        "src": "muestras/granitec-cuarzos-gris-puro-superficie26.webp",
-        "width": 600,
-        "height": 600,
-        "crop": [
-          60,
-          20,
-          305,
-          560
-        ]
+        "src": "muestras/granitec-cuarzos-gris-puro-ia-revision-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/granitec-cuarzos-gris-puro-ia-revision-20261020-640.webp 640w, muestras/granitec-cuarzos-gris-puro-ia-revision-20261020.webp 1254w"
       },
       "international": false,
       "textureId": null,
@@ -16084,8 +15958,8 @@
       "description": "Superficie de cuarzo Beancchi del catálogo de Granitec. El diseño se identifica con su nombre comercial.",
       "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
       "care": "Comparar una muestra física y revisar el formato, las uniones y el cuidado indicado por el proveedor.",
-      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular. La imagen original tiene resolución limitada; permite una elección visual inicial. El detalle y el tono se confirman con una muestra física.",
-      "imageKind": "Muestra comercial",
+      "imageNote": "Superficie frontal reconstruida con IA a partir de la muestra comercial de Granitec, sin marcos, placas laterales ni uniones. Se conserva el original y su fuente. El color, el dibujo y la escala son aproximados; no es una fotografía calibrada ni de un lote real.",
+      "imageKind": "Referencia visual mejorada con IA",
       "market": "Catálogo de proveedor en Venezuela",
       "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
       "sourceLinks": [
@@ -16105,15 +15979,10 @@
       "finish": "",
       "code": "",
       "image": {
-        "src": "muestras/granitec-cuarzos-carrara-deluxe-superficie26.webp",
-        "width": 416,
-        "height": 423,
-        "crop": [
-          45,
-          23,
-          324,
-          368
-        ]
+        "src": "muestras/granitec-cuarzos-carrara-deluxe-ia-revision-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/granitec-cuarzos-carrara-deluxe-ia-revision-20261020-640.webp 640w, muestras/granitec-cuarzos-carrara-deluxe-ia-revision-20261020.webp 1254w"
       },
       "international": false,
       "textureId": null,
@@ -16121,8 +15990,8 @@
       "description": "Superficie de cuarzo Beancchi del catálogo de Granitec. El diseño se identifica con su nombre comercial.",
       "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
       "care": "Comparar una muestra física y revisar el formato, las uniones y el cuidado indicado por el proveedor.",
-      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular. La imagen original tiene resolución limitada; permite una elección visual inicial. El detalle y el tono se confirman con una muestra física.",
-      "imageKind": "Muestra comercial",
+      "imageNote": "Superficie frontal reconstruida con IA a partir de la muestra comercial de Granitec, sin marcos, placas laterales ni uniones. Se conserva el original y su fuente. El color, el dibujo y la escala son aproximados; no es una fotografía calibrada ni de un lote real.",
+      "imageKind": "Referencia visual mejorada con IA",
       "market": "Catálogo de proveedor en Venezuela",
       "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
       "sourceLinks": [
@@ -16146,11 +16015,12 @@
         "width": 600,
         "height": 600,
         "crop": [
-          60,
-          20,
-          305,
-          560
-        ]
+          65,
+          30,
+          285,
+          540
+        ],
+        "surfaceCrop": true
       },
       "international": false,
       "textureId": null,
@@ -16158,8 +16028,8 @@
       "description": "Superficie de cuarzo Beancchi del catálogo de Granitec. El diseño se identifica con su nombre comercial.",
       "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
       "care": "Comparar una muestra física y revisar el formato, las uniones y el cuidado indicado por el proveedor.",
-      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular. La imagen original tiene resolución limitada; permite una elección visual inicial. El detalle y el tono se confirman con una muestra física.",
-      "imageKind": "Muestra comercial",
+      "imageNote": "Recorte de una sola cara frontal de la muestra de Granitec. Se excluyen marcos, cantos, placas laterales y franjas del montaje sin modificar los píxeles originales. Derechos de imagen de su titular. Color y escala orientativos; confirmar con la muestra física.",
+      "imageKind": "Muestra comercial frontal",
       "market": "Catálogo de proveedor en Venezuela",
       "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
       "sourceLinks": [
@@ -16183,11 +16053,12 @@
         "width": 600,
         "height": 600,
         "crop": [
-          60,
-          20,
-          305,
-          560
-        ]
+          65,
+          30,
+          285,
+          540
+        ],
+        "surfaceCrop": true
       },
       "international": false,
       "textureId": null,
@@ -16195,8 +16066,8 @@
       "description": "Superficie de cuarzo Beancchi del catálogo de Granitec. El diseño se identifica con su nombre comercial.",
       "use": "Cubiertas, mesas o revestimientos según el producto, el soporte y el diseño del proyecto.",
       "care": "Comparar una muestra física y revisar el formato, las uniones y el cuidado indicado por el proveedor.",
-      "imageNote": "Muestra de superficie de Granitec. El mosaico encuadra la cara frontal; la ficha conserva la imagen completa. Derechos de imagen de su titular. La imagen original tiene resolución limitada; permite una elección visual inicial. El detalle y el tono se confirman con una muestra física.",
-      "imageKind": "Muestra comercial",
+      "imageNote": "Recorte de una sola cara frontal de la muestra de Granitec. Se excluyen marcos, cantos, placas laterales y franjas del montaje sin modificar los píxeles originales. Derechos de imagen de su titular. Color y escala orientativos; confirmar con la muestra física.",
+      "imageKind": "Muestra comercial frontal",
       "market": "Catálogo de proveedor en Venezuela",
       "availability": "Referencia de catálogo; existencias y condiciones por consultar para cada proyecto.",
       "sourceLinks": [
@@ -16443,14 +16314,14 @@
       "appId": null,
       "international": false,
       "market": "Catálogo de proveedor en Venezuela",
-      "availability": "Inox Total Services publica inoxidable 304 satinado N4 para entrega en Venezuela; confirmar el espesor, formato y lote.",
+      "availability": "Ofertas publicadas por Inox Total Services y ALL INOX ACEROS. Confirmar grano, espesor, formato y existencias de cada una.",
       "care": "Confirmar aleación, formato, acabado y aptitud para el proyecto.",
       "id": "inox-304-satinado",
       "name": "Acero inoxidable 304 satinado",
       "family": "Láminas lisas",
       "supplier": "Inox Total Services",
-      "finish": "N4 satinado",
-      "description": "Lámina de acero inoxidable AISI 304 con acabado N4 satinado. La referencia visual muestra un satinado fino; el grano y brillo del producto local se confirman con una muestra.",
+      "finish": "Satinado · grano según proveedor",
+      "description": "Lámina de acero inoxidable AISI 304 con superficie satinada direccional. Inox Total Services publica N4; ALL INOX ACEROS publica satinado sin número de grano. Confirmar la especificación de cada oferta con su proveedor.",
       "use": "Mesas, frentes, salpicaderos y detalles según el diseño.",
       "code": "",
       "imageKind": "Referencia visual de fabricante",
@@ -16463,6 +16334,10 @@
         {
           "label": "Origen de la referencia Silver Satin",
           "url": "https://arch-inox.com/en/satin/"
+        },
+        {
+          "label": "ALL INOX ACEROS · inoxidable 304 satinado",
+          "url": "https://www.instagram.com/all.inoxaceros/p/DdZNvxMDi5-/"
         }
       ],
       "image": {
@@ -16475,7 +16350,29 @@
           900,
           750
         ]
-      }
+      },
+      "supplierNames": [
+        "Inox Total Services",
+        "ALL INOX ACEROS"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "catalogueSourceRefs": [
+        {
+          "entityId": "all-inox-aceros",
+          "relationship": "proveedor",
+          "sourceIds": [
+            "all-inox-aceros-ig"
+          ],
+          "evidenceIds": [
+            "inox-304-satinado"
+          ],
+          "evidenceStatuses": [
+            "publicacion_consultada"
+          ]
+        }
+      ],
+      "sourcePublicationDate": "2026-09-17",
+      "sourceObservedAt": "2026-10-20"
     },
     {
       "category": "metales",
@@ -16780,7 +16677,7 @@
       "international": false,
       "availability": "Producto publicado por el proveedor; existencias por confirmar.",
       "imageKind": "Referencia visual editada con IA",
-      "imageNote": "Referencia mejorada con IA a partir de la fotografía de Madeaceros: mayor nitidez y tono más neutro, con veta vertical. Es una aproximación ilustrativa; no certifica el color, la especie ni el lote comercial. La fotografía original y sus derechos se conservan como fuente.",
+      "imageNote": "Referencia ilustrativa revisada con IA tras contrastar las fotos de chapilla precompuesta de pardillo de Madeaceros y Maderas Mariches: beige cálido, menos dominante verdosa y veta vertical. Las publicaciones no permiten calibrar el color ni asegurar igualdad entre lotes. Las fotografías originales y sus derechos se conservan como fuentes.",
       "textureId": null,
       "appId": null,
       "sourceLinks": [
@@ -16791,12 +16688,17 @@
         {
           "label": "Fotografía original del proveedor",
           "url": "https://prototipoago.com/materiales/muestras/chapilla-pardillo-local.png"
+        },
+        {
+          "label": "Referencia comparativa · chapilla precompuesta de Maderas Mariches",
+          "url": "https://articulo.mercadolibre.com.ve/MLV-737072287-chapilla-precompuesta-de-pardillo-_JM"
         }
       ],
       "image": {
-        "src": "muestras/pardillo-mejorado26.png",
+        "src": "muestras/chapilla-pardillo-local-tono-revisado-20261020.webp",
         "width": 1254,
-        "height": 1254
+        "height": 1254,
+        "srcset": "muestras/chapilla-pardillo-local-tono-revisado-20261020-640.webp 640w, muestras/chapilla-pardillo-local-tono-revisado-20261020.webp 1254w"
       }
     },
     {
@@ -20361,8 +20263,8 @@
       "international": false,
       "availability": "Listado en catálogo venezolano; stock actual por confirmar",
       "supplier": "Imeca Venezuela",
-      "imageKind": "Muestra del fabricante",
-      "imageNote": "Muestra extraída del catálogo oficial AGT 2023, página 41, a partir de su imagen de 573 × 330 px. El color en pantalla es orientativo; comparar con una muestra física.",
+      "imageKind": "Referencia visual mejorada con IA",
+      "imageNote": "Referencia visual mejorada con IA a partir de la muestra original. Color, dibujo y escala aproximados; comparar con la muestra física. Original y fuentes comerciales conservados.",
       "sourceLinks": [
         {
           "label": "Referencia publicada en Venezuela",
@@ -20388,15 +20290,26 @@
         2800
       ],
       "image": {
-        "src": "muestras/agt-3033-muestra-20261013.webp",
-        "srcset": "muestras/agt-3033-muestra-20261013-640.webp 573w, muestras/agt-3033-muestra-20261013.webp 573w",
-        "width": 573,
-        "height": 330
+        "src": "muestras/agt-3033-ia-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/agt-3033-ia-20261020-640.webp 640w, muestras/agt-3033-ia-20261020.webp 1254w"
       },
       "supplierNames": [
         "Imeca Venezuela"
       ],
-      "supplierAssociationStatus": "oferta_publicada"
+      "supplierAssociationStatus": "oferta_publicada",
+      "imageProvenance": {
+        "method": "image_gen built-in",
+        "reference": {
+          "src": "muestras/agt-3033-muestra-20261013.webp",
+          "srcset": "muestras/agt-3033-muestra-20261013-640.webp 573w, muestras/agt-3033-muestra-20261013.webp 573w",
+          "width": 573,
+          "height": 330
+        },
+        "originalNote": "Muestra extraída del catálogo oficial AGT 2023, página 41, a partir de su imagen de 573 × 330 px. El color en pantalla es orientativo; comparar con una muestra física.",
+        "date": "2026-10-20"
+      }
     },
     {
       "id": "agt-730",
@@ -24453,8 +24366,8 @@
       "market": "Venezuela · LD Premium",
       "international": false,
       "availability": "Producto publicado por LD Premium; consultar existencias.",
-      "imageKind": "Imagen oficial publicada por LD Premium",
-      "imageNote": "Recorte de la imagen oficial publicada por LD Premium, conservando sus píxeles. Puede proceder de una ilustración comercial; es una referencia visual, sin escala ni color calibrados. La publicación original está enlazada.",
+      "imageKind": "Referencia visual mejorada con IA",
+      "imageNote": "Referencia visual mejorada con IA a partir de la muestra original. Color, dibujo y escala aproximados; comparar con la muestra física. Original y fuentes comerciales conservados. La veta se presenta recta y vertical por indicación de Santiago.",
       "sourceLinks": [
         {
           "label": "Publicación original LD Premium",
@@ -24462,9 +24375,10 @@
         }
       ],
       "image": {
-        "src": "muestras/ldp-maderas-madera-moderna-oficial.webp",
-        "width": 407,
-        "height": 473
+        "src": "muestras/ldp-maderas-madera-moderna-ia-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/ldp-maderas-madera-moderna-ia-20261020-640.webp 640w, muestras/ldp-maderas-madera-moderna-ia-20261020.webp 1254w"
       },
       "textureId": null,
       "appId": null,
@@ -24475,7 +24389,17 @@
       "supplierNames": [
         "LD Premium"
       ],
-      "supplierAssociationStatus": "oferta_publicada"
+      "supplierAssociationStatus": "oferta_publicada",
+      "imageProvenance": {
+        "method": "image_gen built-in",
+        "reference": {
+          "src": "muestras/ldp-maderas-madera-moderna-oficial.webp",
+          "width": 407,
+          "height": 473
+        },
+        "originalNote": "Recorte de la imagen oficial publicada por LD Premium, conservando sus píxeles. Puede proceder de una ilustración comercial; es una referencia visual, sin escala ni color calibrados. La publicación original está enlazada.",
+        "date": "2026-10-20"
+      }
     },
     {
       "id": "ldp-maderas-madera-real",
@@ -24493,8 +24417,8 @@
       "market": "Venezuela · LD Premium",
       "international": false,
       "availability": "Producto publicado por LD Premium; consultar existencias.",
-      "imageKind": "Imagen oficial publicada por LD Premium",
-      "imageNote": "Recorte de la imagen oficial publicada por LD Premium, conservando sus píxeles. Puede proceder de una ilustración comercial; es una referencia visual, sin escala ni color calibrados. La publicación original está enlazada.",
+      "imageKind": "Referencia visual mejorada con IA",
+      "imageNote": "Referencia visual mejorada con IA a partir de la muestra original. Color, dibujo y escala aproximados; comparar con la muestra física. Original y fuentes comerciales conservados. La veta se presenta recta y vertical por indicación de Santiago.",
       "sourceLinks": [
         {
           "label": "Publicación original LD Premium",
@@ -24502,9 +24426,10 @@
         }
       ],
       "image": {
-        "src": "muestras/ldp-maderas-madera-real-oficial.webp",
-        "width": 407,
-        "height": 473
+        "src": "muestras/ldp-maderas-madera-real-ia-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/ldp-maderas-madera-real-ia-20261020-640.webp 640w, muestras/ldp-maderas-madera-real-ia-20261020.webp 1254w"
       },
       "textureId": null,
       "appId": null,
@@ -24515,7 +24440,17 @@
       "supplierNames": [
         "LD Premium"
       ],
-      "supplierAssociationStatus": "oferta_publicada"
+      "supplierAssociationStatus": "oferta_publicada",
+      "imageProvenance": {
+        "method": "image_gen built-in",
+        "reference": {
+          "src": "muestras/ldp-maderas-madera-real-oficial.webp",
+          "width": 407,
+          "height": 473
+        },
+        "originalNote": "Recorte de la imagen oficial publicada por LD Premium, conservando sus píxeles. Puede proceder de una ilustración comercial; es una referencia visual, sin escala ni color calibrados. La publicación original está enlazada.",
+        "date": "2026-10-20"
+      }
     },
     {
       "id": "ldp-maderas-tropical-oak",
@@ -24533,8 +24468,8 @@
       "market": "Venezuela · LD Premium",
       "international": false,
       "availability": "Producto publicado por LD Premium; consultar existencias.",
-      "imageKind": "Imagen oficial publicada por LD Premium",
-      "imageNote": "Recorte de la imagen oficial publicada por LD Premium, conservando sus píxeles. Puede proceder de una ilustración comercial; es una referencia visual, sin escala ni color calibrados. La publicación original está enlazada.",
+      "imageKind": "Referencia visual mejorada con IA",
+      "imageNote": "Referencia visual mejorada con IA a partir de la muestra original. Color, dibujo y escala aproximados; comparar con la muestra física. Original y fuentes comerciales conservados.",
       "sourceLinks": [
         {
           "label": "Publicación original LD Premium",
@@ -24542,9 +24477,10 @@
         }
       ],
       "image": {
-        "src": "muestras/ldp-maderas-tropical-oak-oficial.webp",
-        "width": 461,
-        "height": 522
+        "src": "muestras/ldp-maderas-tropical-oak-ia-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/ldp-maderas-tropical-oak-ia-20261020-640.webp 640w, muestras/ldp-maderas-tropical-oak-ia-20261020.webp 1254w"
       },
       "textureId": null,
       "appId": null,
@@ -24555,7 +24491,17 @@
       "supplierNames": [
         "LD Premium"
       ],
-      "supplierAssociationStatus": "oferta_publicada"
+      "supplierAssociationStatus": "oferta_publicada",
+      "imageProvenance": {
+        "method": "image_gen built-in",
+        "reference": {
+          "src": "muestras/ldp-maderas-tropical-oak-oficial.webp",
+          "width": 461,
+          "height": 522
+        },
+        "originalNote": "Recorte de la imagen oficial publicada por LD Premium, conservando sus píxeles. Puede proceder de una ilustración comercial; es una referencia visual, sin escala ni color calibrados. La publicación original está enlazada.",
+        "date": "2026-10-20"
+      }
     },
     {
       "id": "ldp-maderas-roble-amazonas",
@@ -28745,7 +28691,7 @@
       "international": false,
       "availability": "Producto publicado por LD Premium; consultar existencias.",
       "imageKind": "Muestra de catálogo",
-      "imageNote": "Recorte de la cara izquierda de la publicación C+/C de LD Premium. Las dos caras del anuncio no identifican individualmente el grado; confirmar con el proveedor la correspondencia C o C Plus. Píxeles originales conservados, sin recreación IA ni color o escala calibrados. Presentación con saturación aumentada suavemente y un toque cálido por indicación de Santiago; el archivo original permanece intacto. No es color calibrado.",
+      "imageNote": "Recorte de la cara izquierda del anuncio C+/C de LD Premium. El anuncio no identifica individualmente el grado; confirmarlo con el proveedor. Tono de presentación ajustado por indicación de Santiago para aproximarlo a la muestra Compuesto fenólico de pino del catálogo. La veta y los nudos originales se conservan. El archivo original permanece intacto; no es color calibrado.",
       "sourceLinks": [
         {
           "label": "Publicación original LD Premium",
@@ -28756,7 +28702,7 @@
         "src": "muestras/ldp-compuestos-y-chapillados-compuesto-fenolico-c-plus-oficial.webp",
         "width": 518,
         "height": 1008,
-        "displayFilter": "saturate(1.18) sepia(0.06)"
+        "displayFilter": "brightness(0.82564) sepia(1) saturate(1.16933) hue-rotate(-3.37446deg)"
       },
       "textureId": null,
       "appId": null,
@@ -28786,7 +28732,7 @@
       "international": false,
       "availability": "Producto publicado por LD Premium; consultar existencias.",
       "imageKind": "Muestra de catálogo",
-      "imageNote": "Recorte de la cara derecha de la publicación C+/C de LD Premium. Las dos caras del anuncio no identifican individualmente el grado; confirmar con el proveedor la correspondencia C o C Plus. Píxeles originales conservados, sin recreación IA ni color o escala calibrados. Presentación con saturación aumentada suavemente y un toque cálido por indicación de Santiago; el archivo original permanece intacto. No es color calibrado.",
+      "imageNote": "Recorte de la cara derecha del anuncio C+/C de LD Premium. El anuncio no identifica individualmente el grado; confirmarlo con el proveedor. Tono de presentación ajustado por indicación de Santiago para aproximarlo a la muestra Compuesto fenólico de pino del catálogo. La veta y los nudos originales se conservan. El archivo original permanece intacto; no es color calibrado.",
       "sourceLinks": [
         {
           "label": "Publicación original LD Premium",
@@ -28797,7 +28743,7 @@
         "src": "muestras/ldp-compuestos-y-chapillados-compuesto-fenolico-c-oficial.webp",
         "width": 504,
         "height": 1008,
-        "displayFilter": "saturate(1.18) sepia(0.06)"
+        "displayFilter": "brightness(0.83484) sepia(1) saturate(1.16918) hue-rotate(-3.36262deg)"
       },
       "textureId": null,
       "appId": null,
@@ -28873,6 +28819,62 @@
           ]
         }
       ]
+    },
+    {
+      "id": "ago-pvc-espumado-negro",
+      "category": "tableros",
+      "name": "Lámina de PVC negra",
+      "family": "Compuestos y chapillados",
+      "brand": "",
+      "code": "",
+      "finish": "Negro liso",
+      "description": "Lámina de PVC espumado de color negro liso. Una referencia visual para sus distintas presentaciones; el espesor, la densidad y el formato se confirman con el proveedor.",
+      "use": "Señalización, exhibidores, impresión y elementos decorativos según la formulación y la ficha técnica del producto.",
+      "care": "Confirmar rigidez, densidad, planitud, comportamiento al calor y fijaciones antes de usarla. No confundir con láminas marmoleadas, acrílico negro ni PVC estructural.",
+      "supplier": "Acrílicos Krehated",
+      "supplierNames": [
+        "Acrílicos Krehated",
+        "Materiales CPO"
+      ],
+      "supplierNote": "Krehated publica PVC espumoso negro de 5 mm en Mercado Libre Venezuela; su descripción contiene una mención contradictoria a blanco, por lo que color, acabado y formulación requieren confirmación. CPO conserva una publicación de 3 mm pausada. No se afirma stock. Acriplas es únicamente la fuente visual de México.",
+      "market": "Venezuela · referencias comerciales locales",
+      "international": false,
+      "availability": "Consultar presentación y existencias con el proveedor.",
+      "imageKind": "Fotografía de referencia internacional · Acriplas, México",
+      "imageNote": "Recorte de una fotografía de PVC espumado negro mate publicada por Distribuidora Acriplas (México). Fuente visual independiente de las ofertas venezolanas; no es fotografía del lote local. Sin recreación IA; fotografía completa y autoría conservadas. Aspecto, brillo y formulación locales por confirmar.",
+      "image": {
+        "src": "muestras/ago-pvc-espumado-negro-foto-acriplas-20261020.webp",
+        "width": 3000,
+        "height": 2000,
+        "srcset": "muestras/ago-pvc-espumado-negro-foto-acriplas-20261020-640.webp 640w, muestras/ago-pvc-espumado-negro-foto-acriplas-20261020.webp 3000w",
+        "crop": [
+          1300,
+          700,
+          390,
+          390
+        ],
+        "surfaceCrop": true
+      },
+      "sourceLinks": [
+        {
+          "label": "Fuente visual · PVC negro mate de Acriplas (México)",
+          "url": "https://www.acriplass.com/producto/pvc-espumado-negro/"
+        },
+        {
+          "label": "Fotografía original · Acriplas",
+          "url": "https://www.acriplass.com/wp-content/uploads/2024/09/PVC-ESPUMADO-NEGRO-3MM.jpg"
+        },
+        {
+          "label": "Acrílicos Krehated · PVC espumoso negro 5 mm en Mercado Libre",
+          "url": "https://articulo.mercadolibre.com.ve/MLV-1024629814-laminas-de-pvc-espumoso-5mm-negro-122-x-244-_JM"
+        },
+        {
+          "label": "Materiales CPO · PVC negro 3 mm (publicación pausada)",
+          "url": "https://articulo.mercadolibre.com.ve/MLV-764096461-lamina-pvc-3mm-negra-medida-122x244-negro-_JM"
+        }
+      ],
+      "textureId": null,
+      "appId": null
     },
     {
       "id": "ldp-melaminas-grisly-oak",
@@ -31659,7 +31661,7 @@
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
       "imageKind": "Muestra oficial Formipak · superficie completa",
-      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak. Encuadre revisado el 20/10/2026 para excluir los bordes del fondo.",
       "sourceLinks": [
         {
           "label": "Producto oficial · Pisopak",
@@ -31675,15 +31677,29 @@
       "image": {
         "src": "muestras/formipak-f514-superficie-20261014.webp",
         "width": 1074,
-        "height": 1074
+        "height": 1074,
+        "crop": [
+          20,
+          20,
+          1034,
+          1034
+        ],
+        "surfaceCrop": true
       },
       "overview": {
         "src": "muestras/formipak-f514-superficie-20261014.webp",
         "width": 1074,
         "height": 1074,
+        "crop": [
+          20,
+          20,
+          1034,
+          1034
+        ],
+        "surfaceCrop": true,
         "srcset": "muestras/formipak-f514-superficie-20261014-640.webp 640w, muestras/formipak-f514-superficie-20261014.webp 1074w"
       },
-      "overviewNote": "Misma muestra oficial."
+      "overviewNote": "Misma muestra de origen; encuadre sin bordes."
     },
     {
       "id": "formipak-f513",
@@ -31701,7 +31717,7 @@
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
       "imageKind": "Muestra oficial Formipak · superficie completa",
-      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak. Encuadre revisado el 20/10/2026 para excluir los bordes del fondo.",
       "sourceLinks": [
         {
           "label": "Producto oficial · Pisopak",
@@ -31717,15 +31733,29 @@
       "image": {
         "src": "muestras/formipak-f513-superficie-20261014.webp",
         "width": 950,
-        "height": 950
+        "height": 950,
+        "crop": [
+          50,
+          20,
+          850,
+          910
+        ],
+        "surfaceCrop": true
       },
       "overview": {
         "src": "muestras/formipak-f513-superficie-20261014.webp",
         "width": 950,
         "height": 950,
+        "crop": [
+          50,
+          20,
+          850,
+          910
+        ],
+        "surfaceCrop": true,
         "srcset": "muestras/formipak-f513-superficie-20261014-640.webp 640w, muestras/formipak-f513-superficie-20261014.webp 950w"
       },
-      "overviewNote": "Misma muestra oficial."
+      "overviewNote": "Misma muestra de origen; encuadre sin bordes."
     },
     {
       "id": "formipak-f560",
@@ -31743,7 +31773,7 @@
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
       "imageKind": "Muestra oficial Formipak · superficie completa",
-      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak. Encuadre revisado el 20/10/2026 para excluir los bordes del fondo.",
       "sourceLinks": [
         {
           "label": "Producto oficial · Pisopak",
@@ -31759,15 +31789,29 @@
       "image": {
         "src": "muestras/formipak-f560-superficie-20261014.webp",
         "width": 1056,
-        "height": 1056
+        "height": 1056,
+        "crop": [
+          20,
+          20,
+          1016,
+          1016
+        ],
+        "surfaceCrop": true
       },
       "overview": {
         "src": "muestras/formipak-f560-superficie-20261014.webp",
         "width": 1056,
         "height": 1056,
+        "crop": [
+          20,
+          20,
+          1016,
+          1016
+        ],
+        "surfaceCrop": true,
         "srcset": "muestras/formipak-f560-superficie-20261014-640.webp 640w, muestras/formipak-f560-superficie-20261014.webp 1056w"
       },
-      "overviewNote": "Misma muestra oficial."
+      "overviewNote": "Misma muestra de origen; encuadre sin bordes."
     },
     {
       "id": "formipak-f940",
@@ -31785,7 +31829,7 @@
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
       "imageKind": "Muestra oficial Formipak · superficie completa",
-      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak. Encuadre revisado el 20/10/2026 para excluir los bordes del fondo.",
       "sourceLinks": [
         {
           "label": "Producto oficial · Pisopak",
@@ -31801,15 +31845,29 @@
       "image": {
         "src": "muestras/formipak-f940-superficie-20261014.webp",
         "width": 1056,
-        "height": 1056
+        "height": 1056,
+        "crop": [
+          20,
+          20,
+          1016,
+          1016
+        ],
+        "surfaceCrop": true
       },
       "overview": {
         "src": "muestras/formipak-f940-superficie-20261014.webp",
         "width": 1056,
         "height": 1056,
+        "crop": [
+          20,
+          20,
+          1016,
+          1016
+        ],
+        "surfaceCrop": true,
         "srcset": "muestras/formipak-f940-superficie-20261014-640.webp 640w, muestras/formipak-f940-superficie-20261014.webp 1056w"
       },
-      "overviewNote": "Misma muestra oficial."
+      "overviewNote": "Misma muestra de origen; encuadre sin bordes."
     },
     {
       "id": "formipak-f930",
@@ -31827,7 +31885,7 @@
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
       "imageKind": "Muestra oficial Formipak · superficie completa",
-      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak. Encuadre revisado el 20/10/2026 para excluir los bordes del fondo.",
       "sourceLinks": [
         {
           "label": "Producto oficial · Pisopak",
@@ -31843,15 +31901,29 @@
       "image": {
         "src": "muestras/formipak-f930-superficie-20261014.webp",
         "width": 1056,
-        "height": 1056
+        "height": 1056,
+        "crop": [
+          20,
+          20,
+          1016,
+          1016
+        ],
+        "surfaceCrop": true
       },
       "overview": {
         "src": "muestras/formipak-f930-superficie-20261014.webp",
         "width": 1056,
         "height": 1056,
+        "crop": [
+          20,
+          20,
+          1016,
+          1016
+        ],
+        "surfaceCrop": true,
         "srcset": "muestras/formipak-f930-superficie-20261014-640.webp 640w, muestras/formipak-f930-superficie-20261014.webp 1056w"
       },
-      "overviewNote": "Misma muestra oficial."
+      "overviewNote": "Misma muestra de origen; encuadre sin bordes."
     },
     {
       "id": "formipak-f571",
@@ -31907,7 +31979,7 @@
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
       "imageKind": "Muestra oficial Formipak · superficie completa",
-      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak. Encuadre revisado el 20/10/2026 para excluir los bordes del fondo.",
       "sourceLinks": [
         {
           "label": "Producto oficial · Pisopak",
@@ -31923,15 +31995,29 @@
       "image": {
         "src": "muestras/formipak-f570-superficie-20261014.webp",
         "width": 1056,
-        "height": 1056
+        "height": 1056,
+        "crop": [
+          20,
+          20,
+          1016,
+          1016
+        ],
+        "surfaceCrop": true
       },
       "overview": {
         "src": "muestras/formipak-f570-superficie-20261014.webp",
         "width": 1056,
         "height": 1056,
+        "crop": [
+          20,
+          20,
+          1016,
+          1016
+        ],
+        "surfaceCrop": true,
         "srcset": "muestras/formipak-f570-superficie-20261014-640.webp 640w, muestras/formipak-f570-superficie-20261014.webp 1056w"
       },
-      "overviewNote": "Misma muestra oficial."
+      "overviewNote": "Misma muestra de origen; encuadre sin bordes."
     },
     {
       "id": "formipak-m554",
@@ -32411,7 +32497,7 @@
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
       "imageKind": "Muestra oficial Formipak · superficie completa",
-      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak. Encuadre revisado el 20/10/2026 para excluir los bordes del fondo.",
       "sourceLinks": [
         {
           "label": "Producto oficial · Pisopak",
@@ -32427,15 +32513,29 @@
       "image": {
         "src": "muestras/formipak-f935-superficie-20261014.webp",
         "width": 1056,
-        "height": 1056
+        "height": 1056,
+        "crop": [
+          20,
+          20,
+          1016,
+          1016
+        ],
+        "surfaceCrop": true
       },
       "overview": {
         "src": "muestras/formipak-f935-superficie-20261014.webp",
         "width": 1056,
         "height": 1056,
+        "crop": [
+          20,
+          20,
+          1016,
+          1016
+        ],
+        "surfaceCrop": true,
         "srcset": "muestras/formipak-f935-superficie-20261014-640.webp 640w, muestras/formipak-f935-superficie-20261014.webp 1056w"
       },
-      "overviewNote": "Misma muestra oficial."
+      "overviewNote": "Misma muestra de origen; encuadre sin bordes."
     },
     {
       "id": "formipak-f540",
@@ -32537,7 +32637,7 @@
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
       "imageKind": "Muestra oficial Formipak · superficie completa",
-      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak. Encuadre revisado el 20/10/2026 para excluir los bordes del fondo.",
       "sourceLinks": [
         {
           "label": "Producto oficial · Pisopak",
@@ -32553,15 +32653,29 @@
       "image": {
         "src": "muestras/formipak-f934-superficie-20261014.webp",
         "width": 1056,
-        "height": 1056
+        "height": 1056,
+        "crop": [
+          20,
+          20,
+          1016,
+          1016
+        ],
+        "surfaceCrop": true
       },
       "overview": {
         "src": "muestras/formipak-f934-superficie-20261014.webp",
         "width": 1056,
         "height": 1056,
+        "crop": [
+          20,
+          20,
+          1016,
+          1016
+        ],
+        "surfaceCrop": true,
         "srcset": "muestras/formipak-f934-superficie-20261014-640.webp 640w, muestras/formipak-f934-superficie-20261014.webp 1056w"
       },
-      "overviewNote": "Misma muestra oficial."
+      "overviewNote": "Misma muestra de origen; encuadre sin bordes."
     },
     {
       "id": "formipak-f932",
@@ -32579,7 +32693,7 @@
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
       "imageKind": "Muestra oficial Formipak · superficie completa",
-      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak. Encuadre revisado el 20/10/2026 para excluir los bordes del fondo.",
       "sourceLinks": [
         {
           "label": "Producto oficial · Pisopak",
@@ -32595,15 +32709,29 @@
       "image": {
         "src": "muestras/formipak-f932-superficie-20261014.webp",
         "width": 1056,
-        "height": 1056
+        "height": 1056,
+        "crop": [
+          20,
+          20,
+          1016,
+          1016
+        ],
+        "surfaceCrop": true
       },
       "overview": {
         "src": "muestras/formipak-f932-superficie-20261014.webp",
         "width": 1056,
         "height": 1056,
+        "crop": [
+          20,
+          20,
+          1016,
+          1016
+        ],
+        "surfaceCrop": true,
         "srcset": "muestras/formipak-f932-superficie-20261014-640.webp 640w, muestras/formipak-f932-superficie-20261014.webp 1056w"
       },
-      "overviewNote": "Misma muestra oficial."
+      "overviewNote": "Misma muestra de origen; encuadre sin bordes."
     },
     {
       "id": "formipak-f961",
@@ -32663,7 +32791,7 @@
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
       "imageKind": "Muestra oficial Formipak · superficie completa",
-      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak. Encuadre revisado el 20/10/2026 para excluir los bordes del fondo.",
       "sourceLinks": [
         {
           "label": "Producto oficial · Pisopak",
@@ -32679,15 +32807,29 @@
       "image": {
         "src": "muestras/formipak-f931-superficie-20261014.webp",
         "width": 1056,
-        "height": 1056
+        "height": 1056,
+        "crop": [
+          20,
+          20,
+          1016,
+          1016
+        ],
+        "surfaceCrop": true
       },
       "overview": {
         "src": "muestras/formipak-f931-superficie-20261014.webp",
         "width": 1056,
         "height": 1056,
+        "crop": [
+          20,
+          20,
+          1016,
+          1016
+        ],
+        "surfaceCrop": true,
         "srcset": "muestras/formipak-f931-superficie-20261014-640.webp 640w, muestras/formipak-f931-superficie-20261014.webp 1056w"
       },
-      "overviewNote": "Misma muestra oficial."
+      "overviewNote": "Misma muestra de origen; encuadre sin bordes."
     },
     {
       "id": "formipak-f515",
@@ -32873,7 +33015,7 @@
       "international": true,
       "availability": "Consultar diseños, acabados y existencias de la oferta en Venezuela.",
       "imageKind": "Muestra oficial Formipak · superficie completa",
-      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak.",
+      "imageNote": "Imagen de producto oficial de Pisopak, recortada a la superficie para cubrir la cuadrícula. Sin recreación IA ni ajuste de color. Color y escala orientativos; derechos de Formipak/Pisopak. Encuadre revisado el 20/10/2026 para excluir los bordes del fondo.",
       "sourceLinks": [
         {
           "label": "Producto oficial · Pisopak",
@@ -32889,15 +33031,29 @@
       "image": {
         "src": "muestras/formipak-f941-superficie-20261014.webp",
         "width": 1056,
-        "height": 1056
+        "height": 1056,
+        "crop": [
+          20,
+          20,
+          1016,
+          1016
+        ],
+        "surfaceCrop": true
       },
       "overview": {
         "src": "muestras/formipak-f941-superficie-20261014.webp",
         "width": 1056,
         "height": 1056,
+        "crop": [
+          20,
+          20,
+          1016,
+          1016
+        ],
+        "surfaceCrop": true,
         "srcset": "muestras/formipak-f941-superficie-20261014-640.webp 640w, muestras/formipak-f941-superficie-20261014.webp 1056w"
       },
-      "overviewNote": "Misma muestra oficial."
+      "overviewNote": "Misma muestra de origen; encuadre sin bordes."
     },
     {
       "id": "formipak-f650",
@@ -35454,7 +35610,7 @@
       "international": false,
       "availability": "Precio y existencias por confirmar",
       "imageKind": "Muestra documental por código de diseño",
-      "imageNote": "Muestra digital del diseño 2233 publicada por Stylam Industries. Coincidencia por código de diseño; no verifica la textura ni el brillo del acabado local. Sin recreación IA.",
+      "imageNote": "Muestra digital del diseño 2233 publicada por Stylam Industries. Coincidencia por código de diseño; no verifica la textura ni el brillo del acabado local. Sin recreación IA. Encuadre revisado el 20/10/2026 para excluir los bordes del fondo.",
       "sourceLinks": [
         {
           "label": "El Pardillo · catálogo venezolano (acceso directo pendiente)",
@@ -35469,7 +35625,13 @@
         "src": "muestras/stylam-2233-sd-20261016.webp",
         "width": 569,
         "height": 1000,
-        "surfaceCrop": true
+        "surfaceCrop": true,
+        "crop": [
+          6,
+          6,
+          557,
+          988
+        ]
       },
       "appId": null,
       "textureId": null,
@@ -35492,7 +35654,20 @@
             "stylam-productos"
           ]
         }
-      ]
+      ],
+      "overview": {
+        "src": "muestras/stylam-2233-sd-20261016.webp",
+        "width": 569,
+        "height": 1000,
+        "surfaceCrop": true,
+        "crop": [
+          6,
+          6,
+          557,
+          988
+        ]
+      },
+      "overviewNote": "Misma muestra de origen; encuadre sin bordes."
     },
     {
       "id": "stylam-2594-sd",
@@ -37264,6 +37439,651 @@
         "displayFilter": "sepia(0.17) saturate(1.08) brightness(0.98)"
       },
       "visualRevision": 2
+    },
+    {
+      "id": "inox-304-2b",
+      "name": "Acero inoxidable 304 2B",
+      "category": "metales",
+      "family": "Láminas lisas",
+      "brand": "",
+      "code": "",
+      "finish": "2B",
+      "description": "Lámina de acero inoxidable AISI 304 con acabado 2B. Superficie lisa, uniforme y ligeramente reflectante; acabado semibrillante según la publicación de ALL INOX ACEROS.",
+      "use": "Revestimientos, equipos y detalles metálicos según el acabado y el diseño.",
+      "care": "Confirmar muestra física, formato, especificaciones y existencias con el proveedor antes de elegir.",
+      "supplier": "ALL INOX ACEROS",
+      "supplierNames": [
+        "ALL INOX ACEROS"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "market": "Publicación comercial en Venezuela",
+      "international": false,
+      "availability": "Referencia publicada; existencias actuales y condiciones por confirmar.",
+      "textureId": null,
+      "appId": null,
+      "sourceLinks": [
+        {
+          "label": "Publicación del proveedor",
+          "url": "https://www.instagram.com/all.inoxaceros/p/DdZNvxMDi5-/"
+        }
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "all-inox-aceros",
+          "relationship": "proveedor",
+          "sourceIds": [
+            "all-inox-aceros-ig"
+          ],
+          "evidenceIds": [
+            "inox-304-2b"
+          ],
+          "evidenceStatuses": [
+            "publicacion_consultada"
+          ]
+        }
+      ],
+      "imageKind": "Referencia visual reconstruida con IA",
+      "imageNote": "Referencia visual generada con IA a partir de la descripción documentada del acabado 2B. No es una fotografía del proveedor ni del lote; brillo y tono se cotejan con muestra física.",
+      "imageProvenance": {
+        "method": "ai_visual_reference_from_verified_finish_description",
+        "sourceURL": "https://www.instagram.com/all.inoxaceros/p/DdZNvxMDi5-/",
+        "originalPreserved": true,
+        "generatedOn": "2026-10-20",
+        "tool": "image_gen integrado"
+      },
+      "image": {
+        "src": "muestras/inox-2b-all-inox-mariches-20261020.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      "sourcePublicationDate": "2026-09-17",
+      "sourceObservedAt": "2026-10-20"
+    },
+    {
+      "id": "inox-304-n1",
+      "name": "Acero inoxidable 304 N1",
+      "category": "metales",
+      "family": "Láminas lisas",
+      "brand": "",
+      "code": "",
+      "finish": "N1",
+      "description": "Lámina de acero inoxidable AISI 304 con acabado N1. Acero laminado en caliente, recocido y decapado. Acabado áspero, opaco y mate según la publicación de ALL INOX ACEROS.",
+      "use": "Revestimientos, equipos y detalles metálicos según el acabado y el diseño.",
+      "care": "Confirmar muestra física, formato, especificaciones y existencias con el proveedor antes de elegir.",
+      "supplier": "ALL INOX ACEROS",
+      "supplierNames": [
+        "ALL INOX ACEROS"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "market": "Publicación comercial en Venezuela",
+      "international": false,
+      "availability": "Referencia publicada; existencias actuales y condiciones por confirmar.",
+      "textureId": null,
+      "appId": null,
+      "sourceLinks": [
+        {
+          "label": "Publicación del proveedor",
+          "url": "https://www.instagram.com/all.inoxaceros/p/DdZNvxMDi5-/"
+        }
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "all-inox-aceros",
+          "relationship": "proveedor",
+          "sourceIds": [
+            "all-inox-aceros-ig"
+          ],
+          "evidenceIds": [
+            "inox-304-n1"
+          ],
+          "evidenceStatuses": [
+            "publicacion_consultada"
+          ]
+        }
+      ],
+      "imageKind": "Referencia visual reconstruida con IA",
+      "imageNote": "Reconstrucción orientativa con la herramienta integrada de IA a partir de la publicación del proveedor. Original conservado; no es fotografía del lote ni una muestra calibrada.",
+      "imageProvenance": {
+        "method": "ai_reconstruction_from_supplier_sample",
+        "sourceURL": "https://www.instagram.com/all.inoxaceros/p/DdZNvxMDi5-/",
+        "originalPreserved": true,
+        "generatedOn": "2026-10-20",
+        "tool": "image_gen integrado"
+      },
+      "image": {
+        "src": "muestras/inox-n1-all-inox-mariches-20261020.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      "sourcePublicationDate": "2026-09-17",
+      "sourceObservedAt": "2026-10-20"
+    },
+    {
+      "id": "enchapillado-kurupixa-mariches",
+      "name": "Enchapillado de Kurupixa",
+      "category": "tableros",
+      "family": "Compuestos y chapillados",
+      "brand": "",
+      "code": "",
+      "finish": "",
+      "description": "Tablero con núcleo de MDP o MDF, recubierto por ambas caras con chapilla de Kurupixa. Formato 2,44 × 1,22 m, confirmado por Santiago al cotejar la publicación. Variantes MDP de 15 y 18 mm y MDF de 12 y 18 mm. Una misma muestra de Kurupixa para todas las variantes.",
+      "use": "Mobiliario y revestimientos interiores según la ficha técnica y el producto seleccionado.",
+      "care": "Confirmar muestra física, formato, especificaciones y existencias con el proveedor antes de elegir.",
+      "supplier": "Maderas Mariches MM",
+      "supplierNames": [
+        "Maderas Mariches MM"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "market": "Publicación comercial en Venezuela",
+      "international": false,
+      "availability": "Producto publicado el 27/05/2024; vigencia de oferta y existencias actuales por confirmar.",
+      "textureId": null,
+      "appId": null,
+      "sourceLinks": [
+        {
+          "label": "Publicación del proveedor",
+          "url": "https://www.instagram.com/maderasmarichesmm/p/C7el0vhOfcb/"
+        },
+        {
+          "label": "Origen de la muestra · Wolfgang Vetters",
+          "url": "https://www.wood-veneer.eu/woods-and-veneers/curupixa.html"
+        }
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "maderas-mariches-mm",
+          "relationship": "proveedor",
+          "sourceIds": [
+            "maderas-mariches-mm-ig"
+          ],
+          "evidenceIds": [
+            "enchapillado-kurupixa-mariches"
+          ],
+          "evidenceStatuses": [
+            "publicacion_consultada",
+            "formato_confirmado_usuario"
+          ]
+        }
+      ],
+      "imageKind": "Fotografía de referencia de Kurupixa existente",
+      "imageNote": "Se reutiliza, por indicación de Santiago, la misma muestra de curupixá ya presente en el catálogo. Fotografía de Wolfgang Vetters; no es el lote ni el tablero enchapillado de Mariches. Derechos de imagen de su titular.",
+      "imageProvenance": {
+        "method": "reuse_existing_user_selected_curupixa",
+        "sourceURL": "https://www.wood-veneer.eu/woods-and-veneers/curupixa.html",
+        "selectedOn": "2026-10-15",
+        "originalPreserved": true
+      },
+      "sheetSizeMm": [
+        2440,
+        1220
+      ],
+      "image": {
+        "src": "muestras/chapa-curupixa-vetters-20261015.jpg",
+        "width": 600,
+        "height": 600
+      },
+      "specificationSource": "Publicación Mariches del 27/05/2024, consultada el 20/10/2026; formato 2,44 × 1,22 m confirmado por Santiago.",
+      "sourcePublicationDate": "2024-05-27",
+      "sourceObservedAt": "2026-10-20"
+    },
+    {
+      "id": "mdf-crudo-acanalado-mariches",
+      "name": "MDF crudo acanalado",
+      "category": "tableros",
+      "family": "MDF",
+      "brand": "",
+      "code": "",
+      "finish": "Crudo acanalado",
+      "description": "Lámina acanalada de MDF crudo para exhibición y revestimientos. Formato 2,44 × 1,22 m y espesor de 18 mm. Separación de ranuras de 3 pulgadas (76,2 mm), según la indicación de Santiago. Ancho, profundidad y perfil exacto del canal por confirmar.",
+      "use": "Mobiliario y revestimientos interiores según la ficha técnica y el producto seleccionado.",
+      "care": "Confirmar muestra física, formato, especificaciones y existencias con el proveedor antes de elegir.",
+      "supplier": "Maderas Mariches MM",
+      "supplierNames": [
+        "Maderas Mariches MM"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "market": "Publicación comercial en Venezuela",
+      "international": false,
+      "availability": "Referencia publicada; existencias actuales y condiciones por confirmar.",
+      "textureId": null,
+      "appId": null,
+      "sourceLinks": [
+        {
+          "label": "Publicación del proveedor",
+          "url": "https://www.instagram.com/maderasmarichesmm/p/DOn1cSlgiwk/"
+        }
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "maderas-mariches-mm",
+          "relationship": "proveedor",
+          "sourceIds": [
+            "maderas-mariches-mm-ig"
+          ],
+          "evidenceIds": [
+            "mdf-crudo-acanalado-mariches"
+          ],
+          "evidenceStatuses": [
+            "publicacion_consultada"
+          ]
+        }
+      ],
+      "imageKind": "Referencia visual reconstruida con IA",
+      "imageNote": "Muestra frontal reconstruida con IA desde la foto de MDF crudo del proveedor. Las ranuras representan la apariencia; no son geometría ni un mecanizado calibrado.",
+      "imageProvenance": {
+        "method": "ai_reconstruction_from_supplier_sample",
+        "sourceURL": "https://www.instagram.com/maderasmarichesmm/p/DOn1cSlgiwk/",
+        "originalPreserved": true,
+        "generatedOn": "2026-10-20",
+        "tool": "image_gen integrado"
+      },
+      "sheetSizeMm": [
+        2440,
+        1220
+      ],
+      "image": {
+        "src": "muestras/mdf-acanalado-all-inox-mariches-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "displayRotation": 90
+      },
+      "groovePitchMm": 76.2,
+      "groovePitchSource": "Santiago interpreta 3 pulgadas como separación; la publicación dice literalmente «grosor de canal de 3 pulgadas».",
+      "grooveWidthMm": null,
+      "grooveDepthMm": null,
+      "sourcePublicationDate": "2025-09-15",
+      "sourceObservedAt": "2026-10-20",
+      "sampleOrientation": "Ranuras verticales"
+    },
+    {
+      "id": "chapilla-precompuesta-mariches-black-noir",
+      "name": "Chapilla precompuesta Black Noir",
+      "category": "tableros",
+      "family": "Compuestos y chapillados",
+      "brand": "",
+      "code": "",
+      "finish": "",
+      "description": "Chapilla precompuesta de denominación comercial Black Noir, publicada por Maderas Mariches MM. Lámina fina para enchapar tableros, puertas y mobiliario. Formato 2,50 × 0,64 m; espesor anunciado de 0,05 cm (0,5 mm). El nombre del diseño no certifica una especie botánica.",
+      "use": "Mobiliario y revestimientos interiores según la ficha técnica y el producto seleccionado.",
+      "care": "Confirmar muestra física, formato, especificaciones y existencias con el proveedor antes de elegir.",
+      "supplier": "Maderas Mariches MM",
+      "supplierNames": [
+        "Maderas Mariches MM"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "market": "Publicación comercial en Venezuela",
+      "international": false,
+      "availability": "Referencia publicada; existencias actuales y condiciones por confirmar.",
+      "textureId": null,
+      "appId": null,
+      "sourceLinks": [
+        {
+          "label": "Publicación del proveedor",
+          "url": "https://www.instagram.com/maderasmarichesmm/p/DT2_ZAjEezB/?img_index=2"
+        }
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "maderas-mariches-mm",
+          "relationship": "proveedor",
+          "sourceIds": [
+            "maderas-mariches-mm-ig"
+          ],
+          "evidenceIds": [
+            "chapilla-precompuesta-mariches-black-noir"
+          ],
+          "evidenceStatuses": [
+            "publicacion_consultada"
+          ]
+        }
+      ],
+      "imageKind": "Referencia visual reconstruida con IA",
+      "imageNote": "Reconstrucción orientativa con la herramienta integrada de IA a partir de la publicación del proveedor. Original conservado; no es fotografía del lote ni una muestra calibrada.",
+      "imageProvenance": {
+        "method": "ai_reconstruction_from_supplier_sample",
+        "sourceURL": "https://www.instagram.com/maderasmarichesmm/p/DT2_ZAjEezB/?img_index=2",
+        "originalPreserved": true,
+        "generatedOn": "2026-10-20",
+        "tool": "image_gen integrado"
+      },
+      "sheetSizeMm": [
+        2500,
+        640
+      ],
+      "image": {
+        "src": "muestras/black-noir-all-inox-mariches-20261020.webp",
+        "width": 1024,
+        "height": 1536
+      },
+      "publishedThicknessMm": 0.5,
+      "sourcePublicationDate": "2026-01-23",
+      "sourceObservedAt": "2026-10-20",
+      "designName": "Black Noir"
+    },
+    {
+      "id": "chapilla-precompuesta-mariches-pino",
+      "name": "Chapilla precompuesta Pino",
+      "category": "tableros",
+      "family": "Compuestos y chapillados",
+      "brand": "",
+      "code": "",
+      "finish": "",
+      "description": "Chapilla precompuesta de denominación comercial Pino, publicada por Maderas Mariches MM. Lámina fina para enchapar tableros, puertas y mobiliario. Formato 2,50 × 0,64 m; espesor anunciado de 0,05 cm (0,5 mm). El nombre del diseño no certifica una especie botánica.",
+      "use": "Mobiliario y revestimientos interiores según la ficha técnica y el producto seleccionado.",
+      "care": "Confirmar muestra física, formato, especificaciones y existencias con el proveedor antes de elegir.",
+      "supplier": "Maderas Mariches MM",
+      "supplierNames": [
+        "Maderas Mariches MM"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "market": "Publicación comercial en Venezuela",
+      "international": false,
+      "availability": "Referencia publicada; existencias actuales y condiciones por confirmar.",
+      "textureId": null,
+      "appId": null,
+      "sourceLinks": [
+        {
+          "label": "Publicación del proveedor",
+          "url": "https://www.instagram.com/maderasmarichesmm/p/DT2_ZAjEezB/?img_index=3"
+        }
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "maderas-mariches-mm",
+          "relationship": "proveedor",
+          "sourceIds": [
+            "maderas-mariches-mm-ig"
+          ],
+          "evidenceIds": [
+            "chapilla-precompuesta-mariches-pino"
+          ],
+          "evidenceStatuses": [
+            "publicacion_consultada"
+          ]
+        }
+      ],
+      "imageKind": "Referencia visual reconstruida con IA",
+      "imageNote": "Reconstrucción orientativa con la herramienta integrada de IA a partir de la publicación del proveedor. Original conservado; no es fotografía del lote ni una muestra calibrada.",
+      "imageProvenance": {
+        "method": "ai_reconstruction_from_supplier_sample",
+        "sourceURL": "https://www.instagram.com/maderasmarichesmm/p/DT2_ZAjEezB/?img_index=3",
+        "originalPreserved": true,
+        "generatedOn": "2026-10-20",
+        "tool": "image_gen integrado"
+      },
+      "sheetSizeMm": [
+        2500,
+        640
+      ],
+      "image": {
+        "src": "muestras/pino-all-inox-mariches-20261020.webp",
+        "width": 1024,
+        "height": 1536
+      },
+      "publishedThicknessMm": 0.5,
+      "sourcePublicationDate": "2026-01-23",
+      "sourceObservedAt": "2026-10-20",
+      "designName": "Pino"
+    },
+    {
+      "id": "chapilla-precompuesta-mariches-teka",
+      "name": "Chapilla precompuesta Teka",
+      "category": "tableros",
+      "family": "Compuestos y chapillados",
+      "brand": "",
+      "code": "",
+      "finish": "",
+      "description": "Chapilla precompuesta de denominación comercial Teka, publicada por Maderas Mariches MM. Lámina fina para enchapar tableros, puertas y mobiliario. Formato 2,50 × 0,64 m; espesor anunciado de 0,05 cm (0,5 mm). El nombre del diseño no certifica una especie botánica.",
+      "use": "Mobiliario y revestimientos interiores según la ficha técnica y el producto seleccionado.",
+      "care": "Confirmar muestra física, formato, especificaciones y existencias con el proveedor antes de elegir.",
+      "supplier": "Maderas Mariches MM",
+      "supplierNames": [
+        "Maderas Mariches MM"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "market": "Publicación comercial en Venezuela",
+      "international": false,
+      "availability": "Referencia publicada; existencias actuales y condiciones por confirmar.",
+      "textureId": null,
+      "appId": null,
+      "sourceLinks": [
+        {
+          "label": "Publicación del proveedor",
+          "url": "https://www.instagram.com/maderasmarichesmm/p/DT2_ZAjEezB/?img_index=4"
+        }
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "maderas-mariches-mm",
+          "relationship": "proveedor",
+          "sourceIds": [
+            "maderas-mariches-mm-ig"
+          ],
+          "evidenceIds": [
+            "chapilla-precompuesta-mariches-teka"
+          ],
+          "evidenceStatuses": [
+            "publicacion_consultada"
+          ]
+        }
+      ],
+      "imageKind": "Referencia visual reconstruida con IA",
+      "imageNote": "Reconstrucción orientativa con la herramienta integrada de IA a partir de la publicación del proveedor. Original conservado; no es fotografía del lote ni una muestra calibrada.",
+      "imageProvenance": {
+        "method": "ai_reconstruction_from_supplier_sample",
+        "sourceURL": "https://www.instagram.com/maderasmarichesmm/p/DT2_ZAjEezB/?img_index=4",
+        "originalPreserved": true,
+        "generatedOn": "2026-10-20",
+        "tool": "image_gen integrado"
+      },
+      "sheetSizeMm": [
+        2500,
+        640
+      ],
+      "image": {
+        "src": "muestras/teka-all-inox-mariches-20261020.webp",
+        "width": 1024,
+        "height": 1536
+      },
+      "publishedThicknessMm": 0.5,
+      "sourcePublicationDate": "2026-01-23",
+      "sourceObservedAt": "2026-10-20",
+      "designName": "Teka"
+    },
+    {
+      "id": "chapilla-precompuesta-mariches-nogal-oscuro",
+      "name": "Chapilla precompuesta Nogal Oscuro",
+      "category": "tableros",
+      "family": "Compuestos y chapillados",
+      "brand": "",
+      "code": "",
+      "finish": "",
+      "description": "Chapilla precompuesta de denominación comercial Nogal Oscuro, publicada por Maderas Mariches MM. Lámina fina para enchapar tableros, puertas y mobiliario. Formato 2,50 × 0,64 m; espesor anunciado de 0,05 cm (0,5 mm). El nombre del diseño no certifica una especie botánica.",
+      "use": "Mobiliario y revestimientos interiores según la ficha técnica y el producto seleccionado.",
+      "care": "Confirmar muestra física, formato, especificaciones y existencias con el proveedor antes de elegir.",
+      "supplier": "Maderas Mariches MM",
+      "supplierNames": [
+        "Maderas Mariches MM"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "market": "Publicación comercial en Venezuela",
+      "international": false,
+      "availability": "Referencia publicada; existencias actuales y condiciones por confirmar.",
+      "textureId": null,
+      "appId": null,
+      "sourceLinks": [
+        {
+          "label": "Publicación del proveedor",
+          "url": "https://www.instagram.com/maderasmarichesmm/p/DT2_ZAjEezB/?img_index=5"
+        }
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "maderas-mariches-mm",
+          "relationship": "proveedor",
+          "sourceIds": [
+            "maderas-mariches-mm-ig"
+          ],
+          "evidenceIds": [
+            "chapilla-precompuesta-mariches-nogal-oscuro"
+          ],
+          "evidenceStatuses": [
+            "publicacion_consultada"
+          ]
+        }
+      ],
+      "imageKind": "Referencia visual reconstruida con IA",
+      "imageNote": "Reconstrucción orientativa con la herramienta integrada de IA a partir de la publicación del proveedor. Original conservado; no es fotografía del lote ni una muestra calibrada.",
+      "imageProvenance": {
+        "method": "ai_reconstruction_from_supplier_sample",
+        "sourceURL": "https://www.instagram.com/maderasmarichesmm/p/DT2_ZAjEezB/?img_index=5",
+        "originalPreserved": true,
+        "generatedOn": "2026-10-20",
+        "tool": "image_gen integrado"
+      },
+      "sheetSizeMm": [
+        2500,
+        640
+      ],
+      "image": {
+        "src": "muestras/nogal-oscuro-all-inox-mariches-20261020.webp",
+        "width": 1024,
+        "height": 1536
+      },
+      "publishedThicknessMm": 0.5,
+      "sourcePublicationDate": "2026-01-23",
+      "sourceObservedAt": "2026-10-20",
+      "designName": "Nogal Oscuro"
+    },
+    {
+      "id": "chapilla-precompuesta-mariches-wengue",
+      "name": "Chapilla precompuesta Wengue",
+      "category": "tableros",
+      "family": "Compuestos y chapillados",
+      "brand": "",
+      "code": "",
+      "finish": "",
+      "description": "Chapilla precompuesta de denominación comercial Wengue, publicada por Maderas Mariches MM. Lámina fina para enchapar tableros, puertas y mobiliario. Formato 2,50 × 0,64 m; espesor anunciado de 0,05 cm (0,5 mm). El nombre del diseño no certifica una especie botánica.",
+      "use": "Mobiliario y revestimientos interiores según la ficha técnica y el producto seleccionado.",
+      "care": "Confirmar muestra física, formato, especificaciones y existencias con el proveedor antes de elegir.",
+      "supplier": "Maderas Mariches MM",
+      "supplierNames": [
+        "Maderas Mariches MM"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "market": "Publicación comercial en Venezuela",
+      "international": false,
+      "availability": "Referencia publicada; existencias actuales y condiciones por confirmar.",
+      "textureId": null,
+      "appId": null,
+      "sourceLinks": [
+        {
+          "label": "Publicación del proveedor",
+          "url": "https://www.instagram.com/maderasmarichesmm/p/DT2_ZAjEezB/?img_index=6"
+        }
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "maderas-mariches-mm",
+          "relationship": "proveedor",
+          "sourceIds": [
+            "maderas-mariches-mm-ig"
+          ],
+          "evidenceIds": [
+            "chapilla-precompuesta-mariches-wengue"
+          ],
+          "evidenceStatuses": [
+            "publicacion_consultada"
+          ]
+        }
+      ],
+      "imageKind": "Referencia visual reconstruida con IA",
+      "imageNote": "Reconstrucción orientativa con la herramienta integrada de IA a partir de la publicación del proveedor. Original conservado; no es fotografía del lote ni una muestra calibrada.",
+      "imageProvenance": {
+        "method": "ai_reconstruction_from_supplier_sample",
+        "sourceURL": "https://www.instagram.com/maderasmarichesmm/p/DT2_ZAjEezB/?img_index=6",
+        "originalPreserved": true,
+        "generatedOn": "2026-10-20",
+        "tool": "image_gen integrado"
+      },
+      "sheetSizeMm": [
+        2500,
+        640
+      ],
+      "image": {
+        "src": "muestras/wengue-all-inox-mariches-20261020.webp",
+        "width": 1024,
+        "height": 1536
+      },
+      "publishedThicknessMm": 0.5,
+      "sourcePublicationDate": "2026-01-23",
+      "sourceObservedAt": "2026-10-20",
+      "designName": "Wengue"
+    },
+    {
+      "id": "chapilla-precompuesta-mariches-cerezo",
+      "name": "Chapilla precompuesta Cerezo",
+      "category": "tableros",
+      "family": "Compuestos y chapillados",
+      "brand": "",
+      "code": "",
+      "finish": "",
+      "description": "Chapilla precompuesta de denominación comercial Cerezo, publicada por Maderas Mariches MM. Lámina fina para enchapar tableros, puertas y mobiliario. Formato 2,50 × 0,64 m; espesor anunciado de 0,05 cm (0,5 mm). El nombre del diseño no certifica una especie botánica.",
+      "use": "Mobiliario y revestimientos interiores según la ficha técnica y el producto seleccionado.",
+      "care": "Confirmar muestra física, formato, especificaciones y existencias con el proveedor antes de elegir.",
+      "supplier": "Maderas Mariches MM",
+      "supplierNames": [
+        "Maderas Mariches MM"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "market": "Publicación comercial en Venezuela",
+      "international": false,
+      "availability": "Referencia publicada; existencias actuales y condiciones por confirmar.",
+      "textureId": null,
+      "appId": null,
+      "sourceLinks": [
+        {
+          "label": "Publicación del proveedor",
+          "url": "https://www.instagram.com/maderasmarichesmm/p/DT2_ZAjEezB/?img_index=7"
+        }
+      ],
+      "catalogueSourceRefs": [
+        {
+          "entityId": "maderas-mariches-mm",
+          "relationship": "proveedor",
+          "sourceIds": [
+            "maderas-mariches-mm-ig"
+          ],
+          "evidenceIds": [
+            "chapilla-precompuesta-mariches-cerezo"
+          ],
+          "evidenceStatuses": [
+            "publicacion_consultada"
+          ]
+        }
+      ],
+      "imageKind": "Referencia visual reconstruida con IA",
+      "imageNote": "Reconstrucción orientativa con la herramienta integrada de IA a partir de la publicación del proveedor. Original conservado; no es fotografía del lote ni una muestra calibrada.",
+      "imageProvenance": {
+        "method": "ai_reconstruction_from_supplier_sample",
+        "sourceURL": "https://www.instagram.com/maderasmarichesmm/p/DT2_ZAjEezB/?img_index=7",
+        "originalPreserved": true,
+        "generatedOn": "2026-10-20",
+        "tool": "image_gen integrado"
+      },
+      "sheetSizeMm": [
+        2500,
+        640
+      ],
+      "image": {
+        "src": "muestras/cerezo-all-inox-mariches-20261020.webp",
+        "width": 1024,
+        "height": 1536
+      },
+      "publishedThicknessMm": 0.5,
+      "sourcePublicationDate": "2026-01-23",
+      "sourceObservedAt": "2026-10-20",
+      "designName": "Cerezo"
     }
   ]
 }

@@ -1,1 +1,33 @@
-import{sampleGeometry as R}from"./muestras.js?v=20261015-conciliacion";function T(t,c){const n=document.createElement("a"),r=URL.createObjectURL(t);n.href=r,n.download=c,n.click(),setTimeout(()=>URL.revokeObjectURL(r),3e4)}async function x(t){if(!t.image)return null;const c=t.overview||t.image,n=new Image;return n.src=c.src,await n.decode(),n}function S(t,c,n,r,f,m,a){const i=n.overview||n.image,l=R(i),h=i.display==="product",o=h?Math.min(m/l.width,a/l.height):Math.max(m/l.width,a/l.height),e=l.width*o,p=l.height*o;t.save(),t.filter=i.displayFilter||"none",t.beginPath(),t.rect(r,f,m,a),t.clip(),h&&(t.fillStyle="#f3f3f1",t.fillRect(r,f,m,a)),t.translate(r+(m-e)/2,f+(a-p)/2),t.scale(o,o),l.rotation&&(t.translate(l.h,0),t.rotate(Math.PI/2)),t.drawImage(c,l.x,l.y,l.w,l.h,0,0,l.w,l.h),t.restore()}function w(t,c,n,r,f,m,a=4){let i="",l=0;const h=c.split(/\s+/);for(let o=0;o<h.length;o++){const e=i+(i?" ":"")+h[o];if(t.measureText(e).width>f&&i){if(t.fillText(i,n,r),r+=m,l++,i=h[o],l===a-1){let p=[i,...h.slice(o+1)].join(" ");for(;t.measureText(p+"\u2026").width>f&&p.length;)p=p.slice(0,-1);t.fillText(p+"\u2026",n,r);return}}else i=e}i&&t.fillText(i,n,r)}export async function exportImage(t,c,n){await document.fonts.ready;const r=t.filter(s=>/CC BY/.test(s.imageNote||"")),f=Math.max(2,Math.min(6,Math.ceil(Math.sqrt(t.length)))),m=1440,a=m/f,i=a+100,l=165,h=r.length?165:100,o=document.createElement("canvas");o.width=m,o.height=l+Math.ceil(t.length/f)*i+h;const e=o.getContext("2d");e.fillStyle="#000",e.fillRect(0,0,o.width,o.height),e.fillStyle="#F0E6D6",e.font="700 27px Poppins",e.fillText("prototipo ago",35,49),e.font="38px Roboto",e.fillText("Paleta de materiales",35,104),e.font="18px Roboto",e.fillStyle="#aaa",e.fillText(c.trim()||"Opciones para mi proyecto",35,140);const p=await Promise.all(t.map(x));t.forEach((s,u)=>{const g=u%f*a,d=l+Math.floor(u/f)*i,y=p[u];e.fillStyle="#30251b",e.fillRect(g,d,a,a),y?S(e,y,s,g,d,a,a):(e.font="28px Roboto",e.fillStyle="#eee",w(e,s.name,g+22,d+a/2,a-44,34),e.font="14px Roboto",e.fillText("Gu\xEDa de acabado \xB7 sin fotograf\xEDa",g+22,d+a-30)),e.fillStyle="#F0E6D6",e.font="18px Roboto",w(e,u+1+". "+s.name,g+15,d+a+27,a-30,22,2),e.fillStyle="#aaa",e.font="12px Roboto",w(e,[s.brand,s.code,s.finish].filter(Boolean).join(" \xB7 "),g+15,d+a+69,a-30,16,2)}),r.length&&(e.fillStyle="#aaa",e.font="13px Roboto",w(e,r.map(s=>s.name+": "+s.imageNote).join(" "),35,o.height-125,m-70,18,2),e.fillText("Licencia de la muestra de Puy: creativecommons.org/licenses/by-sa/3.0/",35,o.height-82)),e.fillStyle="#aaa",e.font="17px Roboto",e.fillText("prototipoago.com/materiales/ \xB7 El tono y las existencias se confirman con una muestra.",35,o.height-55),e.font="13px Roboto",e.fillText("Compartir la selecci\xF3n completa: usa \xABCopiar enlace\xBB en tu paleta.",35,o.height-27);const b=await new Promise(s=>o.toBlob(s,"image/png"));if(!b)throw Error("No pudimos crear la imagen. Prueba con una paleta m\xE1s peque\xF1a.");T(b,"AGO - Paleta de materiales.png")}
+import {sampleGeometry} from './muestras.js?v=20261020-catalogo-conjunto-v1';
+function download(blob,name){const a=document.createElement('a'),url=URL.createObjectURL(blob);a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),30000);}
+async function loadImage(e){if(!e.image)return null;const sample=e.overview||e.image,img=new Image();img.src=sample.src;await img.decode();return img;}
+function drawSample(ctx,img,e,x,y,w,h){
+ const sample=e.overview||e.image,g=sampleGeometry(sample),contain=sample.display==='product';
+ const scale=contain?Math.min(w/g.width,h/g.height):Math.max(w/g.width,h/g.height),iw=g.width*scale,ih=g.height*scale;
+ ctx.save();ctx.filter=sample.displayFilter||'none';ctx.beginPath();ctx.rect(x,y,w,h);ctx.clip();if(contain){ctx.fillStyle='#f3f3f1';ctx.fillRect(x,y,w,h);}ctx.translate(x+(w-iw)/2,y+(h-ih)/2);ctx.scale(scale,scale);if(g.rotation){ctx.translate(g.h,0);ctx.rotate(Math.PI/2);}ctx.drawImage(img,g.x,g.y,g.w,g.h,0,0,g.w,g.h);ctx.restore();
+}
+function wrap(ctx,text,x,y,width,lineHeight,maxLines=4){
+  let line='',lines=0;const words=text.split(/\s+/);
+  for(let i=0;i<words.length;i++){const next=line+(line?' ':'')+words[i];if(ctx.measureText(next).width>width&&line){ctx.fillText(line,x,y);y+=lineHeight;lines++;line=words[i];if(lines===maxLines-1){let rest=[line,...words.slice(i+1)].join(' ');while(ctx.measureText(rest+'…').width>width&&rest.length)rest=rest.slice(0,-1);ctx.fillText(rest+'…',x,y);return;}}else line=next;}
+  if(line)ctx.fillText(line,x,y);
+}
+export async function exportImage(records,project,url){
+  await document.fonts.ready;
+  const credits=records.filter(e=>/CC BY/.test(e.imageNote||''));
+  const cols=Math.max(2,Math.min(6,Math.ceil(Math.sqrt(records.length)))),width=1440,tile=width/cols,row=tile+100,top=165,bottom=credits.length?165:100;
+  const canvas=document.createElement('canvas');canvas.width=width;canvas.height=top+Math.ceil(records.length/cols)*row+bottom;
+  const ctx=canvas.getContext('2d');ctx.fillStyle='#000';ctx.fillRect(0,0,canvas.width,canvas.height);
+  ctx.fillStyle='#F0E6D6';ctx.font='700 27px Poppins';ctx.fillText('prototipo ago',35,49);ctx.font='38px Roboto';ctx.fillText('Paleta de materiales',35,104);ctx.font='18px Roboto';ctx.fillStyle='#aaa';ctx.fillText(project.trim()||'Opciones para mi proyecto',35,140);
+  const images=await Promise.all(records.map(loadImage));
+  records.forEach((e,i)=>{const x=i%cols*tile,y=top+Math.floor(i/cols)*row,img=images[i];
+    ctx.fillStyle='#30251b';ctx.fillRect(x,y,tile,tile);
+    if(img)drawSample(ctx,img,e,x,y,tile,tile);
+    else{ctx.font='28px Roboto';ctx.fillStyle='#eee';wrap(ctx,e.name,x+22,y+tile/2,tile-44,34);ctx.font='14px Roboto';ctx.fillText('Guía de acabado · sin fotografía',x+22,y+tile-30);}
+    ctx.fillStyle='#F0E6D6';ctx.font='18px Roboto';wrap(ctx,(i+1)+'. '+e.name,x+15,y+tile+27,tile-30,22,2);ctx.fillStyle='#aaa';ctx.font='12px Roboto';wrap(ctx,[e.brand,e.code,e.finish].filter(Boolean).join(' · '),x+15,y+tile+69,tile-30,16,2);
+  });
+  if(credits.length){ctx.fillStyle='#aaa';ctx.font='13px Roboto';wrap(ctx,credits.map(e=>e.name+': '+e.imageNote).join(' '),35,canvas.height-125,width-70,18,2);ctx.fillText('Licencia de la muestra de Puy: creativecommons.org/licenses/by-sa/3.0/',35,canvas.height-82);}
+  ctx.fillStyle='#aaa';ctx.font='17px Roboto';ctx.fillText('prototipoago.com/materiales/ · El tono y las existencias se confirman con una muestra.',35,canvas.height-55);
+  ctx.font='13px Roboto';ctx.fillText('Compartir la selección completa: usa «Copiar enlace» en tu paleta.',35,canvas.height-27);
+  const blob=await new Promise(resolve=>canvas.toBlob(resolve,'image/png'));if(!blob)throw Error('No pudimos crear la imagen. Prueba con una paleta más pequeña.');
+  download(blob,'AGO - Paleta de materiales.png');
+}

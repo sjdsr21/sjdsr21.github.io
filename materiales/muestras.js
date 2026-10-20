@@ -1,1 +1,21 @@
-export function sampleGeometry(i){const[e,h,r,o]=i.crop||[0,0,i.width,i.height],t=i.displayRotation===90?90:0;return{x:e,y:h,w:r,h:o,rotation:t,width:t?o:r,height:t?r:o,transform:t?`translate(${o} 0) rotate(90) translate(${-e} ${-h})`:`translate(${-e} ${-h})`}}function c(i){const e=i.querySelector("img[data-cover-sample]");if(!e)return;const h=JSON.parse(e.dataset.coverSample),r=sampleGeometry(h),o=i.getBoundingClientRect();if(!o.width||!o.height)return;const t=Math.max(o.width/r.width,o.height/r.height),n=(o.width-r.width*t)/2,a=(o.height-r.height*t)/2;e.style.width=h.width+"px",e.style.height=h.height+"px",e.style.transform=r.rotation?`matrix(0,${t},${-t},0,${n+(r.h+r.y)*t},${a-r.x*t})`:`matrix(${t},0,0,${t},${n-r.x*t},${a-r.y*t})`}const s=new ResizeObserver(i=>i.forEach(e=>c(e.target)));export function observeSampleCovers(i=document){s.disconnect(),i.querySelectorAll(".is-cover-sample").forEach(e=>{c(e),s.observe(e)})}
+// Display geometry only. Original image pixels and source records are preserved.
+export function sampleGeometry(sample){
+ const [x,y,w,h]=sample.crop||[0,0,sample.width,sample.height],rotation=sample.displayRotation===90?90:0;
+ return {x,y,w,h,rotation,width:rotation?h:w,height:rotation?w:h,transform:rotation?`translate(${h} 0) rotate(90) translate(${-x} ${-y})`:`translate(${-x} ${-y})`};
+}
+// Fill media boxes in CSS pixels, avoiding SVG viewport differences between browsers.
+function fillCover(host){
+ const img=host.querySelector('img[data-cover-sample]');if(!img)return;
+ const s=JSON.parse(img.dataset.coverSample),g=sampleGeometry(s),box=host.getBoundingClientRect();
+ if(!box.width||!box.height)return;
+ // Overdraw one CSS pixel at each edge before clipping. Rotated rasters ending
+ // on fractional device pixels otherwise blend with the dark host background.
+ const bleed=1,k=Math.max((box.width+2*bleed)/g.width,(box.height+2*bleed)/g.height),cx=(box.width-g.width*k)/2,cy=(box.height-g.height*k)/2;
+ img.style.width=s.width+'px';img.style.height=s.height+'px';
+ img.style.transform=g.rotation?`matrix(0,${k},${-k},0,${cx+(g.h+g.y)*k},${cy-g.x*k})`:`matrix(${k},0,0,${k},${cx-g.x*k},${cy-g.y*k})`;
+}
+const coverObserver=new ResizeObserver(entries=>entries.forEach(e=>fillCover(e.target)));
+export function observeSampleCovers(root=document){
+ coverObserver.disconnect();
+ root.querySelectorAll('.is-cover-sample').forEach(host=>{fillCover(host);coverObserver.observe(host);});
+}
