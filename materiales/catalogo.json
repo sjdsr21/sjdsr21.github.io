@@ -860,7 +860,7 @@
       "pattern": "Sólidos",
       "brand": "Masisa",
       "code": "",
-      "finish": "",
+      "finish": "Natural Matt · muestra oficial con relieve direccional",
       "description": "Diseño decorativo sobre un tablero. El color se elige junto con el soporte y acabado.",
       "use": "Cuerpos y frentes de mobiliario, según el tablero seleccionado.",
       "care": "Confirmamos soporte, acabado y existencias antes de cerrar la elección.",
@@ -868,7 +868,7 @@
       "international": false,
       "availability": "Consultar diseño y base con distribuidor",
       "imageKind": "Muestra del fabricante",
-      "imageNote": "Muestra publicada por Masisa. El color en pantalla es orientativo.",
+      "imageNote": "Muestra oficial de Masisa Venezuela identificada como Negro Natural Matt; color negro con relieve direccional, presentado con la veta vertical. La marca también ofrece otros acabados de Negro: confirmar el acabado y soporte del producto al comprar.",
       "sourceLinks": [
         {
           "label": "Referencia del fabricante",
@@ -881,9 +881,11 @@
       "image": {
         "src": "muestras/masisa-ve-05.webp",
         "width": 1000,
-        "height": 667
+        "height": 667,
+        "displayRotation": 90
       },
-      "supplier": ""
+      "supplier": "",
+      "sampleRevision": "superficies-20261020"
     },
     {
       "id": "masisa-ve-06",
@@ -1349,8 +1351,8 @@
       "market": "Página Venezuela",
       "international": false,
       "availability": "Consultar diseño y base con distribuidor",
-      "imageKind": "Muestra del fabricante, editada con IA",
-      "imageNote": "Muestra publicada por Masisa, con el distintivo gráfico retirado mediante IA. El color en pantalla es orientativo.",
+      "imageKind": "Referencia visual restaurada con IA",
+      "imageNote": "Muestra reconstruida con IA a partir de la referencia del catálogo para mejorar definición y uniformar la iluminación; original y procedencia conservados. Referencia visual aproximada, no medición colorimétrica ni reproducción certificada del lote.",
       "sourceLinks": [
         {
           "label": "Referencia del fabricante",
@@ -1361,12 +1363,19 @@
       "appId": null,
       "sheetSizeMm": null,
       "image": {
+        "src": "muestras/masisa-ve-19-restaurada-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/masisa-ve-19-restaurada-20261020-640.webp 640w, muestras/masisa-ve-19-restaurada-20261020.webp 1254w"
+      },
+      "supplier": "",
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
         "src": "muestras/masisa-ve-19-limpia26.webp",
         "width": 1254,
         "height": 1254,
         "srcset": "muestras/masisa-ve-19-limpia26-640.webp 640w, muestras/masisa-ve-19-limpia26.webp 1254w"
-      },
-      "supplier": ""
+      }
     },
     {
       "id": "masisa-ve-20",
@@ -2669,8 +2678,8 @@
       "market": "Venezuela · Galería oficial MaxPanel",
       "international": false,
       "availability": "Confirmar existencias y combinación de base con distribuidor",
-      "imageKind": "Muestra del fabricante",
-      "imageNote": "Imagen publicada en la galería oficial de MaxPanel. El color en pantalla es orientativo; el soporte, formato y acabado se eligen con el producto real.",
+      "imageKind": "Referencia visual restaurada con IA",
+      "imageNote": "Muestra reconstruida con IA a partir de la referencia del catálogo para mejorar definición y uniformar la iluminación; original y procedencia conservados. Referencia visual aproximada, no medición colorimétrica ni reproducción certificada del lote.",
       "sourceLinks": [
         {
           "label": "Galería oficial MaxPanel",
@@ -2689,12 +2698,19 @@
       "appId": null,
       "sheetSizeMm": null,
       "image": {
+        "src": "muestras/maxpanel-lino-blanco-restaurada-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/maxpanel-lino-blanco-restaurada-20261020-640.webp 640w, muestras/maxpanel-lino-blanco-restaurada-20261020.webp 1254w"
+      },
+      "supplier": "",
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
         "src": "muestras/maxpanel-lino-blanco-oficial26.webp",
         "srcset": "muestras/maxpanel-lino-blanco-oficial26-640.webp 296w, muestras/maxpanel-lino-blanco-oficial26.webp 1087w",
         "width": 1087,
         "height": 2354
-      },
-      "supplier": ""
+      }
     },
     {
       "id": "maxpanel-lino-crudo",
@@ -2711,8 +2727,8 @@
       "market": "Venezuela · Galería oficial MaxPanel",
       "international": false,
       "availability": "Confirmar existencias y combinación de base con distribuidor",
-      "imageKind": "Muestra ajustada con IA",
-      "imageNote": "Referencia visual ajustada con IA a partir de la imagen oficial de MaxPanel: iluminación uniforme y reducción de reflejos y franjas, conservando el aspecto del lino. Tono, trama y escala aproximados; cotejar con la muestra física. El original del fabricante permanece enlazado.",
+      "imageKind": "Referencia visual restaurada con IA",
+      "imageNote": "Muestra reconstruida con IA a partir de la referencia del catálogo para mejorar definición y uniformar la iluminación; original y procedencia conservados. Referencia visual aproximada, no medición colorimétrica ni reproducción certificada del lote.",
       "sourceLinks": [
         {
           "label": "Galería oficial MaxPanel",
@@ -2731,12 +2747,19 @@
       "appId": null,
       "sheetSizeMm": null,
       "image": {
+        "src": "muestras/maxpanel-lino-crudo-restaurada-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/maxpanel-lino-crudo-restaurada-20261020-640.webp 640w, muestras/maxpanel-lino-crudo-restaurada-20261020.webp 1254w"
+      },
+      "supplier": "",
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
         "src": "muestras/maxpanel-lino-crudo-ajustado-20261013.webp",
         "srcset": "muestras/maxpanel-lino-crudo-ajustado-20261013-640.webp 640w, muestras/maxpanel-lino-crudo-ajustado-20261013.webp 1254w",
         "width": 1254,
         "height": 1254
-      },
-      "supplier": ""
+      }
     },
     {
       "id": "maxpanel-aluminio-brushed",
@@ -3707,8 +3730,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageKind": "Color digital uniforme de referencia",
+      "imageNote": "Muestra plana solicitada por Santiago, sin textura fotográfica, manchas ni cambios de iluminación. Tono representativo obtenido de la zona central de la referencia publicada; fuente original conservada. Color orientativo en pantalla; confirmar con muestra física.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -3722,6 +3745,21 @@
       "appId": null,
       "textureId": null,
       "image": {
+        "src": "muestras/virgo-1006-smt-uniforme-20261020.svg",
+        "width": 1024,
+        "height": 1024
+      },
+      "supplierNames": [
+        "ArquiStore"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "aliases": [
+        "Laminado Virgo Negro 1006 Smt - Formica Super Mate",
+        "1006"
+      ],
+      "codeAliases": [],
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
         "src": "muestras/virgo-1006-smt-fuente-20261015-bdad183187.webp",
         "width": 500,
         "height": 500,
@@ -3733,15 +3771,7 @@
         ],
         "surfaceCrop": true
       },
-      "supplierNames": [
-        "ArquiStore"
-      ],
-      "supplierAssociationStatus": "oferta_publicada",
-      "aliases": [
-        "Laminado Virgo Negro 1006 Smt - Formica Super Mate",
-        "1006"
-      ],
-      "codeAliases": []
+      "sampleColor": "#000000"
     },
     {
       "id": "virgo-1006-tl",
@@ -5123,8 +5153,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageKind": "Color digital uniforme de referencia",
+      "imageNote": "Muestra plana solicitada por Santiago, sin textura fotográfica, manchas ni cambios de iluminación. Tono representativo obtenido de la zona central de la referencia publicada; fuente original conservada. Color orientativo en pantalla; confirmar con muestra física.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -5138,6 +5168,21 @@
       "appId": null,
       "textureId": null,
       "image": {
+        "src": "muestras/virgo-1931-smt-uniforme-20261020.svg",
+        "width": 1024,
+        "height": 1024
+      },
+      "supplierNames": [
+        "ArquiStore"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "aliases": [
+        "Hpl Lamina Decorativa Virgo Roka Super Mate 1931 Smt",
+        "1931"
+      ],
+      "codeAliases": [],
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
         "src": "muestras/virgo-1931-smt-fuente-20261015-e61dda983d.webp",
         "width": 500,
         "height": 500,
@@ -5149,15 +5194,7 @@
         ],
         "surfaceCrop": true
       },
-      "supplierNames": [
-        "ArquiStore"
-      ],
-      "supplierAssociationStatus": "oferta_publicada",
-      "aliases": [
-        "Hpl Lamina Decorativa Virgo Roka Super Mate 1931 Smt",
-        "1931"
-      ],
-      "codeAliases": []
+      "sampleColor": "#cdc9c3"
     },
     {
       "id": "virgo-1934-gloss",
@@ -5226,8 +5263,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageKind": "Color digital uniforme de referencia",
+      "imageNote": "Muestra plana solicitada por Santiago, sin textura fotográfica, manchas ni cambios de iluminación. Tono representativo obtenido de la zona central de la referencia publicada; fuente original conservada. Color orientativo en pantalla; confirmar con muestra física.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -5245,16 +5282,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1934-smt-fuente-20261015-c5c82a1ce0.webp",
-        "width": 388,
-        "height": 500,
-        "crop": [
-          32,
-          40,
-          324,
-          420
-        ],
-        "surfaceCrop": true
+        "src": "muestras/virgo-1934-smt-uniforme-20261020.svg",
+        "width": 1024,
+        "height": 1024
       },
       "supplierNames": [
         "ArquiStore",
@@ -5266,7 +5296,21 @@
         "1934",
         "Laminado Virgo Skin 1934 Smt - Formica Super Mate"
       ],
-      "codeAliases": []
+      "codeAliases": [],
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
+        "src": "muestras/virgo-1934-smt-fuente-20261015-c5c82a1ce0.webp",
+        "width": 388,
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          324,
+          420
+        ],
+        "surfaceCrop": true
+      },
+      "sampleColor": "#dbd1bd"
     },
     {
       "id": "virgo-1935-gloss",
@@ -5467,8 +5511,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageKind": "Color digital uniforme de referencia",
+      "imageNote": "Muestra plana solicitada por Santiago, sin textura fotográfica, manchas ni cambios de iluminación. Tono representativo obtenido de la zona central de la referencia publicada; fuente original conservada. Color orientativo en pantalla; confirmar con muestra física.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -5486,16 +5530,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-1935-smt-fuente-20261015-f3a187144c.webp",
-        "width": 383,
-        "height": 500,
-        "crop": [
-          31,
-          40,
-          321,
-          420
-        ],
-        "surfaceCrop": true
+        "src": "muestras/virgo-1935-smt-uniforme-20261020.svg",
+        "width": 1024,
+        "height": 1024
       },
       "supplierNames": [
         "ArquiStore",
@@ -5507,7 +5544,21 @@
         "1935",
         "Laminado Virgo Niebla 1935 Smt - Formica Super Mate Gris Oscuro"
       ],
-      "codeAliases": []
+      "codeAliases": [],
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
+        "src": "muestras/virgo-1935-smt-fuente-20261015-f3a187144c.webp",
+        "width": 383,
+        "height": 500,
+        "crop": [
+          31,
+          40,
+          321,
+          420
+        ],
+        "surfaceCrop": true
+      },
+      "sampleColor": "#68655f"
     },
     {
       "id": "virgo-1935-tn",
@@ -5673,8 +5724,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageKind": "Color digital uniforme de referencia",
+      "imageNote": "Muestra plana solicitada por Santiago, sin textura fotográfica, manchas ni cambios de iluminación. Tono representativo obtenido de la zona central de la referencia publicada; fuente original conservada. Color orientativo en pantalla; confirmar con muestra física.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -5688,6 +5739,21 @@
       "appId": null,
       "textureId": null,
       "image": {
+        "src": "muestras/virgo-1936-smt-uniforme-20261020.svg",
+        "width": 1024,
+        "height": 1024
+      },
+      "supplierNames": [
+        "ArquiStore"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "aliases": [
+        "Laminado Virgo Grafito 1936 Smt - Formica Super Mate N/a",
+        "1936"
+      ],
+      "codeAliases": [],
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
         "src": "muestras/virgo-1936-smt-fuente-20261015-9a02f94a2e.webp",
         "width": 500,
         "height": 500,
@@ -5699,15 +5765,7 @@
         ],
         "surfaceCrop": true
       },
-      "supplierNames": [
-        "ArquiStore"
-      ],
-      "supplierAssociationStatus": "oferta_publicada",
-      "aliases": [
-        "Laminado Virgo Grafito 1936 Smt - Formica Super Mate N/a",
-        "1936"
-      ],
-      "codeAliases": []
+      "sampleColor": "#6a6660"
     },
     {
       "id": "virgo-1937-gloss",
@@ -5776,8 +5834,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageKind": "Color digital uniforme de referencia",
+      "imageNote": "Muestra plana solicitada por Santiago, sin textura fotográfica, manchas ni cambios de iluminación. Tono representativo obtenido de la zona central de la referencia publicada; fuente original conservada. Color orientativo en pantalla; confirmar con muestra física.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -5791,6 +5849,22 @@
       "appId": null,
       "textureId": null,
       "image": {
+        "src": "muestras/virgo-1937-smt-uniforme-20261020.svg",
+        "width": 1024,
+        "height": 1024
+      },
+      "supplierNames": [
+        "ArquiStore",
+        "Laminados El Pardillo"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "aliases": [
+        "Kashmir SMT 1937",
+        "1937"
+      ],
+      "codeAliases": [],
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
         "src": "muestras/virgo-1937-smt-fuente-20261015-f7ec31532f.webp",
         "width": 388,
         "height": 500,
@@ -5802,16 +5876,7 @@
         ],
         "surfaceCrop": true
       },
-      "supplierNames": [
-        "ArquiStore",
-        "Laminados El Pardillo"
-      ],
-      "supplierAssociationStatus": "oferta_publicada",
-      "aliases": [
-        "Kashmir SMT 1937",
-        "1937"
-      ],
-      "codeAliases": []
+      "sampleColor": "#ccc7bb"
     },
     {
       "id": "virgo-1939-tn",
@@ -5930,8 +5995,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra extraída del catálogo de Virgo",
-      "imageNote": "Muestra 2155 SF Wengue, extraída sin modificar de la página 54 del muestrario Virgo publicado por ArquiStore. Los derechos de marca e imagen pertenecen a su titular.",
+      "imageKind": "Referencia visual restaurada con IA",
+      "imageNote": "Muestra reconstruida con IA a partir de la referencia del catálogo para mejorar definición y uniformar la iluminación; original y procedencia conservados. Referencia visual aproximada, no medición colorimétrica ni reproducción certificada del lote.",
       "sourceLinks": [
         {
           "label": "Ficha de ArquiStore",
@@ -5949,9 +6014,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-2155-sf-muestrario.jpg",
-        "width": 500,
-        "height": 500
+        "src": "muestras/virgo-2155-sf-restaurada-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/virgo-2155-sf-restaurada-20261020-640.webp 640w, muestras/virgo-2155-sf-restaurada-20261020.webp 1254w"
       },
       "supplierNames": [
         "ArquiStore",
@@ -5962,7 +6028,13 @@
         "Wengue Mate 2155 Sf",
         "2155"
       ],
-      "codeAliases": []
+      "codeAliases": [],
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
+        "src": "muestras/virgo-2155-sf-muestrario.jpg",
+        "width": 500,
+        "height": 500
+      }
     },
     {
       "id": "virgo-2362-sf",
@@ -6425,8 +6497,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra original de alta resolución",
-      "imageNote": "Imagen original publicada por ArquiStore, con más detalle que la miniatura anterior. Sin recreación IA ni cambio de color; derechos de imagen de su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageKind": "Referencia visual restaurada con IA",
+      "imageNote": "Muestra reconstruida con IA a partir de la referencia del catálogo para mejorar definición y uniformar la iluminación; original y procedencia conservados. Referencia visual aproximada, no medición colorimétrica ni reproducción certificada del lote.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -6444,10 +6516,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-2878-sf-original-hd-20261020.webp",
-        "width": 1316,
-        "height": 2560,
-        "srcset": "muestras/virgo-2878-sf-original-hd-20261020-640.webp 329w, muestras/virgo-2878-sf-original-hd-20261020.webp 1316w"
+        "src": "muestras/virgo-2878-sf-restaurada-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/virgo-2878-sf-restaurada-20261020-640.webp 640w, muestras/virgo-2878-sf-restaurada-20261020.webp 1254w"
       },
       "supplierNames": [
         "ArquiStore"
@@ -6457,7 +6529,14 @@
         "Laminado Virgo Pino Dorado 2878 - Formica Maderas Lisas",
         "2878"
       ],
-      "codeAliases": []
+      "codeAliases": [],
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
+        "src": "muestras/virgo-2878-sf-original-hd-20261020.webp",
+        "width": 1316,
+        "height": 2560,
+        "srcset": "muestras/virgo-2878-sf-original-hd-20261020-640.webp 329w, muestras/virgo-2878-sf-original-hd-20261020.webp 1316w"
+      }
     },
     {
       "id": "virgo-2917-sf",
@@ -6474,8 +6553,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra original de alta resolución",
-      "imageNote": "Imagen original publicada por ArquiStore, con más detalle que la miniatura anterior. Sin recreación IA ni cambio de color; derechos de imagen de su titular. El tono y el acabado se confirman con una muestra física.",
+      "imageKind": "Referencia visual restaurada con IA",
+      "imageNote": "Muestra reconstruida con IA a partir de la referencia del catálogo para mejorar definición y uniformar la iluminación; original y procedencia conservados. Referencia visual aproximada, no medición colorimétrica ni reproducción certificada del lote.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -6493,10 +6572,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-2917-sf-original-hd-20261020.webp",
-        "width": 1316,
-        "height": 2560,
-        "srcset": "muestras/virgo-2917-sf-original-hd-20261020-640.webp 329w, muestras/virgo-2917-sf-original-hd-20261020.webp 1316w"
+        "src": "muestras/virgo-2917-sf-restaurada-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/virgo-2917-sf-restaurada-20261020-640.webp 640w, muestras/virgo-2917-sf-restaurada-20261020.webp 1254w"
       },
       "supplierNames": [
         "ArquiStore"
@@ -6506,7 +6585,14 @@
         "Formica Lamina Decorativa Virgo- 2917 Madera Tostada Marrón Claro",
         "2917"
       ],
-      "codeAliases": []
+      "codeAliases": [],
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
+        "src": "muestras/virgo-2917-sf-original-hd-20261020.webp",
+        "width": 1316,
+        "height": 2560,
+        "srcset": "muestras/virgo-2917-sf-original-hd-20261020-640.webp 329w, muestras/virgo-2917-sf-original-hd-20261020.webp 1316w"
+      }
     },
     {
       "id": "virgo-2920-jw",
@@ -6783,8 +6869,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageKind": "Color digital uniforme de referencia",
+      "imageNote": "Muestra plana solicitada por Santiago, sin textura fotográfica, manchas ni cambios de iluminación. Tono representativo obtenido de la zona central de la referencia publicada; fuente original conservada. Color orientativo en pantalla; confirmar con muestra física.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -6798,6 +6884,21 @@
       "appId": null,
       "textureId": null,
       "image": {
+        "src": "muestras/virgo-4075-smt-uniforme-20261020.svg",
+        "width": 1024,
+        "height": 1024
+      },
+      "supplierNames": [
+        "ArquiStore"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "aliases": [
+        "Formica Lamina Decorativa Virgo Matcha Super Mate 4075 Verde Claro",
+        "4075"
+      ],
+      "codeAliases": [],
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
         "src": "muestras/virgo-4075-smt-fuente-20261015-d4496a2fca.webp",
         "width": 500,
         "height": 500,
@@ -6809,15 +6910,7 @@
         ],
         "surfaceCrop": true
       },
-      "supplierNames": [
-        "ArquiStore"
-      ],
-      "supplierAssociationStatus": "oferta_publicada",
-      "aliases": [
-        "Formica Lamina Decorativa Virgo Matcha Super Mate 4075 Verde Claro",
-        "4075"
-      ],
-      "codeAliases": []
+      "sampleColor": "#76927b"
     },
     {
       "id": "virgo-4078-smt",
@@ -6834,8 +6927,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageKind": "Color digital uniforme de referencia",
+      "imageNote": "Muestra plana solicitada por Santiago, sin textura fotográfica, manchas ni cambios de iluminación. Tono representativo obtenido de la zona central de la referencia publicada; fuente original conservada. Color orientativo en pantalla; confirmar con muestra física.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -6849,6 +6942,21 @@
       "appId": null,
       "textureId": null,
       "image": {
+        "src": "muestras/virgo-4078-smt-uniforme-20261020.svg",
+        "width": 1024,
+        "height": 1024
+      },
+      "supplierNames": [
+        "ArquiStore"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "aliases": [
+        "Laminado Virgo Aqua 4078 - Formica Super Mate",
+        "4078"
+      ],
+      "codeAliases": [],
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
         "src": "muestras/virgo-4078-smt-fuente-20261015-02742b7656.webp",
         "width": 500,
         "height": 500,
@@ -6860,15 +6968,7 @@
         ],
         "surfaceCrop": true
       },
-      "supplierNames": [
-        "ArquiStore"
-      ],
-      "supplierAssociationStatus": "oferta_publicada",
-      "aliases": [
-        "Laminado Virgo Aqua 4078 - Formica Super Mate",
-        "4078"
-      ],
-      "codeAliases": []
+      "sampleColor": "#9bc3ca"
     },
     {
       "id": "virgo-4080-smt",
@@ -6885,8 +6985,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageKind": "Color digital uniforme de referencia",
+      "imageNote": "Muestra plana solicitada por Santiago, sin textura fotográfica, manchas ni cambios de iluminación. Tono representativo obtenido de la zona central de la referencia publicada; fuente original conservada. Color orientativo en pantalla; confirmar con muestra física.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -6900,6 +7000,21 @@
       "appId": null,
       "textureId": null,
       "image": {
+        "src": "muestras/virgo-4080-smt-uniforme-20261020.svg",
+        "width": 1024,
+        "height": 1024
+      },
+      "supplierNames": [
+        "ArquiStore"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "aliases": [
+        "Laminado Virgo Azul Topacio Super Mate 4080 Azul Petróleo",
+        "4080"
+      ],
+      "codeAliases": [],
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
         "src": "muestras/virgo-4080-smt-fuente-20261015-9e405f8249.webp",
         "width": 500,
         "height": 500,
@@ -6911,15 +7026,7 @@
         ],
         "surfaceCrop": true
       },
-      "supplierNames": [
-        "ArquiStore"
-      ],
-      "supplierAssociationStatus": "oferta_publicada",
-      "aliases": [
-        "Laminado Virgo Azul Topacio Super Mate 4080 Azul Petróleo",
-        "4080"
-      ],
-      "codeAliases": []
+      "sampleColor": "#3f839e"
     },
     {
       "id": "virgo-5102-smt",
@@ -6936,8 +7043,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageKind": "Color digital uniforme de referencia",
+      "imageNote": "Muestra plana solicitada por Santiago, sin textura fotográfica, manchas ni cambios de iluminación. Tono representativo obtenido de la zona central de la referencia publicada; fuente original conservada. Color orientativo en pantalla; confirmar con muestra física.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -6951,6 +7058,21 @@
       "appId": null,
       "textureId": null,
       "image": {
+        "src": "muestras/virgo-5102-smt-uniforme-20261020.svg",
+        "width": 1024,
+        "height": 1024
+      },
+      "supplierNames": [
+        "ArquiStore"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "aliases": [
+        "Laminado Virgo Taupe Super Mate 5102 Marrón Claro",
+        "5102"
+      ],
+      "codeAliases": [],
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
         "src": "muestras/virgo-5102-smt-fuente-20261015-33c815cb74.webp",
         "width": 500,
         "height": 500,
@@ -6962,15 +7084,7 @@
         ],
         "surfaceCrop": true
       },
-      "supplierNames": [
-        "ArquiStore"
-      ],
-      "supplierAssociationStatus": "oferta_publicada",
-      "aliases": [
-        "Laminado Virgo Taupe Super Mate 5102 Marrón Claro",
-        "5102"
-      ],
-      "codeAliases": []
+      "sampleColor": "#beae92"
     },
     {
       "id": "virgo-5271-sc",
@@ -7221,8 +7335,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageKind": "Referencia visual restaurada con IA",
+      "imageNote": "Muestra reconstruida con IA a partir de la referencia del catálogo para mejorar definición y uniformar la iluminación; original y procedencia conservados. Referencia visual aproximada, no medición colorimétrica ni reproducción certificada del lote.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -7236,6 +7350,22 @@
       "appId": null,
       "textureId": null,
       "image": {
+        "src": "muestras/virgo-5664-jw-restaurada-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/virgo-5664-jw-restaurada-20261020-640.webp 640w, muestras/virgo-5664-jw-restaurada-20261020.webp 1254w"
+      },
+      "supplierNames": [
+        "ArquiStore"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "aliases": [
+        "Laminado Virgo Samán Wood 5664 - Formica Texturizada",
+        "5664"
+      ],
+      "codeAliases": [],
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
         "src": "muestras/virgo-5664-jw-fuente-20261015-c3f1470909.webp",
         "width": 500,
         "height": 500,
@@ -7246,16 +7376,7 @@
           360
         ],
         "surfaceCrop": true
-      },
-      "supplierNames": [
-        "ArquiStore"
-      ],
-      "supplierAssociationStatus": "oferta_publicada",
-      "aliases": [
-        "Laminado Virgo Samán Wood 5664 - Formica Texturizada",
-        "5664"
-      ],
-      "codeAliases": []
+      }
     },
     {
       "id": "virgo-5804-jw",
@@ -8285,8 +8406,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por Laminados El Pardillo. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageKind": "Referencia visual restaurada con IA",
+      "imageNote": "Muestra reconstruida con IA a partir de la referencia del catálogo para mejorar definición y uniformar la iluminación; original y procedencia conservados. Referencia visual aproximada, no medición colorimétrica ni reproducción certificada del lote.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -8304,16 +8425,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-7150-sc-fuente-20261015-d5d4e3144f.webp",
-        "width": 395,
-        "height": 500,
-        "crop": [
-          32,
-          40,
-          331,
-          420
-        ],
-        "surfaceCrop": true
+        "src": "muestras/virgo-7150-sc-restaurada-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/virgo-7150-sc-restaurada-20261020-640.webp 640w, muestras/virgo-7150-sc-restaurada-20261020.webp 1254w"
       },
       "supplierNames": [
         "ArquiStore",
@@ -8325,7 +8440,20 @@
         "7150",
         "Laminado Virgo Sierra Ahumada 7150 Sc - Formica Texturizada N/a"
       ],
-      "codeAliases": []
+      "codeAliases": [],
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
+        "src": "muestras/virgo-7150-sc-fuente-20261015-d5d4e3144f.webp",
+        "width": 395,
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          331,
+          420
+        ],
+        "surfaceCrop": true
+      }
     },
     {
       "id": "virgo-7501-cn",
@@ -8617,8 +8745,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageKind": "Color digital uniforme de referencia",
+      "imageNote": "Muestra plana solicitada por Santiago, sin textura fotográfica, manchas ni cambios de iluminación. Tono representativo obtenido de la zona central de la referencia publicada; fuente original conservada. Color orientativo en pantalla; confirmar con muestra física.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -8632,6 +8760,21 @@
       "appId": null,
       "textureId": null,
       "image": {
+        "src": "muestras/virgo-8106-smt-uniforme-20261020.svg",
+        "width": 1024,
+        "height": 1024
+      },
+      "supplierNames": [
+        "ArquiStore"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "aliases": [
+        "Laminado Virgo Camel 8106 Smt - Formica Super Mate",
+        "8106"
+      ],
+      "codeAliases": [],
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
         "src": "muestras/virgo-8106-smt-fuente-20261015-f4cd94139f.webp",
         "width": 500,
         "height": 500,
@@ -8643,15 +8786,7 @@
         ],
         "surfaceCrop": true
       },
-      "supplierNames": [
-        "ArquiStore"
-      ],
-      "supplierAssociationStatus": "oferta_publicada",
-      "aliases": [
-        "Laminado Virgo Camel 8106 Smt - Formica Super Mate",
-        "8106"
-      ],
-      "codeAliases": []
+      "sampleColor": "#ae9481"
     },
     {
       "id": "virgo-8108-smt",
@@ -8668,8 +8803,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageKind": "Color digital uniforme de referencia",
+      "imageNote": "Muestra plana solicitada por Santiago, sin textura fotográfica, manchas ni cambios de iluminación. Tono representativo obtenido de la zona central de la referencia publicada; fuente original conservada. Color orientativo en pantalla; confirmar con muestra física.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -8683,6 +8818,21 @@
       "appId": null,
       "textureId": null,
       "image": {
+        "src": "muestras/virgo-8108-smt-uniforme-20261020.svg",
+        "width": 1024,
+        "height": 1024
+      },
+      "supplierNames": [
+        "ArquiStore"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "aliases": [
+        "Laminado Virgo 8108 Ostra- Formica Super Mate Beige",
+        "8108"
+      ],
+      "codeAliases": [],
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
         "src": "muestras/virgo-8108-smt-fuente-20261015-3c696ff041.webp",
         "width": 500,
         "height": 500,
@@ -8694,15 +8844,7 @@
         ],
         "surfaceCrop": true
       },
-      "supplierNames": [
-        "ArquiStore"
-      ],
-      "supplierAssociationStatus": "oferta_publicada",
-      "aliases": [
-        "Laminado Virgo 8108 Ostra- Formica Super Mate Beige",
-        "8108"
-      ],
-      "codeAliases": []
+      "sampleColor": "#f4f2ee"
     },
     {
       "id": "virgo-8433-jw",
@@ -9429,8 +9571,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra publicada por ArquiStore",
-      "imageNote": "Muestra publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular.",
+      "imageKind": "Color digital uniforme de referencia",
+      "imageNote": "Muestra plana solicitada por Santiago, sin textura fotográfica, manchas ni cambios de iluminación. Tono representativo obtenido de la zona central de la referencia publicada; fuente original conservada. Color orientativo en pantalla; confirmar con muestra física.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -9444,9 +9586,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/virgo-9997-smt-detalle26.webp",
-        "width": 822,
-        "height": 1600
+        "src": "muestras/virgo-9997-smt-uniforme-20261020.svg",
+        "width": 1024,
+        "height": 1024
       },
       "supplierNames": [
         "ArquiStore"
@@ -9456,7 +9598,14 @@
         "Formica Lamina Decorativa Virgo - 9997 Smt Blanco Super Mate",
         "9997"
       ],
-      "codeAliases": []
+      "codeAliases": [],
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
+        "src": "muestras/virgo-9997-smt-detalle26.webp",
+        "width": 822,
+        "height": 1600
+      },
+      "sampleColor": "#ffffff"
     },
     {
       "id": "virgo-9997-tl",
@@ -10354,8 +10503,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageKind": "Referencia visual restaurada con IA",
+      "imageNote": "Muestra reconstruida con IA a partir de la referencia del catálogo para mejorar definición y uniformar la iluminación; original y procedencia conservados. Referencia visual aproximada, no medición colorimétrica ni reproducción certificada del lote.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -10373,16 +10522,10 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/century-laminates-2417-np-fuente-20261015-b981fb227f.webp",
-        "width": 394,
-        "height": 500,
-        "crop": [
-          32,
-          40,
-          330,
-          420
-        ],
-        "surfaceCrop": true
+        "src": "muestras/century-laminates-2417-np-restaurada-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/century-laminates-2417-np-restaurada-20261020-640.webp 640w, muestras/century-laminates-2417-np-restaurada-20261020.webp 1254w"
       },
       "supplierNames": [
         "ArquiStore",
@@ -10394,7 +10537,20 @@
         "2417",
         "Laminado Century Berlin Libre 2417 Np - Formica Texturizada"
       ],
-      "codeAliases": []
+      "codeAliases": [],
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
+        "src": "muestras/century-laminates-2417-np-fuente-20261015-b981fb227f.webp",
+        "width": 394,
+        "height": 500,
+        "crop": [
+          32,
+          40,
+          330,
+          420
+        ],
+        "surfaceCrop": true
+      }
     },
     {
       "id": "century-laminates-2592-np",
@@ -11008,8 +11164,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageKind": "Referencia visual restaurada con IA",
+      "imageNote": "Muestra reconstruida con IA a partir de la referencia del catálogo para mejorar definición y uniformar la iluminación; original y procedencia conservados. Referencia visual aproximada, no medición colorimétrica ni reproducción certificada del lote.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -11023,6 +11179,22 @@
       "appId": null,
       "textureId": null,
       "image": {
+        "src": "muestras/century-laminates-3372-ls-restaurada-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/century-laminates-3372-ls-restaurada-20261020-640.webp 640w, muestras/century-laminates-3372-ls-restaurada-20261020.webp 1254w"
+      },
+      "supplierNames": [
+        "ArquiStore"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "aliases": [
+        "Laminado Century Primavera Toscana 3372 Ls - Formica Textura",
+        "3372"
+      ],
+      "codeAliases": [],
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
         "src": "muestras/century-laminates-3372-ls-fuente-20261015-e65f11e752.webp",
         "width": 402,
         "height": 500,
@@ -11033,16 +11205,7 @@
           420
         ],
         "surfaceCrop": true
-      },
-      "supplierNames": [
-        "ArquiStore"
-      ],
-      "supplierAssociationStatus": "oferta_publicada",
-      "aliases": [
-        "Laminado Century Primavera Toscana 3372 Ls - Formica Textura",
-        "3372"
-      ],
-      "codeAliases": []
+      }
     },
     {
       "id": "century-laminates-3417-at",
@@ -11094,8 +11257,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageKind": "Referencia visual restaurada con IA",
+      "imageNote": "Muestra reconstruida con IA a partir de la referencia del catálogo para mejorar definición y uniformar la iluminación; original y procedencia conservados. Referencia visual aproximada, no medición colorimétrica ni reproducción certificada del lote.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -11109,6 +11272,22 @@
       "appId": null,
       "textureId": null,
       "image": {
+        "src": "muestras/century-laminates-3425-ls-restaurada-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/century-laminates-3425-ls-restaurada-20261020-640.webp 640w, muestras/century-laminates-3425-ls-restaurada-20261020.webp 1254w"
+      },
+      "supplierNames": [
+        "ArquiStore"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "aliases": [
+        "Hpl Laminado Decorativa Century - Alpes De Turin 3425 Ls",
+        "3425"
+      ],
+      "codeAliases": [],
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
         "src": "muestras/century-laminates-3425-ls-fuente-20261015-b439dc666d.webp",
         "width": 403,
         "height": 500,
@@ -11119,16 +11298,7 @@
           420
         ],
         "surfaceCrop": true
-      },
-      "supplierNames": [
-        "ArquiStore"
-      ],
-      "supplierAssociationStatus": "oferta_publicada",
-      "aliases": [
-        "Hpl Laminado Decorativa Century - Alpes De Turin 3425 Ls",
-        "3425"
-      ],
-      "codeAliases": []
+      }
     },
     {
       "id": "century-laminates-3447-km",
@@ -11190,8 +11360,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageKind": "Referencia visual restaurada con IA",
+      "imageNote": "Muestra reconstruida con IA a partir de la referencia del catálogo para mejorar definición y uniformar la iluminación; original y procedencia conservados. Referencia visual aproximada, no medición colorimétrica ni reproducción certificada del lote.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -11205,6 +11375,22 @@
       "appId": null,
       "textureId": null,
       "image": {
+        "src": "muestras/century-laminates-3639-at-restaurada-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/century-laminates-3639-at-restaurada-20261020-640.webp 640w, muestras/century-laminates-3639-at-restaurada-20261020.webp 1254w"
+      },
+      "supplierNames": [
+        "ArquiStore"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "aliases": [
+        "Laminado Century Michigan Roble 3639 At Formica Texturizada",
+        "3639"
+      ],
+      "codeAliases": [],
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
         "src": "muestras/century-laminates-3639-at-fuente-20261015-198254f3dc.webp",
         "width": 391,
         "height": 500,
@@ -11215,16 +11401,7 @@
           420
         ],
         "surfaceCrop": true
-      },
-      "supplierNames": [
-        "ArquiStore"
-      ],
-      "supplierAssociationStatus": "oferta_publicada",
-      "aliases": [
-        "Laminado Century Michigan Roble 3639 At Formica Texturizada",
-        "3639"
-      ],
-      "codeAliases": []
+      }
     },
     {
       "id": "century-laminates-3742-km",
@@ -11563,8 +11740,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado. Presentación vertical solicitada por Santiago; se conserva el código y nombre del acabado de origen.",
+      "imageKind": "Referencia visual restaurada con IA",
+      "imageNote": "Muestra reconstruida con IA a partir de la referencia del catálogo para mejorar definición y uniformar la iluminación; original y procedencia conservados. Referencia visual aproximada, no medición colorimétrica ni reproducción certificada del lote.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -11578,6 +11755,22 @@
       "appId": null,
       "textureId": null,
       "image": {
+        "src": "muestras/century-laminates-4392-lh-restaurada-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/century-laminates-4392-lh-restaurada-20261020-640.webp 640w, muestras/century-laminates-4392-lh-restaurada-20261020.webp 1254w"
+      },
+      "supplierNames": [
+        "ArquiStore"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "aliases": [
+        "Laminado Century Encanto Ginebra 4392 Lh - Formica Textura",
+        "4392"
+      ],
+      "codeAliases": [],
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
         "src": "muestras/century-laminates-4392-lh-fuente-20261015-7eb787d5f7.webp",
         "width": 497,
         "height": 500,
@@ -11589,16 +11782,7 @@
         ],
         "surfaceCrop": true,
         "displayRotation": 90
-      },
-      "supplierNames": [
-        "ArquiStore"
-      ],
-      "supplierAssociationStatus": "oferta_publicada",
-      "aliases": [
-        "Laminado Century Encanto Ginebra 4392 Lh - Formica Textura",
-        "4392"
-      ],
-      "codeAliases": []
+      }
     },
     {
       "id": "century-laminates-4393-lh",
@@ -12502,8 +12686,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra publicada por ArquiStore",
-      "imageNote": "Muestra publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular.",
+      "imageKind": "Color digital uniforme de referencia",
+      "imageNote": "Muestra plana solicitada por Santiago, sin textura fotográfica, manchas ni cambios de iluminación. Tono representativo obtenido de la zona central de la referencia publicada; fuente original conservada. Color orientativo en pantalla; confirmar con muestra física.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -12517,9 +12701,9 @@
       "appId": null,
       "textureId": null,
       "image": {
-        "src": "muestras/starline-101-matt-detalle26.webp",
-        "width": 822,
-        "height": 1600
+        "src": "muestras/starline-101-matt-uniforme-20261020.svg",
+        "width": 1024,
+        "height": 1024
       },
       "supplierNames": [
         "ArquiStore"
@@ -12529,7 +12713,14 @@
         "Laminado Arqui Starline Blanco Super Matt 101",
         "101"
       ],
-      "codeAliases": []
+      "codeAliases": [],
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
+        "src": "muestras/starline-101-matt-detalle26.webp",
+        "width": 822,
+        "height": 1600
+      },
+      "sampleColor": "#ffffff"
     },
     {
       "id": "starline-167-matt",
@@ -12546,8 +12737,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageKind": "Color digital uniforme de referencia",
+      "imageNote": "Muestra plana solicitada por Santiago, sin textura fotográfica, manchas ni cambios de iluminación. Tono representativo obtenido de la zona central de la referencia publicada; fuente original conservada. Color orientativo en pantalla; confirmar con muestra física.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -12561,6 +12752,21 @@
       "appId": null,
       "textureId": null,
       "image": {
+        "src": "muestras/starline-167-matt-uniforme-20261020.svg",
+        "width": 1024,
+        "height": 1024
+      },
+      "supplierNames": [
+        "ArquiStore"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "aliases": [
+        "Laminado Arqui Starline Beige Super Matt 167",
+        "167"
+      ],
+      "codeAliases": [],
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
         "src": "muestras/starline-167-matt-fuente-20261015-54894545ad.webp",
         "width": 500,
         "height": 500,
@@ -12572,15 +12778,7 @@
         ],
         "surfaceCrop": true
       },
-      "supplierNames": [
-        "ArquiStore"
-      ],
-      "supplierAssociationStatus": "oferta_publicada",
-      "aliases": [
-        "Laminado Arqui Starline Beige Super Matt 167",
-        "167"
-      ],
-      "codeAliases": []
+      "sampleColor": "#d4b286"
     },
     {
       "id": "starline-222-suede",
@@ -12648,8 +12846,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageKind": "Color digital uniforme de referencia",
+      "imageNote": "Muestra plana solicitada por Santiago, sin textura fotográfica, manchas ni cambios de iluminación. Tono representativo obtenido de la zona central de la referencia publicada; fuente original conservada. Color orientativo en pantalla; confirmar con muestra física.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -12663,6 +12861,21 @@
       "appId": null,
       "textureId": null,
       "image": {
+        "src": "muestras/starline-236-matt-uniforme-20261020.svg",
+        "width": 1024,
+        "height": 1024
+      },
+      "supplierNames": [
+        "ArquiStore"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "aliases": [
+        "Laminado Arqui Starline Gris Plomo Super Matt 236",
+        "236"
+      ],
+      "codeAliases": [],
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
         "src": "muestras/starline-236-matt-fuente-20261015-9eead2d14f.webp",
         "width": 500,
         "height": 500,
@@ -12674,15 +12887,7 @@
         ],
         "surfaceCrop": true
       },
-      "supplierNames": [
-        "ArquiStore"
-      ],
-      "supplierAssociationStatus": "oferta_publicada",
-      "aliases": [
-        "Laminado Arqui Starline Gris Plomo Super Matt 236",
-        "236"
-      ],
-      "codeAliases": []
+      "sampleColor": "#4b4b4b"
     },
     {
       "id": "starline-293-matt",
@@ -12699,8 +12904,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra publicada por ArquiStore",
-      "imageNote": "Muestra publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular.",
+      "imageKind": "Color digital uniforme de referencia",
+      "imageNote": "Muestra plana solicitada por Santiago, sin textura fotográfica, manchas ni cambios de iluminación. Tono representativo obtenido de la zona central de la referencia publicada; fuente original conservada. Color orientativo en pantalla; confirmar con muestra física.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -12714,6 +12919,21 @@
       "appId": null,
       "textureId": null,
       "image": {
+        "src": "muestras/starline-293-matt-uniforme-20261020.svg",
+        "width": 1024,
+        "height": 1024
+      },
+      "supplierNames": [
+        "ArquiStore"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "aliases": [
+        "Laminado Arqui Starline Negro Super Matt 293 Negro",
+        "293"
+      ],
+      "codeAliases": [],
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
         "src": "muestras/starline-293-matt-detalle26.webp",
         "width": 822,
         "height": 1600,
@@ -12725,15 +12945,7 @@
         ],
         "surfaceCrop": true
       },
-      "supplierNames": [
-        "ArquiStore"
-      ],
-      "supplierAssociationStatus": "oferta_publicada",
-      "aliases": [
-        "Laminado Arqui Starline Negro Super Matt 293 Negro",
-        "293"
-      ],
-      "codeAliases": []
+      "sampleColor": "#000000"
     },
     {
       "id": "starline-293-suede",
@@ -12785,8 +12997,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra publicada por ArquiStore",
-      "imageNote": "Muestra publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular.",
+      "imageKind": "Color digital uniforme de referencia",
+      "imageNote": "Muestra plana solicitada por Santiago, sin textura fotográfica, manchas ni cambios de iluminación. Tono representativo obtenido de la zona central de la referencia publicada; fuente original conservada. Color orientativo en pantalla; confirmar con muestra física.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -12800,6 +13012,21 @@
       "appId": null,
       "textureId": null,
       "image": {
+        "src": "muestras/starline-3271-matt-uniforme-20261020.svg",
+        "width": 1024,
+        "height": 1024
+      },
+      "supplierNames": [
+        "ArquiStore"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "aliases": [
+        "Laminado Arqui Starline Martini Olive Super 3271 Matt",
+        "3271"
+      ],
+      "codeAliases": [],
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
         "src": "muestras/starline-3271-matt-detalle26.webp",
         "width": 822,
         "height": 1600,
@@ -12811,15 +13038,7 @@
         ],
         "surfaceCrop": true
       },
-      "supplierNames": [
-        "ArquiStore"
-      ],
-      "supplierAssociationStatus": "oferta_publicada",
-      "aliases": [
-        "Laminado Arqui Starline Martini Olive Super 3271 Matt",
-        "3271"
-      ],
-      "codeAliases": []
+      "sampleColor": "#4b4f34"
     },
     {
       "id": "starline-3324-suede",
@@ -13114,8 +13333,8 @@
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageKind": "Referencia visual restaurada con IA",
+      "imageNote": "Muestra reconstruida con IA a partir de la referencia del catálogo para mejorar definición y uniformar la iluminación; original y procedencia conservados. Referencia visual aproximada, no medición colorimétrica ni reproducción certificada del lote.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -13129,6 +13348,22 @@
       "appId": null,
       "textureId": null,
       "image": {
+        "src": "muestras/starline-3766-suede-restaurada-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/starline-3766-suede-restaurada-20261020-640.webp 640w, muestras/starline-3766-suede-restaurada-20261020.webp 1254w"
+      },
+      "supplierNames": [
+        "ArquiStore"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "aliases": [
+        "Formica Lamina Decorativa Starline - 3766 Olmo Rojo Suede Chocolate",
+        "3766"
+      ],
+      "codeAliases": [],
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
         "src": "muestras/starline-3766-suede-fuente-20261015-4737aa7a91.webp",
         "width": 500,
         "height": 500,
@@ -13139,16 +13374,7 @@
           360
         ],
         "surfaceCrop": true
-      },
-      "supplierNames": [
-        "ArquiStore"
-      ],
-      "supplierAssociationStatus": "oferta_publicada",
-      "aliases": [
-        "Formica Lamina Decorativa Starline - 3766 Olmo Rojo Suede Chocolate",
-        "3766"
-      ],
-      "codeAliases": []
+      }
     },
     {
       "id": "starline-4413-suede",
@@ -14055,21 +14281,21 @@
     },
     {
       "id": "starline-84421-cl",
-      "category": "laminados",
+      "category": "revestimientos",
       "name": "Jaipur Walnut Wallpanel",
-      "family": "Maderas",
+      "family": "Wall panels",
       "brand": "Starline",
       "supplier": "ArquiStore",
       "code": "84421",
-      "finish": "CL Acabado CL · nombre por cotejar",
-      "description": "Lámina decorativa HPL que se aplica sobre un soporte. Este diseño se consulta con su código y acabado de marca.",
-      "use": "Superficies y frentes según la ficha técnica y el soporte elegido.",
-      "care": "El relieve, el brillo y el color se confirman con una muestra física. Un HPL no es una melamina de tablero.",
+      "finish": "CL Crystal Line · relieve lineal",
+      "description": "Laminado decorativo Starline Jaipur Walnut 84421, acabado Crystal Line. Se presenta en Paneles por su relieve lineal, según la organización solicitada por Santiago. Se aplica sobre un soporte; no se identifica como panel estructural ni se atribuye una composición de núcleo sin ficha técnica.",
+      "use": "Revestimientos y frentes decorativos sobre un soporte compatible, según ficha técnica.",
+      "care": "Comparar el relieve, tono, soporte y formato con la muestra física y la ficha del producto.",
       "market": "Venezuela · catálogo ArquiStore",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Muestra individual publicada por el proveedor en Mercado Libre",
-      "imageNote": "Fotografía publicada por ArquiStore. Los derechos de marca e imagen pertenecen a su titular. El tono y el acabado se confirman con una muestra física. Se muestra únicamente la superficie útil, sin rótulos, íconos ni márgenes del proveedor; original conservado.",
+      "imageKind": "Referencia visual restaurada con IA",
+      "imageNote": "Muestra reconstruida con IA a partir de la referencia del catálogo para mejorar definición y uniformar la iluminación; original y procedencia conservados. Referencia visual aproximada, no medición colorimétrica ni reproducción certificada del lote.",
       "sourceLinks": [
         {
           "label": "Ficha o catálogo de referencia",
@@ -14078,11 +14304,31 @@
         {
           "label": "ArquiStore · Laminado Starline 84421 Jaipur Walnut Wallpanel",
           "url": "https://articulo.mercadolibre.com.ve/MLV-933564172-laminado-starline-84421-jaipur-walnut-wallpanel-_JM"
+        },
+        {
+          "label": "Diseño y acabado oficiales · CenturyPly Starline",
+          "url": "https://www.centuryply.com/centurylaminates/star-line-laminates/jaipur-walnut_84421_CL"
         }
       ],
       "appId": null,
       "textureId": null,
       "image": {
+        "src": "muestras/starline-84421-cl-restaurada-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/starline-84421-cl-restaurada-20261020-640.webp 640w, muestras/starline-84421-cl-restaurada-20261020.webp 1254w"
+      },
+      "supplierNames": [
+        "ArquiStore"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "aliases": [
+        "Laminado Starline 84421 Jaipur Walnut Wallpanel",
+        "84421"
+      ],
+      "codeAliases": [],
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
         "src": "muestras/starline-84421-cl-fuente-20261015-20169e6e47.webp",
         "width": 500,
         "height": 500,
@@ -14093,16 +14339,7 @@
           360
         ],
         "surfaceCrop": true
-      },
-      "supplierNames": [
-        "ArquiStore"
-      ],
-      "supplierAssociationStatus": "oferta_publicada",
-      "aliases": [
-        "Laminado Starline 84421 Jaipur Walnut Wallpanel",
-        "84421"
-      ],
-      "codeAliases": []
+      }
     },
     {
       "id": "greenlam-5598-sat",
@@ -22161,8 +22398,8 @@
       "market": "Venezuela · catálogo Ferrofasil",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
-      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "imageKind": "Color digital uniforme de referencia",
+      "imageNote": "Muestra plana solicitada por Santiago, sin textura fotográfica, manchas ni cambios de iluminación. Tono representativo obtenido de la zona central de la referencia publicada; fuente original conservada. Color orientativo en pantalla; confirmar con muestra física.",
       "sourceLinks": [
         {
           "label": "Diseño publicado por Ferrofasil",
@@ -22176,15 +22413,22 @@
       "appId": null,
       "textureId": null,
       "image": {
+        "src": "muestras/pertech-ferrofasil-56-uniforme-20261020.svg",
+        "width": 1024,
+        "height": 1024
+      },
+      "supplierNames": [
+        "Ferrofasil"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
         "src": "muestras/pertech-ferrofasil-56-ferrofasil.webp",
         "width": 756,
         "height": 756,
         "srcset": "muestras/pertech-ferrofasil-56-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-56-ferrofasil.webp 756w"
       },
-      "supplierNames": [
-        "Ferrofasil"
-      ],
-      "supplierAssociationStatus": "oferta_publicada"
+      "sampleColor": "#35302d"
     },
     {
       "id": "pertech-ferrofasil-6060",
@@ -22716,8 +22960,8 @@
       "market": "Venezuela · catálogo Ferrofasil",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
-      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "imageKind": "Color digital uniforme de referencia",
+      "imageNote": "Muestra plana solicitada por Santiago, sin textura fotográfica, manchas ni cambios de iluminación. Tono representativo obtenido de la zona central de la referencia publicada; fuente original conservada. Color orientativo en pantalla; confirmar con muestra física.",
       "sourceLinks": [
         {
           "label": "Diseño publicado por Ferrofasil",
@@ -22731,15 +22975,22 @@
       "appId": null,
       "textureId": null,
       "image": {
+        "src": "muestras/pertech-ferrofasil-3729-uniforme-20261020.svg",
+        "width": 1024,
+        "height": 1024
+      },
+      "supplierNames": [
+        "Ferrofasil"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
         "src": "muestras/pertech-ferrofasil-3729-ferrofasil.webp",
         "width": 756,
         "height": 756,
         "srcset": "muestras/pertech-ferrofasil-3729-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-3729-ferrofasil.webp 756w"
       },
-      "supplierNames": [
-        "Ferrofasil"
-      ],
-      "supplierAssociationStatus": "oferta_publicada"
+      "sampleColor": "#91877e"
     },
     {
       "id": "pertech-ferrofasil-85",
@@ -22756,8 +23007,8 @@
       "market": "Venezuela · catálogo Ferrofasil",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
-      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "imageKind": "Color digital uniforme de referencia",
+      "imageNote": "Muestra plana solicitada por Santiago, sin textura fotográfica, manchas ni cambios de iluminación. Tono representativo obtenido de la zona central de la referencia publicada; fuente original conservada. Color orientativo en pantalla; confirmar con muestra física.",
       "sourceLinks": [
         {
           "label": "Diseño publicado por Ferrofasil",
@@ -22771,15 +23022,22 @@
       "appId": null,
       "textureId": null,
       "image": {
+        "src": "muestras/pertech-ferrofasil-85-uniforme-20261020.svg",
+        "width": 1024,
+        "height": 1024
+      },
+      "supplierNames": [
+        "Ferrofasil"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
         "src": "muestras/pertech-ferrofasil-85-ferrofasil.webp",
         "width": 756,
         "height": 756,
         "srcset": "muestras/pertech-ferrofasil-85-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-85-ferrofasil.webp 756w"
       },
-      "supplierNames": [
-        "Ferrofasil"
-      ],
-      "supplierAssociationStatus": "oferta_publicada"
+      "sampleColor": "#5d5a65"
     },
     {
       "id": "pertech-ferrofasil-95",
@@ -22796,8 +23054,8 @@
       "market": "Venezuela · catálogo Ferrofasil",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
-      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "imageKind": "Color digital uniforme de referencia",
+      "imageNote": "Muestra plana solicitada por Santiago, sin textura fotográfica, manchas ni cambios de iluminación. Tono representativo obtenido de la zona central de la referencia publicada; fuente original conservada. Color orientativo en pantalla; confirmar con muestra física.",
       "sourceLinks": [
         {
           "label": "Diseño publicado por Ferrofasil",
@@ -22811,15 +23069,22 @@
       "appId": null,
       "textureId": null,
       "image": {
+        "src": "muestras/pertech-ferrofasil-95-uniforme-20261020.svg",
+        "width": 1024,
+        "height": 1024
+      },
+      "supplierNames": [
+        "Ferrofasil"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
         "src": "muestras/pertech-ferrofasil-95-ferrofasil.webp",
         "width": 756,
         "height": 756,
         "srcset": "muestras/pertech-ferrofasil-95-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-95-ferrofasil.webp 756w"
       },
-      "supplierNames": [
-        "Ferrofasil"
-      ],
-      "supplierAssociationStatus": "oferta_publicada"
+      "sampleColor": "#d5cfcf"
     },
     {
       "id": "pertech-ferrofasil-15",
@@ -22916,8 +23181,8 @@
       "market": "Venezuela · catálogo Ferrofasil",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
-      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "imageKind": "Color digital uniforme de referencia",
+      "imageNote": "Muestra plana solicitada por Santiago, sin textura fotográfica, manchas ni cambios de iluminación. Tono representativo obtenido de la zona central de la referencia publicada; fuente original conservada. Color orientativo en pantalla; confirmar con muestra física.",
       "sourceLinks": [
         {
           "label": "Diseño publicado por Ferrofasil",
@@ -22931,15 +23196,22 @@
       "appId": null,
       "textureId": null,
       "image": {
+        "src": "muestras/pertech-ferrofasil-185-uniforme-20261020.svg",
+        "width": 1024,
+        "height": 1024
+      },
+      "supplierNames": [
+        "Ferrofasil"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
         "src": "muestras/pertech-ferrofasil-185-ferrofasil.webp",
         "width": 755,
         "height": 755,
         "srcset": "muestras/pertech-ferrofasil-185-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-185-ferrofasil.webp 755w"
       },
-      "supplierNames": [
-        "Ferrofasil"
-      ],
-      "supplierAssociationStatus": "oferta_publicada"
+      "sampleColor": "#161b1f"
     },
     {
       "id": "pertech-ferrofasil-67",
@@ -22956,8 +23228,8 @@
       "market": "Venezuela · catálogo Ferrofasil",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
-      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "imageKind": "Color digital uniforme de referencia",
+      "imageNote": "Muestra plana solicitada por Santiago, sin textura fotográfica, manchas ni cambios de iluminación. Tono representativo obtenido de la zona central de la referencia publicada; fuente original conservada. Color orientativo en pantalla; confirmar con muestra física.",
       "sourceLinks": [
         {
           "label": "Diseño publicado por Ferrofasil",
@@ -22971,15 +23243,22 @@
       "appId": null,
       "textureId": null,
       "image": {
+        "src": "muestras/pertech-ferrofasil-67-uniforme-20261020.svg",
+        "width": 1024,
+        "height": 1024
+      },
+      "supplierNames": [
+        "Ferrofasil"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
         "src": "muestras/pertech-ferrofasil-67-ferrofasil.webp",
         "width": 755,
         "height": 755,
         "srcset": "muestras/pertech-ferrofasil-67-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-67-ferrofasil.webp 755w"
       },
-      "supplierNames": [
-        "Ferrofasil"
-      ],
-      "supplierAssociationStatus": "oferta_publicada"
+      "sampleColor": "#858688"
     },
     {
       "id": "pertech-ferrofasil-3737",
@@ -23036,8 +23315,8 @@
       "market": "Venezuela · catálogo Ferrofasil",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
-      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "imageKind": "Color digital uniforme de referencia",
+      "imageNote": "Muestra plana solicitada por Santiago, sin textura fotográfica, manchas ni cambios de iluminación. Tono representativo obtenido de la zona central de la referencia publicada; fuente original conservada. Color orientativo en pantalla; confirmar con muestra física.",
       "sourceLinks": [
         {
           "label": "Diseño publicado por Ferrofasil",
@@ -23051,15 +23330,22 @@
       "appId": null,
       "textureId": null,
       "image": {
+        "src": "muestras/pertech-ferrofasil-55-uniforme-20261020.svg",
+        "width": 1024,
+        "height": 1024
+      },
+      "supplierNames": [
+        "Ferrofasil"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
         "src": "muestras/pertech-ferrofasil-55-ferrofasil.webp",
         "width": 755,
         "height": 755,
         "srcset": "muestras/pertech-ferrofasil-55-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-55-ferrofasil.webp 755w"
       },
-      "supplierNames": [
-        "Ferrofasil"
-      ],
-      "supplierAssociationStatus": "oferta_publicada"
+      "sampleColor": "#e2dbd5"
     },
     {
       "id": "pertech-1979-sm",
@@ -23076,8 +23362,8 @@
       "market": "Venezuela · catálogo Ferrofasil",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
-      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "imageKind": "Color digital uniforme de referencia",
+      "imageNote": "Muestra plana solicitada por Santiago, sin textura fotográfica, manchas ni cambios de iluminación. Tono representativo obtenido de la zona central de la referencia publicada; fuente original conservada. Color orientativo en pantalla; confirmar con muestra física.",
       "sourceLinks": [
         {
           "label": "Diseño publicado por Ferrofasil",
@@ -23091,15 +23377,22 @@
       "appId": null,
       "textureId": null,
       "image": {
+        "src": "muestras/pertech-1979-sm-uniforme-20261020.svg",
+        "width": 1024,
+        "height": 1024
+      },
+      "supplierNames": [
+        "Ferrofasil"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
         "src": "muestras/pertech-1979-sm-ferrofasil.webp",
         "width": 755,
         "height": 755,
         "srcset": "muestras/pertech-1979-sm-ferrofasil-420.webp 420w, muestras/pertech-1979-sm-ferrofasil.webp 755w"
       },
-      "supplierNames": [
-        "Ferrofasil"
-      ],
-      "supplierAssociationStatus": "oferta_publicada"
+      "sampleColor": "#bcb0a2"
     },
     {
       "id": "pertech-ferrofasil-7935",
@@ -23636,8 +23929,8 @@
       "market": "Venezuela · catálogo Ferrofasil",
       "international": false,
       "availability": "Existencias por confirmar",
-      "imageKind": "Recorte de la superficie publicada por Ferrofasil",
-      "imageNote": "Recorte de la superficie publicada por Ferrofasil. Imagen documental, sin escala física certificada. Derechos de imagen de sus titulares.",
+      "imageKind": "Color digital uniforme de referencia",
+      "imageNote": "Muestra plana solicitada por Santiago, sin textura fotográfica, manchas ni cambios de iluminación. Tono representativo obtenido de la zona central de la referencia publicada; fuente original conservada. Color orientativo en pantalla; confirmar con muestra física.",
       "sourceLinks": [
         {
           "label": "Diseño publicado por Ferrofasil",
@@ -23651,15 +23944,22 @@
       "appId": null,
       "textureId": null,
       "image": {
+        "src": "muestras/pertech-ferrofasil-3726-uniforme-20261020.svg",
+        "width": 1024,
+        "height": 1024
+      },
+      "supplierNames": [
+        "Ferrofasil"
+      ],
+      "supplierAssociationStatus": "oferta_publicada",
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
         "src": "muestras/pertech-ferrofasil-3726-ferrofasil.webp",
         "width": 755,
         "height": 755,
         "srcset": "muestras/pertech-ferrofasil-3726-ferrofasil-420.webp 420w, muestras/pertech-ferrofasil-3726-ferrofasil.webp 755w"
       },
-      "supplierNames": [
-        "Ferrofasil"
-      ],
-      "supplierAssociationStatus": "oferta_publicada"
+      "sampleColor": "#89847e"
     },
     {
       "id": "pertech-ferrofasil-6044",
@@ -24683,8 +24983,8 @@
       "market": "Venezuela · LD Premium",
       "international": false,
       "availability": "Producto publicado por LD Premium; consultar existencias.",
-      "imageKind": "Imagen oficial publicada por LD Premium",
-      "imageNote": "Recorte de la imagen oficial publicada por LD Premium, conservando sus píxeles. Puede proceder de una ilustración comercial; es una referencia visual, sin escala ni color calibrados. La publicación original está enlazada.",
+      "imageKind": "Referencia visual restaurada con IA",
+      "imageNote": "Muestra reconstruida con IA a partir de la referencia del catálogo para mejorar definición y uniformar la iluminación; original y procedencia conservados. Referencia visual aproximada, no medición colorimétrica ni reproducción certificada del lote.",
       "sourceLinks": [
         {
           "label": "Publicación original LD Premium",
@@ -24692,9 +24992,10 @@
         }
       ],
       "image": {
-        "src": "muestras/ldp-maderas-tablilla-dark-oficial.webp",
-        "width": 372,
-        "height": 418
+        "src": "muestras/ldp-maderas-tablilla-dark-restaurada-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/ldp-maderas-tablilla-dark-restaurada-20261020-640.webp 640w, muestras/ldp-maderas-tablilla-dark-restaurada-20261020.webp 1254w"
       },
       "textureId": null,
       "appId": null,
@@ -24705,7 +25006,13 @@
       "supplierNames": [
         "LD Premium"
       ],
-      "supplierAssociationStatus": "oferta_publicada"
+      "supplierAssociationStatus": "oferta_publicada",
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
+        "src": "muestras/ldp-maderas-tablilla-dark-oficial.webp",
+        "width": 372,
+        "height": 418
+      }
     },
     {
       "id": "ldp-maderas-tablilla-light",
@@ -24723,8 +25030,8 @@
       "market": "Venezuela · LD Premium",
       "international": false,
       "availability": "Producto publicado por LD Premium; consultar existencias.",
-      "imageKind": "Imagen oficial publicada por LD Premium",
-      "imageNote": "Recorte de la imagen oficial publicada por LD Premium, conservando sus píxeles. Puede proceder de una ilustración comercial; es una referencia visual, sin escala ni color calibrados. La publicación original está enlazada.",
+      "imageKind": "Referencia visual restaurada con IA",
+      "imageNote": "Muestra reconstruida con IA a partir de la referencia del catálogo para mejorar definición y uniformar la iluminación; original y procedencia conservados. Referencia visual aproximada, no medición colorimétrica ni reproducción certificada del lote.",
       "sourceLinks": [
         {
           "label": "Publicación original LD Premium",
@@ -24732,9 +25039,10 @@
         }
       ],
       "image": {
-        "src": "muestras/ldp-maderas-tablilla-light-oficial.webp",
-        "width": 372,
-        "height": 418
+        "src": "muestras/ldp-maderas-tablilla-light-restaurada-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/ldp-maderas-tablilla-light-restaurada-20261020-640.webp 640w, muestras/ldp-maderas-tablilla-light-restaurada-20261020.webp 1254w"
       },
       "textureId": null,
       "appId": null,
@@ -24745,7 +25053,13 @@
       "supplierNames": [
         "LD Premium"
       ],
-      "supplierAssociationStatus": "oferta_publicada"
+      "supplierAssociationStatus": "oferta_publicada",
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
+        "src": "muestras/ldp-maderas-tablilla-light-oficial.webp",
+        "width": 372,
+        "height": 418
+      }
     },
     {
       "id": "ldp-maderas-doredos-pine",
@@ -24803,8 +25117,8 @@
       "market": "Venezuela · LD Premium",
       "international": false,
       "availability": "Producto publicado por LD Premium; consultar existencias.",
-      "imageKind": "Imagen oficial publicada por LD Premium",
-      "imageNote": "Recorte de la imagen oficial publicada por LD Premium, conservando sus píxeles. Puede proceder de una ilustración comercial; es una referencia visual, sin escala ni color calibrados. La publicación original está enlazada.",
+      "imageKind": "Referencia visual restaurada con IA",
+      "imageNote": "Muestra reconstruida con IA a partir de la referencia del catálogo para mejorar definición y uniformar la iluminación; original y procedencia conservados. Referencia visual aproximada, no medición colorimétrica ni reproducción certificada del lote.",
       "sourceLinks": [
         {
           "label": "Publicación original LD Premium",
@@ -24812,9 +25126,10 @@
         }
       ],
       "image": {
-        "src": "muestras/ldp-maderas-novecento-pine-oficial.webp",
-        "width": 461,
-        "height": 522
+        "src": "muestras/ldp-maderas-novecento-pine-restaurada-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/ldp-maderas-novecento-pine-restaurada-20261020-640.webp 640w, muestras/ldp-maderas-novecento-pine-restaurada-20261020.webp 1254w"
       },
       "textureId": null,
       "appId": null,
@@ -24825,7 +25140,13 @@
       "supplierNames": [
         "LD Premium"
       ],
-      "supplierAssociationStatus": "oferta_publicada"
+      "supplierAssociationStatus": "oferta_publicada",
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
+        "src": "muestras/ldp-maderas-novecento-pine-oficial.webp",
+        "width": 461,
+        "height": 522
+      }
     },
     {
       "id": "ldp-colores-solidos-black",
@@ -28694,8 +29015,8 @@
       "market": "Venezuela · LD Premium",
       "international": false,
       "availability": "Producto publicado por LD Premium; consultar existencias.",
-      "imageKind": "Muestra de catálogo",
-      "imageNote": "Recorte de la cara izquierda del anuncio C+/C de LD Premium. El anuncio no identifica individualmente el grado; confirmarlo con el proveedor. Tono de presentación ajustado por indicación de Santiago para aproximarlo a la muestra Compuesto fenólico de pino del catálogo. La veta y los nudos originales se conservan. El archivo original permanece intacto; no es color calibrado.",
+      "imageKind": "Referencia visual restaurada con IA",
+      "imageNote": "Muestra reconstruida con IA a partir de la referencia del catálogo para mejorar definición y uniformar la iluminación; original y procedencia conservados. Referencia visual aproximada, no medición colorimétrica ni reproducción certificada del lote. Vetas oscuras ajustadas a ámbar anaranjado según la indicación de Santiago; se conserva la geometría de la cara de referencia y no se certifica el grado por la imagen.",
       "sourceLinks": [
         {
           "label": "Publicación original LD Premium",
@@ -28703,10 +29024,10 @@
         }
       ],
       "image": {
-        "src": "muestras/ldp-compuestos-y-chapillados-compuesto-fenolico-c-plus-oficial.webp",
-        "width": 518,
-        "height": 1008,
-        "displayFilter": "brightness(0.82564) sepia(1) saturate(1.16933) hue-rotate(-3.37446deg)"
+        "src": "muestras/ldp-compuestos-y-chapillados-compuesto-fenolico-c-plus-restaurada-20261020.webp",
+        "width": 887,
+        "height": 1774,
+        "srcset": "muestras/ldp-compuestos-y-chapillados-compuesto-fenolico-c-plus-restaurada-20261020-640.webp 320w, muestras/ldp-compuestos-y-chapillados-compuesto-fenolico-c-plus-restaurada-20261020.webp 887w"
       },
       "textureId": null,
       "appId": null,
@@ -28717,7 +29038,14 @@
       "supplierNames": [
         "LD Premium"
       ],
-      "supplierAssociationStatus": "oferta_publicada"
+      "supplierAssociationStatus": "oferta_publicada",
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
+        "src": "muestras/ldp-compuestos-y-chapillados-compuesto-fenolico-c-plus-oficial.webp",
+        "width": 518,
+        "height": 1008,
+        "displayFilter": "brightness(0.82564) sepia(1) saturate(1.16933) hue-rotate(-3.37446deg)"
+      }
     },
     {
       "id": "ldp-compuestos-y-chapillados-compuesto-fenolico-c",
@@ -28735,8 +29063,8 @@
       "market": "Venezuela · LD Premium",
       "international": false,
       "availability": "Producto publicado por LD Premium; consultar existencias.",
-      "imageKind": "Muestra de catálogo",
-      "imageNote": "Recorte de la cara derecha del anuncio C+/C de LD Premium. El anuncio no identifica individualmente el grado; confirmarlo con el proveedor. Tono de presentación ajustado por indicación de Santiago para aproximarlo a la muestra Compuesto fenólico de pino del catálogo. La veta y los nudos originales se conservan. El archivo original permanece intacto; no es color calibrado.",
+      "imageKind": "Referencia visual restaurada con IA",
+      "imageNote": "Muestra reconstruida con IA a partir de la referencia del catálogo para mejorar definición y uniformar la iluminación; original y procedencia conservados. Referencia visual aproximada, no medición colorimétrica ni reproducción certificada del lote. Vetas oscuras ajustadas a ámbar anaranjado según la indicación de Santiago; se conserva la geometría de la cara de referencia y no se certifica el grado por la imagen.",
       "sourceLinks": [
         {
           "label": "Publicación original LD Premium",
@@ -28744,10 +29072,10 @@
         }
       ],
       "image": {
-        "src": "muestras/ldp-compuestos-y-chapillados-compuesto-fenolico-c-oficial.webp",
-        "width": 504,
-        "height": 1008,
-        "displayFilter": "brightness(0.83484) sepia(1) saturate(1.16918) hue-rotate(-3.36262deg)"
+        "src": "muestras/ldp-compuestos-y-chapillados-compuesto-fenolico-c-restaurada-20261020.webp",
+        "width": 887,
+        "height": 1774,
+        "srcset": "muestras/ldp-compuestos-y-chapillados-compuesto-fenolico-c-restaurada-20261020-640.webp 320w, muestras/ldp-compuestos-y-chapillados-compuesto-fenolico-c-restaurada-20261020.webp 887w"
       },
       "textureId": null,
       "appId": null,
@@ -28758,7 +29086,14 @@
       "supplierNames": [
         "LD Premium"
       ],
-      "supplierAssociationStatus": "oferta_publicada"
+      "supplierAssociationStatus": "oferta_publicada",
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
+        "src": "muestras/ldp-compuestos-y-chapillados-compuesto-fenolico-c-oficial.webp",
+        "width": 504,
+        "height": 1008,
+        "displayFilter": "brightness(0.83484) sepia(1) saturate(1.16918) hue-rotate(-3.36262deg)"
+      }
     },
     {
       "id": "ago-pvc-espumado-blanco",
@@ -28896,8 +29231,8 @@
       "market": "Venezuela · LD Premium",
       "international": false,
       "availability": "Disponibilidad completa registrada para Ecoplaca 3000 · Manzanares el 13/10/2026, por confirmación de Santiago.",
-      "imageKind": "Imagen oficial publicada por LD Premium",
-      "imageNote": "Recorte de la imagen oficial publicada por LD Premium, conservando sus píxeles. Puede proceder de una ilustración comercial; es una referencia visual, sin escala ni color calibrados. La publicación original está enlazada.",
+      "imageKind": "Referencia visual restaurada con IA",
+      "imageNote": "Muestra reconstruida con IA a partir de la referencia del catálogo para mejorar definición y uniformar la iluminación; original y procedencia conservados. Referencia visual aproximada, no medición colorimétrica ni reproducción certificada del lote.",
       "sourceLinks": [
         {
           "label": "Publicación original LD Premium",
@@ -28905,10 +29240,10 @@
         }
       ],
       "image": {
-        "src": "muestras/ldp-melaminas-grisly-oak-oficial.webp",
-        "width": 346,
-        "height": 504,
-        "displayRotation": 90
+        "src": "muestras/ldp-melaminas-grisly-oak-restaurada-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/ldp-melaminas-grisly-oak-restaurada-20261020-640.webp 640w, muestras/ldp-melaminas-grisly-oak-restaurada-20261020.webp 1254w"
       },
       "textureId": null,
       "appId": null,
@@ -28919,7 +29254,14 @@
       "supplierNames": [
         "LD Premium"
       ],
-      "supplierAssociationStatus": "oferta_publicada"
+      "supplierAssociationStatus": "oferta_publicada",
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
+        "src": "muestras/ldp-melaminas-grisly-oak-oficial.webp",
+        "width": 346,
+        "height": 504,
+        "displayRotation": 90
+      }
     },
     {
       "id": "ldp-melaminas-velvet-tundra-grey",
@@ -29265,8 +29607,8 @@
       "market": "Venezuela · LD Premium",
       "international": false,
       "availability": "Producto publicado por LD Premium; consultar existencias.",
-      "imageKind": "Referencia visual recreada con IA",
-      "imageNote": "Referencia visual recreada con IA a partir de la muestra del catálogo.",
+      "imageKind": "Referencia visual restaurada con IA",
+      "imageNote": "Muestra reconstruida con IA a partir de la referencia del catálogo para mejorar definición y uniformar la iluminación; original y procedencia conservados. Referencia visual aproximada, no medición colorimétrica ni reproducción certificada del lote.",
       "sourceLinks": [
         {
           "label": "Publicación original LD Premium",
@@ -29274,10 +29616,10 @@
         }
       ],
       "image": {
-        "src": "muestras/ldp-maderas-madera-vintage-ia-20261013-d7212153.webp",
-        "srcset": "muestras/ldp-maderas-madera-vintage-ia-20261013-d7212153-640.webp 640w, muestras/ldp-maderas-madera-vintage-ia-20261013-d7212153.webp 1254w",
+        "src": "muestras/ldp-maderas-madera-vintage-restaurada-20261020.webp",
         "width": 1254,
-        "height": 1254
+        "height": 1254,
+        "srcset": "muestras/ldp-maderas-madera-vintage-restaurada-20261020-640.webp 640w, muestras/ldp-maderas-madera-vintage-restaurada-20261020.webp 1254w"
       },
       "textureId": null,
       "appId": null,
@@ -29288,7 +29630,14 @@
       "supplierNames": [
         "LD Premium"
       ],
-      "supplierAssociationStatus": "oferta_publicada"
+      "supplierAssociationStatus": "oferta_publicada",
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
+        "src": "muestras/ldp-maderas-madera-vintage-ia-20261013-d7212153.webp",
+        "srcset": "muestras/ldp-maderas-madera-vintage-ia-20261013-d7212153-640.webp 640w, muestras/ldp-maderas-madera-vintage-ia-20261013-d7212153.webp 1254w",
+        "width": 1254,
+        "height": 1254
+      }
     },
     {
       "id": "ldp-maderas-conomita",
@@ -29511,8 +29860,8 @@
       "market": "Venezuela · LD Premium",
       "international": false,
       "availability": "Producto publicado por LD Premium; consultar existencias.",
-      "imageKind": "Referencia visual recreada con IA",
-      "imageNote": "Referencia visual recreada con IA a partir de la muestra del catálogo.",
+      "imageKind": "Referencia visual restaurada con IA",
+      "imageNote": "Muestra reconstruida con IA a partir de la referencia del catálogo para mejorar definición y uniformar la iluminación; original y procedencia conservados. Referencia visual aproximada, no medición colorimétrica ni reproducción certificada del lote.",
       "sourceLinks": [
         {
           "label": "Publicación original LD Premium",
@@ -29520,10 +29869,10 @@
         }
       ],
       "image": {
-        "src": "muestras/ldp-maderas-wengue-ia-20261013-21ec8c1d.webp",
-        "srcset": "muestras/ldp-maderas-wengue-ia-20261013-21ec8c1d-640.webp 640w, muestras/ldp-maderas-wengue-ia-20261013-21ec8c1d.webp 1254w",
+        "src": "muestras/ldp-maderas-wengue-restaurada-20261020.webp",
         "width": 1254,
-        "height": 1254
+        "height": 1254,
+        "srcset": "muestras/ldp-maderas-wengue-restaurada-20261020-640.webp 640w, muestras/ldp-maderas-wengue-restaurada-20261020.webp 1254w"
       },
       "textureId": null,
       "appId": null,
@@ -29534,7 +29883,14 @@
       "supplierNames": [
         "LD Premium"
       ],
-      "supplierAssociationStatus": "oferta_publicada"
+      "supplierAssociationStatus": "oferta_publicada",
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
+        "src": "muestras/ldp-maderas-wengue-ia-20261013-21ec8c1d.webp",
+        "srcset": "muestras/ldp-maderas-wengue-ia-20261013-21ec8c1d-640.webp 640w, muestras/ldp-maderas-wengue-ia-20261013-21ec8c1d.webp 1254w",
+        "width": 1254,
+        "height": 1254
+      }
     },
     {
       "id": "ldp-colores-solidos-blanco-galaxy",
@@ -30444,20 +30800,14 @@
       "market": "Venezuela · Ferrofasil",
       "international": false,
       "availability": "Ofrecido bajo pedido por Ferrofasil según Santiago; plazo y precio por consultar.",
-      "imageKind": "Muestra documental del catálogo",
-      "imageNote": "Recorte de la muestra del PDF CATALOGO SAVIOLA.pdf, página 17. Original aportado por Santiago; sin recreación IA ni color calibrado. Derechos de su titular.",
+      "imageKind": "Referencia visual restaurada con IA",
+      "imageNote": "Muestra reconstruida con IA a partir de la referencia del catálogo para mejorar definición y uniformar la iluminación; original y procedencia conservados. Referencia visual aproximada, no medición colorimétrica ni reproducción certificada del lote.",
       "sourceLinks": [],
       "image": {
-        "src": "muestras/ferrofasil-saviola-49m-twist-corda.webp",
-        "width": 534,
-        "height": 667,
-        "crop": [
-          6,
-          6,
-          522,
-          655
-        ],
-        "surfaceCrop": true
+        "src": "muestras/ferrofasil-saviola-49m-twist-corda-restaurada-20261020.webp",
+        "width": 1254,
+        "height": 1254,
+        "srcset": "muestras/ferrofasil-saviola-49m-twist-corda-restaurada-20261020-640.webp 640w, muestras/ferrofasil-saviola-49m-twist-corda-restaurada-20261020.webp 1254w"
       },
       "textureId": null,
       "appId": null,
@@ -30484,7 +30834,20 @@
         }
       ],
       "pattern": "Textiles",
-      "collection": "Ventus"
+      "collection": "Ventus",
+      "sampleRevision": "superficies-20261020",
+      "sampleOriginal": {
+        "src": "muestras/ferrofasil-saviola-49m-twist-corda.webp",
+        "width": 534,
+        "height": 667,
+        "crop": [
+          6,
+          6,
+          522,
+          655
+        ],
+        "surfaceCrop": true
+      }
     },
     {
       "id": "ferrofasil-saviola-ds4-leizu-azzurro",
@@ -37562,13 +37925,13 @@
     },
     {
       "id": "enchapillado-kurupixa-mariches",
-      "name": "Enchapillado de Kurupixa",
+      "name": "Enchapillado de Curupixá",
       "category": "tableros",
       "family": "Compuestos y chapillados",
       "brand": "",
       "code": "",
       "finish": "",
-      "description": "Tablero con núcleo de MDP o MDF, recubierto por ambas caras con chapilla de Kurupixa. Formato 2,44 × 1,22 m, confirmado por Santiago al cotejar la publicación. Variantes MDP de 15 y 18 mm y MDF de 12 y 18 mm. Una misma muestra de Kurupixa para todas las variantes.",
+      "description": "Tablero con núcleo de MDP o MDF, recubierto por ambas caras con chapilla de Curupixá. Formato 2,44 × 1,22 m, confirmado por Santiago al cotejar la publicación. Variantes MDP de 15 y 18 mm y MDF de 12 y 18 mm. Una misma muestra de Curupixá para todas las variantes.",
       "use": "Mobiliario y revestimientos interiores según la ficha técnica y el producto seleccionado.",
       "care": "Confirmar muestra física, formato, especificaciones y existencias con el proveedor antes de elegir.",
       "supplier": "Maderas Mariches MM",
@@ -37607,7 +37970,7 @@
           ]
         }
       ],
-      "imageKind": "Fotografía de referencia de Kurupixa existente",
+      "imageKind": "Fotografía de referencia de Curupixá existente",
       "imageNote": "Se reutiliza, por indicación de Santiago, la misma muestra de curupixá ya presente en el catálogo. Fotografía de Wolfgang Vetters; no es el lote ni el tablero enchapillado de Mariches. Derechos de imagen de su titular.",
       "imageProvenance": {
         "method": "reuse_existing_user_selected_curupixa",
@@ -37626,7 +37989,11 @@
       },
       "specificationSource": "Publicación Mariches del 27/05/2024, consultada el 20/10/2026; formato 2,44 × 1,22 m confirmado por Santiago.",
       "sourcePublicationDate": "2024-05-27",
-      "sourceObservedAt": "2026-10-20"
+      "sourceObservedAt": "2026-10-20",
+      "aliases": [
+        "Enchapillado de Kurupixa",
+        "Enchapillado de Curupixá"
+      ]
     },
     {
       "id": "mdf-crudo-acanalado-mariches",
