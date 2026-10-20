@@ -118,7 +118,7 @@ $('#ask-anorak').onclick=()=>openAI();$('#palette-ai').onclick=()=>openAI(true);
 window.addEventListener('ago-material-action',e=>{if(!data)return;const {action,id}=e.detail||{};if(!data.records.some(x=>x.id===id))return;if(action==='add')pick(id,true);if(action==='detail')details(id);});
 window.addEventListener('ago-open-palette',()=>{paletteRequested=true;if(data)openPalette();});
 window.addEventListener('storage',e=>{if(e.key!==STORAGE_KEY||!data)return;let saved;try{saved=restorePalette(localStorage,data.records);}catch{return;}selection=saved.ids;project=saved.project;updateBadge();updateURL();broadcast();if($('#palette').open)renderPalette();});
-fetch(new URL('catalogo.json?v=20261020-timber-walnut-v4',import.meta.url)).then(r=>{if(!r.ok)throw Error();return r.json();}).then(async d=>{
+fetch(new URL('catalogo.json?v=20261020-tonos-reflejos-v5',import.meta.url)).then(r=>{if(!r.ok)throw Error();return r.json();}).then(async d=>{
   if(['127.0.0.1','localhost','[::1]'].includes(location.hostname)){
     try{const response=await fetch('/_ago/local-materials.json');if(response.ok){const local=await response.json();const ids=new Set(d.records.map(r=>r.id));d.records.push(...(local.records||[]).filter(r=>!ids.has(r.id)));}}catch{}
   }

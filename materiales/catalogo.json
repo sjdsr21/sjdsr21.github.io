@@ -24200,14 +24200,14 @@
       "supplier": "LD Premium",
       "code": "4001",
       "finish": "Alto brillo",
-      "description": "Laminado decorativo de alta presión (HPL), que se aplica sobre un soporte. Diseño identificado en la publicación oficial de LD Premium.",
+      "description": "Laminado decorativo de alta presión (HPL), que se aplica sobre un soporte. Diseño identificado en la publicación oficial de LD Premium. Color sólido blanco lechoso, claro y con un matiz amarillo muy suave.",
       "use": "Mobiliario y revestimientos interiores según el producto y su ficha técnica.",
       "care": "Cotejar muestra física, formato, acabado y producto del lote antes de elegir.",
       "market": "Venezuela · LD Premium",
       "international": false,
       "availability": "Producto publicado por LD Premium; consultar existencias.",
-      "imageKind": "Imagen oficial publicada por LD Premium",
-      "imageNote": "Recorte de la imagen oficial publicada por LD Premium, conservando sus píxeles. Puede proceder de una ilustración comercial; es una referencia visual, sin escala ni color calibrados. La publicación original está enlazada.",
+      "imageKind": "Muestra de referencia editada con IA",
+      "imageNote": "Imagen de referencia editada con IA para retirar las ventanas y reflejos de la imagen base. Color blanco lechoso más claro, uniforme y con un matiz amarillo muy suave según Santiago. El acabado Alto brillo se conserva; confirmar tono y acabado con la muestra física.",
       "sourceLinks": [
         {
           "label": "Publicación original LD Premium",
@@ -24215,9 +24215,10 @@
         }
       ],
       "image": {
-        "src": "muestras/ldp-colores-solidos-blanco-milky-oficial.webp",
-        "width": 407,
-        "height": 473
+        "src": "muestras/ldp-colores-solidos-blanco-milky-sin-reflejos-20261020-v5.webp",
+        "srcset": "muestras/ldp-colores-solidos-blanco-milky-sin-reflejos-20261020-v5-640.webp 640w, muestras/ldp-colores-solidos-blanco-milky-sin-reflejos-20261020-v5.webp 1163w",
+        "width": 1163,
+        "height": 1352
       },
       "textureId": null,
       "appId": null,
@@ -24228,7 +24229,8 @@
       "supplierNames": [
         "LD Premium"
       ],
-      "supplierAssociationStatus": "oferta_publicada"
+      "supplierAssociationStatus": "oferta_publicada",
+      "visualRevision": 5
     },
     {
       "id": "ldp-colores-solidos-azul-rey",
@@ -24875,14 +24877,14 @@
       "supplier": "LD Premium",
       "code": "",
       "finish": "Según variante publicada",
-      "description": "Laminado decorativo de alta presión (HPL), que se aplica sobre un soporte. Diseño identificado en la publicación oficial de LD Premium.",
+      "description": "Laminado decorativo de alta presión (HPL), que se aplica sobre un soporte. Diseño identificado en la publicación oficial de LD Premium. Color sólido blanco puro y neutro.",
       "use": "Mobiliario y revestimientos interiores según el producto y su ficha técnica.",
       "care": "Cotejar muestra física, formato, acabado y producto del lote antes de elegir.",
       "market": "Venezuela · LD Premium",
       "international": false,
       "availability": "Producto publicado por LD Premium; consultar existencias.",
-      "imageKind": "Imagen oficial publicada por LD Premium",
-      "imageNote": "Recorte de la imagen oficial publicada por LD Premium, conservando sus píxeles. Puede proceder de una ilustración comercial; es una referencia visual, sin escala ni color calibrados. La publicación original está enlazada.",
+      "imageKind": "Muestra oficial con ajuste de presentación",
+      "imageNote": "Imagen oficial conservada con ajuste reversible para mostrar un blanco más claro y neutro, según Santiago. Confirmar el tono y acabado con la muestra física.",
       "sourceLinks": [
         {
           "label": "Publicación original LD Premium",
@@ -24892,7 +24894,8 @@
       "image": {
         "src": "muestras/ldp-colores-solidos-white-oficial.webp",
         "width": 461,
-        "height": 522
+        "height": 522,
+        "displayFilter": "grayscale(1) brightness(1.03)"
       },
       "textureId": null,
       "appId": null,
@@ -24903,7 +24906,8 @@
       "supplierNames": [
         "LD Premium"
       ],
-      "supplierAssociationStatus": "oferta_publicada"
+      "supplierAssociationStatus": "oferta_publicada",
+      "visualRevision": 5
     },
     {
       "id": "ldp-maderas-kampia-wengue",
@@ -30331,20 +30335,14 @@
       "market": "Venezuela · Ferrofasil",
       "international": false,
       "availability": "Ofrecido bajo pedido por Ferrofasil según Santiago; plazo y precio por consultar.",
-      "imageKind": "Muestra documental del catálogo",
-      "imageNote": "Recorte de la muestra del PDF CATALOGO SAVIOLA.pdf, página 15. Original aportado por Santiago; sin recreación IA ni color calibrado. Derechos de su titular.",
+      "imageKind": "Muestra de referencia editada con IA",
+      "imageNote": "Muestra documental de Saviola 797 editada con IA para retirar reflejos y gradientes de iluminación de la imagen base. Se conserva una referencia de su gris grafito y microtextura; no es una medición de color ni relieve. Original del catálogo conservado; cotejar con la muestra física.",
       "sourceLinks": [],
       "image": {
-        "src": "muestras/ferrofasil-saviola-797-grigio-grafite.webp",
-        "width": 537,
-        "height": 667,
-        "crop": [
-          6,
-          6,
-          525,
-          655
-        ],
-        "surfaceCrop": true
+        "src": "muestras/ferrofasil-saviola-797-grigio-grafite-sin-reflejos-20261020-v5.webp",
+        "srcset": "muestras/ferrofasil-saviola-797-grigio-grafite-sin-reflejos-20261020-v5-640.webp 640w, muestras/ferrofasil-saviola-797-grigio-grafite-sin-reflejos-20261020-v5.webp 1125w",
+        "width": 1125,
+        "height": 1398
       },
       "textureId": null,
       "appId": null,
@@ -30371,7 +30369,8 @@
         }
       ],
       "pattern": "Colores sólidos",
-      "collection": "Ventus"
+      "collection": "Ventus",
+      "visualRevision": 5
     },
     {
       "id": "ferrofasil-saviola-wd3-grigio",
@@ -37419,7 +37418,7 @@
       "international": false,
       "availability": "Por pedido para proyectos de volumen; cantidad mínima y plazo por confirmar.",
       "imageKind": "Muestra del catálogo oficial",
-      "imageNote": "Imagen oficial conservada con ajustes de presentación según la comparación con el catálogo físico del 20/10/2026: tono cálido, saturación algo más intensa y un ligero oscurecimiento posterior solicitado por Santiago. Confirmar con la muestra física.",
+      "imageNote": "Imagen oficial conservada con ajustes de presentación según Santiago: tono cálido, saturación algo más intensa y oscurecimiento adicional, conservando la veta. Confirmar con la muestra física.",
       "sourceLinks": [
         {
           "label": "Catálogo digital Timber · página 18",
@@ -37439,9 +37438,9 @@
         "src": "muestras/timber-dark-walnut-oficial-20261020.webp",
         "width": 1198,
         "height": 1086,
-        "displayFilter": "sepia(0.17) saturate(1.22) brightness(0.92)"
+        "displayFilter": "sepia(0.17) saturate(1.22) brightness(0.80)"
       },
-      "visualRevision": 4
+      "visualRevision": 5
     },
     {
       "id": "inox-304-2b",
