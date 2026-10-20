@@ -36737,14 +36737,14 @@
       "supplier": "Macisa Ecoplaca 3000 · Manzanares",
       "code": "",
       "finish": "",
-      "description": "Melamina decorativa Timber Duna Nórdico. Diseño de color sólido.",
+      "description": "Melamina decorativa Timber Duna Nórdico. Color sólido gris cálido con matiz beige.",
       "use": "Revestimiento de tableros para cuerpos y frentes de mobiliario interior, según el soporte y acabado seleccionados.",
       "care": "Confirmar sustrato, espesor, acabado, plazo y cantidad del pedido; comparar el tono con la muestra física.",
       "market": "Venezuela",
       "international": false,
       "availability": "Por pedido para proyectos de volumen; cantidad mínima y plazo por confirmar.",
       "imageKind": "Muestra del catálogo oficial",
-      "imageNote": "Recorte de la superficie en la página 28 del catálogo digital Timber enlazado por Cobermelass. Color y veta orientativos; cotejar la muestra física y el acabado del pedido.",
+      "imageNote": "Imagen oficial conservada con ajuste reversible de presentación, según la comparación de Santiago con su catálogo físico el 20/10/2026. Un poco más cálido. El tono es orientativo y se confirma con la muestra física.",
       "sourceLinks": [
         {
           "label": "Catálogo digital Timber · página 28",
@@ -36763,8 +36763,10 @@
       "image": {
         "src": "muestras/timber-duna-nordico-oficial-20261020.webp",
         "width": 1195,
-        "height": 1087
-      }
+        "height": 1087,
+        "displayFilter": "sepia(0.22) saturate(1.05) brightness(0.97)"
+      },
+      "visualRevision": 2
     },
     {
       "id": "timber-gris-antracita",
@@ -36776,14 +36778,14 @@
       "supplier": "Macisa Ecoplaca 3000 · Manzanares",
       "code": "",
       "finish": "",
-      "description": "Melamina decorativa Timber Gris Antracita. Diseño de color sólido.",
+      "description": "Melamina decorativa Timber Gris Antracita. Gris oscuro con un matiz cálido y un toque verde muy sutil.",
       "use": "Revestimiento de tableros para cuerpos y frentes de mobiliario interior, según el soporte y acabado seleccionados.",
       "care": "Confirmar sustrato, espesor, acabado, plazo y cantidad del pedido; comparar el tono con la muestra física.",
       "market": "Venezuela",
       "international": false,
       "availability": "Por pedido para proyectos de volumen; cantidad mínima y plazo por confirmar.",
       "imageKind": "Muestra del catálogo oficial",
-      "imageNote": "Recorte de la superficie en la página 32 del catálogo digital Timber enlazado por Cobermelass. Color y veta orientativos; cotejar la muestra física y el acabado del pedido.",
+      "imageNote": "Imagen oficial conservada con ajuste reversible de presentación, según la comparación de Santiago con su catálogo físico el 20/10/2026. Conservar oscuridad, un poco más cálido y con un toque verde muy sutil. El tono es orientativo y se confirma con la muestra física.",
       "sourceLinks": [
         {
           "label": "Catálogo digital Timber · página 32",
@@ -36802,8 +36804,10 @@
       "image": {
         "src": "muestras/timber-gris-antracita-oficial-20261020.webp",
         "width": 2393,
-        "height": 2176
-      }
+        "height": 2176,
+        "displayFilter": "sepia(0.18) hue-rotate(25deg) saturate(0.85) brightness(0.98)"
+      },
+      "visualRevision": 2
     },
     {
       "id": "timber-gris-grafito",
@@ -36815,14 +36819,14 @@
       "supplier": "Macisa Ecoplaca 3000 · Manzanares",
       "code": "",
       "finish": "",
-      "description": "Melamina decorativa Timber Gris Grafito. Diseño de color sólido.",
+      "description": "Melamina decorativa Timber Gris Grafito. Gris oscuro neutro, con la saturación reducida para evitar el matiz azulado.",
       "use": "Revestimiento de tableros para cuerpos y frentes de mobiliario interior, según el soporte y acabado seleccionados.",
       "care": "Confirmar sustrato, espesor, acabado, plazo y cantidad del pedido; comparar el tono con la muestra física.",
       "market": "Venezuela",
       "international": false,
       "availability": "Por pedido para proyectos de volumen; cantidad mínima y plazo por confirmar.",
       "imageKind": "Muestra del catálogo oficial",
-      "imageNote": "Recorte de la superficie en la página 34 del catálogo digital Timber enlazado por Cobermelass. Color y veta orientativos; cotejar la muestra física y el acabado del pedido.",
+      "imageNote": "Imagen oficial conservada con ajuste reversible de presentación, según la comparación de Santiago con su catálogo físico el 20/10/2026. Disminuir drásticamente la saturación; gris oscuro sin inclinación de color. El tono es orientativo y se confirma con la muestra física.",
       "sourceLinks": [
         {
           "label": "Catálogo digital Timber · página 34",
@@ -36841,8 +36845,10 @@
       "image": {
         "src": "muestras/timber-gris-grafito-oficial-20261020.webp",
         "width": 1195,
-        "height": 1086
-      }
+        "height": 1086,
+        "displayFilter": "grayscale(1)"
+      },
+      "visualRevision": 2
     },
     {
       "id": "timber-negro",
@@ -36893,14 +36899,14 @@
       "supplier": "Macisa Ecoplaca 3000 · Manzanares",
       "code": "",
       "finish": "",
-      "description": "Melamina decorativa Timber Arena. Diseño de color sólido.",
+      "description": "Melamina decorativa Timber Arena. Color sólido beige grisáceo con un matiz verde suave y apariencia uniforme.",
       "use": "Revestimiento de tableros para cuerpos y frentes de mobiliario interior, según el soporte y acabado seleccionados.",
       "care": "Confirmar sustrato, espesor, acabado, plazo y cantidad del pedido; comparar el tono con la muestra física.",
       "market": "Venezuela",
       "international": false,
       "availability": "Por pedido para proyectos de volumen; cantidad mínima y plazo por confirmar.",
-      "imageKind": "Recorte de imagen promocional oficial",
-      "imageNote": "Recorte de la superficie mostrada en la publicación oficial de Cobermelass. La imagen promocional tiene iluminación ambiental y no es una muestra de color calibrada; cotejar con el catálogo físico y el lote.",
+      "imageKind": "Referencia de color ajustada",
+      "imageNote": "Referencia uniforme de color ajustada según la comparación de Santiago con el catálogo físico el 20/10/2026. Sustituye el recorte promocional con iluminación ambiental. No es una fotografía ni una medición colorimétrica; confirmar con la muestra física.",
       "sourceLinks": [
         {
           "label": "Presentación oficial · Arena",
@@ -36921,10 +36927,11 @@
         "Timber Arena"
       ],
       "image": {
-        "src": "muestras/timber-arena-oficial-20261020.webp",
-        "width": 615,
-        "height": 405
-      }
+        "src": "muestras/timber-arena-color-uniforme-20261020-v2.svg",
+        "width": 1024,
+        "height": 1024
+      },
+      "visualRevision": 2
     },
     {
       "id": "timber-taupe-clasico",
@@ -36936,14 +36943,14 @@
       "supplier": "Macisa Ecoplaca 3000 · Manzanares",
       "code": "",
       "finish": "",
-      "description": "Melamina decorativa Timber Taupe Clásico. Diseño de color sólido.",
+      "description": "Melamina decorativa Timber Taupe Clásico. Color sólido taupe cálido.",
       "use": "Revestimiento de tableros para cuerpos y frentes de mobiliario interior, según el soporte y acabado seleccionados.",
       "care": "Confirmar sustrato, espesor, acabado, plazo y cantidad del pedido; comparar el tono con la muestra física.",
       "market": "Venezuela",
       "international": false,
       "availability": "Por pedido para proyectos de volumen; cantidad mínima y plazo por confirmar.",
       "imageKind": "Muestra del catálogo oficial",
-      "imageNote": "Recorte de la superficie en la página 30 del catálogo digital Timber enlazado por Cobermelass. Color y veta orientativos; cotejar la muestra física y el acabado del pedido.",
+      "imageNote": "Imagen oficial conservada con ajuste reversible de presentación, según la comparación de Santiago con su catálogo físico el 20/10/2026. Un poco más cálido. El tono es orientativo y se confirma con la muestra física.",
       "sourceLinks": [
         {
           "label": "Catálogo digital Timber · página 30",
@@ -36963,8 +36970,10 @@
       "image": {
         "src": "muestras/timber-taupe-clasico-oficial-20261020.webp",
         "width": 1198,
-        "height": 1082
-      }
+        "height": 1082,
+        "displayFilter": "sepia(0.22) saturate(1.05) brightness(0.98)"
+      },
+      "visualRevision": 2
     },
     {
       "id": "timber-urban-wood",
@@ -36976,14 +36985,14 @@
       "supplier": "Macisa Ecoplaca 3000 · Manzanares",
       "code": "",
       "finish": "",
-      "description": "Melamina decorativa Timber Urban Wood. Diseño tipo madera con veta vertical.",
+      "description": "Melamina decorativa Timber Urban Wood. Diseño tipo madera gris cálido, con veta vertical.",
       "use": "Revestimiento de tableros para cuerpos y frentes de mobiliario interior, según el soporte y acabado seleccionados.",
       "care": "Confirmar sustrato, espesor, acabado, plazo y cantidad del pedido; comparar el tono con la muestra física.",
       "market": "Venezuela",
       "international": false,
       "availability": "Por pedido para proyectos de volumen; cantidad mínima y plazo por confirmar.",
       "imageKind": "Recorte de imagen promocional oficial",
-      "imageNote": "Recorte de la superficie mostrada en la publicación oficial de Cobermelass. La imagen promocional tiene iluminación ambiental y no es una muestra de color calibrada; cotejar con el catálogo físico y el lote.",
+      "imageNote": "Imagen oficial conservada con ajuste reversible de presentación, según la comparación de Santiago con su catálogo físico el 20/10/2026. Un poco más cálida. El tono es orientativo y se confirma con la muestra física.",
       "sourceLinks": [
         {
           "label": "Presentación oficial · Urban Wood",
@@ -37006,8 +37015,10 @@
       "image": {
         "src": "muestras/timber-urban-wood-oficial-20261020.webp",
         "width": 297,
-        "height": 594
-      }
+        "height": 594,
+        "displayFilter": "sepia(0.20) saturate(1.05) brightness(0.98)"
+      },
+      "visualRevision": 2
     },
     {
       "id": "timber-roso-blanco",
@@ -37058,14 +37069,14 @@
       "supplier": "Macisa Ecoplaca 3000 · Manzanares",
       "code": "",
       "finish": "",
-      "description": "Melamina decorativa Timber Cendra. Diseño tipo madera con veta vertical.",
+      "description": "Melamina decorativa Timber Cendra. Diseño de veta vertical contrastada sobre un fondo gris más regular.",
       "use": "Revestimiento de tableros para cuerpos y frentes de mobiliario interior, según el soporte y acabado seleccionados.",
       "care": "Confirmar sustrato, espesor, acabado, plazo y cantidad del pedido; comparar el tono con la muestra física.",
       "market": "Venezuela",
       "international": false,
       "availability": "Por pedido para proyectos de volumen; cantidad mínima y plazo por confirmar.",
-      "imageKind": "Muestra del catálogo oficial",
-      "imageNote": "Recorte de la superficie en la página 8 del catálogo digital Timber enlazado por Cobermelass. Color y veta orientativos; cotejar la muestra física y el acabado del pedido.",
+      "imageKind": "Recreación visual con IA",
+      "imageNote": "Recreación visual con IA a partir de la referencia oficial, ajustada según la comparación de Santiago con su catálogo físico el 20/10/2026. Más contraste entre veta y fondo; gris de fondo más uniforme, sin franjas claras y oscuras tan marcadas. Referencia orientativa; confirmar tono, veta y acabado con la muestra física.",
       "sourceLinks": [
         {
           "label": "Catálogo digital Timber · página 8",
@@ -37083,10 +37094,11 @@
         "Sendra"
       ],
       "image": {
-        "src": "muestras/timber-cendra-oficial-20261020.webp",
-        "width": 1193,
-        "height": 1085
-      }
+        "src": "muestras/timber-cendra-revision-20261020-v2.webp",
+        "width": 1254,
+        "height": 1254
+      },
+      "visualRevision": 2
     },
     {
       "id": "timber-cream-oak",
@@ -37098,14 +37110,14 @@
       "supplier": "Macisa Ecoplaca 3000 · Manzanares",
       "code": "",
       "finish": "",
-      "description": "Melamina decorativa Timber Cream Oak. Diseño tipo madera con veta vertical.",
+      "description": "Melamina decorativa Timber Cream Oak. Diseño tipo madera de tono crema cálido y veta vertical fina.",
       "use": "Revestimiento de tableros para cuerpos y frentes de mobiliario interior, según el soporte y acabado seleccionados.",
       "care": "Confirmar sustrato, espesor, acabado, plazo y cantidad del pedido; comparar el tono con la muestra física.",
       "market": "Venezuela",
       "international": false,
       "availability": "Por pedido para proyectos de volumen; cantidad mínima y plazo por confirmar.",
       "imageKind": "Muestra del catálogo oficial",
-      "imageNote": "Recorte de la superficie en la página 12 del catálogo digital Timber enlazado por Cobermelass. Color y veta orientativos; cotejar la muestra física y el acabado del pedido.",
+      "imageNote": "Imagen oficial conservada con ajuste reversible de presentación, según la comparación de Santiago con su catálogo físico el 20/10/2026. Más cálido; el usuario indica que la calidez puede resolver también la sensación de claridad. El tono es orientativo y se confirma con la muestra física.",
       "sourceLinks": [
         {
           "label": "Catálogo digital Timber · página 12",
@@ -37124,8 +37136,10 @@
       "image": {
         "src": "muestras/timber-cream-oak-oficial-20261020.webp",
         "width": 1196,
-        "height": 1087
-      }
+        "height": 1087,
+        "displayFilter": "sepia(0.16) saturate(1.08)"
+      },
+      "visualRevision": 2
     },
     {
       "id": "timber-toscana",
@@ -37176,14 +37190,14 @@
       "supplier": "Macisa Ecoplaca 3000 · Manzanares",
       "code": "",
       "finish": "",
-      "description": "Melamina decorativa Timber Almendra Oslo. Diseño tipo madera con veta vertical.",
+      "description": "Melamina decorativa Timber Almendra Oslo. Diseño tipo madera de tono almendra amarillo cálido, con color más uniforme y veta vertical.",
       "use": "Revestimiento de tableros para cuerpos y frentes de mobiliario interior, según el soporte y acabado seleccionados.",
       "care": "Confirmar sustrato, espesor, acabado, plazo y cantidad del pedido; comparar el tono con la muestra física.",
       "market": "Venezuela",
       "international": false,
       "availability": "Por pedido para proyectos de volumen; cantidad mínima y plazo por confirmar.",
-      "imageKind": "Recorte de imagen promocional oficial",
-      "imageNote": "Recorte de la superficie mostrada en la publicación oficial de Cobermelass. La imagen promocional tiene iluminación ambiental y no es una muestra de color calibrada; cotejar con el catálogo físico y el lote.",
+      "imageKind": "Recreación visual con IA",
+      "imageNote": "Recreación visual con IA a partir de la referencia oficial, ajustada según la comparación de Santiago con su catálogo físico el 20/10/2026. Más uniforme, menos heterogéneo, más amarillo y cálido y solo un poco más oscuro. Referencia orientativa; confirmar tono, veta y acabado con la muestra física.",
       "sourceLinks": [
         {
           "label": "Presentación oficial · Almendra Oslo",
@@ -37204,10 +37218,11 @@
         "Timber Almendra Oslo"
       ],
       "image": {
-        "src": "muestras/timber-almendra-oslo-oficial-20261020.webp",
-        "width": 497,
-        "height": 418
-      }
+        "src": "muestras/timber-almendra-oslo-revision-20261020-v2.webp",
+        "width": 1368,
+        "height": 1150
+      },
+      "visualRevision": 2
     },
     {
       "id": "timber-dark-walnut",
@@ -37219,14 +37234,14 @@
       "supplier": "Macisa Ecoplaca 3000 · Manzanares",
       "code": "",
       "finish": "",
-      "description": "Melamina decorativa Timber Dark Walnut. Diseño tipo madera con veta vertical.",
+      "description": "Melamina decorativa Timber Dark Walnut. Diseño tipo madera marrón cálido con veta vertical.",
       "use": "Revestimiento de tableros para cuerpos y frentes de mobiliario interior, según el soporte y acabado seleccionados.",
       "care": "Confirmar sustrato, espesor, acabado, plazo y cantidad del pedido; comparar el tono con la muestra física.",
       "market": "Venezuela",
       "international": false,
       "availability": "Por pedido para proyectos de volumen; cantidad mínima y plazo por confirmar.",
       "imageKind": "Muestra del catálogo oficial",
-      "imageNote": "Recorte de la superficie en la página 18 del catálogo digital Timber enlazado por Cobermelass. Color y veta orientativos; cotejar la muestra física y el acabado del pedido.",
+      "imageNote": "Imagen oficial conservada con ajuste reversible de presentación, según la comparación de Santiago con su catálogo físico el 20/10/2026. Un poco más cálido. El tono es orientativo y se confirma con la muestra física.",
       "sourceLinks": [
         {
           "label": "Catálogo digital Timber · página 18",
@@ -37245,8 +37260,10 @@
       "image": {
         "src": "muestras/timber-dark-walnut-oficial-20261020.webp",
         "width": 1198,
-        "height": 1086
-      }
+        "height": 1086,
+        "displayFilter": "sepia(0.17) saturate(1.08) brightness(0.98)"
+      },
+      "visualRevision": 2
     }
   ]
 }
