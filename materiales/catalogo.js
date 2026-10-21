@@ -3,7 +3,7 @@ import {STORAGE_KEY,normalize,cleanIDs,label,selectionURL,browseURL,selectionTex
 import {setupMaterialViewer} from './visor.js?v=20261020-catalogo-conjunto-v1';
 import {exportImage} from './exportar.js?v=20261020-catalogo-conjunto-v1';
 import {sampleGeometry,observeSampleCovers} from './muestras.js?v=20261020-catalogo-conjunto-v1';
-import {categoryTypes,matchesType,typeLabel,isGlossy,isSatin,navigationHTML,setupNavigation,orderByType,prepareCatalogue,matchesCategory,resolveCategory} from './categorias.js?v=20261020-catalogo-conjunto-v1';
+import {categoryTypes,matchesType,typeLabel,isGlossy,isSatin,navigationHTML,setupNavigation,orderByType,prepareCatalogue,matchesCategory,resolveCategory} from './categorias.js?v=20261020-orden-agrupado-1637dbed3e4a';
 const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const params=new URLSearchParams(location.search);
 let data,category='maderas',family='',selection=[],project='',view='row',pair=[],messageTimer,lastFocus=new Map(),sharedOpening=false,paletteRequested=params.get('paleta')==='1';
@@ -118,7 +118,7 @@ $('#ask-anorak').onclick=()=>openAI();$('#palette-ai').onclick=()=>openAI(true);
 window.addEventListener('ago-material-action',e=>{if(!data)return;const {action,id}=e.detail||{};if(!data.records.some(x=>x.id===id))return;if(action==='add')pick(id,true);if(action==='detail')details(id);});
 window.addEventListener('ago-open-palette',()=>{paletteRequested=true;if(data)openPalette();});
 window.addEventListener('storage',e=>{if(e.key!==STORAGE_KEY||!data)return;let saved;try{saved=restorePalette(localStorage,data.records);}catch{return;}selection=saved.ids;project=saved.project;updateBadge();updateURL();broadcast();if($('#palette').open)renderPalette();});
-fetch(new URL('catalogo.json?v=20261020-superficies-v7',import.meta.url)).then(r=>{if(!r.ok)throw Error();return r.json();}).then(async d=>{
+fetch(new URL('catalogo.json?v=20261020-paneles-0879257d6861',import.meta.url)).then(r=>{if(!r.ok)throw Error();return r.json();}).then(async d=>{
   if(['127.0.0.1','localhost','[::1]'].includes(location.hostname)){
     try{const response=await fetch('/_ago/local-materials.json');if(response.ok){const local=await response.json();const ids=new Set(d.records.map(r=>r.id));d.records.push(...(local.records||[]).filter(r=>!ids.has(r.id)));}}catch{}
   }

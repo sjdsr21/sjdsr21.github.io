@@ -64,7 +64,8 @@ export function matchesCategory(record,category){
 export function resolveCategory(category,type='',record=null){
   if(record)return {category:record.category,type:''};
   if(category==='acabados')return {category:'otros',type:''};
-  if(category==='maderas'&&type==='Paneles ranurados de madera sólida')return {category:'revestimientos',type:'madera-solida'};
+  if(category==='revestimientos'&&['madera-solida','Paneles de madera sólida'].includes(type))return {category,type:'wall-panels'};
+  if(category==='maderas'&&type==='Paneles ranurados de madera sólida')return {category:'revestimientos',type:'wall-panels'};
   if(category==='tableros'&&['Wall panels','Ranurados','Flat wall panels','Láminas de PVC','Paneles autoadhesivos'].includes(type))return {category:'revestimientos',type:['Wall panels','Ranurados'].includes(type)?'wall-panels':['Flat wall panels','Láminas de PVC'].includes(type)?'pvc-liso':type};
   if(category==='tableros'&&type==='Melaminas')return {category:'melaminas',type:''};
   if(category==='tableros'&&type==='Alistonados')return {category:'maderas',type};
@@ -90,7 +91,6 @@ const definitions={
     {value:'Otros diseños',label:'Otros diseños'}
   ],
   revestimientos:[
-    {value:'madera-solida',label:'Paneles de madera sólida'},
     {value:'wall-panels',label:'Wall panels y paneles ranurados'},
     {value:'pvc-liso',label:'Paneles lisos y láminas de PVC'},
     {value:'Paneles autoadhesivos',label:'Paneles autoadhesivos'}
@@ -132,7 +132,7 @@ export function matchesType(record,type){
   if(!type)return true;
   if(record.category==='melaminas')return melamineType(record)===type;
   if(type==='madera-solida')return record.family==='Paneles de madera sólida';
-  if(type==='wall-panels')return ['Wall panels','Ranurados'].includes(record.family);
+  if(type==='wall-panels')return ['Paneles de madera sólida','Wall panels','Ranurados'].includes(record.family);
   if(type==='pvc-liso')return ['Flat wall panels','Láminas de PVC'].includes(record.family);
   if(type==='soportes')return record.category==='tableros'&&!['Wall panels','Flat wall panels','Láminas de PVC','Paneles autoadhesivos','Perfiles para revestimientos'].includes(record.family);
   if(type==='tonos-calidos')return /bronce|cobre|dorado/.test(normalize(record.name));
@@ -145,8 +145,11 @@ export function categoryTypes(category,records){
   return (definitions[category]||[]).filter(item=>records.some(r=>matchesCategory(r,category)&&matchesType(r,item.value)));
 }
 export function typeLabel(category,type,records){return categoryTypes(category,records).find(t=>t.value===type)?.label||'';}
-// Santiago 14/10: bloques por marca; las referencias de El Sol con marca
-// conocida permanecen en esa marca, sin duplicarse en el bloque del proveedor.
+// Santiago 15/10, reiterado 20/10: primero bloques completos por tipo.
+// La marca solo ordena dentro de cada tipo: todos los sólidos antes de maderas,
+// piedras, metales, textiles y relieves. Al editar estas reglas, renovar también
+// la versión del import en catalogo.js y su plantilla catalogue-app.js.
+// Las referencias de El Sol con marca conocida permanecen en esa marca.
 const laminateBrandOrder=new Map(['greenlam','starline','ldp','virgo','century laminates','pertech'].map((brand,index)=>[brand,index]));
 function catalogueBrandRank(category,record){
   const brand=normalize(record.brand);
@@ -160,7 +163,20 @@ function catalogueBrandRank(category,record){
   }
   return 0;
 }
+// Chapas y compuestos: orden visual solicitado el 20/10; sin submenús.
+const boardTypeOrder=['MDF','Compuestos','Contrachapados','Chapas','Chapillas','Enchapillados','Chapillas precompuestas'];
+export function boardType(record){
+ const name=normalize(record.name),family=normalize(record.family);
+ if(/\bmdf\b/.test(name+' '+family))return 'MDF';
+ if(name.startsWith('chapilla precompuesta')||family==='chapillas precompuestas')return 'Chapillas precompuestas';
+ if(name.startsWith('enchapillado')||family==='enchapillados')return 'Enchapillados';
+ if(name.startsWith('chapilla')||family==='chapillas')return 'Chapillas';
+ if(name.startsWith('chapa ')||family==='chapas')return 'Chapas';
+ if(name.startsWith('contrachapado')||family==='contrachapados')return 'Contrachapados';
+ return 'Compuestos';
+}
 export function orderByType(category,records){
+  if(category==='tableros')return records.slice().sort((a,b)=>boardTypeOrder.indexOf(boardType(a))-boardTypeOrder.indexOf(boardType(b)));
   if(category==='otros')return otherCategories.flatMap(id=>orderByType(id,records.filter(r=>r.category===id)));
   if(category==='revestimientos'){const order=['Paneles de madera sólida','Wall panels','Ranurados','Flat wall panels','Láminas de PVC','Paneles autoadhesivos'];return records.slice().sort((a,b)=>order.indexOf(a.family)-order.indexOf(b.family));}
   const group=record=>category==='melaminas'?melamineType(record):record.family;

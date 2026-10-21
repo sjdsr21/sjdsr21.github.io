@@ -16939,45 +16939,6 @@
       }
     },
     {
-      "id": "tablero-fenolico-pino-natural",
-      "category": "tableros",
-      "family": "Compuestos y chapillados",
-      "name": "Compuesto fenólico de pino",
-      "description": "Compuesto fenólico de pino con acabado natural. La Casa de la Madera publica una presentación importada de 18 mm y 1,22 × 2,44 m. Es distinta de la referencia con película oscura y del contrachapado de pino sin especificación fenólica.",
-      "use": "Paneles y piezas de carpintería según grado, construcción y ficha del producto.",
-      "care": "Confirmamos formato, construcción, acabado y existencias con el proveedor antes de elegir el material para el proyecto.",
-      "brand": "",
-      "supplier": "La Casa de la Madera",
-      "code": "",
-      "finish": "",
-      "market": "Publicación comercial en Venezuela",
-      "international": false,
-      "availability": "Producto publicado por el proveedor; existencias por confirmar.",
-      "imageKind": "Fotografía de referencia frontal",
-      "imageNote": "Fotografía frontal de la cara de Selex Plywood B/C, contrachapado de pino radiata con adhesivo fenólico, publicada por CMPC Maderas. Veta longitudinal vertical. Referencia de construcción y apariencia; la publicación venezolana no identifica esta marca ni este lote. Los derechos de imagen pertenecen a su titular. Color y acabado se confirman con una muestra física.",
-      "textureId": null,
-      "appId": null,
-      "sourceLinks": [
-        {
-          "label": "Publicación del proveedor",
-          "url": "https://articulo.mercadolibre.com.ve/MLV-796094640-compuesto-fenolico-pino-acabado-natural-18mm-122x244-import-_JM"
-        },
-        {
-          "label": "Origen de la muestra de pino fenólico",
-          "url": "https://cmpcmaderas.com/producto/selex-plywood-b-c/"
-        }
-      ],
-      "image": {
-        "src": "muestras/fenolico-pino-cara-frontal26.jpg",
-        "width": 920,
-        "height": 555
-      },
-      "sheetSizeMm": [
-        1220,
-        2440
-      ]
-    },
-    {
       "id": "corinox-aluminio-estriado",
       "category": "metales",
       "family": "Estriados",
@@ -29002,21 +28963,21 @@
     {
       "id": "ldp-compuestos-y-chapillados-compuesto-fenolico-c-plus",
       "category": "tableros",
-      "name": "Compuesto fenólico C Plus",
+      "name": "Compuesto fenólico de pino C +",
       "family": "Compuestos y chapillados",
       "pattern": null,
       "brand": "",
       "supplier": "LD Premium",
       "code": "",
       "finish": "",
-      "description": "Tablero compuesto fenólico C Plus.",
+      "description": "Tablero compuesto fenólico de pino c +.",
       "use": "Revestimientos y trabajo en tableros según el producto real elegido.",
       "care": "Confirmar con LD Premium el grado y la superficie suministrada. El anuncio C+/C muestra dos caras sin rotular cada grado; esta ficha utiliza la referencia visual de la izquierda.",
       "market": "Venezuela · LD Premium",
       "international": false,
       "availability": "Producto publicado por LD Premium; consultar existencias.",
       "imageKind": "Referencia visual restaurada con IA",
-      "imageNote": "Muestra reconstruida con IA a partir de la referencia del catálogo para mejorar definición y uniformar la iluminación; original y procedencia conservados. Referencia visual aproximada, no medición colorimétrica ni reproducción certificada del lote. Vetas oscuras ajustadas a ámbar anaranjado según la indicación de Santiago; se conserva la geometría de la cara de referencia y no se certifica el grado por la imagen.",
+      "imageNote": "Muestra reconstruida con IA a partir de la referencia del catálogo para mejorar definición y uniformar la iluminación; original y procedencia conservados. Referencia visual aproximada, no medición colorimétrica ni reproducción certificada del lote. Vetas oscuras ajustadas a ámbar anaranjado según la indicación de Santiago; se conserva la geometría de la cara de referencia y no se certifica el grado por la imagen. Saturación de presentación reducida según Santiago, conservando la veta y la imagen restaurada.",
       "sourceLinks": [
         {
           "label": "Publicación original LD Premium",
@@ -29027,7 +28988,8 @@
         "src": "muestras/ldp-compuestos-y-chapillados-compuesto-fenolico-c-plus-restaurada-20261020.webp",
         "width": 887,
         "height": 1774,
-        "srcset": "muestras/ldp-compuestos-y-chapillados-compuesto-fenolico-c-plus-restaurada-20261020-640.webp 320w, muestras/ldp-compuestos-y-chapillados-compuesto-fenolico-c-plus-restaurada-20261020.webp 887w"
+        "srcset": "muestras/ldp-compuestos-y-chapillados-compuesto-fenolico-c-plus-restaurada-20261020-640.webp 320w, muestras/ldp-compuestos-y-chapillados-compuesto-fenolico-c-plus-restaurada-20261020.webp 887w",
+        "displayFilter": "saturate(0.65)"
       },
       "textureId": null,
       "appId": null,
@@ -29039,32 +29001,35 @@
         "LD Premium"
       ],
       "supplierAssociationStatus": "oferta_publicada",
-      "sampleRevision": "superficies-20261020",
+      "sampleRevision": "paneles-fenolicos-20261020",
       "sampleOriginal": {
         "src": "muestras/ldp-compuestos-y-chapillados-compuesto-fenolico-c-plus-oficial.webp",
         "width": 518,
         "height": 1008,
         "displayFilter": "brightness(0.82564) sepia(1) saturate(1.16933) hue-rotate(-3.37446deg)"
-      }
+      },
+      "aliases": [
+        "Compuesto fenólico C Plus"
+      ]
     },
     {
       "id": "ldp-compuestos-y-chapillados-compuesto-fenolico-c",
       "category": "tableros",
-      "name": "Compuesto fenólico C",
+      "name": "Compuesto fenólico de pino C",
       "family": "Compuestos y chapillados",
       "pattern": null,
       "brand": "",
       "supplier": "LD Premium",
       "code": "",
       "finish": "",
-      "description": "Tablero compuesto fenólico C.",
+      "description": "Tablero compuesto fenólico de pino c.",
       "use": "Revestimientos y trabajo en tableros según el producto real elegido.",
       "care": "Confirmar con LD Premium el grado y la superficie suministrada. El anuncio C+/C muestra dos caras sin rotular cada grado; esta ficha utiliza la referencia visual de la derecha.",
       "market": "Venezuela · LD Premium",
       "international": false,
       "availability": "Producto publicado por LD Premium; consultar existencias.",
       "imageKind": "Referencia visual restaurada con IA",
-      "imageNote": "Muestra reconstruida con IA a partir de la referencia del catálogo para mejorar definición y uniformar la iluminación; original y procedencia conservados. Referencia visual aproximada, no medición colorimétrica ni reproducción certificada del lote. Vetas oscuras ajustadas a ámbar anaranjado según la indicación de Santiago; se conserva la geometría de la cara de referencia y no se certifica el grado por la imagen.",
+      "imageNote": "Muestra reconstruida con IA a partir de la referencia del catálogo para mejorar definición y uniformar la iluminación; original y procedencia conservados. Referencia visual aproximada, no medición colorimétrica ni reproducción certificada del lote. Vetas oscuras ajustadas a ámbar anaranjado según la indicación de Santiago; se conserva la geometría de la cara de referencia y no se certifica el grado por la imagen. Saturación de presentación reducida según Santiago, conservando la veta y la imagen restaurada.",
       "sourceLinks": [
         {
           "label": "Publicación original LD Premium",
@@ -29075,7 +29040,8 @@
         "src": "muestras/ldp-compuestos-y-chapillados-compuesto-fenolico-c-restaurada-20261020.webp",
         "width": 887,
         "height": 1774,
-        "srcset": "muestras/ldp-compuestos-y-chapillados-compuesto-fenolico-c-restaurada-20261020-640.webp 320w, muestras/ldp-compuestos-y-chapillados-compuesto-fenolico-c-restaurada-20261020.webp 887w"
+        "srcset": "muestras/ldp-compuestos-y-chapillados-compuesto-fenolico-c-restaurada-20261020-640.webp 320w, muestras/ldp-compuestos-y-chapillados-compuesto-fenolico-c-restaurada-20261020.webp 887w",
+        "displayFilter": "saturate(0.65)"
       },
       "textureId": null,
       "appId": null,
@@ -29087,13 +29053,16 @@
         "LD Premium"
       ],
       "supplierAssociationStatus": "oferta_publicada",
-      "sampleRevision": "superficies-20261020",
+      "sampleRevision": "paneles-fenolicos-20261020",
       "sampleOriginal": {
         "src": "muestras/ldp-compuestos-y-chapillados-compuesto-fenolico-c-oficial.webp",
         "width": 504,
         "height": 1008,
         "displayFilter": "brightness(0.83484) sepia(1) saturate(1.16918) hue-rotate(-3.36262deg)"
-      }
+      },
+      "aliases": [
+        "Compuesto fenólico C"
+      ]
     },
     {
       "id": "ago-pvc-espumado-blanco",
@@ -37998,8 +37967,8 @@
     {
       "id": "mdf-crudo-acanalado-mariches",
       "name": "MDF crudo acanalado",
-      "category": "tableros",
-      "family": "MDF",
+      "category": "revestimientos",
+      "family": "Ranurados",
       "brand": "",
       "code": "",
       "finish": "Crudo acanalado",
