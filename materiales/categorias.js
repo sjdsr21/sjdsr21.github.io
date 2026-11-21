@@ -77,7 +77,8 @@ const definitions={
   maderas:[
     {value:'Madera sólida',label:'Maderas sólidas'},
     {value:'Alistonados',label:'Alistonados'},
-    {value:'Machihembrados',label:'Machihembrados'}
+    {value:'Machihembrados',label:'Machihembrados'},
+    {value:'Madera entintada',label:'Madera entintada'}
   ],
   // Chapas y compuestos se presenta sin subdivisiones.
   tableros:[],
